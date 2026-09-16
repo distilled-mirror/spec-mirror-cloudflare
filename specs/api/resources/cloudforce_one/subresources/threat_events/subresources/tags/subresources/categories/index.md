@@ -32,9 +32,13 @@ POST/accounts/{account\_id}/cloudforce-one/events/tags/categories/create
 
 ##### [Updates a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
 
+Deprecated
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
 ##### [Deletes a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
+
+Deprecated
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 

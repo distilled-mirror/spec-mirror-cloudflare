@@ -96,60 +96,6 @@ formatdate-time
 
 <summary>
 
-Aegis object { id, modified_on, value }
-
-Aegis provides dedicated egress IPs (from Cloudflare to your origin) for your layer 7 WAF and CDN services. The egress IPs are reserved exclusively for your account so that you can increase your origin security by only allowing traffic from a small list of IP addresses.
-
-</summary>
-
-id: "aegis"
-
-ID of the zone setting.
-
-[Link to this property](#)
-
-modified_on: optional string
-
-Last time this setting was modified.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional object { enabled, pool_id }
-
-Value of the zone setting.
-
-</summary>
-
-enabled: optional boolean
-
-Whether the feature is enabled or not.
-
-[Link to this property](#)
-
-pool_id: optional string
-
-Egress pool id which refers to a grouping of dedicated egress IPs through which Cloudflare will connect to origin.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
 AlwaysOnline object { id, value, editable, modified_on }
 
 When enabled, Cloudflare serves limited copies of web pages available from the [Internet Archive’s Wayback Machine](https://archive.org/web/) if your server is offline. Refer to [Always Online](https://developers.cloudflare.com/cache/about/always-online) for more information.

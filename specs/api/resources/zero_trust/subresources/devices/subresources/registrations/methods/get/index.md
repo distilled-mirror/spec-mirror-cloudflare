@@ -98,7 +98,7 @@ message: string
 
 <summary>
 
-result: object {id, created\_at, device, 11 more }
+result: object {id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -157,6 +157,30 @@ The public key used to connect to the Cloudflare network.
 last\_seen\_at: string
 
 The RFC3339 timestamp when the registration was last seen.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+registration\_type: "warp"or "browser\_extension"
+
+The registration client type, derived from device\_type.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -327,6 +351,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
     },
     "key": "U+QTP50RsWfeLGHF4tlGDnmGeuwtsz46KCHr5OyhWq00Rsdfl45mgnQAuEJ6CO0YrkyTl9FUf5iB0bwYR3g4EEFEHhtu6jFaqfMrBMBSz6itv9HQXkaR9OieKQ==",
     "last_seen_at": "2025-02-14T13:17:00Z",
+    "registration_type": "warp",
     "updated_at": "2025-02-14T13:17:00Z",
     "deleted_at": "2025-02-14T13:17:00Z",
     "key_type": "secp256r1",
@@ -379,6 +404,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
     },
     "key": "U+QTP50RsWfeLGHF4tlGDnmGeuwtsz46KCHr5OyhWq00Rsdfl45mgnQAuEJ6CO0YrkyTl9FUf5iB0bwYR3g4EEFEHhtu6jFaqfMrBMBSz6itv9HQXkaR9OieKQ==",
     "last_seen_at": "2025-02-14T13:17:00Z",
+    "registration_type": "warp",
     "updated_at": "2025-02-14T13:17:00Z",
     "deleted_at": "2025-02-14T13:17:00Z",
     "key_type": "secp256r1",

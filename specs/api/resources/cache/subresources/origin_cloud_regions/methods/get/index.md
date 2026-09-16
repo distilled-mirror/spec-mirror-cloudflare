@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region%20%3E%20(schema)">OriginCloudRegion</a> { origin\_ip, region, vendor, modified\_on }
+result: optional object {origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 

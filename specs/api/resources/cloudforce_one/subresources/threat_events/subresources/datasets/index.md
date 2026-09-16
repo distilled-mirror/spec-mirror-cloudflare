@@ -42,6 +42,8 @@ DELETE/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
 ##### [Reads raw data for an event by UUID](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
 
+Deprecated
+
 GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
 ##### ModelsExpand Collapse

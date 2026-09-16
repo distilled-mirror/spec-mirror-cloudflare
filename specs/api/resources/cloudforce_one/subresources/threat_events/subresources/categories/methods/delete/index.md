@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Deletes a category
 
+Deprecated: Use DELETE /events/event-categories/by-id/{category\_id} before 2026-11-28.
+
 DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-Removes a threat event category from Cloudforce One.
+Deprecated; use DELETE /events/event-categories/by-id/{category\_id}. Available through 2026-11-28.
 
 ##### Security
 

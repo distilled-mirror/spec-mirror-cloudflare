@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3824,
+  "count": 3828,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -105,6 +105,14 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/client_secret/methods/create",
       "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/client_secret/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/entitlements",
+      "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/entitlements/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/entitlements/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/entitlements/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/invoices",
@@ -15157,6 +15165,14 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/zones/subresources/custom_nameservers/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/custom_nameservers/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/entitlements",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/entitlements/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/entitlements/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/entitlements/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zones/subresources/environments",

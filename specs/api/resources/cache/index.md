@@ -98,30 +98,6 @@ ID of the zone setting.
 
 <summary>
 
-State = "In-progress"or "Completed"
-
-The current state of the Cache Reserve Clear operation.
-
-</summary>
-
-One of the following:
-
-"In-progress"
-
-<a href="#">Link to this property</a>
-
-"Completed"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 CacheReserveGetResponse object {id, editable, value, modified\_on }
 
 </summary>
@@ -254,9 +230,27 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+<details>
+
+<summary>
+
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -304,9 +298,27 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+<details>
+
+<summary>
+
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -565,34 +577,6 @@ PATCH/zones/{zone\_id}/cache/variants
 DELETE/zones/{zone\_id}/cache/variants
 
 ##### ModelsExpand Collapse
-
-<details>
-
-<summary>
-
-CacheVariant object {id, modified\_on }
-
-Variant support enables caching variants of images with certain file extensions in addition to the original. This only applies when the origin server sends the ‘Vary: Accept’ response header. If the origin server sends ‘Vary: Accept’ but does not serve the variant requested, the response will not be cached. This will be indicated with BYPASS cache status in the response headers.
-
-</summary>
-
-id: "variants"
-
-ID of the zone setting.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-Last time this setting was modified.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cache.variants%20%3E%20(model)%20cache_variant%20%3E%20(schema)>)
 
 <details>
 
@@ -1064,7 +1048,7 @@ GET/zones/{zone\_id}/cache/origin\_cloud\_regions/supported\_regions
 
 <summary>
 
-OriginCloudRegion object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionListResponse object {origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -1124,7 +1108,139 @@ formatdate-time
 
 </details>
 
-[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region%20%3E%20(schema)>)
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+OriginCloudRegionGetResponse object {origin\_ip, region, vendor, modified\_on }
+
+A single origin IP-to-cloud-region mapping.
+
+</summary>
+
+origin\_ip: string
+
+The origin IP address (IPv4 or IPv6). Normalized to canonical form (RFC 5952 for IPv6).
+
+<a href="#">Link to this property</a>
+
+region: string
+
+Cloud vendor region identifier.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+vendor: "aws"or "azure"or "gcp"or "oci"
+
+Cloud vendor hosting the origin.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+<a href="#">Link to this property</a>
+
+"azure"
+
+<a href="#">Link to this property</a>
+
+"gcp"
+
+<a href="#">Link to this property</a>
+
+"oci"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Time this mapping was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+OriginCloudRegionUpdateResponse object {origin\_ip, region, vendor, modified\_on }
+
+A single origin IP-to-cloud-region mapping.
+
+</summary>
+
+origin\_ip: string
+
+The origin IP address (IPv4 or IPv6). Normalized to canonical form (RFC 5952 for IPv6).
+
+<a href="#">Link to this property</a>
+
+region: string
+
+Cloud vendor region identifier.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+vendor: "aws"or "azure"or "gcp"or "oci"
+
+Cloud vendor hosting the origin.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+<a href="#">Link to this property</a>
+
+"azure"
+
+<a href="#">Link to this property</a>
+
+"gcp"
+
+<a href="#">Link to this property</a>
+
+"oci"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Time this mapping was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_update_response%20%3E%20(schema)>)
 
 <details>
 

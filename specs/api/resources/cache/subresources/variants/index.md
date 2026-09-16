@@ -36,34 +36,6 @@ DELETE/zones/{zone\_id}/cache/variants
 
 <summary>
 
-CacheVariant object {id, modified\_on }
-
-Variant support enables caching variants of images with certain file extensions in addition to the original. This only applies when the origin server sends the ‘Vary: Accept’ response header. If the origin server sends ‘Vary: Accept’ but does not serve the variant requested, the response will not be cached. This will be indicated with BYPASS cache status in the response headers.
-
-</summary>
-
-id: "variants"
-
-ID of the zone setting.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-Last time this setting was modified.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cache.variants%20%3E%20(model)%20cache_variant%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 VariantGetResponse object {id, editable, value, modified\_on }
 
 </summary>

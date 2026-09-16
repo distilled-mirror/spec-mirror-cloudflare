@@ -24,9 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Updates a tag category (SoT)
 
+Deprecated: Use PATCH /events/tag-categories/{category\_uuid} before 2026-11-28.
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-Updates a Source-of-Truth tag category by UUID.
+Deprecated; use PATCH /events/tag-categories/{category\_uuid}. Available through 2026-11-28.
 
 ##### Security
 

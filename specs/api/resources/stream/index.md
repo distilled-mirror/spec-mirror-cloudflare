@@ -1396,7 +1396,7 @@ DELETE/accounts/{account\_id}/stream/webhook
 
 <summary>
 
-WebhookGetResponse object {modified, notification\_url, notificationUrl, secret }
+WebhookGetResponse object {modified, notificationUrl, secret }
 
 </summary>
 
@@ -1405,14 +1405,6 @@ modified: optional string
 The date and time the webhook was last modified.
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-notification\_url: optional string
-
-The URL where webhooks will be sent.
-
-formaturi
 
 <a href="#">Link to this property</a>
 
@@ -1438,7 +1430,7 @@ The secret used to verify webhook signatures.
 
 <summary>
 
-WebhookUpdateResponse object {modified, notification\_url, notificationUrl, secret }
+WebhookUpdateResponse object {modified, notificationUrl, secret }
 
 </summary>
 
@@ -1447,14 +1439,6 @@ modified: optional string
 The date and time the webhook was last modified.
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-notification\_url: optional string
-
-The URL where webhooks will be sent.
-
-formaturi
 
 <a href="#">Link to this property</a>
 

@@ -174,7 +174,7 @@ pointer: optional string
 
 <summary>
 
-result: array of <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region%20%3E%20(schema)">OriginCloudRegion</a> { origin\_ip, region, vendor, modified\_on }
+result: array of object {origin\_ip, region, vendor, modified\_on }
 
 </summary>
 

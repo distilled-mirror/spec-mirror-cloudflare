@@ -276,7 +276,7 @@ message: string
 
 <summary>
 
-result: array of object {id, created\_at, device, 11 more }
+result: array of object {id, created\_at, device, 12 more }
 
 </summary>
 
@@ -333,6 +333,30 @@ The public key used to connect to the Cloudflare network.
 last\_seen\_at: string
 
 The RFC3339 timestamp when the registration was last seen.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+registration\_type: "warp"or "browser\_extension"
+
+The registration client type, derived from device\_type.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -534,6 +558,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
       "key": "U+QTP50RsWfeLGHF4tlGDnmGeuwtsz46KCHr5OyhWq00Rsdfl45mgnQAuEJ6CO0YrkyTl9FUf5iB0bwYR3g4EEFEHhtu6jFaqfMrBMBSz6itv9HQXkaR9OieKQ==",
       "key_type": "secp256r1",
       "last_seen_at": "2025-02-14T13:17:00Z",
+      "registration_type": "warp",
       "revoked_at": null,
       "tunnel_type": "masque",
       "updated_at": "2025-02-14T13:17:00Z",
@@ -555,6 +580,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
       "key": "V/RSP61StXgfmLHJG5umHEonHfvxtz57LDIs6PziXr11Stegm56nhrRBvFK7DP1ZsLzUm0GVg6jC1cxZS4h5FFGFJiju7kGbrgNsCNCT77juw0IRYlS0QpjgLR==",
       "key_type": "secp256r1",
       "last_seen_at": "2025-02-15T10:25:00Z",
+      "registration_type": "browser_extension",
       "revoked_at": null,
       "tunnel_type": "masque",
       "updated_at": "2025-02-15T10:25:00Z",
@@ -596,6 +622,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
       "key": "U+QTP50RsWfeLGHF4tlGDnmGeuwtsz46KCHr5OyhWq00Rsdfl45mgnQAuEJ6CO0YrkyTl9FUf5iB0bwYR3g4EEFEHhtu6jFaqfMrBMBSz6itv9HQXkaR9OieKQ==",
       "key_type": "secp256r1",
       "last_seen_at": "2025-02-14T13:17:00Z",
+      "registration_type": "warp",
       "revoked_at": null,
       "tunnel_type": "masque",
       "updated_at": "2025-02-14T13:17:00Z",
@@ -617,6 +644,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/registrat
       "key": "V/RSP61StXgfmLHJG5umHEonHfvxtz57LDIs6PziXr11Stegm56nhrRBvFK7DP1ZsLzUm0GVg6jC1cxZS4h5FFGFJiju7kGbrgNsCNCT77juw0IRYlS0QpjgLR==",
       "key_type": "secp256r1",
       "last_seen_at": "2025-02-15T10:25:00Z",
+      "registration_type": "browser_extension",
       "revoked_at": null,
       "tunnel_type": "masque",
       "updated_at": "2025-02-15T10:25:00Z",

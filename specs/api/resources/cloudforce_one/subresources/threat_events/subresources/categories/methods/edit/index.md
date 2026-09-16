@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Updates a category
 
+Deprecated: Use PATCH /events/event-categories/by-id/{category\_id} before 2026-11-28.
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-Partially updates a threat event category in Cloudforce One, modifying specific fields without replacing the entire category.
+Deprecated; use PATCH /events/event-categories/by-id/{category\_id}. Available through 2026-11-28.
 
 ##### Security
 

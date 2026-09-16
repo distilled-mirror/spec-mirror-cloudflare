@@ -100,7 +100,7 @@ GET/zones/{zone\_id}/cache/origin\_cloud\_regions/supported\_regions
 
 <summary>
 
-OriginCloudRegion object {origin\_ip, region, vendor, modified\_on }
+OriginCloudRegionListResponse object {origin\_ip, region, vendor, modified\_on }
 
 A single origin IP-to-cloud-region mapping.
 
@@ -160,7 +160,139 @@ formatdate-time
 
 </details>
 
-[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region%20%3E%20(schema)>)
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+OriginCloudRegionGetResponse object {origin\_ip, region, vendor, modified\_on }
+
+A single origin IP-to-cloud-region mapping.
+
+</summary>
+
+origin\_ip: string
+
+The origin IP address (IPv4 or IPv6). Normalized to canonical form (RFC 5952 for IPv6).
+
+<a href="#">Link to this property</a>
+
+region: string
+
+Cloud vendor region identifier.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+vendor: "aws"or "azure"or "gcp"or "oci"
+
+Cloud vendor hosting the origin.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+<a href="#">Link to this property</a>
+
+"azure"
+
+<a href="#">Link to this property</a>
+
+"gcp"
+
+<a href="#">Link to this property</a>
+
+"oci"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Time this mapping was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+OriginCloudRegionUpdateResponse object {origin\_ip, region, vendor, modified\_on }
+
+A single origin IP-to-cloud-region mapping.
+
+</summary>
+
+origin\_ip: string
+
+The origin IP address (IPv4 or IPv6). Normalized to canonical form (RFC 5952 for IPv6).
+
+<a href="#">Link to this property</a>
+
+region: string
+
+Cloud vendor region identifier.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+vendor: "aws"or "azure"or "gcp"or "oci"
+
+Cloud vendor hosting the origin.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+<a href="#">Link to this property</a>
+
+"azure"
+
+<a href="#">Link to this property</a>
+
+"gcp"
+
+<a href="#">Link to this property</a>
+
+"oci"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Time this mapping was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache.origin_cloud_regions%20%3E%20(model)%20origin_cloud_region_update_response%20%3E%20(schema)>)
 
 <details>
 

@@ -526,6 +526,8 @@ formatdate-time
 
 name: string
 
+minLength1
+
 <a href="#">Link to this property</a>
 
 </details>
@@ -571,7 +573,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     ],
     "gateway_id": "gateway_id",
     "modified_at": "2019-12-27T18:11:19.117Z",
-    "name": "name"
+    "name": "x"
   },
   "success": true
 }
@@ -599,7 +601,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     ],
     "gateway_id": "gateway_id",
     "modified_at": "2019-12-27T18:11:19.117Z",
-    "name": "name"
+    "name": "x"
   },
   "success": true
 }

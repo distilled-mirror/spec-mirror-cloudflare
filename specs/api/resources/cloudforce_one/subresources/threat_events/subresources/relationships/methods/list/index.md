@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Filter and list events related to specific event
 
+Deprecated: Use GET /events/by-id/{event\_id}/relationships before 2026-11-28.
+
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
-The `event_id` must be defined (to list existing events (and their IDs), use the [`Filter and List Events`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/list/) endpoint). Also, must provide query parameters.
+Deprecated; use GET /events/by-id/{event\_id}/relationships. Available through 2026-11-28.
 
 ##### Security
 

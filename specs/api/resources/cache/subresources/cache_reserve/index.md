@@ -52,30 +52,6 @@ ID of the zone setting.
 
 <summary>
 
-State = "In-progress"or "Completed"
-
-The current state of the Cache Reserve Clear operation.
-
-</summary>
-
-One of the following:
-
-"In-progress"
-
-<a href="#">Link to this property</a>
-
-"Completed"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 CacheReserveGetResponse object {id, editable, value, modified\_on }
 
 </summary>
@@ -208,9 +184,27 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+<details>
+
+<summary>
+
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -258,9 +252,27 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+<details>
+
+<summary>
+
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

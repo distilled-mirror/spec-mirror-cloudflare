@@ -24,9 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Deletes a tag category (SoT)
 
+Deprecated: Use DELETE /events/tag-categories/{category\_uuid} before 2026-11-28.
+
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-Deletes a Source-of-Truth tag category by UUID.
+Deprecated; use DELETE /events/tag-categories/{category\_uuid}. Available through 2026-11-28.
 
 ##### Security
 

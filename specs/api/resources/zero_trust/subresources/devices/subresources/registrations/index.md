@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/devices/registrations/unrevoke
 
 <summary>
 
-RegistrationListResponse object {id, created\_at, device, 11 more }
+RegistrationListResponse object {id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -109,6 +109,30 @@ The public key used to connect to the Cloudflare network.
 last\_seen\_at: string
 
 The RFC3339 timestamp when the registration was last seen.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+registration\_type: "warp"or "browser\_extension"
+
+The registration client type, derived from device\_type.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -240,7 +264,7 @@ The virtual IPv6 address assigned to the network interface of the tunnel for thi
 
 <summary>
 
-RegistrationGetResponse object {id, created\_at, device, 11 more }
+RegistrationGetResponse object {id, created\_at, device, 12 more }
 
 A WARP configuration tied to a single user. Multiple registrations can be created from a single WARP device.
 
@@ -299,6 +323,30 @@ The public key used to connect to the Cloudflare network.
 last\_seen\_at: string
 
 The RFC3339 timestamp when the registration was last seen.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+registration\_type: "warp"or "browser\_extension"
+
+The registration client type, derived from device\_type.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

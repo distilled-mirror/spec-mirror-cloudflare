@@ -68,6 +68,14 @@ maxLength32
 
 [Link to this property](#)%20stream.live_inputs%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
+##### H eader ParametersExpand Collapse
+
+"Idempotency-Key": optional string
+
+maxLength255
+
+[Link to this property](#)%20stream.live_inputs%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20Idempotency-Key%20%3E%20(schema)>)
+
 ##### Body ParametersJSONExpand Collapse
 
 defaultCreator: optional string

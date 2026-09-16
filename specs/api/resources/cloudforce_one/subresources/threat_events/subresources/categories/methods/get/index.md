@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Reads a category
 
+Deprecated: Use GET /events/event-categories/by-id/{category\_id} before 2026-11-28.
+
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-Retrieves details for a specific threat event category.
+Deprecated; use GET /events/event-categories/by-id/{category\_id}. Available through 2026-11-28.
 
 ##### Security
 

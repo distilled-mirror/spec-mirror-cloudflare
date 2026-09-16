@@ -26,6 +26,8 @@ GET/accounts/{account\_id}/cloudforce-one/events/categories
 
 ##### [Reads a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 ##### [Creates a new category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
@@ -34,9 +36,13 @@ POST/accounts/{account\_id}/cloudforce-one/events/categories/create
 
 ##### [Updates a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
 
+Deprecated
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 ##### [Deletes a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
+
+Deprecated
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 

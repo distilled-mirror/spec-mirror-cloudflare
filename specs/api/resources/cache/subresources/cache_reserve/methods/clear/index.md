@@ -68,12 +68,6 @@ maxLength32
 
 [Link to this property](#)%20cache.cache_reserve%20%3E%20(method)%20clear%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
-##### Body ParametersJSONExpand Collapse
-
-body: unknown
-
-[Link to this property](#)%20cache.cache_reserve%20%3E%20(method)%20clear%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
-
 ##### ReturnsExpand Collapse
 
 <details>
@@ -194,7 +188,7 @@ formatdate-time
 
 <summary>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -242,9 +236,8 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/cache/cache_reserve_clear \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{}'
+    -X POST \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

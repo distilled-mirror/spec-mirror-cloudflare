@@ -188,7 +188,7 @@ formatdate-time
 
 <summary>
 
-state: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20state%20%3E%20(schema)">State</a>
+state: "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 

@@ -460,7 +460,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -475,6 +475,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1276,7 +1296,7 @@ Whether Logpush is turned on for the Worker.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -1291,6 +1311,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1872,7 +1912,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -1887,6 +1927,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3194,7 +3254,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -3209,6 +3269,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -9700,7 +9780,7 @@ to: optional string
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -9715,6 +9795,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -12642,7 +12742,7 @@ to: optional string
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -12657,6 +12757,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

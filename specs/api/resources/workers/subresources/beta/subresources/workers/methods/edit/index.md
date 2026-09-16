@@ -90,7 +90,7 @@ Name of the Worker.
 
 <summary>
 
-observability: object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -105,6 +105,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -414,7 +434,7 @@ Name of the Worker.
 
 <summary>
 
-observability: object {enabled, head\_sampling\_rate, logs, 2 more }
+observability: object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -429,6 +449,26 @@ Whether observability is enabled for the Worker.
 head\_sampling\_rate: optional number
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -892,6 +932,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers/$
     "observability": {
       "enabled": true,
       "head_sampling_rate": 1,
+      "issues": {
+        "enabled": true
+      },
       "logs": {
         "destinations": [
           "string"
@@ -1008,6 +1051,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers/$
     "observability": {
       "enabled": true,
       "head_sampling_rate": 1,
+      "issues": {
+        "enabled": true
+      },
       "logs": {
         "destinations": [
           "string"

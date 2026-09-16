@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Reads raw data for an event by UUID
 
+Deprecated: Use GET /events/datasets/{dataset\_id}/events/{event\_id}/raw before 2026-11-28.
+
 GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
-Retrieves the raw data associated with an event. Searches across all shards in the dataset.
+Deprecated; use GET /events/datasets/{dataset\_id}/events/{event\_id}/raw. Available through 2026-11-28.
 
 ##### Security
 

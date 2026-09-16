@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Filter and list events related to specific event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relationships/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
 ##### ModelsExpand Collapse

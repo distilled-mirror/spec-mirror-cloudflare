@@ -2904,6 +2904,8 @@ Scope for the rule
 
 ##### [Filter and list events related to specific event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relationships/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
 ##### ModelsExpand Collapse
@@ -4018,6 +4020,8 @@ GET/accounts/{account\_id}/cloudforce-one/events/categories
 
 ##### [Reads a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 ##### [Creates a new category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
@@ -4026,9 +4030,13 @@ POST/accounts/{account\_id}/cloudforce-one/events/categories/create
 
 ##### [Updates a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
 
+Deprecated
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
 ##### [Deletes a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
+
+Deprecated
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
@@ -4311,6 +4319,8 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 DELETE/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
 ##### [Reads raw data for an event by UUID](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
+
+Deprecated
 
 GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
@@ -7432,9 +7442,13 @@ POST/accounts/{account\_id}/cloudforce-one/events/tags/categories/create
 
 ##### [Updates a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
 
+Deprecated
+
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
 ##### [Deletes a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
+
+Deprecated
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 

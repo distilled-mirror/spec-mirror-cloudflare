@@ -594,60 +594,6 @@ formatdate-time
 
 <summary>
 
-Aegis object { id, modified_on, value }
-
-Aegis provides dedicated egress IPs (from Cloudflare to your origin) for your layer 7 WAF and CDN services. The egress IPs are reserved exclusively for your account so that you can increase your origin security by only allowing traffic from a small list of IP addresses.
-
-</summary>
-
-id: "aegis"
-
-ID of the zone setting.
-
-[Link to this property](#)
-
-modified_on: optional string
-
-Last time this setting was modified.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional object { enabled, pool_id }
-
-Value of the zone setting.
-
-</summary>
-
-enabled: optional boolean
-
-Whether the feature is enabled or not.
-
-[Link to this property](#)
-
-pool_id: optional string
-
-Egress pool id which refers to a grouping of dedicated egress IPs through which Cloudflare will connect to origin.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
 AlwaysOnline object { id, value, editable, modified_on }
 
 When enabled, Cloudflare serves limited copies of web pages available from the [Internet Archive’s Wayback Machine](https://archive.org/web/) if your server is offline. Refer to [Always Online](https://developers.cloudflare.com/cache/about/always-online) for more information.
@@ -25439,6 +25385,192 @@ name: optional string
 The plan name.
 
 maxLength80
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Get Zone Entitlements](/api/resources/zones/subresources/entitlements/methods/list)
+
+GET/zones/{zone_id}/entitlements
+
+##### Models
+
+<details>
+
+<summary>
+
+EntitlementListResponse object { id, allocation, created_date, 3 more }
+
+A single entitlement record for a zone or account.
+
+</summary>
+
+id: string
+
+Entitlement identifier — equal to the feature key.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+allocation: object { type, value }
+
+Represents the allocation value for an entitlement. The shape of `value` depends on `type`: `bool` uses a boolean, `max_count` uses an integer, `enum_number` uses an array of numbers, `range` uses an object with `min` and `max` integer fields, and `string` uses a string.
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "bool" or "max_count" or "enum_number" or 2 more
+
+Allocation type discriminator.
+
+</summary>
+
+One of the following:
+
+"bool"
+
+[Link to this property](#)
+
+"max_count"
+
+[Link to this property](#)
+
+"enum_number"
+
+[Link to this property](#)
+
+"range"
+
+[Link to this property](#)
+
+"string"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+value: boolean or number or string or 2 more
+
+Contains the allocation value whose concrete type the `type` field determines: bool yields a boolean, max_count yields an integer, enum_number yields an array of numbers, range yields an object with `min` and `max`, and string yields a string.
+
+</summary>
+
+One of the following:
+
+boolean
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+string
+
+[Link to this property](#)
+
+array of number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { max, min }
+
+</summary>
+
+max: number
+
+[Link to this property](#)
+
+min: number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_date: string
+
+ISO 8601 timestamp (microsecond precision, no timezone offset) when the entitlement was created. Format: `YYYY-MM-DDTHH:MM:SS.ffffff`.
+
+[Link to this property](#)
+
+deleted_date: string
+
+ISO 8601 timestamp when the entitlement was deleted, or empty string if not deleted.
+
+[Link to this property](#)
+
+edited_date: string
+
+ISO 8601 timestamp (microsecond precision, no timezone offset) when the entitlement was last edited.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+feature: object { id, feature_set, key, name }
+
+Describes a product feature associated with an entitlement.
+
+</summary>
+
+id: number
+
+Numeric identifier of the feature.
+
+formatint64
+
+[Link to this property](#)
+
+feature_set: string
+
+The logical grouping (set) this feature belongs to.
+
+[Link to this property](#)
+
+key: string
+
+Unique string key for the feature.
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name of the feature.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
