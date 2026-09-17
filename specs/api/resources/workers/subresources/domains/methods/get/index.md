@@ -1,5 +1,5 @@
 ---
-title: Get Domain
+title: Get Worker Domain
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Domain
+# Get Worker Domain
 
 GET/accounts/{account\_id}/workers/domains/{domain\_id}
 
-Gets information about a domain.
+Gets information about a Worker domain.
 
 ##### Security
 
@@ -222,7 +222,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.domains%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Domain
+### Get Worker Domain
 
 HTTP
 

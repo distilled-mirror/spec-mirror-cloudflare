@@ -1,5 +1,5 @@
 ---
-title: Download Worker
+title: Download Worker Script
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Download Worker
+# Download Worker Script
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}
 
-Fetch raw script content for your worker. Note this is the original script content, not JSON encoded.
+Fetch raw content for a Worker script. Note this is the original script content, not JSON encoded.
 
 ##### Security
 
@@ -74,7 +74,7 @@ Name of the script, used in URLs and route configuration.
 
 [Link to this property](#)%20workers.scripts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
-### Download Worker
+### Download Worker Script
 
 HTTP
 

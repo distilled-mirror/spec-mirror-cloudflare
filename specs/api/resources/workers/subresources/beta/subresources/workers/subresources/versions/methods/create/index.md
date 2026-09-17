@@ -1,5 +1,5 @@
 ---
-title: Create Version
+title: Create Worker Version
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Version
+# Create Worker Version
 
 POST/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
-Create a new version.
+Create a new version for a Worker.
 
 ##### Security
 
@@ -5692,7 +5692,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Version
+### Create Worker Version
 
 HTTP
 

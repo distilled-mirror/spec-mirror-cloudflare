@@ -20,19 +20,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Deployments
 
-##### [List Deployments](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
+##### [List Worker Deployments](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-##### [Create Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
+##### [Create Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-##### [Get Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
+##### [Get Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 
-##### [Delete Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
+##### [Delete Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 

@@ -1,5 +1,5 @@
 ---
-title: Put script content
+title: Replace Worker Script Content
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put script content
+# Replace Worker Script Content
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/content
 
-Put script content without touching config or metadata.
+Replace Worker script content without touching config or metadata.
 
 ##### Security
 
@@ -1451,7 +1451,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.content%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put script content
+### Replace Worker Script Content
 
 HTTP
 

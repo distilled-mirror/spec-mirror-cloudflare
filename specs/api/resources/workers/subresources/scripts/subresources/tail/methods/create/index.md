@@ -1,5 +1,5 @@
 ---
-title: Start Tail
+title: Start Worker Tail
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Start Tail
+# Start Worker Tail
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-Starts a tail that receives logs and exception from a Worker.
+Starts a tail that receives logs and exceptions from a Worker.
 
 ##### Security
 
@@ -196,7 +196,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.tail%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Start Tail
+### Start Worker Tail
 
 HTTP
 

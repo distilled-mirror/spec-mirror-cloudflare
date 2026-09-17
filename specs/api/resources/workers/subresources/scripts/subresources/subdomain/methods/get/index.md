@@ -1,5 +1,5 @@
 ---
-title: Get Worker subdomain
+title: Get Worker Script Subdomain
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Worker subdomain
+# Get Worker Script Subdomain
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-Get if the Worker is available on the workers.dev subdomain.
+Get whether a Worker script is available on the workers.dev subdomain.
 
 ##### Security
 
@@ -192,7 +192,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.subdomain%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Worker subdomain
+### Get Worker Script Subdomain
 
 HTTP
 

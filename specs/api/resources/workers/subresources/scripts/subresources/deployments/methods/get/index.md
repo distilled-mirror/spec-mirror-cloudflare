@@ -1,5 +1,5 @@
 ---
-title: Get Deployment
+title: Get Worker Deployment
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Deployment
+# Get Worker Deployment
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 
@@ -264,7 +264,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Deployment
+### Get Worker Deployment
 
 HTTP
 

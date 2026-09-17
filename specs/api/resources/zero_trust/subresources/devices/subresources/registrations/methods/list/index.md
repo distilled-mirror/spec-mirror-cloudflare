@@ -106,6 +106,30 @@ formatuuid
 
 [Link to this property](#)%20zero_trust.devices.registrations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20policy%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+registration\_type: optional "warp"or "browser\_extension"
+
+Filter by registration client type.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.registrations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20registration_type%20%3E%20(schema)>)
+
 search: optional string
 
 Filter by registration details.

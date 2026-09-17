@@ -64,7 +64,7 @@ account\_id: string
 
 Account ID.
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
+[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse
 
@@ -76,9 +76,31 @@ maximum86400
 
 minimum0
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20cacheTTL%20%3E%20(schema)>)
+[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20cacheTTL%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
+
+<details>
+
+<summary>
+
+body: object {url, actionTimeout, addScriptTag, 19 more } or object {html, actionTimeout, addScriptTag, 19 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {url, actionTimeout, addScriptTag, 19 more }
+
+</summary>
+
+url: string
+
+<a href="#">Link to this property</a>
 
 actionTimeout: optional number
 
@@ -86,7 +108,7 @@ The maximum duration allowed for the browser action to complete after the page h
 
 maximum120000
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20actionTimeout%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -94,7 +116,7 @@ maximum120000
 
 addScriptTag: optional array of object {id, content, type, url }
 
-Adds a <code>&lt;script&gt;</code> tag into the page with the desired URL or content.
+Adds a script element into the page with the desired URL or content.
 
 </summary>
 
@@ -118,7 +140,7 @@ formaturi
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20addScriptTag%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -142,13 +164,13 @@ formaturi
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20addStyleTag%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 allowRequestPattern: optional array of string
 
 Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)’. Reject rules are applied first.
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20allowRequestPattern%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -236,7 +258,7 @@ One of the following:
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20allowResourceTypes%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -262,13 +284,13 @@ minLength1
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20authenticate%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 bestAttempt: optional boolean
 
 Attempt to proceed when ‘awaited’ events fail or timeout.
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20bestAttempt%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -406,15 +428,15 @@ url: optional string
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20cookies%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 emulateMediaType: optional string
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20emulateMediaType%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 excludeExternalLinks: optional boolean
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20excludeExternalLinks%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -516,21 +538,17 @@ One of the following:
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20gotoOptions%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 html: optional string
 
-Set the content of the page, eg: `<h1>Hello World!!</h1>`. Either `html` or `url` must be set.
-
-minLength1
-
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20html%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 rejectRequestPattern: optional array of string
 
 Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(css)’.
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20rejectRequestPattern%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -618,27 +636,19 @@ One of the following:
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20rejectResourceTypes%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 setExtraHTTPHeaders: optional map\[string]
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20setExtraHTTPHeaders%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 setJavaScriptEnabled: optional boolean
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20setJavaScriptEnabled%20%3E%20(schema)>)
-
-url: optional string
-
-URL to navigate to, eg. `https://example.com`.
-
-formaturi
-
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20url%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 userAgent: optional string
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20userAgent%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -676,11 +686,11 @@ isMobile: optional boolean
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20viewport%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 visibleLinksOnly: optional boolean
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20visibleLinksOnly%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -712,7 +722,7 @@ visible: optional true
 
 </details>
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20waitForSelector%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 waitForTimeout: optional number
 
@@ -720,7 +730,661 @@ Waits for a specified timeout before continuing.
 
 maximum120000
 
-[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20waitForTimeout%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {html, actionTimeout, addScriptTag, 19 more }
+
+</summary>
+
+html: string
+
+<a href="#">Link to this property</a>
+
+actionTimeout: optional number
+
+The maximum duration allowed for the browser action to complete after the page has loaded (such as taking screenshots, extracting content, or generating PDFs). If this time limit is exceeded, the action stops and returns a timeout error.
+
+maximum120000
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+addScriptTag: optional array of object {id, content, type, url }
+
+Adds a script element into the page with the desired URL or content.
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+content: optional string
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+url: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+addStyleTag: optional array of object {content, url }
+
+Adds a <code>&lt;link rel="stylesheet"&gt;</code> tag into the page with the desired URL or a <code>&lt;style type="text/css"&gt;</code> tag with the content.
+
+</summary>
+
+content: optional string
+
+<a href="#">Link to this property</a>
+
+url: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+allowRequestPattern: optional array of string
+
+Only allow requests that match the provided regex patterns, eg. ’/^.\*.(css)’. Reject rules are applied first.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+allowResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+
+Only allow requests that match the provided resource types, eg. ‘image’ or ‘script’. Reject rules are applied first.
+
+</summary>
+
+One of the following:
+
+"document"
+
+<a href="#">Link to this property</a>
+
+"stylesheet"
+
+<a href="#">Link to this property</a>
+
+"image"
+
+<a href="#">Link to this property</a>
+
+"media"
+
+<a href="#">Link to this property</a>
+
+"font"
+
+<a href="#">Link to this property</a>
+
+"script"
+
+<a href="#">Link to this property</a>
+
+"texttrack"
+
+<a href="#">Link to this property</a>
+
+"xhr"
+
+<a href="#">Link to this property</a>
+
+"fetch"
+
+<a href="#">Link to this property</a>
+
+"prefetch"
+
+<a href="#">Link to this property</a>
+
+"eventsource"
+
+<a href="#">Link to this property</a>
+
+"websocket"
+
+<a href="#">Link to this property</a>
+
+"manifest"
+
+<a href="#">Link to this property</a>
+
+"signedexchange"
+
+<a href="#">Link to this property</a>
+
+"ping"
+
+<a href="#">Link to this property</a>
+
+"cspviolationreport"
+
+<a href="#">Link to this property</a>
+
+"preflight"
+
+<a href="#">Link to this property</a>
+
+"other"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+authenticate: optional object {password, username }
+
+Provide credentials for HTTP authentication.
+
+</summary>
+
+password: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+username: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+bestAttempt: optional boolean
+
+Attempt to proceed when ‘awaited’ events fail or timeout.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+cookies: optional array of object {name, value, domain, 11 more }
+
+Check <a href="https://pptr.dev/api/puppeteer.page.setcookie">options</a>.
+
+</summary>
+
+name: string
+
+Cookie name.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+<a href="#">Link to this property</a>
+
+domain: optional string
+
+<a href="#">Link to this property</a>
+
+expires: optional number
+
+<a href="#">Link to this property</a>
+
+httpOnly: optional boolean
+
+<a href="#">Link to this property</a>
+
+partitionKey: optional string
+
+<a href="#">Link to this property</a>
+
+path: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+priority: optional "Low"or "Medium"or "High"
+
+</summary>
+
+One of the following:
+
+"Low"
+
+<a href="#">Link to this property</a>
+
+"Medium"
+
+<a href="#">Link to this property</a>
+
+"High"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+sameParty: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sameSite: optional "Strict"or "Lax"or "None"
+
+</summary>
+
+One of the following:
+
+"Strict"
+
+<a href="#">Link to this property</a>
+
+"Lax"
+
+<a href="#">Link to this property</a>
+
+"None"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+secure: optional boolean
+
+<a href="#">Link to this property</a>
+
+sourcePort: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sourceScheme: optional "Unset"or "NonSecure"or "Secure"
+
+</summary>
+
+One of the following:
+
+"Unset"
+
+<a href="#">Link to this property</a>
+
+"NonSecure"
+
+<a href="#">Link to this property</a>
+
+"Secure"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+url: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+emulateMediaType: optional string
+
+<a href="#">Link to this property</a>
+
+excludeExternalLinks: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+gotoOptions: optional object {referer, referrerPolicy, timeout, waitUntil }
+
+Check <a href="https://pptr.dev/api/puppeteer.gotooptions">options</a>.
+
+</summary>
+
+referer: optional string
+
+<a href="#">Link to this property</a>
+
+referrerPolicy: optional string
+
+<a href="#">Link to this property</a>
+
+timeout: optional number
+
+maximum60000
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waitUntil: optional "load"or "domcontentloaded"or "networkidle0"or "networkidle2"or array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+
+</summary>
+
+One of the following:
+
+"load"
+
+<a href="#">Link to this property</a>
+
+"domcontentloaded"
+
+<a href="#">Link to this property</a>
+
+"networkidle0"
+
+<a href="#">Link to this property</a>
+
+"networkidle2"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+array of "load"or "domcontentloaded"or "networkidle0"or "networkidle2"
+
+</summary>
+
+One of the following:
+
+"load"
+
+<a href="#">Link to this property</a>
+
+"domcontentloaded"
+
+<a href="#">Link to this property</a>
+
+"networkidle0"
+
+<a href="#">Link to this property</a>
+
+"networkidle2"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+rejectRequestPattern: optional array of string
+
+Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(css)’.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+rejectResourceTypes: optional array of "document"or "stylesheet"or "image"or 15 more
+
+Block undesired requests that match the provided resource types, eg. ‘image’ or ‘script’.
+
+</summary>
+
+One of the following:
+
+"document"
+
+<a href="#">Link to this property</a>
+
+"stylesheet"
+
+<a href="#">Link to this property</a>
+
+"image"
+
+<a href="#">Link to this property</a>
+
+"media"
+
+<a href="#">Link to this property</a>
+
+"font"
+
+<a href="#">Link to this property</a>
+
+"script"
+
+<a href="#">Link to this property</a>
+
+"texttrack"
+
+<a href="#">Link to this property</a>
+
+"xhr"
+
+<a href="#">Link to this property</a>
+
+"fetch"
+
+<a href="#">Link to this property</a>
+
+"prefetch"
+
+<a href="#">Link to this property</a>
+
+"eventsource"
+
+<a href="#">Link to this property</a>
+
+"websocket"
+
+<a href="#">Link to this property</a>
+
+"manifest"
+
+<a href="#">Link to this property</a>
+
+"signedexchange"
+
+<a href="#">Link to this property</a>
+
+"ping"
+
+<a href="#">Link to this property</a>
+
+"cspviolationreport"
+
+<a href="#">Link to this property</a>
+
+"preflight"
+
+<a href="#">Link to this property</a>
+
+"other"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+setExtraHTTPHeaders: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+setJavaScriptEnabled: optional boolean
+
+<a href="#">Link to this property</a>
+
+url: optional string
+
+<a href="#">Link to this property</a>
+
+userAgent: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+viewport: optional object {height, width, deviceScaleFactor, 3 more }
+
+Check <a href="https://pptr.dev/api/puppeteer.page.setviewport">options</a>.
+
+</summary>
+
+height: number
+
+<a href="#">Link to this property</a>
+
+width: number
+
+<a href="#">Link to this property</a>
+
+deviceScaleFactor: optional number
+
+<a href="#">Link to this property</a>
+
+hasTouch: optional boolean
+
+<a href="#">Link to this property</a>
+
+isLandscape: optional boolean
+
+<a href="#">Link to this property</a>
+
+isMobile: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+visibleLinksOnly: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waitForSelector: optional object {selector, hidden, timeout, visible }
+
+Wait for the selector to appear in page. Check <a href="https://pptr.dev/api/puppeteer.page.waitforselector">options</a>.
+
+</summary>
+
+selector: string
+
+<a href="#">Link to this property</a>
+
+hidden: optional true
+
+<a href="#">Link to this property</a>
+
+timeout: optional number
+
+maximum120000
+
+<a href="#">Link to this property</a>
+
+visible: optional true
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+waitForTimeout: optional number
+
+Waits for a specified timeout before continuing.
+
+maximum120000
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -837,8 +1501,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "html": "<h1>Hello World!</h1>",
-          "url": "https://www.example.com/"
+          "url": "url"
         }'
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Delete script secret
+title: Delete Workers for Platforms script secret
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete script secret
+# Delete Workers for Platforms script secret
 
 DELETE/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/secrets/{secret\_name}
 
-Remove a secret from a script by creating a new version without that secret.
+Remove a secret from a Workers for Platforms script by creating a new version without that secret.
 
 When changing more than one secret at a time, prefer the “Patch multiple script secrets” API instead of changing many secrets individually.
 
@@ -198,7 +198,7 @@ result: optional unknown
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.secrets%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete script secret
+### Delete Workers for Platforms script secret
 
 HTTP
 

@@ -382,13 +382,19 @@ summary\_0: object {p25, p50, p75 }
 
 p25: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 p50: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 p75: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 

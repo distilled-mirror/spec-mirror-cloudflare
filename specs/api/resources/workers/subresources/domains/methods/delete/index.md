@@ -1,5 +1,5 @@
 ---
-title: Detach Domain
+title: Detach Worker Domain
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Detach Domain
+# Detach Worker Domain
 
 DELETE/accounts/{account\_id}/workers/domains/{domain\_id}
 
@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.domains%20%3E%20(model)%20domain_delete_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### Detach Domain
+### Detach Worker Domain
 
 HTTP
 

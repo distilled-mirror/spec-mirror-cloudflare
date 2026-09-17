@@ -18,23 +18,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Routes
 
-##### [List Routes](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/list)
+##### [List Worker Routes](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/list)
 
 GET/zones/{zone\_id}/workers/routes
 
-##### [Get Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/get)
+##### [Get Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/get)
 
 GET/zones/{zone\_id}/workers/routes/{route\_id}
 
-##### [Create Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/create)
+##### [Create Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/create)
 
 POST/zones/{zone\_id}/workers/routes
 
-##### [Update Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/update)
+##### [Replace Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/update)
 
 PUT/zones/{zone\_id}/workers/routes/{route\_id}
 
-##### [Delete Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/delete)
+##### [Delete Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/delete)
 
 DELETE/zones/{zone\_id}/workers/routes/{route\_id}
 

@@ -1,5 +1,5 @@
 ---
-title: Get dispatch namespace
+title: Get Workers for Platforms Dispatch Namespace
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get dispatch namespace
+# Get Workers for Platforms Dispatch Namespace
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
 
-Get a Workers for Platforms namespace.
+Get a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -238,7 +238,7 @@ Whether the Workers in the namespace are executed in a “trusted” manner. Whe
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get dispatch namespace
+### Get Workers for Platforms Dispatch Namespace
 
 HTTP
 

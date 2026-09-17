@@ -24,6 +24,8 @@ date: string
 
 Date of the returned scan (YYYY-MM-DD). May differ from the requested date if no scan exists for that exact date.
 
+formatdate
+
 [Link to this property](#)
 
 <details>
@@ -8166,11 +8168,15 @@ validFrom: string
 
 The start date of the certificate’s validity period (ISO format).
 
+formatdate
+
 [Link to this property](#)
 
 validTo: string
 
 The end date of the certificate’s validity period (ISO format).
+
+formatdate
 
 [Link to this property](#)
 
@@ -85456,13 +85462,19 @@ summary_0: object { p25, p50, p75 }
 
 p25: string
 
+A numeric string.
+
 [Link to this property](#)
 
 p50: string
 
+A numeric string.
+
 [Link to this property](#)
 
 p75: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -86234,29 +86246,43 @@ summary_0: object { bandwidthDownload, bandwidthUpload, jitterIdle, 4 more }
 
 bandwidthDownload: string
 
+A numeric string.
+
 [Link to this property](#)
 
 bandwidthUpload: string
+
+A numeric string.
 
 [Link to this property](#)
 
 jitterIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 jitterLoaded: string
+
+A numeric string.
 
 [Link to this property](#)
 
 latencyIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 latencyLoaded: string
 
+A numeric string.
+
 [Link to this property](#)
 
 packetLoss: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -87010,9 +87036,13 @@ top_0: array of object { bandwidthDownload, bandwidthUpload, clientASN, 7 more }
 
 bandwidthDownload: string
 
+A numeric string.
+
 [Link to this property](#)
 
 bandwidthUpload: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -87026,17 +87056,25 @@ clientASName: string
 
 jitterIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 jitterLoaded: string
+
+A numeric string.
 
 [Link to this property](#)
 
 latencyIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 latencyLoaded: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -87408,9 +87446,13 @@ top_0: array of object { bandwidthDownload, bandwidthUpload, clientCountryAlpha2
 
 bandwidthDownload: string
 
+A numeric string.
+
 [Link to this property](#)
 
 bandwidthUpload: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -87424,17 +87466,25 @@ clientCountryName: string
 
 jitterIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 jitterLoaded: string
+
+A numeric string.
 
 [Link to this property](#)
 
 latencyIdle: string
 
+A numeric string.
+
 [Link to this property](#)
 
 latencyLoaded: string
+
+A numeric string.
 
 [Link to this property](#)
 
@@ -87874,7 +87924,7 @@ RankingTopResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 3 more }
 
 </summary>
 
@@ -88169,6 +88219,24 @@ One of the following:
 [Link to this property](#)
 
 "RATIO"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+top_0: object { date }
+
+</summary>
+
+date: string
+
+formatdate
 
 [Link to this property](#)
 
@@ -88808,7 +88876,7 @@ InternetServiceTopResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object { confidenceInfo, dateRange, lastUpdated, 3 more }
 
 </summary>
 
@@ -89114,6 +89182,28 @@ One of the following:
 
 <summary>
 
+top_0: object { date, serviceCategory }
+
+</summary>
+
+date: string
+
+formatdate
+
+[Link to this property](#)
+
+serviceCategory: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 units: array of object { name, value }
 
 Measurement units for the results.
@@ -89297,6 +89387,8 @@ origin: string
 [Link to this property](#)
 
 startDate: string
+
+formatdate-time
 
 [Link to this property](#)
 

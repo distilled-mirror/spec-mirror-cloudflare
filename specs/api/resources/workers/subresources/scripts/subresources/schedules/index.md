@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Schedules
 
-##### [Get Cron Triggers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
+##### [Get Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
-##### [Update Cron Triggers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
+##### [Update Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 

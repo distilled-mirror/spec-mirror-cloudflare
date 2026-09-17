@@ -1,5 +1,5 @@
 ---
-title: Delete Deployment
+title: Delete Worker Deployment
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Deployment
+# Delete Worker Deployment
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 
@@ -174,7 +174,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(model)%20deployment_delete_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### Delete Deployment
+### Delete Worker Deployment
 
 HTTP
 

@@ -476,11 +476,15 @@ validFrom: string
 
 The start date of the certificate’s validity period (ISO format).
 
+formatdate
+
 <a href="#">Link to this property</a>
 
 validTo: string
 
 The end date of the certificate’s validity period (ISO format).
+
+formatdate
 
 <a href="#">Link to this property</a>
 
@@ -536,8 +540,8 @@ curl https://api.cloudflare.com/client/v4/radar/ct/authorities/$CA_SLUG \
       "revocationStatus": "NOT_REVOKED",
       "sha256Fingerprint": "24EDD4E503A8D3FDB5FFB4AF66C887359901CBE687A5A0760D10A08EED99A7C3",
       "subjectKeyIdentifier": "VbqXmCURhMmiMtD7nFY6iCr4z",
-      "validFrom": "2019-12-09T00:00:00Z",
-      "validTo": "2032-06-08T00:00:00Z"
+      "validFrom": "2019-12-09",
+      "validTo": "2032-06-08"
     }
   },
   "success": true
@@ -575,8 +579,8 @@ curl https://api.cloudflare.com/client/v4/radar/ct/authorities/$CA_SLUG \
       "revocationStatus": "NOT_REVOKED",
       "sha256Fingerprint": "24EDD4E503A8D3FDB5FFB4AF66C887359901CBE687A5A0760D10A08EED99A7C3",
       "subjectKeyIdentifier": "VbqXmCURhMmiMtD7nFY6iCr4z",
-      "validFrom": "2019-12-09T00:00:00Z",
-      "validTo": "2032-06-08T00:00:00Z"
+      "validFrom": "2019-12-09",
+      "validTo": "2032-06-08"
     }
   },
   "success": true

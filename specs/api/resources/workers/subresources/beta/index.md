@@ -620,19 +620,19 @@ Whether the API call was successful.
 
 #### BetaWorkersVersions
 
-##### [List Versions](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
+##### [List Worker Versions](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
 
 GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
-##### [Get Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
+##### [Get Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
 
 GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 
-##### [Create Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
+##### [Create Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
 
 POST/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
-##### [Delete Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
+##### [Delete Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 

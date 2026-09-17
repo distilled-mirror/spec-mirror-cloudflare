@@ -279040,7 +279040,7 @@ formatdate-time
 
 <summary>
 
-asset: object { category, external_id, fields, 3 more }
+asset: object { category, external_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -279149,6 +279149,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+[Link to this property](#)
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -279446,7 +279454,7 @@ formatdate-time
 
 <summary>
 
-asset: object { category, external_id, fields, 3 more }
+asset: object { category, external_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -279555,6 +279563,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+[Link to this property](#)
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -279982,7 +279998,7 @@ formatdate-time
 
 <summary>
 
-asset: object { category, external_id, fields, 3 more }
+asset: object { category, external_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -280091,6 +280107,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+[Link to this property](#)
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -280388,7 +280412,7 @@ formatdate-time
 
 <summary>
 
-asset: object { category, external_id, fields, 3 more }
+asset: object { category, external_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -280497,6 +280521,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+[Link to this property](#)
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -288687,42 +288719,6 @@ IP version (`1` for IPv4, `2` for IPv6, `0` if unknown).
 GET/accounts/{account_id}/tunnels
 
 ##### Models
-
-<details>
-
-<summary>
-
-Connection object { colo_name, is_pending_reconnect, uuid }
-
-</summary>
-
-colo_name: optional string
-
-The Cloudflare data center used for this connection.
-
-[Link to this property](#)
-
-Deprecatedis_pending_reconnect: optional boolean
-
-This functionality has been removed. The is_pending_reconnect field will now always report false.
-
-Cloudflare continues to track connections for several minutes after they disconnect. This is an optimization to improve latency and reliability of reconnecting. If `true`, the connection has disconnected but is still being tracked. If `false`, the connection is actively serving traffic.
-
-[Link to this property](#)
-
-uuid: optional string
-
-UUID of the Cloudflare Tunnel connection.
-
-formatuuid
-
-maxLength36
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
 
 <details>
 

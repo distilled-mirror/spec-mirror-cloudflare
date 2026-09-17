@@ -18,15 +18,15 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Scripts
 
-##### [List Workers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/list)
+##### [List Worker Scripts](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/list)
 
 GET/accounts/{account\_id}/workers/scripts
 
-##### [Search Workers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/search)
+##### [Search Worker Scripts](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/search)
 
 GET/accounts/{account\_id}/workers/scripts-search
 
-##### [Download Worker](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/get)
+##### [Download Worker Script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}
 
@@ -4076,7 +4076,7 @@ ScriptDeleteResponse = unknown
 
 #### ScriptsAssetsUpload
 
-##### [Create Assets Upload Session](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
+##### [Create Worker Assets Upload Session](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/assets-upload-session
 
@@ -4108,15 +4108,15 @@ A JWT to use as authentication for uploading assets.
 
 #### ScriptsSubdomain
 
-##### [Get Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
+##### [Get Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-##### [Post Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
+##### [Update Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-##### [Delete Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
+##### [Delete Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
@@ -4196,11 +4196,11 @@ Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
 #### ScriptsSchedules
 
-##### [Get Cron Triggers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
+##### [Get Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
-##### [Update Cron Triggers](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
+##### [Update Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
@@ -4280,15 +4280,15 @@ modified\_on: optional string
 
 #### ScriptsTail
 
-##### [List Tails](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
+##### [List Worker Tails](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-##### [Start Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
+##### [Start Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-##### [Delete Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
+##### [Delete Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/tails/{id}
 
@@ -4486,39 +4486,39 @@ Whether the API call was successful.
 
 #### ScriptsContent
 
-##### [Get script content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/get)
+##### [Get Worker Script Content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/content/v2
 
-##### [Put script content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/update)
+##### [Replace Worker Script Content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/content
 
 #### ScriptsSettings
 
-##### [Get Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
+##### [Get Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-##### [Patch Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
+##### [Patch Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
 #### ScriptsDeployments
 
-##### [List Deployments](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
+##### [List Worker Deployments](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-##### [Create Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
+##### [Create Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-##### [Get Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
+##### [Get Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 
-##### [Delete Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
+##### [Delete Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
 
@@ -4824,7 +4824,7 @@ Whether the API call was successful.
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions
 
-##### [Get Version Detail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
+##### [Get Worker Script Version](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions/{version\_id}
 
@@ -6580,23 +6580,23 @@ Time in milliseconds spent on <a href="https://developers.cloudflare.com/workers
 
 #### ScriptsSecrets
 
-##### [List script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
+##### [List secrets bound to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-##### [Get secret binding](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
+##### [Get a secret binding](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-##### [Add script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
+##### [Add a secret to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-##### [Delete script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
+##### [Delete Worker script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-##### [Patch multiple script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
+##### [Patch multiple Worker script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/secrets-bulk
 
@@ -7280,11 +7280,11 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 #### ScriptsScript And Version Settings
 
-##### [Get Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
+##### [Get Worker Script and Version Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/settings
 
-##### [Patch Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
+##### [Patch Worker Script and Version Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/settings
 

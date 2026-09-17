@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions
 
-##### [Get Version Detail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
+##### [Get Worker Script Version](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions/{version\_id}
 

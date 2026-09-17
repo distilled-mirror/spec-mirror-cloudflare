@@ -1,5 +1,5 @@
 ---
-title: Put Script Tags
+title: Replace Workers for Platforms Script Tags
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put Script Tags
+# Replace Workers for Platforms Script Tags
 
 PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/tags
 
-Put script tags for a script uploaded to a Workers for Platforms namespace.
+Replace tags for a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -190,7 +190,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put Script Tags
+### Replace Workers for Platforms Script Tags
 
 HTTP
 

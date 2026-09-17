@@ -124,7 +124,7 @@ result: object {meta, top\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 3 more }
 
 </summary>
 
@@ -430,6 +430,28 @@ One of the following:
 
 <summary>
 
+top\_0: object {date, serviceCategory }
+
+</summary>
+
+date: string
+
+formatdate
+
+<a href="#">Link to this property</a>
+
+serviceCategory: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 units: array of object {name, value }
 
 Measurement units for the results.
@@ -522,6 +544,10 @@ curl https://api.cloudflare.com/client/v4/radar/ranking/internet_services/top \
       ],
       "lastUpdated": "2019-12-27T18:11:19.117Z",
       "normalization": "PERCENTAGE",
+      "top_0": {
+        "date": "2019-12-27",
+        "serviceCategory": "Overall"
+      },
       "units": [
         {
           "name": "*",
@@ -573,6 +599,10 @@ curl https://api.cloudflare.com/client/v4/radar/ranking/internet_services/top \
       ],
       "lastUpdated": "2019-12-27T18:11:19.117Z",
       "normalization": "PERCENTAGE",
+      "top_0": {
+        "date": "2019-12-27",
+        "serviceCategory": "Overall"
+      },
       "units": [
         {
           "name": "*",

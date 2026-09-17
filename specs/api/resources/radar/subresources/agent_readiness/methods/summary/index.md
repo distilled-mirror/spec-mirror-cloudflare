@@ -134,6 +134,8 @@ date: string
 
 Date of the returned scan (YYYY-MM-DD). May differ from the requested date if no scan exists for that exact date.
 
+formatdate
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -285,7 +287,7 @@ curl https://api.cloudflare.com/client/v4/radar/agent_readiness/summary/$DIMENSI
 {
   "result": {
     "meta": {
-      "date": "2026-03-24T00:00:00Z",
+      "date": "2026-03-24",
       "domainCategories": [
         {
           "name": "News & Media",
@@ -320,7 +322,7 @@ curl https://api.cloudflare.com/client/v4/radar/agent_readiness/summary/$DIMENSI
 {
   "result": {
     "meta": {
-      "date": "2026-03-24T00:00:00Z",
+      "date": "2026-03-24",
       "domainCategories": [
         {
           "name": "News & Media",

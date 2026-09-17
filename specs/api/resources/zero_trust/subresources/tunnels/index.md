@@ -28,42 +28,6 @@ GET/accounts/{account\_id}/tunnels
 
 <summary>
 
-Connection object {colo\_name, is\_pending\_reconnect, uuid }
-
-</summary>
-
-colo\_name: optional string
-
-The Cloudflare data center used for this connection.
-
-<a href="#">Link to this property</a>
-
-Deprecatedis\_pending\_reconnect: optional boolean
-
-This functionality has been removed. The is\_pending\_reconnect field will now always report false.
-
-Cloudflare continues to track connections for several minutes after they disconnect. This is an optimization to improve latency and reliability of reconnecting. If <code>true</code>, the connection has disconnected but is still being tracked. If <code>false</code>, the connection is actively serving traffic.
-
-<a href="#">Link to this property</a>
-
-uuid: optional string
-
-UUID of the Cloudflare Tunnel connection.
-
-formatuuid
-
-maxLength36
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20zero_trust.tunnels%20%3E%20(model)%20connection%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 TunnelListResponse = <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20cloudflare_tunnel%20%3E%20(schema)">CloudflareTunnel</a> { id, account\_tag, config\_src, 10 more } or object {id, account\_tag, connections, 8 more }
 
 A Cloudflare Tunnel that connects your origin to Cloudflare’s edge.

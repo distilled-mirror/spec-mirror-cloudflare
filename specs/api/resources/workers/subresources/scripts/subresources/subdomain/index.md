@@ -20,15 +20,15 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Subdomain
 
-##### [Get Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
+##### [Get Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-##### [Post Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
+##### [Update Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-##### [Delete Worker subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
+##### [Delete Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 

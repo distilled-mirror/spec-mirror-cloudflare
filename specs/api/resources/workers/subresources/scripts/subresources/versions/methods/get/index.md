@@ -1,5 +1,5 @@
 ---
-title: Get Version Detail
+title: Get Worker Script Version
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Version Detail
+# Get Worker Script Version
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions/{version\_id}
 
-Retrieves detailed information about a specific version of a Workers script.
+Retrieves detailed information about a specific version of a Worker script.
 
 ##### Security
 
@@ -734,7 +734,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.versions%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Version Detail
+### Get Worker Script Version
 
 HTTP
 

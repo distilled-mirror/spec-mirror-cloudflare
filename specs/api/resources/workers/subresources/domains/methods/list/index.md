@@ -1,5 +1,5 @@
 ---
-title: List Domains
+title: List Worker Domains
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Domains
+# List Worker Domains
 
 GET/accounts/{account\_id}/workers/domains
 
-Lists all domains for an account.
+Lists all Worker domains for an account.
 
 ##### Security
 
@@ -290,7 +290,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20workers.domains%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Domains
+### List Worker Domains
 
 HTTP
 

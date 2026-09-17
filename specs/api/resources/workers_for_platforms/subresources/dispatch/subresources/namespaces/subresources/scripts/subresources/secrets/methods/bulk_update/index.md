@@ -1,5 +1,5 @@
 ---
-title: Patch multiple script secrets
+title: Patch multiple Workers for Platforms script secrets
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Patch multiple script secrets
+# Patch multiple Workers for Platforms script secrets
 
 PATCH/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/secrets-bulk
 
-Create, update, or delete multiple secrets on a script in a single operation using JSON Merge Patch (RFC 7396). This operation creates a single version with all changes included. Prefer this API instead of changing many secrets individually.
+Create, update, or delete multiple secrets on a Workers for Platforms script in a single operation using JSON Merge Patch (RFC 7396). This operation creates a single version with all changes included. Prefer this API instead of changing many secrets individually.
 
 Usage:
 
@@ -528,7 +528,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.secrets%20%3E%20(method)%20bulk_update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Patch multiple script secrets
+### Patch multiple Workers for Platforms script secrets
 
 HTTP
 

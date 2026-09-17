@@ -410,11 +410,15 @@ validFrom: string
 
 The start date of the certificate’s validity period (ISO format).
 
+formatdate
+
 <a href="#">Link to this property</a>
 
 validTo: string
 
 The end date of the certificate’s validity period (ISO format).
+
+formatdate
 
 <a href="#">Link to this property</a>
 

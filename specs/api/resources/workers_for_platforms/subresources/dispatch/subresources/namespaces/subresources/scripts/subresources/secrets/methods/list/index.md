@@ -1,5 +1,5 @@
 ---
-title: List Script Secrets
+title: List Workers for Platforms Script Secrets
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Script Secrets
+# List Workers for Platforms Script Secrets
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/secrets
 
-List secrets bound to a script uploaded to a Workers for Platforms namespace.
+List secrets bound to a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -344,7 +344,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.secrets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Script Secrets
+### List Workers for Platforms Script Secrets
 
 HTTP
 

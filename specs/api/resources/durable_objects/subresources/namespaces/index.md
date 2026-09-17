@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Namespaces
 
-##### [List Namespaces](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/methods/list)
+##### [List Durable Object Namespaces](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/methods/list)
 
 GET/accounts/{account\_id}/workers/durable\_objects/namespaces
 
@@ -58,7 +58,7 @@ use\_sqlite: optional boolean
 
 #### NamespacesObjects
 
-##### [List Objects](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/subresources/objects/methods/list)
+##### [List Objects in a Durable Object namespace](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/subresources/objects/methods/list)
 
 GET/accounts/{account\_id}/workers/durable\_objects/namespaces/{id}/objects
 

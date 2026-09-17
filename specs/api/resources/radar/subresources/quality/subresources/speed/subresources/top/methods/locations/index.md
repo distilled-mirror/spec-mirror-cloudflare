@@ -528,9 +528,13 @@ top\_0: array of object {bandwidthDownload, bandwidthUpload, clientCountryAlpha2
 
 bandwidthDownload: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 bandwidthUpload: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 
@@ -544,17 +548,25 @@ clientCountryName: string
 
 jitterIdle: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 jitterLoaded: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 
 latencyIdle: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 latencyLoaded: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 

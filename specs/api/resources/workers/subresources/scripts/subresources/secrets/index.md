@@ -20,23 +20,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Secrets
 
-##### [List script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
+##### [List secrets bound to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-##### [Get secret binding](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
+##### [Get a secret binding](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-##### [Add script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
+##### [Add a secret to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-##### [Delete script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
+##### [Delete Worker script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-##### [Patch multiple script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
+##### [Patch multiple Worker script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/secrets-bulk
 

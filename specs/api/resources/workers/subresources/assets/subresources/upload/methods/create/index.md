@@ -1,5 +1,5 @@
 ---
-title: Upload Assets
+title: Upload Worker Assets
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Upload Assets
+# Upload Worker Assets
 
 POST/accounts/{account\_id}/workers/assets/upload
 
-Upload assets ahead of creating a Worker version. To learn more about the direct uploads of assets, see https://developers.cloudflare.com/workers/static-assets/direct-upload/.
+Upload Worker assets ahead of creating a Worker version. To learn more about the direct uploads of assets, see https://developers.cloudflare.com/workers/static-assets/direct-upload/.
 
 ##### Security
 
@@ -162,7 +162,7 @@ A “completion” JWT which can be redeemed when creating a Worker version.
 
 [Link to this property](#)%20workers.assets.upload%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Upload Assets
+### Upload Worker Assets
 
 HTTP
 

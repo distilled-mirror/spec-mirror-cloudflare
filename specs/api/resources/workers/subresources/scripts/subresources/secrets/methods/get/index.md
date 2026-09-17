@@ -1,5 +1,5 @@
 ---
-title: Get secret binding
+title: Get a secret binding
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get secret binding
+# Get a secret binding
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-Get a given secret binding (value omitted) on a script.
+Get a given secret binding (value omitted) on a Worker script.
 
 ##### Security
 
@@ -346,7 +346,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 [Link to this property](#)%20workers.scripts.secrets%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get secret binding
+### Get a secret binding
 
 HTTP
 

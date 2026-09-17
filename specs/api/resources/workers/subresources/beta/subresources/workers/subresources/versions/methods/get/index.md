@@ -1,5 +1,5 @@
 ---
-title: Get Version
+title: Get Worker Version
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Version
+# Get Worker Version
 
 GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 
-Get details about a specific version.
+Get details about a specific Worker version.
 
 ##### Security
 
@@ -3222,7 +3222,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Version
+### Get Worker Version
 
 HTTP
 

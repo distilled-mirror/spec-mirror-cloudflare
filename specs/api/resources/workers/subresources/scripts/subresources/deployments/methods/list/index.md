@@ -1,5 +1,5 @@
 ---
-title: List Deployments
+title: List Worker Deployments
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Deployments
+# List Worker Deployments
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-List of Worker Deployments. The first deployment in the list is the latest deployment actively serving traffic.
+List Worker deployments. The first deployment in the list is the latest deployment actively serving traffic.
 
 ##### Security
 
@@ -270,7 +270,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Deployments
+### List Worker Deployments
 
 HTTP
 

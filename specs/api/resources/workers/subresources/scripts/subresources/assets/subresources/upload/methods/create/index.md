@@ -1,5 +1,5 @@
 ---
-title: Create Assets Upload Session
+title: Create Worker Assets Upload Session
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Assets Upload Session
+# Create Worker Assets Upload Session
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/assets-upload-session
 
@@ -222,7 +222,7 @@ A JWT to use as authentication for uploading assets.
 
 [Link to this property](#)%20workers.scripts.assets.upload%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create Assets Upload Session
+### Create Worker Assets Upload Session
 
 HTTP
 

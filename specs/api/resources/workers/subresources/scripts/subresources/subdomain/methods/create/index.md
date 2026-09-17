@@ -1,5 +1,5 @@
 ---
-title: Post Worker subdomain
+title: Update Worker Script Subdomain
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Post Worker subdomain
+# Update Worker Script Subdomain
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-Enable or disable the Worker on the workers.dev subdomain.
+Enable or disable a Worker script on the workers.dev subdomain.
 
 ##### Security
 
@@ -206,7 +206,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.subdomain%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Post Worker subdomain
+### Update Worker Script Subdomain
 
 HTTP
 

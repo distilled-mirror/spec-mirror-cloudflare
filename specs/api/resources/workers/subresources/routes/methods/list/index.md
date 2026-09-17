@@ -1,5 +1,5 @@
 ---
-title: List Routes
+title: List Worker Routes
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Routes
+# List Worker Routes
 
 GET/zones/{zone\_id}/workers/routes
 
-Returns routes for a zone.
+Returns Worker routes for a zone.
 
 ##### Security
 
@@ -192,7 +192,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.routes%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Routes
+### List Worker Routes
 
 HTTP
 

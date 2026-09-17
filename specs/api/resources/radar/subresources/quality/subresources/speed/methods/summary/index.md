@@ -470,29 +470,43 @@ summary\_0: object {bandwidthDownload, bandwidthUpload, jitterIdle, 4 more }
 
 bandwidthDownload: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 bandwidthUpload: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 
 jitterIdle: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 jitterLoaded: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 
 latencyIdle: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 latencyLoaded: string
 
+A numeric string.
+
 <a href="#">Link to this property</a>
 
 packetLoss: string
+
+A numeric string.
 
 <a href="#">Link to this property</a>
 

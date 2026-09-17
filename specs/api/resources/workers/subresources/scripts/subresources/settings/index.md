@@ -20,10 +20,10 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Settings
 
-##### [Get Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
+##### [Get Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-##### [Patch Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
+##### [Patch Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings

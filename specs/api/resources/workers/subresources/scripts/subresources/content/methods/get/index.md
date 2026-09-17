@@ -1,5 +1,5 @@
 ---
-title: Get script content
+title: Get Worker Script Content
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get script content
+# Get Worker Script Content
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/content/v2
 
-Fetch script content only.
+Fetch Worker script content only.
 
 ##### Security
 
@@ -76,7 +76,7 @@ Name of the script, used in URLs and route configuration.
 
 [Link to this property](#)%20workers.scripts.content%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
-### Get script content
+### Get Worker Script Content
 
 HTTP
 

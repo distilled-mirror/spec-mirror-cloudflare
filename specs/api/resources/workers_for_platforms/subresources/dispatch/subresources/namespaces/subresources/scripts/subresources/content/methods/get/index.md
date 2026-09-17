@@ -1,5 +1,5 @@
 ---
-title: Get Script Content
+title: Get Workers for Platforms Script Content
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Script Content
+# Get Workers for Platforms Script Content
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/content
 
-Fetch script content from a script uploaded to a Workers for Platforms namespace.
+Fetch content from a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -86,7 +86,7 @@ Name of the script, used in URLs and route configuration.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.content%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
-### Get Script Content
+### Get Workers for Platforms Script Content
 
 HTTP
 

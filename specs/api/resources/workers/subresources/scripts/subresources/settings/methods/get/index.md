@@ -1,5 +1,5 @@
 ---
-title: Get Script Settings
+title: Get Worker Script Settings
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Script Settings
+# Get Worker Script Settings
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-Get script-level settings when using [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions). Includes Logpush and Tail Consumers.
+Get Worker script-level settings when using [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions). Includes Logpush and Tail Consumers.
 
 ##### Security
 
@@ -382,7 +382,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.settings%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Script Settings
+### Get Worker Script Settings
 
 HTTP
 

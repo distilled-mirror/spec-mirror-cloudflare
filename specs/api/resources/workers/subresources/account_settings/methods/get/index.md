@@ -1,5 +1,5 @@
 ---
-title: Fetch Worker Account Settings
+title: Fetch Workers Account Settings
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Fetch Worker Account Settings
+# Fetch Workers Account Settings
 
 GET/accounts/{account\_id}/workers/account-settings
 
-Fetches Worker account settings for an account.
+Fetches Workers account settings for an account.
 
 ##### Security
 
@@ -180,7 +180,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.account_settings%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Fetch Worker Account Settings
+### Fetch Workers Account Settings
 
 HTTP
 

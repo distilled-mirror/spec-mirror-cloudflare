@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Account Settings
 
-##### [Fetch Worker Account Settings](https://developers.cloudflare.com/api/resources/workers/subresources/account_settings/methods/get)
+##### [Fetch Workers Account Settings](https://developers.cloudflare.com/api/resources/workers/subresources/account_settings/methods/get)
 
 GET/accounts/{account\_id}/workers/account-settings
 
-##### [Create Worker Account Settings](https://developers.cloudflare.com/api/resources/workers/subresources/account_settings/methods/update)
+##### [Configure Workers Account Settings](https://developers.cloudflare.com/api/resources/workers/subresources/account_settings/methods/update)
 
 PUT/accounts/{account\_id}/workers/account-settings
 

@@ -444,7 +444,7 @@ InternetServiceTopResponse object {meta, top\_0 }
 
 <summary>
 
-meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 3 more }
 
 </summary>
 
@@ -739,6 +739,28 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "RATIO"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+top\_0: object {date, serviceCategory }
+
+</summary>
+
+date: string
+
+formatdate
+
+<a href="#">Link to this property</a>
+
+serviceCategory: string
 
 <a href="#">Link to this property</a>
 

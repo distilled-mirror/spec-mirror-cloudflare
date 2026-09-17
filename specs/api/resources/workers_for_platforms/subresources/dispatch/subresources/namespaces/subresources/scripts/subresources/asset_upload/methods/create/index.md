@@ -1,5 +1,5 @@
 ---
-title: Create Assets Upload Session
+title: Create Workers for Platforms Assets Upload Session
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Assets Upload Session
+# Create Workers for Platforms Assets Upload Session
 
 POST/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/assets-upload-session
 
-Start uploading a collection of assets for use in a Worker version. To learn more about the direct uploads of assets, see https://developers.cloudflare.com/workers/static-assets/direct-upload/.
+Start uploading a collection of assets for use in a Workers for Platforms script version. To learn more about the direct uploads of assets, see https://developers.cloudflare.com/workers/static-assets/direct-upload/.
 
 ##### Security
 
@@ -226,7 +226,7 @@ A JWT to use as authentication for uploading assets.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.asset_upload%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create Assets Upload Session
+### Create Workers for Platforms Assets Upload Session
 
 HTTP
 

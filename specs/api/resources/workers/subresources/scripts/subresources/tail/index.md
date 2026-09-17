@@ -20,15 +20,15 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Tail
 
-##### [List Tails](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
+##### [List Worker Tails](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-##### [Start Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
+##### [Start Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-##### [Delete Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
+##### [Delete Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/tails/{id}
 

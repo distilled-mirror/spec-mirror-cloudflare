@@ -1,5 +1,5 @@
 ---
-title: Upload Worker Module
+title: Upload Workers for Platforms Script Module
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Upload Worker Module
+# Upload Workers for Platforms Script Module
 
 PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}
 
-Upload a worker module to a Workers for Platforms namespace. You can find more about the multipart metadata on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/.
+Upload a Workers for Platforms script module to a dispatch namespace. You can find more about the multipart metadata on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/.
 
 ##### Security
 
@@ -4849,7 +4849,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Upload Worker Module
+### Upload Workers for Platforms Script Module
 
 HTTP
 

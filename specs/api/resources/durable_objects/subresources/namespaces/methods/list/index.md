@@ -1,5 +1,5 @@
 ---
-title: List Namespaces
+title: List Durable Object Namespaces
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Namespaces
+# List Durable Object Namespaces
 
 GET/accounts/{account\_id}/workers/durable\_objects/namespaces
 
@@ -254,7 +254,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20durable_objects.namespaces%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Namespaces
+### List Durable Object Namespaces
 
 HTTP
 

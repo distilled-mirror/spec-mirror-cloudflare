@@ -1,5 +1,5 @@
 ---
-title: Create Route
+title: Create Worker Route
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Route
+# Create Worker Route
 
 POST/zones/{zone\_id}/workers/routes
 
@@ -206,7 +206,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.routes%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Route
+### Create Worker Route
 
 HTTP
 

@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Objects
 
-##### [List Objects](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/subresources/objects/methods/list)
+##### [List Objects in a Durable Object namespace](https://developers.cloudflare.com/api/resources/durable_objects/subresources/namespaces/subresources/objects/methods/list)
 
 GET/accounts/{account\_id}/workers/durable\_objects/namespaces/{id}/objects
 

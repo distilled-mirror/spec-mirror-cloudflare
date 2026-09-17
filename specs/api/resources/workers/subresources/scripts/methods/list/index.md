@@ -1,5 +1,5 @@
 ---
-title: List Workers
+title: List Worker Scripts
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Workers
+# List Worker Scripts
 
 GET/accounts/{account\_id}/workers/scripts
 
-Fetch a list of uploaded workers.
+Fetch a list of uploaded Worker scripts.
 
 ##### Security
 
@@ -1436,7 +1436,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Workers
+### List Worker Scripts
 
 HTTP
 

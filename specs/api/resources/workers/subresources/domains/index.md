@@ -18,19 +18,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Domains
 
-##### [List Domains](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/list)
+##### [List Worker Domains](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/list)
 
 GET/accounts/{account\_id}/workers/domains
 
-##### [Get Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/get)
+##### [Get Worker Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/get)
 
 GET/accounts/{account\_id}/workers/domains/{domain\_id}
 
-##### [Attach Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/update)
+##### [Attach Worker Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/update)
 
 PUT/accounts/{account\_id}/workers/domains
 
-##### [Detach Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/delete)
+##### [Detach Worker Domain](https://developers.cloudflare.com/api/resources/workers/subresources/domains/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/domains/{domain\_id}
 

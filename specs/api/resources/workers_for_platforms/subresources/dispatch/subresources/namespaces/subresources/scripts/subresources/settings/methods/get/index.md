@@ -1,5 +1,5 @@
 ---
-title: Get Script Settings
+title: Get Workers for Platforms Script Settings
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Script Settings
+# Get Workers for Platforms Script Settings
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/settings
 
-Get script settings from a script uploaded to a Workers for Platforms namespace.
+Get settings for a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -3106,7 +3106,7 @@ One of the following:
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.settings%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get Script Settings
+### Get Workers for Platforms Script Settings
 
 HTTP
 

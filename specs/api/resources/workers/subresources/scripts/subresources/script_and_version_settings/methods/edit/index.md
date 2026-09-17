@@ -1,5 +1,5 @@
 ---
-title: Patch Settings
+title: Patch Worker Script and Version Settings
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Patch Settings
+# Patch Worker Script and Version Settings
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/settings
 
-Patch metadata or config, such as bindings or usage model.
+Patch Worker script metadata or config, such as bindings or usage model.
 
 ##### Security
 
@@ -6094,7 +6094,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.script_and_version_settings%20%3E%20(method)%20edit%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Patch Settings
+### Patch Worker Script and Version Settings
 
 HTTP
 

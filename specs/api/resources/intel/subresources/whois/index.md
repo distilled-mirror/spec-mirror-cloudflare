@@ -28,58 +28,6 @@ GET/accounts/{account\_id}/intel/whois
 
 <summary>
 
-Whois object {created\_date, domain, nameservers, 6 more }
-
-</summary>
-
-created\_date: optional string
-
-formatdate
-
-<a href="#">Link to this property</a>
-
-domain: optional string
-
-<a href="#">Link to this property</a>
-
-nameservers: optional array of string
-
-<a href="#">Link to this property</a>
-
-registrant: optional string
-
-<a href="#">Link to this property</a>
-
-registrant\_country: optional string
-
-<a href="#">Link to this property</a>
-
-registrant\_email: optional string
-
-<a href="#">Link to this property</a>
-
-registrant\_org: optional string
-
-<a href="#">Link to this property</a>
-
-registrar: optional string
-
-<a href="#">Link to this property</a>
-
-updated\_date: optional string
-
-formatdate
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20intel.whois%20%3E%20(model)%20whois%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 WhoisGetResponse object {dnssec, domain, extension, 84 more }
 
 </summary>

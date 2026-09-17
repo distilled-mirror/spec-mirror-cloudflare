@@ -1,5 +1,5 @@
 ---
-title: Update Cron Triggers
+title: Update Worker Script Schedules (Cron Triggers)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update Cron Triggers
+# Update Worker Script Schedules (Cron Triggers)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
-Updates Cron Triggers for a Worker.
+Update the schedules (Cron Triggers) for a Worker script.
 
 ##### Security
 
@@ -230,7 +230,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.schedules%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update Cron Triggers
+### Update Worker Script Schedules (Cron Triggers)
 
 HTTP
 

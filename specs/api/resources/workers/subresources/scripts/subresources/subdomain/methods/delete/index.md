@@ -1,5 +1,5 @@
 ---
-title: Delete Worker subdomain
+title: Delete Worker Script Subdomain
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Worker subdomain
+# Delete Worker Script Subdomain
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-Disable all workers.dev subdomains for a Worker.
+Disable all workers.dev subdomains for a Worker script.
 
 ##### Security
 
@@ -192,7 +192,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.subdomain%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete Worker subdomain
+### Delete Worker Script Subdomain
 
 HTTP
 

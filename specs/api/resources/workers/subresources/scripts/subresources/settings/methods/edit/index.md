@@ -1,5 +1,5 @@
 ---
-title: Patch Script Settings
+title: Patch Worker Script Settings
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Patch Script Settings
+# Patch Worker Script Settings
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-Patch script-level settings when using [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions). Including but not limited to Logpush and Tail Consumers.
+Patch Worker script-level settings when using [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions). Including but not limited to Logpush and Tail Consumers.
 
 ##### Security
 
@@ -586,7 +586,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.settings%20%3E%20(method)%20edit%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Patch Script Settings
+### Patch Worker Script Settings
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Create Subdomain
+title: Create a Workers Subdomain
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Subdomain
+# Create a Workers Subdomain
 
 PUT/accounts/{account\_id}/workers/subdomain
 
@@ -182,7 +182,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.subdomains%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Subdomain
+### Create a Workers Subdomain
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Create Worker Account Settings
+title: Configure Workers Account Settings
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Worker Account Settings
+# Configure Workers Account Settings
 
 PUT/accounts/{account\_id}/workers/account-settings
 
-Creates Worker account settings for an account.
+Configure Workers account settings for an account.
 
 ##### Security
 
@@ -190,7 +190,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.account_settings%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Worker Account Settings
+### Configure Workers Account Settings
 
 HTTP
 

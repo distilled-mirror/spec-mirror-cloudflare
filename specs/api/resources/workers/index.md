@@ -794,19 +794,19 @@ Whether the API call was successful.
 
 [Link to this property](#)
 
-##### [List Versions](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
+##### [List Worker Versions](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
 
 GET/accounts/{account_id}/workers/workers/{worker_id}/versions
 
-##### [Get Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
+##### [Get Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
 
 GET/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
 
-##### [Create Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
+##### [Create Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
 
 POST/accounts/{account_id}/workers/workers/{worker_id}/versions
 
-##### [Delete Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
+##### [Delete Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
 
 DELETE/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
 
@@ -3952,23 +3952,23 @@ Whether the API call was successful.
 
 [Link to this property](#)
 
-##### [List Routes](/api/resources/workers/subresources/routes/methods/list)
+##### [List Worker Routes](/api/resources/workers/subresources/routes/methods/list)
 
 GET/zones/{zone_id}/workers/routes
 
-##### [Get Route](/api/resources/workers/subresources/routes/methods/get)
+##### [Get Worker Route](/api/resources/workers/subresources/routes/methods/get)
 
 GET/zones/{zone_id}/workers/routes/{route_id}
 
-##### [Create Route](/api/resources/workers/subresources/routes/methods/create)
+##### [Create Worker Route](/api/resources/workers/subresources/routes/methods/create)
 
 POST/zones/{zone_id}/workers/routes
 
-##### [Update Route](/api/resources/workers/subresources/routes/methods/update)
+##### [Replace Worker Route](/api/resources/workers/subresources/routes/methods/update)
 
 PUT/zones/{zone_id}/workers/routes/{route_id}
 
-##### [Delete Route](/api/resources/workers/subresources/routes/methods/delete)
+##### [Delete Worker Route](/api/resources/workers/subresources/routes/methods/delete)
 
 DELETE/zones/{zone_id}/workers/routes/{route_id}
 
@@ -4122,7 +4122,7 @@ maxLength32
 
 [Link to this property](#)
 
-##### [Upload Assets](/api/resources/workers/subresources/assets/subresources/upload/methods/create)
+##### [Upload Worker Assets](/api/resources/workers/subresources/assets/subresources/upload/methods/create)
 
 POST/accounts/{account_id}/workers/assets/upload
 
@@ -4146,15 +4146,15 @@ A “completion” JWT which can be redeemed when creating a Worker version.
 
 [Link to this property](#)
 
-##### [List Workers](/api/resources/workers/subresources/scripts/methods/list)
+##### [List Worker Scripts](/api/resources/workers/subresources/scripts/methods/list)
 
 GET/accounts/{account_id}/workers/scripts
 
-##### [Search Workers](/api/resources/workers/subresources/scripts/methods/search)
+##### [Search Worker Scripts](/api/resources/workers/subresources/scripts/methods/search)
 
 GET/accounts/{account_id}/workers/scripts-search
 
-##### [Download Worker](/api/resources/workers/subresources/scripts/methods/get)
+##### [Download Worker Script](/api/resources/workers/subresources/scripts/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}
 
@@ -8200,7 +8200,7 @@ ScriptDeleteResponse = unknown
 
 [Link to this property](#)
 
-##### [Create Assets Upload Session](/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
+##### [Create Worker Assets Upload Session](/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
 
 POST/accounts/{account_id}/workers/scripts/{script_name}/assets-upload-session
 
@@ -8230,15 +8230,15 @@ A JWT to use as authentication for uploading assets.
 
 [Link to this property](#)
 
-##### [Get Worker subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
+##### [Get Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/subdomain
 
-##### [Post Worker subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
+##### [Update Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
 
 POST/accounts/{account_id}/workers/scripts/{script_name}/subdomain
 
-##### [Delete Worker subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
+##### [Delete Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
 
 DELETE/accounts/{account_id}/workers/scripts/{script_name}/subdomain
 
@@ -8316,11 +8316,11 @@ Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
 [Link to this property](#)
 
-##### [Get Cron Triggers](/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
+##### [Get Worker Script Schedules (Cron Triggers)](/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/schedules
 
-##### [Update Cron Triggers](/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
+##### [Update Worker Script Schedules (Cron Triggers)](/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
 
 PUT/accounts/{account_id}/workers/scripts/{script_name}/schedules
 
@@ -8398,15 +8398,15 @@ modified_on: optional string
 
 [Link to this property](#)
 
-##### [List Tails](/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
+##### [List Worker Tails](/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/tails
 
-##### [Start Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
+##### [Start Worker Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
 
 POST/accounts/{account_id}/workers/scripts/{script_name}/tails
 
-##### [Delete Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
+##### [Delete Worker Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
 
 DELETE/accounts/{account_id}/workers/scripts/{script_name}/tails/{id}
 
@@ -8602,35 +8602,35 @@ Whether the API call was successful.
 
 [Link to this property](#)
 
-##### [Get script content](/api/resources/workers/subresources/scripts/subresources/content/methods/get)
+##### [Get Worker Script Content](/api/resources/workers/subresources/scripts/subresources/content/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/content/v2
 
-##### [Put script content](/api/resources/workers/subresources/scripts/subresources/content/methods/update)
+##### [Replace Worker Script Content](/api/resources/workers/subresources/scripts/subresources/content/methods/update)
 
 PUT/accounts/{account_id}/workers/scripts/{script_name}/content
 
-##### [Get Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
+##### [Get Worker Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/script-settings
 
-##### [Patch Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
+##### [Patch Worker Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
 
 PATCH/accounts/{account_id}/workers/scripts/{script_name}/script-settings
 
-##### [List Deployments](/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
+##### [List Worker Deployments](/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/deployments
 
-##### [Create Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
+##### [Create Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
 
 POST/accounts/{account_id}/workers/scripts/{script_name}/deployments
 
-##### [Get Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
+##### [Get Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployment_id}
 
-##### [Delete Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
+##### [Delete Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
 
 DELETE/accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployment_id}
 
@@ -8934,7 +8934,7 @@ Whether the API call was successful.
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/versions
 
-##### [Get Version Detail](/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
+##### [Get Worker Script Version](/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/versions/{version_id}
 
@@ -10688,23 +10688,23 @@ Time in milliseconds spent on [Worker startup](https://developers.cloudflare.com
 
 [Link to this property](#)
 
-##### [List script secrets](/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
+##### [List secrets bound to a Worker script](/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/secrets
 
-##### [Get secret binding](/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
+##### [Get a secret binding](/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/secrets/{secret_name}
 
-##### [Add script secret](/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
+##### [Add a secret to a Worker script](/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
 
 PUT/accounts/{account_id}/workers/scripts/{script_name}/secrets
 
-##### [Delete script secret](/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
+##### [Delete Worker script secret](/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
 
 DELETE/accounts/{account_id}/workers/scripts/{script_name}/secrets/{secret_name}
 
-##### [Patch multiple script secrets](/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
+##### [Patch multiple Worker script secrets](/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
 
 PATCH/accounts/{account_id}/workers/scripts/{script_name}/secrets-bulk
 
@@ -11386,11 +11386,11 @@ Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/Subt
 
 [Link to this property](#)
 
-##### [Get Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
+##### [Get Worker Script and Version Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/settings
 
-##### [Patch Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
+##### [Patch Worker Script and Version Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
 
 PATCH/accounts/{account_id}/workers/scripts/{script_name}/settings
 
@@ -17320,11 +17320,11 @@ One of the following:
 
 [Link to this property](#)
 
-##### [Fetch Worker Account Settings](/api/resources/workers/subresources/account_settings/methods/get)
+##### [Fetch Workers Account Settings](/api/resources/workers/subresources/account_settings/methods/get)
 
 GET/accounts/{account_id}/workers/account-settings
 
-##### [Create Worker Account Settings](/api/resources/workers/subresources/account_settings/methods/update)
+##### [Configure Workers Account Settings](/api/resources/workers/subresources/account_settings/methods/update)
 
 PUT/accounts/{account_id}/workers/account-settings
 
@@ -17370,19 +17370,19 @@ green_compute: optional boolean
 
 [Link to this property](#)
 
-##### [List Domains](/api/resources/workers/subresources/domains/methods/list)
+##### [List Worker Domains](/api/resources/workers/subresources/domains/methods/list)
 
 GET/accounts/{account_id}/workers/domains
 
-##### [Get Domain](/api/resources/workers/subresources/domains/methods/get)
+##### [Get Worker Domain](/api/resources/workers/subresources/domains/methods/get)
 
 GET/accounts/{account_id}/workers/domains/{domain_id}
 
-##### [Attach Domain](/api/resources/workers/subresources/domains/methods/update)
+##### [Attach Worker Domain](/api/resources/workers/subresources/domains/methods/update)
 
 PUT/accounts/{account_id}/workers/domains
 
-##### [Detach Domain](/api/resources/workers/subresources/domains/methods/delete)
+##### [Detach Worker Domain](/api/resources/workers/subresources/domains/methods/delete)
 
 DELETE/accounts/{account_id}/workers/domains/{domain_id}
 
@@ -17658,15 +17658,15 @@ Whether the API call was successful.
 
 [Link to this property](#)
 
-##### [Get Subdomain](/api/resources/workers/subresources/subdomains/methods/get)
+##### [Get a Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/get)
 
 GET/accounts/{account_id}/workers/subdomain
 
-##### [Create Subdomain](/api/resources/workers/subresources/subdomains/methods/update)
+##### [Create a Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/update)
 
 PUT/accounts/{account_id}/workers/subdomain
 
-##### [Delete Subdomain](/api/resources/workers/subresources/subdomains/methods/delete)
+##### [Delete Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/delete)
 
 DELETE/accounts/{account_id}/workers/subdomain
 

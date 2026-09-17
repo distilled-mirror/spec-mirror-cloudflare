@@ -1,5 +1,5 @@
 ---
-title: Get Subdomain
+title: Get a Workers Subdomain
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Subdomain
+# Get a Workers Subdomain
 
 GET/accounts/{account\_id}/workers/subdomain
 
@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.subdomains%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Subdomain
+### Get a Workers Subdomain
 
 HTTP
 

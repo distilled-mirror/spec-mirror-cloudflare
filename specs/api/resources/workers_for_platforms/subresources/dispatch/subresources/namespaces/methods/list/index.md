@@ -1,5 +1,5 @@
 ---
-title: List dispatch namespaces
+title: List Workers for Platforms Dispatch Namespaces
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List dispatch namespaces
+# List Workers for Platforms Dispatch Namespaces
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces
 
-Fetch a list of Workers for Platforms namespaces.
+Fetch a list of Workers for Platforms dispatch namespaces.
 
 ##### Security
 
@@ -232,7 +232,7 @@ Whether the Workers in the namespace are executed in a “trusted” manner. Whe
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### List dispatch namespaces
+### List Workers for Platforms Dispatch Namespaces
 
 HTTP
 

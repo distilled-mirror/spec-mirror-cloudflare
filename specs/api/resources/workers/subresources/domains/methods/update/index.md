@@ -1,5 +1,5 @@
 ---
-title: Attach Domain
+title: Attach Worker Domain
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Attach Domain
+# Attach Worker Domain
 
 PUT/accounts/{account\_id}/workers/domains
 
@@ -242,7 +242,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.domains%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Attach Domain
+### Attach Worker Domain
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Get Script Tags
+title: List Workers for Platforms Script Tags
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Script Tags
+# List Workers for Platforms Script Tags
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/tags
 
-Fetch tags from a script uploaded to a Workers for Platforms namespace.
+Fetch tags from a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -182,7 +182,7 @@ result: optional array of string
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get Script Tags
+### List Workers for Platforms Script Tags
 
 HTTP
 

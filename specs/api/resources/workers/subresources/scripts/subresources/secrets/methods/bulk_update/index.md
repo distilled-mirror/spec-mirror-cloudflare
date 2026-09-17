@@ -1,5 +1,5 @@
 ---
-title: Patch multiple script secrets
+title: Patch multiple Worker script secrets
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Patch multiple script secrets
+# Patch multiple Worker script secrets
 
 PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/secrets-bulk
 
-Create, update, or delete multiple secrets on a script in a single operation using JSON Merge Patch (RFC 7396). This operation creates a single version with all changes included. Prefer this API instead of changing many secrets individually.
+Create, update, or delete multiple secrets on a Worker script in a single operation using JSON Merge Patch (RFC 7396). This operation creates a single version with all changes included. Prefer this API instead of changing many secrets individually.
 
 Usage:
 
@@ -518,7 +518,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 [Link to this property](#)%20workers.scripts.secrets%20%3E%20(method)%20bulk_update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Patch multiple script secrets
+### Patch multiple Worker script secrets
 
 HTTP
 

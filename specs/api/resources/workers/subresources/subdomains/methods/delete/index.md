@@ -1,5 +1,5 @@
 ---
-title: Delete Subdomain
+title: Delete Workers Subdomain
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Subdomain
+# Delete Workers Subdomain
 
 DELETE/accounts/{account\_id}/workers/subdomain
 
@@ -68,7 +68,7 @@ maxLength32
 
 [Link to this property](#)%20workers.subdomains%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-### Delete Subdomain
+### Delete Workers Subdomain
 
 HTTP
 

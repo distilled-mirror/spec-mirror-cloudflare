@@ -1,5 +1,5 @@
 ---
-title: Delete Route
+title: Delete Worker Route
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Route
+# Delete Worker Route
 
 DELETE/zones/{zone\_id}/workers/routes/{route\_id}
 
-Deletes a route.
+Deletes a Worker route.
 
 ##### Security
 
@@ -188,7 +188,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.routes%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete Route
+### Delete Worker Route
 
 HTTP
 

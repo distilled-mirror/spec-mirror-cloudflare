@@ -1,5 +1,5 @@
 ---
-title: List Versions
+title: List Worker Versions
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Versions
+# List Worker Versions
 
 GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
@@ -3270,7 +3270,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Versions
+### List Worker Versions
 
 HTTP
 

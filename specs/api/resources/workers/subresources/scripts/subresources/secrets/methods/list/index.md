@@ -1,5 +1,5 @@
 ---
-title: List script secrets
+title: List secrets bound to a Worker script
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List script secrets
+# List secrets bound to a Worker script
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-List secrets bound to a script.
+List the names of secrets bound to a Worker script.
 
 ##### Security
 
@@ -334,7 +334,7 @@ Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCryp
 
 [Link to this property](#)%20workers.scripts.secrets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### List script secrets
+### List secrets bound to a Worker script
 
 HTTP
 

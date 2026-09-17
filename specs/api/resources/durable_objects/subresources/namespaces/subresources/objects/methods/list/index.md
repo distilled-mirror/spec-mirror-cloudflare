@@ -1,5 +1,5 @@
 ---
-title: List Objects
+title: List Objects in a Durable Object namespace
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Objects
+# List Objects in a Durable Object namespace
 
 GET/accounts/{account\_id}/workers/durable\_objects/namespaces/{id}/objects
 
-Returns the Durable Objects in a given namespace.
+Returns the Durable Objects in a given Durable Object namespace.
 
 ##### Security
 
@@ -258,7 +258,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20durable_objects.namespaces.objects%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Objects
+### List Objects in a Durable Object namespace
 
 HTTP
 

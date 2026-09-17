@@ -66,7 +66,7 @@ ip: string
 
 IP address.
 
-formatip
+formatipv4
 
 [Link to this property](#)%20radar.entities.asns%20%3E%20(method)%20ip%20%3E%20(params)%20default%20%3E%20(param)%20ip%20%3E%20(schema)>)
 

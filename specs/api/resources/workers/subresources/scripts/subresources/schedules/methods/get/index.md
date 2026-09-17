@@ -1,5 +1,5 @@
 ---
-title: Get Cron Triggers
+title: Get Worker Script Schedules (Cron Triggers)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Cron Triggers
+# Get Worker Script Schedules (Cron Triggers)
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
-Fetches Cron Triggers for a Worker.
+Get the schedules (Cron Triggers) for a Worker script.
 
 ##### Security
 
@@ -204,7 +204,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.schedules%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Cron Triggers
+### Get Worker Script Schedules (Cron Triggers)
 
 HTTP
 

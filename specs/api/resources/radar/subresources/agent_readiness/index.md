@@ -44,6 +44,8 @@ date: string
 
 Date of the returned scan (YYYY-MM-DD). May differ from the requested date if no scan exists for that exact date.
 
+formatdate
+
 <a href="#">Link to this property</a>
 
 <details>

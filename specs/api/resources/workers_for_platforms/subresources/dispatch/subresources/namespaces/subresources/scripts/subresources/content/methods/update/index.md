@@ -1,5 +1,5 @@
 ---
-title: Put Script Content
+title: Replace Workers for Platforms Script Content
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put Script Content
+# Replace Workers for Platforms Script Content
 
 PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/content
 
-Put script content for a script uploaded to a Workers for Platforms namespace.
+Replace content for a script uploaded to a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -1461,7 +1461,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.content%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put Script Content
+### Replace Workers for Platforms Script Content
 
 HTTP
 

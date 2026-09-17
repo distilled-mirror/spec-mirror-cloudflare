@@ -82,6 +82,30 @@ Opaque token indicating the starting position when requesting the next set of re
 
 [Link to this property](#)%20zero_trust.devices.devices%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+has\_registration\_type: optional "warp"or "browser\_extension"
+
+Filter by the type of active registration associated with the device.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.devices%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20has_registration_type%20%3E%20(schema)>)
+
 include: optional string
 
 Comma-separated list of additional information that should be included in the device response. Supported values are: “last\_seen\_registration.policy”.

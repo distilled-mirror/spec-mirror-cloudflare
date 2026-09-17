@@ -1,5 +1,5 @@
 ---
-title: Delete Version
+title: Delete Worker Version
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Version
+# Delete Worker Version
 
 DELETE/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 
-Delete a version.
+Delete a Worker version.
 
 ##### Security
 
@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(model)%20version_delete_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### Delete Version
+### Delete Worker Version
 
 HTTP
 

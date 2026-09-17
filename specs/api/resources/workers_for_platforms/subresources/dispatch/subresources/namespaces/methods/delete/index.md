@@ -1,5 +1,5 @@
 ---
-title: Delete dispatch namespace
+title: Delete Workers for Platforms Dispatch Namespace
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete dispatch namespace
+# Delete Workers for Platforms Dispatch Namespace
 
 DELETE/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
 
-Delete a Workers for Platforms namespace.
+Delete a Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -172,7 +172,7 @@ result: optional unknown
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete dispatch namespace
+### Delete Workers for Platforms Dispatch Namespace
 
 HTTP
 

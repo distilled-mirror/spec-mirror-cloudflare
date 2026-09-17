@@ -1,5 +1,5 @@
 ---
-title: Create dispatch namespace
+title: Create Workers for Platforms Dispatch Namespace
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create dispatch namespace
+# Create Workers for Platforms Dispatch Namespace
 
 POST/accounts/{account\_id}/workers/dispatch/namespaces
 
-Create a new Workers for Platforms namespace.
+Create a new Workers for Platforms dispatch namespace.
 
 ##### Security
 
@@ -240,7 +240,7 @@ Whether the Workers in the namespace are executed in a “trusted” manner. Whe
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create dispatch namespace
+### Create Workers for Platforms Dispatch Namespace
 
 HTTP
 

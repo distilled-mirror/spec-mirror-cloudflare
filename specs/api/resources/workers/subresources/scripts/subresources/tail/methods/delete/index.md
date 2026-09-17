@@ -1,5 +1,5 @@
 ---
-title: Delete Tail
+title: Delete Worker Tail
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete Tail
+# Delete Worker Tail
 
 DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/tails/{id}
 
@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.tail%20%3E%20(model)%20tail_delete_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### Delete Tail
+### Delete Worker Tail
 
 HTTP
 

@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 #### AssetsUpload
 
-##### [Upload Assets](https://developers.cloudflare.com/api/resources/workers/subresources/assets/subresources/upload/methods/create)
+##### [Upload Worker Assets](https://developers.cloudflare.com/api/resources/workers/subresources/assets/subresources/upload/methods/create)
 
 POST/accounts/{account\_id}/workers/assets/upload
 

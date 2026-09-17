@@ -128,6 +128,8 @@ origin: string
 
 startDate: string
 
+formatdate-time
+
 <a href="#">Link to this property</a>
 
 status: string

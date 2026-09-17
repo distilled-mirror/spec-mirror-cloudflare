@@ -400,7 +400,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 3 more }
+asset: object {category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -509,6 +509,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+<a href="#">Link to this property</a>
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -849,7 +857,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
         ],
         "name": "Public.svg",
         "id": "8a043daf-def4-403e-9d28-da2e93d9b824",
-        "link": "https://slack-files.com/TYJH37DCK-E0238GG6B8-92fd5y5674"
+        "link": "https://slack-files.com/TYJH37DCK-E0238GG6B8-92fd5y5674",
+        "updated": "2026-09-10T20:15:30.123456Z"
       },
       "dlp_contexts": [
         {
@@ -950,7 +959,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
         ],
         "name": "Public.svg",
         "id": "8a043daf-def4-403e-9d28-da2e93d9b824",
-        "link": "https://slack-files.com/TYJH37DCK-E0238GG6B8-92fd5y5674"
+        "link": "https://slack-files.com/TYJH37DCK-E0238GG6B8-92fd5y5674",
+        "updated": "2026-09-10T20:15:30.123456Z"
       },
       "dlp_contexts": [
         {

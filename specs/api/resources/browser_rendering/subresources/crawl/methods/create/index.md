@@ -120,7 +120,7 @@ maximum120000
 
 addScriptTag: optional array of object {id, content, type, url }
 
-Adds a <code>&lt;script&gt;</code> tag into the page with the desired URL or content.
+Adds a script element into the page with the desired URL or content.
 
 </summary>
 

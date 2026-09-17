@@ -1,5 +1,5 @@
 ---
-title: Patch Script Settings
+title: Patch Workers for Platforms Script Settings
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Patch Script Settings
+# Patch Workers for Platforms Script Settings
 
 PATCH/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/settings
 
-Patch script metadata, such as bindings.
+Patch metadata for a script uploaded to a Workers for Platforms dispatch namespace, such as bindings.
 
 ##### Security
 
@@ -6036,7 +6036,7 @@ One of the following:
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.settings%20%3E%20(method)%20edit%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Patch Script Settings
+### Patch Workers for Platforms Script Settings
 
 HTTP
 

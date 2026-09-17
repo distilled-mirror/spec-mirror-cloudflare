@@ -1,5 +1,5 @@
 ---
-title: Search Workers
+title: Search Worker Scripts
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Search Workers
+# Search Worker Scripts
 
 GET/accounts/{account\_id}/workers/scripts-search
 
-Search for Workers in an account.
+Search for Worker scripts in an account.
 
 ##### Security
 
@@ -322,7 +322,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20workers.scripts%20%3E%20(method)%20search%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Search Workers
+### Search Worker Scripts
 
 HTTP
 

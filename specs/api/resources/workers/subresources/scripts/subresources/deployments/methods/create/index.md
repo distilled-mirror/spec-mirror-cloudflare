@@ -1,5 +1,5 @@
 ---
-title: Create Deployment
+title: Create Worker Deployment
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Deployment
+# Create Worker Deployment
 
 POST/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-Deployments configure how [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions) are deployed to traffic. A deployment can consist of one or two versions of a Worker.
+Deployments configure how [Worker Versions](https://developers.cloudflare.com/api/operations/worker-versions-list-versions) are deployed to traffic. A deployment can consist of multiple versions of a Worker.
 
 ##### Security
 
@@ -324,7 +324,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Deployment
+### Create Worker Deployment
 
 HTTP
 

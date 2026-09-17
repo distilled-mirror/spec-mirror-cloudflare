@@ -3852,7 +3852,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 3 more }
+asset: object {category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -3961,6 +3961,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+<a href="#">Link to this property</a>
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -4258,7 +4266,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 3 more }
+asset: object {category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -4367,6 +4375,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+<a href="#">Link to this property</a>
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -4794,7 +4810,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 3 more }
+asset: object {category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -4903,6 +4919,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+<a href="#">Link to this property</a>
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -5200,7 +5224,7 @@ formatdate-time
 
 <summary>
 
-asset: object {category, external\_id, fields, 3 more }
+asset: object {category, external\_id, fields, 4 more }
 
 Asset information including metadata and categorization.
 
@@ -5309,6 +5333,14 @@ Direct link to the asset.
 formaturi
 
 maxLength2048
+
+<a href="#">Link to this property</a>
+
+updated: optional string
+
+Timestamp of the asset row version represented by this data.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

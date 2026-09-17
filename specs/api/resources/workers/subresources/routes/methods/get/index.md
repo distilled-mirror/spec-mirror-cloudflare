@@ -1,5 +1,5 @@
 ---
-title: Get Route
+title: Get Worker Route
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Route
+# Get Worker Route
 
 GET/zones/{zone\_id}/workers/routes/{route\_id}
 
-Returns information about a route, including URL pattern and Worker.
+Returns information about a Worker route, including URL pattern and Worker.
 
 ##### Security
 
@@ -200,7 +200,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.routes%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Route
+### Get Worker Route
 
 HTTP
 
