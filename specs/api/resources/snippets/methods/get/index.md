@@ -134,7 +134,7 @@ Identify the message code.
 
 result: object {created\_on, snippet\_name, modified\_on }
 
-Contain the response result.
+Define a snippet.
 
 </summary>
 

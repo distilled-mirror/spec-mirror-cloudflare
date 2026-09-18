@@ -272,7 +272,9 @@ D1 database name.
 
 <a href="#">Link to this property</a>
 
-num\_tables: optional number
+Deprecatednum\_tables: optional number
+
+The number of tables in the D1 database. This count is no longer accurate and should not be relied upon.
 
 <a href="#">Link to this property</a>
 

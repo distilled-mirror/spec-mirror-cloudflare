@@ -310332,6 +310332,8 @@ id: optional string
 
 Identify the API resource with a UUID.
 
+formatuuid
+
 maxLength36
 
 [Link to this property](#)

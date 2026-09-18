@@ -70,8 +70,6 @@ Name of the custom domain.
 
 "cf-r2-jurisdiction": optional "default"or "eu"or "us"or 2 more
 
-Jurisdiction where objects in this bucket are guaranteed to be stored.
-
 </summary>
 
 One of the following:
@@ -98,7 +96,7 @@ One of the following:
 
 </details>
 
-[Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20jurisdiction%20%3E%20(schema)>)
+[Link to this property](#)%20r2.buckets.domains.custom%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20cf-r2-jurisdiction%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
 

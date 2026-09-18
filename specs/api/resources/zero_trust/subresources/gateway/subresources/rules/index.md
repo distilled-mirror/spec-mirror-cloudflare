@@ -310,6 +310,8 @@ id: optional string
 
 Identify the API resource with a UUID.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>

@@ -4452,15 +4452,7 @@ data: array of object {rules, sitemaps, hash }
 
 <summary>
 
-rules: object {"\*" }
-
-</summary>
-
-<details>
-
-<summary>
-
-"\*": object {allow, disallow, contentSignal, crawlDelay }
+rules: map\[object {allow, disallow, contentSignal, crawlDelay } ]
 
 </summary>
 
@@ -4497,10 +4489,6 @@ search: optional string
 <a href="#">Link to this property</a>
 
 crawlDelay: optional number
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

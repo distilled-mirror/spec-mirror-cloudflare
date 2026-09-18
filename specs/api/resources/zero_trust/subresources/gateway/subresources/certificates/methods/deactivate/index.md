@@ -70,12 +70,6 @@ maxLength36
 
 [Link to this property](#)%20zero_trust.gateway.certificates%20%3E%20(method)%20deactivate%20%3E%20(params)%20default%20%3E%20(param)%20certificate_id%20%3E%20(schema)>)
 
-##### Body ParametersJSONExpand Collapse
-
-body: unknown
-
-[Link to this property](#)%20zero_trust.gateway.certificates%20%3E%20(method)%20deactivate%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
-
 ##### ReturnsExpand Collapse
 
 <details>
@@ -306,9 +300,8 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/certificates/$CERTIFICATE_ID/deactivate \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{}'
+    -X POST \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

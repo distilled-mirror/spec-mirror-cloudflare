@@ -88,7 +88,7 @@ One of the following:
 
 [Link to this property](#)%20zero_trust.gateway.rules%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
 
-filter: optional array of unknown
+filter: optional array of string
 
 Filter the returned rules by one or more `field:value` pairs. Repeat the parameter to combine filters with logical AND.
 
@@ -377,6 +377,8 @@ Specify the wirefilter expression used for traffic matching. The API automatical
 id: optional string
 
 Identify the API resource with a UUID.
+
+formatuuid
 
 maxLength36
 

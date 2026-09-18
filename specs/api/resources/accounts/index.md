@@ -24,7 +24,7 @@ GET/accounts
 
 GET/accounts/{account\_id}
 
-##### [Create an account](https://developers.cloudflare.com/api/resources/accounts/methods/create)
+##### [Create an Account](https://developers.cloudflare.com/api/resources/accounts/methods/create)
 
 POST/accounts
 

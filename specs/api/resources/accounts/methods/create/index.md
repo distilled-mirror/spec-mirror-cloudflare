@@ -1,5 +1,5 @@
 ---
-title: Create an account
+title: Create an Account
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create an account
+# Create an Account
 
 POST/accounts
 
-Create an account (only available for tenant admins at this time)
+Create an Account. To create the Account within an Organization, provide `unit.id` and omit `standalone`. To create a standalone Free Account, provide `standalone: true` and omit `unit`. Providing both fields is invalid. If you omit both fields, Cloudflare can determine the destination only when the User is an administrator of exactly one Organization. Cloudflare creates the Account in that Organization; otherwise, the request returns an error.
 
 ##### Security
 
@@ -34,6 +34,16 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 **Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
 
+##### H eader ParametersExpand Collapse
+
+"Idempotency-Key": optional string
+
+maxLength128
+
+minLength1
+
+[Link to this property](#)%20accounts%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20Idempotency-Key%20%3E%20(schema)>)
+
 ##### Body ParametersJSONExpand Collapse
 
 name: string
@@ -41,6 +51,12 @@ name: string
 Account name
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
+
+standalone: optional true
+
+Set to `true` and omit `unit` to create a standalone Free Account. If provided, this field must be `true`.
+
+[Link to this property](#)%20accounts%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20standalone%20%3E%20(schema)>)
 
 <details>
 
@@ -70,7 +86,7 @@ One of the following:
 
 unit: optional object {id }
 
-information related to the tenant unit, and optionally, an id of the unit to create the account on. see <a href="https://developers.cloudflare.com/tenant/how-to/manage-accounts/">https://developers.cloudflare.com/tenant/how-to/manage-accounts/</a>
+Information related to the tenant unit. Provide its ID and omit <code>standalone</code> to create the Account within an Organization. See <a href="https://developers.cloudflare.com/tenant/how-to/manage-accounts/">https://developers.cloudflare.com/tenant/how-to/manage-accounts/</a>.
 
 </summary>
 
@@ -290,7 +306,7 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create an account
+### Create an Account
 
 HTTP
 

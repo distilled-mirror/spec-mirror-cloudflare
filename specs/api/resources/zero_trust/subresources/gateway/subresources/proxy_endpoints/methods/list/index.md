@@ -91,7 +91,7 @@ One of the following:
 
 [Link to this property](#)%20zero_trust.gateway.proxy_endpoints%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
 
-filter: optional array of unknown
+filter: optional array of string
 
 Filter the returned proxy endpoints by one or more `field:value` pairs. Repeat the parameter to apply multiple filters; they are combined with logical AND (an endpoint must satisfy every filter to be returned).
 

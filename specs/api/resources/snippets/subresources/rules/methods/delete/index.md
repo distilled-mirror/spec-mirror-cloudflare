@@ -124,9 +124,57 @@ Identify the message code.
 
 [Link to this property](#)%20snippets.rules%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-result: unknown
+<details>
 
-Contain the response result.
+<summary>
+
+result: array of object {id, expression, last\_updated, 3 more }
+
+Lists snippet rules.
+
+</summary>
+
+id: string
+
+Specify the unique ID of the rule.
+
+<a href="#">Link to this property</a>
+
+expression: string
+
+Define the expression that determines which traffic matches the rule.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+last\_updated: string
+
+Specify the timestamp of when the rule was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+snippet\_name: string
+
+Identify the snippet.
+
+<a href="#">Link to this property</a>
+
+description: optional string
+
+Provide an informative description of the rule.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Indicate whether to execute the rule.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20snippets.rules%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
@@ -164,7 +212,16 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/snippets/snippet_rules 
       "code": 10000
     }
   ],
-  "result": {},
+  "result": [
+    {
+      "id": "3a03d665bac047339bb530ecb439a90d",
+      "expression": "ip.src eq 1.1.1.1",
+      "last_updated": "2000-01-01T00:00:00Z",
+      "snippet_name": "my_snippet",
+      "description": "Execute my_snippet when IP address is 1.1.1.1.",
+      "enabled": true
+    }
+  ],
   "success": true
 }
 ```
@@ -187,7 +244,16 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/snippets/snippet_rules 
       "code": 10000
     }
   ],
-  "result": {},
+  "result": [
+    {
+      "id": "3a03d665bac047339bb530ecb439a90d",
+      "expression": "ip.src eq 1.1.1.1",
+      "last_updated": "2000-01-01T00:00:00Z",
+      "snippet_name": "my_snippet",
+      "description": "Execute my_snippet when IP address is 1.1.1.1.",
+      "enabled": true
+    }
+  ],
   "success": true
 }
 ```

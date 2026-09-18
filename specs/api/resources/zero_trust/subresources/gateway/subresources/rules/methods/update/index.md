@@ -66,6 +66,8 @@ rule\_id: string
 
 Identify the API resource with a UUID.
 
+formatuuid
+
 maxLength36
 
 [Link to this property](#)%20zero_trust.gateway.rules%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20rule_id%20%3E%20(schema)>)
@@ -1403,6 +1405,8 @@ Specify the wirefilter expression used for traffic matching. The API automatical
 id: optional string
 
 Identify the API resource with a UUID.
+
+formatuuid
 
 maxLength36
 

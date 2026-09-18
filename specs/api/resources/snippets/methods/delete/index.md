@@ -130,8 +130,6 @@ Identify the message code.
 
 result: unknown
 
-Contain the response result.
-
 [Link to this property](#)%20snippets%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 success: true

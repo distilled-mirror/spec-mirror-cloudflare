@@ -166,7 +166,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/hyperdrive#(resource)%20hyperdrive%20%3E%20(model)%20hyperdrive%20%3E%20(schema)">Hyperdrive</a> { id, name, origin, 6 more }
+result: object {id, caching, name, 7 more }
 
 </summary>
 
@@ -178,9 +178,47 @@ maxLength32
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+caching: object {disabled, max\_age, stale\_while\_revalidate }
+
+</summary>
+
+disabled: boolean
+
+Defines whether caching is disabled.
+
+<a href="#">Link to this property</a>
+
+max\_age: optional number
+
+Defines the maximum duration (in seconds) items persist in the cache.
+
+maximum3600
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+stale\_while\_revalidate: optional number
+
+Defines the number of seconds the cache may serve a stale response.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 name: string
 
 The name of the Hyperdrive configuration. Used to identify the configuration in the Cloudflare dashboard and API.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 
@@ -189,6 +227,8 @@ The name of the Hyperdrive configuration. Used to identify the configuration in 
 <summary>
 
 origin: object {database, host, password, 3 more } or object {access\_client\_id, access\_client\_secret, database, 4 more } or object {database, password, scheme, 2 more }
+
+Combines database connection fields with exactly one supported network location.
 
 </summary>
 
@@ -206,11 +246,13 @@ database: string
 
 Set the name of your origin database.
 
+maxLength2048
+
 <a href="#">Link to this property</a>
 
 host: string
 
-Defines the host (hostname or IP) of your origin database.
+Defines the publicly reachable hostname or IP of your origin database. Private, loopback, and link-local IP addresses are not allowed.
 
 <a href="#">Link to this property</a>
 
@@ -218,11 +260,17 @@ password: string
 
 Set the password needed to access your origin database. The API never returns this write-only value.
 
+maxLength2048
+
 <a href="#">Link to this property</a>
 
 port: number
 
 Defines the port of your origin database. Defaults to 5432 for PostgreSQL or 3306 for MySQL if not specified.
+
+maximum65535
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -257,6 +305,8 @@ One of the following:
 user: string
 
 Set the user of your origin database.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 
@@ -288,6 +338,8 @@ database: string
 
 Set the name of your origin database.
 
+maxLength2048
+
 <a href="#">Link to this property</a>
 
 host: string
@@ -299,6 +351,8 @@ Defines the host (hostname or IP) of your origin database.
 password: string
 
 Set the password needed to access your origin database. The API never returns this write-only value.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 
@@ -334,6 +388,8 @@ user: string
 
 Set the user of your origin database.
 
+maxLength2048
+
 <a href="#">Link to this property</a>
 
 </details>
@@ -352,11 +408,15 @@ database: string
 
 Set the name of your origin database.
 
+maxLength2048
+
 <a href="#">Link to this property</a>
 
 password: string
 
 Set the password needed to access your origin database. The API never returns this write-only value.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 
@@ -398,67 +458,7 @@ user: string
 
 Set the user of your origin database.
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-caching: optional object {disabled } or object {disabled, max\_age, stale\_while\_revalidate }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-HyperdriveHyperdriveCachingCommon object {disabled }
-
-</summary>
-
-disabled: optional boolean
-
-Set to true to disable caching of SQL responses. Default is false.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-HyperdriveHyperdriveCachingEnabled object {disabled, max\_age, stale\_while\_revalidate }
-
-</summary>
-
-disabled: optional boolean
-
-Set to true to disable caching of SQL responses. Default is false.
-
-<a href="#">Link to this property</a>
-
-max\_age: optional number
-
-Specify the maximum duration (in seconds) items should persist in the cache. Defaults to 60 seconds if not specified.
-
-<a href="#">Link to this property</a>
-
-stale\_while\_revalidate: optional number
-
-Specify the number of seconds the cache may serve a stale response. Defaults to 15 seconds if not specified.
+maxLength2048
 
 <a href="#">Link to this property</a>
 
@@ -475,6 +475,92 @@ created\_on: optional string
 Defines the creation time of the Hyperdrive configuration.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+
+Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
+
+</summary>
+
+database\_branch\_name: string
+
+The name of the PlanetScale database branch.
+
+maxLength2048
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+database\_name: string
+
+The name of the PlanetScale database.
+
+maxLength2048
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+integration: "planetscale"
+
+The database integration used by this operation.
+
+<a href="#">Link to this property</a>
+
+organization\_name: string
+
+The name of the PlanetScale organization.
+
+maxLength2048
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scheme: "postgres"or "postgresql"or "mysql"
+
+Specifies the URL scheme used to connect to your origin database.
+
+</summary>
+
+One of the following:
+
+"postgres"
+
+<a href="#">Link to this property</a>
+
+"postgresql"
+
+<a href="#">Link to this property</a>
+
+"mysql"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+custom\_database\_name: optional string
+
+The database name to use when connecting. Defaults to <code>postgres</code> for PostgreSQL and <code>mysql</code> for MySQL.
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -510,7 +596,7 @@ Define mTLS certificate ID obtained after uploading client cert.
 
 sslmode: optional string
 
-Set SSL mode to ‘require’, ‘verify-ca’, or ‘verify-full’ to verify the CA.
+PostgreSQL accepts <code>require</code>, <code>verify-ca</code>, and <code>verify-full</code>. MySQL accepts <code>REQUIRED</code>, <code>VERIFY_CA</code>, and <code>VERIFY_IDENTITY</code>. The verify modes require a CA certificate; the require modes cannot be used with a CA certificate.
 
 <a href="#">Link to this property</a>
 
@@ -583,6 +669,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/hyperdrive/config
   ],
   "result": {
     "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "caching": {
+      "disabled": true,
+      "max_age": 1,
+      "stale_while_revalidate": 0
+    },
     "name": "example-hyperdrive",
     "origin": {
       "database": "postgres",
@@ -591,10 +682,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/hyperdrive/config
       "scheme": "postgres",
       "user": "postgres"
     },
-    "caching": {
-      "disabled": true
-    },
     "created_on": "2017-01-01T00:00:00Z",
+    "integration": {
+      "database_branch_name": "x",
+      "database_name": "x",
+      "integration": "planetscale",
+      "organization_name": "x",
+      "scheme": "postgres",
+      "custom_database_name": "custom_database_name"
+    },
     "modified_on": "2017-01-01T00:00:00Z",
     "mtls": {
       "ca_certificate_id": "00000000-0000-0000-0000-0000000000",
@@ -636,6 +732,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/hyperdrive/config
   ],
   "result": {
     "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "caching": {
+      "disabled": true,
+      "max_age": 1,
+      "stale_while_revalidate": 0
+    },
     "name": "example-hyperdrive",
     "origin": {
       "database": "postgres",
@@ -644,10 +745,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/hyperdrive/config
       "scheme": "postgres",
       "user": "postgres"
     },
-    "caching": {
-      "disabled": true
-    },
     "created_on": "2017-01-01T00:00:00Z",
+    "integration": {
+      "database_branch_name": "x",
+      "database_name": "x",
+      "integration": "planetscale",
+      "organization_name": "x",
+      "scheme": "postgres",
+      "custom_database_name": "custom_database_name"
+    },
     "modified_on": "2017-01-01T00:00:00Z",
     "mtls": {
       "ca_certificate_id": "00000000-0000-0000-0000-0000000000",
