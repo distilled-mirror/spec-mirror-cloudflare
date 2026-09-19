@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List AI Search instances.
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances
 
 List all AI Search instances in the account.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

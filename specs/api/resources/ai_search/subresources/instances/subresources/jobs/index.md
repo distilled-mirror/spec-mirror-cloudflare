@@ -22,17 +22,25 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List Jobs](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 ##### [Create new job](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/create)
+
+Deprecated
 
 POST/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 ##### [Get a Job Details](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}
 
 ##### [List Job Logs](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/logs)
+
+Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}/logs
 

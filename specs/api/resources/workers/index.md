@@ -19738,7 +19738,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, requestId, scriptName, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -19750,7 +19750,7 @@ One of the following:
 
 <summary>
 
-object { eventType, requestId, scriptName, 10 more }
+object { eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -19813,10 +19813,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-requestId: string
 
 [Link to this property](#)
 
@@ -19883,6 +19879,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -20004,10 +20004,6 @@ outcome: string
 
 [Link to this property](#)
 
-requestId: string
-
-[Link to this property](#)
-
 scriptName: string
 
 [Link to this property](#)
@@ -20099,6 +20095,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -20580,7 +20580,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, requestId, scriptName, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -20592,7 +20592,7 @@ One of the following:
 
 <summary>
 
-object { eventType, requestId, scriptName, 10 more }
+object { eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -20655,10 +20655,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-requestId: string
 
 [Link to this property](#)
 
@@ -20725,6 +20721,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -20846,10 +20846,6 @@ outcome: string
 
 [Link to this property](#)
 
-requestId: string
-
-[Link to this property](#)
-
 scriptName: string
 
 [Link to this property](#)
@@ -20941,6 +20937,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -25310,7 +25310,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, requestId, scriptName, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -25322,7 +25322,7 @@ One of the following:
 
 <summary>
 
-object { eventType, requestId, scriptName, 10 more }
+object { eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -25385,10 +25385,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-requestId: string
 
 [Link to this property](#)
 
@@ -25455,6 +25451,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -25576,10 +25576,6 @@ outcome: string
 
 [Link to this property](#)
 
-requestId: string
-
-[Link to this property](#)
-
 scriptName: string
 
 [Link to this property](#)
@@ -25671,6 +25667,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -26152,7 +26152,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, requestId, scriptName, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -26164,7 +26164,7 @@ One of the following:
 
 <summary>
 
-object { eventType, requestId, scriptName, 10 more }
+object { eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -26227,10 +26227,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-requestId: string
 
 [Link to this property](#)
 
@@ -26297,6 +26293,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 
@@ -26418,10 +26418,6 @@ outcome: string
 
 [Link to this property](#)
 
-requestId: string
-
-[Link to this property](#)
-
 scriptName: string
 
 [Link to this property](#)
@@ -26513,6 +26509,10 @@ slug: optional string
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+requestId: optional string
 
 [Link to this property](#)
 

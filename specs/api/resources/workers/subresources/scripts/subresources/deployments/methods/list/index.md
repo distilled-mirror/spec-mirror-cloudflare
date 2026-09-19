@@ -76,6 +76,42 @@ Name of the script, used in URLs and route configuration.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Current page.
+
+minimum1
+
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Items per page.
+
+maximum100
+
+minimum1
+
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
+since: optional string
+
+Start of the deployment creation time range, inclusive.
+
+formatdate-time
+
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20since%20%3E%20(schema)>)
+
+until: optional string
+
+End of the deployment creation time range, inclusive.
+
+formatdate-time
+
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20until%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -270,6 +306,48 @@ Whether the API call was successful.
 
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
+<details>
+
+<summary>
+
+result\_info: optional object {count, page, per\_page, 2 more }
+
+</summary>
+
+count: optional number
+
+Total number of results for the requested service.
+
+<a href="#">Link to this property</a>
+
+page: optional number
+
+Current page within paginated list of results.
+
+<a href="#">Link to this property</a>
+
+per\_page: optional number
+
+Number of results per page of results.
+
+<a href="#">Link to this property</a>
+
+total\_count: optional number
+
+Total results available without any search parameters.
+
+<a href="#">Link to this property</a>
+
+total\_pages: optional number
+
+The number of total pages in the entire result set.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
+
 ### List Worker Deployments
 
 HTTP
@@ -326,7 +404,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
       }
     ]
   },
-  "success": true
+  "success": true,
+  "result_info": {
+    "count": 1,
+    "page": 1,
+    "per_page": 20,
+    "total_count": 2000,
+    "total_pages": 100
+  }
 }
 ```
 
@@ -377,6 +462,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
       }
     ]
   },
-  "success": true
+  "success": true,
+  "result_info": {
+    "count": 1,
+    "page": 1,
+    "per_page": 20,
+    "total_count": 2000,
+    "total_pages": 100
+  }
 }
 ```

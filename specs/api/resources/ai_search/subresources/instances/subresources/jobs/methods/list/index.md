@@ -22,9 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List Jobs
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 Lists indexing jobs for an AI Search instance.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

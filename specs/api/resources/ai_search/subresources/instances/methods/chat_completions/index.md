@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Chat Completions
 
+Deprecated
+
 POST/accounts/{account\_id}/ai-search/instances/{id}/chat/completions
 
 Performs a chat completion request against an AI Search instance, using indexed content as context for generating responses.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Create an AI Search instance.
 
+Deprecated
+
 POST/accounts/{account\_id}/ai-search/instances
 
 Create a new AI Search instance with the given configuration.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

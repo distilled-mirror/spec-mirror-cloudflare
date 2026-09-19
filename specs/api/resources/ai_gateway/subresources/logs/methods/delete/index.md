@@ -234,6 +234,8 @@ One of the following:
 
 value: array of stringor numberor boolean
 
+Filter values.
+
 </summary>
 
 One of the following:

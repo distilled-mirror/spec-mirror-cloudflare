@@ -288,6 +288,8 @@ One of the following:
 
 value: array of stringor numberor boolean
 
+Filter values.
+
 </summary>
 
 One of the following:
@@ -357,6 +359,8 @@ Deprecatedmin\_total\_tokens: optional number
 [Link to this property](#)%20ai_gateway.logs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20min_total_tokens%20%3E%20(schema)>)
 
 Deprecatedmodel: optional string
+
+Model filter.
 
 [Link to this property](#)%20ai_gateway.logs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20model%20%3E%20(schema)>)
 
@@ -451,6 +455,8 @@ Deprecatedresponse\_content\_type: optional string
 [Link to this property](#)%20ai_gateway.logs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20response_content_type%20%3E%20(schema)>)
 
 search: optional string
+
+Free-text search over log metadata.
 
 [Link to this property](#)%20ai_gateway.logs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
 

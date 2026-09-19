@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get an AI Search instance.
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}
 
 Retrieve the configuration and status of an AI Search instance.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

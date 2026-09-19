@@ -2054,7 +2054,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, requestId, scriptName, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object {eventType, scriptName, durableObjectId, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -2066,7 +2066,7 @@ One of the following:
 
 <summary>
 
-object {eventType, requestId, scriptName, 10 more }
+object {eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -2129,10 +2129,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-requestId: string
 
 <a href="#">Link to this property</a>
 
@@ -2199,6 +2195,10 @@ slug: optional string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+requestId: optional string
 
 <a href="#">Link to this property</a>
 
@@ -2320,10 +2320,6 @@ outcome: string
 
 <a href="#">Link to this property</a>
 
-requestId: string
-
-<a href="#">Link to this property</a>
-
 scriptName: string
 
 <a href="#">Link to this property</a>
@@ -2415,6 +2411,10 @@ slug: optional string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+requestId: optional string
 
 <a href="#">Link to this property</a>
 
@@ -2896,7 +2896,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, requestId, scriptName, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object {eventType, scriptName, durableObjectId, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -2908,7 +2908,7 @@ One of the following:
 
 <summary>
 
-object {eventType, requestId, scriptName, 10 more }
+object {eventType, scriptName, durableObjectId, 10 more }
 
 </summary>
 
@@ -2971,10 +2971,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-requestId: string
 
 <a href="#">Link to this property</a>
 
@@ -3041,6 +3037,10 @@ slug: optional string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+requestId: optional string
 
 <a href="#">Link to this property</a>
 
@@ -3162,10 +3162,6 @@ outcome: string
 
 <a href="#">Link to this property</a>
 
-requestId: string
-
-<a href="#">Link to this property</a>
-
 scriptName: string
 
 <a href="#">Link to this property</a>
@@ -3257,6 +3253,10 @@ slug: optional string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+requestId: optional string
 
 <a href="#">Link to this property</a>
 

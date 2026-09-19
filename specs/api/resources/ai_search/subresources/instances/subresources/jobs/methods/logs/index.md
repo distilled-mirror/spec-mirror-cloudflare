@@ -22,9 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List Job Logs
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}/logs
 
 Lists log entries for an AI Search indexing job.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

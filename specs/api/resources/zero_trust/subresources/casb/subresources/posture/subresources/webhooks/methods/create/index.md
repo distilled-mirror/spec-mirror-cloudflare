@@ -134,6 +134,30 @@ Secret key used for HMAC signing when authentication\_type is “HMAC-Signing”
 
 [Link to this property](#)%20zero_trust.casb.posture.webhooks%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20signing_secret%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+status: optional "enabled"or "disabled"
+
+Status of the webhook configuration. Defaults to enabled when omitted.
+
+</summary>
+
+One of the following:
+
+"enabled"
+
+<a href="#">Link to this property</a>
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.webhooks%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20status%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -416,7 +440,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
               "value": "value"
             }
           ],
-          "signing_secret": "my-secret-key"
+          "signing_secret": "my-secret-key",
+          "status": "enabled"
         }'
 ```
 

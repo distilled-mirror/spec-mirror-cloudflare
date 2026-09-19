@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Search
 
+Deprecated
+
 POST/accounts/{account\_id}/ai-search/instances/{id}/search
 
 Executes a semantic search query against an AI Search instance to find relevant indexed content.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

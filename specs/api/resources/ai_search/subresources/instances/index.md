@@ -20,33 +20,49 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List AI Search instances.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances
 
 ##### [Create an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/create)
+
+Deprecated
 
 POST/accounts/{account\_id}/ai-search/instances
 
 ##### [Get an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/read)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}
 
 ##### [Update an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/update)
+
+Deprecated
 
 PUT/accounts/{account\_id}/ai-search/instances/{id}
 
 ##### [Delete an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/delete)
 
+Deprecated
+
 DELETE/accounts/{account\_id}/ai-search/instances/{id}
 
 ##### [Get instance statistics.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/stats)
+
+Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances/{id}/stats
 
 ##### [Search](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/search)
 
+Deprecated
+
 POST/accounts/{account\_id}/ai-search/instances/{id}/search
 
 ##### [Chat Completions](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/chat_completions)
+
+Deprecated
 
 POST/accounts/{account\_id}/ai-search/instances/{id}/chat/completions
 
@@ -5236,17 +5252,25 @@ object: optional string
 
 ##### [List Jobs](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 ##### [Create new job](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/create)
+
+Deprecated
 
 POST/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 ##### [Get a Job Details](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}
 
 ##### [List Job Logs](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/subresources/jobs/methods/logs)
+
+Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}/logs
 

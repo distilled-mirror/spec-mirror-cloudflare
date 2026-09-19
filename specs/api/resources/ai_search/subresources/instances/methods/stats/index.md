@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get instance statistics.
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-search/instances/{id}/stats
 
 Retrieve usage and indexing statistics for an AI Search instance.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

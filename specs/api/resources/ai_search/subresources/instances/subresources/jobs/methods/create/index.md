@@ -22,9 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Create new job
 
+Deprecated
+
 POST/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 Creates a new indexing job for an AI Search instance.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

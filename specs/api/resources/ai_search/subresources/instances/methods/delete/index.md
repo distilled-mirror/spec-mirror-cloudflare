@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Delete an AI Search instance.
 
+Deprecated
+
 DELETE/accounts/{account\_id}/ai-search/instances/{id}
 
 Permanently delete an AI Search instance and all its indexed data.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 

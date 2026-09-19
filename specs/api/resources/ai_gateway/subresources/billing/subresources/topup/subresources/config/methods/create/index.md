@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/ai-gateway/billing/topup/config
 
-Configure auto top-up with a balance threshold and top-up amount.
+Configure auto top-up with a balance threshold and top-up amount. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
 
 ##### Security
 

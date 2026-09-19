@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/ai-gateway/billing/topup/config
 
-Remove the auto top-up configuration for the account.
+Remove the auto top-up configuration for the account. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
 
 ##### Security
 

@@ -20,9 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Update an AI Search instance.
 
+Deprecated
+
 PUT/accounts/{account\_id}/ai-search/instances/{id}
 
 Update the configuration of an AI Search instance.
+
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
 ##### Security
 
