@@ -32,7 +32,57 @@ GET/accounts/{account\_id}/devices/registrations/{registration\_id}/override\_co
 
 ##### ModelsExpand Collapse
 
-OverrideCodeListResponse = unknown
+<details>
+
+<summary>
+
+OverrideCodeListResponse object {disable\_for\_time }
+
+</summary>
+
+<details>
+
+<summary>
+
+disable\_for\_time: optional object {"1", "12", "24", 2 more }
+
+</summary>
+
+"1": optional string
+
+Override code that is valid for 1 hour.
+
+<a href="#">Link to this property</a>
+
+"12": optional string
+
+Override code that is valid for 12 hour2.
+
+<a href="#">Link to this property</a>
+
+"24": optional string
+
+Override code that is valid for 24 hour.2.
+
+<a href="#">Link to this property</a>
+
+"3": optional string
+
+Override code that is valid for 3 hours.
+
+<a href="#">Link to this property</a>
+
+"6": optional string
+
+Override code that is valid for 6 hours.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(model)%20override_code_list_response%20%3E%20(schema)>)
 

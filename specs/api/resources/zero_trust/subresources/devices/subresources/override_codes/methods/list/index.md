@@ -162,7 +162,57 @@ pointer: optional string
 
 [Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-result: array of unknown
+<details>
+
+<summary>
+
+result: object {disable\_for\_time }
+
+</summary>
+
+<details>
+
+<summary>
+
+disable\_for\_time: optional object {"1", "12", "24", 2 more }
+
+</summary>
+
+"1": optional string
+
+Override code that is valid for 1 hour.
+
+<a href="#">Link to this property</a>
+
+"12": optional string
+
+Override code that is valid for 12 hour2.
+
+<a href="#">Link to this property</a>
+
+"24": optional string
+
+Override code that is valid for 24 hour.2.
+
+<a href="#">Link to this property</a>
+
+"3": optional string
+
+Override code that is valid for 3 hours.
+
+<a href="#">Link to this property</a>
+
+"6": optional string
+
+Override code that is valid for 6 hours.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
@@ -171,42 +221,6 @@ success: true
 Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
-
-<details>
-
-<summary>
-
-result\_info: optional object {count, page, per\_page, total\_count }
-
-</summary>
-
-count: optional number
-
-Total number of results for the requested service.
-
-<a href="#">Link to this property</a>
-
-page: optional number
-
-Current page within paginated list of results.
-
-<a href="#">Link to this property</a>
-
-per\_page: optional number
-
-Number of results per page of results.
-
-<a href="#">Link to this property</a>
-
-total\_count: optional number
-
-Total results available without any search parameters.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20zero_trust.devices.override_codes%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
 ### Get override codes (deprecated)
 
@@ -243,16 +257,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/$DEVICE_I
       }
     }
   ],
-  "result": [
-    {}
-  ],
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
-  }
+  "result": {
+    "disable_for_time": {
+      "1": "9106681",
+      "3": "5356247",
+      "6": "9478972",
+      "12": "3424359",
+      "24": "2887634"
+    }
+  },
+  "success": true
 }
 ```
 
@@ -282,15 +296,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/$DEVICE_I
       }
     }
   ],
-  "result": [
-    {}
-  ],
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
-  }
+  "result": {
+    "disable_for_time": {
+      "1": "9106681",
+      "3": "5356247",
+      "6": "9478972",
+      "12": "3424359",
+      "24": "2887634"
+    }
+  },
+  "success": true
 }
 ```

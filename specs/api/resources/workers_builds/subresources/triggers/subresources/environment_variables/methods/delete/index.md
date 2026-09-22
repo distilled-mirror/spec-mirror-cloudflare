@@ -88,15 +88,15 @@ Environment variable key.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object {message, code }
 
 </summary>
 
-code: optional number
+message: string
 
 <a href="#">Link to this property</a>
 
-message: optional string
+code: optional number
 
 <a href="#">Link to this property</a>
 

@@ -26,15 +26,33 @@ Lists existing routing rules across all zones in the account or zone.
 
 ##### Security
 
-API Email + API Key
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
 
 The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
 
-**Example:**`X-Auth-Email: user@example.com`
+**Example:**<code>X-Auth-Email: user@example.com</code>
 
 The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
 
-**Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
 
 ##### P ath ParametersExpand Collapse
 
@@ -241,6 +259,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 value: optional array of string
+
+List of values for the action. Currently limited to a single value.
 
 <a href="#">Link to this property</a>
 
@@ -454,8 +474,7 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID/email/routing/rules \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

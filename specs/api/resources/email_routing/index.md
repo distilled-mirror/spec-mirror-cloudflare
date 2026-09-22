@@ -592,6 +592,8 @@ One of the following:
 
 value: optional array of string
 
+List of values for the action. Currently limited to a single value.
+
 <a href="#">Link to this property</a>
 
 </details>
@@ -653,6 +655,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 value: optional array of string
+
+List of values for the action. Currently limited to a single value.
 
 <a href="#">Link to this property</a>
 
@@ -892,6 +896,8 @@ One of the following:
 
 value: optional array of string
 
+List of values for the action. Currently limited to a single value.
+
 <a href="#">Link to this property</a>
 
 </details>
@@ -973,6 +979,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 value: optional array of string
+
+List of values for the action. Currently limited to a single value.
 
 <a href="#">Link to this property</a>
 
@@ -1123,6 +1131,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 value: optional array of string
+
+List of values for the action. Currently limited to a single value.
 
 <a href="#">Link to this property</a>
 
@@ -1281,6 +1291,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 value: optional array of string
+
+List of values for the action. Currently limited to a single value.
 
 <a href="#">Link to this property</a>
 

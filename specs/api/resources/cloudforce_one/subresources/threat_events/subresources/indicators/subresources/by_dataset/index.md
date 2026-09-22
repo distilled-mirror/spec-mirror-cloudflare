@@ -64,7 +64,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system }
+sources: array of object {resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -81,6 +81,12 @@ resourceType: "article"
 <a href="#">Link to this property</a>
 
 system: "threat-signals"
+
+<a href="#">Link to this property</a>
+
+title: string
+
+Threat Signals article title; null for historical provenance without a stored title.
 
 <a href="#">Link to this property</a>
 

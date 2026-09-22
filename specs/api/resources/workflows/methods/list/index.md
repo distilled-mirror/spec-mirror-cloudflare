@@ -134,7 +134,7 @@ message: string
 
 <summary>
 
-result: array of object {id, class\_name, created\_on, 6 more }
+result: array of object {id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -199,6 +199,12 @@ next\_instance: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+script\_deleted: optional boolean
+
+Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <a href="#">Link to this property</a>
 
@@ -285,7 +291,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workflows \
           "cron": "cron",
           "next_instance": "next_instance"
         }
-      ]
+      ],
+      "script_deleted": true
     }
   ],
   "success": true,
@@ -330,7 +337,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workflows \
           "cron": "cron",
           "next_instance": "next_instance"
         }
-      ]
+      ],
+      "script_deleted": true
     }
   ],
   "success": true,

@@ -298,7 +298,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 

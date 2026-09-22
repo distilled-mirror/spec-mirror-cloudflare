@@ -78,15 +78,15 @@ Comma-separated list of system-generated worker script tags (max 20).
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object {message, code }
 
 </summary>
 
-code: optional number
+message: string
 
 <a href="#">Link to this property</a>
 
-message: optional string
+code: optional number
 
 <a href="#">Link to this property</a>
 
@@ -110,7 +110,7 @@ result: object {builds }
 
 <summary>
 
-builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 8 more } ]
+builds: optional map\[object {build\_outcome, build\_trigger\_metadata, build\_uuid, 10 more } ]
 
 </summary>
 
@@ -302,6 +302,28 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+deploy\_hook: optional object {deploy\_hook\_name }
+
+</summary>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 initializing\_on: optional string
 
 formatdate-time
@@ -314,13 +336,27 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+preview\_url: optional string
+
+URL serving the Worker version this build deployed. Only returned by Get build by UUID, and only once the build has produced a preview artifact.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
 
-pull\_request: optional object {created\_on, pull\_request\_url }
+pull\_request: optional object {closed\_on, created\_on, pull\_request\_url }
 
 </summary>
+
+closed\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
 
 created\_on: optional string
 
@@ -637,8 +673,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
 {
   "errors": [
     {
-      "code": 12000,
-      "message": "Not found"
+      "message": "Not found",
+      "code": 12000
     }
   ],
   "messages": [
@@ -668,9 +704,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
         },
         "build_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         "created_on": "2019-12-27T18:11:19.117Z",
+        "deploy_hook": {
+          "deploy_hook_name": "Production Deploy Hook"
+        },
         "initializing_on": "2019-12-27T18:11:19.117Z",
         "modified_on": "2019-12-27T18:11:19.117Z",
+        "preview_url": "https://abc123-my-worker.my-subdomain.workers.dev",
         "pull_request": {
+          "closed_on": "2019-12-27T18:11:19.117Z",
           "created_on": "2019-12-27T18:11:19.117Z",
           "pull_request_url": "https://github.com/cloudflare/workers-sdk/pull/123"
         },
@@ -750,8 +791,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
 {
   "errors": [
     {
-      "code": 12000,
-      "message": "Not found"
+      "message": "Not found",
+      "code": 12000
     }
   ],
   "messages": [
@@ -781,9 +822,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
         },
         "build_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
         "created_on": "2019-12-27T18:11:19.117Z",
+        "deploy_hook": {
+          "deploy_hook_name": "Production Deploy Hook"
+        },
         "initializing_on": "2019-12-27T18:11:19.117Z",
         "modified_on": "2019-12-27T18:11:19.117Z",
+        "preview_url": "https://abc123-my-worker.my-subdomain.workers.dev",
         "pull_request": {
+          "closed_on": "2019-12-27T18:11:19.117Z",
           "created_on": "2019-12-27T18:11:19.117Z",
           "pull_request_url": "https://github.com/cloudflare/workers-sdk/pull/123"
         },

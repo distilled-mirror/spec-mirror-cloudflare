@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/workflows/{workflow\_name}
 
 <summary>
 
-WorkflowListResponse object {id, class\_name, created\_on, 6 more }
+WorkflowListResponse object {id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -103,6 +103,12 @@ next\_instance: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+script\_deleted: optional boolean
+
+Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <a href="#">Link to this property</a>
 
@@ -114,7 +120,7 @@ next\_instance: string
 
 <summary>
 
-WorkflowGetResponse object {id, class\_name, created\_on, 6 more }
+WorkflowGetResponse object {id, class\_name, created\_on, 7 more }
 
 </summary>
 
@@ -179,6 +185,12 @@ next\_instance: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+script\_deleted: optional boolean
+
+Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <a href="#">Link to this property</a>
 

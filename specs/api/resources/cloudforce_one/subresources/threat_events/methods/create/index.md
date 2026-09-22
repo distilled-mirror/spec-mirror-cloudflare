@@ -146,7 +146,7 @@ insight: optional string
 
 <summary>
 
-source: optional object {resourceId, resourceType, system }
+source: optional object {resourceId, resourceType, system, title }
 
 Controlled provenance for an event and its indicators derived from a Threat Signals article.
 
@@ -163,6 +163,12 @@ resourceType: "article"
 <a href="#">Link to this property</a>
 
 system: "threat-signals"
+
+<a href="#">Link to this property</a>
+
+title: optional string
+
+Threat Signals article title; null for historical provenance without a stored title.
 
 <a href="#">Link to this property</a>
 

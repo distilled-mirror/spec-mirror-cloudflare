@@ -252,7 +252,7 @@ Token provided upon successful upload of all files from a registered manifest.
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 33 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -935,6 +935,38 @@ Name of the Pipeline to bind to.
 <a href="#">Link to this property</a>
 
 type: "pipelines"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+K2 object {name, stream, type }
+
+A K2 stream binding. Available only to accounts enabled for K2.
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+stream: string
+
+ID of a K2 stream owned by the account deploying the Worker.
+
+<a href="#">Link to this property</a>
+
+type: "k2"
 
 The kind of resource that the binding provides.
 
@@ -2862,7 +2894,7 @@ Identifier of the user who created the version.
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 33 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -3545,6 +3577,38 @@ Name of the Pipeline to bind to.
 <a href="#">Link to this property</a>
 
 type: "pipelines"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+K2 object {name, stream, type }
+
+A K2 stream binding. Available only to accounts enabled for K2.
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+stream: string
+
+ID of a K2 stream owned by the account deploying the Worker.
+
+<a href="#">Link to this property</a>
+
+type: "k2"
 
 The kind of resource that the binding provides.
 

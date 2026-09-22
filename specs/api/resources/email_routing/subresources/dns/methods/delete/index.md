@@ -26,15 +26,33 @@ Disable your Email Routing zone. Also removes additional MX records previously r
 
 ##### Security
 
-API Email + API Key
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
 
 The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
 
-**Example:**`X-Auth-Email: user@example.com`
+**Example:**<code>X-Auth-Email: user@example.com</code>
 
 The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
 
-**Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
 
 ##### Accepted Permissions (at least one required)
 
@@ -309,8 +327,7 @@ HTTPTypeScriptPythonGoTerraform
 ```
 curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/email/routing/dns \
     -X DELETE \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

@@ -2944,38 +2944,6 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-FallbackDomainPolicy = array of [FallbackDomain](/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20fallback_domain%20%3E%20(schema)) { suffix, description, dns_server }
-
-</summary>
-
-suffix: string
-
-The domain suffix to match when resolving locally.
-
-[Link to this property](#)
-
-description: optional string
-
-A description of the fallback domain, displayed in the client UI.
-
-maxLength100
-
-[Link to this property](#)
-
-dns_server: optional array of string
-
-A list of IP addresses to handle domain resolution.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
 SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 28 more }
 
 </summary>
@@ -7400,7 +7368,57 @@ GET/accounts/{account_id}/devices/registrations/{registration_id}/override_codes
 
 ##### Models
 
-OverrideCodeListResponse = unknown
+<details>
+
+<summary>
+
+OverrideCodeListResponse object { disable_for_time }
+
+</summary>
+
+<details>
+
+<summary>
+
+disable_for_time: optional object { "1", "12", "24", 2 more }
+
+</summary>
+
+"1": optional string
+
+Override code that is valid for 1 hour.
+
+[Link to this property](#)
+
+"12": optional string
+
+Override code that is valid for 12 hour2.
+
+[Link to this property](#)
+
+"24": optional string
+
+Override code that is valid for 24 hour.2.
+
+[Link to this property](#)
+
+"3": optional string
+
+Override code that is valid for 3 hours.
+
+[Link to this property](#)
+
+"6": optional string
+
+Override code that is valid for 6 hours.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

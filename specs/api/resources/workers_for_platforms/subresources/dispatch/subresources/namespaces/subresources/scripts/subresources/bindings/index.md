@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scr
 
 <summary>
 
-BindingGetResponse = object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 33 more
+BindingGetResponse = object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
 
 A binding to allow the Worker to communicate with resources.
 
@@ -717,6 +717,38 @@ Name of the Pipeline to bind to.
 <a href="#">Link to this property</a>
 
 type: "pipelines"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+K2 object {name, stream, type }
+
+A K2 stream binding. Available only to accounts enabled for K2.
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+stream: string
+
+ID of a K2 stream owned by the account deploying the Worker.
+
+<a href="#">Link to this property</a>
+
+type: "k2"
 
 The kind of resource that the binding provides.
 

@@ -80,6 +80,8 @@ One of the following:
 
 value: optional array of string
 
+List of values for the action. Currently limited to a single value.
+
 <a href="#">Link to this property</a>
 
 </details>

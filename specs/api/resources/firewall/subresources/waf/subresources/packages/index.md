@@ -42,109 +42,7 @@ PackageListResponse = unknown
 
 <summary>
 
-PackageGetResponse = object {errors, messages, result, success } or object {result }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-FirewallAPIResponseSingle object {errors, messages, result, success }
-
-</summary>
-
-<details>
-
-<summary>
-
-errors: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-<a href="#">Link to this property</a>
-
-message: string
-
-<a href="#">Link to this property</a>
-
-documentation\_url: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-messages: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-<a href="#">Link to this property</a>
-
-message: string
-
-<a href="#">Link to this property</a>
-
-documentation\_url: optional string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-result: unknownor string
+PackageGetResponse = unknownor string
 
 </summary>
 
@@ -155,36 +53,6 @@ unknown
 <a href="#">Link to this property</a>
 
 string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-success: true
-
-Defines whether the API call was successful.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Result object {result }
-
-</summary>
-
-result: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

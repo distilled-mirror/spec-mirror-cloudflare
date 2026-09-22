@@ -88,14 +88,6 @@ maxLength32
 
 <summary>
 
-FirewallAPIResponseSingle object {errors, messages, result, success }
-
-</summary>
-
-<details>
-
-<summary>
-
 errors: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
 
 </summary>
@@ -132,7 +124,7 @@ pointer: optional string
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)%20firewall.waf.packages%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
 
 <details>
 
@@ -174,7 +166,7 @@ pointer: optional string
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)%20firewall.waf.packages%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
 <details>
 
@@ -196,33 +188,13 @@ string
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)%20firewall.waf.packages%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 success: true
 
 Defines whether the API call was successful.
 
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20firewall.waf.packages%20%3E%20(model)%20package_get_response%20%3E%20(schema)%20%3E%20(variant)%200>)
-
-<details>
-
-<summary>
-
-Result object {result }
-
-</summary>
-
-result: optional unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20firewall.waf.packages%20%3E%20(model)%20package_get_response%20%3E%20(schema)%20%3E%20(variant)%201>)
+[Link to this property](#)%20firewall.waf.packages%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
 ### Get a WAF package
 

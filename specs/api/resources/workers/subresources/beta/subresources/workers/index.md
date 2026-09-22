@@ -50,7 +50,7 @@ DELETE/accounts/{account\_id}/workers/workers/{worker\_id}
 
 <summary>
 
-Worker object {id, created\_on, logpush, 8 more }
+Worker object {id, created\_on, logpush, 9 more }
 
 </summary>
 
@@ -512,6 +512,524 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+previews\_base\_config: optional object {cache\_options, env, limits, 4 more }
+
+Template configuration used when creating new Previews for this Worker.
+
+</summary>
+
+<details>
+
+<summary>
+
+cache\_options: optional object {enabled, cross\_version\_cache }
+
+Cache options used when creating new Previews.
+
+</summary>
+
+enabled: boolean
+
+Whether caching is enabled for this Worker.
+
+<a href="#">Link to this property</a>
+
+cross\_version\_cache: optional boolean
+
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+env: optional map\[object {type } ]
+
+Bindings used when creating new Previews, keyed by binding name.
+
+</summary>
+
+type: string
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+limits: optional object {cpu\_ms, subrequests }
+
+Resource limits enforced at runtime for newly created Previews.
+
+</summary>
+
+cpu\_ms: optional number
+
+The amount of CPU time this Worker can use in milliseconds.
+
+<a href="#">Link to this property</a>
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+logpush: optional boolean
+
+Whether logpush is enabled when creating new Previews.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
+
+Observability settings used when creating new Previews.
+
+</summary>
+
+enabled: optional boolean
+
+Whether observability is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+issues: optional object {enabled }
+
+Real-time Issues settings for the Worker.
+
+</summary>
+
+enabled: optional boolean
+
+Whether real-time Issues are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+
+Log settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where logs will be exported to.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether logs are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+invocation\_logs: optional boolean
+
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+persist: optional boolean
+
+Whether log persistence is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+redact\_query\_string: optional boolean
+
+Whether query strings are removed from request URLs in logs and traces.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
+
+Trace settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where traces will be exported to.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether traces are enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+persist: optional boolean
+
+Whether trace persistence is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+propagation\_policy: optional "authenticated"or "accept"
+
+Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
+
+</summary>
+
+One of the following:
+
+"authenticated"
+
+<a href="#">Link to this property</a>
+
+"accept"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+placement: optional object {mode } or object {region } or object {hostname } or 5 more
+
+Placement configuration used when creating new Previews.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "smart"
+
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Region object {region }
+
+</summary>
+
+region: string
+
+Cloud region for targeted placement in format ‘provider:region’.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Hostname object {hostname }
+
+</summary>
+
+hostname: string
+
+HTTP hostname for targeted placement.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Host object {host }
+
+</summary>
+
+host: string
+
+TCP host and port for targeted placement.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, region }
+
+</summary>
+
+mode: "targeted"
+
+Targeted placement mode.
+
+<a href="#">Link to this property</a>
+
+region: string
+
+Cloud region for targeted placement in format ‘provider:region’.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {hostname, mode }
+
+</summary>
+
+hostname: string
+
+HTTP hostname for targeted placement.
+
+<a href="#">Link to this property</a>
+
+mode: "targeted"
+
+Targeted placement mode.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {host, mode }
+
+</summary>
+
+host: string
+
+TCP host and port for targeted placement.
+
+<a href="#">Link to this property</a>
+
+mode: "targeted"
+
+Targeted placement mode.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, target }
+
+</summary>
+
+mode: "targeted"
+
+Targeted placement mode.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+target: array of object {region } or object {hostname } or object {host }
+
+Array of placement targets (currently limited to single target).
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Region object {region }
+
+</summary>
+
+region: string
+
+Cloud region in format ‘provider:region’.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Hostname object {hostname }
+
+</summary>
+
+hostname: string
+
+HTTP hostname for targeted placement.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Host object {host }
+
+</summary>
+
+host: string
+
+TCP host:port for targeted placement.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+tail\_consumers: optional array of object {name }
+
+Other Workers that should consume logs from newly created Previews.
+
+</summary>
+
+name: string
+
+Name of the consumer Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20workers.beta.workers%20%3E%20(model)%20worker%20%3E%20(schema)>)
@@ -852,7 +1370,7 @@ Identifier of the user who created the version.
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 33 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -1535,6 +2053,38 @@ Name of the Pipeline to bind to.
 <a href="#">Link to this property</a>
 
 type: "pipelines"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+K2 object {name, stream, type }
+
+A K2 stream binding. Available only to accounts enabled for K2.
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+stream: string
+
+ID of a K2 stream owned by the account deploying the Worker.
+
+<a href="#">Link to this property</a>
+
+type: "k2"
 
 The kind of resource that the binding provides.
 

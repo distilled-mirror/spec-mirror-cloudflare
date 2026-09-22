@@ -700,7 +700,7 @@ indicatorType: string
 
 <summary>
 
-sources: array of object {resourceId, resourceType, system }
+sources: array of object {resourceId, resourceType, system, title }
 
 RSS article sources from which this indicator was extracted.
 
@@ -717,6 +717,12 @@ resourceType: "article"
 <a href="#">Link to this property</a>
 
 system: "threat-signals"
+
+<a href="#">Link to this property</a>
+
+title: string
+
+Threat Signals article title; null for historical provenance without a stored title.
 
 <a href="#">Link to this property</a>
 
@@ -1048,7 +1054,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
           {
             "resourceId": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             "resourceType": "article",
-            "system": "threat-signals"
+            "system": "threat-signals",
+            "title": "title"
           }
         ],
         "updatedAt": "2022-04-01T00:00:00Z",
@@ -1160,7 +1167,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
           {
             "resourceId": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             "resourceType": "article",
-            "system": "threat-signals"
+            "system": "threat-signals",
+            "title": "title"
           }
         ],
         "updatedAt": "2022-04-01T00:00:00Z",

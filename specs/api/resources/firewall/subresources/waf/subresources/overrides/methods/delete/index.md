@@ -82,28 +82,6 @@ maxLength32
 
 [Link to this property](#)%20firewall.waf.overrides%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20overrides_id%20%3E%20(schema)>)
 
-##### ReturnsExpand Collapse
-
-<details>
-
-<summary>
-
-result: optional object {id }
-
-</summary>
-
-id: optional string
-
-The unique identifier of the WAF override.
-
-maxLength32
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20firewall.waf.overrides%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
-
 ### Delete a WAF override
 
 HTTP
@@ -116,24 +94,4 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/firewall/waf/overrides/
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
-200 example
-
-```
-{
-  "result": {
-    "id": "de677e5818985db1285d0e80225f06e5"
-  }
-}
-```
-
 ##### Returns Examples
-
-200 example
-
-```
-{
-  "result": {
-    "id": "de677e5818985db1285d0e80225f06e5"
-  }
-}
-```

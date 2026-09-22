@@ -78,15 +78,15 @@ System-generated tag of the Worker. This is not the Worker name.
 
 <summary>
 
-errors: array of object {code, message }
+errors: array of object {message, code }
 
 </summary>
 
-code: optional number
+message: string
 
 <a href="#">Link to this property</a>
 
-message: optional string
+code: optional number
 
 <a href="#">Link to this property</a>
 
@@ -357,8 +357,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
 {
   "errors": [
     {
-      "code": 12000,
-      "message": "Not found"
+      "message": "Not found",
+      "code": 12000
     }
   ],
   "messages": [
@@ -438,8 +438,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
 {
   "errors": [
     {
-      "code": 12000,
-      "message": "Not found"
+      "message": "Not found",
+      "code": 12000
     }
   ],
   "messages": [

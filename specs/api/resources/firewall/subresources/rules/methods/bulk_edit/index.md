@@ -74,9 +74,11 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
-body: unknown
+id: string
 
-[Link to this property](#)%20firewall.rules%20%3E%20(method)%20bulk_edit%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
+The unique identifier of the firewall rule.
+
+[Link to this property](#)%20firewall.rules%20%3E%20(method)%20bulk_edit%20%3E%20(params)%200%20%3E%20(param)%20id%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -447,7 +449,9 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/firewall/rules \
     -X PATCH \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{}'
+    -d '{
+          "id": "id"
+        }'
 ```
 
 200 example

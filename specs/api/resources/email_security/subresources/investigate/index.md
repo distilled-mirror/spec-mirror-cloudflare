@@ -2544,7 +2544,7 @@ DELETE/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}
 
 <summary>
 
-BulkListResponse object {action\_params, action\_type, created\_at, 11 more }
+BulkListResponse object {action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -2608,7 +2608,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 
@@ -2716,11 +2720,23 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+messages\_cancelled: number
+
+Messages that were cancelled: rows cancelled via the API before being claimed, and rows whose in-flight attempt ended when the job reached a terminal state. Together the counters satisfy total\_messages\_discovered = messages\_pending + messages\_successful + messages\_failed + messages\_skipped + messages\_cancelled.
+
+<a href="#">Link to this property</a>
+
 messages\_failed: number
 
 <a href="#">Link to this property</a>
 
 messages\_pending: number
+
+<a href="#">Link to this property</a>
+
+messages\_skipped: number
+
+Messages that discovery skipped (for example, phish submissions, which the job cannot action).
 
 <a href="#">Link to this property</a>
 
@@ -3016,7 +3032,7 @@ status\_message: optional string
 
 <summary>
 
-BulkCreateResponse object {action\_params, action\_type, created\_at, 11 more }
+BulkCreateResponse object {action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -3080,7 +3096,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 
@@ -3188,11 +3208,23 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+messages\_cancelled: number
+
+Messages that were cancelled: rows cancelled via the API before being claimed, and rows whose in-flight attempt ended when the job reached a terminal state. Together the counters satisfy total\_messages\_discovered = messages\_pending + messages\_successful + messages\_failed + messages\_skipped + messages\_cancelled.
+
+<a href="#">Link to this property</a>
+
 messages\_failed: number
 
 <a href="#">Link to this property</a>
 
 messages\_pending: number
+
+<a href="#">Link to this property</a>
+
+messages\_skipped: number
+
+Messages that discovery skipped (for example, phish submissions, which the job cannot action).
 
 <a href="#">Link to this property</a>
 
@@ -3488,7 +3520,7 @@ status\_message: optional string
 
 <summary>
 
-BulkGetResponse object {action\_params, action\_type, created\_at, 11 more }
+BulkGetResponse object {action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -3552,7 +3584,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 
@@ -3660,11 +3696,23 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+messages\_cancelled: number
+
+Messages that were cancelled: rows cancelled via the API before being claimed, and rows whose in-flight attempt ended when the job reached a terminal state. Together the counters satisfy total\_messages\_discovered = messages\_pending + messages\_successful + messages\_failed + messages\_skipped + messages\_cancelled.
+
+<a href="#">Link to this property</a>
+
 messages\_failed: number
 
 <a href="#">Link to this property</a>
 
 messages\_pending: number
+
+<a href="#">Link to this property</a>
+
+messages\_skipped: number
+
+Messages that discovery skipped (for example, phish submissions, which the job cannot action).
 
 <a href="#">Link to this property</a>
 
@@ -3986,7 +4034,7 @@ POST/accounts/{account\_id}/email-security/investigate/bulk/{job\_id}/cancel
 
 <summary>
 
-CancelCreateResponse object {action\_params, action\_type, created\_at, 11 more }
+CancelCreateResponse object {action\_params, action\_type, created\_at, 13 more }
 
 </summary>
 
@@ -4050,7 +4098,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 
@@ -4158,11 +4210,23 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+messages\_cancelled: number
+
+Messages that were cancelled: rows cancelled via the API before being claimed, and rows whose in-flight attempt ended when the job reached a terminal state. Together the counters satisfy total\_messages\_discovered = messages\_pending + messages\_successful + messages\_failed + messages\_skipped + messages\_cancelled.
+
+<a href="#">Link to this property</a>
+
 messages\_failed: number
 
 <a href="#">Link to this property</a>
 
 messages\_pending: number
+
+<a href="#">Link to this property</a>
+
+messages\_skipped: number
+
+Messages that discovery skipped (for example, phish submissions, which the job cannot action).
 
 <a href="#">Link to this property</a>
 
@@ -4534,7 +4598,11 @@ type: "MOVE"
 
 <summary>
 
-expected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+Deprecatedexpected\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+This field is nonfunctional.
+
+Nonfunctional field. End of life: December 1, 2026.
 
 </summary>
 

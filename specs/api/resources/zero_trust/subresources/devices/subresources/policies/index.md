@@ -76,38 +76,6 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-FallbackDomainPolicy = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20fallback_domain%20%3E%20(schema)">FallbackDomain</a> { suffix, description, dns\_server }
-
-</summary>
-
-suffix: string
-
-The domain suffix to match when resolving locally.
-
-<a href="#">Link to this property</a>
-
-description: optional string
-
-A description of the fallback domain, displayed in the client UI.
-
-maxLength100
-
-<a href="#">Link to this property</a>
-
-dns\_server: optional array of string
-
-A list of IP addresses to handle domain resolution.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20zero_trust.devices.policies%20%3E%20(model)%20fallback_domain_policy%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 28 more }
 
 </summary>
