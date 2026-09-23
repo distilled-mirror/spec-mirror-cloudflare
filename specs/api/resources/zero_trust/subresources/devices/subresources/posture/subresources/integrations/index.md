@@ -22,23 +22,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Integrations
 
-##### [List your device posture integrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
+##### [List posture integrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
 
 GET/accounts/{account\_id}/devices/posture/integration
 
-##### [Get device posture integration details](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
+##### [Get posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
 
 GET/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
-##### [Create a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
+##### [Create posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
 
 POST/accounts/{account\_id}/devices/posture/integration
 
-##### [Update a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
+##### [Update posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
 
 PATCH/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
-##### [Delete a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
+##### [Delete posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
 
 DELETE/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 

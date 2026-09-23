@@ -70,14 +70,6 @@ account\_id: string
 
 ##### Body ParametersJSONExpand Collapse
 
-match: string
-
-The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”.
-
-maxLength500
-
-[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20match%20%3E%20(schema)>)
-
 name: string
 
 The name of the device settings profile.
@@ -85,12 +77,6 @@ The name of the device settings profile.
 maxLength100
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
-
-precedence: number
-
-The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
-
-[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20precedence%20%3E%20(schema)>)
 
 allow\_mode\_switch: optional boolean
 
@@ -116,11 +102,61 @@ The amount of time in seconds to reconnect after having been disabled.
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20auto_connect%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+browser\_extension\_config: optional object {proxy\_control, proxy\_enabled }
+
+Browser extension proxy settings. Required when profile\_type is browser\_extension and invalid for WARP profiles.
+
+</summary>
+
+<details>
+
+<summary>
+
+proxy\_control: "unlocked"or "locked"
+
+Whether the user may disable the browser extension proxy.
+
+</summary>
+
+One of the following:
+
+"unlocked"
+
+<a href="#">Link to this property</a>
+
+"locked"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+proxy\_enabled: boolean
+
+Whether the browser extension proxy is active.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20browser_extension_config%20%3E%20(schema)>)
+
 captive\_portal: optional number
 
 Turn on the captive portal after the specified amount of time.
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20captive_portal%20%3E%20(schema)>)
+
+default: optional boolean
+
+Whether the policy is the account default. WARP group profiles cannot set this field.
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20default%20%3E%20(schema)>)
 
 description: optional string
 
@@ -246,7 +282,7 @@ Whether to add Microsoft IPs to Split Tunnel exclusions.
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, wireguard\_endpoints }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -273,6 +309,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -359,6 +401,44 @@ lan\_allow\_subnet\_size: optional number
 The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20lan_allow_subnet_size%20%3E%20(schema)>)
+
+match: optional string
+
+The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”.
+
+maxLength500
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20match%20%3E%20(schema)>)
+
+precedence: optional number
+
+The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20precedence%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+profile\_type: optional "warp"or "browser\_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20profile_type%20%3E%20(schema)>)
 
 register\_interface\_ip\_with\_dns: optional boolean
 
@@ -538,7 +618,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 28 more }
+result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 30 more }
 
 </summary>
 
@@ -566,6 +646,50 @@ The amount of time in seconds to reconnect after having been disabled.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+browser\_extension\_config: optional object {proxy\_control, proxy\_enabled }
+
+Browser extension proxy settings. Required when profile\_type is browser\_extension and invalid for WARP profiles.
+
+</summary>
+
+<details>
+
+<summary>
+
+proxy\_control: "unlocked"or "locked"
+
+Whether the user may disable the browser extension proxy.
+
+</summary>
+
+One of the following:
+
+"unlocked"
+
+<a href="#">Link to this property</a>
+
+"locked"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+proxy\_enabled: boolean
+
+Whether the browser extension proxy is active.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 captive\_portal: optional number
 
 Turn on the captive portal after the specified amount of time.
@@ -574,7 +698,7 @@ Turn on the captive portal after the specified amount of time.
 
 default: optional boolean
 
-Whether the policy is the default policy for an account.
+Whether the policy is the account default. WARP group profiles cannot set this field.
 
 <a href="#">Link to this property</a>
 
@@ -738,7 +862,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, wireguard\_endpoints }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -765,6 +889,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -877,6 +1007,30 @@ maxLength36
 precedence: optional number
 
 The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+profile\_type: optional "warp"or "browser\_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1013,9 +1167,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "match": "identity.email == \\"test@cloudflare.com\\"",
           "name": "Allow Developers",
-          "precedence": 100,
           "allow_mode_switch": true,
           "allow_updates": true,
           "allowed_to_leave": true,
@@ -1026,6 +1178,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
           "exclude_office_ips": true,
           "lan_allow_minutes": 30,
           "lan_allow_subnet_size": 24,
+          "match": "identity.email == \\"test@cloudflare.com\\"",
+          "precedence": 100,
+          "profile_type": "warp",
           "register_interface_ip_with_dns": true,
           "support_url": "https://1.1.1.1/help",
           "switch_locked": true,
@@ -1062,6 +1217,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
     "allow_updates": true,
     "allowed_to_leave": true,
     "auto_connect": 0,
+    "browser_extension_config": {
+      "proxy_control": "unlocked",
+      "proxy_enabled": true
+    },
     "captive_portal": 180,
     "default": false,
     "description": "Policy for test teams.",
@@ -1100,7 +1259,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       ],
       "wireguard_endpoints": [
         "198.51.100.1:2408"
-      ]
+      ],
+      "autoswitch": true
     },
     "include": [
       {
@@ -1114,6 +1274,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
     "name": "Allow Developers",
     "policy_id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "precedence": 100,
+    "profile_type": "warp",
     "register_interface_ip_with_dns": true,
     "sccm_vpn_boundary_support": false,
     "service_mode_v2": {
@@ -1172,6 +1333,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
     "allow_updates": true,
     "allowed_to_leave": true,
     "auto_connect": 0,
+    "browser_extension_config": {
+      "proxy_control": "unlocked",
+      "proxy_enabled": true
+    },
     "captive_portal": 180,
     "default": false,
     "description": "Policy for test teams.",
@@ -1210,7 +1375,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       ],
       "wireguard_endpoints": [
         "198.51.100.1:2408"
-      ]
+      ],
+      "autoswitch": true
     },
     "include": [
       {
@@ -1224,6 +1390,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
     "name": "Allow Developers",
     "policy_id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "precedence": 100,
+    "profile_type": "warp",
     "register_interface_ip_with_dns": true,
     "sccm_vpn_boundary_support": false,
     "service_mode_v2": {

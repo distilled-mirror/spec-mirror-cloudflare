@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Revoke registrations
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/registrations/revoke
 
-Revokes a list of WARP registrations.
+Revokes a list of WARP registrations. Prefer “delete” operation instead, “revoke” does not release virtual IPs.
 
 ##### Security
 

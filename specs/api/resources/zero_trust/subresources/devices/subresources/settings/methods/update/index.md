@@ -1,5 +1,5 @@
 ---
-title: Update device settings for a Zero Trust account
+title: Update device settings (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update device settings for a Zero Trust account
+# Update device settings (deprecated)
+
+Deprecated
 
 PUT/accounts/{account\_id}/devices/settings
 
-Updates the current device settings for a Zero Trust account.
+Deprecated: use “PATCH /accounts/{account\_id}/devices/settings” instead
 
 ##### Security
 
@@ -280,7 +282,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.settings%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update device settings for a Zero Trust account
+### Update device settings (deprecated)
 
 HTTP
 

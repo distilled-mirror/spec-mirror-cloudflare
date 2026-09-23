@@ -1,5 +1,5 @@
 ---
-title: Reset device settings for a Zero Trust account with defaults. This turns off all proxying.
+title: Reset device settings
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reset device settings for a Zero Trust account with defaults. This turns off all proxying.
+# Reset device settings
 
 DELETE/accounts/{account\_id}/devices/settings
 
@@ -224,7 +224,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.settings%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Reset device settings for a Zero Trust account with defaults. This turns off all proxying.
+### Reset device settings
 
 HTTP
 

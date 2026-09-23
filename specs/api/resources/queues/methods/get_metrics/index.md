@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/queues/{queue\_id}/metrics
 
-Return best-effort metrics for a queue. Values may be approximate due to the distributed nature of queues.
+Returns best-effort metrics for a Queue. Values may be approximate due to the distributed nature of Queues.
 
 ##### Security
 

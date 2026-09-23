@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/queues/{queue\_id}/purge
 
-Get details about a Queue’s purge status.
+Returns the status of a Queue purge operation.
 
 ##### Security
 

@@ -1,349 +1,319 @@
+---
+title: Accounts
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+[Addressing](https://developers.cloudflare.com/api/resources/addressing)
+
+[Address Maps](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
 # Accounts
 
-## Add an account membership to an Address Map
+##### [Add an account membership to an Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/accounts/methods/update)
 
-**put** `/accounts/{account_id}/addressing/address_maps/{address_map_id}/accounts/{account_id}`
+PUT/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/accounts/{member\_account\_id}
 
-Add an account as a member of a particular address map.
+##### [Remove an account membership from an Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/accounts/methods/delete)
 
-### Path Parameters
+DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/accounts/{member\_account\_id}
 
-- `account_id: string`
+##### ModelsExpand Collapse
 
-  Identifier of a Cloudflare account.
+<details>
 
-- `address_map_id: string`
+<summary>
 
-  Identifier of an Address Map.
+AccountUpdateResponse object {errors, messages, success, result\_info }
 
-### Body Parameters
+</summary>
 
-- `body: unknown`
+<details>
 
-### Returns
+<summary>
 
-- `errors: array of object { code, message, documentation_url, source }`
+errors: array of object {code, message, documentation\_url, source }
 
-  - `code: number`
+</summary>
 
-  - `message: string`
+code: number
 
-  - `documentation_url: optional string`
+minimum1000
 
-  - `source: optional object { pointer }`
+<a href="#">Link to this property</a>
 
-    - `pointer: optional string`
+message: string
 
-- `messages: array of object { code, message, documentation_url, source }`
+<a href="#">Link to this property</a>
 
-  - `code: number`
+documentation\_url: optional string
 
-  - `message: string`
+<a href="#">Link to this property</a>
 
-  - `documentation_url: optional string`
+<details>
 
-  - `source: optional object { pointer }`
+<summary>
 
-    - `pointer: optional string`
+source: optional object {pointer }
 
-- `success: true`
+</summary>
 
-  Whether the API call was successful.
+pointer: optional string
 
-  - `true`
+<a href="#">Link to this property</a>
 
-- `result_info: optional object { count, page, per_page, 2 more }`
+</details>
 
-  - `count: optional number`
+<a href="#">Link to this property</a>
 
-    Total number of results for the requested service.
+</details>
 
-  - `page: optional number`
+<a href="#">Link to this property</a>
 
-    Current page within paginated list of results.
+<details>
 
-  - `per_page: optional number`
+<summary>
 
-    Number of results per page of results.
+messages: array of object {code, message, documentation\_url, source }
 
-  - `total_count: optional number`
+</summary>
 
-    Total results available without any search parameters.
+code: number
 
-  - `total_pages: optional number`
+minimum1000
 
-    The number of total pages in the entire result set.
+<a href="#">Link to this property</a>
 
-### Example
+message: string
 
-```http
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps/$ADDRESS_MAP_ID/accounts/$ACCOUNT_ID \
-    -X PUT \
-    -H 'Content-Type: application/json' \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
-    -d '{}'
-```
+<a href="#">Link to this property</a>
 
-#### Response
+documentation\_url: optional string
 
-```json
-{
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
-  }
-}
-```
+<a href="#">Link to this property</a>
 
-## Remove an account membership from an Address Map
+<details>
 
-**delete** `/accounts/{account_id}/addressing/address_maps/{address_map_id}/accounts/{account_id}`
+<summary>
 
-Remove an account as a member of a particular address map.
+source: optional object {pointer }
 
-### Path Parameters
+</summary>
 
-- `account_id: string`
+pointer: optional string
 
-  Identifier of a Cloudflare account.
+<a href="#">Link to this property</a>
 
-- `address_map_id: string`
+</details>
 
-  Identifier of an Address Map.
+<a href="#">Link to this property</a>
 
-### Returns
+</details>
 
-- `errors: array of object { code, message, documentation_url, source }`
+<a href="#">Link to this property</a>
 
-  - `code: number`
+success: true
 
-  - `message: string`
+Whether the API call was successful.
 
-  - `documentation_url: optional string`
+<a href="#">Link to this property</a>
 
-  - `source: optional object { pointer }`
+<details>
 
-    - `pointer: optional string`
+<summary>
 
-- `messages: array of object { code, message, documentation_url, source }`
+result\_info: optional object {count, page, per\_page, 2 more }
 
-  - `code: number`
+</summary>
 
-  - `message: string`
+count: optional number
 
-  - `documentation_url: optional string`
+Total number of results for the requested service.
 
-  - `source: optional object { pointer }`
+<a href="#">Link to this property</a>
 
-    - `pointer: optional string`
+page: optional number
 
-- `success: true`
+Current page within paginated list of results.
 
-  Whether the API call was successful.
+<a href="#">Link to this property</a>
 
-  - `true`
+per\_page: optional number
 
-- `result_info: optional object { count, page, per_page, 2 more }`
+Number of results per page of results.
 
-  - `count: optional number`
+<a href="#">Link to this property</a>
 
-    Total number of results for the requested service.
+total\_count: optional number
 
-  - `page: optional number`
+Total results available without any search parameters.
 
-    Current page within paginated list of results.
+<a href="#">Link to this property</a>
 
-  - `per_page: optional number`
+total\_pages: optional number
 
-    Number of results per page of results.
+The number of total pages in the entire result set.
 
-  - `total_count: optional number`
+<a href="#">Link to this property</a>
 
-    Total results available without any search parameters.
+</details>
 
-  - `total_pages: optional number`
+<a href="#">Link to this property</a>
 
-    The number of total pages in the entire result set.
+</details>
 
-### Example
+[Link to this property](#)%20addressing.address_maps.accounts%20%3E%20(model)%20account_update_response%20%3E%20(schema)>)
 
-```http
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps/$ADDRESS_MAP_ID/accounts/$ACCOUNT_ID \
-    -X DELETE \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
-```
+<details>
 
-#### Response
+<summary>
 
-```json
-{
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "success": true,
-  "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000,
-    "total_pages": 100
-  }
-}
-```
+AccountDeleteResponse object {errors, messages, success, result\_info }
 
-## Domain Types
+</summary>
 
-### Account Update Response
+<details>
 
-- `AccountUpdateResponse object { errors, messages, success, result_info }`
+<summary>
 
-  - `errors: array of object { code, message, documentation_url, source }`
+errors: array of object {code, message, documentation\_url, source }
 
-    - `code: number`
+</summary>
 
-    - `message: string`
+code: number
 
-    - `documentation_url: optional string`
+minimum1000
 
-    - `source: optional object { pointer }`
+<a href="#">Link to this property</a>
 
-      - `pointer: optional string`
+message: string
 
-  - `messages: array of object { code, message, documentation_url, source }`
+<a href="#">Link to this property</a>
 
-    - `code: number`
+documentation\_url: optional string
 
-    - `message: string`
+<a href="#">Link to this property</a>
 
-    - `documentation_url: optional string`
+<details>
 
-    - `source: optional object { pointer }`
+<summary>
 
-      - `pointer: optional string`
+source: optional object {pointer }
 
-  - `success: true`
+</summary>
 
-    Whether the API call was successful.
+pointer: optional string
 
-    - `true`
+<a href="#">Link to this property</a>
 
-  - `result_info: optional object { count, page, per_page, 2 more }`
+</details>
 
-    - `count: optional number`
+<a href="#">Link to this property</a>
 
-      Total number of results for the requested service.
+</details>
 
-    - `page: optional number`
+<a href="#">Link to this property</a>
 
-      Current page within paginated list of results.
+<details>
 
-    - `per_page: optional number`
+<summary>
 
-      Number of results per page of results.
+messages: array of object {code, message, documentation\_url, source }
 
-    - `total_count: optional number`
+</summary>
 
-      Total results available without any search parameters.
+code: number
 
-    - `total_pages: optional number`
+minimum1000
 
-      The number of total pages in the entire result set.
+<a href="#">Link to this property</a>
 
-### Account Delete Response
+message: string
 
-- `AccountDeleteResponse object { errors, messages, success, result_info }`
+<a href="#">Link to this property</a>
 
-  - `errors: array of object { code, message, documentation_url, source }`
+documentation\_url: optional string
 
-    - `code: number`
+<a href="#">Link to this property</a>
 
-    - `message: string`
+<details>
 
-    - `documentation_url: optional string`
+<summary>
 
-    - `source: optional object { pointer }`
+source: optional object {pointer }
 
-      - `pointer: optional string`
+</summary>
 
-  - `messages: array of object { code, message, documentation_url, source }`
+pointer: optional string
 
-    - `code: number`
+<a href="#">Link to this property</a>
 
-    - `message: string`
+</details>
 
-    - `documentation_url: optional string`
+<a href="#">Link to this property</a>
 
-    - `source: optional object { pointer }`
+</details>
 
-      - `pointer: optional string`
+<a href="#">Link to this property</a>
 
-  - `success: true`
+success: true
 
-    Whether the API call was successful.
+Whether the API call was successful.
 
-    - `true`
+<a href="#">Link to this property</a>
 
-  - `result_info: optional object { count, page, per_page, 2 more }`
+<details>
 
-    - `count: optional number`
+<summary>
 
-      Total number of results for the requested service.
+result\_info: optional object {count, page, per\_page, 2 more }
 
-    - `page: optional number`
+</summary>
 
-      Current page within paginated list of results.
+count: optional number
 
-    - `per_page: optional number`
+Total number of results for the requested service.
 
-      Number of results per page of results.
+<a href="#">Link to this property</a>
 
-    - `total_count: optional number`
+page: optional number
 
-      Total results available without any search parameters.
+Current page within paginated list of results.
 
-    - `total_pages: optional number`
+<a href="#">Link to this property</a>
 
-      The number of total pages in the entire result set.
+per\_page: optional number
+
+Number of results per page of results.
+
+<a href="#">Link to this property</a>
+
+total\_count: optional number
+
+Total results available without any search parameters.
+
+<a href="#">Link to this property</a>
+
+total\_pages: optional number
+
+The number of total pages in the entire result set.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20addressing.address_maps.accounts%20%3E%20(model)%20account_delete_response%20%3E%20(schema)>)

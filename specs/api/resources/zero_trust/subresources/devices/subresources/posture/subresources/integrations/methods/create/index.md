@@ -1,5 +1,5 @@
 ---
-title: Create a device posture integration
+title: Create posture integration
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a device posture integration
+# Create posture integration
 
 POST/accounts/{account\_id}/devices/posture/integration
 
@@ -602,7 +602,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.posture.integrations%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a device posture integration
+### Create posture integration
 
 HTTP
 

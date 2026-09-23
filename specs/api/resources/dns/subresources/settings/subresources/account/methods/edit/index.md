@@ -84,6 +84,8 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 zone\_defaults: optional object {flatten\_all\_cnames, foundation\_dns, internal\_dns, 6 more }
 
+Default settings for new zones created in this account.
+
 </summary>
 
 flatten\_all\_cnames: optional boolean
@@ -405,6 +407,8 @@ result: optional object {zone\_defaults, enforce\_dns\_only }
 <summary>
 
 zone\_defaults: object {flatten\_all\_cnames, foundation\_dns, internal\_dns, 6 more }
+
+Default settings for new zones created in this account.
 
 </summary>
 

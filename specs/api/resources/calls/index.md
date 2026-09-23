@@ -22,19 +22,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/calls/apps
 
-##### [Retrieve app details](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/get)
+##### [Retrieve SFU app details](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/get)
 
 GET/accounts/{account\_id}/calls/apps/{app\_id}
 
-##### [Create a new app](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/create)
+##### [Create an SFU app](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/create)
 
 POST/accounts/{account\_id}/calls/apps
 
-##### [Edit app details](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/update)
+##### [Update SFU app details](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/update)
 
 PUT/accounts/{account\_id}/calls/apps/{app\_id}
 
-##### [Delete app](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/delete)
+##### [Delete an SFU app](https://developers.cloudflare.com/api/resources/calls/subresources/sfu/methods/delete)
 
 DELETE/accounts/{account\_id}/calls/apps/{app\_id}
 
@@ -66,7 +66,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -110,7 +110,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -154,7 +154,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -208,7 +208,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -252,7 +252,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -272,7 +272,7 @@ minLength32
 
 #### CallsTURN
 
-##### [List TURN Keys](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/list)
+##### [List TURN keys](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/list)
 
 GET/accounts/{account\_id}/calls/turn\_keys
 
@@ -280,11 +280,11 @@ GET/accounts/{account\_id}/calls/turn\_keys
 
 GET/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
-##### [Create a new TURN key](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/create)
+##### [Create a TURN key](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/create)
 
 POST/accounts/{account\_id}/calls/turn\_keys
 
-##### [Edit TURN key details](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/update)
+##### [Update TURN key details](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/update)
 
 PUT/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
@@ -320,7 +320,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -364,7 +364,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -462,7 +462,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -506,7 +506,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 

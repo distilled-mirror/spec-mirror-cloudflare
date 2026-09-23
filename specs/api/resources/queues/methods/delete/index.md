@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/queues/{queue\_id}
 
-Deletes a queue
+Deletes a Queue.
 
 ##### Security
 

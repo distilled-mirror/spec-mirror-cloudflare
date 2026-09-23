@@ -1418,11 +1418,17 @@ Configuration for assets within a Worker.
 
 <summary>
 
-config: optional object { html_handling, not_found_handling, run_worker_first }
+config: optional object { base_path, html_handling, not_found_handling, run_worker_first }
 
 Configuration for assets within a Worker.
 
 </summary>
+
+base_path: optional string
+
+The public URL path prefix under which assets are served. A null request value resets it to `/`; responses represent the root as `/`. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
+
+[Link to this property](#)
 
 <details>
 
@@ -9220,9 +9226,13 @@ strategy: "percentage"
 
 versions: array of object { percentage, version_id }
 
+Worker versions included in this deployment. Each object must contain a `version_id` UUID and a `percentage`; percentages across all objects must total 100. In the `cf` CLI, pass the entire array as one JSON value to `--versions`, either inline, for example `--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'`, or from a JSON file with `--versions @versions.json`.
+
 </summary>
 
 percentage: number
+
+Percentage of traffic served by this version.
 
 maximum100
 
@@ -9231,6 +9241,8 @@ minimum0.01
 [Link to this property](#)
 
 version_id: string
+
+Identifier of the Worker Version.
 
 formatuuid
 
@@ -9318,9 +9330,13 @@ strategy: "percentage"
 
 versions: array of object { percentage, version_id }
 
+Worker versions included in this deployment. Each object must contain a `version_id` UUID and a `percentage`; percentages across all objects must total 100. In the `cf` CLI, pass the entire array as one JSON value to `--versions`, either inline, for example `--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'`, or from a JSON file with `--versions @versions.json`.
+
 </summary>
 
 percentage: number
+
+Percentage of traffic served by this version.
 
 maximum100
 
@@ -9329,6 +9345,8 @@ minimum0.01
 [Link to this property](#)
 
 version_id: string
+
+Identifier of the Worker Version.
 
 formatuuid
 

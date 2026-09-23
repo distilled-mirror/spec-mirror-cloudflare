@@ -1,5 +1,5 @@
 ---
-title: List device posture rules
+title: List posture rules
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List device posture rules
+# List posture rules
 
 GET/accounts/{account\_id}/devices/posture
 
@@ -1750,7 +1750,7 @@ Total results available without any search parameters.
 
 [Link to this property](#)%20zero_trust.devices.posture%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List device posture rules
+### List posture rules
 
 HTTP
 

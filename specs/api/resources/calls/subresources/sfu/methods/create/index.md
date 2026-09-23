@@ -1,5 +1,5 @@
 ---
-title: Create a new app
+title: Create an SFU app
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new app
+# Create an SFU app
 
 POST/accounts/{account\_id}/calls/apps
 
-Creates a new Cloudflare calls app. An app is an unique enviroment where each Session can access all Tracks within the app.
+Creates a Realtime SFU app. An app is an isolated namespace in which sessions can access the app’s tracks.
 
 ##### Security
 
@@ -50,7 +50,7 @@ maxLength32
 
 name: optional string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -172,7 +172,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -200,7 +200,7 @@ minLength32
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create a new app
+### Create an SFU app
 
 HTTP
 

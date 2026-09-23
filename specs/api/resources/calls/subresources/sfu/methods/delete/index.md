@@ -1,5 +1,5 @@
 ---
-title: Delete app
+title: Delete an SFU app
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete app
+# Delete an SFU app
 
 DELETE/accounts/{account\_id}/calls/apps/{app\_id}
 
-Deletes an app from Cloudflare Calls
+Deletes a Realtime SFU app.
 
 ##### Security
 
@@ -174,7 +174,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -192,7 +192,7 @@ minLength32
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete app
+### Delete an SFU app
 
 HTTP
 

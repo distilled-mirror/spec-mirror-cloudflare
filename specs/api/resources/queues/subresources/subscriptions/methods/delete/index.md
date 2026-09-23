@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/event\_subscriptions/subscriptions/{subscription\_id}
 
-Delete an existing event subscription
+Deletes an existing Queue event subscription.
 
 ##### Security
 

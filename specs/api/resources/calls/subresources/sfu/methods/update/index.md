@@ -1,5 +1,5 @@
 ---
-title: Edit app details
+title: Update SFU app details
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Edit app details
+# Update SFU app details
 
 PUT/accounts/{account\_id}/calls/apps/{app\_id}
 
-Edit details for a single app.
+Updates details for a single Realtime SFU app.
 
 ##### Security
 
@@ -60,7 +60,7 @@ minLength32
 
 name: optional string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -182,7 +182,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -200,7 +200,7 @@ minLength32
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Edit app details
+### Update SFU app details
 
 HTTP
 

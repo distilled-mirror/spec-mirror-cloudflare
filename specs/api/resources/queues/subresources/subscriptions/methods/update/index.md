@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/event\_subscriptions/subscriptions/{subscription\_id}
 
-Update an existing event subscription
+Updates an existing Queue event subscription.
 
 ##### Security
 

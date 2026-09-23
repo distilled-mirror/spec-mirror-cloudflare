@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/messages/ack
 
-Acknowledge + Retry messages from a Queue
+Acknowledges successfully processed Queue messages and retries messages that were not processed successfully.
 
 ##### Security
 

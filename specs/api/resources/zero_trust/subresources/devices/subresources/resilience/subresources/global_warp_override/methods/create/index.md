@@ -1,5 +1,5 @@
 ---
-title: Set Global WARP override state
+title: Set Global Disconnect
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Set Global WARP override state
+# Set Global Disconnect
 
 POST/accounts/{account\_id}/devices/resilience/disconnect
 
-Sets the Global WARP override state.
+Sets the Global WARP disconnect state.
 
 ##### Security
 
@@ -200,7 +200,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.resilience.global_warp_override%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Set Global WARP override state
+### Set Global Disconnect
 
 HTTP
 

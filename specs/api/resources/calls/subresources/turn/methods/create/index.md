@@ -1,5 +1,5 @@
 ---
-title: Create a new TURN key
+title: Create a TURN key
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new TURN key
+# Create a TURN key
 
 POST/accounts/{account\_id}/calls/turn\_keys
 
-Creates a new Cloudflare Calls TURN key.
+Creates a new Realtime TURN key.
 
 ##### Security
 
@@ -200,7 +200,7 @@ minLength32
 
 [Link to this property](#)%20calls.turn%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create a new TURN key
+### Create a TURN key
 
 HTTP
 

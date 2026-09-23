@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/queues/{queue\_id}/consumers/{consumer\_id}
 
-Deletes the consumer for a queue.
+Deletes a consumer from a Queue.
 
 ##### Security
 

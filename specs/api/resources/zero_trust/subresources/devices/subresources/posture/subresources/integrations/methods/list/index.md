@@ -1,5 +1,5 @@
 ---
-title: List your device posture integrations
+title: List posture integrations
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List your device posture integrations
+# List posture integrations
 
 GET/accounts/{account\_id}/devices/posture/integration
 
@@ -304,7 +304,7 @@ Total results available without any search parameters.
 
 [Link to this property](#)%20zero_trust.devices.posture.integrations%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List your device posture integrations
+### List posture integrations
 
 HTTP
 

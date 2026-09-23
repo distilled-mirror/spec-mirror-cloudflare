@@ -118,7 +118,7 @@ Configuration for assets within a Worker.
 
 <summary>
 
-config: optional object {\_headers, \_redirects, html\_handling, 3 more }
+config: optional object {\_headers, \_redirects, base\_path, 4 more }
 
 Configuration for assets within a Worker.
 
@@ -133,6 +133,12 @@ The contents of a \_headers file (used to attach custom headers on asset respons
 \_redirects: optional string
 
 The contents of a \_redirects file (used to apply redirects or proxy paths ahead of asset serving).
+
+<a href="#">Link to this property</a>
+
+base\_path: optional string
+
+The public URL path prefix under which assets are served. A null request value resets it to <code>/</code>; responses represent the root as <code>/</code>. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
 
 <a href="#">Link to this property</a>
 

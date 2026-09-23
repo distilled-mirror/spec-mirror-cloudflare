@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/event\_subscriptions/subscriptions/{subscription\_id}
 
-Get details about an existing event subscription
+Returns an existing Queue event subscription.
 
 ##### Security
 

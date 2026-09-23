@@ -1,5 +1,5 @@
 ---
-title: Get device posture integration details
+title: Get posture integration
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get device posture integration details
+# Get posture integration
 
 GET/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
@@ -276,7 +276,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.posture.integrations%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get device posture integration details
+### Get posture integration
 
 HTTP
 

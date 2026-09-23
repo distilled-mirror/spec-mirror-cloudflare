@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # TURN
 
-##### [List TURN Keys](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/list)
+##### [List TURN keys](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/list)
 
 GET/accounts/{account\_id}/calls/turn\_keys
 
@@ -26,11 +26,11 @@ GET/accounts/{account\_id}/calls/turn\_keys
 
 GET/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
-##### [Create a new TURN key](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/create)
+##### [Create a TURN key](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/create)
 
 POST/accounts/{account\_id}/calls/turn\_keys
 
-##### [Edit TURN key details](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/update)
+##### [Update TURN key details](https://developers.cloudflare.com/api/resources/calls/subresources/turn/methods/update)
 
 PUT/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
@@ -66,7 +66,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -110,7 +110,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -208,7 +208,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -252,7 +252,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 

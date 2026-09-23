@@ -1,5 +1,5 @@
 ---
-title: Create a device posture rule
+title: Create posture rule
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a device posture rule
+# Create posture rule
 
 POST/accounts/{account\_id}/devices/posture
 
@@ -3254,7 +3254,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.posture%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a device posture rule
+### Create posture rule
 
 HTTP
 

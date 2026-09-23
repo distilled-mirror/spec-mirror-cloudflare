@@ -20280,6 +20280,8 @@ AccountGetResponse object { zone_defaults, enforce_dns_only }
 
 zone_defaults: object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
 
+Default settings for new zones created in this account.
+
 </summary>
 
 flatten_all_cnames: boolean
@@ -20519,6 +20521,8 @@ AccountEditResponse object { zone_defaults, enforce_dns_only }
 <summary>
 
 zone_defaults: object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
+
+Default settings for new zones created in this account.
 
 </summary>
 

@@ -20,19 +20,21 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Settings
 
-##### [Get device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
+##### [Get device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
 
 GET/accounts/{account\_id}/devices/settings
 
-##### [Update device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
+##### [Update device settings (deprecated)](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
+
+Deprecated
 
 PUT/accounts/{account\_id}/devices/settings
 
-##### [Patch device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
+##### [Update device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
 
 PATCH/accounts/{account\_id}/devices/settings
 
-##### [Reset device settings for a Zero Trust account with defaults. This turns off all proxying.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
+##### [Reset device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
 
 DELETE/accounts/{account\_id}/devices/settings
 

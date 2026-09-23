@@ -1,5 +1,5 @@
 ---
-title: Retrieve app details
+title: Retrieve SFU app details
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Retrieve app details
+# Retrieve SFU app details
 
 GET/accounts/{account\_id}/calls/apps/{app\_id}
 
-Fetches details for a single Calls app.
+Fetches details for a single Realtime SFU app.
 
 ##### Security
 
@@ -174,7 +174,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -192,7 +192,7 @@ minLength32
 
 [Link to this property](#)%20calls.sfu%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Retrieve app details
+### Retrieve SFU app details
 
 HTTP
 

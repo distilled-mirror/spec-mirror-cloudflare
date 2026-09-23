@@ -834,11 +834,11 @@ DeviceRevokeResponse = unknown
 
 [Link to this property](#)
 
-##### [Retrieve Global WARP override state](/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
+##### [Get Global Disconnect](/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
 
 GET/accounts/{account_id}/devices/resilience/disconnect
 
-##### [Set Global WARP override state](/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
+##### [Set Global Disconnect](/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
 
 POST/accounts/{account_id}/devices/resilience/disconnect
 
@@ -2944,7 +2944,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 28 more }
+SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 30 more }
 
 </summary>
 
@@ -2972,6 +2972,50 @@ The amount of time in seconds to reconnect after having been disabled.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+browser_extension_config: optional object { proxy_control, proxy_enabled }
+
+Browser extension proxy settings. Required when profile_type is browser_extension and invalid for WARP profiles.
+
+</summary>
+
+<details>
+
+<summary>
+
+proxy_control: "unlocked" or "locked"
+
+Whether the user may disable the browser extension proxy.
+
+</summary>
+
+One of the following:
+
+"unlocked"
+
+[Link to this property](#)
+
+"locked"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+proxy_enabled: boolean
+
+Whether the browser extension proxy is active.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 captive_portal: optional number
 
 Turn on the captive portal after the specified amount of time.
@@ -2980,7 +3024,7 @@ Turn on the captive portal after the specified amount of time.
 
 default: optional boolean
 
-Whether the policy is the default policy for an account.
+Whether the policy is the account default. WARP group profiles cannot set this field.
 
 [Link to this property](#)
 
@@ -3144,7 +3188,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, wireguard_endpoints }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -3171,6 +3215,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 [Link to this property](#)
 
@@ -3283,6 +3333,30 @@ maxLength36
 precedence: optional number
 
 The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+profile_type: optional "warp" or "browser_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+[Link to this property](#)
+
+"browser_extension"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -3548,7 +3622,7 @@ PATCH/accounts/{account_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 21 more }
+DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 22 more }
 
 </summary>
 
@@ -3740,7 +3814,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, wireguard_endpoints }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -3767,6 +3841,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 [Link to this property](#)
 
@@ -3845,6 +3925,30 @@ maxLength100
 policy_id: optional string
 
 maxLength36
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+profile_type: optional "warp" or "browser_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+[Link to this property](#)
+
+"browser_extension"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -3944,7 +4048,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 21 more }
+DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 22 more }
 
 </summary>
 
@@ -4136,7 +4240,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, wireguard_endpoints }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -4163,6 +4267,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 [Link to this property](#)
 
@@ -4241,6 +4351,30 @@ maxLength100
 policy_id: optional string
 
 maxLength36
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+profile_type: optional "warp" or "browser_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+[Link to this property](#)
+
+"browser_extension"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -4412,23 +4546,23 @@ GET/accounts/{account_id}/devices/policy/{policy_id}/fallback_domains
 
 PUT/accounts/{account_id}/devices/policy/{policy_id}/fallback_domains
 
-##### [List device posture rules](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/list)
+##### [List posture rules](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/list)
 
 GET/accounts/{account_id}/devices/posture
 
-##### [Get device posture rule details](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/get)
+##### [Get posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/get)
 
 GET/accounts/{account_id}/devices/posture/{rule_id}
 
-##### [Create a device posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/create)
+##### [Create posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/create)
 
 POST/accounts/{account_id}/devices/posture
 
-##### [Update a device posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/update)
+##### [Update posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/update)
 
 PUT/accounts/{account_id}/devices/posture/{rule_id}
 
-##### [Delete a device posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/delete)
+##### [Delete posture rule](/api/resources/zero_trust/subresources/devices/subresources/posture/methods/delete)
 
 DELETE/accounts/{account_id}/devices/posture/{rule_id}
 
@@ -7062,23 +7196,23 @@ maxLength36
 
 [Link to this property](#)
 
-##### [List your device posture integrations](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
+##### [List posture integrations](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
 
 GET/accounts/{account_id}/devices/posture/integration
 
-##### [Get device posture integration details](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
+##### [Get posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
 
 GET/accounts/{account_id}/devices/posture/integration/{integration_id}
 
-##### [Create a device posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
+##### [Create posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
 
 POST/accounts/{account_id}/devices/posture/integration
 
-##### [Update a device posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
+##### [Update posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
 
 PATCH/accounts/{account_id}/devices/posture/integration/{integration_id}
 
-##### [Delete a device posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
+##### [Delete posture integration](/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
 
 DELETE/accounts/{account_id}/devices/posture/integration/{integration_id}
 
@@ -7246,19 +7380,19 @@ string
 
 [Link to this property](#)
 
-##### [Get device settings for a Zero Trust account](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
+##### [Get device settings](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
 
 GET/accounts/{account_id}/devices/settings
 
-##### [Update device settings for a Zero Trust account](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
+##### [Update device settings (deprecated)](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
 
 PUT/accounts/{account_id}/devices/settings
 
-##### [Patch device settings for a Zero Trust account](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
+##### [Update device settings](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
 
 PATCH/accounts/{account_id}/devices/settings
 
-##### [Reset device settings for a Zero Trust account with defaults. This turns off all proxying.](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
+##### [Reset device settings](/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
 
 DELETE/accounts/{account_id}/devices/settings
 

@@ -456,7 +456,7 @@ Numeric value associated with high availability state (0 = disabled, 1 = active,
 
 <summary>
 
-interfaces: optional array of object {name, operstate, ip\_addresses, speed }
+interfaces: optional array of object {name, operstate, health\_reason, 3 more }
 
 </summary>
 
@@ -469,6 +469,18 @@ Name of the network interface
 operstate: string
 
 UP/DOWN state of the network interface
+
+<a href="#">Link to this property</a>
+
+health\_reason: optional string
+
+Comma-separated list of reasons for health score
+
+<a href="#">Link to this property</a>
+
+health\_score: optional number
+
+Aggregate health score (0-100)
 
 <a href="#">Link to this property</a>
 
@@ -1846,6 +1858,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
           {
             "name": "name",
             "operstate": "operstate",
+            "health_reason": "health_reason",
+            "health_score": 0,
             "ip_addresses": [
               {
                 "interface_name": "interface_name",
@@ -2163,6 +2177,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
           {
             "name": "name",
             "operstate": "operstate",
+            "health_reason": "health_reason",
+            "health_score": 0,
             "ip_addresses": [
               {
                 "interface_name": "interface_name",

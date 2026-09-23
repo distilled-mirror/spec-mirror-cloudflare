@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Global WARP Override
 
-##### [Retrieve Global WARP override state](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
+##### [Get Global Disconnect](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
 
 GET/accounts/{account\_id}/devices/resilience/disconnect
 
-##### [Set Global WARP override state](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
+##### [Set Global Disconnect](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
 
 POST/accounts/{account\_id}/devices/resilience/disconnect
 

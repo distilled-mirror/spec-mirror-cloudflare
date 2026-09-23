@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/messages/purge
 
-Delete peeked messages from a Queue by their ref. Purged messages aren’t considered delivered, they are instantly deleted from this queue and do not affect metrics.
+Delete messages from a Queue by using refs returned by the peek endpoint. Purging messages does not count as delivery and does not affect metrics.
 
 ##### Security
 

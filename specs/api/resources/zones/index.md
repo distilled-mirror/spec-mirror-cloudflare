@@ -496,6 +496,472 @@ maxLength32
 
 [Link to this property](#)
 
+##### [View zone tracing settings](/api/resources/zones/subresources/observability/subresources/tracing/subresources/settings/methods/get)
+
+GET/zones/{zone_id}/observability/tracing/settings
+
+##### [Update zone tracing settings](/api/resources/zones/subresources/observability/subresources/tracing/subresources/settings/methods/update)
+
+PATCH/zones/{zone_id}/observability/tracing/settings
+
+##### [Reset zone tracing settings](/api/resources/zones/subresources/observability/subresources/tracing/subresources/settings/methods/delete)
+
+DELETE/zones/{zone_id}/observability/tracing/settings
+
+##### Models
+
+<details>
+
+<summary>
+
+SettingGetResponse object { destinations, enabled, forward_context, 3 more }
+
+</summary>
+
+destinations: array of string
+
+Up to 100 OpenTelemetry destination identifiers that receive traces.
+
+[Link to this property](#)
+
+enabled: boolean
+
+Whether Cloudflare Traces is enabled for the zone.
+
+[Link to this property](#)
+
+forward_context: boolean
+
+Whether trace context is sent externally or across a zone boundary.
+
+[Link to this property](#)
+
+persist: boolean
+
+Whether traces are persisted in Cloudflare.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+propagation_policy: "accept" or "authenticated" or "reject"
+
+When inbound trace context may be continued. Authenticated propagation is not supported yet.
+
+</summary>
+
+One of the following:
+
+"accept"
+
+[Link to this property](#)
+
+"authenticated"
+
+[Link to this property](#)
+
+"reject"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SettingUpdateResponse object { destinations, enabled, forward_context, 3 more }
+
+</summary>
+
+destinations: array of string
+
+Up to 100 OpenTelemetry destination identifiers that receive traces.
+
+[Link to this property](#)
+
+enabled: boolean
+
+Whether Cloudflare Traces is enabled for the zone.
+
+[Link to this property](#)
+
+forward_context: boolean
+
+Whether trace context is sent externally or across a zone boundary.
+
+[Link to this property](#)
+
+persist: boolean
+
+Whether traces are persisted in Cloudflare.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+propagation_policy: "accept" or "authenticated" or "reject"
+
+When inbound trace context may be continued. Authenticated propagation is not supported yet.
+
+</summary>
+
+One of the following:
+
+"accept"
+
+[Link to this property](#)
+
+"authenticated"
+
+[Link to this property](#)
+
+"reject"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SettingDeleteResponse object { destinations, enabled, forward_context, 3 more }
+
+</summary>
+
+destinations: array of string
+
+Up to 100 OpenTelemetry destination identifiers that receive traces.
+
+[Link to this property](#)
+
+enabled: boolean
+
+Whether Cloudflare Traces is enabled for the zone.
+
+[Link to this property](#)
+
+forward_context: boolean
+
+Whether trace context is sent externally or across a zone boundary.
+
+[Link to this property](#)
+
+persist: boolean
+
+Whether traces are persisted in Cloudflare.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+propagation_policy: "accept" or "authenticated" or "reject"
+
+When inbound trace context may be continued. Authenticated propagation is not supported yet.
+
+</summary>
+
+One of the following:
+
+"accept"
+
+[Link to this property](#)
+
+"authenticated"
+
+[Link to this property](#)
+
+"reject"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [View zone trace rules](/api/resources/zones/subresources/observability/subresources/tracing/subresources/rules/methods/get)
+
+GET/zones/{zone_id}/observability/tracing/rules
+
+##### [Replace zone trace rules](/api/resources/zones/subresources/observability/subresources/tracing/subresources/rules/methods/update)
+
+PUT/zones/{zone_id}/observability/tracing/rules
+
+##### [Delete zone trace rules](/api/resources/zones/subresources/observability/subresources/tracing/subresources/rules/methods/delete)
+
+DELETE/zones/{zone_id}/observability/tracing/rules
+
+##### Models
+
+<details>
+
+<summary>
+
+RuleGetResponse object { rules }
+
+</summary>
+
+<details>
+
+<summary>
+
+rules: array of object { action, action_parameters, description, 2 more }
+
+Trace rules in evaluation order.
+
+</summary>
+
+action: "set_trace_settings"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+action_parameters: object { sampling_ratio }
+
+</summary>
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+description: string
+
+maxLength1000
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+expression: string
+
+A Rules language expression that selects requests.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RuleUpdateResponse object { rules }
+
+</summary>
+
+<details>
+
+<summary>
+
+rules: array of object { action, action_parameters, description, 2 more }
+
+Trace rules in evaluation order.
+
+</summary>
+
+action: "set_trace_settings"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+action_parameters: object { sampling_ratio }
+
+</summary>
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+description: string
+
+maxLength1000
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+expression: string
+
+A Rules language expression that selects requests.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RuleDeleteResponse object { rules }
+
+</summary>
+
+<details>
+
+<summary>
+
+rules: array of object { action, action_parameters, description, 2 more }
+
+Trace rules in evaluation order.
+
+</summary>
+
+action: "set_trace_settings"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+action_parameters: object { sampling_ratio }
+
+</summary>
+
+sampling_ratio: number
+
+The ratio of requests sampled for tracing, from 0 to 1.
+
+maximum1
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+description: string
+
+maxLength1000
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+expression: string
+
+A Rules language expression that selects requests.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [Get all zone settings](/api/resources/zones/subresources/settings/methods/list)
 
 GET/zones/{zone_id}/settings

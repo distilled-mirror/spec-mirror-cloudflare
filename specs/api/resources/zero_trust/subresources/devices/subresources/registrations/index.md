@@ -38,9 +38,13 @@ DELETE/accounts/{account\_id}/devices/registrations
 
 ##### [Revoke registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/registrations/methods/revoke)
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/registrations/revoke
 
 ##### [Unrevoke registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/registrations/methods/unrevoke)
+
+Deprecated
 
 POST/accounts/{account\_id}/devices/registrations/unrevoke
 

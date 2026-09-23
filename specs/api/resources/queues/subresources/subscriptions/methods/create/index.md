@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/event\_subscriptions/subscriptions
 
-Create a new event subscription for a queue
+Creates an event subscription for a Queue.
 
 ##### Security
 

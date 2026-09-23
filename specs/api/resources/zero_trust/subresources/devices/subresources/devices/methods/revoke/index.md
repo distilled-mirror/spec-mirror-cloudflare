@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Revoke device registrations
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
-Revokes all WARP registrations associated with the specified device.
+Revokes all WARP registrations associated with the specified device. Prefer “delete” operation instead, “revoke” does not release virtual IPs.
 
 ##### Security
 

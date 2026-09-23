@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/messages/batch
 
-Push a batch of message to a Queue
+Pushes a batch of messages to a Queue.
 
 ##### Security
 

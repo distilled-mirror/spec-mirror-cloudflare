@@ -30,7 +30,7 @@ PUT/zones/{zone\_id}/bot\_management
 
 <summary>
 
-BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 11 more }
+BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more }
 
 </summary>
 
@@ -252,6 +252,12 @@ Enable cloudflare managed robots.txt. If an existing robots.txt is detected, the
 
 <a href="#">Link to this property</a>
 
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -316,7 +322,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 13 more }
+SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
 
 </summary>
 
@@ -544,6 +550,12 @@ Enable cloudflare managed robots.txt. If an existing robots.txt is detected, the
 
 <a href="#">Link to this property</a>
 
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -614,7 +626,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
+SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
 
 </summary>
 
@@ -827,6 +839,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -934,7 +952,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
+SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more }
 
 </summary>
 
@@ -1147,6 +1165,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -1276,7 +1300,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-BotManagementGetResponse = <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 11 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 13 more }
+BotManagementGetResponse = <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
 
 </summary>
 
@@ -1286,7 +1310,7 @@ One of the following:
 
 <summary>
 
-BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 11 more }
+BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more }
 
 </summary>
 
@@ -1508,6 +1532,12 @@ Enable cloudflare managed robots.txt. If an existing robots.txt is detected, the
 
 <a href="#">Link to this property</a>
 
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -1572,7 +1602,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
+SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
 
 </summary>
 
@@ -1785,6 +1815,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -1892,7 +1928,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
+SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more }
 
 </summary>
 
@@ -2105,6 +2141,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -2234,7 +2276,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 13 more }
+SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
 
 </summary>
 
@@ -2459,6 +2501,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -2536,7 +2584,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-BotManagementUpdateResponse = <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 11 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 13 more }
+BotManagementUpdateResponse = <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
 
 </summary>
 
@@ -2546,7 +2594,7 @@ One of the following:
 
 <summary>
 
-BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 11 more }
+BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more }
 
 </summary>
 
@@ -2768,6 +2816,12 @@ Enable cloudflare managed robots.txt. If an existing robots.txt is detected, the
 
 <a href="#">Link to this property</a>
 
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -2832,7 +2886,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
+SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
 
 </summary>
 
@@ -3045,6 +3099,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -3152,7 +3212,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
+SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more }
 
 </summary>
 
@@ -3365,6 +3425,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 
@@ -3494,7 +3560,7 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 13 more }
+SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
 
 </summary>
 
@@ -3719,6 +3785,12 @@ Use lightweight, invisible JavaScript detections to improve Bot Management. <a h
 is\_robots\_txt\_managed: optional boolean
 
 Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
+
+<a href="#">Link to this property</a>
+
+jsd\_api\_results\_enabled: optional boolean
+
+Whether to use JavaScript Detection results submitted through the API for this zone.
 
 <a href="#">Link to this property</a>
 

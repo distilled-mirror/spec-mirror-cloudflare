@@ -1,5 +1,5 @@
 ---
-title: Get device settings for a Zero Trust account
+title: Get device settings
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get device settings for a Zero Trust account
+# Get device settings
 
 GET/accounts/{account\_id}/devices/settings
 
@@ -220,7 +220,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20zero_trust.devices.settings%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get device settings for a Zero Trust account
+### Get device settings
 
 HTTP
 

@@ -428,6 +428,8 @@ DELETE/accounts/{account\_id}/devices/physical-devices/{device\_id}
 
 ##### [Revoke device registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/devices/methods/revoke)
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 ##### ModelsExpand Collapse
@@ -864,11 +866,11 @@ DeviceRevokeResponse = unknown
 
 #### DevicesResilienceGlobal WARP Override
 
-##### [Retrieve Global WARP override state](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
+##### [Get Global Disconnect](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/get)
 
 GET/accounts/{account\_id}/devices/resilience/disconnect
 
-##### [Set Global WARP override state](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
+##### [Set Global Disconnect](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/resilience/subresources/global_warp_override/methods/create)
 
 POST/accounts/{account\_id}/devices/resilience/disconnect
 
@@ -946,9 +948,13 @@ DELETE/accounts/{account\_id}/devices/registrations
 
 ##### [Revoke registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/registrations/methods/revoke)
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/registrations/revoke
 
 ##### [Unrevoke registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/registrations/methods/unrevoke)
+
+Deprecated
 
 POST/accounts/{account\_id}/devices/registrations/unrevoke
 
@@ -2988,7 +2994,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 28 more }
+SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 30 more }
 
 </summary>
 
@@ -3016,6 +3022,50 @@ The amount of time in seconds to reconnect after having been disabled.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+browser\_extension\_config: optional object {proxy\_control, proxy\_enabled }
+
+Browser extension proxy settings. Required when profile\_type is browser\_extension and invalid for WARP profiles.
+
+</summary>
+
+<details>
+
+<summary>
+
+proxy\_control: "unlocked"or "locked"
+
+Whether the user may disable the browser extension proxy.
+
+</summary>
+
+One of the following:
+
+"unlocked"
+
+<a href="#">Link to this property</a>
+
+"locked"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+proxy\_enabled: boolean
+
+Whether the browser extension proxy is active.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 captive\_portal: optional number
 
 Turn on the captive portal after the specified amount of time.
@@ -3024,7 +3074,7 @@ Turn on the captive portal after the specified amount of time.
 
 default: optional boolean
 
-Whether the policy is the default policy for an account.
+Whether the policy is the account default. WARP group profiles cannot set this field.
 
 <a href="#">Link to this property</a>
 
@@ -3188,7 +3238,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, wireguard\_endpoints }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -3215,6 +3265,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -3327,6 +3383,30 @@ maxLength36
 precedence: optional number
 
 The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+profile\_type: optional "warp"or "browser\_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3594,7 +3674,7 @@ PATCH/accounts/{account\_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 21 more }
+DefaultGetResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
 
 </summary>
 
@@ -3786,7 +3866,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, wireguard\_endpoints }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -3813,6 +3893,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -3891,6 +3977,30 @@ maxLength100
 policy\_id: optional string
 
 maxLength36
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+profile\_type: optional "warp"or "browser\_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3990,7 +4100,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 21 more }
+DefaultEditResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
 
 </summary>
 
@@ -4182,7 +4292,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, wireguard\_endpoints }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -4209,6 +4319,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+autoswitch: optional boolean
+
+Automatically switch Global Acceleration regions based on device location. Defaults to false when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -4287,6 +4403,30 @@ maxLength100
 policy\_id: optional string
 
 maxLength36
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+profile\_type: optional "warp"or "browser\_extension"
+
+The client type to which the device settings profile applies.
+
+</summary>
+
+One of the following:
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"browser\_extension"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -4476,23 +4616,23 @@ PUT/accounts/{account\_id}/devices/policy/{policy\_id}/fallback\_domains
 
 #### DevicesPosture
 
-##### [List device posture rules](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/list)
+##### [List posture rules](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/list)
 
 GET/accounts/{account\_id}/devices/posture
 
-##### [Get device posture rule details](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/get)
+##### [Get posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/get)
 
 GET/accounts/{account\_id}/devices/posture/{rule\_id}
 
-##### [Create a device posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/create)
+##### [Create posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/create)
 
 POST/accounts/{account\_id}/devices/posture
 
-##### [Update a device posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/update)
+##### [Update posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/update)
 
 PUT/accounts/{account\_id}/devices/posture/{rule\_id}
 
-##### [Delete a device posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/delete)
+##### [Delete posture rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/methods/delete)
 
 DELETE/accounts/{account\_id}/devices/posture/{rule\_id}
 
@@ -7128,23 +7268,23 @@ maxLength36
 
 #### DevicesPostureIntegrations
 
-##### [List your device posture integrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
+##### [List posture integrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/list)
 
 GET/accounts/{account\_id}/devices/posture/integration
 
-##### [Get device posture integration details](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
+##### [Get posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/get)
 
 GET/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
-##### [Create a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
+##### [Create posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/create)
 
 POST/accounts/{account\_id}/devices/posture/integration
 
-##### [Update a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
+##### [Update posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/edit)
 
 PATCH/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
-##### [Delete a device posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
+##### [Delete posture integration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/posture/subresources/integrations/methods/delete)
 
 DELETE/accounts/{account\_id}/devices/posture/integration/{integration\_id}
 
@@ -7318,19 +7458,21 @@ string
 
 #### DevicesSettings
 
-##### [Get device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
+##### [Get device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/get)
 
 GET/accounts/{account\_id}/devices/settings
 
-##### [Update device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
+##### [Update device settings (deprecated)](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/update)
+
+Deprecated
 
 PUT/accounts/{account\_id}/devices/settings
 
-##### [Patch device settings for a Zero Trust account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
+##### [Update device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/edit)
 
 PATCH/accounts/{account\_id}/devices/settings
 
-##### [Reset device settings for a Zero Trust account with defaults. This turns off all proxying.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
+##### [Reset device settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/settings/methods/delete)
 
 DELETE/accounts/{account\_id}/devices/settings
 

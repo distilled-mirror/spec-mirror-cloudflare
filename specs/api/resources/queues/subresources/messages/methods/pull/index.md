@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/messages/pull
 
-Pull a batch of messages from a Queue
+Pulls a batch of messages from a Queue for an HTTP pull consumer.
 
 ##### Security
 

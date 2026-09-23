@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Unrevoke registrations
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/registrations/unrevoke
 
 Unrevokes a list of WARP registrations.

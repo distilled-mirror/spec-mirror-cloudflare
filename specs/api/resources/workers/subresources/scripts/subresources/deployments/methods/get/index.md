@@ -202,9 +202,13 @@ strategy: "percentage"
 
 versions: array of object {percentage, version\_id }
 
+Worker versions included in this deployment. Each object must contain a <code>version_id</code> UUID and a <code>percentage</code>; percentages across all objects must total 100. In the <code>cf</code> CLI, pass the entire array as one JSON value to <code>--versions</code>, either inline, for example <code>--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'</code>, or from a JSON file with <code>--versions @versions.json</code>.
+
 </summary>
 
 percentage: number
+
+Percentage of traffic served by this version.
 
 maximum100
 
@@ -213,6 +217,8 @@ minimum0.01
 <a href="#">Link to this property</a>
 
 version\_id: string
+
+Identifier of the Worker Version.
 
 formatuuid
 
@@ -307,7 +313,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
     "versions": [
       {
         "percentage": 100,
-        "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "version_id": "023e105f-2a42-4f8b-a1c1-73f6a2a30c0f"
       }
     ],
     "annotations": {
@@ -354,7 +360,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
     "versions": [
       {
         "percentage": 100,
-        "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "version_id": "023e105f-2a42-4f8b-a1c1-73f6a2a30c0f"
       }
     ],
     "annotations": {

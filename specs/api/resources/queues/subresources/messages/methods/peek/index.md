@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/messages/peek
 
-Peek messages from a Queue without leasing them. Messages remain available for subsequent peek or pull operations.
+Peek messages from a Queue without leasing them. Each message includes a ref that can be passed to the purge endpoint, and remains available for subsequent peek or pull operations until it is purged.
 
 ##### Security
 

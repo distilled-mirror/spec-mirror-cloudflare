@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/calls/turn\_keys/{key\_id}
 
-Deletes a TURN key from Cloudflare Calls
+Deletes a Realtime TURN key.
 
 ##### Security
 
@@ -174,7 +174,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 

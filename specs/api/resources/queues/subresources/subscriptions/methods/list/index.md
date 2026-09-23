@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/event\_subscriptions/subscriptions
 
-Get a paginated list of event subscriptions with optional sorting and filtering
+Returns a paginated list of Queue event subscriptions with optional sorting and filtering.
 
 ##### Security
 

@@ -34,6 +34,8 @@ DELETE/accounts/{account\_id}/devices/physical-devices/{device\_id}
 
 ##### [Revoke device registrations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/devices/subresources/devices/methods/revoke)
 
+Deprecated
+
 POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 ##### ModelsExpand Collapse

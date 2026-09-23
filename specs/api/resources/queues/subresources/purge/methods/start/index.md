@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/queues/{queue\_id}/purge
 
-Deletes all messages from the Queue.
+Starts a purge that deletes all messages from a Queue.
 
 ##### Security
 
@@ -80,7 +80,7 @@ maxLength32
 
 delete\_messages\_permanently: optional boolean
 
-Confimation that all messages will be deleted permanently.
+Confirms that all messages will be permanently deleted.
 
 [Link to this property](#)%20queues.purge%20%3E%20(method)%20start%20%3E%20(params)%200%20%3E%20(param)%20delete_messages_permanently%20%3E%20(schema)>)
 
@@ -309,6 +309,284 @@ The number of milliseconds that a message is exclusively leased. After the timeo
 <a href="#">Link to this property</a>
 
 type: optional "http\_pull"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Notification object {consumer\_id, created\_on, dead\_letter\_queue, 3 more }
+
+</summary>
+
+consumer\_id: optional string
+
+A Resource identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+dead\_letter\_queue: optional string
+
+Name of the dead letter queue, or empty string if not configured.
+
+<a href="#">Link to this property</a>
+
+queue\_name: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+settings: optional object {email, pagerduty, webhooks } or object {webhooks, email, pagerduty } or object {pagerduty, email, webhooks }
+
+Notification destinations for a Queue. At least one email, webhook, or PagerDuty destination is required.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {email, pagerduty, webhooks }
+
+</summary>
+
+<details>
+
+<summary>
+
+email: array of object {id }
+
+</summary>
+
+id: string
+
+The email address.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pagerduty: optional array of object {id }
+
+PagerDuty notification destinations.
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+webhooks: optional array of object {id }
+
+Webhook notification destinations.
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {webhooks, email, pagerduty }
+
+</summary>
+
+<details>
+
+<summary>
+
+webhooks: array of object {id }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+email: optional array of object {id }
+
+Email notification destinations.
+
+</summary>
+
+id: string
+
+The email address.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pagerduty: optional array of object {id }
+
+PagerDuty notification destinations.
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {pagerduty, email, webhooks }
+
+</summary>
+
+<details>
+
+<summary>
+
+pagerduty: array of object {id }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+email: optional array of object {id }
+
+Email notification destinations.
+
+</summary>
+
+id: string
+
+The email address.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+webhooks: optional array of object {id }
+
+Webhook notification destinations.
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: optional "notification"
 
 <a href="#">Link to this property</a>
 

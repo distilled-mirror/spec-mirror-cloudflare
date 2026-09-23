@@ -1,5 +1,5 @@
 ---
-title: List TURN Keys
+title: List TURN keys
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List TURN Keys
+# List TURN keys
 
 GET/accounts/{account\_id}/calls/turn\_keys
 
-Lists all TURN keys in the Cloudflare account
+Lists all TURN keys in the Cloudflare account.
 
 ##### Security
 
@@ -164,7 +164,7 @@ formatdate-time
 
 name: string
 
-A short description of Calls app, not shown to end users.
+A short description of a Realtime SFU app, not shown to end users.
 
 <a href="#">Link to this property</a>
 
@@ -182,7 +182,7 @@ minLength32
 
 [Link to this property](#)%20calls.turn%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### List TURN Keys
+### List TURN keys
 
 HTTP
 

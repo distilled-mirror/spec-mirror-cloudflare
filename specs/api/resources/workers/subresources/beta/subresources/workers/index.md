@@ -1244,11 +1244,17 @@ Configuration for assets within a Worker.
 
 <summary>
 
-config: optional object {html\_handling, not\_found\_handling, run\_worker\_first }
+config: optional object {base\_path, html\_handling, not\_found\_handling, run\_worker\_first }
 
 Configuration for assets within a Worker.
 
 </summary>
+
+base\_path: optional string
+
+The public URL path prefix under which assets are served. A null request value resets it to <code>/</code>; responses represent the root as <code>/</code>. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
+
+<a href="#">Link to this property</a>
 
 <details>
 
