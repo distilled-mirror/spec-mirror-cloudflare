@@ -100,7 +100,7 @@ Asset type.
 
 <summary>
 
-vendor: "AWS"or "Anthropic"or "Bitbucket"or 16 more
+vendor: "AWS"or "Anthropic"or "Bitbucket"or 14 more
 
 Display names for vendor types.
 
@@ -156,10 +156,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"Okta"
-
-<a href="#">Link to this property</a>
-
 "OpenAI"
 
 <a href="#">Link to this property</a>
@@ -173,10 +169,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ServiceNow"
-
-<a href="#">Link to this property</a>
-
-"Workday"
 
 <a href="#">Link to this property</a>
 
@@ -474,7 +466,7 @@ Asset type.
 
 <summary>
 
-vendor: "AWS"or "Anthropic"or "Bitbucket"or 16 more
+vendor: "AWS"or "Anthropic"or "Bitbucket"or 14 more
 
 Display names for vendor types.
 
@@ -530,10 +522,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"Okta"
-
-<a href="#">Link to this property</a>
-
 "OpenAI"
 
 <a href="#">Link to this property</a>
@@ -547,10 +535,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ServiceNow"
-
-<a href="#">Link to this property</a>
-
-"Workday"
 
 <a href="#">Link to this property</a>
 

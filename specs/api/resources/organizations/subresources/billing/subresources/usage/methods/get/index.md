@@ -150,23 +150,11 @@ Identifies the error or notice type.
 
 <summary>
 
-result: array of object {BillingAccountId, BillingAccountName, ChargeCategory, 33 more }
+result: array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
 </summary>
-
-BillingAccountId: string
-
-Public identifier of the Cloudflare account (account tag).
-
-<a href="#">Link to this property</a>
-
-BillingAccountName: string
-
-Display name of the Cloudflare account.
-
-<a href="#">Link to this property</a>
 
 ChargeCategory: "Usage"
 
@@ -238,15 +226,21 @@ The unique identifier for the billable metric in the Cloudflare catalog. Cloudfl
 
 <a href="#">Link to this property</a>
 
-x\_BillableMetricName: string
-
-The display name of the billable metric. Cloudflare extension; replaces FOCUS SkuMeter.
-
-<a href="#">Link to this property</a>
-
 BilledCost: optional number
 
 A charge serving as the basis for invoicing, inclusive of all reduced rates and discounts while excluding the amortization of upfront charges (one-time or recurring).
+
+<a href="#">Link to this property</a>
+
+BillingAccountId: optional string
+
+Public identifier of the Cloudflare account (account tag). Omitted when account is not part of the requested grouping.
+
+<a href="#">Link to this property</a>
+
+BillingAccountName: optional string
+
+Display name of the Cloudflare account. Omitted when account is not part of the requested grouping.
 
 <a href="#">Link to this property</a>
 
@@ -368,6 +362,12 @@ true
 
 <a href="#">Link to this property</a>
 
+x\_BillableMetricName: optional string
+
+The display name of the billable metric. Cloudflare extension; replaces FOCUS SkuMeter.
+
+<a href="#">Link to this property</a>
+
 x\_ProductCategoryName: optional string
 
 The product category the charge belongs to (e.g., “Developer”, “Cloudflare One”). Cloudflare extension; replaces FOCUS ServiceCategory.
@@ -437,8 +437,6 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
   ],
   "result": [
     {
-      "BillingAccountId": "023e105f4ecef8ad9ca31a8372d0c353",
-      "BillingAccountName": "My Account",
       "ChargeCategory": "Usage",
       "ChargeDescription": "Workers Standard Requests — daily usage",
       "ChargeFrequency": "Usage-Based",
@@ -450,8 +448,9 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
       "InvoiceIssuerName": "Cloudflare",
       "ServiceProviderName": "Cloudflare",
       "x_BillableMetricId": "workers_standard_requests",
-      "x_BillableMetricName": "Workers Standard Requests",
       "BilledCost": 0,
+      "BillingAccountId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "BillingAccountName": "My Account",
       "BillingCurrency": "USD",
       "BillingPeriodEnd": "2025-06-01T00:00:00Z",
       "BillingPeriodStart": "2025-05-01T00:00:00Z",
@@ -470,6 +469,7 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
       "Tags": {
         "team": "fintech"
       },
+      "x_BillableMetricName": "Workers Standard Requests",
       "x_ProductCategoryName": "Developer",
       "x_ProductFamilyId": "workers",
       "x_ProductFamilyName": "Workers",
@@ -501,8 +501,6 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
   ],
   "result": [
     {
-      "BillingAccountId": "023e105f4ecef8ad9ca31a8372d0c353",
-      "BillingAccountName": "My Account",
       "ChargeCategory": "Usage",
       "ChargeDescription": "Workers Standard Requests — daily usage",
       "ChargeFrequency": "Usage-Based",
@@ -514,8 +512,9 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
       "InvoiceIssuerName": "Cloudflare",
       "ServiceProviderName": "Cloudflare",
       "x_BillableMetricId": "workers_standard_requests",
-      "x_BillableMetricName": "Workers Standard Requests",
       "BilledCost": 0,
+      "BillingAccountId": "023e105f4ecef8ad9ca31a8372d0c353",
+      "BillingAccountName": "My Account",
       "BillingCurrency": "USD",
       "BillingPeriodEnd": "2025-06-01T00:00:00Z",
       "BillingPeriodStart": "2025-05-01T00:00:00Z",
@@ -534,6 +533,7 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/billabl
       "Tags": {
         "team": "fintech"
       },
+      "x_BillableMetricName": "Workers Standard Requests",
       "x_ProductCategoryName": "Developer",
       "x_ProductFamilyId": "workers",
       "x_ProductFamilyName": "Workers",

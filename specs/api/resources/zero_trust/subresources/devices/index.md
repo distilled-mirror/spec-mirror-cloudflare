@@ -438,7 +438,7 @@ POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 <summary>
 
-DeviceListResponse object {id, active\_registrations, created\_at, 16 more }
+DeviceListResponse object {id, active\_registrations, created\_at, 17 more }
 
 A WARP Device.
 
@@ -471,6 +471,12 @@ The RFC3339 timestamp when the device was last seen.
 name: string
 
 The name of the device.
+
+<a href="#">Link to this property</a>
+
+tags: map\[string]
+
+Tags assigned to the device. An empty object if the device has no tags.
 
 <a href="#">Link to this property</a>
 
@@ -648,7 +654,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object {id, active\_registrations, created\_at, 16 more }
+DeviceGetResponse object {id, active\_registrations, created\_at, 17 more }
 
 A WARP Device.
 
@@ -681,6 +687,12 @@ The RFC3339 timestamp when the device was last seen.
 name: string
 
 The name of the device.
+
+<a href="#">Link to this property</a>
+
+tags: map\[string]
+
+Tags assigned to the device. An empty object if the device has no tags.
 
 <a href="#">Link to this property</a>
 

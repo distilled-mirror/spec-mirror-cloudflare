@@ -162,7 +162,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+result: object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -244,10 +244,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -303,10 +299,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -367,7 +359,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     "interrupt_window_hour_of_day": 0,
     "last_updated": "last_updated",
     "notes": "notes",
-    "primary": true,
     "timezone": "timezone",
     "device": {
       "id": "id",
@@ -376,8 +367,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     },
     "last_heartbeat": "last_heartbeat",
     "last_seen_version": "last_seen_version",
-    "license_key": "license_key",
-    "site_id": "site_id"
+    "license_key": "license_key"
   },
   "success": true
 }
@@ -422,7 +412,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     "interrupt_window_hour_of_day": 0,
     "last_updated": "last_updated",
     "notes": "notes",
-    "primary": true,
     "timezone": "timezone",
     "device": {
       "id": "id",
@@ -431,8 +420,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     },
     "last_heartbeat": "last_heartbeat",
     "last_seen_version": "last_seen_version",
-    "license_key": "license_key",
-    "site_id": "site_id"
+    "license_key": "license_key"
   },
   "success": true
 }

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets/{asset\_name}
 
-Updates the configuration of an existing custom asset.
+Updates a custom asset for an account or zone.
 
 ##### Security
 

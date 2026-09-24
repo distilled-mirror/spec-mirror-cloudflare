@@ -78,7 +78,7 @@ Name of the script, used in URLs and route configuration.
 
 force: optional boolean
 
-If set to true, delete will not be stopped by associated service binding, durable object, or other binding. Any of these associated bindings/durable objects will be deleted along with the script.
+If true, delete the Worker even when other Workers still reference it. Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Worker are deleted even if other Workers reference them.
 
 [Link to this property](#)%20workers.scripts%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20force%20%3E%20(schema)>)
 

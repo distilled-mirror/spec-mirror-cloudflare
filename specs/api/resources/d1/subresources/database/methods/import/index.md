@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/d1/database/{database\_id}/import
 
-Generates a temporary URL for uploading an SQL file to, then instructing the D1 to import it and polling it for status updates. Imports block the D1 for their duration.
+Generate a temporary URL for uploading an SQL file to, then instruct the D1 to import it and poll it for status updates. Imports block the D1 for their duration.
 
 ##### Security
 

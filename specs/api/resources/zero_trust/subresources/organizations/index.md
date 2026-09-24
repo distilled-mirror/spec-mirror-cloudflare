@@ -82,7 +82,7 @@ The text color on your login page.
 
 <summary>
 
-Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 14 more }
+Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
 
 </summary>
 
@@ -373,6 +373,60 @@ Determines whether global MFA settings apply to applications by default. The org
 name: optional string
 
 The name of your Zero Trust organization.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+
+Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "disable"or "delete"
+
+The action applied to an inactive service token.
+
+</summary>
+
+One of the following:
+
+"disable"
+
+<a href="#">Link to this property</a>
+
+"delete"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether automatic enforcement for inactive service tokens is enabled.
+
+<a href="#">Link to this property</a>
+
+inactivity\_threshold\_days: number
+
+The number of days a service token must be inactive before the configured action is applied.
+
+maximum365
+
+minimum30
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -414,7 +468,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
+OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
 
 </summary>
 
@@ -705,6 +759,60 @@ Determines whether global MFA settings apply to applications by default. The org
 name: optional string
 
 The name of your Zero Trust organization.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+
+Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "disable"or "delete"
+
+The action applied to an inactive service token.
+
+</summary>
+
+One of the following:
+
+"disable"
+
+<a href="#">Link to this property</a>
+
+"delete"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether automatic enforcement for inactive service tokens is enabled.
+
+<a href="#">Link to this property</a>
+
+inactivity\_threshold\_days: number
+
+The number of days a service token must be inactive before the configured action is applied.
+
+maximum365
+
+minimum30
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

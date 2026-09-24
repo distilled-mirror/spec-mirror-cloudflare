@@ -32,9 +32,9 @@ GET/accounts/{account\_id}/registrar-sandbox/extensions/{extension}
 
 <summary>
 
-ExtensionListResponse object {metadata, registration\_schema }
+ExtensionListResponse object {metadata, registration\_schema, transfer\_schema }
 
-Extension entry with metadata and JSON Schema documents for the registration operation.
+Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
 </summary>
 
@@ -67,6 +67,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 
@@ -78,9 +84,9 @@ JSON Schema describing the expected input structure for registration operations 
 
 <summary>
 
-ExtensionGetResponse object {metadata, registration\_schema }
+ExtensionGetResponse object {metadata, registration\_schema, transfer\_schema }
 
-Extension entry with metadata and JSON Schema documents for the registration operation.
+Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
 </summary>
 
@@ -113,6 +119,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 

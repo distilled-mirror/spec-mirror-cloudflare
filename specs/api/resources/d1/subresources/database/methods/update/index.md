@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/d1/database/{database\_id}
 
-Updates the specified D1 database.
+Update a D1 database’s configuration.
 
 ##### Security
 

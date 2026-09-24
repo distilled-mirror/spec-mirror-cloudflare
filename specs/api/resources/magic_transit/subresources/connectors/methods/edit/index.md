@@ -142,19 +142,11 @@ notes: optional string
 
 [Link to this property](#)%20magic_transit.connectors%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20notes%20%3E%20(schema)>)
 
-primary: optional boolean
-
-[Link to this property](#)%20magic_transit.connectors%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20primary%20%3E%20(schema)>)
-
 provision\_license: optional boolean
 
 When true, regenerate license key for the connector.
 
 [Link to this property](#)%20magic_transit.connectors%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20provision_license%20%3E%20(schema)>)
-
-site\_id: optional string
-
-[Link to this property](#)%20magic_transit.connectors%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20site_id%20%3E%20(schema)>)
 
 timezone: optional string
 
@@ -252,7 +244,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+result: object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -334,10 +326,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -393,10 +381,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -459,7 +443,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     "interrupt_window_hour_of_day": 0,
     "last_updated": "last_updated",
     "notes": "notes",
-    "primary": true,
     "timezone": "timezone",
     "device": {
       "id": "id",
@@ -468,8 +451,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     },
     "last_heartbeat": "last_heartbeat",
     "last_seen_version": "last_seen_version",
-    "license_key": "license_key",
-    "site_id": "site_id"
+    "license_key": "license_key"
   },
   "success": true
 }
@@ -514,7 +496,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     "interrupt_window_hour_of_day": 0,
     "last_updated": "last_updated",
     "notes": "notes",
-    "primary": true,
     "timezone": "timezone",
     "device": {
       "id": "id",
@@ -523,8 +504,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
     },
     "last_heartbeat": "last_heartbeat",
     "last_seen_version": "last_seen_version",
-    "license_key": "license_key",
-    "site_id": "site_id"
+    "license_key": "license_key"
   },
   "success": true
 }

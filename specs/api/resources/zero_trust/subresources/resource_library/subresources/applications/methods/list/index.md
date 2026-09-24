@@ -313,7 +313,7 @@ Returns the human readable ID.
 
 ip\_subnets: optional array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 
@@ -509,7 +509,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       "human_id": "HR",
       "ip_subnets": [
         "192.168.1.0/24",
-        "10.0.0.0/8"
+        "2001:db8::/48"
       ],
       "name": "HR",
       "port_protocols": [
@@ -591,7 +591,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       "human_id": "HR",
       "ip_subnets": [
         "192.168.1.0/24",
-        "10.0.0.0/8"
+        "2001:db8::/48"
       ],
       "name": "HR",
       "port_protocols": [

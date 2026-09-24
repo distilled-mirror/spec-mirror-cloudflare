@@ -244,6 +244,12 @@ One of the following:
 
 [Link to this property](#)%20zero_trust.devices.devices%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sort_order%20%3E%20(schema)>)
 
+tag: optional array of string
+
+Filter by one or more device tags in key:value format. Devices must match all provided tags.
+
+[Link to this property](#)%20zero_trust.devices.devices%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20tag%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -290,7 +296,7 @@ message: string
 
 <summary>
 
-result: array of object {id, active\_registrations, created\_at, 16 more }
+result: array of object {id, active\_registrations, created\_at, 17 more }
 
 </summary>
 
@@ -321,6 +327,12 @@ The RFC3339 timestamp when the device was last seen.
 name: string
 
 The name of the device.
+
+<a href="#">Link to this property</a>
+
+tags: map\[string]
+
+Tags assigned to the device. An empty object if the device has no tags.
 
 <a href="#">Link to this property</a>
 
@@ -572,6 +584,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
       "created_at": "2025-02-14T13:17:00Z",
       "last_seen_at": "2025-02-14T13:17:00Z",
       "name": "My Device",
+      "tags": {
+        "environment": "production",
+        "fleet": "warehouse"
+      },
       "updated_at": "2025-02-14T13:17:00Z",
       "client_version": "1.0.0",
       "deleted_at": "2025-02-14T13:17:00Z",
@@ -635,6 +651,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
       "created_at": "2025-02-14T13:17:00Z",
       "last_seen_at": "2025-02-14T13:17:00Z",
       "name": "My Device",
+      "tags": {
+        "environment": "production",
+        "fleet": "warehouse"
+      },
       "updated_at": "2025-02-14T13:17:00Z",
       "client_version": "1.0.0",
       "deleted_at": "2025-02-14T13:17:00Z",

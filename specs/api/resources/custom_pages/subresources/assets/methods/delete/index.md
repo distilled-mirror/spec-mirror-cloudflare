@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets/{asset\_name}
 
-Deletes an existing custom asset.
+Deletes a custom asset from an account or zone.
 
 ##### Security
 

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/registrar-sandbox/extensions/{extension}
 
-Returns metadata and JSON Schema documents describing the expected input structure for registration operations on a specific extension (TLD).
+Returns metadata and JSON Schema documents describing the expected input structure for registration and transfer operations on a specific extension (TLD).
 
 Supports HTTP conditional GET via `ETag`. Include the `ETag` value from a previous response in an `If-None-Match` header to receive a `304 Not Modified` when the data has not changed.
 
@@ -160,9 +160,9 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: object {metadata, registration\_schema }
+result: object {metadata, registration\_schema, transfer\_schema }
 
-Extension entry with metadata and JSON Schema documents for the registration operation.
+Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
 </summary>
 
@@ -195,6 +195,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 
@@ -246,7 +252,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar-sandbox
       "name": "name",
       "tld": "tld"
     },
-    "registration_schema": {}
+    "registration_schema": {},
+    "transfer_schema": {}
   },
   "success": true
 }
@@ -281,7 +288,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar-sandbox
       "name": "name",
       "tld": "tld"
     },
-    "registration_schema": {}
+    "registration_schema": {},
+    "transfer_schema": {}
   },
   "success": true
 }

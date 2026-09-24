@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/d1/database
 
-Returns the created D1 database.
+Create a new D1 database in your account.
 
 ##### Security
 

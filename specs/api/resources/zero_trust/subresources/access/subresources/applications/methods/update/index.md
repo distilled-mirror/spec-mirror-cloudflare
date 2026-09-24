@@ -294,7 +294,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -306,11 +306,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -418,7 +446,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -434,6 +462,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -442,7 +498,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -458,6 +514,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -466,7 +550,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -476,6 +560,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -484,13 +596,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -3056,7 +3196,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -3068,11 +3208,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -3180,7 +3348,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -3196,6 +3364,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -3204,7 +3400,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -3220,6 +3416,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -3228,7 +3452,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -3238,6 +3462,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -3246,13 +3498,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -4472,7 +4752,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -4484,11 +4764,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -4596,7 +4904,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -4612,6 +4920,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -4620,7 +4956,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -4636,6 +4972,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -4644,7 +5008,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -4654,6 +5018,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -4662,13 +5054,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -11346,7 +11766,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -11358,11 +11778,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -11470,7 +11918,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -11486,6 +11934,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -11494,7 +11970,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -11510,6 +11986,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -11518,7 +12022,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -11528,6 +12032,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -11536,13 +12068,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -12634,7 +13194,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -12646,11 +13206,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -12758,7 +13346,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -12774,6 +13362,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -12782,7 +13398,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -12798,6 +13414,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -12806,7 +13450,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -12816,6 +13460,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -12824,13 +13496,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -13820,7 +14520,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -13832,11 +14532,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -13944,7 +14672,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -13960,6 +14688,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -13968,7 +14724,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -13984,6 +14740,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -13992,7 +14776,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -14002,6 +14786,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -14010,13 +14822,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -15262,7 +16102,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -15274,11 +16114,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -15386,7 +16254,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -15402,6 +16270,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -15410,7 +16306,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -15426,6 +16322,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -15434,7 +16358,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -15444,6 +16368,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -15452,13 +16404,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -23576,7 +24556,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -23588,11 +24568,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -23700,7 +24708,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -23716,6 +24724,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -23724,7 +24760,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -23740,6 +24776,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -23748,7 +24812,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -23758,6 +24822,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -23766,13 +24858,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -27768,7 +28888,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -27780,11 +28900,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -27892,7 +29040,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -27908,6 +29056,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -27916,7 +29092,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -27932,6 +29108,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -27940,7 +29144,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -27950,6 +29154,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -27958,13 +29190,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -51330,7 +52590,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -51342,11 +52602,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -51454,7 +52742,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -51470,6 +52758,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -51478,7 +52794,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -51494,6 +52810,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -51502,7 +52846,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -51512,6 +52856,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -51520,13 +52892,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -55394,7 +56794,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -55406,11 +56806,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -55518,7 +56946,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -55534,6 +56962,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -55542,7 +56998,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -55558,6 +57014,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -55566,7 +57050,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -55576,6 +57060,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -55584,13 +57096,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -59356,7 +60896,7 @@ The custom pages that will be displayed when applicable for this application
 
 <summary>
 
-destinations: optional array of object { type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
 
 List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
 
@@ -59368,11 +60908,39 @@ One of the following:
 
 <summary>
 
-PublicDestination object { type, uri }
+PublicDestination object { overrides, type, uri }
 
 A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
 
 </summary>
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 type: optional "public"
 
@@ -59480,7 +61048,7 @@ type: optional "via_mcp_server_portal"
 
 <summary>
 
-WorkerDestination object { type, worker_id }
+WorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
@@ -59496,6 +61064,34 @@ The ID of the Cloudflare Worker to protect with Access.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -59504,7 +61100,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id }
+PreviewWorkerDestination object { type, worker_id, overrides }
 
 A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
@@ -59520,6 +61116,34 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -59528,7 +61152,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-AllWorkersDestination object { type }
+AllWorkersDestination object { type, overrides }
 
 Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
@@ -59538,6 +61162,34 @@ type: "all_workers"
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -59546,13 +61198,41 @@ type: "all_workers"
 
 <summary>
 
-AllPreviewWorkersDestination object { type }
+AllPreviewWorkersDestination object { type, overrides }
 
 Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
 type: "all_preview_workers"
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+overrides: optional array of object { behavior, path_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

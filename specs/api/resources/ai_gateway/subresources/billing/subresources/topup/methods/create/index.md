@@ -76,6 +76,12 @@ minimum1000
 
 [Link to this property](#)%20ai_gateway.billing.topup%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20amount%20%3E%20(schema)>)
 
+payment\_method\_id: optional string
+
+Stripe PaymentMethod to charge instead of the customer’s default payment method.
+
+[Link to this property](#)%20ai_gateway.billing.topup%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20payment_method_id%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -203,7 +209,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "amount": 5000
+          "amount": 5000,
+          "payment_method_id": "pm_123"
         }'
 ```
 

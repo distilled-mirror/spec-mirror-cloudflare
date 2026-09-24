@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/d1/database/{database\_id}/time\_travel/restore
 
-Restores a D1 database to a previous point in time either via a bookmark or a timestamp.
+Restore a D1 database to a previous point in time either via a bookmark or a timestamp.
 
 ##### Security
 

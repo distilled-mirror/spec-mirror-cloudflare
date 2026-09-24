@@ -76,6 +76,14 @@ Identifier for the Worker, which can be ID or name.
 
 [Link to this property](#)%20workers.beta.workers%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20worker_id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+force: optional boolean
+
+If true, delete the Worker even when other Workers still reference it. Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Worker are deleted even if other Workers reference them.
+
+[Link to this property](#)%20workers.beta.workers%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20force%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

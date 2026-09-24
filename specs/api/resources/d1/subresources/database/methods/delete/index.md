@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/d1/database/{database\_id}
 
-Deletes the specified D1 database.
+Delete a D1 database.
 
 ##### Security
 

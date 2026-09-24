@@ -158,7 +158,7 @@ A search term.
 
 <summary>
 
-vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
 
 Filter by vendor
 
@@ -227,6 +227,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
 
 <a href="#">Link to this property</a>
 

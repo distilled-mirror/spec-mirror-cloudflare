@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/d1/database/{database\_id}/query
 
-Returns the query result as an object.
+Execute a SQL query against a D1 database and return results as objects.
 
 ##### Security
 

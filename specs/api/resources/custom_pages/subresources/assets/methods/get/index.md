@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets/{asset\_name}
 
-Fetches the details of a custom asset.
+Returns a custom asset for an account or zone.
 
 ##### Security
 

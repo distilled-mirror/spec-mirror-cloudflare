@@ -123,7 +123,7 @@ Provides a fully qualified domain name (FQDN), including the extension (e.g., <c
 
 expires\_at: string
 
-When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> may return null.
+When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> and <code>transfer_pending</code> may return null.
 
 formatdate-time
 
@@ -163,12 +163,13 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "expired"or 3 more
+status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
 
 Current registration status.
 
 - <code>active</code>: The domain operates with an active registration.
 - <code>registration_pending</code>: Registration remains in progress.
+- <code>transfer_pending</code>: Domain transfer is in progress.
 - <code>expired</code>: The domain registration expired.
 - <code>suspended</code>: The registry suspended the domain.
 - <code>redemption_period</code>: The domain entered the redemption grace period.
@@ -183,6 +184,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "registration\_pending"
+
+<a href="#">Link to this property</a>
+
+"transfer\_pending"
 
 <a href="#">Link to this property</a>
 
@@ -828,7 +833,7 @@ Provides a fully qualified domain name (FQDN), including the extension (e.g., <c
 
 expires\_at: string
 
-When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> may return null.
+When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> and <code>transfer_pending</code> may return null.
 
 formatdate-time
 
@@ -868,12 +873,13 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "expired"or 3 more
+status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
 
 Current registration status.
 
 - <code>active</code>: The domain operates with an active registration.
 - <code>registration_pending</code>: Registration remains in progress.
+- <code>transfer_pending</code>: Domain transfer is in progress.
 - <code>expired</code>: The domain registration expired.
 - <code>suspended</code>: The registry suspended the domain.
 - <code>redemption_period</code>: The domain entered the redemption grace period.
@@ -888,6 +894,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "registration\_pending"
+
+<a href="#">Link to this property</a>
+
+"transfer\_pending"
 
 <a href="#">Link to this property</a>
 
@@ -947,7 +957,7 @@ Provides a fully qualified domain name (FQDN), including the extension (e.g., <c
 
 expires\_at: string
 
-When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> may return null.
+When the domain registration expires. Ready registrations include this value; only <code>registration_pending</code> and <code>transfer_pending</code> may return null.
 
 formatdate-time
 
@@ -987,12 +997,13 @@ One of the following:
 
 <summary>
 
-status: "active"or "registration\_pending"or "expired"or 3 more
+status: "active"or "registration\_pending"or "transfer\_pending"or 4 more
 
 Current registration status.
 
 - <code>active</code>: The domain operates with an active registration.
 - <code>registration_pending</code>: Registration remains in progress.
+- <code>transfer_pending</code>: Domain transfer is in progress.
 - <code>expired</code>: The domain registration expired.
 - <code>suspended</code>: The registry suspended the domain.
 - <code>redemption_period</code>: The domain entered the redemption grace period.
@@ -1007,6 +1018,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "registration\_pending"
+
+<a href="#">Link to this property</a>
+
+"transfer\_pending"
 
 <a href="#">Link to this property</a>
 
@@ -1477,9 +1492,9 @@ GET/accounts/{account\_id}/registrar-sandbox/extensions/{extension}
 
 <summary>
 
-ExtensionListResponse object {metadata, registration\_schema }
+ExtensionListResponse object {metadata, registration\_schema, transfer\_schema }
 
-Extension entry with metadata and JSON Schema documents for the registration operation.
+Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
 </summary>
 
@@ -1512,6 +1527,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 
@@ -1523,9 +1544,9 @@ JSON Schema describing the expected input structure for registration operations 
 
 <summary>
 
-ExtensionGetResponse object {metadata, registration\_schema }
+ExtensionGetResponse object {metadata, registration\_schema, transfer\_schema }
 
-Extension entry with metadata and JSON Schema documents for the registration operation.
+Extension entry with metadata and JSON Schema documents for registration and transfer operations.
 
 </summary>
 
@@ -1558,6 +1579,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 

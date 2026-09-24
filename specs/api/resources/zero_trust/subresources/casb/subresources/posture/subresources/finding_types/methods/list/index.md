@@ -70,7 +70,7 @@ Filter finding types by name or ID (case-insensitive substring match).
 
 <summary>
 
-vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
 
 Filter finding types by vendor. Supports multiple comma-separated values. Each value may be either the vendor enum (GOOGLE\_WORKSPACE) or the friendly name returned by the read routes (Google Workspace).
 
@@ -139,6 +139,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
 
 <a href="#">Link to this property</a>
 
@@ -438,7 +442,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 

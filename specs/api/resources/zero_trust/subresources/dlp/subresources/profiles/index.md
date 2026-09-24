@@ -60,7 +60,7 @@ Content types to exclude from context analysis and return all matches.
 
 <summary>
 
-Profile = object {id, allowed\_match\_count, created\_at, 13 more } or object {id, allowed\_match\_count, entries, 7 more } or object {id, created\_at, entries, 5 more }
+Profile = object {id, allowed\_match\_count, created\_at, 13 more } or object {id, allowed\_match\_count, entries, 7 more } or object {id, created\_at, entries, 6 more }
 
 </summary>
 
@@ -1730,7 +1730,7 @@ Whether this profile can be accessed by anyone.
 
 <summary>
 
-IntegrationProfile object {id, created\_at, entries, 5 more }
+IntegrationProfile object {id, created\_at, entries, 6 more }
 
 </summary>
 
@@ -2219,6 +2219,12 @@ formatuuid
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+integration\_id: string
+
+formatuuid
 
 <a href="#">Link to this property</a>
 

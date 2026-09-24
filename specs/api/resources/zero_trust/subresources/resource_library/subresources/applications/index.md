@@ -136,7 +136,7 @@ Returns the human readable ID.
 
 ip\_subnets: optional array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 
@@ -320,7 +320,7 @@ Returns the human readable ID.
 
 ip\_subnets: array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 
@@ -478,7 +478,7 @@ Returns the human readable ID.
 
 ip\_subnets: array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 
@@ -636,7 +636,7 @@ Returns the human readable ID.
 
 ip\_subnets: array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 

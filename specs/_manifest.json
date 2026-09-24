@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3841,
+  "count": 3846,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -4897,6 +4897,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/hyperdrive/subresources/configs/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/hyperdrive/subresources/configs/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/hyperdrive/subresources/configs/methods/restart",
+      "markdown": "https://developers.cloudflare.com/api/resources/hyperdrive/subresources/configs/methods/restart/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/hyperdrive/subresources/configs/methods/update",
@@ -9801,6 +9805,22 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/registrations/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/registrations/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in",
+      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in_status",
+      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in_status/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in_status/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/transfer_in_status/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/update_status",

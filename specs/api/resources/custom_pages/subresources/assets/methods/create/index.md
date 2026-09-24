@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets
 
-Creates a new custom asset.
+Creates a custom asset for an account or zone.
 
 ##### Security
 

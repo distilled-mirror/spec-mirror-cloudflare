@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/registrar/extensions
 
-Returns metadata and JSON Schema documents describing the expected input structure for registration operations on each supported extension (TLD).
+Returns metadata and JSON Schema documents describing the expected input structure for registration and transfer operations on each supported extension (TLD).
 
 This endpoint uses cursor-based pagination. Results are ordered by extension name by default. To fetch the next page, pass the `cursor` value from the `result_info` object in the response as the `cursor` query parameter in your next request. An empty `cursor` string indicates there are no more pages.
 
@@ -236,7 +236,7 @@ JSON Pointer to the invalid or missing request value.
 
 <summary>
 
-result: array of object {metadata, registration\_schema }
+result: array of object {metadata, registration\_schema, transfer\_schema }
 
 </summary>
 
@@ -269,6 +269,12 @@ The TLD of the extension. For example, for “co.uk”, it is “uk”. For “u
 registration\_schema: unknown
 
 JSON Schema describing the expected input structure for registration operations on this extension.
+
+<a href="#">Link to this property</a>
+
+transfer\_schema: unknown
+
+JSON Schema describing the expected input structure for transfer operations on this extension.
 
 <a href="#">Link to this property</a>
 
@@ -353,7 +359,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar/extensi
         "name": "name",
         "tld": "tld"
       },
-      "registration_schema": {}
+      "registration_schema": {},
+      "transfer_schema": {}
     }
   ],
   "success": true,
@@ -395,7 +402,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar/extensi
         "name": "name",
         "tld": "tld"
       },
-      "registration_schema": {}
+      "registration_schema": {},
+      "transfer_schema": {}
     }
   ],
   "success": true,

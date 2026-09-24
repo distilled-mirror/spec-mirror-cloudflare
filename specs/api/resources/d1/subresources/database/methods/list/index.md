@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/d1/database
 
-Returns a list of D1 databases.
+List D1 databases in your account.
 
 ##### Security
 

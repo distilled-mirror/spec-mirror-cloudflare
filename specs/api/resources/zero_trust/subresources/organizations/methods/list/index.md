@@ -168,7 +168,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
+result: optional object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
 
 </summary>
 
@@ -500,6 +500,60 @@ The name of your Zero Trust organization.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+
+Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "disable"or "delete"
+
+The action applied to an inactive service token.
+
+</summary>
+
+One of the following:
+
+"disable"
+
+<a href="#">Link to this property</a>
+
+"delete"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether automatic enforcement for inactive service tokens is enabled.
+
+<a href="#">Link to this property</a>
+
+inactivity\_threshold\_days: number
+
+The number of days a service token must be inactive before the configured action is applied.
+
+maximum365
+
+minimum30
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 session\_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
@@ -622,6 +676,11 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     },
     "mfa_required_for_all_apps": false,
     "name": "Widget Corps Internal Applications",
+    "service_token_inactivity": {
+      "action": "disable",
+      "enabled": true,
+      "inactivity_threshold_days": 30
+    },
     "session_duration": "24h",
     "trusted_accounts": [
       "023e105f4ecef8ad9ca31a8372d0c353"
@@ -708,6 +767,11 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     },
     "mfa_required_for_all_apps": false,
     "name": "Widget Corps Internal Applications",
+    "service_token_inactivity": {
+      "action": "disable",
+      "enabled": true,
+      "inactivity_threshold_days": 30
+    },
     "session_duration": "24h",
     "trusted_accounts": [
       "023e105f4ecef8ad9ca31a8372d0c353"

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/d1/database/{database\_id}
 
-Updates partially the specified D1 database.
+Partially update a D1 database’s configuration.
 
 ##### Security
 

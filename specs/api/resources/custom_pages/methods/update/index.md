@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/{identifier}
 
-Updates the configuration of an existing custom page.
+Updates the configuration for a custom page type.
 
 ##### Security
 
@@ -46,7 +46,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 identifier: "1000\_errors"or "500\_errors"or "basic\_challenge"or 7 more
 
-Error Page Types
+Custom page type.
 
 </summary>
 

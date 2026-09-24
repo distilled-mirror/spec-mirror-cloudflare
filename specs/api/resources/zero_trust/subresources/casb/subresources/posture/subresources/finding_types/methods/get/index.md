@@ -284,7 +284,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 

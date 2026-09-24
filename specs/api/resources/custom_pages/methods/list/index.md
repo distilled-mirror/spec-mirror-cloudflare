@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages
 
-Fetches all the custom pages.
+Lists all custom page configurations for an account or zone.
 
 ##### Security
 

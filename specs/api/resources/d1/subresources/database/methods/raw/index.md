@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/d1/database/{database\_id}/raw
 
-Returns the query result rows as arrays rather than objects. This is a performance-optimized version of the /query endpoint.
+Execute a SQL query against a D1 database and return result rows as arrays rather than objects. This is a performance-optimized version of the /query endpoint.
 
 ##### Security
 

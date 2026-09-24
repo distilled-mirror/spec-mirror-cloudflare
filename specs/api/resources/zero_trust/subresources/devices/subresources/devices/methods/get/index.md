@@ -98,7 +98,7 @@ message: string
 
 <summary>
 
-result: object {id, active\_registrations, created\_at, 16 more }
+result: object {id, active\_registrations, created\_at, 17 more }
 
 A WARP Device.
 
@@ -131,6 +131,12 @@ The RFC3339 timestamp when the device was last seen.
 name: string
 
 The name of the device.
+
+<a href="#">Link to this property</a>
+
+tags: map\[string]
+
+Tags assigned to the device. An empty object if the device has no tags.
 
 <a href="#">Link to this property</a>
 
@@ -343,6 +349,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
     "created_at": "2025-02-14T13:17:00Z",
     "last_seen_at": "2025-02-14T13:17:00Z",
     "name": "My Device",
+    "tags": {
+      "environment": "production",
+      "fleet": "warehouse"
+    },
     "updated_at": "2025-02-14T13:17:00Z",
     "client_version": "1.0.0",
     "deleted_at": "2025-02-14T13:17:00Z",
@@ -398,6 +408,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
     "created_at": "2025-02-14T13:17:00Z",
     "last_seen_at": "2025-02-14T13:17:00Z",
     "name": "My Device",
+    "tags": {
+      "environment": "production",
+      "fleet": "warehouse"
+    },
     "updated_at": "2025-02-14T13:17:00Z",
     "client_version": "1.0.0",
     "deleted_at": "2025-02-14T13:17:00Z",

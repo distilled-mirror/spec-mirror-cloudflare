@@ -8694,7 +8694,7 @@ DELETE/accounts/{account\_id}/magic/connectors/{connector\_id}
 
 <summary>
 
-ConnectorListResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorListResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -8776,10 +8776,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -8835,10 +8831,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -8850,7 +8842,7 @@ site\_id: optional string
 
 <summary>
 
-ConnectorGetResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorGetResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -8932,10 +8924,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -8991,10 +8979,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -9006,7 +8990,7 @@ site\_id: optional string
 
 <summary>
 
-ConnectorCreateResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorCreateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9088,10 +9072,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -9147,10 +9127,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -9162,7 +9138,7 @@ site\_id: optional string
 
 <summary>
 
-ConnectorUpdateResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorUpdateResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9244,10 +9220,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -9303,10 +9275,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -9318,7 +9286,7 @@ site\_id: optional string
 
 <summary>
 
-ConnectorEditResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorEditResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9400,10 +9368,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -9459,10 +9423,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 
@@ -9474,7 +9434,7 @@ site\_id: optional string
 
 <summary>
 
-ConnectorDeleteResponse object {id, activated, interrupt\_window\_days\_of\_week, 12 more }
+ConnectorDeleteResponse object {id, activated, interrupt\_window\_days\_of\_week, 10 more }
 
 </summary>
 
@@ -9556,10 +9516,6 @@ notes: string
 
 <a href="#">Link to this property</a>
 
-primary: boolean
-
-<a href="#">Link to this property</a>
-
 timezone: string
 
 <a href="#">Link to this property</a>
@@ -9615,10 +9571,6 @@ last\_seen\_version: optional string
 <a href="#">Link to this property</a>
 
 license\_key: optional string
-
-<a href="#">Link to this property</a>
-
-site\_id: optional string
 
 <a href="#">Link to this property</a>
 

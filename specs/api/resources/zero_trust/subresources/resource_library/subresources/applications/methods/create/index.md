@@ -60,11 +60,37 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
+[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
 
-category\_id: number
+<details>
+
+<summary>
+
+body: object {hostnames, category\_id, human\_id, 4 more } or object {ip\_subnets, category\_id, hostnames, 4 more }
+
+Defines a custom application. At least one hostname or IP subnet is required. Support domains and port/protocol pairs do not satisfy this requirement.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {hostnames, category\_id, human\_id, 4 more }
+
+</summary>
+
+hostnames: array of string
+
+Hostnames matched by the application.
+
+<a href="#">Link to this property</a>
+
+category\_id: optional number
 
 Returns the category ID.
 
@@ -74,43 +100,105 @@ maximum4294967295
 
 minimum1
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20category_id%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
-human\_id: string
+human\_id: optional string
 
 Returns the human readable ID.
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20human_id%20%3E%20(schema)>)
-
-name: string
-
-Returns the application name.
-
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
-
-hostnames: optional array of string
-
-Hostnames matched by the application.
-
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20hostnames%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 ip\_subnets: optional array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20ip_subnets%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
+
+name: optional string
+
+Returns the application name.
+
+<a href="#">Link to this property</a>
 
 port\_protocols: optional array of string
 
 Port and protocol pairs matched by the application.
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20port_protocols%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 support\_domains: optional array of string
 
 Support domains matched by the application.
 
-[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20support_domains%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {ip\_subnets, category\_id, hostnames, 4 more }
+
+</summary>
+
+ip\_subnets: array of string
+
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
+
+<a href="#">Link to this property</a>
+
+category\_id: optional number
+
+Returns the category ID.
+
+formatint64
+
+maximum4294967295
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+hostnames: optional array of string
+
+Hostnames matched by the application.
+
+<a href="#">Link to this property</a>
+
+human\_id: optional string
+
+Returns the human readable ID.
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+Returns the application name.
+
+<a href="#">Link to this property</a>
+
+port\_protocols: optional array of string
+
+Port and protocol pairs matched by the application.
+
+<a href="#">Link to this property</a>
+
+support\_domains: optional array of string
+
+Support domains matched by the application.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -290,7 +378,7 @@ Returns the human readable ID.
 
 ip\_subnets: array of string
 
-IP subnets matched by the application.
+IP subnets for this application. Custom application create and update requests accept IPv4 prefix lengths /8 through /32 and IPv6 prefix lengths /32 through /128.
 
 <a href="#">Link to this property</a>
 
@@ -373,17 +461,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "category_id": 12,
-          "human_id": "HR",
-          "name": "HR",
           "hostnames": [
             "example.com",
             "foo.com"
           ],
+          "category_id": 12,
+          "human_id": "HR",
           "ip_subnets": [
             "192.168.1.0/24",
-            "10.0.0.0/8"
+            "2001:db8::/48"
           ],
+          "name": "HR",
           "port_protocols": [
             "tcp/80",
             "tcp/443"
@@ -436,7 +524,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     "human_id": "HR",
     "ip_subnets": [
       "192.168.1.0/24",
-      "10.0.0.0/8"
+      "2001:db8::/48"
     ],
     "name": "HR",
     "port_protocols": [
@@ -509,7 +597,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     "human_id": "HR",
     "ip_subnets": [
       "192.168.1.0/24",
-      "10.0.0.0/8"
+      "2001:db8::/48"
     ],
     "name": "HR",
     "port_protocols": [

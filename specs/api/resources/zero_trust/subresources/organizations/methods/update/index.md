@@ -402,6 +402,60 @@ The name of your Zero Trust organization.
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+
+Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "disable"or "delete"
+
+The action applied to an inactive service token.
+
+</summary>
+
+One of the following:
+
+"disable"
+
+<a href="#">Link to this property</a>
+
+"delete"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether automatic enforcement for inactive service tokens is enabled.
+
+<a href="#">Link to this property</a>
+
+inactivity\_threshold\_days: number
+
+The number of days a service token must be inactive before the configured action is applied.
+
+maximum365
+
+minimum30
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20service_token_inactivity%20%3E%20(schema)>)
+
 session\_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
@@ -528,7 +582,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 14 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
 
 </summary>
 
@@ -860,6 +914,60 @@ The name of your Zero Trust organization.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+service\_token\_inactivity: optional object {action, enabled, inactivity\_threshold\_days }
+
+Configures automatic enforcement for inactive service tokens. A service token is inactive if no policy references it, and it has not successfully authenticated with an Access application during the selected inactivity period. This setting applies to every service token in your Zero Trust account.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "disable"or "delete"
+
+The action applied to an inactive service token.
+
+</summary>
+
+One of the following:
+
+"disable"
+
+<a href="#">Link to this property</a>
+
+"delete"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether automatic enforcement for inactive service tokens is enabled.
+
+<a href="#">Link to this property</a>
+
+inactivity\_threshold\_days: number
+
+The number of days a service token must be inactive before the configured action is applied.
+
+maximum365
+
+minimum30
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 session\_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
@@ -989,6 +1097,11 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     },
     "mfa_required_for_all_apps": false,
     "name": "Widget Corps Internal Applications",
+    "service_token_inactivity": {
+      "action": "disable",
+      "enabled": true,
+      "inactivity_threshold_days": 30
+    },
     "session_duration": "24h",
     "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",
     "updated_at": "2014-01-01T05:20:00.12345Z",
@@ -1072,6 +1185,11 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     },
     "mfa_required_for_all_apps": false,
     "name": "Widget Corps Internal Applications",
+    "service_token_inactivity": {
+      "action": "disable",
+      "enabled": true,
+      "inactivity_threshold_days": 30
+    },
     "session_duration": "24h",
     "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",
     "updated_at": "2014-01-01T05:20:00.12345Z",

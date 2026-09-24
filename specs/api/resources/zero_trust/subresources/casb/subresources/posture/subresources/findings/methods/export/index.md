@@ -216,7 +216,7 @@ One of the following:
 
 <summary>
 
-vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
 
 Filter by vendor types.
 
@@ -285,6 +285,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
 
 <a href="#">Link to this property</a>
 

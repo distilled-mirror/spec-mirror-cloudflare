@@ -386,8 +386,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar/registr
   "result": {
     "completed": false,
     "context": {
-      "blocked_by": "registry",
-      "detail": "Awaiting registry confirmation. This may take up to 24 hours.",
       "domain_name": "example.com"
     },
     "created_at": "2025-10-27T10:00:00Z",
@@ -536,8 +534,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/registrar/registr
   "result": {
     "completed": false,
     "context": {
-      "blocked_by": "registry",
-      "detail": "Awaiting registry confirmation. This may take up to 24 hours.",
       "domain_name": "example.com"
     },
     "created_at": "2025-10-27T10:00:00Z",

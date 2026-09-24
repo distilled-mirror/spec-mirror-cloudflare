@@ -1158,23 +1158,11 @@ GET/organizations/{organization\_id}/billable/usage
 
 <summary>
 
-UsageGetResponse = array of object {BillingAccountId, BillingAccountName, ChargeCategory, 33 more }
+UsageGetResponse = array of object {ChargeCategory, ChargeDescription, ChargeFrequency, 33 more }
 
 Contains the array of cost and usage records.
 
 </summary>
-
-BillingAccountId: string
-
-Public identifier of the Cloudflare account (account tag).
-
-<a href="#">Link to this property</a>
-
-BillingAccountName: string
-
-Display name of the Cloudflare account.
-
-<a href="#">Link to this property</a>
 
 ChargeCategory: "Usage"
 
@@ -1246,15 +1234,21 @@ The unique identifier for the billable metric in the Cloudflare catalog. Cloudfl
 
 <a href="#">Link to this property</a>
 
-x\_BillableMetricName: string
-
-The display name of the billable metric. Cloudflare extension; replaces FOCUS SkuMeter.
-
-<a href="#">Link to this property</a>
-
 BilledCost: optional number
 
 A charge serving as the basis for invoicing, inclusive of all reduced rates and discounts while excluding the amortization of upfront charges (one-time or recurring).
+
+<a href="#">Link to this property</a>
+
+BillingAccountId: optional string
+
+Public identifier of the Cloudflare account (account tag). Omitted when account is not part of the requested grouping.
+
+<a href="#">Link to this property</a>
+
+BillingAccountName: optional string
+
+Display name of the Cloudflare account. Omitted when account is not part of the requested grouping.
 
 <a href="#">Link to this property</a>
 
@@ -1373,6 +1367,12 @@ true
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+x\_BillableMetricName: optional string
+
+The display name of the billable metric. Cloudflare extension; replaces FOCUS SkuMeter.
 
 <a href="#">Link to this property</a>
 

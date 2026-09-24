@@ -220,8 +220,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -316,7 +314,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -821,10 +819,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "category": {
         "observation": "Issue",
         "product": "SaaS",
-        "type": "Posture"
+        "type": "Content"
       },
       "name": "Slack File Publicly Accessible",
-      "severity": "High",
+      "severity": "Critical",
       "vendor": "Google Workspace",
       "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
       "remediation": {
@@ -939,10 +937,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "category": {
         "observation": "Issue",
         "product": "SaaS",
-        "type": "Posture"
+        "type": "Content"
       },
       "name": "Slack File Publicly Accessible",
-      "severity": "High",
+      "severity": "Critical",
       "vendor": "Google Workspace",
       "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
       "remediation": {

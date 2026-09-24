@@ -106,8 +106,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -202,7 +200,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -710,8 +708,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -806,7 +802,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -1444,8 +1440,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -1540,7 +1534,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -2048,8 +2042,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -2144,7 +2136,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -2652,8 +2644,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -2748,7 +2738,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -3256,8 +3246,6 @@ formatuuid
 
 category: object {observation, product, type }
 
-Category information for a finding.
-
 </summary>
 
 <details>
@@ -3352,7 +3340,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -6020,7 +6008,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -6182,7 +6170,7 @@ The name of the finding.
 
 severity: "Critical"or "High"or "Medium"or "Low"
 
-The severity level of a finding.
+Default severity used when no integration-specific severity override exists.
 
 </summary>
 
@@ -6920,7 +6908,7 @@ Asset type.
 
 <summary>
 
-vendor: "AWS"or "Anthropic"or "Bitbucket"or 16 more
+vendor: "AWS"or "Anthropic"or "Bitbucket"or 14 more
 
 Display names for vendor types.
 
@@ -6976,10 +6964,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"Okta"
-
-<a href="#">Link to this property</a>
-
 "OpenAI"
 
 <a href="#">Link to this property</a>
@@ -6993,10 +6977,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ServiceNow"
-
-<a href="#">Link to this property</a>
-
-"Workday"
 
 <a href="#">Link to this property</a>
 
@@ -7294,7 +7274,7 @@ Asset type.
 
 <summary>
 
-vendor: "AWS"or "Anthropic"or "Bitbucket"or 16 more
+vendor: "AWS"or "Anthropic"or "Bitbucket"or 14 more
 
 Display names for vendor types.
 
@@ -7350,10 +7330,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"Okta"
-
-<a href="#">Link to this property</a>
-
 "OpenAI"
 
 <a href="#">Link to this property</a>
@@ -7367,10 +7343,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ServiceNow"
-
-<a href="#">Link to this property</a>
-
-"Workday"
 
 <a href="#">Link to this property</a>
 

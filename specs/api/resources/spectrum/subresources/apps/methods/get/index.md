@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, dns, 12 more } or object {id, created\_on, dns, 3 more }
+result: optional object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 12 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
 
 </summary>
 
@@ -266,9 +266,9 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 
 <summary>
 
-traffic\_type: "direct"or "http"or "https"
+traffic\_type: "direct"or "http"or "https"or "worker"
 
-Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly.
+Determines how data travels from the edge to your origin. When set to “direct”, Spectrum will send traffic directly to your origin, and the application’s type is derived from the <code>protocol</code>. When set to “http” or “https”, Spectrum will apply Cloudflare’s HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly. When set to “worker”, traffic is sent to the Worker specified by <code>origin_worker_id</code>.
 
 </summary>
 
@@ -283,6 +283,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "https"
+
+<a href="#">Link to this property</a>
+
+"worker"
 
 <a href="#">Link to this property</a>
 
@@ -481,6 +485,12 @@ string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_id: optional string
+
+Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
 
 <a href="#">Link to this property</a>
 
@@ -719,6 +729,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps/$APP_ID \
       "type": ""
     },
     "origin_port": 22,
+    "origin_worker_id": "277b7815c871434b960b60729659000a",
     "proxy_protocol": "off",
     "tls": "off",
     "virtual_network_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
@@ -778,6 +789,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps/$APP_ID \
       "type": ""
     },
     "origin_port": 22,
+    "origin_worker_id": "277b7815c871434b960b60729659000a",
     "proxy_protocol": "off",
     "tls": "off",
     "virtual_network_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"

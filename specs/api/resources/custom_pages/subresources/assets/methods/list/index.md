@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/custom\_pages/assets
 
-Fetches all the custom assets.
+Lists custom assets for an account or zone.
 
 ##### Security
 
@@ -54,11 +54,15 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 page: optional number
 
+Page number of paginated results.
+
 minimum1
 
 [Link to this property](#)%20custom_pages.assets%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 per\_page: optional number
+
+Number of custom assets per page.
 
 maximum200
 
