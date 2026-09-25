@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email/routing/addresses
 
-Lists existing destination addresses.
+Lists destination addresses configured for Email Routing in an account.
 
 ##### Security
 

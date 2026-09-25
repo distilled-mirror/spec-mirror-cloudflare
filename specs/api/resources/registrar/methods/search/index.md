@@ -239,9 +239,11 @@ Indicates domain availability according to potentially stale, non-authoritative 
 
 pricing: optional object {currency, registration\_cost, renewal\_cost }
 
-Provides annual pricing information for a registrable domain. This object appears only when <code>registrable</code> is <code>true</code>. The API returns all per-year prices as strings to preserve decimal precision.
+Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
 
-<code>registration_cost</code> and <code>renewal_cost</code> frequently have the same value, but may differ, especially when registries set different premium rates for initial registration and renewal. For a multi-year registration (e.g., 4 years), <code>registration_cost</code> applies to the first year and <code>renewal_cost</code> applies to each subsequent year. The values reflect the current registry rate, which may change over time. Search and Check may surface premium pricing, but this API currently supports standard registrations only.
+<code>renewal_cost</code> and <code>registration_cost</code> or <code>transfer_cost</code> are frequently the same value, but may differ due to premium rates for certain domains.
+
+For a multi-year operations, the operation’s cost applies to the first year and <code>renewal_cost</code> applies to each subsequent year. The values reflect the current registry rate, which can change over time.
 
 </summary>
 
@@ -253,7 +255,7 @@ ISO-4217 currency code for the prices (e.g., “USD”, “EUR”, “GBP”).
 
 registration\_cost: string
 
-The first-year cost to register this domain. For premium domains (<code>tier: premium</code>), the registry sets this price, which may significantly exceed standard pricing. For multi-year registrations, this cost applies to the first year only; <code>renewal_cost</code> applies to subsequent years.
+The first-year cost to register this domain.
 
 <a href="#">Link to this property</a>
 

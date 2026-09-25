@@ -7322,7 +7322,7 @@ The action to perform when the rule matches.
 
 <summary>
 
-action\_parameters: optional object {automatic\_https\_rewrites, autominify, bic, 19 more }
+action\_parameters: optional object {automatic\_https\_rewrites, autominify, bic, 21 more }
 
 The parameters configuring the rule’s action.
 
@@ -7619,6 +7619,18 @@ Deprecatedsxg: optional boolean
 Signed Exchanges (SXG) is deprecated.
 
 Whether to enable Signed Exchanges (SXG).
+
+<a href="#">Link to this property</a>
+
+webmcp\_enabled: optional boolean
+
+Whether to serve the WebMCP bridge script, which exposes the page’s tools to browser AI agents.
+
+<a href="#">Link to this property</a>
+
+webmcp\_packs: optional array of string
+
+Bundled WebMCP tool packs to activate for matching requests. An empty array disables all packs. Omitting this parameter leaves the pack selection unchanged. Does not enable the WebMCP bridge itself. Non-empty selections require the WebMCP Configuration Rules entitlement.
 
 <a href="#">Link to this property</a>
 

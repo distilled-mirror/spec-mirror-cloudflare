@@ -325,7 +325,7 @@ To view the full list of variables, look at the <code>cfWaitingRoom</code> objec
 
 <summary>
 
-default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 35 more
+default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 36 more
 
 The language of the default page template. If no default\_template\_language is provided, then <code>en-US</code> (English) will be used.
 
@@ -422,6 +422,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "lt-LT"
+
+<a href="#">Link to this property</a>
+
+"lv-LV"
 
 <a href="#">Link to this property</a>
 

@@ -48,9 +48,7 @@ maxLength32
 
 app\_id: string
 
-maxLength32
-
-minLength32
+The app identifier tag.
 
 [Link to this property](#)%20realtime_kit.recordings%20%3E%20(method)%20pause_resume_stop_recording%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 

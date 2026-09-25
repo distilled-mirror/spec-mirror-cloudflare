@@ -68,6 +68,16 @@ name: string
 
 ##### Q uery ParametersExpand Collapse
 
+hostname: optional string
+
+Filter by exact Search for Agents hostname (case-insensitive).
+
+maxLength253
+
+minLength1
+
+[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20hostname%20%3E%20(schema)>)
+
 namespace: optional string
 
 Filter by namespace.

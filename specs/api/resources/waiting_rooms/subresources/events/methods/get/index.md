@@ -82,6 +82,90 @@ event\_id: string
 
 <summary>
 
+errors: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20waiting_rooms.events%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20waiting_rooms.events%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
+
+<details>
+
+<summary>
+
 result: <a href="https://developers.cloudflare.com/api/resources/waiting_rooms#(resource)%20waiting_rooms.events%20%3E%20(model)%20event%20%3E%20(schema)">Event</a> { id, created\_on, custom\_page\_html, 15 more }
 
 </summary>
@@ -252,6 +336,10 @@ One of the following:
 
 [Link to this property](#)%20waiting_rooms.events%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
+success: boolean
+
+[Link to this property](#)%20waiting_rooms.events%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
+
 ### Event details
 
 HTTP
@@ -267,6 +355,26 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
 
 ```
 {
+  "errors": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
   "result": {
     "id": "25756b2dfe6e378a06b033b670413757",
     "created_on": "2014-01-01T05:20:00.12345Z",
@@ -286,7 +394,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
     "total_active_users": 200,
     "turnstile_action": "log",
     "turnstile_mode": "off"
-  }
+  },
+  "success": true
 }
 ```
 
@@ -296,6 +405,26 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
 
 ```
 {
+  "errors": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
   "result": {
     "id": "25756b2dfe6e378a06b033b670413757",
     "created_on": "2014-01-01T05:20:00.12345Z",
@@ -315,6 +444,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
     "total_active_users": 200,
     "turnstile_action": "log",
     "turnstile_mode": "off"
-  }
+  },
+  "success": true
 }
 ```

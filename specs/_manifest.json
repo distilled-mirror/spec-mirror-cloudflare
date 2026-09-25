@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3846,
+  "count": 3859,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -6673,6 +6673,58 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/magic_transit/subresources/sites/subresources/wans/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/magic_transit/subresources/sites/subresources/wans/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/reports",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/reports/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/reports/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/reports/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get_report",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get_report/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/managed_transforms",

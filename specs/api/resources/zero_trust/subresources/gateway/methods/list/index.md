@@ -62,6 +62,8 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
+Specify the Cloudflare account identifier.
+
 [Link to this property](#)%20zero_trust.gateway%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse

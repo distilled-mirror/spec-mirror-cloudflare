@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
 
-Deletes a file from a managed AI Search instance and triggers a reindex.
+Deletes a file from a managed AI Search instance and removes its indexed data.
 
 ##### Security
 

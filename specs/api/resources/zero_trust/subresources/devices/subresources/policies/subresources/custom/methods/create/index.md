@@ -422,7 +422,7 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 profile\_type: optional "warp"or "browser\_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 
@@ -1016,7 +1016,7 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 profile\_type: optional "warp"or "browser\_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 

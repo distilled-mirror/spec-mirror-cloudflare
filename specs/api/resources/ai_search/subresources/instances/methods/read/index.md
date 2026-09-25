@@ -304,7 +304,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -314,7 +314,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -967,6 +967,8 @@ formatuuid
 <summary>
 
 type: optional "r2"or "web-crawler"
+
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
 
 </summary>
 

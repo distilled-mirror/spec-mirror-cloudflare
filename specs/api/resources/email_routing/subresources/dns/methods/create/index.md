@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/zones/{zone\_id}/email/routing/dns
 
-Enable you Email Routing zone. Add and lock the necessary MX and SPF records.
+Enable your Email Routing zone. Add and lock the necessary MX and SPF records.
 
 ##### Security
 

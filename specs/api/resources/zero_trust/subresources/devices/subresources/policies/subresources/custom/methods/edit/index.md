@@ -422,30 +422,6 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20precedence%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-profile\_type: optional "warp"or "browser\_extension"
-
-The client type to which the device settings profile applies.
-
-</summary>
-
-One of the following:
-
-"warp"
-
-<a href="#">Link to this property</a>
-
-"browser\_extension"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20profile_type%20%3E%20(schema)>)
-
 register\_interface\_ip\_with\_dns: optional boolean
 
 Determines if the operating system will register WARP’s local interface IP with your on-premises DNS server.
@@ -1022,7 +998,7 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 profile\_type: optional "warp"or "browser\_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 
@@ -1187,7 +1163,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy/$P
           "match": "identity.email == \\"test@cloudflare.com\\"",
           "name": "Allow Developers",
           "precedence": 100,
-          "profile_type": "warp",
           "register_interface_ip_with_dns": true,
           "support_url": "https://1.1.1.1/help",
           "switch_locked": true,

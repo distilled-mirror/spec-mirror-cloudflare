@@ -26,7 +26,7 @@ GET/zones/{zone\_id}/email/routing/dns
 
 POST/zones/{zone\_id}/email/routing/dns
 
-##### [Unlock Email Routing](https://developers.cloudflare.com/api/resources/email_routing/subresources/dns/methods/edit)
+##### [Unlock Email Routing DNS records](https://developers.cloudflare.com/api/resources/email_routing/subresources/dns/methods/edit)
 
 PATCH/zones/{zone\_id}/email/routing/dns
 

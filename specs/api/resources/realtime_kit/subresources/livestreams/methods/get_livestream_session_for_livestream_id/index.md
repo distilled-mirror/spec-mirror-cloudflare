@@ -50,8 +50,6 @@ app\_id: string
 
 The app identifier tag.
 
-maxLength32
-
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(method)%20get_livestream_session_for_livestream_id%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
 livestream\_id: string

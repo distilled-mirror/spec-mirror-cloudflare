@@ -76,6 +76,90 @@ waiting\_room\_id: string
 
 <summary>
 
+errors: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20waiting_rooms%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20waiting_rooms%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
+
+<details>
+
+<summary>
+
 result: <a href="https://developers.cloudflare.com/api/resources/waiting_rooms#(resource)%20waiting_rooms%20%3E%20(model)%20waiting_room%20%3E%20(schema)">WaitingRoom</a> { id, additional\_routes, cookie\_attributes, 23 more }
 
 </summary>
@@ -215,7 +299,7 @@ To view the full list of variables, look at the <code>cfWaitingRoom</code> objec
 
 <summary>
 
-default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 35 more
+default\_template\_language: optional "en-US"or "es-ES"or "de-DE"or 36 more
 
 The language of the default page template. If no default\_template\_language is provided, then <code>en-US</code> (English) will be used.
 
@@ -312,6 +396,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "lt-LT"
+
+<a href="#">Link to this property</a>
+
+"lv-LV"
 
 <a href="#">Link to this property</a>
 
@@ -703,6 +791,10 @@ One of the following:
 
 [Link to this property](#)%20waiting_rooms%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
+success: boolean
+
+[Link to this property](#)%20waiting_rooms%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
+
 ### Waiting room details
 
 HTTP
@@ -718,6 +810,26 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
 
 ```
 {
+  "errors": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
   "result": {
     "id": "699d98642c564d2e855e9661899b7252",
     "additional_routes": [
@@ -755,7 +867,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
     "total_active_users": 200,
     "turnstile_action": "log",
     "turnstile_mode": "off"
-  }
+  },
+  "success": true
 }
 ```
 
@@ -765,6 +878,26 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
 
 ```
 {
+  "errors": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
   "result": {
     "id": "699d98642c564d2e855e9661899b7252",
     "additional_routes": [
@@ -802,6 +935,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/waiting_rooms/$WAITING_
     "total_active_users": 200,
     "turnstile_action": "log",
     "turnstile_mode": "off"
-  }
+  },
+  "success": true
 }
 ```

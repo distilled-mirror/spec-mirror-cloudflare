@@ -1,5 +1,5 @@
 ---
-title: Update an AI Search instance.
+title: Update an AI Search instance (Search for Agents metadata requires the default namespace).
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update an AI Search instance.
+# Update an AI Search instance (Search for Agents metadata requires the default namespace).
 
 PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
 
-Update the configuration of an AI Search instance.
+Update an AI Search instance. Submitting Search for Agents metadata requires the default namespace; omitting or removing it is allowed elsewhere. Submit Search for Agents metadata and restrictive or unknown public endpoint changes or custom domains in separate PUT requests, even when resubmitting unchanged metadata.
 
 ##### Security
 
@@ -272,7 +272,7 @@ One of the following:
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1154,7 +1154,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -1164,7 +1164,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1818,6 +1818,8 @@ formatuuid
 
 type: optional "r2"or "web-crawler"
 
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
+
 </summary>
 
 One of the following:
@@ -1842,7 +1844,7 @@ success: boolean
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update an AI Search instance.
+### Update an AI Search instance (Search for Agents metadata requires the default namespace).
 
 HTTP
 

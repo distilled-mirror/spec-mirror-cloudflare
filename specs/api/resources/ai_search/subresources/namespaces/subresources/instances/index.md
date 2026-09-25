@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
-##### [Create an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/create)
+##### [Create an AI Search instance (Search for Agents requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/create)
 
 POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
@@ -32,7 +32,7 @@ POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
 GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
 
-##### [Update an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/update)
+##### [Update an AI Search instance (Search for Agents metadata requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/update)
 
 PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
 
@@ -1168,7 +1168,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -1178,7 +1178,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1831,6 +1831,8 @@ formatuuid
 <summary>
 
 type: optional "r2"or "web-crawler"
+
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
 
 </summary>
 
@@ -2086,7 +2088,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -2096,7 +2098,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -2749,6 +2751,8 @@ formatuuid
 <summary>
 
 type: optional "r2"or "web-crawler"
+
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
 
 </summary>
 
@@ -3004,7 +3008,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -3014,7 +3018,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -3667,6 +3671,8 @@ formatuuid
 <summary>
 
 type: optional "r2"or "web-crawler"
+
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
 
 </summary>
 
@@ -3922,7 +3928,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -3932,7 +3938,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -4585,6 +4591,8 @@ formatuuid
 <summary>
 
 type: optional "r2"or "web-crawler"
+
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
 
 </summary>
 

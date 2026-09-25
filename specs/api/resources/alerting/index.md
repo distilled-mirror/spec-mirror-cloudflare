@@ -1036,7 +1036,7 @@ Whether or not the Notification policy is enabled.
 
 <a href="#">Link to this property</a>
 
-filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 40 more }
+filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 41 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -1068,7 +1068,7 @@ Name of the policy.
 
 <summary>
 
-PolicyFilter object {actions, affected\_asns, affected\_components, 40 more }
+PolicyFilter object {actions, affected\_asns, affected\_components, 41 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -1319,6 +1319,12 @@ Used for configuring advanced\_ddos\_attack\_l4\_alert
 target\_zone\_name: optional array of string
 
 Used for configuring advanced\_ddos\_attack\_l7\_alert
+
+<a href="#">Link to this property</a>
+
+token\_id: optional array of string
+
+Access service token IDs to include for expiring\_service\_token\_alert. Omit this property to include all current and future service tokens.
 
 <a href="#">Link to this property</a>
 

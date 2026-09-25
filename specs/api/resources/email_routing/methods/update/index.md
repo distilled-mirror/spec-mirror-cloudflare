@@ -1,5 +1,5 @@
 ---
-title: Update Email Routing settings
+title: Apply Email Routing settings
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update Email Routing settings
+# Apply Email Routing settings
 
 PUT/zones/{zone\_id}/email/routing
 
-Update the settings for your Email Routing zone.
+Apply the provided settings to your Email Routing zone. Omitted settings retain their current values, as with PATCH.
 
 ##### Security
 
@@ -390,7 +390,7 @@ maxLength32
 
 [Link to this property](#)%20email_routing%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Update Email Routing settings
+### Apply Email Routing settings
 
 HTTP
 

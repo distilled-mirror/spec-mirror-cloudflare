@@ -3354,7 +3354,7 @@ The precedence of the policy. Lower values indicate higher precedence. Policies 
 
 profile_type: optional "warp" or "browser_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 
@@ -3946,7 +3946,7 @@ maxLength36
 
 profile_type: optional "warp" or "browser_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 
@@ -4372,7 +4372,7 @@ maxLength36
 
 profile_type: optional "warp" or "browser_extension"
 
-The client type to which the device settings profile applies.
+The client type to which the device settings profile applies. This field is set when the profile is created and cannot be changed.
 
 </summary>
 
@@ -14866,6 +14866,8 @@ created_by: optional string
 
 default_disabled: optional boolean
 
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
+
 [Link to this property](#)
 
 description: optional string
@@ -15407,6 +15409,8 @@ created_by: optional string
 [Link to this property](#)
 
 default_disabled: optional boolean
+
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
 
 [Link to this property](#)
 
@@ -15950,6 +15954,8 @@ created_by: optional string
 
 default_disabled: optional boolean
 
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
+
 [Link to this property](#)
 
 description: optional string
@@ -16491,6 +16497,8 @@ created_by: optional string
 [Link to this property](#)
 
 default_disabled: optional boolean
+
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
 
 [Link to this property](#)
 

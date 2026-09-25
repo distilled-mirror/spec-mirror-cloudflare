@@ -1,0 +1,4233 @@
+---
+title: Cloudflare Managed Defense
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
+# Cloudflare Managed Defense
+
+#### Cloudflare Managed DefenseVulnerability Discovery
+
+#### Cloudflare Managed DefenseVulnerability DiscoveryRepositories
+
+##### [List repositories](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/list)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos
+
+##### [Create repository](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/create)
+
+POST/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos
+
+##### [Get repository](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/repositories/methods/get)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos/{repo\_id}
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+RepositoryListResponse object {id, created\_at, name, 3 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength255
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+</summary>
+
+One of the following:
+
+"awaiting\_source"
+
+<a href="#">Link to this property</a>
+
+"processing"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: "upload"or "worker"
+
+</summary>
+
+One of the following:
+
+"upload"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+import\_error: optional object {code, message }
+
+</summary>
+
+code: "worker\_import\_failed"
+
+<a href="#">Link to this property</a>
+
+message: "Worker import failed."
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.repositories%20%3E%20(model)%20repository_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+RepositoryCreateResponse = object {repository, upload } or object {repository }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {repository, upload }
+
+</summary>
+
+<details>
+
+<summary>
+
+repository: object {id, name, readiness, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength255
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+</summary>
+
+One of the following:
+
+"awaiting\_source"
+
+<a href="#">Link to this property</a>
+
+"processing"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: "upload"or "worker"
+
+</summary>
+
+One of the following:
+
+"upload"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+import\_error: optional object {code, message }
+
+</summary>
+
+code: "worker\_import\_failed"
+
+<a href="#">Link to this property</a>
+
+message: "Worker import failed."
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+upload: object {token, expires\_in, remote }
+
+</summary>
+
+token: string
+
+maxLength8192
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+expires\_in: 3600
+
+<a href="#">Link to this property</a>
+
+remote: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Repository object {repository }
+
+</summary>
+
+<details>
+
+<summary>
+
+repository: object {id, name, readiness, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength255
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+</summary>
+
+One of the following:
+
+"awaiting\_source"
+
+<a href="#">Link to this property</a>
+
+"processing"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: "upload"or "worker"
+
+</summary>
+
+One of the following:
+
+"upload"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+import\_error: optional object {code, message }
+
+</summary>
+
+code: "worker\_import\_failed"
+
+<a href="#">Link to this property</a>
+
+message: "Worker import failed."
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.repositories%20%3E%20(model)%20repository_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+RepositoryGetResponse object {repository, scans }
+
+</summary>
+
+<details>
+
+<summary>
+
+repository: object {id, created\_at, name, 3 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength255
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+</summary>
+
+One of the following:
+
+"awaiting\_source"
+
+<a href="#">Link to this property</a>
+
+"processing"
+
+<a href="#">Link to this property</a>
+
+"ready"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: "upload"or "worker"
+
+</summary>
+
+One of the following:
+
+"upload"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+import\_error: optional object {code, message }
+
+</summary>
+
+code: "worker\_import\_failed"
+
+<a href="#">Link to this property</a>
+
+message: "Worker import failed."
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scans: array of object {id, completed\_at, message, 6 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+completed\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+message: string
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {id, name, phase, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+
+</summary>
+
+One of the following:
+
+"not\_ready"
+
+<a href="#">Link to this property</a>
+
+"pending\_review"
+
+<a href="#">Link to this property</a>
+
+"published"
+
+<a href="#">Link to this property</a>
+
+"withdrawn"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+started\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+submitted\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.repositories%20%3E%20(model)%20repository_get_response%20%3E%20(schema)>)
+
+#### Cloudflare Managed DefenseVulnerability DiscoveryScans
+
+##### [List scans](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/list)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/scans
+
+##### [Create scan](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/create)
+
+POST/accounts/{account\_id}/managed-defense/vulnerability-discovery/scans
+
+##### [Get scan](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/scans/{scan\_id}
+
+##### [Get reviewed vulnerability report](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/scans/methods/get_report)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/scans/{scan\_id}/report
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+ScanListResponse object {id, completed\_at, message, 6 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+completed\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+message: string
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {id, name, phase, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+
+</summary>
+
+One of the following:
+
+"not\_ready"
+
+<a href="#">Link to this property</a>
+
+"pending\_review"
+
+<a href="#">Link to this property</a>
+
+"published"
+
+<a href="#">Link to this property</a>
+
+"withdrawn"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+started\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+submitted\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.scans%20%3E%20(model)%20scan_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+ScanCreateResponse object {id, completed\_at, message, 6 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+completed\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+message: string
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {id, name, phase, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+
+</summary>
+
+One of the following:
+
+"not\_ready"
+
+<a href="#">Link to this property</a>
+
+"pending\_review"
+
+<a href="#">Link to this property</a>
+
+"published"
+
+<a href="#">Link to this property</a>
+
+"withdrawn"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+started\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+submitted\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.scans%20%3E%20(model)%20scan_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+ScanGetResponse object {id, completed\_at, message, 6 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+completed\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+message: string
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {id, name, phase, 2 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+phase: "provisioning"or "indexing"or "analyzing"or 2 more
+
+</summary>
+
+One of the following:
+
+"provisioning"
+
+<a href="#">Link to this property</a>
+
+"indexing"
+
+<a href="#">Link to this property</a>
+
+"analyzing"
+
+<a href="#">Link to this property</a>
+
+"reporting"
+
+<a href="#">Link to this property</a>
+
+"finalizing"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+
+</summary>
+
+One of the following:
+
+"not\_ready"
+
+<a href="#">Link to this property</a>
+
+"pending\_review"
+
+<a href="#">Link to this property</a>
+
+"published"
+
+<a href="#">Link to this property</a>
+
+"withdrawn"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+started\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+submitted\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.scans%20%3E%20(model)%20scan_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+ScanGetReportResponse object {publication, report, repositories, scan\_id }
+
+</summary>
+
+<details>
+
+<summary>
+
+publication: object {published\_at, revision\_id, version }
+
+</summary>
+
+published\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+revision\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+version: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report: object {executive\_summary, generated\_at, overall\_severity, 3 more }
+
+</summary>
+
+executive\_summary: string
+
+maxLength10000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+generated\_at: string
+
+Revision requests must echo the existing generation timestamp unchanged.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overall\_severity: "critical"or "high"or "medium"or 2 more
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {findings, overall\_severity, repository\_id, 5 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+findings: array of object {id, conditions, cwe, 17 more }
+
+</summary>
+
+id: string
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+conditions: array of string
+
+<a href="#">Link to this property</a>
+
+cwe: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+impact: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+location: object {file, line, route }
+
+</summary>
+
+file: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+line: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+route: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+reachability: array of object {consumer, reachable, via }
+
+</summary>
+
+consumer: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+reachable: boolean
+
+<a href="#">Link to this property</a>
+
+via: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+remediation: object {code\_changes, strategy }
+
+</summary>
+
+code\_changes: string
+
+<a href="#">Link to this property</a>
+
+strategy: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root\_cause: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+severity: "critical"or "high"or "medium"or 2 more
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+severity\_basis: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry: object {references, state }
+
+</summary>
+
+references: array of string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+state: "no\_route"or "no\_telemetry"or "no\_match"or "matched"
+
+</summary>
+
+One of the following:
+
+"no\_route"
+
+<a href="#">Link to this property</a>
+
+"no\_telemetry"
+
+<a href="#">Link to this property</a>
+
+"no\_match"
+
+<a href="#">Link to this property</a>
+
+"matched"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+trace: array of object {line, path, scope, why }
+
+</summary>
+
+line: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+scope: string
+
+<a href="#">Link to this property</a>
+
+why: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waf\_rules: object {broad, targeted }
+
+</summary>
+
+<details>
+
+<summary>
+
+broad: object {action, confidence, description, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+
+</summary>
+
+One of the following:
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"managed\_challenge"
+
+<a href="#">Link to this property</a>
+
+"js\_challenge"
+
+<a href="#">Link to this property</a>
+
+"log"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+confidence: "low"or "medium"or "high"
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+description: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+expression: string
+
+maxLength4096
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+false\_positive\_risk: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength25
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rationale: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+targeted: object {action, confidence, description, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+
+</summary>
+
+One of the following:
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"managed\_challenge"
+
+<a href="#">Link to this property</a>
+
+"js\_challenge"
+
+<a href="#">Link to this property</a>
+
+"log"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+confidence: "low"or "medium"or "high"
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+description: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+expression: string
+
+maxLength4096
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+false\_positive\_risk: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength25
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rationale: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+attacker\_position: optional "external"or "authenticated"or "internal"or "post\_compromise"
+
+Least-privileged position required to trigger the finding. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"external"
+
+<a href="#">Link to this property</a>
+
+"authenticated"
+
+<a href="#">Link to this property</a>
+
+"internal"
+
+<a href="#">Link to this property</a>
+
+"post\_compromise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+external\_links: optional array of object {title, url }
+
+</summary>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+url: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+open\_question: optional string
+
+One bounded unresolved proof question. Optional on legacy report revisions.
+
+maxLength500
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+proof\_method: optional "structural"or "experimental"or "acquired\_source"or 2 more
+
+Method used or needed to close the proof. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"structural"
+
+<a href="#">Link to this property</a>
+
+"experimental"
+
+<a href="#">Link to this property</a>
+
+"acquired\_source"
+
+<a href="#">Link to this property</a>
+
+"public\_knowledge"
+
+<a href="#">Link to this property</a>
+
+"team\_question"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+proof\_state: optional "closed"or "pending\_source"or "pending\_public"or 2 more
+
+Current proof lifecycle state. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"closed"
+
+<a href="#">Link to this property</a>
+
+"pending\_source"
+
+<a href="#">Link to this property</a>
+
+"pending\_public"
+
+<a href="#">Link to this property</a>
+
+"pending\_experiment"
+
+<a href="#">Link to this property</a>
+
+"pending\_team"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overall\_severity: "critical"or "high"or "medium"or 2 more
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repository\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+repository\_name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_context: object {http, target, waf, web\_assets }
+
+</summary>
+
+<details>
+
+<summary>
+
+http: object {error\_paths, hot\_paths, request\_volume }
+
+</summary>
+
+<details>
+
+<summary>
+
+error\_paths: array of object {id, hits, host, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hits: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+status: number
+
+maximum599
+
+minimum100
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+hot\_paths: array of object {id, hits, host, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hits: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+top\_status: number
+
+maximum599
+
+minimum100
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+request\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+target: object {hosts, kind, telemetry\_window }
+
+</summary>
+
+hosts: array of string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+kind: "worker"or "origin"
+
+</summary>
+
+One of the following:
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waf: object {hit\_volume, rules }
+
+</summary>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+rules: array of object {id, hit\_volume, paths, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paths: array of object {id, hit\_volume, host, path }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+rule\_id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rule\_version: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+web\_assets: object {operations, paths, risk\_types }
+
+</summary>
+
+<details>
+
+<summary>
+
+operations: array of object {id, endpoint, host, 3 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+endpoint: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+method: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_labels: array of object {description, name }
+
+</summary>
+
+description: string
+
+<a href="#">Link to this property</a>
+
+name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+performance: optional object {avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
+
+</summary>
+
+avg\_origin\_latency\_ms: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+error\_rate: number
+
+maximum1
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+estimated\_requests: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paths: array of object {id, avg\_origin\_latency\_ms, error\_rate, 3 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+avg\_origin\_latency\_ms: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+error\_rate: number
+
+maximum1
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+estimated\_requests: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_types: array of object {description, name, operation\_count }
+
+</summary>
+
+description: string
+
+<a href="#">Link to this property</a>
+
+name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+operation\_count: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+external\_links: optional array of object {title, url }
+
+</summary>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+url: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+limitations: optional array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schema\_version: 2
+
+<a href="#">Link to this property</a>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+repositories: array of object {id, name, report\_status, scan\_status }
+
+</summary>
+
+id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report\_status: "not\_ready"or "pending\_review"or "published"or "withdrawn"
+
+</summary>
+
+One of the following:
+
+"not\_ready"
+
+<a href="#">Link to this property</a>
+
+"pending\_review"
+
+<a href="#">Link to this property</a>
+
+"published"
+
+<a href="#">Link to this property</a>
+
+"withdrawn"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scan\_status: "requested"or "accepted"or "running"or 4 more
+
+</summary>
+
+One of the following:
+
+"requested"
+
+<a href="#">Link to this property</a>
+
+"accepted"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"completed"
+
+<a href="#">Link to this property</a>
+
+"failed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+scan\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.scans%20%3E%20(model)%20scan_get_report_response%20%3E%20(schema)>)
+
+#### Cloudflare Managed DefenseVulnerability DiscoveryReports
+
+##### [Get reviewed vulnerability report](https://developers.cloudflare.com/api/resources/managed_defense/subresources/vulnerability_discovery/subresources/reports/methods/get)
+
+GET/accounts/{account\_id}/managed-defense/vulnerability-discovery/repos/{repo\_id}/scans/{scan\_id}/report
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+ReportGetResponse object {publication, report, repository\_id, scan\_id }
+
+</summary>
+
+<details>
+
+<summary>
+
+publication: object {published\_at, revision\_id, version }
+
+</summary>
+
+published\_at: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+revision\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+version: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+report: object {findings, overall\_severity, repository\_id, 5 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+findings: array of object {id, conditions, cwe, 17 more }
+
+</summary>
+
+id: string
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+conditions: array of string
+
+<a href="#">Link to this property</a>
+
+cwe: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+impact: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+location: object {file, line, route }
+
+</summary>
+
+file: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+line: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+route: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+reachability: array of object {consumer, reachable, via }
+
+</summary>
+
+consumer: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+reachable: boolean
+
+<a href="#">Link to this property</a>
+
+via: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+remediation: object {code\_changes, strategy }
+
+</summary>
+
+code\_changes: string
+
+<a href="#">Link to this property</a>
+
+strategy: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root\_cause: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+severity: "critical"or "high"or "medium"or 2 more
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+severity\_basis: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry: object {references, state }
+
+</summary>
+
+references: array of string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+state: "no\_route"or "no\_telemetry"or "no\_match"or "matched"
+
+</summary>
+
+One of the following:
+
+"no\_route"
+
+<a href="#">Link to this property</a>
+
+"no\_telemetry"
+
+<a href="#">Link to this property</a>
+
+"no\_match"
+
+<a href="#">Link to this property</a>
+
+"matched"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+trace: array of object {line, path, scope, why }
+
+</summary>
+
+line: number
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+scope: string
+
+<a href="#">Link to this property</a>
+
+why: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waf\_rules: object {broad, targeted }
+
+</summary>
+
+<details>
+
+<summary>
+
+broad: object {action, confidence, description, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+
+</summary>
+
+One of the following:
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"managed\_challenge"
+
+<a href="#">Link to this property</a>
+
+"js\_challenge"
+
+<a href="#">Link to this property</a>
+
+"log"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+confidence: "low"or "medium"or "high"
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+description: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+expression: string
+
+maxLength4096
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+false\_positive\_risk: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength25
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rationale: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+targeted: object {action, confidence, description, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "block"or "managed\_challenge"or "js\_challenge"or "log"
+
+</summary>
+
+One of the following:
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"managed\_challenge"
+
+<a href="#">Link to this property</a>
+
+"js\_challenge"
+
+<a href="#">Link to this property</a>
+
+"log"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+confidence: "low"or "medium"or "high"
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+description: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+expression: string
+
+maxLength4096
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+false\_positive\_risk: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+maxLength25
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rationale: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+attacker\_position: optional "external"or "authenticated"or "internal"or "post\_compromise"
+
+Least-privileged position required to trigger the finding. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"external"
+
+<a href="#">Link to this property</a>
+
+"authenticated"
+
+<a href="#">Link to this property</a>
+
+"internal"
+
+<a href="#">Link to this property</a>
+
+"post\_compromise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+external\_links: optional array of object {title, url }
+
+</summary>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+url: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+open\_question: optional string
+
+One bounded unresolved proof question. Optional on legacy report revisions.
+
+maxLength500
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+proof\_method: optional "structural"or "experimental"or "acquired\_source"or 2 more
+
+Method used or needed to close the proof. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"structural"
+
+<a href="#">Link to this property</a>
+
+"experimental"
+
+<a href="#">Link to this property</a>
+
+"acquired\_source"
+
+<a href="#">Link to this property</a>
+
+"public\_knowledge"
+
+<a href="#">Link to this property</a>
+
+"team\_question"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+proof\_state: optional "closed"or "pending\_source"or "pending\_public"or 2 more
+
+Current proof lifecycle state. Optional on legacy report revisions.
+
+</summary>
+
+One of the following:
+
+"closed"
+
+<a href="#">Link to this property</a>
+
+"pending\_source"
+
+<a href="#">Link to this property</a>
+
+"pending\_public"
+
+<a href="#">Link to this property</a>
+
+"pending\_experiment"
+
+<a href="#">Link to this property</a>
+
+"pending\_team"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overall\_severity: "critical"or "high"or "medium"or 2 more
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"info"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repository\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+repository\_name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+maxLength4000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_context: object {http, target, waf, web\_assets }
+
+</summary>
+
+<details>
+
+<summary>
+
+http: object {error\_paths, hot\_paths, request\_volume }
+
+</summary>
+
+<details>
+
+<summary>
+
+error\_paths: array of object {id, hits, host, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hits: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+status: number
+
+maximum599
+
+minimum100
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+hot\_paths: array of object {id, hits, host, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hits: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+top\_status: number
+
+maximum599
+
+minimum100
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+request\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+target: object {hosts, kind, telemetry\_window }
+
+</summary>
+
+hosts: array of string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+kind: "worker"or "origin"
+
+</summary>
+
+One of the following:
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+telemetry\_window: optional object {end, start }
+
+UTC ISO-8601 interval. Start is inclusive, end is exclusive, and the interval must be positive and at most seven days.
+
+</summary>
+
+end: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+waf: object {hit\_volume, rules }
+
+</summary>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+rules: array of object {id, hit\_volume, paths, 2 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paths: array of object {id, hit\_volume, host, path }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+hit\_volume: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+rule\_id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+rule\_version: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+web\_assets: object {operations, paths, risk\_types }
+
+</summary>
+
+<details>
+
+<summary>
+
+operations: array of object {id, endpoint, host, 3 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+endpoint: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+method: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_labels: array of object {description, name }
+
+</summary>
+
+description: string
+
+<a href="#">Link to this property</a>
+
+name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+performance: optional object {avg\_origin\_latency\_ms, error\_rate, estimated\_requests }
+
+</summary>
+
+avg\_origin\_latency\_ms: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+error\_rate: number
+
+maximum1
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+estimated\_requests: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paths: array of object {id, avg\_origin\_latency\_ms, error\_rate, 3 more }
+
+</summary>
+
+id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+avg\_origin\_latency\_ms: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+error\_rate: number
+
+maximum1
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+estimated\_requests: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+host: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+path: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+risk\_types: array of object {description, name, operation\_count }
+
+</summary>
+
+description: string
+
+<a href="#">Link to this property</a>
+
+name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+operation\_count: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+external\_links: optional array of object {title, url }
+
+</summary>
+
+title: string
+
+maxLength200
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+url: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+limitations: optional array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repository\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+scan\_id: string
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20managed_defense.vulnerability_discovery.reports%20%3E%20(model)%20report_get_response%20%3E%20(schema)>)

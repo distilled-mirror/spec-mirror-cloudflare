@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/zones/{zone\_id}/email/routing/rules/{rule\_identifier}
 
-Delete a specific routing rule.
+Deletes a routing rule so matching incoming messages are no longer forwarded by it.
 
 ##### Security
 

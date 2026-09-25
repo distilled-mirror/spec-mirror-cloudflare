@@ -1,5 +1,5 @@
 ---
-title: Create an AI Search instance.
+title: Create an AI Search instance (Search for Agents requires the default namespace).
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create an AI Search instance.
+# Create an AI Search instance (Search for Agents requires the default namespace).
 
 POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
-Create a new AI Search instance with the given configuration.
+Create a new AI Search instance with the given configuration. If type is omitted or null, a non-blank HTTP(S) source infers web-crawler and an existing R2 bucket source infers r2. A missing or blank source without a type creates a managed upload-only instance. Search for Agents instances require the default namespace.
 
 ##### Security
 
@@ -274,7 +274,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20hybrid_search_enabled%20%3E%20(schema)>)
 
@@ -284,7 +284,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -912,6 +912,8 @@ formatuuid
 
 type: optional "r2"or "web-crawler"
 
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
+
 </summary>
 
 One of the following:
@@ -1164,7 +1166,7 @@ One of the following:
 
 Deprecatedhybrid\_search\_enabled: optional boolean
 
-Deprecated — use index\_method instead.
+Deprecated — use index\_method instead. Defaults to true for new instances; set false to create a vector-only instance.
 
 <a href="#">Link to this property</a>
 
@@ -1174,7 +1176,7 @@ Deprecated — use index\_method instead.
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector-only.
+Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1828,6 +1830,8 @@ formatuuid
 
 type: optional "r2"or "web-crawler"
 
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
+
 </summary>
 
 One of the following:
@@ -1852,7 +1856,7 @@ success: boolean
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create an AI Search instance.
+### Create an AI Search instance (Search for Agents requires the default namespace).
 
 HTTP
 

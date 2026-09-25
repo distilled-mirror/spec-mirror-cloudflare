@@ -284,6 +284,8 @@ created_by: optional string
 
 default_disabled: optional boolean
 
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
+
 [Link to this property](#)
 
 description: optional string
@@ -825,6 +827,8 @@ created_by: optional string
 [Link to this property](#)
 
 default_disabled: optional boolean
+
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
 
 [Link to this property](#)
 
@@ -1368,6 +1372,8 @@ created_by: optional string
 
 default_disabled: optional boolean
 
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
+
 [Link to this property](#)
 
 description: optional string
@@ -1909,6 +1915,8 @@ created_by: optional string
 [Link to this property](#)
 
 default_disabled: optional boolean
+
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated_tools or updated_prompts.
 
 [Link to this property](#)
 

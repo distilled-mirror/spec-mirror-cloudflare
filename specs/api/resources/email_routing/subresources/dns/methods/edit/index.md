@@ -1,5 +1,5 @@
 ---
-title: Unlock Email Routing
+title: Unlock Email Routing DNS records
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Unlock Email Routing
+# Unlock Email Routing DNS records
 
 PATCH/zones/{zone\_id}/email/routing/dns
 
@@ -326,7 +326,7 @@ maxLength32
 
 [Link to this property](#)%20email_routing.dns%20%3E%20(method)%20edit%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Unlock Email Routing
+### Unlock Email Routing DNS records
 
 HTTP
 

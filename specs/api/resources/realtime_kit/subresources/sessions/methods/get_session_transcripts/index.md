@@ -50,8 +50,6 @@ app\_id: string
 
 The app identifier tag.
 
-maxLength32
-
 [Link to this property](#)%20realtime_kit.sessions%20%3E%20(method)%20get_session_transcripts%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
 session\_id: string

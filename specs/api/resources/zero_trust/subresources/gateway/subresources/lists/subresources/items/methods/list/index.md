@@ -62,6 +62,8 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
+Specify the Cloudflare account identifier.
+
 [Link to this property](#)%20zero_trust.gateway.lists.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 list\_id: string
@@ -71,6 +73,26 @@ Identify the API resource with a UUID.
 maxLength36
 
 [Link to this property](#)%20zero_trust.gateway.lists.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20list_id%20%3E%20(schema)>)
+
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Page number of paginated results.
+
+minimum1
+
+[Link to this property](#)%20zero_trust.gateway.lists.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of items per page.
+
+maximum1000
+
+minimum1
+
+[Link to this property](#)%20zero_trust.gateway.lists.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -202,7 +224,7 @@ Specify the item value.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object {count, page, per\_page, 2 more }
 
 </summary>
 
@@ -227,6 +249,12 @@ Show the number of results per page of results.
 total\_count: optional number
 
 Show the total results available without any search parameters.
+
+<a href="#">Link to this property</a>
+
+total\_pages: optional number
+
+Indicate the total number of pages.
 
 <a href="#">Link to this property</a>
 
@@ -281,7 +309,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/lists/$LI
     "count": 1,
     "page": 1,
     "per_page": 20,
-    "total_count": 2000
+    "total_count": 2000,
+    "total_pages": 100
   }
 }
 ```
@@ -324,7 +353,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/lists/$LI
     "count": 1,
     "page": 1,
     "per_page": 20,
-    "total_count": 2000
+    "total_count": 2000,
+    "total_pages": 100
   }
 }
 ```

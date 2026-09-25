@@ -50,8 +50,6 @@ app\_id: string
 
 The app identifier tag.
 
-maxLength32
-
 [Link to this property](#)%20realtime_kit.presets%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse

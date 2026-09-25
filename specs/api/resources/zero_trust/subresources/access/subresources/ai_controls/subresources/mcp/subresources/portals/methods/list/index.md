@@ -358,6 +358,8 @@ created\_by: optional string
 
 default\_disabled: optional boolean
 
+Hide this server’s tools and prompts by default. To expose specific capabilities, set enabled: true for them in updated\_tools or updated\_prompts.
+
 <a href="#">Link to this property</a>
 
 description: optional string

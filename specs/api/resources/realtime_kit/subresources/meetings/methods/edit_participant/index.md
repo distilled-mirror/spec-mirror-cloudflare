@@ -50,8 +50,6 @@ app\_id: string
 
 The app identifier tag.
 
-maxLength32
-
 [Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20edit_participant%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
 meeting\_id: string
