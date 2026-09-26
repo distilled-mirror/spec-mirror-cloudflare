@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk
 
-Write multiple keys and values at once. Body should be an array of up to 10,000 key-value pairs to be stored, along with optional expiration information. Existing values and expirations will be overwritten. If neither `expiration` nor `expiration_ttl` is specified, the key-value pair will never expire. If both are set, `expiration_ttl` is used and `expiration` is ignored. The entire request size must be 100 megabytes or less.
+Writes up to 10,000 key-value pairs to the specified Workers KV namespace from a JSON array, with optional metadata and expiration settings for each pair. Existing values and expirations are overwritten. If neither `expiration` nor `expiration_ttl` is specified, the key-value pair will not expire. If both are set, `expiration_ttl` takes precedence. The entire request must be 100 megabytes or less. The result reports the number of successful writes and any keys that failed and should be retried.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -116,7 +116,7 @@ Expires the key at a certain time, measured in number of seconds since the UNIX 
 
 expiration\_ttl: optional number
 
-Expires the key after a number of seconds. Must be at least 60.
+Number of seconds until the key expires. Must be at least 60. Takes precedence over <code>expiration</code> when both are specified.
 
 minimum60
 
@@ -234,13 +234,13 @@ result: optional object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 

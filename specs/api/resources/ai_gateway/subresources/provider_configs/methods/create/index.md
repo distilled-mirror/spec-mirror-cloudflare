@@ -1,5 +1,5 @@
 ---
-title: Create a new Provider Configs
+title: Store a provider key
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new Provider Configs
+# Store a provider key
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
-Creates a new AI Gateway.
+Stores an upstream AI provider API key for an AI Gateway in the Secrets Store configured on the gateway, with an optional rate limit. Pass `secret` to store a new key, or omit it to use an existing Secrets Store secret.
 
 ##### Security
 
@@ -66,7 +66,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -98,6 +98,8 @@ rate\_limit\_period: optional number
 
 secret: optional string
 
+Provider API key to store in the Secrets Store configured on the gateway.
+
 [Link to this property](#)%20ai_gateway.provider_configs%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20secret%20%3E%20(schema)>)
 
 secret\_id: optional string
@@ -128,7 +130,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -170,7 +172,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.provider_configs%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new Provider Configs
+### Store a provider key
 
 HTTP
 

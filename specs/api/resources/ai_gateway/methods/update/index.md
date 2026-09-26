@@ -1,5 +1,5 @@
 ---
-title: Update a Gateway
+title: Update a gateway
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update a Gateway
+# Update a gateway
 
 PUT/accounts/{account\_id}/ai-gateway/gateways/{id}
 
-Updates an existing AI Gateway dataset.
+Updates the configuration of an AI Gateway, such as its caching, rate limiting, logging, and authentication settings.
 
 ##### Security
 
@@ -64,7 +64,7 @@ account\_id: string
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1316,7 +1316,7 @@ result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 more }
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -2578,7 +2578,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update a Gateway
+### Update a gateway
 
 HTTP
 

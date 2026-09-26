@@ -26,7 +26,7 @@ Deprecated: Please use kv.namespaces.bulk\_get instead
 
 POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/get
 
-Retrieve up to 100 KV pairs from the namespace. Keys must contain text-based values. JSON values can optionally be parsed instead of being returned as a string value. Metadata can be included if `withMetadata` is true.
+Retrieves the text-based values of up to 100 keys from the specified Workers KV namespace. The result maps each requested key to its value. Set `type` to `json` to parse JSON values instead of returning strings, and set `withMetadata` to `true` to include metadata with each value. Binary values are not supported by this operation.
 
 ##### Security
 
@@ -66,7 +66,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -74,7 +74,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -94,7 +94,7 @@ Array of keys to retrieve (maximum of 100).
 
 type: optional "text"or "json"
 
-Whether to parse JSON values in the response.
+Return values as strings with <code>text</code>, or parse stored JSON values with <code>json</code>.
 
 </summary>
 

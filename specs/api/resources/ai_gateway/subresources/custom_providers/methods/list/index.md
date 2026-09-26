@@ -1,5 +1,5 @@
 ---
-title: List Account Providers
+title: List custom providers
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Account Providers
+# List custom providers
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers
 
-Lists all AI Gateway evaluator types configured for the account.
+Lists the custom providers configured for the account, ordered by position and then name.
 
 ##### Security
 
@@ -154,6 +154,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -182,7 +184,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.custom_providers%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Account Providers
+### List custom providers
 
 HTTP
 

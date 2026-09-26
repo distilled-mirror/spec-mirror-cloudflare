@@ -84,7 +84,7 @@ minimum0
 
 <summary>
 
-body: object {url, actionTimeout, addScriptTag, 26 more } or object {render, url, contentUse, 9 more }
+body: object {url, actionTimeout, addScriptTag, 27 more } or object {render, url, contentUse, 9 more }
 
 </summary>
 
@@ -94,7 +94,7 @@ One of the following:
 
 <summary>
 
-object {url, actionTimeout, addScriptTag, 26 more }
+object {url, actionTimeout, addScriptTag, 27 more }
 
 </summary>
 
@@ -293,6 +293,12 @@ minLength1
 bestAttempt: optional boolean
 
 Attempt to proceed when ‘awaited’ events fail or timeout.
+
+<a href="#">Link to this property</a>
+
+browser: optional "kitesurf"
+
+Rendering backend for this crawl. Set to <code>kitesurf</code> to render pages with Kitesurf (beta). Only valid when <code>render</code> is <code>true</code>.
 
 <a href="#">Link to this property</a>
 

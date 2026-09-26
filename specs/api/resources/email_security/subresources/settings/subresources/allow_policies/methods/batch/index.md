@@ -1,5 +1,5 @@
 ---
-title: Batch allow policies operations
+title: Batch allow policy operations
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Batch allow policies operations
+# Batch allow policy operations
 
 POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
@@ -1098,7 +1098,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 [Link to this property](#)%20email_security.settings.allow_policies%20%3E%20(method)%20batch%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Batch allow policies operations
+### Batch allow policy operations
 
 HTTP
 

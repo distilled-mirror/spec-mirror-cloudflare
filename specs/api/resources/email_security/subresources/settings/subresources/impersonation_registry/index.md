@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Impersonation Registry
 
-##### [List entries in impersonation registry](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/impersonation_registry/methods/list)
+##### [List impersonation registry entries](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/impersonation_registry/methods/list)
 
 GET/accounts/{account\_id}/email-security/settings/impersonation\_registry
 

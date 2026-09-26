@@ -68,7 +68,7 @@ maxLength32
 
 keyless\_certificate\_id: string
 
-Identifier.
+Keyless certificate identifier tag.
 
 maxLength32
 
@@ -176,7 +176,7 @@ result: optional object {id }
 
 id: optional string
 
-Identifier.
+Keyless certificate identifier tag.
 
 maxLength32
 
@@ -224,7 +224,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/keyless_certificates/$K
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "4d2844d2ce78891c34d0b6c0535a291e"
   }
 }
 ```
@@ -257,7 +257,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/keyless_certificates/$K
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "4d2844d2ce78891c34d0b6c0535a291e"
   }
 }
 ```

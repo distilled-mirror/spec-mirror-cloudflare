@@ -66,7 +66,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 

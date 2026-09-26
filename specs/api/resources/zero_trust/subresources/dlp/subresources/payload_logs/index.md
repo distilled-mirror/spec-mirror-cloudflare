@@ -22,9 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Get payload log settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/dlp/payload\_log
 
 ##### [Set payload log settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/update)
+
+Deprecated
 
 PUT/accounts/{account\_id}/dlp/payload\_log
 

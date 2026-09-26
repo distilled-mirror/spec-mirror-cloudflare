@@ -1,5 +1,5 @@
 ---
-title: Delete a Gateway
+title: Delete a gateway
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete a Gateway
+# Delete a gateway
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{id}
 
-Deletes an AI Gateway dataset.
+Permanently deletes an AI Gateway, its configuration, and its stored logs.
 
 ##### Security
 
@@ -64,7 +64,7 @@ account\_id: string
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -84,7 +84,7 @@ result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 more }
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1346,7 +1346,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete a Gateway
+### Delete a gateway
 
 HTTP
 

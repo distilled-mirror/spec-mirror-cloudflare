@@ -1,5 +1,5 @@
 ---
-title: List entries in impersonation registry
+title: List impersonation registry entries
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List entries in impersonation registry
+# List impersonation registry entries
 
 GET/accounts/{account\_id}/email-security/settings/impersonation\_registry
 
@@ -410,7 +410,7 @@ Total results available without any search parameters.
 
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List entries in impersonation registry
+### List impersonation registry entries
 
 HTTP
 

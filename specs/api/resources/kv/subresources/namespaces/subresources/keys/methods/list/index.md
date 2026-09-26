@@ -1,5 +1,5 @@
 ---
-title: List a Namespace's Keys
+title: List keys in a namespace
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List a Namespace's Keys
+# List keys in a namespace
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/keys
 
-Lists a namespace’s keys.
+Lists key names in the specified Workers KV namespace, with expiration times and metadata when present. Use `prefix` to filter names and `cursor` to request the next page. Values are not included.
 
 ##### Security
 
@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -82,13 +82,13 @@ maxLength32
 
 cursor: optional string
 
-Opaque token indicating the position from which to continue when requesting the next set of records if the amount of list results was limited by the limit parameter. A valid value for the cursor can be obtained from the `cursors` object in the `result_info` structure.
+Opaque pagination token from `result_info.cursor` in the previous response. Pass it unchanged to request the next page of keys.
 
 [Link to this property](#)%20kv.namespaces.keys%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
 limit: optional number
 
-Limits the number of keys returned in the response. The cursor attribute may be used to iterate over the next batch of keys if there are more than the limit.
+Maximum number of keys to return in one response. Pass `result_info.cursor` from the response as `cursor` to request the next page.
 
 maximum1000
 
@@ -242,7 +242,7 @@ Total results returned based on your list parameters.
 
 cursor: optional string
 
-Opaque token indicating the position from which to continue when requesting the next set of records if the amount of list results was limited by the limit parameter. A valid value for the cursor can be obtained from the cursors object in the result\_info structure.
+Opaque pagination token returned in <code>result_info.cursor</code>. Pass it unchanged as the <code>cursor</code> query parameter to request the next page of keys.
 
 <a href="#">Link to this property</a>
 
@@ -250,7 +250,7 @@ Opaque token indicating the position from which to continue when requesting the 
 
 [Link to this property](#)%20kv.namespaces.keys%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List a Namespace's Keys
+### List keys in a namespace
 
 HTTP
 

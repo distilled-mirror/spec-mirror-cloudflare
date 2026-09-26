@@ -18,19 +18,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Custom Providers
 
-##### [List Account Providers](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/list)
+##### [List custom providers](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers
 
-##### [Fetch a Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/get)
+##### [Get a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
-##### [Create a new Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/create)
+##### [Create a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/custom-providers
 
-##### [Delete a Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/delete)
+##### [Delete a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
@@ -93,6 +93,8 @@ enable: optional boolean
 <a href="#">Link to this property</a>
 
 headers: optional string
+
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
 
 maxLength8192
 
@@ -176,6 +178,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -258,6 +262,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -339,6 +345,8 @@ enable: optional boolean
 <a href="#">Link to this property</a>
 
 headers: optional string
+
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
 
 maxLength8192
 

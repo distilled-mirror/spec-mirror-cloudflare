@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/custom/{domain}
 
-Remove custom domain registration from an existing R2 bucket.
+Disconnects a custom domain from an R2 bucket and removes its configuration. Access through other enabled custom domains or the bucket’s r2.dev domain is unaffected.
 
 ##### Security
 
@@ -44,7 +44,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

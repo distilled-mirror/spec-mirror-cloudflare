@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email-security/investigate/bulk
 
-Creates a new bulk action job to move or release messages that match the provided search parameters.
+Creates a new bulk action job to move or release messages that match the provided search parameters. To move or release an explicit list of known messages instead of a search, use the move or release endpoints.
 
 ##### Security
 
@@ -914,7 +914,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -941,10 +943,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/r2/buckets/{bucket\_name}
 
-Updates properties of an existing R2 bucket.
+Changes the default storage class for newly uploaded objects in an existing R2 bucket. Existing objects retain their storage class, and individual uploads can override the bucket default.
 
 ##### Security
 
@@ -36,7 +36,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

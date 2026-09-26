@@ -48,9 +48,11 @@ ClientCertificate object {id, certificate, certificate\_authority, 15 more }
 
 id: optional string
 
-Identifier.
+Client Certificate Tag
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 

@@ -46,9 +46,9 @@ Certificate object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -150,9 +150,9 @@ HostnameCertificateListResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -254,9 +254,9 @@ HostnameCertificateGetResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -358,9 +358,9 @@ HostnameCertificateCreateResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -462,9 +462,9 @@ HostnameCertificateDeleteResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

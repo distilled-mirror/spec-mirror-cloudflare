@@ -1,5 +1,5 @@
 ---
-title: Put Bucket Lock Rules
+title: Set Bucket Lock Rules
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put Bucket Lock Rules
+# Set Bucket Lock Rules
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
-Set lock rules for a bucket.
+Replaces the lock rules for an R2 bucket. Enabled rules prevent matching objects from being overwritten or deleted for a duration, until a date, or indefinitely. Rules apply to existing and newly uploaded objects.
 
 ##### Security
 
@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -260,7 +260,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20r2.buckets.locks%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put Bucket Lock Rules
+### Set Bucket Lock Rules
 
 HTTP
 

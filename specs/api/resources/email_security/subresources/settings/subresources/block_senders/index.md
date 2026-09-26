@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/email-security/settings/block\_senders/{pattern\_id
 
 DELETE/accounts/{account\_id}/email-security/settings/block\_senders/{pattern\_id}
 
-##### [Batch blocked senders operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/block_senders/methods/batch)
+##### [Batch blocked sender operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/block_senders/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 

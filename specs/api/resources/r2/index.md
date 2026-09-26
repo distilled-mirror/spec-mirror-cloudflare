@@ -320,7 +320,7 @@ BucketDeleteResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
-##### [Put Object Lifecycle Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle/methods/update)
+##### [Set Object Lifecycle Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
@@ -584,7 +584,7 @@ LifecycleUpdateResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
-##### [Put Bucket CORS Policy](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/cors/methods/update)
+##### [Set Bucket CORS Policy](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/cors/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
@@ -1306,11 +1306,11 @@ Whether this bucket is publicly accessible at the r2.dev domain.
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration
 
-##### [Get Event Notification Rule](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/get)
+##### [Get Event Notification Rules for a Queue](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/get)
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
-##### [Create Event Notification Rule](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/update)
+##### [Create Event Notification Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/update)
 
 PUT/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
@@ -1558,7 +1558,7 @@ EventNotificationDeleteResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
-##### [Put Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
+##### [Set Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
@@ -2286,7 +2286,7 @@ Name of the R2 bucket.
 
 parentAccessKeyId: string
 
-The parent access key id to use for signing.
+Access key ID of the parent R2 API token. The temporary credentials cannot exceed this token’s permissions.
 
 <a href="#">Link to this property</a>
 
@@ -2324,7 +2324,7 @@ One of the following:
 
 ttlSeconds: number
 
-How long the credentials will live for in seconds.
+Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
 
 maximum604800
 

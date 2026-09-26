@@ -2106,11 +2106,11 @@ One of the following:
 
 #### InvestigatePreview
 
-##### [Get email preview](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/get)
+##### [Get preview for a detection](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/get)
 
 GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/preview
 
-##### [Preview for non-detection messages](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/create)
+##### [Generate preview for a non-detection message](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/create)
 
 POST/accounts/{account\_id}/email-security/investigate/preview
 
@@ -2308,7 +2308,7 @@ pending: optional boolean
 
 POST/accounts/{account\_id}/email-security/investigate/{investigate\_id}/move
 
-##### [Move multiple messages](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/move/methods/bulk)
+##### [Move messages](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/move/methods/bulk)
 
 POST/accounts/{account\_id}/email-security/investigate/move
 
@@ -2465,6 +2465,8 @@ Operation status.
 #### InvestigateReclassify
 
 ##### [Change email classification](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/reclassify/methods/create)
+
+Deprecated
 
 POST/accounts/{account\_id}/email-security/investigate/{investigate\_id}/reclassify
 
@@ -2962,7 +2964,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -2989,10 +2993,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 
@@ -3450,7 +3450,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -3477,10 +3479,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 
@@ -3938,7 +3936,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -3965,10 +3965,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 
@@ -4452,7 +4448,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -4479,10 +4477,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 
@@ -4726,17 +4720,15 @@ retry\_count: number
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "PROCESSING"or "COMPLETED"or 3 more
+
+Status of a message within a bulk action job.
 
 </summary>
 
 One of the following:
 
 "PENDING"
-
-<a href="#">Link to this property</a>
-
-"DISCOVERING"
 
 <a href="#">Link to this property</a>
 

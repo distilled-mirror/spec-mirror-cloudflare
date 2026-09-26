@@ -1,5 +1,5 @@
 ---
-title: List Datasets
+title: List datasets (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Datasets
+# List datasets (deprecated)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-Lists all AI Gateway evaluator types configured for the account.
+Lists the datasets defined for an AI Gateway. Evaluations and datasets are deprecated and unavailable to new accounts.
 
 ##### Security
 
@@ -66,7 +66,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -264,7 +264,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -290,7 +290,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.datasets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Datasets
+### List datasets (deprecated)
 
 HTTP
 

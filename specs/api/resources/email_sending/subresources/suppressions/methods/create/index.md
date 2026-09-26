@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email/sending/suppressions
 
-Creates an account-wide suppression. If a mutable legacy zone-linked row already exists, it is promoted without changing its identifier.
+Creates a suppression for every sending domain of the account (default) or for one sending domain (`scope.type = sending_domain`). Creating an existing active suppression returns its identifier. If a mutable legacy zone-linked account row already exists, it is promoted without changing its identifier.
 
 ##### Security
 
@@ -88,6 +88,66 @@ maxLength1000
 
 [Link to this property](#)%20email_sending.suppressions%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20note%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies. Omit for <code>{ "type": "account" }</code>, which blocks the recipient for every sending domain of the account.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain to suppress for: the domain part of the envelope MAIL FROM. It is lowercased and trailing dots are removed. Internationalized domains must use the ASCII (punycode) form. Ownership is not checked; a domain the account does not send from never matches.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20email_sending.suppressions%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20scope%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 errors: array of unknown
@@ -102,7 +162,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {id }
+result: object {id, scope }
 
 </summary>
 
@@ -111,6 +171,66 @@ id: string
 The suppression’s identifier.
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -135,7 +255,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     -d '{
           "email": "user@example.com",
           "expires_at": "2027-01-01T00:00:00Z",
-          "note": "Imported from CRM"
+          "note": "Imported from CRM",
+          "scope": {
+            "type": "sending_domain",
+            "value": "mail.example.com"
+          }
         }'
 ```
 
@@ -150,7 +274,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     {}
   ],
   "result": {
-    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321"
+    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }
@@ -169,7 +297,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     {}
   ],
   "result": {
-    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321"
+    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }

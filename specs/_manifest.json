@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3859,
+  "count": 3856,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -437,18 +437,6 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones",
-      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete",
-      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/loa_documents",
@@ -15463,6 +15451,9 @@
   ],
   "missing": [],
   "unlisted": [
+    "api/resources/addressing/subresources/address_maps/subresources/zones/index.md",
+    "api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md",
+    "api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/methods/list/index.md",
     "api/resources/intel/subresources/attack_surface_report/subresources/issues/methods/dismiss/index.md",

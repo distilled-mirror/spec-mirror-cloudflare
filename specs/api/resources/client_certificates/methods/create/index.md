@@ -182,9 +182,11 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/client
 
 id: optional string
 
-Identifier.
+Client Certificate Tag
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -378,7 +380,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/client_certificates \
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "certificate": "-----BEGIN CERTIFICATE-----\nMIIDmDCCAoC...dhDDE\n-----END CERTIFICATE-----",
     "certificate_authority": {
       "id": "568b6b74-7b0c-4755-8840-4e3b8c24adeb",
@@ -431,7 +433,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/client_certificates \
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "certificate": "-----BEGIN CERTIFICATE-----\nMIIDmDCCAoC...dhDDE\n-----END CERTIFICATE-----",
     "certificate_authority": {
       "id": "568b6b74-7b0c-4755-8840-4e3b8c24adeb",

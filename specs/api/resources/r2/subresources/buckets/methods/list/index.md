@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/r2/buckets
 
-Lists all R2 buckets on your account.
+Lists a page of R2 buckets in the account and selected jurisdiction. Use the returned cursor to retrieve the next page.
 
 ##### Security
 
@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

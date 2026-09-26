@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/r2/buckets/{bucket\_name}/sippy
 
-Disables Sippy on this bucket.
+Disables Sippy on-demand migration for an R2 bucket. Requests no longer fetch missing objects from the source storage provider. Objects already copied to R2 remain in the bucket.
 
 ##### Security
 
@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

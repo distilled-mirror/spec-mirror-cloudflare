@@ -22,9 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Change email classification
 
+Deprecated
+
 POST/accounts/{account\_id}/email-security/investigate/{investigate\_id}/reclassify
 
-Submits a request to reclassify an email’s disposition. Use for reporting false positives or false negatives. Optionally provide the raw EML content for reanalysis. The reclassification is processed asynchronously.
+Submits a request to reclassify an email’s disposition. Use for reporting false positives or false negatives. Optionally provide the raw EML content for reanalysis. The reclassification is processed asynchronously. Deprecated; use the create submissions endpoint instead.
 
 ##### Security
 

@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
-##### [Put Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
+##### [Set Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 

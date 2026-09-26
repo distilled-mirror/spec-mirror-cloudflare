@@ -1,5 +1,5 @@
 ---
-title: Create a new Dataset
+title: Create a dataset (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new Dataset
+# Create a dataset (deprecated)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-Creates a new AI Gateway.
+Creates a dataset that selects gateway logs matching the specified filters for use in evaluations. Evaluations and datasets are deprecated and unavailable to new accounts.
 
 ##### Security
 
@@ -66,7 +66,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -378,7 +378,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -404,7 +404,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.datasets%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new Dataset
+### Create a dataset (deprecated)
 
 HTTP
 

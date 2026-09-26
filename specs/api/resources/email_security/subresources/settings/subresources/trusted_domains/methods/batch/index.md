@@ -1,5 +1,5 @@
 ---
-title: Batch trusted domains operations
+title: Batch trusted domain operations
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Batch trusted domains operations
+# Batch trusted domain operations
 
 POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 
@@ -648,7 +648,7 @@ minLength1
 
 [Link to this property](#)%20email_security.settings.trusted_domains%20%3E%20(method)%20batch%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Batch trusted domains operations
+### Batch trusted domain operations
 
 HTTP
 

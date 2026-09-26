@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Preview
 
-##### [Get email preview](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/get)
+##### [Get preview for a detection](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/get)
 
 GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/preview
 
-##### [Preview for non-detection messages](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/create)
+##### [Generate preview for a non-detection message](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/preview/methods/create)
 
 POST/accounts/{account\_id}/email-security/investigate/preview
 

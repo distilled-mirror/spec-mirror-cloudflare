@@ -1,5 +1,5 @@
 ---
-title: Create a new AI Gateway Dynamic Route Deployment.
+title: Deploy a dynamic route version
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new AI Gateway Dynamic Route Deployment.
+# Deploy a dynamic route version
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/deployments
 
-Create a new AI Gateway Dynamic Route Deployment.
+Deploys the specified version of a dynamic route so that it serves traffic. Deploy an earlier version to roll back.
 
 ##### Security
 
@@ -538,7 +538,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20create_deployment%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new AI Gateway Dynamic Route Deployment.
+### Deploy a dynamic route version
 
 HTTP
 

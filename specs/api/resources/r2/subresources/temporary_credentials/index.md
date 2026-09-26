@@ -40,7 +40,7 @@ Name of the R2 bucket.
 
 parentAccessKeyId: string
 
-The parent access key id to use for signing.
+Access key ID of the parent R2 API token. The temporary credentials cannot exceed this token’s permissions.
 
 <a href="#">Link to this property</a>
 
@@ -78,7 +78,7 @@ One of the following:
 
 ttlSeconds: number
 
-How long the credentials will live for in seconds.
+Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
 
 maximum604800
 

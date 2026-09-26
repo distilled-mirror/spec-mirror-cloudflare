@@ -1,5 +1,5 @@
 ---
-title: Delete key-value pair
+title: Delete a key-value pair
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete key-value pair
+# Delete a key-value pair
 
 DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-Remove a KV pair from the namespace. Use URL-encoding to use special characters (for example, `:`, `!`, `%`) in the key name.
+Deletes the specified key and its value from the Workers KV namespace. Use URL-encoding for special characters (for example, `:`, `!`, `%`) in the key name when constructing the request URL.
 
 ##### Security
 
@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -182,7 +182,7 @@ result: optional object {}
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete key-value pair
+### Delete a key-value pair
 
 HTTP
 

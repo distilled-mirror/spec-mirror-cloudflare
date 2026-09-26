@@ -72,25 +72,31 @@ maxLength32
 
 custom\_hostname\_id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 [Link to this property](#)%20custom_hostnames.certificate_pack.certificates%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20custom_hostname_id%20%3E%20(schema)>)
 
 certificate\_pack\_id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 [Link to this property](#)%20custom_hostnames.certificate_pack.certificates%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20certificate_pack_id%20%3E%20(schema)>)
 
 certificate\_id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 [Link to this property](#)%20custom_hostnames.certificate_pack.certificates%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20certificate_id%20%3E%20(schema)>)
 
@@ -174,9 +180,11 @@ result: optional object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -942,7 +950,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames/$CUSTO
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "hostname": "app.example.com",
     "created_at": "2020-02-06T18:11:23.531995Z",
     "custom_metadata": {
@@ -1054,7 +1062,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames/$CUSTO
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "hostname": "app.example.com",
     "created_at": "2020-02-06T18:11:23.531995Z",
     "custom_metadata": {

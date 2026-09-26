@@ -52,9 +52,7 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 certificate\_id: string
 
-Identifier.
-
-maxLength32
+The x509 serial number of the Origin CA certificate.
 
 [Link to this property](#)%20origin_ca_certificates%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20certificate_id%20%3E%20(schema)>)
 
@@ -70,9 +68,7 @@ result: optional object {id, revoked\_at }
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The x509 serial number of the Origin CA certificate.
 
 <a href="#">Link to this property</a>
 
@@ -105,7 +101,7 @@ curl https://api.cloudflare.com/client/v4/certificates/$CERTIFICATE_ID \
 ```
 {
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "328578533902268680212849205732770752308931942346",
     "revoked_at": "2024-09-06T18:43:47.928893Z"
   }
 }
@@ -118,7 +114,7 @@ curl https://api.cloudflare.com/client/v4/certificates/$CERTIFICATE_ID \
 ```
 {
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "328578533902268680212849205732770752308931942346",
     "revoked_at": "2024-09-06T18:43:47.928893Z"
   }
 }

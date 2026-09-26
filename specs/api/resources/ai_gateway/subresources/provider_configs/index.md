@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Provider Configs
 
-##### [List Provider Configs](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/list)
+##### [List provider keys](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
-##### [Create a new Provider Configs](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/create)
+##### [Store a provider key](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
@@ -50,7 +50,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -110,7 +110,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 

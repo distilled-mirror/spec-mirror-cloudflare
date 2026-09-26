@@ -1,5 +1,5 @@
 ---
-title: Create a new AI Gateway Dynamic Route Version.
+title: Create a dynamic route version
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new AI Gateway Dynamic Route Version.
+# Create a dynamic route version
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-Create a new AI Gateway Dynamic Route Version.
+Creates a new version of a dynamic route from the specified routing elements. The version does not serve traffic until you deploy it.
 
 ##### Security
 
@@ -950,7 +950,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20create_version%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new AI Gateway Dynamic Route Version.
+### Create a dynamic route version
 
 HTTP
 

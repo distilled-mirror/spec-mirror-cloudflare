@@ -18,23 +18,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Datasets
 
-##### [List Datasets](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/list)
+##### [List datasets (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-##### [Fetch a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/get)
+##### [Get a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
-##### [Create a new Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/create)
+##### [Create a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-##### [Update a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/update)
+##### [Update a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/update)
 
 PUT/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
-##### [Delete a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/delete)
+##### [Delete a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
@@ -198,7 +198,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -378,7 +378,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -558,7 +558,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -738,7 +738,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -918,7 +918,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 

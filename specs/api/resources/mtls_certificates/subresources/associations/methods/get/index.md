@@ -70,9 +70,9 @@ maxLength32
 
 mtls\_certificate\_id: string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 [Link to this property](#)%20mtls_certificates.associations%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20mtls_certificate_id%20%3E%20(schema)>)
 

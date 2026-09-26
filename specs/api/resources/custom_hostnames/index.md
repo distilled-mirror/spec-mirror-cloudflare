@@ -76,9 +76,11 @@ CustomHostname object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -782,9 +784,11 @@ CustomHostnameListResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -1454,9 +1458,11 @@ CustomHostnameGetResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -2126,9 +2132,11 @@ CustomHostnameCreateResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -2798,9 +2806,11 @@ CustomHostnameEditResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -3470,9 +3480,11 @@ CustomHostnameDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -3766,9 +3778,11 @@ CertificateUpdateResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -4438,9 +4452,11 @@ CertificateDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 

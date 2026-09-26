@@ -1,5 +1,5 @@
 ---
-title: Move multiple messages
+title: Move messages
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Move multiple messages
+# Move messages
 
 POST/accounts/{account\_id}/email-security/investigate/move
 
-Moves multiple messages to a specified mailbox folder (Inbox, JunkEmail, DeletedItems, RecoverableItemsDeletions, or RecoverableItemsPurges). Requires active integration.
+Moves one or more messages to a specified mailbox folder (Inbox, JunkEmail, DeletedItems, RecoverableItemsDeletions, or RecoverableItemsPurges). Requires active integration. Operates on an explicit list of messages; to move all messages matching a search, create a bulk action job instead.
 
 ##### Security
 
@@ -106,6 +106,12 @@ One of the following:
 
 [Link to this property](#)%20email_security.investigate.move%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20destination%20%3E%20(schema)>)
 
+ids: array of string
+
+List of message IDs to move.
+
+[Link to this property](#)%20email_security.investigate.move%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20ids%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -163,12 +169,6 @@ One of the following:
 </details>
 
 [Link to this property](#)%20email_security.investigate.move%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20expected_disposition%20%3E%20(schema)>)
-
-ids: optional array of string
-
-List of message IDs to move.
-
-[Link to this property](#)%20email_security.investigate.move%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20ids%20%3E%20(schema)>)
 
 Deprecatedpostfix\_ids: optional array of string
 
@@ -344,7 +344,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20email_security.investigate.move%20%3E%20(method)%20bulk%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Move multiple messages
+### Move messages
 
 HTTP
 
@@ -355,7 +355,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/in
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "destination": "Inbox"
+          "destination": "Inbox",
+          "ids": [
+            "4Njp3P0STMz2c02Q-2024-01-05T10:00:00-12345678"
+          ]
         }'
 ```
 

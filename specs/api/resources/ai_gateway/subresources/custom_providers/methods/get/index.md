@@ -1,5 +1,5 @@
 ---
-title: Fetch a Account Provider
+title: Get a custom provider
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Fetch a Account Provider
+# Get a custom provider
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
-Retrieves details for a specific AI Gateway dataset.
+Retrieves a custom provider, including its slug, base URL, and custom headers.
 
 ##### Security
 
@@ -130,6 +130,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -158,7 +160,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.custom_providers%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Fetch a Account Provider
+### Get a custom provider
 
 HTTP
 

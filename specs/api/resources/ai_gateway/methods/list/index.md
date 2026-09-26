@@ -1,5 +1,5 @@
 ---
-title: List Gateways
+title: List gateways
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Gateways
+# List gateways
 
 GET/accounts/{account\_id}/ai-gateway/gateways
 
-Lists all AI Gateway evaluator types configured for the account.
+Lists the AI Gateways in the account. Use `search` to filter by gateway ID.
 
 ##### Security
 
@@ -96,7 +96,7 @@ result: array of object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 more 
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1358,7 +1358,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Gateways
+### List gateways
 
 HTTP
 

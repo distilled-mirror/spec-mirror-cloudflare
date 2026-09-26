@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/sippy
 
-Sets configuration for Sippy for an existing R2 bucket.
+Configures and enables Sippy on-demand migration for an R2 bucket. When a requested object is missing from R2, Sippy serves it from the configured source storage provider and copies it to R2.
 
 ##### Security
 
@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -172,7 +172,7 @@ provider: optional "aws"
 
 region: optional string
 
-Name of the AWS availability zone.
+AWS region containing the source S3 bucket.
 
 <a href="#">Link to this property</a>
 

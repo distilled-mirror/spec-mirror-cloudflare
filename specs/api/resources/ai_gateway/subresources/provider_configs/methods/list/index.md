@@ -1,5 +1,5 @@
 ---
-title: List Provider Configs
+title: List provider keys
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Provider Configs
+# List provider keys
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
-Lists all AI Gateway evaluator types configured for the account.
+Lists the provider keys stored for an AI Gateway. Responses show a masked preview of each key, never the key itself.
 
 ##### Security
 
@@ -62,7 +62,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -110,7 +110,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -152,7 +152,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.provider_configs%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Provider Configs
+### List provider keys
 
 HTTP
 

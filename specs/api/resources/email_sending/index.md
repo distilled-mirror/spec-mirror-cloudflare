@@ -142,7 +142,7 @@ POST/accounts/{account\_id}/email/sending/suppressions/bulk
 
 <summary>
 
-SuppressionListResponse object {id, created\_at, email, 4 more }
+SuppressionListResponse object {id, created\_at, email, 5 more }
 
 </summary>
 
@@ -193,6 +193,66 @@ Why the address is suppressed: <code>manual</code>, <code>complaint</code>, <cod
 note: optional string
 
 Advisory note for this suppression, if any.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -204,7 +264,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-SuppressionGetResponse object {id, created\_at, email, 4 more }
+SuppressionGetResponse object {id, created\_at, email, 5 more }
 
 </summary>
 
@@ -255,6 +315,66 @@ Why the address is suppressed: <code>manual</code>, <code>complaint</code>, <cod
 note: optional string
 
 Advisory note for this suppression, if any.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -266,7 +386,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-SuppressionCreateResponse object {id }
+SuppressionCreateResponse object {id, scope }
 
 </summary>
 
@@ -278,6 +398,66 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20email_sending.suppressions%20%3E%20(model)%20suppression_create_response%20%3E%20(schema)>)
@@ -286,7 +466,7 @@ formatuuid
 
 <summary>
 
-SuppressionEditResponse object {id, created\_at, email, 4 more }
+SuppressionEditResponse object {id, created\_at, email, 5 more }
 
 </summary>
 
@@ -340,6 +520,66 @@ Advisory note for this suppression, if any.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20email_sending.suppressions%20%3E%20(model)%20suppression_edit_response%20%3E%20(schema)>)
@@ -348,7 +588,7 @@ Advisory note for this suppression, if any.
 
 <summary>
 
-SuppressionDeleteResponse object {id }
+SuppressionDeleteResponse object {id, scope }
 
 </summary>
 
@@ -357,6 +597,66 @@ id: string
 The suppression’s identifier.
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -374,7 +674,7 @@ SuppressionImportResponse object {deduplicated, errors, invalid, 4 more }
 
 deduplicated: number
 
-Number of items dropped because their email address repeated an earlier item in this request. Counted once and excluded from <code>items</code>.
+Number of items dropped because their email address and scope repeated an earlier item in this request. Counted once and excluded from <code>items</code>.
 
 <a href="#">Link to this property</a>
 
@@ -386,7 +686,7 @@ Number of items that failed to import due to an unexpected error.
 
 invalid: number
 
-Number of items with an invalid email address.
+Number of items with an invalid email address or sending domain.
 
 <a href="#">Link to this property</a>
 
@@ -394,7 +694,7 @@ Number of items with an invalid email address.
 
 <summary>
 
-items: array of object {index, status, id, 2 more }
+items: array of object {index, status, id, 3 more }
 
 Per-item results, in the same order as the request body.
 
@@ -457,6 +757,66 @@ formatemail
 error: optional string
 
 Human-readable error message. Present when <code>status</code> is <code>invalid</code>, <code>error</code>, or <code>skipped</code>.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

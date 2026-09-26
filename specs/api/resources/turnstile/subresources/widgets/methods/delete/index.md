@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/challenges/widgets/{sitekey}
 
-Destroy a Turnstile Widget.
+Deletes a Turnstile widget from an account.
 
 ##### Security
 
@@ -70,7 +70,7 @@ maxLength32
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 
@@ -320,7 +320,7 @@ Secret key for this widget.
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 

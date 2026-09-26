@@ -1,5 +1,5 @@
 ---
-title: Get an AI Gateway Dynamic Route Version.
+title: Get a dynamic route version
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get an AI Gateway Dynamic Route Version.
+# Get a dynamic route version
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions/{version\_id}
 
-Get an AI Gateway Dynamic Route Version.
+Retrieves a saved version of a dynamic route, including its routing elements.
 
 ##### Security
 
@@ -568,7 +568,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20get_version%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get an AI Gateway Dynamic Route Version.
+### Get a dynamic route version
 
 HTTP
 

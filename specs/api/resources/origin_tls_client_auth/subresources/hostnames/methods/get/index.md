@@ -178,9 +178,9 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/origin
 
 cert\_id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -391,7 +391,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/origin_tls_client_auth/
   ],
   "success": true,
   "result": {
-    "cert_id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "cert_id": "2458ce5a-0c35-4c7f-82c7-8e9487d3ff60",
     "cert_status": "active",
     "cert_updated_at": "2100-01-01T05:20:00Z",
     "cert_uploaded_on": "2019-10-28T18:11:23.37411Z",
@@ -437,7 +437,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/origin_tls_client_auth/
   ],
   "success": true,
   "result": {
-    "cert_id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "cert_id": "2458ce5a-0c35-4c7f-82c7-8e9487d3ff60",
     "cert_status": "active",
     "cert_updated_at": "2100-01-01T05:20:00Z",
     "cert_uploaded_on": "2019-10-28T18:11:23.37411Z",

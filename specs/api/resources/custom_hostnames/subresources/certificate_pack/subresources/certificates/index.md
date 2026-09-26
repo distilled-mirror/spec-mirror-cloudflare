@@ -40,9 +40,11 @@ CertificateUpdateResponse object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -712,9 +714,11 @@ CertificateDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 

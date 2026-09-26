@@ -56,6 +56,18 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+<details>
+
+<summary>User Service Key</summary>
+
+
+
+Used when interacting with the Origin CA certificates API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/ca-keys/#viewchange-your-origin-ca-keys">View/change your key</a>.
+
+**Example:**<code>X-Auth-User-Service-Key: v1.0-144c9defac04969c7bfad8ef-631a41d003a32d25fe878081ef365c49503f7fada600da935e2851a1c7326084b85cbf6429c4b859de8475731dc92a9c329631e6d59e6c73da7b198497172b4cefe071d90d0f5d2719</code>
+
+</details>
+
 ##### Accepted Permissions (at least one required)
 
 `Cloudflare DEX Write`

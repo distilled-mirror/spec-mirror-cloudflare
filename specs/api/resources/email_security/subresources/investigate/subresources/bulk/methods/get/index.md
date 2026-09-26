@@ -584,7 +584,9 @@ submissions: optional boolean
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "DISCOVERING"or "PROCESSING"or 3 more
+
+Status of a bulk action job.
 
 </summary>
 
@@ -611,10 +613,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "CANCELLED"
-
-<a href="#">Link to this property</a>
-
-"SKIPPED"
 
 <a href="#">Link to this property</a>
 

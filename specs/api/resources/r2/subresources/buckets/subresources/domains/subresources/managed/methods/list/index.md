@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/domains/managed
 
-Gets state of public access over the bucket’s R2-managed (r2.dev) domain.
+Gets the R2 bucket’s managed r2.dev domain and whether public access is enabled. The r2.dev domain is rate-limited and intended for development use.
 
 ##### Security
 
@@ -40,7 +40,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

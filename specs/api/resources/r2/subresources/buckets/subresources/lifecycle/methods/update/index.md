@@ -1,5 +1,5 @@
 ---
-title: Put Object Lifecycle Rules
+title: Set Object Lifecycle Rules
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put Object Lifecycle Rules
+# Set Object Lifecycle Rules
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
-Set the object lifecycle rules for a bucket.
+Replaces the object lifecycle rules for an R2 bucket. Rules match object-key prefixes and can expire objects, abort incomplete multipart uploads, or transition objects to Infrequent Access storage.
 
 ##### Security
 
@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -386,7 +386,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20r2.buckets.lifecycle%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put Object Lifecycle Rules
+### Set Object Lifecycle Rules
 
 HTTP
 

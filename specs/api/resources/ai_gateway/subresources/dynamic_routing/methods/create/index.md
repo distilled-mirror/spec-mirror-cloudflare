@@ -1,5 +1,5 @@
 ---
-title: Create a new AI Gateway Dynamic Route.
+title: Create a dynamic route
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new AI Gateway Dynamic Route.
+# Create a dynamic route
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-Create a new AI Gateway Dynamic Route.
+Creates a dynamic route on an AI Gateway from the specified routing elements. Clients call the route by using `dynamic/{name}` as the model name.
 
 ##### Security
 
@@ -1026,7 +1026,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new AI Gateway Dynamic Route.
+### Create a dynamic route
 
 HTTP
 

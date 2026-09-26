@@ -70,9 +70,9 @@ maxLength32
 
 custom\_origin\_trust\_store\_id: string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 [Link to this property](#)%20acm.custom_trust_store%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20custom_origin_trust_store_id%20%3E%20(schema)>)
 
@@ -178,9 +178,9 @@ result: optional object {id }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -226,7 +226,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/acm/custom_trust_store/
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "2458ce5a-0c35-4c7f-82c7-8e9487d3ff60"
   }
 }
 ```
@@ -259,7 +259,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/acm/custom_trust_store/
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "2458ce5a-0c35-4c7f-82c7-8e9487d3ff60"
   }
 }
 ```

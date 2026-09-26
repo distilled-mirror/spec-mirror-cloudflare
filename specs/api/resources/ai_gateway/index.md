@@ -16,23 +16,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # AI Gateway
 
-##### [List Gateways](https://developers.cloudflare.com/api/resources/ai_gateway/methods/list)
+##### [List gateways](https://developers.cloudflare.com/api/resources/ai_gateway/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways
 
-##### [Fetch a Gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/get)
+##### [Get a gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{id}
 
-##### [Create a new Gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/create)
+##### [Create a gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways
 
-##### [Update a Gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/update)
+##### [Update a gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/update)
 
 PUT/accounts/{account\_id}/ai-gateway/gateways/{id}
 
-##### [Delete a Gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/delete)
+##### [Delete a gateway](https://developers.cloudflare.com/api/resources/ai_gateway/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{id}
 
@@ -48,7 +48,7 @@ AIGatewayListResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1316,7 +1316,7 @@ AIGatewayGetResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 m
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -2584,7 +2584,7 @@ AIGatewayCreateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 2
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -3852,7 +3852,7 @@ AIGatewayUpdateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 2
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -5120,7 +5120,7 @@ AIGatewayDeleteResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 2
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -6380,7 +6380,7 @@ zdr: optional boolean
 
 #### AI GatewayEvaluation Types
 
-##### [List Evaluators](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluation_types/methods/list)
+##### [List evaluator types (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluation_types/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/evaluation-types
 
@@ -6436,19 +6436,19 @@ type: string
 
 #### AI GatewayCustom Providers
 
-##### [List Account Providers](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/list)
+##### [List custom providers](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers
 
-##### [Fetch a Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/get)
+##### [Get a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
-##### [Create a new Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/create)
+##### [Create a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/custom-providers
 
-##### [Delete a Account Provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/delete)
+##### [Delete a custom provider](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/custom_providers/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/custom-providers/{id}
 
@@ -6511,6 +6511,8 @@ enable: optional boolean
 <a href="#">Link to this property</a>
 
 headers: optional string
+
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
 
 maxLength8192
 
@@ -6594,6 +6596,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -6676,6 +6680,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -6757,6 +6763,8 @@ enable: optional boolean
 <a href="#">Link to this property</a>
 
 headers: optional string
+
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
 
 maxLength8192
 
@@ -7044,23 +7052,23 @@ LogResponseResponse = unknown
 
 #### AI GatewayDatasets
 
-##### [List Datasets](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/list)
+##### [List datasets (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-##### [Fetch a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/get)
+##### [Get a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
-##### [Create a new Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/create)
+##### [Create a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets
 
-##### [Update a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/update)
+##### [Update a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/update)
 
 PUT/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
-##### [Delete a Dataset](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/delete)
+##### [Delete a dataset (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/datasets/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
@@ -7224,7 +7232,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -7404,7 +7412,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -7584,7 +7592,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -7764,7 +7772,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -7944,7 +7952,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -7968,19 +7976,19 @@ name: string
 
 #### AI GatewayEvaluations
 
-##### [List Evaluations](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/list)
+##### [List evaluations (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations
 
-##### [Fetch a Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/get)
+##### [Get an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
-##### [Create a new Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/create)
+##### [Create an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations
 
-##### [Delete a Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/delete)
+##### [Delete an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
@@ -8170,7 +8178,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -8194,7 +8202,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -8460,7 +8468,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -8484,7 +8492,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -8750,7 +8758,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -8774,7 +8782,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -9040,7 +9048,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -9064,7 +9072,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -9148,43 +9156,43 @@ total\_logs: number
 
 #### AI GatewayDynamic Routing
 
-##### [List all AI Gateway Dynamic Routes.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list)
+##### [List dynamic routes](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-##### [Get an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get)
+##### [Get a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [Create a new AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create)
+##### [Create a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-##### [Update an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/update)
+##### [Rename a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/update)
 
 PATCH/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [Delete an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/delete)
+##### [Delete a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [List all AI Gateway Dynamic Route Deployments.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_deployments)
+##### [List dynamic route deployments](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_deployments)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/deployments
 
-##### [Create a new AI Gateway Dynamic Route Deployment.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_deployment)
+##### [Deploy a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_deployment)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/deployments
 
-##### [List all AI Gateway Dynamic Route Versions.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_versions)
+##### [List dynamic route versions](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_versions)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-##### [Create a new AI Gateway Dynamic Route Version.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_version)
+##### [Create a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_version)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-##### [Get an AI Gateway Dynamic Route Version.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get_version)
+##### [Get a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get_version)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions/{version\_id}
 
@@ -13382,11 +13390,11 @@ is\_valid: optional boolean
 
 #### AI GatewayProvider Configs
 
-##### [List Provider Configs](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/list)
+##### [List provider keys](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
-##### [Create a new Provider Configs](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/create)
+##### [Store a provider key](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/provider_configs/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
@@ -13414,7 +13422,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -13474,7 +13482,7 @@ default\_config: boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -14100,7 +14108,7 @@ ConfigDeleteResponse = unknown
 
 #### AI GatewayBillingSpending Limit
 
-##### [Get spending limit](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/get)
+##### [Get spending limit (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
@@ -14110,7 +14118,7 @@ Deprecated
 
 POST/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
-##### [Delete spending limit](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/delete)
+##### [Delete spending limit (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 

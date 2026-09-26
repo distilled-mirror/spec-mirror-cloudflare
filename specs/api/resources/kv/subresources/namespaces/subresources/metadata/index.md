@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Metadata
 
-##### [Read the metadata for a key](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/metadata/methods/get)
+##### [Get a key's metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/metadata/methods/get)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/metadata/{key\_name}
 

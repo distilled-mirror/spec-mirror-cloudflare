@@ -84,7 +84,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {id }
+result: object {id, scope }
 
 </summary>
 
@@ -93,6 +93,66 @@ id: string
 The suppression’s identifier.
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -127,7 +187,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     {}
   ],
   "result": {
-    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321"
+    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }
@@ -146,7 +210,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     {}
   ],
   "result": {
-    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321"
+    "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }

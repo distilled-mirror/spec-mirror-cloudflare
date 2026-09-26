@@ -196,7 +196,7 @@ Secret key for this widget.
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 
@@ -430,7 +430,7 @@ One of the following:
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 

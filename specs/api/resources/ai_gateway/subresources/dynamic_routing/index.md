@@ -18,43 +18,43 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Dynamic Routing
 
-##### [List all AI Gateway Dynamic Routes.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list)
+##### [List dynamic routes](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-##### [Get an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get)
+##### [Get a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [Create a new AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create)
+##### [Create a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-##### [Update an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/update)
+##### [Rename a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/update)
 
 PATCH/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [Delete an AI Gateway Dynamic Route.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/delete)
+##### [Delete a dynamic route](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-##### [List all AI Gateway Dynamic Route Deployments.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_deployments)
+##### [List dynamic route deployments](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_deployments)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/deployments
 
-##### [Create a new AI Gateway Dynamic Route Deployment.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_deployment)
+##### [Deploy a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_deployment)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/deployments
 
-##### [List all AI Gateway Dynamic Route Versions.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_versions)
+##### [List dynamic route versions](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/list_versions)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-##### [Create a new AI Gateway Dynamic Route Version.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_version)
+##### [Create a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/create_version)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-##### [Get an AI Gateway Dynamic Route Version.](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get_version)
+##### [Get a dynamic route version](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/dynamic_routing/methods/get_version)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions/{version\_id}
 

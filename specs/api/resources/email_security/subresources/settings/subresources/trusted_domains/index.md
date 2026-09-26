@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/email-security/settings/trusted\_domains/{trusted\_
 
 DELETE/accounts/{account\_id}/email-security/settings/trusted\_domains/{trusted\_domain\_id}
 
-##### [Batch trusted domains operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/trusted_domains/methods/batch)
+##### [Batch trusted domain operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/trusted_domains/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 

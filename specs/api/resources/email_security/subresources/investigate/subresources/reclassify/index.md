@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Change email classification](https://developers.cloudflare.com/api/resources/email_security/subresources/investigate/subresources/reclassify/methods/create)
 
+Deprecated
+
 POST/accounts/{account\_id}/email-security/investigate/{investigate\_id}/reclassify
 
 ##### ModelsExpand Collapse

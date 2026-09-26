@@ -68,7 +68,7 @@ maxLength32
 
 keyless\_certificate\_id: string
 
-Identifier.
+Keyless certificate identifier tag.
 
 maxLength32
 

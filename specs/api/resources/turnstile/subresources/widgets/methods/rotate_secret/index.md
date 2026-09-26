@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/challenges/widgets/{sitekey}/rotate\_secret
 
-Generate a new secret key for this widget. If `invalidate_immediately` is set to `false`, the previous secret remains valid for 2 hours.
+Generates a new secret key for this widget. If `invalidate_immediately` is set to `false`, the previous secret remains valid for 2 hours.
 
 Note that secrets cannot be rotated again during the grace period.
 
@@ -72,7 +72,7 @@ maxLength32
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 
@@ -330,7 +330,7 @@ Secret key for this widget.
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 

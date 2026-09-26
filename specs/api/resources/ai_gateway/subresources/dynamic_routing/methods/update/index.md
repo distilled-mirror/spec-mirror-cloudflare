@@ -1,5 +1,5 @@
 ---
-title: Update an AI Gateway Dynamic Route.
+title: Rename a dynamic route
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update an AI Gateway Dynamic Route.
+# Rename a dynamic route
 
 PATCH/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-Update an AI Gateway Dynamic Route.
+Updates the name of a dynamic route. To change routing behaviour, create and deploy a new version.
 
 ##### Security
 
@@ -618,7 +618,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(model)%20dynamic_routing_update_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### Update an AI Gateway Dynamic Route.
+### Rename a dynamic route
 
 HTTP
 

@@ -574,9 +574,7 @@ Identifier object {id }
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 

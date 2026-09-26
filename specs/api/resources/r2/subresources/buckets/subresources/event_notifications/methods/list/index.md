@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration
 
-List all event notification rules for a bucket.
+Lists event notification rules for an R2 bucket, grouped by the Cloudflare Queue that receives matching object events.
 
 ##### Security
 
@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 

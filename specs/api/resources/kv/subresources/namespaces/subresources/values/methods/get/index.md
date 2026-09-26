@@ -1,5 +1,5 @@
 ---
-title: Read key-value pair
+title: Get a key's value
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Read key-value pair
+# Get a key's value
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-Returns the value associated with the given key in the given namespace. Use URL-encoding to use special characters (for example, `:`, `!`, `%`) in the key name. If the KV-pair is set to expire at some point, the expiration time as measured in seconds since the UNIX epoch will be returned in the `expiration` response header.
+Returns the value stored under the specified key in the Workers KV namespace as raw bytes. Use URL-encoding for special characters (for example, `:`, `!`, `%`) in the key name when constructing the request URL. If the key-value pair expires, the `expiration` response header contains its expiration time in seconds since the UNIX epoch.
 
 ##### Security
 
@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -86,7 +86,7 @@ maxLength512
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20key_name%20%3E%20(schema)>)
 
-### Read key-value pair
+### Get a key's value
 
 HTTP
 

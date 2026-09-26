@@ -592,7 +592,7 @@ ConfigDeleteResponse = unknown
 
 #### BillingSpending Limit
 
-##### [Get spending limit](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/get)
+##### [Get spending limit (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
@@ -602,7 +602,7 @@ Deprecated
 
 POST/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
-##### [Delete spending limit](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/delete)
+##### [Delete spending limit (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/spending_limit/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 

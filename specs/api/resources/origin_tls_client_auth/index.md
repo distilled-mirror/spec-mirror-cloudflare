@@ -52,9 +52,9 @@ OriginTLSClientAuthListResponse = <a href="https://developers.cloudflare.com/api
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -90,9 +90,9 @@ OriginTLSClientAuthGetResponse = <a href="https://developers.cloudflare.com/api/
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -128,9 +128,9 @@ OriginTLSClientAuthCreateResponse = <a href="https://developers.cloudflare.com/a
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -166,9 +166,9 @@ OriginTLSClientAuthDeleteResponse = <a href="https://developers.cloudflare.com/a
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -224,9 +224,9 @@ ZoneAuthenticatedOriginPull object {id, certificate, expires\_on, 4 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -322,9 +322,9 @@ ZoneCertificateListResponse = <a href="https://developers.cloudflare.com/api/res
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -360,9 +360,9 @@ ZoneCertificateGetResponse = <a href="https://developers.cloudflare.com/api/reso
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -398,9 +398,9 @@ ZoneCertificateCreateResponse = <a href="https://developers.cloudflare.com/api/r
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -436,9 +436,9 @@ ZoneCertificateDeleteResponse = <a href="https://developers.cloudflare.com/api/r
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -486,9 +486,9 @@ AuthenticatedOriginPull object {cert\_id, cert\_status, cert\_updated\_at, 11 mo
 
 cert\_id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -672,17 +672,17 @@ HostnameUpdateResponse = <a href="https://developers.cloudflare.com/api/resource
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
 cert\_id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -746,9 +746,9 @@ Certificate object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -850,9 +850,9 @@ HostnameCertificateListResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -954,9 +954,9 @@ HostnameCertificateGetResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -1058,9 +1058,9 @@ HostnameCertificateCreateResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -1162,9 +1162,9 @@ HostnameCertificateDeleteResponse object {id, certificate, expires\_on, 5 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

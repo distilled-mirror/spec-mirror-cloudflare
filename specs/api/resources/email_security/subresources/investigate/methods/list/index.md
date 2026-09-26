@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email-security/investigate
 
-Returns information for each email that matches the search parameter(s).
+Returns information for each email that matches the provided search parameters.
 
 ##### Security
 
@@ -72,9 +72,13 @@ maxLength32
 
 alert\_id: optional string
 
+Filter by alert ID.
+
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20alert_id%20%3E%20(schema)>)
 
 cursor: optional string
+
+Opaque cursor from a previous response’s `result_info.next` or `result_info.previous` for cursor-based pagination. When omitted, the first page is returned.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
@@ -134,7 +138,7 @@ Whether to include only detections in search results.
 
 domain: optional string
 
-Sender domains to filter by.
+Filter by a domain found in the email — sender domain, recipient domain, or a domain in a link.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20domain%20%3E%20(schema)>)
 
@@ -216,9 +220,13 @@ One of the following:
 
 message\_id: optional string
 
+Filter by the RFC 5322 Message-ID header.
+
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20message_id%20%3E%20(schema)>)
 
 metric: optional string
+
+Metric to aggregate the results by, as used by the Email Security dashboard.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20metric%20%3E%20(schema)>)
 
@@ -242,15 +250,19 @@ minimum1
 
 query: optional string
 
-Space-delimited search term. Case-insensitive.
+Space-delimited term matched case-insensitively against message metadata — sender, recipient, subject, attachment names and hashes, and message ID.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20query%20%3E%20(schema)>)
 
 recipient: optional string
 
+Filter by recipient. Matches an email address or a domain.
+
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20recipient%20%3E%20(schema)>)
 
 sender: optional string
+
+Filter by sender. Matches an email address or a domain.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sender%20%3E%20(schema)>)
 
@@ -269,6 +281,8 @@ formatdate-time
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20start%20%3E%20(schema)>)
 
 subject: optional string
+
+Search for messages containing individual keywords in any order within the subject.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20subject%20%3E%20(schema)>)
 

@@ -44,9 +44,9 @@ MTLSCertificate object {id, ca, certificates, 7 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -144,9 +144,9 @@ MTLSCertificateCreateResponse object {id, ca, certificates, 8 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

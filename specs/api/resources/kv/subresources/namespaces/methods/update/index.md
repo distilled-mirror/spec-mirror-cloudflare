@@ -1,5 +1,5 @@
 ---
-title: Rename a Namespace
+title: Rename a namespace
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Rename a Namespace
+# Rename a namespace
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
-Modifies a namespace’s title.
+Changes the title of the specified Workers KV namespace and returns the updated namespace. The namespace ID and stored key-value pairs are unchanged.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -80,7 +80,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -182,7 +182,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/kv#(resource)%2
 
 id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -190,7 +190,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -240,7 +240,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Rename a Namespace
+### Rename a namespace
 
 HTTP
 

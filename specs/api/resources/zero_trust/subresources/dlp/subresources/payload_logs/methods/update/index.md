@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Set payload log settings
 
+Deprecated
+
 PUT/accounts/{account\_id}/dlp/payload\_log
 
 Enables or disables payload logging for DLP matches. When enabled, matched content is stored for review.

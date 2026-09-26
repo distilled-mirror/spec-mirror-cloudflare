@@ -1,5 +1,5 @@
 ---
-title: Delete spending limit
+title: Delete spending limit (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete spending limit
+# Delete spending limit (deprecated)
 
 DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
@@ -144,7 +144,7 @@ total\_count: number
 
 [Link to this property](#)%20ai_gateway.billing.spending_limit%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Delete spending limit
+### Delete spending limit (deprecated)
 
 HTTP
 

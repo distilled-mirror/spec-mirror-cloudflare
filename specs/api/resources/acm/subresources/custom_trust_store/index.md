@@ -46,9 +46,9 @@ CustomTrustStore object {id, certificate, expires\_on, 5 more }
 
 id: string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -148,9 +148,9 @@ CustomTrustStoreDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

@@ -448,9 +448,11 @@ result: optional object {id, hostname, created\_at, 8 more }
 
 id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 <a href="#">Link to this property</a>
 
@@ -1216,7 +1218,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames \
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "hostname": "app.example.com",
     "created_at": "2020-02-06T18:11:23.531995Z",
     "custom_metadata": {
@@ -1328,7 +1330,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames \
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9",
     "hostname": "app.example.com",
     "created_at": "2020-02-06T18:11:23.531995Z",
     "custom_metadata": {

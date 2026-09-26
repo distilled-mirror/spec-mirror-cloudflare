@@ -1,5 +1,5 @@
 ---
-title: Preview for non-detection messages
+title: Generate preview for a non-detection message
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Preview for non-detection messages
+# Generate preview for a non-detection message
 
 POST/accounts/{account\_id}/email-security/investigate/preview
 
-Generates a preview image for a message that was not flagged as a detection. Useful for investigating benign messages. Returns a base64-encoded PNG screenshot of the email body.
+Generates a preview image for a message that was not flagged as a detection. The message is rendered from the copy in the recipient’s mailbox, so this requires an active integration and only works while the message is still in the recipient’s inbox. Returns a base64-encoded PNG screenshot of the email body. For messages with a detection, use the detection preview endpoint instead.
 
 ##### Security
 
@@ -72,11 +72,11 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
-postfix\_id: string
+id: string
 
-The identifier of the message.
+Unique identifier for a message retrieved from investigation.
 
-[Link to this property](#)%20email_security.investigate.preview%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20postfix_id%20%3E%20(schema)>)
+[Link to this property](#)%20email_security.investigate.preview%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20id%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -188,7 +188,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20email_security.investigate.preview%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Preview for non-detection messages
+### Generate preview for a non-detection message
 
 HTTP
 
@@ -199,7 +199,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/in
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "postfix_id": "4Njp3P0STMz2c02Q"
+          "id": "4Njp3P0STMz2c02Q-2024-01-05T10:00:00-12345678"
         }'
 ```
 

@@ -38,9 +38,9 @@ AuthenticatedOriginPull object {cert\_id, cert\_status, cert\_updated\_at, 11 mo
 
 cert\_id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -224,17 +224,17 @@ HostnameUpdateResponse = <a href="https://developers.cloudflare.com/api/resource
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
 cert\_id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

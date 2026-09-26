@@ -320,7 +320,7 @@ BucketDeleteResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
-##### [Put Object Lifecycle Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle/methods/update)
+##### [Set Object Lifecycle Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lifecycle
 
@@ -584,7 +584,7 @@ LifecycleUpdateResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
-##### [Put Bucket CORS Policy](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/cors/methods/update)
+##### [Set Bucket CORS Policy](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/cors/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
@@ -1306,11 +1306,11 @@ Whether this bucket is publicly accessible at the r2.dev domain.
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration
 
-##### [Get Event Notification Rule](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/get)
+##### [Get Event Notification Rules for a Queue](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/get)
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
-##### [Create Event Notification Rule](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/update)
+##### [Create Event Notification Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/update)
 
 PUT/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
@@ -1558,7 +1558,7 @@ EventNotificationDeleteResponse = unknown
 
 GET/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 
-##### [Put Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
+##### [Set Bucket Lock Rules](https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/locks/methods/update)
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/lock
 

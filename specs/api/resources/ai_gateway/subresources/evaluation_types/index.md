@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Evaluation Types
 
-##### [List Evaluators](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluation_types/methods/list)
+##### [List evaluator types (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluation_types/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/evaluation-types
 

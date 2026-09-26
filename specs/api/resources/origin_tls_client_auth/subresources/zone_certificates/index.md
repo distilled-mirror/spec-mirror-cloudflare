@@ -46,9 +46,9 @@ ZoneAuthenticatedOriginPull object {id, certificate, expires\_on, 4 more }
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -144,9 +144,9 @@ ZoneCertificateListResponse = <a href="https://developers.cloudflare.com/api/res
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -182,9 +182,9 @@ ZoneCertificateGetResponse = <a href="https://developers.cloudflare.com/api/reso
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -220,9 +220,9 @@ ZoneCertificateCreateResponse = <a href="https://developers.cloudflare.com/api/r
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -258,9 +258,9 @@ ZoneCertificateDeleteResponse = <a href="https://developers.cloudflare.com/api/r
 
 id: optional string
 
-Identifier.
+Certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

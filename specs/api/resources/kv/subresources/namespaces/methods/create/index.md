@@ -1,5 +1,5 @@
 ---
-title: Create a Namespace
+title: Create a namespace
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a Namespace
+# Create a namespace
 
 POST/accounts/{account\_id}/storage/kv/namespaces
 
-Creates a namespace under the given title. A `400` is returned if the account already owns a namespace with this title. A namespace must be explicitly deleted to be replaced.
+Creates a Workers KV namespace in the specified account with the given title. Returns `400` if the account already owns a namespace with that title; an existing namespace must be explicitly deleted before it can be replaced. An optional jurisdiction restricts where data is durably stored and can only be set at creation time.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -208,7 +208,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/kv#(re
 
 id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -216,7 +216,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -260,7 +260,7 @@ True if keys written on the URL will be URL-decoded before storing. For example,
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create a Namespace
+### Create a namespace
 
 HTTP
 

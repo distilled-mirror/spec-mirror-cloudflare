@@ -1,5 +1,5 @@
 ---
-title: List all AI Gateway Dynamic Route Versions.
+title: List dynamic route versions
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List all AI Gateway Dynamic Route Versions.
+# List dynamic route versions
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}/versions
 
-List all AI Gateway Dynamic Route Versions.
+Lists the saved versions of a dynamic route.
 
 ##### Security
 
@@ -156,7 +156,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(model)%20dynamic_routing_list_versions_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### List all AI Gateway Dynamic Route Versions.
+### List dynamic route versions
 
 HTTP
 

@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Submissions
 
-##### [Get reclassify submissions](https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/list)
+##### [List reclassify submissions](https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/list)
 
 GET/accounts/{account\_id}/email-security/submissions
 

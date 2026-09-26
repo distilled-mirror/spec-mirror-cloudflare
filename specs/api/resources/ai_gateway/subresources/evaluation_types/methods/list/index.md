@@ -1,5 +1,5 @@
 ---
-title: List Evaluators
+title: List evaluator types (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Evaluators
+# List evaluator types (deprecated)
 
 GET/accounts/{account\_id}/ai-gateway/evaluation-types
 
-Lists all available evaluator types for scoring AI gateway responses.
+Lists the evaluator types that evaluations can use to score AI Gateway responses. Evaluations are deprecated and unavailable to new accounts.
 
 ##### Security
 
@@ -188,7 +188,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.evaluation_types%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List Evaluators
+### List evaluator types (deprecated)
 
 HTTP
 

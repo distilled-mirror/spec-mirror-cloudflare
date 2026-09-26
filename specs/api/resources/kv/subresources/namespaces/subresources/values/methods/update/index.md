@@ -1,5 +1,5 @@
 ---
-title: Write key-value pair with optional metadata
+title: Write a key-value pair with optional metadata
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Write key-value pair with optional metadata
+# Write a key-value pair with optional metadata
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-Write a value identified by a key. Use URL-encoding to use special characters (for example, `:`, `!`, `%`) in the key name. Body should be the value to be stored. If JSON metadata to be associated with the key/value pair is needed, use `multipart/form-data` content type for your PUT request (see dropdown below in `REQUEST BODY SCHEMA`). Existing values, expirations, and metadata will be overwritten. If neither `expiration` nor `expiration_ttl` is specified, the key-value pair will never expire. If both are set, `expiration_ttl` is used and `expiration` is ignored.
+Writes a value under the specified key in the Workers KV namespace, creating the key-value pair or replacing its existing value, expiration, and metadata. Send the value as an `application/octet-stream` request body, or use `multipart/form-data` with a `value` part and an optional JSON `metadata` part. Use URL-encoding for special characters (for example, `:`, `!`, `%`) in the key name when constructing the request URL. If neither `expiration` nor `expiration_ttl` is specified, the key-value pair will not expire. If both are set, `expiration_ttl` takes precedence.
 
 ##### Security
 
@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -96,7 +96,7 @@ Expires the key at a certain time, measured in number of seconds since the UNIX 
 
 expiration\_ttl: optional number
 
-Expires the key after a number of seconds. Must be at least 60.
+Number of seconds until the key expires. Must be at least 60. Takes precedence over `expiration` when both are specified.
 
 minimum60
 
@@ -230,7 +230,7 @@ result: optional object {}
 
 [Link to this property](#)%20kv.namespaces.values%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Write key-value pair with optional metadata
+### Write a key-value pair with optional metadata
 
 HTTP
 

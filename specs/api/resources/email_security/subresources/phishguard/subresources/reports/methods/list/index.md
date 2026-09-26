@@ -1,5 +1,5 @@
 ---
-title: Get PhishGuard reports
+title: List PhishGuard reports
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get PhishGuard reports
+# List PhishGuard reports
 
 GET/accounts/{account\_id}/email-security/phishguard/reports
 
@@ -360,7 +360,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get PhishGuard reports
+### List PhishGuard reports
 
 HTTP
 

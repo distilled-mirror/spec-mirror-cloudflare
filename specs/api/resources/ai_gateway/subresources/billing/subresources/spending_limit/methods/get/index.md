@@ -1,5 +1,5 @@
 ---
-title: Get spending limit
+title: Get spending limit (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get spending limit
+# Get spending limit (deprecated)
 
 GET/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
@@ -180,7 +180,7 @@ total\_count: number
 
 [Link to this property](#)%20ai_gateway.billing.spending_limit%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get spending limit
+### Get spending limit (deprecated)
 
 HTTP
 

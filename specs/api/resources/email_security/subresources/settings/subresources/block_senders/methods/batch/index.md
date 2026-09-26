@@ -1,5 +1,5 @@
 ---
-title: Batch blocked senders operations
+title: Batch blocked sender operations
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Batch blocked senders operations
+# Batch blocked sender operations
 
 POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
@@ -810,7 +810,7 @@ One of the following:
 
 [Link to this property](#)%20email_security.settings.block_senders%20%3E%20(method)%20batch%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Batch blocked senders operations
+### Batch blocked sender operations
 
 HTTP
 

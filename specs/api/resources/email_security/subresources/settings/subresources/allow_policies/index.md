@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/email-security/settings/allow\_policies/{policy\_id
 
 DELETE/accounts/{account\_id}/email-security/settings/allow\_policies/{policy\_id}
 
-##### [Batch allow policies operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/allow_policies/methods/batch)
+##### [Batch allow policy operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/allow_policies/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 

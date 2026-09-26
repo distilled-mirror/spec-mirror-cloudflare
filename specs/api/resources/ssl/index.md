@@ -240,9 +240,7 @@ A certificate pack with all its properties.
 
 id: string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 
@@ -694,9 +692,7 @@ A certificate pack with all its properties.
 
 id: string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 
@@ -1148,9 +1144,7 @@ A certificate pack with all its properties.
 
 id: string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 
@@ -1602,9 +1596,7 @@ A certificate pack with all its properties.
 
 id: string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 
@@ -2054,9 +2046,7 @@ CertificatePackDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 

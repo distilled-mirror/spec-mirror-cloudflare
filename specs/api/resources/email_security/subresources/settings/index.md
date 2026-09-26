@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/email-security/settings/allow\_policies/{policy\_id
 
 DELETE/accounts/{account\_id}/email-security/settings/allow\_policies/{policy\_id}
 
-##### [Batch allow policies operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/allow_policies/methods/batch)
+##### [Batch allow policy operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/allow_policies/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
@@ -1157,7 +1157,7 @@ PATCH/accounts/{account\_id}/email-security/settings/block\_senders/{pattern\_id
 
 DELETE/accounts/{account\_id}/email-security/settings/block\_senders/{pattern\_id}
 
-##### [Batch blocked senders operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/block_senders/methods/batch)
+##### [Batch blocked sender operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/block_senders/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
@@ -5780,7 +5780,7 @@ formatuuid
 
 #### SettingsImpersonation Registry
 
-##### [List entries in impersonation registry](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/impersonation_registry/methods/list)
+##### [List impersonation registry entries](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/impersonation_registry/methods/list)
 
 GET/accounts/{account\_id}/email-security/settings/impersonation\_registry
 
@@ -6560,7 +6560,7 @@ PATCH/accounts/{account\_id}/email-security/settings/trusted\_domains/{trusted\_
 
 DELETE/accounts/{account\_id}/email-security/settings/trusted\_domains/{trusted\_domain\_id}
 
-##### [Batch trusted domains operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/trusted_domains/methods/batch)
+##### [Batch trusted domain operations](https://developers.cloudflare.com/api/resources/email_security/subresources/settings/subresources/trusted_domains/methods/batch)
 
 POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 

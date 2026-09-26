@@ -1,5 +1,5 @@
 ---
-title: Get email preview
+title: Get preview for a detection
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get email preview
+# Get preview for a detection
 
 GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/preview
 
-Returns a preview of the message body as a base64 encoded PNG image for non-benign messages.
+Returns a preview of the message body as a base64-encoded PNG image for any message with a detection. For messages without a detection, use the non-detection preview endpoint instead.
 
 ##### Security
 
@@ -186,7 +186,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20email_security.investigate.preview%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get email preview
+### Get preview for a detection
 
 HTTP
 

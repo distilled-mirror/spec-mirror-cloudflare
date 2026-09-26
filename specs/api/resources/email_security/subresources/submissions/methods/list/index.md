@@ -1,5 +1,5 @@
 ---
-title: Get reclassify submissions
+title: List reclassify submissions
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get reclassify submissions
+# List reclassify submissions
 
 GET/accounts/{account\_id}/email-security/submissions
 
@@ -240,6 +240,8 @@ minimum1
 
 query: optional string
 
+Search term for filtering submissions.
+
 [Link to this property](#)%20email_security.submissions%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20query%20%3E%20(schema)>)
 
 <details>
@@ -290,9 +292,13 @@ formatdate-time
 
 status: optional string
 
+Filter by review status — `escalated`, `reviewed`, or `unreviewed`.
+
 [Link to this property](#)%20email_security.submissions%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20status%20%3E%20(schema)>)
 
 submission\_id: optional string
+
+Filter by a specific submission ID.
 
 [Link to this property](#)%20email_security.submissions%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20submission_id%20%3E%20(schema)>)
 
@@ -301,6 +307,8 @@ submission\_id: optional string
 <summary>
 
 type: optional "TEAM"or "USER"
+
+Filter by who created the submission — <code>TEAM</code> for security team members or <code>USER</code> for end users.
 
 </summary>
 
@@ -720,7 +728,7 @@ Total results available without any search parameters.
 
 [Link to this property](#)%20email_security.submissions%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get reclassify submissions
+### List reclassify submissions
 
 HTTP
 

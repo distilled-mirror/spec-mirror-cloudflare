@@ -278856,7 +278856,7 @@ Use cases enabled for the integration.
 
 GET/accounts/{account_id}/data-security/posture/findings
 
-##### [Get a finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/findings/methods/get)
+##### [Get a posture finding](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/findings/methods/get)
 
 GET/accounts/{account_id}/data-security/posture/findings/{finding_id}
 

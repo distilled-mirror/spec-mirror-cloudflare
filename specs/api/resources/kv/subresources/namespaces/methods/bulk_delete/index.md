@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/delete
 
-Remove multiple KV pairs from the namespace. Body should be an array of up to 10,000 keys to be removed.
+Deletes up to 10,000 key-value pairs from the specified Workers KV namespace. Send a JSON array of the key names to delete. The result reports the number of successful deletions and any keys that failed and should be retried.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -184,13 +184,13 @@ result: optional object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 

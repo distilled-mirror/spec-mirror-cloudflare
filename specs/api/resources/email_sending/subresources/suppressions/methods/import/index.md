@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email/sending/suppressions/bulk
 
-Imports up to 1,000 account-level Email Sending suppressions in one request.
+Imports up to 1,000 Email Sending suppressions in one request. Each item applies to every sending domain of the account (default) or to one sending domain.
 
 ##### Security
 
@@ -68,9 +68,9 @@ Cloudflare account ID.
 
 <summary>
 
-items: array of object {email, expires\_at, note }
+items: array of object {email, expires\_at, note, scope }
 
-Suppressions to import. Items with a duplicate email address are deduplicated before processing.
+Suppressions to import. Items with the same email address and scope are deduplicated before processing.
 
 </summary>
 
@@ -93,6 +93,66 @@ note: optional string
 Advisory note for this suppression. Not enforced or validated beyond length.
 
 maxLength1000
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies. Omit for <code>{ "type": "account" }</code>, which blocks the recipient for every sending domain of the account.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain to suppress for: the domain part of the envelope MAIL FROM. It is lowercased and trailing dots are removed. Internationalized domains must use the ASCII (punycode) form. Ownership is not checked; a domain the account does not send from never matches.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -120,7 +180,7 @@ result: object {deduplicated, errors, invalid, 4 more }
 
 deduplicated: number
 
-Number of items dropped because their email address repeated an earlier item in this request. Counted once and excluded from <code>items</code>.
+Number of items dropped because their email address and scope repeated an earlier item in this request. Counted once and excluded from <code>items</code>.
 
 <a href="#">Link to this property</a>
 
@@ -132,7 +192,7 @@ Number of items that failed to import due to an unexpected error.
 
 invalid: number
 
-Number of items with an invalid email address.
+Number of items with an invalid email address or sending domain.
 
 <a href="#">Link to this property</a>
 
@@ -140,7 +200,7 @@ Number of items with an invalid email address.
 
 <summary>
 
-items: array of object {index, status, id, 2 more }
+items: array of object {index, status, id, 3 more }
 
 Per-item results, in the same order as the request body.
 
@@ -206,6 +266,66 @@ Human-readable error message. Present when <code>status</code> is <code>invalid<
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -254,7 +374,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
             {
               "email": "other@example.com",
               "expires_at": "2027-01-01T00:00:00Z",
-              "note": "Imported from CRM"
+              "note": "Imported from CRM",
+              "scope": {
+                "type": "sending_domain",
+                "value": "mail.example.com"
+              }
             }
           ]
         }'
@@ -280,7 +404,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
         "status": "processed",
         "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
         "email": "user@example.com",
-        "error": "Invalid email"
+        "error": "Invalid email",
+        "scope": {
+          "type": "sending_domain",
+          "value": "mail.example.com"
+        }
       }
     ],
     "processed": 2,
@@ -313,7 +441,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
         "status": "processed",
         "id": "396a5436-d4b0-42a6-b3fc-48e8fa522321",
         "email": "user@example.com",
-        "error": "Invalid email"
+        "error": "Invalid email",
+        "scope": {
+          "type": "sending_domain",
+          "value": "mail.example.com"
+        }
       }
     ],
     "processed": 2,

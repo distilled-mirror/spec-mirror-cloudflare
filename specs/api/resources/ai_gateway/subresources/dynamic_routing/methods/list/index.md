@@ -1,5 +1,5 @@
 ---
-title: List all AI Gateway Dynamic Routes.
+title: List dynamic routes
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List all AI Gateway Dynamic Routes.
+# List dynamic routes
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes
 
-List all AI Gateway Dynamic Routes.
+Lists the dynamic routes configured on an AI Gateway.
 
 ##### Security
 
@@ -648,7 +648,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(model)%20dynamic_routing_list_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
-### List all AI Gateway Dynamic Routes.
+### List dynamic routes
 
 HTTP
 

@@ -228,17 +228,15 @@ retry\_count: number
 
 <summary>
 
-status: "PENDING"or "DISCOVERING"or "PROCESSING"or 4 more
+status: "PENDING"or "PROCESSING"or "COMPLETED"or 3 more
+
+Status of a message within a bulk action job.
 
 </summary>
 
 One of the following:
 
 "PENDING"
-
-<a href="#">Link to this property</a>
-
-"DISCOVERING"
 
 <a href="#">Link to this property</a>
 

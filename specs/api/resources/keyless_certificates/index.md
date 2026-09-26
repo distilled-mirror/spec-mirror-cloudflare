@@ -178,7 +178,7 @@ KeylessCertificateDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Keyless certificate identifier tag.
 
 maxLength32
 

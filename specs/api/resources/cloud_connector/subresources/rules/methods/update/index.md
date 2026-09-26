@@ -56,7 +56,7 @@ maxLength32
 
 <summary>
 
-rules: optional array of object {id, description, enabled, 3 more }
+rules: array of object {id, description, enabled, 3 more }
 
 </summary>
 
@@ -323,8 +323,21 @@ HTTPTypeScriptPythonGoTerraform
 ```
 curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/cloud_connector/rules \
     -X PUT \
+    -H 'Content-Type: application/json' \
     -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
+    -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
+    -d '[
+          {
+            "id": "95c365e17e1b46599cd99e5b231fac4e",
+            "description": "Rule description",
+            "enabled": true,
+            "expression": "http.cookie eq \\"a=b\\"",
+            "parameters": {
+              "host": "examplebucket.s3.eu-north-1.amazonaws.com"
+            },
+            "provider": "aws_s3"
+          }
+        ]'
 ```
 
 200 example

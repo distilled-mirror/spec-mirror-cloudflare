@@ -84,7 +84,7 @@ messages: array of unknown
 
 <summary>
 
-result: object {id, created\_at, email, 4 more }
+result: object {id, created\_at, email, 5 more }
 
 </summary>
 
@@ -138,6 +138,66 @@ Advisory note for this suppression, if any.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+scope: optional object {type } or object {type, value }
+
+Where the suppression applies: <code>account</code> for every sending domain of the account, or <code>sending_domain</code> for one envelope MAIL FROM domain.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Type object {type }
+
+</summary>
+
+type: "account"
+
+Blocks the recipient for every sending domain of the account.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {type, value }
+
+</summary>
+
+type: "sending\_domain"
+
+Blocks the recipient only for mail whose envelope MAIL FROM uses <code>value</code>.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The sending domain: the domain part of the envelope MAIL FROM, lowercase, without a trailing dot.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20email_sending.suppressions%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -174,7 +234,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     "expires_at": "2027-01-01T00:00:00Z",
     "read_only": false,
     "reason": "hard_bounce",
-    "note": "Imported from CRM"
+    "note": "Imported from CRM",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }
@@ -199,7 +263,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email/sending/sup
     "expires_at": "2027-01-01T00:00:00Z",
     "read_only": false,
     "reason": "hard_bounce",
-    "note": "Imported from CRM"
+    "note": "Imported from CRM",
+    "scope": {
+      "type": "sending_domain",
+      "value": "mail.example.com"
+    }
   },
   "success": true
 }

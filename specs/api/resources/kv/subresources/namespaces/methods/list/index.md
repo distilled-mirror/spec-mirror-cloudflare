@@ -1,5 +1,5 @@
 ---
-title: List Namespaces
+title: List namespaces
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Namespaces
+# List namespaces
 
 GET/accounts/{account\_id}/storage/kv/namespaces
 
-Returns the namespaces owned by an account.
+Lists Workers KV namespaces owned by the specified account. Use `page` and `per_page` to select a page of results, and `order` and `direction` to control sorting.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -76,7 +76,7 @@ maxLength32
 
 direction: optional "asc"or "desc"
 
-Direction to order namespaces.
+Sort namespaces in ascending (<code>asc</code>) or descending (<code>desc</code>) order.
 
 </summary>
 
@@ -100,7 +100,7 @@ One of the following:
 
 order: optional "id"or "title"
 
-Field to order results by.
+Namespace field to sort by (<code>id</code> or <code>title</code>).
 
 </summary>
 
@@ -238,7 +238,7 @@ result: optional array of <a href="https://developers.cloudflare.com/api/resourc
 
 id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -246,7 +246,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -326,7 +326,7 @@ Total results available without any search parameters.
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Namespaces
+### List namespaces
 
 HTTP
 

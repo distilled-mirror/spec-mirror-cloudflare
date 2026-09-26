@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/raw
 
-Returns the raw eml of any non-benign message.
+Returns the raw EML content of any message with a detection.
 
 ##### Security
 

@@ -1,5 +1,5 @@
 ---
-title: Create Event Notification Rule
+title: Create Event Notification Rules
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create Event Notification Rule
+# Create Event Notification Rules
 
 PUT/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
-Create event notification rule.
+Creates rules that send notifications for matching R2 object events to the specified Cloudflare Queue. Rules can filter objects by key prefix and suffix. New rules are added to any existing rules for the queue; a rule that overlaps an existing rule is rejected.
 
 ##### Security
 
@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -60,7 +60,7 @@ minLength3
 
 queue\_id: string
 
-Queue ID.
+ID of the Cloudflare Queue that receives notifications for matching R2 object events.
 
 maxLength32
 
@@ -230,7 +230,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20r2.buckets.event_notifications%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create Event Notification Rule
+### Create Event Notification Rules
 
 HTTP
 

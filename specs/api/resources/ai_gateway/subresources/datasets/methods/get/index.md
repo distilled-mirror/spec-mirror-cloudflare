@@ -1,5 +1,5 @@
 ---
-title: Fetch a Dataset
+title: Get a dataset (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Fetch a Dataset
+# Get a dataset (deprecated)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/datasets/{id}
 
-Retrieves details for a specific AI Gateway dataset.
+Retrieves a dataset and its log filters. Evaluations and datasets are deprecated and unavailable to new accounts.
 
 ##### Security
 
@@ -66,7 +66,7 @@ account\_id: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -238,7 +238,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -264,7 +264,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.datasets%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Fetch a Dataset
+### Get a dataset (deprecated)
 
 HTTP
 

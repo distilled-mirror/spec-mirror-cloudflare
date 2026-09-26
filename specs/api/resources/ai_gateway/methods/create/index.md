@@ -1,5 +1,5 @@
 ---
-title: Create a new Gateway
+title: Create a gateway
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new Gateway
+# Create a gateway
 
 POST/accounts/{account\_id}/ai-gateway/gateways
 
-Creates a new AI Gateway.
+Creates an AI Gateway in the account with the specified caching, rate limiting, logging, and authentication settings. The gateway ID appears in request URLs and must be unique within the account.
 
 ##### Security
 
@@ -66,7 +66,7 @@ account\_id: string
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -266,7 +266,7 @@ result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 more }
 
 id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1528,7 +1528,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new Gateway
+### Create a gateway
 
 HTTP
 

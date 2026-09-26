@@ -1,5 +1,5 @@
 ---
-title: Create a new Account Provider
+title: Create a custom provider
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new Account Provider
+# Create a custom provider
 
 POST/accounts/{account\_id}/ai-gateway/custom-providers
 
-Creates a new AI Gateway.
+Creates an account-level custom provider that forwards AI Gateway requests to the HTTPS base URL you supply. Requests reference the provider as `custom-{slug}`, so the slug must be unique within the account.
 
 ##### Security
 
@@ -97,6 +97,8 @@ enable: optional boolean
 [Link to this property](#)%20ai_gateway.custom_providers%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enable%20%3E%20(schema)>)
 
 headers: optional string
+
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
 
 maxLength8192
 
@@ -174,6 +176,8 @@ enable: optional boolean
 
 headers: optional string
 
+JSON object of extra HTTP headers that AI Gateway sends to the provider. Values can contain credentials.
+
 maxLength8192
 
 <a href="#">Link to this property</a>
@@ -202,7 +206,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.custom_providers%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a new Account Provider
+### Create a custom provider
 
 HTTP
 

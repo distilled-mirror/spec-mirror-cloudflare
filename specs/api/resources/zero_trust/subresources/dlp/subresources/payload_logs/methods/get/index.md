@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get payload log settings
 
+Deprecated
+
 GET/accounts/{account\_id}/dlp/payload\_log
 
 Gets the current payload logging configuration for DLP, showing whether matched content is being logged.

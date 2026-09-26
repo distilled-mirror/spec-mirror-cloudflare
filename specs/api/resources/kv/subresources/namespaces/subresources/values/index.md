@@ -20,15 +20,15 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Values
 
-##### [Read key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/get)
+##### [Get a key's value](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/get)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-##### [Write key-value pair with optional metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/update)
+##### [Write a key-value pair with optional metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/update)
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-##### [Delete key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/delete)
+##### [Delete a key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/delete)
 
 DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 

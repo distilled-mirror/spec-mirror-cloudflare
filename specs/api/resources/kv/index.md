@@ -18,23 +18,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 #### KVNamespaces
 
-##### [List Namespaces](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/list)
+##### [List namespaces](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/list)
 
 GET/accounts/{account\_id}/storage/kv/namespaces
 
-##### [Get a Namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/get)
+##### [Get a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/get)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
-##### [Create a Namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/create)
+##### [Create a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/create)
 
 POST/accounts/{account\_id}/storage/kv/namespaces
 
-##### [Rename a Namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/update)
+##### [Rename a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/update)
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
-##### [Remove a Namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/delete)
+##### [Delete a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/methods/delete)
 
 DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
@@ -62,7 +62,7 @@ Namespace object {id, title, jurisdiction, supports\_url\_encoding }
 
 id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -128,13 +128,13 @@ NamespaceBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 
@@ -152,13 +152,13 @@ NamespaceBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 
@@ -270,7 +270,7 @@ Expires the key at a certain time, measured in number of seconds since the UNIX 
 
 #### KVNamespacesKeys
 
-##### [List a Namespace's Keys](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/keys/methods/list)
+##### [List keys in a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/keys/methods/list)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/keys
 
@@ -338,13 +338,13 @@ KeyBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 
@@ -362,13 +362,13 @@ KeyBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 
@@ -480,7 +480,7 @@ Expires the key at a certain time, measured in number of seconds since the UNIX 
 
 #### KVNamespacesMetadata
 
-##### [Read the metadata for a key](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/metadata/methods/get)
+##### [Get a key's metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/metadata/methods/get)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/metadata/{key\_name}
 
@@ -494,15 +494,15 @@ Arbitrary JSON that is associated with a key.
 
 #### KVNamespacesValues
 
-##### [Read key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/get)
+##### [Get a key's value](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/get)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-##### [Write key-value pair with optional metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/update)
+##### [Write a key-value pair with optional metadata](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/update)
 
 PUT/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 
-##### [Delete key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/delete)
+##### [Delete a key-value pair](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/values/methods/delete)
 
 DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/values/{key\_name}
 

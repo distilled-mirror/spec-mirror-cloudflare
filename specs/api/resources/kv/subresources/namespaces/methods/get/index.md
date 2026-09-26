@@ -1,5 +1,5 @@
 ---
-title: Get a Namespace
+title: Get a namespace
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get a Namespace
+# Get a namespace
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
-Get the namespace corresponding to the given ID.
+Returns the Workers KV namespace for the specified account and namespace ID.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -178,7 +178,7 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/kv#(re
 
 id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -186,7 +186,7 @@ maxLength32
 
 title: string
 
-A human-readable string name for a Namespace.
+Human-readable string name for a Workers KV namespace.
 
 maxLength512
 
@@ -230,7 +230,7 @@ True if keys written on the URL will be URL-decoded before storing. For example,
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get a Namespace
+### Get a namespace
 
 HTTP
 

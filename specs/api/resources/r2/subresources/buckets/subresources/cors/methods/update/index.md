@@ -1,5 +1,5 @@
 ---
-title: Put Bucket CORS Policy
+title: Set Bucket CORS Policy
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Put Bucket CORS Policy
+# Set Bucket CORS Policy
 
 PUT/accounts/{account\_id}/r2/buckets/{bucket\_name}/cors
 
-Set the CORS policy for a bucket.
+Replaces the Cross-Origin Resource Sharing (CORS) rules for an R2 bucket. Rules specify which origins, methods, and headers are allowed for browser requests to objects in the bucket.
 
 ##### Security
 
@@ -38,7 +38,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -242,7 +242,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20r2.buckets.cors%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Put Bucket CORS Policy
+### Set Bucket CORS Policy
 
 HTTP
 

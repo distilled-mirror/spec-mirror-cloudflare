@@ -68,9 +68,11 @@ maxLength32
 
 custom\_hostname\_id: string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 [Link to this property](#)%20custom_hostnames%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20custom_hostname_id%20%3E%20(schema)>)
 
@@ -78,9 +80,11 @@ maxLength32
 
 id: optional string
 
-Identifier.
+Custom hostname identifier tag.
 
-maxLength32
+maxLength36
+
+minLength36
 
 [Link to this property](#)%20custom_hostnames%20%3E%20(model)%20custom_hostname_delete_response%20%3E%20(schema)%20%3E%20(property)%20id>)
 
@@ -100,7 +104,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames/$CUSTO
 
 ```
 {
-  "id": "023e105f4ecef8ad9ca31a8372d0c353"
+  "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9"
 }
 ```
 
@@ -110,6 +114,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/custom_hostnames/$CUSTO
 
 ```
 {
-  "id": "023e105f4ecef8ad9ca31a8372d0c353"
+  "id": "0d89c70d-ad9f-4843-b99f-6cc0252067e9"
 }
 ```

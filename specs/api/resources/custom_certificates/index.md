@@ -48,9 +48,9 @@ CustomCertificate object {id, zone\_id, bundle\_method, 12 more }
 
 id: string
 
-Identifier.
+Custom certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 
@@ -228,9 +228,9 @@ CustomCertificateDeleteResponse object {id }
 
 id: optional string
 
-Identifier.
+Custom certificate identifier tag.
 
-maxLength32
+maxLength36
 
 <a href="#">Link to this property</a>
 

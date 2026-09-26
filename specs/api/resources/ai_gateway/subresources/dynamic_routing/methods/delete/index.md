@@ -1,5 +1,5 @@
 ---
-title: Delete an AI Gateway Dynamic Route.
+title: Delete a dynamic route
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete an AI Gateway Dynamic Route.
+# Delete a dynamic route
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/routes/{id}
 
-Delete an AI Gateway Dynamic Route.
+Deletes a dynamic route from an AI Gateway.
 
 ##### Security
 
@@ -532,7 +532,7 @@ success: boolean
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete an AI Gateway Dynamic Route.
+### Delete a dynamic route
 
 HTTP
 

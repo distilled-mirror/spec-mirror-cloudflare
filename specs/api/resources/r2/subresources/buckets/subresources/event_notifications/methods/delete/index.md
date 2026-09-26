@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
-Delete an event notification rule. **If no body is provided, all rules for specified queue will be deleted**.
+Deletes the specified event notification rules for an R2 bucket and Cloudflare Queue. Provide ruleIds in the request body to select rules. If no body is provided, all rules for that bucket and queue are deleted.
 
 ##### Security
 
@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -60,7 +60,7 @@ minLength3
 
 queue\_id: string
 
-Queue ID.
+ID of the Cloudflare Queue that receives notifications for matching R2 object events.
 
 maxLength32
 

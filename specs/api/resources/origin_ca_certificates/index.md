@@ -68,9 +68,7 @@ The number of days for which the certificate should be valid.
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The x509 serial number of the Origin CA certificate.
 
 <a href="#">Link to this property</a>
 
@@ -100,9 +98,7 @@ OriginCACertificateDeleteResponse object {id, revoked\_at }
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The x509 serial number of the Origin CA certificate.
 
 <a href="#">Link to this property</a>
 

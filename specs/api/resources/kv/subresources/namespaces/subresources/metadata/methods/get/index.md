@@ -1,5 +1,5 @@
 ---
-title: Read the metadata for a key
+title: Get a key's metadata
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Read the metadata for a key
+# Get a key's metadata
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/metadata/{key\_name}
 
-Returns the metadata associated with the given key in the given namespace. Use URL-encoding to use special characters (for example, `:`, `!`, `%`) in the key name.
+Returns the JSON metadata associated with the specified key in the Workers KV namespace, without retrieving its value. Use URL-encoding for special characters (for example, `:`, `!`, `%`) in the key name when constructing the request URL.
 
 ##### Security
 
@@ -64,7 +64,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -72,7 +72,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -184,7 +184,7 @@ Arbitrary JSON that is associated with a key.
 
 [Link to this property](#)%20kv.namespaces.metadata%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Read the metadata for a key
+### Get a key's metadata
 
 HTTP
 

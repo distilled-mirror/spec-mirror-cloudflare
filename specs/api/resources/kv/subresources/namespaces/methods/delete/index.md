@@ -1,5 +1,5 @@
 ---
-title: Remove a Namespace
+title: Delete a namespace
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Remove a Namespace
+# Delete a namespace
 
 DELETE/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}
 
-Deletes the namespace corresponding to the given ID.
+Deletes the specified Workers KV namespace and its stored key-value pairs from the account.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Identifier.
+ID of the Cloudflare account that owns the Workers KV namespaces.
 
 maxLength32
 
@@ -70,7 +70,7 @@ maxLength32
 
 namespace\_id: string
 
-Namespace identifier tag.
+ID of the Workers KV namespace.
 
 maxLength32
 
@@ -172,7 +172,7 @@ result: optional object {}
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Remove a Namespace
+### Delete a namespace
 
 HTTP
 

@@ -18,19 +18,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Evaluations
 
-##### [List Evaluations](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/list)
+##### [List evaluations (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/list)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations
 
-##### [Fetch a Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/get)
+##### [Get an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/get)
 
 GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
-##### [Create a new Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/create)
+##### [Create an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/create)
 
 POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations
 
-##### [Delete a Evaluation](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/delete)
+##### [Delete an evaluation (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/evaluations/methods/delete)
 
 DELETE/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/evaluations/{id}
 
@@ -220,7 +220,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -244,7 +244,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -510,7 +510,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -534,7 +534,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -800,7 +800,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -824,7 +824,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1090,7 +1090,7 @@ boolean
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 
@@ -1114,7 +1114,7 @@ name: string
 
 gateway\_id: string
 
-gateway id
+Unique identifier of the AI Gateway within the account.
 
 maxLength64
 

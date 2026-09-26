@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Keys
 
-##### [List a Namespace's Keys](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/keys/methods/list)
+##### [List keys in a namespace](https://developers.cloudflare.com/api/resources/kv/subresources/namespaces/subresources/keys/methods/list)
 
 GET/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/keys
 
@@ -88,13 +88,13 @@ KeyBulkUpdateResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 
@@ -112,13 +112,13 @@ KeyBulkDeleteResponse object {successful\_key\_count, unsuccessful\_keys }
 
 successful\_key\_count: optional number
 
-Number of keys successfully updated.
+Number of keys successfully written or deleted by the bulk operation.
 
 <a href="#">Link to this property</a>
 
 unsuccessful\_keys: optional array of string
 
-Name of the keys that failed to be fully updated. They should be retried.
+Names of keys that failed to be written or deleted. Retry the operation for these keys.
 
 <a href="#">Link to this property</a>
 

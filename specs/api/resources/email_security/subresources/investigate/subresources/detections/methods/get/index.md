@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email-security/investigate/{investigate\_id}/detections
 
-Returns detection details such as threat categories and sender information for non-benign messages.
+Returns detection details such as threat categories and sender information for messages with a detection.
 
 ##### Security
 

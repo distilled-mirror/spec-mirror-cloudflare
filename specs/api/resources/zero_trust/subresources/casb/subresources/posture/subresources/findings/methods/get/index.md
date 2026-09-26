@@ -1,5 +1,5 @@
 ---
-title: Get a finding type
+title: Get a posture finding
 ---
 
 [Skip to content](#_top)
@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get a finding type
+# Get a posture finding
 
 GET/accounts/{account\_id}/data-security/posture/findings/{finding\_id}
 
@@ -766,7 +766,7 @@ One of the following:
 
 [Link to this property](#)%20zero_trust.casb.posture.findings%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get a finding type
+### Get a posture finding
 
 HTTP
 

@@ -70,9 +70,7 @@ maxLength32
 
 certificate\_pack\_id: string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 [Link to this property](#)%20ssl.certificate_packs%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20certificate_pack_id%20%3E%20(schema)>)
 
@@ -178,9 +176,7 @@ result: optional object {id }
 
 id: optional string
 
-Identifier.
-
-maxLength32
+The unique identifier for a certificate\_pack.
 
 <a href="#">Link to this property</a>
 
@@ -226,7 +222,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/$
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "3822ff90-ea29-44df-9e55-21300bb9419b"
   }
 }
 ```
@@ -259,7 +255,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/$
   ],
   "success": true,
   "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+    "id": "3822ff90-ea29-44df-9e55-21300bb9419b"
   }
 }
 ```

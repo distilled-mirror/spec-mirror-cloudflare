@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/challenges/widgets
 
-Lists challenge widgets.
+Creates a Turnstile widget for an account.
 
 ##### Security
 
@@ -96,7 +96,7 @@ One of the following:
 
 filter: optional string
 
-Filter widgets by field using case-insensitive substring matching. Format: `field:value`
+Filter widgets by field. The `name` field uses case-insensitive substring matching; `sitekey` uses exact matching. Format: `field:value`
 
 Supported fields:
 
@@ -525,7 +525,7 @@ Secret key for this widget.
 
 sitekey: string
 
-Widget item identifier tag.
+Unique identifier for a Turnstile widget.
 
 maxLength32
 

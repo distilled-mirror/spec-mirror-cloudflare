@@ -1,5 +1,5 @@
 ---
-title: Get Event Notification Rule
+title: Get Event Notification Rules for a Queue
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Event Notification Rule
+# Get Event Notification Rules for a Queue
 
 GET/accounts/{account\_id}/event\_notifications/r2/{bucket\_name}/configuration/queues/{queue\_id}
 
-Get a single event notification rule.
+Gets the event notification rules for the specified R2 bucket and Cloudflare Queue. The response includes the queue’s configuration and its array of rules.
 
 ##### Security
 
@@ -42,7 +42,7 @@ The preferred authorization scheme for interacting with the Cloudflare API. [Cre
 
 account\_id: string
 
-Account ID.
+Cloudflare account ID that owns the R2 resource.
 
 maxLength32
 
@@ -60,7 +60,7 @@ minLength3
 
 queue\_id: string
 
-Queue ID.
+ID of the Cloudflare Queue that receives notifications for matching R2 object events.
 
 maxLength32
 
@@ -258,7 +258,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20r2.buckets.event_notifications%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Event Notification Rule
+### Get Event Notification Rules for a Queue
 
 HTTP
 
