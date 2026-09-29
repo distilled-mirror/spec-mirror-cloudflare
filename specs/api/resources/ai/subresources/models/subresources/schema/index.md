@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Schema
 
-##### [Get Model Schema](https://developers.cloudflare.com/api/resources/ai/subresources/models/subresources/schema/methods/get)
+##### [Get an AI model's input and output schemas](https://developers.cloudflare.com/api/resources/ai/subresources/models/subresources/schema/methods/get)
 
 GET/accounts/{account\_id}/ai/models/schema
 

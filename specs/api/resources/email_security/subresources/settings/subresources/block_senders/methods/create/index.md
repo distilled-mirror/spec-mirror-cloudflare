@@ -74,6 +74,8 @@ maxLength32
 
 is\_regex: boolean
 
+Whether `pattern` is a regular expression instead of a literal value.
+
 [Link to this property](#)%20email_security.settings.block_senders%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20is_regex%20%3E%20(schema)>)
 
 pattern: string
@@ -252,6 +254,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 

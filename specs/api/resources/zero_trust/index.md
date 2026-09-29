@@ -13612,7 +13612,7 @@ The text color on your login page.
 
 <summary>
 
-Organization object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 15 more }
+Organization object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 16 more }
 
 </summary>
 
@@ -13963,6 +13963,12 @@ minimum30
 session_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+
+[Link to this property](#)
+
+strict_service_token_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
 
 [Link to this property](#)
 
@@ -13998,7 +14004,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-OrganizationListResponse object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 16 more }
+OrganizationListResponse object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 17 more }
 
 </summary>
 
@@ -14349,6 +14355,12 @@ minimum30
 session_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+
+[Link to this property](#)
+
+strict_service_token_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
 
 [Link to this property](#)
 

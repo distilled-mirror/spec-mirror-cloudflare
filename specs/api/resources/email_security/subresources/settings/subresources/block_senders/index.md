@@ -78,6 +78,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -178,6 +180,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -280,6 +284,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -380,6 +386,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -528,6 +536,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -627,6 +637,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -725,6 +737,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 

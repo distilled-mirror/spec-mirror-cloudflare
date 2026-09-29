@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/tenants/{tenant\_id}/memberships
 
-List of active members (Cloudflare users) for the Tenant.
+Lists active Cloudflare users with memberships in this tenant.
 
 ##### Security
 

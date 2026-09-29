@@ -1,5 +1,5 @@
 ---
-title: Delete deployment
+title: Delete a Pages deployment
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete deployment
+# Delete a Pages deployment
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}
 
-Delete a deployment.
+Remove a deployment from a Cloudflare Pages project.
 
 ##### Security
 
@@ -72,15 +72,15 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
 deployment\_id: string
 
-Identifier.
+UUID of the Pages deployment, as returned by deployment list or create operations.
 
-maxLength32
+formatuuid
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20deployment_id%20%3E%20(schema)>)
 
@@ -88,7 +88,7 @@ maxLength32
 
 force: optional boolean
 
-Allow deletion of aliased non-production deployments when a normal delete would be rejected.
+Allow deletion when a non-production deployment has an active alias.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20force%20%3E%20(schema)>)
 
@@ -188,7 +188,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete deployment
+### Delete a Pages deployment
 
 HTTP
 

@@ -20,27 +20,27 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Deployments
 
-##### [Get deployments](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/list)
+##### [List Pages deployments](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/list)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-##### [Get deployment info](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/get)
+##### [Get a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}
 
-##### [Create deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/create)
+##### [Create a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/create)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-##### [Delete deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/delete)
+##### [Delete a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/delete)
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}
 
-##### [Retry deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/retry)
+##### [Retry a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/retry)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/retry
 
-##### [Rollback deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/rollback)
+##### [Roll back a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/rollback)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/rollback
 
@@ -54,7 +54,7 @@ DeploymentDeleteResponse = unknown
 
 #### DeploymentsHistoryLogs
 
-##### [Get deployment logs](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/subresources/history/subresources/logs/methods/get)
+##### [Get Pages deployment logs](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/subresources/history/subresources/logs/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/history/logs
 

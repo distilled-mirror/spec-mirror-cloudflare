@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get catalog maintenance configuration
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog/{bucket\_name}/maintenance-configs\` instead.
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/maintenance-configs
 
 Retrieve the maintenance configuration for a specific catalog, including compaction settings and credential status.

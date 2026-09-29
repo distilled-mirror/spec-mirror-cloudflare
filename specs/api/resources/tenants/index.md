@@ -16,7 +16,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Tenants
 
-##### [Get tenant](https://developers.cloudflare.com/api/resources/tenants/methods/get)
+##### [Get tenant details](https://developers.cloudflare.com/api/resources/tenants/methods/get)
 
 GET/tenants/{tenant\_id}
 
@@ -172,7 +172,7 @@ customer\_id: optional string
 
 #### TenantsAccount Types
 
-##### [Get tenant account types](https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list)
+##### [List tenant account types](https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list)
 
 GET/tenants/{tenant\_id}/account\_types
 

@@ -74,15 +74,15 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.deployments.tails%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
 deployment\_id: string
 
-Identifier.
+UUID of the Pages deployment, as returned by deployment list or create operations.
 
-maxLength32
+formatuuid
 
 [Link to this property](#)%20pages.projects.deployments.tails%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20deployment_id%20%3E%20(schema)>)
 

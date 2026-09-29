@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # To Markdown
 
-##### [Convert Files into Markdown](https://developers.cloudflare.com/api/resources/radar/subresources/ai/subresources/to_markdown/methods/create)
+##### [Convert uploaded files to Markdown](https://developers.cloudflare.com/api/resources/radar/subresources/ai/subresources/to_markdown/methods/create)
 
 Deprecated
 

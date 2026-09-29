@@ -74,7 +74,7 @@ maxLength32
 
 script\_name: string
 
-Name of the script, used in URLs and route configuration.
+Name of the script.
 
 [Link to this property](#)%20workers.scripts.secrets%20%3E%20(method)%20bulk_update%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 

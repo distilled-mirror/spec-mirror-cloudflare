@@ -72,9 +72,11 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
-body: array of string
+ids: array of string
 
-[Link to this property](#)%20email_security.investigate.release%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
+Investigate IDs of the messages to release.
+
+[Link to this property](#)%20email_security.investigate.release%20%3E%20(method)%20bulk%20%3E%20(params)%200%20%3E%20(param)%20ids%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -216,9 +218,11 @@ HTTPTypeScriptPythonGoTerraform
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/investigate/release \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '[
-          "4Njp3P0STMz2c02Q-2024-01-05T10:00:00-12345678"
-        ]'
+    -d '{
+          "ids": [
+            "4Njp3P0STMz2c02Q-2024-01-05T10:00:00-12345678"
+          ]
+        }'
 ```
 
 200 example

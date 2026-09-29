@@ -168,7 +168,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
+result: optional object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 17 more }
 
 </summary>
 
@@ -560,6 +560,12 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <a href="#">Link to this property</a>
 
+strict\_service\_token\_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF\_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
+
+<a href="#">Link to this property</a>
+
 trusted\_accounts: optional array of string
 
 The account tags of organizations trusted by this organization for policy and device posture sharing.
@@ -682,6 +688,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "inactivity_threshold_days": 30
     },
     "session_duration": "24h",
+    "strict_service_token_auth": true,
     "trusted_accounts": [
       "023e105f4ecef8ad9ca31a8372d0c353"
     ],
@@ -773,6 +780,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "inactivity_threshold_days": 30
     },
     "session_duration": "24h",
+    "strict_service_token_auth": true,
     "trusted_accounts": [
       "023e105f4ecef8ad9ca31a8372d0c353"
     ],

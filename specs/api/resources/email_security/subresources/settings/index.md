@@ -1195,6 +1195,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -1295,6 +1297,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -1397,6 +1401,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -1497,6 +1503,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -1645,6 +1653,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -1744,6 +1754,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -1842,6 +1854,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -1970,6 +1984,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -1980,6 +1996,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -1988,11 +2006,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2005,6 +2027,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2052,6 +2076,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2062,6 +2088,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2070,11 +2098,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2087,6 +2119,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2134,6 +2168,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2144,6 +2180,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2152,11 +2190,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2169,6 +2211,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2216,6 +2260,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2226,6 +2272,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2234,11 +2282,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2251,6 +2303,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2344,6 +2398,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2354,6 +2410,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2362,11 +2420,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2379,6 +2441,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2424,6 +2488,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2434,6 +2500,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2442,11 +2510,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2459,6 +2531,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2504,6 +2578,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -2514,6 +2590,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -2522,11 +2600,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -2539,6 +2621,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -2803,6 +2887,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -3192,6 +3278,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -3579,6 +3667,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -3968,6 +4058,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -4355,6 +4447,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -4792,6 +4886,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -5179,6 +5275,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -5568,6 +5666,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -5822,6 +5922,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -5832,13 +5934,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -5846,9 +5954,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -5870,6 +5982,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -5879,6 +5993,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -5928,6 +6044,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -5938,13 +6056,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -5952,9 +6076,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -5976,6 +6104,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -5985,6 +6115,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -6034,6 +6166,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -6044,13 +6178,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -6058,9 +6198,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -6082,6 +6226,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -6091,6 +6237,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -6140,6 +6288,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -6150,13 +6300,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -6164,9 +6320,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -6188,6 +6348,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -6197,6 +6359,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -6604,6 +6768,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -6629,6 +6795,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -6678,6 +6846,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -6703,6 +6873,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -6752,6 +6924,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -6777,6 +6951,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -6826,6 +7002,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -6851,6 +7029,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -6946,6 +7126,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -6971,6 +7153,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -7018,6 +7202,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -7043,6 +7229,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -7090,6 +7278,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -7115,6 +7305,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 

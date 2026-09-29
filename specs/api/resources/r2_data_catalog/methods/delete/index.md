@@ -18,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Delete R2 catalog metadata
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/delete\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/delete
 
 Removes the catalog from the control plane without deleting R2 bucket objects. Set force=true to remove catalog namespaces, tables, views, and maintenance metadata. Force deletion is limited to a configured catalog object count.

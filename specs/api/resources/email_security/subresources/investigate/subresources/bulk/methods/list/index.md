@@ -272,6 +272,8 @@ Move object {destination, type, expected\_disposition }
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -462,6 +464,8 @@ Deprecated, use <code>GET /investigate/{investigate_id}/action_log</code> instea
 
 alert\_id: optional string
 
+Alert ID of the detection to filter by.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -470,7 +474,7 @@ alert\_id: optional string
 
 delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
 
-Delivery status of the message.
+Delivery status to filter by.
 
 </summary>
 
@@ -514,9 +518,13 @@ One of the following:
 
 detections\_only: optional boolean
 
+Whether to include only detections in search results.
+
 <a href="#">Link to this property</a>
 
 domain: optional string
+
+Match messages that mention this domain — sender domain, recipient domain, or a domain in a link.
 
 <a href="#">Link to this property</a>
 
@@ -530,6 +538,8 @@ formatdate-time
 
 exact\_subject: optional string
 
+Match messages whose subject line equals this value exactly.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -537,6 +547,8 @@ exact\_subject: optional string
 <summary>
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to filter by.
 
 </summary>
 
@@ -592,6 +604,8 @@ One of the following:
 
 message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
 
+Message actions to filter by.
+
 </summary>
 
 One of the following:
@@ -614,21 +628,31 @@ One of the following:
 
 message\_id: optional string
 
+Message-ID header value to filter by.
+
 <a href="#">Link to this property</a>
 
 metric: optional string
+
+Metric name to filter the search by.
 
 <a href="#">Link to this property</a>
 
 query: optional string
 
+Space-delimited search term. Case-insensitive.
+
 <a href="#">Link to this property</a>
 
 recipient: optional string
 
+Match messages whose recipient is this email address or domain.
+
 <a href="#">Link to this property</a>
 
 sender: optional string
+
+Match messages whose sender is this email address or domain.
 
 <a href="#">Link to this property</a>
 
@@ -648,9 +672,13 @@ formatdate-time
 
 subject: optional string
 
+Match messages whose subject contains these keywords, in any order.
+
 <a href="#">Link to this property</a>
 
 submissions: optional boolean
+
+Whether to search reclassification submissions instead of original messages.
 
 <a href="#">Link to this property</a>
 

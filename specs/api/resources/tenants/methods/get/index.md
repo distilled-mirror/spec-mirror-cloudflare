@@ -1,5 +1,5 @@
 ---
-title: Get tenant
+title: Get tenant details
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get tenant
+# Get tenant details
 
 GET/tenants/{tenant\_id}
 
-Retrieves a Tenant by Tenant ID.
+Retrieves a tenant’s identity, status, metadata, contacts, and organizational units.
 
 ##### Security
 
@@ -240,7 +240,7 @@ success: true
 
 [Link to this property](#)%20tenants%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get tenant
+### Get tenant details
 
 HTTP
 

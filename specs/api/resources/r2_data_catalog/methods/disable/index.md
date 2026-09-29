@@ -18,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Disable R2 catalog
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/disable\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/disable
 
 Disable an R2 bucket as a catalog. This operation deactivates the catalog but preserves existing metadata and data files. The catalog can be re-enabled later.

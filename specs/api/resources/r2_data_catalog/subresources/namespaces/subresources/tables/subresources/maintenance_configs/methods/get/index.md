@@ -24,6 +24,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get table maintenance configuration
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs\` instead.
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 
 Retrieve the maintenance configuration for a specific table, including compaction settings.

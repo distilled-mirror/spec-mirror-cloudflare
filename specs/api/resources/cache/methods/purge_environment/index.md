@@ -20,11 +20,15 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/zones/{zone\_id}/environments/{environment\_id}/purge\_cache
 
-Purge cached content scoped to a specific environment. Supports the same purge types as the zone-level endpoint (purge everything, by URL, by tag, host, or prefix).
+Deletes cached content for one environment of the zone. Content cached for the zone’s other environments, including production, is not affected. Otherwise this works like `POST /zones/{zone_id}/purge_cache`: the next request for purged content is a cache `MISS`, and the request body takes the same fields.
+
+Environments are part of [Version Management](https://developers.cloudflare.com/version-management/). To keep content cached and have Cloudflare revalidate it instead, use `POST /zones/{zone_id}/environments/{environment_id}/invalidate_cache`.
+
+Purging by URL (`files`) does not work for environments that select requests by IP address, country, ASN, or threat score, and fails with error `1136`. Use `tags`, `hosts`, `prefixes`, or `purge_everything` for those environments.
 
 ### Availability and limits
 
-Please refer to [purge cache availability and limits documentation page](https://developers.cloudflare.com/cache/how-to/purge-cache/#availability-and-limits).
+Rate limits and the number of items you can send in one request depend on your plan. See [Purge cache: availability and limits](https://developers.cloudflare.com/cache/how-to/purge-cache/#availability-and-limits).
 
 ##### Security
 
@@ -96,7 +100,7 @@ CachePurgeFlexPurgeByTags object {tags }
 
 tags: optional array of string
 
-For more information on cache tags and purging by tags, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-tags/">purge by cache-tags documentation page</a>.
+Cache tags. Targets all content whose <code>Cache-Tag</code> response header contains at least one of these tags. See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-tags/">Purge cache by cache-tags</a>.
 
 <a href="#">Link to this property</a>
 
@@ -114,7 +118,7 @@ CachePurgeFlexPurgeByHostnames object {hosts }
 
 hosts: optional array of string
 
-For more information purging by hostnames, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-hostname/">purge by hostname documentation page</a>.
+Hostnames, such as <code>www.example.com</code>. Targets all content cached for these hostnames. See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-hostname/">Purge cache by hostname</a>.
 
 <a href="#">Link to this property</a>
 
@@ -132,7 +136,7 @@ CachePurgeFlexPurgeByPrefixes object {prefixes }
 
 prefixes: optional array of string
 
-For more information on purging by prefixes, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge_by_prefix/">purge by prefix documentation page</a>.
+URL prefixes, each a hostname followed by a path, such as <code>www.example.com/blog/</code>. Targets all content whose URL starts with one of these prefixes. Do not include a scheme, query string, or fragment. See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge_by_prefix/">Purge cache by prefix</a>.
 
 <a href="#">Link to this property</a>
 
@@ -150,7 +154,7 @@ CachePurgeEverything object {purge\_everything }
 
 purge\_everything: optional boolean
 
-For more information, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-everything/">purge everything documentation page</a>.
+Set to <code>true</code> to target all cached content in the zone, or in the environment for the environment endpoints. Must be the only field in the request. See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-everything/">Purge everything</a>.
 
 <a href="#">Link to this property</a>
 
@@ -168,7 +172,7 @@ CachePurgeSingleFile object {files }
 
 files: optional array of string
 
-For more information on purging files, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-single-file/">purge by single-file documentation page</a>.
+Full URLs, such as <code>https://www.example.com/css/styles.css</code>. Targets the content cached for each URL. If your cache key includes request headers, send objects with <code>url</code> and <code>headers</code> instead. See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-single-file/">Purge by single-file</a>.
 
 <a href="#">Link to this property</a>
 
@@ -190,15 +194,23 @@ CachePurgeSingleFileWithURLAndHeaders object {files }
 
 files: optional array of object {headers, url }
 
-For more information on purging files with URL and headers, please refer to <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-single-file/">purge by single-file documentation page</a>.
+URLs with the request headers your cache key uses. Use this form when your cache key includes request headers, or the visitor’s device type, country, or language: send the header values each URL was cached with, such as <code>CF-Device-Type</code>, <code>CF-IPCountry</code>, or <code>Accept-Language</code>.
+
+When you send the <code>Origin</code> header, include the scheme and hostname. Include the port unless it is the default for the scheme: 80 for <code>http</code>, 443 for <code>https</code>.
+
+See <a href="https://developers.cloudflare.com/cache/how-to/purge-cache/purge-by-single-file/">Purge by single-file</a>.
 
 </summary>
 
 headers: optional map\[string]
 
+Request headers and the values the content was cached with.
+
 <a href="#">Link to this property</a>
 
 url: optional string
+
+Full URL of the content.
 
 <a href="#">Link to this property</a>
 
@@ -336,40 +348,54 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/environments/$ENVIRONME
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "tags": [
-            "a-cache-tag",
-            "another-cache-tag"
+            "product-1234",
+            "homepage"
           ]
         }'
 ```
 
 200 example
 
+4XX example
+
+4XX example
+
+```
+{
+  "errors": [],
+  "messages": [],
+  "result": {
+    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+  },
+  "success": true
+}
+```
+
 ```
 {
   "errors": [
     {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "code": 1092,
+      "message": "Request cannot contain \"purge_everything\" and any of \"files\", \"tags\", \"hosts\" or \"prefixes\""
     }
   ],
-  "messages": [
+  "messages": [],
+  "result": null,
+  "success": false
+}
+```
+
+```
+{
+  "errors": [
     {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "code": 1134,
+      "message": "Unable to purge, rate limit reached. Please wait and consider throttling your request speed"
     }
   ],
-  "success": true,
-  "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
-  }
+  "messages": [],
+  "result": null,
+  "success": false
 }
 ```
 
@@ -377,31 +403,45 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/environments/$ENVIRONME
 
 200 example
 
+4XX example
+
+4XX example
+
+```
+{
+  "errors": [],
+  "messages": [],
+  "result": {
+    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+  },
+  "success": true
+}
+```
+
 ```
 {
   "errors": [
     {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "code": 1092,
+      "message": "Request cannot contain \"purge_everything\" and any of \"files\", \"tags\", \"hosts\" or \"prefixes\""
     }
   ],
-  "messages": [
+  "messages": [],
+  "result": null,
+  "success": false
+}
+```
+
+```
+{
+  "errors": [
     {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "code": 1134,
+      "message": "Unable to purge, rate limit reached. Please wait and consider throttling your request speed"
     }
   ],
-  "success": true,
-  "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
-  }
+  "messages": [],
+  "result": null,
+  "success": false
 }
 ```

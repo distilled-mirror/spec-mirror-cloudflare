@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/profile
 
-##### [Modify account profile](https://developers.cloudflare.com/api/resources/accounts/subresources/account_profile/methods/update)
+##### [Update account profile](https://developers.cloudflare.com/api/resources/accounts/subresources/account_profile/methods/update)
 
 PUT/accounts/{account\_id}/profile
 

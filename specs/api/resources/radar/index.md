@@ -156,7 +156,7 @@ summary_0: map[string]
 
 [Link to this property](#)
 
-##### [Convert Files into Markdown](/api/resources/radar/subresources/ai/subresources/to_markdown/methods/create)
+##### [Convert uploaded files to Markdown](/api/resources/radar/subresources/ai/subresources/to_markdown/methods/create)
 
 POST/accounts/{account_id}/ai/tomarkdown
 

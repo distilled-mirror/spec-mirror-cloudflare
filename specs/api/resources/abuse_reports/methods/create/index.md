@@ -22,7 +22,7 @@ POST/accounts/{account\_id}/abuse-reports/{report\_param}
 
 Submit an abuse report of a particular type.
 
-Requires the abuse-reports entitlement on the account (Enterprise accounts have it by default; other accounts must request access) and an API token with the `Account > Abuse Reports > Edit` permission. If the account is not entitled, the request is rejected with an HTTP `401` response (see below).
+Requires the abuse-reports entitlement on the account (Enterprise accounts have it by default; other accounts must request access) and an API token with the `Trust and Safety Write` permission. If the account is not entitled, the request is rejected with an HTTP `401` response (see below).
 
 ##### Security
 
@@ -31,6 +31,10 @@ API Token
 The preferred authorization scheme for interacting with the Cloudflare API. [Create a token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/).
 
 **Example:**`Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY`
+
+##### Accepted Permissions (at least one required)
+
+`Trust and Safety Write`
 
 ##### P ath ParametersExpand Collapse
 

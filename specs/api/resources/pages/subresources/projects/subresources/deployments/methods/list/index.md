@@ -1,5 +1,5 @@
 ---
-title: Get deployments
+title: List Pages deployments
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get deployments
+# List Pages deployments
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-Fetch a list of project deployments.
+List the production or preview deployments for a Cloudflare Pages project.
 
 ##### Security
 
@@ -72,7 +72,7 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
@@ -84,7 +84,7 @@ Name of the project.
 
 env: optional "production"or "preview"
 
-What type of deployments to fetch.
+Deployment environment to return. Valid values are <code>production</code> and <code>preview</code>.
 
 </summary>
 
@@ -104,13 +104,13 @@ One of the following:
 
 page: optional number
 
-Which page of deployments to fetch.
+Page number of results to return.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 per\_page: optional number
 
-How many deployments to return per page.
+Number of results to return per page.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
@@ -448,7 +448,7 @@ One of the following:
 
 is\_skipped: boolean
 
-If the deployment has been skipped.
+Whether the deployment was skipped.
 
 <a href="#">Link to this property</a>
 
@@ -518,7 +518,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -546,6 +546,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -570,7 +574,7 @@ Id of the project.
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -798,7 +802,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -826,6 +830,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -844,7 +852,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 3 more
+skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
 
 Why the deployment was skipped.
 
@@ -873,6 +881,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "pages\_to\_workers\_conversion"
+
+<a href="#">Link to this property</a>
+
+"superseded\_queued\_build"
 
 <a href="#">Link to this property</a>
 
@@ -938,7 +950,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get deployments
+### List Pages deployments
 
 HTTP
 

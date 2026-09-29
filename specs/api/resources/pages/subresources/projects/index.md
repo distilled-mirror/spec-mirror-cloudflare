@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Projects
 
-##### [Get projects](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/list)
+##### [List Cloudflare Pages projects](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/list)
 
 GET/accounts/{account\_id}/pages/projects
 
-##### [Get project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/get)
+##### [Get a Cloudflare Pages project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}
 
@@ -30,19 +30,19 @@ GET/accounts/{account\_id}/pages/projects/{project\_name}
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/upload-token
 
-##### [Create project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/create)
+##### [Create a Cloudflare Pages project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/create)
 
 POST/accounts/{account\_id}/pages/projects
 
-##### [Update project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/edit)
+##### [Update a Cloudflare Pages project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/edit)
 
 PATCH/accounts/{account\_id}/pages/projects/{project\_name}
 
-##### [Delete project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/delete)
+##### [Delete a Cloudflare Pages project](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/delete)
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}
 
-##### [Purge build cache](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/purge_build_cache)
+##### [Purge the Pages build cache](https://developers.cloudflare.com/api/resources/pages/subresources/projects/methods/purge_build_cache)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/purge\_build\_cache
 
@@ -296,7 +296,7 @@ One of the following:
 
 is\_skipped: boolean
 
-If the deployment has been skipped.
+Whether the deployment was skipped.
 
 <a href="#">Link to this property</a>
 
@@ -322,7 +322,7 @@ Id of the project.
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -550,7 +550,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -578,6 +578,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -596,7 +600,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 3 more
+skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
 
 Why the deployment was skipped.
 
@@ -625,6 +629,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "pages\_to\_workers\_conversion"
+
+<a href="#">Link to this property</a>
+
+"superseded\_queued\_build"
 
 <a href="#">Link to this property</a>
 
@@ -1544,7 +1552,7 @@ Most recent deployment of the project.
 
 name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -1856,7 +1864,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -1881,6 +1889,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "canceled"
+
+<a href="#">Link to this property</a>
+
+"skipped"
 
 <a href="#">Link to this property</a>
 
@@ -1920,27 +1932,27 @@ ProjectPurgeBuildCacheResponse = unknown
 
 #### ProjectsDeployments
 
-##### [Get deployments](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/list)
+##### [List Pages deployments](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/list)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-##### [Get deployment info](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/get)
+##### [Get a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}
 
-##### [Create deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/create)
+##### [Create a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/create)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-##### [Delete deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/delete)
+##### [Delete a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/delete)
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}
 
-##### [Retry deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/retry)
+##### [Retry a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/retry)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/retry
 
-##### [Rollback deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/rollback)
+##### [Roll back a Pages deployment](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/methods/rollback)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/rollback
 
@@ -1954,7 +1966,7 @@ DeploymentDeleteResponse = unknown
 
 #### ProjectsDeploymentsHistoryLogs
 
-##### [Get deployment logs](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/subresources/history/subresources/logs/methods/get)
+##### [Get Pages deployment logs](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/deployments/subresources/history/subresources/logs/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/deployments/{deployment\_id}/history/logs
 
@@ -2044,23 +2056,23 @@ TailDeleteResponse = unknown
 
 #### ProjectsDomains
 
-##### [Get domains](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/list)
+##### [List Pages custom domains](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/list)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/domains
 
-##### [Get domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/get)
+##### [Get a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
-##### [Add domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create)
+##### [Add a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/domains
 
-##### [Patch domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/edit)
+##### [Retry custom domain validation](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/edit)
 
 PATCH/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
-##### [Delete domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/delete)
+##### [Delete a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/delete)
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
@@ -2110,7 +2122,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -2334,7 +2346,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -2558,7 +2570,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -2782,7 +2794,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 

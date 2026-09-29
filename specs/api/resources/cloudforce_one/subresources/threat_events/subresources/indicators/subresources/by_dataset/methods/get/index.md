@@ -98,6 +98,8 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 relatedEvents: optional array of object {datasetId, eventId, eventDate }
 
+Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
+
 </summary>
 
 datasetId: string
@@ -117,6 +119,12 @@ ISO 8601 date of the related event. Null for legacy relationships created before
 </details>
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators.by_dataset%20%3E%20(model)%20by_dataset_get_response%20%3E%20(schema)%20%3E%20(property)%20relatedEvents>)
+
+relatedEventsHasMore: optional boolean
+
+True when this indicator appears in more events than `relatedEvents` contains because `relatedEventsLimit` capped the list. Pass `relatedEventsLimit=-1` to retrieve every related event.
+
+[Link to this property](#)%20cloudforce_one.threat_events.indicators.by_dataset%20%3E%20(model)%20by_dataset_get_response%20%3E%20(schema)%20%3E%20(property)%20relatedEventsHasMore>)
 
 <details>
 
@@ -182,6 +190,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
       "eventDate": "2024-06-15T00:00:00Z"
     }
   ],
+  "relatedEventsHasMore": true,
   "tags": [
     {
       "categoryId": "categoryId",
@@ -213,6 +222,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
       "eventDate": "2024-06-15T00:00:00Z"
     }
   ],
+  "relatedEventsHasMore": true,
   "tags": [
     {
       "categoryId": "categoryId",

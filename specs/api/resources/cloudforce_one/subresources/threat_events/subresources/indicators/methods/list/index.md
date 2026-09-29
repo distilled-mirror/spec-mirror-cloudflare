@@ -148,7 +148,7 @@ Filter by related event IDs
 
 relatedEventsLimit: optional number
 
-Limit the number of related events returned per indicator. Default: 2. Set to 0 for none, -1 for all events.
+Limit the number of related events returned per indicator. Default: 2. Set to 0 for none, -1 for all events. For JSON responses, when the limit hides events, the indicator carries `relatedEventsHasMore: true` and the response includes an advisory message — the cap is never applied silently. STIX and TAXII representations do not include related-event data.
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20relatedEventsLimit%20%3E%20(schema)>)
 
@@ -682,7 +682,7 @@ indicators: object {items, type }
 
 <summary>
 
-items: object {createdAt, indicatorType, sources, 7 more }
+items: object {createdAt, indicatorType, sources, 8 more }
 
 </summary>
 
@@ -756,6 +756,8 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 relatedEvents: optional array of object {datasetId, eventId, eventDate }
 
+Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
+
 </summary>
 
 datasetId: string
@@ -773,6 +775,12 @@ ISO 8601 date of the related event. Null for legacy relationships created before
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+relatedEventsHasMore: optional boolean
+
+True when this indicator appears in more events than <code>relatedEvents</code> contains because <code>relatedEventsLimit</code> capped the list. Pass <code>relatedEventsLimit=-1</code> to retrieve every related event.
 
 <a href="#">Link to this property</a>
 
@@ -1069,6 +1077,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
             "eventDate": "2024-06-15T00:00:00Z"
           }
         ],
+        "relatedEventsHasMore": true,
         "tags": [
           {
             "categoryId": "categoryId",
@@ -1182,6 +1191,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
             "eventDate": "2024-06-15T00:00:00Z"
           }
         ],
+        "relatedEventsHasMore": true,
         "tags": [
           {
             "categoryId": "categoryId",

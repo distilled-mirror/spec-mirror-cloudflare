@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email-security/settings/content\_policies/batch
 
-Executes multiple operations atomically. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
+Executes multiple content policy operations atomically: delete, partially update, replace, and create content policies in a single request. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
 
 ##### Security
 
@@ -78,6 +78,8 @@ maxLength32
 
 deletes: array of object {id }
 
+IDs of the content policies to delete.
+
 </summary>
 
 id: string
@@ -98,6 +100,8 @@ formatuuid
 
 patches: array of object {id, created\_at, enabled, 5 more }
 
+Partial updates to apply — each entry carries the policy’s ID and only the fields to change.
+
 </summary>
 
 id: string
@@ -116,6 +120,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -126,6 +132,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -134,11 +142,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -151,6 +163,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -178,13 +192,19 @@ One of the following:
 
 posts: array of object {enabled, name, pattern, 5 more }
 
+Content policies to create.
+
 </summary>
 
 enabled: boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 name: string
+
+Human-readable name of the policy.
 
 maxLength256
 
@@ -193,6 +213,8 @@ minLength1
 <a href="#">Link to this property</a>
 
 pattern: string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -205,6 +227,8 @@ minLength1
 <summary>
 
 targets: array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -244,6 +268,8 @@ formatdate-time
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
@@ -258,6 +284,8 @@ maxLength4096
 
 puts: array of object {id, enabled, name, 5 more }
 
+Full replacements to apply — each entry carries the policy’s ID and every field of its new value.
+
 </summary>
 
 id: string
@@ -270,9 +298,13 @@ formatuuid
 
 enabled: boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 name: string
+
+Human-readable name of the policy.
 
 maxLength256
 
@@ -281,6 +313,8 @@ minLength1
 <a href="#">Link to this property</a>
 
 pattern: string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -293,6 +327,8 @@ minLength1
 <summary>
 
 targets: array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -323,6 +359,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 notes: optional string
+
+Optional note describing the purpose of the policy.
 
 maxLength4096
 
@@ -476,6 +514,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -486,6 +526,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -494,11 +536,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -511,6 +557,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -556,6 +604,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -566,6 +616,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -574,11 +626,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -591,6 +647,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -636,6 +694,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -646,6 +706,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -654,11 +716,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -671,6 +737,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 

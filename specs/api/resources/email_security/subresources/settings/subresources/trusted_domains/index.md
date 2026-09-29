@@ -84,6 +84,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -109,6 +111,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -158,6 +162,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -183,6 +189,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -232,6 +240,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -257,6 +267,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -306,6 +318,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -331,6 +345,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -426,6 +442,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -451,6 +469,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -498,6 +518,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -523,6 +545,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -570,6 +594,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -595,6 +621,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 

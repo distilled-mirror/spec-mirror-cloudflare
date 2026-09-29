@@ -1,5 +1,5 @@
 ---
-title: Get organization accounts
+title: List organization accounts
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get organization accounts
+# List organization accounts
 
 GET/organizations/{organization\_id}/accounts
 
-Retrieve a list of accounts that belong to a specific organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Retrieve the accounts immediately attached to a specific organization. Accounts attached to sub-organizations are not included. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
 
 ##### Security
 
@@ -338,7 +338,7 @@ success: true
 
 [Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get organization accounts
+### List organization accounts
 
 HTTP
 

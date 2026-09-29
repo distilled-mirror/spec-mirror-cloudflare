@@ -78,7 +78,7 @@ Filter by alert ID.
 
 cursor: optional string
 
-Opaque cursor from a previous response’s `result_info.next` or `result_info.previous` for cursor-based pagination. When omitted, the first page is returned.
+Pagination cursor from the previous response’s `result_info`.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
@@ -226,7 +226,7 @@ Filter by the RFC 5322 Message-ID header.
 
 metric: optional string
 
-Metric to aggregate the results by, as used by the Email Security dashboard.
+Metric to aggregate the results by.
 
 [Link to this property](#)%20email_security.investigate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20metric%20%3E%20(schema)>)
 
@@ -774,6 +774,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -847,6 +849,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 

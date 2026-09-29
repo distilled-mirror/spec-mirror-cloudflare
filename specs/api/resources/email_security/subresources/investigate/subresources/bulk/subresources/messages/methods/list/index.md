@@ -74,6 +74,8 @@ maxLength32
 
 job\_id: string
 
+Bulk action job identifier.
+
 formatuuid
 
 [Link to this property](#)%20email_security.investigate.bulk.messages%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20job_id%20%3E%20(schema)>)
@@ -259,6 +261,8 @@ client\_recipient: string
 <summary>
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+
+The mailbox folder to move messages to.
 
 </summary>
 
@@ -870,6 +874,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -943,6 +949,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 

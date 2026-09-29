@@ -88,6 +88,38 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
+<details>
+
+<summary>
+
+health\_check\_rate: optional "low"or "mid"or "high"
+
+Magic WAN health check rate for tunnels created on this link.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"mid"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20health_check_rate%20%3E%20(schema)>)
+
+load\_balance\_inner\_flows: optional boolean
+
+[Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20load_balance_inner_flows%20%3E%20(schema)>)
+
 name: optional string
 
 [Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
@@ -228,7 +260,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, name, 5 more }
+result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, load\_balance\_inner\_flows, 6 more }
 
 </summary>
 
@@ -265,6 +297,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+load\_balance\_inner\_flows: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -350,6 +386,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
+          "health_check_rate": "low",
           "physport": 1,
           "vlan_tag": 42
         }'
@@ -382,6 +419,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
   "result": {
     "id": "023e105f4ecef8ad9ca31a8372d0c353",
     "health_check_rate": "low",
+    "load_balance_inner_flows": true,
     "name": "name",
     "physport": 1,
     "priority": 0,
@@ -426,6 +464,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
   "result": {
     "id": "023e105f4ecef8ad9ca31a8372d0c353",
     "health_check_rate": "low",
+    "load_balance_inner_flows": true,
     "name": "name",
     "physport": 1,
     "priority": 0,

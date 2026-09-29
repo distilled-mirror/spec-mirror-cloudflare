@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Organization Accounts
 
-##### [Get organization accounts](https://developers.cloudflare.com/api/resources/organizations/subresources/organization_accounts/methods/get)
+##### [List organization accounts](https://developers.cloudflare.com/api/resources/organizations/subresources/organization_accounts/methods/get)
 
 GET/organizations/{organization\_id}/accounts
 

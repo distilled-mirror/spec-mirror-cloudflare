@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List namespaces in catalog](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces
 
 ##### ModelsExpand Collapse
@@ -103,6 +105,8 @@ Use this opaque token to fetch the next page of results. A null or absent value 
 #### NamespacesTables
 
 ##### [List tables in namespace](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/methods/list)
+
+Deprecated
 
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables
 
@@ -240,9 +244,13 @@ Contains UUIDs for each table when return\_uuids is true. The order corresponds 
 
 ##### [Get table maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 
 ##### [Update table maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/update)
+
+Deprecated
 
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 

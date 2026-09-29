@@ -155,26 +155,8 @@ curl https://api.cloudflare.com/client/v4/pages/assets/check-missing \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "result": [
     "b026324c6904b2a9cb4b88d6d61c81d1"
   ],
@@ -188,26 +170,8 @@ curl https://api.cloudflare.com/client/v4/pages/assets/check-missing \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "result": [
     "b026324c6904b2a9cb4b88d6d61c81d1"
   ],

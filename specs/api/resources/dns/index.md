@@ -19844,9 +19844,19 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object { type, ns_set }
+nameservers: object { type } or object { type, ns_set } or object { nameserver_set_id, type }
 
-Settings determining the nameservers through which the zone should be available.
+Controls the nameservers through which the zone is available.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCloudflare object { type }
 
 </summary>
 
@@ -19854,9 +19864,9 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard" or "cloudflare.advanced" or "custom.account" or 2 more
+type: "cloudflare.standard" or "cloudflare.advanced"
 
-Nameserver type
+Nameserver type.
 
 </summary>
 
@@ -19869,6 +19879,34 @@ One of the following:
 "cloudflare.advanced"
 
 [Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomExisting object { type, ns_set }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "custom.account" or "custom.tenant" or "custom.zone"
+
+Nameserver type.
+
+</summary>
+
+One of the following:
 
 "custom.account"
 
@@ -19888,11 +19926,43 @@ One of the following:
 
 ns_set: optional number
 
-Configured nameserver set to be used for this zone
+Configured nameserver set number to use for this zone.
 
 maximum5
 
 minimum1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomSet object { nameserver_set_id, type }
+
+</summary>
+
+nameserver_set_id: string
+
+Identifier of the account-owned Custom Nameserver Set to use for this zone.
+
+maxLength32
+
+minLength32
+
+[Link to this property](#)
+
+type: "custom"
+
+Nameserver type.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -20076,9 +20146,19 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object { type, ns_set }
+nameservers: object { type } or object { type, ns_set } or object { nameserver_set_id, type }
 
-Settings determining the nameservers through which the zone should be available.
+Controls the nameservers through which the zone is available.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCloudflare object { type }
 
 </summary>
 
@@ -20086,9 +20166,9 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard" or "cloudflare.advanced" or "custom.account" or 2 more
+type: "cloudflare.standard" or "cloudflare.advanced"
 
-Nameserver type
+Nameserver type.
 
 </summary>
 
@@ -20101,6 +20181,34 @@ One of the following:
 "cloudflare.advanced"
 
 [Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomExisting object { type, ns_set }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "custom.account" or "custom.tenant" or "custom.zone"
+
+Nameserver type.
+
+</summary>
+
+One of the following:
 
 "custom.account"
 
@@ -20120,11 +20228,43 @@ One of the following:
 
 ns_set: optional number
 
-Configured nameserver set to be used for this zone
+Configured nameserver set number to use for this zone.
 
 maximum5
 
 minimum1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomSet object { nameserver_set_id, type }
+
+</summary>
+
+nameserver_set_id: string
+
+Identifier of the account-owned Custom Nameserver Set to use for this zone.
+
+maxLength32
+
+minLength32
+
+[Link to this property](#)
+
+type: "custom"
+
+Nameserver type.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

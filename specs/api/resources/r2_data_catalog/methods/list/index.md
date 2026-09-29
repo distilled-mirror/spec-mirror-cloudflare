@@ -18,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List R2 catalogs
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog\` instead.
+
 GET/accounts/{account\_id}/r2-catalog
 
 Returns a list of R2 buckets that have been enabled as Apache Iceberg catalogs for the specified account. Each catalog represents an R2 bucket configured to store Iceberg metadata and data files.

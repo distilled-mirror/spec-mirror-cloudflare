@@ -216,7 +216,7 @@ array of string
 
 <summary>
 
-indicators: array of object {createdAt, indicatorType, updatedAt, 6 more }
+indicators: array of object {createdAt, indicatorType, updatedAt, 7 more }
 
 </summary>
 
@@ -256,6 +256,8 @@ The dataset ID this indicator belongs to. Included in list responses.
 
 relatedEvents: optional array of object {datasetId, eventId, eventDate }
 
+Related events, capped by <code>relatedEventsLimit</code> (default 2). Check <code>relatedEventsHasMore</code> to detect a capped list; pass <code>relatedEventsLimit=-1</code> to retrieve all of them.
+
 </summary>
 
 datasetId: string
@@ -273,6 +275,12 @@ ISO 8601 date of the related event. Null for legacy relationships created before
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+relatedEventsHasMore: optional boolean
+
+True when this indicator appears in more events than <code>relatedEvents</code> contains because <code>relatedEventsLimit</code> capped the list. Pass <code>relatedEventsLimit=-1</code> to retrieve every related event.
 
 <a href="#">Link to this property</a>
 
@@ -374,6 +382,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
           "eventDate": "2024-06-15T00:00:00Z"
         }
       ],
+      "relatedEventsHasMore": true,
       "tags": [
         {
           "categoryId": "categoryId",
@@ -415,6 +424,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
           "eventDate": "2024-06-15T00:00:00Z"
         }
       ],
+      "relatedEventsHasMore": true,
       "tags": [
         {
           "categoryId": "categoryId",

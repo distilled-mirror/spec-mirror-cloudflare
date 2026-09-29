@@ -1,5 +1,5 @@
 ---
-title: Delete domain
+title: Delete a Pages custom domain
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete domain
+# Delete a Pages custom domain
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
-Delete a Pages project’s domain.
+Remove a custom domain from a Cloudflare Pages project.
 
 ##### Security
 
@@ -72,13 +72,13 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
 domain\_name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as `example.com`.
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20domain_name%20%3E%20(schema)>)
 
@@ -178,7 +178,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete domain
+### Delete a Pages custom domain
 
 HTTP
 

@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/create
 
-Creates a new tag to be used accross threat events.
+Creates an account-owned tag for threat events and returns its complete owner projection.
 
 ##### Security
 
@@ -438,7 +438,7 @@ description: optional string
 
 internalAliases: optional array of object {value, confidence, tlp }
 
-Internal structured aliases ({ value, confidence 1-10, tlp }). CFONE-only: never returned to non-CFONE accounts.
+Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
 </summary>
 
@@ -1378,7 +1378,7 @@ One of the following:
 
 internalAliases: optional array of object {value, confidence, tlp }
 
-Internal structured aliases ({ value, confidence 1-10, tlp }). CFONE-only: never returned to non-CFONE accounts.
+Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
 </summary>
 

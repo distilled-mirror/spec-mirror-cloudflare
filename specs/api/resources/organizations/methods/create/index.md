@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/organizations
 
-Create a new organization for a user. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Create a new organization for a user. Sub-organization creation availability depends on the organization’s capabilities. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
 
 ##### Security
 

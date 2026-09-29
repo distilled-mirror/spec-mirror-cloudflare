@@ -88,6 +88,12 @@ description: optional string
 
 [Link to this property](#)%20magic_transit.sites%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20description%20%3E%20(schema)>)
 
+ha\_mode: optional boolean
+
+Site high availability mode. If set to true, the site can have two connectors and runs in high availability mode.
+
+[Link to this property](#)%20magic_transit.sites%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20ha_mode%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -305,6 +311,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "connector_id": "ac60d3d0435248289d446cedd870bcf4",
+          "ha_mode": true,
           "name": "site_1",
           "secondary_connector_id": "8d67040d3835dbcf46ce29da440dc482"
         }'

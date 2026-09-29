@@ -64,6 +64,8 @@ client\_recipient: string
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -674,6 +676,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -747,6 +751,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 

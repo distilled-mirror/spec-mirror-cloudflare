@@ -7478,7 +7478,7 @@ formatdate-time
 
 script_name: string
 
-Name of the script, used in URLs and route configuration.
+Name of the script.
 
 [Link to this property](#)
 

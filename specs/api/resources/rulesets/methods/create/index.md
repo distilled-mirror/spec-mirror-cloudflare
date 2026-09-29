@@ -80,11 +80,17 @@ Validates the request without persisting changes when set to `true`. Responses t
 
 ##### Body ParametersJSONExpand Collapse
 
+description: optional string
+
+An informative description of the ruleset.
+
+[Link to this property](#)%20rulesets%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20description%20%3E%20(schema)>)
+
 <details>
 
 <summary>
 
-kind: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20kind%20%3E%20(schema)">Kind</a>
+kind: optional <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20kind%20%3E%20(schema)">Kind</a>
 
 The kind of the ruleset.
 
@@ -112,7 +118,7 @@ One of the following:
 
 [Link to this property](#)%20rulesets%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20kind%20%3E%20(schema)>)
 
-name: string
+name: optional string
 
 The human-readable name of the ruleset.
 
@@ -124,7 +130,7 @@ minLength1
 
 <summary>
 
-phase: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20phase%20%3E%20(schema)">Phase</a>
+phase: optional <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20phase%20%3E%20(schema)">Phase</a>
 
 The phase of the ruleset.
 
@@ -231,12 +237,6 @@ One of the following:
 </details>
 
 [Link to this property](#)%20rulesets%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20phase%20%3E%20(schema)>)
-
-description: optional string
-
-An informative description of the ruleset.
-
-[Link to this property](#)%20rulesets%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20description%20%3E%20(schema)>)
 
 <details>
 
@@ -11953,10 +11953,10 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
+          "description": "A description for my ruleset.",
           "kind": "root",
           "name": "My ruleset",
-          "phase": "http_request_firewall_custom",
-          "description": "A description for my ruleset."
+          "phase": "http_request_firewall_custom"
         }'
 ```
 

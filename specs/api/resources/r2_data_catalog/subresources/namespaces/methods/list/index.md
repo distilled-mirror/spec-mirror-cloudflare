@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List namespaces in catalog
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog/{bucket\_name}/namespaces\` instead.
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces
 
 Returns a list of namespaces in the specified R2 catalog. Supports hierarchical filtering and pagination for efficient traversal of large namespace hierarchies.

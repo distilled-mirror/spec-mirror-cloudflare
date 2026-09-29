@@ -1,5 +1,5 @@
 ---
-title: Purge build cache
+title: Purge the Pages build cache
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Purge build cache
+# Purge the Pages build cache
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/purge\_build\_cache
 
-Purge all cached build artifacts for a Pages project
+Remove cached build artifacts so subsequent builds run without the project’s existing build cache.
 
 ##### Security
 
@@ -70,7 +70,7 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects%20%3E%20(method)%20purge_build_cache%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
@@ -170,7 +170,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20pages.projects%20%3E%20(method)%20purge_build_cache%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Purge build cache
+### Purge the Pages build cache
 
 HTTP
 

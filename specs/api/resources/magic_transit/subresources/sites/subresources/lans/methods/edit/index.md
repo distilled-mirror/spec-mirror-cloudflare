@@ -92,6 +92,12 @@ bond\_id: optional number
 
 [Link to this property](#)%20magic_transit.sites.lans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20bond_id%20%3E%20(schema)>)
 
+ha\_link: optional boolean
+
+mark true to use this LAN for HA probing. only works for site with HA turned on. only one LAN can be set as the ha\_link.
+
+[Link to this property](#)%20magic_transit.sites.lans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20ha_link%20%3E%20(schema)>)
+
 is\_breakout: optional boolean
 
 mark true to use this LAN for source-based breakout traffic

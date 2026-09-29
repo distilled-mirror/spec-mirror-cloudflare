@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List tables in namespace
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog/{bucket\_name}/namespaces/{namespace}/tables\` instead.
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables
 
 Returns a list of tables in the specified namespace within an R2 catalog. Supports pagination for efficient traversal of large table collections.

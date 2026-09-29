@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Store catalog credentials](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/credentials/methods/create)
 
+Deprecated
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/credential
 
 ##### ModelsExpand Collapse

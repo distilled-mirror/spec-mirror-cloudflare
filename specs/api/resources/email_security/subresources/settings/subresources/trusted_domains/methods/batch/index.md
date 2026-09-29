@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email-security/settings/trusted\_domains/batch
 
-Executes multiple operations atomically. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
+Executes multiple trusted domain operations atomically: delete, partially update, replace, and create trusted domain patterns in a single request. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
 
 ##### Security
 
@@ -78,6 +78,8 @@ maxLength32
 
 deletes: array of object {id }
 
+IDs of the trusted domain patterns to delete.
+
 </summary>
 
 id: string
@@ -97,6 +99,8 @@ formatuuid
 <summary>
 
 patches: array of object {id, comments, created\_at, 6 more }
+
+Partial updates to apply — each entry carries the pattern’s ID and only the fields to change.
 
 </summary>
 
@@ -128,6 +132,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -154,6 +160,8 @@ formatdate-time
 
 pattern: optional string
 
+The domain pattern to trust, e.g. <code>example.com</code>.
+
 maxLength1024
 
 minLength1
@@ -170,6 +178,8 @@ minLength1
 
 posts: array of object {is\_recent, is\_regex, is\_similarity, 6 more }
 
+Trusted domain patterns to create.
+
 </summary>
 
 is\_recent: boolean
@@ -180,6 +190,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: boolean
@@ -189,6 +201,8 @@ Select for partner or other approved domains that have similar spelling to your 
 <a href="#">Link to this property</a>
 
 pattern: string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -242,6 +256,8 @@ formatdate-time
 
 puts: array of object {id, is\_recent, is\_regex, 6 more }
 
+Full replacements to apply — each entry carries the pattern’s ID and every field of its new value.
+
 </summary>
 
 id: string
@@ -260,6 +276,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: boolean
@@ -269,6 +287,8 @@ Select for partner or other approved domains that have similar spelling to your 
 <a href="#">Link to this property</a>
 
 pattern: string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -464,6 +484,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -489,6 +511,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -536,6 +560,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -561,6 +587,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -608,6 +636,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -633,6 +663,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 

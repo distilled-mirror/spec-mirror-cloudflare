@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
-Executes multiple operations atomically. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
+Executes multiple allow policy operations atomically: delete, partially update, replace, and create allow policies in a single request. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
 
 ##### Security
 
@@ -78,6 +78,8 @@ maxLength32
 
 deletes: array of object {id }
 
+IDs of the allow policies to delete.
+
 </summary>
 
 id: string
@@ -97,6 +99,8 @@ formatuuid
 <summary>
 
 patches: array of object {id, created\_at, last\_modified, 12 more }
+
+Partial updates to apply — each entry carries the policy’s ID and only the fields to change.
 
 </summary>
 
@@ -245,6 +249,8 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 posts: array of object {is\_acceptable\_sender, is\_exempt\_recipient, is\_regex, 12 more }
 
+Allow policies to create.
+
 </summary>
 
 is\_acceptable\_sender: boolean
@@ -391,6 +397,8 @@ formatdate-time
 <summary>
 
 puts: array of object {id, created\_at, last\_modified, 12 more }
+
+Full replacements to apply — each entry carries the policy’s ID and every field of its new value.
 
 </summary>
 

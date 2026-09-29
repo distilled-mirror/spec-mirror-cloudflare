@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Account Types
 
-##### [Get tenant account types](https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list)
+##### [List tenant account types](https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list)
 
 GET/tenants/{tenant\_id}/account\_types
 

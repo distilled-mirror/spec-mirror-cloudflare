@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/profile
 
-Retrieves the profile information for a specific Cloudflare account, including organization details, settings, and metadata. This endpoint is commonly used to verify account access and retrieve account-level configuration.
+Retrieves the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record. Profiles can be shared across accounts and organizations. Only available to members of an organization that contains the account.
 
 ##### Security
 

@@ -196,7 +196,7 @@ minimum1
 
 per\_page: optional number
 
-Number of DNS views per page.
+Number of results per page.
 
 maximum5000000
 

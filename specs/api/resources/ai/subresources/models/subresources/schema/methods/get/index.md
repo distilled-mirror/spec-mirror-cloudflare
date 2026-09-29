@@ -1,5 +1,5 @@
 ---
-title: Get Model Schema
+title: Get an AI model's input and output schemas
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Model Schema
+# Get an AI model's input and output schemas
 
 GET/accounts/{account\_id}/ai/models/schema
 
-Retrieves the input and output JSON schema definition for a Workers AI model.
+Retrieves the input and output JSON Schema definitions for an AI model. Use these definitions to determine the model-specific request fields and response format.
 
 ##### Security
 
@@ -64,13 +64,15 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
+Cloudflare account ID used for this AI model request.
+
 [Link to this property](#)%20ai.models.schema%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse
 
 model: string
 
-Model Name
+AI model identifier, including its namespace and model name.
 
 [Link to this property](#)%20ai.models.schema%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20model%20%3E%20(schema)>)
 
@@ -140,7 +142,7 @@ success: boolean
 
 [Link to this property](#)%20ai.models.schema%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get Model Schema
+### Get an AI model's input and output schemas
 
 HTTP
 

@@ -30,7 +30,7 @@ GET/user/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, name, scopes }
+PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -105,6 +105,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+is\_selectable: optional boolean
+
+Whether the caller can select this permission group when creating a token.
 
 <a href="#">Link to this property</a>
 

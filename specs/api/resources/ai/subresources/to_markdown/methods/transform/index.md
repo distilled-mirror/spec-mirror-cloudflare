@@ -1,5 +1,5 @@
 ---
-title: Convert Files into Markdown
+title: Convert uploaded files to Markdown
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Convert Files into Markdown
+# Convert uploaded files to Markdown
 
 POST/accounts/{account\_id}/ai/tomarkdown
 
-Converts uploaded files into Markdown format using Workers AI.
+Converts files uploaded as multipart form data into Markdown using Workers AI. Returns a conversion result for each file. Use the supported-formats endpoint to check accepted file types.
 
 ##### Security
 
@@ -62,6 +62,8 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
+Cloudflare account ID used for this AI model request.
+
 [Link to this property](#)%20ai.to_markdown%20%3E%20(method)%20transform%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersForm DataExpand Collapse
@@ -75,6 +77,8 @@ file: object {files }
 </summary>
 
 files: array of string
+
+Files to convert, supplied as multipart file uploads.
 
 <a href="#">Link to this property</a>
 
@@ -120,7 +124,7 @@ success: boolean
 
 [Link to this property](#)%20ai.to_markdown%20%3E%20(method)%20transform%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Convert Files into Markdown
+### Convert uploaded files to Markdown
 
 HTTP
 

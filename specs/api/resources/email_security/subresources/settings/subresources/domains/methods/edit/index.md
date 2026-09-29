@@ -86,6 +86,8 @@ formatuuid
 
 allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
 
+Delivery modes to onboard the domain through.
+
 </summary>
 
 One of the following:
@@ -119,6 +121,8 @@ One of the following:
 <summary>
 
 drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to drop instead of delivering, e.g. <code>["MALICIOUS", "SPAM"]</code>.
 
 </summary>
 
@@ -174,6 +178,8 @@ One of the following:
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -192,15 +198,21 @@ One of the following:
 
 integration\_id: optional string
 
+Identifier of the CASB integration that authorizes this domain. The integration also enables API scanning, post-delivery actions, and directory sync.
+
 formatuuid
 
 [Link to this property](#)%20email_security.settings.domains%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20integration_id%20%3E%20(schema)>)
 
 ip\_restrictions: optional array of string
 
+Source IP ranges mail is accepted from. Any other source is rejected.
+
 [Link to this property](#)%20email_security.settings.domains%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20ip_restrictions%20%3E%20(schema)>)
 
 lookback\_hops: optional number
+
+Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
 maximum20
 
@@ -213,6 +225,8 @@ minimum1
 <summary>
 
 regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+
+Regions that process messages for this domain, e.g. <code>["GLOBAL"]</code> or <code>["US"]</code>.
 
 </summary>
 
@@ -244,13 +258,19 @@ One of the following:
 
 require\_tls\_inbound: optional boolean
 
+Require TLS on inbound connections.
+
 [Link to this property](#)%20email_security.settings.domains%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20require_tls_inbound%20%3E%20(schema)>)
 
 require\_tls\_outbound: optional boolean
 
+Require TLS on outbound connections.
+
 [Link to this property](#)%20email_security.settings.domains%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20require_tls_outbound%20%3E%20(schema)>)
 
 transport: optional string
+
+The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. `mx.example.com`).
 
 [Link to this property](#)%20email_security.settings.domains%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20transport%20%3E%20(schema)>)
 
@@ -547,6 +567,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 

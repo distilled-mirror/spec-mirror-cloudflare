@@ -570,6 +570,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -643,6 +645,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 

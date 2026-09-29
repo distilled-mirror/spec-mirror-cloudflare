@@ -88,6 +88,24 @@ formatdate
 
 [Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20from_date%20%3E%20(schema)>)
 
+page: optional number
+
+Current page within paginated list of results.
+
+minimum1
+
+[Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+The number of results per page. Maximum value is 1000.
+
+maximum1000
+
+minimum1
+
+[Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 start: optional string
 
 Start of the time range (RFC3339). Takes precedence over from\_date.
@@ -211,6 +229,8 @@ content: string
 <summary>
 
 disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 
@@ -360,6 +380,42 @@ Whether the API call was successful.
 
 [Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
+<details>
+
+<summary>
+
+result\_info: optional object {count, page, per\_page, total\_count }
+
+</summary>
+
+count: optional number
+
+Total number of results for the requested service.
+
+<a href="#">Link to this property</a>
+
+page: optional number
+
+Current page within paginated list of results.
+
+<a href="#">Link to this property</a>
+
+per\_page: optional number
+
+Number of results per page of results.
+
+<a href="#">Link to this property</a>
+
+total\_count: optional number
+
+Total results available without any search parameters.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20email_security.phishguard.reports%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
+
 ### List PhishGuard reports
 
 HTTP
@@ -422,7 +478,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/ph
       "updated_at": "2019-12-27T18:11:19.117Z"
     }
   ],
-  "success": true
+  "success": true,
+  "result_info": {
+    "count": 1,
+    "page": 1,
+    "per_page": 20,
+    "total_count": 2000
+  }
 }
 ```
 
@@ -479,6 +541,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/ph
       "updated_at": "2019-12-27T18:11:19.117Z"
     }
   ],
-  "success": true
+  "success": true,
+  "result_info": {
+    "count": 1,
+    "page": 1,
+    "per_page": 20,
+    "total_count": 2000
+  }
 }
 ```

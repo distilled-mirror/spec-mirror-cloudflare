@@ -24,6 +24,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Update table maintenance configuration
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 
 Update the maintenance configuration for a specific table. This allows you to enable or disable compaction and adjust target file sizes for optimization.

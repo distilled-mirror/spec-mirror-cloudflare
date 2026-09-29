@@ -74,9 +74,13 @@ maxLength32
 
 enabled: boolean
 
+Whether the policy is active.
+
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 name: string
+
+Human-readable name of the policy.
 
 maxLength256
 
@@ -85,6 +89,8 @@ minLength1
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
 pattern: string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -97,6 +103,8 @@ minLength1
 <summary>
 
 targets: array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -115,6 +123,8 @@ One of the following:
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20targets%20%3E%20(schema)>)
 
 notes: optional string
+
+Optional note describing the purpose of the policy.
 
 maxLength4096
 
@@ -238,6 +248,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -248,6 +260,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -256,11 +270,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -273,6 +291,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 

@@ -1,5 +1,5 @@
 ---
-title: Get tenant account types
+title: List tenant account types
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get tenant account types
+# List tenant account types
 
 GET/tenants/{tenant\_id}/account\_types
 
-List of account types available for the Tenant to provision accounts.
+Lists the account types this tenant is allowed to provision.
 
 ##### Security
 
@@ -98,7 +98,7 @@ success: true
 
 [Link to this property](#)%20tenants.account_types%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get tenant account types
+### List tenant account types
 
 HTTP
 

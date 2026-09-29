@@ -82,17 +82,25 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20comments%20%3E%20(schema)>)
 
 directory\_id: optional number
+
+Identifier of the directory the entry was synced from, when directory-synced.
 
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20directory_id%20%3E%20(schema)>)
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20directory_node_id%20%3E%20(schema)>)
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20email%20%3E%20(schema)>)
 
@@ -100,13 +108,19 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20external_directory_node_id%20%3E%20(schema)>)
 
 is\_email\_regex: optional boolean
 
+Whether `email` is a regular expression instead of a literal address.
+
 [Link to this property](#)%20email_security.settings.impersonation_registry%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20is_email_regex%20%3E%20(schema)>)
 
 name: optional string
+
+Display name of the protected identity.
 
 maxLength1024
 
@@ -117,6 +131,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -254,6 +270,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -264,13 +282,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -278,9 +302,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -302,6 +330,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -311,6 +341,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 

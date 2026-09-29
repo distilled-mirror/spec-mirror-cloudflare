@@ -1,5 +1,5 @@
 ---
-title: Delete organization.
+title: Delete organization
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete organization.
+# Delete organization
 
 DELETE/organizations/{organization\_id}
 
-Delete an organization. The organization MUST be empty before deleting. It must not contain any sub-organizations, accounts, members or users. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Delete an organization. The organization MUST be empty before deleting. It must not contain any sub-organizations, accounts, members or users. Sub-organization deletion availability depends on the organization’s capabilities. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
 
 **Access Control:** Restricted to enterprise organizations.
 
@@ -110,7 +110,7 @@ success: true
 
 [Link to this property](#)%20organizations%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete organization.
+### Delete organization
 
 HTTP
 

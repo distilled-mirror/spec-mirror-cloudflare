@@ -18,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Enable R2 bucket as a catalog
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/enable\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/enable
 
 Enable an R2 bucket as an Apache Iceberg catalog. This operation creates the necessary catalog infrastructure and activates the bucket for storing Iceberg metadata and data files.

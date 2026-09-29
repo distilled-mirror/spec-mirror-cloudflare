@@ -24,6 +24,14 @@ POST/zones/{zone\_id}/purge\_cache
 
 POST/zones/{zone\_id}/environments/{environment\_id}/purge\_cache
 
+##### [Invalidate Cached Content](https://developers.cloudflare.com/api/resources/cache/methods/invalidate)
+
+POST/zones/{zone\_id}/invalidate\_cache
+
+##### [Invalidate Cached Content by Environment](https://developers.cloudflare.com/api/resources/cache/methods/invalidate_environment)
+
+POST/zones/{zone\_id}/environments/{environment\_id}/invalidate\_cache
+
 ##### ModelsExpand Collapse
 
 <details>
@@ -61,6 +69,42 @@ maxLength32
 </details>
 
 [Link to this property](#)%20cache%20%3E%20(model)%20cache_purge_environment_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CacheInvalidateResponse object {id }
+
+</summary>
+
+id: string
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache%20%3E%20(model)%20cache_invalidate_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CacheInvalidateEnvironmentResponse object {id }
+
+</summary>
+
+id: string
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cache%20%3E%20(model)%20cache_invalidate_environment_response%20%3E%20(schema)>)
 
 #### CacheCache Reserve
 

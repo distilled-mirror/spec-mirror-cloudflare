@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags
 
-Returns all Source-of-Truth tags for an account. Supports legacy free-text `search` on tag value and `categoryUuid` exact match, plus a structured `filters` JSON array for filtering by metadata fields (originCountryISO, actorCategory, motive, priority, etc.). Country values may be passed as alpha-2, alpha-3, name, or common alias.
+Returns all Source-of-Truth tags for an account. Supports legacy free-text `search` on tag value and `categoryUuid` exact match, plus a structured `filters` JSON array for filtering by metadata fields (originCountryISO, actorCategory, motive, priority, etc.). The authenticated account owns these account-scoped tags and receives their complete owner projection. Country values may be passed as alpha-2, alpha-3, name, or common alias. Purple TLP remains CFONE-only.
 
 ##### Security
 
@@ -638,7 +638,7 @@ One of the following:
 
 internalAliases: optional array of object {value, confidence, tlp }
 
-Internal structured aliases ({ value, confidence 1-10, tlp }). CFONE-only: never returned to non-CFONE accounts.
+Owner-private structured aliases ({ value, confidence 1-10, tlp }). Returned to the owning account and omitted from shared-catalog non-owner responses.
 
 </summary>
 

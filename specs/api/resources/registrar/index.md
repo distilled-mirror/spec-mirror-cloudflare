@@ -77,6 +77,10 @@ GET/accounts/{account\_id}/registrar/domain-search
 
 POST/accounts/{account\_id}/registrar/domain-check
 
+##### [Check domain transfer eligibility](https://developers.cloudflare.com/api/resources/registrar/methods/transfer_check)
+
+POST/accounts/{account\_id}/registrar/domain-transfer-check
+
 ##### ModelsExpand Collapse
 
 <details>
@@ -635,6 +639,380 @@ One of the following:
 </details>
 
 [Link to this property](#)%20registrar%20%3E%20(model)%20registrar_check_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+RegistrarTransferCheckResponse object {domains }
+
+Contains the transfer eligibility results.
+
+</summary>
+
+<details>
+
+<summary>
+
+domains: map\[object {pricing, transferable, name, reasons } or object {transferable, name, pricing, reasons } ]
+
+Maps domain names to transfer eligibility results. Each value contains <code>name</code>, <code>transferable</code>, and <code>reasons</code>.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+TransferableResult object {pricing, transferable, name, reasons }
+
+</summary>
+
+<details>
+
+<summary>
+
+pricing: object {currency, renewal\_cost, transfer\_cost }
+
+Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
+
+<code>renewal_cost</code> and <code>registration_cost</code> or <code>transfer_cost</code> are frequently the same value, but may differ due to premium rates for certain domains.
+
+For a multi-year operations, the operation’s cost applies to the first year and <code>renewal_cost</code> applies to each subsequent year. The values reflect the current registry rate, which can change over time.
+
+</summary>
+
+currency: string
+
+ISO-4217 currency code for the prices (e.g., “USD”, “EUR”, “GBP”).
+
+<a href="#">Link to this property</a>
+
+renewal\_cost: string
+
+Per-year renewal cost for this domain. Applied to each year beyond the first year of a multi-year registration, and to each annual auto-renewal thereafter. May differ from <code>registration_cost</code>, especially for premium domains where initial registration often costs more than renewals.
+
+<a href="#">Link to this property</a>
+
+transfer\_cost: string
+
+The first-year cost to transfer this domain.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+transferable: true
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+The check evaluates this domain name.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+reasons: optional array of object {code }
+
+</summary>
+
+<details>
+
+<summary>
+
+code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+
+Transfer eligibility reason code.
+
+- <code>extension_not_supported_via_api</code>: This API excludes the extension; dashboard flows support it.
+- <code>extension_not_supported</code>: Cloudflare Registrar excludes the extension.
+- <code>domain_premium</code>: This API currently excludes premium transfers.
+- <code>extension_disallows_transfer</code>: Extension currently blocks transfer operations.
+- <code>domain_not_exists</code>: No registration record exists for the domain.
+- <code>domain_on_cloudflare</code>: Cloudflare already serves as the domain’s registrar.
+- <code>domain_locked</code>: Losing registrar reports transfer-prohibited lock status.
+- <code>registry_status</code>: Registry status currently blocks transfer (for example, pending transfer or deletion state).
+- <code>domain_outside_transfer_window</code>: Domain is within a transfer wait window (for example, recently registered).
+- <code>domain_max_term</code>: Completing transfer would exceed the registry maximum term.
+- <code>invalid_auth_code</code>: The provided auth code is incorrect.
+- <code>invalid_auth_code_format</code>: Auth code fails Base64 validation.
+- <code>dnssec_enabled</code>: DNSSEC is enabled. It must be disabled before transfer.
+- <code>zone_not_found</code>: The target account lacks a Cloudflare zone for the domain.
+- <code>zone_status_invalid</code>: The Cloudflare zone cannot transfer in its current state.
+- <code>invalid_zone_plan</code>: The zone plan fails transfer requirements.
+- <code>domain_unsupported</code>: This endpoint rejects the domain name format.
+
+</summary>
+
+One of the following:
+
+"extension\_not\_supported\_via\_api"
+
+<a href="#">Link to this property</a>
+
+"extension\_not\_supported"
+
+<a href="#">Link to this property</a>
+
+"domain\_premium"
+
+<a href="#">Link to this property</a>
+
+"extension\_disallows\_transfer"
+
+<a href="#">Link to this property</a>
+
+"domain\_not\_exists"
+
+<a href="#">Link to this property</a>
+
+"domain\_on\_cloudflare"
+
+<a href="#">Link to this property</a>
+
+"domain\_locked"
+
+<a href="#">Link to this property</a>
+
+"registry\_status"
+
+<a href="#">Link to this property</a>
+
+"domain\_outside\_transfer\_window"
+
+<a href="#">Link to this property</a>
+
+"domain\_max\_term"
+
+<a href="#">Link to this property</a>
+
+"invalid\_auth\_code"
+
+<a href="#">Link to this property</a>
+
+"invalid\_auth\_code\_format"
+
+<a href="#">Link to this property</a>
+
+"dnssec\_enabled"
+
+<a href="#">Link to this property</a>
+
+"zone\_not\_found"
+
+<a href="#">Link to this property</a>
+
+"zone\_status\_invalid"
+
+<a href="#">Link to this property</a>
+
+"invalid\_zone\_plan"
+
+<a href="#">Link to this property</a>
+
+"domain\_unsupported"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+NonTransferableResult object {transferable, name, pricing, reasons }
+
+</summary>
+
+transferable: false
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+The check evaluates this domain name.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pricing: optional object {currency, renewal\_cost, transfer\_cost }
+
+Provides annual pricing information for a given domain. The API returns all per-year prices as strings to preserve decimal precision.
+
+<code>renewal_cost</code> and <code>registration_cost</code> or <code>transfer_cost</code> are frequently the same value, but may differ due to premium rates for certain domains.
+
+For a multi-year operations, the operation’s cost applies to the first year and <code>renewal_cost</code> applies to each subsequent year. The values reflect the current registry rate, which can change over time.
+
+</summary>
+
+currency: string
+
+ISO-4217 currency code for the prices (e.g., “USD”, “EUR”, “GBP”).
+
+<a href="#">Link to this property</a>
+
+renewal\_cost: string
+
+Per-year renewal cost for this domain. Applied to each year beyond the first year of a multi-year registration, and to each annual auto-renewal thereafter. May differ from <code>registration_cost</code>, especially for premium domains where initial registration often costs more than renewals.
+
+<a href="#">Link to this property</a>
+
+transfer\_cost: string
+
+The first-year cost to transfer this domain.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+reasons: optional array of object {code }
+
+</summary>
+
+<details>
+
+<summary>
+
+code: "extension\_not\_supported\_via\_api"or "extension\_not\_supported"or "domain\_premium"or 14 more
+
+Transfer eligibility reason code.
+
+- <code>extension_not_supported_via_api</code>: This API excludes the extension; dashboard flows support it.
+- <code>extension_not_supported</code>: Cloudflare Registrar excludes the extension.
+- <code>domain_premium</code>: This API currently excludes premium transfers.
+- <code>extension_disallows_transfer</code>: Extension currently blocks transfer operations.
+- <code>domain_not_exists</code>: No registration record exists for the domain.
+- <code>domain_on_cloudflare</code>: Cloudflare already serves as the domain’s registrar.
+- <code>domain_locked</code>: Losing registrar reports transfer-prohibited lock status.
+- <code>registry_status</code>: Registry status currently blocks transfer (for example, pending transfer or deletion state).
+- <code>domain_outside_transfer_window</code>: Domain is within a transfer wait window (for example, recently registered).
+- <code>domain_max_term</code>: Completing transfer would exceed the registry maximum term.
+- <code>invalid_auth_code</code>: The provided auth code is incorrect.
+- <code>invalid_auth_code_format</code>: Auth code fails Base64 validation.
+- <code>dnssec_enabled</code>: DNSSEC is enabled. It must be disabled before transfer.
+- <code>zone_not_found</code>: The target account lacks a Cloudflare zone for the domain.
+- <code>zone_status_invalid</code>: The Cloudflare zone cannot transfer in its current state.
+- <code>invalid_zone_plan</code>: The zone plan fails transfer requirements.
+- <code>domain_unsupported</code>: This endpoint rejects the domain name format.
+
+</summary>
+
+One of the following:
+
+"extension\_not\_supported\_via\_api"
+
+<a href="#">Link to this property</a>
+
+"extension\_not\_supported"
+
+<a href="#">Link to this property</a>
+
+"domain\_premium"
+
+<a href="#">Link to this property</a>
+
+"extension\_disallows\_transfer"
+
+<a href="#">Link to this property</a>
+
+"domain\_not\_exists"
+
+<a href="#">Link to this property</a>
+
+"domain\_on\_cloudflare"
+
+<a href="#">Link to this property</a>
+
+"domain\_locked"
+
+<a href="#">Link to this property</a>
+
+"registry\_status"
+
+<a href="#">Link to this property</a>
+
+"domain\_outside\_transfer\_window"
+
+<a href="#">Link to this property</a>
+
+"domain\_max\_term"
+
+<a href="#">Link to this property</a>
+
+"invalid\_auth\_code"
+
+<a href="#">Link to this property</a>
+
+"invalid\_auth\_code\_format"
+
+<a href="#">Link to this property</a>
+
+"dnssec\_enabled"
+
+<a href="#">Link to this property</a>
+
+"zone\_not\_found"
+
+<a href="#">Link to this property</a>
+
+"zone\_status\_invalid"
+
+<a href="#">Link to this property</a>
+
+"invalid\_zone\_plan"
+
+<a href="#">Link to this property</a>
+
+"domain\_unsupported"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20registrar%20%3E%20(model)%20registrar_transfer_check_response%20%3E%20(schema)>)
 
 #### RegistrarDomains
 

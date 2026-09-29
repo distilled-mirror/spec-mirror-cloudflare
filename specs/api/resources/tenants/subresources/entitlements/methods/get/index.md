@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/tenants/{tenant\_id}/entitlements
 
-List of innate entitlements available for the Tenant.
+Retrieves the innate and custom entitlement allocations available to this tenant.
 
 ##### Security
 

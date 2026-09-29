@@ -48,6 +48,8 @@ content: string
 
 disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:

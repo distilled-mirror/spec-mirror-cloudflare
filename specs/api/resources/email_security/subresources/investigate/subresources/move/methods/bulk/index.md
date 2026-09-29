@@ -78,6 +78,8 @@ maxLength32
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:

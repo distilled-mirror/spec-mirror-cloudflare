@@ -18,6 +18,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get R2 catalog details
 
+Deprecated: Use \`GET /accounts/{account\_id}/basin-catalog/{bucket\_name}\` instead.
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}
 
 Retrieve detailed information about a specific R2 catalog by bucket name. Returns catalog status, maintenance configuration, and credential status.

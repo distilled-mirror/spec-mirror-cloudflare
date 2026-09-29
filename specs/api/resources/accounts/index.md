@@ -176,7 +176,7 @@ minLength32
 
 #### AccountsAccount Organizations
 
-##### [Move account](https://developers.cloudflare.com/api/resources/accounts/subresources/account_organizations/methods/create)
+##### [Move account to organization](https://developers.cloudflare.com/api/resources/accounts/subresources/account_organizations/methods/create)
 
 POST/accounts/{account\_id}/move
 
@@ -212,7 +212,7 @@ source\_organization\_id: string
 
 GET/accounts/{account\_id}/profile
 
-##### [Modify account profile](https://developers.cloudflare.com/api/resources/accounts/subresources/account_profile/methods/update)
+##### [Update account profile](https://developers.cloudflare.com/api/resources/accounts/subresources/account_profile/methods/update)
 
 PUT/accounts/{account\_id}/profile
 
@@ -554,7 +554,7 @@ GET/accounts/{account\_id}/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, expires\_on, 8 more }
+TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 11 more }
 
 </summary>
 
@@ -601,6 +601,14 @@ List of IPv4/IPv6 CIDR addresses.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+creator\_email\_at\_creation: optional string
+
+The email address of the user who created the token at the time of creation. Only present for Account Owned API Tokens when a creator email was available.
+
+maxLength90
 
 <a href="#">Link to this property</a>
 
@@ -772,6 +780,18 @@ Map of nested resource permissions
 
 <a href="#">Link to this property</a>
 
+provisioner\_id: optional string
+
+The identifier of the service that provisioned the token. For an OAuth-provisioned token, this is the OAuth client identifier. Present when <code>provisioner_type</code> is present and null when the identifier is unavailable.
+
+<a href="#">Link to this property</a>
+
+provisioner\_type: optional string
+
+The type of service that provisioned the token. Only present for provisioned Account Owned API Tokens.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -916,7 +936,7 @@ GET/accounts/{account\_id}/tokens/permission\_groups
 
 <summary>
 
-PermissionGroupListResponse object {id, category, name, scopes }
+PermissionGroupListResponse object {id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -991,6 +1011,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+is\_selectable: optional boolean
+
+Whether the caller can select this permission group when creating a token.
 
 <a href="#">Link to this property</a>
 
@@ -1040,7 +1066,7 @@ One of the following:
 
 <summary>
 
-PermissionGroupGetResponse = array of object {id, category, name, scopes }
+PermissionGroupGetResponse = array of object {id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -1115,6 +1141,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+is\_selectable: optional boolean
+
+Whether the caller can select this permission group when creating a token.
 
 <a href="#">Link to this property</a>
 

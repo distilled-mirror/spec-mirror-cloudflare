@@ -86,6 +86,8 @@ Unique identifier for a message retrieved from investigation.
 
 expected\_disposition: "NONE"or "BULK"or "MALICIOUS"or 3 more
 
+The disposition the message should have.
+
 </summary>
 
 One of the following:
@@ -125,6 +127,8 @@ Base64 encoded content of the EML file.
 [Link to this property](#)%20email_security.investigate.reclassify%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20eml_content%20%3E%20(schema)>)
 
 escalated\_submission\_id: optional string
+
+Submission ID of the original user submission, when reclassifying an escalated user report.
 
 [Link to this property](#)%20email_security.investigate.reclassify%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20escalated_submission_id%20%3E%20(schema)>)
 

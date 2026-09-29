@@ -22,7 +22,10 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/abuse-reports/{report\_id}/mitigations/appeal
 
-Request a review for mitigations on an account. Repeating a request for a mitigation with an unresolved appeal is idempotent and returns that mitigation in the in-review state.
+Request a review of mitigations applied because of an abuse report, or submit a report-level appeal.
+
+- To request a review of specific mitigations, send `appeals` with the mitigation IDs and reasons. Repeating a request for a mitigation with an unresolved appeal is idempotent and returns that mitigation in the in-review state.
+- To submit a report-level appeal, send `type` and, for a `counter_notice`, the counter-notice details in `data`. Report-level appeals are currently available only for DMCA (copyright) reports.
 
 ##### Security
 

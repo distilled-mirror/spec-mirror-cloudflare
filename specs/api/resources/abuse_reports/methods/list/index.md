@@ -1,5 +1,5 @@
 ---
-title: List abuse reports
+title: List abuse reports against the account
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List abuse reports
+# List abuse reports against the account
 
 GET/accounts/{account\_id}/abuse-reports
 
-List the abuse reports for a given account
+List abuse reports made against domains or other content associated with the account. To list reports that the account submitted, use the submitted abuse reports endpoint instead.
 
 ##### Security
 
@@ -470,7 +470,7 @@ total\_pages: number
 
 [Link to this property](#)%20abuse_reports%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List abuse reports
+### List abuse reports against the account
 
 HTTP
 

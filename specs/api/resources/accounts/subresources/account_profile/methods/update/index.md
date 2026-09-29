@@ -1,5 +1,5 @@
 ---
-title: Modify account profile
+title: Update account profile
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Modify account profile
+# Update account profile
 
 PUT/accounts/{account\_id}/profile
 
-Updates the profile information for a Cloudflare account. Allows modification of account-level settings and organizational details. Requires Account Settings Write permission.
+Updates the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record. Changes apply to every account and organization sharing that profile. Omitted or empty fields are left unchanged. Only available to members of an organization that contains the account. Requires Account Settings Write permission.
 
 ##### Security
 
@@ -68,7 +68,7 @@ external\_metadata: string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20external_metadata%20%3E%20(schema)>)
 
-### Modify account profile
+### Update account profile
 
 HTTP
 

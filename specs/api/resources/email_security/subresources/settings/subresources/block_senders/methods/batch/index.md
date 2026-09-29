@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
-Executes multiple operations atomically. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
+Executes multiple blocked sender operations atomically: delete, partially update, replace, and create blocked sender patterns in a single request. All four operation arrays (deletes, patches, puts, posts) are required and executed in order. Send empty arrays for unused operations.
 
 ##### Security
 
@@ -78,6 +78,8 @@ maxLength32
 
 deletes: array of object {id }
 
+IDs of the blocked sender patterns to delete.
+
 </summary>
 
 id: string
@@ -97,6 +99,8 @@ formatuuid
 <summary>
 
 patches: array of object {id, comments, created\_at, 5 more }
+
+Partial updates to apply — each entry carries the pattern’s ID and only the fields to change.
 
 </summary>
 
@@ -121,6 +125,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -197,9 +203,13 @@ One of the following:
 
 posts: array of object {is\_regex, pattern, pattern\_type, 5 more }
 
+Blocked sender patterns to create.
+
 </summary>
 
 is\_regex: boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -296,6 +306,8 @@ formatdate-time
 
 puts: array of object {id, is\_regex, pattern, 5 more }
 
+Full replacements to apply — each entry carries the pattern’s ID and every field of its new value.
+
 </summary>
 
 id: string
@@ -307,6 +319,8 @@ formatuuid
 <a href="#">Link to this property</a>
 
 is\_regex: boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -539,6 +553,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -638,6 +654,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -736,6 +754,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 

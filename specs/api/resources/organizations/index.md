@@ -28,11 +28,11 @@ GET/organizations/{organization\_id}
 
 POST/organizations
 
-##### [Modify organization.](https://developers.cloudflare.com/api/resources/organizations/methods/update)
+##### [Update organization](https://developers.cloudflare.com/api/resources/organizations/methods/update)
 
 PUT/organizations/{organization\_id}
 
-##### [Delete organization.](https://developers.cloudflare.com/api/resources/organizations/methods/delete)
+##### [Delete organization](https://developers.cloudflare.com/api/resources/organizations/methods/delete)
 
 DELETE/organizations/{organization\_id}
 
@@ -176,7 +176,7 @@ id: string
 
 #### OrganizationsOrganization Accounts
 
-##### [Get organization accounts](https://developers.cloudflare.com/api/resources/organizations/subresources/organization_accounts/methods/get)
+##### [List organization accounts](https://developers.cloudflare.com/api/resources/organizations/subresources/organization_accounts/methods/get)
 
 GET/organizations/{organization\_id}/accounts
 

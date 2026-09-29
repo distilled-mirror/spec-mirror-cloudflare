@@ -16,7 +16,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # AI
 
-##### [Execute AI model](https://developers.cloudflare.com/api/resources/ai/methods/run)
+##### [Run a Workers AI model](https://developers.cloudflare.com/api/resources/ai/methods/run)
 
 POST/accounts/{account\_id}/ai/run/{model\_name}
 
@@ -642,7 +642,7 @@ ModelListResponse = unknown
 
 #### AIModelsSchema
 
-##### [Get Model Schema](https://developers.cloudflare.com/api/resources/ai/subresources/models/subresources/schema/methods/get)
+##### [Get an AI model's input and output schemas](https://developers.cloudflare.com/api/resources/ai/subresources/models/subresources/schema/methods/get)
 
 GET/accounts/{account\_id}/ai/models/schema
 
@@ -710,11 +710,11 @@ type: string
 
 #### AITo Markdown
 
-##### [Convert Files into Markdown](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/transform)
+##### [Convert uploaded files to Markdown](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/transform)
 
 POST/accounts/{account\_id}/ai/tomarkdown
 
-##### [Get all converted formats supported](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/supported)
+##### [List supported Markdown conversion formats](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/supported)
 
 GET/accounts/{account\_id}/ai/tomarkdown/supported
 

@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Store catalog credentials
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/credential\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/credential
 
 Store authentication credentials for a catalog. These credentials are used to authenticate with R2 storage when performing catalog operations.

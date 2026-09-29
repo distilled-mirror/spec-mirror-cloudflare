@@ -430,6 +430,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -503,6 +505,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 
@@ -1210,6 +1214,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -1283,6 +1289,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 
@@ -2052,6 +2060,8 @@ One of the following:
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -2574,6 +2584,8 @@ Move object {destination, type, expected\_disposition }
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -2764,6 +2776,8 @@ Deprecated, use <code>GET /investigate/{investigate_id}/action_log</code> instea
 
 alert\_id: optional string
 
+Alert ID of the detection to filter by.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -2772,7 +2786,7 @@ alert\_id: optional string
 
 delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
 
-Delivery status of the message.
+Delivery status to filter by.
 
 </summary>
 
@@ -2816,9 +2830,13 @@ One of the following:
 
 detections\_only: optional boolean
 
+Whether to include only detections in search results.
+
 <a href="#">Link to this property</a>
 
 domain: optional string
+
+Match messages that mention this domain — sender domain, recipient domain, or a domain in a link.
 
 <a href="#">Link to this property</a>
 
@@ -2832,6 +2850,8 @@ formatdate-time
 
 exact\_subject: optional string
 
+Match messages whose subject line equals this value exactly.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -2839,6 +2859,8 @@ exact\_subject: optional string
 <summary>
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to filter by.
 
 </summary>
 
@@ -2894,6 +2916,8 @@ One of the following:
 
 message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
 
+Message actions to filter by.
+
 </summary>
 
 One of the following:
@@ -2916,21 +2940,31 @@ One of the following:
 
 message\_id: optional string
 
+Message-ID header value to filter by.
+
 <a href="#">Link to this property</a>
 
 metric: optional string
+
+Metric name to filter the search by.
 
 <a href="#">Link to this property</a>
 
 query: optional string
 
+Space-delimited search term. Case-insensitive.
+
 <a href="#">Link to this property</a>
 
 recipient: optional string
 
+Match messages whose recipient is this email address or domain.
+
 <a href="#">Link to this property</a>
 
 sender: optional string
+
+Match messages whose sender is this email address or domain.
 
 <a href="#">Link to this property</a>
 
@@ -2950,9 +2984,13 @@ formatdate-time
 
 subject: optional string
 
+Match messages whose subject contains these keywords, in any order.
+
 <a href="#">Link to this property</a>
 
 submissions: optional boolean
+
+Whether to search reclassification submissions instead of original messages.
 
 <a href="#">Link to this property</a>
 
@@ -3060,6 +3098,8 @@ Move object {destination, type, expected\_disposition }
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -3250,6 +3290,8 @@ Deprecated, use <code>GET /investigate/{investigate_id}/action_log</code> instea
 
 alert\_id: optional string
 
+Alert ID of the detection to filter by.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -3258,7 +3300,7 @@ alert\_id: optional string
 
 delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
 
-Delivery status of the message.
+Delivery status to filter by.
 
 </summary>
 
@@ -3302,9 +3344,13 @@ One of the following:
 
 detections\_only: optional boolean
 
+Whether to include only detections in search results.
+
 <a href="#">Link to this property</a>
 
 domain: optional string
+
+Match messages that mention this domain — sender domain, recipient domain, or a domain in a link.
 
 <a href="#">Link to this property</a>
 
@@ -3318,6 +3364,8 @@ formatdate-time
 
 exact\_subject: optional string
 
+Match messages whose subject line equals this value exactly.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -3325,6 +3373,8 @@ exact\_subject: optional string
 <summary>
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to filter by.
 
 </summary>
 
@@ -3380,6 +3430,8 @@ One of the following:
 
 message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
 
+Message actions to filter by.
+
 </summary>
 
 One of the following:
@@ -3402,21 +3454,31 @@ One of the following:
 
 message\_id: optional string
 
+Message-ID header value to filter by.
+
 <a href="#">Link to this property</a>
 
 metric: optional string
+
+Metric name to filter the search by.
 
 <a href="#">Link to this property</a>
 
 query: optional string
 
+Space-delimited search term. Case-insensitive.
+
 <a href="#">Link to this property</a>
 
 recipient: optional string
 
+Match messages whose recipient is this email address or domain.
+
 <a href="#">Link to this property</a>
 
 sender: optional string
+
+Match messages whose sender is this email address or domain.
 
 <a href="#">Link to this property</a>
 
@@ -3436,9 +3498,13 @@ formatdate-time
 
 subject: optional string
 
+Match messages whose subject contains these keywords, in any order.
+
 <a href="#">Link to this property</a>
 
 submissions: optional boolean
+
+Whether to search reclassification submissions instead of original messages.
 
 <a href="#">Link to this property</a>
 
@@ -3546,6 +3612,8 @@ Move object {destination, type, expected\_disposition }
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -3736,6 +3804,8 @@ Deprecated, use <code>GET /investigate/{investigate_id}/action_log</code> instea
 
 alert\_id: optional string
 
+Alert ID of the detection to filter by.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -3744,7 +3814,7 @@ alert\_id: optional string
 
 delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
 
-Delivery status of the message.
+Delivery status to filter by.
 
 </summary>
 
@@ -3788,9 +3858,13 @@ One of the following:
 
 detections\_only: optional boolean
 
+Whether to include only detections in search results.
+
 <a href="#">Link to this property</a>
 
 domain: optional string
+
+Match messages that mention this domain — sender domain, recipient domain, or a domain in a link.
 
 <a href="#">Link to this property</a>
 
@@ -3804,6 +3878,8 @@ formatdate-time
 
 exact\_subject: optional string
 
+Match messages whose subject line equals this value exactly.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -3811,6 +3887,8 @@ exact\_subject: optional string
 <summary>
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to filter by.
 
 </summary>
 
@@ -3866,6 +3944,8 @@ One of the following:
 
 message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
 
+Message actions to filter by.
+
 </summary>
 
 One of the following:
@@ -3888,21 +3968,31 @@ One of the following:
 
 message\_id: optional string
 
+Message-ID header value to filter by.
+
 <a href="#">Link to this property</a>
 
 metric: optional string
+
+Metric name to filter the search by.
 
 <a href="#">Link to this property</a>
 
 query: optional string
 
+Space-delimited search term. Case-insensitive.
+
 <a href="#">Link to this property</a>
 
 recipient: optional string
 
+Match messages whose recipient is this email address or domain.
+
 <a href="#">Link to this property</a>
 
 sender: optional string
+
+Match messages whose sender is this email address or domain.
 
 <a href="#">Link to this property</a>
 
@@ -3922,9 +4012,13 @@ formatdate-time
 
 subject: optional string
 
+Match messages whose subject contains these keywords, in any order.
+
 <a href="#">Link to this property</a>
 
 submissions: optional boolean
+
+Whether to search reclassification submissions instead of original messages.
 
 <a href="#">Link to this property</a>
 
@@ -4058,6 +4152,8 @@ Move object {destination, type, expected\_disposition }
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:
@@ -4248,6 +4344,8 @@ Deprecated, use <code>GET /investigate/{investigate_id}/action_log</code> instea
 
 alert\_id: optional string
 
+Alert ID of the detection to filter by.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -4256,7 +4354,7 @@ alert\_id: optional string
 
 delivery\_status: optional "delivered"or "moved"or "quarantined"or 5 more
 
-Delivery status of the message.
+Delivery status to filter by.
 
 </summary>
 
@@ -4300,9 +4398,13 @@ One of the following:
 
 detections\_only: optional boolean
 
+Whether to include only detections in search results.
+
 <a href="#">Link to this property</a>
 
 domain: optional string
+
+Match messages that mention this domain — sender domain, recipient domain, or a domain in a link.
 
 <a href="#">Link to this property</a>
 
@@ -4316,6 +4418,8 @@ formatdate-time
 
 exact\_subject: optional string
 
+Match messages whose subject line equals this value exactly.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -4323,6 +4427,8 @@ exact\_subject: optional string
 <summary>
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to filter by.
 
 </summary>
 
@@ -4378,6 +4484,8 @@ One of the following:
 
 message\_action: optional "PREVIEW"or "QUARANTINE\_RELEASED"or "MOVED"
 
+Message actions to filter by.
+
 </summary>
 
 One of the following:
@@ -4400,21 +4508,31 @@ One of the following:
 
 message\_id: optional string
 
+Message-ID header value to filter by.
+
 <a href="#">Link to this property</a>
 
 metric: optional string
+
+Metric name to filter the search by.
 
 <a href="#">Link to this property</a>
 
 query: optional string
 
+Space-delimited search term. Case-insensitive.
+
 <a href="#">Link to this property</a>
 
 recipient: optional string
 
+Match messages whose recipient is this email address or domain.
+
 <a href="#">Link to this property</a>
 
 sender: optional string
+
+Match messages whose sender is this email address or domain.
 
 <a href="#">Link to this property</a>
 
@@ -4434,9 +4552,13 @@ formatdate-time
 
 subject: optional string
 
+Match messages whose subject contains these keywords, in any order.
+
 <a href="#">Link to this property</a>
 
 submissions: optional boolean
+
+Whether to search reclassification submissions instead of original messages.
 
 <a href="#">Link to this property</a>
 
@@ -4555,6 +4677,8 @@ client\_recipient: string
 <summary>
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
+
+The mailbox folder to move messages to.
 
 </summary>
 
@@ -5166,6 +5290,8 @@ envelope\_to: optional array of string
 
 final\_disposition: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+The verdict Email Security assigns to a message.
+
 </summary>
 
 One of the following:
@@ -5239,6 +5365,8 @@ detail: optional string
 <summary>
 
 detection: optional "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 
@@ -5597,6 +5725,8 @@ content: string
 <summary>
 
 disposition: "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+The verdict Email Security assigns to a message.
 
 </summary>
 
@@ -6919,6 +7049,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -7019,6 +7151,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -7121,6 +7255,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -7221,6 +7357,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -7369,6 +7507,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -7468,6 +7608,8 @@ formatdate-time
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal value.
+
 <a href="#">Link to this property</a>
 
 Deprecatedlast\_modified: optional string
@@ -7566,6 +7708,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 is\_regex: optional boolean
+
+Whether <code>pattern</code> is a regular expression instead of a literal value.
 
 <a href="#">Link to this property</a>
 
@@ -7694,6 +7838,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -7704,6 +7850,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -7712,11 +7860,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -7729,6 +7881,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -7776,6 +7930,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -7786,6 +7942,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -7794,11 +7952,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -7811,6 +7973,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -7858,6 +8022,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -7868,6 +8034,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -7876,11 +8044,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -7893,6 +8065,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -7940,6 +8114,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -7950,6 +8126,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -7958,11 +8136,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -7975,6 +8157,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -8068,6 +8252,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -8078,6 +8264,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -8086,11 +8274,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -8103,6 +8295,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -8148,6 +8342,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -8158,6 +8354,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -8166,11 +8364,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -8183,6 +8385,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -8228,6 +8432,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -8238,6 +8444,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -8246,11 +8454,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -8263,6 +8475,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -8527,6 +8741,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -8916,6 +9132,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -9303,6 +9521,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -9692,6 +9912,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -10079,6 +10301,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -10516,6 +10740,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -10903,6 +11129,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -11292,6 +11520,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -11546,6 +11776,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -11556,13 +11788,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -11570,9 +11808,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -11594,6 +11836,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -11603,6 +11847,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -11652,6 +11898,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -11662,13 +11910,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -11676,9 +11930,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -11700,6 +11958,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -11709,6 +11969,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -11758,6 +12020,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -11768,13 +12032,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -11782,9 +12052,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -11806,6 +12080,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -11815,6 +12091,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -11864,6 +12142,8 @@ formatuuid
 
 comments: optional string
 
+Optional note describing the entry.
+
 <a href="#">Link to this property</a>
 
 created\_at: optional string
@@ -11874,13 +12154,19 @@ formatdate-time
 
 directory\_id: optional number
 
+Identifier of the directory the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 directory\_node\_id: optional number
 
+Identifier of the directory node the entry was synced from, when directory-synced.
+
 <a href="#">Link to this property</a>
 
 email: optional string
+
+Email address (or pattern) of the protected identity.
 
 <a href="#">Link to this property</a>
 
@@ -11888,9 +12174,13 @@ Deprecatedexternal\_directory\_node\_id: optional string
 
 This field is deprecated.
 
+Deprecated. External identifier of the directory node.
+
 <a href="#">Link to this property</a>
 
 is\_email\_regex: optional boolean
+
+Whether <code>email</code> is a regular expression instead of a literal address.
 
 <a href="#">Link to this property</a>
 
@@ -11912,6 +12202,8 @@ formatdate-time
 
 name: optional string
 
+Display name of the protected identity.
+
 maxLength1024
 
 <a href="#">Link to this property</a>
@@ -11921,6 +12213,8 @@ maxLength1024
 <summary>
 
 provenance: optional "A1S\_INTERNAL"or "SNOOPY-CASB\_OFFICE\_365"or "SNOOPY-OFFICE\_365"or "SNOOPY-GOOGLE\_DIRECTORY"
+
+Source the entry was created from.
 
 </summary>
 
@@ -12328,6 +12622,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12353,6 +12649,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12402,6 +12700,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12427,6 +12727,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12476,6 +12778,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12501,6 +12805,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12550,6 +12856,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12575,6 +12883,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12670,6 +12980,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12695,6 +13007,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12742,6 +13056,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12767,6 +13083,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -12814,6 +13132,8 @@ Select to prevent recently registered domains from triggering a Suspicious or Ma
 
 is\_regex: optional boolean
 
+Whether <code>pattern</code> is a regular expression instead of a literal domain.
+
 <a href="#">Link to this property</a>
 
 is\_similarity: optional boolean
@@ -12839,6 +13159,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+The domain pattern to trust, e.g. <code>example.com</code>.
 
 maxLength1024
 
@@ -13206,6 +13528,8 @@ One of the following:
 
 escalated\_as: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
 
+The disposition a message is submitted to have.
+
 </summary>
 
 One of the following:
@@ -13240,15 +13564,21 @@ One of the following:
 
 escalated\_at: optional string
 
+When the submission was escalated to the security team.
+
 formatdate-time
 
 <a href="#">Link to this property</a>
 
 escalated\_by: optional string
 
+Email address of the user who escalated the submission.
+
 <a href="#">Link to this property</a>
 
 escalated\_submission\_id: optional string
+
+Submission ID of the escalated team submission, when this user submission was escalated.
 
 <a href="#">Link to this property</a>
 
@@ -13257,6 +13587,8 @@ escalated\_submission\_id: optional string
 <summary>
 
 original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -13292,6 +13624,8 @@ One of the following:
 
 original\_edf\_hash: optional string
 
+EDF hash of the original message.
+
 <a href="#">Link to this property</a>
 
 original\_postfix\_id: optional string
@@ -13302,6 +13636,8 @@ The postfix ID of the original message that was submitted.
 
 outcome: optional string
 
+Processing outcome of the submission.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -13309,6 +13645,8 @@ outcome: optional string
 <summary>
 
 outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -13344,6 +13682,8 @@ One of the following:
 
 requested\_by: optional string
 
+Email address of the user who requested the submission.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -13351,6 +13691,8 @@ requested\_by: optional string
 <summary>
 
 requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -13394,9 +13736,13 @@ Deprecated, use <code>requested_at</code> instead.
 
 status: optional string
 
+Processing status of the submission.
+
 <a href="#">Link to this property</a>
 
 subject: optional string
+
+Subject line of the submitted message.
 
 <a href="#">Link to this property</a>
 

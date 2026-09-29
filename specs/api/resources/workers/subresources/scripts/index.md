@@ -2794,7 +2794,7 @@ formatdate-time
 
 script\_name: string
 
-Name of the script, used in URLs and route configuration.
+Name of the script.
 
 <a href="#">Link to this property</a>
 

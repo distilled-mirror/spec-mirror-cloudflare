@@ -82,9 +82,13 @@ formatuuid
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 name: optional string
+
+Human-readable name of the policy.
 
 maxLength256
 
@@ -94,11 +98,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20notes%20%3E%20(schema)>)
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -111,6 +119,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 
@@ -246,6 +256,8 @@ formatdate-time
 
 enabled: optional boolean
 
+Whether the policy is active.
+
 <a href="#">Link to this property</a>
 
 modified\_at: optional string
@@ -256,6 +268,8 @@ formatdate-time
 
 name: optional string
 
+Human-readable name of the policy.
+
 maxLength256
 
 minLength1
@@ -264,11 +278,15 @@ minLength1
 
 notes: optional string
 
+Optional note describing the purpose of the policy.
+
 maxLength4096
 
 <a href="#">Link to this property</a>
 
 pattern: optional string
+
+Regular expression the policy matches against.
 
 maxLength2048
 
@@ -281,6 +299,8 @@ minLength1
 <summary>
 
 targets: optional array of "SUBJECT"or "BODY"
+
+Parts of the email the pattern is matched against.
 
 </summary>
 

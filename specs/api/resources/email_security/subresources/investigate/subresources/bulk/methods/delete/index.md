@@ -68,6 +68,8 @@ maxLength32
 
 job\_id: string
 
+Bulk action job identifier.
+
 formatuuid
 
 [Link to this property](#)%20email_security.investigate.bulk%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20job_id%20%3E%20(schema)>)

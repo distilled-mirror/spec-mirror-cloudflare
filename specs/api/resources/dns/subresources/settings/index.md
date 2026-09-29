@@ -82,9 +82,19 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type, ns\_set }
+nameservers: object {type } or object {type, ns\_set } or object {nameserver\_set\_id, type }
 
-Settings determining the nameservers through which the zone should be available.
+Controls the nameservers through which the zone is available.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCloudflare object {type }
 
 </summary>
 
@@ -92,9 +102,9 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"or "custom.account"or 2 more
+type: "cloudflare.standard"or "cloudflare.advanced"
 
-Nameserver type
+Nameserver type.
 
 </summary>
 
@@ -107,6 +117,34 @@ One of the following:
 "cloudflare.advanced"
 
 <a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomExisting object {type, ns\_set }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "custom.account"or "custom.tenant"or "custom.zone"
+
+Nameserver type.
+
+</summary>
+
+One of the following:
 
 "custom.account"
 
@@ -126,11 +164,43 @@ One of the following:
 
 ns\_set: optional number
 
-Configured nameserver set to be used for this zone
+Configured nameserver set number to use for this zone.
 
 maximum5
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomSet object {nameserver\_set\_id, type }
+
+</summary>
+
+nameserver\_set\_id: string
+
+Identifier of the account-owned Custom Nameserver Set to use for this zone.
+
+maxLength32
+
+minLength32
+
+<a href="#">Link to this property</a>
+
+type: "custom"
+
+Nameserver type.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -314,9 +384,19 @@ Whether to enable multi-provider DNS, which causes Cloudflare to activate the zo
 
 <summary>
 
-nameservers: object {type, ns\_set }
+nameservers: object {type } or object {type, ns\_set } or object {nameserver\_set\_id, type }
 
-Settings determining the nameservers through which the zone should be available.
+Controls the nameservers through which the zone is available.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCloudflare object {type }
 
 </summary>
 
@@ -324,9 +404,9 @@ Settings determining the nameservers through which the zone should be available.
 
 <summary>
 
-type: "cloudflare.standard"or "cloudflare.advanced"or "custom.account"or 2 more
+type: "cloudflare.standard"or "cloudflare.advanced"
 
-Nameserver type
+Nameserver type.
 
 </summary>
 
@@ -339,6 +419,34 @@ One of the following:
 "cloudflare.advanced"
 
 <a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomExisting object {type, ns\_set }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "custom.account"or "custom.tenant"or "custom.zone"
+
+Nameserver type.
+
+</summary>
+
+One of the following:
 
 "custom.account"
 
@@ -358,11 +466,43 @@ One of the following:
 
 ns\_set: optional number
 
-Configured nameserver set to be used for this zone
+Configured nameserver set number to use for this zone.
 
 maximum5
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+DNSSettingsZoneNameserversCustomSet object {nameserver\_set\_id, type }
+
+</summary>
+
+nameserver\_set\_id: string
+
+Identifier of the account-owned Custom Nameserver Set to use for this zone.
+
+maxLength32
+
+minLength32
+
+<a href="#">Link to this property</a>
+
+type: "custom"
+
+Nameserver type.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

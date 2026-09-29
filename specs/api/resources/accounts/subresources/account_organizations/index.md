@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Account Organizations
 
-##### [Move account](https://developers.cloudflare.com/api/resources/accounts/subresources/account_organizations/methods/create)
+##### [Move account to organization](https://developers.cloudflare.com/api/resources/accounts/subresources/account_organizations/methods/create)
 
 POST/accounts/{account\_id}/move
 

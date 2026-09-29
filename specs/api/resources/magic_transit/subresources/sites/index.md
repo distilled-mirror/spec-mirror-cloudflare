@@ -1348,7 +1348,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/wans/{wan\_id}
 
 <summary>
 
-WAN object {id, health\_check\_rate, name, 5 more }
+WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 6 more }
 
 </summary>
 
@@ -1385,6 +1385,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+load\_balance\_inner\_flows: optional boolean
 
 <a href="#">Link to this property</a>
 

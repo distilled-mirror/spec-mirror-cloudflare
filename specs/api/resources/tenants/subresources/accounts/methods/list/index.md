@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/tenants/{tenant\_id}/accounts
 
-List of accounts for the Tenant.
+Lists the Cloudflare accounts associated with this tenant.
 
 ##### Security
 

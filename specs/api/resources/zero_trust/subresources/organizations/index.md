@@ -82,7 +82,7 @@ The text color on your login page.
 
 <summary>
 
-Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
+Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
 
 </summary>
 
@@ -433,6 +433,12 @@ minimum30
 session\_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
+
+<a href="#">Link to this property</a>
+
+strict\_service\_token\_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF\_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
 
 <a href="#">Link to this property</a>
 
@@ -468,7 +474,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
+OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 17 more }
 
 </summary>
 
@@ -819,6 +825,12 @@ minimum30
 session\_duration: optional string
 
 The amount of time that tokens issued for applications will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
+
+<a href="#">Link to this property</a>
+
+strict\_service\_token\_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF\_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
 
 <a href="#">Link to this property</a>
 

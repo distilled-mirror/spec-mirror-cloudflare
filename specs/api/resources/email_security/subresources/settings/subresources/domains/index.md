@@ -258,6 +258,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -645,6 +647,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -1034,6 +1038,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -1422,6 +1428,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -1809,6 +1817,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -2246,6 +2256,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -2634,6 +2646,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -3021,6 +3035,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 

@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/abuse-reports/{report\_param}
 
-##### [Abuse Report Details](https://developers.cloudflare.com/api/resources/abuse_reports/methods/get)
+##### [Get an abuse report against the account](https://developers.cloudflare.com/api/resources/abuse_reports/methods/get)
 
 GET/accounts/{account\_id}/abuse-reports/{report\_param}
 
-##### [List abuse reports](https://developers.cloudflare.com/api/resources/abuse_reports/methods/list)
+##### [List abuse reports against the account](https://developers.cloudflare.com/api/resources/abuse_reports/methods/list)
 
 GET/accounts/{account\_id}/abuse-reports
 

@@ -1,5 +1,5 @@
 ---
-title: Create deployment
+title: Create a Pages deployment
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create deployment
+# Create a Pages deployment
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/deployments
 
-Start a new deployment from production. The repository and account must have already been authorized on the Cloudflare Pages dashboard.
+Create a Cloudflare Pages deployment from a Git branch or Direct Upload manifest. Git repositories must already be authorized in Cloudflare Pages.
 
 ##### Security
 
@@ -72,7 +72,7 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
@@ -110,7 +110,7 @@ Worker JavaScript file. Mutually exclusive with `_worker.bundle`. Cannot specify
 
 branch: optional string
 
-The branch to build the new deployment from. The `HEAD` of the branch will be used. If omitted, the production branch will be used by default.
+Git branch to deploy. Uses the branch’s `HEAD`; defaults to the project’s production branch.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20branch%20%3E%20(schema)>)
 
@@ -120,7 +120,7 @@ The branch to build the new deployment from. The `HEAD` of the branch will be us
 
 commit\_dirty: optional "true"or "false"
 
-Boolean string indicating if the working directory has uncommitted changes.
+Whether the associated Git working tree has uncommitted changes. Provide <code>true</code> or <code>false</code>.
 
 </summary>
 
@@ -140,13 +140,13 @@ One of the following:
 
 commit\_hash: optional string
 
-Git commit SHA associated with this deployment.
+Git commit SHA associated with the deployment.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20commit_hash%20%3E%20(schema)>)
 
 commit\_message: optional string
 
-Git commit message associated with this deployment.
+Git commit message associated with the deployment.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20commit_message%20%3E%20(schema)>)
 
@@ -158,7 +158,7 @@ Functions routing configuration file.
 
 manifest: optional string
 
-JSON string containing a manifest of files to deploy. Maps file paths to their content hashes. Required for direct upload deployments. Maximum 20,000 entries.
+JSON-encoded object mapping deployment file paths to their uploaded content hashes. Required for Direct Upload deployments. Maximum 20,000 entries.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20manifest%20%3E%20(schema)>)
 
@@ -508,7 +508,7 @@ One of the following:
 
 is\_skipped: boolean
 
-If the deployment has been skipped.
+Whether the deployment was skipped.
 
 <a href="#">Link to this property</a>
 
@@ -578,7 +578,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -606,6 +606,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -630,7 +634,7 @@ Id of the project.
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -858,7 +862,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -886,6 +890,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -904,7 +912,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 3 more
+skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
 
 Why the deployment was skipped.
 
@@ -936,6 +944,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"superseded\_queued\_build"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -956,7 +968,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20pages.projects.deployments%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create deployment
+### Create a Pages deployment
 
 HTTP
 

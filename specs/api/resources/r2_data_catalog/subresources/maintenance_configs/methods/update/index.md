@@ -20,6 +20,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Update catalog maintenance configuration
 
+Deprecated: Use \`POST /accounts/{account\_id}/basin-catalog/{bucket\_name}/maintenance-configs\` instead.
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/maintenance-configs
 
 Update the maintenance configuration for a catalog. This allows you to enable or disable compaction and adjust target file sizes for optimization.

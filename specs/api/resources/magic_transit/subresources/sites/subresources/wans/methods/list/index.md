@@ -168,7 +168,7 @@ pointer: optional string
 
 <summary>
 
-result: array of <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, name, 5 more }
+result: array of <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, load\_balance\_inner\_flows, 6 more }
 
 </summary>
 
@@ -205,6 +205,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+load\_balance\_inner\_flows: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -317,6 +321,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     {
       "id": "023e105f4ecef8ad9ca31a8372d0c353",
       "health_check_rate": "low",
+      "load_balance_inner_flows": true,
       "name": "name",
       "physport": 1,
       "priority": 0,
@@ -363,6 +368,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     {
       "id": "023e105f4ecef8ad9ca31a8372d0c353",
       "health_check_rate": "low",
+      "load_balance_inner_flows": true,
       "name": "name",
       "physport": 1,
       "priority": 0,

@@ -1,5 +1,5 @@
 ---
-title: Get domains
+title: List Pages custom domains
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get domains
+# List Pages custom domains
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/domains
 
-Fetch a list of all domains associated with a Pages project.
+List the custom domains associated with a Cloudflare Pages project.
 
 ##### Security
 
@@ -72,7 +72,7 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
@@ -206,7 +206,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -434,7 +434,7 @@ The number of total pages in the entire result set.
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get domains
+### List Pages custom domains
 
 HTTP
 
@@ -475,7 +475,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pages/projects/$P
       "certificate_authority": "lets_encrypt",
       "created_on": "created_on",
       "domain_id": "domain_id",
-      "name": "this-is-my-domain-01.com",
+      "name": "example.com",
       "status": "initializing",
       "validation_data": {
         "method": "http",
@@ -534,7 +534,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pages/projects/$P
       "certificate_authority": "lets_encrypt",
       "created_on": "created_on",
       "domain_id": "domain_id",
-      "name": "this-is-my-domain-01.com",
+      "name": "example.com",
       "status": "initializing",
       "validation_data": {
         "method": "http",

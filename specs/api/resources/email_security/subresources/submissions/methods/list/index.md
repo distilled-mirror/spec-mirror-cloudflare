@@ -150,6 +150,8 @@ One of the following:
 
 original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
 
+The disposition a message is submitted to have.
+
 </summary>
 
 One of the following:
@@ -187,6 +189,8 @@ One of the following:
 <summary>
 
 outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -249,6 +253,8 @@ Search term for filtering submissions.
 <summary>
 
 requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -470,6 +476,8 @@ One of the following:
 
 escalated\_as: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
 
+The disposition a message is submitted to have.
+
 </summary>
 
 One of the following:
@@ -504,15 +512,21 @@ One of the following:
 
 escalated\_at: optional string
 
+When the submission was escalated to the security team.
+
 formatdate-time
 
 <a href="#">Link to this property</a>
 
 escalated\_by: optional string
 
+Email address of the user who escalated the submission.
+
 <a href="#">Link to this property</a>
 
 escalated\_submission\_id: optional string
+
+Submission ID of the escalated team submission, when this user submission was escalated.
 
 <a href="#">Link to this property</a>
 
@@ -521,6 +535,8 @@ escalated\_submission\_id: optional string
 <summary>
 
 original\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -556,6 +572,8 @@ One of the following:
 
 original\_edf\_hash: optional string
 
+EDF hash of the original message.
+
 <a href="#">Link to this property</a>
 
 original\_postfix\_id: optional string
@@ -566,6 +584,8 @@ The postfix ID of the original message that was submitted.
 
 outcome: optional string
 
+Processing outcome of the submission.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -573,6 +593,8 @@ outcome: optional string
 <summary>
 
 outcome\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -608,6 +630,8 @@ One of the following:
 
 requested\_by: optional string
 
+Email address of the user who requested the submission.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -615,6 +639,8 @@ requested\_by: optional string
 <summary>
 
 requested\_disposition: optional "MALICIOUS"or "SUSPICIOUS"or "SPOOF"or 3 more
+
+The disposition a message is submitted to have.
 
 </summary>
 
@@ -658,9 +684,13 @@ Deprecated, use <code>requested_at</code> instead.
 
 status: optional string
 
+Processing status of the submission.
+
 <a href="#">Link to this property</a>
 
 subject: optional string
+
+Subject line of the submitted message.
 
 <a href="#">Link to this property</a>
 

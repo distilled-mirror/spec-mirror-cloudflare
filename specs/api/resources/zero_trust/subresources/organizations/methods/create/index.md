@@ -438,6 +438,12 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20session_duration%20%3E%20(schema)>)
 
+strict\_service\_token\_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF\_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
+
+[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20strict_service_token_auth%20%3E%20(schema)>)
+
 ui\_read\_only\_toggle\_reason: optional string
 
 A description of the reason why the UI read only field is being toggled.
@@ -558,7 +564,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 15 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
 
 </summary>
 
@@ -950,6 +956,12 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <a href="#">Link to this property</a>
 
+strict\_service\_token\_auth: optional boolean
+
+Enables new behaviors for requests made with Access service tokens. Unauthorized requests emit audit logs, and return a 401 or 403 status code in the response instead of redirecting to the login page. Successful requests no longer receive a CF\_Authorization cookie in the response. Zero Trust organizations created on or after October 5, 2026 will have this setting enabled by default, and cannot disable it.
+
+<a href="#">Link to this property</a>
+
 ui\_read\_only\_toggle\_reason: optional string
 
 A description of the reason why the UI read only field is being toggled.
@@ -995,6 +1007,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
             "example.com"
           ],
           "session_duration": "24h",
+          "strict_service_token_auth": true,
           "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",
           "user_seat_expiration_inactive_time": "730h",
           "warp_auth_session_duration": "24h"
@@ -1078,6 +1091,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "inactivity_threshold_days": 30
     },
     "session_duration": "24h",
+    "strict_service_token_auth": true,
     "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",
     "updated_at": "2014-01-01T05:20:00.12345Z",
     "user_seat_expiration_inactive_time": "730h",
@@ -1166,6 +1180,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "inactivity_threshold_days": 30
     },
     "session_duration": "24h",
+    "strict_service_token_auth": true,
     "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",
     "updated_at": "2014-01-01T05:20:00.12345Z",
     "user_seat_expiration_inactive_time": "730h",

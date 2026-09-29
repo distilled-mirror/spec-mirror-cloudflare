@@ -20,23 +20,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Domains
 
-##### [Get domains](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/list)
+##### [List Pages custom domains](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/list)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/domains
 
-##### [Get domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/get)
+##### [Get a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/get)
 
 GET/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
-##### [Add domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create)
+##### [Add a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/create)
 
 POST/accounts/{account\_id}/pages/projects/{project\_name}/domains
 
-##### [Patch domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/edit)
+##### [Retry custom domain validation](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/edit)
 
 PATCH/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
-##### [Delete domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/delete)
+##### [Delete a Pages custom domain](https://developers.cloudflare.com/api/resources/pages/subresources/projects/subresources/domains/methods/delete)
 
 DELETE/accounts/{account\_id}/pages/projects/{project\_name}/domains/{domain\_name}
 
@@ -86,7 +86,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -310,7 +310,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -534,7 +534,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 
@@ -758,7 +758,7 @@ domain\_id: string
 
 name: string
 
-The domain name.
+Fully qualified domain name for the Pages project, such as <code>example.com</code>.
 
 <a href="#">Link to this property</a>
 

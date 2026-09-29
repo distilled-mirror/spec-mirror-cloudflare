@@ -148,7 +148,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, category, name, scopes }
+result: optional array of object {id, category, is\_selectable, 2 more }
 
 </summary>
 
@@ -223,6 +223,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+is\_selectable: optional boolean
+
+Whether the caller can select this permission group when creating a token.
 
 <a href="#">Link to this property</a>
 
@@ -344,6 +350,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "7cf72faf220841aabcfdfab81c43c4f6",
       "category": "account_and_billing",
+      "is_selectable": true,
       "name": "Billing Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -352,6 +359,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "9d24387c6e8544e2bc4024a03991339f",
       "category": "network_services",
+      "is_selectable": true,
       "name": "Load Balancing: Monitors and Pools Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -360,6 +368,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "d2a1802cc9a34e30852f8b33869b2f3c",
       "category": "network_services",
+      "is_selectable": false,
       "name": "Load Balancing: Monitors and Pools Write",
       "scopes": [
         "com.cloudflare.api.account"
@@ -368,6 +377,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "8b47d2786a534c08a1f94ee8f9f599ef",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers KV Storage Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -376,6 +386,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "f7f0eda5697f475c90846e879bab8666",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers KV Storage Write",
       "scopes": [
         "com.cloudflare.api.account"
@@ -384,6 +395,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "1a71c399035b4950a1bd1466bbe4f420",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers Scripts Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -392,6 +404,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "e086da7e2179491d91ee5f35b3ca210a",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers Scripts Write",
       "scopes": [
         "com.cloudflare.api.account"
@@ -438,6 +451,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "7cf72faf220841aabcfdfab81c43c4f6",
       "category": "account_and_billing",
+      "is_selectable": true,
       "name": "Billing Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -446,6 +460,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "9d24387c6e8544e2bc4024a03991339f",
       "category": "network_services",
+      "is_selectable": true,
       "name": "Load Balancing: Monitors and Pools Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -454,6 +469,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "d2a1802cc9a34e30852f8b33869b2f3c",
       "category": "network_services",
+      "is_selectable": false,
       "name": "Load Balancing: Monitors and Pools Write",
       "scopes": [
         "com.cloudflare.api.account"
@@ -462,6 +478,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "8b47d2786a534c08a1f94ee8f9f599ef",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers KV Storage Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -470,6 +487,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "f7f0eda5697f475c90846e879bab8666",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers KV Storage Write",
       "scopes": [
         "com.cloudflare.api.account"
@@ -478,6 +496,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "1a71c399035b4950a1bd1466bbe4f420",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers Scripts Read",
       "scopes": [
         "com.cloudflare.api.account"
@@ -486,6 +505,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/permission_groups \
     {
       "id": "e086da7e2179491d91ee5f35b3ca210a",
       "category": "developer_platform",
+      "is_selectable": true,
       "name": "Workers Scripts Write",
       "scopes": [
         "com.cloudflare.api.account"

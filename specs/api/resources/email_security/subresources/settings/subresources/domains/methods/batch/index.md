@@ -78,6 +78,8 @@ maxLength32
 
 deletes: array of object {id }
 
+IDs of the domains to remove protection from.
+
 </summary>
 
 id: string
@@ -98,6 +100,8 @@ formatuuid
 
 patches: array of object {id, allowed\_delivery\_modes, drop\_dispositions, 8 more }
 
+Partial updates to apply — each entry carries the domain’s ID and only the fields to change.
+
 </summary>
 
 id: string
@@ -113,6 +117,8 @@ formatuuid
 <summary>
 
 allowed\_delivery\_modes: optional array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+
+Delivery modes to onboard the domain through.
 
 </summary>
 
@@ -148,6 +154,8 @@ One of the following:
 
 drop\_dispositions: optional array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+Dispositions to drop instead of delivering, e.g. <code>["MALICIOUS", "SPAM"]</code>.
+
 </summary>
 
 One of the following:
@@ -202,6 +210,8 @@ One of the following:
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -220,15 +230,21 @@ One of the following:
 
 integration\_id: optional string
 
+Identifier of the CASB integration that authorizes this domain. The integration also enables API scanning, post-delivery actions, and directory sync.
+
 formatuuid
 
 <a href="#">Link to this property</a>
 
 ip\_restrictions: optional array of string
 
+Source IP ranges mail is accepted from. Any other source is rejected.
+
 <a href="#">Link to this property</a>
 
 lookback\_hops: optional number
+
+Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
 maximum20
 
@@ -241,6 +257,8 @@ minimum1
 <summary>
 
 regions: optional array of "GLOBAL"or "AU"or "DE"or 2 more
+
+Regions that process messages for this domain, e.g. <code>["GLOBAL"]</code> or <code>["US"]</code>.
 
 </summary>
 
@@ -272,13 +290,19 @@ One of the following:
 
 require\_tls\_inbound: optional boolean
 
+Require TLS on inbound connections.
+
 <a href="#">Link to this property</a>
 
 require\_tls\_outbound: optional boolean
 
+Require TLS on outbound connections.
+
 <a href="#">Link to this property</a>
 
 transport: optional string
+
+The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. <code>mx.example.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -292,6 +316,8 @@ transport: optional string
 
 posts: array of object {allowed\_delivery\_modes, domain, drop\_dispositions, 8 more }
 
+Domains to add protection for.
+
 </summary>
 
 <details>
@@ -299,6 +325,8 @@ posts: array of object {allowed\_delivery\_modes, domain, drop\_dispositions, 8 
 <summary>
 
 allowed\_delivery\_modes: array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+
+Delivery modes to onboard the domain through.
 
 </summary>
 
@@ -330,6 +358,8 @@ One of the following:
 
 domain: string
 
+The email domain to protect.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -337,6 +367,8 @@ domain: string
 <summary>
 
 drop\_dispositions: array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
+
+Dispositions to drop instead of delivering, e.g. <code>["MALICIOUS", "SPAM"]</code>.
 
 </summary>
 
@@ -388,6 +420,8 @@ One of the following:
 
 ip\_restrictions: array of string
 
+Source IP ranges mail is accepted from. Any other source is rejected.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -395,6 +429,8 @@ ip\_restrictions: array of string
 <summary>
 
 regions: array of "GLOBAL"or "AU"or "DE"or 2 more
+
+Regions that process messages for this domain, e.g. <code>["GLOBAL"]</code> or <code>["US"]</code>.
 
 </summary>
 
@@ -430,6 +466,8 @@ One of the following:
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -448,11 +486,15 @@ One of the following:
 
 integration\_id: optional string
 
+Identifier of the CASB integration that authorizes this domain. The integration also enables API scanning, post-delivery actions, and directory sync.
+
 formatuuid
 
 <a href="#">Link to this property</a>
 
 lookback\_hops: optional number
+
+Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
 maximum20
 
@@ -462,13 +504,19 @@ minimum1
 
 require\_tls\_inbound: optional boolean
 
+Require TLS on inbound connections.
+
 <a href="#">Link to this property</a>
 
 require\_tls\_outbound: optional boolean
 
+Require TLS on outbound connections.
+
 <a href="#">Link to this property</a>
 
 transport: optional string
+
+The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. <code>mx.example.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -481,6 +529,8 @@ transport: optional string
 <summary>
 
 puts: array of object {id, allowed\_delivery\_modes, drop\_dispositions, 8 more }
+
+Full replacements to apply — each entry carries the domain’s ID and every field of its new value.
 
 </summary>
 
@@ -497,6 +547,8 @@ formatuuid
 <summary>
 
 allowed\_delivery\_modes: array of "DIRECT"or "BCC"or "JOURNAL"or 2 more
+
+Delivery modes to onboard the domain through.
 
 </summary>
 
@@ -532,6 +584,8 @@ One of the following:
 
 drop\_dispositions: array of "MALICIOUS"or "MALICIOUS-BEC"or "SUSPICIOUS"or 7 more
 
+Dispositions to drop instead of delivering, e.g. <code>["MALICIOUS", "SPAM"]</code>.
+
 </summary>
 
 One of the following:
@@ -582,6 +636,8 @@ One of the following:
 
 ip\_restrictions: array of string
 
+Source IP ranges mail is accepted from. Any other source is rejected.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -589,6 +645,8 @@ ip\_restrictions: array of string
 <summary>
 
 regions: array of "GLOBAL"or "AU"or "DE"or 2 more
+
+Regions that process messages for this domain, e.g. <code>["GLOBAL"]</code> or <code>["US"]</code>.
 
 </summary>
 
@@ -624,6 +682,8 @@ One of the following:
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -642,11 +702,15 @@ One of the following:
 
 integration\_id: optional string
 
+Identifier of the CASB integration that authorizes this domain. The integration also enables API scanning, post-delivery actions, and directory sync.
+
 formatuuid
 
 <a href="#">Link to this property</a>
 
 lookback\_hops: optional number
+
+Number of hops to trace back through received headers when reconstructing the original message (1-20).
 
 maximum20
 
@@ -656,13 +720,19 @@ minimum1
 
 require\_tls\_inbound: optional boolean
 
+Require TLS on inbound connections.
+
 <a href="#">Link to this property</a>
 
 require\_tls\_outbound: optional boolean
 
+Require TLS on outbound connections.
+
 <a href="#">Link to this property</a>
 
 transport: optional string
+
+The mail transport hostname for MX/Inline delivery — the MX record Cloudflare delivers email to (e.g. <code>mx.example.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -991,6 +1061,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 
@@ -1380,6 +1452,8 @@ minimum0
 
 folder: optional "AllItems"or "Inbox"
 
+The mailbox folder to scan, for API-scanning domains.
+
 </summary>
 
 One of the following:
@@ -1767,6 +1841,8 @@ minimum0
 <summary>
 
 folder: optional "AllItems"or "Inbox"
+
+The mailbox folder to scan, for API-scanning domains.
 
 </summary>
 

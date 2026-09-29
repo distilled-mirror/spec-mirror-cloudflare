@@ -1,5 +1,5 @@
 ---
-title: Abuse Report Details
+title: Get an abuse report against the account
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Abuse Report Details
+# Get an abuse report against the account
 
 GET/accounts/{account\_id}/abuse-reports/{report\_param}
 
-Retrieve the details of an abuse report.
+Retrieve the details of an abuse report made against a domain or other content associated with the account. To retrieve a report that the account submitted, use the submitted abuse report endpoint instead.
 
 ##### Security
 
@@ -302,7 +302,7 @@ message: string
 
 [Link to this property](#)%20abuse_reports%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-### Abuse Report Details
+### Get an abuse report against the account
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Modify organization.
+title: Update organization
 ---
 
 [Skip to content](#_top)
@@ -16,11 +16,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Modify organization.
+# Update organization
 
 PUT/organizations/{organization\_id}
 
-Modify organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Update an organization’s name. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
 
 ##### Security
 
@@ -298,7 +298,7 @@ success: true
 
 [Link to this property](#)%20organizations%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Modify organization.
+### Update organization
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Move account
+title: Move account to organization
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Move account
+# Move account to organization
 
 POST/accounts/{account\_id}/move
 
-Move an account within an organization hierarchy or an account outside an organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Move an account into a destination organization, either assigning a standalone account to an organization or moving it between organizations in the same hierarchy. Availability depends on the organization’s capabilities. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
 
 ##### Security
 
@@ -45,6 +45,8 @@ account\_id: string
 ##### Body ParametersJSONExpand Collapse
 
 destination\_organization\_id: string
+
+The ID of the organization to move the account into.
 
 [Link to this property](#)%20accounts.account_organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20destination_organization_id%20%3E%20(schema)>)
 
@@ -124,7 +126,7 @@ success: true
 
 [Link to this property](#)%20accounts.account_organizations%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Move account
+### Move account to organization
 
 HTTP
 

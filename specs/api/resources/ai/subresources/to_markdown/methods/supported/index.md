@@ -1,5 +1,5 @@
 ---
-title: Get all converted formats supported
+title: List supported Markdown conversion formats
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get all converted formats supported
+# List supported Markdown conversion formats
 
 GET/accounts/{account\_id}/ai/tomarkdown/supported
 
-Lists all file formats supported for conversion to Markdown.
+Lists the file extensions and MIME types accepted by Workers AI’s Markdown conversion endpoint. Use this list to check whether a file can be converted before uploading it.
 
 ##### Security
 
@@ -62,6 +62,8 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
+Cloudflare account ID used for this AI model request.
+
 [Link to this property](#)%20ai.to_markdown%20%3E%20(method)%20supported%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
@@ -90,7 +92,7 @@ success: boolean
 
 [Link to this property](#)%20ai.to_markdown%20%3E%20(method)%20supported%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get all converted formats supported
+### List supported Markdown conversion formats
 
 HTTP
 

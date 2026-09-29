@@ -18,21 +18,31 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List R2 catalogs](https://developers.cloudflare.com/api/resources/r2_data_catalog/methods/list)
 
+Deprecated
+
 GET/accounts/{account\_id}/r2-catalog
 
 ##### [Get R2 catalog details](https://developers.cloudflare.com/api/resources/r2_data_catalog/methods/get)
+
+Deprecated
 
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}
 
 ##### [Enable R2 bucket as a catalog](https://developers.cloudflare.com/api/resources/r2_data_catalog/methods/enable)
 
+Deprecated
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/enable
 
 ##### [Disable R2 catalog](https://developers.cloudflare.com/api/resources/r2_data_catalog/methods/disable)
 
+Deprecated
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/disable
 
 ##### [Delete R2 catalog metadata](https://developers.cloudflare.com/api/resources/r2_data_catalog/methods/delete)
+
+Deprecated
 
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/delete
 
@@ -536,9 +546,13 @@ Specifies the name of the activated catalog.
 
 ##### [Get catalog maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/maintenance_configs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/maintenance-configs
 
 ##### [Update catalog maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/maintenance_configs/methods/update)
+
+Deprecated
 
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/maintenance-configs
 
@@ -874,6 +888,8 @@ One of the following:
 
 ##### [Store catalog credentials](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/credentials/methods/create)
 
+Deprecated
+
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/credential
 
 ##### ModelsExpand Collapse
@@ -885,6 +901,8 @@ CredentialCreateResponse = unknown
 #### R2 Data CatalogNamespaces
 
 ##### [List namespaces in catalog](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/methods/list)
+
+Deprecated
 
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces
 
@@ -969,6 +987,8 @@ Use this opaque token to fetch the next page of results. A null or absent value 
 #### R2 Data CatalogNamespacesTables
 
 ##### [List tables in namespace](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/methods/list)
+
+Deprecated
 
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables
 
@@ -1106,9 +1126,13 @@ Contains UUIDs for each table when return\_uuids is true. The order corresponds 
 
 ##### [Get table maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/get)
 
+Deprecated
+
 GET/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 
 ##### [Update table maintenance configuration](https://developers.cloudflare.com/api/resources/r2_data_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/update)
+
+Deprecated
 
 POST/accounts/{account\_id}/r2-catalog/{bucket\_name}/namespaces/{namespace}/tables/{table\_name}/maintenance-configs
 

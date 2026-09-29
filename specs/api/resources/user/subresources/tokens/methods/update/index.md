@@ -354,7 +354,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20token%20%3E%20(schema)">Token</a> { id, condition, expires\_on, 7 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20token%20%3E%20(schema)">Token</a> { id, condition, creator\_email\_at\_creation, 10 more }
 
 </summary>
 
@@ -401,6 +401,14 @@ List of IPv4/IPv6 CIDR addresses.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+creator\_email\_at\_creation: optional string
+
+The email address of the user who created the token at the time of creation. Only present for Account Owned API Tokens when a creator email was available.
+
+maxLength90
 
 <a href="#">Link to this property</a>
 
@@ -572,6 +580,18 @@ Map of nested resource permissions
 
 <a href="#">Link to this property</a>
 
+provisioner\_id: optional string
+
+The identifier of the service that provisioned the token. For an OAuth-provisioned token, this is the OAuth client identifier. Present when <code>provisioner_type</code> is present and null when the identifier is unavailable.
+
+<a href="#">Link to this property</a>
+
+provisioner\_type: optional string
+
+The type of service that provisioned the token. Only present for provisioned Account Owned API Tokens.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -631,7 +651,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
                 }
               ],
               "resources": {
-                "foo": "string"
+                "com.cloudflare.api.account.zone.22b1de5f1c0e4b3ea97bb1e963b06a43": "*"
               }
             }
           ],
@@ -680,6 +700,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
         ]
       }
     },
+    "creator_email_at_creation": "user@example.com",
     "expires_on": "2020-01-01T00:00:00Z",
     "issued_on": "2018-07-01T05:20:00Z",
     "last_used_on": "2020-01-02T12:34:00Z",
@@ -709,10 +730,12 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
           }
         ],
         "resources": {
-          "foo": "string"
+          "com.cloudflare.api.account.zone.22b1de5f1c0e4b3ea97bb1e963b06a43": "*"
         }
       }
     ],
+    "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "provisioner_type": "com.cloudflare.api.oauthtoken",
     "status": "active"
   }
 }
@@ -759,6 +782,7 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
         ]
       }
     },
+    "creator_email_at_creation": "user@example.com",
     "expires_on": "2020-01-01T00:00:00Z",
     "issued_on": "2018-07-01T05:20:00Z",
     "last_used_on": "2020-01-02T12:34:00Z",
@@ -788,10 +812,12 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
           }
         ],
         "resources": {
-          "foo": "string"
+          "com.cloudflare.api.account.zone.22b1de5f1c0e4b3ea97bb1e963b06a43": "*"
         }
       }
     ],
+    "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
+    "provisioner_type": "com.cloudflare.api.oauthtoken",
     "status": "active"
   }
 }

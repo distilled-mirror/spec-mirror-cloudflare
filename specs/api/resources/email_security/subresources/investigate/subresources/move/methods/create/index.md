@@ -84,6 +84,8 @@ Unique identifier for a message retrieved from investigation.
 
 destination: "Inbox"or "JunkEmail"or "DeletedItems"or 2 more
 
+The mailbox folder to move messages to.
+
 </summary>
 
 One of the following:

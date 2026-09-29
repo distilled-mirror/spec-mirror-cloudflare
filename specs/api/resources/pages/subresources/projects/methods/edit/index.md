@@ -1,5 +1,5 @@
 ---
-title: Update project
+title: Update a Cloudflare Pages project
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update project
+# Update a Cloudflare Pages project
 
 PATCH/accounts/{account\_id}/pages/projects/{project\_name}
 
-Set new attributes for an existing project. Modify environment variables. To delete an environment variable, set the key to null.
+Update the build, deployment, source, or environment settings for a Cloudflare Pages project. To delete an environment variable, set its key to `null`.
 
 ##### Security
 
@@ -70,7 +70,7 @@ maxLength32
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects%20%3E%20(method)%20edit%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
@@ -982,7 +982,7 @@ Hash of the Wrangler configuration used for the deployment.
 
 name: optional string
 
-Name of the project.
+Name for the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 [Link to this property](#)%20pages.projects%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -1494,7 +1494,7 @@ One of the following:
 
 is\_skipped: boolean
 
-If the deployment has been skipped.
+Whether the deployment was skipped.
 
 <a href="#">Link to this property</a>
 
@@ -1564,7 +1564,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -1592,6 +1592,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1616,7 +1620,7 @@ Id of the project.
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -1844,7 +1848,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -1872,6 +1876,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1890,7 +1898,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 3 more
+skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
 
 Why the deployment was skipped.
 
@@ -1919,6 +1927,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "pages\_to\_workers\_conversion"
+
+<a href="#">Link to this property</a>
+
+"superseded\_queued\_build"
 
 <a href="#">Link to this property</a>
 
@@ -3060,7 +3072,7 @@ One of the following:
 
 is\_skipped: boolean
 
-If the deployment has been skipped.
+Whether the deployment was skipped.
 
 <a href="#">Link to this property</a>
 
@@ -3130,7 +3142,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -3158,6 +3170,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3182,7 +3198,7 @@ Id of the project.
 
 project\_name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -3410,7 +3426,7 @@ formatdate-time
 
 <summary>
 
-status: "success"or "idle"or "active"or 2 more
+status: "success"or "idle"or "active"or 3 more
 
 State of the current stage.
 
@@ -3438,6 +3454,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"skipped"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3456,7 +3476,7 @@ The live URL to view this deployment.
 
 <summary>
 
-skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 3 more
+skip\_reason: optional "commit\_message"or "preview\_deployments\_disabled"or "production\_deployments\_disabled"or 4 more
 
 Why the deployment was skipped.
 
@@ -3488,6 +3508,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"superseded\_queued\_build"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3504,7 +3528,7 @@ Whether the deployment uses functions.
 
 name: string
 
-Name of the project.
+Name of the Pages project. Must begin with a lowercase letter or digit and contain only lowercase letters, digits, and hyphens.
 
 <a href="#">Link to this property</a>
 
@@ -3756,7 +3780,7 @@ Whether the API call was successful.
 
 [Link to this property](#)%20pages.projects%20%3E%20(method)%20edit%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update project
+### Update a Cloudflare Pages project
 
 HTTP
 

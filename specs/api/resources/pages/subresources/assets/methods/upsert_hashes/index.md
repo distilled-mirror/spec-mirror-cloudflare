@@ -149,26 +149,8 @@ curl https://api.cloudflare.com/client/v4/pages/assets/upsert-hashes \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "success": true
 }
 ```
@@ -179,26 +161,8 @@ curl https://api.cloudflare.com/client/v4/pages/assets/upsert-hashes \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "success": true
 }
 ```

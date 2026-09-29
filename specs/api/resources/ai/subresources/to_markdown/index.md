@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # To Markdown
 
-##### [Convert Files into Markdown](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/transform)
+##### [Convert uploaded files to Markdown](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/transform)
 
 POST/accounts/{account\_id}/ai/tomarkdown
 
-##### [Get all converted formats supported](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/supported)
+##### [List supported Markdown conversion formats](https://developers.cloudflare.com/api/resources/ai/subresources/to_markdown/methods/supported)
 
 GET/accounts/{account\_id}/ai/tomarkdown/supported
 

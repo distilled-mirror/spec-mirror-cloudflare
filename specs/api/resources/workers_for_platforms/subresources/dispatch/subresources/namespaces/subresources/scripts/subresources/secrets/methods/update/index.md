@@ -84,7 +84,7 @@ Name of the Workers for Platforms dispatch namespace.
 
 script\_name: string
 
-Name of the script, used in URLs and route configuration.
+Name of the script.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.secrets%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
