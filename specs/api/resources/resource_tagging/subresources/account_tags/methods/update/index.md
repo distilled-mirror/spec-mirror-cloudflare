@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/tags
 
-Creates or updates tags for a specific account-level resource.
+Creates or updates tags for a specific account-level resource. Replaces all existing tags for the resource.
 
 ##### Security
 
@@ -72,9 +72,9 @@ One of the following:
 
 <summary>
 
-ResourceTaggingSetTagsRequestAccountLevelWorkerVersion object {resource\_id, resource\_type, worker\_id, tags }
+WorkerVersion object {resource\_id, resource\_type, worker\_id, tags }
 
-Request body schema for deleting tags from account-level resources.
+Request body schema for deleting tags from worker\_version resources.
 
 </summary>
 
@@ -84,139 +84,9 @@ Identifies the unique resource.
 
 <a href="#">Link to this property</a>
 
-<details>
+resource\_type: "worker\_version"
 
-<summary>
-
-resource\_type: "access\_application"or "access\_group"or "account"or 27 more
-
-Enum for base account-level resource types (those with no extra required fields).
-
-</summary>
-
-One of the following:
-
-"access\_application"
-
-<a href="#">Link to this property</a>
-
-"access\_group"
-
-<a href="#">Link to this property</a>
-
-"account"
-
-<a href="#">Link to this property</a>
-
-"account\_ruleset"
-
-<a href="#">Link to this property</a>
-
-"ai\_gateway"
-
-<a href="#">Link to this property</a>
-
-"alerting\_policy"
-
-<a href="#">Link to this property</a>
-
-"alerting\_webhook"
-
-<a href="#">Link to this property</a>
-
-"cloudflared\_tunnel"
-
-<a href="#">Link to this property</a>
-
-"cws\_deployment"
-
-<a href="#">Link to this property</a>
-
-"cws\_policy"
-
-<a href="#">Link to this property</a>
-
-"cws\_policy\_set"
-
-<a href="#">Link to this property</a>
-
-"cws\_workload"
-
-<a href="#">Link to this property</a>
-
-"d1\_database"
-
-<a href="#">Link to this property</a>
-
-"durable\_object\_namespace"
-
-<a href="#">Link to this property</a>
-
-"gateway\_list"
-
-<a href="#">Link to this property</a>
-
-"gateway\_rule"
-
-<a href="#">Link to this property</a>
-
-"image"
-
-<a href="#">Link to this property</a>
-
-"infrastructure\_target"
-
-<a href="#">Link to this property</a>
-
-"kv\_namespace"
-
-<a href="#">Link to this property</a>
-
-"load\_balancer\_monitor"
-
-<a href="#">Link to this property</a>
-
-"load\_balancer\_pool"
-
-<a href="#">Link to this property</a>
-
-"pages\_project"
-
-<a href="#">Link to this property</a>
-
-"queue"
-
-<a href="#">Link to this property</a>
-
-"r2\_bucket"
-
-<a href="#">Link to this property</a>
-
-"resource\_share"
-
-<a href="#">Link to this property</a>
-
-"stream\_live\_input"
-
-<a href="#">Link to this property</a>
-
-"stream\_video"
-
-<a href="#">Link to this property</a>
-
-"vectorize\_index"
-
-<a href="#">Link to this property</a>
-
-"worker"
-
-<a href="#">Link to this property</a>
-
-"worker\_version"
-
-<a href="#">Link to this property</a>
-
-</details>
+Enum for worker\_version resource type.
 
 <a href="#">Link to this property</a>
 
@@ -2694,7 +2564,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/tags \
     -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
     -d '{
           "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
-          "resource_type": "worker",
+          "resource_type": "worker_version",
           "worker_id": "3f72a691-44b3-4c11-8642-c18a88ddaa5e",
           "tags": {
             "environment": "production",

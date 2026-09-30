@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/flagship/apps/{app\_id}/flags/{flag\_key}
 
-Deletes a flag permanently. Subsequent evaluations fall back to the caller-supplied default. Cannot be undone.
+Deletes a flag permanently. After deletion propagates, direct evaluations return not found; typed binding accessors may return the caller-supplied default. Cannot be undone.
 
 ##### Security
 
@@ -64,19 +64,19 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
 [Link to this property](#)%20flagship.apps.flags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 app\_id: string
 
-App identifier.
+Flagship app ID returned when the app was created.
 
 [Link to this property](#)%20flagship.apps.flags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
 flag\_key: string
 
-Flag key (slug).
+Case-sensitive key identifying the flag within the app.
 
 [Link to this property](#)%20flagship.apps.flags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20flag_key%20%3E%20(schema)>)
 

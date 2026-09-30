@@ -62,13 +62,15 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
 [Link to this property](#)%20flagship.apps%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
 
 name: string
+
+Name of the Flagship app (1–64 letters, numbers, hyphens, or underscores).
 
 maxLength64
 

@@ -1,5 +1,5 @@
 ---
-title: Evaluate flag
+title: Evaluate flag from query context
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Evaluate flag
+# Evaluate flag from query context
 
 GET/accounts/{account\_id}/flagship/apps/{app\_id}/evaluate
 
-Evaluates a flag against the provided context. Pass context attributes as query parameters; values are forwarded as strings. For low-latency in-Worker evaluation, prefer the Flagship binding over this endpoint.
+Evaluates a flag against the provided context. Pass context attributes as query parameters; values are coerced to numbers or booleans where unambiguous. For low-latency in-Worker evaluation, prefer the Flagship binding over this endpoint.
 
 ##### Security
 
@@ -64,13 +64,13 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 app\_id: string
 
-App identifier.
+Flagship app ID returned when the app was created.
 
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
@@ -92,17 +92,25 @@ Context targeting key (per OpenFeature spec); used for percentage rollout bucket
 
 flagKey: string
 
+Key of the evaluated flag.
+
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(model)%20evaluate_get_response%20%3E%20(schema)%20%3E%20(property)%20flagKey>)
 
 <details>
 
 <summary>
 
-reason: "TARGETING\_MATCH"or "DEFAULT"or "DISABLED"or "SPLIT"
+reason: "STATIC"or "TARGETING\_MATCH"or "DEFAULT"or 2 more
+
+Reason the evaluator selected this variation.
 
 </summary>
 
 One of the following:
+
+"STATIC"
+
+<a href="#">Link to this property</a>
 
 "TARGETING\_MATCH"
 
@@ -125,6 +133,8 @@ One of the following:
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(model)%20evaluate_get_response%20%3E%20(schema)%20%3E%20(property)%20reason>)
 
 variant: string
+
+Name of the variation that supplied the resolved value.
 
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(model)%20evaluate_get_response%20%3E%20(schema)%20%3E%20(property)%20variant>)
 
@@ -162,7 +172,7 @@ array of unknown
 
 [Link to this property](#)%20flagship.apps.evaluate%20%3E%20(model)%20evaluate_get_response%20%3E%20(schema)%20%3E%20(property)%20value>)
 
-### Evaluate flag
+### Evaluate flag from query context
 
 HTTP
 
@@ -178,7 +188,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/flagship/apps/$AP
 ```
 {
   "flagKey": "flagKey",
-  "reason": "TARGETING_MATCH",
+  "reason": "STATIC",
   "variant": "variant",
   "value": "string"
 }
@@ -191,7 +201,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/flagship/apps/$AP
 ```
 {
   "flagKey": "flagKey",
-  "reason": "TARGETING_MATCH",
+  "reason": "STATIC",
   "variant": "variant",
   "value": "string"
 }

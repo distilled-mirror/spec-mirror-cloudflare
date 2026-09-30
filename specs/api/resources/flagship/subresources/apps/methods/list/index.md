@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/flagship/apps
 
-Lists all apps in the account. Returns identity and audit fields only — flag definitions are not included.
+Lists all Flagship apps in the account. Returns identity and audit fields only; flag definitions are not included.
 
 ##### Security
 
@@ -62,7 +62,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
 [Link to this property](#)%20flagship.apps%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 

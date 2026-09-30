@@ -25,11 +25,9 @@ Threat Signals API for managing threat intelligence feeds, articles, indicators,
 1. **API token** — requests must use an API token with Cloudforce One permissions; write operations (creating, editing, or deleting feeds, skills, and tags) require write access.
 2. **Plan limits** — access on the Free plan is limited; feed quotas and managed default skills apply.
 
-##### [Check Threat Signals service health](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_signals/methods/health)
+#### Threat SignalsSearch
 
-GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/health
-
-##### [Search Threat Signals articles using AI Search](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_signals/methods/search)
+##### [Search Threat Signals articles using AI Search](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_signals/subresources/search/methods/search)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/search
 
@@ -39,23 +37,7 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/search
 
 <summary>
 
-ThreatSignalHealthResponse object {status }
-
-</summary>
-
-status: "ok"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20cloudforce_one.threat_signals%20%3E%20(model)%20threat_signal_health_response%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-ThreatSignalSearchResponse object {count, results }
+SearchSearchResponse object {count, results }
 
 </summary>
 
@@ -113,7 +95,7 @@ text: string
 
 </details>
 
-[Link to this property](#)%20cloudforce_one.threat_signals%20%3E%20(model)%20threat_signal_search_response%20%3E%20(schema)>)
+[Link to this property](#)%20cloudforce_one.threat_signals.search%20%3E%20(model)%20search_search_response%20%3E%20(schema)>)
 
 #### Threat SignalsCategories
 

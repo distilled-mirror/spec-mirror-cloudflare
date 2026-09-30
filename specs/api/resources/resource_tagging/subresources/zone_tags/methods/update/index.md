@@ -154,9 +154,9 @@ Contains key-value pairs of tags. Keys may contain at most 256 characters. Value
 
 <summary>
 
-ResourceTaggingSetTagsRequestZoneLevelAccessApplicationPolicy object {access\_application\_id, resource\_id, resource\_type, tags }
+AccessApplicationPolicy object {access\_application\_id, resource\_id, resource\_type, tags }
 
-Request body schema for deleting tags from zone-level resources. Zone ID comes from URL path.
+Request body schema for deleting tags from access\_application\_policy resources.
 
 </summary>
 
@@ -174,63 +174,9 @@ Identifies the unique resource.
 
 <a href="#">Link to this property</a>
 
-<details>
+resource\_type: "access\_application\_policy"
 
-<summary>
-
-resource\_type: "api\_gateway\_operation"or "custom\_certificate"or "custom\_hostname"or 8 more
-
-Enum for base zone-level resource types (those with no extra required fields).
-
-</summary>
-
-One of the following:
-
-"api\_gateway\_operation"
-
-<a href="#">Link to this property</a>
-
-"custom\_certificate"
-
-<a href="#">Link to this property</a>
-
-"custom\_hostname"
-
-<a href="#">Link to this property</a>
-
-"dns\_record"
-
-<a href="#">Link to this property</a>
-
-"healthcheck"
-
-<a href="#">Link to this property</a>
-
-"load\_balancer"
-
-<a href="#">Link to this property</a>
-
-"managed\_client\_certificate"
-
-<a href="#">Link to this property</a>
-
-"worker\_route"
-
-<a href="#">Link to this property</a>
-
-"zone"
-
-<a href="#">Link to this property</a>
-
-"zone\_ruleset"
-
-<a href="#">Link to this property</a>
-
-"access\_application\_policy"
-
-<a href="#">Link to this property</a>
-
-</details>
+Enum for access\_application\_policy resource type.
 
 <a href="#">Link to this property</a>
 

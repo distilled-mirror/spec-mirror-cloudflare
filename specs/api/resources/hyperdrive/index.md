@@ -774,7 +774,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -800,12 +800,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -813,6 +807,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 
@@ -1238,7 +1238,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -1264,12 +1264,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -1277,6 +1271,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 
@@ -1702,7 +1702,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -1728,12 +1728,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -1741,6 +1735,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 
@@ -2166,7 +2166,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -2192,12 +2192,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -2205,6 +2199,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 
@@ -2630,7 +2630,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -2656,12 +2656,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -2669,6 +2663,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 
@@ -3094,7 +3094,7 @@ formatdate-time
 
 <summary>
 
-integration: optional object {database\_branch\_name, database\_name, integration, 3 more }
+integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
 Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
 
@@ -3120,12 +3120,6 @@ minLength1
 
 <a href="#">Link to this property</a>
 
-integration: "planetscale"
-
-The database integration used by this operation.
-
-<a href="#">Link to this property</a>
-
 organization\_name: string
 
 The name of the PlanetScale organization.
@@ -3133,6 +3127,12 @@ The name of the PlanetScale organization.
 maxLength2048
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+provider: "planetscale"
+
+The database integration provider used by this operation.
 
 <a href="#">Link to this property</a>
 

@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Evaluate
 
-##### [Evaluate flag](https://developers.cloudflare.com/api/resources/flagship/subresources/apps/subresources/evaluate/methods/get)
+##### [Evaluate flag from query context](https://developers.cloudflare.com/api/resources/flagship/subresources/apps/subresources/evaluate/methods/get)
 
 GET/accounts/{account\_id}/flagship/apps/{app\_id}/evaluate
 
@@ -36,17 +36,25 @@ EvaluateGetResponse object {flagKey, reason, variant, value }
 
 flagKey: string
 
+Key of the evaluated flag.
+
 <a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-reason: "TARGETING\_MATCH"or "DEFAULT"or "DISABLED"or "SPLIT"
+reason: "STATIC"or "TARGETING\_MATCH"or "DEFAULT"or 2 more
+
+Reason the evaluator selected this variation.
 
 </summary>
 
 One of the following:
+
+"STATIC"
+
+<a href="#">Link to this property</a>
 
 "TARGETING\_MATCH"
 
@@ -69,6 +77,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 variant: string
+
+Name of the variation that supplied the resolved value.
 
 <a href="#">Link to this property</a>
 

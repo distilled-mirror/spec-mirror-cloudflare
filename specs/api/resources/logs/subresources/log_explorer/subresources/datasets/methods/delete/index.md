@@ -108,7 +108,7 @@ success: boolean
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/logs#(resource)%20logs.log_explorer.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)">Dataset</a> { created\_at, dataset, dataset\_id, 7 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/logs#(resource)%20logs.log_explorer.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)">Dataset</a> { created\_at, dataset, dataset\_id, 8 more }
 
 A Log Explorer dataset summary. List endpoints return this type and omit field configuration; use the single-dataset endpoint to retrieve it.
 
@@ -216,6 +216,12 @@ The Logpush filter predicate applied to this dataset. Omitted when no filter is 
 
 <a href="#">Link to this property</a>
 
+filter\_attack\_traffic: optional boolean
+
+Whether the Logpush job filters attack traffic. Omitted for datasets that do not support this option.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20logs.log_explorer.datasets%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -265,7 +271,8 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "object_id": "object_id",
     "object_type": "account",
     "updated_at": "2019-12-27T18:11:19.117Z",
-    "filter": "filter"
+    "filter": "filter",
+    "filter_attack_traffic": true
   }
 }
 ```
@@ -305,7 +312,8 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "object_id": "object_id",
     "object_type": "account",
     "updated_at": "2019-12-27T18:11:19.117Z",
-    "filter": "filter"
+    "filter": "filter",
+    "filter_attack_traffic": true
   }
 }
 ```

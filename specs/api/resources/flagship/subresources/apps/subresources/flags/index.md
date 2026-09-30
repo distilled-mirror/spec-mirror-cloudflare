@@ -116,7 +116,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -163,6 +163,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -246,7 +254,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -293,6 +301,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -376,7 +392,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -423,6 +439,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -506,7 +530,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -553,6 +577,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -636,7 +668,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -683,6 +715,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -766,7 +806,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -813,6 +853,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1106,17 +1154,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -1199,6 +1251,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 
@@ -1290,7 +1344,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1337,6 +1391,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1420,7 +1482,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1467,6 +1529,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1550,7 +1620,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1597,6 +1667,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1680,7 +1758,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1727,6 +1805,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1810,7 +1896,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1857,6 +1943,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -1940,7 +2034,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -1987,6 +2081,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -2280,17 +2382,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -2373,6 +2479,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 
@@ -2464,7 +2572,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -2511,6 +2619,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -2594,7 +2710,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -2641,6 +2757,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -2724,7 +2848,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -2771,6 +2895,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -2854,7 +2986,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -2901,6 +3033,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -2984,7 +3124,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -3031,6 +3171,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -3114,7 +3262,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -3161,6 +3309,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -3454,17 +3610,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -3547,6 +3707,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 
@@ -3638,7 +3800,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -3685,6 +3847,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -3768,7 +3938,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -3815,6 +3985,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -3898,7 +4076,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -3945,6 +4123,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -4028,7 +4214,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -4075,6 +4261,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -4158,7 +4352,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -4205,6 +4399,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -4288,7 +4490,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -4335,6 +4537,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -4628,17 +4838,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -4722,6 +4936,8 @@ array of unknown
 
 description: optional string
 
+Optional operator-facing description. It does not affect flag evaluation.
+
 maxLength512
 
 <a href="#">Link to this property</a>
@@ -4756,7 +4972,7 @@ key: string
 
 #### FlagsChangelog
 
-##### [Get flag changelog](https://developers.cloudflare.com/api/resources/flagship/subresources/apps/subresources/flags/subresources/changelog/methods/list)
+##### [List flag changelog entries](https://developers.cloudflare.com/api/resources/flagship/subresources/apps/subresources/flags/subresources/changelog/methods/list)
 
 GET/accounts/{account\_id}/flagship/apps/{app\_id}/flags/{flag\_key}/changelog
 
@@ -4854,7 +5070,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -4901,6 +5117,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -4984,7 +5208,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -5031,6 +5255,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -5114,7 +5346,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -5161,6 +5393,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -5244,7 +5484,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -5291,6 +5531,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -5374,7 +5622,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -5421,6 +5669,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -5504,7 +5760,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -5551,6 +5807,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -5844,17 +6108,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -5937,6 +6205,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 
@@ -6048,7 +6318,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6095,6 +6365,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -6178,7 +6456,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6225,6 +6503,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -6308,7 +6594,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6355,6 +6641,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -6438,7 +6732,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6485,6 +6779,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -6568,7 +6870,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6615,6 +6917,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -6698,7 +7008,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -6745,6 +7055,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7038,17 +7356,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -7131,6 +7453,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 
@@ -7242,7 +7566,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7289,6 +7613,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7372,7 +7704,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7419,6 +7751,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7502,7 +7842,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7549,6 +7889,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7632,7 +7980,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7679,6 +8027,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7762,7 +8118,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7809,6 +8165,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -7892,7 +8256,7 @@ minLength1
 
 <summary>
 
-operator: "equals"or "not\_equals"or "greater\_than"or 8 more
+operator: "equals"or "not\_equals"or "greater\_than"or 10 more
 
 </summary>
 
@@ -7939,6 +8303,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "not\_in"
+
+<a href="#">Link to this property</a>
+
+"has"
+
+<a href="#">Link to this property</a>
+
+"not\_has"
 
 <a href="#">Link to this property</a>
 
@@ -8232,17 +8604,21 @@ rollout: optional object {percentage, attribute }
 
 percentage: number
 
-Percentage of matching traffic (0–100) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
+Percentage of matching traffic (0–100, up to 2 decimal places) served this variation. For multi-way splits, use cumulative upper bounds across rules (e.g. 30, 70, 100).
 
 maximum100
 
 minimum0
+
+multipleOf0.01
 
 <a href="#">Link to this property</a>
 
 attribute: optional string
 
 Context attribute used for sticky bucketing. Defaults to <code>targetingKey</code>. If absent at evaluation time, bucketing is random per request.
+
+maxLength64
 
 minLength1
 
@@ -8325,6 +8701,8 @@ array of unknown
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
 

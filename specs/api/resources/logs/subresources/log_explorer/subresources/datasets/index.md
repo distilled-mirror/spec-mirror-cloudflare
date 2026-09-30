@@ -46,7 +46,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/logs/explorer/datasets/{dat
 
 <summary>
 
-CreateRequest object {dataset, fields, filter }
+CreateRequest object {dataset, fields, filter, filter\_attack\_traffic }
 
 </summary>
 
@@ -84,7 +84,13 @@ Field name in lowercase.
 
 filter: optional string
 
-Optional Logpush filter predicate to restrict which events are ingested. If provided, replaces the dataset’s default filter entirely. See <a href="https://developers.cloudflare.com/logs/reference/filters/">Logpush filters</a> for syntax and examples.
+Optional Logpush filter predicate to restrict which events are ingested. See <a href="https://developers.cloudflare.com/logs/reference/filters/">Logpush filters</a> for syntax and examples.
+
+<a href="#">Link to this property</a>
+
+filter\_attack\_traffic: optional boolean
+
+Whether to filter attack traffic from the Logpush job. Defaults to <code>true</code> for supported datasets when omitted. Supported datasets are <code>http_requests</code>, <code>firewall_events</code>, and <code>network_analytics_logs</code>.
 
 <a href="#">Link to this property</a>
 
@@ -96,7 +102,7 @@ Optional Logpush filter predicate to restrict which events are ingested. If prov
 
 <summary>
 
-Dataset object {created\_at, dataset, dataset\_id, 7 more }
+Dataset object {created\_at, dataset, dataset\_id, 8 more }
 
 A Log Explorer dataset summary. List endpoints return this type and omit field configuration; use the single-dataset endpoint to retrieve it.
 
@@ -204,6 +210,12 @@ The Logpush filter predicate applied to this dataset. Omitted when no filter is 
 
 <a href="#">Link to this property</a>
 
+filter\_attack\_traffic: optional boolean
+
+Whether the Logpush job filters attack traffic. Omitted for datasets that do not support this option.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20logs.log_explorer.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)>)
@@ -296,7 +308,7 @@ formatdate-time
 
 <summary>
 
-UpdateRequest object {enabled, deletion\_protection, fields, filter }
+UpdateRequest object {enabled, deletion\_protection, fields, 2 more }
 
 </summary>
 
@@ -341,6 +353,12 @@ Field name in lowercase.
 filter: optional string
 
 Optional Logpush filter predicate to restrict which events are ingested. If omitted, the existing filter is left unchanged. Set to an empty string (<code>""</code>) to clear the filter. Otherwise, replaces the dataset’s filter entirely. See <a href="https://developers.cloudflare.com/logs/reference/filters/">Logpush filters</a> for syntax and examples.
+
+<a href="#">Link to this property</a>
+
+filter\_attack\_traffic: optional boolean
+
+Whether to filter attack traffic from the Logpush job. If omitted, the existing setting is left unchanged. Supported datasets are <code>http_requests</code>, <code>firewall_events</code>, and <code>network_analytics_logs</code>.
 
 <a href="#">Link to this property</a>
 

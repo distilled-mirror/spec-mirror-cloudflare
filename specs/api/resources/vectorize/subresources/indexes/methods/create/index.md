@@ -292,7 +292,7 @@ result: <a href="https://developers.cloudflare.com/api/resources/vectorize#(reso
 
 <summary>
 
-config: optional <a href="https://developers.cloudflare.com/api/resources/vectorize#(resource)%20vectorize.indexes%20%3E%20(model)%20index_dimension_configuration%20%3E%20(schema)">IndexDimensionConfiguration</a> { dimensions, metric }
+config: optional object {dimensions, metric, preset }
 
 </summary>
 
@@ -327,6 +327,42 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "dot-product"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+preset: optional "@cf/baai/bge-small-en-v1.5"or "@cf/baai/bge-base-en-v1.5"or "@cf/baai/bge-large-en-v1.5"or 2 more
+
+Specifies the preset to use for the index.
+
+</summary>
+
+One of the following:
+
+"@cf/baai/bge-small-en-v1.5"
+
+<a href="#">Link to this property</a>
+
+"@cf/baai/bge-base-en-v1.5"
+
+<a href="#">Link to this property</a>
+
+"@cf/baai/bge-large-en-v1.5"
+
+<a href="#">Link to this property</a>
+
+"openai/text-embedding-ada-002"
+
+<a href="#">Link to this property</a>
+
+"cohere/embed-multilingual-v2.0"
 
 <a href="#">Link to this property</a>
 
@@ -421,7 +457,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
   "result": {
     "config": {
       "dimensions": 768,
-      "metric": "cosine"
+      "metric": "cosine",
+      "preset": "@cf/baai/bge-small-en-v1.5"
     },
     "created_on": "2022-11-15T18:25:44.442097Z",
     "description": "This is my example index.",
@@ -461,7 +498,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
   "result": {
     "config": {
       "dimensions": 768,
-      "metric": "cosine"
+      "metric": "cosine",
+      "preset": "@cf/baai/bge-small-en-v1.5"
     },
     "created_on": "2022-11-15T18:25:44.442097Z",
     "description": "This is my example index.",

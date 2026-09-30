@@ -62,13 +62,13 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-Cloudflare account ID.
+Cloudflare account ID that owns the Flagship app.
 
 [Link to this property](#)%20flagship.apps%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 app\_id: string
 
-App identifier.
+Flagship app ID returned when the app was created.
 
 [Link to this property](#)%20flagship.apps%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
 
