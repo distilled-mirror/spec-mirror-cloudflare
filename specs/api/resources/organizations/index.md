@@ -1242,13 +1242,13 @@ A charge serving as the basis for invoicing, inclusive of all reduced rates and 
 
 BillingAccountId: optional string
 
-Public identifier of the Cloudflare account (account tag). Omitted when account is not part of the requested grouping.
+Public identifier of the Cloudflare account (account tag). Omitted when account is not part of the requested grouping, and always omitted for usage measured at contract level, even when grouping by account: that usage is returned as its own record with no account.
 
 <a href="#">Link to this property</a>
 
 BillingAccountName: optional string
 
-Display name of the Cloudflare account. Omitted when account is not part of the requested grouping.
+Display name of the Cloudflare account. Omitted when account is not part of the requested grouping, and for usage measured at contract level.
 
 <a href="#">Link to this property</a>
 
@@ -1396,13 +1396,13 @@ The product family the charge belongs to (e.g., “R2”, “Workers”). Cloudf
 
 x\_ZoneId: optional string
 
-The identifier for the Cloudflare zone (zone tag). Cloudflare extension.
+The identifier for the Cloudflare zone (zone tag). Omitted when zone is not part of the requested grouping, and always omitted for usage measured at contract level, even when grouping by zone. Cloudflare extension.
 
 <a href="#">Link to this property</a>
 
 x\_ZoneName: optional string
 
-The display name of the Cloudflare zone. Cloudflare extension.
+The display name of the Cloudflare zone. Omitted when zone is not part of the requested grouping, and for usage measured at contract level. Cloudflare extension.
 
 <a href="#">Link to this property</a>
 

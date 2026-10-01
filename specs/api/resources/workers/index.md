@@ -1550,7 +1550,7 @@ Identifier of the user who created the version.
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 34 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -1699,6 +1699,40 @@ A JavaScript variable name for the binding.
 [Link to this property](#)
 
 type: "analytics_engine"
+
+The kind of resource that the binding provides.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Artifacts object { name, namespace, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+namespace: string
+
+The Artifacts namespace exposed to the Worker in the Worker’s account. Must be 2-63 characters, start with an ASCII alphanumeric character, contain only ASCII alphanumeric characters, dots, underscores, and hyphens, and must not end with a hyphen. The namespace does not need to be created before binding it.
+
+maxLength63
+
+minLength2
+
+[Link to this property](#)
+
+type: "artifacts"
 
 The kind of resource that the binding provides.
 
@@ -12012,7 +12046,7 @@ Operation that triggered the creation of the version. This is read-only and set 
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 34 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -12161,6 +12195,40 @@ A JavaScript variable name for the binding.
 [Link to this property](#)
 
 type: "analytics_engine"
+
+The kind of resource that the binding provides.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Artifacts object { name, namespace, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+namespace: string
+
+The Artifacts namespace exposed to the Worker in the Worker’s account. Must be 2-63 characters, start with an ASCII alphanumeric character, contain only ASCII alphanumeric characters, dots, underscores, and hyphens, and must not end with a hyphen. The namespace does not need to be created before binding it.
+
+maxLength63
+
+minLength2
+
+[Link to this property](#)
+
+type: "artifacts"
 
 The kind of resource that the binding provides.
 
@@ -15006,7 +15074,7 @@ Operation that triggered the creation of the version. This is read-only and set 
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 34 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -15155,6 +15223,40 @@ A JavaScript variable name for the binding.
 [Link to this property](#)
 
 type: "analytics_engine"
+
+The kind of resource that the binding provides.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Artifacts object { name, namespace, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+namespace: string
+
+The Artifacts namespace exposed to the Worker in the Worker’s account. Must be 2-63 characters, start with an ASCII alphanumeric character, contain only ASCII alphanumeric characters, dots, underscores, and hyphens, and must not end with a hyphen. The namespace does not need to be created before binding it.
+
+maxLength63
+
+minLength2
+
+[Link to this property](#)
+
+type: "artifacts"
 
 The kind of resource that the binding provides.
 
@@ -19654,17 +19756,25 @@ aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -19736,17 +19846,25 @@ data: array of object { count, interval, sampleInterval, 4 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -19840,17 +19958,25 @@ aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -19922,17 +20048,25 @@ data: array of object { count, interval, sampleInterval, 4 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -20868,13 +21002,19 @@ Deprecatedbin: optional unknown
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
+
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
 
 [Link to this property](#)
 
@@ -25226,17 +25366,25 @@ aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -25308,17 +25456,25 @@ data: array of object { count, interval, sampleInterval, 4 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -25412,17 +25568,25 @@ aggregates: array of object { count, interval, sampleInterval, 2 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -25494,17 +25658,25 @@ data: array of object { count, interval, sampleInterval, 4 more }
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
 
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
+
 [Link to this property](#)
 
 value: number
+
+Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
 
 [Link to this property](#)
 
@@ -26440,13 +26612,19 @@ Deprecatedbin: optional unknown
 
 count: number
 
+Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
+
 [Link to this property](#)
 
-interval: number
+Deprecatedinterval: number
+
+Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
 
 [Link to this property](#)
 
 sampleInterval: number
+
+Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
 
 [Link to this property](#)
 

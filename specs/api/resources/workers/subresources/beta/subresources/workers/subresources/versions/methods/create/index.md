@@ -258,7 +258,7 @@ Token provided upon successful upload of all files from a registered manifest.
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -407,6 +407,40 @@ A JavaScript variable name for the binding.
 <a href="#">Link to this property</a>
 
 type: "analytics\_engine"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Artifacts object {name, namespace, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+namespace: string
+
+The Artifacts namespace exposed to the Worker in the Worker’s account. Must be 2-63 characters, start with an ASCII alphanumeric character, contain only ASCII alphanumeric characters, dots, underscores, and hyphens, and must not end with a hyphen. The namespace does not need to be created before binding it.
+
+maxLength63
+
+minLength2
+
+<a href="#">Link to this property</a>
+
+type: "artifacts"
 
 The kind of resource that the binding provides.
 
@@ -2906,7 +2940,7 @@ Identifier of the user who created the version.
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 34 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -3055,6 +3089,40 @@ A JavaScript variable name for the binding.
 <a href="#">Link to this property</a>
 
 type: "analytics\_engine"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Artifacts object {name, namespace, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+namespace: string
+
+The Artifacts namespace exposed to the Worker in the Worker’s account. Must be 2-63 characters, start with an ASCII alphanumeric character, contain only ASCII alphanumeric characters, dots, underscores, and hyphens, and must not end with a hyphen. The namespace does not need to be created before binding it.
+
+maxLength63
+
+minLength2
+
+<a href="#">Link to this property</a>
+
+type: "artifacts"
 
 The kind of resource that the binding provides.
 

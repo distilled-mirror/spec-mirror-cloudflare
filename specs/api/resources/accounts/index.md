@@ -720,17 +720,59 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object {category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
 </summary>
 
-key: optional string
+category: optional string
+
+A category used to group permission groups.
 
 <a href="#">Link to this property</a>
 
-value: optional string
+deprecated: optional string
+
+Indicates whether the permission group is deprecated.
+
+<a href="#">Link to this property</a>
+
+description: optional string
+
+Additional information about the permission group.
+
+<a href="#">Link to this property</a>
+
+editable: optional string
+
+Indicates whether the permission group can be edited.
+
+<a href="#">Link to this property</a>
+
+eol\_at: optional string
+
+The planned end-of-life date and time, when provided.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+label: optional string
+
+A label identifying the permission group.
+
+<a href="#">Link to this property</a>
+
+scopes: optional string
+
+The scope associated with the permission group.
+
+<a href="#">Link to this property</a>
+
+visibility: optional string
+
+Indicates the permission group’s availability or visibility.
 
 <a href="#">Link to this property</a>
 

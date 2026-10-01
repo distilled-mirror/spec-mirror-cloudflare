@@ -192,17 +192,59 @@ Identifier of the permission group.
 
 <summary>
 
-meta: optional object {key, value }
+meta: optional object {category, deprecated, description, 5 more }
 
 Attributes associated to the permission group.
 
 </summary>
 
-key: optional string
+category: optional string
+
+A category used to group permission groups.
 
 <a href="#">Link to this property</a>
 
-value: optional string
+deprecated: optional string
+
+Indicates whether the permission group is deprecated.
+
+<a href="#">Link to this property</a>
+
+description: optional string
+
+Additional information about the permission group.
+
+<a href="#">Link to this property</a>
+
+editable: optional string
+
+Indicates whether the permission group can be edited.
+
+<a href="#">Link to this property</a>
+
+eol\_at: optional string
+
+The planned end-of-life date and time, when provided.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+label: optional string
+
+A label identifying the permission group.
+
+<a href="#">Link to this property</a>
+
+scopes: optional string
+
+The scope associated with the permission group.
+
+<a href="#">Link to this property</a>
+
+visibility: optional string
+
+Indicates the permission group’s availability or visibility.
 
 <a href="#">Link to this property</a>
 
@@ -259,8 +301,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/iam/permission_gr
   "result": {
     "id": "6d7f2f5f5b1d4a0e9081fdc98d432fd1",
     "meta": {
-      "key": "key",
-      "value": "value"
+      "category": "category",
+      "deprecated": "deprecated",
+      "description": "description",
+      "editable": "editable",
+      "eol_at": "2019-12-27T18:11:19.117Z",
+      "label": "load_balancer_admin",
+      "scopes": "com.cloudflare.api.account",
+      "visibility": "visibility"
     },
     "name": "Load Balancer"
   }
@@ -297,8 +345,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/iam/permission_gr
   "result": {
     "id": "6d7f2f5f5b1d4a0e9081fdc98d432fd1",
     "meta": {
-      "key": "key",
-      "value": "value"
+      "category": "category",
+      "deprecated": "deprecated",
+      "description": "description",
+      "editable": "editable",
+      "eol_at": "2019-12-27T18:11:19.117Z",
+      "label": "load_balancer_admin",
+      "scopes": "com.cloudflare.api.account",
+      "visibility": "visibility"
     },
     "name": "Load Balancer"
   }

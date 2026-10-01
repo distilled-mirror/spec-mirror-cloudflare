@@ -2668,7 +2668,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"
+type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -2681,6 +2681,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "r2\_data\_catalog"
+
+<a href="#">Link to this property</a>
+
+"basin\_catalog"
 
 <a href="#">Link to this property</a>
 
@@ -3572,7 +3576,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"
+type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -3585,6 +3589,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "r2\_data\_catalog"
+
+<a href="#">Link to this property</a>
+
+"basin\_catalog"
 
 <a href="#">Link to this property</a>
 
@@ -4476,7 +4484,7 @@ minLength1
 
 <summary>
 
-type: "r2"or "r2\_data\_catalog"
+type: "r2"or "r2\_data\_catalog"or "basin\_catalog"
 
 Specifies the type of sink.
 
@@ -4489,6 +4497,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "r2\_data\_catalog"
+
+<a href="#">Link to this property</a>
+
+"basin\_catalog"
 
 <a href="#">Link to this property</a>
 

@@ -96,7 +96,7 @@ Updates compaction configuration (all fields optional).
 
 state: optional "enabled"or "disabled"
 
-Updates the state optionally.
+Specifies the state of maintenance operations.
 
 </summary>
 
@@ -120,7 +120,7 @@ One of the following:
 
 target\_size\_mb: optional "64"or "128"or "256"or "512"
 
-Updates the target file size optionally.
+Sets the target file size for compaction in megabytes. Defaults to “128”.
 
 </summary>
 
@@ -182,7 +182,7 @@ minimum1
 
 state: optional "enabled"or "disabled"
 
-Updates the state optionally.
+Specifies the state of maintenance operations.
 
 </summary>
 

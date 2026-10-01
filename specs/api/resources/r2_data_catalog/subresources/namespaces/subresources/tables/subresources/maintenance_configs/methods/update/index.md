@@ -194,7 +194,7 @@ minimum1
 
 state: optional "enabled"or "disabled"
 
-Updates the state optionally.
+Specifies the state of maintenance operations.
 
 </summary>
 

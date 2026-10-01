@@ -110,6 +110,802 @@ Requires customer-provided provider credentials and prevents fallback to Unified
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20byok_only%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+dlp: optional object {action, enabled, profiles } or object {enabled, policies }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {action, enabled, profiles }
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "BLOCK"or "FLAG"
+
+</summary>
+
+One of the following:
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+<a href="#">Link to this property</a>
+
+profiles: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {enabled, policies }
+
+</summary>
+
+enabled: boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+policies: array of object {id, action, check, 2 more }
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+action: "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+check: array of "REQUEST"or "RESPONSE"
+
+</summary>
+
+One of the following:
+
+"REQUEST"
+
+<a href="#">Link to this property</a>
+
+"RESPONSE"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+<a href="#">Link to this property</a>
+
+profiles: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20dlp%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+guardrails: optional object {prompt, response }
+
+</summary>
+
+<details>
+
+<summary>
+
+prompt: object {P1, S1, S10, 11 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+P1: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S1: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S10: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S11: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S12: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S2: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S3: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S4: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S5: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S6: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S7: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S8: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: object {P1, S1, S10, 11 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+P1: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S1: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S10: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S11: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S12: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S2: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S3: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S4: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S5: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S6: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S7: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S8: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S9: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20guardrails%20%3E%20(schema)>)
+
+log\_classification: optional boolean
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20log_classification%20%3E%20(schema)>)
+
 log\_management: optional number
 
 maximum10000000
@@ -151,6 +947,58 @@ maxLength1024
 minLength16
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20logpush_public_key%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+otel: optional array of object {headers, url, authorization, content\_type }
+
+</summary>
+
+headers: map\[string]
+
+<a href="#">Link to this property</a>
+
+url: string
+
+formaturi
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+authorization: optional string
+
+maxLength256
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+content\_type: optional "json"or "protobuf"
+
+</summary>
+
+One of the following:
+
+"json"
+
+<a href="#">Link to this property</a>
+
+"protobuf"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20otel%20%3E%20(schema)>)
 
 <details>
 
@@ -222,9 +1070,211 @@ minimum1
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20retry_max_attempts%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+spend\_limits: optional object {enabled, rules }
+
+</summary>
+
+enabled: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+rules: optional array of object {limit, limitType, window, 6 more }
+
+</summary>
+
+limit: number
+
+exclusiveMinimum
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+limitType: "cost"
+
+<a href="#">Link to this property</a>
+
+window: number
+
+exclusiveMinimum
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+metadata: optional map\[object {mode } or object {mode, values } ]
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "partition"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, values }
+
+</summary>
+
+mode: "filter"
+
+<a href="#">Link to this property</a>
+
+values: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+model: optional object {mode, values }
+
+</summary>
+
+mode: "filter"
+
+<a href="#">Link to this property</a>
+
+values: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+provider: optional object {mode, values }
+
+</summary>
+
+mode: "filter"
+
+<a href="#">Link to this property</a>
+
+values: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+technique: optional "fixed"or "sliding"
+
+</summary>
+
+One of the following:
+
+"fixed"
+
+<a href="#">Link to this property</a>
+
+"sliding"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20spend_limits%20%3E%20(schema)>)
+
 store\_id: optional string
 
 [Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20store_id%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+stripe: optional object {authorization, usage\_events }
+
+</summary>
+
+authorization: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+usage\_events: array of object {payload }
+
+</summary>
+
+payload: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20stripe%20%3E%20(schema)>)
 
 <details>
 

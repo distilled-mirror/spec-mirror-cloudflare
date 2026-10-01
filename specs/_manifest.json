@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3922,
+  "count": 3940,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -1669,6 +1669,78 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/autorag/subresources/jobs/methods/logs",
       "markdown": "https://developers.cloudflare.com/api/resources/autorag/subresources/jobs/methods/logs/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/disable",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/disable/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/enable",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/enable/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/credentials",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/credentials/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/credentials/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/credentials/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/maintenance_configs/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/basin_catalog/subresources/namespaces/subresources/tables/subresources/maintenance_configs/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/billing",
