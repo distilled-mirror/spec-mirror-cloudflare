@@ -1774,7 +1774,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 29 more }
+"$metadata": object {id, account, cloudService, 32 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -1831,6 +1831,12 @@ endTime: optional number
 Span end time as a Unix epoch in milliseconds.
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+endTimeNs: optional string
+
+Span end time as a Unix epoch in nanoseconds.
 
 <a href="#">Link to this property</a>
 
@@ -1944,6 +1950,12 @@ minimum0
 
 <a href="#">Link to this property</a>
 
+startTimeNs: optional string
+
+Span start time as a Unix epoch in nanoseconds.
+
+<a href="#">Link to this property</a>
+
 statusCode: optional number
 
 HTTP response status code returned by the Worker.
@@ -1951,6 +1963,12 @@ HTTP response status code returned by the Worker.
 exclusiveMinimum
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+timestampNs: optional string
+
+Event time as a Unix epoch in nanoseconds.
 
 <a href="#">Link to this property</a>
 
@@ -2622,7 +2640,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 29 more }
+"$metadata": object {id, account, cloudService, 32 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -2679,6 +2697,12 @@ endTime: optional number
 Span end time as a Unix epoch in milliseconds.
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+endTimeNs: optional string
+
+Span end time as a Unix epoch in nanoseconds.
 
 <a href="#">Link to this property</a>
 
@@ -2792,6 +2816,12 @@ minimum0
 
 <a href="#">Link to this property</a>
 
+startTimeNs: optional string
+
+Span start time as a Unix epoch in nanoseconds.
+
+<a href="#">Link to this property</a>
+
 statusCode: optional number
 
 HTTP response status code returned by the Worker.
@@ -2799,6 +2829,12 @@ HTTP response status code returned by the Worker.
 exclusiveMinimum
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+timestampNs: optional string
+
+Event time as a Unix epoch in nanoseconds.
 
 <a href="#">Link to this property</a>
 

@@ -1,36 +1,54 @@
-##### Models
+---
+title: Workers
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
+# Workers
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-MigrationStep object { deleted_classes, new_classes, new_sqlite_classes, 2 more }
+MigrationStep object {deleted\_classes, new\_classes, new\_sqlite\_classes, 2 more }
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -38,21 +56,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -60,69 +78,69 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SingleStepMigration object { deleted_classes, new_classes, new_sqlite_classes, 4 more }
+SingleStepMigration object {deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
 
 A single set of migrations to apply.
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_tag: optional string
+new\_tag: optional string
 
 Tag to set as the latest migration tag.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_tag: optional string
+old\_tag: optional string
 
 Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -130,21 +148,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -152,81 +170,85 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-WorkerMetadata object { body_part, main_module }
+WorkerMetadata object {body\_part, main\_module }
 
 JSON-encoded metadata about the uploaded parts and Worker configuration.
 
 </summary>
 
-body_part: optional string
+body\_part: optional string
 
-Name of the part in the multipart request that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
+Name of the part in the multipart request that contains the script (e.g. the file adding a listener to the <code>fetch</code> event). Indicates a <code>service worker syntax</code> Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-main_module: optional string
+main\_module: optional string
 
-Name of the part in the multipart request that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
+Name of the part in the multipart request that contains the main module (e.g. the file exporting a <code>fetch</code> handler). Indicates a <code>module syntax</code> Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers%20%3E%20(model)%20worker_metadata%20%3E%20(schema)>)
 
-##### [List Workers](/api/resources/workers/subresources/beta/subresources/workers/methods/list)
+#### WorkersBeta
 
-GET/accounts/{account_id}/workers/workers
+#### WorkersBetaWorkers
 
-##### [Get Worker](/api/resources/workers/subresources/beta/subresources/workers/methods/get)
+##### [List Workers](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/list)
 
-GET/accounts/{account_id}/workers/workers/{worker_id}
+GET/accounts/{account\_id}/workers/workers
 
-##### [Create Worker](/api/resources/workers/subresources/beta/subresources/workers/methods/create)
+##### [Get Worker](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/get)
 
-POST/accounts/{account_id}/workers/workers
+GET/accounts/{account\_id}/workers/workers/{worker\_id}
 
-##### [Update Worker](/api/resources/workers/subresources/beta/subresources/workers/methods/update)
+##### [Create Worker](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/create)
 
-PUT/accounts/{account_id}/workers/workers/{worker_id}
+POST/accounts/{account\_id}/workers/workers
 
-##### [Edit Worker](/api/resources/workers/subresources/beta/subresources/workers/methods/edit)
+##### [Update Worker](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/update)
 
-PATCH/accounts/{account_id}/workers/workers/{worker_id}
+PUT/accounts/{account\_id}/workers/workers/{worker\_id}
 
-##### [Delete Worker](/api/resources/workers/subresources/beta/subresources/workers/methods/delete)
+##### [Edit Worker](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/edit)
 
-DELETE/accounts/{account_id}/workers/workers/{worker_id}
+PATCH/accounts/{account\_id}/workers/workers/{worker\_id}
 
-##### Models
+##### [Delete Worker](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/methods/delete)
+
+DELETE/accounts/{account\_id}/workers/workers/{worker\_id}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Worker object { id, created_on, logpush, 9 more }
+Worker object {id, created\_on, logpush, 9 more }
 
 </summary>
 
@@ -234,33 +256,33 @@ id: string
 
 Immutable ID of the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: string
+created\_on: string
 
 When the Worker was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: boolean
 
 Whether logpush is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 Name of the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: object { enabled, head_sampling_rate, issues, 3 more }
+observability: object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -270,19 +292,19 @@ enabled: optional boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -292,17 +314,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { destinations, enabled, head_sampling_rate, 2 more }
+logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -312,47 +334,47 @@ destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: optional boolean
+invocation\_logs: optional boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -362,31 +384,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -396,29 +418,29 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-references: object { dispatch_namespace_outbounds, domains, durable_objects, 2 more }
+references: object {dispatch\_namespace\_outbounds, domains, durable\_objects, 2 more }
 
 Other resources that reference the Worker and depend on it existing.
 
@@ -428,45 +450,45 @@ Other resources that reference the Worker and depend on it existing.
 
 <summary>
 
-dispatch_namespace_outbounds: array of object { namespace_id, namespace_name, worker_id, worker_name }
+dispatch\_namespace\_outbounds: array of object {namespace\_id, namespace\_name, worker\_id, worker\_name }
 
 Other Workers that reference the Worker as an outbound for a dispatch namespace.
 
 </summary>
 
-namespace_id: string
+namespace\_id: string
 
 ID of the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_name: string
+namespace\_name: string
 
 Name of the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 ID of the Worker using the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_name: string
+worker\_name: string
 
 Name of the Worker using the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-domains: array of object { id, certificate_id, hostname, 2 more }
+domains: array of object {id, certificate\_id, hostname, 2 more }
 
 Custom domains connected to the Worker.
 
@@ -476,113 +498,113 @@ id: string
 
 ID of the custom domain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-certificate_id: string
+certificate\_id: string
 
 ID of the TLS certificate issued for the custom domain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hostname: string
 
 Full hostname of the custom domain, including the zone name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-zone_id: string
+zone\_id: string
 
 ID of the zone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-zone_name: string
+zone\_name: string
 
 Name of the zone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-durable_objects: array of object { namespace_id, namespace_name, worker_id, worker_name }
+durable\_objects: array of object {namespace\_id, namespace\_name, worker\_id, worker\_name }
 
 Other Workers that reference Durable Object classes implemented by the Worker.
 
 </summary>
 
-namespace_id: string
+namespace\_id: string
 
 ID of the Durable Object namespace being used.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_name: string
+namespace\_name: string
 
 Name of the Durable Object namespace being used.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 ID of the Worker using the Durable Object implementation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_name: string
+worker\_name: string
 
 Name of the Worker using the Durable Object implementation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-queues: array of object { queue_consumer_id, queue_id, queue_name }
+queues: array of object {queue\_consumer\_id, queue\_id, queue\_name }
 
 Queues that send messages to the Worker.
 
 </summary>
 
-queue_consumer_id: string
+queue\_consumer\_id: string
 
 ID of the queue consumer configuration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-queue_id: string
+queue\_id: string
 
 ID of the queue.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-queue_name: string
+queue\_name: string
 
 Name of the queue.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-workers: array of object { id, name }
+workers: array of object {id, name }
 
-Other Workers that reference the Worker using [service bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/).
+Other Workers that reference the Worker using <a href="https://developers.cloudflare.com/workers/runtime-apis/bindings/service-bindings/">service bindings</a>.
 
 </summary>
 
@@ -590,27 +612,27 @@ id: string
 
 ID of the referencing Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 Name of the referencing Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-subdomain: object { enabled, preview_url_suffix, previews_enabled, url }
+subdomain: object {enabled, preview\_url\_suffix, previews\_enabled, url }
 
 Subdomain settings for the Worker.
 
@@ -618,45 +640,45 @@ Subdomain settings for the Worker.
 
 enabled: optional boolean
 
-Whether the *.workers.dev subdomain is enabled for the Worker.
+Whether the \*.workers.dev subdomain is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-preview_url_suffix: optional string
+preview\_url\_suffix: optional string
 
-Prepend a version or preview prefix to this host suffix to form the *.workers.dev [preview URL](https://developers.cloudflare.com/workers/configuration/previews/) the Worker would serve on once previews are enabled, e.g. `https://<prefix>-my-worker.my-subdomain.workers.dev`. Present whenever the account owns a workers.dev subdomain, regardless of whether `previews_enabled` is true, so presence does not imply preview URLs are currently live. Absent only when the account owns no workers.dev subdomain.
+Prepend a version or preview prefix to this host suffix to form the \*.workers.dev <a href="https://developers.cloudflare.com/workers/configuration/previews/">preview URL</a> the Worker would serve on once previews are enabled, e.g. <code>https://&lt;prefix&gt;-my-worker.my-subdomain.workers.dev</code>. Present whenever the account owns a workers.dev subdomain, regardless of whether <code>previews_enabled</code> is true, so presence does not imply preview URLs are currently live. Absent only when the account owns no workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-previews_enabled: optional boolean
+previews\_enabled: optional boolean
 
-Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/configuration/previews/">preview URLs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 url: optional string
 
-The address the Worker would serve on once its *.workers.dev subdomain is enabled. Present whenever the account owns a workers.dev subdomain, regardless of whether `enabled` is true, so presence does not imply the Worker is currently live at this URL. Absent only when the account owns no workers.dev subdomain.
+The address the Worker would serve on once its \*.workers.dev subdomain is enabled. Present whenever the account owns a workers.dev subdomain, regardless of whether <code>enabled</code> is true, so presence does not imply the Worker is currently live at this URL. Absent only when the account owns no workers.dev subdomain.
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: array of object { name }
+tail\_consumers: array of object {name }
 
 Other Workers that should consume logs from the Worker.
 
@@ -666,33 +688,33 @@ name: string
 
 Name of the consumer Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-updated_on: string
+updated\_on: string
 
 When the Worker was most recently updated.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-deployed_on: optional string
+deployed\_on: optional string
 
-When the Worker’s most recent deployment was created. `null` if the Worker has never been deployed.
+When the Worker’s most recent deployment was created. <code>null</code> if the Worker has never been deployed.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-previews_base_config: optional object { cache_options, env, limits, 4 more }
+previews\_base\_config: optional object {cache\_options, env, limits, 4 more }
 
 Template configuration used when creating new Previews for this Worker.
 
@@ -702,7 +724,7 @@ Template configuration used when creating new Previews for this Worker.
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
 Cache options used when creating new Previews.
 
@@ -712,23 +734,23 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-env: optional map[object { type } ]
+env: optional map\[object {type } ]
 
 Bindings used when creating new Previews, keyed by binding name.
 
@@ -738,49 +760,49 @@ type: string
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-limits: optional object { cpu_ms, subrequests }
+limits: optional object {cpu\_ms, subrequests }
 
 Resource limits enforced at runtime for newly created Previews.
 
 </summary>
 
-cpu_ms: optional number
+cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 subrequests: optional number
 
 The number of subrequests this Worker can make per request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: optional boolean
 
 Whether logpush is enabled when creating new Previews.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings used when creating new Previews.
 
@@ -790,19 +812,19 @@ enabled: optional boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -812,17 +834,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { destinations, enabled, head_sampling_rate, 2 more }
+logs: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Log settings for the Worker.
 
@@ -832,47 +854,47 @@ destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: optional boolean
+invocation\_logs: optional boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -882,31 +904,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -916,29 +938,29 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode } or object { region } or object { hostname } or 5 more
+placement: optional object {mode } or object {region } or object {hostname } or 5 more
 
 Placement configuration used when creating new Previews.
 
@@ -950,25 +972,25 @@ One of the following:
 
 <summary>
 
-Mode object { mode }
+Mode object {mode }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -976,17 +998,17 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -994,17 +1016,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -1012,17 +1034,17 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region }
+object {mode, region }
 
 </summary>
 
@@ -1030,23 +1052,23 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode }
+object {hostname, mode }
 
 </summary>
 
@@ -1054,23 +1076,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode }
+object {host, mode }
 
 </summary>
 
@@ -1078,23 +1100,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target }
+object {mode, target }
 
 </summary>
 
@@ -1102,13 +1124,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -1120,7 +1142,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -1128,17 +1150,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -1146,17 +1168,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -1164,29 +1186,29 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of object { name }
+tail\_consumers: optional array of object {name }
 
 Other Workers that should consume logs from newly created Previews.
 
@@ -1196,25 +1218,25 @@ name: string
 
 Name of the consumer Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.beta.workers%20%3E%20(model)%20worker%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-WorkerDeleteResponse object { errors, messages, success }
+WorkerDeleteResponse object {errors, messages, success }
 
 </summary>
 
@@ -1222,49 +1244,7 @@ WorkerDeleteResponse object { errors, messages, success }
 
 <summary>
 
-errors: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-messages: array of object { code, message, documentation_url, source }
+errors: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -1272,69 +1252,113 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.beta.workers%20%3E%20(model)%20worker_delete_response%20%3E%20(schema)>)
 
-##### [List Worker Versions](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
+#### WorkersBetaWorkersVersions
 
-GET/accounts/{account_id}/workers/workers/{worker_id}/versions
+##### [List Worker Versions](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list)
 
-##### [Get Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
+GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
-GET/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
+##### [Get Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/get)
 
-##### [Create Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
+GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 
-POST/accounts/{account_id}/workers/workers/{worker_id}/versions
+##### [Create Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/create)
 
-##### [Delete Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
+POST/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
-DELETE/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
+##### [Delete Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
 
-##### Models
+DELETE/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Version object { id, created_on, number, 22 more }
+Version object {id, created\_on, number, 22 more }
 
 </summary>
 
@@ -1344,33 +1368,33 @@ Version identifier.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: string
+created\_on: string
 
 When the version was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 number: number
 
 The integer version number, starting from one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 urls: array of string
 
 All routable URLs that always point to this version. Does not include alias URLs, since aliases can be updated to point to a different version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-annotations: optional object { "workers/message", "workers/tag", "workers/triggered_by" }
+annotations: optional object {"workers/message", "workers/tag", "workers/triggered\_by" }
 
 Metadata about the version.
 
@@ -1382,7 +1406,7 @@ Human-readable message about the version. Truncated to 1000 bytes if longer.
 
 maxLength1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workers/tag": optional string
 
@@ -1390,27 +1414,27 @@ User-provided identifier for the version. Maximum 100 bytes.
 
 maxLength100
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"workers/triggered_by": optional string
+"workers/triggered\_by": optional string
 
 Operation that triggered the creation of the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-assets: optional object { config, jwt }
+assets: optional object {config, jwt }
 
 Configuration for assets within a Worker.
 
-[`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be included as modules named `_headers` and `_redirects` with content type `text/plain`.
+<a href="https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers"><code>_headers</code></a> and <a href="https://developers.cloudflare.com/workers/static-assets/redirects/"><code>_redirects</code></a> files should be included as modules named <code>_headers</code> and <code>_redirects</code> with content type <code>text/plain</code>.
 
 </summary>
 
@@ -1418,23 +1442,23 @@ Configuration for assets within a Worker.
 
 <summary>
 
-config: optional object { base_path, html_handling, not_found_handling, run_worker_first }
+config: optional object {base\_path, html\_handling, not\_found\_handling, run\_worker\_first }
 
 Configuration for assets within a Worker.
 
 </summary>
 
-base_path: optional string
+base\_path: optional string
 
-The public URL path prefix under which assets are served. A null request value resets it to `/`; responses represent the root as `/`. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
+The public URL path prefix under which assets are served. A null request value resets it to <code>/</code>; responses represent the root as <code>/</code>. All versions in a gradual deployment must use the same canonical value. To change it, first deploy the version containing the change at 100%.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-html_handling: optional "auto-trailing-slash" or "force-trailing-slash" or "drop-trailing-slash" or "none"
+html\_handling: optional "auto-trailing-slash"or "force-trailing-slash"or "drop-trailing-slash"or "none"
 
 Determines the redirects and rewrites of requests for HTML content.
 
@@ -1444,29 +1468,29 @@ One of the following:
 
 "auto-trailing-slash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "force-trailing-slash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "drop-trailing-slash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "none"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-not_found_handling: optional "none" or "404-page" or "single-page-application"
+not\_found\_handling: optional "none"or "404-page"or "single-page-application"
 
 Determines the response when a request does not match a static asset, and there is no Worker script.
 
@@ -1476,27 +1500,27 @@ One of the following:
 
 "none"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "404-page"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "single-page-application"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-run_worker_first: optional array of string or boolean
+run\_worker\_first: optional array of stringor boolean
 
-Contains a list path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either ’/’ or ’!/’. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
+Contains a list path rules to control routing to either the Worker or assets. Glob (\*) and negative (!) rules are supported. Rules must start with either ’/’ or ’!/’. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
 </summary>
 
@@ -1504,55 +1528,55 @@ One of the following:
 
 array of string
 
-Contains a list path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either ’/’ or ’!/’. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
+Contains a list path rules to control routing to either the Worker or assets. Glob (\*) and negative (!) rules are supported. Rules must start with either ’/’ or ’!/’. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 boolean
 
-Enables routing to always invoke the Worker script ahead of all requests. When true, this is equivalent to `["/*"]` in the string array version of this field.
+Enables routing to always invoke the Worker script ahead of all requests. When true, this is equivalent to <code>["/*"]</code> in the string array version of this field.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 jwt: optional string
 
 Token provided upon successful upload of all files from a registered manifest.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_email: optional string
+author\_email: optional string
 
 Email of the user who created the version.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_id: optional string
+author\_id: optional string
 
 Identifier of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
 </summary>
 
@@ -1562,7 +1586,7 @@ One of the following:
 
 <summary>
 
-AI object { name, type }
+AI object {name, type }
 
 </summary>
 
@@ -1570,59 +1594,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ai"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearch object { instance_name, name, type, namespace }
+AISearch object {instance\_name, name, type, namespace }
 
 </summary>
 
-instance_name: string
+instance\_name: string
 
 The user-chosen instance name. Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search"
+type: "ai\_search"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 The namespace the instance belongs to. Defaults to “default” if omitted. Customers who don’t use namespaces can simply omit this field.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearchNamespace object { name, namespace, type }
+AISearchNamespace object {name, namespace, type }
 
 </summary>
 
@@ -1630,29 +1654,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The user-chosen namespace name. Must exist before deploy — Wrangler handles auto-creation on deploy failure (R2 bucket pattern). The “default” namespace is auto-created by config-api for new accounts. Grants full access (CRUD + search + chat) to all instances within the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search_namespace"
+type: "ai\_search\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Messaging object { name, namespace, type }
+Messaging object {name, namespace, type }
 
 </summary>
 
@@ -1660,29 +1684,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The Messaging namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "messaging"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnalyticsEngine object { dataset, name, type }
+AnalyticsEngine object {dataset, name, type }
 
 </summary>
 
@@ -1690,29 +1714,29 @@ dataset: string
 
 The name of the dataset to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "analytics_engine"
+type: "analytics\_engine"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Artifacts object { name, namespace, type }
+Artifacts object {name, namespace, type }
 
 </summary>
 
@@ -1720,7 +1744,7 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
@@ -1730,23 +1754,23 @@ maxLength63
 
 minLength2
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "artifacts"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Assets object { name, type }
+Assets object {name, type }
 
 </summary>
 
@@ -1754,23 +1778,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "assets"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Browser object { name, type }
+Browser object {name, type }
 
 </summary>
 
@@ -1778,61 +1802,61 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "browser"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-D1 object { database_id, name, type, id }
+D1 object {database\_id, name, type, id }
 
 </summary>
 
-database_id: string
+database\_id: string
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "d1"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 Deprecatedid: optional string
 
-This property has been renamed to `database_id`.
+This property has been renamed to <code>database_id</code>.
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DataBlob object { name, part, type }
+DataBlob object {name, part, type }
 
 </summary>
 
@@ -1840,29 +1864,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the data content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "data_blob"
+Deprecatedtype: "data\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DispatchNamespace object { name, namespace, type, outbound }
+DispatchNamespace object {name, namespace, type, outbound }
 
 </summary>
 
@@ -1870,25 +1894,25 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The name of the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "dispatch_namespace"
+type: "dispatch\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-outbound: optional object { params, worker }
+outbound: optional object {params, worker }
 
 Outbound worker.
 
@@ -1898,7 +1922,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object { name }
+params: optional array of object {name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -1908,17 +1932,17 @@ name: string
 
 Name of the parameter.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-worker: optional object { entrypoint, environment, service }
+worker: optional object {entrypoint, environment, service }
 
 Outbound worker.
 
@@ -1928,37 +1952,37 @@ entrypoint: optional string
 
 Entrypoint to invoke on the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Environment of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: optional string
 
 Name of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 4 more }
+DurableObjectNamespace object {name, type, class\_name, 4 more }
 
 </summary>
 
@@ -1966,55 +1990,55 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "durable_object_namespace"
+type: "durable\_object\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 The exported class name of the Durable Object.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-dispatch_namespace: optional string
+dispatch\_namespace: optional string
 
 The dispatch namespace the Durable Object script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
-The environment of the script_name to bind to.
+The environment of the script\_name to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hyperdrive object { id, name, type }
+Hyperdrive object {id, name, type }
 
 </summary>
 
@@ -2022,29 +2046,29 @@ id: string
 
 Identifier of the Hyperdrive connection to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "hyperdrive"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Inherit object { name, type, old_name, version_id }
+Inherit object {name, type, old\_name, version\_id }
 
 </summary>
 
@@ -2052,35 +2076,35 @@ name: string
 
 The name of the inherited binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "inherit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_name: optional string
+old\_name: optional string
 
-The old name of the inherited binding. If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
+The old name of the inherited binding. If set, the binding will be renamed from <code>old_name</code> to <code>name</code> in the new version. If not set, the binding will keep the same name between versions.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-version_id: optional string
+version\_id: optional string
 
 Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Images object { name, type }
+Images object {name, type }
 
 </summary>
 
@@ -2088,23 +2112,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "images"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Json object { json, name, type }
+Json object {json, name, type }
 
 </summary>
 
@@ -2112,29 +2136,29 @@ json: unknown
 
 JSON data to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "json"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-KVNamespace object { name, namespace_id, type }
+KVNamespace object {name, namespace\_id, type }
 
 </summary>
 
@@ -2142,31 +2166,31 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "kv_namespace"
+type: "kv\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Media object { name, type }
+Media object {name, type }
 
 </summary>
 
@@ -2174,53 +2198,53 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "media"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-MTLSCertificate object { certificate_id, name, type }
+MTLSCertificate object {certificate\_id, name, type }
 
 </summary>
 
-certificate_id: string
+certificate\_id: string
 
 Identifier of the certificate to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "mtls_certificate"
+type: "mtls\_certificate"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PlainText object { name, text, type }
+PlainText object {name, text, type }
 
 </summary>
 
@@ -2228,29 +2252,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The text value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "plain_text"
+type: "plain\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Pipelines object { name, pipeline, type }
+Pipelines object {name, pipeline, type }
 
 </summary>
 
@@ -2258,29 +2282,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pipeline: string
 
 Name of the Pipeline to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "pipelines"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-K2 object { name, stream, type }
+K2 object {name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -2290,29 +2314,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 stream: string
 
 ID of a K2 stream owned by the account deploying the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "k2"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Queue object { name, queue_name, type }
+Queue object {name, queue\_name, type }
 
 </summary>
 
@@ -2320,29 +2344,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-queue_name: string
+queue\_name: string
 
 Name of the Queue to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "queue"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Ratelimit object { name, namespace_id, simple, type }
+Ratelimit object {name, namespace\_id, simple, type }
 
 </summary>
 
@@ -2350,19 +2374,19 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Identifier of the rate limit namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-simple: object { limit, period, mitigation_timeout }
+simple: object {limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -2372,67 +2396,67 @@ limit: number
 
 The limit (requests per period).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 period: number
 
 The period in seconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mitigation_timeout: optional number
+mitigation\_timeout: optional number
 
 Duration in seconds to apply the mitigation action after the rate limit is exceeded. Valid values are 0 (disabled), 10, or multiples of 60 up to 86400. Must be greater than or equal to the period when non-zero.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ratelimit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-R2Bucket object { bucket_name, name, type, jurisdiction }
+R2Bucket object {bucket\_name, name, type, jurisdiction }
 
 </summary>
 
-bucket_name: string
+bucket\_name: string
 
 R2 bucket to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "r2_bucket"
+type: "r2\_bucket"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
+jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
 
-The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket.
+The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
 </summary>
 
@@ -2440,33 +2464,33 @@ One of the following:
 
 "eu"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp-high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "us"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -2474,29 +2498,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SendEmail object { name, type, allowed_destination_addresses, 2 more }
+SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -2504,43 +2528,43 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "send_email"
+type: "send\_email"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_destination_addresses: optional array of string
+allowed\_destination\_addresses: optional array of string
 
 List of allowed destination addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_sender_addresses: optional array of string
+allowed\_sender\_addresses: optional array of string
 
 List of allowed sender addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-destination_address: optional string
+destination\_address: optional string
 
 Destination address for the email.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Service object { name, service, type, 2 more }
+Service object {name, service, type, 2 more }
 
 </summary>
 
@@ -2548,41 +2572,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: string
 
 Name of Worker to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 entrypoint: optional string
 
 Entrypoint to invoke on the target Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-TextBlob object { name, part, type }
+TextBlob object {name, part, type }
 
 </summary>
 
@@ -2590,59 +2614,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the text content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the text content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "text_blob"
+Deprecatedtype: "text\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Vectorize object { index_name, name, type }
+Vectorize object {index\_name, name, type }
 
 </summary>
 
-index_name: string
+index\_name: string
 
 Name of the Vectorize index to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "vectorize"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VersionMetadata object { name, type }
+VersionMetadata object {name, type }
 
 </summary>
 
@@ -2650,23 +2674,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "version_metadata"
+type: "version\_metadata"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretsStoreSecret object { name, secret_name, store_id, type }
+SecretsStoreSecret object {name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -2674,83 +2698,83 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-secret_name: string
+secret\_name: string
 
 Name of the secret in the store.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-store_id: string
+store\_id: string
 
 ID of the store containing the secret.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secrets_store_secret"
+type: "secrets\_store\_secret"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Flagship object { app_id, name, type }
+Flagship object {app\_id, name, type }
 
 </summary>
 
-app_id: string
+app\_id: string
 
 ID of the Flagship app to bind to for feature flag evaluation.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "flagship"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -2758,43 +2782,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -2802,61 +2826,61 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Workflow object { name, type, workflow_name, 2 more }
+Workflow object {name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -2864,41 +2888,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "workflow"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-workflow_name: string
+workflow\_name: string
 
 Name of the Workflow to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 Class name of the Workflow. Should only be provided if the Workflow belongs to this script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 Script name that contains the Workflow. If not provided, defaults to this script name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WasmModule object { name, part, type }
+WasmModule object {name, part, type }
 
 </summary>
 
@@ -2906,29 +2930,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the WebAssembly module content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the WebAssembly module content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "wasm_module"
+Deprecatedtype: "wasm\_module"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCService object { name, service_id, type }
+VPCService object {name, service\_id, type }
 
 </summary>
 
@@ -2936,29 +2960,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-service_id: string
+service\_id: string
 
 Identifier of the VPC service to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_service"
+type: "vpc\_service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCNetwork object { name, type, identity, 2 more }
+VPCNetwork object {name, type, identity, 2 more }
 
 </summary>
 
@@ -2966,47 +2990,47 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_network"
+type: "vpc\_network"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-network_id: optional string
+network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-tunnel_id: optional string
+tunnel\_id: optional string
 
-UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -3014,57 +3038,57 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-containers: optional array of object { class_name }
+containers: optional array of object {class\_name }
 
 List of containers attached to a Worker. Containers can only be attached to Durable Object classes of this Worker script.
 
 </summary>
 
-class_name: string
+class\_name: string
 
 Select which Durable Object class should get this container attached.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. On reads, tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned. `exports` and `migrations` are mutually exclusive on upload.
+Declarative exports for the version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. On reads, tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned. <code>exports</code> and <code>migrations</code> are mutually exclusive on upload.
 
 </summary>
 
@@ -3074,9 +3098,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -3084,15 +3108,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -3100,29 +3124,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -3130,9 +3154,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -3140,47 +3164,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -3188,59 +3212,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -3248,33 +3272,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -3282,15 +3306,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -3298,53 +3322,53 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports_reconciliation: optional object { created, deleted, info, 6 more }
+exports\_reconciliation: optional object {created, deleted, info, 6 more }
 
-Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an `exports` block. Durable Object entries drive reconciliation; `type: worker` entries do not contribute to this summary.
+Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
 </summary>
 
@@ -3352,21 +3376,21 @@ created: array of string
 
 Class names for which a new namespace was provisioned.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 deleted: array of string
 
-Class names whose namespace was deleted by a `deleted` tombstone.
+Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-info: array of object { class, message, scenario, 2 more }
+info: array of object {class, message, scenario, 2 more }
 
-Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See `exports_reconciliation_info`.
+Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
 </summary>
 
@@ -3374,193 +3398,193 @@ class: string
 
 The class name the info entry is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the entry relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-referencing_scripts: optional array of string
+referencing\_scripts: optional array of string
 
 Other Workers in the account that still bind to the affected class. Advisory: while non-empty the tombstone is not yet safe to remove — redeploy these Workers with bindings re-pointed first.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-removable_entries: array of string
+removable\_entries: array of string
 
-Source class names whose tombstone entry is now stale and safe to delete from `exports` (no remaining referencing scripts).
+Source class names whose tombstone entry is now stale and safe to delete from <code>exports</code> (no remaining referencing scripts).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed: array of object { from, to }
+renamed: array of object {from, to }
 
-Applied `renamed` tombstones.
+Applied <code>renamed</code> tombstones.
 
 </summary>
 
@@ -3568,23 +3592,23 @@ from: string
 
 The original (source) class name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
-The new class name (`renamed_to`).
+The new class name (<code>renamed_to</code>).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transfer_pending: array of object { class, from }
+transfer\_pending: array of object {class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -3594,25 +3618,25 @@ class: string
 
 The target-side class name awaiting transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 from: string
 
 The source script the namespace will be transferred from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred: array of object { class, phase, to }
+transferred: array of object {class, phase, to }
 
-Committed `transferred` tombstones (phase-2).
+Committed <code>transferred</code> tombstones (phase-2).
 
 </summary>
 
@@ -3620,37 +3644,37 @@ class: string
 
 The source class name that was transferred.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 phase: "committed"
 
-The transfer phase. Currently always `committed`.
+The transfer phase. Currently always <code>committed</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
 The destination script that now owns the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 updated: array of string
 
 Class names whose provisioned namespace was mutated in place.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-warnings: array of object { class, message, scenario, namespace_id }
+warnings: array of object {class, message, scenario, namespace\_id }
 
-Non-blocking warnings. See `exports_reconciliation_warning`.
+Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
 </summary>
 
@@ -3658,221 +3682,221 @@ class: string
 
 The class name the warning is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation of the warning.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the warning relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-limits: optional object { cpu_ms, subrequests }
+limits: optional object {cpu\_ms, subrequests }
 
 Resource limits enforced at runtime.
 
 </summary>
 
-cpu_ms: optional number
+cpu\_ms: optional number
 
 CPU time limit in milliseconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 subrequests: optional number
 
 Subrequest limit per request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-main_module: optional string
+main\_module: optional string
 
-The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
+The name of the main module in the <code>modules</code> array (e.g. the name of the module that exports a <code>fetch</code> handler).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 Durable Object migration tag. Set when the version is deployed. Omitted if the version has not been deployed or the Worker does not use Durable Objects.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-migrations: optional [SingleStepMigration](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 4 more } or object { new_tag, old_tag, steps }
+migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object {new\_tag, old\_tag, steps }
 
 Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 
@@ -3884,47 +3908,47 @@ One of the following:
 
 <summary>
 
-SingleStepMigration object { deleted_classes, new_classes, new_sqlite_classes, 4 more }
+SingleStepMigration object {deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
 
 A single set of migrations to apply.
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_tag: optional string
+new\_tag: optional string
 
 Tag to set as the latest migration tag.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_tag: optional string
+old\_tag: optional string
 
 Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -3932,21 +3956,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -3954,77 +3978,77 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersMultipleStepMigrations object { new_tag, old_tag, steps }
+WorkersMultipleStepMigrations object {new\_tag, old\_tag, steps }
 
 </summary>
 
-new_tag: optional string
+new\_tag: optional string
 
 Tag to set as the latest migration tag.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_tag: optional string
+old\_tag: optional string
 
 Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-steps: optional array of [MigrationStep](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 2 more }
+steps: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)">MigrationStep</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 2 more }
 
 Migrations to apply in order.
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -4032,21 +4056,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -4054,73 +4078,73 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-modules: optional array of object { content_base64, content_type, name }
+modules: optional array of object {content\_base64, content\_type, name }
 
 Code, sourcemaps, and other content used at runtime.
 
-This includes [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files used to configure [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be included as modules named `_headers` and `_redirects` with content type `text/plain`.
+This includes <a href="https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers"><code>_headers</code></a> and <a href="https://developers.cloudflare.com/workers/static-assets/redirects/"><code>_redirects</code></a> files used to configure <a href="https://developers.cloudflare.com/workers/static-assets/">Static Assets</a>. <code>_headers</code> and <code>_redirects</code> files should be included as modules named <code>_headers</code> and <code>_redirects</code> with content type <code>text/plain</code>.
 
 </summary>
 
-content_base64: string
+content\_base64: string
 
 The base64-encoded module content.
 
 formatbyte
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-content_type: string
+content\_type: string
 
 The content type of the module.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the module.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-package_dependencies: optional array of object { installedVersion, name, packageJsonVersion }
+package\_dependencies: optional array of object {installedVersion, name, packageJsonVersion }
 
 The list of npm packages that were installed and used when this Worker version was built.
 
@@ -4130,31 +4154,31 @@ installedVersion: string
 
 The exact version that was resolved and installed by the package manager.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The npm package name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 packageJsonVersion: string
 
 The version constraint as written in package.json.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode } or object { region } or object { hostname } or 5 more
+placement: optional object {mode } or object {region } or object {hostname } or 5 more
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -4164,25 +4188,25 @@ One of the following:
 
 <summary>
 
-Mode object { mode }
+Mode object {mode }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -4190,17 +4214,17 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -4208,17 +4232,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -4226,17 +4250,17 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region }
+object {mode, region }
 
 </summary>
 
@@ -4244,23 +4268,23 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode }
+object {hostname, mode }
 
 </summary>
 
@@ -4268,23 +4292,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode }
+object {host, mode }
 
 </summary>
 
@@ -4292,23 +4316,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target }
+object {mode, target }
 
 </summary>
 
@@ -4316,13 +4340,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -4334,7 +4358,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -4342,17 +4366,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -4360,17 +4384,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -4378,41 +4402,41 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 source: optional string
 
 The client used to create the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-startup_time_ms: optional number
+startup\_time\_ms: optional number
 
-Time in milliseconds spent on [Worker startup](https://developers.cloudflare.com/workers/platform/limits/#worker-startup-time).
+Time in milliseconds spent on <a href="https://developers.cloudflare.com/workers/platform/limits/#worker-startup-time">Worker startup</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedusage_model: optional "standard" or "bundled" or "unbound"
+Deprecatedusage\_model: optional "standard"or "bundled"or "unbound"
 
 Usage model for the version.
 
@@ -4422,29 +4446,29 @@ One of the following:
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.beta.workers.versions%20%3E%20(model)%20version%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-VersionDeleteResponse object { errors, messages, success }
+VersionDeleteResponse object {errors, messages, success }
 
 </summary>
 
@@ -4452,49 +4476,7 @@ VersionDeleteResponse object { errors, messages, success }
 
 <summary>
 
-errors: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-messages: array of object { code, message, documentation_url, source }
+errors: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -4502,73 +4484,117 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.beta.workers.versions%20%3E%20(model)%20version_delete_response%20%3E%20(schema)>)
 
-##### [List Worker Routes](/api/resources/workers/subresources/routes/methods/list)
+#### WorkersRoutes
 
-GET/zones/{zone_id}/workers/routes
+##### [List Worker Routes](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/list)
 
-##### [Get Worker Route](/api/resources/workers/subresources/routes/methods/get)
+GET/zones/{zone\_id}/workers/routes
 
-GET/zones/{zone_id}/workers/routes/{route_id}
+##### [Get Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/get)
 
-##### [Create Worker Route](/api/resources/workers/subresources/routes/methods/create)
+GET/zones/{zone\_id}/workers/routes/{route\_id}
 
-POST/zones/{zone_id}/workers/routes
+##### [Create Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/create)
 
-##### [Replace Worker Route](/api/resources/workers/subresources/routes/methods/update)
+POST/zones/{zone\_id}/workers/routes
 
-PUT/zones/{zone_id}/workers/routes/{route_id}
+##### [Replace Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/update)
 
-##### [Delete Worker Route](/api/resources/workers/subresources/routes/methods/delete)
+PUT/zones/{zone\_id}/workers/routes/{route\_id}
 
-DELETE/zones/{zone_id}/workers/routes/{route_id}
+##### [Delete Worker Route](https://developers.cloudflare.com/api/resources/workers/subresources/routes/methods/delete)
 
-##### Models
+DELETE/zones/{zone\_id}/workers/routes/{route\_id}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-RouteListResponse object { id, pattern, script }
+RouteListResponse object {id, pattern, script }
 
 </summary>
 
@@ -4578,29 +4604,29 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pattern: string
 
-Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+Pattern to match incoming requests against. <a href="https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 script: optional string
 
 Name of the script to run if the route matches.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.routes%20%3E%20(model)%20route_list_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-RouteGetResponse object { id, pattern, script }
+RouteGetResponse object {id, pattern, script }
 
 </summary>
 
@@ -4610,29 +4636,29 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pattern: string
 
-Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+Pattern to match incoming requests against. <a href="https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 script: optional string
 
 Name of the script to run if the route matches.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.routes%20%3E%20(model)%20route_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-RouteCreateResponse object { id, pattern, script }
+RouteCreateResponse object {id, pattern, script }
 
 </summary>
 
@@ -4642,29 +4668,29 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pattern: string
 
-Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+Pattern to match incoming requests against. <a href="https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 script: optional string
 
 Name of the script to run if the route matches.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.routes%20%3E%20(model)%20route_create_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-RouteUpdateResponse object { id, pattern, script }
+RouteUpdateResponse object {id, pattern, script }
 
 </summary>
 
@@ -4674,29 +4700,29 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pattern: string
 
-Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+Pattern to match incoming requests against. <a href="https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 script: optional string
 
 Name of the script to run if the route matches.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.routes%20%3E%20(model)%20route_update_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-RouteDeleteResponse object { id }
+RouteDeleteResponse object {id }
 
 </summary>
 
@@ -4706,23 +4732,27 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.routes%20%3E%20(model)%20route_delete_response%20%3E%20(schema)>)
 
-##### [Upload Worker Assets](/api/resources/workers/subresources/assets/subresources/upload/methods/create)
+#### WorkersAssets
 
-POST/accounts/{account_id}/workers/assets/upload
+#### WorkersAssetsUpload
 
-##### Models
+##### [Upload Worker Assets](https://developers.cloudflare.com/api/resources/workers/subresources/assets/subresources/upload/methods/create)
+
+POST/accounts/{account\_id}/workers/assets/upload
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-UploadCreateResponse object { jwt }
+UploadCreateResponse object {jwt }
 
 </summary>
 
@@ -4730,39 +4760,41 @@ jwt: optional string
 
 A “completion” JWT which can be redeemed when creating a Worker version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.assets.upload%20%3E%20(model)%20upload_create_response%20%3E%20(schema)>)
 
-##### [List Worker Scripts](/api/resources/workers/subresources/scripts/methods/list)
+#### WorkersScripts
 
-GET/accounts/{account_id}/workers/scripts
+##### [List Worker Scripts](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/list)
 
-##### [Search Worker Scripts](/api/resources/workers/subresources/scripts/methods/search)
+GET/accounts/{account\_id}/workers/scripts
 
-GET/accounts/{account_id}/workers/scripts-search
+##### [Search Worker Scripts](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/search)
 
-##### [Download Worker Script](/api/resources/workers/subresources/scripts/methods/get)
+GET/accounts/{account\_id}/workers/scripts-search
 
-GET/accounts/{account_id}/workers/scripts/{script_name}
+##### [Download Worker Script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/get)
 
-##### [Upload Worker Module](/api/resources/workers/subresources/scripts/methods/update)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}
 
-PUT/accounts/{account_id}/workers/scripts/{script_name}
+##### [Upload Worker Module](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/update)
 
-##### [Delete Worker](/api/resources/workers/subresources/scripts/methods/delete)
+PUT/accounts/{account\_id}/workers/scripts/{script\_name}
 
-DELETE/accounts/{account_id}/workers/scripts/{script_name}
+##### [Delete Worker](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/delete)
 
-##### Models
+DELETE/accounts/{account\_id}/workers/scripts/{script\_name}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Script object { id, cache_options, compatibility_date, 20 more }
+Script object {id, cache\_options, compatibility\_date, 20 more }
 
 </summary>
 
@@ -4770,15 +4802,15 @@ id: optional string
 
 The name used to identify the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -4786,51 +4818,51 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the script was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 etag: optional string
 
 Hashed script content, can be used in a If-None-Match header when updating.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the Worker’s most recent version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned.
+Declarative exports for the Worker’s most recent version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
 </summary>
 
@@ -4840,9 +4872,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -4850,15 +4882,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -4866,29 +4898,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -4896,9 +4928,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -4906,47 +4938,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -4954,59 +4986,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -5014,33 +5046,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -5048,15 +5080,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -5064,95 +5096,95 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 handlers: optional array of string
 
 The names of handlers exported as part of the default export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_assets: optional boolean
+has\_assets: optional boolean
 
 Whether a Worker contains assets.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_modules: optional boolean
+has\_modules: optional boolean
 
 Whether a Worker contains modules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_deployed_from: optional string
+last\_deployed\_from: optional string
 
 The client most recently used to deploy this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: optional boolean
 
 Whether Logpush is turned on for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 The tag of the Durable Object migration that was most recently applied for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the script was last modified.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-named_handlers: optional array of object { handlers, name }
+named\_handlers: optional array of object {handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -5162,23 +5194,23 @@ handlers: optional array of string
 
 The names of handlers exported as part of the named export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -5188,19 +5220,19 @@ enabled: boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -5210,17 +5242,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
+logs: optional object {enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -5230,47 +5262,47 @@ enabled: boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: boolean
+invocation\_logs: boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -5280,31 +5312,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -5314,31 +5346,31 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode, last_analyzed_at, status } or object { region, last_analyzed_at, status } or object { hostname, last_analyzed_at, status } or 5 more
+placement: optional object {mode, last\_analyzed\_at, status } or object {region, last\_analyzed\_at, status } or object {hostname, last\_analyzed\_at, status } or 5 more
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -5348,31 +5380,31 @@ One of the following:
 
 <summary>
 
-object { mode, last_analyzed_at, status }
+object {mode, last\_analyzed\_at, status }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5380,29 +5412,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { region, last_analyzed_at, status }
+object {region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5410,23 +5442,23 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5434,29 +5466,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, last_analyzed_at, status }
+object {hostname, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5464,23 +5496,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5488,29 +5520,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, last_analyzed_at, status }
+object {host, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5518,23 +5550,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5542,29 +5574,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region, last_analyzed_at, status }
+object {mode, region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5572,29 +5604,29 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5602,29 +5634,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode, last_analyzed_at, status }
+object {hostname, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5632,29 +5664,29 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5662,29 +5694,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode, last_analyzed_at, status }
+object {host, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5692,29 +5724,29 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5722,29 +5754,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target, last_analyzed_at, status }
+object {mode, target, last\_analyzed\_at, status }
 
 </summary>
 
@@ -5752,13 +5784,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -5770,7 +5802,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -5778,17 +5810,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -5796,17 +5828,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -5814,31 +5846,31 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5846,35 +5878,35 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_mode: optional "smart" or "targeted"
+Deprecatedplacement\_mode: optional "smart"or "targeted"
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -5882,23 +5914,23 @@ One of the following:
 
 "smart"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "targeted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+Deprecatedplacement\_status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -5906,37 +5938,37 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tag: optional string
 
 The immutable ID of the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
+tail\_consumers: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)">ConsumerScript</a> { service, environment, namespace }
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -5946,29 +5978,29 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "standard" or "bundled" or "unbound"
+usage\_model: optional "standard"or "bundled"or "unbound"
 
 Usage model for the Worker invocations.
 
@@ -5978,29 +6010,29 @@ One of the following:
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScriptSetting object { logpush, observability, tags, tail_consumers }
+ScriptSetting object {logpush, observability, tags, tail\_consumers }
 
 </summary>
 
@@ -6008,13 +6040,13 @@ logpush: optional boolean
 
 Whether Logpush is turned on for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -6024,19 +6056,19 @@ enabled: boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -6046,17 +6078,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
+logs: optional object {enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -6066,47 +6098,47 @@ enabled: boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: boolean
+invocation\_logs: boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -6116,31 +6148,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -6150,35 +6182,35 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
+tail\_consumers: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)">ConsumerScript</a> { service, environment, namespace }
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -6188,33 +6220,33 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_setting%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScriptListResponse object { id, cache_options, compatibility_date, 21 more }
+ScriptListResponse object {id, cache\_options, compatibility\_date, 21 more }
 
 </summary>
 
@@ -6222,15 +6254,15 @@ id: optional string
 
 The name used to identify the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -6238,51 +6270,51 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the script was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 etag: optional string
 
 Hashed script content, can be used in a If-None-Match header when updating.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the Worker’s most recent version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned.
+Declarative exports for the Worker’s most recent version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
 </summary>
 
@@ -6292,9 +6324,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -6302,15 +6334,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -6318,29 +6350,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -6348,9 +6380,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -6358,47 +6390,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -6406,59 +6438,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -6466,33 +6498,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -6500,15 +6532,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -6516,95 +6548,95 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 handlers: optional array of string
 
 The names of handlers exported as part of the default export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_assets: optional boolean
+has\_assets: optional boolean
 
 Whether a Worker contains assets.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_modules: optional boolean
+has\_modules: optional boolean
 
 Whether a Worker contains modules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_deployed_from: optional string
+last\_deployed\_from: optional string
 
 The client most recently used to deploy this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: optional boolean
 
 Whether Logpush is turned on for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 The tag of the Durable Object migration that was most recently applied for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the script was last modified.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-named_handlers: optional array of object { handlers, name }
+named\_handlers: optional array of object {handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -6614,23 +6646,23 @@ handlers: optional array of string
 
 The names of handlers exported as part of the named export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -6640,19 +6672,19 @@ enabled: boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -6662,17 +6694,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
+logs: optional object {enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -6682,47 +6714,47 @@ enabled: boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: boolean
+invocation\_logs: boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -6732,31 +6764,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -6766,31 +6798,31 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode, last_analyzed_at, status } or object { region, last_analyzed_at, status } or object { hostname, last_analyzed_at, status } or 5 more
+placement: optional object {mode, last\_analyzed\_at, status } or object {region, last\_analyzed\_at, status } or object {hostname, last\_analyzed\_at, status } or 5 more
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -6800,31 +6832,31 @@ One of the following:
 
 <summary>
 
-object { mode, last_analyzed_at, status }
+object {mode, last\_analyzed\_at, status }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -6832,29 +6864,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { region, last_analyzed_at, status }
+object {region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -6862,23 +6894,23 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -6886,29 +6918,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, last_analyzed_at, status }
+object {hostname, last\_analyzed\_at, status }
 
 </summary>
 
@@ -6916,23 +6948,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -6940,29 +6972,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, last_analyzed_at, status }
+object {host, last\_analyzed\_at, status }
 
 </summary>
 
@@ -6970,23 +7002,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -6994,29 +7026,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region, last_analyzed_at, status }
+object {mode, region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -7024,29 +7056,29 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -7054,29 +7086,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode, last_analyzed_at, status }
+object {hostname, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -7084,29 +7116,29 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -7114,29 +7146,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode, last_analyzed_at, status }
+object {host, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -7144,29 +7176,29 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -7174,29 +7206,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target, last_analyzed_at, status }
+object {mode, target, last\_analyzed\_at, status }
 
 </summary>
 
@@ -7204,13 +7236,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -7222,7 +7254,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -7230,17 +7262,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -7248,17 +7280,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -7266,31 +7298,31 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -7298,33 +7330,33 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_mode: optional "smart" or "targeted"
+Deprecatedplacement\_mode: optional "smart"or "targeted"
 
 </summary>
 
@@ -7332,21 +7364,21 @@ One of the following:
 
 "smart"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "targeted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+Deprecatedplacement\_status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
 </summary>
 
@@ -7354,25 +7386,25 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-routes: optional array of object { id, pattern, script }
+routes: optional array of object {id, pattern, script }
 
 Routes associated with the Worker.
 
@@ -7384,41 +7416,41 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pattern: string
 
-Pattern to match incoming requests against. [Learn more](https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior).
+Pattern to match incoming requests against. <a href="https://developers.cloudflare.com/workers/configuration/routing/routes/#matching-behavior">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 script: optional string
 
 Name of the script to run if the route matches.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tag: optional string
 
 The immutable ID of the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
+tail\_consumers: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)">ConsumerScript</a> { service, environment, namespace }
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -7428,29 +7460,29 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "standard" or "bundled" or "unbound"
+usage\_model: optional "standard"or "bundled"or "unbound"
 
 Usage model for the Worker invocations.
 
@@ -7460,29 +7492,29 @@ One of the following:
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_list_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScriptSearchResponse = array of object { id, created_on, modified_on, 4 more }
+ScriptSearchResponse = array of object {id, created\_on, modified\_on, 4 more }
 
 </summary>
 
@@ -7492,81 +7524,81 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: string
+created\_on: string
 
 When the script was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: string
+modified\_on: string
 
 When the script was last modified.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: string
+script\_name: string
 
 Name of the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-environment_is_default: optional boolean
+environment\_is\_default: optional boolean
 
 Whether the environment is the default environment.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-environment_name: optional string
+environment\_name: optional string
 
 Name of the environment.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-service_name: optional string
+service\_name: optional string
 
 Name of the service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_search_response%20%3E%20(schema)>)
 
 ScriptGetResponse = string
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScriptUpdateResponse object { startup_time_ms, id, cache_options, 22 more }
+ScriptUpdateResponse object {startup\_time\_ms, id, cache\_options, 22 more }
 
 </summary>
 
-startup_time_ms: number
+startup\_time\_ms: number
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
 The name used to identify the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -7574,57 +7606,57 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the script was created.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-entry_point: optional string
+entry\_point: optional string
 
 The entry point for the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 etag: optional string
 
 Hashed script content, can be used in a If-None-Match header when updating.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the Worker’s most recent version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned.
+Declarative exports for the Worker’s most recent version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
 </summary>
 
@@ -7634,9 +7666,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -7644,15 +7676,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -7660,29 +7692,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -7690,9 +7722,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -7700,47 +7732,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -7748,59 +7780,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -7808,33 +7840,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -7842,15 +7874,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -7858,95 +7890,95 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 handlers: optional array of string
 
 The names of handlers exported as part of the default export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_assets: optional boolean
+has\_assets: optional boolean
 
 Whether a Worker contains assets.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-has_modules: optional boolean
+has\_modules: optional boolean
 
 Whether a Worker contains modules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_deployed_from: optional string
+last\_deployed\_from: optional string
 
 The client most recently used to deploy this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: optional boolean
 
 Whether Logpush is turned on for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 The tag of the Durable Object migration that was most recently applied for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the script was last modified.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-named_handlers: optional array of object { handlers, name }
+named\_handlers: optional array of object {handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -7956,23 +7988,23 @@ handlers: optional array of string
 
 The names of handlers exported as part of the named export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -7982,19 +8014,19 @@ enabled: boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -8004,17 +8036,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
+logs: optional object {enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -8024,47 +8056,47 @@ enabled: boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: boolean
+invocation\_logs: boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -8074,31 +8106,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -8108,31 +8140,31 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode, last_analyzed_at, status } or object { region, last_analyzed_at, status } or object { hostname, last_analyzed_at, status } or 5 more
+placement: optional object {mode, last\_analyzed\_at, status } or object {region, last\_analyzed\_at, status } or object {hostname, last\_analyzed\_at, status } or 5 more
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -8142,31 +8174,31 @@ One of the following:
 
 <summary>
 
-object { mode, last_analyzed_at, status }
+object {mode, last\_analyzed\_at, status }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8174,29 +8206,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { region, last_analyzed_at, status }
+object {region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8204,23 +8236,23 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8228,29 +8260,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, last_analyzed_at, status }
+object {hostname, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8258,23 +8290,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8282,29 +8314,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, last_analyzed_at, status }
+object {host, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8312,23 +8344,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8336,29 +8368,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region, last_analyzed_at, status }
+object {mode, region, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8366,29 +8398,29 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8396,29 +8428,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode, last_analyzed_at, status }
+object {hostname, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8426,29 +8458,29 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8456,29 +8488,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode, last_analyzed_at, status }
+object {host, mode, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8486,29 +8518,29 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8516,29 +8548,29 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target, last_analyzed_at, status }
+object {mode, target, last\_analyzed\_at, status }
 
 </summary>
 
@@ -8546,13 +8578,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -8564,7 +8596,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -8572,17 +8604,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -8590,17 +8622,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -8608,31 +8640,31 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_analyzed_at: optional string
+last\_analyzed\_at: optional string
 
-The last time the script was analyzed for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+The last time the script was analyzed for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
-Status of [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Status of <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
 </summary>
 
@@ -8640,33 +8672,33 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_mode: optional "smart" or "targeted"
+Deprecatedplacement\_mode: optional "smart"or "targeted"
 
 </summary>
 
@@ -8674,21 +8706,21 @@ One of the following:
 
 "smart"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "targeted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Deprecatedplacement_status: optional "SUCCESS" or "UNSUPPORTED_APPLICATION" or "INSUFFICIENT_INVOCATIONS"
+Deprecatedplacement\_status: optional "SUCCESS"or "UNSUPPORTED\_APPLICATION"or "INSUFFICIENT\_INVOCATIONS"
 
 </summary>
 
@@ -8696,37 +8728,37 @@ One of the following:
 
 "SUCCESS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"UNSUPPORTED_APPLICATION"
+"UNSUPPORTED\_APPLICATION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"INSUFFICIENT_INVOCATIONS"
+"INSUFFICIENT\_INVOCATIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tag: optional string
 
 The immutable ID of the script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
+tail\_consumers: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)">ConsumerScript</a> { service, environment, namespace }
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -8736,29 +8768,29 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "standard" or "bundled" or "unbound"
+usage\_model: optional "standard"or "bundled"or "unbound"
 
 Usage model for the Worker invocations.
 
@@ -8768,39 +8800,43 @@ One of the following:
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_update_response%20%3E%20(schema)>)
 
 ScriptDeleteResponse = unknown
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_delete_response%20%3E%20(schema)>)
 
-##### [Create Worker Assets Upload Session](/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
+#### WorkersScriptsAssets
 
-POST/accounts/{account_id}/workers/scripts/{script_name}/assets-upload-session
+#### WorkersScriptsAssetsUpload
 
-##### Models
+##### [Create Worker Assets Upload Session](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/assets/subresources/upload/methods/create)
+
+POST/accounts/{account\_id}/workers/scripts/{script\_name}/assets-upload-session
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-UploadCreateResponse object { buckets, jwt }
+UploadCreateResponse object {buckets, jwt }
 
 </summary>
 
@@ -8808,37 +8844,39 @@ buckets: optional array of array of string
 
 The requests to make to upload assets.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 jwt: optional string
 
 A JWT to use as authentication for uploading assets.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.assets.upload%20%3E%20(model)%20upload_create_response%20%3E%20(schema)>)
 
-##### [Get Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
+#### WorkersScriptsSubdomain
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/subdomain
+##### [Get Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/get)
 
-##### [Update Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-POST/accounts/{account_id}/workers/scripts/{script_name}/subdomain
+##### [Update Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/create)
 
-##### [Delete Worker Script Subdomain](/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
+POST/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
 
-DELETE/accounts/{account_id}/workers/scripts/{script_name}/subdomain
+##### [Delete Worker Script Subdomain](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/subdomain/methods/delete)
 
-##### Models
+DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/subdomain
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-SubdomainGetResponse object { enabled, previews_enabled }
+SubdomainGetResponse object {enabled, previews\_enabled }
 
 </summary>
 
@@ -8846,23 +8884,23 @@ enabled: boolean
 
 Whether the Worker is available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-previews_enabled: boolean
+previews\_enabled: boolean
 
 Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.subdomain%20%3E%20(model)%20subdomain_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SubdomainCreateResponse object { enabled, previews_enabled }
+SubdomainCreateResponse object {enabled, previews\_enabled }
 
 </summary>
 
@@ -8870,23 +8908,23 @@ enabled: boolean
 
 Whether the Worker is available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-previews_enabled: boolean
+previews\_enabled: boolean
 
 Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.subdomain%20%3E%20(model)%20subdomain_create_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SubdomainDeleteResponse object { enabled, previews_enabled }
+SubdomainDeleteResponse object {enabled, previews\_enabled }
 
 </summary>
 
@@ -8894,33 +8932,35 @@ enabled: boolean
 
 Whether the Worker is available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-previews_enabled: boolean
+previews\_enabled: boolean
 
 Whether the Worker’s Preview URLs are available on the workers.dev subdomain.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.subdomain%20%3E%20(model)%20subdomain_delete_response%20%3E%20(schema)>)
 
-##### [Get Worker Script Schedules (Cron Triggers)](/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
+#### WorkersScriptsSchedules
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/schedules
+##### [Get Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/get)
 
-##### [Update Worker Script Schedules (Cron Triggers)](/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
 
-PUT/accounts/{account_id}/workers/scripts/{script_name}/schedules
+##### [Update Worker Script Schedules (Cron Triggers)](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/schedules/methods/update)
 
-##### Models
+PUT/accounts/{account\_id}/workers/scripts/{script\_name}/schedules
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-ScheduleGetResponse object { schedules }
+ScheduleGetResponse object {schedules }
 
 </summary>
 
@@ -8928,35 +8968,35 @@ ScheduleGetResponse object { schedules }
 
 <summary>
 
-schedules: array of object { cron, created_on, modified_on }
+schedules: array of object {cron, created\_on, modified\_on }
 
 </summary>
 
 cron: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers.scripts.schedules%20%3E%20(model)%20schedule_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScheduleUpdateResponse object { schedules }
+ScheduleUpdateResponse object {schedules }
 
 </summary>
 
@@ -8964,49 +9004,51 @@ ScheduleUpdateResponse object { schedules }
 
 <summary>
 
-schedules: array of object { cron, created_on, modified_on }
+schedules: array of object {cron, created\_on, modified\_on }
 
 </summary>
 
 cron: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-##### [List Worker Tails](/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
+</details>
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/tails
+[Link to this property](#)%20workers.scripts.schedules%20%3E%20(model)%20schedule_update_response%20%3E%20(schema)>)
 
-##### [Start Worker Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
+#### WorkersScriptsTail
 
-POST/accounts/{account_id}/workers/scripts/{script_name}/tails
+##### [List Worker Tails](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/get)
 
-##### [Delete Worker Tail](/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/tails
 
-DELETE/accounts/{account_id}/workers/scripts/{script_name}/tails/{id}
+##### [Start Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/create)
 
-##### Models
+POST/accounts/{account\_id}/workers/scripts/{script\_name}/tails
+
+##### [Delete Worker Tail](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/tail/methods/delete)
+
+DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/tails/{id}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-ConsumerScript object { service, environment, namespace }
+ConsumerScript object {service, environment, namespace }
 
 A reference to a script that will consume logs from the attached Worker.
 
@@ -9016,29 +9058,29 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TailGetResponse object { id, expires_at, url }
+TailGetResponse object {id, expires\_at, url }
 
 </summary>
 
@@ -9048,25 +9090,25 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-expires_at: string
+expires\_at: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 url: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.tail%20%3E%20(model)%20tail_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TailCreateResponse object { id, expires_at, url }
+TailCreateResponse object {id, expires\_at, url }
 
 </summary>
 
@@ -9076,25 +9118,25 @@ Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-expires_at: string
+expires\_at: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 url: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.tail%20%3E%20(model)%20tail_create_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TailDeleteResponse object { errors, messages, success }
+TailDeleteResponse object {errors, messages, success }
 
 </summary>
 
@@ -9102,49 +9144,7 @@ TailDeleteResponse object { errors, messages, success }
 
 <summary>
 
-errors: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-messages: array of object { code, message, documentation_url, source }
+errors: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -9152,85 +9152,133 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.tail%20%3E%20(model)%20tail_delete_response%20%3E%20(schema)>)
 
-##### [Get Worker Script Content](/api/resources/workers/subresources/scripts/subresources/content/methods/get)
+#### WorkersScriptsContent
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/content/v2
+##### [Get Worker Script Content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/get)
 
-##### [Replace Worker Script Content](/api/resources/workers/subresources/scripts/subresources/content/methods/update)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/content/v2
 
-PUT/accounts/{account_id}/workers/scripts/{script_name}/content
+##### [Replace Worker Script Content](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/content/methods/update)
 
-##### [Get Worker Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
+PUT/accounts/{account\_id}/workers/scripts/{script\_name}/content
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/script-settings
+#### WorkersScriptsSettings
 
-##### [Patch Worker Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
+##### [Get Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
 
-PATCH/accounts/{account_id}/workers/scripts/{script_name}/script-settings
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-##### [List Worker Deployments](/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
+##### [Patch Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/edit)
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/deployments
+PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/script-settings
 
-##### [Create Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
+#### WorkersScriptsDeployments
 
-POST/accounts/{account_id}/workers/scripts/{script_name}/deployments
+##### [List Worker Deployments](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/list)
 
-##### [Get Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployment_id}
+##### [Create Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/create)
 
-##### [Delete Worker Deployment](/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
+POST/accounts/{account\_id}/workers/scripts/{script\_name}/deployments
 
-DELETE/accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployment_id}
+##### [Get Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/get)
 
-##### Models
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
+
+##### [Delete Worker Deployment](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/deployments/methods/delete)
+
+DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deployment\_id}
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Deployment object { id, created_on, source, 4 more }
+Deployment object {id, created\_on, source, 4 more }
 
 </summary>
 
@@ -9238,29 +9286,29 @@ id: string
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: string
+created\_on: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 source: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 strategy: "percentage"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-versions: array of object { percentage, version_id }
+versions: array of object {percentage, version\_id }
 
-Worker versions included in this deployment. Each object must contain a `version_id` UUID and a `percentage`; percentages across all objects must total 100. In the `cf` CLI, pass the entire array as one JSON value to `--versions`, either inline, for example `--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'`, or from a JSON file with `--versions @versions.json`.
+Worker versions included in this deployment. Each object must contain a <code>version_id</code> UUID and a <code>percentage</code>; percentages across all objects must total 100. In the <code>cf</code> CLI, pass the entire array as one JSON value to <code>--versions</code>, either inline, for example <code>--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'</code>, or from a JSON file with <code>--versions @versions.json</code>.
 
 </summary>
 
@@ -9272,25 +9320,25 @@ maximum100
 
 minimum0.01
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-version_id: string
+version\_id: string
 
 Identifier of the Worker Version.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-annotations: optional object { "workers/message", "workers/triggered_by" }
+annotations: optional object {"workers/message", "workers/triggered\_by" }
 
 </summary>
 
@@ -9300,33 +9348,33 @@ Human-readable message about the deployment. Truncated to 1000 bytes if longer.
 
 maxLength1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"workers/triggered_by": optional string
+"workers/triggered\_by": optional string
 
 Operation that triggered the creation of the deployment.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_email: optional string
+author\_email: optional string
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-DeploymentListResponse object { deployments }
+DeploymentListResponse object {deployments }
 
 </summary>
 
@@ -9334,7 +9382,7 @@ DeploymentListResponse object { deployments }
 
 <summary>
 
-deployments: array of [Deployment](/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)) { id, created_on, source, 4 more }
+deployments: array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)">Deployment</a> { id, created\_on, source, 4 more }
 
 </summary>
 
@@ -9342,29 +9390,29 @@ id: string
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: string
+created\_on: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 source: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 strategy: "percentage"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-versions: array of object { percentage, version_id }
+versions: array of object {percentage, version\_id }
 
-Worker versions included in this deployment. Each object must contain a `version_id` UUID and a `percentage`; percentages across all objects must total 100. In the `cf` CLI, pass the entire array as one JSON value to `--versions`, either inline, for example `--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'`, or from a JSON file with `--versions @versions.json`.
+Worker versions included in this deployment. Each object must contain a <code>version_id</code> UUID and a <code>percentage</code>; percentages across all objects must total 100. In the <code>cf</code> CLI, pass the entire array as one JSON value to <code>--versions</code>, either inline, for example <code>--versions '[{"version_id":"023e105f-2a42-4f8b-a1c1-73f6a2a30c0f","percentage":100}]'</code>, or from a JSON file with <code>--versions @versions.json</code>.
 
 </summary>
 
@@ -9376,25 +9424,25 @@ maximum100
 
 minimum0.01
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-version_id: string
+version\_id: string
 
 Identifier of the Worker Version.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-annotations: optional object { "workers/message", "workers/triggered_by" }
+annotations: optional object {"workers/message", "workers/triggered\_by" }
 
 </summary>
 
@@ -9404,37 +9452,37 @@ Human-readable message about the deployment. Truncated to 1000 bytes if longer.
 
 maxLength1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"workers/triggered_by": optional string
+"workers/triggered\_by": optional string
 
 Operation that triggered the creation of the deployment.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_email: optional string
+author\_email: optional string
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(model)%20deployment_list_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-DeploymentDeleteResponse object { errors, messages, success }
+DeploymentDeleteResponse object {errors, messages, success }
 
 </summary>
 
@@ -9442,49 +9490,7 @@ DeploymentDeleteResponse object { errors, messages, success }
 
 <summary>
 
-errors: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-messages: array of object { code, message, documentation_url, source }
+errors: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -9492,65 +9498,109 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.deployments%20%3E%20(model)%20deployment_delete_response%20%3E%20(schema)>)
 
-##### [List Versions](/api/resources/workers/subresources/scripts/subresources/versions/methods/list)
+#### WorkersScriptsVersions
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/versions
+##### [List Versions](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/list)
 
-##### [Get Worker Script Version](/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/versions/{version_id}
+##### [Get Worker Script Version](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/get)
 
-##### [Upload Version](/api/resources/workers/subresources/scripts/subresources/versions/methods/create)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/versions/{version\_id}
 
-POST/accounts/{account_id}/workers/scripts/{script_name}/versions
+##### [Upload Version](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/versions/methods/create)
 
-##### Models
+POST/accounts/{account\_id}/workers/scripts/{script\_name}/versions
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-VersionListResponse object { id, metadata, number }
+VersionListResponse object {id, metadata, number }
 
 </summary>
 
@@ -9558,51 +9608,51 @@ id: optional string
 
 Unique identifier for the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-metadata: optional object { author_email, author_id, created_on, 3 more }
+metadata: optional object {author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
-author_email: optional string
+author\_email: optional string
 
 Email of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_id: optional string
+author\_id: optional string
 
 Identifier of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the version was created.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hasPreview: optional boolean
 
 Whether the version can be previewed.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the version was last modified.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional "unknown" or "api" or "wrangler" or 8 more
+source: optional "unknown"or "api"or "wrangler"or 8 more
 
 The source of the version upload.
 
@@ -9612,71 +9662,71 @@ One of the following:
 
 "unknown"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "api"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrangler"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "terraform"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "dash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"cf_cli"
+"cf\_cli"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_template"
+"dash\_template"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "integration"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"quick_editor"
+"quick\_editor"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "playground"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workersci"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 number: optional number
 
 Sequential version number.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.versions%20%3E%20(model)%20version_list_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-VersionGetResponse object { resources, id, metadata, number }
+VersionGetResponse object {resources, id, metadata, number }
 
 </summary>
 
@@ -9684,21 +9734,21 @@ VersionGetResponse object { resources, id, metadata, number }
 
 <summary>
 
-resources: object { bindings, script, script_runtime }
+resources: object {bindings, script, script\_runtime }
 
 </summary>
 
 bindings: optional
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-script: optional object { etag, handlers, last_deployed_from, named_handlers }
+script: optional object {etag, handlers, last\_deployed\_from, named\_handlers }
 
 </summary>
 
@@ -9706,25 +9756,25 @@ etag: optional string
 
 Hashed script content
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 handlers: optional array of string
 
 The names of handlers exported as part of the default export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_deployed_from: optional string
+last\_deployed\_from: optional string
 
 The client most recently used to deploy this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-named_handlers: optional array of object { handlers, name }
+named\_handlers: optional array of object {handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -9734,51 +9784,51 @@ handlers: optional array of string
 
 The names of handlers exported as part of the named export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the exported class or entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-script_runtime: optional object { compatibility_date, compatibility_flags, exports, 3 more }
+script\_runtime: optional object {compatibility\_date, compatibility\_flags, exports, 3 more }
 
 Runtime configuration for the Worker.
 
 </summary>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
 Flags that enable or disable certain features in the Workers runtime.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for this version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned.
+Declarative exports for this version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
 </summary>
 
@@ -9788,9 +9838,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -9798,15 +9848,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -9814,29 +9864,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -9844,9 +9894,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -9854,47 +9904,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -9902,59 +9952,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -9962,33 +10012,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -9996,15 +10046,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -10012,77 +10062,77 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-limits: optional object { cpu_ms }
+limits: optional object {cpu\_ms }
 
 Resource limits for the Worker.
 
 </summary>
 
-cpu_ms: optional number
+cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 The tag of the Durable Object migration that was most recently applied for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "bundled" or "unbound" or "standard"
+usage\_model: optional "bundled"or "unbound"or "standard"
 
 Usage model for the Worker invocations.
 
@@ -10092,77 +10142,77 @@ One of the following:
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
 Unique identifier for the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-metadata: optional object { author_email, author_id, created_on, 3 more }
+metadata: optional object {author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
-author_email: optional string
+author\_email: optional string
 
 Email of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_id: optional string
+author\_id: optional string
 
 Identifier of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the version was created.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hasPreview: optional boolean
 
 Whether the version can be previewed.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the version was last modified.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional "unknown" or "api" or "wrangler" or 8 more
+source: optional "unknown"or "api"or "wrangler"or 8 more
 
 The source of the version upload.
 
@@ -10172,71 +10222,71 @@ One of the following:
 
 "unknown"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "api"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrangler"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "terraform"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "dash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"cf_cli"
+"cf\_cli"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_template"
+"dash\_template"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "integration"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"quick_editor"
+"quick\_editor"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "playground"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workersci"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 number: optional number
 
 Sequential version number.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.versions%20%3E%20(model)%20version_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-VersionCreateResponse object { resources, id, exports_reconciliation, 3 more }
+VersionCreateResponse object {resources, id, exports\_reconciliation, 3 more }
 
 </summary>
 
@@ -10244,21 +10294,21 @@ VersionCreateResponse object { resources, id, exports_reconciliation, 3 more }
 
 <summary>
 
-resources: object { bindings, script, script_runtime }
+resources: object {bindings, script, script\_runtime }
 
 </summary>
 
 bindings: optional
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-script: optional object { etag, handlers, last_deployed_from, named_handlers }
+script: optional object {etag, handlers, last\_deployed\_from, named\_handlers }
 
 </summary>
 
@@ -10266,25 +10316,25 @@ etag: optional string
 
 Hashed script content
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 handlers: optional array of string
 
 The names of handlers exported as part of the default export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-last_deployed_from: optional string
+last\_deployed\_from: optional string
 
 The client most recently used to deploy this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-named_handlers: optional array of object { handlers, name }
+named\_handlers: optional array of object {handlers, name }
 
 Named exports, such as Durable Object class implementations and named entrypoints.
 
@@ -10294,51 +10344,51 @@ handlers: optional array of string
 
 The names of handlers exported as part of the named export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the exported class or entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-script_runtime: optional object { compatibility_date, compatibility_flags, exports, 3 more }
+script\_runtime: optional object {compatibility\_date, compatibility\_flags, exports, 3 more }
 
 Runtime configuration for the Worker.
 
 </summary>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
 Flags that enable or disable certain features in the Workers runtime.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for this version, including Durable Object classes (with their `storage` backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (`created` and `expecting-transfer`) are returned.
+Declarative exports for this version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. Tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned.
 
 </summary>
 
@@ -10348,9 +10398,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -10358,15 +10408,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -10374,29 +10424,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -10404,9 +10454,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -10414,47 +10464,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -10462,59 +10512,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -10522,33 +10572,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -10556,15 +10606,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -10572,77 +10622,77 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-limits: optional object { cpu_ms }
+limits: optional object {cpu\_ms }
 
 Resource limits for the Worker.
 
 </summary>
 
-cpu_ms: optional number
+cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-migration_tag: optional string
+migration\_tag: optional string
 
 The tag of the Durable Object migration that was most recently applied for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "bundled" or "unbound" or "standard"
+usage\_model: optional "bundled"or "unbound"or "standard"
 
 Usage model for the Worker invocations.
 
@@ -10652,41 +10702,41 @@ One of the following:
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
 Unique identifier for the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports_reconciliation: optional object { created, deleted, info, 6 more }
+exports\_reconciliation: optional object {created, deleted, info, 6 more }
 
-Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an `exports` block. Durable Object entries drive reconciliation; `type: worker` entries do not contribute to this summary.
+Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
 </summary>
 
@@ -10694,21 +10744,21 @@ created: array of string
 
 Class names for which a new namespace was provisioned.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 deleted: array of string
 
-Class names whose namespace was deleted by a `deleted` tombstone.
+Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-info: array of object { class, message, scenario, 2 more }
+info: array of object {class, message, scenario, 2 more }
 
-Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See `exports_reconciliation_info`.
+Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
 </summary>
 
@@ -10716,193 +10766,193 @@ class: string
 
 The class name the info entry is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the entry relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-referencing_scripts: optional array of string
+referencing\_scripts: optional array of string
 
 Other Workers in the account that still bind to the affected class. Advisory: while non-empty the tombstone is not yet safe to remove — redeploy these Workers with bindings re-pointed first.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-removable_entries: array of string
+removable\_entries: array of string
 
-Source class names whose tombstone entry is now stale and safe to delete from `exports` (no remaining referencing scripts).
+Source class names whose tombstone entry is now stale and safe to delete from <code>exports</code> (no remaining referencing scripts).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed: array of object { from, to }
+renamed: array of object {from, to }
 
-Applied `renamed` tombstones.
+Applied <code>renamed</code> tombstones.
 
 </summary>
 
@@ -10910,23 +10960,23 @@ from: string
 
 The original (source) class name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
-The new class name (`renamed_to`).
+The new class name (<code>renamed_to</code>).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transfer_pending: array of object { class, from }
+transfer\_pending: array of object {class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -10936,25 +10986,25 @@ class: string
 
 The target-side class name awaiting transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 from: string
 
 The source script the namespace will be transferred from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred: array of object { class, phase, to }
+transferred: array of object {class, phase, to }
 
-Committed `transferred` tombstones (phase-2).
+Committed <code>transferred</code> tombstones (phase-2).
 
 </summary>
 
@@ -10962,37 +11012,37 @@ class: string
 
 The source class name that was transferred.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 phase: "committed"
 
-The transfer phase. Currently always `committed`.
+The transfer phase. Currently always <code>committed</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
 The destination script that now owns the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 updated: array of string
 
 Class names whose provisioned namespace was mutated in place.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-warnings: array of object { class, message, scenario, namespace_id }
+warnings: array of object {class, message, scenario, namespace\_id }
 
-Non-blocking warnings. See `exports_reconciliation_warning`.
+Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
 </summary>
 
@@ -11000,221 +11050,221 @@ class: string
 
 The class name the warning is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation of the warning.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the warning relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-metadata: optional object { author_email, author_id, created_on, 3 more }
+metadata: optional object {author\_email, author\_id, created\_on, 3 more }
 
 </summary>
 
-author_email: optional string
+author\_email: optional string
 
 Email of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-author_id: optional string
+author\_id: optional string
 
 Identifier of the user who created the version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_on: optional string
+created\_on: optional string
 
 When the version was created.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hasPreview: optional boolean
 
 Whether the version can be previewed.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-modified_on: optional string
+modified\_on: optional string
 
 When the version was last modified.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional "unknown" or "api" or "wrangler" or 8 more
+source: optional "unknown"or "api"or "wrangler"or 8 more
 
 The source of the version upload.
 
@@ -11224,99 +11274,101 @@ One of the following:
 
 "unknown"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "api"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrangler"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "terraform"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "dash"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"cf_cli"
+"cf\_cli"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_template"
+"dash\_template"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "integration"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"quick_editor"
+"quick\_editor"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "playground"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workersci"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 number: optional number
 
 Sequential version number.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-startup_time_ms: optional number
+startup\_time\_ms: optional number
 
-Time in milliseconds spent on [Worker startup](https://developers.cloudflare.com/workers/platform/limits/#worker-startup-time).
+Time in milliseconds spent on <a href="https://developers.cloudflare.com/workers/platform/limits/#worker-startup-time">Worker startup</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.versions%20%3E%20(model)%20version_create_response%20%3E%20(schema)>)
 
-##### [List secrets bound to a Worker script](/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
+#### WorkersScriptsSecrets
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/secrets
+##### [List secrets bound to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/list)
 
-##### [Get a secret binding](/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/secrets/{secret_name}
+##### [Get a secret binding](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/get)
 
-##### [Add a secret to a Worker script](/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-PUT/accounts/{account_id}/workers/scripts/{script_name}/secrets
+##### [Add a secret to a Worker script](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/update)
 
-##### [Delete Worker script secret](/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
+PUT/accounts/{account\_id}/workers/scripts/{script\_name}/secrets
 
-DELETE/accounts/{account_id}/workers/scripts/{script_name}/secrets/{secret_name}
+##### [Delete Worker script secret](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/delete)
 
-##### [Patch multiple Worker script secrets](/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
+DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/secrets/{secret\_name}
 
-PATCH/accounts/{account_id}/workers/scripts/{script_name}/secrets-bulk
+##### [Patch multiple Worker script secrets](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/secrets/methods/bulk_update)
 
-##### Models
+PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/secrets-bulk
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-SecretListResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
+SecretListResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -11328,7 +11380,7 @@ One of the following:
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -11336,45 +11388,45 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -11382,43 +11434,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -11426,65 +11478,65 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers.scripts.secrets%20%3E%20(model)%20secret_list_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SecretGetResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
+SecretGetResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -11496,7 +11548,7 @@ One of the following:
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -11504,45 +11556,45 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -11550,43 +11602,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -11594,65 +11646,65 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers.scripts.secrets%20%3E%20(model)%20secret_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SecretUpdateResponse = object { name, text, type } or object { algorithm, format, name, 4 more }
+SecretUpdateResponse = object {name, text, type } or object {algorithm, format, name, 4 more }
 
 A secret value accessible through a binding.
 
@@ -11664,7 +11716,7 @@ One of the following:
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -11672,45 +11724,45 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -11718,43 +11770,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -11762,69 +11814,69 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers.scripts.secrets%20%3E%20(model)%20secret_update_response%20%3E%20(schema)>)
 
 SecretDeleteResponse = unknown
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.secrets%20%3E%20(model)%20secret_delete_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SecretBulkUpdateResponse = map[object { name, text, type } or object { algorithm, format, name, 4 more } ]
+SecretBulkUpdateResponse = map\[object {name, text, type } or object {algorithm, format, name, 4 more } ]
 
 Map of secret names to secret metadata for resulting secrets.
 
@@ -11836,7 +11888,7 @@ One of the following:
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -11844,45 +11896,45 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -11890,43 +11942,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -11934,75 +11986,77 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-##### [Get Worker Script and Version Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
+</details>
 
-GET/accounts/{account_id}/workers/scripts/{script_name}/settings
+[Link to this property](#)%20workers.scripts.secrets%20%3E%20(model)%20secret_bulk_update_response%20%3E%20(schema)>)
 
-##### [Patch Worker Script and Version Settings](/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
+#### WorkersScriptsScript And Version Settings
 
-PATCH/accounts/{account_id}/workers/scripts/{script_name}/settings
+##### [Get Worker Script and Version Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/get)
 
-##### Models
+GET/accounts/{account\_id}/workers/scripts/{script\_name}/settings
+
+##### [Patch Worker Script and Version Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/script_and_version_settings/methods/edit)
+
+PATCH/accounts/{account\_id}/workers/scripts/{script\_name}/settings
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-ScriptAndVersionSettingGetResponse object { annotations, bindings, cache_options, 12 more }
+ScriptAndVersionSettingGetResponse object {annotations, bindings, cache\_options, 12 more }
 
 </summary>
 
@@ -12010,7 +12064,7 @@ ScriptAndVersionSettingGetResponse object { annotations, bindings, cache_options
 
 <summary>
 
-annotations: optional object { "workers/message", "workers/tag", "workers/triggered_by" }
+annotations: optional object {"workers/message", "workers/tag", "workers/triggered\_by" }
 
 Annotations for the Worker version. Annotations are not inherited across settings updates; omitting this field means the new version will have no annotations.
 
@@ -12022,7 +12076,7 @@ Human-readable message about the version. Truncated to 1000 bytes if longer.
 
 maxLength1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workers/tag": optional string
 
@@ -12030,25 +12084,25 @@ User-provided identifier for the version. Maximum 100 bytes.
 
 maxLength100
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"workers/triggered_by": optional string
+"workers/triggered\_by": optional string
 
 Operation that triggered the creation of the version. This is read-only and set by the server.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
 </summary>
 
@@ -12058,7 +12112,7 @@ One of the following:
 
 <summary>
 
-AI object { name, type }
+AI object {name, type }
 
 </summary>
 
@@ -12066,59 +12120,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ai"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearch object { instance_name, name, type, namespace }
+AISearch object {instance\_name, name, type, namespace }
 
 </summary>
 
-instance_name: string
+instance\_name: string
 
 The user-chosen instance name. Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search"
+type: "ai\_search"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 The namespace the instance belongs to. Defaults to “default” if omitted. Customers who don’t use namespaces can simply omit this field.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearchNamespace object { name, namespace, type }
+AISearchNamespace object {name, namespace, type }
 
 </summary>
 
@@ -12126,29 +12180,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The user-chosen namespace name. Must exist before deploy — Wrangler handles auto-creation on deploy failure (R2 bucket pattern). The “default” namespace is auto-created by config-api for new accounts. Grants full access (CRUD + search + chat) to all instances within the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search_namespace"
+type: "ai\_search\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Messaging object { name, namespace, type }
+Messaging object {name, namespace, type }
 
 </summary>
 
@@ -12156,29 +12210,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The Messaging namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "messaging"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnalyticsEngine object { dataset, name, type }
+AnalyticsEngine object {dataset, name, type }
 
 </summary>
 
@@ -12186,29 +12240,29 @@ dataset: string
 
 The name of the dataset to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "analytics_engine"
+type: "analytics\_engine"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Artifacts object { name, namespace, type }
+Artifacts object {name, namespace, type }
 
 </summary>
 
@@ -12216,7 +12270,7 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
@@ -12226,23 +12280,23 @@ maxLength63
 
 minLength2
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "artifacts"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Assets object { name, type }
+Assets object {name, type }
 
 </summary>
 
@@ -12250,23 +12304,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "assets"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Browser object { name, type }
+Browser object {name, type }
 
 </summary>
 
@@ -12274,61 +12328,61 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "browser"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-D1 object { database_id, name, type, id }
+D1 object {database\_id, name, type, id }
 
 </summary>
 
-database_id: string
+database\_id: string
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "d1"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 Deprecatedid: optional string
 
-This property has been renamed to `database_id`.
+This property has been renamed to <code>database_id</code>.
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DataBlob object { name, part, type }
+DataBlob object {name, part, type }
 
 </summary>
 
@@ -12336,29 +12390,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the data content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "data_blob"
+Deprecatedtype: "data\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DispatchNamespace object { name, namespace, type, outbound }
+DispatchNamespace object {name, namespace, type, outbound }
 
 </summary>
 
@@ -12366,25 +12420,25 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The name of the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "dispatch_namespace"
+type: "dispatch\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-outbound: optional object { params, worker }
+outbound: optional object {params, worker }
 
 Outbound worker.
 
@@ -12394,7 +12448,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object { name }
+params: optional array of object {name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -12404,17 +12458,17 @@ name: string
 
 Name of the parameter.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-worker: optional object { entrypoint, environment, service }
+worker: optional object {entrypoint, environment, service }
 
 Outbound worker.
 
@@ -12424,37 +12478,37 @@ entrypoint: optional string
 
 Entrypoint to invoke on the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Environment of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: optional string
 
 Name of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 4 more }
+DurableObjectNamespace object {name, type, class\_name, 4 more }
 
 </summary>
 
@@ -12462,55 +12516,55 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "durable_object_namespace"
+type: "durable\_object\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 The exported class name of the Durable Object.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-dispatch_namespace: optional string
+dispatch\_namespace: optional string
 
 The dispatch namespace the Durable Object script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
-The environment of the script_name to bind to.
+The environment of the script\_name to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hyperdrive object { id, name, type }
+Hyperdrive object {id, name, type }
 
 </summary>
 
@@ -12518,29 +12572,29 @@ id: string
 
 Identifier of the Hyperdrive connection to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "hyperdrive"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Inherit object { name, type, old_name, version_id }
+Inherit object {name, type, old\_name, version\_id }
 
 </summary>
 
@@ -12548,35 +12602,35 @@ name: string
 
 The name of the inherited binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "inherit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_name: optional string
+old\_name: optional string
 
-The old name of the inherited binding. If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
+The old name of the inherited binding. If set, the binding will be renamed from <code>old_name</code> to <code>name</code> in the new version. If not set, the binding will keep the same name between versions.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-version_id: optional string
+version\_id: optional string
 
 Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Images object { name, type }
+Images object {name, type }
 
 </summary>
 
@@ -12584,23 +12638,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "images"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Json object { json, name, type }
+Json object {json, name, type }
 
 </summary>
 
@@ -12608,29 +12662,29 @@ json: unknown
 
 JSON data to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "json"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-KVNamespace object { name, namespace_id, type }
+KVNamespace object {name, namespace\_id, type }
 
 </summary>
 
@@ -12638,31 +12692,31 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "kv_namespace"
+type: "kv\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Media object { name, type }
+Media object {name, type }
 
 </summary>
 
@@ -12670,53 +12724,53 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "media"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-MTLSCertificate object { certificate_id, name, type }
+MTLSCertificate object {certificate\_id, name, type }
 
 </summary>
 
-certificate_id: string
+certificate\_id: string
 
 Identifier of the certificate to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "mtls_certificate"
+type: "mtls\_certificate"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PlainText object { name, text, type }
+PlainText object {name, text, type }
 
 </summary>
 
@@ -12724,29 +12778,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The text value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "plain_text"
+type: "plain\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Pipelines object { name, pipeline, type }
+Pipelines object {name, pipeline, type }
 
 </summary>
 
@@ -12754,29 +12808,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pipeline: string
 
 Name of the Pipeline to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "pipelines"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-K2 object { name, stream, type }
+K2 object {name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -12786,29 +12840,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 stream: string
 
 ID of a K2 stream owned by the account deploying the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "k2"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Queue object { name, queue_name, type }
+Queue object {name, queue\_name, type }
 
 </summary>
 
@@ -12816,29 +12870,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-queue_name: string
+queue\_name: string
 
 Name of the Queue to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "queue"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Ratelimit object { name, namespace_id, simple, type }
+Ratelimit object {name, namespace\_id, simple, type }
 
 </summary>
 
@@ -12846,19 +12900,19 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Identifier of the rate limit namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-simple: object { limit, period, mitigation_timeout }
+simple: object {limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -12868,67 +12922,67 @@ limit: number
 
 The limit (requests per period).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 period: number
 
 The period in seconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mitigation_timeout: optional number
+mitigation\_timeout: optional number
 
 Duration in seconds to apply the mitigation action after the rate limit is exceeded. Valid values are 0 (disabled), 10, or multiples of 60 up to 86400. Must be greater than or equal to the period when non-zero.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ratelimit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-R2Bucket object { bucket_name, name, type, jurisdiction }
+R2Bucket object {bucket\_name, name, type, jurisdiction }
 
 </summary>
 
-bucket_name: string
+bucket\_name: string
 
 R2 bucket to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "r2_bucket"
+type: "r2\_bucket"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
+jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
 
-The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket.
+The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
 </summary>
 
@@ -12936,33 +12990,33 @@ One of the following:
 
 "eu"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp-high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "us"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -12970,29 +13024,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SendEmail object { name, type, allowed_destination_addresses, 2 more }
+SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -13000,43 +13054,43 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "send_email"
+type: "send\_email"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_destination_addresses: optional array of string
+allowed\_destination\_addresses: optional array of string
 
 List of allowed destination addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_sender_addresses: optional array of string
+allowed\_sender\_addresses: optional array of string
 
 List of allowed sender addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-destination_address: optional string
+destination\_address: optional string
 
 Destination address for the email.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Service object { name, service, type, 2 more }
+Service object {name, service, type, 2 more }
 
 </summary>
 
@@ -13044,41 +13098,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: string
 
 Name of Worker to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 entrypoint: optional string
 
 Entrypoint to invoke on the target Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-TextBlob object { name, part, type }
+TextBlob object {name, part, type }
 
 </summary>
 
@@ -13086,59 +13140,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the text content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the text content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "text_blob"
+Deprecatedtype: "text\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Vectorize object { index_name, name, type }
+Vectorize object {index\_name, name, type }
 
 </summary>
 
-index_name: string
+index\_name: string
 
 Name of the Vectorize index to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "vectorize"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VersionMetadata object { name, type }
+VersionMetadata object {name, type }
 
 </summary>
 
@@ -13146,23 +13200,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "version_metadata"
+type: "version\_metadata"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretsStoreSecret object { name, secret_name, store_id, type }
+SecretsStoreSecret object {name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -13170,83 +13224,83 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-secret_name: string
+secret\_name: string
 
 Name of the secret in the store.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-store_id: string
+store\_id: string
 
 ID of the store containing the secret.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secrets_store_secret"
+type: "secrets\_store\_secret"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Flagship object { app_id, name, type }
+Flagship object {app\_id, name, type }
 
 </summary>
 
-app_id: string
+app\_id: string
 
 ID of the Flagship app to bind to for feature flag evaluation.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "flagship"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -13254,43 +13308,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -13298,61 +13352,61 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Workflow object { name, type, workflow_name, 2 more }
+Workflow object {name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -13360,41 +13414,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "workflow"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-workflow_name: string
+workflow\_name: string
 
 Name of the Workflow to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 Class name of the Workflow. Should only be provided if the Workflow belongs to this script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 Script name that contains the Workflow. If not provided, defaults to this script name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WasmModule object { name, part, type }
+WasmModule object {name, part, type }
 
 </summary>
 
@@ -13402,29 +13456,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the WebAssembly module content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the WebAssembly module content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "wasm_module"
+Deprecatedtype: "wasm\_module"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCService object { name, service_id, type }
+VPCService object {name, service\_id, type }
 
 </summary>
 
@@ -13432,29 +13486,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-service_id: string
+service\_id: string
 
 Identifier of the VPC service to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_service"
+type: "vpc\_service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCNetwork object { name, type, identity, 2 more }
+VPCNetwork object {name, type, identity, 2 more }
 
 </summary>
 
@@ -13462,47 +13516,47 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_network"
+type: "vpc\_network"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-network_id: optional string
+network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-tunnel_id: optional string
+tunnel\_id: optional string
 
-UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -13510,37 +13564,37 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the Worker. Worker entrypoint entries (`type: worker`) carry cache configuration for that entrypoint.
+Declarative exports for the Worker. Worker entrypoint entries (<code>type: worker</code>) carry cache configuration for that entrypoint.
 
 </summary>
 
@@ -13550,9 +13604,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -13560,15 +13614,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -13576,29 +13630,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -13606,9 +13660,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -13616,47 +13670,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -13664,59 +13718,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -13724,33 +13778,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -13758,15 +13812,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -13774,53 +13828,53 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports_reconciliation: optional object { created, deleted, info, 6 more }
+exports\_reconciliation: optional object {created, deleted, info, 6 more }
 
-Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an `exports` block. Durable Object entries drive reconciliation; `type: worker` entries do not contribute to this summary.
+Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
 </summary>
 
@@ -13828,21 +13882,21 @@ created: array of string
 
 Class names for which a new namespace was provisioned.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 deleted: array of string
 
-Class names whose namespace was deleted by a `deleted` tombstone.
+Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-info: array of object { class, message, scenario, 2 more }
+info: array of object {class, message, scenario, 2 more }
 
-Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See `exports_reconciliation_info`.
+Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
 </summary>
 
@@ -13850,193 +13904,193 @@ class: string
 
 The class name the info entry is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the entry relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-referencing_scripts: optional array of string
+referencing\_scripts: optional array of string
 
 Other Workers in the account that still bind to the affected class. Advisory: while non-empty the tombstone is not yet safe to remove — redeploy these Workers with bindings re-pointed first.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-removable_entries: array of string
+removable\_entries: array of string
 
-Source class names whose tombstone entry is now stale and safe to delete from `exports` (no remaining referencing scripts).
+Source class names whose tombstone entry is now stale and safe to delete from <code>exports</code> (no remaining referencing scripts).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed: array of object { from, to }
+renamed: array of object {from, to }
 
-Applied `renamed` tombstones.
+Applied <code>renamed</code> tombstones.
 
 </summary>
 
@@ -14044,23 +14098,23 @@ from: string
 
 The original (source) class name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
-The new class name (`renamed_to`).
+The new class name (<code>renamed_to</code>).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transfer_pending: array of object { class, from }
+transfer\_pending: array of object {class, from }
 
 Phase-1 transfer hints recorded on the target side.
 
@@ -14070,25 +14124,25 @@ class: string
 
 The target-side class name awaiting transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 from: string
 
 The source script the namespace will be transferred from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred: array of object { class, phase, to }
+transferred: array of object {class, phase, to }
 
-Committed `transferred` tombstones (phase-2).
+Committed <code>transferred</code> tombstones (phase-2).
 
 </summary>
 
@@ -14096,37 +14150,37 @@ class: string
 
 The source class name that was transferred.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 phase: "committed"
 
-The transfer phase. Currently always `committed`.
+The transfer phase. Currently always <code>committed</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: string
 
 The destination script that now owns the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 updated: array of string
 
 Class names whose provisioned namespace was mutated in place.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-warnings: array of object { class, message, scenario, namespace_id }
+warnings: array of object {class, message, scenario, namespace\_id }
 
-Non-blocking warnings. See `exports_reconciliation_warning`.
+Non-blocking warnings. See <code>exports_reconciliation_warning</code>.
 
 </summary>
 
@@ -14134,215 +14188,215 @@ class: string
 
 The class name the warning is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation of the warning.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the warning relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-limits: optional object { cpu_ms, subrequests }
+limits: optional object {cpu\_ms, subrequests }
 
 Limits to apply for this Worker.
 
 </summary>
 
-cpu_ms: optional number
+cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 subrequests: optional number
 
 The number of subrequests this Worker can make per request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 logpush: optional boolean
 
 Whether Logpush is turned on for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-migrations: optional [SingleStepMigration](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 4 more } or object { new_tag, old_tag, steps }
+migrations: optional <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)">SingleStepMigration</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more } or object {new\_tag, old\_tag, steps }
 
 Migrations to apply for Durable Objects associated with this Worker.
 
@@ -14354,47 +14408,47 @@ One of the following:
 
 <summary>
 
-SingleStepMigration object { deleted_classes, new_classes, new_sqlite_classes, 4 more }
+SingleStepMigration object {deleted\_classes, new\_classes, new\_sqlite\_classes, 4 more }
 
 A single set of migrations to apply.
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_tag: optional string
+new\_tag: optional string
 
 Tag to set as the latest migration tag.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_tag: optional string
+old\_tag: optional string
 
 Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -14402,21 +14456,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -14424,77 +14478,77 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersMultipleStepMigrations object { new_tag, old_tag, steps }
+WorkersMultipleStepMigrations object {new\_tag, old\_tag, steps }
 
 </summary>
 
-new_tag: optional string
+new\_tag: optional string
 
 Tag to set as the latest migration tag.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_tag: optional string
+old\_tag: optional string
 
 Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-steps: optional array of [MigrationStep](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 2 more }
+steps: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)">MigrationStep</a> { deleted\_classes, new\_classes, new\_sqlite\_classes, 2 more }
 
 Migrations to apply in order.
 
 </summary>
 
-deleted_classes: optional array of string
+deleted\_classes: optional array of string
 
 A list of classes to delete Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_classes: optional array of string
+new\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-new_sqlite_classes: optional array of string
+new\_sqlite\_classes: optional array of string
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-renamed_classes: optional array of object { from, to }
+renamed\_classes: optional array of object {from, to }
 
 A list of classes with Durable Object namespaces that were renamed.
 
@@ -14502,21 +14556,21 @@ A list of classes with Durable Object namespaces that were renamed.
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-transferred_classes: optional array of object { from, from_script, to }
+transferred\_classes: optional array of object {from, from\_script, to }
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
@@ -14524,37 +14578,37 @@ A list of transfers for Durable Object namespaces from a different Worker and cl
 
 from: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-from_script: optional string
+from\_script: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 to: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
 
 Observability settings for the Worker.
 
@@ -14564,19 +14618,19 @@ enabled: boolean
 
 Whether observability is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-issues: optional object { enabled }
+issues: optional object {enabled }
 
 Real-time Issues settings for the Worker.
 
@@ -14586,17 +14640,17 @@ enabled: optional boolean
 
 Whether real-time Issues are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
+logs: optional object {enabled, invocation\_logs, destinations, 2 more }
 
 Log settings for the Worker.
 
@@ -14606,47 +14660,47 @@ enabled: boolean
 
 Whether logs are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-invocation_logs: boolean
+invocation\_logs: boolean
 
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
+Whether <a href="https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs">invocation logs</a> are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 destinations: optional array of string
 
 A list of destinations where logs will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether log persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redact_query_string: optional boolean
+redact\_query\_string: optional boolean
 
 Whether query strings are removed from request URLs in logs and traces.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
+traces: optional object {destinations, enabled, head\_sampling\_rate, 2 more }
 
 Trace settings for the Worker.
 
@@ -14656,31 +14710,31 @@ destinations: optional array of string
 
 A list of destinations where traces will be exported to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether traces are enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-head_sampling_rate: optional number
+head\_sampling\_rate: optional number
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 persist: optional boolean
 
 Whether trace persistence is enabled for the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-propagation_policy: optional "authenticated" or "accept"
+propagation\_policy: optional "authenticated"or "accept"
 
 Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
 
@@ -14690,31 +14744,31 @@ One of the following:
 
 "authenticated"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "accept"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-placement: optional object { mode } or object { region } or object { hostname } or 5 more
+placement: optional object {mode } or object {region } or object {hostname } or 5 more
 
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
+Configuration for <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>. Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
 
 </summary>
 
@@ -14724,25 +14778,25 @@ One of the following:
 
 <summary>
 
-Mode object { mode }
+Mode object {mode }
 
 </summary>
 
 mode: "smart"
 
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+Enables <a href="https://developers.cloudflare.com/workers/configuration/smart-placement">Smart Placement</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -14750,17 +14804,17 @@ region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -14768,17 +14822,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -14786,17 +14840,17 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, region }
+object {mode, region }
 
 </summary>
 
@@ -14804,23 +14858,23 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 region: string
 
 Cloud region for targeted placement in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { hostname, mode }
+object {hostname, mode }
 
 </summary>
 
@@ -14828,23 +14882,23 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { host, mode }
+object {host, mode }
 
 </summary>
 
@@ -14852,23 +14906,23 @@ host: string
 
 TCP host and port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-object { mode, target }
+object {mode, target }
 
 </summary>
 
@@ -14876,13 +14930,13 @@ mode: "targeted"
 
 Targeted placement mode.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-target: array of object { region } or object { hostname } or object { host }
+target: array of object {region } or object {hostname } or object {host }
 
 Array of placement targets (currently limited to single target).
 
@@ -14894,7 +14948,7 @@ One of the following:
 
 <summary>
 
-Region object { region }
+Region object {region }
 
 </summary>
 
@@ -14902,17 +14956,17 @@ region: string
 
 Cloud region in format ‘provider:region’.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hostname object { hostname }
+Hostname object {hostname }
 
 </summary>
 
@@ -14920,17 +14974,17 @@ hostname: string
 
 HTTP hostname for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Host object { host }
+Host object {host }
 
 </summary>
 
@@ -14938,35 +14992,35 @@ host: string
 
 TCP host:port for targeted placement.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 Tags associated with the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
+tail\_consumers: optional array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)">ConsumerScript</a> { service, environment, namespace }
 
 List of Workers that will consume logs from the attached Worker.
 
@@ -14976,29 +15030,29 @@ service: string
 
 Name of Worker that is to be the consumer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 Optional dispatch namespace the script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usage_model: optional "standard" or "bundled" or "unbound"
+usage\_model: optional "standard"or "bundled"or "unbound"
 
 Usage model for the Worker invocations.
 
@@ -15008,29 +15062,29 @@ One of the following:
 
 "standard"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bundled"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unbound"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20workers.scripts.script_and_version_settings%20%3E%20(model)%20script_and_version_setting_get_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-ScriptAndVersionSettingEditResponse object { annotations, bindings, cache_options, 12 more }
+ScriptAndVersionSettingEditResponse object {annotations, bindings, cache\_options, 12 more }
 
 </summary>
 
@@ -15038,7 +15092,7 @@ ScriptAndVersionSettingEditResponse object { annotations, bindings, cache_option
 
 <summary>
 
-annotations: optional object { "workers/message", "workers/tag", "workers/triggered_by" }
+annotations: optional object {"workers/message", "workers/tag", "workers/triggered\_by" }
 
 Annotations for the Worker version. Annotations are not inherited across settings updates; omitting this field means the new version will have no annotations.
 
@@ -15050,7 +15104,7 @@ Human-readable message about the version. Truncated to 1000 bytes if longer.
 
 maxLength1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "workers/tag": optional string
 
@@ -15058,25 +15112,25 @@ User-provided identifier for the version. Maximum 100 bytes.
 
 maxLength100
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"workers/triggered_by": optional string
+"workers/triggered\_by": optional string
 
 Operation that triggered the creation of the version. This is read-only and set by the server.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
 </summary>
 
@@ -15086,7 +15140,7 @@ One of the following:
 
 <summary>
 
-AI object { name, type }
+AI object {name, type }
 
 </summary>
 
@@ -15094,59 +15148,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ai"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearch object { instance_name, name, type, namespace }
+AISearch object {instance\_name, name, type, namespace }
 
 </summary>
 
-instance_name: string
+instance\_name: string
 
 The user-chosen instance name. Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search"
+type: "ai\_search"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: optional string
 
 The namespace the instance belongs to. Defaults to “default” if omitted. Customers who don’t use namespaces can simply omit this field.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AISearchNamespace object { name, namespace, type }
+AISearchNamespace object {name, namespace, type }
 
 </summary>
 
@@ -15154,29 +15208,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The user-chosen namespace name. Must exist before deploy — Wrangler handles auto-creation on deploy failure (R2 bucket pattern). The “default” namespace is auto-created by config-api for new accounts. Grants full access (CRUD + search + chat) to all instances within the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "ai_search_namespace"
+type: "ai\_search\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Messaging object { name, namespace, type }
+Messaging object {name, namespace, type }
 
 </summary>
 
@@ -15184,29 +15238,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The Messaging namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "messaging"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnalyticsEngine object { dataset, name, type }
+AnalyticsEngine object {dataset, name, type }
 
 </summary>
 
@@ -15214,29 +15268,29 @@ dataset: string
 
 The name of the dataset to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "analytics_engine"
+type: "analytics\_engine"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Artifacts object { name, namespace, type }
+Artifacts object {name, namespace, type }
 
 </summary>
 
@@ -15244,7 +15298,7 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
@@ -15254,23 +15308,23 @@ maxLength63
 
 minLength2
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "artifacts"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Assets object { name, type }
+Assets object {name, type }
 
 </summary>
 
@@ -15278,23 +15332,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "assets"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Browser object { name, type }
+Browser object {name, type }
 
 </summary>
 
@@ -15302,61 +15356,61 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "browser"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-D1 object { database_id, name, type, id }
+D1 object {database\_id, name, type, id }
 
 </summary>
 
-database_id: string
+database\_id: string
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "d1"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 Deprecatedid: optional string
 
-This property has been renamed to `database_id`.
+This property has been renamed to <code>database_id</code>.
 
 Identifier of the D1 database to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DataBlob object { name, part, type }
+DataBlob object {name, part, type }
 
 </summary>
 
@@ -15364,29 +15418,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the data content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "data_blob"
+Deprecatedtype: "data\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DispatchNamespace object { name, namespace, type, outbound }
+DispatchNamespace object {name, namespace, type, outbound }
 
 </summary>
 
@@ -15394,25 +15448,25 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 namespace: string
 
 The name of the dispatch namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "dispatch_namespace"
+type: "dispatch\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-outbound: optional object { params, worker }
+outbound: optional object {params, worker }
 
 Outbound worker.
 
@@ -15422,7 +15476,7 @@ Outbound worker.
 
 <summary>
 
-params: optional array of object { name }
+params: optional array of object {name }
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
@@ -15432,17 +15486,17 @@ name: string
 
 Name of the parameter.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-worker: optional object { entrypoint, environment, service }
+worker: optional object {entrypoint, environment, service }
 
 Outbound worker.
 
@@ -15452,37 +15506,37 @@ entrypoint: optional string
 
 Entrypoint to invoke on the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Environment of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: optional string
 
 Name of the outbound worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 4 more }
+DurableObjectNamespace object {name, type, class\_name, 4 more }
 
 </summary>
 
@@ -15490,55 +15544,55 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "durable_object_namespace"
+type: "durable\_object\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 The exported class name of the Durable Object.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-dispatch_namespace: optional string
+dispatch\_namespace: optional string
 
 The dispatch namespace the Durable Object script belongs to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
-The environment of the script_name to bind to.
+The environment of the script\_name to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Hyperdrive object { id, name, type }
+Hyperdrive object {id, name, type }
 
 </summary>
 
@@ -15546,29 +15600,29 @@ id: string
 
 Identifier of the Hyperdrive connection to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "hyperdrive"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Inherit object { name, type, old_name, version_id }
+Inherit object {name, type, old\_name, version\_id }
 
 </summary>
 
@@ -15576,35 +15630,35 @@ name: string
 
 The name of the inherited binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "inherit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-old_name: optional string
+old\_name: optional string
 
-The old name of the inherited binding. If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
+The old name of the inherited binding. If set, the binding will be renamed from <code>old_name</code> to <code>name</code> in the new version. If not set, the binding will keep the same name between versions.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-version_id: optional string
+version\_id: optional string
 
 Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Images object { name, type }
+Images object {name, type }
 
 </summary>
 
@@ -15612,23 +15666,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "images"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Json object { json, name, type }
+Json object {json, name, type }
 
 </summary>
 
@@ -15636,29 +15690,29 @@ json: unknown
 
 JSON data to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "json"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-KVNamespace object { name, namespace_id, type }
+KVNamespace object {name, namespace\_id, type }
 
 </summary>
 
@@ -15666,31 +15720,31 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Namespace identifier tag.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "kv_namespace"
+type: "kv\_namespace"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Media object { name, type }
+Media object {name, type }
 
 </summary>
 
@@ -15698,53 +15752,53 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "media"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-MTLSCertificate object { certificate_id, name, type }
+MTLSCertificate object {certificate\_id, name, type }
 
 </summary>
 
-certificate_id: string
+certificate\_id: string
 
 Identifier of the certificate to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "mtls_certificate"
+type: "mtls\_certificate"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PlainText object { name, text, type }
+PlainText object {name, text, type }
 
 </summary>
 
@@ -15752,29 +15806,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The text value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "plain_text"
+type: "plain\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Pipelines object { name, pipeline, type }
+Pipelines object {name, pipeline, type }
 
 </summary>
 
@@ -15782,29 +15836,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 pipeline: string
 
 Name of the Pipeline to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "pipelines"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-K2 object { name, stream, type }
+K2 object {name, stream, type }
 
 A K2 stream binding. Available only to accounts enabled for K2.
 
@@ -15814,29 +15868,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 stream: string
 
 ID of a K2 stream owned by the account deploying the Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "k2"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Queue object { name, queue_name, type }
+Queue object {name, queue\_name, type }
 
 </summary>
 
@@ -15844,29 +15898,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-queue_name: string
+queue\_name: string
 
 Name of the Queue to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "queue"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Ratelimit object { name, namespace_id, simple, type }
+Ratelimit object {name, namespace\_id, simple, type }
 
 </summary>
 
@@ -15874,19 +15928,19 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: string
+namespace\_id: string
 
 Identifier of the rate limit namespace to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-simple: object { limit, period, mitigation_timeout }
+simple: object {limit, period, mitigation\_timeout }
 
 The rate limit configuration.
 
@@ -15896,67 +15950,67 @@ limit: number
 
 The limit (requests per period).
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 period: number
 
 The period in seconds.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mitigation_timeout: optional number
+mitigation\_timeout: optional number
 
 Duration in seconds to apply the mitigation action after the rate limit is exceeded. Valid values are 0 (disabled), 10, or multiples of 60 up to 86400. Must be greater than or equal to the period when non-zero.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "ratelimit"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-R2Bucket object { bucket_name, name, type, jurisdiction }
+R2Bucket object {bucket\_name, name, type, jurisdiction }
 
 </summary>
 
-bucket_name: string
+bucket\_name: string
 
 R2 bucket to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "r2_bucket"
+type: "r2\_bucket"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-jurisdiction: optional "eu" or "fedramp" or "fedramp-high" or "us"
+jurisdiction: optional "eu"or "fedramp"or "fedramp-high"or "us"
 
-The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket.
+The <a href="https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions">jurisdiction</a> of the R2 bucket.
 
 </summary>
 
@@ -15964,33 +16018,33 @@ One of the following:
 
 "eu"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "fedramp-high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "us"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretText object { name, text, type }
+SecretText object {name, text, type }
 
 </summary>
 
@@ -15998,29 +16052,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 text: string
 
 The secret value to use.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_text"
+type: "secret\_text"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SendEmail object { name, type, allowed_destination_addresses, 2 more }
+SendEmail object {name, type, allowed\_destination\_addresses, 2 more }
 
 </summary>
 
@@ -16028,43 +16082,43 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "send_email"
+type: "send\_email"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_destination_addresses: optional array of string
+allowed\_destination\_addresses: optional array of string
 
 List of allowed destination addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_sender_addresses: optional array of string
+allowed\_sender\_addresses: optional array of string
 
 List of allowed sender addresses.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-destination_address: optional string
+destination\_address: optional string
 
 Destination address for the email.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Service object { name, service, type, 2 more }
+Service object {name, service, type, 2 more }
 
 </summary>
 
@@ -16072,41 +16126,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 service: string
 
 Name of Worker to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 entrypoint: optional string
 
 Entrypoint to invoke on the target Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 environment: optional string
 
 Optional environment if the Worker utilizes one.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-TextBlob object { name, part, type }
+TextBlob object {name, part, type }
 
 </summary>
 
@@ -16114,59 +16168,59 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the text content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the text content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "text_blob"
+Deprecatedtype: "text\_blob"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Vectorize object { index_name, name, type }
+Vectorize object {index\_name, name, type }
 
 </summary>
 
-index_name: string
+index\_name: string
 
 Name of the Vectorize index to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "vectorize"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VersionMetadata object { name, type }
+VersionMetadata object {name, type }
 
 </summary>
 
@@ -16174,23 +16228,23 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "version_metadata"
+type: "version\_metadata"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretsStoreSecret object { name, secret_name, store_id, type }
+SecretsStoreSecret object {name, secret\_name, store\_id, type }
 
 </summary>
 
@@ -16198,83 +16252,83 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-secret_name: string
+secret\_name: string
 
 Name of the secret in the store.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-store_id: string
+store\_id: string
 
 ID of the store containing the secret.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secrets_store_secret"
+type: "secrets\_store\_secret"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Flagship object { app_id, name, type }
+Flagship object {app\_id, name, type }
 
 </summary>
 
-app_id: string
+app\_id: string
 
 ID of the Flagship app to bind to for feature flag evaluation.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "flagship"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SecretKey object { algorithm, format, name, 4 more }
+SecretKey object {algorithm, format, name, 4 more }
 
 </summary>
 
 algorithm: unknown
 
-Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
+Algorithm-specific key parameters. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm">Learn more</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-format: "raw" or "pkcs8" or "spki" or "jwk"
+format: "raw"or "pkcs8"or "spki"or "jwk"
 
-Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
+Data format of the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format">Learn more</a>.
 
 </summary>
 
@@ -16282,43 +16336,43 @@ One of the following:
 
 "raw"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "pkcs8"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "spki"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "jwk"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "secret_key"
+type: "secret\_key"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-usages: array of "encrypt" or "decrypt" or "sign" or 5 more
+usages: array of "encrypt"or "decrypt"or "sign"or 5 more
 
-Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
+Allowed operations with the key. <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages">Learn more</a>.
 
 </summary>
 
@@ -16326,61 +16380,61 @@ One of the following:
 
 "encrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "decrypt"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "sign"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "verify"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deriveBits"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "wrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unwrapKey"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_base64: optional string
+key\_base64: optional string
 
-Base64-encoded key data. Required if `format` is “raw”, “pkcs8”, or “spki”.
+Base64-encoded key data. Required if <code>format</code> is “raw”, “pkcs8”, or “spki”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-key_jwk: optional unknown
+key\_jwk: optional unknown
 
-Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is “jwk”.
+Key data in <a href="https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key">JSON Web Key</a> format. Required if <code>format</code> is “jwk”.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-Workflow object { name, type, workflow_name, 2 more }
+Workflow object {name, type, workflow\_name, 2 more }
 
 </summary>
 
@@ -16388,41 +16442,41 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "workflow"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-workflow_name: string
+workflow\_name: string
 
 Name of the Workflow to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-class_name: optional string
+class\_name: optional string
 
 Class name of the Workflow. Should only be provided if the Workflow belongs to this script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-script_name: optional string
+script\_name: optional string
 
 Script name that contains the Workflow. If not provided, defaults to this script name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WasmModule object { name, part, type }
+WasmModule object {name, part, type }
 
 </summary>
 
@@ -16430,29 +16484,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 part: string
 
-The name of the file containing the WebAssembly module content. Only accepted for `service worker syntax` Workers.
+The name of the file containing the WebAssembly module content. Only accepted for <code>service worker syntax</code> Workers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedtype: "wasm_module"
+Deprecatedtype: "wasm\_module"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCService object { name, service_id, type }
+VPCService object {name, service\_id, type }
 
 </summary>
 
@@ -16460,29 +16514,29 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-service_id: string
+service\_id: string
 
 Identifier of the VPC service to bind to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_service"
+type: "vpc\_service"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-VPCNetwork object { name, type, identity, 2 more }
+VPCNetwork object {name, type, identity, 2 more }
 
 </summary>
 
@@ -16490,47 +16544,47 @@ name: string
 
 A JavaScript variable name for the binding.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: "vpc_network"
+type: "vpc\_network"
 
 The kind of resource that the binding provides.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-network_id: optional string
+network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-tunnel_id: optional string
+tunnel\_id: optional string
 
-UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache_options: optional object { enabled, cross_version_cache }
+cache\_options: optional object {enabled, cross\_version\_cache }
 
-Global CacheW configuration for the Worker. When caching is on, the platform provisions a `cloudflare.app` zone for the Worker. A `type: worker` entry in the `exports` map can override this value for a single entrypoint.
+Global CacheW configuration for the Worker. When caching is on, the platform provisions a <code>cloudflare.app</code> zone for the Worker. A <code>type: worker</code> entry in the <code>exports</code> map can override this value for a single entrypoint.
 
 </summary>
 
@@ -16538,37 +16592,37 @@ enabled: boolean
 
 Whether caching is enabled for this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-cross_version_cache: optional boolean
+cross\_version\_cache: optional boolean
 
-Whether cached responses are shared across Worker version uploads. This is independent of `enabled`. It can stay true while caching is off, so the preference survives turning caching off and back on.
+Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_date: optional string
+compatibility\_date: optional string
 
 Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-compatibility_flags: optional array of string
+compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a <code>compatibility_date</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports: optional map[object { type, cache, state } or object { storage, type, container, state } or object { state, type } or 3 more]
+exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
-Declarative exports for the Worker. Worker entrypoint entries (`type: worker`) carry cache configuration for that entrypoint.
+Declarative exports for the Worker. Worker entrypoint entries (<code>type: worker</code>) carry cache configuration for that entrypoint.
 
 </summary>
 
@@ -16578,9 +16632,9 @@ One of the following:
 
 <summary>
 
-Worker object { type, cache, state }
+Worker object {type, cache, state }
 
-A named Worker entrypoint export (`type: worker`). Worker entrypoints are always live (`state: created`) and carry no storage or lifecycle fields. The optional `cache` block overrides the Worker’s global `cache_options.enabled` for this entrypoint.
+A named Worker entrypoint export (<code>type: worker</code>). Worker entrypoints are always live (<code>state: created</code>) and carry no storage or lifecycle fields. The optional <code>cache</code> block overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint.
 
 </summary>
 
@@ -16588,15 +16642,15 @@ type: "worker"
 
 Marks this entry as a Worker entrypoint export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cache: optional object { enabled }
+cache: optional object {enabled }
 
-Cache override for this entrypoint. Overrides the Worker’s global `cache_options.enabled` for this entrypoint only.
+Cache override for this entrypoint. Overrides the Worker’s global <code>cache_options.enabled</code> for this entrypoint only.
 
 </summary>
 
@@ -16604,29 +16658,29 @@ enabled: boolean
 
 Whether caching is enabled for this entrypoint.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExport object { storage, type, container, state }
+WorkersDurableObjectExport object {storage, type, container, state }
 
-A live Durable Object export (`state: created`, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. `storage` is required; `renamed_to`, `transferred_to` and `transfer_from` are not allowed on a live entry.
+A live Durable Object export (<code>state: created</code>, the default). The platform auto-provisions the namespace on first deploy, matches it on subsequent deploys, and never mutates or deletes it as a side effect of a code-only change. <code>storage</code> is required; <code>renamed_to</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed on a live entry.
 
 </summary>
 
@@ -16634,9 +16688,9 @@ A live Durable Object export (`state: created`, the default). The platform auto-
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -16644,47 +16698,47 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object. When set, the namespace is container-enabled. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: optional "created"
 
-Live export. May be omitted; defaults to `created`.
+Live export. May be omitted; defaults to <code>created</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectDeletedExport object { state, type }
+WorkersDurableObjectDeletedExport object {state, type }
 
-A `deleted` tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
+A <code>deleted</code> tombstone: retires the provisioned namespace for this class and all of its data. The class must be absent from the uploaded code and no other Worker in the account may bind to the namespace, otherwise the deploy is rejected. No other fields are allowed. Deletion is irreversible.
 
 </summary>
 
@@ -16692,59 +16746,59 @@ state: "deleted"
 
 Tombstone that deletes the namespace.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectRenamedExport object { renamed_to, state, type }
+WorkersDurableObjectRenamedExport object {renamed\_to, state, type }
 
-A `renamed` tombstone: rewrites the provisioned namespace’s class name from this map key to `renamed_to`. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `transferred_to` and `transfer_from` are not allowed.
+A <code>renamed</code> tombstone: rewrites the provisioned namespace’s class name from this map key to <code>renamed_to</code>. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>transferred_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
-renamed_to: string
+renamed\_to: string
 
-The destination class name. Must differ from the source class (the map key) and must be declared as a live (`created`) entry in the same `exports` map. Write-only: never present in GET responses.
+The destination class name. Must differ from the source class (the map key) and must be declared as a live (<code>created</code>) entry in the same <code>exports</code> map. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 state: "renamed"
 
 Tombstone that renames the namespace’s class.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectTransferredExport object { state, transferred_to, type }
+WorkersDurableObjectTransferredExport object {state, transferred\_to, type }
 
-A `transferred` tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by `transferred_to`. The target must have already deployed a matching `expecting-transfer` entry. The source class may stay in code during the rollout window (an info notice is emitted). `storage`, `renamed_to` and `transfer_from` are not allowed.
+A <code>transferred</code> tombstone (source side of a two-phase transfer): hands ownership of the provisioned namespace to another script in the same account, named by <code>transferred_to</code>. The target must have already deployed a matching <code>expecting-transfer</code> entry. The source class may stay in code during the rollout window (an info notice is emitted). <code>storage</code>, <code>renamed_to</code> and <code>transfer_from</code> are not allowed.
 
 </summary>
 
@@ -16752,33 +16806,33 @@ state: "transferred"
 
 Tombstone that transfers the namespace to another script.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transferred_to: string
+transferred\_to: string
 
 The destination script name. Must be in the same account and the same dispatch-namespace context (or both non-dispatch). Cross-dispatch-namespace transfers are rejected. Write-only: never present in GET responses.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkersDurableObjectExpectingTransferExport object { state, storage, transfer_from, 2 more }
+WorkersDurableObjectExpectingTransferExport object {state, storage, transfer\_from, 2 more }
 
-The target side of a two-phase transfer (`state: expecting-transfer`). Declares that this script expects to receive a namespace for this class from the `transfer_from` script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a `transferred` tombstone. `storage` and `transfer_from` are required; `renamed_to` and `transferred_to` are not allowed.
+The target side of a two-phase transfer (<code>state: expecting-transfer</code>). Declares that this script expects to receive a namespace for this class from the <code>transfer_from</code> script. This is a live entry, not a tombstone: bindings resolve through the source’s namespace until the source commits with a <code>transferred</code> tombstone. <code>storage</code> and <code>transfer_from</code> are required; <code>renamed_to</code> and <code>transferred_to</code> are not allowed.
 
 </summary>
 
@@ -16786,15 +16840,15 @@ state: "expecting-transfer"
 
 Target side of a two-phase transfer.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-storage: "sqlite" or "legacy-kv"
+storage: "sqlite"or "legacy-kv"
 
-Durable Object storage backend. `sqlite` is the recommended (and only) backend for new namespaces. `legacy-kv` is accepted only for a class whose namespace already exists as KV-backed; the `exports` flow never provisions a new `legacy-kv` namespace.
+Durable Object storage backend. <code>sqlite</code> is the recommended (and only) backend for new namespaces. <code>legacy-kv</code> is accepted only for a class whose namespace already exists as KV-backed; the <code>exports</code> flow never provisions a new <code>legacy-kv</code> namespace.
 
 </summary>
 
@@ -16802,53 +16856,53 @@ One of the following:
 
 "sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "legacy-kv"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transfer_from: string
+transfer\_from: string
 
-The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for `expecting-transfer` entries.
+The source script name to receive the namespace from. Must be in the same account and dispatch-namespace context. Present on reads for <code>expecting-transfer</code> entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: "durable-object"
 
 Marks this entry as a Durable Object export.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 container: optional string
 
-Name of the container (declared in the upload’s `metadata.containers`) that backs this Durable Object once the transfer settles. Valid only on live entries.
+Name of the container (declared in the upload’s <code>metadata.containers</code>) that backs this Durable Object once the transfer settles. Valid only on live entries.
 
 maxLength128
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exports_reconciliation: optional object { created, deleted, info, 6 more }
+exports\_reconciliation: optional object {created, deleted, info, 6 more }
 
-Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an `exports` block. Durable Object entries drive reconciliation; `type: worker` entries do not contribute to this summary.
+Summary of the declarative exports reconciliation that ran on this upload. Populated only when the uploaded metadata included an <code>exports</code> block. Durable Object entries drive reconciliation; <code>type: worker</code> entries do not contribute to this summary.
 
 </summary>
 
@@ -16856,21 +16910,21 @@ created: array of string
 
 Class names for which a new namespace was provisioned.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 deleted: array of string
 
-Class names whose namespace was deleted by a `deleted` tombstone.
+Class names whose namespace was deleted by a <code>deleted</code> tombstone.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-info: array of object { class, message, scenario, 2 more }
+info: array of object {class, message, scenario, 2 more }
 
-Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See `exports_reconciliation_info`.
+Non-blocking info entries (stale tombstones, tombstone applied with class still in code). See <code>exports_reconciliation_info</code>.
 
 </summary>
 
@@ -16878,10570 +16932,178 @@ class: string
 
 The class name the info entry is about.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
 Human-readable explanation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
+scenario: "code\_class\_not\_in\_exports"or "provisioned\_class\_missing\_from\_config"or "config\_export\_not\_in\_code"or 30 more
 
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
+Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing <code>message</code>.
 
 </summary>
 
 One of the following:
 
-"code_class_not_in_exports"
+"code\_class\_not\_in\_exports"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"provisioned_class_missing_from_config"
+"provisioned\_class\_missing\_from\_config"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_export_not_in_code"
+"config\_export\_not\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"config_references_nonexistent_class"
+"config\_references\_nonexistent\_class"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"orphaned_provisioned_namespace"
+"orphaned\_provisioned\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"storage_type_mismatch"
+"storage\_type\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"free_tier_requires_sqlite"
+"free\_tier\_requires\_sqlite"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"invalid_export"
+"invalid\_export"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_class_still_in_code"
+"tombstone\_delete\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_delete_blocked_by_external_bindings"
+"tombstone\_delete\_blocked\_by\_external\_bindings"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_renamed_to_occupied"
+"tombstone\_renamed\_to\_occupied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_pending_not_found"
+"transferred\_pending\_not\_found"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_missing"
+"transferred\_target\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_mismatch"
+"transferred\_target\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_missing"
+"phase\_one\_transfer\_source\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_namespace_missing"
+"phase\_one\_transfer\_source\_namespace\_missing"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_class_provisioned"
+"phase\_one\_transfer\_target\_class\_provisioned"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_after_commit_mismatch"
+"phase\_one\_transfer\_after\_commit\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_duplicate"
+"phase\_one\_transfer\_duplicate"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_target_in_dispatch_namespace"
+"phase\_one\_transfer\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"phase_one_transfer_source_in_dispatch_namespace"
+"phase\_one\_transfer\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_source_in_dispatch_namespace"
+"transferred\_source\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transferred_target_in_dispatch_namespace"
+"transferred\_target\_in\_dispatch\_namespace"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_undeclared_reference"
+"container\_undeclared\_reference"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_class_not_durable_object"
+"container\_class\_not\_durable\_object"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_wiring_inconsistent"
+"container\_wiring\_inconsistent"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"container_multiple_durable_objects"
+"container\_multiple\_durable\_objects"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch"
+"transfer\_container\_parity\_mismatch"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_container_parity_mismatch_on_commit"
+"transfer\_container\_parity\_mismatch\_on\_commit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"tombstone_class_still_in_code"
+"tombstone\_class\_still\_in\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"stale_tombstone"
+"stale\_tombstone"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_already_applied"
+"transfer\_receive\_already\_applied"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"transfer_receive_cleanup_complete"
+"transfer\_receive\_cleanup\_complete"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-namespace_id: optional string
+namespace\_id: optional string
 
 The provisioned namespace the entry relates to, when applicable.
 
 formatuuid
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-referencing_scripts: optional array of string
+referencing\_scripts: optional array of string
 
 Other Workers in the account that still bind to the affected class. Advisory: while non-empty the tombstone is not yet safe to remove — redeploy these Workers with bindings re-pointed first.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-removable_entries: array of string
-
-Source class names whose tombstone entry is now stale and safe to delete from `exports` (no remaining referencing scripts).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-renamed: array of object { from, to }
-
-Applied `renamed` tombstones.
-
-</summary>
-
-from: string
-
-The original (source) class name.
-
-[Link to this property](#)
-
-to: string
-
-The new class name (`renamed_to`).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-transfer_pending: array of object { class, from }
-
-Phase-1 transfer hints recorded on the target side.
-
-</summary>
-
-class: string
-
-The target-side class name awaiting transfer.
-
-[Link to this property](#)
-
-from: string
-
-The source script the namespace will be transferred from.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-transferred: array of object { class, phase, to }
-
-Committed `transferred` tombstones (phase-2).
-
-</summary>
-
-class: string
-
-The source class name that was transferred.
-
-[Link to this property](#)
-
-phase: "committed"
-
-The transfer phase. Currently always `committed`.
-
-[Link to this property](#)
-
-to: string
-
-The destination script that now owns the namespace.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated: array of string
-
-Class names whose provisioned namespace was mutated in place.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-warnings: array of object { class, message, scenario, namespace_id }
-
-Non-blocking warnings. See `exports_reconciliation_warning`.
-
-</summary>
-
-class: string
-
-The class name the warning is about.
-
-[Link to this property](#)
-
-message: string
-
-Human-readable explanation of the warning.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scenario: "code_class_not_in_exports" or "provisioned_class_missing_from_config" or "config_export_not_in_code" or 30 more
-
-Stable, machine-readable tag identifying which reconciliation scenario produced an error, warning, or info entry. Clients may branch on this value instead of parsing `message`.
-
-</summary>
-
-One of the following:
-
-"code_class_not_in_exports"
-
-[Link to this property](#)
-
-"provisioned_class_missing_from_config"
-
-[Link to this property](#)
-
-"config_export_not_in_code"
-
-[Link to this property](#)
-
-"config_references_nonexistent_class"
-
-[Link to this property](#)
-
-"orphaned_provisioned_namespace"
-
-[Link to this property](#)
-
-"storage_type_mismatch"
-
-[Link to this property](#)
-
-"free_tier_requires_sqlite"
-
-[Link to this property](#)
-
-"invalid_export"
-
-[Link to this property](#)
-
-"tombstone_delete_class_still_in_code"
-
-[Link to this property](#)
-
-"tombstone_delete_blocked_by_external_bindings"
-
-[Link to this property](#)
-
-"tombstone_renamed_to_occupied"
-
-[Link to this property](#)
-
-"transferred_pending_not_found"
-
-[Link to this property](#)
-
-"transferred_target_missing"
-
-[Link to this property](#)
-
-"transferred_target_mismatch"
-
-[Link to this property](#)
-
-"phase_one_transfer_source_missing"
-
-[Link to this property](#)
-
-"phase_one_transfer_source_namespace_missing"
-
-[Link to this property](#)
-
-"phase_one_transfer_target_class_provisioned"
-
-[Link to this property](#)
-
-"phase_one_transfer_after_commit_mismatch"
-
-[Link to this property](#)
-
-"phase_one_transfer_duplicate"
-
-[Link to this property](#)
-
-"phase_one_transfer_target_in_dispatch_namespace"
-
-[Link to this property](#)
-
-"phase_one_transfer_source_in_dispatch_namespace"
-
-[Link to this property](#)
-
-"transferred_source_in_dispatch_namespace"
-
-[Link to this property](#)
-
-"transferred_target_in_dispatch_namespace"
-
-[Link to this property](#)
-
-"container_undeclared_reference"
-
-[Link to this property](#)
-
-"container_class_not_durable_object"
-
-[Link to this property](#)
-
-"container_wiring_inconsistent"
-
-[Link to this property](#)
-
-"container_multiple_durable_objects"
-
-[Link to this property](#)
-
-"transfer_container_parity_mismatch"
-
-[Link to this property](#)
-
-"transfer_container_parity_mismatch_on_commit"
-
-[Link to this property](#)
-
-"tombstone_class_still_in_code"
-
-[Link to this property](#)
-
-"stale_tombstone"
-
-[Link to this property](#)
-
-"transfer_receive_already_applied"
-
-[Link to this property](#)
-
-"transfer_receive_cleanup_complete"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-namespace_id: optional string
-
-The provisioned namespace the warning relates to, when applicable.
-
-formatuuid
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-limits: optional object { cpu_ms, subrequests }
-
-Limits to apply for this Worker.
-
-</summary>
-
-cpu_ms: optional number
-
-The amount of CPU time this Worker can use in milliseconds.
-
-[Link to this property](#)
-
-subrequests: optional number
-
-The number of subrequests this Worker can make per request.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-logpush: optional boolean
-
-Whether Logpush is turned on for the Worker.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-migrations: optional [SingleStepMigration](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20single_step_migration%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 4 more } or object { new_tag, old_tag, steps }
-
-Migrations to apply for Durable Objects associated with this Worker.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SingleStepMigration object { deleted_classes, new_classes, new_sqlite_classes, 4 more }
-
-A single set of migrations to apply.
-
-</summary>
-
-deleted_classes: optional array of string
-
-A list of classes to delete Durable Object namespaces from.
-
-[Link to this property](#)
-
-new_classes: optional array of string
-
-A list of classes to create Durable Object namespaces from.
-
-[Link to this property](#)
-
-new_sqlite_classes: optional array of string
-
-A list of classes to create Durable Object namespaces with SQLite from.
-
-[Link to this property](#)
-
-new_tag: optional string
-
-Tag to set as the latest migration tag.
-
-[Link to this property](#)
-
-old_tag: optional string
-
-Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-renamed_classes: optional array of object { from, to }
-
-A list of classes with Durable Object namespaces that were renamed.
-
-</summary>
-
-from: optional string
-
-[Link to this property](#)
-
-to: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-transferred_classes: optional array of object { from, from_script, to }
-
-A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
-
-</summary>
-
-from: optional string
-
-[Link to this property](#)
-
-from_script: optional string
-
-[Link to this property](#)
-
-to: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkersMultipleStepMigrations object { new_tag, old_tag, steps }
-
-</summary>
-
-new_tag: optional string
-
-Tag to set as the latest migration tag.
-
-[Link to this property](#)
-
-old_tag: optional string
-
-Tag used to verify against the latest migration tag for this Worker. If they don’t match, the upload is rejected.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-steps: optional array of [MigrationStep](/api/resources/workers#(resource)%20workers%20%3E%20(model)%20migration_step%20%3E%20(schema)) { deleted_classes, new_classes, new_sqlite_classes, 2 more }
-
-Migrations to apply in order.
-
-</summary>
-
-deleted_classes: optional array of string
-
-A list of classes to delete Durable Object namespaces from.
-
-[Link to this property](#)
-
-new_classes: optional array of string
-
-A list of classes to create Durable Object namespaces from.
-
-[Link to this property](#)
-
-new_sqlite_classes: optional array of string
-
-A list of classes to create Durable Object namespaces with SQLite from.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-renamed_classes: optional array of object { from, to }
-
-A list of classes with Durable Object namespaces that were renamed.
-
-</summary>
-
-from: optional string
-
-[Link to this property](#)
-
-to: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-transferred_classes: optional array of object { from, from_script, to }
-
-A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
-
-</summary>
-
-from: optional string
-
-[Link to this property](#)
-
-from_script: optional string
-
-[Link to this property](#)
-
-to: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
-
-Observability settings for the Worker.
-
-</summary>
-
-enabled: boolean
-
-Whether observability is enabled for the Worker.
-
-[Link to this property](#)
-
-head_sampling_rate: optional number
-
-The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-issues: optional object { enabled }
-
-Real-time Issues settings for the Worker.
-
-</summary>
-
-enabled: optional boolean
-
-Whether real-time Issues are enabled for the Worker.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-logs: optional object { enabled, invocation_logs, destinations, 2 more }
-
-Log settings for the Worker.
-
-</summary>
-
-enabled: boolean
-
-Whether logs are enabled for the Worker.
-
-[Link to this property](#)
-
-invocation_logs: boolean
-
-Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
-
-[Link to this property](#)
-
-destinations: optional array of string
-
-A list of destinations where logs will be exported to.
-
-[Link to this property](#)
-
-head_sampling_rate: optional number
-
-The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
-
-[Link to this property](#)
-
-persist: optional boolean
-
-Whether log persistence is enabled for the Worker.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-redact_query_string: optional boolean
-
-Whether query strings are removed from request URLs in logs and traces.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-traces: optional object { destinations, enabled, head_sampling_rate, 2 more }
-
-Trace settings for the Worker.
-
-</summary>
-
-destinations: optional array of string
-
-A list of destinations where traces will be exported to.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether traces are enabled for the Worker.
-
-[Link to this property](#)
-
-head_sampling_rate: optional number
-
-The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
-
-[Link to this property](#)
-
-persist: optional boolean
-
-Whether trace persistence is enabled for the Worker.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-propagation_policy: optional "authenticated" or "accept"
-
-Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. “authenticated” honors inbound trace context only when accompanied by a valid trace auth token. “accept” unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled. Returns null when the trace propagation feature is not enabled for the account.
-
-</summary>
-
-One of the following:
-
-"authenticated"
-
-[Link to this property](#)
-
-"accept"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-placement: optional object { mode } or object { region } or object { hostname } or 5 more
-
-Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode=‘smart’ for Smart Placement, or one of region/hostname/host.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-Mode object { mode }
-
-</summary>
-
-mode: "smart"
-
-Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-Region object { region }
-
-</summary>
-
-region: string
-
-Cloud region for targeted placement in format ‘provider:region’.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-Hostname object { hostname }
-
-</summary>
-
-hostname: string
-
-HTTP hostname for targeted placement.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-Host object { host }
-
-</summary>
-
-host: string
-
-TCP host and port for targeted placement.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { mode, region }
-
-</summary>
-
-mode: "targeted"
-
-Targeted placement mode.
-
-[Link to this property](#)
-
-region: string
-
-Cloud region for targeted placement in format ‘provider:region’.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { hostname, mode }
-
-</summary>
-
-hostname: string
-
-HTTP hostname for targeted placement.
-
-[Link to this property](#)
-
-mode: "targeted"
-
-Targeted placement mode.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { host, mode }
-
-</summary>
-
-host: string
-
-TCP host and port for targeted placement.
-
-[Link to this property](#)
-
-mode: "targeted"
-
-Targeted placement mode.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { mode, target }
-
-</summary>
-
-mode: "targeted"
-
-Targeted placement mode.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target: array of object { region } or object { hostname } or object { host }
-
-Array of placement targets (currently limited to single target).
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-Region object { region }
-
-</summary>
-
-region: string
-
-Cloud region in format ‘provider:region’.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-Hostname object { hostname }
-
-</summary>
-
-hostname: string
-
-HTTP hostname for targeted placement.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-Host object { host }
-
-</summary>
-
-host: string
-
-TCP host:port for targeted placement.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-tags: optional array of string
-
-Tags associated with the Worker.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-tail_consumers: optional array of [ConsumerScript](/api/resources/workers#(resource)%20workers.scripts.tail%20%3E%20(model)%20consumer_script%20%3E%20(schema)) { service, environment, namespace }
-
-List of Workers that will consume logs from the attached Worker.
-
-</summary>
-
-service: string
-
-Name of Worker that is to be the consumer.
-
-[Link to this property](#)
-
-environment: optional string
-
-Optional environment if the Worker utilizes one.
-
-[Link to this property](#)
-
-namespace: optional string
-
-Optional dispatch namespace the script belongs to.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-usage_model: optional "standard" or "bundled" or "unbound"
-
-Usage model for the Worker invocations.
-
-</summary>
-
-One of the following:
-
-"standard"
-
-[Link to this property](#)
-
-"bundled"
-
-[Link to this property](#)
-
-"unbound"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Fetch Workers Account Settings](/api/resources/workers/subresources/account_settings/methods/get)
-
-GET/accounts/{account_id}/workers/account-settings
-
-##### [Configure Workers Account Settings](/api/resources/workers/subresources/account_settings/methods/update)
-
-PUT/accounts/{account_id}/workers/account-settings
-
-##### Models
-
-<details>
-
-<summary>
-
-AccountSettingGetResponse object { default_usage_model, green_compute }
-
-</summary>
-
-default_usage_model: optional string
-
-[Link to this property](#)
-
-green_compute: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccountSettingUpdateResponse object { default_usage_model, green_compute }
-
-</summary>
-
-default_usage_model: optional string
-
-[Link to this property](#)
-
-green_compute: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [List Worker Domains](/api/resources/workers/subresources/domains/methods/list)
-
-GET/accounts/{account_id}/workers/domains
-
-##### [Get Worker Domain](/api/resources/workers/subresources/domains/methods/get)
-
-GET/accounts/{account_id}/workers/domains/{domain_id}
-
-##### [Attach Worker Domain](/api/resources/workers/subresources/domains/methods/update)
-
-PUT/accounts/{account_id}/workers/domains
-
-##### [Detach Worker Domain](/api/resources/workers/subresources/domains/methods/delete)
-
-DELETE/accounts/{account_id}/workers/domains/{domain_id}
-
-##### Models
-
-<details>
-
-<summary>
-
-DomainListResponse object { id, cert_id, environment, 4 more }
-
-</summary>
-
-id: string
-
-Immutable ID of the domain.
-
-[Link to this property](#)
-
-cert_id: string
-
-ID of the TLS certificate issued for the domain.
-
-formatuuid
-
-[Link to this property](#)
-
-Deprecatedenvironment: string
-
-Worker environment associated with the domain.
-
-[Link to this property](#)
-
-hostname: string
-
-Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
-
-[Link to this property](#)
-
-service: string
-
-Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
-
-[Link to this property](#)
-
-zone_id: string
-
-ID of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-zone_name: string
-
-Name of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainGetResponse object { id, cert_id, environment, 4 more }
-
-</summary>
-
-id: string
-
-Immutable ID of the domain.
-
-[Link to this property](#)
-
-cert_id: string
-
-ID of the TLS certificate issued for the domain.
-
-formatuuid
-
-[Link to this property](#)
-
-Deprecatedenvironment: string
-
-Worker environment associated with the domain.
-
-[Link to this property](#)
-
-hostname: string
-
-Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
-
-[Link to this property](#)
-
-service: string
-
-Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
-
-[Link to this property](#)
-
-zone_id: string
-
-ID of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-zone_name: string
-
-Name of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainUpdateResponse object { id, cert_id, environment, 4 more }
-
-</summary>
-
-id: string
-
-Immutable ID of the domain.
-
-[Link to this property](#)
-
-cert_id: string
-
-ID of the TLS certificate issued for the domain.
-
-formatuuid
-
-[Link to this property](#)
-
-Deprecatedenvironment: string
-
-Worker environment associated with the domain.
-
-[Link to this property](#)
-
-hostname: string
-
-Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
-
-[Link to this property](#)
-
-service: string
-
-Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
-
-[Link to this property](#)
-
-zone_id: string
-
-ID of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-zone_name: string
-
-Name of the zone containing the domain hostname.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainDeleteResponse object { errors, messages, success }
-
-</summary>
-
-<details>
-
-<summary>
-
-errors: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-messages: array of object { code, message, documentation_url, source }
-
-</summary>
-
-code: number
-
-minimum1000
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-documentation_url: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: optional object { pointer }
-
-</summary>
-
-pointer: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-success: true
-
-Whether the API call was successful.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Get a Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/get)
-
-GET/accounts/{account_id}/workers/subdomain
-
-##### [Create a Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/update)
-
-PUT/accounts/{account_id}/workers/subdomain
-
-##### [Delete Workers Subdomain](/api/resources/workers/subresources/subdomains/methods/delete)
-
-DELETE/accounts/{account_id}/workers/subdomain
-
-##### Models
-
-<details>
-
-<summary>
-
-SubdomainGetResponse object { subdomain }
-
-</summary>
-
-subdomain: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SubdomainUpdateResponse object { subdomain }
-
-</summary>
-
-subdomain: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [List keys](/api/resources/workers/subresources/observability/subresources/telemetry/methods/keys)
-
-POST/accounts/{account_id}/workers/observability/telemetry/keys
-
-##### [Run a query](/api/resources/workers/subresources/observability/subresources/telemetry/methods/query)
-
-POST/accounts/{account_id}/workers/observability/telemetry/query
-
-##### [List values](/api/resources/workers/subresources/observability/subresources/telemetry/methods/values)
-
-POST/accounts/{account_id}/workers/observability/telemetry/values
-
-##### [Prepare live tail](/api/resources/workers/subresources/observability/subresources/telemetry/methods/live_tail)
-
-POST/accounts/{account_id}/workers/observability/telemetry/live-tail
-
-##### [Live tail heartbeat](/api/resources/workers/subresources/observability/subresources/telemetry/methods/live_tail_heartbeat)
-
-POST/accounts/{account_id}/workers/observability/telemetry/live-tail/heartbeat
-
-##### Models
-
-<details>
-
-<summary>
-
-TelemetryKeysResponse object { key, lastSeenAt, type }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-lastSeenAt: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "boolean" or "number"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-TelemetryQueryResponse object { run, statistics, agents, 6 more }
-
-Complete results of a query run. The populated fields depend on the requested view type (events, calculations, invocations, traces, or agents).
-
-</summary>
-
-<details>
-
-<summary>
-
-run: object { id, accountId, dry, 8 more }
-
-Represents a single execution of a query against Workers Observability data, including the query definition, execution status, and performance statistics.
-
-</summary>
-
-id: string
-
-Unique identifier for this query run.
-
-[Link to this property](#)
-
-accountId: string
-
-Cloudflare account ID that owns this query run.
-
-[Link to this property](#)
-
-dry: boolean
-
-Whether this was a dry run (results not persisted).
-
-[Link to this property](#)
-
-granularity: number
-
-Number of time-series buckets used for the query. Higher values produce more detailed series data.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-query: object { id, adhoc, created, 6 more }
-
-A saved query definition with its parameters, metadata, and ownership information.
-
-</summary>
-
-id: string
-
-[Link to this property](#)
-
-adhoc: boolean
-
-If the query wasn’t explcitly saved
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-created: string or string
-
-formatdate-time
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-createdBy: string
-
-[Link to this property](#)
-
-description: string
-
-maxLength1000
-
-[Link to this property](#)
-
-name: string
-
-Query name
-
-maxLength250
-
-minLength1
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-parameters: object { calculations, datasets, filterCombination, 6 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
-
-Create Calculations to compute as part of the query.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { operator, alias, key, keyType }
-
-</summary>
-
-<details>
-
-<summary>
-
-operator: "count" or "COUNT"
-
-</summary>
-
-One of the following:
-
-"count"
-
-[Link to this property](#)
-
-"COUNT"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-key: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { key, operator, alias, keyType }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operator: "uniq" or "max" or "min" or 33 more
-
-</summary>
-
-One of the following:
-
-"uniq"
-
-[Link to this property](#)
-
-"max"
-
-[Link to this property](#)
-
-"min"
-
-[Link to this property](#)
-
-"sum"
-
-[Link to this property](#)
-
-"avg"
-
-[Link to this property](#)
-
-"median"
-
-[Link to this property](#)
-
-"p001"
-
-[Link to this property](#)
-
-"p01"
-
-[Link to this property](#)
-
-"p05"
-
-[Link to this property](#)
-
-"p10"
-
-[Link to this property](#)
-
-"p25"
-
-[Link to this property](#)
-
-"p75"
-
-[Link to this property](#)
-
-"p90"
-
-[Link to this property](#)
-
-"p95"
-
-[Link to this property](#)
-
-"p99"
-
-[Link to this property](#)
-
-"p999"
-
-[Link to this property](#)
-
-"stddev"
-
-[Link to this property](#)
-
-"variance"
-
-[Link to this property](#)
-
-"COUNT_DISTINCT"
-
-[Link to this property](#)
-
-"MAX"
-
-[Link to this property](#)
-
-"MIN"
-
-[Link to this property](#)
-
-"SUM"
-
-[Link to this property](#)
-
-"AVG"
-
-[Link to this property](#)
-
-"MEDIAN"
-
-[Link to this property](#)
-
-"P001"
-
-[Link to this property](#)
-
-"P01"
-
-[Link to this property](#)
-
-"P05"
-
-[Link to this property](#)
-
-"P10"
-
-[Link to this property](#)
-
-"P25"
-
-[Link to this property](#)
-
-"P75"
-
-[Link to this property](#)
-
-"P90"
-
-[Link to this property](#)
-
-"P95"
-
-[Link to this property](#)
-
-"P99"
-
-[Link to this property](#)
-
-"P999"
-
-[Link to this property](#)
-
-"STDDEV"
-
-[Link to this property](#)
-
-"VARIANCE"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-datasets: optional array of string
-
-Set the Datasets to query. Leave it empty to query all the datasets.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filterCombination: optional "and" or "or" or "AND" or "OR"
-
-Set a Flag to describe how to combine the filters on the query.
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
-
-Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { filterCombination, filters, kind }
-
-</summary>
-
-<details>
-
-<summary>
-
-filterCombination: "and" or "or" or "AND" or "OR"
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-filters: array of unknown
-
-[Link to this property](#)
-
-kind: "group"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
-
-A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
-
-</summary>
-
-key: string
-
-Filter field name. Use verified keys from previous query results or the keys endpoint. Common keys include $metadata.service, $metadata.origin, $metadata.trigger, $metadata.message, and $metadata.error.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "includes" or "not_includes" or "starts_with" or 27 more
-
-Comparison operator. String operators: includes, not_includes, starts_with, ends_with, regex. Existence: exists, is_null. Set membership: in, not_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
-
-</summary>
-
-One of the following:
-
-"includes"
-
-[Link to this property](#)
-
-"not_includes"
-
-[Link to this property](#)
-
-"starts_with"
-
-[Link to this property](#)
-
-"ends_with"
-
-[Link to this property](#)
-
-"regex"
-
-[Link to this property](#)
-
-"exists"
-
-[Link to this property](#)
-
-"is_null"
-
-[Link to this property](#)
-
-"in"
-
-[Link to this property](#)
-
-"not_in"
-
-[Link to this property](#)
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-"="
-
-[Link to this property](#)
-
-"!="
-
-[Link to this property](#)
-
-">"
-
-[Link to this property](#)
-
-">="
-
-[Link to this property](#)
-
-"<"
-
-[Link to this property](#)
-
-"<="
-
-[Link to this property](#)
-
-"INCLUDES"
-
-[Link to this property](#)
-
-"DOES_NOT_INCLUDE"
-
-[Link to this property](#)
-
-"MATCH_REGEX"
-
-[Link to this property](#)
-
-"EXISTS"
-
-[Link to this property](#)
-
-"DOES_NOT_EXIST"
-
-[Link to this property](#)
-
-"IN"
-
-[Link to this property](#)
-
-"NOT_IN"
-
-[Link to this property](#)
-
-"STARTS_WITH"
-
-[Link to this property](#)
-
-"ENDS_WITH"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-Data type of the filter field. Must match the actual type of the key being filtered.
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-kind: optional "filter"
-
-Discriminator for leaf filter nodes. Always ‘filter’ when present; may be omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional string or number or boolean
-
-Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groupBys: optional array of object { type, value }
-
-Define how to group the results of the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-havings: optional array of object { key, operation, value }
-
-Configure the Having clauses that filter on calculations in the query result.
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "eq" or "neq" or "gt" or 3 more
-
-</summary>
-
-One of the following:
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-limit: optional number
-
-Set a limit on the number of results / records returned by the query
-
-maximum100
-
-minimum0
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-needle: optional object { value, isRegex, matchCase }
-
-Define an expression to search using full-text search.
-
-</summary>
-
-value:
-
-[Link to this property](#)
-
-isRegex: optional boolean
-
-[Link to this property](#)
-
-matchCase: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-orderBy: optional object { value, order }
-
-Configure the order of the results returned by the query.
-
-</summary>
-
-value: string
-
-Configure which Calculation to order the results by.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-order: optional "asc" or "desc"
-
-Set the order of the results
-
-</summary>
-
-One of the following:
-
-"asc"
-
-[Link to this property](#)
-
-"desc"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-updated: string or string
-
-formatdate-time
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updatedBy: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-status: "STARTED" or "COMPLETED"
-
-Current execution status of the query run.
-
-</summary>
-
-One of the following:
-
-"STARTED"
-
-[Link to this property](#)
-
-"COMPLETED"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-timeframe: object { from, to }
-
-Time range for the query execution. ‘from’ must be earlier than ‘to’. No fractional milliseconds.
-
-</summary>
-
-from: number
-
-Start timestamp for the query timeframe. Unix timestamp in milliseconds
-
-maximum253402300799999
-
-minimum0
-
-[Link to this property](#)
-
-to: number
-
-End timestamp for the query timeframe. Unix timestamp in milliseconds
-
-maximum253402300799999
-
-minimum0
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-userId: string
-
-ID of the user who initiated the query run.
-
-[Link to this property](#)
-
-created: optional string
-
-ISO-8601 timestamp when the query run was created.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-statistics: optional object { bytes_read, elapsed, rows_read, abr_level }
-
-Query performance statistics from the database (does not include network latency).
-
-</summary>
-
-bytes_read: number
-
-Number of uncompressed bytes read from the table.
-
-[Link to this property](#)
-
-elapsed: number
-
-Time in seconds for the query to run.
-
-[Link to this property](#)
-
-rows_read: number
-
-Number of rows scanned from the table.
-
-[Link to this property](#)
-
-abr_level: optional number
-
-The level of Adaptive Bit Rate (ABR) sampling used for the query. If empty the ABR level is 1
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated: optional string
-
-ISO-8601 timestamp when the query run was last updated.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-statistics: object { bytes_read, elapsed, rows_read, abr_level }
-
-Query performance statistics from the database. Includes execution time, rows scanned, and bytes read. Does not include network latency.
-
-</summary>
-
-bytes_read: number
-
-Number of uncompressed bytes read from the table.
-
-[Link to this property](#)
-
-elapsed: number
-
-Time in seconds for the query to run.
-
-[Link to this property](#)
-
-rows_read: number
-
-Number of rows scanned from the table.
-
-[Link to this property](#)
-
-abr_level: optional number
-
-The level of Adaptive Bit Rate (ABR) sampling used for the query. If empty the ABR level is 1
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-agents: optional array of object { id, errors, models, 13 more }
-
-Agent run summaries. Present when the query view is ‘agents’. Each entry represents one trace containing at least one agent invocation.
-
-</summary>
-
-id: string
-
-Stable pagination cursor for this agent run.
-
-[Link to this property](#)
-
-errors: array of string
-
-Distinct errors reported by spans in the run.
-
-[Link to this property](#)
-
-models: array of string
-
-Distinct models reported by chat spans across the run’s trace.
-
-[Link to this property](#)
-
-providers: array of string
-
-Distinct GenAI providers reported by chat spans in the run.
-
-[Link to this property](#)
-
-services: array of string
-
-Worker services represented in the run’s trace.
-
-[Link to this property](#)
-
-spans: number
-
-Number of spans in the run’s trace.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-status: "completed" or "error"
-
-Observed run status.
-
-</summary>
-
-One of the following:
-
-"completed"
-
-[Link to this property](#)
-
-"error"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-traceDurationMs: number
-
-Total trace duration in milliseconds.
-
-[Link to this property](#)
-
-traceEndMs: number
-
-End of the run’s trace as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-traceId: string
-
-Trace identifier for this agent run.
-
-[Link to this property](#)
-
-traceStartMs: number
-
-Start of the run’s trace as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-agentId: optional string
-
-ID from the earliest agent invocation that provides one.
-
-[Link to this property](#)
-
-agentName: optional string
-
-Name from the earliest agent invocation that provides one.
-
-[Link to this property](#)
-
-conversationId: optional string
-
-Conversation ID from the earliest invocation that provides one.
-
-[Link to this property](#)
-
-inputTokens: optional number
-
-Input tokens summed across chat spans in the run’s trace; informational, not billing data.
-
-[Link to this property](#)
-
-outputTokens: optional number
-
-Output tokens summed across chat spans in the run’s trace; informational, not billing data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-calculations: optional array of object { aggregates, calculation, series, alias }
-
-Aggregated calculation results. Present when the query view is ‘calculations’. Contains computed metrics (count, avg, p99, etc.) with optional group-by breakdowns and time-series data.
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: array of object { count, interval, sampleInterval, 2 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-calculation: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: array of object { data, time }
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { count, interval, sampleInterval, 4 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-firstSeen: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastSeen: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-compare: optional array of object { aggregates, calculation, series, alias }
-
-Comparison calculation results from the previous time period. Present when the compare option is enabled. Same structure as calculations.
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: array of object { count, interval, sampleInterval, 2 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-calculation: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: array of object { data, time }
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { count, interval, sampleInterval, 4 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-firstSeen: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastSeen: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-distribution: optional object { bins, bucketBoundaries, bucketMode, 2 more }
-
-Bucketed 2D histogram of a numeric field over time. Present when chartType is ‘distribution’.
-
-</summary>
-
-bins: array of string
-
-Time-bucket labels (ISO-8601 strings), one per matrix column.
-
-[Link to this property](#)
-
-bucketBoundaries: array of number
-
-Raw bucket edges in the value’s native unit, length buckets.length + 1. Used for the colour scale and percentile mapping.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-bucketMode: "log" or "linear"
-
-Bucketing scheme used to derive the boundaries. ‘log’ produces geometric edges; ‘linear’ produces fixed-width edges.
-
-</summary>
-
-One of the following:
-
-"log"
-
-[Link to this property](#)
-
-"linear"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-buckets: array of string
-
-Value-range labels, one per matrix row (e.g. ‘50–100ms’).
-
-[Link to this property](#)
-
-matrix: array of array of number
-
-Sampling-corrected counts. matrix[bucketIdx][binIdx] is the estimated number of events in value-bucket ‘bucketIdx’ during time-bin ‘binIdx’.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-events: optional object { count, events, fields, series }
-
-Individual event results. Present when the query view is ‘events’. Contains the matching log lines and their metadata.
-
-</summary>
-
-count: optional number
-
-Total number of events matching the query (may exceed the number returned due to limits).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-events: optional array of object { "$metadata", dataset, source, 3 more }
-
-List of individual telemetry events matching the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-"$metadata": object { id, account, cloudService, 29 more }
-
-Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
-
-</summary>
-
-id: string
-
-Unique event ID. Use as the cursor value for offset-based pagination.
-
-[Link to this property](#)
-
-account: optional string
-
-Cloudflare account identifier.
-
-[Link to this property](#)
-
-cloudService: optional string
-
-Cloudflare product that generated this event (e.g. workers, pages).
-
-[Link to this property](#)
-
-coldStart: optional number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-cost: optional number
-
-Estimated cost units for this invocation.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-duration: optional number
-
-Span duration in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-endTime: optional number
-
-Span end time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-error: optional string
-
-Error message, present when the log represents an error.
-
-[Link to this property](#)
-
-errorTemplate: optional string
-
-Templatized version of the error message used for grouping similar errors.
-
-[Link to this property](#)
-
-fingerprint: optional string
-
-Content-based fingerprint used to group similar events.
-
-[Link to this property](#)
-
-level: optional string
-
-Log level (e.g. log, debug, info, warn, error).
-
-[Link to this property](#)
-
-message: optional string
-
-Log message text.
-
-[Link to this property](#)
-
-messageTemplate: optional string
-
-Templatized version of the log message used for grouping similar messages.
-
-[Link to this property](#)
-
-metricName: optional string
-
-Metric name when the event represents a metric data point.
-
-[Link to this property](#)
-
-origin: optional string
-
-Origin of the event (e.g. fetch, scheduled, queue).
-
-[Link to this property](#)
-
-parentSpanId: optional string
-
-Span ID of the parent span in the trace hierarchy.
-
-[Link to this property](#)
-
-provider: optional string
-
-Infrastructure provider identifier.
-
-[Link to this property](#)
-
-rayId: optional string
-
-Cloudflare Ray ID from the `cf-ray` header of the request that triggered the invocation.
-
-[Link to this property](#)
-
-region: optional string
-
-Cloudflare data center / region that handled the request.
-
-[Link to this property](#)
-
-requestId: optional string
-
-Cloudflare request ID that ties all logs from a single invocation together.
-
-[Link to this property](#)
-
-service: optional string
-
-Worker script name that produced this event.
-
-[Link to this property](#)
-
-spanId: optional string
-
-Span ID for this individual unit of work within a trace.
-
-[Link to this property](#)
-
-spanName: optional string
-
-Human-readable name for this span.
-
-[Link to this property](#)
-
-stackId: optional string
-
-Stack / deployment identifier.
-
-[Link to this property](#)
-
-startTime: optional number
-
-Span start time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-statusCode: optional number
-
-HTTP response status code returned by the Worker.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceDuration: optional number
-
-Total duration of the entire trace in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceId: optional string
-
-Distributed trace ID linking spans across services.
-
-[Link to this property](#)
-
-transactionName: optional string
-
-Logical transaction name for this request.
-
-[Link to this property](#)
-
-trigger: optional string
-
-What triggered the invocation (e.g. GET /users, POST /orders, queue message).
-
-[Link to this property](#)
-
-type: optional string
-
-Event type classifier (e.g. cf-worker-event, cf-worker-log).
-
-[Link to this property](#)
-
-url: optional string
-
-Request URL that triggered the Worker invocation.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dataset: string
-
-The dataset this event belongs to (e.g. cloudflare-workers).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: string or map[unknown]
-
-Raw log payload. May be a string or a structured object depending on how the log was emitted.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-map[unknown]
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-timestamp: number
-
-Event timestamp as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-"$containers": optional map[unknown]
-
-Cloudflare Containers event information that enriches your logs for identifying and debugging issues.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
-
-Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { eventType, scriptName, durableObjectId, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { cpuTimeMs, eventType, outcome, 14 more }
-
-</summary>
-
-cpuTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: string
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-wallTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
-
-</summary>
-
-channel: string
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-timestamp: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dispatchNamespace: optional string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-fields: optional array of object { key, type }
-
-List of fields discovered in the matched events. Useful for building dynamic UIs.
-
-</summary>
-
-key: string
-
-Field name present in the matched events.
-
-[Link to this property](#)
-
-type: string
-
-Data type of the field (string, number, or boolean).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: optional array of object { data, time }
-
-Time-series data for the matched events, bucketed by the query granularity.
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { aggregates, count, interval, 3 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: object { _count, _interval, _firstSeen, 2 more }
-
-</summary>
-
-Deprecated_count: number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-Deprecated_interval: number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-Deprecated_firstSeen: optional string
-
-[Link to this property](#)
-
-Deprecated_lastSeen: optional string
-
-[Link to this property](#)
-
-Deprecatedbin: optional unknown
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-errors: optional number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional map[string or number or boolean]
-
-Groups in the query results.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-invocations: optional map[array of object { "$metadata", dataset, source, 3 more } ]
-
-Events grouped by invocation (request ID). Present when the query view is ‘invocations’. Each key is a request ID mapping to all events from that invocation.
-
-</summary>
-
-<details>
-
-<summary>
-
-"$metadata": object { id, account, cloudService, 29 more }
-
-Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
-
-</summary>
-
-id: string
-
-Unique event ID. Use as the cursor value for offset-based pagination.
-
-[Link to this property](#)
-
-account: optional string
-
-Cloudflare account identifier.
-
-[Link to this property](#)
-
-cloudService: optional string
-
-Cloudflare product that generated this event (e.g. workers, pages).
-
-[Link to this property](#)
-
-coldStart: optional number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-cost: optional number
-
-Estimated cost units for this invocation.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-duration: optional number
-
-Span duration in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-endTime: optional number
-
-Span end time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-error: optional string
-
-Error message, present when the log represents an error.
-
-[Link to this property](#)
-
-errorTemplate: optional string
-
-Templatized version of the error message used for grouping similar errors.
-
-[Link to this property](#)
-
-fingerprint: optional string
-
-Content-based fingerprint used to group similar events.
-
-[Link to this property](#)
-
-level: optional string
-
-Log level (e.g. log, debug, info, warn, error).
-
-[Link to this property](#)
-
-message: optional string
-
-Log message text.
-
-[Link to this property](#)
-
-messageTemplate: optional string
-
-Templatized version of the log message used for grouping similar messages.
-
-[Link to this property](#)
-
-metricName: optional string
-
-Metric name when the event represents a metric data point.
-
-[Link to this property](#)
-
-origin: optional string
-
-Origin of the event (e.g. fetch, scheduled, queue).
-
-[Link to this property](#)
-
-parentSpanId: optional string
-
-Span ID of the parent span in the trace hierarchy.
-
-[Link to this property](#)
-
-provider: optional string
-
-Infrastructure provider identifier.
-
-[Link to this property](#)
-
-rayId: optional string
-
-Cloudflare Ray ID from the `cf-ray` header of the request that triggered the invocation.
-
-[Link to this property](#)
-
-region: optional string
-
-Cloudflare data center / region that handled the request.
-
-[Link to this property](#)
-
-requestId: optional string
-
-Cloudflare request ID that ties all logs from a single invocation together.
-
-[Link to this property](#)
-
-service: optional string
-
-Worker script name that produced this event.
-
-[Link to this property](#)
-
-spanId: optional string
-
-Span ID for this individual unit of work within a trace.
-
-[Link to this property](#)
-
-spanName: optional string
-
-Human-readable name for this span.
-
-[Link to this property](#)
-
-stackId: optional string
-
-Stack / deployment identifier.
-
-[Link to this property](#)
-
-startTime: optional number
-
-Span start time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-statusCode: optional number
-
-HTTP response status code returned by the Worker.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceDuration: optional number
-
-Total duration of the entire trace in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceId: optional string
-
-Distributed trace ID linking spans across services.
-
-[Link to this property](#)
-
-transactionName: optional string
-
-Logical transaction name for this request.
-
-[Link to this property](#)
-
-trigger: optional string
-
-What triggered the invocation (e.g. GET /users, POST /orders, queue message).
-
-[Link to this property](#)
-
-type: optional string
-
-Event type classifier (e.g. cf-worker-event, cf-worker-log).
-
-[Link to this property](#)
-
-url: optional string
-
-Request URL that triggered the Worker invocation.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dataset: string
-
-The dataset this event belongs to (e.g. cloudflare-workers).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: string or map[unknown]
-
-Raw log payload. May be a string or a structured object depending on how the log was emitted.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-map[unknown]
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-timestamp: number
-
-Event timestamp as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-"$containers": optional map[unknown]
-
-Cloudflare Containers event information that enriches your logs for identifying and debugging issues.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
-
-Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { eventType, scriptName, durableObjectId, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { cpuTimeMs, eventType, outcome, 14 more }
-
-</summary>
-
-cpuTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: string
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-wallTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
-
-</summary>
-
-channel: string
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-timestamp: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dispatchNamespace: optional string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-traces: optional array of object { rootSpanName, rootTransactionName, service, 6 more }
-
-Trace summaries matching the query. Present when the query view is ‘traces’. Each entry represents a distributed trace with its spans, duration, and services involved.
-
-</summary>
-
-rootSpanName: string
-
-Name of the root span that initiated the trace.
-
-[Link to this property](#)
-
-rootTransactionName: string
-
-Logical transaction name for the root span.
-
-[Link to this property](#)
-
-service: array of string
-
-List of Worker services involved in the trace.
-
-[Link to this property](#)
-
-spans: number
-
-Total number of spans in the trace.
-
-[Link to this property](#)
-
-traceDurationMs: number
-
-Total duration of the trace in milliseconds.
-
-[Link to this property](#)
-
-traceEndMs: number
-
-Trace end time as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-traceId: string
-
-Unique identifier for the distributed trace.
-
-[Link to this property](#)
-
-traceStartMs: number
-
-Trace start time as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-errors: optional array of string
-
-Error messages encountered during the trace, if any.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-TelemetryValuesResponse object { dataset, key, type, value }
-
-</summary>
-
-dataset: string
-
-[Link to this property](#)
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "boolean" or "number"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-TelemetryLiveTailResponse object { wsUrl }
-
-</summary>
-
-wsUrl: string
-
-WebSocket URL clients connect to in order to stream live tail events.
-
-formaturi
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-TelemetryLiveTailHeartbeatResponse = unknown
-
-[Link to this property](#)
-
-##### [Get Destinations](/api/resources/workers/subresources/observability/subresources/destinations/methods/list)
-
-GET/accounts/{account_id}/workers/observability/destinations
-
-##### [Create Destination](/api/resources/workers/subresources/observability/subresources/destinations/methods/create)
-
-POST/accounts/{account_id}/workers/observability/destinations
-
-##### [Update Destination](/api/resources/workers/subresources/observability/subresources/destinations/methods/update)
-
-PATCH/accounts/{account_id}/workers/observability/destinations/{slug}
-
-##### [Delete Destination](/api/resources/workers/subresources/observability/subresources/destinations/methods/delete)
-
-DELETE/accounts/{account_id}/workers/observability/destinations/{slug}
-
-##### Models
-
-<details>
-
-<summary>
-
-DestinationListResponse object { configuration, enabled, name, 2 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-configuration: object { destination_conf, headers, jobStatus, 3 more }
-
-</summary>
-
-destination_conf: string
-
-[Link to this property](#)
-
-headers: map[string]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-jobStatus: object { error_message, last_complete, last_error }
-
-</summary>
-
-error_message: string
-
-[Link to this property](#)
-
-last_complete: string
-
-[Link to this property](#)
-
-last_error: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
-
-</summary>
-
-One of the following:
-
-"opentelemetry-traces"
-
-[Link to this property](#)
-
-"opentelemetry-logs"
-
-[Link to this property](#)
-
-"opentelemetry-metrics"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-type: "logpush"
-
-[Link to this property](#)
-
-url: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: boolean
-
-[Link to this property](#)
-
-name: string
-
-[Link to this property](#)
-
-scripts: array of string
-
-[Link to this property](#)
-
-slug: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DestinationCreateResponse object { configuration, enabled, name, 2 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
-
-</summary>
-
-destination_conf: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
-
-</summary>
-
-One of the following:
-
-"opentelemetry-traces"
-
-[Link to this property](#)
-
-"opentelemetry-logs"
-
-[Link to this property](#)
-
-"opentelemetry-metrics"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-logpushJob: number
-
-[Link to this property](#)
-
-type: "logpush"
-
-[Link to this property](#)
-
-url: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: boolean
-
-[Link to this property](#)
-
-name: string
-
-[Link to this property](#)
-
-scripts: array of string
-
-[Link to this property](#)
-
-slug: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DestinationUpdateResponse object { configuration, enabled, name, 2 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
-
-</summary>
-
-destination_conf: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
-
-</summary>
-
-One of the following:
-
-"opentelemetry-traces"
-
-[Link to this property](#)
-
-"opentelemetry-logs"
-
-[Link to this property](#)
-
-"opentelemetry-metrics"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-logpushJob: number
-
-[Link to this property](#)
-
-type: "logpush"
-
-[Link to this property](#)
-
-url: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: boolean
-
-[Link to this property](#)
-
-name: string
-
-[Link to this property](#)
-
-scripts: array of string
-
-[Link to this property](#)
-
-slug: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DestinationDeleteResponse object { configuration, enabled, name, 2 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
-
-</summary>
-
-destination_conf: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-logpushDataset: "opentelemetry-traces" or "opentelemetry-logs" or "opentelemetry-metrics"
-
-</summary>
-
-One of the following:
-
-"opentelemetry-traces"
-
-[Link to this property](#)
-
-"opentelemetry-logs"
-
-[Link to this property](#)
-
-"opentelemetry-metrics"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-logpushJob: number
-
-[Link to this property](#)
-
-type: "logpush"
-
-[Link to this property](#)
-
-url: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: boolean
-
-[Link to this property](#)
-
-name: string
-
-[Link to this property](#)
-
-scripts: array of string
-
-[Link to this property](#)
-
-slug: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Save query](/api/resources/workers/subresources/observability/subresources/queries/methods/create)
-
-POST/accounts/{account_id}/workers/observability/queries
-
-##### [List queries](/api/resources/workers/subresources/observability/subresources/queries/methods/list)
-
-GET/accounts/{account_id}/workers/observability/queries
-
-##### Models
-
-<details>
-
-<summary>
-
-QueryCreateResponse object { id, adhoc, created, 6 more }
-
-</summary>
-
-id: string
-
-[Link to this property](#)
-
-adhoc: boolean
-
-If the query wasn’t explcitly saved
-
-[Link to this property](#)
-
-created: string
-
-formatdate-time
-
-[Link to this property](#)
-
-createdBy: string
-
-[Link to this property](#)
-
-description: string
-
-maxLength1000
-
-[Link to this property](#)
-
-name: string
-
-Query name
-
-maxLength250
-
-minLength1
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-parameters: object { calculations, datasets, filterCombination, 6 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
-
-Create Calculations to compute as part of the query.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { operator, alias, key, keyType }
-
-</summary>
-
-<details>
-
-<summary>
-
-operator: "count" or "COUNT"
-
-</summary>
-
-One of the following:
-
-"count"
-
-[Link to this property](#)
-
-"COUNT"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-key: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { key, operator, alias, keyType }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operator: "uniq" or "max" or "min" or 33 more
-
-</summary>
-
-One of the following:
-
-"uniq"
-
-[Link to this property](#)
-
-"max"
-
-[Link to this property](#)
-
-"min"
-
-[Link to this property](#)
-
-"sum"
-
-[Link to this property](#)
-
-"avg"
-
-[Link to this property](#)
-
-"median"
-
-[Link to this property](#)
-
-"p001"
-
-[Link to this property](#)
-
-"p01"
-
-[Link to this property](#)
-
-"p05"
-
-[Link to this property](#)
-
-"p10"
-
-[Link to this property](#)
-
-"p25"
-
-[Link to this property](#)
-
-"p75"
-
-[Link to this property](#)
-
-"p90"
-
-[Link to this property](#)
-
-"p95"
-
-[Link to this property](#)
-
-"p99"
-
-[Link to this property](#)
-
-"p999"
-
-[Link to this property](#)
-
-"stddev"
-
-[Link to this property](#)
-
-"variance"
-
-[Link to this property](#)
-
-"COUNT_DISTINCT"
-
-[Link to this property](#)
-
-"MAX"
-
-[Link to this property](#)
-
-"MIN"
-
-[Link to this property](#)
-
-"SUM"
-
-[Link to this property](#)
-
-"AVG"
-
-[Link to this property](#)
-
-"MEDIAN"
-
-[Link to this property](#)
-
-"P001"
-
-[Link to this property](#)
-
-"P01"
-
-[Link to this property](#)
-
-"P05"
-
-[Link to this property](#)
-
-"P10"
-
-[Link to this property](#)
-
-"P25"
-
-[Link to this property](#)
-
-"P75"
-
-[Link to this property](#)
-
-"P90"
-
-[Link to this property](#)
-
-"P95"
-
-[Link to this property](#)
-
-"P99"
-
-[Link to this property](#)
-
-"P999"
-
-[Link to this property](#)
-
-"STDDEV"
-
-[Link to this property](#)
-
-"VARIANCE"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-datasets: optional array of string
-
-Set the Datasets to query. Leave it empty to query all the datasets.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filterCombination: optional "and" or "or" or "AND" or "OR"
-
-Set a Flag to describe how to combine the filters on the query.
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
-
-Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { filterCombination, filters, kind }
-
-</summary>
-
-<details>
-
-<summary>
-
-filterCombination: "and" or "or" or "AND" or "OR"
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-filters: array of unknown
-
-[Link to this property](#)
-
-kind: "group"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
-
-A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
-
-</summary>
-
-key: string
-
-Filter field name. Use verified keys from previous query results or the keys endpoint. Common keys include $metadata.service, $metadata.origin, $metadata.trigger, $metadata.message, and $metadata.error.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "includes" or "not_includes" or "starts_with" or 27 more
-
-Comparison operator. String operators: includes, not_includes, starts_with, ends_with, regex. Existence: exists, is_null. Set membership: in, not_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
-
-</summary>
-
-One of the following:
-
-"includes"
-
-[Link to this property](#)
-
-"not_includes"
-
-[Link to this property](#)
-
-"starts_with"
-
-[Link to this property](#)
-
-"ends_with"
-
-[Link to this property](#)
-
-"regex"
-
-[Link to this property](#)
-
-"exists"
-
-[Link to this property](#)
-
-"is_null"
-
-[Link to this property](#)
-
-"in"
-
-[Link to this property](#)
-
-"not_in"
-
-[Link to this property](#)
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-"="
-
-[Link to this property](#)
-
-"!="
-
-[Link to this property](#)
-
-">"
-
-[Link to this property](#)
-
-">="
-
-[Link to this property](#)
-
-"<"
-
-[Link to this property](#)
-
-"<="
-
-[Link to this property](#)
-
-"INCLUDES"
-
-[Link to this property](#)
-
-"DOES_NOT_INCLUDE"
-
-[Link to this property](#)
-
-"MATCH_REGEX"
-
-[Link to this property](#)
-
-"EXISTS"
-
-[Link to this property](#)
-
-"DOES_NOT_EXIST"
-
-[Link to this property](#)
-
-"IN"
-
-[Link to this property](#)
-
-"NOT_IN"
-
-[Link to this property](#)
-
-"STARTS_WITH"
-
-[Link to this property](#)
-
-"ENDS_WITH"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-Data type of the filter field. Must match the actual type of the key being filtered.
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-kind: optional "filter"
-
-Discriminator for leaf filter nodes. Always ‘filter’ when present; may be omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional string or number or boolean
-
-Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groupBys: optional array of object { type, value }
-
-Define how to group the results of the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-havings: optional array of object { key, operation, value }
-
-Configure the Having clauses that filter on calculations in the query result.
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "eq" or "neq" or "gt" or 3 more
-
-</summary>
-
-One of the following:
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-limit: optional number
-
-Set a limit on the number of results / records returned by the query
-
-maximum100
-
-minimum0
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-needle: optional object { value, isRegex, matchCase }
-
-Define an expression to search using full-text search.
-
-</summary>
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isRegex: optional boolean
-
-[Link to this property](#)
-
-matchCase: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-orderBy: optional object { value, order }
-
-Configure the order of the results returned by the query.
-
-</summary>
-
-value: string
-
-Configure which Calculation to order the results by.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-order: optional "asc" or "desc"
-
-Set the order of the results
-
-</summary>
-
-One of the following:
-
-"asc"
-
-[Link to this property](#)
-
-"desc"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated: string
-
-formatdate-time
-
-[Link to this property](#)
-
-updatedBy: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-QueryListResponse object { id, adhoc, created, 6 more }
-
-</summary>
-
-id: string
-
-[Link to this property](#)
-
-adhoc: boolean
-
-If the query wasn’t explcitly saved
-
-[Link to this property](#)
-
-created: string
-
-formatdate-time
-
-[Link to this property](#)
-
-createdBy: string
-
-[Link to this property](#)
-
-description: string
-
-maxLength1000
-
-[Link to this property](#)
-
-name: string
-
-Query name
-
-maxLength250
-
-minLength1
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-parameters: object { calculations, datasets, filterCombination, 6 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
-
-Create Calculations to compute as part of the query.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { operator, alias, key, keyType }
-
-</summary>
-
-<details>
-
-<summary>
-
-operator: "count" or "COUNT"
-
-</summary>
-
-One of the following:
-
-"count"
-
-[Link to this property](#)
-
-"COUNT"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-key: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { key, operator, alias, keyType }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operator: "uniq" or "max" or "min" or 33 more
-
-</summary>
-
-One of the following:
-
-"uniq"
-
-[Link to this property](#)
-
-"max"
-
-[Link to this property](#)
-
-"min"
-
-[Link to this property](#)
-
-"sum"
-
-[Link to this property](#)
-
-"avg"
-
-[Link to this property](#)
-
-"median"
-
-[Link to this property](#)
-
-"p001"
-
-[Link to this property](#)
-
-"p01"
-
-[Link to this property](#)
-
-"p05"
-
-[Link to this property](#)
-
-"p10"
-
-[Link to this property](#)
-
-"p25"
-
-[Link to this property](#)
-
-"p75"
-
-[Link to this property](#)
-
-"p90"
-
-[Link to this property](#)
-
-"p95"
-
-[Link to this property](#)
-
-"p99"
-
-[Link to this property](#)
-
-"p999"
-
-[Link to this property](#)
-
-"stddev"
-
-[Link to this property](#)
-
-"variance"
-
-[Link to this property](#)
-
-"COUNT_DISTINCT"
-
-[Link to this property](#)
-
-"MAX"
-
-[Link to this property](#)
-
-"MIN"
-
-[Link to this property](#)
-
-"SUM"
-
-[Link to this property](#)
-
-"AVG"
-
-[Link to this property](#)
-
-"MEDIAN"
-
-[Link to this property](#)
-
-"P001"
-
-[Link to this property](#)
-
-"P01"
-
-[Link to this property](#)
-
-"P05"
-
-[Link to this property](#)
-
-"P10"
-
-[Link to this property](#)
-
-"P25"
-
-[Link to this property](#)
-
-"P75"
-
-[Link to this property](#)
-
-"P90"
-
-[Link to this property](#)
-
-"P95"
-
-[Link to this property](#)
-
-"P99"
-
-[Link to this property](#)
-
-"P999"
-
-[Link to this property](#)
-
-"STDDEV"
-
-[Link to this property](#)
-
-"VARIANCE"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-datasets: optional array of string
-
-Set the Datasets to query. Leave it empty to query all the datasets.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filterCombination: optional "and" or "or" or "AND" or "OR"
-
-Set a Flag to describe how to combine the filters on the query.
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
-
-Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { filterCombination, filters, kind }
-
-</summary>
-
-<details>
-
-<summary>
-
-filterCombination: "and" or "or" or "AND" or "OR"
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-filters: array of unknown
-
-[Link to this property](#)
-
-kind: "group"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
-
-A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
-
-</summary>
-
-key: string
-
-Filter field name. Use verified keys from previous query results or the keys endpoint. Common keys include $metadata.service, $metadata.origin, $metadata.trigger, $metadata.message, and $metadata.error.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "includes" or "not_includes" or "starts_with" or 27 more
-
-Comparison operator. String operators: includes, not_includes, starts_with, ends_with, regex. Existence: exists, is_null. Set membership: in, not_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
-
-</summary>
-
-One of the following:
-
-"includes"
-
-[Link to this property](#)
-
-"not_includes"
-
-[Link to this property](#)
-
-"starts_with"
-
-[Link to this property](#)
-
-"ends_with"
-
-[Link to this property](#)
-
-"regex"
-
-[Link to this property](#)
-
-"exists"
-
-[Link to this property](#)
-
-"is_null"
-
-[Link to this property](#)
-
-"in"
-
-[Link to this property](#)
-
-"not_in"
-
-[Link to this property](#)
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-"="
-
-[Link to this property](#)
-
-"!="
-
-[Link to this property](#)
-
-">"
-
-[Link to this property](#)
-
-">="
-
-[Link to this property](#)
-
-"<"
-
-[Link to this property](#)
-
-"<="
-
-[Link to this property](#)
-
-"INCLUDES"
-
-[Link to this property](#)
-
-"DOES_NOT_INCLUDE"
-
-[Link to this property](#)
-
-"MATCH_REGEX"
-
-[Link to this property](#)
-
-"EXISTS"
-
-[Link to this property](#)
-
-"DOES_NOT_EXIST"
-
-[Link to this property](#)
-
-"IN"
-
-[Link to this property](#)
-
-"NOT_IN"
-
-[Link to this property](#)
-
-"STARTS_WITH"
-
-[Link to this property](#)
-
-"ENDS_WITH"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-Data type of the filter field. Must match the actual type of the key being filtered.
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-kind: optional "filter"
-
-Discriminator for leaf filter nodes. Always ‘filter’ when present; may be omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional string or number or boolean
-
-Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groupBys: optional array of object { type, value }
-
-Define how to group the results of the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-havings: optional array of object { key, operation, value }
-
-Configure the Having clauses that filter on calculations in the query result.
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "eq" or "neq" or "gt" or 3 more
-
-</summary>
-
-One of the following:
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-limit: optional number
-
-Set a limit on the number of results / records returned by the query
-
-maximum100
-
-minimum0
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-needle: optional object { value, isRegex, matchCase }
-
-Define an expression to search using full-text search.
-
-</summary>
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-maxLength1000
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isRegex: optional boolean
-
-[Link to this property](#)
-
-matchCase: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-orderBy: optional object { value, order }
-
-Configure the order of the results returned by the query.
-
-</summary>
-
-value: string
-
-Configure which Calculation to order the results by.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-order: optional "asc" or "desc"
-
-Set the order of the results
-
-</summary>
-
-One of the following:
-
-"asc"
-
-[Link to this property](#)
-
-"desc"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated: string
-
-formatdate-time
-
-[Link to this property](#)
-
-updatedBy: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Create a sharable link to a query result](/api/resources/workers/subresources/observability/subresources/shared_queries/methods/create)
-
-POST/accounts/{account_id}/workers/observability/shared/query
-
-##### [View a query that has been shared](/api/resources/workers/subresources/observability/subresources/shared_queries/methods/get)
-
-GET/accounts/{account_id}/workers/observability/shared/query/{id}
-
-##### Models
-
-<details>
-
-<summary>
-
-SharedQueryCreateResponse object { id }
-
-</summary>
-
-id: string
-
-Specify the ID of the shared query.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SharedQueryGetResponse object { run, statistics, agents, 6 more }
-
-Complete results of a query run. The populated fields depend on the requested view type (events, calculations, invocations, traces, or agents).
-
-</summary>
-
-<details>
-
-<summary>
-
-run: object { id, accountId, dry, 8 more }
-
-Represents a single execution of a query against Workers Observability data, including the query definition, execution status, and performance statistics.
-
-</summary>
-
-id: string
-
-Unique identifier for this query run.
-
-[Link to this property](#)
-
-accountId: string
-
-Cloudflare account ID that owns this query run.
-
-[Link to this property](#)
-
-dry: boolean
-
-Whether this was a dry run (results not persisted).
-
-[Link to this property](#)
-
-granularity: number
-
-Number of time-series buckets used for the query. Higher values produce more detailed series data.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-query: object { id, adhoc, created, 6 more }
-
-A saved query definition with its parameters, metadata, and ownership information.
-
-</summary>
-
-id: string
-
-[Link to this property](#)
-
-adhoc: boolean
-
-If the query wasn’t explcitly saved
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-created: string or string
-
-formatdate-time
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-createdBy: string
-
-[Link to this property](#)
-
-description: string
-
-maxLength1000
-
-[Link to this property](#)
-
-name: string
-
-Query name
-
-maxLength250
-
-minLength1
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-parameters: object { calculations, datasets, filterCombination, 6 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-calculations: optional array of object { operator, alias, key, keyType } or object { key, operator, alias, keyType }
-
-Create Calculations to compute as part of the query.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { operator, alias, key, keyType }
-
-</summary>
-
-<details>
-
-<summary>
-
-operator: "count" or "COUNT"
-
-</summary>
-
-One of the following:
-
-"count"
-
-[Link to this property](#)
-
-"COUNT"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-key: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { key, operator, alias, keyType }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operator: "uniq" or "max" or "min" or 33 more
-
-</summary>
-
-One of the following:
-
-"uniq"
-
-[Link to this property](#)
-
-"max"
-
-[Link to this property](#)
-
-"min"
-
-[Link to this property](#)
-
-"sum"
-
-[Link to this property](#)
-
-"avg"
-
-[Link to this property](#)
-
-"median"
-
-[Link to this property](#)
-
-"p001"
-
-[Link to this property](#)
-
-"p01"
-
-[Link to this property](#)
-
-"p05"
-
-[Link to this property](#)
-
-"p10"
-
-[Link to this property](#)
-
-"p25"
-
-[Link to this property](#)
-
-"p75"
-
-[Link to this property](#)
-
-"p90"
-
-[Link to this property](#)
-
-"p95"
-
-[Link to this property](#)
-
-"p99"
-
-[Link to this property](#)
-
-"p999"
-
-[Link to this property](#)
-
-"stddev"
-
-[Link to this property](#)
-
-"variance"
-
-[Link to this property](#)
-
-"COUNT_DISTINCT"
-
-[Link to this property](#)
-
-"MAX"
-
-[Link to this property](#)
-
-"MIN"
-
-[Link to this property](#)
-
-"SUM"
-
-[Link to this property](#)
-
-"AVG"
-
-[Link to this property](#)
-
-"MEDIAN"
-
-[Link to this property](#)
-
-"P001"
-
-[Link to this property](#)
-
-"P01"
-
-[Link to this property](#)
-
-"P05"
-
-[Link to this property](#)
-
-"P10"
-
-[Link to this property](#)
-
-"P25"
-
-[Link to this property](#)
-
-"P75"
-
-[Link to this property](#)
-
-"P90"
-
-[Link to this property](#)
-
-"P95"
-
-[Link to this property](#)
-
-"P99"
-
-[Link to this property](#)
-
-"P999"
-
-[Link to this property](#)
-
-"STDDEV"
-
-[Link to this property](#)
-
-"VARIANCE"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-keyType: optional "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-datasets: optional array of string
-
-Set the Datasets to query. Leave it empty to query all the datasets.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filterCombination: optional "and" or "or" or "AND" or "OR"
-
-Set a Flag to describe how to combine the filters on the query.
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-filters: optional array of object { filterCombination, filters, kind } or object { key, operation, type, 2 more }
-
-Configure the Filters to apply to the query. Supports nested groups via kind: ‘group’.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { filterCombination, filters, kind }
-
-</summary>
-
-<details>
-
-<summary>
-
-filterCombination: "and" or "or" or "AND" or "OR"
-
-</summary>
-
-One of the following:
-
-"and"
-
-[Link to this property](#)
-
-"or"
-
-[Link to this property](#)
-
-"AND"
-
-[Link to this property](#)
-
-"OR"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-filters: array of unknown
-
-[Link to this property](#)
-
-kind: "group"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkersObservabilityFilterLeaf object { key, operation, type, 2 more }
-
-A filter condition applied to query results. Use the keys and values endpoints to discover available fields and their values before constructing filters.
-
-</summary>
-
-key: string
-
-Filter field name. Use verified keys from previous query results or the keys endpoint. Common keys include $metadata.service, $metadata.origin, $metadata.trigger, $metadata.message, and $metadata.error.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "includes" or "not_includes" or "starts_with" or 27 more
-
-Comparison operator. String operators: includes, not_includes, starts_with, ends_with, regex. Existence: exists, is_null. Set membership: in, not_in (comma-separated values). Numeric: eq, neq, gt, gte, lt, lte.
-
-</summary>
-
-One of the following:
-
-"includes"
-
-[Link to this property](#)
-
-"not_includes"
-
-[Link to this property](#)
-
-"starts_with"
-
-[Link to this property](#)
-
-"ends_with"
-
-[Link to this property](#)
-
-"regex"
-
-[Link to this property](#)
-
-"exists"
-
-[Link to this property](#)
-
-"is_null"
-
-[Link to this property](#)
-
-"in"
-
-[Link to this property](#)
-
-"not_in"
-
-[Link to this property](#)
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-"="
-
-[Link to this property](#)
-
-"!="
-
-[Link to this property](#)
-
-">"
-
-[Link to this property](#)
-
-">="
-
-[Link to this property](#)
-
-"<"
-
-[Link to this property](#)
-
-"<="
-
-[Link to this property](#)
-
-"INCLUDES"
-
-[Link to this property](#)
-
-"DOES_NOT_INCLUDE"
-
-[Link to this property](#)
-
-"MATCH_REGEX"
-
-[Link to this property](#)
-
-"EXISTS"
-
-[Link to this property](#)
-
-"DOES_NOT_EXIST"
-
-[Link to this property](#)
-
-"IN"
-
-[Link to this property](#)
-
-"NOT_IN"
-
-[Link to this property](#)
-
-"STARTS_WITH"
-
-[Link to this property](#)
-
-"ENDS_WITH"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-Data type of the filter field. Must match the actual type of the key being filtered.
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-kind: optional "filter"
-
-Discriminator for leaf filter nodes. Always ‘filter’ when present; may be omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: optional string or number or boolean
-
-Comparison value. Must match actual values in your data — verify with the values endpoint. Ensure the value type (string/number/boolean) matches the field type. String comparisons are case-sensitive. Regex uses RE2 syntax (no lookaheads/lookbehinds).
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groupBys: optional array of object { type, value }
-
-Define how to group the results of the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-type: "string" or "number" or "boolean"
-
-</summary>
-
-One of the following:
-
-"string"
-
-[Link to this property](#)
-
-"number"
-
-[Link to this property](#)
-
-"boolean"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-havings: optional array of object { key, operation, value }
-
-Configure the Having clauses that filter on calculations in the query result.
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operation: "eq" or "neq" or "gt" or 3 more
-
-</summary>
-
-One of the following:
-
-"eq"
-
-[Link to this property](#)
-
-"neq"
-
-[Link to this property](#)
-
-"gt"
-
-[Link to this property](#)
-
-"gte"
-
-[Link to this property](#)
-
-"lt"
-
-[Link to this property](#)
-
-"lte"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-value: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-limit: optional number
-
-Set a limit on the number of results / records returned by the query
-
-maximum100
-
-minimum0
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-needle: optional object { value, isRegex, matchCase }
-
-Define an expression to search using full-text search.
-
-</summary>
-
-value:
-
-[Link to this property](#)
-
-isRegex: optional boolean
-
-[Link to this property](#)
-
-matchCase: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-orderBy: optional object { value, order }
-
-Configure the order of the results returned by the query.
-
-</summary>
-
-value: string
-
-Configure which Calculation to order the results by.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-order: optional "asc" or "desc"
-
-Set the order of the results
-
-</summary>
-
-One of the following:
-
-"asc"
-
-[Link to this property](#)
-
-"desc"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-updated: string or string
-
-formatdate-time
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updatedBy: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-status: "STARTED" or "COMPLETED"
-
-Current execution status of the query run.
-
-</summary>
-
-One of the following:
-
-"STARTED"
-
-[Link to this property](#)
-
-"COMPLETED"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-timeframe: object { from, to }
-
-Time range for the query execution. ‘from’ must be earlier than ‘to’. No fractional milliseconds.
-
-</summary>
-
-from: number
-
-Start timestamp for the query timeframe. Unix timestamp in milliseconds
-
-maximum253402300799999
-
-minimum0
-
-[Link to this property](#)
-
-to: number
-
-End timestamp for the query timeframe. Unix timestamp in milliseconds
-
-maximum253402300799999
-
-minimum0
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-userId: string
-
-ID of the user who initiated the query run.
-
-[Link to this property](#)
-
-created: optional string
-
-ISO-8601 timestamp when the query run was created.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-statistics: optional object { bytes_read, elapsed, rows_read, abr_level }
-
-Query performance statistics from the database (does not include network latency).
-
-</summary>
-
-bytes_read: number
-
-Number of uncompressed bytes read from the table.
-
-[Link to this property](#)
-
-elapsed: number
-
-Time in seconds for the query to run.
-
-[Link to this property](#)
-
-rows_read: number
-
-Number of rows scanned from the table.
-
-[Link to this property](#)
-
-abr_level: optional number
-
-The level of Adaptive Bit Rate (ABR) sampling used for the query. If empty the ABR level is 1
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated: optional string
-
-ISO-8601 timestamp when the query run was last updated.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-statistics: object { bytes_read, elapsed, rows_read, abr_level }
-
-Query performance statistics from the database. Includes execution time, rows scanned, and bytes read. Does not include network latency.
-
-</summary>
-
-bytes_read: number
-
-Number of uncompressed bytes read from the table.
-
-[Link to this property](#)
-
-elapsed: number
-
-Time in seconds for the query to run.
-
-[Link to this property](#)
-
-rows_read: number
-
-Number of rows scanned from the table.
-
-[Link to this property](#)
-
-abr_level: optional number
-
-The level of Adaptive Bit Rate (ABR) sampling used for the query. If empty the ABR level is 1
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-agents: optional array of object { id, errors, models, 13 more }
-
-Agent run summaries. Present when the query view is ‘agents’. Each entry represents one trace containing at least one agent invocation.
-
-</summary>
-
-id: string
-
-Stable pagination cursor for this agent run.
-
-[Link to this property](#)
-
-errors: array of string
-
-Distinct errors reported by spans in the run.
-
-[Link to this property](#)
-
-models: array of string
-
-Distinct models reported by chat spans across the run’s trace.
-
-[Link to this property](#)
-
-providers: array of string
-
-Distinct GenAI providers reported by chat spans in the run.
-
-[Link to this property](#)
-
-services: array of string
-
-Worker services represented in the run’s trace.
-
-[Link to this property](#)
-
-spans: number
-
-Number of spans in the run’s trace.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-status: "completed" or "error"
-
-Observed run status.
-
-</summary>
-
-One of the following:
-
-"completed"
-
-[Link to this property](#)
-
-"error"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-traceDurationMs: number
-
-Total trace duration in milliseconds.
-
-[Link to this property](#)
-
-traceEndMs: number
-
-End of the run’s trace as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-traceId: string
-
-Trace identifier for this agent run.
-
-[Link to this property](#)
-
-traceStartMs: number
-
-Start of the run’s trace as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-agentId: optional string
-
-ID from the earliest agent invocation that provides one.
-
-[Link to this property](#)
-
-agentName: optional string
-
-Name from the earliest agent invocation that provides one.
-
-[Link to this property](#)
-
-conversationId: optional string
-
-Conversation ID from the earliest invocation that provides one.
-
-[Link to this property](#)
-
-inputTokens: optional number
-
-Input tokens summed across chat spans in the run’s trace; informational, not billing data.
-
-[Link to this property](#)
-
-outputTokens: optional number
-
-Output tokens summed across chat spans in the run’s trace; informational, not billing data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-calculations: optional array of object { aggregates, calculation, series, alias }
-
-Aggregated calculation results. Present when the query view is ‘calculations’. Contains computed metrics (count, avg, p99, etc.) with optional group-by breakdowns and time-series data.
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: array of object { count, interval, sampleInterval, 2 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-calculation: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: array of object { data, time }
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { count, interval, sampleInterval, 4 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-firstSeen: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastSeen: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-compare: optional array of object { aggregates, calculation, series, alias }
-
-Comparison calculation results from the previous time period. Present when the compare option is enabled. Same structure as calculations.
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: array of object { count, interval, sampleInterval, 2 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-calculation: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: array of object { data, time }
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { count, interval, sampleInterval, 4 more }
-
-</summary>
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-value: number
-
-Result of the calculation. count, sum, avg, median, and percentiles are weighted by each event’s sample interval
-
-[Link to this property](#)
-
-firstSeen: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional array of object { key, value }
-
-</summary>
-
-key: string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-value: string or number or boolean
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastSeen: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-alias: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-distribution: optional object { bins, bucketBoundaries, bucketMode, 2 more }
-
-Bucketed 2D histogram of a numeric field over time. Present when chartType is ‘distribution’.
-
-</summary>
-
-bins: array of string
-
-Time-bucket labels (ISO-8601 strings), one per matrix column.
-
-[Link to this property](#)
-
-bucketBoundaries: array of number
-
-Raw bucket edges in the value’s native unit, length buckets.length + 1. Used for the colour scale and percentile mapping.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-bucketMode: "log" or "linear"
-
-Bucketing scheme used to derive the boundaries. ‘log’ produces geometric edges; ‘linear’ produces fixed-width edges.
-
-</summary>
-
-One of the following:
-
-"log"
-
-[Link to this property](#)
-
-"linear"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-buckets: array of string
-
-Value-range labels, one per matrix row (e.g. ‘50–100ms’).
-
-[Link to this property](#)
-
-matrix: array of array of number
-
-Sampling-corrected counts. matrix[bucketIdx][binIdx] is the estimated number of events in value-bucket ‘bucketIdx’ during time-bin ‘binIdx’.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-events: optional object { count, events, fields, series }
-
-Individual event results. Present when the query view is ‘events’. Contains the matching log lines and their metadata.
-
-</summary>
-
-count: optional number
-
-Total number of events matching the query (may exceed the number returned due to limits).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-events: optional array of object { "$metadata", dataset, source, 3 more }
-
-List of individual telemetry events matching the query.
-
-</summary>
-
-<details>
-
-<summary>
-
-"$metadata": object { id, account, cloudService, 29 more }
-
-Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
-
-</summary>
-
-id: string
-
-Unique event ID. Use as the cursor value for offset-based pagination.
-
-[Link to this property](#)
-
-account: optional string
-
-Cloudflare account identifier.
-
-[Link to this property](#)
-
-cloudService: optional string
-
-Cloudflare product that generated this event (e.g. workers, pages).
-
-[Link to this property](#)
-
-coldStart: optional number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-cost: optional number
-
-Estimated cost units for this invocation.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-duration: optional number
-
-Span duration in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-endTime: optional number
-
-Span end time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-error: optional string
-
-Error message, present when the log represents an error.
-
-[Link to this property](#)
-
-errorTemplate: optional string
-
-Templatized version of the error message used for grouping similar errors.
-
-[Link to this property](#)
-
-fingerprint: optional string
-
-Content-based fingerprint used to group similar events.
-
-[Link to this property](#)
-
-level: optional string
-
-Log level (e.g. log, debug, info, warn, error).
-
-[Link to this property](#)
-
-message: optional string
-
-Log message text.
-
-[Link to this property](#)
-
-messageTemplate: optional string
-
-Templatized version of the log message used for grouping similar messages.
-
-[Link to this property](#)
-
-metricName: optional string
-
-Metric name when the event represents a metric data point.
-
-[Link to this property](#)
-
-origin: optional string
-
-Origin of the event (e.g. fetch, scheduled, queue).
-
-[Link to this property](#)
-
-parentSpanId: optional string
-
-Span ID of the parent span in the trace hierarchy.
-
-[Link to this property](#)
-
-provider: optional string
-
-Infrastructure provider identifier.
-
-[Link to this property](#)
-
-rayId: optional string
-
-Cloudflare Ray ID from the `cf-ray` header of the request that triggered the invocation.
-
-[Link to this property](#)
-
-region: optional string
-
-Cloudflare data center / region that handled the request.
-
-[Link to this property](#)
-
-requestId: optional string
-
-Cloudflare request ID that ties all logs from a single invocation together.
-
-[Link to this property](#)
-
-service: optional string
-
-Worker script name that produced this event.
-
-[Link to this property](#)
-
-spanId: optional string
-
-Span ID for this individual unit of work within a trace.
-
-[Link to this property](#)
-
-spanName: optional string
-
-Human-readable name for this span.
-
-[Link to this property](#)
-
-stackId: optional string
-
-Stack / deployment identifier.
-
-[Link to this property](#)
-
-startTime: optional number
-
-Span start time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-statusCode: optional number
-
-HTTP response status code returned by the Worker.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceDuration: optional number
-
-Total duration of the entire trace in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceId: optional string
-
-Distributed trace ID linking spans across services.
-
-[Link to this property](#)
-
-transactionName: optional string
-
-Logical transaction name for this request.
-
-[Link to this property](#)
-
-trigger: optional string
-
-What triggered the invocation (e.g. GET /users, POST /orders, queue message).
-
-[Link to this property](#)
-
-type: optional string
-
-Event type classifier (e.g. cf-worker-event, cf-worker-log).
-
-[Link to this property](#)
-
-url: optional string
-
-Request URL that triggered the Worker invocation.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dataset: string
-
-The dataset this event belongs to (e.g. cloudflare-workers).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: string or map[unknown]
-
-Raw log payload. May be a string or a structured object depending on how the log was emitted.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-map[unknown]
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-timestamp: number
-
-Event timestamp as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-"$containers": optional map[unknown]
-
-Cloudflare Containers event information that enriches your logs for identifying and debugging issues.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
-
-Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { eventType, scriptName, durableObjectId, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { cpuTimeMs, eventType, outcome, 14 more }
-
-</summary>
-
-cpuTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: string
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-wallTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
-
-</summary>
-
-channel: string
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-timestamp: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dispatchNamespace: optional string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-fields: optional array of object { key, type }
-
-List of fields discovered in the matched events. Useful for building dynamic UIs.
-
-</summary>
-
-key: string
-
-Field name present in the matched events.
-
-[Link to this property](#)
-
-type: string
-
-Data type of the field (string, number, or boolean).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-series: optional array of object { data, time }
-
-Time-series data for the matched events, bucketed by the query granularity.
-
-</summary>
-
-<details>
-
-<summary>
-
-data: array of object { aggregates, count, interval, 3 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-aggregates: object { _count, _interval, _firstSeen, 2 more }
-
-</summary>
-
-Deprecated_count: number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-Deprecated_interval: number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-Deprecated_firstSeen: optional string
-
-[Link to this property](#)
-
-Deprecated_lastSeen: optional string
-
-[Link to this property](#)
-
-Deprecatedbin: optional unknown
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-count: number
-
-Estimated number of matching events: the sum of the sample intervals of the stored events. It equals the number of stored events when sampleInterval is 1.
-
-[Link to this property](#)
-
-Deprecatedinterval: number
-
-Deprecated alias of sampleInterval. Always has the same value; use sampleInterval instead.
-
-[Link to this property](#)
-
-sampleInterval: number
-
-Average sample interval of the matched events. Each stored event has a sample interval of 1 / (the sampling rate applied when it was ingested): the Worker’s head_sampling_rate multiplied by any platform sampling applied to the account or script. A value of 1 means none of the matched events were sampled. A value above 1 means count and value are estimated from sampled data, not exact. This is independent of statistics.abr_level.
-
-[Link to this property](#)
-
-errors: optional number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-groups: optional map[string or number or boolean]
-
-Groups in the query results.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-number
-
-[Link to this property](#)
-
-boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-time: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-invocations: optional map[array of object { "$metadata", dataset, source, 3 more } ]
-
-Events grouped by invocation (request ID). Present when the query view is ‘invocations’. Each key is a request ID mapping to all events from that invocation.
-
-</summary>
-
-<details>
-
-<summary>
-
-"$metadata": object { id, account, cloudService, 29 more }
-
-Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
-
-</summary>
-
-id: string
-
-Unique event ID. Use as the cursor value for offset-based pagination.
-
-[Link to this property](#)
-
-account: optional string
-
-Cloudflare account identifier.
-
-[Link to this property](#)
-
-cloudService: optional string
-
-Cloudflare product that generated this event (e.g. workers, pages).
-
-[Link to this property](#)
-
-coldStart: optional number
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-cost: optional number
-
-Estimated cost units for this invocation.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-duration: optional number
-
-Span duration in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-endTime: optional number
-
-Span end time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-error: optional string
-
-Error message, present when the log represents an error.
-
-[Link to this property](#)
-
-errorTemplate: optional string
-
-Templatized version of the error message used for grouping similar errors.
-
-[Link to this property](#)
-
-fingerprint: optional string
-
-Content-based fingerprint used to group similar events.
-
-[Link to this property](#)
-
-level: optional string
-
-Log level (e.g. log, debug, info, warn, error).
-
-[Link to this property](#)
-
-message: optional string
-
-Log message text.
-
-[Link to this property](#)
-
-messageTemplate: optional string
-
-Templatized version of the log message used for grouping similar messages.
-
-[Link to this property](#)
-
-metricName: optional string
-
-Metric name when the event represents a metric data point.
-
-[Link to this property](#)
-
-origin: optional string
-
-Origin of the event (e.g. fetch, scheduled, queue).
-
-[Link to this property](#)
-
-parentSpanId: optional string
-
-Span ID of the parent span in the trace hierarchy.
-
-[Link to this property](#)
-
-provider: optional string
-
-Infrastructure provider identifier.
-
-[Link to this property](#)
-
-rayId: optional string
-
-Cloudflare Ray ID from the `cf-ray` header of the request that triggered the invocation.
-
-[Link to this property](#)
-
-region: optional string
-
-Cloudflare data center / region that handled the request.
-
-[Link to this property](#)
-
-requestId: optional string
-
-Cloudflare request ID that ties all logs from a single invocation together.
-
-[Link to this property](#)
-
-service: optional string
-
-Worker script name that produced this event.
-
-[Link to this property](#)
-
-spanId: optional string
-
-Span ID for this individual unit of work within a trace.
-
-[Link to this property](#)
-
-spanName: optional string
-
-Human-readable name for this span.
-
-[Link to this property](#)
-
-stackId: optional string
-
-Stack / deployment identifier.
-
-[Link to this property](#)
-
-startTime: optional number
-
-Span start time as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-statusCode: optional number
-
-HTTP response status code returned by the Worker.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceDuration: optional number
-
-Total duration of the entire trace in milliseconds.
-
-exclusiveMinimum
-
-minimum0
-
-[Link to this property](#)
-
-traceId: optional string
-
-Distributed trace ID linking spans across services.
-
-[Link to this property](#)
-
-transactionName: optional string
-
-Logical transaction name for this request.
-
-[Link to this property](#)
-
-trigger: optional string
-
-What triggered the invocation (e.g. GET /users, POST /orders, queue message).
-
-[Link to this property](#)
-
-type: optional string
-
-Event type classifier (e.g. cf-worker-event, cf-worker-log).
-
-[Link to this property](#)
-
-url: optional string
-
-Request URL that triggered the Worker invocation.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dataset: string
-
-The dataset this event belongs to (e.g. cloudflare-workers).
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-source: string or map[unknown]
-
-Raw log payload. May be a string or a structured object depending on how the log was emitted.
-
-</summary>
-
-One of the following:
-
-string
-
-[Link to this property](#)
-
-map[unknown]
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-timestamp: number
-
-Event timestamp as a Unix epoch in milliseconds.
-
-minimum0
-
-[Link to this property](#)
-
-"$containers": optional map[unknown]
-
-Cloudflare Containers event information that enriches your logs for identifying and debugging issues.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
-
-Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object { eventType, scriptName, durableObjectId, 10 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-object { cpuTimeMs, eventType, outcome, 14 more }
-
-</summary>
-
-cpuTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "fetch" or "scheduled" or "alarm" or 9 more
-
-</summary>
-
-One of the following:
-
-"fetch"
-
-[Link to this property](#)
-
-"scheduled"
-
-[Link to this property](#)
-
-"alarm"
-
-[Link to this property](#)
-
-"cron"
-
-[Link to this property](#)
-
-"queue"
-
-[Link to this property](#)
-
-"email"
-
-[Link to this property](#)
-
-"tail"
-
-[Link to this property](#)
-
-"rpc"
-
-[Link to this property](#)
-
-"jsrpc"
-
-[Link to this property](#)
-
-"websocket"
-
-[Link to this property](#)
-
-"workflow"
-
-[Link to this property](#)
-
-"unknown"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-outcome: string
-
-[Link to this property](#)
-
-scriptName: string
-
-[Link to this property](#)
-
-wallTimeMs: number
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
-
-</summary>
-
-channel: string
-
-[Link to this property](#)
-
-message: string
-
-[Link to this property](#)
-
-timestamp: number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-dispatchNamespace: optional string
-
-[Link to this property](#)
-
-durableObjectId: optional string
-
-[Link to this property](#)
-
-entrypoint: optional string
-
-[Link to this property](#)
-
-event: optional map[unknown]
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-executionModel: optional "durableObject" or "stateless"
-
-</summary>
-
-One of the following:
-
-"durableObject"
-
-[Link to this property](#)
-
-"stateless"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-preview: optional object { id, name, slug }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-name: optional string
-
-[Link to this property](#)
-
-slug: optional string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-requestId: optional string
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scriptVersion: optional object { id, message, tag }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-message: optional string
-
-[Link to this property](#)
-
-tag: optional string
-
-[Link to this property](#)
-
 </details>
-
-[Link to this property](#)
-
-spanId: optional string
-
-[Link to this property](#)
-
-traceId: optional string
-
-[Link to this property](#)
-
-truncated: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
 
-<details>
-
-<summary>
-
-traces: optional array of object { rootSpanName, rootTransactionName, service, 6 more }
-
-Trace summaries matching the query. Present when the query view is ‘traces’. Each entry represents a distributed trace with its spans, duration, and services involved.
-
-</summary>
-
-rootSpanName: string
-
-Name of the root span that initiated the trace.
-
-[Link to this property](#)
-
-rootTransactionName: string
-
-Logical transaction name for the root span.
-
-[Link to this property](#)
-
-service: array of string
-
-List of Worker services involved in the trace.
-
-[Link to this property](#)
-
-spans: number
-
-Total number of spans in the trace.
-
-[Link to this property](#)
-
-traceDurationMs: number
-
-Total duration of the trace in milliseconds.
-
-[Link to this property](#)
-
-traceEndMs: number
-
-Trace end time as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-traceId: string
-
-Unique identifier for the distributed trace.
-
-[Link to this property](#)
-
-traceStartMs: number
-
-Trace start time as a Unix epoch in milliseconds.
-
-[Link to this property](#)
-
-errors: optional array of string
-
-Error messages encountered during the trace, if any.
-
-[Link to this property](#)
-
 </details>
-
-[Link to this property](#)
 
 </details>
 
-[Link to this property](#)
+<!-- Cloudflare Markdown for Agents: incomplete conversion; source HTML truncated at the conversion size limit -->

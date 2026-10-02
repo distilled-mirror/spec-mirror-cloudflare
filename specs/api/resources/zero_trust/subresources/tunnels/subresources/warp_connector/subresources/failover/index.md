@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Failover
 
-##### [Trigger a manual failover for a WARP Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/failover/methods/update)
+##### [Trigger a manual failover for a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/failover/methods/update)
 
 PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/failover
 

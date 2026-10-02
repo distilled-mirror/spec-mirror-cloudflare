@@ -1,5 +1,5 @@
 ---
-title: Get WARP Connector HA configuration
+title: Get Mesh node HA configuration
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get WARP Connector HA configuration
+# Get Mesh node HA configuration
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
-Gets the high-availability configuration for a WARP Connector tunnel.
+Gets the high-availability configuration for a Mesh node.
 
 ##### Security
 
@@ -202,7 +202,7 @@ formatdate-time
 
 ha\_mode: "none"or "disabled"or "aws"or "local"
 
-High-availability mode for the WARP Connector tunnel. <code>none</code> means HA is enabled but no provider is configured yet (newly created tunnels default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
+High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
 </summary>
 
@@ -336,7 +336,7 @@ formatdate-time
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector.configurations%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get WARP Connector HA configuration
+### Get Mesh node HA configuration
 
 HTTP
 

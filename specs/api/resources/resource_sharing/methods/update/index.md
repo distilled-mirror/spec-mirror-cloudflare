@@ -1,5 +1,5 @@
 ---
-title: Update a share
+title: Trigger a share rename
 ---
 
 [Skip to content](#_top)
@@ -16,7 +16,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update a share
+# Trigger a share rename
 
 PUT/accounts/{account\_id}/shares/{share\_id}
 
@@ -411,7 +411,7 @@ One of the following:
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Update a share
+### Trigger a share rename
 
 HTTP
 

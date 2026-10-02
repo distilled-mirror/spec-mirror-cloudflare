@@ -1,5 +1,5 @@
 ---
-title: List WARP Connector Tunnel connections
+title: List Mesh node connections
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List WARP Connector Tunnel connections
+# List Mesh node connections
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connections
 
-Fetches connection details for a WARP Connector Tunnel.
+Lists connection details for a Mesh node.
 
 ##### Security
 
@@ -198,7 +198,7 @@ The cloudflared OS architecture used to establish this connection.
 
 conns: optional array of object {id, client\_id, client\_version, 3 more }
 
-The WARP Connector Tunnel connections between your origin and Cloudflare’s edge.
+The Mesh node connections between your origin and Cloudflare’s edge.
 
 </summary>
 
@@ -244,7 +244,7 @@ formatdate-time
 
 origin\_ip: optional string
 
-The public IP address of the host running WARP Connector.
+The public IP address of the host running the Mesh node connector.
 
 <a href="#">Link to this property</a>
 
@@ -264,7 +264,7 @@ Features enabled for the Cloudflare Tunnel.
 
 ha\_status: optional "offline"or "passive"or "active"
 
-The HA status of a WARP Connector client.
+The HA status of a Mesh node connector.
 
 </summary>
 
@@ -346,7 +346,7 @@ Total results available without any search parameters
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector.connections%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List WARP Connector Tunnel connections
+### List Mesh node connections
 
 HTTP
 

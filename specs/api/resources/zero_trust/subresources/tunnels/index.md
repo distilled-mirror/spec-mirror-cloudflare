@@ -306,7 +306,7 @@ One of the following:
 
 TunnelWARPConnectorTunnel object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -1496,23 +1496,23 @@ The Tunnel Token is used as a mechanism to authenticate the operation of a tunne
 
 #### TunnelsWARP Connector
 
-##### [List Warp Connector Tunnels](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/list)
+##### [List Mesh nodes](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/list)
 
 GET/accounts/{account\_id}/warp\_connector
 
-##### [Get a Warp Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/get)
+##### [Get a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
-##### [Create a Warp Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/create)
+##### [Create a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/create)
 
 POST/accounts/{account\_id}/warp\_connector
 
-##### [Update a Warp Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/edit)
+##### [Update a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/edit)
 
 PATCH/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
-##### [Delete a Warp Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/delete)
+##### [Delete a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/methods/delete)
 
 DELETE/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
@@ -1524,7 +1524,7 @@ DELETE/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
 WARPConnectorListResponse object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -1756,7 +1756,7 @@ One of the following:
 
 WARPConnectorGetResponse object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -1988,7 +1988,7 @@ One of the following:
 
 WARPConnectorCreateResponse object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -2220,7 +2220,7 @@ One of the following:
 
 WARPConnectorEditResponse object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -2452,7 +2452,7 @@ One of the following:
 
 WARPConnectorDeleteResponse object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -2680,7 +2680,7 @@ One of the following:
 
 #### TunnelsWARP ConnectorToken
 
-##### [Get a Warp Connector Tunnel token](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/token/methods/get)
+##### [Get a Mesh node token](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/token/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/token
 
@@ -2694,7 +2694,7 @@ The Tunnel Token is used as a mechanism to authenticate the operation of a tunne
 
 #### TunnelsWARP ConnectorConnections
 
-##### [List WARP Connector Tunnel connections](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connections/methods/get)
+##### [List Mesh node connections](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connections/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connections
 
@@ -2706,7 +2706,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connections
 
 ConnectionGetResponse object {id, arch, conns, 4 more }
 
-A WARP Connector client that maintains a connection to a Cloudflare data center.
+A Mesh node connector that maintains a connection to a Cloudflare data center.
 
 </summary>
 
@@ -2732,7 +2732,7 @@ The cloudflared OS architecture used to establish this connection.
 
 conns: optional array of object {id, client\_id, client\_version, 3 more }
 
-The WARP Connector Tunnel connections between your origin and Cloudflare’s edge.
+The Mesh node connections between your origin and Cloudflare’s edge.
 
 </summary>
 
@@ -2778,7 +2778,7 @@ formatdate-time
 
 origin\_ip: optional string
 
-The public IP address of the host running WARP Connector.
+The public IP address of the host running the Mesh node connector.
 
 <a href="#">Link to this property</a>
 
@@ -2798,7 +2798,7 @@ Features enabled for the Cloudflare Tunnel.
 
 ha\_status: optional "offline"or "passive"or "active"
 
-The HA status of a WARP Connector client.
+The HA status of a Mesh node connector.
 
 </summary>
 
@@ -2840,7 +2840,7 @@ The cloudflared version used to establish this connection.
 
 #### TunnelsWARP ConnectorConnectors
 
-##### [Get WARP Connector Tunnel connector](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connectors/methods/get)
+##### [Get a Mesh node connector](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connectors/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_id}
 
@@ -2852,7 +2852,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_i
 
 ConnectorGetResponse object {id, arch, conns, 4 more }
 
-A WARP Connector client that maintains a connection to a Cloudflare data center.
+A Mesh node connector that maintains a connection to a Cloudflare data center.
 
 </summary>
 
@@ -2878,7 +2878,7 @@ The cloudflared OS architecture used to establish this connection.
 
 conns: optional array of object {id, client\_id, client\_version, 3 more }
 
-The WARP Connector Tunnel connections between your origin and Cloudflare’s edge.
+The Mesh node connections between your origin and Cloudflare’s edge.
 
 </summary>
 
@@ -2924,7 +2924,7 @@ formatdate-time
 
 origin\_ip: optional string
 
-The public IP address of the host running WARP Connector.
+The public IP address of the host running the Mesh node connector.
 
 <a href="#">Link to this property</a>
 
@@ -2944,7 +2944,7 @@ Features enabled for the Cloudflare Tunnel.
 
 ha\_status: optional "offline"or "passive"or "active"
 
-The HA status of a WARP Connector client.
+The HA status of a Mesh node connector.
 
 </summary>
 
@@ -2986,7 +2986,7 @@ The cloudflared version used to establish this connection.
 
 #### TunnelsWARP ConnectorFailover
 
-##### [Trigger a manual failover for a WARP Connector Tunnel](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/failover/methods/update)
+##### [Trigger a manual failover for a Mesh node](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/failover/methods/update)
 
 PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/failover
 
@@ -2998,11 +2998,11 @@ FailoverUpdateResponse = unknown
 
 #### TunnelsWARP ConnectorConfigurations
 
-##### [Get WARP Connector HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/get)
+##### [Get Mesh node HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
-##### [Update WARP Connector HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/update)
+##### [Update Mesh node HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/update)
 
 PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
@@ -3036,7 +3036,7 @@ formatdate-time
 
 ha\_mode: "none"or "disabled"or "aws"or "local"
 
-High-availability mode for the WARP Connector tunnel. <code>none</code> means HA is enabled but no provider is configured yet (newly created tunnels default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
+High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
 </summary>
 
@@ -3198,7 +3198,7 @@ formatdate-time
 
 ha\_mode: "none"or "disabled"or "aws"or "local"
 
-High-availability mode for the WARP Connector tunnel. <code>none</code> means HA is enabled but no provider is configured yet (newly created tunnels default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
+High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
 </summary>
 

@@ -1,5 +1,5 @@
 ---
-title: Trigger a manual failover for a WARP Connector Tunnel
+title: Trigger a manual failover for a Mesh node
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Trigger a manual failover for a WARP Connector Tunnel
+# Trigger a manual failover for a Mesh node
 
 PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/failover
 
-Triggers a manual failover for a specific WARP Connector Tunnel, setting the specified client as the active connector. The tunnel must be configured for high availability (HA) and the client must be linked to the tunnel.
+Triggers a manual failover for a specific Mesh node, setting the specified client as the active connector. The tunnel must be configured for high availability (HA) and the client must be linked to the tunnel.
 
 ##### Security
 
@@ -190,7 +190,7 @@ Whether the API call was successful
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector.failover%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Trigger a manual failover for a WARP Connector Tunnel
+### Trigger a manual failover for a Mesh node
 
 HTTP
 

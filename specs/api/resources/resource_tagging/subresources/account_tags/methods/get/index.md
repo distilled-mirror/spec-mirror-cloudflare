@@ -60,7 +60,7 @@ The ID of the resource to retrieve tags for.
 
 <summary>
 
-resource\_type: "access\_application"or "access\_group"or "account"or 27 more
+resource\_type: "access\_application"or "access\_group"or "account"or 28 more
 
 The type of the resource.
 
@@ -117,6 +117,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "d1\_database"
+
+<a href="#">Link to this property</a>
+
+"device"
 
 <a href="#">Link to this property</a>
 
@@ -294,7 +298,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, etag, name, 3 more } or object {id, access\_application\_id, etag, 5 more } or object {id, etag, name, 3 more } or 38 more
+result: optional object {id, etag, name, 3 more } or object {id, access\_application\_id, etag, 5 more } or object {id, etag, name, 3 more } or 39 more
 
 Response for access\_application resources
 
@@ -1185,6 +1189,56 @@ Contains key-value pairs of tags. Keys may contain at most 256 characters. Value
 <a href="#">Link to this property</a>
 
 type: "d1\_database"
+
+<a href="#">Link to this property</a>
+
+tags\_updated\_at: optional string
+
+Monotonic version of the resource’s tags: the timestamp assigned when the tags were last written. Returned by read endpoints, by 2PC prepare (the version that will be assigned on commit, unless a concurrent write lands first, in which case a newer version is assigned), and by 2PC commit (the authoritative committed version). Omitted for untagged resources and delete commits: a deleted resource has no current version, and deletions are ordered by event order rather than by version.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Device object {id, etag, name, 3 more }
+
+Response for device resources
+
+</summary>
+
+id: string
+
+Identifies the unique resource.
+
+<a href="#">Link to this property</a>
+
+etag: string
+
+ETag identifier for optimistic concurrency control. Formatted as “v1:” where the hash is the base64url-encoded SHA-256 (truncated to 128 bits) of the tags map canonicalized using RFC 8785 (JSON Canonicalization Scheme). Clients should treat ETags as opaque strings and pass them back via the If-Match header on write operations.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Human-readable name of the resource.
+
+<a href="#">Link to this property</a>
+
+tags: map\[string]
+
+Contains key-value pairs of tags. Keys may contain at most 256 characters. Values may contain at most 1024 characters and may be empty for key-only tags.
+
+<a href="#">Link to this property</a>
+
+type: "device"
 
 <a href="#">Link to this property</a>
 

@@ -26,15 +26,15 @@ GET/accounts/{account\_id}/shares/{share\_id}/resources
 
 GET/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
-##### [Create a new share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/create)
+##### [Trigger a resource addition to a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/create)
 
 POST/accounts/{account\_id}/shares/{share\_id}/resources
 
-##### [Update a share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/update)
+##### [Trigger a resource metadata update in a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/update)
 
 PUT/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
-##### [Delete a share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/delete)
+##### [Trigger a resource deletion from a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/delete)
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 

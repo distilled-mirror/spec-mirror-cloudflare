@@ -104,7 +104,7 @@ path: optional array of string
 
 <summary>
 
-reason: optional "free\_custom\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_tier\_reconciliation\_in\_progress"or 3 more
+reason: optional "free\_custom\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
 
 </summary>
 
@@ -115,6 +115,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "free\_custom\_skills\_disabled"
+
+<a href="#">Link to this property</a>
+
+"free\_skill\_run\_disabled"
 
 <a href="#">Link to this property</a>
 

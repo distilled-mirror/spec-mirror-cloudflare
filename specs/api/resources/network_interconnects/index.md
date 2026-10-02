@@ -169,12 +169,10 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI.
+The BGP mode for a CNI. One of the following:
 
-Controls the customer-facing data path:
-
-- <code>DynamicRouteExchange</code> — Full BGP: routes flow through to conduit via CRE / bgp-bridge / bgp-bridge-receiver.
-- <code>AdvertiseOnly</code> — static advertisement via taserver, no routes exchanged with Conduit
+- <code>dynamic_route_exchange</code>
+- <code>advertise_only</code>
 
 </summary>
 
@@ -327,12 +325,10 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI.
+The BGP mode for a CNI. One of the following:
 
-Controls the customer-facing data path:
-
-- <code>DynamicRouteExchange</code> — Full BGP: routes flow through to conduit via CRE / bgp-bridge / bgp-bridge-receiver.
-- <code>AdvertiseOnly</code> — static advertisement via taserver, no routes exchanged with Conduit
+- <code>dynamic_route_exchange</code>
+- <code>advertise_only</code>
 
 </summary>
 
@@ -475,12 +471,10 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI.
+The BGP mode for a CNI. One of the following:
 
-Controls the customer-facing data path:
-
-- <code>DynamicRouteExchange</code> — Full BGP: routes flow through to conduit via CRE / bgp-bridge / bgp-bridge-receiver.
-- <code>AdvertiseOnly</code> — static advertisement via taserver, no routes exchanged with Conduit
+- <code>dynamic_route_exchange</code>
+- <code>advertise_only</code>
 
 </summary>
 
@@ -623,12 +617,10 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI.
+The BGP mode for a CNI. One of the following:
 
-Controls the customer-facing data path:
-
-- <code>DynamicRouteExchange</code> — Full BGP: routes flow through to conduit via CRE / bgp-bridge / bgp-bridge-receiver.
-- <code>AdvertiseOnly</code> — static advertisement via taserver, no routes exchanged with Conduit
+- <code>dynamic_route_exchange</code>
+- <code>advertise_only</code>
 
 </summary>
 

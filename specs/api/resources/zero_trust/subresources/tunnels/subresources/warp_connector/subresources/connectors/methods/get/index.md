@@ -1,5 +1,5 @@
 ---
-title: Get WARP Connector Tunnel connector
+title: Get a Mesh node connector
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get WARP Connector Tunnel connector
+# Get a Mesh node connector
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_id}
 
-Fetches connector and connection details for a WARP Connector Tunnel.
+Fetches connector and connection details for a Mesh node.
 
 ##### Security
 
@@ -184,7 +184,7 @@ pointer: optional string
 
 result: object {id, arch, conns, 4 more }
 
-A WARP Connector client that maintains a connection to a Cloudflare data center.
+A Mesh node connector that maintains a connection to a Cloudflare data center.
 
 </summary>
 
@@ -210,7 +210,7 @@ The cloudflared OS architecture used to establish this connection.
 
 conns: optional array of object {id, client\_id, client\_version, 3 more }
 
-The WARP Connector Tunnel connections between your origin and Cloudflare’s edge.
+The Mesh node connections between your origin and Cloudflare’s edge.
 
 </summary>
 
@@ -256,7 +256,7 @@ formatdate-time
 
 origin\_ip: optional string
 
-The public IP address of the host running WARP Connector.
+The public IP address of the host running the Mesh node connector.
 
 <a href="#">Link to this property</a>
 
@@ -276,7 +276,7 @@ Features enabled for the Cloudflare Tunnel.
 
 ha\_status: optional "offline"or "passive"or "active"
 
-The HA status of a WARP Connector client.
+The HA status of a Mesh node connector.
 
 </summary>
 
@@ -322,7 +322,7 @@ Whether the API call was successful
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector.connectors%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get WARP Connector Tunnel connector
+### Get a Mesh node connector
 
 HTTP
 

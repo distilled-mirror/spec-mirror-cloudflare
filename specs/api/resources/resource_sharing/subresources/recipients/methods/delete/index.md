@@ -1,5 +1,5 @@
 ---
-title: Delete a share recipient
+title: Trigger a recipient removal from a share
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete a share recipient
+# Trigger a recipient removal from a share
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
@@ -235,7 +235,7 @@ Whether the error is terminal or will be continually retried.
 
 [Link to this property](#)%20resource_sharing.recipients%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete a share recipient
+### Trigger a recipient removal from a share
 
 HTTP
 

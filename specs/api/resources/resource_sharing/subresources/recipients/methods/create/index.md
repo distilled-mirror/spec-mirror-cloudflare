@@ -1,5 +1,5 @@
 ---
-title: Create a new share recipient
+title: Trigger a recipient addition to a share
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new share recipient
+# Trigger a recipient addition to a share
 
 POST/accounts/{account\_id}/shares/{share\_id}/recipients
 
@@ -255,7 +255,7 @@ Whether the error is terminal or will be continually retried.
 
 [Link to this property](#)%20resource_sharing.recipients%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create a new share recipient
+### Trigger a recipient addition to a share
 
 HTTP
 

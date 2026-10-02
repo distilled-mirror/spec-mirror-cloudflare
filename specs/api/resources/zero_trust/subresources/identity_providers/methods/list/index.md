@@ -190,7 +190,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)">AzureAD</a> { config, name, type, 5 more } or object {config, name, type, 5 more } or object {config, name, type, 5 more } or 12 more
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)">AzureAD</a> { config, name, type, 5 more } or object {config, name, type, 5 more } or object {config, name, type, 5 more } or 13 more
 
 </summary>
 
@@ -363,6 +363,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -690,6 +694,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -990,6 +998,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1287,6 +1299,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -1599,6 +1615,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -1954,6 +1974,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2251,6 +2275,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -2596,6 +2624,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2920,6 +2952,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3238,6 +3274,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3553,6 +3593,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -3936,6 +3980,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4236,6 +4284,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"passkeys"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4525,6 +4577,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 
@@ -4823,6 +4879,312 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+read\_only: optional boolean
+
+Indicates that the identity provider is immutable and cannot be updated or deleted via the API.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+saml\_certificate\_set: optional object {created\_at, uid, updated\_at, 2 more }
+
+The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
+
+</summary>
+
+created\_at: string
+
+Timestamp when the certificate set was created
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+uid: string
+
+Unique identifier for the certificate set
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+Timestamp when the certificate set was last updated (e.g., during rotation)
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+current\_certificate: optional object {is\_current, not\_after, public\_certificate, uid }
+
+The currently active certificate used for encrypting SAML assertions
+
+</summary>
+
+is\_current: boolean
+
+Indicates whether this is the currently active certificate
+
+<a href="#">Link to this property</a>
+
+not\_after: string
+
+Certificate expiration date. Certificates are automatically rotated 30 days before expiration.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+public\_certificate: string
+
+PEM-encoded X.509 certificate containing the public key. Configure this certificate in your external SAML Identity Provider to enable encryption.
+
+<a href="#">Link to this property</a>
+
+uid: string
+
+Unique identifier for the certificate
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+previous\_certificate: optional unknown
+
+The previous certificate, maintained during rotation to ensure continuity. Null if no rotation has occurred. Mirrors the structure of <code>saml_certificate</code>.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+saml\_certificate\_set\_id: optional string
+
+The UID of the SAML encryption certificate set assigned to this Identity Provider. Only present for SAML identity providers with encryption configured. Create a certificate set via POST to <code>/identity_providers/{id}/saml_certificate</code>.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scim\_config: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_scim_config%20%3E%20(schema)">IdentityProviderSCIMConfig</a> { enabled, identity\_update\_behavior, scim\_base\_url, 3 more }
+
+The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider.
+
+</summary>
+
+enabled: optional boolean
+
+A flag to enable or disable SCIM for the identity provider.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+identity\_update\_behavior: optional "automatic"or "reauth"or "no\_action"
+
+Indicates how a SCIM event updates a user identity used for policy evaluation. Use “automatic” to automatically update a user’s identity and augment it with fields from the SCIM user resource. Use “reauth” to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With “reauth” identities will not contain fields from the SCIM user resource. With “no\_action” identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
+
+</summary>
+
+One of the following:
+
+"automatic"
+
+<a href="#">Link to this property</a>
+
+"reauth"
+
+<a href="#">Link to this property</a>
+
+"no\_action"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+scim\_base\_url: optional string
+
+The base URL of Cloudflare’s SCIM V2.0 API endpoint.
+
+<a href="#">Link to this property</a>
+
+seat\_deprovision: optional boolean
+
+A flag to remove a user’s seat in Zero Trust when they have been deprovisioned in the Identity Provider. This cannot be enabled unless user\_deprovision is also enabled.
+
+<a href="#">Link to this property</a>
+
+secret: optional string
+
+A read-only token generated when the SCIM integration is enabled for the first time. It is redacted on subsequent requests. If you lose this you will need to refresh it at /access/identity\_providers/:idpID/refresh\_scim\_secret.
+
+<a href="#">Link to this property</a>
+
+user\_deprovision: optional boolean
+
+A flag to enable revoking a user’s session in Access and Gateway when they have been deprovisioned in the Identity Provider.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessPasskeys object {config, name, type, 5 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+config: object {login\_page\_auto\_prompt, redirect\_url }
+
+The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
+
+</summary>
+
+login\_page\_auto\_prompt: optional boolean
+
+When enabled, the Access login page automatically prompts the user to authenticate with a passkey.
+
+<a href="#">Link to this property</a>
+
+redirect\_url: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The name of the identity provider, shown to users on the login page.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_type%20%3E%20(schema)">IdentityProviderType</a>
+
+The type of identity provider. To determine the value for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
+
+</summary>
+
+One of the following:
+
+"onetimepin"
+
+<a href="#">Link to this property</a>
+
+"azureAD"
+
+<a href="#">Link to this property</a>
+
+"saml"
+
+<a href="#">Link to this property</a>
+
+"centrify"
+
+<a href="#">Link to this property</a>
+
+"facebook"
+
+<a href="#">Link to this property</a>
+
+"github"
+
+<a href="#">Link to this property</a>
+
+"google-apps"
+
+<a href="#">Link to this property</a>
+
+"google"
+
+<a href="#">Link to this property</a>
+
+"linkedin"
+
+<a href="#">Link to this property</a>
+
+"oidc"
+
+<a href="#">Link to this property</a>
+
+"okta"
+
+<a href="#">Link to this property</a>
+
+"onelogin"
+
+<a href="#">Link to this property</a>
+
+"pingone"
+
+<a href="#">Link to this property</a>
+
+"yandex"
+
+<a href="#">Link to this property</a>
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"passkeys"
 
 <a href="#">Link to this property</a>
 

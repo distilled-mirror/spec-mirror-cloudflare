@@ -954,7 +954,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-word\_list: unknown
+word\_list: array of string
 
 <a href="#">Link to this property</a>
 
@@ -1718,7 +1718,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-word\_list: unknown
+word\_list: array of string
 
 <a href="#">Link to this property</a>
 

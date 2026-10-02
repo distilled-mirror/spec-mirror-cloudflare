@@ -538,7 +538,7 @@ List of field names to be included in the Logpush output. For the moment, there 
 
 merge\_subrequests: optional boolean
 
-If set to true, subrequests will be merged into the parent request. Only supported for the <code>http_requests</code> dataset.
+If set to true, subrequests will be merged into the parent request. Only supported for the <code>http_requests</code> dataset. Not supported for account-scoped jobs.
 
 <a href="#">Link to this property</a>
 

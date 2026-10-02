@@ -1,5 +1,5 @@
 ---
-title: Delete a share resource
+title: Trigger a resource deletion from a share
 ---
 
 [Skip to content](#_top)
@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete a share resource
+# Trigger a resource deletion from a share
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
@@ -248,7 +248,7 @@ One of the following:
 
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Delete a share resource
+### Trigger a resource deletion from a share
 
 HTTP
 

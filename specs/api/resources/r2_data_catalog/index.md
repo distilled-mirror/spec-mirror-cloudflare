@@ -294,7 +294,7 @@ One of the following:
 
 R2DataCatalogGetResponse object {id, bucket, name, 3 more }
 
-Contains R2 Data Catalog information.
+Contains catalog information.
 
 </summary>
 

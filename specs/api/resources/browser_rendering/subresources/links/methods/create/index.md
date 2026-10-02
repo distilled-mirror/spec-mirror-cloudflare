@@ -68,6 +68,12 @@ Account ID.
 
 ##### Q uery ParametersExpand Collapse
 
+browser: optional "kitesurf"
+
+Rendering backend. Set to `kitesurf` to use Kitesurf (beta).
+
+[Link to this property](#)%20browser_rendering.links%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20browser%20%3E%20(schema)>)
+
 cacheTTL: optional number
 
 Cache TTL default is 5s. Set to 0 to disable.

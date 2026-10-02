@@ -1,5 +1,5 @@
 ---
-title: Create a new share
+title: Trigger a share creation
 ---
 
 [Skip to content](#_top)
@@ -16,7 +16,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a new share
+# Trigger a share creation
 
 POST/accounts/{account\_id}/shares
 
@@ -514,7 +514,7 @@ One of the following:
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Create a new share
+### Trigger a share creation
 
 HTTP
 

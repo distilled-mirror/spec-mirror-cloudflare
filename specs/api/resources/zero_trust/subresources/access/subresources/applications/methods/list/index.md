@@ -1,82 +1,138 @@
+---
+title: List Access applications
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+[Zero Trust](https://developers.cloudflare.com/api/resources/zero_trust)
+
+[Access](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access)
+
+[Applications](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
 # List Access applications
 
-GET/{accounts_or_zones}/{account_or_zone_id}/access/apps
+GET/{accounts\_or\_zones}/{account\_or\_zone\_id}/access/apps
 
 Lists all Access applications in an account or zone.
 
-##### Path Parameters
+##### Security
 
-account_id: optional string
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
+
+The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
+
+**Example:**<code>X-Auth-Email: user@example.com</code>
+
+The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
+
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
+
+##### Accepted Permissions (at least one required)
+
+`Access: Apps and Policies Revoke``Access: Apps and Policies Write``Access: Apps and Policies Read`
+
+##### P ath ParametersExpand Collapse
+
+account\_id: optional string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-zone_id: optional string
+zone\_id: optional string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
-##### Query Parameters
+##### Q uery ParametersExpand Collapse
 
 aud: optional string
 
 The aud of the app.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20aud%20%3E%20(schema)>)
 
 domain: optional string
 
 The domain of the app.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20domain%20%3E%20(schema)>)
 
 exact: optional boolean
 
 True for only exact string matches against passed name/domain query parameters.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20exact%20%3E%20(schema)>)
 
 name: optional string
 
 The name of the app.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
 
 page: optional number
 
 Page number of results.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
-per_page: optional number
+per\_page: optional number
 
 Number of results per page.
 
 maximum1000
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 search: optional string
 
 Search for apps by other listed query parameters.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
 
-target_attributes: optional string
+target\_attributes: optional string
 
 Target Criteria attributes in key=value format.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20target_attributes%20%3E%20(schema)>)
 
-##### Returns
+##### ReturnsExpand Collapse
 
 <details>
 
 <summary>
 
-errors: array of object { code, message, documentation_url, source }
+errors: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -84,41 +140,41 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
 
 <details>
 
 <summary>
 
-messages: array of object { code, message, documentation_url, source }
+messages: array of object {code, message, documentation\_url, source }
 
 </summary>
 
@@ -126,47 +182,47 @@ code: number
 
 minimum1000
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-documentation_url: optional string
+documentation\_url: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { pointer }
+source: optional object {pointer }
 
 </summary>
 
 pointer: optional string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)
+[Link to this property](#)%20zero_trust.access.applications%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
 <details>
 
 <summary>
 
-result: optional array of object { domain, type, id, 31 more } or object { id, allowed_idps, app_launcher_visible, 10 more } or object { domain, type, id, 31 more } or 10 more
+result: optional array of object {oauth\_configuration, type, user\_populations, 7 more } or object {domain, type, id, 31 more } or object {id, allowed\_idps, app\_launcher\_visible, 10 more } or 11 more
 
 </summary>
 
@@ -176,21 +232,99 @@ One of the following:
 
 <summary>
 
-SelfHostedApplication object { domain, type, id, 31 more }
+EndUserApplication object {oauth\_configuration, type, user\_populations, 7 more }
 
 </summary>
-
-domain: string
-
-The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
-
-[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
+oauth\_configuration: object {dynamic\_client\_registration, enabled, grant }
+
+**Beta:** Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support <a href="https://datatracker.ietf.org/doc/html/rfc8707">RFC 8707</a> (Resource Indicators for OAuth 2.0). This feature is currently in beta.
+
+</summary>
+
+<details>
+
+<summary>
+
+dynamic\_client\_registration: optional object {allow\_any\_on\_localhost, allow\_any\_on\_loopback, allowed\_uris, enabled }
+
+Settings for OAuth dynamic client registration.
+
+</summary>
+
+allow\_any\_on\_localhost: optional boolean
+
+Allows any client with redirect URIs on localhost.
+
+<a href="#">Link to this property</a>
+
+allow\_any\_on\_loopback: optional boolean
+
+Allows any client with redirect URIs on 127.0.0.1.
+
+<a href="#">Link to this property</a>
+
+allowed\_uris: optional array of string
+
+The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in <code>/*</code> to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether dynamic client registration is enabled.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+enabled: optional true
+
+Managed OAuth is required for end user applications and cannot be disabled.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+grant: optional object {access\_token\_lifetime, session\_duration }
+
+Settings for OAuth grant behavior.
+
+</summary>
+
+access\_token\_lifetime: optional string
+
+The lifetime of the access token. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
+
+<a href="#">Link to this property</a>
+
+session\_duration: optional string
+
+The duration of the OAuth session. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: "self\_hosted"or "end\_user"or "saas"or 12 more
 
 The application type.
 
@@ -198,65 +332,75 @@ The application type.
 
 One of the following:
 
-"self_hosted"
+"self\_hosted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
 
 "saas"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "ssh"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "vnc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"app_launcher"
+"app\_launcher"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "warp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bookmark"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_sso"
+"dash\_sso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "infrastructure"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "rdp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "mcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"mcp_portal"
+"mcp\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"proxy_endpoint"
+"proxy\_endpoint"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+user\_populations: array of string
+
+The single user population associated with this application.
+
+<a href="#">Link to this property</a>
 
 id: optional string
 
@@ -264,31 +408,13 @@ UUID.
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_authenticate_via_warp: optional boolean
-
-When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
-
-[Link to this property](#)
-
-allow_iframe: optional boolean
-
-Enables loading application content in an iFrame.
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
 
 The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
 
-[Link to this property](#)
-
-app_launcher_visible: optional boolean
-
-Displays the application in the App Launcher.
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 aud: optional string
 
@@ -296,57 +422,463 @@ Audience tag.
 
 maxLength64
 
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cors_headers: optional [CORSHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)) { allow_all_headers, allow_all_methods, allow_all_origins, 5 more }
+destinations: optional array of object {uri, overrides, type } or object {type, worker\_id, overrides } or object {type, worker\_id, overrides } or 2 more
+
+Public hostname and Workers destinations secured by Access.
 
 </summary>
 
-allow_all_headers: optional boolean
-
-Allows all HTTP request headers.
-
-[Link to this property](#)
-
-allow_all_methods: optional boolean
-
-Allows all HTTP request methods.
-
-[Link to this property](#)
-
-allow_all_origins: optional boolean
-
-Allows all origins.
-
-[Link to this property](#)
-
-allow_credentials: optional boolean
-
-When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
-
-[Link to this property](#)
-
-allowed_headers: optional array of [AllowedHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema))
-
-Allowed HTTP request headers.
-
-[Link to this property](#)
+One of the following:
 
 <details>
 
 <summary>
 
-allowed_methods: optional array of [AllowedMethods](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema))
+AccessEndUserPublicDestination object {uri, overrides, type }
+
+</summary>
+
+uri: string
+
+The public hostname and optional path to secure.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional array of object {behavior, path\_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+<a href="#">Link to this property</a>
+
+path\_pattern: string
+
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: optional "public"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessEndUserWorkerDestination object {type, worker\_id, overrides }
+
+</summary>
+
+type: "worker"
+
+<a href="#">Link to this property</a>
+
+worker\_id: string
+
+The ID of the Cloudflare Worker to secure.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional array of object {behavior, path\_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+<a href="#">Link to this property</a>
+
+path\_pattern: string
+
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessEndUserPreviewWorkerDestination object {type, worker\_id, overrides }
+
+</summary>
+
+type: "preview\_worker"
+
+<a href="#">Link to this property</a>
+
+worker\_id: string
+
+The ID of the Cloudflare Worker whose previews to secure.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional array of object {behavior, path\_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+<a href="#">Link to this property</a>
+
+path\_pattern: string
+
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessEndUserAllWorkersDestination object {type, overrides }
+
+</summary>
+
+type: "all\_workers"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional array of object {behavior, path\_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+<a href="#">Link to this property</a>
+
+path\_pattern: string
+
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessEndUserAllPreviewWorkersDestination object {type, overrides }
+
+</summary>
+
+type: "all\_preview\_workers"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional array of object {behavior, path\_pattern }
+
+Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+<a href="#">Link to this property</a>
+
+path\_pattern: string
+
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+domain: optional string
+
+The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+The name of the application.
+
+<a href="#">Link to this property</a>
+
+Deprecatedself\_hosted\_domains: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema)">SelfHostedDomains</a>
+
+List of public domains that Access will secure. This field is deprecated in favor of <code>destinations</code> and will be supported until **November 21, 2025.** If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+SelfHostedApplication object {domain, type, id, 31 more }
+
+</summary>
+
+domain: string
+
+The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema)">ApplicationType</a>
+
+The application type.
+
+</summary>
+
+One of the following:
+
+"self\_hosted"
+
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
+
+"saas"
+
+<a href="#">Link to this property</a>
+
+"ssh"
+
+<a href="#">Link to this property</a>
+
+"vnc"
+
+<a href="#">Link to this property</a>
+
+"app\_launcher"
+
+<a href="#">Link to this property</a>
+
+"warp"
+
+<a href="#">Link to this property</a>
+
+"biso"
+
+<a href="#">Link to this property</a>
+
+"bookmark"
+
+<a href="#">Link to this property</a>
+
+"dash\_sso"
+
+<a href="#">Link to this property</a>
+
+"infrastructure"
+
+<a href="#">Link to this property</a>
+
+"rdp"
+
+<a href="#">Link to this property</a>
+
+"mcp"
+
+<a href="#">Link to this property</a>
+
+"mcp\_portal"
+
+<a href="#">Link to this property</a>
+
+"proxy\_endpoint"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+allow\_authenticate\_via\_warp: optional boolean
+
+When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
+
+<a href="#">Link to this property</a>
+
+allow\_iframe: optional boolean
+
+Enables loading application content in an iFrame.
+
+<a href="#">Link to this property</a>
+
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
+
+The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
+
+<a href="#">Link to this property</a>
+
+app\_launcher\_visible: optional boolean
+
+Displays the application in the App Launcher.
+
+<a href="#">Link to this property</a>
+
+aud: optional string
+
+Audience tag.
+
+maxLength64
+
+<a href="#">Link to this property</a>
+
+auto\_redirect\_to\_identity: optional boolean
+
+When set to <code>true</code>, users skip the identity provider selection step during login. You must specify only one identity provider in allowed\_idps.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+cors\_headers: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)">CORSHeaders</a> { allow\_all\_headers, allow\_all\_methods, allow\_all\_origins, 5 more }
+
+</summary>
+
+allow\_all\_headers: optional boolean
+
+Allows all HTTP request headers.
+
+<a href="#">Link to this property</a>
+
+allow\_all\_methods: optional boolean
+
+Allows all HTTP request methods.
+
+<a href="#">Link to this property</a>
+
+allow\_all\_origins: optional boolean
+
+Allows all origins.
+
+<a href="#">Link to this property</a>
+
+allow\_credentials: optional boolean
+
+When set to <code>true</code>, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
+
+<a href="#">Link to this property</a>
+
+allowed\_headers: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema)">AllowedHeaders</a>
+
+Allowed HTTP request headers.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+allowed\_methods: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema)">AllowedMethods</a>
 
 Allowed HTTP request methods.
 
@@ -356,51 +888,51 @@ One of the following:
 
 "GET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "POST"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HEAD"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PUT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DELETE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CONNECT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OPTIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "TRACE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PATCH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_origins: optional array of [AllowedOrigins](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema))
+allowed\_origins: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema)">AllowedOrigins</a>
 
 Allowed origins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-max_age: optional number
+max\_age: optional number
 
 The maximum number of seconds the results of a preflight request can be cached.
 
@@ -408,43 +940,43 @@ maximum86400
 
 minimum-1
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_message: optional string
+custom\_deny\_message: optional string
 
 The custom error message shown to a user when they are denied access to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_url: optional string
+custom\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_non_identity_deny_url: optional string
+custom\_non\_identity\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_pages: optional array of string
+custom\_pages: optional array of string
 
 The custom pages that will be displayed when applicable for this application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object {overrides, type, uri } or object {cidr, hostname, l4\_protocol, 3 more } or object {mcp\_server\_id, type } or 4 more
 
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+List of destinations secured by Access. This supersedes <code>self_hosted_domains</code> to allow for more flexibility in defining different types of domains. If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
 
 </summary>
 
@@ -454,9 +986,9 @@ One of the following:
 
 <summary>
 
-PublicDestination object { overrides, type, uri }
+PublicDestination object {overrides, type, uri }
 
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
+A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’\*’ can be used in the definition.
 
 </summary>
 
@@ -464,7 +996,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -474,39 +1006,39 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "public"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 uri: optional string
 
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
+The URI of the destination. Public destinations’ URIs can include a domain and path with <a href="https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/">wildcards</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
+PrivateDestination object {cidr, hostname, l4\_protocol, 3 more }
 
 </summary>
 
@@ -514,19 +1046,19 @@ cidr: optional string
 
 The CIDR range of the destination. Single IPs will be computed as /32.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hostname: optional string
 
 The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-l4_protocol: optional "tcp" or "udp"
+l4\_protocol: optional "tcp"or "udp"
 
 The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
 
@@ -536,85 +1068,85 @@ One of the following:
 
 "tcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "udp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-port_range: optional string
+port\_range: optional string
 
 The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "private"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-vnet_id: optional string
+vnet\_id: optional string
 
 The VNET ID to match the destination. When omitted, all VNETs will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ViaMcpServerPortalDestination object { mcp_server_id, type }
+ViaMcpServerPortalDestination object {mcp\_server\_id, type }
 
 A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
 
 </summary>
 
-mcp_server_id: optional string
+mcp\_server\_id: optional string
 
 The MCP server id configured in ai-controls.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: optional "via_mcp_server_portal"
+type: optional "via\_mcp\_server\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkerDestination object { type, worker_id, overrides }
+WorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
+A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The <code>preview_worker</code> and <code>public</code> destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
 </summary>
 
 type: "worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -624,49 +1156,49 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id, overrides }
+PreviewWorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
+A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The <code>public</code> destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
 </summary>
 
-type: "preview_worker"
+type: "preview\_worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker whose preview deployments to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -676,43 +1208,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllWorkersDestination object { type, overrides }
+AllWorkersDestination object {type, overrides }
 
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, <code>all_preview_workers</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_workers"
+type: "all\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -722,43 +1254,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllPreviewWorkersDestination object { type, overrides }
+AllPreviewWorkersDestination object {type, overrides }
 
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_preview_workers"
+type: "all\_preview\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -768,57 +1300,57 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-eager_redirect_cookie_setting: optional boolean
+eager\_redirect\_cookie\_setting: optional boolean
 
 Preemptively sets the Access session cookie on every hostname in a multi-hostname self-hosted application during the initial redirect chain, rather than setting it lazily on first visit. Defaults to true. Set to false to disable the eager redirect cookie behavior.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-enable_binding_cookie: optional boolean
+enable\_binding\_cookie: optional boolean
 
 Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-http_only_cookie_attribute: optional boolean
+http\_only\_cookie\_attribute: optional boolean
 
 Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-logo_url: optional string
+logo\_url: optional string
 
 The image URL for the logo shown in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -828,7 +1360,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -838,49 +1370,49 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
+oauth\_configuration: optional object {dynamic\_client\_registration, enabled, grant }
 
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
+**Beta:** Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support <a href="https://datatracker.ietf.org/doc/html/rfc8707">RFC 8707</a> (Resource Indicators for OAuth 2.0). This feature is currently in beta.
 
 </summary>
 
@@ -888,93 +1420,93 @@ Beta: Optional configuration for managing an OAuth authorization flow controlled
 
 <summary>
 
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
+dynamic\_client\_registration: optional object {allow\_any\_on\_localhost, allow\_any\_on\_loopback, allowed\_uris, enabled }
 
 Settings for OAuth dynamic client registration.
 
 </summary>
 
-allow_any_on_localhost: optional boolean
+allow\_any\_on\_localhost: optional boolean
 
 Allows any client with redirect URIs on localhost.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_any_on_loopback: optional boolean
+allow\_any\_on\_loopback: optional boolean
 
 Allows any client with redirect URIs on 127.0.0.1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_uris: optional array of string
+allowed\_uris: optional array of string
 
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
+The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in <code>/*</code> to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether dynamic client registration is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
+Whether the OAuth configuration is enabled for this application. When set to <code>false</code>, Access will not handle OAuth for this application. Defaults to <code>true</code> if omitted.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-grant: optional object { access_token_lifetime, session_duration }
+grant: optional object {access\_token\_lifetime, session\_duration }
 
 Settings for OAuth grant behavior.
 
 </summary>
 
-access_token_lifetime: optional string
+access\_token\_lifetime: optional string
 
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The lifetime of the access token. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The duration of the OAuth session. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-options_preflight_bypass: optional boolean
+</details>
 
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+options\_preflight\_bypass: optional boolean
 
-path_cookie_attribute: optional boolean
+Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors\_headers is set.
+
+<a href="#">Link to this property</a>
+
+path\_cookie\_attribute: optional boolean
 
 Enables cookie paths to scope an application’s JWT to the application path. If disabled, the JWT will scope to the hostname by default
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object {id, account\_id, approval\_groups, 15 more }
 
 </summary>
 
@@ -984,61 +1516,61 @@ The UUID of the policy
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
+approval\_groups: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)">ApprovalGroup</a> { approvals\_needed, email\_addresses, email\_list\_uuid }
 
 Administrators who can approve a temporary authentication request.
 
 </summary>
 
-approvals_needed: number
+approvals\_needed: number
 
 The number of approvals needed to obtain access.
 
 minimum0
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_addresses: optional array of string
+email\_addresses: optional array of string
 
 A list of emails that can approve the access request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_list_uuid: optional string
+email\_list\_uuid: optional string
 
 The UUID of an re-usable email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-approval_required: optional boolean
+approval\_required: optional boolean
 
 Requires the user to request access from an administrator at the start of each session.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-connection_rules: optional object { rdp }
+connection\_rules: optional object {rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -1048,7 +1580,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
+rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -1058,7 +1590,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -1068,21 +1600,21 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -1092,35 +1624,35 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_at: optional string
+created\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
+decision: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema)">Decision</a>
 
 The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
 
@@ -1130,29 +1662,29 @@ One of the following:
 
 "allow"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deny"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"non_identity"
+"non\_identity"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bypass"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
 
@@ -1164,7 +1696,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -1174,7 +1706,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -1182,41 +1714,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -1226,7 +1758,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -1234,33 +1766,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -1270,29 +1802,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -1302,7 +1834,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -1310,45 +1842,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -1358,29 +1890,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -1390,29 +1922,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -1422,37 +1954,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -1462,7 +1994,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -1470,21 +2002,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -1494,7 +2026,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -1502,21 +2034,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -1526,7 +2058,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -1536,41 +2068,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -1580,35 +2112,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -1618,41 +2150,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -1662,7 +2194,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -1670,27 +2202,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -1700,7 +2232,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -1708,21 +2240,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -1732,7 +2264,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -1740,21 +2272,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -1764,7 +2296,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -1772,21 +2304,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -1796,35 +2328,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -1834,41 +2366,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -1878,41 +2410,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -1922,31 +2454,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -1954,29 +2486,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -1986,7 +2518,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -1994,7 +2526,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -2004,37 +2536,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -2044,35 +2576,35 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+include: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 
@@ -2084,7 +2616,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -2094,7 +2626,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -2102,41 +2634,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -2146,7 +2678,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -2154,33 +2686,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -2190,29 +2722,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -2222,7 +2754,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -2230,45 +2762,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -2278,29 +2810,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -2310,29 +2842,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -2342,37 +2874,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -2382,7 +2914,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -2390,21 +2922,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -2414,7 +2946,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -2422,21 +2954,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -2446,7 +2978,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -2456,41 +2988,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -2500,35 +3032,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -2538,41 +3070,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -2582,7 +3114,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -2590,27 +3122,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -2620,7 +3152,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -2628,21 +3160,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -2652,7 +3184,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -2660,21 +3192,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -2684,7 +3216,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -2692,21 +3224,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -2716,35 +3248,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -2754,41 +3286,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -2798,41 +3330,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -2842,31 +3374,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -2874,29 +3406,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -2906,7 +3438,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -2914,7 +3446,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -2924,37 +3456,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -2964,41 +3496,41 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-isolation_required: optional boolean
+isolation\_required: optional boolean
 
 Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -3008,7 +3540,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -3018,65 +3550,65 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the Access policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_prompt: optional string
+purpose\_justification\_prompt: optional string
 
 A custom message that will appear on the purpose justification screen.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_required: optional boolean
+purpose\_justification\_required: optional boolean
 
 Require users to enter a justification when they log in to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+require: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
 
@@ -3088,7 +3620,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -3098,7 +3630,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -3106,41 +3638,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -3150,7 +3682,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -3158,33 +3690,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -3194,29 +3726,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -3226,7 +3758,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -3234,45 +3766,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -3282,29 +3814,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -3314,29 +3846,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -3346,37 +3878,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -3386,7 +3918,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -3394,21 +3926,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -3418,7 +3950,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -3426,21 +3958,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -3450,7 +3982,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -3460,41 +3992,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -3504,35 +4036,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -3542,41 +4074,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -3586,7 +4118,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -3594,27 +4126,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -3624,7 +4156,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -3632,21 +4164,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -3656,7 +4188,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -3664,21 +4196,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -3688,7 +4220,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -3696,21 +4228,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -3720,35 +4252,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -3758,41 +4290,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -3802,41 +4334,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -3846,31 +4378,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -3878,29 +4410,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -3910,7 +4442,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -3918,7 +4450,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -3928,37 +4460,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -3968,85 +4500,85 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+The amount of time that tokens issued for the application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-updated_at: optional string
+updated\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-read_service_tokens_from_header: optional string
+read\_service\_tokens\_from\_header: optional string
 
 Allows matching Access Service Tokens passed HTTP in a single header with this name. This works as an alternative to the (CF-Access-Client-Id, CF-Access-Client-Secret) pair of headers. The header value will be interpreted as a json object similar to: { “cf-access-client-id”: “88bf3b6d86161464f6509f7219099e57.access.example.com”, “cf-access-client-secret”: “bdd31cbc4dec990953e39163fbbb194c93313ca9f0a6e420346af9d326b1d2a5” }
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-same_site_cookie_attribute: optional string
+same\_site\_cookie\_attribute: optional string
 
 Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
+scim\_config: optional object {idp\_uid, remote\_uri, authentication, 3 more }
 
 Configuration for provisioning to this application via SCIM. This is currently in closed beta.
 
 </summary>
 
-idp_uid: string
+idp\_uid: string
 
 The UID of the IdP to use as the source for SCIM resources to provision to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-remote_uri: string
+remote\_uri: string
 
 The base URI for the application’s SCIM-compatible API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
+authentication: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or 2 more
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -4058,7 +4590,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -4068,29 +4600,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -4100,105 +4632,105 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
+AccessSCIMConfigMultiAuthentication = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or object {client\_id, client\_secret, scheme }
 
 Multiple authentication schemes
 
@@ -4210,7 +4742,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -4220,29 +4752,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -4252,125 +4784,125 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-deactivate_on_delete: optional boolean
+deactivate\_on\_delete: optional boolean
 
 If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether SCIM provisioning is turned on for this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
+mappings: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)">SCIMConfigMapping</a> { schema, enabled, filter, 3 more }
 
 A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
 
@@ -4380,25 +4912,25 @@ schema: string
 
 Which SCIM resource type this mapping applies to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether or not this mapping is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 filter: optional string
 
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
+A <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">SCIM filter expression</a> that matches resources that should be provisioned to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-operations: optional object { create, delete, update }
+operations: optional object {create, delete, update }
 
 Whether or not this mapping applies to creates, updates, or deletes.
 
@@ -4408,29 +4940,29 @@ create: optional boolean
 
 Whether or not this mapping applies to create (POST) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 delete: optional boolean
 
 Whether or not this mapping applies to DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 update: optional boolean
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-strictness: optional "strict" or "passthrough"
+strictness: optional "strict"or "passthrough"
 
 The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
 
@@ -4440,75 +4972,75 @@ One of the following:
 
 "strict"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "passthrough"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transform_jsonata: optional string
+transform\_jsonata: optional string
 
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
+A <a href="https://jsonata.org/">JSONata</a> expression that transforms the resource before provisioning it in the application.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedself_hosted_domains: optional array of [SelfHostedDomains](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema))
+</details>
 
-List of public domains that Access will secure. This field is deprecated in favor of `destinations` and will be supported until November 21, 2025. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+Deprecatedself\_hosted\_domains: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema)">SelfHostedDomains</a>
 
-service_auth_401_redirect: optional boolean
+List of public domains that Access will secure. This field is deprecated in favor of <code>destinations</code> and will be supported until **November 21, 2025.** If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
+
+<a href="#">Link to this property</a>
+
+service\_auth\_401\_redirect: optional boolean
 
 Returns a 401 status code when the request is blocked by a Service Auth policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-skip_interstitial: optional boolean
+skip\_interstitial: optional boolean
 
 Enables automatic authentication through cloudflared.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-use_clientless_isolation_app_launcher_url: optional boolean
+use\_clientless\_isolation\_app\_launcher\_url: optional boolean
 
 Determines if users can access this application via a clientless browser isolation URL. This allows users to access private domains without connecting to Gateway. The option requires Clientless Browser Isolation to be set up with policies that allow users of this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SaaSApplication object { id, allowed_idps, app_launcher_visible, 10 more }
+SaaSApplication object {id, allowed\_idps, app\_launcher\_visible, 10 more }
 
 </summary>
 
@@ -4518,19 +5050,19 @@ UUID.
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
 
 The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-app_launcher_visible: optional boolean
+app\_launcher\_visible: optional boolean
 
 Displays the application in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 aud: optional string
 
@@ -4538,37 +5070,37 @@ Audience tag.
 
 maxLength64
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-auto_redirect_to_identity: optional boolean
+auto\_redirect\_to\_identity: optional boolean
 
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
+When set to <code>true</code>, users skip the identity provider selection step during login. You must specify only one identity provider in allowed\_idps.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_pages: optional array of string
+custom\_pages: optional array of string
 
 The custom pages that will be displayed when applicable for this application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-logo_url: optional string
+logo\_url: optional string
 
 The image URL for the logo shown in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object {id, account\_id, approval\_groups, 15 more }
 
 </summary>
 
@@ -4578,61 +5110,61 @@ The UUID of the policy
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
+approval\_groups: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)">ApprovalGroup</a> { approvals\_needed, email\_addresses, email\_list\_uuid }
 
 Administrators who can approve a temporary authentication request.
 
 </summary>
 
-approvals_needed: number
+approvals\_needed: number
 
 The number of approvals needed to obtain access.
 
 minimum0
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_addresses: optional array of string
+email\_addresses: optional array of string
 
 A list of emails that can approve the access request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_list_uuid: optional string
+email\_list\_uuid: optional string
 
 The UUID of an re-usable email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-approval_required: optional boolean
+approval\_required: optional boolean
 
 Requires the user to request access from an administrator at the start of each session.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-connection_rules: optional object { rdp }
+connection\_rules: optional object {rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -4642,7 +5174,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
+rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -4652,7 +5184,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -4662,21 +5194,21 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -4686,35 +5218,35 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_at: optional string
+created\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
+decision: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema)">Decision</a>
 
 The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
 
@@ -4724,29 +5256,29 @@ One of the following:
 
 "allow"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deny"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"non_identity"
+"non\_identity"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bypass"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
 
@@ -4758,7 +5290,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -4768,7 +5300,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -4776,41 +5308,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -4820,7 +5352,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -4828,33 +5360,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -4864,29 +5396,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -4896,7 +5428,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -4904,45 +5436,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -4952,29 +5484,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -4984,29 +5516,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -5016,37 +5548,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -5056,7 +5588,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -5064,21 +5596,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -5088,7 +5620,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -5096,21 +5628,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -5120,7 +5652,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -5130,41 +5662,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -5174,35 +5706,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -5212,41 +5744,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -5256,7 +5788,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -5264,27 +5796,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -5294,7 +5826,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -5302,21 +5834,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -5326,7 +5858,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -5334,21 +5866,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -5358,7 +5890,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -5366,21 +5898,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -5390,35 +5922,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -5428,41 +5960,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -5472,41 +6004,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -5516,31 +6048,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -5548,29 +6080,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -5580,7 +6112,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -5588,7 +6120,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -5598,37 +6130,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -5638,35 +6170,35 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+include: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 
@@ -5678,7 +6210,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -5688,7 +6220,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -5696,41 +6228,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -5740,7 +6272,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -5748,33 +6280,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -5784,29 +6316,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -5816,7 +6348,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -5824,45 +6356,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -5872,29 +6404,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -5904,29 +6436,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -5936,37 +6468,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -5976,7 +6508,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -5984,21 +6516,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -6008,7 +6540,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -6016,21 +6548,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -6040,7 +6572,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -6050,41 +6582,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -6094,35 +6626,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -6132,41 +6664,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -6176,7 +6708,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -6184,27 +6716,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -6214,7 +6746,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -6222,21 +6754,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -6246,7 +6778,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -6254,21 +6786,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -6278,7 +6810,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -6286,21 +6818,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -6310,35 +6842,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -6348,41 +6880,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -6392,41 +6924,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -6436,31 +6968,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -6468,29 +7000,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -6500,7 +7032,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -6508,7 +7040,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -6518,37 +7050,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -6558,41 +7090,41 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-isolation_required: optional boolean
+isolation\_required: optional boolean
 
 Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -6602,7 +7134,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -6612,65 +7144,65 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the Access policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_prompt: optional string
+purpose\_justification\_prompt: optional string
 
 A custom message that will appear on the purpose justification screen.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_required: optional boolean
+purpose\_justification\_required: optional boolean
 
 Require users to enter a justification when they log in to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+require: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
 
@@ -6682,7 +7214,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -6692,7 +7224,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -6700,41 +7232,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -6744,7 +7276,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -6752,33 +7284,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -6788,29 +7320,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -6820,7 +7352,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -6828,45 +7360,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -6876,29 +7408,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -6908,29 +7440,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -6940,37 +7472,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -6980,7 +7512,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -6988,21 +7520,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -7012,7 +7544,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -7020,21 +7552,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -7044,7 +7576,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -7054,41 +7586,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -7098,35 +7630,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -7136,41 +7668,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -7180,7 +7712,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -7188,27 +7720,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -7218,7 +7750,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -7226,21 +7758,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -7250,7 +7782,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -7258,21 +7790,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -7282,7 +7814,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -7290,21 +7822,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -7314,35 +7846,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -7352,41 +7884,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -7396,41 +7928,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -7440,31 +7972,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -7472,29 +8004,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -7504,7 +8036,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -7512,7 +8044,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -7522,37 +8054,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -7562,51 +8094,51 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+The amount of time that tokens issued for the application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-updated_at: optional string
+updated\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-saas_app: optional [SAMLSaaSApp](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20saml_saas_app%20%3E%20(schema)) { auth_type, consumer_service_url, custom_attributes, 8 more } or [OIDCSaaSApp](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20oidc_saas_app%20%3E%20(schema)) { access_token_lifetime, allow_pkce_without_client_secret, app_launcher_url, 11 more }
+saas\_app: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20saml_saas_app%20%3E%20(schema)">SAMLSaaSApp</a> { auth\_type, consumer\_service\_url, custom\_attributes, 8 more } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20oidc_saas_app%20%3E%20(schema)">OIDCSaaSApp</a> { access\_token\_lifetime, allow\_pkce\_without\_client\_secret, app\_launcher\_url, 11 more }
 
 </summary>
 
@@ -7616,7 +8148,7 @@ One of the following:
 
 <summary>
 
-SAMLSaaSApp object { auth_type, consumer_service_url, custom_attributes, 8 more }
+SAMLSaaSApp object {auth\_type, consumer\_service\_url, custom\_attributes, 8 more }
 
 </summary>
 
@@ -7624,7 +8156,7 @@ SAMLSaaSApp object { auth_type, consumer_service_url, custom_attributes, 8 more 
 
 <summary>
 
-auth_type: optional "saml" or "oidc"
+auth\_type: optional "saml"or "oidc"
 
 Optional identifier indicating the authentication protocol used for the saas app. Required for OIDC. Default if unset is “saml”
 
@@ -7634,47 +8166,47 @@ One of the following:
 
 "saml"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "oidc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-consumer_service_url: optional string
+consumer\_service\_url: optional string
 
 The service provider’s endpoint that is responsible for receiving and parsing a SAML assertion.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-custom_attributes: optional array of object { friendly_name, name, name_format, 2 more }
+custom\_attributes: optional array of object {friendly\_name, name, name\_format, 2 more }
 
 </summary>
 
-friendly_name: optional string
+friendly\_name: optional string
 
 The SAML FriendlyName of the attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-name_format: optional "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified" or "urn:oasis:names:tc:SAML:2.0:attrname-format:basic" or "urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
+name\_format: optional "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"or "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"or "urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
 
 A globally unique name for an identity or service provider.
 
@@ -7684,31 +8216,31 @@ One of the following:
 
 "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 required: optional boolean
 
 If the attribute is required when building a SAML assertion.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { name, name_by_idp }
+source: optional object {name, name\_by\_idp }
 
 </summary>
 
@@ -7716,59 +8248,59 @@ name: optional string
 
 The name of the IdP attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-name_by_idp: optional array of object { idp_id, source_name }
+name\_by\_idp: optional array of object {idp\_id, source\_name }
 
 A mapping from IdP ID to attribute name.
 
 </summary>
 
-idp_id: optional string
+idp\_id: optional string
 
 The UID of the IdP.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-source_name: optional string
+source\_name: optional string
 
 The name of the IdP provided attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-default_relay_state: optional string
+default\_relay\_state: optional string
 
 The URL that the user will be redirected to after a successful login for IDP initiated logins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-idp_entity_id: optional string
+idp\_entity\_id: optional string
 
 The unique identifier for your SaaS application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-name_id_format: optional [SaaSAppNameIDFormat](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20saas_app_name_id_format%20%3E%20(schema))
+name\_id\_format: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20saas_app_name_id_format%20%3E%20(schema)">SaaSAppNameIDFormat</a>
 
 The format of the name identifier sent to the SaaS application.
 
@@ -7778,81 +8310,81 @@ One of the following:
 
 "id"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "email"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-name_id_transform_jsonata: optional string
+name\_id\_transform\_jsonata: optional string
 
-A [JSONata](https://jsonata.org/) expression that transforms an application’s user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the `name_id_format` setting.
+A <a href="https://jsonata.org/">JSONata</a> expression that transforms an application’s user identities into a NameID value for its SAML assertion. This expression should evaluate to a singular string. The output of this expression can override the <code>name_id_format</code> setting.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-public_key: optional string
+public\_key: optional string
 
 The Access public certificate that will be used to verify your identity.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-saml_attribute_transform_jsonata: optional string
+saml\_attribute\_transform\_jsonata: optional string
 
-A [JSONata] (https://jsonata.org/) expression that transforms an application’s user identities into attribute assertions in the SAML response. The expression can transform id, email, name, and groups values. It can also transform fields listed in the saml_attributes or oidc_fields of the identity provider used to authenticate. The output of this expression must be a JSON object.
+A \[JSONata] (<a href="https://jsonata.org/">https://jsonata.org/</a>) expression that transforms an application’s user identities into attribute assertions in the SAML response. The expression can transform id, email, name, and groups values. It can also transform fields listed in the saml\_attributes or oidc\_fields of the identity provider used to authenticate. The output of this expression must be a JSON object.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-sp_entity_id: optional string
+sp\_entity\_id: optional string
 
 A globally unique name for an identity or service provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-sso_endpoint: optional string
+sso\_endpoint: optional string
 
 The endpoint where your SaaS application will send login requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OIDCSaaSApp object { access_token_lifetime, allow_pkce_without_client_secret, app_launcher_url, 11 more }
+OIDCSaaSApp object {access\_token\_lifetime, allow\_pkce\_without\_client\_secret, app\_launcher\_url, 11 more }
 
 </summary>
 
-access_token_lifetime: optional string
+access\_token\_lifetime: optional string
 
 The lifetime of the OIDC Access Token after creation. Valid units are m,h. Must be greater than or equal to 1m and less than or equal to 24h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_pkce_without_client_secret: optional boolean
+allow\_pkce\_without\_client\_secret: optional boolean
 
-If client secret should be required on the token endpoint when authorization_code_with_pkce grant is used.
+If client secret should be required on the token endpoint when authorization\_code\_with\_pkce grant is used.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-app_launcher_url: optional string
+app\_launcher\_url: optional string
 
 The URL where this applications tile redirects users
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-auth_type: optional "saml" or "oidc"
+auth\_type: optional "saml"or "oidc"
 
 Identifier of the authentication protocol used for the saas app. Required for OIDC.
 
@@ -7862,33 +8394,33 @@ One of the following:
 
 "saml"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "oidc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: optional string
+client\_id: optional string
 
 The application client id
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: optional string
+client\_secret: optional string
 
 The application client secret, only returned on POST request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-custom_claims: optional array of object { name, required, scope, source }
+custom\_claims: optional array of object {name, required, scope, source }
 
 </summary>
 
@@ -7896,19 +8428,19 @@ name: optional string
 
 The name of the claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 required: optional boolean
 
 If the claim is required when building an OIDC token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scope: optional "groups" or "profile" or "email" or "openid"
+scope: optional "groups"or "profile"or "email"or "openid"
 
 The scope of the claim.
 
@@ -7918,29 +8450,29 @@ One of the following:
 
 "groups"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "profile"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "email"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "openid"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source: optional object { name, name_by_idp }
+source: optional object {name, name\_by\_idp }
 
 </summary>
 
@@ -7948,27 +8480,27 @@ name: optional string
 
 The name of the IdP claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-name_by_idp: optional map[string]
+name\_by\_idp: optional map\[string]
 
 A mapping from IdP ID to claim name.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-grant_types: optional array of "authorization_code" or "authorization_code_with_pkce" or "refresh_tokens" or 2 more
+grant\_types: optional array of "authorization\_code"or "authorization\_code\_with\_pkce"or "refresh\_tokens"or 2 more
 
 The OIDC flows supported by this application
 
@@ -7976,77 +8508,77 @@ The OIDC flows supported by this application
 
 One of the following:
 
-"authorization_code"
+"authorization\_code"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"authorization_code_with_pkce"
+"authorization\_code\_with\_pkce"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"refresh_tokens"
+"refresh\_tokens"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "hybrid"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "implicit"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-group_filter_regex: optional string
+group\_filter\_regex: optional string
 
 A regex to filter Cloudflare groups returned in ID token and userinfo endpoint
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-hybrid_and_implicit_options: optional object { return_access_token_from_authorization_endpoint, return_id_token_from_authorization_endpoint }
+hybrid\_and\_implicit\_options: optional object {return\_access\_token\_from\_authorization\_endpoint, return\_id\_token\_from\_authorization\_endpoint }
 
 </summary>
 
-return_access_token_from_authorization_endpoint: optional boolean
+return\_access\_token\_from\_authorization\_endpoint: optional boolean
 
 If an Access Token should be returned from the OIDC Authorization endpoint
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-return_id_token_from_authorization_endpoint: optional boolean
+return\_id\_token\_from\_authorization\_endpoint: optional boolean
 
 If an ID Token should be returned from the OIDC Authorization endpoint
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-public_key: optional string
+public\_key: optional string
 
 The Access public certificate that will be used to verify your identity.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-redirect_uris: optional array of string
+redirect\_uris: optional array of string
 
 The permitted URL’s for Cloudflare to return Authorization codes and Access/ID tokens
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-refresh_token_options: optional object { lifetime }
+refresh\_token\_options: optional object {lifetime }
 
 </summary>
 
@@ -8054,19 +8586,19 @@ lifetime: optional string
 
 How long a refresh token will be valid for after creation. Valid units are m,h,d. Must be longer than 1m.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scopes: optional array of "openid" or "groups" or "email" or "profile"
+scopes: optional array of "openid"or "groups"or "email"or "profile"
 
-Define the user information shared with access, “offline_access” scope will be automatically enabled if refresh tokens are enabled
+Define the user information shared with access, “offline\_access” scope will be automatically enabled if refresh tokens are enabled
 
 </summary>
 
@@ -8074,59 +8606,59 @@ One of the following:
 
 "openid"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "groups"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "email"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "profile"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
+scim\_config: optional object {idp\_uid, remote\_uri, authentication, 3 more }
 
 Configuration for provisioning to this application via SCIM. This is currently in closed beta.
 
 </summary>
 
-idp_uid: string
+idp\_uid: string
 
 The UID of the IdP to use as the source for SCIM resources to provision to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-remote_uri: string
+remote\_uri: string
 
 The base URI for the application’s SCIM-compatible API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
+authentication: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or 2 more
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -8138,7 +8670,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -8148,29 +8680,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -8180,105 +8712,105 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
+AccessSCIMConfigMultiAuthentication = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or object {client\_id, client\_secret, scheme }
 
 Multiple authentication schemes
 
@@ -8290,7 +8822,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -8300,29 +8832,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -8332,125 +8864,125 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-deactivate_on_delete: optional boolean
+deactivate\_on\_delete: optional boolean
 
 If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether SCIM provisioning is turned on for this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
+mappings: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)">SCIMConfigMapping</a> { schema, enabled, filter, 3 more }
 
 A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
 
@@ -8460,25 +8992,25 @@ schema: string
 
 Which SCIM resource type this mapping applies to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether or not this mapping is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 filter: optional string
 
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
+A <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">SCIM filter expression</a> that matches resources that should be provisioned to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-operations: optional object { create, delete, update }
+operations: optional object {create, delete, update }
 
 Whether or not this mapping applies to creates, updates, or deletes.
 
@@ -8488,29 +9020,29 @@ create: optional boolean
 
 Whether or not this mapping applies to create (POST) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 delete: optional boolean
 
 Whether or not this mapping applies to DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 update: optional boolean
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-strictness: optional "strict" or "passthrough"
+strictness: optional "strict"or "passthrough"
 
 The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
 
@@ -8520,41 +9052,41 @@ One of the following:
 
 "strict"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "passthrough"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transform_jsonata: optional string
+transform\_jsonata: optional string
 
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
+A <a href="https://jsonata.org/">JSONata</a> expression that transforms the resource before provisioning it in the application.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-type: optional [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
+type: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema)">ApplicationType</a>
 
 The application type.
 
@@ -8562,75 +9094,79 @@ The application type.
 
 One of the following:
 
-"self_hosted"
+"self\_hosted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
 
 "saas"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "ssh"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "vnc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"app_launcher"
+"app\_launcher"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "warp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bookmark"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_sso"
+"dash\_sso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "infrastructure"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "rdp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "mcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"mcp_portal"
+"mcp\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"proxy_endpoint"
+"proxy\_endpoint"
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-BrowserSSHApplication object { domain, type, id, 31 more }
+BrowserSSHApplication object {domain, type, id, 31 more }
 
 </summary>
 
@@ -8638,13 +9174,13 @@ domain: string
 
 The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-type: "self_hosted" or "saas" or "ssh" or 11 more
+type: "self\_hosted"or "end\_user"or "saas"or 12 more
 
 The application type.
 
@@ -8652,65 +9188,69 @@ The application type.
 
 One of the following:
 
-"self_hosted"
+"self\_hosted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
 
 "saas"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "ssh"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "vnc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"app_launcher"
+"app\_launcher"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "warp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bookmark"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_sso"
+"dash\_sso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "infrastructure"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "rdp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "mcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"mcp_portal"
+"mcp\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"proxy_endpoint"
+"proxy\_endpoint"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
@@ -8718,31 +9258,31 @@ UUID.
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_authenticate_via_warp: optional boolean
+allow\_authenticate\_via\_warp: optional boolean
 
 When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_iframe: optional boolean
+allow\_iframe: optional boolean
 
 Enables loading application content in an iFrame.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
 
 The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-app_launcher_visible: optional boolean
+app\_launcher\_visible: optional boolean
 
 Displays the application in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 aud: optional string
 
@@ -8750,57 +9290,57 @@ Audience tag.
 
 maxLength64
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-auto_redirect_to_identity: optional boolean
+auto\_redirect\_to\_identity: optional boolean
 
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
+When set to <code>true</code>, users skip the identity provider selection step during login. You must specify only one identity provider in allowed\_idps.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cors_headers: optional [CORSHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)) { allow_all_headers, allow_all_methods, allow_all_origins, 5 more }
+cors\_headers: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)">CORSHeaders</a> { allow\_all\_headers, allow\_all\_methods, allow\_all\_origins, 5 more }
 
 </summary>
 
-allow_all_headers: optional boolean
+allow\_all\_headers: optional boolean
 
 Allows all HTTP request headers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_all_methods: optional boolean
+allow\_all\_methods: optional boolean
 
 Allows all HTTP request methods.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_all_origins: optional boolean
+allow\_all\_origins: optional boolean
 
 Allows all origins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_credentials: optional boolean
+allow\_credentials: optional boolean
 
-When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
+When set to <code>true</code>, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_headers: optional array of [AllowedHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema))
+allowed\_headers: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema)">AllowedHeaders</a>
 
 Allowed HTTP request headers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_methods: optional array of [AllowedMethods](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema))
+allowed\_methods: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema)">AllowedMethods</a>
 
 Allowed HTTP request methods.
 
@@ -8810,51 +9350,51 @@ One of the following:
 
 "GET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "POST"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HEAD"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PUT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DELETE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CONNECT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OPTIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "TRACE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PATCH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_origins: optional array of [AllowedOrigins](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema))
+allowed\_origins: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema)">AllowedOrigins</a>
 
 Allowed origins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-max_age: optional number
+max\_age: optional number
 
 The maximum number of seconds the results of a preflight request can be cached.
 
@@ -8862,43 +9402,43 @@ maximum86400
 
 minimum-1
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_message: optional string
+custom\_deny\_message: optional string
 
 The custom error message shown to a user when they are denied access to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_url: optional string
+custom\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_non_identity_deny_url: optional string
+custom\_non\_identity\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_pages: optional array of string
+custom\_pages: optional array of string
 
 The custom pages that will be displayed when applicable for this application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object {overrides, type, uri } or object {cidr, hostname, l4\_protocol, 3 more } or object {mcp\_server\_id, type } or 4 more
 
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+List of destinations secured by Access. This supersedes <code>self_hosted_domains</code> to allow for more flexibility in defining different types of domains. If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
 
 </summary>
 
@@ -8908,9 +9448,9 @@ One of the following:
 
 <summary>
 
-PublicDestination object { overrides, type, uri }
+PublicDestination object {overrides, type, uri }
 
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
+A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’\*’ can be used in the definition.
 
 </summary>
 
@@ -8918,7 +9458,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -8928,39 +9468,39 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "public"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 uri: optional string
 
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
+The URI of the destination. Public destinations’ URIs can include a domain and path with <a href="https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/">wildcards</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
+PrivateDestination object {cidr, hostname, l4\_protocol, 3 more }
 
 </summary>
 
@@ -8968,19 +9508,19 @@ cidr: optional string
 
 The CIDR range of the destination. Single IPs will be computed as /32.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hostname: optional string
 
 The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-l4_protocol: optional "tcp" or "udp"
+l4\_protocol: optional "tcp"or "udp"
 
 The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
 
@@ -8990,85 +9530,85 @@ One of the following:
 
 "tcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "udp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-port_range: optional string
+port\_range: optional string
 
 The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "private"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-vnet_id: optional string
+vnet\_id: optional string
 
 The VNET ID to match the destination. When omitted, all VNETs will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ViaMcpServerPortalDestination object { mcp_server_id, type }
+ViaMcpServerPortalDestination object {mcp\_server\_id, type }
 
 A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
 
 </summary>
 
-mcp_server_id: optional string
+mcp\_server\_id: optional string
 
 The MCP server id configured in ai-controls.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: optional "via_mcp_server_portal"
+type: optional "via\_mcp\_server\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkerDestination object { type, worker_id, overrides }
+WorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
+A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The <code>preview_worker</code> and <code>public</code> destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
 </summary>
 
 type: "worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -9078,49 +9618,49 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id, overrides }
+PreviewWorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
+A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The <code>public</code> destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
 </summary>
 
-type: "preview_worker"
+type: "preview\_worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker whose preview deployments to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -9130,43 +9670,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllWorkersDestination object { type, overrides }
+AllWorkersDestination object {type, overrides }
 
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, <code>all_preview_workers</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_workers"
+type: "all\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -9176,43 +9716,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllPreviewWorkersDestination object { type, overrides }
+AllPreviewWorkersDestination object {type, overrides }
 
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_preview_workers"
+type: "all\_preview\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -9222,57 +9762,57 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-eager_redirect_cookie_setting: optional boolean
+eager\_redirect\_cookie\_setting: optional boolean
 
 Preemptively sets the Access session cookie on every hostname in a multi-hostname self-hosted application during the initial redirect chain, rather than setting it lazily on first visit. Defaults to true. Set to false to disable the eager redirect cookie behavior.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-enable_binding_cookie: optional boolean
+enable\_binding\_cookie: optional boolean
 
 Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-http_only_cookie_attribute: optional boolean
+http\_only\_cookie\_attribute: optional boolean
 
 Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-logo_url: optional string
+logo\_url: optional string
 
 The image URL for the logo shown in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -9282,7 +9822,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -9292,49 +9832,49 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
+oauth\_configuration: optional object {dynamic\_client\_registration, enabled, grant }
 
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
+**Beta:** Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support <a href="https://datatracker.ietf.org/doc/html/rfc8707">RFC 8707</a> (Resource Indicators for OAuth 2.0). This feature is currently in beta.
 
 </summary>
 
@@ -9342,93 +9882,93 @@ Beta: Optional configuration for managing an OAuth authorization flow controlled
 
 <summary>
 
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
+dynamic\_client\_registration: optional object {allow\_any\_on\_localhost, allow\_any\_on\_loopback, allowed\_uris, enabled }
 
 Settings for OAuth dynamic client registration.
 
 </summary>
 
-allow_any_on_localhost: optional boolean
+allow\_any\_on\_localhost: optional boolean
 
 Allows any client with redirect URIs on localhost.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_any_on_loopback: optional boolean
+allow\_any\_on\_loopback: optional boolean
 
 Allows any client with redirect URIs on 127.0.0.1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_uris: optional array of string
+allowed\_uris: optional array of string
 
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
+The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in <code>/*</code> to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether dynamic client registration is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
+Whether the OAuth configuration is enabled for this application. When set to <code>false</code>, Access will not handle OAuth for this application. Defaults to <code>true</code> if omitted.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-grant: optional object { access_token_lifetime, session_duration }
+grant: optional object {access\_token\_lifetime, session\_duration }
 
 Settings for OAuth grant behavior.
 
 </summary>
 
-access_token_lifetime: optional string
+access\_token\_lifetime: optional string
 
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The lifetime of the access token. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The duration of the OAuth session. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-options_preflight_bypass: optional boolean
+</details>
 
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+options\_preflight\_bypass: optional boolean
 
-path_cookie_attribute: optional boolean
+Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors\_headers is set.
+
+<a href="#">Link to this property</a>
+
+path\_cookie\_attribute: optional boolean
 
 Enables cookie paths to scope an application’s JWT to the application path. If disabled, the JWT will scope to the hostname by default
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object {id, account\_id, approval\_groups, 15 more }
 
 </summary>
 
@@ -9438,61 +9978,61 @@ The UUID of the policy
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
+approval\_groups: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)">ApprovalGroup</a> { approvals\_needed, email\_addresses, email\_list\_uuid }
 
 Administrators who can approve a temporary authentication request.
 
 </summary>
 
-approvals_needed: number
+approvals\_needed: number
 
 The number of approvals needed to obtain access.
 
 minimum0
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_addresses: optional array of string
+email\_addresses: optional array of string
 
 A list of emails that can approve the access request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_list_uuid: optional string
+email\_list\_uuid: optional string
 
 The UUID of an re-usable email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-approval_required: optional boolean
+approval\_required: optional boolean
 
 Requires the user to request access from an administrator at the start of each session.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-connection_rules: optional object { rdp }
+connection\_rules: optional object {rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -9502,7 +10042,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
+rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -9512,7 +10052,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -9522,21 +10062,21 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -9546,35 +10086,35 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_at: optional string
+created\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
+decision: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema)">Decision</a>
 
 The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
 
@@ -9584,29 +10124,29 @@ One of the following:
 
 "allow"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deny"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"non_identity"
+"non\_identity"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bypass"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
 
@@ -9618,7 +10158,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -9628,7 +10168,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -9636,41 +10176,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -9680,7 +10220,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -9688,33 +10228,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -9724,29 +10264,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -9756,7 +10296,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -9764,45 +10304,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -9812,29 +10352,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -9844,29 +10384,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -9876,37 +10416,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -9916,7 +10456,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -9924,21 +10464,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -9948,7 +10488,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -9956,21 +10496,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -9980,7 +10520,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -9990,41 +10530,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -10034,35 +10574,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -10072,41 +10612,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -10116,7 +10656,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -10124,27 +10664,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -10154,7 +10694,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -10162,21 +10702,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -10186,7 +10726,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -10194,21 +10734,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -10218,7 +10758,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -10226,21 +10766,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -10250,35 +10790,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -10288,41 +10828,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -10332,41 +10872,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -10376,31 +10916,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -10408,29 +10948,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -10440,7 +10980,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -10448,7 +10988,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -10458,37 +10998,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -10498,35 +11038,35 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+include: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 
@@ -10538,7 +11078,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -10548,7 +11088,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -10556,41 +11096,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -10600,7 +11140,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -10608,33 +11148,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -10644,29 +11184,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -10676,7 +11216,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -10684,45 +11224,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -10732,29 +11272,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -10764,29 +11304,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -10796,37 +11336,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -10836,7 +11376,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -10844,21 +11384,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -10868,7 +11408,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -10876,21 +11416,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -10900,7 +11440,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -10910,41 +11450,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -10954,35 +11494,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -10992,41 +11532,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -11036,7 +11576,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -11044,27 +11584,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -11074,7 +11614,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -11082,21 +11622,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -11106,7 +11646,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -11114,21 +11654,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -11138,7 +11678,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -11146,21 +11686,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -11170,35 +11710,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -11208,41 +11748,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -11252,41 +11792,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -11296,31 +11836,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -11328,29 +11868,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -11360,7 +11900,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -11368,7 +11908,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -11378,37 +11918,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -11418,41 +11958,41 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-isolation_required: optional boolean
+isolation\_required: optional boolean
 
 Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -11462,7 +12002,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -11472,65 +12012,65 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the Access policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_prompt: optional string
+purpose\_justification\_prompt: optional string
 
 A custom message that will appear on the purpose justification screen.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_required: optional boolean
+purpose\_justification\_required: optional boolean
 
 Require users to enter a justification when they log in to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+require: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
 
@@ -11542,7 +12082,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -11552,7 +12092,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -11560,41 +12100,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -11604,7 +12144,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -11612,33 +12152,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -11648,29 +12188,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -11680,7 +12220,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -11688,45 +12228,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -11736,29 +12276,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -11768,29 +12308,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -11800,37 +12340,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -11840,7 +12380,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -11848,21 +12388,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -11872,7 +12412,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -11880,21 +12420,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -11904,7 +12444,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -11914,41 +12454,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -11958,35 +12498,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -11996,41 +12536,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -12040,7 +12580,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -12048,27 +12588,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -12078,7 +12618,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -12086,21 +12626,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -12110,7 +12650,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -12118,21 +12658,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -12142,7 +12682,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -12150,21 +12690,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -12174,35 +12714,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -12212,41 +12752,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -12256,41 +12796,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -12300,31 +12840,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -12332,29 +12872,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -12364,7 +12904,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -12372,7 +12912,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -12382,37 +12922,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -12422,85 +12962,85 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+The amount of time that tokens issued for the application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-updated_at: optional string
+updated\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-read_service_tokens_from_header: optional string
+read\_service\_tokens\_from\_header: optional string
 
 Allows matching Access Service Tokens passed HTTP in a single header with this name. This works as an alternative to the (CF-Access-Client-Id, CF-Access-Client-Secret) pair of headers. The header value will be interpreted as a json object similar to: { “cf-access-client-id”: “88bf3b6d86161464f6509f7219099e57.access.example.com”, “cf-access-client-secret”: “bdd31cbc4dec990953e39163fbbb194c93313ca9f0a6e420346af9d326b1d2a5” }
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-same_site_cookie_attribute: optional string
+same\_site\_cookie\_attribute: optional string
 
 Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
+scim\_config: optional object {idp\_uid, remote\_uri, authentication, 3 more }
 
 Configuration for provisioning to this application via SCIM. This is currently in closed beta.
 
 </summary>
 
-idp_uid: string
+idp\_uid: string
 
 The UID of the IdP to use as the source for SCIM resources to provision to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-remote_uri: string
+remote\_uri: string
 
 The base URI for the application’s SCIM-compatible API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
+authentication: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or 2 more
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -12512,7 +13052,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -12522,29 +13062,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -12554,105 +13094,105 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
+AccessSCIMConfigMultiAuthentication = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or object {client\_id, client\_secret, scheme }
 
 Multiple authentication schemes
 
@@ -12664,7 +13204,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -12674,29 +13214,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -12706,125 +13246,125 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-deactivate_on_delete: optional boolean
+deactivate\_on\_delete: optional boolean
 
 If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether SCIM provisioning is turned on for this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
+mappings: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)">SCIMConfigMapping</a> { schema, enabled, filter, 3 more }
 
 A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
 
@@ -12834,25 +13374,25 @@ schema: string
 
 Which SCIM resource type this mapping applies to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether or not this mapping is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 filter: optional string
 
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
+A <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">SCIM filter expression</a> that matches resources that should be provisioned to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-operations: optional object { create, delete, update }
+operations: optional object {create, delete, update }
 
 Whether or not this mapping applies to creates, updates, or deletes.
 
@@ -12862,29 +13402,29 @@ create: optional boolean
 
 Whether or not this mapping applies to create (POST) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 delete: optional boolean
 
 Whether or not this mapping applies to DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 update: optional boolean
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-strictness: optional "strict" or "passthrough"
+strictness: optional "strict"or "passthrough"
 
 The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
 
@@ -12894,75 +13434,75 @@ One of the following:
 
 "strict"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "passthrough"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transform_jsonata: optional string
+transform\_jsonata: optional string
 
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
+A <a href="https://jsonata.org/">JSONata</a> expression that transforms the resource before provisioning it in the application.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedself_hosted_domains: optional array of [SelfHostedDomains](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema))
+</details>
 
-List of public domains that Access will secure. This field is deprecated in favor of `destinations` and will be supported until November 21, 2025. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+Deprecatedself\_hosted\_domains: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema)">SelfHostedDomains</a>
 
-service_auth_401_redirect: optional boolean
+List of public domains that Access will secure. This field is deprecated in favor of <code>destinations</code> and will be supported until **November 21, 2025.** If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
+
+<a href="#">Link to this property</a>
+
+service\_auth\_401\_redirect: optional boolean
 
 Returns a 401 status code when the request is blocked by a Service Auth policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-skip_interstitial: optional boolean
+skip\_interstitial: optional boolean
 
 Enables automatic authentication through cloudflared.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-use_clientless_isolation_app_launcher_url: optional boolean
+use\_clientless\_isolation\_app\_launcher\_url: optional boolean
 
 Determines if users can access this application via a clientless browser isolation URL. This allows users to access private domains without connecting to Gateway. The option requires Clientless Browser Isolation to be set up with policies that allow users of this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-BrowserVNCApplication object { domain, type, id, 31 more }
+BrowserVNCApplication object {domain, type, id, 31 more }
 
 </summary>
 
@@ -12970,13 +13510,13 @@ domain: string
 
 The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-type: "self_hosted" or "saas" or "ssh" or 11 more
+type: "self\_hosted"or "end\_user"or "saas"or 12 more
 
 The application type.
 
@@ -12984,65 +13524,69 @@ The application type.
 
 One of the following:
 
-"self_hosted"
+"self\_hosted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
 
 "saas"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "ssh"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "vnc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"app_launcher"
+"app\_launcher"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "warp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bookmark"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_sso"
+"dash\_sso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "infrastructure"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "rdp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "mcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"mcp_portal"
+"mcp\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"proxy_endpoint"
+"proxy\_endpoint"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
@@ -13050,31 +13594,31 @@ UUID.
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_authenticate_via_warp: optional boolean
+allow\_authenticate\_via\_warp: optional boolean
 
 When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_iframe: optional boolean
+allow\_iframe: optional boolean
 
 Enables loading application content in an iFrame.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
 
 The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-app_launcher_visible: optional boolean
+app\_launcher\_visible: optional boolean
 
 Displays the application in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 aud: optional string
 
@@ -13082,57 +13626,57 @@ Audience tag.
 
 maxLength64
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-auto_redirect_to_identity: optional boolean
+auto\_redirect\_to\_identity: optional boolean
 
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
+When set to <code>true</code>, users skip the identity provider selection step during login. You must specify only one identity provider in allowed\_idps.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-cors_headers: optional [CORSHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)) { allow_all_headers, allow_all_methods, allow_all_origins, 5 more }
+cors\_headers: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)">CORSHeaders</a> { allow\_all\_headers, allow\_all\_methods, allow\_all\_origins, 5 more }
 
 </summary>
 
-allow_all_headers: optional boolean
+allow\_all\_headers: optional boolean
 
 Allows all HTTP request headers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_all_methods: optional boolean
+allow\_all\_methods: optional boolean
 
 Allows all HTTP request methods.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_all_origins: optional boolean
+allow\_all\_origins: optional boolean
 
 Allows all origins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_credentials: optional boolean
+allow\_credentials: optional boolean
 
-When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
+When set to <code>true</code>, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_headers: optional array of [AllowedHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema))
+allowed\_headers: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema)">AllowedHeaders</a>
 
 Allowed HTTP request headers.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_methods: optional array of [AllowedMethods](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema))
+allowed\_methods: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema)">AllowedMethods</a>
 
 Allowed HTTP request methods.
 
@@ -13142,51 +13686,51 @@ One of the following:
 
 "GET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "POST"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HEAD"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PUT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DELETE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CONNECT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OPTIONS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "TRACE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PATCH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_origins: optional array of [AllowedOrigins](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema))
+allowed\_origins: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema)">AllowedOrigins</a>
 
 Allowed origins.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-max_age: optional number
+max\_age: optional number
 
 The maximum number of seconds the results of a preflight request can be cached.
 
@@ -13194,43 +13738,43 @@ maximum86400
 
 minimum-1
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_message: optional string
+custom\_deny\_message: optional string
 
 The custom error message shown to a user when they are denied access to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_url: optional string
+custom\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_non_identity_deny_url: optional string
+custom\_non\_identity\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_pages: optional array of string
+custom\_pages: optional array of string
 
 The custom pages that will be displayed when applicable for this application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
+destinations: optional array of object {overrides, type, uri } or object {cidr, hostname, l4\_protocol, 3 more } or object {mcp\_server\_id, type } or 4 more
 
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+List of destinations secured by Access. This supersedes <code>self_hosted_domains</code> to allow for more flexibility in defining different types of domains. If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
 
 </summary>
 
@@ -13240,9 +13784,9 @@ One of the following:
 
 <summary>
 
-PublicDestination object { overrides, type, uri }
+PublicDestination object {overrides, type, uri }
 
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
+A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’\*’ can be used in the definition.
 
 </summary>
 
@@ -13250,7 +13794,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -13260,39 +13804,39 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "public"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 uri: optional string
 
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
+The URI of the destination. Public destinations’ URIs can include a domain and path with <a href="https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/">wildcards</a>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
+PrivateDestination object {cidr, hostname, l4\_protocol, 3 more }
 
 </summary>
 
@@ -13300,19 +13844,19 @@ cidr: optional string
 
 The CIDR range of the destination. Single IPs will be computed as /32.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 hostname: optional string
 
 The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-l4_protocol: optional "tcp" or "udp"
+l4\_protocol: optional "tcp"or "udp"
 
 The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
 
@@ -13322,85 +13866,85 @@ One of the following:
 
 "tcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "udp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-port_range: optional string
+port\_range: optional string
 
 The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 type: optional "private"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-vnet_id: optional string
+vnet\_id: optional string
 
 The VNET ID to match the destination. When omitted, all VNETs will match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ViaMcpServerPortalDestination object { mcp_server_id, type }
+ViaMcpServerPortalDestination object {mcp\_server\_id, type }
 
 A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
 
 </summary>
 
-mcp_server_id: optional string
+mcp\_server\_id: optional string
 
 The MCP server id configured in ai-controls.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-type: optional "via_mcp_server_portal"
+type: optional "via\_mcp\_server\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-WorkerDestination object { type, worker_id, overrides }
+WorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
+A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The <code>preview_worker</code> and <code>public</code> destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
 
 </summary>
 
 type: "worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -13410,49 +13954,49 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-PreviewWorkerDestination object { type, worker_id, overrides }
+PreviewWorkerDestination object {type, worker\_id, overrides }
 
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
+A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The <code>public</code> destination type takes precedence, so you can create separate applications to override the policies for specific paths.
 
 </summary>
 
-type: "preview_worker"
+type: "preview\_worker"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-worker_id: string
+worker\_id: string
 
 The ID of the Cloudflare Worker whose preview deployments to protect with Access.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -13462,43 +14006,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllWorkersDestination object { type, overrides }
+AllWorkersDestination object {type, overrides }
 
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, <code>all_preview_workers</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_workers"
+type: "all\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -13508,43 +14052,43 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AllPreviewWorkersDestination object { type, overrides }
+AllPreviewWorkersDestination object {type, overrides }
 
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
+Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The <code>worker</code>, <code>preview_worker</code>, and <code>public</code> destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
 
 </summary>
 
-type: "all_preview_workers"
+type: "all\_preview\_workers"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of object {behavior, path\_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -13554,57 +14098,57 @@ behavior: "public"
 
 The behavior to apply to matching requests.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-path_pattern: string
+path\_pattern: string
 
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+The request path pattern to match. Wildcards (<code>*</code>) are supported, but each path segment may have at most one wildcard. Unlike the <code>uri</code> in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
 
 maxLength512
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-eager_redirect_cookie_setting: optional boolean
+eager\_redirect\_cookie\_setting: optional boolean
 
 Preemptively sets the Access session cookie on every hostname in a multi-hostname self-hosted application during the initial redirect chain, rather than setting it lazily on first visit. Defaults to true. Set to false to disable the eager redirect cookie behavior.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-enable_binding_cookie: optional boolean
+enable\_binding\_cookie: optional boolean
 
 Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-http_only_cookie_attribute: optional boolean
+http\_only\_cookie\_attribute: optional boolean
 
 Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-logo_url: optional string
+logo\_url: optional string
 
 The image URL for the logo shown in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -13614,7 +14158,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -13624,49 +14168,49 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
+oauth\_configuration: optional object {dynamic\_client\_registration, enabled, grant }
 
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
+**Beta:** Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support <a href="https://datatracker.ietf.org/doc/html/rfc8707">RFC 8707</a> (Resource Indicators for OAuth 2.0). This feature is currently in beta.
 
 </summary>
 
@@ -13674,93 +14218,93 @@ Beta: Optional configuration for managing an OAuth authorization flow controlled
 
 <summary>
 
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
+dynamic\_client\_registration: optional object {allow\_any\_on\_localhost, allow\_any\_on\_loopback, allowed\_uris, enabled }
 
 Settings for OAuth dynamic client registration.
 
 </summary>
 
-allow_any_on_localhost: optional boolean
+allow\_any\_on\_localhost: optional boolean
 
 Allows any client with redirect URIs on localhost.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allow_any_on_loopback: optional boolean
+allow\_any\_on\_loopback: optional boolean
 
 Allows any client with redirect URIs on 127.0.0.1.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_uris: optional array of string
+allowed\_uris: optional array of string
 
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
+The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in <code>/*</code> to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether dynamic client registration is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
+Whether the OAuth configuration is enabled for this application. When set to <code>false</code>, Access will not handle OAuth for this application. Defaults to <code>true</code> if omitted.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-grant: optional object { access_token_lifetime, session_duration }
+grant: optional object {access\_token\_lifetime, session\_duration }
 
 Settings for OAuth grant behavior.
 
 </summary>
 
-access_token_lifetime: optional string
+access\_token\_lifetime: optional string
 
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The lifetime of the access token. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
+The duration of the OAuth session. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-options_preflight_bypass: optional boolean
+</details>
 
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+options\_preflight\_bypass: optional boolean
 
-path_cookie_attribute: optional boolean
+Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors\_headers is set.
+
+<a href="#">Link to this property</a>
+
+path\_cookie\_attribute: optional boolean
 
 Enables cookie paths to scope an application’s JWT to the application path. If disabled, the JWT will scope to the hostname by default
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object {id, account\_id, approval\_groups, 15 more }
 
 </summary>
 
@@ -13770,61 +14314,61 @@ The UUID of the policy
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
+approval\_groups: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)">ApprovalGroup</a> { approvals\_needed, email\_addresses, email\_list\_uuid }
 
 Administrators who can approve a temporary authentication request.
 
 </summary>
 
-approvals_needed: number
+approvals\_needed: number
 
 The number of approvals needed to obtain access.
 
 minimum0
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_addresses: optional array of string
+email\_addresses: optional array of string
 
 A list of emails that can approve the access request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_list_uuid: optional string
+email\_list\_uuid: optional string
 
 The UUID of an re-usable email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-approval_required: optional boolean
+approval\_required: optional boolean
 
 Requires the user to request access from an administrator at the start of each session.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-connection_rules: optional object { rdp }
+connection\_rules: optional object {rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -13834,7 +14378,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
+rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -13844,7 +14388,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -13854,21 +14398,21 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -13878,35 +14422,35 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_at: optional string
+created\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
+decision: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema)">Decision</a>
 
 The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
 
@@ -13916,29 +14460,29 @@ One of the following:
 
 "allow"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deny"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"non_identity"
+"non\_identity"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bypass"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
 
@@ -13950,7 +14494,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -13960,7 +14504,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -13968,41 +14512,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -14012,7 +14556,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -14020,33 +14564,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -14056,29 +14600,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -14088,7 +14632,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -14096,45 +14640,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -14144,29 +14688,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -14176,29 +14720,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -14208,37 +14752,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -14248,7 +14792,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -14256,21 +14800,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -14280,7 +14824,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -14288,21 +14832,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -14312,7 +14856,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -14322,41 +14866,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -14366,35 +14910,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -14404,41 +14948,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -14448,7 +14992,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -14456,27 +15000,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -14486,7 +15030,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -14494,21 +15038,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -14518,7 +15062,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -14526,21 +15070,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -14550,7 +15094,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -14558,21 +15102,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -14582,35 +15126,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -14620,41 +15164,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -14664,41 +15208,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -14708,31 +15252,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -14740,29 +15284,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -14772,7 +15316,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -14780,7 +15324,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -14790,37 +15334,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -14830,35 +15374,35 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+include: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
 
@@ -14870,7 +15414,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -14880,7 +15424,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -14888,41 +15432,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -14932,7 +15476,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -14940,33 +15484,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -14976,29 +15520,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -15008,7 +15552,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -15016,45 +15560,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -15064,29 +15608,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -15096,29 +15640,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -15128,37 +15672,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -15168,7 +15712,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -15176,21 +15720,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -15200,7 +15744,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -15208,21 +15752,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -15232,7 +15776,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -15242,41 +15786,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -15286,35 +15830,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -15324,41 +15868,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -15368,7 +15912,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -15376,27 +15920,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -15406,7 +15950,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -15414,21 +15958,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -15438,7 +15982,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -15446,21 +15990,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -15470,7 +16014,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -15478,21 +16022,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -15502,35 +16046,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -15540,41 +16084,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -15584,41 +16128,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -15628,31 +16172,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -15660,29 +16204,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -15692,7 +16236,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -15700,7 +16244,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -15710,37 +16254,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -15750,41 +16294,41 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-isolation_required: optional boolean
+isolation\_required: optional boolean
 
 Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
+mfa\_config: optional object {allowed\_authenticators, mfa\_disabled, session\_duration }
 
 Configures multi-factor authentication (MFA) settings.
 
@@ -15794,7 +16338,7 @@ Configures multi-factor authentication (MFA) settings.
 
 <summary>
 
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
+allowed\_authenticators: optional array of "totp"or "biometrics"or "security\_key"
 
 Lists the MFA methods that users can authenticate with.
 
@@ -15804,65 +16348,65 @@ One of the following:
 
 "totp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biometrics"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"security_key"
+"security\_key"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-mfa_disabled: optional boolean
+mfa\_disabled: optional boolean
 
 Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
+Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:<code>5m</code> or <code>24h</code>.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the Access policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_prompt: optional string
+purpose\_justification\_prompt: optional string
 
 A custom message that will appear on the purpose justification screen.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-purpose_justification_required: optional boolean
+purpose\_justification\_required: optional boolean
 
 Require users to enter a justification when they log in to the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+require: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
 
@@ -15874,7 +16418,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -15884,7 +16428,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -15892,41 +16436,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -15936,7 +16480,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -15944,33 +16488,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -15980,29 +16524,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -16012,7 +16556,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -16020,45 +16564,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -16068,29 +16612,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -16100,29 +16644,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -16132,37 +16676,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -16172,7 +16716,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -16180,21 +16724,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -16204,7 +16748,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -16212,21 +16756,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -16236,7 +16780,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -16246,41 +16790,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -16290,35 +16834,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -16328,41 +16872,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -16372,7 +16916,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -16380,27 +16924,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -16410,7 +16954,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -16418,21 +16962,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -16442,7 +16986,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -16450,21 +16994,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -16474,7 +17018,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -16482,21 +17026,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -16506,35 +17050,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -16544,41 +17088,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -16588,41 +17132,41 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
+oidc: object {claim\_name, claim\_value, identity\_provider\_id }
 
 </summary>
 
-claim_name: string
+claim\_name: string
 
 The name of the OIDC claim.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-claim_value: string
+claim\_value: string
 
 The OIDC claim value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your OIDC identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ServiceTokenRule object { service_token }
+ServiceTokenRule object {service\_token }
 
 Matches a specific Access Service Token
 
@@ -16632,31 +17176,31 @@ Matches a specific Access Service Token
 
 <summary>
 
-service_token: object { token_id }
+service\_token: object {token\_id }
 
 </summary>
 
-token_id: string
+token\_id: string
 
 The ID of a Service Token.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLinkedAppTokenRule object { linked_app_token }
+AccessLinkedAppTokenRule object {linked\_app\_token }
 
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
+Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
 
 </summary>
 
@@ -16664,29 +17208,29 @@ Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS applica
 
 <summary>
 
-linked_app_token: object { app_uid }
+linked\_app\_token: object {app\_uid }
 
 </summary>
 
-app_uid: string
+app\_uid: string
 
 The ID of an Access OIDC SaaS application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessUserRiskScoreRule object { user_risk_score }
+AccessUserRiskScoreRule object {user\_risk\_score }
 
 Matches a user’s risk score.
 
@@ -16696,7 +17240,7 @@ Matches a user’s risk score.
 
 <summary>
 
-user_risk_score: object { user_risk_score }
+user\_risk\_score: object {user\_risk\_score }
 
 </summary>
 
@@ -16704,7 +17248,7 @@ user_risk_score: object { user_risk_score }
 
 <summary>
 
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
+user\_risk\_score: array of "low"or "medium"or "high"or "unscored"
 
 A list of risk score levels to match. Values can be low, medium, high, or unscored.
 
@@ -16714,37 +17258,37 @@ One of the following:
 
 "low"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "medium"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "high"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "unscored"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
+AccessCloudflareAccountMemberRule object {cloudflare\_account\_member }
 
 Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
 
@@ -16754,85 +17298,85 @@ Matches users who are members of a specific Cloudflare account. Requires a Cloud
 
 <summary>
 
-cloudflare_account_member: object { account_id }
+cloudflare\_account\_member: object {account\_id }
 
 </summary>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
+The amount of time that tokens issued for the application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-updated_at: optional string
+updated\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-read_service_tokens_from_header: optional string
+read\_service\_tokens\_from\_header: optional string
 
 Allows matching Access Service Tokens passed HTTP in a single header with this name. This works as an alternative to the (CF-Access-Client-Id, CF-Access-Client-Secret) pair of headers. The header value will be interpreted as a json object similar to: { “cf-access-client-id”: “88bf3b6d86161464f6509f7219099e57.access.example.com”, “cf-access-client-secret”: “bdd31cbc4dec990953e39163fbbb194c93313ca9f0a6e420346af9d326b1d2a5” }
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-same_site_cookie_attribute: optional string
+same\_site\_cookie\_attribute: optional string
 
 Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
+scim\_config: optional object {idp\_uid, remote\_uri, authentication, 3 more }
 
 Configuration for provisioning to this application via SCIM. This is currently in closed beta.
 
 </summary>
 
-idp_uid: string
+idp\_uid: string
 
 The UID of the IdP to use as the source for SCIM resources to provision to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-remote_uri: string
+remote\_uri: string
 
 The base URI for the application’s SCIM-compatible API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
+authentication: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or 2 more
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -16844,7 +17388,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -16854,29 +17398,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -16886,105 +17430,105 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
+AccessSCIMConfigMultiAuthentication = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)">SCIMConfigAuthenticationHTTPBasic</a> { password, scheme, user } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)">SCIMConfigAuthenticationOAuthBearerToken</a> { token, scheme } or <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)">SCIMConfigAuthenticationOauth2</a> { authorization\_url, client\_id, client\_secret, 3 more } or object {client\_id, client\_secret, scheme }
 
 Multiple authentication schemes
 
@@ -16996,7 +17540,7 @@ One of the following:
 
 <summary>
 
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
+SCIMConfigAuthenticationHTTPBasic object {password, scheme, user }
 
 Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
 
@@ -17006,29 +17550,29 @@ password: string
 
 Password used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "httpbasic"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 user: string
 
 User name used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
+SCIMConfigAuthenticationOAuthBearerToken object {token, scheme }
 
 Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
 
@@ -17038,125 +17582,125 @@ token: string
 
 Token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauthbearertoken"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
+SCIMConfigAuthenticationOauth2 object {authorization\_url, client\_id, client\_secret, 3 more }
 
 Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-authorization_url: string
+authorization\_url: string
 
 URL used to generate the auth code used during token generation.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_id: string
+client\_id: string
 
 Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scheme: "oauth2"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-token_url: string
+token\_url: string
 
 URL used to generate the token used to authenticate with the remote SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 scopes: optional array of string
 
 The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
+AccessSCIMConfigAuthenticationAccessServiceToken object {client\_id, client\_secret, scheme }
 
 Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
 
 </summary>
 
-client_id: string
+client\_id: string
 
 Client ID of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-client_secret: string
+client\_secret: string
 
 Client secret of the Access service token used to authenticate with the remote service.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-scheme: "access_service_token"
+scheme: "access\_service\_token"
 
 The authentication scheme to use when making SCIM requests to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-deactivate_on_delete: optional boolean
+deactivate\_on\_delete: optional boolean
 
 If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether SCIM provisioning is turned on for this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
+mappings: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)">SCIMConfigMapping</a> { schema, enabled, filter, 3 more }
 
 A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
 
@@ -17166,25 +17710,25 @@ schema: string
 
 Which SCIM resource type this mapping applies to.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
 Whether or not this mapping is enabled.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 filter: optional string
 
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
+A <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">SCIM filter expression</a> that matches resources that should be provisioned to this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-operations: optional object { create, delete, update }
+operations: optional object {create, delete, update }
 
 Whether or not this mapping applies to creates, updates, or deletes.
 
@@ -17194,29 +17738,29 @@ create: optional boolean
 
 Whether or not this mapping applies to create (POST) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 delete: optional boolean
 
 Whether or not this mapping applies to DELETE operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 update: optional boolean
 
 Whether or not this mapping applies to update (PATCH/PUT) operations.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-strictness: optional "strict" or "passthrough"
+strictness: optional "strict"or "passthrough"
 
 The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
 
@@ -17226,75 +17770,75 @@ One of the following:
 
 "strict"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "passthrough"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-transform_jsonata: optional string
+transform\_jsonata: optional string
 
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
+A <a href="https://jsonata.org/">JSONata</a> expression that transforms the resource before provisioning it in the application.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-Deprecatedself_hosted_domains: optional array of [SelfHostedDomains](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema))
+</details>
 
-List of public domains that Access will secure. This field is deprecated in favor of `destinations` and will be supported until November 21, 2025. If `destinations` are provided, then `self_hosted_domains` will be ignored.
+<a href="#">Link to this property</a>
 
-[Link to this property](#)
+Deprecatedself\_hosted\_domains: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema)">SelfHostedDomains</a>
 
-service_auth_401_redirect: optional boolean
+List of public domains that Access will secure. This field is deprecated in favor of <code>destinations</code> and will be supported until **November 21, 2025.** If <code>destinations</code> are provided, then <code>self_hosted_domains</code> will be ignored.
+
+<a href="#">Link to this property</a>
+
+service\_auth\_401\_redirect: optional boolean
 
 Returns a 401 status code when the request is blocked by a Service Auth policy.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-session_duration: optional string
+session\_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format <code>300ms</code> or <code>2h45m</code>. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-skip_interstitial: optional boolean
+skip\_interstitial: optional boolean
 
 Enables automatic authentication through cloudflared.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
 The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-use_clientless_isolation_app_launcher_url: optional boolean
+use\_clientless\_isolation\_app\_launcher\_url: optional boolean
 
 Determines if users can access this application via a clientless browser isolation URL. This allows users to access private domains without connecting to Gateway. The option requires Clientless Browser Isolation to be set up with policies that allow users of this application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AppLauncherApplication object { type, id, allowed_idps, 15 more }
+AppLauncherApplication object {type, id, allowed\_idps, 15 more }
 
 </summary>
 
@@ -17302,7 +17846,7 @@ AppLauncherApplication object { type, id, allowed_idps, 15 more }
 
 <summary>
 
-type: "self_hosted" or "saas" or "ssh" or 11 more
+type: "self\_hosted"or "end\_user"or "saas"or 12 more
 
 The application type.
 
@@ -17310,65 +17854,69 @@ The application type.
 
 One of the following:
 
-"self_hosted"
+"self\_hosted"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+"end\_user"
+
+<a href="#">Link to this property</a>
 
 "saas"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "ssh"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "vnc"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"app_launcher"
+"app\_launcher"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "warp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "biso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bookmark"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"dash_sso"
+"dash\_sso"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "infrastructure"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "rdp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "mcp"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"mcp_portal"
+"mcp\_portal"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"proxy_endpoint"
+"proxy\_endpoint"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 id: optional string
 
@@ -17376,19 +17924,19 @@ UUID.
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
+allowed\_idps: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema)">AllowedIdPs</a>
 
 The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-app_launcher_logo_url: optional string
+app\_launcher\_logo\_url: optional string
 
 The image URL of the logo shown in the App Launcher header.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 aud: optional string
 
@@ -17396,49 +17944,49 @@ Audience tag.
 
 maxLength64
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-auto_redirect_to_identity: optional boolean
+auto\_redirect\_to\_identity: optional boolean
 
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
+When set to <code>true</code>, users skip the identity provider selection step during login. You must specify only one identity provider in allowed\_idps.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-bg_color: optional string
+bg\_color: optional string
 
 The background color of the App Launcher page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_deny_url: optional string
+custom\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_non_identity_deny_url: optional string
+custom\_non\_identity\_deny\_url: optional string
 
 The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-custom_pages: optional array of string
+custom\_pages: optional array of string
 
 The custom pages that will be displayed when applicable for this application
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 domain: optional string
 
 The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-footer_links: optional array of object { name, url }
+footer\_links: optional array of object {name, url }
 
 The links in the App Launcher footer.
 
@@ -17448,79 +17996,79 @@ name: string
 
 The hypertext in the footer link.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 url: string
 
 the hyperlink in the footer link.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-header_bg_color: optional string
+header\_bg\_color: optional string
 
 The background color of the App Launcher header.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-landing_page_design: optional object { button_color, button_text_color, image_url, 2 more }
+landing\_page\_design: optional object {button\_color, button\_text\_color, image\_url, 2 more }
 
 The design of the App Launcher landing page shown to users when they log in.
 
 </summary>
 
-button_color: optional string
+button\_color: optional string
 
 The background color of the log in button on the landing page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-button_text_color: optional string
+button\_text\_color: optional string
 
 The color of the text in the log in button on the landing page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-image_url: optional string
+image\_url: optional string
 
 The URL of the image shown on the landing page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 message: optional string
 
 The message shown on the landing page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 title: optional string
 
 The title shown on the landing page.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: optional string
 
 The name of the application.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object {id, account\_id, approval\_groups, 15 more }
 
 </summary>
 
@@ -17530,61 +18078,61 @@ The UUID of the policy
 
 maxLength36
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 Identifier.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
+approval\_groups: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)">ApprovalGroup</a> { approvals\_needed, email\_addresses, email\_list\_uuid }
 
 Administrators who can approve a temporary authentication request.
 
 </summary>
 
-approvals_needed: number
+approvals\_needed: number
 
 The number of approvals needed to obtain access.
 
 minimum0
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_addresses: optional array of string
+email\_addresses: optional array of string
 
 A list of emails that can approve the access request.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-email_list_uuid: optional string
+email\_list\_uuid: optional string
 
 The UUID of an re-usable email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-approval_required: optional boolean
+approval\_required: optional boolean
 
 Requires the user to request access from an administrator at the start of each session.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-connection_rules: optional object { rdp }
+connection\_rules: optional object {rdp }
 
 The rules that define how users may connect to targets secured by your application.
 
@@ -17594,7 +18142,7 @@ The rules that define how users may connect to targets secured by your applicati
 
 <summary>
 
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
+rdp: optional object {allowed\_clipboard\_local\_to\_remote\_formats, allowed\_clipboard\_remote\_to\_local\_formats }
 
 The RDP-specific rules that define clipboard behavior for RDP connections.
 
@@ -17604,7 +18152,7 @@ The RDP-specific rules that define clipboard behavior for RDP connections.
 
 <summary>
 
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
+allowed\_clipboard\_local\_to\_remote\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from local machine to remote RDP session.
 
@@ -17614,21 +18162,21 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
+allowed\_clipboard\_remote\_to\_local\_formats: optional array of "text"or "file"
 
 Clipboard formats allowed when copying from remote RDP session to local machine.
 
@@ -17638,35 +18186,35 @@ One of the following:
 
 "text"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "file"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-created_at: optional string
+created\_at: optional string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
+decision: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema)">Decision</a>
 
 The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
 
@@ -17676,29 +18224,29 @@ One of the following:
 
 "allow"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "deny"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"non_identity"
+"non\_identity"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "bypass"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
+exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema)">AccessRule</a>
 
 Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
 
@@ -17710,7 +18258,7 @@ One of the following:
 
 <summary>
 
-GroupRule object { group }
+GroupRule object {group }
 
 Matches an Access group.
 
@@ -17720,7 +18268,7 @@ Matches an Access group.
 
 <summary>
 
-group: object { id }
+group: object {id }
 
 </summary>
 
@@ -17728,41 +18276,41 @@ id: string
 
 The ID of a previously created Access group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AnyValidServiceTokenRule object { any_valid_service_token }
+AnyValidServiceTokenRule object {any\_valid\_service\_token }
 
 Matches any valid Access Service Token
 
 </summary>
 
-any_valid_service_token: object { }
+any\_valid\_service\_token: object {}
 
 An empty object which matches on all service tokens.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessAuthContextRule object { auth_context }
+AccessAuthContextRule object {auth\_context }
 
 Matches an Azure Authentication Context. Requires an Azure identity provider.
 
@@ -17772,7 +18320,7 @@ Matches an Azure Authentication Context. Requires an Azure identity provider.
 
 <summary>
 
-auth_context: object { id, ac_id, identity_provider_id }
+auth\_context: object {id, ac\_id, identity\_provider\_id }
 
 </summary>
 
@@ -17780,33 +18328,33 @@ id: string
 
 The ID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-ac_id: string
+ac\_id: string
 
 The ACID of an Authentication context.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AuthenticationMethodRule object { auth_method }
+AuthenticationMethodRule object {auth\_method }
 
 Enforce different MFA options
 
@@ -17816,29 +18364,29 @@ Enforce different MFA options
 
 <summary>
 
-auth_method: object { auth_method }
+auth\_method: object {auth\_method }
 
 </summary>
 
-auth_method: string
+auth\_method: string
 
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
+The type of authentication method <a href="https://datatracker.ietf.org/doc/html/rfc8176#section-2">https://datatracker.ietf.org/doc/html/rfc8176#section-2</a>.
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AzureGroupRule object { azureAD }
+AzureGroupRule object {azureAD }
 
 Matches an Azure group. Requires an Azure identity provider.
 
@@ -17848,7 +18396,7 @@ Matches an Azure group. Requires an Azure identity provider.
 
 <summary>
 
-azureAD: object { id, identity_provider_id }
+azureAD: object {id, identity\_provider\_id }
 
 </summary>
 
@@ -17856,45 +18404,45 @@ id: string
 
 The ID of an Azure group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Azure identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CertificateRule object { certificate }
+CertificateRule object {certificate }
 
 Matches any valid client certificate.
 
 </summary>
 
-certificate: object { }
+certificate: object {}
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessCommonNameRule object { common_name }
+AccessCommonNameRule object {common\_name }
 
 Matches a specific common name.
 
@@ -17904,29 +18452,29 @@ Matches a specific common name.
 
 <summary>
 
-common_name: object { common_name }
+common\_name: object {common\_name }
 
 </summary>
 
-common_name: string
+common\_name: string
 
 The common name to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-CountryRule object { geo }
+CountryRule object {geo }
 
 Matches a specific country
 
@@ -17936,29 +18484,29 @@ Matches a specific country
 
 <summary>
 
-geo: object { country_code }
+geo: object {country\_code }
 
 </summary>
 
-country_code: string
+country\_code: string
 
 The country code that should be matched.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessDevicePostureRule object { device_posture }
+AccessDevicePostureRule object {device\_posture }
 
 Enforces a device posture rule has run successfully
 
@@ -17968,37 +18516,37 @@ Enforces a device posture rule has run successfully
 
 <summary>
 
-device_posture: object { integration_uid, account_id }
+device\_posture: object {integration\_uid, account\_id }
 
 </summary>
 
-integration_uid: string
+integration\_uid: string
 
 The ID of a device posture integration.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-account_id: optional string
+account\_id: optional string
 
 The ID of the account that owns the device posture integration.
 
 maxLength32
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-DomainRule object { email_domain }
+DomainRule object {email\_domain }
 
 Match an entire email domain.
 
@@ -18008,7 +18556,7 @@ Match an entire email domain.
 
 <summary>
 
-email_domain: object { domain }
+email\_domain: object {domain }
 
 </summary>
 
@@ -18016,21 +18564,21 @@ domain: string
 
 The email domain to match.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailListRule object { email_list }
+EmailListRule object {email\_list }
 
 Matches an email address from a list.
 
@@ -18040,7 +18588,7 @@ Matches an email address from a list.
 
 <summary>
 
-email_list: object { id }
+email\_list: object {id }
 
 </summary>
 
@@ -18048,21 +18596,21 @@ id: string
 
 The ID of a previously created email list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EmailRule object { email }
+EmailRule object {email }
 
 Matches a specific email.
 
@@ -18072,7 +18620,7 @@ Matches a specific email.
 
 <summary>
 
-email: object { email }
+email: object {email }
 
 </summary>
 
@@ -18082,41 +18630,41 @@ The email of the user.
 
 formatemail
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-EveryoneRule object { everyone }
+EveryoneRule object {everyone }
 
 Matches everyone.
 
 </summary>
 
-everyone: object { }
+everyone: object {}
 
 An empty object which matches on all users.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-ExternalEvaluationRule object { external_evaluation }
+ExternalEvaluationRule object {external\_evaluation }
 
 Create Allow or Block policies which evaluate the user based on custom criteria.
 
@@ -18126,35 +18674,35 @@ Create Allow or Block policies which evaluate the user based on custom criteria.
 
 <summary>
 
-external_evaluation: object { evaluate_url, keys_url }
+external\_evaluation: object {evaluate\_url, keys\_url }
 
 </summary>
 
-evaluate_url: string
+evaluate\_url: string
 
 The API endpoint containing your business logic.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-keys_url: string
+keys\_url: string
 
 The API endpoint containing the key that Access uses to verify that the response came from your API.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GitHubOrganizationRule object { "github-organization" }
+GitHubOrganizationRule object {"github-organization" }
 
 Matches a Github organization. Requires a Github identity provider.
 
@@ -18164,41 +18712,41 @@ Matches a Github organization. Requires a Github identity provider.
 
 <summary>
 
-"github-organization": object { identity_provider_id, name, team }
+"github-organization": object {identity\_provider\_id, name, team }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Github identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the organization.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 team: optional string
 
 The name of the team
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-GSuiteGroupRule object { gsuite }
+GSuiteGroupRule object {gsuite }
 
 Matches a group in Google Workspace. Requires a Google Workspace identity provider.
 
@@ -18208,7 +18756,7 @@ Matches a group in Google Workspace. Requires a Google Workspace identity provid
 
 <summary>
 
-gsuite: object { email, identity_provider_id }
+gsuite: object {email, identity\_provider\_id }
 
 </summary>
 
@@ -18216,27 +18764,27 @@ email: string
 
 The email of the Google Workspace group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Google Workspace identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessLoginMethodRule object { login_method }
+AccessLoginMethodRule object {login\_method }
 
 Matches a specific identity provider id.
 
@@ -18246,7 +18794,7 @@ Matches a specific identity provider id.
 
 <summary>
 
-login_method: object { id }
+login\_method: object {id }
 
 </summary>
 
@@ -18254,21 +18802,21 @@ id: string
 
 The ID of an identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPListRule object { ip_list }
+IPListRule object {ip\_list }
 
 Matches an IP address from a list.
 
@@ -18278,7 +18826,7 @@ Matches an IP address from a list.
 
 <summary>
 
-ip_list: object { id }
+ip\_list: object {id }
 
 </summary>
 
@@ -18286,21 +18834,21 @@ id: string
 
 The ID of a previously created IP list.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-IPRule object { ip }
+IPRule object {ip }
 
 Matches an IP address block.
 
@@ -18310,7 +18858,7 @@ Matches an IP address block.
 
 <summary>
 
-ip: object { ip }
+ip: object {ip }
 
 </summary>
 
@@ -18318,21 +18866,21 @@ ip: string
 
 An IPv4 or IPv6 CIDR block.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-OktaGroupRule object { okta }
+OktaGroupRule object {okta }
 
 Matches an Okta group. Requires an Okta identity provider.
 
@@ -18342,35 +18890,35 @@ Matches an Okta group. Requires an Okta identity provider.
 
 <summary>
 
-okta: object { identity_provider_id, name }
+okta: object {identity\_provider\_id, name }
 
 </summary>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your Okta identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 name: string
 
 The name of the Okta group.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-SAMLGroupRule object { saml }
+SAMLGroupRule object {saml }
 
 Matches a SAML group. Requires a SAML identity provider.
 
@@ -18380,41 +18928,41 @@ Matches a SAML group. Requires a SAML identity provider.
 
 <summary>
 
-saml: object { attribute_name, attribute_value, identity_provider_id }
+saml: object {attribute\_name, attribute\_value, identity\_provider\_id }
 
 </summary>
 
-attribute_name: string
+attribute\_name: string
 
 The name of the SAML attribute.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-attribute_value: string
+attribute\_value: string
 
 The SAML attribute value to look for.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-identity_provider_id: string
+identity\_provider\_id: string
 
 The ID of your SAML identity provider.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-AccessOIDCClaimRule object { oidc }
+AccessOIDCClaimRule object {oidc }
 
 Matches an OIDC claim. Requires an OIDC identity provider.
 
@@ -18424,30826 +18972,18 @@ Matches an OIDC claim. Requires an OIDC identity provider.
 
 <summary>
 
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-skip_app_launcher_login_page: optional boolean
-
-Determines when to skip the App Launcher landing page.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DeviceEnrollmentPermissionsApplication object { type, id, allowed_idps, 9 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-domain: optional string
-
-The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-BrowserIsolationPermissionsApplication object { type, id, allowed_idps, 9 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-domain: optional string
-
-The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GatewayIdentityProxyEndpointApplication object { type, id, allowed_idps, 9 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-domain: optional string
-
-The proxy endpoint domain in the format: 10 alphanumeric characters followed by .proxy.cloudflare-gateway.com
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-BookmarkApplication object { id, app_launcher_visible, aud, 6 more }
-
-</summary>
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-app_launcher_visible: optional boolean
-
-Displays the application in the App Launcher.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-domain: optional string
-
-The URL or domain of the bookmark.
-
-[Link to this property](#)
-
-logo_url: optional string
-
-The image URL for the logo shown in the App Launcher dashboard.
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-tags: optional array of string
-
-The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: optional [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-InfrastructureApplication object { target_criteria, type, id, 4 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-target_criteria: array of object { port, protocol, exclude, 3 more }
-
-</summary>
-
-port: number
-
-The port that the targets use for the chosen communication protocol. A port cannot be assigned to multiple protocols.
-
-[Link to this property](#)
-
-protocol: "SSH"
-
-The communication protocol your application secures.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional object { tags, target_attributes }
-
-Target is excluded when any selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional object { tags, target_attributes }
-
-Target matches when any selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional object { tags, target_attributes }
-
-Target matches only when every selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-Deprecatedtarget_attributes: optional map[array of string]
-
-Contains a map of target attribute keys to target attribute values.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings for infrastructure applications.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "piv_key" or "ssh_fido2_key"
-
-Lists the MFA methods that users can authenticate with. For infrastructure applications, supported values are `piv_key` and `ssh_fido2_key`.
-
-</summary>
-
-One of the following:
-
-"piv_key"
-
-[Link to this property](#)
-
-"ssh_fido2_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples: `5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, connection_rules, created_at, 7 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { ssh }
-
-The rules that define how users may connect to the targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-ssh: optional object { usernames, allow_email_alias }
-
-The SSH-specific rules that define how users may connect to the targets secured by your application.
-
-</summary>
-
-usernames: array of string
-
-Contains the Unix usernames that may be used when connecting over SSH.
-
-[Link to this property](#)
-
-allow_email_alias: optional boolean
-
-Enables using Identity Provider email alias as SSH username.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings for infrastructure applications.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "piv_key" or "ssh_fido2_key"
-
-Lists the MFA methods that users can authenticate with. For infrastructure applications, supported values are `piv_key` and `ssh_fido2_key`.
-
-</summary>
-
-One of the following:
-
-"piv_key"
-
-[Link to this property](#)
-
-"ssh_fido2_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples: `5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-BrowserRDPApplication object { domain, target_criteria, type, 32 more }
-
-</summary>
-
-domain: string
-
-The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_criteria: array of object { port, protocol, exclude, 3 more }
-
-</summary>
-
-port: number
-
-The port that the targets use for the chosen communication protocol. A port cannot be assigned to multiple protocols.
-
-[Link to this property](#)
-
-protocol: "RDP"
-
-The communication protocol your application secures.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional object { tags, target_attributes }
-
-Target is excluded when any selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional object { tags, target_attributes }
-
-Target matches when any selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional object { tags, target_attributes }
-
-Target matches only when every selector in this rule matches.
-
-</summary>
-
-tags: optional map[array of string]
-
-Map of target tag keys to values. Values within a key are OR’d.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-target_attributes: optional object { hostname }
-
-Hostname selector map for include, require, or exclude rules. This is distinct from the deprecated top-level target_attributes field and only supports the hostname key.
-
-</summary>
-
-hostname: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-Deprecatedtarget_attributes: optional map[array of string]
-
-Contains a map of target attribute keys to target attribute values.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allow_authenticate_via_warp: optional boolean
-
-When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
-
-[Link to this property](#)
-
-allow_iframe: optional boolean
-
-Enables loading application content in an iFrame.
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-app_launcher_visible: optional boolean
-
-Displays the application in the App Launcher.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-cors_headers: optional [CORSHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20cors_headers%20%3E%20(schema)) { allow_all_headers, allow_all_methods, allow_all_origins, 5 more }
-
-</summary>
-
-allow_all_headers: optional boolean
-
-Allows all HTTP request headers.
-
-[Link to this property](#)
-
-allow_all_methods: optional boolean
-
-Allows all HTTP request methods.
-
-[Link to this property](#)
-
-allow_all_origins: optional boolean
-
-Allows all origins.
-
-[Link to this property](#)
-
-allow_credentials: optional boolean
-
-When set to `true`, includes credentials (cookies, authorization headers, or TLS client certificates) with requests.
-
-[Link to this property](#)
-
-allowed_headers: optional array of [AllowedHeaders](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_headers%20%3E%20(schema))
-
-Allowed HTTP request headers.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_methods: optional array of [AllowedMethods](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_methods%20%3E%20(schema))
-
-Allowed HTTP request methods.
-
-</summary>
-
-One of the following:
-
-"GET"
-
-[Link to this property](#)
-
-"POST"
-
-[Link to this property](#)
-
-"HEAD"
-
-[Link to this property](#)
-
-"PUT"
-
-[Link to this property](#)
-
-"DELETE"
-
-[Link to this property](#)
-
-"CONNECT"
-
-[Link to this property](#)
-
-"OPTIONS"
-
-[Link to this property](#)
-
-"TRACE"
-
-[Link to this property](#)
-
-"PATCH"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-allowed_origins: optional array of [AllowedOrigins](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_origins%20%3E%20(schema))
-
-Allowed origins.
-
-[Link to this property](#)
-
-max_age: optional number
-
-The maximum number of seconds the results of a preflight request can be cached.
-
-maximum86400
-
-minimum-1
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-custom_deny_message: optional string
-
-The custom error message shown to a user when they are denied access to the application.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
-
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-PublicDestination object { overrides, type, uri }
-
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
-
-</summary>
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-type: optional "public"
-
-[Link to this property](#)
-
-uri: optional string
-
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
-
-</summary>
-
-cidr: optional string
-
-The CIDR range of the destination. Single IPs will be computed as /32.
-
-[Link to this property](#)
-
-hostname: optional string
-
-The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-l4_protocol: optional "tcp" or "udp"
-
-The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
-
-</summary>
-
-One of the following:
-
-"tcp"
-
-[Link to this property](#)
-
-"udp"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-port_range: optional string
-
-The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
-
-[Link to this property](#)
-
-type: optional "private"
-
-[Link to this property](#)
-
-vnet_id: optional string
-
-The VNET ID to match the destination. When omitted, all VNETs will match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ViaMcpServerPortalDestination object { mcp_server_id, type }
-
-A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
-
-</summary>
-
-mcp_server_id: optional string
-
-The MCP server id configured in ai-controls.
-
-[Link to this property](#)
-
-type: optional "via_mcp_server_portal"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
-
-</summary>
-
-type: "worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PreviewWorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
-
-</summary>
-
-type: "preview_worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker whose preview deployments to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllWorkersDestination object { type, overrides }
-
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllPreviewWorkersDestination object { type, overrides }
-
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_preview_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-eager_redirect_cookie_setting: optional boolean
-
-Preemptively sets the Access session cookie on every hostname in a multi-hostname self-hosted application during the initial redirect chain, rather than setting it lazily on first visit. Defaults to true. Set to false to disable the eager redirect cookie behavior.
-
-[Link to this property](#)
-
-enable_binding_cookie: optional boolean
-
-Enables the binding cookie, which increases security against compromised authorization tokens and CSRF attacks.
-
-[Link to this property](#)
-
-http_only_cookie_attribute: optional boolean
-
-Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
-
-[Link to this property](#)
-
-logo_url: optional string
-
-The image URL for the logo shown in the App Launcher dashboard.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
-
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
-
-</summary>
-
-<details>
-
-<summary>
-
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
-
-Settings for OAuth dynamic client registration.
-
-</summary>
-
-allow_any_on_localhost: optional boolean
-
-Allows any client with redirect URIs on localhost.
-
-[Link to this property](#)
-
-allow_any_on_loopback: optional boolean
-
-Allows any client with redirect URIs on 127.0.0.1.
-
-[Link to this property](#)
-
-allowed_uris: optional array of string
-
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether dynamic client registration is enabled.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-grant: optional object { access_token_lifetime, session_duration }
-
-Settings for OAuth grant behavior.
-
-</summary>
-
-access_token_lifetime: optional string
-
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-options_preflight_bypass: optional boolean
-
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
-
-[Link to this property](#)
-
-path_cookie_attribute: optional boolean
-
-Enables cookie paths to scope an application’s JWT to the application path. If disabled, the JWT will scope to the hostname by default
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-read_service_tokens_from_header: optional string
-
-Allows matching Access Service Tokens passed HTTP in a single header with this name. This works as an alternative to the (CF-Access-Client-Id, CF-Access-Client-Secret) pair of headers. The header value will be interpreted as a json object similar to: { “cf-access-client-id”: “88bf3b6d86161464f6509f7219099e57.access.example.com”, “cf-access-client-secret”: “bdd31cbc4dec990953e39163fbbb194c93313ca9f0a6e420346af9d326b1d2a5” }
-
-[Link to this property](#)
-
-same_site_cookie_attribute: optional string
-
-Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
-
-Configuration for provisioning to this application via SCIM. This is currently in closed beta.
-
-</summary>
-
-idp_uid: string
-
-The UID of the IdP to use as the source for SCIM resources to provision to this application.
-
-[Link to this property](#)
-
-remote_uri: string
-
-The base URI for the application’s SCIM-compatible API.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
-
-Multiple authentication schemes
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-deactivate_on_delete: optional boolean
-
-If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether SCIM provisioning is turned on for this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
-
-A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
-
-</summary>
-
-schema: string
-
-Which SCIM resource type this mapping applies to.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether or not this mapping is enabled.
-
-[Link to this property](#)
-
-filter: optional string
-
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operations: optional object { create, delete, update }
-
-Whether or not this mapping applies to creates, updates, or deletes.
-
-</summary>
-
-create: optional boolean
-
-Whether or not this mapping applies to create (POST) operations.
-
-[Link to this property](#)
-
-delete: optional boolean
-
-Whether or not this mapping applies to DELETE operations.
-
-[Link to this property](#)
-
-update: optional boolean
-
-Whether or not this mapping applies to update (PATCH/PUT) operations.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-strictness: optional "strict" or "passthrough"
-
-The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
-
-</summary>
-
-One of the following:
-
-"strict"
-
-[Link to this property](#)
-
-"passthrough"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-transform_jsonata: optional string
-
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-Deprecatedself_hosted_domains: optional array of [SelfHostedDomains](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20self_hosted_domains%20%3E%20(schema))
-
-List of public domains that Access will secure. This field is deprecated in favor of `destinations` and will be supported until November 21, 2025. If `destinations` are provided, then `self_hosted_domains` will be ignored.
-
-[Link to this property](#)
-
-service_auth_401_redirect: optional boolean
-
-Returns a 401 status code when the request is blocked by a Service Auth policy.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-skip_interstitial: optional boolean
-
-Enables automatic authentication through cloudflared.
-
-[Link to this property](#)
-
-tags: optional array of string
-
-The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
-
-[Link to this property](#)
-
-use_clientless_isolation_app_launcher_url: optional boolean
-
-Determines if users can access this application via a clientless browser isolation URL. This allows users to access private domains without connecting to Gateway. The option requires Clientless Browser Isolation to be set up with policies that allow users of this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-McpServerApplication object { type, id, allow_authenticate_via_warp, 18 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allow_authenticate_via_warp: optional boolean
-
-When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-custom_deny_message: optional string
-
-The custom error message shown to a user when they are denied access to the application.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
-
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-PublicDestination object { overrides, type, uri }
-
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
-
-</summary>
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-type: optional "public"
-
-[Link to this property](#)
-
-uri: optional string
-
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
-
-</summary>
-
-cidr: optional string
-
-The CIDR range of the destination. Single IPs will be computed as /32.
-
-[Link to this property](#)
-
-hostname: optional string
-
-The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-l4_protocol: optional "tcp" or "udp"
-
-The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
-
-</summary>
-
-One of the following:
-
-"tcp"
-
-[Link to this property](#)
-
-"udp"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-port_range: optional string
-
-The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
-
-[Link to this property](#)
-
-type: optional "private"
-
-[Link to this property](#)
-
-vnet_id: optional string
-
-The VNET ID to match the destination. When omitted, all VNETs will match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ViaMcpServerPortalDestination object { mcp_server_id, type }
-
-A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
-
-</summary>
-
-mcp_server_id: optional string
-
-The MCP server id configured in ai-controls.
-
-[Link to this property](#)
-
-type: optional "via_mcp_server_portal"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
-
-</summary>
-
-type: "worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PreviewWorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
-
-</summary>
-
-type: "preview_worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker whose preview deployments to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllWorkersDestination object { type, overrides }
-
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllPreviewWorkersDestination object { type, overrides }
-
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_preview_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-http_only_cookie_attribute: optional boolean
-
-Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
-
-[Link to this property](#)
-
-logo_url: optional string
-
-The image URL for the logo shown in the App Launcher dashboard.
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
-
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
-
-</summary>
-
-<details>
-
-<summary>
-
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
-
-Settings for OAuth dynamic client registration.
-
-</summary>
-
-allow_any_on_localhost: optional boolean
-
-Allows any client with redirect URIs on localhost.
-
-[Link to this property](#)
-
-allow_any_on_loopback: optional boolean
-
-Allows any client with redirect URIs on 127.0.0.1.
-
-[Link to this property](#)
-
-allowed_uris: optional array of string
-
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether dynamic client registration is enabled.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-grant: optional object { access_token_lifetime, session_duration }
-
-Settings for OAuth grant behavior.
-
-</summary>
-
-access_token_lifetime: optional string
-
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-options_preflight_bypass: optional boolean
-
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-same_site_cookie_attribute: optional string
-
-Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
-
-Configuration for provisioning to this application via SCIM. This is currently in closed beta.
-
-</summary>
-
-idp_uid: string
-
-The UID of the IdP to use as the source for SCIM resources to provision to this application.
-
-[Link to this property](#)
-
-remote_uri: string
-
-The base URI for the application’s SCIM-compatible API.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
-
-Multiple authentication schemes
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-deactivate_on_delete: optional boolean
-
-If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether SCIM provisioning is turned on for this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
-
-A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
-
-</summary>
-
-schema: string
-
-Which SCIM resource type this mapping applies to.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether or not this mapping is enabled.
-
-[Link to this property](#)
-
-filter: optional string
-
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operations: optional object { create, delete, update }
-
-Whether or not this mapping applies to creates, updates, or deletes.
-
-</summary>
-
-create: optional boolean
-
-Whether or not this mapping applies to create (POST) operations.
-
-[Link to this property](#)
-
-delete: optional boolean
-
-Whether or not this mapping applies to DELETE operations.
-
-[Link to this property](#)
-
-update: optional boolean
-
-Whether or not this mapping applies to update (PATCH/PUT) operations.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-strictness: optional "strict" or "passthrough"
-
-The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
-
-</summary>
-
-One of the following:
-
-"strict"
-
-[Link to this property](#)
-
-"passthrough"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-transform_jsonata: optional string
-
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
-
-tags: optional array of string
-
-The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-McpServerPortalApplication object { type, id, allow_authenticate_via_warp, 19 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-type: [ApplicationType](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20application_type%20%3E%20(schema))
-
-The application type.
-
-</summary>
-
-One of the following:
-
-"self_hosted"
-
-[Link to this property](#)
-
-"saas"
-
-[Link to this property](#)
-
-"ssh"
-
-[Link to this property](#)
-
-"vnc"
-
-[Link to this property](#)
-
-"app_launcher"
-
-[Link to this property](#)
-
-"warp"
-
-[Link to this property](#)
-
-"biso"
-
-[Link to this property](#)
-
-"bookmark"
-
-[Link to this property](#)
-
-"dash_sso"
-
-[Link to this property](#)
-
-"infrastructure"
-
-[Link to this property](#)
-
-"rdp"
-
-[Link to this property](#)
-
-"mcp"
-
-[Link to this property](#)
-
-"mcp_portal"
-
-[Link to this property](#)
-
-"proxy_endpoint"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-id: optional string
-
-UUID.
-
-maxLength36
-
-[Link to this property](#)
-
-allow_authenticate_via_warp: optional boolean
-
-When set to true, users can authenticate to this application using their WARP session. When set to false this application will always require direct IdP authentication. This setting always overrides the organization setting for WARP authentication.
-
-[Link to this property](#)
-
-allowed_idps: optional array of [AllowedIdPs](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20allowed_idps%20%3E%20(schema))
-
-The identity providers your users can select when connecting to this application. Defaults to all IdPs configured in your account.
-
-[Link to this property](#)
-
-aud: optional string
-
-Audience tag.
-
-maxLength64
-
-[Link to this property](#)
-
-auto_redirect_to_identity: optional boolean
-
-When set to `true`, users skip the identity provider selection step during login. You must specify only one identity provider in allowed_idps.
-
-[Link to this property](#)
-
-custom_deny_message: optional string
-
-The custom error message shown to a user when they are denied access to the application.
-
-[Link to this property](#)
-
-custom_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing identity-based rules.
-
-[Link to this property](#)
-
-custom_non_identity_deny_url: optional string
-
-The custom URL a user is redirected to when they are denied access to the application when failing non-identity rules.
-
-[Link to this property](#)
-
-custom_pages: optional array of string
-
-The custom pages that will be displayed when applicable for this application
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-destinations: optional array of object { overrides, type, uri } or object { cidr, hostname, l4_protocol, 3 more } or object { mcp_server_id, type } or 4 more
-
-List of destinations secured by Access. This supersedes `self_hosted_domains` to allow for more flexibility in defining different types of domains. If `destinations` are provided, then `self_hosted_domains` will be ignored.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-PublicDestination object { overrides, type, uri }
-
-A public hostname that Access will secure. Public destinations support sub-domain and path. Wildcard ’*’ can be used in the definition.
-
-</summary>
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-type: optional "public"
-
-[Link to this property](#)
-
-uri: optional string
-
-The URI of the destination. Public destinations’ URIs can include a domain and path with [wildcards](https://developers.cloudflare.com/cloudflare-one/policies/access/app-paths/).
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PrivateDestination object { cidr, hostname, l4_protocol, 3 more }
-
-</summary>
-
-cidr: optional string
-
-The CIDR range of the destination. Single IPs will be computed as /32.
-
-[Link to this property](#)
-
-hostname: optional string
-
-The hostname of the destination. Matches a valid SNI served by an HTTPS origin.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-l4_protocol: optional "tcp" or "udp"
-
-The L4 protocol of the destination. When omitted, both UDP and TCP traffic will match.
-
-</summary>
-
-One of the following:
-
-"tcp"
-
-[Link to this property](#)
-
-"udp"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-port_range: optional string
-
-The port range of the destination. Can be a single port or a range of ports. When omitted, all ports will match.
-
-[Link to this property](#)
-
-type: optional "private"
-
-[Link to this property](#)
-
-vnet_id: optional string
-
-The VNET ID to match the destination. When omitted, all VNETs will match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ViaMcpServerPortalDestination object { mcp_server_id, type }
-
-A MCP server id configured in ai-controls. Access will secure the MCP server if accessed through a MCP portal.
-
-</summary>
-
-mcp_server_id: optional string
-
-The MCP server id configured in ai-controls.
-
-[Link to this property](#)
-
-type: optional "via_mcp_server_portal"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-WorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker that Access will secure. All requests routed to the specified Worker, including its preview deployments, will be protected. The `preview_worker` and `public` destination types takes precedence, so you can create separate applications to override the policies for the Worker’s previews or specific paths.
-
-</summary>
-
-type: "worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-PreviewWorkerDestination object { type, worker_id, overrides }
-
-A specific Cloudflare Worker whose preview deployments Access will secure. Only requests routed to the preview deployments of the specified Worker will be protected. The `public` destination type takes precedence, so you can create separate applications to override the policies for specific paths.
-
-</summary>
-
-type: "preview_worker"
-
-[Link to this property](#)
-
-worker_id: string
-
-The ID of the Cloudflare Worker whose preview deployments to protect with Access.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllWorkersDestination object { type, overrides }
-
-Protects all Cloudflare Workers on the account with Access, including their preview deployments. At most one destination of this type can exist per account. The `worker`, `preview_worker`, `all_preview_workers`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AllPreviewWorkersDestination object { type, overrides }
-
-Protects the preview deployments of all Cloudflare Workers on the account with Access. At most one destination of this type can exist per account. The `worker`, `preview_worker`, and `public` destination types take precedence, so you can create separate applications to override the policies for specific Workers, their previews, or specific paths.
-
-</summary>
-
-type: "all_preview_workers"
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-overrides: optional array of object { behavior, path_pattern }
-
-Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
-
-</summary>
-
-behavior: "public"
-
-The behavior to apply to matching requests.
-
-[Link to this property](#)
-
-path_pattern: string
-
-The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
-
-maxLength512
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-domain: optional string
-
-The primary hostname and path secured by Access. This domain will be displayed if the app is visible in the App Launcher.
-
-[Link to this property](#)
-
-http_only_cookie_attribute: optional boolean
-
-Enables the HttpOnly cookie attribute, which increases security against XSS attacks.
-
-[Link to this property](#)
-
-logo_url: optional string
-
-The image URL for the logo shown in the App Launcher dashboard.
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-oauth_configuration: optional object { dynamic_client_registration, enabled, grant }
-
-Beta: Optional configuration for managing an OAuth authorization flow controlled by Access. When set, Access will act as the OAuth authorization server for this application. Only compatible with OAuth clients that support [RFC 8707](https://datatracker.ietf.org/doc/html/rfc8707) (Resource Indicators for OAuth 2.0). This feature is currently in beta.
-
-</summary>
-
-<details>
-
-<summary>
-
-dynamic_client_registration: optional object { allow_any_on_localhost, allow_any_on_loopback, allowed_uris, enabled }
-
-Settings for OAuth dynamic client registration.
-
-</summary>
-
-allow_any_on_localhost: optional boolean
-
-Allows any client with redirect URIs on localhost.
-
-[Link to this property](#)
-
-allow_any_on_loopback: optional boolean
-
-Allows any client with redirect URIs on 127.0.0.1.
-
-[Link to this property](#)
-
-allowed_uris: optional array of string
-
-The URIs that are allowed as redirect URIs for dynamically registered clients. HTTP and HTTPS paths may end in `/*` to match all sub-paths. Custom-scheme URIs must be explicitly configured and match exactly.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether dynamic client registration is enabled.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether the OAuth configuration is enabled for this application. When set to `false`, Access will not handle OAuth for this application. Defaults to `true` if omitted.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-grant: optional object { access_token_lifetime, session_duration }
-
-Settings for OAuth grant behavior.
-
-</summary>
-
-access_token_lifetime: optional string
-
-The lifetime of the access token. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The duration of the OAuth session. Must be in the format `300ms` or `2h45m`. Valid time units are ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-options_preflight_bypass: optional boolean
-
-Allows options preflight requests to bypass Access authentication and go directly to the origin. Cannot turn on if cors_headers is set.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-policies: optional array of object { id, account_id, approval_groups, 15 more }
-
-</summary>
-
-id: optional string
-
-The UUID of the policy
-
-maxLength36
-
-[Link to this property](#)
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-approval_groups: optional array of [ApprovalGroup](/api/resources/zero_trust#(resource)%20zero_trust.access.policies%20%3E%20(model)%20approval_group%20%3E%20(schema)) { approvals_needed, email_addresses, email_list_uuid }
-
-Administrators who can approve a temporary authentication request.
-
-</summary>
-
-approvals_needed: number
-
-The number of approvals needed to obtain access.
-
-minimum0
-
-[Link to this property](#)
-
-email_addresses: optional array of string
-
-A list of emails that can approve the access request.
-
-[Link to this property](#)
-
-email_list_uuid: optional string
-
-The UUID of an re-usable email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-approval_required: optional boolean
-
-Requires the user to request access from an administrator at the start of each session.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-connection_rules: optional object { rdp }
-
-The rules that define how users may connect to targets secured by your application.
-
-</summary>
-
-<details>
-
-<summary>
-
-rdp: optional object { allowed_clipboard_local_to_remote_formats, allowed_clipboard_remote_to_local_formats }
-
-The RDP-specific rules that define clipboard behavior for RDP connections.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_clipboard_local_to_remote_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from local machine to remote RDP session.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-allowed_clipboard_remote_to_local_formats: optional array of "text" or "file"
-
-Clipboard formats allowed when copying from remote RDP session to local machine.
-
-</summary>
-
-One of the following:
-
-"text"
-
-[Link to this property](#)
-
-"file"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-created_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-decision: optional [Decision](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20decision%20%3E%20(schema))
-
-The action Access will take if a user matches this policy. Infrastructure application policies can only use the Allow action.
-
-</summary>
-
-One of the following:
-
-"allow"
-
-[Link to this property](#)
-
-"deny"
-
-[Link to this property](#)
-
-"non_identity"
-
-[Link to this property](#)
-
-"bypass"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-exclude: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with a NOT logical operator. To match the policy, a user cannot meet any of the Exclude rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-include: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isolation_required: optional boolean
-
-Require this application to be served in an isolated browser for users matching this policy. ‘Client Web Isolation’ must be on for the account in order to use this feature.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mfa_config: optional object { allowed_authenticators, mfa_disabled, session_duration }
-
-Configures multi-factor authentication (MFA) settings.
-
-</summary>
-
-<details>
-
-<summary>
-
-allowed_authenticators: optional array of "totp" or "biometrics" or "security_key"
-
-Lists the MFA methods that users can authenticate with.
-
-</summary>
-
-One of the following:
-
-"totp"
-
-[Link to this property](#)
-
-"biometrics"
-
-[Link to this property](#)
-
-"security_key"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-mfa_disabled: optional boolean
-
-Indicates whether to disable MFA for this resource. This option is available at the application and policy level.
-
-[Link to this property](#)
-
-session_duration: optional string
-
-Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-name: optional string
-
-The name of the Access policy.
-
-[Link to this property](#)
-
-precedence: optional number
-
-The order of execution for this policy. Must be unique for each policy within an app.
-
-[Link to this property](#)
-
-purpose_justification_prompt: optional string
-
-A custom message that will appear on the purpose justification screen.
-
-[Link to this property](#)
-
-purpose_justification_required: optional boolean
-
-Require users to enter a justification when they log in to the application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-require: optional array of [AccessRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20access_rule%20%3E%20(schema))
-
-Rules evaluated with an AND logical operator. To match the policy, a user must meet all of the Require rules.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-GroupRule object { group }
-
-Matches an Access group.
-
-</summary>
-
-<details>
-
-<summary>
-
-group: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created Access group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AnyValidServiceTokenRule object { any_valid_service_token }
-
-Matches any valid Access Service Token
-
-</summary>
-
-any_valid_service_token: object { }
-
-An empty object which matches on all service tokens.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessAuthContextRule object { auth_context }
-
-Matches an Azure Authentication Context. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_context: object { id, ac_id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Authentication context.
-
-[Link to this property](#)
-
-ac_id: string
-
-The ACID of an Authentication context.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AuthenticationMethodRule object { auth_method }
-
-Enforce different MFA options
-
-</summary>
-
-<details>
-
-<summary>
-
-auth_method: object { auth_method }
-
-</summary>
-
-auth_method: string
-
-The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AzureGroupRule object { azureAD }
-
-Matches an Azure group. Requires an Azure identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-azureAD: object { id, identity_provider_id }
-
-</summary>
-
-id: string
-
-The ID of an Azure group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Azure identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CertificateRule object { certificate }
-
-Matches any valid client certificate.
-
-</summary>
-
-certificate: object { }
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCommonNameRule object { common_name }
-
-Matches a specific common name.
-
-</summary>
-
-<details>
-
-<summary>
-
-common_name: object { common_name }
-
-</summary>
-
-common_name: string
-
-The common name to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-CountryRule object { geo }
-
-Matches a specific country
-
-</summary>
-
-<details>
-
-<summary>
-
-geo: object { country_code }
-
-</summary>
-
-country_code: string
-
-The country code that should be matched.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessDevicePostureRule object { device_posture }
-
-Enforces a device posture rule has run successfully
-
-</summary>
-
-<details>
-
-<summary>
-
-device_posture: object { integration_uid, account_id }
-
-</summary>
-
-integration_uid: string
-
-The ID of a device posture integration.
-
-[Link to this property](#)
-
-account_id: optional string
-
-The ID of the account that owns the device posture integration.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-DomainRule object { email_domain }
-
-Match an entire email domain.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_domain: object { domain }
-
-</summary>
-
-domain: string
-
-The email domain to match.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailListRule object { email_list }
-
-Matches an email address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-email_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created email list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EmailRule object { email }
-
-Matches a specific email.
-
-</summary>
-
-<details>
-
-<summary>
-
-email: object { email }
-
-</summary>
-
-email: string
-
-The email of the user.
-
-formatemail
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-EveryoneRule object { everyone }
-
-Matches everyone.
-
-</summary>
-
-everyone: object { }
-
-An empty object which matches on all users.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ExternalEvaluationRule object { external_evaluation }
-
-Create Allow or Block policies which evaluate the user based on custom criteria.
-
-</summary>
-
-<details>
-
-<summary>
-
-external_evaluation: object { evaluate_url, keys_url }
-
-</summary>
-
-evaluate_url: string
-
-The API endpoint containing your business logic.
-
-[Link to this property](#)
-
-keys_url: string
-
-The API endpoint containing the key that Access uses to verify that the response came from your API.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GitHubOrganizationRule object { "github-organization" }
-
-Matches a Github organization. Requires a Github identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-"github-organization": object { identity_provider_id, name, team }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Github identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the organization.
-
-[Link to this property](#)
-
-team: optional string
-
-The name of the team
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-GSuiteGroupRule object { gsuite }
-
-Matches a group in Google Workspace. Requires a Google Workspace identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-gsuite: object { email, identity_provider_id }
-
-</summary>
-
-email: string
-
-The email of the Google Workspace group.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your Google Workspace identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLoginMethodRule object { login_method }
-
-Matches a specific identity provider id.
-
-</summary>
-
-<details>
-
-<summary>
-
-login_method: object { id }
-
-</summary>
-
-id: string
-
-The ID of an identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPListRule object { ip_list }
-
-Matches an IP address from a list.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip_list: object { id }
-
-</summary>
-
-id: string
-
-The ID of a previously created IP list.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-IPRule object { ip }
-
-Matches an IP address block.
-
-</summary>
-
-<details>
-
-<summary>
-
-ip: object { ip }
-
-</summary>
-
-ip: string
-
-An IPv4 or IPv6 CIDR block.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-OktaGroupRule object { okta }
-
-Matches an Okta group. Requires an Okta identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-okta: object { identity_provider_id, name }
-
-</summary>
-
-identity_provider_id: string
-
-The ID of your Okta identity provider.
-
-[Link to this property](#)
-
-name: string
-
-The name of the Okta group.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SAMLGroupRule object { saml }
-
-Matches a SAML group. Requires a SAML identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-saml: object { attribute_name, attribute_value, identity_provider_id }
-
-</summary>
-
-attribute_name: string
-
-The name of the SAML attribute.
-
-[Link to this property](#)
-
-attribute_value: string
-
-The SAML attribute value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your SAML identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessOIDCClaimRule object { oidc }
-
-Matches an OIDC claim. Requires an OIDC identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-oidc: object { claim_name, claim_value, identity_provider_id }
-
-</summary>
-
-claim_name: string
-
-The name of the OIDC claim.
-
-[Link to this property](#)
-
-claim_value: string
-
-The OIDC claim value to look for.
-
-[Link to this property](#)
-
-identity_provider_id: string
-
-The ID of your OIDC identity provider.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-ServiceTokenRule object { service_token }
-
-Matches a specific Access Service Token
-
-</summary>
-
-<details>
-
-<summary>
-
-service_token: object { token_id }
-
-</summary>
-
-token_id: string
-
-The ID of a Service Token.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessLinkedAppTokenRule object { linked_app_token }
-
-Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
-
-</summary>
-
-<details>
-
-<summary>
-
-linked_app_token: object { app_uid }
-
-</summary>
-
-app_uid: string
-
-The ID of an Access OIDC SaaS application
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessUserRiskScoreRule object { user_risk_score }
-
-Matches a user’s risk score.
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: object { user_risk_score }
-
-</summary>
-
-<details>
-
-<summary>
-
-user_risk_score: array of "low" or "medium" or "high" or "unscored"
-
-A list of risk score levels to match. Values can be low, medium, high, or unscored.
-
-</summary>
-
-One of the following:
-
-"low"
-
-[Link to this property](#)
-
-"medium"
-
-[Link to this property](#)
-
-"high"
-
-[Link to this property](#)
-
-"unscored"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessCloudflareAccountMemberRule object { cloudflare_account_member }
-
-Matches users who are members of a specific Cloudflare account. Requires a Cloudflare identity provider.
-
-</summary>
-
-<details>
-
-<summary>
-
-cloudflare_account_member: object { account_id }
-
-</summary>
-
-account_id: optional string
-
-Identifier.
-
-maxLength32
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for the application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-same_site_cookie_attribute: optional string
-
-Sets the SameSite cookie setting, which provides increased security against CSRF attacks.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-scim_config: optional object { idp_uid, remote_uri, authentication, 3 more }
-
-Configuration for provisioning to this application via SCIM. This is currently in closed beta.
-
-</summary>
-
-idp_uid: string
-
-The UID of the IdP to use as the source for SCIM resources to provision to this application.
-
-[Link to this property](#)
-
-remote_uri: string
-
-The base URI for the application’s SCIM-compatible API.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-authentication: optional [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or 2 more
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigMultiAuthentication = array of [SCIMConfigAuthenticationHTTPBasic](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_http_basic%20%3E%20(schema)) { password, scheme, user } or [SCIMConfigAuthenticationOAuthBearerToken](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth_bearer_token%20%3E%20(schema)) { token, scheme } or [SCIMConfigAuthenticationOauth2](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_authentication_oauth2%20%3E%20(schema)) { authorization_url, client_id, client_secret, 3 more } or object { client_id, client_secret, scheme }
-
-Multiple authentication schemes
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationHTTPBasic object { password, scheme, user }
-
-Attributes for configuring HTTP Basic authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-password: string
-
-Password used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "httpbasic"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-user: string
-
-User name used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOAuthBearerToken object { token, scheme }
-
-Attributes for configuring OAuth Bearer Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-token: string
-
-Token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauthbearertoken"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-SCIMConfigAuthenticationOauth2 object { authorization_url, client_id, client_secret, 3 more }
-
-Attributes for configuring OAuth 2 authentication scheme for SCIM provisioning to an application.
-
 </summary>
 
-authorization_url: string
-
-URL used to generate the auth code used during token generation.
-
-[Link to this property](#)
-
-client_id: string
-
-Client ID used to authenticate when generating a token for authenticating with the remote SCIM service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Secret used to authenticate when generating a token for authenticating with the remove SCIM service.
-
-[Link to this property](#)
-
-scheme: "oauth2"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-token_url: string
-
-URL used to generate the token used to authenticate with the remote SCIM service.
-
-[Link to this property](#)
-
-scopes: optional array of string
-
-The authorization scopes to request when generating the token used to authenticate with the remove SCIM service.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-AccessSCIMConfigAuthenticationAccessServiceToken object { client_id, client_secret, scheme }
-
-Attributes for configuring Access Service Token authentication scheme for SCIM provisioning to an application.
-
-</summary>
-
-client_id: string
-
-Client ID of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-client_secret: string
-
-Client secret of the Access service token used to authenticate with the remote service.
-
-[Link to this property](#)
-
-scheme: "access_service_token"
-
-The authentication scheme to use when making SCIM requests to this application.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-deactivate_on_delete: optional boolean
-
-If false, propagates DELETE requests to the target application for SCIM resources. If true, sets ‘active’ to false on the SCIM resource. Note: Some targets do not support DELETE operations.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether SCIM provisioning is turned on for this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-mappings: optional array of [SCIMConfigMapping](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20scim_config_mapping%20%3E%20(schema)) { schema, enabled, filter, 3 more }
-
-A list of mappings to apply to SCIM resources before provisioning them in this application. These can transform or filter the resources to be provisioned.
-
-</summary>
-
-schema: string
-
-Which SCIM resource type this mapping applies to.
-
-[Link to this property](#)
-
-enabled: optional boolean
-
-Whether or not this mapping is enabled.
-
-[Link to this property](#)
-
-filter: optional string
-
-A [SCIM filter expression](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2) that matches resources that should be provisioned to this application.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-operations: optional object { create, delete, update }
-
-Whether or not this mapping applies to creates, updates, or deletes.
-
-</summary>
-
-create: optional boolean
-
-Whether or not this mapping applies to create (POST) operations.
-
-[Link to this property](#)
-
-delete: optional boolean
-
-Whether or not this mapping applies to DELETE operations.
-
-[Link to this property](#)
-
-update: optional boolean
-
-Whether or not this mapping applies to update (PATCH/PUT) operations.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-strictness: optional "strict" or "passthrough"
-
-The level of adherence to outbound resource schemas when provisioning to this mapping. ‘Strict’ removes unknown values, while ‘passthrough’ passes unknown values to the target.
-
-</summary>
-
-One of the following:
-
-"strict"
-
-[Link to this property](#)
-
-"passthrough"
-
-[Link to this property](#)
-
 </details>
-
-[Link to this property](#)
 
-transform_jsonata: optional string
-
-A [JSONata](https://jsonata.org/) expression that transforms the resource before provisioning it in the application.
-
-[Link to this property](#)
-
 </details>
-
-[Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-session_duration: optional string
-
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
-
-[Link to this property](#)
 
-tags: optional array of string
-
-The tags you want assigned to an application. Tags are used to filter applications in the App Launcher dashboard.
-
-[Link to this property](#)
-
 </details>
-
-[Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-result_info: optional object { count, page, per_page, 2 more }
-
-</summary>
-
-count: optional number
-
-Total number of results for the requested service.
-
-[Link to this property](#)
-
-page: optional number
-
-Current page within paginated list of results.
-
-[Link to this property](#)
-
-per_page: optional number
-
-Number of results per page of results.
-
-[Link to this property](#)
-
-total_count: optional number
-
-Total results available without any search parameters.
-
-[Link to this property](#)
-
-total_pages: optional number
-
-The number of total pages in the entire result set.
-
-[Link to this property](#)
 
 </details>
 
-[Link to this property](#)
+<!-- Cloudflare Markdown for Agents: incomplete conversion; source HTML truncated at the conversion size limit -->

@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3940,
+  "count": 3941,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -2059,20 +2059,12 @@
       "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/index.md"
     },
     {
-      "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/connect",
-      "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/connect/index.md"
-    },
-    {
       "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/create",
       "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/create/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/delete",
       "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch",
-      "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/protocol",
@@ -2089,14 +2081,6 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/live_view/methods/create",
       "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/live_view/methods/create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page",
-      "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/targets",
@@ -3933,6 +3917,26 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/methods/get",
       "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets",
+      "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/nameserver_sets/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/dns/subresources/settings/subresources/account/subresources/views",
@@ -15763,33 +15767,16 @@
       "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/transformations_c2pa/methods/get/index.md"
     }
   ],
-  "htmlFallback": [
-    "https://developers.cloudflare.com/api/resources/dns",
-    "https://developers.cloudflare.com/api/resources/dns/subresources/records",
-    "https://developers.cloudflare.com/api/resources/magic_cloud_networking",
-    "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps",
-    "https://developers.cloudflare.com/api/resources/radar",
-    "https://developers.cloudflare.com/api/resources/radar/subresources/attacks",
-    "https://developers.cloudflare.com/api/resources/radar/subresources/http",
-    "https://developers.cloudflare.com/api/resources/realtime_kit",
-    "https://developers.cloudflare.com/api/resources/rulesets",
-    "https://developers.cloudflare.com/api/resources/workers",
-    "https://developers.cloudflare.com/api/resources/zero_trust",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/create",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/get",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/list",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/update",
-    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/subresources/policies",
-    "https://developers.cloudflare.com/api/resources/zones",
-    "https://developers.cloudflare.com/api/resources/zones/subresources/settings"
-  ],
+  "htmlFallback": [],
   "missing": [],
   "unlisted": [
     "api/resources/addressing/subresources/address_maps/subresources/zones/index.md",
     "api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md",
     "api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md",
+    "api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/connect/index.md",
+    "api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch/index.md",
+    "api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/index.md",
+    "api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/methods/get/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/index.md",
     "api/resources/cloudforce_one/subresources/threat_events/subresources/indicator_types/methods/list/index.md",
     "api/resources/cloudforce_one/subresources/threat_signals/methods/health/index.md",

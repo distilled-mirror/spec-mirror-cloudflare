@@ -628,6 +628,504 @@ boolean
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+searchBranches: optional array of array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 3 more
+
+JSON-encoded. OR branches of structured search filters. Filters within a branch are AND’d, branches are OR’d, and the result is AND’d with <code>search</code>: <code>AND(search) AND OR(AND(branch 1), ...)</code>. Max 8 branches of 1-10 conditions each. Not supported for analytics datasets, and <code>indicator</code> filters are not yet supported inside branches. Cursor pages carry the original branches, so do not resend them with <code>cursor</code>.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+<details>
+
+<summary>
+
+field: "attacker"or "attackerCountry"or "category"or 12 more
+
+</summary>
+
+One of the following:
+
+"attacker"
+
+<a href="#">Link to this property</a>
+
+"attackerCountry"
+
+<a href="#">Link to this property</a>
+
+"category"
+
+<a href="#">Link to this property</a>
+
+"createdAt"
+
+<a href="#">Link to this property</a>
+
+"date"
+
+<a href="#">Link to this property</a>
+
+"event"
+
+<a href="#">Link to this property</a>
+
+"indicator"
+
+<a href="#">Link to this property</a>
+
+"indicatorType"
+
+<a href="#">Link to this property</a>
+
+"mitreAttack"
+
+<a href="#">Link to this property</a>
+
+"mitreCapec"
+
+<a href="#">Link to this property</a>
+
+"tags"
+
+<a href="#">Link to this property</a>
+
+"targetCountry"
+
+<a href="#">Link to this property</a>
+
+"targetIndustry"
+
+<a href="#">Link to this property</a>
+
+"tlp"
+
+<a href="#">Link to this property</a>
+
+"uuid"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+op: "equals"or "not"or "gt"or 8 more
+
+</summary>
+
+One of the following:
+
+"equals"
+
+<a href="#">Link to this property</a>
+
+"not"
+
+<a href="#">Link to this property</a>
+
+"gt"
+
+<a href="#">Link to this property</a>
+
+"gte"
+
+<a href="#">Link to this property</a>
+
+"lt"
+
+<a href="#">Link to this property</a>
+
+"lte"
+
+<a href="#">Link to this property</a>
+
+"like"
+
+<a href="#">Link to this property</a>
+
+"contains"
+
+<a href="#">Link to this property</a>
+
+"startsWith"
+
+<a href="#">Link to this property</a>
+
+"endsWith"
+
+<a href="#">Link to this property</a>
+
+"find"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+value: string
+
+maxLength512
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+<details>
+
+<summary>
+
+field: "attacker"or "attackerCountry"or "category"or 12 more
+
+</summary>
+
+One of the following:
+
+"attacker"
+
+<a href="#">Link to this property</a>
+
+"attackerCountry"
+
+<a href="#">Link to this property</a>
+
+"category"
+
+<a href="#">Link to this property</a>
+
+"createdAt"
+
+<a href="#">Link to this property</a>
+
+"date"
+
+<a href="#">Link to this property</a>
+
+"event"
+
+<a href="#">Link to this property</a>
+
+"indicator"
+
+<a href="#">Link to this property</a>
+
+"indicatorType"
+
+<a href="#">Link to this property</a>
+
+"mitreAttack"
+
+<a href="#">Link to this property</a>
+
+"mitreCapec"
+
+<a href="#">Link to this property</a>
+
+"tags"
+
+<a href="#">Link to this property</a>
+
+"targetCountry"
+
+<a href="#">Link to this property</a>
+
+"targetIndustry"
+
+<a href="#">Link to this property</a>
+
+"tlp"
+
+<a href="#">Link to this property</a>
+
+"uuid"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+op: "in"
+
+<a href="#">Link to this property</a>
+
+value: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+field: "killChain"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+op: "equals"or "not"or "gt"or 3 more
+
+</summary>
+
+One of the following:
+
+"equals"
+
+<a href="#">Link to this property</a>
+
+"not"
+
+<a href="#">Link to this property</a>
+
+"gt"
+
+<a href="#">Link to this property</a>
+
+"gte"
+
+<a href="#">Link to this property</a>
+
+"lt"
+
+<a href="#">Link to this property</a>
+
+"lte"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: numberor string
+
+</summary>
+
+One of the following:
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+field: "killChain"
+
+<a href="#">Link to this property</a>
+
+op: "in"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: array of numberor string
+
+</summary>
+
+One of the following:
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+field: "hasChildren"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+op: "equals"or "not"or "gt"or 3 more
+
+</summary>
+
+One of the following:
+
+"equals"
+
+<a href="#">Link to this property</a>
+
+"not"
+
+<a href="#">Link to this property</a>
+
+"gt"
+
+<a href="#">Link to this property</a>
+
+"gte"
+
+<a href="#">Link to this property</a>
+
+"lt"
+
+<a href="#">Link to this property</a>
+
+"lte"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: unknownor boolean
+
+</summary>
+
+One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+field: "hasChildren"
+
+<a href="#">Link to this property</a>
+
+op: "in"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: array of unknownor boolean
+
+</summary>
+
+One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20searchBranches%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 attacker: string

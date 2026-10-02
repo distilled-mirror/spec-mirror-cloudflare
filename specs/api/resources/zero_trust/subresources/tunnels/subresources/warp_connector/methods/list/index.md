@@ -1,5 +1,5 @@
 ---
-title: List Warp Connector Tunnels
+title: List Mesh nodes
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List Warp Connector Tunnels
+# List Mesh nodes
 
 GET/accounts/{account\_id}/warp\_connector
 
-Lists and filters Warp Connector Tunnels in an account.
+Lists and filters Mesh nodes in an account.
 
 ##### Security
 
@@ -530,7 +530,7 @@ Total results available without any search parameters
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### List Warp Connector Tunnels
+### List Mesh nodes
 
 HTTP
 

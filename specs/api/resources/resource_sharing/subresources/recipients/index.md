@@ -26,11 +26,11 @@ GET/accounts/{account\_id}/shares/{share\_id}/recipients
 
 GET/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
-##### [Create a new share recipient](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/create)
+##### [Trigger a recipient addition to a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/create)
 
 POST/accounts/{account\_id}/shares/{share\_id}/recipients
 
-##### [Delete a share recipient](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/delete)
+##### [Trigger a recipient removal from a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/delete)
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 

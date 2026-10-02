@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Connectors
 
-##### [Get WARP Connector Tunnel connector](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connectors/methods/get)
+##### [Get a Mesh node connector](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/connectors/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_id}
 
@@ -34,7 +34,7 @@ GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/connectors/{connector\_i
 
 ConnectorGetResponse object {id, arch, conns, 4 more }
 
-A WARP Connector client that maintains a connection to a Cloudflare data center.
+A Mesh node connector that maintains a connection to a Cloudflare data center.
 
 </summary>
 
@@ -60,7 +60,7 @@ The cloudflared OS architecture used to establish this connection.
 
 conns: optional array of object {id, client\_id, client\_version, 3 more }
 
-The WARP Connector Tunnel connections between your origin and Cloudflare’s edge.
+The Mesh node connections between your origin and Cloudflare’s edge.
 
 </summary>
 
@@ -106,7 +106,7 @@ formatdate-time
 
 origin\_ip: optional string
 
-The public IP address of the host running WARP Connector.
+The public IP address of the host running the Mesh node connector.
 
 <a href="#">Link to this property</a>
 
@@ -126,7 +126,7 @@ Features enabled for the Cloudflare Tunnel.
 
 ha\_status: optional "offline"or "passive"or "active"
 
-The HA status of a WARP Connector client.
+The HA status of a Mesh node connector.
 
 </summary>
 

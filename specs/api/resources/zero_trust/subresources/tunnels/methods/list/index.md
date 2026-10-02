@@ -580,7 +580,7 @@ One of the following:
 
 TunnelWARPConnectorTunnel object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 

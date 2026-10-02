@@ -140,7 +140,7 @@ Indicates whether the API call was successful.
 
 result: optional object {id, bucket, name, 3 more }
 
-Contains R2 Data Catalog information.
+Contains catalog information.
 
 </summary>
 

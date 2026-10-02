@@ -30,6 +30,8 @@ DELETE/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/
 
 Delete a tag from a script uploaded to a Workers for Platforms dispatch namespace.
 
+On `api-version` dates on or after `2026-10-01`, `tag` identifies a key and the operation returns the complete updated tag map. Deleting a missing key succeeds. Earlier versions retain the legacy string-tag behavior and return a null result.
+
 ##### Security
 
 <details>
@@ -88,11 +90,29 @@ Name of the script.
 
 tag: string
 
-maxLength1024
+A typed tag key containing only Unicode letters or numbers, underscores, periods, or hyphens. The complete UTF-8 encoded tag (the key plus `=` and the value when the value is non-empty) must not exceed 1024 bytes. Cloudflare-reserved prefixes are not accepted.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20tag%20%3E%20(schema)>)
 
+##### H eader ParametersExpand Collapse
+
+"api-version": optional string
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20api-version%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
+
+<details>
+
+<summary>
+
+WorkersTagsKVResponse object {errors, messages, result, success }
+
+</summary>
 
 <details>
 
@@ -134,7 +154,7 @@ pointer: optional string
 
 </details>
 
-[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -176,17 +196,129 @@ pointer: optional string
 
 </details>
 
-[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
+<a href="#">Link to this property</a>
+
+result: map\[string]
+
+Tags associated with the Worker, as a key/value object. Each complete UTF-8 encoded tag (the key plus <code>=</code> and the value when the value is non-empty) must not exceed 1024 bytes.
+
+<a href="#">Link to this property</a>
 
 success: true
 
 Whether the API call was successful.
 
-[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(model)%20tag_delete_response%20%3E%20(schema)%20%3E%20(variant)%200>)
+
+<details>
+
+<summary>
+
+WorkersAPIResponseNullResult object {errors, messages, success, result }
+
+</summary>
+
+<details>
+
+<summary>
+
+errors: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messages: array of object {code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: true
+
+Whether the API call was successful.
+
+<a href="#">Link to this property</a>
 
 result: optional unknown
 
-[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.tags%20%3E%20(model)%20tag_delete_response%20%3E%20(schema)%20%3E%20(variant)%201>)
 
 ### Delete Workers for Platforms Script Tag
 
@@ -224,8 +356,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/dispatch/
       }
     }
   ],
-  "success": true,
-  "result": {}
+  "result": {
+    "environment": "production",
+    "team": "my-team"
+  },
+  "success": true
 }
 ```
 
@@ -255,7 +390,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/dispatch/
       }
     }
   ],
-  "success": true,
-  "result": {}
+  "result": {
+    "environment": "production",
+    "team": "my-team"
+  },
+  "success": true
 }
 ```

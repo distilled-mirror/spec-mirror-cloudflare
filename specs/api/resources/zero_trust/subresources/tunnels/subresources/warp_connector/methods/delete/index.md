@@ -1,5 +1,5 @@
 ---
-title: Delete a Warp Connector Tunnel
+title: Delete a Mesh node
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Delete a Warp Connector Tunnel
+# Delete a Mesh node
 
 DELETE/accounts/{account\_id}/warp\_connector/{tunnel\_id}
 
-Deletes a Warp Connector Tunnel from an account.
+Deletes a Mesh node from an account.
 
 ##### Security
 
@@ -172,7 +172,7 @@ pointer: optional string
 
 result: object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -404,7 +404,7 @@ Whether the API call was successful
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Delete a Warp Connector Tunnel
+### Delete a Mesh node
 
 HTTP
 

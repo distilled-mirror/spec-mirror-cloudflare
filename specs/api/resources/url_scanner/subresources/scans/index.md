@@ -1372,7 +1372,7 @@ botAccessControl: object {contentSignals, robotsTxtAiRules, webBotAuth }
 
 <summary>
 
-contentSignals: object {status, details, durationMs, 2 more }
+contentSignals: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1492,6 +1492,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1500,7 +1522,7 @@ message: optional string
 
 <summary>
 
-robotsTxtAiRules: object {status, details, durationMs, 2 more }
+robotsTxtAiRules: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1620,6 +1642,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1628,7 +1672,7 @@ message: optional string
 
 <summary>
 
-webBotAuth: object {status, details, durationMs, 2 more }
+webBotAuth: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1745,6 +1789,28 @@ redirectedTo: optional string
 <a href="#">Link to this property</a>
 
 message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1768,7 +1834,7 @@ commerce: object {acp, ap2, mpp, 2 more }
 
 <summary>
 
-acp: object {status, details, durationMs, 2 more }
+acp: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -1888,6 +1954,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -1896,7 +1984,7 @@ message: optional string
 
 <summary>
 
-ap2: object {status, details, durationMs, 2 more }
+ap2: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2016,6 +2104,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2024,7 +2134,7 @@ message: optional string
 
 <summary>
 
-mpp: object {status, details, durationMs, 2 more }
+mpp: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2144,6 +2254,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2152,7 +2284,7 @@ message: optional string
 
 <summary>
 
-ucp: object {status, details, durationMs, 2 more }
+ucp: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2272,6 +2404,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2280,7 +2434,7 @@ message: optional string
 
 <summary>
 
-x402: object {status, details, durationMs, 2 more }
+x402: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2397,6 +2551,28 @@ redirectedTo: optional string
 <a href="#">Link to this property</a>
 
 message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -2420,7 +2596,7 @@ contentAccessibility: object {markdownNegotiation }
 
 <summary>
 
-markdownNegotiation: object {status, details, durationMs, 2 more }
+markdownNegotiation: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2537,6 +2713,28 @@ redirectedTo: optional string
 <a href="#">Link to this property</a>
 
 message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -2560,7 +2758,7 @@ discoverability: object {dnsAid, linkHeaders, robotsTxt, sitemap }
 
 <summary>
 
-dnsAid: object {status, details, durationMs, 2 more }
+dnsAid: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2680,6 +2878,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2688,7 +2908,7 @@ message: optional string
 
 <summary>
 
-linkHeaders: object {status, details, durationMs, 2 more }
+linkHeaders: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2808,6 +3028,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2816,7 +3058,7 @@ message: optional string
 
 <summary>
 
-robotsTxt: object {status, details, durationMs, 2 more }
+robotsTxt: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -2936,6 +3178,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2944,7 +3208,7 @@ message: optional string
 
 <summary>
 
-sitemap: object {status, details, durationMs, 2 more }
+sitemap: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3061,6 +3325,28 @@ redirectedTo: optional string
 <a href="#">Link to this property</a>
 
 message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3084,7 +3370,7 @@ discovery: object {a2aAgentCard, agentSkills, apiCatalog, 6 more }
 
 <summary>
 
-a2aAgentCard: object {status, details, durationMs, 2 more }
+a2aAgentCard: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3204,6 +3490,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3212,7 +3520,7 @@ message: optional string
 
 <summary>
 
-agentSkills: object {status, details, durationMs, 2 more }
+agentSkills: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3332,6 +3640,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3340,7 +3670,7 @@ message: optional string
 
 <summary>
 
-apiCatalog: object {status, details, durationMs, 2 more }
+apiCatalog: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3460,6 +3790,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3468,7 +3820,7 @@ message: optional string
 
 <summary>
 
-ard: object {status, details, durationMs, 2 more }
+ard: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3588,6 +3940,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3596,7 +3970,7 @@ message: optional string
 
 <summary>
 
-authMd: object {status, details, durationMs, 2 more }
+authMd: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3716,6 +4090,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3724,7 +4120,7 @@ message: optional string
 
 <summary>
 
-mcpServerCard: object {status, details, durationMs, 2 more }
+mcpServerCard: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3844,6 +4240,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3852,7 +4270,7 @@ message: optional string
 
 <summary>
 
-oauthDiscovery: object {status, details, durationMs, 2 more }
+oauthDiscovery: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -3972,6 +4390,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -3980,7 +4420,7 @@ message: optional string
 
 <summary>
 
-oauthProtectedResource: object {status, details, durationMs, 2 more }
+oauthProtectedResource: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4100,6 +4540,28 @@ message: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -4108,7 +4570,7 @@ message: optional string
 
 <summary>
 
-webMcp: object {status, details, durationMs, 2 more }
+webMcp: object {status, details, durationMs, 3 more }
 
 </summary>
 
@@ -4225,6 +4687,28 @@ redirectedTo: optional string
 <a href="#">Link to this property</a>
 
 message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

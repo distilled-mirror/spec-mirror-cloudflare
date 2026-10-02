@@ -1,5 +1,5 @@
 ---
-title: Get a Warp Connector Tunnel token
+title: Get a Mesh node token
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get a Warp Connector Tunnel token
+# Get a Mesh node token
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/token
 
-Gets the token used to associate warp device with a specific Warp Connector tunnel.
+Gets the token used to associate a WARP device with a specific Mesh node.
 
 ##### Security
 
@@ -180,7 +180,7 @@ Whether the API call was successful
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector.token%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Get a Warp Connector Tunnel token
+### Get a Mesh node token
 
 HTTP
 

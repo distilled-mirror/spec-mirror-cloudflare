@@ -24,15 +24,15 @@ GET/accounts/{account\_id}/shares
 
 GET/accounts/{account\_id}/shares/{share\_id}
 
-##### [Create a new share](https://developers.cloudflare.com/api/resources/resource_sharing/methods/create)
+##### [Trigger a share creation](https://developers.cloudflare.com/api/resources/resource_sharing/methods/create)
 
 POST/accounts/{account\_id}/shares
 
-##### [Update a share](https://developers.cloudflare.com/api/resources/resource_sharing/methods/update)
+##### [Trigger a share rename](https://developers.cloudflare.com/api/resources/resource_sharing/methods/update)
 
 PUT/accounts/{account\_id}/shares/{share\_id}
 
-##### [Delete a share](https://developers.cloudflare.com/api/resources/resource_sharing/methods/delete)
+##### [Trigger a share deletion](https://developers.cloudflare.com/api/resources/resource_sharing/methods/delete)
 
 DELETE/accounts/{account\_id}/shares/{share\_id}
 
@@ -1528,11 +1528,11 @@ GET/accounts/{account\_id}/shares/{share\_id}/recipients
 
 GET/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
-##### [Create a new share recipient](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/create)
+##### [Trigger a recipient addition to a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/create)
 
 POST/accounts/{account\_id}/shares/{share\_id}/recipients
 
-##### [Delete a share recipient](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/delete)
+##### [Trigger a recipient removal from a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/recipients/methods/delete)
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/recipients/{recipient\_id}
 
@@ -2032,15 +2032,15 @@ GET/accounts/{account\_id}/shares/{share\_id}/resources
 
 GET/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
-##### [Create a new share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/create)
+##### [Trigger a resource addition to a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/create)
 
 POST/accounts/{account\_id}/shares/{share\_id}/resources
 
-##### [Update a share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/update)
+##### [Trigger a resource metadata update in a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/update)
 
 PUT/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 
-##### [Delete a share resource](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/delete)
+##### [Trigger a resource deletion from a share](https://developers.cloudflare.com/api/resources/resource_sharing/subresources/resources/methods/delete)
 
 DELETE/accounts/{account\_id}/shares/{share\_id}/resources/{share\_resource\_id}
 

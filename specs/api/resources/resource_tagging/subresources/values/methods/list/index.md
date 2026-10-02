@@ -64,7 +64,7 @@ Cursor for pagination.
 
 <summary>
 
-type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 38 more
+type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 39 more
 
 Filter by resource type.
 
@@ -137,6 +137,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "d1\_database"
+
+<a href="#">Link to this property</a>
+
+"device"
 
 <a href="#">Link to this property</a>
 

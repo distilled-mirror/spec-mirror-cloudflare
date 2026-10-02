@@ -24,14 +24,6 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/browser-rendering/devtools/browser
 
-##### [Acquire and connect to browser session.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch)
-
-GET/accounts/{account\_id}/browser-rendering/devtools/browser
-
-##### [Connect to browser session.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/connect)
-
-GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}
-
 ##### [Close browser session.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/delete)
 
 DELETE/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}
@@ -341,10 +333,6 @@ formaturi
 [Link to this property](#)%20browser_rendering.devtools.browser.live_view%20%3E%20(model)%20live_view_create_response%20%3E%20(schema)>)
 
 #### BrowserPage
-
-##### [Connect to a specific Chrome DevTools page.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/methods/get)
-
-GET/accounts/{account\_id}/browser-rendering/devtools/browser/{session\_id}/page/{target\_id}
 
 #### BrowserTargets
 

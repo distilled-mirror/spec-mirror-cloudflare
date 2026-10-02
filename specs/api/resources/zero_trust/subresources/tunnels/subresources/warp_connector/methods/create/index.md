@@ -1,5 +1,5 @@
 ---
-title: Create a Warp Connector Tunnel
+title: Create a Mesh node
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create a Warp Connector Tunnel
+# Create a Mesh node
 
 POST/accounts/{account\_id}/warp\_connector
 
-Creates a new Warp Connector Tunnel in an account.
+Creates a new Mesh node in an account.
 
 ##### Security
 
@@ -176,7 +176,7 @@ pointer: optional string
 
 result: object {id, account\_tag, connections, 8 more }
 
-A Warp Connector Tunnel that connects your origin to Cloudflare’s edge.
+A Mesh node that connects your origin to Cloudflare’s edge.
 
 </summary>
 
@@ -408,7 +408,7 @@ Whether the API call was successful
 
 [Link to this property](#)%20zero_trust.tunnels.warp_connector%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create a Warp Connector Tunnel
+### Create a Mesh node
 
 HTTP
 

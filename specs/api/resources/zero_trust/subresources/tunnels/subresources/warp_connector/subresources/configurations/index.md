@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Configurations
 
-##### [Get WARP Connector HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/get)
+##### [Get Mesh node HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/get)
 
 GET/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
-##### [Update WARP Connector HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/update)
+##### [Update Mesh node HA configuration](https://developers.cloudflare.com/api/resources/zero_trust/subresources/tunnels/subresources/warp_connector/subresources/configurations/methods/update)
 
 PUT/accounts/{account\_id}/warp\_connector/{tunnel\_id}/configurations
 
@@ -60,7 +60,7 @@ formatdate-time
 
 ha\_mode: "none"or "disabled"or "aws"or "local"
 
-High-availability mode for the WARP Connector tunnel. <code>none</code> means HA is enabled but no provider is configured yet (newly created tunnels default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
+High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
 </summary>
 
@@ -222,7 +222,7 @@ formatdate-time
 
 ha\_mode: "none"or "disabled"or "aws"or "local"
 
-High-availability mode for the WARP Connector tunnel. <code>none</code> means HA is enabled but no provider is configured yet (newly created tunnels default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
+High-availability mode for the Mesh node. <code>none</code> means HA is enabled but no provider is configured yet (newly created nodes default to this). <code>disabled</code> means HA is explicitly turned off. <code>aws</code> uses AWS ENI move for failover. <code>local</code> uses virtual IPs (VIPs) on the local interface.
 
 </summary>
 

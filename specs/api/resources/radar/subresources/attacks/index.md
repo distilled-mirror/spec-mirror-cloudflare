@@ -1,22 +1,44 @@
-##### [Get layer 3 attacks summary by dimension](/api/resources/radar/subresources/attacks/subresources/layer3/methods/summary_v2)
+---
+title: Attacks
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+[Radar](https://developers.cloudflare.com/api/resources/radar)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
+# Attacks
+
+#### AttacksLayer3
+
+##### [Get layer 3 attacks summary by dimension](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/methods/summary_v2)
 
 GET/radar/attacks/layer3/summary/{dimension}
 
-##### [Get layer 3 attacks by bytes time series](/api/resources/radar/subresources/attacks/subresources/layer3/methods/timeseries)
+##### [Get layer 3 attacks by bytes time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/methods/timeseries)
 
 GET/radar/attacks/layer3/timeseries
 
-##### [Get layer 3 attacks time series grouped by dimension](/api/resources/radar/subresources/attacks/subresources/layer3/methods/timeseries_groups_v2)
+##### [Get layer 3 attacks time series grouped by dimension](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/methods/timeseries_groups_v2)
 
-GET/radar/attacks/layer3/timeseries_groups/{dimension}
+GET/radar/attacks/layer3/timeseries\_groups/{dimension}
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Layer3SummaryV2Response object { meta, summary_0 }
+Layer3SummaryV2Response object {meta, summary\_0 }
 
 </summary>
 
@@ -24,7 +46,7 @@ Layer3SummaryV2Response object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -34,7 +56,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -42,7 +64,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -50,7 +72,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -60,123 +82,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -186,69 +208,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -258,7 +280,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -266,11 +288,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -278,15 +300,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -294,45 +316,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -340,33 +362,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3%20%3E%20(model)%20layer3_summary_v2_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-Layer3TimeseriesResponse object { meta }
+Layer3TimeseriesResponse object {meta }
 
 </summary>
 
@@ -374,7 +396,7 @@ Layer3TimeseriesResponse object { meta }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -384,43 +406,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -428,7 +450,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -436,7 +458,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -446,123 +468,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -572,69 +594,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -644,7 +666,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -652,11 +674,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -664,15 +686,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -680,45 +702,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -726,29 +748,29 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3%20%3E%20(model)%20layer3_timeseries_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-Layer3TimeseriesGroupsV2Response object { meta, serie_0 }
+Layer3TimeseriesGroupsV2Response object {meta, serie\_0 }
 
 </summary>
 
@@ -756,7 +778,7 @@ Layer3TimeseriesGroupsV2Response object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -766,43 +788,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -810,7 +832,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -818,7 +840,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -828,123 +850,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -954,69 +976,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -1026,7 +1048,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -1034,11 +1056,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -1046,15 +1068,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -1062,45 +1084,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -1108,75 +1130,91 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3%20%3E%20(model)%20layer3_timeseries_groups_v2_response%20%3E%20(schema)>)
 
-##### [Get layer 3 attacks by bitrate summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/bitrate)
+#### AttacksLayer3Summary
+
+##### [Get layer 3 attacks by bitrate summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/bitrate)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/bitrate
 
-##### [Get layer 3 attacks by duration summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/duration)
+##### [Get layer 3 attacks by duration summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/duration)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/duration
 
-##### [Get layer 3 attacks by IP version summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/ip_version)
+##### [Get layer 3 attacks by IP version summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/ip_version)
 
-GET/radar/attacks/layer3/summary/ip_version
+Deprecated
 
-##### [Get layer 3 attacks by protocol summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/protocol)
+GET/radar/attacks/layer3/summary/ip\_version
+
+##### [Get layer 3 attacks by protocol summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/protocol)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/protocol
 
-##### [Get layer 3 attacks by vector summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/vector)
+##### [Get layer 3 attacks by vector summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/vector)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/vector
 
-##### [Get layer 3 attacks by targeted industry summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/industry)
+##### [Get layer 3 attacks by targeted industry summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/industry)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/industry
 
-##### [Get layer 3 attacks by targeted vertical summary](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/vertical)
+##### [Get layer 3 attacks by targeted vertical summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/summary/methods/vertical)
+
+Deprecated
 
 GET/radar/attacks/layer3/summary/vertical
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-SummaryBitrateResponse object { meta, summary_0 }
+SummaryBitrateResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -1184,7 +1222,7 @@ SummaryBitrateResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1194,7 +1232,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -1202,7 +1240,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1210,7 +1248,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -1220,123 +1258,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -1346,69 +1384,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -1418,7 +1456,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -1426,11 +1464,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -1438,15 +1476,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -1454,45 +1492,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -1500,71 +1538,71 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { _1_GBPS_TO_10_GBPS, _10_GBPS_TO_100_GBPS, _500_MBPS_TO_1_GBPS, 2 more }
+summary\_0: object {\_1\_GBPS\_TO\_10\_GBPS, \_10\_GBPS\_TO\_100\_GBPS, \_500\_MBPS\_TO\_1\_GBPS, 2 more }
 
 </summary>
 
-_1_GBPS_TO_10_GBPS: string
+\_1\_GBPS\_TO\_10\_GBPS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_10_GBPS_TO_100_GBPS: string
-
-A numeric string.
-
-[Link to this property](#)
-
-_500_MBPS_TO_1_GBPS: string
+\_10\_GBPS\_TO\_100\_GBPS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-OVER_100_GBPS: string
-
-A numeric string.
-
-[Link to this property](#)
-
-UNDER_500_MBPS: string
+\_500\_MBPS\_TO\_1\_GBPS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+OVER\_100\_GBPS: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+UNDER\_500\_MBPS: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_bitrate_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryDurationResponse object { meta, summary_0 }
+SummaryDurationResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -1572,7 +1610,7 @@ SummaryDurationResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1582,7 +1620,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -1590,7 +1628,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1598,7 +1636,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -1608,123 +1646,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -1734,69 +1772,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -1806,7 +1844,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -1814,11 +1852,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -1826,15 +1864,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -1842,45 +1880,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -1888,77 +1926,77 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { _1_HOUR_TO_3_HOURS, _10_MINS_TO_20_MINS, _20_MINS_TO_40_MINS, 3 more }
+summary\_0: object {\_1\_HOUR\_TO\_3\_HOURS, \_10\_MINS\_TO\_20\_MINS, \_20\_MINS\_TO\_40\_MINS, 3 more }
 
 </summary>
 
-_1_HOUR_TO_3_HOURS: string
+\_1\_HOUR\_TO\_3\_HOURS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_10_MINS_TO_20_MINS: string
-
-A numeric string.
-
-[Link to this property](#)
-
-_20_MINS_TO_40_MINS: string
+\_10\_MINS\_TO\_20\_MINS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_40_MINS_TO_1_HOUR: string
-
-A numeric string.
-
-[Link to this property](#)
-
-OVER_3_HOURS: string
+\_20\_MINS\_TO\_40\_MINS: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-UNDER_10_MINS: string
+\_40\_MINS\_TO\_1\_HOUR: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+OVER\_3\_HOURS: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
+
+UNDER\_10\_MINS: string
+
+A numeric string.
+
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_duration_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryIPVersionResponse object { meta, summary_0 }
+SummaryIPVersionResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -1966,7 +2004,7 @@ SummaryIPVersionResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -1976,7 +2014,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -1984,7 +2022,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -1992,7 +2030,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -2002,123 +2040,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -2128,69 +2166,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -2200,7 +2238,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -2208,11 +2246,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -2220,15 +2258,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -2236,45 +2274,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -2282,25 +2320,25 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { IPv4, IPv6 }
+summary\_0: object {IPv4, IPv6 }
 
 </summary>
 
@@ -2308,27 +2346,27 @@ IPv4: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 IPv6: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_ip_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryProtocolResponse object { meta, summary_0 }
+SummaryProtocolResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -2336,7 +2374,7 @@ SummaryProtocolResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -2346,7 +2384,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -2354,7 +2392,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -2362,7 +2400,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -2372,123 +2410,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -2498,69 +2536,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -2570,7 +2608,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -2578,11 +2616,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -2590,15 +2628,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -2606,45 +2644,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -2652,25 +2690,25 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { GRE, ICMP, TCP, UDP }
+summary\_0: object {GRE, ICMP, TCP, UDP }
 
 </summary>
 
@@ -2678,39 +2716,39 @@ GRE: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 ICMP: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 TCP: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 UDP: string
 
 A numeric string.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_protocol_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryVectorResponse object { meta, summary_0 }
+SummaryVectorResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -2718,7 +2756,7 @@ SummaryVectorResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -2728,7 +2766,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -2736,7 +2774,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -2744,7 +2782,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -2754,123 +2792,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -2880,69 +2918,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -2952,7 +2990,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -2960,11 +2998,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -2972,15 +3010,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -2988,45 +3026,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -3034,33 +3072,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_vector_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryIndustryResponse object { meta, summary_0 }
+SummaryIndustryResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -3068,7 +3106,7 @@ SummaryIndustryResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -3078,7 +3116,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -3086,7 +3124,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3094,7 +3132,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -3104,123 +3142,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -3230,69 +3268,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -3302,7 +3340,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -3310,11 +3348,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -3322,15 +3360,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -3338,45 +3376,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -3384,33 +3422,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_industry_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryVerticalResponse object { meta, summary_0 }
+SummaryVerticalResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -3418,7 +3456,7 @@ SummaryVerticalResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -3428,7 +3466,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -3436,7 +3474,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3444,7 +3482,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -3454,123 +3492,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -3580,69 +3618,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -3652,7 +3690,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -3660,11 +3698,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -3672,15 +3710,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -3688,45 +3726,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -3734,63 +3772,79 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.summary%20%3E%20(model)%20summary_vertical_response%20%3E%20(schema)>)
 
-##### [Get layer 3 attacks by target industries time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/industry)
+#### AttacksLayer3Timeseries Groups
 
-GET/radar/attacks/layer3/timeseries_groups/industry
+##### [Get layer 3 attacks by target industries time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/industry)
 
-##### [Get layer 3 attacks by IP version time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/ip_version)
+Deprecated
 
-GET/radar/attacks/layer3/timeseries_groups/ip_version
+GET/radar/attacks/layer3/timeseries\_groups/industry
 
-##### [Get layer 3 attacks by protocol time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/protocol)
+##### [Get layer 3 attacks by IP version time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/ip_version)
 
-GET/radar/attacks/layer3/timeseries_groups/protocol
+Deprecated
 
-##### [Get layer 3 attacks by vector time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/vector)
+GET/radar/attacks/layer3/timeseries\_groups/ip\_version
 
-GET/radar/attacks/layer3/timeseries_groups/vector
+##### [Get layer 3 attacks by protocol time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/protocol)
 
-##### [Get layer 3 attacks by vertical time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/vertical)
+Deprecated
 
-GET/radar/attacks/layer3/timeseries_groups/vertical
+GET/radar/attacks/layer3/timeseries\_groups/protocol
 
-##### [Get layer 3 attacks by bitrate time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/bitrate)
+##### [Get layer 3 attacks by vector time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/vector)
 
-GET/radar/attacks/layer3/timeseries_groups/bitrate
+Deprecated
 
-##### [Get layer 3 attacks by duration time series](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/duration)
+GET/radar/attacks/layer3/timeseries\_groups/vector
 
-GET/radar/attacks/layer3/timeseries_groups/duration
+##### [Get layer 3 attacks by vertical time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/vertical)
 
-##### Models
+Deprecated
+
+GET/radar/attacks/layer3/timeseries\_groups/vertical
+
+##### [Get layer 3 attacks by bitrate time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/bitrate)
+
+Deprecated
+
+GET/radar/attacks/layer3/timeseries\_groups/bitrate
+
+##### [Get layer 3 attacks by duration time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/timeseries_groups/methods/duration)
+
+Deprecated
+
+GET/radar/attacks/layer3/timeseries\_groups/duration
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-TimeseriesGroupIndustryResponse object { meta, serie_0 }
+TimeseriesGroupIndustryResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -3798,7 +3852,7 @@ TimeseriesGroupIndustryResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -3808,43 +3862,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -3852,7 +3906,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -3860,7 +3914,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -3870,123 +3924,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -3996,69 +4050,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -4068,7 +4122,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -4076,11 +4130,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -4088,15 +4142,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -4104,45 +4158,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -4150,45 +4204,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_industry_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupIPVersionResponse object { meta, serie_0 }
+TimeseriesGroupIPVersionResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -4196,7 +4250,7 @@ TimeseriesGroupIPVersionResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -4206,43 +4260,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -4250,7 +4304,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -4258,7 +4312,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -4268,123 +4322,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -4394,69 +4448,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -4466,7 +4520,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -4474,11 +4528,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -4486,15 +4540,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -4502,45 +4556,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -4548,53 +4602,53 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { IPv4, IPv6, timestamps }
+serie\_0: object {IPv4, IPv6, timestamps }
 
 </summary>
 
 IPv4: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 IPv6: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_ip_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupProtocolResponse object { meta, serie_0 }
+TimeseriesGroupProtocolResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -4602,7 +4656,7 @@ TimeseriesGroupProtocolResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -4612,43 +4666,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -4656,7 +4710,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -4664,7 +4718,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -4674,123 +4728,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -4800,69 +4854,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -4872,7 +4926,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -4880,11 +4934,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -4892,15 +4946,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -4908,45 +4962,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -4954,61 +5008,61 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { GRE, ICMP, TCP, 2 more }
+serie\_0: object {GRE, ICMP, TCP, 2 more }
 
 </summary>
 
 GRE: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 ICMP: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 TCP: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 UDP: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_protocol_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupVectorResponse object { meta, serie_0 }
+TimeseriesGroupVectorResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -5016,7 +5070,7 @@ TimeseriesGroupVectorResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -5026,43 +5080,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -5070,7 +5124,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -5078,7 +5132,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -5088,123 +5142,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -5214,69 +5268,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -5286,7 +5340,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -5294,11 +5348,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -5306,15 +5360,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -5322,45 +5376,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -5368,45 +5422,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_vector_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupVerticalResponse object { meta, serie_0 }
+TimeseriesGroupVerticalResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -5414,7 +5468,7 @@ TimeseriesGroupVerticalResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -5424,43 +5478,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -5468,7 +5522,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -5476,7 +5530,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -5486,123 +5540,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -5612,69 +5666,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -5684,7 +5738,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -5692,11 +5746,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -5704,15 +5758,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -5720,45 +5774,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -5766,45 +5820,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_vertical_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupBitrateResponse object { meta, serie_0 }
+TimeseriesGroupBitrateResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -5812,7 +5866,7 @@ TimeseriesGroupBitrateResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -5822,43 +5876,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -5866,7 +5920,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -5874,7 +5928,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -5884,123 +5938,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -6010,69 +6064,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -6082,7 +6136,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -6090,11 +6144,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -6102,15 +6156,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -6118,45 +6172,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -6164,65 +6218,65 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { _1_GBPS_TO_10_GBPS, _10_GBPS_TO_100_GBPS, _500_MBPS_TO_1_GBPS, 3 more }
+serie\_0: object {\_1\_GBPS\_TO\_10\_GBPS, \_10\_GBPS\_TO\_100\_GBPS, \_500\_MBPS\_TO\_1\_GBPS, 3 more }
 
 </summary>
 
-_1_GBPS_TO_10_GBPS: array of string
+\_1\_GBPS\_TO\_10\_GBPS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_10_GBPS_TO_100_GBPS: array of string
+\_10\_GBPS\_TO\_100\_GBPS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_500_MBPS_TO_1_GBPS: array of string
+\_500\_MBPS\_TO\_1\_GBPS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-OVER_100_GBPS: array of string
+OVER\_100\_GBPS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-UNDER_500_MBPS: array of string
+UNDER\_500\_MBPS: array of string
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_bitrate_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupDurationResponse object { meta, serie_0 }
+TimeseriesGroupDurationResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -6230,7 +6284,7 @@ TimeseriesGroupDurationResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -6240,43 +6294,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -6284,7 +6338,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -6292,7 +6346,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -6302,123 +6356,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -6428,69 +6482,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -6500,7 +6554,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -6508,11 +6562,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -6520,15 +6574,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -6536,45 +6590,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -6582,83 +6636,89 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { _1_HOUR_TO_3_HOURS, _10_MINS_TO_20_MINS, _20_MINS_TO_40_MINS, 4 more }
+serie\_0: object {\_1\_HOUR\_TO\_3\_HOURS, \_10\_MINS\_TO\_20\_MINS, \_20\_MINS\_TO\_40\_MINS, 4 more }
 
 </summary>
 
-_1_HOUR_TO_3_HOURS: array of string
+\_1\_HOUR\_TO\_3\_HOURS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_10_MINS_TO_20_MINS: array of string
+\_10\_MINS\_TO\_20\_MINS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_20_MINS_TO_40_MINS: array of string
+\_20\_MINS\_TO\_40\_MINS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-_40_MINS_TO_1_HOUR: array of string
+\_40\_MINS\_TO\_1\_HOUR: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-OVER_3_HOURS: array of string
+OVER\_3\_HOURS: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-UNDER_10_MINS: array of string
+UNDER\_10\_MINS: array of string
 
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-##### [Get top layer 3 attack pairs (origin and target locations)](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/attacks)
+</details>
+
+[Link to this property](#)%20radar.attacks.layer3.timeseries_groups%20%3E%20(model)%20timeseries_group_duration_response%20%3E%20(schema)>)
+
+#### AttacksLayer3Top
+
+##### [Get top layer 3 attack pairs (origin and target locations)](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/attacks)
 
 GET/radar/attacks/layer3/top/attacks
 
-##### [Get top industries targeted by layer 3 attacks](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/industry)
+##### [Get top industries targeted by layer 3 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/industry)
+
+Deprecated
 
 GET/radar/attacks/layer3/top/industry
 
-##### [Get top verticals targeted by layer 3 attacks](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/vertical)
+##### [Get top verticals targeted by layer 3 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/methods/vertical)
+
+Deprecated
 
 GET/radar/attacks/layer3/top/vertical
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-TopAttacksResponse object { meta, top_0 }
+TopAttacksResponse object {meta, top\_0 }
 
 </summary>
 
@@ -6666,7 +6726,7 @@ TopAttacksResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -6676,7 +6736,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -6684,7 +6744,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -6692,7 +6752,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -6702,123 +6762,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -6828,69 +6888,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -6900,7 +6960,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -6908,11 +6968,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -6920,15 +6980,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -6936,45 +6996,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -6982,53 +7042,53 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { originCountryAlpha2, originCountryName, value }
+top\_0: array of object {originCountryAlpha2, originCountryName, value }
 
 </summary>
 
 originCountryAlpha2: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 originCountryName: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.top%20%3E%20(model)%20top_attacks_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TopIndustryResponse object { meta, top_0 }
+TopIndustryResponse object {meta, top\_0 }
 
 </summary>
 
@@ -7036,7 +7096,7 @@ TopIndustryResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -7046,7 +7106,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -7054,7 +7114,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -7062,7 +7122,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -7072,123 +7132,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -7198,69 +7258,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -7270,7 +7330,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -7278,11 +7338,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -7290,15 +7350,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -7306,45 +7366,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -7352,49 +7412,49 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { name, value }
+top\_0: array of object {name, value }
 
 </summary>
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.top%20%3E%20(model)%20top_industry_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TopVerticalResponse object { meta, top_0 }
+TopVerticalResponse object {meta, top\_0 }
 
 </summary>
 
@@ -7402,7 +7462,7 @@ TopVerticalResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -7412,7 +7472,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -7420,7 +7480,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -7428,7 +7488,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -7438,123 +7498,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -7564,69 +7624,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -7636,7 +7696,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -7644,11 +7704,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -7656,15 +7716,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -7672,45 +7732,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -7718,59 +7778,61 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { name, value }
+top\_0: array of object {name, value }
 
 </summary>
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.top%20%3E%20(model)%20top_vertical_response%20%3E%20(schema)>)
 
-##### [Get top origin locations of layer 3 attacks](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/subresources/locations/methods/origin)
+#### AttacksLayer3TopLocations
+
+##### [Get top origin locations of layer 3 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/subresources/locations/methods/origin)
 
 GET/radar/attacks/layer3/top/locations/origin
 
-##### [Get top target locations of layer 3 attacks](/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/subresources/locations/methods/target)
+##### [Get top target locations of layer 3 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer3/subresources/top/subresources/locations/methods/target)
 
 GET/radar/attacks/layer3/top/locations/target
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-LocationOriginResponse object { meta, top_0 }
+LocationOriginResponse object {meta, top\_0 }
 
 </summary>
 
@@ -7778,7 +7840,7 @@ LocationOriginResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -7788,7 +7850,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -7796,7 +7858,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -7804,7 +7866,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -7814,123 +7876,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -7940,69 +8002,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -8012,7 +8074,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -8020,11 +8082,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -8032,15 +8094,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -8048,45 +8110,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -8094,57 +8156,57 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { originCountryAlpha2, originCountryName, rank, value }
+top\_0: array of object {originCountryAlpha2, originCountryName, rank, value }
 
 </summary>
 
 originCountryAlpha2: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 originCountryName: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 rank: number
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.top.locations%20%3E%20(model)%20location_origin_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-LocationTargetResponse object { meta, top_0 }
+LocationTargetResponse object {meta, top\_0 }
 
 </summary>
 
@@ -8152,7 +8214,7 @@ LocationTargetResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -8162,7 +8224,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -8170,7 +8232,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -8178,7 +8240,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -8188,123 +8250,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -8314,69 +8376,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -8386,7 +8448,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -8394,11 +8456,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -8406,15 +8468,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -8422,45 +8484,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -8468,71 +8530,73 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { rank, targetCountryAlpha2, targetCountryName, value }
+top\_0: array of object {rank, targetCountryAlpha2, targetCountryName, value }
 
 </summary>
 
 rank: number
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 targetCountryAlpha2: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 targetCountryName: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer3.top.locations%20%3E%20(model)%20location_target_response%20%3E%20(schema)>)
 
-##### [Get layer 7 attacks summary by dimension](/api/resources/radar/subresources/attacks/subresources/layer7/methods/summary_v2)
+#### AttacksLayer7
+
+##### [Get layer 7 attacks summary by dimension](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/methods/summary_v2)
 
 GET/radar/attacks/layer7/summary/{dimension}
 
-##### [Get layer 7 attacks time series](/api/resources/radar/subresources/attacks/subresources/layer7/methods/timeseries)
+##### [Get layer 7 attacks time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/methods/timeseries)
 
 GET/radar/attacks/layer7/timeseries
 
-##### [Get layer 7 attacks time series grouped by dimension](/api/resources/radar/subresources/attacks/subresources/layer7/methods/timeseries_groups_v2)
+##### [Get layer 7 attacks time series grouped by dimension](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/methods/timeseries_groups_v2)
 
-GET/radar/attacks/layer7/timeseries_groups/{dimension}
+GET/radar/attacks/layer7/timeseries\_groups/{dimension}
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-Layer7SummaryV2Response object { meta, summary_0 }
+Layer7SummaryV2Response object {meta, summary\_0 }
 
 </summary>
 
@@ -8540,7 +8604,7 @@ Layer7SummaryV2Response object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -8550,7 +8614,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -8558,7 +8622,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -8566,7 +8630,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -8576,123 +8640,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -8702,69 +8766,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -8774,7 +8838,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -8782,11 +8846,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -8794,15 +8858,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -8810,45 +8874,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -8856,33 +8920,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7%20%3E%20(model)%20layer7_summary_v2_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-Layer7TimeseriesResponse object { meta, serie_0 }
+Layer7TimeseriesResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -8890,7 +8954,7 @@ Layer7TimeseriesResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -8900,43 +8964,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -8944,7 +9008,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -8952,7 +9016,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -8962,123 +9026,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -9088,69 +9152,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -9160,7 +9224,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -9168,11 +9232,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -9180,15 +9244,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -9196,45 +9260,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -9242,49 +9306,49 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps, values }
+serie\_0: object {timestamps, values }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 values: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7%20%3E%20(model)%20layer7_timeseries_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-Layer7TimeseriesGroupsV2Response object { meta, serie_0 }
+Layer7TimeseriesGroupsV2Response object {meta, serie\_0 }
 
 </summary>
 
@@ -9292,7 +9356,7 @@ Layer7TimeseriesGroupsV2Response object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -9302,43 +9366,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -9346,7 +9410,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -9354,7 +9418,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -9364,123 +9428,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -9490,69 +9554,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -9562,7 +9626,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -9570,11 +9634,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -9582,15 +9646,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -9598,45 +9662,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -9644,75 +9708,91 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7%20%3E%20(model)%20layer7_timeseries_groups_v2_response%20%3E%20(schema)>)
 
-##### [Get layer 7 attacks by IP version summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/ip_version)
+#### AttacksLayer7Summary
 
-GET/radar/attacks/layer7/summary/ip_version
+##### [Get layer 7 attacks by IP version summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/ip_version)
 
-##### [Get layer 7 attacks by HTTP method summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/http_method)
+Deprecated
 
-GET/radar/attacks/layer7/summary/http_method
+GET/radar/attacks/layer7/summary/ip\_version
 
-##### [Get layer 7 attacks by HTTP version summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/http_version)
+##### [Get layer 7 attacks by HTTP method summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/http_method)
 
-GET/radar/attacks/layer7/summary/http_version
+Deprecated
 
-##### [Get layer 7 attacks by managed rules summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/managed_rules)
+GET/radar/attacks/layer7/summary/http\_method
 
-GET/radar/attacks/layer7/summary/managed_rules
+##### [Get layer 7 attacks by HTTP version summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/http_version)
 
-##### [Get layer 7 attacks by mitigation product summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/mitigation_product)
+Deprecated
 
-GET/radar/attacks/layer7/summary/mitigation_product
+GET/radar/attacks/layer7/summary/http\_version
 
-##### [Get layer 7 attacks by targeted industry summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/industry)
+##### [Get layer 7 attacks by managed rules summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/managed_rules)
+
+Deprecated
+
+GET/radar/attacks/layer7/summary/managed\_rules
+
+##### [Get layer 7 attacks by mitigation product summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/mitigation_product)
+
+Deprecated
+
+GET/radar/attacks/layer7/summary/mitigation\_product
+
+##### [Get layer 7 attacks by targeted industry summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/industry)
+
+Deprecated
 
 GET/radar/attacks/layer7/summary/industry
 
-##### [Get layer 7 attacks by targeted vertical summary](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/vertical)
+##### [Get layer 7 attacks by targeted vertical summary](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/summary/methods/vertical)
+
+Deprecated
 
 GET/radar/attacks/layer7/summary/vertical
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-SummaryIPVersionResponse object { meta, summary_0 }
+SummaryIPVersionResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -9720,7 +9800,7 @@ SummaryIPVersionResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -9730,7 +9810,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -9738,7 +9818,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -9746,7 +9826,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -9756,123 +9836,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -9882,69 +9962,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -9954,7 +10034,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -9962,11 +10042,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -9974,15 +10054,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -9990,45 +10070,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -10036,49 +10116,49 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { IPv4, IPv6 }
+summary\_0: object {IPv4, IPv6 }
 
 </summary>
 
 IPv4: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 IPv6: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_ip_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryHTTPMethodResponse object { meta, summary_0 }
+SummaryHTTPMethodResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -10086,7 +10166,7 @@ SummaryHTTPMethodResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -10096,7 +10176,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -10104,7 +10184,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -10112,7 +10192,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -10122,123 +10202,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -10248,69 +10328,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -10320,7 +10400,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -10328,11 +10408,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -10340,15 +10420,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -10356,45 +10436,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -10402,33 +10482,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_http_method_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryHTTPVersionResponse object { meta, summary_0 }
+SummaryHTTPVersionResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -10436,7 +10516,7 @@ SummaryHTTPVersionResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -10446,7 +10526,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -10454,7 +10534,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -10462,7 +10542,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -10472,123 +10552,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -10598,69 +10678,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -10670,7 +10750,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -10678,11 +10758,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -10690,15 +10770,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -10706,45 +10786,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -10752,53 +10832,53 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-summary_0: object { "HTTP/1.x", "HTTP/2", "HTTP/3" }
+summary\_0: object {"HTTP/1.x", "HTTP/2", "HTTP/3" }
 
 </summary>
 
 "HTTP/1.x": string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP/2": string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP/3": string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_http_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryManagedRulesResponse object { meta, summary_0 }
+SummaryManagedRulesResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -10806,7 +10886,7 @@ SummaryManagedRulesResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -10816,7 +10896,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -10824,7 +10904,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -10832,7 +10912,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -10842,123 +10922,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -10968,69 +11048,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -11040,7 +11120,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -11048,11 +11128,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -11060,15 +11140,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -11076,45 +11156,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -11122,33 +11202,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_managed_rules_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryMitigationProductResponse object { meta, summary_0 }
+SummaryMitigationProductResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -11156,7 +11236,7 @@ SummaryMitigationProductResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -11166,7 +11246,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -11174,7 +11254,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -11182,7 +11262,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -11192,123 +11272,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -11318,69 +11398,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -11390,7 +11470,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -11398,11 +11478,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -11410,15 +11490,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -11426,45 +11506,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -11472,33 +11552,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_mitigation_product_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryIndustryResponse object { meta, summary_0 }
+SummaryIndustryResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -11506,7 +11586,7 @@ SummaryIndustryResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -11516,7 +11596,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -11524,7 +11604,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -11532,7 +11612,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -11542,123 +11622,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -11668,69 +11748,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -11740,7 +11820,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -11748,11 +11828,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -11760,15 +11840,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -11776,45 +11856,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -11822,33 +11902,33 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_industry_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-SummaryVerticalResponse object { meta, summary_0 }
+SummaryVerticalResponse object {meta, summary\_0 }
 
 </summary>
 
@@ -11856,7 +11936,7 @@ SummaryVerticalResponse object { meta, summary_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -11866,7 +11946,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -11874,7 +11954,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -11882,7 +11962,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -11892,123 +11972,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -12018,69 +12098,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -12090,7 +12170,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -12098,11 +12178,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -12110,15 +12190,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -12126,45 +12206,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -12172,63 +12252,79 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-summary_0: map[string]
+summary\_0: map\[string]
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.summary%20%3E%20(model)%20summary_vertical_response%20%3E%20(schema)>)
 
-##### [Get layer 7 attacks by target industries time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/industry)
+#### AttacksLayer7Timeseries Groups
 
-GET/radar/attacks/layer7/timeseries_groups/industry
+##### [Get layer 7 attacks by target industries time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/industry)
 
-##### [Get layer 7 attacks by IP version time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/ip_version)
+Deprecated
 
-GET/radar/attacks/layer7/timeseries_groups/ip_version
+GET/radar/attacks/layer7/timeseries\_groups/industry
 
-##### [Get layer 7 attacks by vertical time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/vertical)
+##### [Get layer 7 attacks by IP version time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/ip_version)
 
-GET/radar/attacks/layer7/timeseries_groups/vertical
+Deprecated
 
-##### [Get layer 7 attacks by HTTP method time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/http_method)
+GET/radar/attacks/layer7/timeseries\_groups/ip\_version
 
-GET/radar/attacks/layer7/timeseries_groups/http_method
+##### [Get layer 7 attacks by vertical time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/vertical)
 
-##### [Get layer 7 attacks by HTTP version time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/http_version)
+Deprecated
 
-GET/radar/attacks/layer7/timeseries_groups/http_version
+GET/radar/attacks/layer7/timeseries\_groups/vertical
 
-##### [Get layer 7 attacks by managed rules time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/managed_rules)
+##### [Get layer 7 attacks by HTTP method time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/http_method)
 
-GET/radar/attacks/layer7/timeseries_groups/managed_rules
+Deprecated
 
-##### [Get layer 7 attacks by mitigation product time series](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/mitigation_product)
+GET/radar/attacks/layer7/timeseries\_groups/http\_method
 
-GET/radar/attacks/layer7/timeseries_groups/mitigation_product
+##### [Get layer 7 attacks by HTTP version time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/http_version)
 
-##### Models
+Deprecated
+
+GET/radar/attacks/layer7/timeseries\_groups/http\_version
+
+##### [Get layer 7 attacks by managed rules time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/managed_rules)
+
+Deprecated
+
+GET/radar/attacks/layer7/timeseries\_groups/managed\_rules
+
+##### [Get layer 7 attacks by mitigation product time series](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/timeseries_groups/methods/mitigation_product)
+
+Deprecated
+
+GET/radar/attacks/layer7/timeseries\_groups/mitigation\_product
+
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-TimeseriesGroupIndustryResponse object { meta, serie_0 }
+TimeseriesGroupIndustryResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -12236,7 +12332,7 @@ TimeseriesGroupIndustryResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -12246,43 +12342,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -12290,7 +12386,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -12298,7 +12394,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -12308,123 +12404,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -12434,69 +12530,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -12506,7 +12602,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -12514,11 +12610,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -12526,15 +12622,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -12542,45 +12638,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -12588,45 +12684,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_industry_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupIPVersionResponse object { meta, serie_0 }
+TimeseriesGroupIPVersionResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -12634,7 +12730,7 @@ TimeseriesGroupIPVersionResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -12644,43 +12740,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -12688,7 +12784,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -12696,7 +12792,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -12706,123 +12802,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -12832,69 +12928,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -12904,7 +13000,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -12912,11 +13008,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -12924,15 +13020,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -12940,45 +13036,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -12986,53 +13082,53 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { IPv4, IPv6, timestamps }
+serie\_0: object {IPv4, IPv6, timestamps }
 
 </summary>
 
 IPv4: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 IPv6: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_ip_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupVerticalResponse object { meta, serie_0 }
+TimeseriesGroupVerticalResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -13040,7 +13136,7 @@ TimeseriesGroupVerticalResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -13050,43 +13146,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -13094,7 +13190,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -13102,7 +13198,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -13112,123 +13208,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -13238,69 +13334,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -13310,7 +13406,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -13318,11 +13414,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -13330,15 +13426,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -13346,45 +13442,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -13392,45 +13488,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_vertical_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupHTTPMethodResponse object { meta, serie_0 }
+TimeseriesGroupHTTPMethodResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -13438,7 +13534,7 @@ TimeseriesGroupHTTPMethodResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -13448,43 +13544,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -13492,7 +13588,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -13500,7 +13596,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -13510,123 +13606,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -13636,69 +13732,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -13708,7 +13804,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -13716,11 +13812,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -13728,15 +13824,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -13744,45 +13840,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -13790,45 +13886,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_http_method_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupHTTPVersionResponse object { meta, serie_0 }
+TimeseriesGroupHTTPVersionResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -13836,7 +13932,7 @@ TimeseriesGroupHTTPVersionResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -13846,43 +13942,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -13890,7 +13986,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -13898,7 +13994,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -13908,123 +14004,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -14034,69 +14130,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -14106,7 +14202,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -14114,11 +14210,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -14126,15 +14222,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -14142,45 +14238,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -14188,57 +14284,57 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { "HTTP/1.x", "HTTP/2", "HTTP/3", timestamps }
+serie\_0: object {"HTTP/1.x", "HTTP/2", "HTTP/3", timestamps }
 
 </summary>
 
 "HTTP/1.x": array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP/2": array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP/3": array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_http_version_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupManagedRulesResponse object { meta, serie_0 }
+TimeseriesGroupManagedRulesResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -14246,7 +14342,7 @@ TimeseriesGroupManagedRulesResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -14256,43 +14352,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -14300,7 +14396,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -14308,7 +14404,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -14318,123 +14414,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -14444,69 +14540,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -14516,7 +14612,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -14524,11 +14620,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -14536,15 +14632,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -14552,45 +14648,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -14598,45 +14694,45 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_managed_rules_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TimeseriesGroupMitigationProductResponse object { meta, serie_0 }
+TimeseriesGroupMitigationProductResponse object {meta, serie\_0 }
 
 </summary>
 
@@ -14644,7 +14740,7 @@ TimeseriesGroupMitigationProductResponse object { meta, serie_0 }
 
 <summary>
 
-meta: object { aggInterval, confidenceInfo, dateRange, 3 more }
+meta: object {aggInterval, confidenceInfo, dateRange, 3 more }
 
 Metadata for the results.
 
@@ -14654,43 +14750,43 @@ Metadata for the results.
 
 <summary>
 
-aggInterval: "FIFTEEN_MINUTES" or "ONE_HOUR" or "ONE_DAY" or 2 more
+aggInterval: "FIFTEEN\_MINUTES"or "ONE\_HOUR"or "ONE\_DAY"or 2 more
 
-Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to [Aggregation intervals](https://developers.cloudflare.com/radar/concepts/aggregation-intervals/).
+Aggregation interval of the results (e.g., in 15 minutes or 1 hour intervals). Refer to <a href="https://developers.cloudflare.com/radar/concepts/aggregation-intervals/">Aggregation intervals</a>.
 
 </summary>
 
 One of the following:
 
-"FIFTEEN_MINUTES"
+"FIFTEEN\_MINUTES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_HOUR"
+"ONE\_HOUR"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_DAY"
+"ONE\_DAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_WEEK"
+"ONE\_WEEK"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ONE_MONTH"
+"ONE\_MONTH"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -14698,7 +14794,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -14706,7 +14802,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -14716,123 +14812,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -14842,69 +14938,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -14914,7 +15010,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -14922,11 +15018,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -14934,15 +15030,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -14950,45 +15046,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -14996,59 +15092,65 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-serie_0: object { timestamps }
+serie\_0: object {timestamps }
 
 </summary>
 
 timestamps: array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.timeseries_groups%20%3E%20(model)%20timeseries_group_mitigation_product_response%20%3E%20(schema)>)
 
-##### [Get top layer 7 attack pairs (origin and target locations)](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/attacks)
+#### AttacksLayer7Top
+
+##### [Get top layer 7 attack pairs (origin and target locations)](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/attacks)
 
 GET/radar/attacks/layer7/top/attacks
 
-##### [Get top industries targeted by layer 7 attacks](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/industry)
+##### [Get top industries targeted by layer 7 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/industry)
+
+Deprecated
 
 GET/radar/attacks/layer7/top/industry
 
-##### [Get top verticals targeted by layer 7 attacks](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/vertical)
+##### [Get top verticals targeted by layer 7 attacks](https://developers.cloudflare.com/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/methods/vertical)
+
+Deprecated
 
 GET/radar/attacks/layer7/top/vertical
 
-##### Models
+##### ModelsExpand Collapse
 
 <details>
 
 <summary>
 
-TopAttacksResponse object { meta, top_0 }
+TopAttacksResponse object {meta, top\_0 }
 
 </summary>
 
@@ -15056,7 +15158,7 @@ TopAttacksResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -15066,7 +15168,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -15074,7 +15176,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -15082,7 +15184,7 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
+dataSource: "ALL"or "AI\_BOTS"or "AI\_GATEWAY"or 22 more
 
 Data source for annotations.
 
@@ -15092,123 +15194,123 @@ One of the following:
 
 "ALL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_BOTS"
+"AI\_BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"AI_GATEWAY"
+"AI\_GATEWAY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BGP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "BOTS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"CONNECTION_ANOMALY"
+"CONNECTION\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "CT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DNS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_MAGNITUDE"
+"DNS\_MAGNITUDE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"DNS_AS112"
+"DNS\_AS112"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "DOS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_ROUTING"
+"EMAIL\_ROUTING"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"EMAIL_SECURITY"
+"EMAIL\_SECURITY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "FW"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"FW_PG"
+"FW\_PG"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "HTTP"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CONTROL"
+"HTTP\_CONTROL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_CRAWLER_REFERER"
+"HTTP\_CRAWLER\_REFERER"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"HTTP_ORIGINS"
+"HTTP\_ORIGINS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "IQI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"LEAKED_CREDENTIALS"
+"LEAKED\_CREDENTIALS"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "NET"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROBOTS_TXT"
+"ROBOTS\_TXT"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "SPEED"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"WORKERS_AI"
+"WORKERS\_AI"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 description: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 endDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
+eventType: "GENERAL"or "OUTAGE"or "PARTIAL\_PROJECTION"or 2 more
 
 Event type for annotations.
 
@@ -15218,69 +15320,69 @@ One of the following:
 
 "GENERAL"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "OUTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PARTIAL_PROJECTION"
+"PARTIAL\_PROJECTION"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "PIPELINE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"TRAFFIC_ANOMALY"
+"TRAFFIC\_ANOMALY"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 isInstantaneous: boolean
 
 Whether event is a single point in time or a time range.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 linkedUrl: string
 
 formaturi
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startDate: string
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 tags: optional array of string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 level: number
 
 Provides an indication of how much confidence Cloudflare has in the data.
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-dateRange: array of object { endTime, startTime }
+dateRange: array of object {endTime, startTime }
 
 </summary>
 
@@ -15290,7 +15392,7 @@ Adjusted end of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 startTime: string
 
@@ -15298,11 +15400,11 @@ Adjusted start of date range.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 lastUpdated: string
 
@@ -15310,15 +15412,15 @@ Timestamp of the last dataset update.
 
 formatdate-time
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
+normalization: "PERCENTAGE"or "MIN0\_MAX"or "MIN\_MAX"or 5 more
 
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
+Normalization method applied to the results. Refer to <a href="https://developers.cloudflare.com/radar/concepts/normalization/">Normalization methods</a>.
 
 </summary>
 
@@ -15326,45 +15428,45 @@ One of the following:
 
 "PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN0_MAX"
+"MIN0\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"MIN_MAX"
+"MIN\_MAX"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"RAW_VALUES"
+"RAW\_VALUES"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"PERCENTAGE_CHANGE"
+"PERCENTAGE\_CHANGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"ROLLING_AVERAGE"
+"ROLLING\_AVERAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
-"OVERLAPPED_PERCENTAGE"
+"OVERLAPPED\_PERCENTAGE"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 "RATIO"
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-units: array of object { name, value }
+units: array of object {name, value }
 
 Measurement units for the results.
 
@@ -15372,61 +15474,61 @@ Measurement units for the results.
 
 name: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-top_0: array of object { originCountryAlpha2, originCountryName, targetCountryAlpha2, 2 more }
+top\_0: array of object {originCountryAlpha2, originCountryName, targetCountryAlpha2, 2 more }
 
 </summary>
 
 originCountryAlpha2: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 originCountryName: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 targetCountryAlpha2: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 targetCountryName: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 value: string
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+<a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)
+[Link to this property](#)%20radar.attacks.layer7.top%20%3E%20(model)%20top_attacks_response%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-TopIndustryResponse object { meta, top_0 }
+TopIndustryResponse object {meta, top\_0 }
 
 </summary>
 
@@ -15434,7 +15536,7 @@ TopIndustryResponse object { meta, top_0 }
 
 <summary>
 
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
+meta: object {confidenceInfo, dateRange, lastUpdated, 2 more }
 
 Metadata for the results.
 
@@ -15444,7 +15546,7 @@ Metadata for the results.
 
 <summary>
 
-confidenceInfo: object { annotations, level }
+confidenceInfo: object {annotations, level }
 
 </summary>
 
@@ -15452,7 +15554,7 @@ confidenceInfo: object { annotations, level }
 
 <summary>
 
-annotations: array of object { dataSource, description, endDate, 5 more }
+annotations: array of object {dataSource, description, endDate, 5 more }
 
 </summary>
 
@@ -15460,1834 +15562,16 @@ annotations: array of object { dataSource, description, endDate, 5 more }
 
 <summary>
 
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
-
-Data source for annotations.
-
 </summary>
 
-One of the following:
-
-"ALL"
-
-[Link to this property](#)
-
-"AI_BOTS"
-
-[Link to this property](#)
-
-"AI_GATEWAY"
-
-[Link to this property](#)
-
-"BGP"
-
-[Link to this property](#)
-
-"BOTS"
-
-[Link to this property](#)
-
-"CONNECTION_ANOMALY"
-
-[Link to this property](#)
-
-"CT"
-
-[Link to this property](#)
-
-"DNS"
-
-[Link to this property](#)
-
-"DNS_MAGNITUDE"
-
-[Link to this property](#)
-
-"DNS_AS112"
-
-[Link to this property](#)
-
-"DOS"
-
-[Link to this property](#)
-
-"EMAIL_ROUTING"
-
-[Link to this property](#)
-
-"EMAIL_SECURITY"
-
-[Link to this property](#)
-
-"FW"
-
-[Link to this property](#)
-
-"FW_PG"
-
-[Link to this property](#)
-
-"HTTP"
-
-[Link to this property](#)
-
-"HTTP_CONTROL"
-
-[Link to this property](#)
-
-"HTTP_CRAWLER_REFERER"
-
-[Link to this property](#)
-
-"HTTP_ORIGINS"
-
-[Link to this property](#)
-
-"IQI"
-
-[Link to this property](#)
-
-"LEAKED_CREDENTIALS"
-
-[Link to this property](#)
-
-"NET"
-
-[Link to this property](#)
-
-"ROBOTS_TXT"
-
-[Link to this property](#)
-
-"SPEED"
-
-[Link to this property](#)
-
-"WORKERS_AI"
-
-[Link to this property](#)
+</details>
 
 </details>
 
-[Link to this property](#)
-
-description: string
-
-[Link to this property](#)
-
-endDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
-
-Event type for annotations.
-
-</summary>
-
-One of the following:
-
-"GENERAL"
-
-[Link to this property](#)
-
-"OUTAGE"
-
-[Link to this property](#)
-
-"PARTIAL_PROJECTION"
-
-[Link to this property](#)
-
-"PIPELINE"
-
-[Link to this property](#)
-
-"TRAFFIC_ANOMALY"
-
-[Link to this property](#)
+</details>
 
 </details>
 
-[Link to this property](#)
-
-isInstantaneous: boolean
-
-Whether event is a single point in time or a time range.
-
-[Link to this property](#)
-
-linkedUrl: string
-
-formaturi
-
-[Link to this property](#)
-
-startDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-tags: optional array of string
-
-[Link to this property](#)
-
 </details>
 
-[Link to this property](#)
-
-level: number
-
-Provides an indication of how much confidence Cloudflare has in the data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-dateRange: array of object { endTime, startTime }
-
-</summary>
-
-endTime: string
-
-Adjusted end of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-startTime: string
-
-Adjusted start of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastUpdated: string
-
-Timestamp of the last dataset update.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
-
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
-
-</summary>
-
-One of the following:
-
-"PERCENTAGE"
-
-[Link to this property](#)
-
-"MIN0_MAX"
-
-[Link to this property](#)
-
-"MIN_MAX"
-
-[Link to this property](#)
-
-"RAW_VALUES"
-
-[Link to this property](#)
-
-"PERCENTAGE_CHANGE"
-
-[Link to this property](#)
-
-"ROLLING_AVERAGE"
-
-[Link to this property](#)
-
-"OVERLAPPED_PERCENTAGE"
-
-[Link to this property](#)
-
-"RATIO"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-units: array of object { name, value }
-
-Measurement units for the results.
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-top_0: array of object { name, value }
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-TopVerticalResponse object { meta, top_0 }
-
-</summary>
-
-<details>
-
-<summary>
-
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
-
-Metadata for the results.
-
-</summary>
-
-<details>
-
-<summary>
-
-confidenceInfo: object { annotations, level }
-
-</summary>
-
-<details>
-
-<summary>
-
-annotations: array of object { dataSource, description, endDate, 5 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
-
-Data source for annotations.
-
-</summary>
-
-One of the following:
-
-"ALL"
-
-[Link to this property](#)
-
-"AI_BOTS"
-
-[Link to this property](#)
-
-"AI_GATEWAY"
-
-[Link to this property](#)
-
-"BGP"
-
-[Link to this property](#)
-
-"BOTS"
-
-[Link to this property](#)
-
-"CONNECTION_ANOMALY"
-
-[Link to this property](#)
-
-"CT"
-
-[Link to this property](#)
-
-"DNS"
-
-[Link to this property](#)
-
-"DNS_MAGNITUDE"
-
-[Link to this property](#)
-
-"DNS_AS112"
-
-[Link to this property](#)
-
-"DOS"
-
-[Link to this property](#)
-
-"EMAIL_ROUTING"
-
-[Link to this property](#)
-
-"EMAIL_SECURITY"
-
-[Link to this property](#)
-
-"FW"
-
-[Link to this property](#)
-
-"FW_PG"
-
-[Link to this property](#)
-
-"HTTP"
-
-[Link to this property](#)
-
-"HTTP_CONTROL"
-
-[Link to this property](#)
-
-"HTTP_CRAWLER_REFERER"
-
-[Link to this property](#)
-
-"HTTP_ORIGINS"
-
-[Link to this property](#)
-
-"IQI"
-
-[Link to this property](#)
-
-"LEAKED_CREDENTIALS"
-
-[Link to this property](#)
-
-"NET"
-
-[Link to this property](#)
-
-"ROBOTS_TXT"
-
-[Link to this property](#)
-
-"SPEED"
-
-[Link to this property](#)
-
-"WORKERS_AI"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-description: string
-
-[Link to this property](#)
-
-endDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
-
-Event type for annotations.
-
-</summary>
-
-One of the following:
-
-"GENERAL"
-
-[Link to this property](#)
-
-"OUTAGE"
-
-[Link to this property](#)
-
-"PARTIAL_PROJECTION"
-
-[Link to this property](#)
-
-"PIPELINE"
-
-[Link to this property](#)
-
-"TRAFFIC_ANOMALY"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isInstantaneous: boolean
-
-Whether event is a single point in time or a time range.
-
-[Link to this property](#)
-
-linkedUrl: string
-
-formaturi
-
-[Link to this property](#)
-
-startDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-tags: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-level: number
-
-Provides an indication of how much confidence Cloudflare has in the data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-dateRange: array of object { endTime, startTime }
-
-</summary>
-
-endTime: string
-
-Adjusted end of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-startTime: string
-
-Adjusted start of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastUpdated: string
-
-Timestamp of the last dataset update.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
-
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
-
-</summary>
-
-One of the following:
-
-"PERCENTAGE"
-
-[Link to this property](#)
-
-"MIN0_MAX"
-
-[Link to this property](#)
-
-"MIN_MAX"
-
-[Link to this property](#)
-
-"RAW_VALUES"
-
-[Link to this property](#)
-
-"PERCENTAGE_CHANGE"
-
-[Link to this property](#)
-
-"ROLLING_AVERAGE"
-
-[Link to this property](#)
-
-"OVERLAPPED_PERCENTAGE"
-
-[Link to this property](#)
-
-"RATIO"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-units: array of object { name, value }
-
-Measurement units for the results.
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-top_0: array of object { name, value }
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Get top origin locations of layer 7 attacks](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/subresources/locations/methods/origin)
-
-GET/radar/attacks/layer7/top/locations/origin
-
-##### [Get top target locations of layer 7 attacks](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/subresources/locations/methods/target)
-
-GET/radar/attacks/layer7/top/locations/target
-
-##### Models
-
-<details>
-
-<summary>
-
-LocationOriginResponse object { meta, top_0 }
-
-</summary>
-
-<details>
-
-<summary>
-
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
-
-Metadata for the results.
-
-</summary>
-
-<details>
-
-<summary>
-
-confidenceInfo: object { annotations, level }
-
-</summary>
-
-<details>
-
-<summary>
-
-annotations: array of object { dataSource, description, endDate, 5 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
-
-Data source for annotations.
-
-</summary>
-
-One of the following:
-
-"ALL"
-
-[Link to this property](#)
-
-"AI_BOTS"
-
-[Link to this property](#)
-
-"AI_GATEWAY"
-
-[Link to this property](#)
-
-"BGP"
-
-[Link to this property](#)
-
-"BOTS"
-
-[Link to this property](#)
-
-"CONNECTION_ANOMALY"
-
-[Link to this property](#)
-
-"CT"
-
-[Link to this property](#)
-
-"DNS"
-
-[Link to this property](#)
-
-"DNS_MAGNITUDE"
-
-[Link to this property](#)
-
-"DNS_AS112"
-
-[Link to this property](#)
-
-"DOS"
-
-[Link to this property](#)
-
-"EMAIL_ROUTING"
-
-[Link to this property](#)
-
-"EMAIL_SECURITY"
-
-[Link to this property](#)
-
-"FW"
-
-[Link to this property](#)
-
-"FW_PG"
-
-[Link to this property](#)
-
-"HTTP"
-
-[Link to this property](#)
-
-"HTTP_CONTROL"
-
-[Link to this property](#)
-
-"HTTP_CRAWLER_REFERER"
-
-[Link to this property](#)
-
-"HTTP_ORIGINS"
-
-[Link to this property](#)
-
-"IQI"
-
-[Link to this property](#)
-
-"LEAKED_CREDENTIALS"
-
-[Link to this property](#)
-
-"NET"
-
-[Link to this property](#)
-
-"ROBOTS_TXT"
-
-[Link to this property](#)
-
-"SPEED"
-
-[Link to this property](#)
-
-"WORKERS_AI"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-description: string
-
-[Link to this property](#)
-
-endDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
-
-Event type for annotations.
-
-</summary>
-
-One of the following:
-
-"GENERAL"
-
-[Link to this property](#)
-
-"OUTAGE"
-
-[Link to this property](#)
-
-"PARTIAL_PROJECTION"
-
-[Link to this property](#)
-
-"PIPELINE"
-
-[Link to this property](#)
-
-"TRAFFIC_ANOMALY"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isInstantaneous: boolean
-
-Whether event is a single point in time or a time range.
-
-[Link to this property](#)
-
-linkedUrl: string
-
-formaturi
-
-[Link to this property](#)
-
-startDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-tags: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-level: number
-
-Provides an indication of how much confidence Cloudflare has in the data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-dateRange: array of object { endTime, startTime }
-
-</summary>
-
-endTime: string
-
-Adjusted end of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-startTime: string
-
-Adjusted start of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastUpdated: string
-
-Timestamp of the last dataset update.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
-
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
-
-</summary>
-
-One of the following:
-
-"PERCENTAGE"
-
-[Link to this property](#)
-
-"MIN0_MAX"
-
-[Link to this property](#)
-
-"MIN_MAX"
-
-[Link to this property](#)
-
-"RAW_VALUES"
-
-[Link to this property](#)
-
-"PERCENTAGE_CHANGE"
-
-[Link to this property](#)
-
-"ROLLING_AVERAGE"
-
-[Link to this property](#)
-
-"OVERLAPPED_PERCENTAGE"
-
-[Link to this property](#)
-
-"RATIO"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-units: array of object { name, value }
-
-Measurement units for the results.
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-top_0: array of object { originCountryAlpha2, originCountryName, rank, value }
-
-</summary>
-
-originCountryAlpha2: string
-
-[Link to this property](#)
-
-originCountryName: string
-
-[Link to this property](#)
-
-rank: number
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-LocationTargetResponse object { meta, top_0 }
-
-</summary>
-
-<details>
-
-<summary>
-
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
-
-Metadata for the results.
-
-</summary>
-
-<details>
-
-<summary>
-
-confidenceInfo: object { annotations, level }
-
-</summary>
-
-<details>
-
-<summary>
-
-annotations: array of object { dataSource, description, endDate, 5 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
-
-Data source for annotations.
-
-</summary>
-
-One of the following:
-
-"ALL"
-
-[Link to this property](#)
-
-"AI_BOTS"
-
-[Link to this property](#)
-
-"AI_GATEWAY"
-
-[Link to this property](#)
-
-"BGP"
-
-[Link to this property](#)
-
-"BOTS"
-
-[Link to this property](#)
-
-"CONNECTION_ANOMALY"
-
-[Link to this property](#)
-
-"CT"
-
-[Link to this property](#)
-
-"DNS"
-
-[Link to this property](#)
-
-"DNS_MAGNITUDE"
-
-[Link to this property](#)
-
-"DNS_AS112"
-
-[Link to this property](#)
-
-"DOS"
-
-[Link to this property](#)
-
-"EMAIL_ROUTING"
-
-[Link to this property](#)
-
-"EMAIL_SECURITY"
-
-[Link to this property](#)
-
-"FW"
-
-[Link to this property](#)
-
-"FW_PG"
-
-[Link to this property](#)
-
-"HTTP"
-
-[Link to this property](#)
-
-"HTTP_CONTROL"
-
-[Link to this property](#)
-
-"HTTP_CRAWLER_REFERER"
-
-[Link to this property](#)
-
-"HTTP_ORIGINS"
-
-[Link to this property](#)
-
-"IQI"
-
-[Link to this property](#)
-
-"LEAKED_CREDENTIALS"
-
-[Link to this property](#)
-
-"NET"
-
-[Link to this property](#)
-
-"ROBOTS_TXT"
-
-[Link to this property](#)
-
-"SPEED"
-
-[Link to this property](#)
-
-"WORKERS_AI"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-description: string
-
-[Link to this property](#)
-
-endDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
-
-Event type for annotations.
-
-</summary>
-
-One of the following:
-
-"GENERAL"
-
-[Link to this property](#)
-
-"OUTAGE"
-
-[Link to this property](#)
-
-"PARTIAL_PROJECTION"
-
-[Link to this property](#)
-
-"PIPELINE"
-
-[Link to this property](#)
-
-"TRAFFIC_ANOMALY"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isInstantaneous: boolean
-
-Whether event is a single point in time or a time range.
-
-[Link to this property](#)
-
-linkedUrl: string
-
-formaturi
-
-[Link to this property](#)
-
-startDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-tags: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-level: number
-
-Provides an indication of how much confidence Cloudflare has in the data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-dateRange: array of object { endTime, startTime }
-
-</summary>
-
-endTime: string
-
-Adjusted end of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-startTime: string
-
-Adjusted start of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastUpdated: string
-
-Timestamp of the last dataset update.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
-
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
-
-</summary>
-
-One of the following:
-
-"PERCENTAGE"
-
-[Link to this property](#)
-
-"MIN0_MAX"
-
-[Link to this property](#)
-
-"MIN_MAX"
-
-[Link to this property](#)
-
-"RAW_VALUES"
-
-[Link to this property](#)
-
-"PERCENTAGE_CHANGE"
-
-[Link to this property](#)
-
-"ROLLING_AVERAGE"
-
-[Link to this property](#)
-
-"OVERLAPPED_PERCENTAGE"
-
-[Link to this property](#)
-
-"RATIO"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-units: array of object { name, value }
-
-Measurement units for the results.
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-top_0: array of object { rank, targetCountryAlpha2, targetCountryName, value }
-
-</summary>
-
-rank: number
-
-[Link to this property](#)
-
-targetCountryAlpha2: string
-
-[Link to this property](#)
-
-targetCountryName: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-##### [Get top origin ASes of layer 7 attacks](/api/resources/radar/subresources/attacks/subresources/layer7/subresources/top/subresources/ases/methods/origin)
-
-GET/radar/attacks/layer7/top/ases/origin
-
-##### Models
-
-<details>
-
-<summary>
-
-AseOriginResponse object { meta, top_0 }
-
-</summary>
-
-<details>
-
-<summary>
-
-meta: object { confidenceInfo, dateRange, lastUpdated, 2 more }
-
-Metadata for the results.
-
-</summary>
-
-<details>
-
-<summary>
-
-confidenceInfo: object { annotations, level }
-
-</summary>
-
-<details>
-
-<summary>
-
-annotations: array of object { dataSource, description, endDate, 5 more }
-
-</summary>
-
-<details>
-
-<summary>
-
-dataSource: "ALL" or "AI_BOTS" or "AI_GATEWAY" or 22 more
-
-Data source for annotations.
-
-</summary>
-
-One of the following:
-
-"ALL"
-
-[Link to this property](#)
-
-"AI_BOTS"
-
-[Link to this property](#)
-
-"AI_GATEWAY"
-
-[Link to this property](#)
-
-"BGP"
-
-[Link to this property](#)
-
-"BOTS"
-
-[Link to this property](#)
-
-"CONNECTION_ANOMALY"
-
-[Link to this property](#)
-
-"CT"
-
-[Link to this property](#)
-
-"DNS"
-
-[Link to this property](#)
-
-"DNS_MAGNITUDE"
-
-[Link to this property](#)
-
-"DNS_AS112"
-
-[Link to this property](#)
-
-"DOS"
-
-[Link to this property](#)
-
-"EMAIL_ROUTING"
-
-[Link to this property](#)
-
-"EMAIL_SECURITY"
-
-[Link to this property](#)
-
-"FW"
-
-[Link to this property](#)
-
-"FW_PG"
-
-[Link to this property](#)
-
-"HTTP"
-
-[Link to this property](#)
-
-"HTTP_CONTROL"
-
-[Link to this property](#)
-
-"HTTP_CRAWLER_REFERER"
-
-[Link to this property](#)
-
-"HTTP_ORIGINS"
-
-[Link to this property](#)
-
-"IQI"
-
-[Link to this property](#)
-
-"LEAKED_CREDENTIALS"
-
-[Link to this property](#)
-
-"NET"
-
-[Link to this property](#)
-
-"ROBOTS_TXT"
-
-[Link to this property](#)
-
-"SPEED"
-
-[Link to this property](#)
-
-"WORKERS_AI"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-description: string
-
-[Link to this property](#)
-
-endDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-eventType: "GENERAL" or "OUTAGE" or "PARTIAL_PROJECTION" or 2 more
-
-Event type for annotations.
-
-</summary>
-
-One of the following:
-
-"GENERAL"
-
-[Link to this property](#)
-
-"OUTAGE"
-
-[Link to this property](#)
-
-"PARTIAL_PROJECTION"
-
-[Link to this property](#)
-
-"PIPELINE"
-
-[Link to this property](#)
-
-"TRAFFIC_ANOMALY"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-isInstantaneous: boolean
-
-Whether event is a single point in time or a time range.
-
-[Link to this property](#)
-
-linkedUrl: string
-
-formaturi
-
-[Link to this property](#)
-
-startDate: string
-
-formatdate-time
-
-[Link to this property](#)
-
-tags: optional array of string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-level: number
-
-Provides an indication of how much confidence Cloudflare has in the data.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-dateRange: array of object { endTime, startTime }
-
-</summary>
-
-endTime: string
-
-Adjusted end of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-startTime: string
-
-Adjusted start of date range.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-lastUpdated: string
-
-Timestamp of the last dataset update.
-
-formatdate-time
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-normalization: "PERCENTAGE" or "MIN0_MAX" or "MIN_MAX" or 5 more
-
-Normalization method applied to the results. Refer to [Normalization methods](https://developers.cloudflare.com/radar/concepts/normalization/).
-
-</summary>
-
-One of the following:
-
-"PERCENTAGE"
-
-[Link to this property](#)
-
-"MIN0_MAX"
-
-[Link to this property](#)
-
-"MIN_MAX"
-
-[Link to this property](#)
-
-"RAW_VALUES"
-
-[Link to this property](#)
-
-"PERCENTAGE_CHANGE"
-
-[Link to this property](#)
-
-"ROLLING_AVERAGE"
-
-[Link to this property](#)
-
-"OVERLAPPED_PERCENTAGE"
-
-[Link to this property](#)
-
-"RATIO"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-units: array of object { name, value }
-
-Measurement units for the results.
-
-</summary>
-
-name: string
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-top_0: array of object { originAsn, originAsnName, rank, value }
-
-</summary>
-
-originAsn: string
-
-[Link to this property](#)
-
-originAsnName: string
-
-[Link to this property](#)
-
-rank: number
-
-[Link to this property](#)
-
-value: string
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
+<!-- Cloudflare Markdown for Agents: incomplete conversion; source HTML truncated at the conversion size limit -->
