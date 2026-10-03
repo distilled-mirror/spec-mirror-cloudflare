@@ -3474,7 +3474,7 @@ Whether to allow the user to turn off the WARP switch and disconnect the client.
 
 <summary>
 
-target\_tests: optional array of object {id, name }
+Deprecatedtarget\_tests: optional array of object {id, name }
 
 </summary>
 
@@ -14048,7 +14048,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 auth\_domain: optional string
 
-The unique subdomain assigned to your Zero Trust organization.
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format <code>adjective-noun-hex4</code> (e.g. <code>frosty-moon-7a3b.cloudflareaccess.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -14326,7 +14326,7 @@ Determines whether global MFA settings apply to applications by default. The org
 
 name: optional string
 
-The name of your Zero Trust organization.
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
 
 <a href="#">Link to this property</a>
 
@@ -14440,7 +14440,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 auth\_domain: optional string
 
-The unique subdomain assigned to your Zero Trust organization.
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format <code>adjective-noun-hex4</code> (e.g. <code>frosty-moon-7a3b.cloudflareaccess.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -14718,7 +14718,7 @@ Determines whether global MFA settings apply to applications by default. The org
 
 name: optional string
 
-The name of your Zero Trust organization.
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
 
 <a href="#">Link to this property</a>
 
@@ -17267,8 +17267,6 @@ Deprecated: use <code>code_mode</code> for new integrations. <code>true</code> m
 <details>
 
 <summary>
-
-code\_mode: optional "off"or "opt\_in"or
 
 </summary>
 

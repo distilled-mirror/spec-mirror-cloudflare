@@ -1086,7 +1086,7 @@ Whether to allow the user to turn off the WARP switch and disconnect the client.
 
 <summary>
 
-target\_tests: optional array of object {id, name }
+Deprecatedtarget\_tests: optional array of object {id, name }
 
 </summary>
 

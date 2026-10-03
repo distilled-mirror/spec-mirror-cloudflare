@@ -56,7 +56,7 @@ POST/accounts/{account\_id}/storage/kv/namespaces/{namespace\_id}/bulk/get
 
 <summary>
 
-Namespace object {id, title, jurisdiction, supports\_url\_encoding }
+Namespace object {id, title, jurisdiction, 2 more }
 
 </summary>
 
@@ -101,6 +101,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+mode: optional "instant"
+
+The mode of the Workers KV namespace. Specify <code>instant</code> when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, <code>instant</code> is the only supported explicit value.
 
 <a href="#">Link to this property</a>
 

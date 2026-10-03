@@ -106,6 +106,12 @@ One of the following:
 
 [Link to this property](#)%20kv.namespaces%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20jurisdiction%20%3E%20(schema)>)
 
+mode: optional "instant"
+
+The mode of the Workers KV namespace. Specify `instant` when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, `instant` is the only supported explicit value.
+
+[Link to this property](#)%20kv.namespaces%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20mode%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -202,7 +208,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/kv#(resource)%20kv.namespaces%20%3E%20(model)%20namespace%20%3E%20(schema)">Namespace</a> { id, title, jurisdiction, supports\_url\_encoding }
+result: optional <a href="https://developers.cloudflare.com/api/resources/kv#(resource)%20kv.namespaces%20%3E%20(model)%20namespace%20%3E%20(schema)">Namespace</a> { id, title, jurisdiction, 2 more }
 
 </summary>
 
@@ -250,6 +256,12 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+mode: optional "instant"
+
+The mode of the Workers KV namespace. Specify <code>instant</code> when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, <code>instant</code> is the only supported explicit value.
+
+<a href="#">Link to this property</a>
+
 supports\_url\_encoding: optional boolean
 
 True if keys written on the URL will be URL-decoded before storing. For example, if set to “true”, a key written on the URL as “%3F” will be stored as ”?”.
@@ -272,7 +284,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namesp
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "title": "My Own Namespace",
-          "jurisdiction": "eu"
+          "jurisdiction": "eu",
+          "mode": "instant"
         }'
 ```
 
@@ -305,6 +318,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namesp
     "id": "0f2ac74b498b48028cb68387c421e279",
     "title": "My Own Namespace",
     "jurisdiction": "eu",
+    "mode": "instant",
     "supports_url_encoding": true
   }
 }
@@ -341,6 +355,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namesp
     "id": "0f2ac74b498b48028cb68387c421e279",
     "title": "My Own Namespace",
     "jurisdiction": "eu",
+    "mode": "instant",
     "supports_url_encoding": true
   }
 }

@@ -160,7 +160,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, binding\_status, certificate, 9 more }
+result: optional array of object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -243,6 +243,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -369,6 +375,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/certifica
       "in_use": true,
       "issuer_org": "Example Inc.",
       "issuer_raw": "O=Example Inc.,L=California,ST=San Francisco,C=US",
+      "region": "wnam",
       "type": "gateway_managed",
       "updated_at": "2014-01-01T05:20:00.12345Z",
       "uploaded_on": "2014-01-01T05:20:00.12345Z"
@@ -421,6 +428,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/certifica
       "in_use": true,
       "issuer_org": "Example Inc.",
       "issuer_raw": "O=Example Inc.,L=California,ST=San Francisco,C=US",
+      "region": "wnam",
       "type": "gateway_managed",
       "updated_at": "2014-01-01T05:20:00.12345Z",
       "uploaded_on": "2014-01-01T05:20:00.12345Z"

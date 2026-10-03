@@ -3492,7 +3492,7 @@ POST/accounts/{account\_id}/gateway/certificates/{certificate\_id}/deactivate
 
 <summary>
 
-CertificateListResponse object {id, binding\_status, certificate, 9 more }
+CertificateListResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3575,6 +3575,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -3622,7 +3628,7 @@ formatdate-time
 
 <summary>
 
-CertificateGetResponse object {id, binding\_status, certificate, 9 more }
+CertificateGetResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3705,6 +3711,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -3752,7 +3764,7 @@ formatdate-time
 
 <summary>
 
-CertificateCreateResponse object {id, binding\_status, certificate, 9 more }
+CertificateCreateResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3835,6 +3847,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -3882,7 +3900,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeleteResponse object {id, binding\_status, certificate, 9 more }
+CertificateDeleteResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -3965,6 +3983,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -4012,7 +4036,7 @@ formatdate-time
 
 <summary>
 
-CertificateActivateResponse object {id, binding\_status, certificate, 9 more }
+CertificateActivateResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -4095,6 +4119,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -4142,7 +4172,7 @@ formatdate-time
 
 <summary>
 
-CertificateDeactivateResponse object {id, binding\_status, certificate, 9 more }
+CertificateDeactivateResponse object {id, binding\_status, certificate, 10 more }
 
 </summary>
 
@@ -4225,6 +4255,12 @@ Indicate the organization that issued the certificate (read-only).
 issuer\_raw: optional string
 
 Provide the entire issuer field of the certificate (read-only).
+
+<a href="#">Link to this property</a>
+
+region: optional string
+
+Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 

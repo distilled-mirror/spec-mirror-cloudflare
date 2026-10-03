@@ -74,23 +74,17 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 ##### Body ParametersJSONExpand Collapse
 
-auth\_domain: string
-
-The unique subdomain assigned to your Zero Trust organization.
-
-[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20auth_domain%20%3E%20(schema)>)
-
-name: string
-
-The name of your Zero Trust organization.
-
-[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
-
 allow\_authenticate\_via\_warp: optional boolean
 
 When set to true, users can authenticate via WARP for any application in your organization. Application settings will take precedence over this value.
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20allow_authenticate_via_warp%20%3E%20(schema)>)
+
+auth\_domain: optional string
+
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format `adjective-noun-hex4` (e.g. `frosty-moon-7a3b.cloudflareaccess.com`).
+
+[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20auth_domain%20%3E%20(schema)>)
 
 auto\_redirect\_to\_identity: optional boolean
 
@@ -378,6 +372,12 @@ Determines whether global MFA settings apply to applications by default. The org
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20mfa_required_for_all_apps%20%3E%20(schema)>)
 
+name: optional string
+
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
+
+[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -576,7 +576,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 auth\_domain: optional string
 
-The unique subdomain assigned to your Zero Trust organization.
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format <code>adjective-noun-hex4</code> (e.g. <code>frosty-moon-7a3b.cloudflareaccess.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -892,7 +892,7 @@ Determines whether global MFA settings apply to applications by default. The org
 
 name: optional string
 
-The name of your Zero Trust organization.
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
 
 <a href="#">Link to this property</a>
 
@@ -1002,10 +1002,10 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "auth_domain": "test.cloudflareaccess.com",
-          "name": "Widget Corps Internal Applications",
           "deny_unmatched_requests_exempted_zone_names": [
             "example.com"
           ],
+          "name": "Widget Corps Internal Applications",
           "session_duration": "24h",
           "strict_service_token_auth": true,
           "ui_read_only_toggle_reason": "Temporarily turn off the UI read only lock to make a change via the UI",

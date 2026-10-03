@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.users.last_seen_identity%20%3E%20(model)%20identity%20%3E%20(schema)">Identity</a> { account\_id, auth\_status, common\_name, 15 more }
+result: optional object {account\_id, auth\_status, common\_name, 16 more }
 
 </summary>
 
@@ -364,6 +364,42 @@ cert\_serial: optional string
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+passkeys: optional array of object {id, created\_at, last\_used\_at, name }
+
+Active passkey enrollments for the user.
+
+</summary>
+
+id: optional string
+
+Authenticator ID used to delete the passkey.
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+last\_used\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 service\_token\_id: optional string
 
 <a href="#">Link to this property</a>
@@ -465,6 +501,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/users/$USE
       "cert_presented": true,
       "cert_serial": "cert_serial"
     },
+    "passkeys": [
+      {
+        "id": "id",
+        "created_at": "2019-12-27T18:11:19.117Z",
+        "last_used_at": "2019-12-27T18:11:19.117Z",
+        "name": "name"
+      }
+    ],
     "service_token_id": "",
     "service_token_status": false,
     "user_uuid": "57cf8cf2-f55a-4588-9ac9-f5e41e9f09b4",
@@ -545,6 +589,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/users/$USE
       "cert_presented": true,
       "cert_serial": "cert_serial"
     },
+    "passkeys": [
+      {
+        "id": "id",
+        "created_at": "2019-12-27T18:11:19.117Z",
+        "last_used_at": "2019-12-27T18:11:19.117Z",
+        "name": "name"
+      }
+    ],
     "service_token_id": "",
     "service_token_status": false,
     "user_uuid": "57cf8cf2-f55a-4588-9ac9-f5e41e9f09b4",

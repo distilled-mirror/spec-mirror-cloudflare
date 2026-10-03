@@ -232,7 +232,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/kv#(resource)%20kv.namespaces%20%3E%20(model)%20namespace%20%3E%20(schema)">Namespace</a> { id, title, jurisdiction, supports\_url\_encoding }
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/kv#(resource)%20kv.namespaces%20%3E%20(model)%20namespace%20%3E%20(schema)">Namespace</a> { id, title, jurisdiction, 2 more }
 
 </summary>
 
@@ -277,6 +277,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+mode: optional "instant"
+
+The mode of the Workers KV namespace. Specify <code>instant</code> when creating a namespace to create a KV Instant namespace. Omit this field when creating a namespace to create a classic namespace. Currently, <code>instant</code> is the only supported explicit value.
 
 <a href="#">Link to this property</a>
 
@@ -367,6 +373,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namesp
       "id": "0f2ac74b498b48028cb68387c421e279",
       "title": "My Own Namespace",
       "jurisdiction": "eu",
+      "mode": "instant",
       "supports_url_encoding": true
     }
   ],
@@ -411,6 +418,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/storage/kv/namesp
       "id": "0f2ac74b498b48028cb68387c421e279",
       "title": "My Own Namespace",
       "jurisdiction": "eu",
+      "mode": "instant",
       "supports_url_encoding": true
     }
   ],

@@ -82,7 +82,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 auth\_domain: optional string
 
-The unique subdomain assigned to your Zero Trust organization.
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format `adjective-noun-hex4` (e.g. `frosty-moon-7a3b.cloudflareaccess.com`).
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20auth_domain%20%3E%20(schema)>)
 
@@ -398,7 +398,7 @@ Determines whether global MFA settings apply to applications by default. The org
 
 name: optional string
 
-The name of your Zero Trust organization.
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -600,7 +600,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 auth\_domain: optional string
 
-The unique subdomain assigned to your Zero Trust organization.
+The unique subdomain assigned to your Zero Trust organization. If omitted on creation, a unique subdomain is auto-generated in the format <code>adjective-noun-hex4</code> (e.g. <code>frosty-moon-7a3b.cloudflareaccess.com</code>).
 
 <a href="#">Link to this property</a>
 
@@ -916,7 +916,7 @@ Determines whether global MFA settings apply to applications by default. The org
 
 name: optional string
 
-The name of your Zero Trust organization.
+The name of your Zero Trust organization. When omitted on creation, defaults to the provided auth\_domain; when both are omitted, defaults to the auto-generated subdomain slug (e.g. frosty-moon-7a3b).
 
 <a href="#">Link to this property</a>
 
