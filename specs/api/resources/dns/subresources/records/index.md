@@ -1,84 +1,62 @@
----
-title: Records
----
+##### [List DNS Records](/api/resources/dns/subresources/records/methods/list)
 
-[Skip to content](#_top)
+GET/zones/{zone_id}/dns_records
 
-[API Reference](https://developers.cloudflare.com/api)
+##### [DNS Record Details](/api/resources/dns/subresources/records/methods/get)
 
-[DNS](https://developers.cloudflare.com/api/resources/dns)
+GET/zones/{zone_id}/dns_records/{dns_record_id}
 
-Copy Markdown
+##### [Create DNS Record](/api/resources/dns/subresources/records/methods/create)
 
-Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+POST/zones/{zone_id}/dns_records
 
----
+##### [Overwrite DNS Record](/api/resources/dns/subresources/records/methods/update)
 
-**Copy Markdown****View as Markdown**
+PUT/zones/{zone_id}/dns_records/{dns_record_id}
 
-# Records
+##### [Update DNS Record](/api/resources/dns/subresources/records/methods/edit)
 
-##### [List DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/list)
+PATCH/zones/{zone_id}/dns_records/{dns_record_id}
 
-GET/zones/{zone\_id}/dns\_records
+##### [Delete DNS Record](/api/resources/dns/subresources/records/methods/delete)
 
-##### [DNS Record Details](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/get)
+DELETE/zones/{zone_id}/dns_records/{dns_record_id}
 
-GET/zones/{zone\_id}/dns\_records/{dns\_record\_id}
+##### [Export DNS Records](/api/resources/dns/subresources/records/methods/export)
 
-##### [Create DNS Record](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/create)
+GET/zones/{zone_id}/dns_records/export
 
-POST/zones/{zone\_id}/dns\_records
+##### [Import DNS Records](/api/resources/dns/subresources/records/methods/import)
 
-##### [Overwrite DNS Record](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/update)
+POST/zones/{zone_id}/dns_records/import
 
-PUT/zones/{zone\_id}/dns\_records/{dns\_record\_id}
+##### [Scan DNS Records](/api/resources/dns/subresources/records/methods/scan)
 
-##### [Update DNS Record](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/edit)
+POST/zones/{zone_id}/dns_records/scan
 
-PATCH/zones/{zone\_id}/dns\_records/{dns\_record\_id}
+##### [Trigger DNS Record Scan](/api/resources/dns/subresources/records/methods/scan_trigger)
 
-##### [Delete DNS Record](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/delete)
+POST/zones/{zone_id}/dns_records/scan/trigger
 
-DELETE/zones/{zone\_id}/dns\_records/{dns\_record\_id}
+##### [Review Scanned DNS Records](/api/resources/dns/subresources/records/methods/scan_review)
 
-##### [Export DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/export)
+POST/zones/{zone_id}/dns_records/scan/review
 
-GET/zones/{zone\_id}/dns\_records/export
+##### [List Scanned DNS Records](/api/resources/dns/subresources/records/methods/scan_list)
 
-##### [Import DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/import)
+GET/zones/{zone_id}/dns_records/scan/review
 
-POST/zones/{zone\_id}/dns\_records/import
+##### [Batch DNS Records](/api/resources/dns/subresources/records/methods/batch)
 
-##### [Scan DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/scan)
+POST/zones/{zone_id}/dns_records/batch
 
-Deprecated
-
-POST/zones/{zone\_id}/dns\_records/scan
-
-##### [Trigger DNS Record Scan](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/scan_trigger)
-
-POST/zones/{zone\_id}/dns\_records/scan/trigger
-
-##### [Review Scanned DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/scan_review)
-
-POST/zones/{zone\_id}/dns\_records/scan/review
-
-##### [List Scanned DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/scan_list)
-
-GET/zones/{zone\_id}/dns\_records/scan/review
-
-##### [Batch DNS Records](https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/batch)
-
-POST/zones/{zone\_id}/dns\_records/batch
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-ARecord object {name, ttl, type, 6 more }
+ARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -90,25 +68,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "A"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -116,61 +94,61 @@ A valid IPv4 address.
 
 formatipv4
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_routing: optional boolean
+private_routing: optional boolean
 
 Enables private network routing to the origin.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord object {name, ttl, type, 6 more }
+AAAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -182,25 +160,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "AAAA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -208,61 +186,61 @@ A valid IPv6 address.
 
 formatipv6
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_routing: optional boolean
+private_routing: optional boolean
 
 Enables private network routing to the origin.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-BatchPatch = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more } or 18 more
+BatchPatch = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more } or 18 more
 
 </summary>
 
@@ -272,7 +250,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -282,17 +260,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -302,17 +280,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -322,17 +300,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -342,17 +320,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -362,17 +340,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, name, ttl, 6 more }
+OpenpgpkeyRecord object { id, name, ttl, 6 more }
 
 </summary>
 
@@ -382,7 +360,7 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -392,79 +370,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -474,17 +452,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -494,17 +472,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -514,17 +492,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -534,17 +512,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -554,17 +532,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -574,17 +552,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -594,17 +572,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -614,17 +592,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -634,17 +612,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -654,17 +632,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -674,17 +652,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -694,17 +672,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -714,17 +692,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -734,17 +712,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -754,21 +732,21 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20batch_patch%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-BatchPut = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more } or 18 more
+BatchPut = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more } or 18 more
 
 </summary>
 
@@ -778,7 +756,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -788,17 +766,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -808,17 +786,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -828,17 +806,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -848,17 +826,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -868,17 +846,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, name, ttl, 6 more }
+OpenpgpkeyRecord object { id, name, ttl, 6 more }
 
 </summary>
 
@@ -888,7 +866,7 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -898,79 +876,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -980,17 +958,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -1000,17 +978,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1020,17 +998,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1040,17 +1018,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1060,17 +1038,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1080,17 +1058,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1100,17 +1078,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1120,17 +1098,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1140,17 +1118,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1160,17 +1138,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1180,17 +1158,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1200,17 +1178,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1220,17 +1198,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1240,17 +1218,17 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -1260,21 +1238,21 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20batch_put%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord object {name, ttl, type, 6 more }
+CAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1286,37 +1264,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CAA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted CAA content. See ‘data’ to set CAA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {flags, tag, value }
+data: optional object { flags, tag, value }
 
 Components of a CAA record.
 
@@ -1330,71 +1308,71 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 tag: optional string
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value of the record. This field’s semantics depend on the chosen tag.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord object {name, ttl, type, 6 more }
+CERTRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1406,37 +1384,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CERT"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted CERT content. See ‘data’ to set CERT properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, certificate, key\_tag, type }
+data: optional object { algorithm, certificate, key_tag, type }
 
 Components of a CERT record.
 
@@ -1450,15 +1428,15 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_tag: optional number
+key_tag: optional number
 
 Key Tag.
 
@@ -1466,7 +1444,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional number
 
@@ -1476,59 +1454,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord object {name, ttl, type, 5 more }
+CNAMERecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -1540,85 +1518,85 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CNAME"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A valid hostname. Must not match the record’s name.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {flatten\_cname, ipv4\_only, ipv6\_only }
+settings: optional object { flatten_cname, ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-flatten\_cname: optional boolean
+flatten_cname: optional boolean
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord object {name, ttl, type, 6 more }
+DNSKEYRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1630,37 +1608,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "DNSKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted DNSKEY content. See ‘data’ to set DNSKEY properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, flags, protocol, public\_key }
+data: optional object { algorithm, flags, protocol, public_key }
 
 Components of a DNSKEY record.
 
@@ -1674,7 +1652,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 flags: optional number
 
@@ -1684,7 +1662,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 protocol: optional number
 
@@ -1694,65 +1672,65 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-public\_key: optional string
+public_key: optional string
 
 Public Key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord object {name, ttl, type, 6 more }
+DSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1764,37 +1742,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "DS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted DS content. See ‘data’ to set DS properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, digest, digest\_type, key\_tag }
+data: optional object { algorithm, digest, digest_type, key_tag }
 
 Components of a DS record.
 
@@ -1808,15 +1786,15 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 digest: optional string
 
 Digest.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-digest\_type: optional number
+digest_type: optional number
 
 Digest Type.
 
@@ -1824,9 +1802,9 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_tag: optional number
+key_tag: optional number
 
 Key Tag.
 
@@ -1834,59 +1812,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord object {name, ttl, type, 6 more }
+HTTPSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -1898,37 +1876,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "HTTPS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted HTTPS content. See ‘data’ to set HTTPS properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a HTTPS record.
 
@@ -1942,71 +1920,71 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
 Target.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord object {name, ttl, type, 6 more }
+LOCRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2018,37 +1996,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "LOC"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted LOC content. See ‘data’ to set LOC properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {altitude, lat\_degrees, lat\_direction, 9 more }
+data: optional object { altitude, lat_degrees, lat_direction, 9 more }
 
 Components of a LOC record.
 
@@ -2062,9 +2040,9 @@ maximum42849672.95
 
 minimum-100000
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_degrees: optional number
+lat_degrees: optional number
 
 Degrees of latitude.
 
@@ -2072,13 +2050,13 @@ maximum90
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-lat\_direction: optional "N"or "S"
+lat_direction: optional "N" or "S"
 
 Latitude direction.
 
@@ -2088,17 +2066,17 @@ One of the following:
 
 "N"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "S"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_minutes: optional number
+lat_minutes: optional number
 
 Minutes of latitude.
 
@@ -2106,9 +2084,9 @@ maximum59
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_seconds: optional number
+lat_seconds: optional number
 
 Seconds of latitude.
 
@@ -2116,9 +2094,9 @@ maximum59.999
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_degrees: optional number
+long_degrees: optional number
 
 Degrees of longitude.
 
@@ -2126,13 +2104,13 @@ maximum180
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-long\_direction: optional "E"or "W"
+long_direction: optional "E" or "W"
 
 Longitude direction.
 
@@ -2142,17 +2120,17 @@ One of the following:
 
 "E"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "W"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_minutes: optional number
+long_minutes: optional number
 
 Minutes of longitude.
 
@@ -2160,9 +2138,9 @@ maximum59
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_seconds: optional number
+long_seconds: optional number
 
 Seconds of longitude.
 
@@ -2170,9 +2148,9 @@ maximum59.999
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-precision\_horz: optional number
+precision_horz: optional number
 
 Horizontal precision of location.
 
@@ -2180,9 +2158,9 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-precision\_vert: optional number
+precision_vert: optional number
 
 Vertical precision of location.
 
@@ -2190,7 +2168,7 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 size: optional number
 
@@ -2200,59 +2178,59 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord object {name, ttl, type, 6 more }
+MXRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2264,25 +2242,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "MX"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -2290,7 +2268,7 @@ A valid mail server hostname.
 
 formathostname
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -2300,55 +2278,55 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord object {name, ttl, type, 6 more }
+NAPTRRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2360,37 +2338,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "NAPTR"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted NAPTR content. See ‘data’ to set NAPTR properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {flags, order, preference, 3 more }
+data: optional object { flags, order, preference, 3 more }
 
 Components of a NAPTR record.
 
@@ -2400,7 +2378,7 @@ flags: optional string
 
 Flags.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 order: optional number
 
@@ -2410,7 +2388,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 preference: optional number
 
@@ -2420,77 +2398,77 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 regex: optional string
 
 Regex.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 replacement: optional string
 
 Replacement.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 service: optional string
 
 Service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord object {name, ttl, type, 5 more }
+NSRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -2502,79 +2480,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "NS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A valid name server host name.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord object {name, ttl, type, 5 more }
+PTRRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -2586,79 +2564,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PTR"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Domain name pointing to the address.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Record = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more } or 18 more
+Record = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more } or 18 more
 
 </summary>
 
@@ -2668,7 +2646,7 @@ One of the following:
 
 <summary>
 
-ARecord object {name, ttl, type, 6 more }
+ARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2680,25 +2658,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "A"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -2706,61 +2684,61 @@ A valid IPv4 address.
 
 formatipv4
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_routing: optional boolean
+private_routing: optional boolean
 
 Enables private network routing to the origin.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord object {name, ttl, type, 6 more }
+AAAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2772,25 +2750,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "AAAA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -2798,61 +2776,61 @@ A valid IPv6 address.
 
 formatipv6
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_routing: optional boolean
+private_routing: optional boolean
 
 Enables private network routing to the origin.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord object {name, ttl, type, 5 more }
+CNAMERecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -2864,85 +2842,85 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CNAME"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A valid hostname. Must not match the record’s name.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {flatten\_cname, ipv4\_only, ipv6\_only }
+settings: optional object { flatten_cname, ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-flatten\_cname: optional boolean
+flatten_cname: optional boolean
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord object {name, ttl, type, 6 more }
+MXRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -2954,25 +2932,25 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "MX"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
@@ -2980,7 +2958,7 @@ A valid mail server hostname.
 
 formathostname
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -2990,55 +2968,55 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord object {name, ttl, type, 5 more }
+NSRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -3050,79 +3028,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "NS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A valid name server host name.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Openpgpkey object {name, ttl, type, 5 more }
+Openpgpkey object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -3134,79 +3112,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord object {name, ttl, type, 5 more }
+PTRRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -3218,79 +3196,79 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PTR"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Domain name pointing to the address.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord object {name, ttl, type, 5 more }
+TXTRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -3302,81 +3280,81 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "TXT"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Text content for the record. The content must consist of quoted “character strings” (RFC 1035), each with a length of up to 255 bytes. Strings exceeding this allowed maximum length are automatically split.
 
-Learn more at <a href="https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/">https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/</a>.
+Learn more at https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord object {name, ttl, type, 6 more }
+CAARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -3388,37 +3366,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CAA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted CAA content. See ‘data’ to set CAA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {flags, tag, value }
+data: optional object { flags, tag, value }
 
 Components of a CAA record.
 
@@ -3432,71 +3410,71 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 tag: optional string
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value of the record. This field’s semantics depend on the chosen tag.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord object {name, ttl, type, 6 more }
+CERTRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -3508,37 +3486,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "CERT"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted CERT content. See ‘data’ to set CERT properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, certificate, key\_tag, type }
+data: optional object { algorithm, certificate, key_tag, type }
 
 Components of a CERT record.
 
@@ -3552,15 +3530,15 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_tag: optional number
+key_tag: optional number
 
 Key Tag.
 
@@ -3568,7 +3546,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional number
 
@@ -3578,59 +3556,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord object {name, ttl, type, 6 more }
+DNSKEYRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -3642,37 +3620,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "DNSKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted DNSKEY content. See ‘data’ to set DNSKEY properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, flags, protocol, public\_key }
+data: optional object { algorithm, flags, protocol, public_key }
 
 Components of a DNSKEY record.
 
@@ -3686,7 +3664,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 flags: optional number
 
@@ -3696,7 +3674,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 protocol: optional number
 
@@ -3706,65 +3684,65 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-public\_key: optional string
+public_key: optional string
 
 Public Key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord object {name, ttl, type, 6 more }
+DSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -3776,37 +3754,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "DS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted DS content. See ‘data’ to set DS properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, digest, digest\_type, key\_tag }
+data: optional object { algorithm, digest, digest_type, key_tag }
 
 Components of a DS record.
 
@@ -3820,15 +3798,15 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 digest: optional string
 
 Digest.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-digest\_type: optional number
+digest_type: optional number
 
 Digest Type.
 
@@ -3836,9 +3814,9 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_tag: optional number
+key_tag: optional number
 
 Key Tag.
 
@@ -3846,59 +3824,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord object {name, ttl, type, 6 more }
+HTTPSRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -3910,37 +3888,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "HTTPS"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted HTTPS content. See ‘data’ to set HTTPS properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a HTTPS record.
 
@@ -3954,71 +3932,71 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
 Target.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord object {name, ttl, type, 6 more }
+LOCRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4030,37 +4008,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "LOC"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted LOC content. See ‘data’ to set LOC properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {altitude, lat\_degrees, lat\_direction, 9 more }
+data: optional object { altitude, lat_degrees, lat_direction, 9 more }
 
 Components of a LOC record.
 
@@ -4074,9 +4052,9 @@ maximum42849672.95
 
 minimum-100000
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_degrees: optional number
+lat_degrees: optional number
 
 Degrees of latitude.
 
@@ -4084,13 +4062,13 @@ maximum90
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-lat\_direction: optional "N"or "S"
+lat_direction: optional "N" or "S"
 
 Latitude direction.
 
@@ -4100,17 +4078,17 @@ One of the following:
 
 "N"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "S"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_minutes: optional number
+lat_minutes: optional number
 
 Minutes of latitude.
 
@@ -4118,9 +4096,9 @@ maximum59
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-lat\_seconds: optional number
+lat_seconds: optional number
 
 Seconds of latitude.
 
@@ -4128,9 +4106,9 @@ maximum59.999
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_degrees: optional number
+long_degrees: optional number
 
 Degrees of longitude.
 
@@ -4138,13 +4116,13 @@ maximum180
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-long\_direction: optional "E"or "W"
+long_direction: optional "E" or "W"
 
 Longitude direction.
 
@@ -4154,17 +4132,17 @@ One of the following:
 
 "E"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "W"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_minutes: optional number
+long_minutes: optional number
 
 Minutes of longitude.
 
@@ -4172,9 +4150,9 @@ maximum59
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-long\_seconds: optional number
+long_seconds: optional number
 
 Seconds of longitude.
 
@@ -4182,9 +4160,9 @@ maximum59.999
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-precision\_horz: optional number
+precision_horz: optional number
 
 Horizontal precision of location.
 
@@ -4192,9 +4170,9 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-precision\_vert: optional number
+precision_vert: optional number
 
 Vertical precision of location.
 
@@ -4202,7 +4180,7 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 size: optional number
 
@@ -4212,59 +4190,59 @@ maximum90000000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord object {name, ttl, type, 6 more }
+NAPTRRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4276,37 +4254,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "NAPTR"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted NAPTR content. See ‘data’ to set NAPTR properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {flags, order, preference, 3 more }
+data: optional object { flags, order, preference, 3 more }
 
 Components of a NAPTR record.
 
@@ -4316,7 +4294,7 @@ flags: optional string
 
 Flags.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 order: optional number
 
@@ -4326,7 +4304,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 preference: optional number
 
@@ -4336,77 +4314,77 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 regex: optional string
 
 Regex.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 replacement: optional string
 
 Replacement.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 service: optional string
 
 Service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord object {name, ttl, type, 6 more }
+SMIMEARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4418,37 +4396,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SMIMEA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SMIMEA content. See ‘data’ to set SMIMEA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching_type, selector, usage }
 
 Components of a SMIMEA record.
 
@@ -4458,9 +4436,9 @@ certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-matching\_type: optional number
+matching_type: optional number
 
 Matching Type.
 
@@ -4468,7 +4446,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 selector: optional number
 
@@ -4478,7 +4456,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 usage: optional number
 
@@ -4488,59 +4466,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord object {name, ttl, type, 6 more }
+SRVRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4552,37 +4530,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SRV"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Priority, weight, port, and SRV target. See ‘data’ for setting the individual component values.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {port, priority, target, weight }
+data: optional object { port, priority, target, weight }
 
 Components of a SRV record.
 
@@ -4596,7 +4574,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -4606,7 +4584,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
@@ -4614,7 +4592,7 @@ A valid hostname.
 
 formathostname
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 weight: optional number
 
@@ -4624,59 +4602,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord object {name, ttl, type, 6 more }
+SSHFPRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4688,37 +4666,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SSHFP"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SSHFP content. See ‘data’ to set SSHFP properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, fingerprint, type }
+data: optional object { algorithm, fingerprint, type }
 
 Components of a SSHFP record.
 
@@ -4732,13 +4710,13 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 fingerprint: optional string
 
 Fingerprint.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional number
 
@@ -4748,59 +4726,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord object {name, ttl, type, 6 more }
+SVCBRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4812,37 +4790,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SVCB"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SVCB content. See ‘data’ to set SVCB properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a SVCB record.
 
@@ -4856,71 +4834,71 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
 Target.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord object {name, ttl, type, 6 more }
+TLSARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -4932,37 +4910,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "TLSA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted TLSA content. See ‘data’ to set TLSA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching_type, selector, usage }
 
 Components of a TLSA record.
 
@@ -4972,9 +4950,9 @@ certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-matching\_type: optional number
+matching_type: optional number
 
 Matching Type.
 
@@ -4982,7 +4960,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 selector: optional number
 
@@ -4992,7 +4970,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 usage: optional number
 
@@ -5002,59 +4980,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord object {name, ttl, type, 7 more }
+URIRecord object { name, ttl, type, 7 more }
 
 </summary>
 
@@ -5066,37 +5044,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "URI"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted URI content. See ‘data’ to set URI properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {target, weight }
+data: optional object { target, weight }
 
 Components of a URI record.
 
@@ -5106,7 +5084,7 @@ target: optional string
 
 The record content.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 weight: optional number
 
@@ -5116,11 +5094,11 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -5130,59 +5108,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordResponse = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more } or <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more } or 18 more
+RecordResponse = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more } or [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more } or 18 more
 
 </summary>
 
@@ -5192,7 +5170,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -5202,97 +5180,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -5302,97 +5280,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -5402,97 +5380,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -5502,97 +5480,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -5602,97 +5580,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -5702,77 +5680,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -5782,89 +5760,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -5874,97 +5852,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -5974,97 +5952,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6074,97 +6052,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6174,97 +6152,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6274,97 +6252,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6374,97 +6352,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6474,97 +6452,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6574,97 +6552,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6674,97 +6652,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6774,97 +6752,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6874,97 +6852,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -6974,97 +6952,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7074,97 +7052,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7174,97 +7152,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -7274,107 +7252,107 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 RecordTags = string
 
 Individual tag of the form name:value (the name must consist of only letters, numbers, underscores and hyphens)
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord object {name, ttl, type, 6 more }
+SMIMEARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7386,37 +7364,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SMIMEA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SMIMEA content. See ‘data’ to set SMIMEA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching_type, selector, usage }
 
 Components of a SMIMEA record.
 
@@ -7426,9 +7404,9 @@ certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-matching\_type: optional number
+matching_type: optional number
 
 Matching Type.
 
@@ -7436,7 +7414,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 selector: optional number
 
@@ -7446,7 +7424,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 usage: optional number
 
@@ -7456,59 +7434,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord object {name, ttl, type, 6 more }
+SRVRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7520,37 +7498,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SRV"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Priority, weight, port, and SRV target. See ‘data’ for setting the individual component values.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {port, priority, target, weight }
+data: optional object { port, priority, target, weight }
 
 Components of a SRV record.
 
@@ -7564,7 +7542,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -7574,7 +7552,7 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
@@ -7582,7 +7560,7 @@ A valid hostname.
 
 formathostname
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 weight: optional number
 
@@ -7592,59 +7570,59 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord object {name, ttl, type, 6 more }
+SSHFPRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7656,37 +7634,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SSHFP"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SSHFP content. See ‘data’ to set SSHFP properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {algorithm, fingerprint, type }
+data: optional object { algorithm, fingerprint, type }
 
 Components of a SSHFP record.
 
@@ -7700,13 +7678,13 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 fingerprint: optional string
 
 Fingerprint.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional number
 
@@ -7716,59 +7694,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord object {name, ttl, type, 6 more }
+SVCBRecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7780,37 +7758,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "SVCB"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted SVCB content. See ‘data’ to set SVCB properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {priority, target, value }
+data: optional object { priority, target, value }
 
 Components of a SVCB record.
 
@@ -7824,71 +7802,71 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 target: optional string
 
 Target.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 value: optional string
 
 Value.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord object {name, ttl, type, 6 more }
+TLSARecord object { name, ttl, type, 6 more }
 
 </summary>
 
@@ -7900,37 +7878,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "TLSA"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted TLSA content. See ‘data’ to set TLSA properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {certificate, matching\_type, selector, usage }
+data: optional object { certificate, matching_type, selector, usage }
 
 Components of a TLSA record.
 
@@ -7940,9 +7918,9 @@ certificate: optional string
 
 Certificate.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-matching\_type: optional number
+matching_type: optional number
 
 Matching Type.
 
@@ -7950,7 +7928,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 selector: optional number
 
@@ -7960,7 +7938,7 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 usage: optional number
 
@@ -7970,59 +7948,59 @@ maximum255
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TTL = numberor 1
+TTL = number or 1
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
@@ -8032,23 +8010,23 @@ One of the following:
 
 number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 1
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord object {name, ttl, type, 5 more }
+TXTRecord object { name, ttl, type, 5 more }
 
 </summary>
 
@@ -8060,81 +8038,81 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "TXT"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Text content for the record. The content must consist of quoted “character strings” (RFC 1035), each with a length of up to 255 bytes. Strings exceeding this allowed maximum length are automatically split.
 
-Learn more at <a href="https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/">https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/</a>.
+Learn more at https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord object {name, ttl, type, 7 more }
+URIRecord object { name, ttl, type, 7 more }
 
 </summary>
 
@@ -8146,37 +8124,37 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "URI"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: optional string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: optional string
 
 Formatted URI content. See ‘data’ to set URI properties.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {target, weight }
+data: optional object { target, weight }
 
 Components of a URI record.
 
@@ -8186,7 +8164,7 @@ target: optional string
 
 The record content.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 weight: optional number
 
@@ -8196,11 +8174,11 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: optional number
 
@@ -8210,55 +8188,55 @@ maximum65535
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: optional boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: optional object {ipv4\_only, ipv6\_only }
+settings: optional object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: optional array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordDeleteResponse object {id }
+RecordDeleteResponse object { id }
 
 </summary>
 
@@ -8268,71 +8246,71 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 RecordExportResponse = string
 
 Exported BIND zone file.
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_export_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordImportResponse object {recs\_added, total\_records\_parsed }
+RecordImportResponse object { recs_added, total_records_parsed }
 
 </summary>
 
-recs\_added: optional number
+recs_added: optional number
 
 Number of DNS records added.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_records\_parsed: optional number
+total_records_parsed: optional number
 
 Total number of DNS records parsed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_import_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordScanResponse object {recs\_added, total\_records\_parsed }
+RecordScanResponse object { recs_added, total_records_parsed }
 
 </summary>
 
-recs\_added: optional number
+recs_added: optional number
 
 Number of DNS records added.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_records\_parsed: optional number
+total_records_parsed: optional number
 
 Total number of DNS records parsed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_scan_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordScanTriggerResponse object {errors, messages, success }
+RecordScanTriggerResponse object { errors, messages, success }
 
 </summary>
 
@@ -8340,7 +8318,7 @@ RecordScanTriggerResponse object {errors, messages, success }
 
 <summary>
 
-errors: array of object {code, message, documentation\_url, source }
+errors: array of object { code, message, documentation_url, source }
 
 </summary>
 
@@ -8348,41 +8326,41 @@ code: number
 
 minimum1000
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-documentation\_url: optional string
+documentation_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
 pointer: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-messages: array of object {code, message, documentation\_url, source }
+messages: array of object { code, message, documentation_url, source }
 
 </summary>
 
@@ -8390,51 +8368,51 @@ code: number
 
 minimum1000
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-documentation\_url: optional string
+documentation_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-source: optional object {pointer }
+source: optional object { pointer }
 
 </summary>
 
 pointer: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: true
 
 Whether the API call was successful.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_scan_trigger_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordScanReviewResponse object {accepts, rejects }
+RecordScanReviewResponse object { accepts, rejects }
 
 </summary>
 
@@ -8442,7 +8420,7 @@ RecordScanReviewResponse object {accepts, rejects }
 
 <summary>
 
-accepts: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)">RecordResponse</a>
+accepts: optional array of [RecordResponse](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema))
 
 </summary>
 
@@ -8452,7 +8430,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -8462,97 +8440,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -8562,97 +8540,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -8662,97 +8640,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -8762,97 +8740,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -8862,97 +8840,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -8962,77 +8940,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -9042,89 +9020,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -9134,97 +9112,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -9234,97 +9212,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9334,97 +9312,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9434,97 +9412,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9534,97 +9512,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9634,97 +9612,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9734,97 +9712,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9834,97 +9812,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -9934,97 +9912,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10034,97 +10012,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10134,97 +10112,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10234,97 +10212,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10334,97 +10312,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10434,97 +10412,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -10534,109 +10512,109 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 rejects: optional array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20dns.records%20%3E%20(model)%20record_scan_review_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RecordBatchResponse object {deletes, patches, posts, puts }
+RecordBatchResponse object { deletes, patches, posts, puts }
 
 </summary>
 
@@ -10644,7 +10622,7 @@ RecordBatchResponse object {deletes, patches, posts, puts }
 
 <summary>
 
-deletes: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)">RecordResponse</a>
+deletes: optional array of [RecordResponse](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema))
 
 </summary>
 
@@ -10654,7 +10632,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10664,97 +10642,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10764,97 +10742,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -10864,97 +10842,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -10964,97 +10942,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -11064,97 +11042,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -11164,77 +11142,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -11244,89 +11222,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -11336,97 +11314,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -11436,97 +11414,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -11536,97 +11514,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -11636,97 +11614,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -11736,97 +11714,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -11836,97 +11814,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -11936,97 +11914,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12036,97 +12014,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12136,97 +12114,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12236,97 +12214,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12336,97 +12314,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12436,97 +12414,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12536,97 +12514,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12636,97 +12614,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -12736,101 +12714,101 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-patches: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)">RecordResponse</a>
+patches: optional array of [RecordResponse](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema))
 
 </summary>
 
@@ -12840,7 +12818,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12850,97 +12828,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -12950,97 +12928,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -13050,97 +13028,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -13150,97 +13128,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -13250,97 +13228,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -13350,77 +13328,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -13430,89 +13408,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -13522,97 +13500,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -13622,97 +13600,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -13722,97 +13700,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -13822,97 +13800,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -13922,97 +13900,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14022,97 +14000,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14122,97 +14100,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14222,97 +14200,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14322,97 +14300,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14422,97 +14400,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14522,97 +14500,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14622,97 +14600,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14722,97 +14700,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -14822,97 +14800,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -14922,101 +14900,101 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-posts: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)">RecordResponse</a>
+posts: optional array of [RecordResponse](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema))
 
 </summary>
 
@@ -15026,7 +15004,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -15036,97 +15014,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -15136,97 +15114,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -15236,97 +15214,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -15336,97 +15314,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -15436,97 +15414,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -15536,77 +15514,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -15616,89 +15594,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -15708,97 +15686,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -15808,97 +15786,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -15908,97 +15886,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16008,97 +15986,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16108,97 +16086,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16208,97 +16186,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16308,97 +16286,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16408,97 +16386,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16508,97 +16486,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SMIMEARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)">SMIMEARecord</a> { name, ttl, type, 6 more }
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16608,97 +16586,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SRVRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)">SRVRecord</a> { name, ttl, type, 6 more }
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16708,97 +16686,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SSHFPRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)">SSHFPRecord</a> { name, ttl, type, 6 more }
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16808,97 +16786,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SVCBRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)">SVCBRecord</a> { name, ttl, type, 6 more }
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -16908,97 +16886,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TLSARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)">TLSARecord</a> { name, ttl, type, 6 more }
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -17008,97 +16986,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-URIRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)">URIRecord</a> { name, ttl, type, 7 more }
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
 
 </summary>
 
@@ -17108,101 +17086,101 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-puts: optional array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema)">RecordResponse</a>
+puts: optional array of [RecordResponse](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_response%20%3E%20(schema))
 
 </summary>
 
@@ -17212,7 +17190,7 @@ One of the following:
 
 <summary>
 
-ARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)">ARecord</a> { name, ttl, type, 6 more }
+ARecord = [ARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20a_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -17222,97 +17200,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AAAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)">AAAARecord</a> { name, ttl, type, 6 more }
+AAAARecord = [AAAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20aaaa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -17322,97 +17300,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CNAMERecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)">CNAMERecord</a> { name, ttl, type, 5 more }
+CNAMERecord = [CNAMERecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cname_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -17422,97 +17400,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MXRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)">MXRecord</a> { name, ttl, type, 6 more }
+MXRecord = [MXRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20mx_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -17522,97 +17500,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)">NSRecord</a> { name, ttl, type, 5 more }
+NSRecord = [NSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ns_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -17622,97 +17600,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OpenpgpkeyRecord object {id, comment, content, 12 more }
+OpenpgpkeyRecord object { id, comment, content, 12 more }
 
 </summary>
 
@@ -17722,77 +17700,77 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 comment: string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 content: string
 
 A single Base64-encoded OpenPGP Transferable Public Key (RFC 4880 Section 11.1)
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
@@ -17802,89 +17780,89 @@ maxLength255
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxied: boolean
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-settings: object {ipv4\_only, ipv6\_only }
+settings: object { ipv4_only, ipv6_only }
 
 Settings for the DNS record.
 
 </summary>
 
-ipv4\_only: optional boolean
+ipv4_only: optional boolean
 
 When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ipv6\_only: optional boolean
+ipv6_only: optional boolean
 
 When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags: array of <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema)">RecordTags</a>
+tags: array of [RecordTags](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20record_tags%20%3E%20(schema))
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ttl: <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema)">TTL</a>
+ttl: [TTL](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ttl%20%3E%20(schema))
 
 Time To Live (TTL) of the DNS record in seconds. Setting to 1 means ‘automatic’. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "OPENPGPKEY"
 
 Record type.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)">PTRRecord</a> { name, ttl, type, 5 more }
+PTRRecord = [PTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ptr_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -17894,97 +17872,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-TXTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)">TXTRecord</a> { name, ttl, type, 5 more }
+TXTRecord = [TXTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20txt_record%20%3E%20(schema)) { name, ttl, type, 5 more }
 
 </summary>
 
@@ -17994,97 +17972,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CAARecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)">CAARecord</a> { name, ttl, type, 6 more }
+CAARecord = [CAARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20caa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18094,97 +18072,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CERTRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)">CERTRecord</a> { name, ttl, type, 6 more }
+CERTRecord = [CERTRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20cert_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18194,97 +18172,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DNSKEYRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)">DNSKEYRecord</a> { name, ttl, type, 6 more }
+DNSKEYRecord = [DNSKEYRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20dnskey_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18294,97 +18272,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)">DSRecord</a> { name, ttl, type, 6 more }
+DSRecord = [DSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20ds_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18394,97 +18372,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-HTTPSRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)">HTTPSRecord</a> { name, ttl, type, 6 more }
+HTTPSRecord = [HTTPSRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20https_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18494,97 +18472,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LOCRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)">LOCRecord</a> { name, ttl, type, 6 more }
+LOCRecord = [LOCRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20loc_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18594,97 +18572,97 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meta: object {dead\_glue, is\_glue, shadowed\_by, shadowed\_records\_count }
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
 
 Extra Cloudflare-specific metadata about the record.
 
 </summary>
 
-dead\_glue: optional boolean
+dead_glue: optional boolean
 
-Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only <code>is_glue</code>. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records">Unreachable glue records</a>.
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_glue: optional boolean
+is_glue: optional boolean
 
-Whether this A or AAAA record is glue for a subdomain NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records">Glue records</a>.
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_by: optional array of string
+shadowed_by: optional array of string
 
-IDs of the NS records that shadow this record. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-shadowed\_records\_count: optional number
+shadowed_records_count: optional number
 
-Number of records shadowed by this NS delegation. See <a href="https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records">Shadowed records</a>.
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
 
 maximum10000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-modified\_on: string
+modified_on: string
 
 When the record was last modified.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 proxiable: boolean
 
 Whether the record can be proxied by Cloudflare or not.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-comment\_modified\_on: optional string
+comment_modified_on: optional string
 
 When the record comment was last modified. Omitted if there is no comment.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-tags\_modified\_on: optional string
+tags_modified_on: optional string
 
 When the record tags were last modified. Omitted if there are no tags.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-NAPTRRecord = <a href="https://developers.cloudflare.com/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)">NAPTRRecord</a> { name, ttl, type, 6 more }
+NAPTRRecord = [NAPTRRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20naptr_record%20%3E%20(schema)) { name, ttl, type, 6 more }
 
 </summary>
 
@@ -18694,28 +18672,696 @@ Identifier.
 
 maxLength32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_on: string
+created_on: string
 
 When the record was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
 </summary>
 
-</details>
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
 
 </details>
 
-</details>
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
 
 </details>
 
-<!-- Cloudflare Markdown for Agents: incomplete conversion; source HTML truncated at the conversion size limit -->
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SMIMEARecord = [SMIMEARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20smimea_record%20%3E%20(schema)) { name, ttl, type, 6 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SRVRecord = [SRVRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20srv_record%20%3E%20(schema)) { name, ttl, type, 6 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SSHFPRecord = [SSHFPRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20sshfp_record%20%3E%20(schema)) { name, ttl, type, 6 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SVCBRecord = [SVCBRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20svcb_record%20%3E%20(schema)) { name, ttl, type, 6 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TLSARecord = [TLSARecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20tlsa_record%20%3E%20(schema)) { name, ttl, type, 6 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+URIRecord = [URIRecord](/api/resources/dns#(resource)%20dns.records%20%3E%20(model)%20uri_record%20%3E%20(schema)) { name, ttl, type, 7 more }
+
+</summary>
+
+id: string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+created_on: string
+
+When the record was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: object { dead_glue, is_glue, shadowed_by, shadowed_records_count }
+
+Extra Cloudflare-specific metadata about the record.
+
+</summary>
+
+dead_glue: optional boolean
+
+Whether this glue record is not served because a shallower NS delegation takes precedence over the deeper delegation that needs it. Present only when true; reachable glue carries only `is_glue`. See [Unreachable glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#unreachable-glue-records).
+
+[Link to this property](#)
+
+is_glue: optional boolean
+
+Whether this A or AAAA record is glue for a subdomain NS delegation. See [Glue records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records#glue-records).
+
+[Link to this property](#)
+
+shadowed_by: optional array of string
+
+IDs of the NS records that shadow this record. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+[Link to this property](#)
+
+shadowed_records_count: optional number
+
+Number of records shadowed by this NS delegation. See [Shadowed records](https://developers.cloudflare.com/dns/manage-dns-records/reference/shadowed-records).
+
+maximum10000
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: string
+
+When the record was last modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+proxiable: boolean
+
+Whether the record can be proxied by Cloudflare or not.
+
+[Link to this property](#)
+
+comment_modified_on: optional string
+
+When the record comment was last modified. Omitted if there is no comment.
+
+formatdate-time
+
+[Link to this property](#)
+
+tags_modified_on: optional string
+
+When the record tags were last modified. Omitted if there are no tags.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)

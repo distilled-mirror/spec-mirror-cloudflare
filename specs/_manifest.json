@@ -15767,7 +15767,28 @@
       "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/transformations_c2pa/methods/get/index.md"
     }
   ],
-  "htmlFallback": [],
+  "htmlFallback": [
+    "https://developers.cloudflare.com/api/resources/dns",
+    "https://developers.cloudflare.com/api/resources/dns/subresources/records",
+    "https://developers.cloudflare.com/api/resources/magic_cloud_networking",
+    "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps",
+    "https://developers.cloudflare.com/api/resources/radar",
+    "https://developers.cloudflare.com/api/resources/radar/subresources/attacks",
+    "https://developers.cloudflare.com/api/resources/radar/subresources/http",
+    "https://developers.cloudflare.com/api/resources/realtime_kit",
+    "https://developers.cloudflare.com/api/resources/rulesets",
+    "https://developers.cloudflare.com/api/resources/workers",
+    "https://developers.cloudflare.com/api/resources/zero_trust",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/create",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/get",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/list",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/update",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/subresources/policies",
+    "https://developers.cloudflare.com/api/resources/zones",
+    "https://developers.cloudflare.com/api/resources/zones/subresources/settings"
+  ],
   "missing": [],
   "unlisted": [
     "api/resources/addressing/subresources/address_maps/subresources/zones/index.md",

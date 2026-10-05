@@ -1,38 +1,18 @@
----
-title: Realtime Kit
----
+##### [Fetch all apps](/api/resources/realtime_kit/subresources/apps/methods/get)
 
-[Skip to content](#_top)
+GET/accounts/{account_id}/realtime/kit/apps
 
-[API Reference](https://developers.cloudflare.com/api)
+##### [Create App](/api/resources/realtime_kit/subresources/apps/methods/post)
 
-Copy Markdown
+POST/accounts/{account_id}/realtime/kit/apps
 
-Open in **Claude**Open in **ChatGPT**Open in **Cursor**
-
----
-
-**Copy Markdown****View as Markdown**
-
-# Realtime Kit
-
-#### Realtime KitApps
-
-##### [Fetch all apps](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/get)
-
-GET/accounts/{account\_id}/realtime/kit/apps
-
-##### [Create App](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/post)
-
-POST/accounts/{account\_id}/realtime/kit/apps
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-AppGetResponse object {data, paging, success }
+AppGetResponse object { data, paging, success }
 
 </summary>
 
@@ -40,7 +20,7 @@ AppGetResponse object {data, paging, success }
 
 <summary>
 
-data: optional array of object {id, created\_at, name }
+data: optional array of object { id, created_at, name }
 
 </summary>
 
@@ -48,59 +28,59 @@ id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end_offset, start_offset, total_count }
 
 </summary>
 
-end\_offset: optional number
+end_offset: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-start\_offset: optional number
+start_offset: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_count: optional number
+total_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.apps%20%3E%20(model)%20app_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AppPostResponse object {data, success }
+AppPostResponse object { data, success }
 
 </summary>
 
@@ -108,7 +88,7 @@ AppPostResponse object {data, success }
 
 <summary>
 
-data: optional object {app }
+data: optional object { app }
 
 </summary>
 
@@ -116,7 +96,7 @@ data: optional object {app }
 
 <summary>
 
-app: optional object {id, created\_at, name }
+app: optional object { id, created_at, name }
 
 </summary>
 
@@ -124,87 +104,85 @@ id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.apps%20%3E%20(model)%20app_post_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### Realtime KitMeetings
+##### [Fetch all meetings for an App](/api/resources/realtime_kit/subresources/meetings/methods/get)
 
-##### [Fetch all meetings for an App](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/get)
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/meetings
+##### [Create a meeting](/api/resources/realtime_kit/subresources/meetings/methods/create)
 
-##### [Create a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/create)
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings
+##### [Fetch a meeting for an App](/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_by_id)
 
-##### [Fetch a meeting for an App](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_by_id)
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}
+##### [Update a meeting](/api/resources/realtime_kit/subresources/meetings/methods/update_meeting_by_id)
 
-##### [Update a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/update_meeting_by_id)
+PATCH/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}
 
-PATCH/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}
+##### [Replace a meeting](/api/resources/realtime_kit/subresources/meetings/methods/replace_meeting_by_id)
 
-##### [Replace a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/replace_meeting_by_id)
+PUT/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}
 
-PUT/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}
+##### [Fetch all participants of a meeting](/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_participants)
 
-##### [Fetch all participants of a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_participants)
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants
+##### [Add a participant](/api/resources/realtime_kit/subresources/meetings/methods/add_participant)
 
-##### [Add a participant](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/add_participant)
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants
+##### [Fetch a participant's detail](/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_participant)
 
-##### [Fetch a participant's detail](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/get_meeting_participant)
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants/{participant_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants/{participant\_id}
+##### [Edit a participant's detail](/api/resources/realtime_kit/subresources/meetings/methods/edit_participant)
 
-##### [Edit a participant's detail](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/edit_participant)
+PATCH/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants/{participant_id}
 
-PATCH/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants/{participant\_id}
+##### [Delete a participant](/api/resources/realtime_kit/subresources/meetings/methods/delete_meeting_participant)
 
-##### [Delete a participant](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/delete_meeting_participant)
+DELETE/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants/{participant_id}
 
-DELETE/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants/{participant\_id}
+##### [Refresh participant's authentication token](/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token)
 
-##### [Refresh participant's authentication token](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/refresh_participant_token)
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/participants/{participant_id}/token
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/participants/{participant\_id}/token
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-MeetingGetResponse object {data, paging, success }
+MeetingGetResponse object { data, paging, success }
 
 </summary>
 
@@ -212,7 +190,7 @@ MeetingGetResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, updated\_at, 9 more }
+data: array of object { id, created_at, updated_at, 9 more }
 
 </summary>
 
@@ -222,47 +200,47 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -272,7 +250,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -282,7 +260,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -292,21 +270,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -316,53 +294,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -370,31 +348,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -404,23 +382,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -430,103 +408,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -536,63 +514,63 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "aws" or "azure" or "digitalocean"
 
 </summary>
 
@@ -600,103 +578,103 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private_key, access_key, auth_method, 9 more }
 
 </summary>
 
-private\_key: string
+private_key: string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "KEY"
+auth_method: optional "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -706,111 +684,111 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access_key, auth_method, 9 more }
 
 </summary>
 
 password: string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "PASSWORD"
+auth_method: optional "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -820,47 +798,47 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video_config: optional object { codec, export_file, height, 2 more }
 
 </summary>
 
@@ -868,7 +846,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -878,25 +856,25 @@ One of the following:
 
 "H264"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP8"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP9"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export video file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 height: optional number
 
@@ -906,13 +884,13 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -922,7 +900,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -932,29 +910,29 @@ One of the following:
 
 "left top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "left bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -966,7 +944,7 @@ Height of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -974,11 +952,11 @@ Width of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 url: optional string
 
@@ -986,11 +964,11 @@ URL of the watermark image
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -1000,17 +978,17 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_keep\_alive\_time\_in\_secs: optional number
+session_keep_alive_time_in_secs: optional number
 
 Time in seconds, for which a session remains active, after the last participant has left the meeting.
 
@@ -1018,15 +996,15 @@ maximum600
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
-Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
 
 </summary>
 
@@ -1034,77 +1012,77 @@ One of the following:
 
 "ACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "INACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-summarize\_on\_end: optional boolean
+summarize_on_end: optional boolean
 
 Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 title: optional string
 
 Title of the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcribe\_on\_end: optional boolean
+transcribe_on_end: optional boolean
 
 Automatically generate transcripts when the meeting ends.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end_offset, start_offset, total_count }
 
 </summary>
 
-end\_offset: number
+end_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-start\_offset: number
+start_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_count: number
+total_count: number
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingCreateResponse object {success, data }
+MeetingCreateResponse object { success, data }
 
 </summary>
 
@@ -1112,13 +1090,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object { id, created_at, updated_at, 10 more }
 
 Data returned by the operation
 
@@ -1130,29 +1108,29 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -1162,7 +1140,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary_type, text_format, word_limit }
 
 Summary Config
 
@@ -1172,7 +1150,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary_type: optional "general" or "team_meeting" or "sales_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -1182,49 +1160,49 @@ One of the following:
 
 "general"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"team\_meeting"
+"team_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"sales\_call"
+"sales_call"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"client\_check\_in"
+"client_check_in"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "interview"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"daily\_standup"
+"daily_standup"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"one\_on\_one\_meeting"
+"one_on_one_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "lecture"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"code\_review"
+"code_review"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text_format: optional "plain_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -1232,19 +1210,19 @@ Determines the text format of the summary, such as plain text or markdown.
 
 One of the following:
 
-"plain\_text"
+"plain_text"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "markdown"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_limit: optional number
+word_limit: optional number
 
 Sets the maximum number of words in the meeting summary.
 
@@ -1252,17 +1230,17 @@ maximum1000
 
 minimum150
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity_filter }
 
 Transcription Configurations
 
@@ -1272,13 +1250,13 @@ keywords: optional array of string
 
 Adds specific terms to improve accurate detection during transcription.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results.
 
@@ -1288,85 +1266,85 @@ One of the following:
 
 "en-US"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "en-IN"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "de"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "hi"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sv"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ru"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "el"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fr"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "nl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profanity\_filter: optional boolean
+profanity_filter: optional boolean
 
 Control the inclusion of offensive language in transcriptions.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -1376,7 +1354,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -1386,7 +1364,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -1396,21 +1374,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -1420,53 +1398,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -1474,31 +1452,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -1508,23 +1486,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -1534,103 +1512,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -1640,63 +1618,63 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "aws" or "azure" or "digitalocean"
 
 </summary>
 
@@ -1704,103 +1682,103 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private_key, access_key, auth_method, 9 more }
 
 </summary>
 
-private\_key: string
+private_key: string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "KEY"
+auth_method: optional "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -1810,111 +1788,111 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access_key, auth_method, 9 more }
 
 </summary>
 
 password: string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "PASSWORD"
+auth_method: optional "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -1924,47 +1902,47 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video_config: optional object { codec, export_file, height, 2 more }
 
 </summary>
 
@@ -1972,7 +1950,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -1982,25 +1960,25 @@ One of the following:
 
 "H264"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP8"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP9"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export video file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 height: optional number
 
@@ -2010,13 +1988,13 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -2026,7 +2004,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -2036,29 +2014,29 @@ One of the following:
 
 "left top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "left bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -2070,7 +2048,7 @@ Height of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -2078,11 +2056,11 @@ Width of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 url: optional string
 
@@ -2090,11 +2068,11 @@ URL of the watermark image
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -2104,17 +2082,17 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_keep\_alive\_time\_in\_secs: optional number
+session_keep_alive_time_in_secs: optional number
 
 Time in seconds, for which a session remains active, after the last participant has left the meeting.
 
@@ -2122,15 +2100,15 @@ maximum600
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
-Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
 
 </summary>
 
@@ -2138,47 +2116,47 @@ One of the following:
 
 "ACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "INACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-summarize\_on\_end: optional boolean
+summarize_on_end: optional boolean
 
 Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 title: optional string
 
 Title of the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcribe\_on\_end: optional boolean
+transcribe_on_end: optional boolean
 
 Automatically generate transcripts when the meeting ends.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingGetMeetingByIDResponse object {success, data }
+MeetingGetMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -2186,13 +2164,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object { id, created_at, updated_at, 10 more }
 
 Data returned by the operation
 
@@ -2204,29 +2182,29 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -2236,7 +2214,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary_type, text_format, word_limit }
 
 Summary Config
 
@@ -2246,7 +2224,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary_type: optional "general" or "team_meeting" or "sales_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -2256,49 +2234,49 @@ One of the following:
 
 "general"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"team\_meeting"
+"team_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"sales\_call"
+"sales_call"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"client\_check\_in"
+"client_check_in"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "interview"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"daily\_standup"
+"daily_standup"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"one\_on\_one\_meeting"
+"one_on_one_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "lecture"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"code\_review"
+"code_review"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text_format: optional "plain_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -2306,19 +2284,19 @@ Determines the text format of the summary, such as plain text or markdown.
 
 One of the following:
 
-"plain\_text"
+"plain_text"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "markdown"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_limit: optional number
+word_limit: optional number
 
 Sets the maximum number of words in the meeting summary.
 
@@ -2326,17 +2304,17 @@ maximum1000
 
 minimum150
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity_filter }
 
 Transcription Configurations
 
@@ -2346,13 +2324,13 @@ keywords: optional array of string
 
 Adds specific terms to improve accurate detection during transcription.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results.
 
@@ -2362,85 +2340,85 @@ One of the following:
 
 "en-US"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "en-IN"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "de"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "hi"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sv"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ru"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "el"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fr"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "nl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profanity\_filter: optional boolean
+profanity_filter: optional boolean
 
 Control the inclusion of offensive language in transcriptions.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -2450,7 +2428,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -2460,7 +2438,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -2470,21 +2448,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -2494,53 +2472,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -2548,31 +2526,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -2582,23 +2560,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -2608,103 +2586,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -2714,63 +2692,63 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "aws" or "azure" or "digitalocean"
 
 </summary>
 
@@ -2778,103 +2756,103 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private_key, access_key, auth_method, 9 more }
 
 </summary>
 
-private\_key: string
+private_key: string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "KEY"
+auth_method: optional "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -2884,111 +2862,111 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access_key, auth_method, 9 more }
 
 </summary>
 
 password: string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "PASSWORD"
+auth_method: optional "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -2998,47 +2976,47 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video_config: optional object { codec, export_file, height, 2 more }
 
 </summary>
 
@@ -3046,7 +3024,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -3056,25 +3034,25 @@ One of the following:
 
 "H264"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP8"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP9"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export video file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 height: optional number
 
@@ -3084,13 +3062,13 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -3100,7 +3078,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -3110,29 +3088,29 @@ One of the following:
 
 "left top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "left bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -3144,7 +3122,7 @@ Height of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -3152,11 +3130,11 @@ Width of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 url: optional string
 
@@ -3164,11 +3142,11 @@ URL of the watermark image
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -3178,17 +3156,17 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_keep\_alive\_time\_in\_secs: optional number
+session_keep_alive_time_in_secs: optional number
 
 Time in seconds, for which a session remains active, after the last participant has left the meeting.
 
@@ -3196,15 +3174,15 @@ maximum600
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
-Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
 
 </summary>
 
@@ -3212,47 +3190,47 @@ One of the following:
 
 "ACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "INACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-summarize\_on\_end: optional boolean
+summarize_on_end: optional boolean
 
 Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 title: optional string
 
 Title of the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcribe\_on\_end: optional boolean
+transcribe_on_end: optional boolean
 
 Automatically generate transcripts when the meeting ends.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_get_meeting_by_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingUpdateMeetingByIDResponse object {success, data }
+MeetingUpdateMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -3260,13 +3238,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object { id, created_at, updated_at, 10 more }
 
 Data returned by the operation
 
@@ -3278,29 +3256,29 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -3310,7 +3288,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary_type, text_format, word_limit }
 
 Summary Config
 
@@ -3320,7 +3298,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary_type: optional "general" or "team_meeting" or "sales_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -3330,49 +3308,49 @@ One of the following:
 
 "general"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"team\_meeting"
+"team_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"sales\_call"
+"sales_call"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"client\_check\_in"
+"client_check_in"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "interview"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"daily\_standup"
+"daily_standup"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"one\_on\_one\_meeting"
+"one_on_one_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "lecture"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"code\_review"
+"code_review"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text_format: optional "plain_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -3380,19 +3358,19 @@ Determines the text format of the summary, such as plain text or markdown.
 
 One of the following:
 
-"plain\_text"
+"plain_text"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "markdown"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_limit: optional number
+word_limit: optional number
 
 Sets the maximum number of words in the meeting summary.
 
@@ -3400,17 +3378,17 @@ maximum1000
 
 minimum150
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity_filter }
 
 Transcription Configurations
 
@@ -3420,13 +3398,13 @@ keywords: optional array of string
 
 Adds specific terms to improve accurate detection during transcription.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results.
 
@@ -3436,85 +3414,85 @@ One of the following:
 
 "en-US"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "en-IN"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "de"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "hi"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sv"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ru"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "el"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fr"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "nl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profanity\_filter: optional boolean
+profanity_filter: optional boolean
 
 Control the inclusion of offensive language in transcriptions.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -3524,7 +3502,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -3534,7 +3512,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -3544,21 +3522,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -3568,53 +3546,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -3622,31 +3600,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -3656,23 +3634,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -3682,103 +3660,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -3788,63 +3766,63 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "aws" or "azure" or "digitalocean"
 
 </summary>
 
@@ -3852,103 +3830,103 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private_key, access_key, auth_method, 9 more }
 
 </summary>
 
-private\_key: string
+private_key: string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "KEY"
+auth_method: optional "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -3958,111 +3936,111 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access_key, auth_method, 9 more }
 
 </summary>
 
 password: string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "PASSWORD"
+auth_method: optional "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -4072,47 +4050,47 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video_config: optional object { codec, export_file, height, 2 more }
 
 </summary>
 
@@ -4120,7 +4098,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -4130,25 +4108,25 @@ One of the following:
 
 "H264"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP8"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP9"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export video file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 height: optional number
 
@@ -4158,13 +4136,13 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -4174,7 +4152,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -4184,29 +4162,29 @@ One of the following:
 
 "left top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "left bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -4218,7 +4196,7 @@ Height of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -4226,11 +4204,11 @@ Width of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 url: optional string
 
@@ -4238,11 +4216,11 @@ URL of the watermark image
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -4252,17 +4230,17 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_keep\_alive\_time\_in\_secs: optional number
+session_keep_alive_time_in_secs: optional number
 
 Time in seconds, for which a session remains active, after the last participant has left the meeting.
 
@@ -4270,15 +4248,15 @@ maximum600
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
-Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
 
 </summary>
 
@@ -4286,47 +4264,47 @@ One of the following:
 
 "ACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "INACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-summarize\_on\_end: optional boolean
+summarize_on_end: optional boolean
 
 Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 title: optional string
 
 Title of the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcribe\_on\_end: optional boolean
+transcribe_on_end: optional boolean
 
 Automatically generate transcripts when the meeting ends.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_update_meeting_by_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingReplaceMeetingByIDResponse object {success, data }
+MeetingReplaceMeetingByIDResponse object { success, data }
 
 </summary>
 
@@ -4334,13 +4312,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object { id, created_at, updated_at, 10 more }
 
 Data returned by the operation
 
@@ -4352,29 +4330,29 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ai\_config: optional object {summarization, transcription }
+ai_config: optional object { summarization, transcription }
 
 The AI Config allows you to customize the behavior of meeting transcriptions and summaries
 
@@ -4384,7 +4362,7 @@ The AI Config allows you to customize the behavior of meeting transcriptions and
 
 <summary>
 
-summarization: optional object {summary\_type, text\_format, word\_limit }
+summarization: optional object { summary_type, text_format, word_limit }
 
 Summary Config
 
@@ -4394,7 +4372,7 @@ Summary Config
 
 <summary>
 
-summary\_type: optional "general"or "team\_meeting"or "sales\_call"or 6 more
+summary_type: optional "general" or "team_meeting" or "sales_call" or 6 more
 
 Defines the style of the summary, such as general, team meeting, or sales call.
 
@@ -4404,49 +4382,49 @@ One of the following:
 
 "general"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"team\_meeting"
+"team_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"sales\_call"
+"sales_call"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"client\_check\_in"
+"client_check_in"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "interview"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"daily\_standup"
+"daily_standup"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"one\_on\_one\_meeting"
+"one_on_one_meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "lecture"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"code\_review"
+"code_review"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-text\_format: optional "plain\_text"or "markdown"
+text_format: optional "plain_text" or "markdown"
 
 Determines the text format of the summary, such as plain text or markdown.
 
@@ -4454,19 +4432,19 @@ Determines the text format of the summary, such as plain text or markdown.
 
 One of the following:
 
-"plain\_text"
+"plain_text"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "markdown"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_limit: optional number
+word_limit: optional number
 
 Sets the maximum number of words in the meeting summary.
 
@@ -4474,17 +4452,17 @@ maximum1000
 
 minimum150
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-transcription: optional object {keywords, language, profanity\_filter }
+transcription: optional object { keywords, language, profanity_filter }
 
 Transcription Configurations
 
@@ -4494,13 +4472,13 @@ keywords: optional array of string
 
 Adds specific terms to improve accurate detection during transcription.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-language: optional "en-US"or "en-IN"or "de"or 7 more
+language: optional "en-US" or "en-IN" or "de" or 7 more
 
 Specifies the language code for transcription to ensure accurate results.
 
@@ -4510,85 +4488,85 @@ One of the following:
 
 "en-US"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "en-IN"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "de"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "hi"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sv"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ru"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "el"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fr"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "nl"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profanity\_filter: optional boolean
+profanity_filter: optional boolean
 
 Control the inclusion of offensive language in transcriptions.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -4598,7 +4576,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -4608,7 +4586,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -4618,21 +4596,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -4642,53 +4620,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -4696,31 +4674,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -4730,23 +4708,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -4756,103 +4734,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -4862,63 +4840,63 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"
+type: optional "aws" or "azure" or "digitalocean"
 
 </summary>
 
@@ -4926,103 +4904,103 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {private\_key, access\_key, auth\_method, 9 more }
+object { private_key, access_key, auth_method, 9 more }
 
 </summary>
 
-private\_key: string
+private_key: string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "KEY"
+auth_method: optional "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -5032,111 +5010,111 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {password, access\_key, auth\_method, 9 more }
+object { password, access_key, auth_method, 9 more }
 
 </summary>
 
 password: string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-auth\_method: optional "PASSWORD"
+auth_method: optional "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: optional "aws"or "azure"or "digitalocean"or 2 more
+type: optional "aws" or "azure" or "digitalocean" or 2 more
 
 Type of storage media.
 
@@ -5146,47 +5124,47 @@ One of the following:
 
 "aws"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "azure"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "digitalocean"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "sftp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_config: optional object {codec, export\_file, height, 2 more }
+video_config: optional object { codec, export_file, height, 2 more }
 
 </summary>
 
@@ -5194,7 +5172,7 @@ video\_config: optional object {codec, export\_file, height, 2 more }
 
 <summary>
 
-codec: optional "H264"or "VP8"or "VP9"
+codec: optional "H264" or "VP8" or "VP9"
 
 Codec using which the recording will be encoded.
 
@@ -5204,25 +5182,25 @@ One of the following:
 
 "H264"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP8"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "VP9"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export video file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 height: optional number
 
@@ -5232,13 +5210,13 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-watermark: optional object {position, size, url }
+watermark: optional object { position, size, url }
 
 Watermark to be added to the recording
 
@@ -5248,7 +5226,7 @@ Watermark to be added to the recording
 
 <summary>
 
-position: optional "left top"or "right top"or "left bottom"or "right bottom"
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
 
 Position of the watermark
 
@@ -5258,29 +5236,29 @@ One of the following:
 
 "left top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right top"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "left bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "right bottom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-size: optional object {height, width }
+size: optional object { height, width }
 
 Size of the watermark
 
@@ -5292,7 +5270,7 @@ Height of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -5300,11 +5278,11 @@ Width of the watermark in px
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 url: optional string
 
@@ -5312,11 +5290,11 @@ URL of the watermark image
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 width: optional number
 
@@ -5326,17 +5304,17 @@ maximum1920
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_keep\_alive\_time\_in\_secs: optional number
+session_keep_alive_time_in_secs: optional number
 
 Time in seconds, for which a session remains active, after the last participant has left the meeting.
 
@@ -5344,15 +5322,15 @@ maximum600
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: optional "ACTIVE"or "INACTIVE"
+status: optional "ACTIVE" or "INACTIVE"
 
-Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
 
 </summary>
 
@@ -5360,47 +5338,47 @@ One of the following:
 
 "ACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "INACTIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-summarize\_on\_end: optional boolean
+summarize_on_end: optional boolean
 
 Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 title: optional string
 
 Title of the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcribe\_on\_end: optional boolean
+transcribe_on_end: optional boolean
 
 Automatically generate transcripts when the meeting ends.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_replace_meeting_by_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingGetMeetingParticipantsResponse object {data, paging, success }
+MeetingGetMeetingParticipantsResponse object { data, paging, success }
 
 </summary>
 
@@ -5408,7 +5386,7 @@ MeetingGetMeetingParticipantsResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, custom\_participant\_id, 4 more }
+data: array of object { id, created_at, custom_participant_id, 4 more }
 
 </summary>
 
@@ -5418,41 +5396,41 @@ ID of the participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When this object was created. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: string
+custom_participant_id: string
 
 A unique participant ID generated by the client.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: string
+preset_name: string
 
 Preset applied to the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When this object was updated. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 picture: optional string
 
@@ -5460,51 +5438,51 @@ URL to a picture of the participant.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end_offset, start_offset, total_count }
 
 </summary>
 
-end\_offset: number
+end_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-start\_offset: number
+start_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_count: number
+total_count: number
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_get_meeting_participants_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingAddParticipantResponse object {success, data }
+MeetingAddParticipantResponse object { success, data }
 
 </summary>
 
@@ -5512,13 +5490,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object { id, token, created_at, 5 more }
 
 Represents a participant.
 
@@ -5530,47 +5508,47 @@ ID of the participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 token: string
 
 The participant’s auth token that can be used for joining a meeting from the client side.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When this object was created. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: string
+custom_participant_id: string
 
 A unique participant ID generated by the client.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: string
+preset_name: string
 
 Preset applied to the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When this object was updated. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 picture: optional string
 
@@ -5578,21 +5556,21 @@ URL to a picture of the participant.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_add_participant_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingGetMeetingParticipantResponse object {data, success }
+MeetingGetMeetingParticipantResponse object { data, success }
 
 </summary>
 
@@ -5600,7 +5578,7 @@ MeetingGetMeetingParticipantResponse object {data, success }
 
 <summary>
 
-data: object {id, created\_at, custom\_participant\_id, 4 more }
+data: object { id, created_at, custom_participant_id, 4 more }
 
 Data returned by the operation
 
@@ -5612,41 +5590,41 @@ ID of the participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When this object was created. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: string
+custom_participant_id: string
 
 A unique participant ID generated by the client.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: string
+preset_name: string
 
 Preset applied to the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When this object was updated. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 picture: optional string
 
@@ -5654,27 +5632,27 @@ URL to a picture of the participant.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_get_meeting_participant_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingEditParticipantResponse object {success, data }
+MeetingEditParticipantResponse object { success, data }
 
 </summary>
 
@@ -5682,13 +5660,13 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object { id, token, created_at, 5 more }
 
 Represents a participant.
 
@@ -5700,47 +5678,47 @@ ID of the participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 token: string
 
 The participant’s auth token that can be used for joining a meeting from the client side.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When this object was created. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: string
+custom_participant_id: string
 
 A unique participant ID generated by the client.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: string
+preset_name: string
 
 Preset applied to the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When this object was updated. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 picture: optional string
 
@@ -5748,21 +5726,21 @@ URL to a picture of the participant.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_edit_participant_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingDeleteMeetingParticipantResponse object {success, data }
+MeetingDeleteMeetingParticipantResponse object { success, data }
 
 </summary>
 
@@ -5770,61 +5748,61 @@ success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-data: optional object {created\_at, custom\_participant\_id, preset\_id, updated\_at }
+data: optional object { created_at, custom_participant_id, preset_id, updated_at }
 
 Data returned by the operation
 
 </summary>
 
-created\_at: string
+created_at: string
 
 Timestamp this object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: string
+custom_participant_id: string
 
 A unique participant ID generated by the client.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_id: string
+preset_id: string
 
 ID of the preset applied to this participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_delete_meeting_participant_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-MeetingRefreshParticipantTokenResponse object {data, success }
+MeetingRefreshParticipantTokenResponse object { data, success }
 
 </summary>
 
@@ -5832,7 +5810,7 @@ MeetingRefreshParticipantTokenResponse object {data, success }
 
 <summary>
 
-data: object {token }
+data: object { token }
 
 Data returned by the operation
 
@@ -5842,55 +5820,53 @@ token: string
 
 Regenerated participant’s authentication token.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.meetings%20%3E%20(model)%20meeting_refresh_participant_token_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### Realtime KitPresets
+##### [Fetch all presets](/api/resources/realtime_kit/subresources/presets/methods/get)
 
-##### [Fetch all presets](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/get)
+GET/accounts/{account_id}/realtime/kit/{app_id}/presets
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/presets
+##### [Create a preset](/api/resources/realtime_kit/subresources/presets/methods/create)
 
-##### [Create a preset](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/create)
+POST/accounts/{account_id}/realtime/kit/{app_id}/presets
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/presets
+##### [Fetch details of a preset](/api/resources/realtime_kit/subresources/presets/methods/get_preset_by_id)
 
-##### [Fetch details of a preset](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/get_preset_by_id)
+GET/accounts/{account_id}/realtime/kit/{app_id}/presets/{preset_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/presets/{preset\_id}
+##### [Delete a preset](/api/resources/realtime_kit/subresources/presets/methods/delete)
 
-##### [Delete a preset](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/delete)
+DELETE/accounts/{account_id}/realtime/kit/{app_id}/presets/{preset_id}
 
-DELETE/accounts/{account\_id}/realtime/kit/{app\_id}/presets/{preset\_id}
+##### [Update a preset](/api/resources/realtime_kit/subresources/presets/methods/update)
 
-##### [Update a preset](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/update)
+PATCH/accounts/{account_id}/realtime/kit/{app_id}/presets/{preset_id}
 
-PATCH/accounts/{account\_id}/realtime/kit/{app\_id}/presets/{preset\_id}
+##### [Replace a preset](/api/resources/realtime_kit/subresources/presets/methods/replace_preset_by_id)
 
-##### [Replace a preset](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/presets/methods/replace_preset_by_id)
+PUT/accounts/{account_id}/realtime/kit/{app_id}/presets/{preset_id}
 
-PUT/accounts/{account\_id}/realtime/kit/{app\_id}/presets/{preset\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-PresetGetResponse object {data, paging, success }
+PresetGetResponse object { data, paging, success }
 
 </summary>
 
@@ -5898,7 +5874,7 @@ PresetGetResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, name, updated\_at }
+data: array of object { id, created_at, name, updated_at }
 
 </summary>
 
@@ -5908,73 +5884,73 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-paging: object {end\_offset, start\_offset, total\_count }
+paging: object { end_offset, start_offset, total_count }
 
 </summary>
 
-end\_offset: number
+end_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-start\_offset: number
+start_offset: number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_count: number
+total_count: number
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PresetCreateResponse object {data, success }
+PresetCreateResponse object { data, success }
 
 </summary>
 
@@ -5982,7 +5958,7 @@ PresetCreateResponse object {data, success }
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created_at, 4 more }
 
 Data returned by the operation
 
@@ -5994,27 +5970,27 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max_screenshare_count, max_video_streams, media, 2 more }
 
 </summary>
 
-max\_screenshare\_count: number
+max_screenshare_count: number
 
 Maximum number of screen shares that can be active at a given time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max_video_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -6024,23 +6000,23 @@ desktop: number
 
 Maximum number of video streams visible on desktop devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mobile: number
 
 Maximum number of streams visible on mobile devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -6050,23 +6026,23 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame_rate, quality }
 
 Configuration options for participant screen shares
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of screen share
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -6076,55 +6052,55 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame_rate, quality, simulcast }
 
 Configuration options for participant videos
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of participants’ video
 
 maximum30
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -6134,73 +6110,73 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 simulcast: optional boolean
 
 Enable simulcast for participant videos.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable_high_bitrate, enable_stereo }
 
 Control options for Audio quality.
 
 </summary>
 
-enable\_high\_bitrate: optional boolean
+enable_high_bitrate: optional boolean
 
 Enable High Quality Audio for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enable\_stereo: optional boolean
+enable_stereo: optional boolean
 
 Enable Stereo for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view_type: "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -6208,93 +6184,93 @@ Type of the meeting
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-livestream\_viewer\_qualities: optional array of number
+livestream_viewer_qualities: optional array of number
 
 Livestream viewer quality levels.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
 
 </summary>
 
-accept\_waiting\_requests: boolean
+accept_waiting_requests: boolean
 
 Whether this participant can accept waiting requests
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_accept\_production\_requests: boolean
+can_accept_production_requests: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_change\_participant\_permissions: boolean
+can_change_participant_permissions: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_display\_name: boolean
+can_edit_display_name: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_livestream: boolean
+can_livestream: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_record: boolean
+can_record: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_spotlight: boolean
+can_spotlight: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -6302,115 +6278,115 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can_receive, can_send, files, text }
 
 </summary>
 
-can\_receive: boolean
+can_receive: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_send: boolean
+can_send: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can_send, files, text }
 
 </summary>
 
-can\_send: boolean
+can_send: boolean
 
 Can send messages in general
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
 Can send file messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
 Can send text messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected_meetings: object { can_alter_connected_meetings, can_switch_connected_meetings, can_switch_to_parent_meeting }
 
 </summary>
 
-can\_alter\_connected\_meetings: boolean
+can_alter_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_connected\_meetings: boolean
+can_switch_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_to\_parent\_meeting: boolean
+can_switch_to_parent_meeting: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_audio: boolean
+disable_participant_audio: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_screensharing: boolean
+disable_participant_screensharing: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_video: boolean
+disable_participant_video: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-hidden\_participant: boolean
+hidden_participant: boolean
 
 Whether this participant is visible to others or not
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-kick\_participant: boolean
+kick_participant: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -6420,7 +6396,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can_produce }
 
 Audio permissions
 
@@ -6430,7 +6406,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce audio
 
@@ -6440,29 +6416,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can_produce }
 
 Screenshare permissions
 
@@ -6472,7 +6448,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce screen share video
 
@@ -6482,29 +6458,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {can\_produce }
+video: object { can_produce }
 
 Video permissions
 
@@ -6514,7 +6490,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce video
 
@@ -6524,65 +6500,65 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pin\_participant: boolean
+</details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+pin_participant: boolean
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can_close, can_edit_config, can_start, config }
 
 Plugin permissions
 
 </summary>
 
-can\_close: boolean
+can_close: boolean
 
 Can close plugins that are already open
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_config: boolean
+can_edit_config: boolean
 
 Can edit plugin config
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_start: boolean
+can_start: boolean
 
 Can start plugins
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map[object { access_control, handles_view_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -6592,73 +6568,73 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access_control: optional "FULL_ACCESS" or "VIEW_ONLY"
 
 </summary>
 
 One of the following:
 
-"FULL\_ACCESS"
+"FULL_ACCESS"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"VIEW\_ONLY"
+"VIEW_ONLY"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-handles\_view\_only: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+handles_view_only: optional boolean
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can_create, can_view, can_vote }
 
 Poll permissions
 
 </summary>
 
-can\_create: boolean
+can_create: boolean
 
 Can create polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_view: boolean
+can_view: boolean
 
 Can view polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_vote: boolean
+can_vote: boolean
 
 Can vote on polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -6668,29 +6644,29 @@ One of the following:
 
 "RECORDER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAMER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NONE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-show\_participant\_list: boolean
+show_participant_list: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting_room_type: "SKIP" or "ON_PRIVILEGED_USER_ENTRY" or "SKIP_ON_ACCEPT"
 
 Waiting room type
 
@@ -6700,33 +6676,33 @@ One of the following:
 
 "SKIP"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"ON\_PRIVILEGED\_USER\_ENTRY"
+"ON_PRIVILEGED_USER_ENTRY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"SKIP\_ON\_ACCEPT"
+"SKIP_ON_ACCEPT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-accept\_stage\_requests: optional boolean
+accept_stage_requests: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_recorder: optional boolean
+is_recorder: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage_access: optional "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 </summary>
 
@@ -6734,37 +6710,37 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stage\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-transcription\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+stage_enabled: optional boolean
+
+[Link to this property](#)
+
+transcription_enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design_tokens }
 
 </summary>
 
@@ -6772,7 +6748,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design_tokens: object { border_radius, border_width, colors, 5 more }
 
 </summary>
 
@@ -6780,7 +6756,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -6788,29 +6764,29 @@ One of the following:
 
 "sharp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "extra-rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "circular"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -6818,25 +6794,25 @@ One of the following:
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "thin"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fat"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -6844,105 +6820,105 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
 "1000": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "800": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "900": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
 "300": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "400": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "500": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 danger: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-text\_on\_brand: string
+text_on_brand: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_bg: string
+video_bg: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 warning: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-spacing\_base: number
+spacing_base: number
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -6950,69 +6926,69 @@ One of the following:
 
 "darkest"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "dark"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "light"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-font\_family: optional string
+font_family: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-google\_font: optional string
+google_font: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 logo: optional string
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PresetGetPresetByIDResponse object {data, success }
+PresetGetPresetByIDResponse object { data, success }
 
 </summary>
 
@@ -7020,7 +6996,7 @@ PresetGetPresetByIDResponse object {data, success }
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created_at, 4 more }
 
 Data returned by the operation
 
@@ -7032,27 +7008,27 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max_screenshare_count, max_video_streams, media, 2 more }
 
 </summary>
 
-max\_screenshare\_count: number
+max_screenshare_count: number
 
 Maximum number of screen shares that can be active at a given time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max_video_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -7062,23 +7038,23 @@ desktop: number
 
 Maximum number of video streams visible on desktop devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mobile: number
 
 Maximum number of streams visible on mobile devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -7088,23 +7064,23 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame_rate, quality }
 
 Configuration options for participant screen shares
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of screen share
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -7114,55 +7090,55 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame_rate, quality, simulcast }
 
 Configuration options for participant videos
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of participants’ video
 
 maximum30
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -7172,73 +7148,73 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 simulcast: optional boolean
 
 Enable simulcast for participant videos.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable_high_bitrate, enable_stereo }
 
 Control options for Audio quality.
 
 </summary>
 
-enable\_high\_bitrate: optional boolean
+enable_high_bitrate: optional boolean
 
 Enable High Quality Audio for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enable\_stereo: optional boolean
+enable_stereo: optional boolean
 
 Enable Stereo for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view_type: "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -7246,93 +7222,93 @@ Type of the meeting
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-livestream\_viewer\_qualities: optional array of number
+livestream_viewer_qualities: optional array of number
 
 Livestream viewer quality levels.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
 
 </summary>
 
-accept\_waiting\_requests: boolean
+accept_waiting_requests: boolean
 
 Whether this participant can accept waiting requests
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_accept\_production\_requests: boolean
+can_accept_production_requests: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_change\_participant\_permissions: boolean
+can_change_participant_permissions: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_display\_name: boolean
+can_edit_display_name: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_livestream: boolean
+can_livestream: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_record: boolean
+can_record: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_spotlight: boolean
+can_spotlight: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -7340,115 +7316,115 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can_receive, can_send, files, text }
 
 </summary>
 
-can\_receive: boolean
+can_receive: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_send: boolean
+can_send: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can_send, files, text }
 
 </summary>
 
-can\_send: boolean
+can_send: boolean
 
 Can send messages in general
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
 Can send file messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
 Can send text messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected_meetings: object { can_alter_connected_meetings, can_switch_connected_meetings, can_switch_to_parent_meeting }
 
 </summary>
 
-can\_alter\_connected\_meetings: boolean
+can_alter_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_connected\_meetings: boolean
+can_switch_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_to\_parent\_meeting: boolean
+can_switch_to_parent_meeting: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_audio: boolean
+disable_participant_audio: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_screensharing: boolean
+disable_participant_screensharing: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_video: boolean
+disable_participant_video: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-hidden\_participant: boolean
+hidden_participant: boolean
 
 Whether this participant is visible to others or not
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-kick\_participant: boolean
+kick_participant: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -7458,7 +7434,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can_produce }
 
 Audio permissions
 
@@ -7468,7 +7444,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce audio
 
@@ -7478,29 +7454,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can_produce }
 
 Screenshare permissions
 
@@ -7510,7 +7486,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce screen share video
 
@@ -7520,29 +7496,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {can\_produce }
+video: object { can_produce }
 
 Video permissions
 
@@ -7552,7 +7528,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce video
 
@@ -7562,65 +7538,65 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pin\_participant: boolean
+</details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+pin_participant: boolean
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can_close, can_edit_config, can_start, config }
 
 Plugin permissions
 
 </summary>
 
-can\_close: boolean
+can_close: boolean
 
 Can close plugins that are already open
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_config: boolean
+can_edit_config: boolean
 
 Can edit plugin config
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_start: boolean
+can_start: boolean
 
 Can start plugins
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map[object { access_control, handles_view_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -7630,73 +7606,73 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access_control: optional "FULL_ACCESS" or "VIEW_ONLY"
 
 </summary>
 
 One of the following:
 
-"FULL\_ACCESS"
+"FULL_ACCESS"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"VIEW\_ONLY"
+"VIEW_ONLY"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-handles\_view\_only: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+handles_view_only: optional boolean
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can_create, can_view, can_vote }
 
 Poll permissions
 
 </summary>
 
-can\_create: boolean
+can_create: boolean
 
 Can create polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_view: boolean
+can_view: boolean
 
 Can view polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_vote: boolean
+can_vote: boolean
 
 Can vote on polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -7706,29 +7682,29 @@ One of the following:
 
 "RECORDER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAMER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NONE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-show\_participant\_list: boolean
+show_participant_list: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting_room_type: "SKIP" or "ON_PRIVILEGED_USER_ENTRY" or "SKIP_ON_ACCEPT"
 
 Waiting room type
 
@@ -7738,33 +7714,33 @@ One of the following:
 
 "SKIP"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"ON\_PRIVILEGED\_USER\_ENTRY"
+"ON_PRIVILEGED_USER_ENTRY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"SKIP\_ON\_ACCEPT"
+"SKIP_ON_ACCEPT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-accept\_stage\_requests: optional boolean
+accept_stage_requests: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_recorder: optional boolean
+is_recorder: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage_access: optional "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 </summary>
 
@@ -7772,37 +7748,37 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stage\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-transcription\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+stage_enabled: optional boolean
+
+[Link to this property](#)
+
+transcription_enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design_tokens }
 
 </summary>
 
@@ -7810,7 +7786,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design_tokens: object { border_radius, border_width, colors, 5 more }
 
 </summary>
 
@@ -7818,7 +7794,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -7826,29 +7802,29 @@ One of the following:
 
 "sharp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "extra-rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "circular"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -7856,25 +7832,25 @@ One of the following:
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "thin"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fat"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -7882,105 +7858,105 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
 "1000": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "800": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "900": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
 "300": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "400": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "500": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 danger: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-text\_on\_brand: string
+text_on_brand: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_bg: string
+video_bg: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 warning: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-spacing\_base: number
+spacing_base: number
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -7988,69 +7964,69 @@ One of the following:
 
 "darkest"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "dark"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "light"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-font\_family: optional string
+font_family: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-google\_font: optional string
+google_font: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 logo: optional string
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_get_preset_by_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PresetDeleteResponse object {data, success }
+PresetDeleteResponse object { data, success }
 
 </summary>
 
@@ -8058,7 +8034,7 @@ PresetDeleteResponse object {data, success }
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created_at, 4 more }
 
 Data returned by the operation
 
@@ -8070,27 +8046,27 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max_screenshare_count, max_video_streams, media, 2 more }
 
 </summary>
 
-max\_screenshare\_count: number
+max_screenshare_count: number
 
 Maximum number of screen shares that can be active at a given time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max_video_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -8100,23 +8076,23 @@ desktop: number
 
 Maximum number of video streams visible on desktop devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mobile: number
 
 Maximum number of streams visible on mobile devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -8126,23 +8102,23 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame_rate, quality }
 
 Configuration options for participant screen shares
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of screen share
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -8152,55 +8128,55 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame_rate, quality, simulcast }
 
 Configuration options for participant videos
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of participants’ video
 
 maximum30
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -8210,73 +8186,73 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 simulcast: optional boolean
 
 Enable simulcast for participant videos.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable_high_bitrate, enable_stereo }
 
 Control options for Audio quality.
 
 </summary>
 
-enable\_high\_bitrate: optional boolean
+enable_high_bitrate: optional boolean
 
 Enable High Quality Audio for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enable\_stereo: optional boolean
+enable_stereo: optional boolean
 
 Enable Stereo for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view_type: "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -8284,93 +8260,93 @@ Type of the meeting
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-livestream\_viewer\_qualities: optional array of number
+livestream_viewer_qualities: optional array of number
 
 Livestream viewer quality levels.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
 
 </summary>
 
-accept\_waiting\_requests: boolean
+accept_waiting_requests: boolean
 
 Whether this participant can accept waiting requests
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_accept\_production\_requests: boolean
+can_accept_production_requests: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_change\_participant\_permissions: boolean
+can_change_participant_permissions: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_display\_name: boolean
+can_edit_display_name: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_livestream: boolean
+can_livestream: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_record: boolean
+can_record: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_spotlight: boolean
+can_spotlight: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -8378,115 +8354,115 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can_receive, can_send, files, text }
 
 </summary>
 
-can\_receive: boolean
+can_receive: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_send: boolean
+can_send: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can_send, files, text }
 
 </summary>
 
-can\_send: boolean
+can_send: boolean
 
 Can send messages in general
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
 Can send file messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
 Can send text messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected_meetings: object { can_alter_connected_meetings, can_switch_connected_meetings, can_switch_to_parent_meeting }
 
 </summary>
 
-can\_alter\_connected\_meetings: boolean
+can_alter_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_connected\_meetings: boolean
+can_switch_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_to\_parent\_meeting: boolean
+can_switch_to_parent_meeting: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_audio: boolean
+disable_participant_audio: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_screensharing: boolean
+disable_participant_screensharing: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_video: boolean
+disable_participant_video: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-hidden\_participant: boolean
+hidden_participant: boolean
 
 Whether this participant is visible to others or not
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-kick\_participant: boolean
+kick_participant: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -8496,7 +8472,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can_produce }
 
 Audio permissions
 
@@ -8506,7 +8482,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce audio
 
@@ -8516,29 +8492,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can_produce }
 
 Screenshare permissions
 
@@ -8548,7 +8524,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce screen share video
 
@@ -8558,29 +8534,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {can\_produce }
+video: object { can_produce }
 
 Video permissions
 
@@ -8590,7 +8566,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce video
 
@@ -8600,65 +8576,65 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pin\_participant: boolean
+</details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+pin_participant: boolean
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can_close, can_edit_config, can_start, config }
 
 Plugin permissions
 
 </summary>
 
-can\_close: boolean
+can_close: boolean
 
 Can close plugins that are already open
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_config: boolean
+can_edit_config: boolean
 
 Can edit plugin config
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_start: boolean
+can_start: boolean
 
 Can start plugins
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map[object { access_control, handles_view_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -8668,73 +8644,73 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access_control: optional "FULL_ACCESS" or "VIEW_ONLY"
 
 </summary>
 
 One of the following:
 
-"FULL\_ACCESS"
+"FULL_ACCESS"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"VIEW\_ONLY"
+"VIEW_ONLY"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-handles\_view\_only: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+handles_view_only: optional boolean
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can_create, can_view, can_vote }
 
 Poll permissions
 
 </summary>
 
-can\_create: boolean
+can_create: boolean
 
 Can create polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_view: boolean
+can_view: boolean
 
 Can view polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_vote: boolean
+can_vote: boolean
 
 Can vote on polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -8744,29 +8720,29 @@ One of the following:
 
 "RECORDER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAMER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NONE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-show\_participant\_list: boolean
+show_participant_list: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting_room_type: "SKIP" or "ON_PRIVILEGED_USER_ENTRY" or "SKIP_ON_ACCEPT"
 
 Waiting room type
 
@@ -8776,33 +8752,33 @@ One of the following:
 
 "SKIP"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"ON\_PRIVILEGED\_USER\_ENTRY"
+"ON_PRIVILEGED_USER_ENTRY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"SKIP\_ON\_ACCEPT"
+"SKIP_ON_ACCEPT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-accept\_stage\_requests: optional boolean
+accept_stage_requests: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_recorder: optional boolean
+is_recorder: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage_access: optional "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 </summary>
 
@@ -8810,37 +8786,37 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stage\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-transcription\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+stage_enabled: optional boolean
+
+[Link to this property](#)
+
+transcription_enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design_tokens }
 
 </summary>
 
@@ -8848,7 +8824,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design_tokens: object { border_radius, border_width, colors, 5 more }
 
 </summary>
 
@@ -8856,7 +8832,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -8864,29 +8840,29 @@ One of the following:
 
 "sharp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "extra-rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "circular"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -8894,25 +8870,25 @@ One of the following:
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "thin"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fat"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -8920,105 +8896,105 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
 "1000": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "800": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "900": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
 "300": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "400": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "500": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 danger: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-text\_on\_brand: string
+text_on_brand: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_bg: string
+video_bg: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 warning: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-spacing\_base: number
+spacing_base: number
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -9026,69 +9002,69 @@ One of the following:
 
 "darkest"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "dark"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "light"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-font\_family: optional string
+font_family: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-google\_font: optional string
+google_font: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 logo: optional string
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PresetUpdateResponse object {data, success }
+PresetUpdateResponse object { data, success }
 
 </summary>
 
@@ -9096,7 +9072,7 @@ PresetUpdateResponse object {data, success }
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created_at, 4 more }
 
 Data returned by the operation
 
@@ -9108,27 +9084,27 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max_screenshare_count, max_video_streams, media, 2 more }
 
 </summary>
 
-max\_screenshare\_count: number
+max_screenshare_count: number
 
 Maximum number of screen shares that can be active at a given time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max_video_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -9138,23 +9114,23 @@ desktop: number
 
 Maximum number of video streams visible on desktop devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mobile: number
 
 Maximum number of streams visible on mobile devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -9164,23 +9140,23 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame_rate, quality }
 
 Configuration options for participant screen shares
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of screen share
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -9190,55 +9166,55 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame_rate, quality, simulcast }
 
 Configuration options for participant videos
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of participants’ video
 
 maximum30
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -9248,73 +9224,73 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 simulcast: optional boolean
 
 Enable simulcast for participant videos.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable_high_bitrate, enable_stereo }
 
 Control options for Audio quality.
 
 </summary>
 
-enable\_high\_bitrate: optional boolean
+enable_high_bitrate: optional boolean
 
 Enable High Quality Audio for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enable\_stereo: optional boolean
+enable_stereo: optional boolean
 
 Enable Stereo for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view_type: "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -9322,93 +9298,93 @@ Type of the meeting
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-livestream\_viewer\_qualities: optional array of number
+livestream_viewer_qualities: optional array of number
 
 Livestream viewer quality levels.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
 
 </summary>
 
-accept\_waiting\_requests: boolean
+accept_waiting_requests: boolean
 
 Whether this participant can accept waiting requests
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_accept\_production\_requests: boolean
+can_accept_production_requests: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_change\_participant\_permissions: boolean
+can_change_participant_permissions: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_display\_name: boolean
+can_edit_display_name: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_livestream: boolean
+can_livestream: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_record: boolean
+can_record: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_spotlight: boolean
+can_spotlight: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -9416,115 +9392,115 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can_receive, can_send, files, text }
 
 </summary>
 
-can\_receive: boolean
+can_receive: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_send: boolean
+can_send: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can_send, files, text }
 
 </summary>
 
-can\_send: boolean
+can_send: boolean
 
 Can send messages in general
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
 Can send file messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
 Can send text messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected_meetings: object { can_alter_connected_meetings, can_switch_connected_meetings, can_switch_to_parent_meeting }
 
 </summary>
 
-can\_alter\_connected\_meetings: boolean
+can_alter_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_connected\_meetings: boolean
+can_switch_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_to\_parent\_meeting: boolean
+can_switch_to_parent_meeting: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_audio: boolean
+disable_participant_audio: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_screensharing: boolean
+disable_participant_screensharing: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_video: boolean
+disable_participant_video: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-hidden\_participant: boolean
+hidden_participant: boolean
 
 Whether this participant is visible to others or not
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-kick\_participant: boolean
+kick_participant: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -9534,7 +9510,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can_produce }
 
 Audio permissions
 
@@ -9544,7 +9520,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce audio
 
@@ -9554,29 +9530,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can_produce }
 
 Screenshare permissions
 
@@ -9586,7 +9562,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce screen share video
 
@@ -9596,29 +9572,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {can\_produce }
+video: object { can_produce }
 
 Video permissions
 
@@ -9628,7 +9604,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce video
 
@@ -9638,65 +9614,65 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pin\_participant: boolean
+</details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+pin_participant: boolean
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can_close, can_edit_config, can_start, config }
 
 Plugin permissions
 
 </summary>
 
-can\_close: boolean
+can_close: boolean
 
 Can close plugins that are already open
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_config: boolean
+can_edit_config: boolean
 
 Can edit plugin config
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_start: boolean
+can_start: boolean
 
 Can start plugins
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map[object { access_control, handles_view_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -9706,73 +9682,73 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access_control: optional "FULL_ACCESS" or "VIEW_ONLY"
 
 </summary>
 
 One of the following:
 
-"FULL\_ACCESS"
+"FULL_ACCESS"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"VIEW\_ONLY"
+"VIEW_ONLY"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-handles\_view\_only: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+handles_view_only: optional boolean
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can_create, can_view, can_vote }
 
 Poll permissions
 
 </summary>
 
-can\_create: boolean
+can_create: boolean
 
 Can create polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_view: boolean
+can_view: boolean
 
 Can view polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_vote: boolean
+can_vote: boolean
 
 Can vote on polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -9782,29 +9758,29 @@ One of the following:
 
 "RECORDER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAMER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NONE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-show\_participant\_list: boolean
+show_participant_list: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting_room_type: "SKIP" or "ON_PRIVILEGED_USER_ENTRY" or "SKIP_ON_ACCEPT"
 
 Waiting room type
 
@@ -9814,33 +9790,33 @@ One of the following:
 
 "SKIP"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"ON\_PRIVILEGED\_USER\_ENTRY"
+"ON_PRIVILEGED_USER_ENTRY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"SKIP\_ON\_ACCEPT"
+"SKIP_ON_ACCEPT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-accept\_stage\_requests: optional boolean
+accept_stage_requests: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_recorder: optional boolean
+is_recorder: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage_access: optional "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 </summary>
 
@@ -9848,37 +9824,37 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stage\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-transcription\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+stage_enabled: optional boolean
+
+[Link to this property](#)
+
+transcription_enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design_tokens }
 
 </summary>
 
@@ -9886,7 +9862,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design_tokens: object { border_radius, border_width, colors, 5 more }
 
 </summary>
 
@@ -9894,7 +9870,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -9902,29 +9878,29 @@ One of the following:
 
 "sharp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "extra-rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "circular"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -9932,25 +9908,25 @@ One of the following:
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "thin"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fat"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -9958,105 +9934,105 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
 "1000": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "800": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "900": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
 "300": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "400": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "500": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 danger: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-text\_on\_brand: string
+text_on_brand: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_bg: string
+video_bg: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 warning: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-spacing\_base: number
+spacing_base: number
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -10064,69 +10040,69 @@ One of the following:
 
 "darkest"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "dark"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "light"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-font\_family: optional string
+font_family: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-google\_font: optional string
+google_font: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 logo: optional string
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PresetReplacePresetByIDResponse object {data, success }
+PresetReplacePresetByIDResponse object { data, success }
 
 </summary>
 
@@ -10134,7 +10110,7 @@ PresetReplacePresetByIDResponse object {data, success }
 
 <summary>
 
-data: object {id, config, created\_at, 4 more }
+data: object { id, config, created_at, 4 more }
 
 Data returned by the operation
 
@@ -10146,27 +10122,27 @@ ID of the preset
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: object {max\_screenshare\_count, max\_video\_streams, media, 2 more }
+config: object { max_screenshare_count, max_video_streams, media, 2 more }
 
 </summary>
 
-max\_screenshare\_count: number
+max_screenshare_count: number
 
 Maximum number of screen shares that can be active at a given time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-max\_video\_streams: object {desktop, mobile }
+max_video_streams: object { desktop, mobile }
 
 Maximum number of streams that are visible on a device
 
@@ -10176,23 +10152,23 @@ desktop: number
 
 Maximum number of video streams visible on desktop devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mobile: number
 
 Maximum number of streams visible on mobile devices
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {screenshare, video, audio }
+media: object { screenshare, video, audio }
 
 Media configuration options. eg: Video quality
 
@@ -10202,23 +10178,23 @@ Media configuration options. eg: Video quality
 
 <summary>
 
-screenshare: object {frame\_rate, quality }
+screenshare: object { frame_rate, quality }
 
 Configuration options for participant screen shares
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of screen share
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Quality of screen share
 
@@ -10228,55 +10204,55 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {frame\_rate, quality, simulcast }
+video: object { frame_rate, quality, simulcast }
 
 Configuration options for participant videos
 
 </summary>
 
-frame\_rate: number
+frame_rate: number
 
 Frame rate of participants’ video
 
 maximum30
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: "hd"or "vga"or "qvga"or 2 more
+quality: "hd" or "vga" or "qvga" or 2 more
 
 Video quality of participants
 
@@ -10286,73 +10262,73 @@ One of the following:
 
 "hd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "vga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "qvga"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uhd"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 simulcast: optional boolean
 
 Enable simulcast for participant videos.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio: optional object {enable\_high\_bitrate, enable\_stereo }
+audio: optional object { enable_high_bitrate, enable_stereo }
 
 Control options for Audio quality.
 
 </summary>
 
-enable\_high\_bitrate: optional boolean
+enable_high_bitrate: optional boolean
 
 Enable High Quality Audio for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enable\_stereo: optional boolean
+enable_stereo: optional boolean
 
 Enable Stereo for your meetings
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-view\_type: "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or "LIVESTREAM"
+view_type: "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or "LIVESTREAM"
 
 Type of the meeting
 
@@ -10360,93 +10336,93 @@ Type of the meeting
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-livestream\_viewer\_qualities: optional array of number
+livestream_viewer_qualities: optional array of number
 
 Livestream viewer quality levels.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp this preset was created at
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 Name of the preset
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
 
 </summary>
 
-accept\_waiting\_requests: boolean
+accept_waiting_requests: boolean
 
 Whether this participant can accept waiting requests
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_accept\_production\_requests: boolean
+can_accept_production_requests: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_change\_participant\_permissions: boolean
+can_change_participant_permissions: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_display\_name: boolean
+can_edit_display_name: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_livestream: boolean
+can_livestream: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_record: boolean
+can_record: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_spotlight: boolean
+can_spotlight: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-chat: object {private, public }
+chat: object { private, public }
 
 </summary>
 
@@ -10454,115 +10430,115 @@ chat: object {private, public }
 
 <summary>
 
-private: object {can\_receive, can\_send, files, text }
+private: object { can_receive, can_send, files, text }
 
 </summary>
 
-can\_receive: boolean
+can_receive: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_send: boolean
+can_send: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-public: object {can\_send, files, text }
+public: object { can_send, files, text }
 
 </summary>
 
-can\_send: boolean
+can_send: boolean
 
 Can send messages in general
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 files: boolean
 
 Can send file messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: boolean
 
 Can send text messages
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-connected\_meetings: object {can\_alter\_connected\_meetings, can\_switch\_connected\_meetings, can\_switch\_to\_parent\_meeting }
+connected_meetings: object { can_alter_connected_meetings, can_switch_connected_meetings, can_switch_to_parent_meeting }
 
 </summary>
 
-can\_alter\_connected\_meetings: boolean
+can_alter_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_connected\_meetings: boolean
+can_switch_connected_meetings: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_switch\_to\_parent\_meeting: boolean
+can_switch_to_parent_meeting: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_audio: boolean
+disable_participant_audio: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_screensharing: boolean
+disable_participant_screensharing: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-disable\_participant\_video: boolean
+disable_participant_video: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-hidden\_participant: boolean
+hidden_participant: boolean
 
 Whether this participant is visible to others or not
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-kick\_participant: boolean
+kick_participant: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-media: object {audio, screenshare, video }
+media: object { audio, screenshare, video }
 
 Media permissions
 
@@ -10572,7 +10548,7 @@ Media permissions
 
 <summary>
 
-audio: object {can\_produce }
+audio: object { can_produce }
 
 Audio permissions
 
@@ -10582,7 +10558,7 @@ Audio permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce audio
 
@@ -10592,29 +10568,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare: object {can\_produce }
+screenshare: object { can_produce }
 
 Screenshare permissions
 
@@ -10624,7 +10600,7 @@ Screenshare permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce screen share video
 
@@ -10634,29 +10610,29 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video: object {can\_produce }
+video: object { can_produce }
 
 Video permissions
 
@@ -10666,7 +10642,7 @@ Video permissions
 
 <summary>
 
-can\_produce: "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+can_produce: "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 Can produce video
 
@@ -10676,65 +10652,65 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pin\_participant: boolean
+</details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+pin_participant: boolean
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-plugins: object {can\_close, can\_edit\_config, can\_start, config }
+plugins: object { can_close, can_edit_config, can_start, config }
 
 Plugin permissions
 
 </summary>
 
-can\_close: boolean
+can_close: boolean
 
 Can close plugins that are already open
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_edit\_config: boolean
+can_edit_config: boolean
 
 Can edit plugin config
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_start: boolean
+can_start: boolean
 
 Can start plugins
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-config: map\[object {access\_control, handles\_view\_only } ]
+config: map[object { access_control, handles_view_only } ]
 
 Plugin configuration keyed by plugin UUID.
 
@@ -10744,73 +10720,73 @@ Plugin configuration keyed by plugin UUID.
 
 <summary>
 
-access\_control: optional "FULL\_ACCESS"or "VIEW\_ONLY"
+access_control: optional "FULL_ACCESS" or "VIEW_ONLY"
 
 </summary>
 
 One of the following:
 
-"FULL\_ACCESS"
+"FULL_ACCESS"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"VIEW\_ONLY"
+"VIEW_ONLY"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-handles\_view\_only: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+handles_view_only: optional boolean
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-polls: object {can\_create, can\_view, can\_vote }
+polls: object { can_create, can_view, can_vote }
 
 Poll permissions
 
 </summary>
 
-can\_create: boolean
+can_create: boolean
 
 Can create polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_view: boolean
+can_view: boolean
 
 Can view polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-can\_vote: boolean
+can_vote: boolean
 
 Can vote on polls
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recorder\_type: "RECORDER"or "LIVESTREAMER"or "NONE"
+recorder_type: "RECORDER" or "LIVESTREAMER" or "NONE"
 
 Type of the recording peer
 
@@ -10820,29 +10796,29 @@ One of the following:
 
 "RECORDER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAMER"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NONE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-show\_participant\_list: boolean
+show_participant_list: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-waiting\_room\_type: "SKIP"or "ON\_PRIVILEGED\_USER\_ENTRY"or "SKIP\_ON\_ACCEPT"
+waiting_room_type: "SKIP" or "ON_PRIVILEGED_USER_ENTRY" or "SKIP_ON_ACCEPT"
 
 Waiting room type
 
@@ -10852,33 +10828,33 @@ One of the following:
 
 "SKIP"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"ON\_PRIVILEGED\_USER\_ENTRY"
+"ON_PRIVILEGED_USER_ENTRY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"SKIP\_ON\_ACCEPT"
+"SKIP_ON_ACCEPT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-accept\_stage\_requests: optional boolean
+accept_stage_requests: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_recorder: optional boolean
+is_recorder: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-stage\_access: optional "ALLOWED"or "NOT\_ALLOWED"or "CAN\_REQUEST"
+stage_access: optional "ALLOWED" or "NOT_ALLOWED" or "CAN_REQUEST"
 
 </summary>
 
@@ -10886,37 +10862,37 @@ One of the following:
 
 "ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"NOT\_ALLOWED"
+"NOT_ALLOWED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"CAN\_REQUEST"
+"CAN_REQUEST"
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-stage\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
-
-transcription\_enabled: optional boolean
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+stage_enabled: optional boolean
+
+[Link to this property](#)
+
+transcription_enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ui: object {design\_tokens }
+ui: object { design_tokens }
 
 </summary>
 
@@ -10924,7 +10900,7 @@ ui: object {design\_tokens }
 
 <summary>
 
-design\_tokens: object {border\_radius, border\_width, colors, 5 more }
+design_tokens: object { border_radius, border_width, colors, 5 more }
 
 </summary>
 
@@ -10932,7 +10908,7 @@ design\_tokens: object {border\_radius, border\_width, colors, 5 more }
 
 <summary>
 
-border\_radius: "sharp"or "rounded"or "extra-rounded"or "circular"
+border_radius: "sharp" or "rounded" or "extra-rounded" or "circular"
 
 </summary>
 
@@ -10940,29 +10916,29 @@ One of the following:
 
 "sharp"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "extra-rounded"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "circular"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-border\_width: "none"or "thin"or "fat"
+border_width: "none" or "thin" or "fat"
 
 </summary>
 
@@ -10970,25 +10946,25 @@ One of the following:
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "thin"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "fat"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-colors: object {background, brand, danger, 5 more }
+colors: object { background, brand, danger, 5 more }
 
 </summary>
 
@@ -10996,105 +10972,105 @@ colors: object {background, brand, danger, 5 more }
 
 <summary>
 
-background: object {"1000", "600", "700", 2 more }
+background: object { "1000", "600", "700", 2 more }
 
 </summary>
 
 "1000": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "800": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "900": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-brand: object {"300", "400", "500", 2 more }
+brand: object { "300", "400", "500", 2 more }
 
 </summary>
 
 "300": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "400": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "500": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "600": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "700": string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 danger: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 text: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-text\_on\_brand: string
+text_on_brand: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_bg: string
+video_bg: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 warning: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-spacing\_base: number
+spacing_base: number
 
 minimum1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-theme: "darkest"or "dark"or "light"
+theme: "darkest" or "dark" or "light"
 
 </summary>
 
@@ -11102,109 +11078,107 @@ One of the following:
 
 "darkest"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "dark"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "light"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-font\_family: optional string
+font_family: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-google\_font: optional string
+google_font: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 logo: optional string
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp this preset was last updated
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: boolean
 
 Success status of the operation
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.presets%20%3E%20(model)%20preset_replace_preset_by_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### Realtime KitSessions
+##### [Fetch all sessions of an App](/api/resources/realtime_kit/subresources/sessions/methods/get_sessions)
 
-##### [Fetch all sessions of an App](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_sessions)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions
+##### [Fetch details of a session](/api/resources/realtime_kit/subresources/sessions/methods/get_session_details)
 
-##### [Fetch details of a session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_details)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}
+##### [Fetch participants list of a session](/api/resources/realtime_kit/subresources/sessions/methods/get_session_participants)
 
-##### [Fetch participants list of a session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_participants)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/participants
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/participants
+##### [Fetch details of a participant](/api/resources/realtime_kit/subresources/sessions/methods/get_session_participant_details)
 
-##### [Fetch details of a participant](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_participant_details)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/participants/{participant_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/participants/{participant\_id}
+##### [Fetch all chat messages of a session](/api/resources/realtime_kit/subresources/sessions/methods/get_session_chat)
 
-##### [Fetch all chat messages of a session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_chat)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/chat
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/chat
+##### [Fetch the complete transcript for a session](/api/resources/realtime_kit/subresources/sessions/methods/get_session_transcripts)
 
-##### [Fetch the complete transcript for a session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_transcripts)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/transcript
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/transcript
+##### [Fetch summary of transcripts for a session](/api/resources/realtime_kit/subresources/sessions/methods/get_session_summary)
 
-##### [Fetch summary of transcripts for a session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_session_summary)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/summary
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/summary
+##### [Generate summary of Transcripts for the session](/api/resources/realtime_kit/subresources/sessions/methods/generate_summary_of_transcripts)
 
-##### [Generate summary of Transcripts for the session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/generate_summary_of_transcripts)
+POST/accounts/{account_id}/realtime/kit/{app_id}/sessions/{session_id}/summary
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/summary
+##### [Fetch details of peer](/api/resources/realtime_kit/subresources/sessions/methods/get_participant_data_from_peer_id)
 
-##### [Fetch details of peer](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/sessions/methods/get_participant_data_from_peer_id)
+GET/accounts/{account_id}/realtime/kit/{app_id}/sessions/peer-report/{peer_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/peer-report/{peer\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-SessionGetSessionsResponse object {data, paging, success }
+SessionGetSessionsResponse object { data, paging, success }
 
 </summary>
 
@@ -11212,7 +11186,7 @@ SessionGetSessionsResponse object {data, paging, success }
 
 <summary>
 
-data: optional object {sessions }
+data: optional object { sessions }
 
 </summary>
 
@@ -11220,7 +11194,7 @@ data: optional object {sessions }
 
 <summary>
 
-sessions: optional array of object {id, associated\_id, created\_at, 11 more }
+sessions: optional array of object { id, associated_id, created_at, 11 more }
 
 </summary>
 
@@ -11228,61 +11202,61 @@ id: string
 
 ID of the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-associated\_id: string
+associated_id: string
 
-ID of the meeting this session is associated with. In the case of V2 meetings, it is always a UUID. In V1 meetings, it is a room name of the form <code>abcdef-ghijkl</code>
+ID of the meeting this session is associated with. In the case of V2 meetings, it is always a UUID. In V1 meetings, it is a room name of the form `abcdef-ghijkl`
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 timestamp when session created
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_participants: number
+live_participants: number
 
 number of participants currently in the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_concurrent\_participants: number
+max_concurrent_participants: number
 
 number of maximum participants that were in the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-meeting\_display\_name: string
+meeting_display_name: string
 
 Title of the meeting this session belongs to
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-minutes\_consumed: number
+minutes_consumed: number
 
 number of minutes consumed since the session started
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-organization\_id: string
+organization_id: string
 
 App id that hosted this session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-started\_at: string
+started_at: string
 
 timestamp when session started
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -11292,21 +11266,21 @@ One of the following:
 
 "LIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ENDED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -11316,83 +11290,83 @@ One of the following:
 
 "meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "livestream"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "participant"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 timestamp when session was last updated
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-breakout\_rooms: optional array of unknown
+breakout_rooms: optional array of unknown
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ended\_at: optional string
+ended_at: optional string
 
 timestamp when session ended
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-paging: optional object {end\_offset, start\_offset, total\_count }
+paging: optional object { end_offset, start_offset, total_count }
 
 </summary>
 
-end\_offset: optional number
+end_offset: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-start\_offset: optional number
+start_offset: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_count: optional number
+total_count: optional number
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_sessions_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionDetailsResponse object {data, success }
+SessionGetSessionDetailsResponse object { data, success }
 
 </summary>
 
@@ -11400,7 +11374,7 @@ SessionGetSessionDetailsResponse object {data, success }
 
 <summary>
 
-data: optional object {id, associated\_id, created\_at, 11 more }
+data: optional object { id, associated_id, created_at, 11 more }
 
 </summary>
 
@@ -11408,61 +11382,61 @@ id: string
 
 ID of the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-associated\_id: string
+associated_id: string
 
-ID of the meeting this session is associated with. In the case of V2 meetings, it is always a UUID. In V1 meetings, it is a room name of the form <code>abcdef-ghijkl</code>
+ID of the meeting this session is associated with. In the case of V2 meetings, it is always a UUID. In V1 meetings, it is a room name of the form `abcdef-ghijkl`
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 timestamp when session created
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_participants: number
+live_participants: number
 
 number of participants currently in the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_concurrent\_participants: number
+max_concurrent_participants: number
 
 number of maximum participants that were in the session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-meeting\_display\_name: string
+meeting_display_name: string
 
 Title of the meeting this session belongs to
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-minutes\_consumed: number
+minutes_consumed: number
 
 number of minutes consumed since the session started
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-organization\_id: string
+organization_id: string
 
 App id that hosted this session
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-started\_at: string
+started_at: string
 
 timestamp when session started
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "LIVE"or "ENDED"
+status: "LIVE" or "ENDED"
 
 current status of session
 
@@ -11472,21 +11446,21 @@ One of the following:
 
 "LIVE"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ENDED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-type: "meeting"or "livestream"or "participant"
+type: "meeting" or "livestream" or "participant"
 
 type of session
 
@@ -11496,53 +11470,53 @@ One of the following:
 
 "meeting"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "livestream"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "participant"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 timestamp when session was last updated
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-breakout\_rooms: optional array of unknown
+breakout_rooms: optional array of unknown
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ended\_at: optional string
+ended_at: optional string
 
 timestamp when session ended
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_details_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionParticipantsResponse object {data, success }
+SessionGetSessionParticipantsResponse object { data, success }
 
 </summary>
 
@@ -11550,7 +11524,7 @@ SessionGetSessionParticipantsResponse object {data, success }
 
 <summary>
 
-data: optional object {participants }
+data: optional object { participants }
 
 </summary>
 
@@ -11558,7 +11532,7 @@ data: optional object {participants }
 
 <summary>
 
-participants: optional array of object {id, created\_at, custom\_participant\_id, 8 more }
+participants: optional array of object { id, created_at, custom_participant_id, 8 more }
 
 </summary>
 
@@ -11566,51 +11540,51 @@ id: optional string
 
 Participant ID. This maps to the corresponding peerId.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 timestamp when this participant was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: optional string
+custom_participant_id: optional string
 
 ID passed by client to create this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-display\_name: optional string
+display_name: optional string
 
 Display name of participant when joining the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 duration: optional number
 
 number of minutes for which the participant was in the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-joined\_at: optional string
+joined_at: optional string
 
 timestamp at which participant joined the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-left\_at: optional string
+left_at: optional string
 
 timestamp at which participant left the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer_events: optional array of object { id, created_at, event_name, 7 more }
 
-Connection lifecycle events for the participant’s peer. Only included when <code>include_peer_events</code> is true.
+Connection lifecycle events for the participant’s peer. Only included when `include_peer_events` is true.
 
 </summary>
 
@@ -11618,19 +11592,19 @@ id: optional string
 
 ID of the peer event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 Timestamp when this peer event was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event_name: optional "PEER_CREATED" or "PEER_JOINING" or "PEER_LEAVING"
 
 Name of the peer event.
 
@@ -11638,45 +11612,45 @@ Name of the peer event.
 
 One of the following:
 
-"PEER\_CREATED"
+"PEER_CREATED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_JOINING"
+"PEER_JOINING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_LEAVING"
+"PEER_LEAVING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-minutes\_consumed: optional number
+minutes_consumed: optional number
 
 Minutes consumed attributed to this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-participant\_id: optional string
+participant_id: optional string
 
 ID of the participant this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
 Peer ID this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset_view_type: optional "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -11684,91 +11658,91 @@ View type of the preset associated with the peer.
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "CHAT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_id: optional string
+session_id: optional string
 
 ID of the session this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-socket\_session\_id: optional string
+socket_session_id: optional string
 
 ID of the socket session associated with this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 Timestamp when this peer event was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: optional string
+preset_name: optional string
 
 Name of the preset associated with the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 timestamp when this participant’s data was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-user\_id: optional string
+user_id: optional string
 
 User id for this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_participants_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionParticipantDetailsResponse object {data, success }
+SessionGetSessionParticipantDetailsResponse object { data, success }
 
 </summary>
 
@@ -11776,7 +11750,7 @@ SessionGetSessionParticipantDetailsResponse object {data, success }
 
 <summary>
 
-data: optional object {participant }
+data: optional object { participant }
 
 </summary>
 
@@ -11784,7 +11758,7 @@ data: optional object {participant }
 
 <summary>
 
-participant: optional object {id, created\_at, custom\_participant\_id, 8 more }
+participant: optional object { id, created_at, custom_participant_id, 8 more }
 
 </summary>
 
@@ -11792,51 +11766,51 @@ id: optional string
 
 Participant ID. This maps to the corresponding peerId.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 timestamp when this participant was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: optional string
+custom_participant_id: optional string
 
 ID passed by client to create this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-display\_name: optional string
+display_name: optional string
 
 Display name of participant when joining the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 duration: optional number
 
 number of minutes for which the participant was in the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-joined\_at: optional string
+joined_at: optional string
 
 timestamp at which participant joined the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-left\_at: optional string
+left_at: optional string
 
 timestamp at which participant left the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer_events: optional array of object { id, created_at, event_name, 7 more }
 
-Connection lifecycle events for the participant’s peer. Only included when <code>include_peer_events</code> is true.
+Connection lifecycle events for the participant’s peer. Only included when `include_peer_events` is true.
 
 </summary>
 
@@ -11844,19 +11818,19 @@ id: optional string
 
 ID of the peer event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 Timestamp when this peer event was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event_name: optional "PEER_CREATED" or "PEER_JOINING" or "PEER_LEAVING"
 
 Name of the peer event.
 
@@ -11864,45 +11838,45 @@ Name of the peer event.
 
 One of the following:
 
-"PEER\_CREATED"
+"PEER_CREATED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_JOINING"
+"PEER_JOINING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_LEAVING"
+"PEER_LEAVING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-minutes\_consumed: optional number
+minutes_consumed: optional number
 
 Minutes consumed attributed to this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-participant\_id: optional string
+participant_id: optional string
 
 ID of the participant this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
 Peer ID this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset_view_type: optional "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -11910,91 +11884,91 @@ View type of the preset associated with the peer.
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "CHAT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_id: optional string
+session_id: optional string
 
 ID of the session this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-socket\_session\_id: optional string
+socket_session_id: optional string
 
 ID of the socket session associated with this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 Timestamp when this peer event was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-preset\_name: optional string
+preset_name: optional string
 
 Name of the preset associated with the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 timestamp when this participant’s data was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-user\_id: optional string
+user_id: optional string
 
 User id for this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_participant_details_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionChatResponse object {data, success }
+SessionGetSessionChatResponse object { data, success }
 
 </summary>
 
@@ -12002,39 +11976,39 @@ SessionGetSessionChatResponse object {data, success }
 
 <summary>
 
-data: optional object {chat\_download\_url, chat\_download\_url\_expiry }
+data: optional object { chat_download_url, chat_download_url_expiry }
 
 </summary>
 
-chat\_download\_url: string
+chat_download_url: string
 
 URL where the chat logs can be downloaded
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-chat\_download\_url\_expiry: string
+chat_download_url_expiry: string
 
 Time when the download URL will expire
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_chat_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionTranscriptsResponse object {data, success }
+SessionGetSessionTranscriptsResponse object { data, success }
 
 </summary>
 
@@ -12042,43 +12016,43 @@ SessionGetSessionTranscriptsResponse object {data, success }
 
 <summary>
 
-data: optional object {sessionId, transcript\_download\_url, transcript\_download\_url\_expiry }
+data: optional object { sessionId, transcript_download_url, transcript_download_url_expiry }
 
 </summary>
 
 sessionId: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcript\_download\_url: string
+transcript_download_url: string
 
 URL where the transcript can be downloaded
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-transcript\_download\_url\_expiry: string
+transcript_download_url_expiry: string
 
 Time when the download URL will expire
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_transcripts_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetSessionSummaryResponse object {data, success }
+SessionGetSessionSummaryResponse object { data, success }
 
 </summary>
 
@@ -12086,43 +12060,43 @@ SessionGetSessionSummaryResponse object {data, success }
 
 <summary>
 
-data: optional object {sessionId, summaryDownloadUrl, summaryDownloadUrlExpiry }
+data: optional object { sessionId, summaryDownloadUrl, summaryDownloadUrlExpiry }
 
 </summary>
 
 sessionId: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 summaryDownloadUrl: string
 
 URL where the summary of transcripts can be downloaded
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 summaryDownloadUrlExpiry: string
 
 Time of Expiry before when you need to download the csv file.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_session_summary_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGenerateSummaryOfTranscriptsResponse object {data, success }
+SessionGenerateSummaryOfTranscriptsResponse object { data, success }
 
 </summary>
 
@@ -12130,37 +12104,37 @@ SessionGenerateSummaryOfTranscriptsResponse object {data, success }
 
 <summary>
 
-data: optional object {session\_id, status }
+data: optional object { session_id, status }
 
 </summary>
 
-session\_id: optional string
+session_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 status: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_generate_summary_of_transcripts_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SessionGetParticipantDataFromPeerIDResponse object {data, success }
+SessionGetParticipantDataFromPeerIDResponse object { data, success }
 
 </summary>
 
@@ -12168,7 +12142,7 @@ SessionGetParticipantDataFromPeerIDResponse object {data, success }
 
 <summary>
 
-data: optional object {participant }
+data: optional object { participant }
 
 </summary>
 
@@ -12176,7 +12150,7 @@ data: optional object {participant }
 
 <summary>
 
-participant: optional object {id, created\_at, custom\_participant\_id, 10 more }
+participant: optional object { id, created_at, custom_participant_id, 10 more }
 
 </summary>
 
@@ -12186,49 +12160,49 @@ ID of the participant.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 timestamp when this participant was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-custom\_participant\_id: optional string
+custom_participant_id: optional string
 
 ID passed by client to create this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-display\_name: optional string
+display_name: optional string
 
 Display name of participant when joining the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 duration: optional number
 
 number of minutes for which the participant was in the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-joined\_at: optional string
+joined_at: optional string
 
 timestamp at which participant joined the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-left\_at: optional string
+left_at: optional string
 
 timestamp at which participant left the session.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-peer\_events: optional array of object {id, created\_at, event\_name, 7 more }
+peer_events: optional array of object { id, created_at, event_name, 7 more }
 
 Connection lifecycle events for the participant’s peer.
 
@@ -12238,19 +12212,19 @@ id: optional string
 
 ID of the peer event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: optional string
+created_at: optional string
 
 Timestamp when this peer event was created.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-event\_name: optional "PEER\_CREATED"or "PEER\_JOINING"or "PEER\_LEAVING"
+event_name: optional "PEER_CREATED" or "PEER_JOINING" or "PEER_LEAVING"
 
 Name of the peer event.
 
@@ -12258,45 +12232,45 @@ Name of the peer event.
 
 One of the following:
 
-"PEER\_CREATED"
+"PEER_CREATED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_JOINING"
+"PEER_JOINING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"PEER\_LEAVING"
+"PEER_LEAVING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-minutes\_consumed: optional number
+minutes_consumed: optional number
 
 Minutes consumed attributed to this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-participant\_id: optional string
+participant_id: optional string
 
 ID of the participant this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
 Peer ID this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-preset\_view\_type: optional "GROUP\_CALL"or "WEBINAR"or "AUDIO\_ROOM"or 2 more
+preset_view_type: optional "GROUP_CALL" or "WEBINAR" or "AUDIO_ROOM" or 2 more
 
 View type of the preset associated with the peer.
 
@@ -12304,57 +12278,57 @@ View type of the preset associated with the peer.
 
 One of the following:
 
-"GROUP\_CALL"
+"GROUP_CALL"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "WEBINAR"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"AUDIO\_ROOM"
+"AUDIO_ROOM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "LIVESTREAM"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "CHAT"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_id: optional string
+session_id: optional string
 
 ID of the session this event belongs to.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-socket\_session\_id: optional string
+socket_session_id: optional string
 
 ID of the socket session associated with this event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 Timestamp when this peer event was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-peer\_report: optional object {metadata, quality }
+peer_report: optional object { metadata, quality }
 
 Peer call statistics report.
 
@@ -12364,7 +12338,7 @@ Peer call statistics report.
 
 <summary>
 
-metadata: optional object {audio\_devices\_updates, browser\_metadata, candidate\_pairs, 12 more }
+metadata: optional object { audio_devices_updates, browser_metadata, candidate_pairs, 12 more }
 
 Connection and device metadata for the participant.
 
@@ -12374,7 +12348,7 @@ Connection and device metadata for the participant.
 
 <summary>
 
-audio\_devices\_updates: optional array of object {added, removed, timestamp }
+audio_devices_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -12382,113 +12356,113 @@ audio\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device_id, kind, label }
 
 Devices that became available.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device_id, kind, label }
 
 Devices that became unavailable.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
 Timestamp of the device update.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-browser\_metadata: optional object {browser, browser\_version, engine, 2 more }
+browser_metadata: optional object { browser, browser_version, engine, 2 more }
 
 </summary>
 
 browser: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-browser\_version: optional string
+browser_version: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 engine: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-user\_agent: optional string
+user_agent: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-webgl\_support: optional boolean
+webgl_support: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-candidate\_pairs: optional object {consuming\_transport, producing\_transport }
+candidate_pairs: optional object { consuming_transport, producing_transport }
 
 </summary>
 
@@ -12496,295 +12470,295 @@ candidate\_pairs: optional object {consuming\_transport, producing\_transport }
 
 <summary>
 
-consuming\_transport: optional array of object {available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
+consuming_transport: optional array of object { available_incoming_bitrate, available_outgoing_bitrate, bytes_discarded_on_send, 25 more }
 
 </summary>
 
-available\_incoming\_bitrate: optional number
+available_incoming_bitrate: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-available\_outgoing\_bitrate: optional number
+available_outgoing_bitrate: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_discarded\_on\_send: optional number
+bytes_discarded_on_send: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-current\_round\_trip\_time: optional number
+current_round_trip_time: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-last\_packet\_received\_timestamp: optional number
+last_packet_received_timestamp: optional number
 
 Epoch milliseconds when the last packet was received.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-last\_packet\_sent\_timestamp: optional number
+last_packet_sent_timestamp: optional number
 
 Epoch milliseconds when the last packet was sent.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_address: optional string
+local_candidate_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_id: optional string
+local_candidate_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_network\_type: optional string
+local_candidate_network_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_port: optional number
+local_candidate_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_protocol: optional string
+local_candidate_protocol: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_related\_address: optional string
+local_candidate_related_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_related\_port: optional number
+local_candidate_related_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_type: optional string
+local_candidate_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_url: optional string
+local_candidate_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 nominated: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_discarded\_on\_send: optional number
+packets_discarded_on_send: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_address: optional string
+remote_candidate_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_id: optional string
+remote_candidate_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_port: optional number
+remote_candidate_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_protocol: optional string
+remote_candidate_protocol: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_type: optional string
+remote_candidate_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_url: optional string
+remote_candidate_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_round\_trip\_time: optional number
+total_round_trip_time: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-producing\_transport: optional array of object {available\_incoming\_bitrate, available\_outgoing\_bitrate, bytes\_discarded\_on\_send, 25 more }
+producing_transport: optional array of object { available_incoming_bitrate, available_outgoing_bitrate, bytes_discarded_on_send, 25 more }
 
 </summary>
 
-available\_incoming\_bitrate: optional number
+available_incoming_bitrate: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-available\_outgoing\_bitrate: optional number
+available_outgoing_bitrate: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_discarded\_on\_send: optional number
+bytes_discarded_on_send: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-current\_round\_trip\_time: optional number
+current_round_trip_time: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-last\_packet\_received\_timestamp: optional number
+last_packet_received_timestamp: optional number
 
 Epoch milliseconds when the last packet was received.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-last\_packet\_sent\_timestamp: optional number
+last_packet_sent_timestamp: optional number
 
 Epoch milliseconds when the last packet was sent.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_address: optional string
+local_candidate_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_id: optional string
+local_candidate_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_network\_type: optional string
+local_candidate_network_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_port: optional number
+local_candidate_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_protocol: optional string
+local_candidate_protocol: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_related\_address: optional string
+local_candidate_related_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_related\_port: optional number
+local_candidate_related_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_type: optional string
+local_candidate_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-local\_candidate\_url: optional string
+local_candidate_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 nominated: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_discarded\_on\_send: optional number
+packets_discarded_on_send: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_address: optional string
+remote_candidate_address: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_id: optional string
+remote_candidate_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_port: optional number
+remote_candidate_port: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_protocol: optional string
+remote_candidate_protocol: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_type: optional string
+remote_candidate_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-remote\_candidate\_url: optional string
+remote_candidate_url: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-total\_round\_trip\_time: optional number
+total_round_trip_time: optional number
 
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-device\_info: optional object {cpus, is\_mobile, os, os\_version }
+device_info: optional object { cpus, is_mobile, os, os_version }
 
 </summary>
 
 cpus: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-is\_mobile: optional boolean
+is_mobile: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 os: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-os\_version: optional string
+os_version: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-events: optional array of object {metadata, name, timestamp }
+events: optional array of object { metadata, name, timestamp }
 
 </summary>
 
@@ -12792,7 +12766,7 @@ events: optional array of object {metadata, name, timestamp }
 
 <summary>
 
-metadata: optional map\[stringor numberor boolean]
+metadata: optional map[string or number or boolean]
 
 Event-specific metadata. Keys vary per event; values are primitive scalars (string, number, boolean, or null).
 
@@ -12802,41 +12776,41 @@ One of the following:
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
 Name of the event.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
 Timestamp when the event occurred.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ip\_information: optional object {asn, city, country, 4 more }
+ip_information: optional object { asn, city, country, 4 more }
 
 </summary>
 
@@ -12844,139 +12818,139 @@ ip\_information: optional object {asn, city, country, 4 more }
 
 <summary>
 
-asn: optional object {asn, domain, name, 2 more }
+asn: optional object { asn, domain, name, 2 more }
 
 </summary>
 
 asn: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 domain: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 route: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 city: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 country: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ipv4: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 org: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timezone: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-native\_metadata: optional object {audio\_encoder, video\_encoder }
+native_metadata: optional object { audio_encoder, video_encoder }
 
 </summary>
 
-audio\_encoder: optional string
+audio_encoder: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-video\_encoder: optional string
+video_encoder: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-pc\_metadata: optional array of object {effective\_network\_type, reflexive\_connectivity, relay\_connectivity, 3 more }
+pc_metadata: optional array of object { effective_network_type, reflexive_connectivity, relay_connectivity, 3 more }
 
 </summary>
 
-effective\_network\_type: optional string
+effective_network_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-reflexive\_connectivity: optional boolean
+reflexive_connectivity: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-relay\_connectivity: optional boolean
+relay_connectivity: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 sdp: optional array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-turn\_connectivity: optional boolean
+turn_connectivity: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-room\_view\_type: optional string
+room_view_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-sdk\_name: optional string
+sdk_name: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-sdk\_type: optional string
+sdk_type: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-sdk\_version: optional string
+sdk_version: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selected\_device\_updates: optional array of object {device, timestamp }
+selected_device_updates: optional array of object { device, timestamp }
 
 </summary>
 
@@ -12984,47 +12958,47 @@ selected\_device\_updates: optional array of object {device, timestamp }
 
 <summary>
 
-device: optional object {device\_id, kind, label }
+device: optional object { device_id, kind, label }
 
 A media device (camera, microphone, or speaker).
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-speaker\_devices\_updates: optional array of object {added, removed, timestamp }
+speaker_devices_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -13032,81 +13006,81 @@ speaker\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device_id, kind, label }
 
 Devices that became available.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device_id, kind, label }
 
 Devices that became unavailable.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
 Timestamp of the device update.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_devices\_updates: optional array of object {added, removed, timestamp }
+video_devices_updates: optional array of object { added, removed, timestamp }
 
 </summary>
 
@@ -13114,85 +13088,85 @@ video\_devices\_updates: optional array of object {added, removed, timestamp }
 
 <summary>
 
-added: optional array of object {device\_id, kind, label }
+added: optional array of object { device_id, kind, label }
 
 Devices that became available.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-removed: optional array of object {device\_id, kind, label }
+removed: optional array of object { device_id, kind, label }
 
 Devices that became unavailable.
 
 </summary>
 
-device\_id: optional string
+device_id: optional string
 
 ID of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 kind: optional string
 
 Kind of device, for example audioinput or videoinput.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 label: optional string
 
 Human-readable label of the device.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
 Timestamp of the device update.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality: optional object {audio\_consumer, audio\_consumer\_cumulative, audio\_producer, 13 more }
+quality: optional object { audio_consumer, audio_consumer_cumulative, audio_producer, 13 more }
 
 Media quality statistics for the participant.
 
@@ -13202,75 +13176,75 @@ Media quality statistics for the participant.
 
 <summary>
 
-audio\_consumer: optional array of object {bytes\_received, concealment\_events, consumer\_id, 11 more }
+audio_consumer: optional array of object { bytes_received, concealment_events, consumer_id, 11 more }
 
 </summary>
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-concealment\_events: optional number
+concealment_events: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-consumer\_id: optional string
+consumer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_delay: optional number
+jitter_buffer_delay: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_emitted\_count: optional number
+jitter_buffer_emitted_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio\_consumer\_cumulative: optional object {jitter\_buffer\_delay, packet\_loss, quality\_mos }
+audio_consumer_cumulative: optional object { jitter_buffer_delay, packet_loss, quality_mos }
 
 Aggregated inbound (consumer) audio statistics for the session.
 
@@ -13280,71 +13254,71 @@ Aggregated inbound (consumer) audio statistics for the session.
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter_buffer_delay: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -13352,85 +13326,85 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio\_producer: optional array of object {bytes\_sent, jitter, mid, 7 more }
+audio_producer: optional array of object { bytes_sent, jitter, mid, 7 more }
 
 </summary>
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 rtt: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-audio\_producer\_cumulative: optional object {packet\_loss, quality\_mos, rtt }
+audio_producer_cumulative: optional object { packet_loss, quality_mos, rtt }
 
 Aggregated outbound (producer) audio statistics for the session.
 
@@ -13440,41 +13414,41 @@ Aggregated outbound (producer) audio statistics for the session.
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -13482,131 +13456,131 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_audio\_consumer: optional array of object {bytes\_received, concealment\_events, consumer\_id, 11 more }
+screenshare_audio_consumer: optional array of object { bytes_received, concealment_events, consumer_id, 11 more }
 
 </summary>
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-concealment\_events: optional number
+concealment_events: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-consumer\_id: optional string
+consumer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_delay: optional number
+jitter_buffer_delay: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_emitted\_count: optional number
+jitter_buffer_emitted_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_audio\_consumer\_cumulative: optional object {jitter\_buffer\_delay, packet\_loss, quality\_mos }
+screenshare_audio_consumer_cumulative: optional object { jitter_buffer_delay, packet_loss, quality_mos }
 
 Aggregated inbound (consumer) audio statistics for the session.
 
@@ -13616,71 +13590,71 @@ Aggregated inbound (consumer) audio statistics for the session.
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter_buffer_delay: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -13688,85 +13662,85 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_audio\_producer: optional array of object {bytes\_sent, jitter, mid, 7 more }
+screenshare_audio_producer: optional array of object { bytes_sent, jitter, mid, 7 more }
 
 </summary>
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 rtt: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_audio\_producer\_cumulative: optional object {packet\_loss, quality\_mos, rtt }
+screenshare_audio_producer_cumulative: optional object { packet_loss, quality_mos, rtt }
 
 Aggregated outbound (producer) audio statistics for the session.
 
@@ -13776,41 +13750,41 @@ Aggregated outbound (producer) audio statistics for the session.
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -13818,155 +13792,155 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_video\_consumer: optional array of object {bytes\_received, consumer\_id, fir\_count, 17 more }
+screenshare_video_consumer: optional array of object { bytes_received, consumer_id, fir_count, 17 more }
 
 </summary>
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-consumer\_id: optional string
+consumer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-fir\_count: optional number
+fir_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_height: optional number
+frame_height: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_width: optional number
+frame_width: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_decoded: optional number
+frames_decoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_dropped: optional number
+frames_dropped: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_per\_second: optional number
+frames_per_second: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_delay: optional number
+jitter_buffer_delay: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_emitted\_count: optional number
+jitter_buffer_emitted_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_decoded: optional number
+key_frames_decoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_video\_consumer\_cumulative: optional object {frame\_per\_second, frame\_width, issues, 4 more }
+screenshare_video_consumer_cumulative: optional object { frame_per_second, frame_width, issues, 4 more }
 
 Aggregated inbound (consumer) video statistics for the session.
 
@@ -13976,7 +13950,7 @@ Aggregated inbound (consumer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame_per_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -13984,29 +13958,29 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14014,121 +13988,121 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-issues: optional object {lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
+issues: optional object { lag_fraction, no_video_fraction, poor_resolution_fraction }
 
 </summary>
 
-lag\_fraction: optional number
+lag_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-no\_video\_fraction: optional number
+no_video_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-poor\_resolution\_fraction: optional number
+poor_resolution_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter_buffer_delay: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_decoded\_fraction: optional number
+key_frames_decoded_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14136,125 +14110,125 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_video\_producer: optional array of object {bytes\_sent, fir\_count, frame\_height, 17 more }
+screenshare_video_producer: optional array of object { bytes_sent, fir_count, frame_height, 17 more }
 
 </summary>
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-fir\_count: optional number
+fir_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_height: optional number
+frame_height: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_width: optional number
+frame_width: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_encoded: optional number
+frames_encoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_per\_second: optional number
+frames_per_second: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_encoded: optional number
+key_frames_encoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pli\_count: optional number
+pli_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_limitation\_durations: optional object {bandwidth, cpu, none, other }
+quality_limitation_durations: optional object { bandwidth, cpu, none, other }
 
 </summary>
 
 bandwidth: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 cpu: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 none: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 other: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_limitation\_reason: optional "cpu"or "bandwidth"or "none"or "other"
+quality_limitation_reason: optional "cpu" or "bandwidth" or "none" or "other"
 
 </summary>
 
@@ -14262,49 +14236,49 @@ One of the following:
 
 "cpu"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "bandwidth"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "other"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-quality\_limitation\_resolution\_changes: optional number
+quality_limitation_resolution_changes: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 rtt: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-screenshare\_video\_producer\_cumulative: optional object {frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
+screenshare_video_producer_cumulative: optional object { frame_per_second, frame_width, high_negative_feedback_fraction, 5 more }
 
 Aggregated outbound (producer) video statistics for the session.
 
@@ -14314,7 +14288,7 @@ Aggregated outbound (producer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame_per_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14322,29 +14296,29 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14352,103 +14326,103 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-high\_negative\_feedback\_fraction: optional number
+high_negative_feedback_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-issues: optional object {bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
+issues: optional object { bandwidth_quality_limitation_fraction, cpu_quality_limitation_fraction, no_video_fraction, 2 more }
 
 </summary>
 
-bandwidth\_quality\_limitation\_fraction: optional number
+bandwidth_quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-cpu\_quality\_limitation\_fraction: optional number
+cpu_quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-no\_video\_fraction: optional number
+no_video_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-poor\_resolution\_fraction: optional number
+poor_resolution_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-quality\_limitation\_fraction: optional number
+quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_encoded\_fraction: optional number
+key_frames_encoded_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14456,155 +14430,155 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_consumer: optional array of object {bytes\_received, consumer\_id, fir\_count, 17 more }
+video_consumer: optional array of object { bytes_received, consumer_id, fir_count, 17 more }
 
 </summary>
 
-bytes\_received: optional number
+bytes_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-consumer\_id: optional string
+consumer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-fir\_count: optional number
+fir_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_height: optional number
+frame_height: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_width: optional number
+frame_width: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_decoded: optional number
+frames_decoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_dropped: optional number
+frames_dropped: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_per\_second: optional number
+frames_per_second: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_delay: optional number
+jitter_buffer_delay: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-jitter\_buffer\_emitted\_count: optional number
+jitter_buffer_emitted_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_decoded: optional number
+key_frames_decoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_received: optional number
+packets_received: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-peer\_id: optional string
+peer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_consumer\_cumulative: optional object {frame\_per\_second, frame\_width, issues, 4 more }
+video_consumer_cumulative: optional object { frame_per_second, frame_width, issues, 4 more }
 
 Aggregated inbound (consumer) video statistics for the session.
 
@@ -14614,7 +14588,7 @@ Aggregated inbound (consumer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame_per_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14622,29 +14596,29 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14652,121 +14626,121 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-issues: optional object {lag\_fraction, no\_video\_fraction, poor\_resolution\_fraction }
+issues: optional object { lag_fraction, no_video_fraction, poor_resolution_fraction }
 
 </summary>
 
-lag\_fraction: optional number
+lag_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-no\_video\_fraction: optional number
+no_video_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-poor\_resolution\_fraction: optional number
+poor_resolution_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-jitter\_buffer\_delay: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+jitter_buffer_delay: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_decoded\_fraction: optional number
+key_frames_decoded_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14774,125 +14748,125 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_producer: optional array of object {bytes\_sent, fir\_count, frame\_height, 17 more }
+video_producer: optional array of object { bytes_sent, fir_count, frame_height, 17 more }
 
 </summary>
 
-bytes\_sent: optional number
+bytes_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-fir\_count: optional number
+fir_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_height: optional number
+frame_height: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frame\_width: optional number
+frame_width: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_encoded: optional number
+frames_encoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-frames\_per\_second: optional number
+frames_per_second: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 jitter: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_encoded: optional number
+key_frames_encoded: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 mid: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-mos\_quality: optional number
+mos_quality: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_lost: optional number
+packets_lost: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-packets\_sent: optional number
+packets_sent: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pli\_count: optional number
+pli_count: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-producer\_id: optional string
+producer_id: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_limitation\_durations: optional object {bandwidth, cpu, none, other }
+quality_limitation_durations: optional object { bandwidth, cpu, none, other }
 
 </summary>
 
 bandwidth: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 cpu: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 none: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 other: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_limitation\_reason: optional "cpu"or "bandwidth"or "none"or "other"
+quality_limitation_reason: optional "cpu" or "bandwidth" or "none" or "other"
 
 </summary>
 
@@ -14900,49 +14874,49 @@ One of the following:
 
 "cpu"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "bandwidth"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "none"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "other"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-quality\_limitation\_resolution\_changes: optional number
+quality_limitation_resolution_changes: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 rtt: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ssrc: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 timestamp: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-video\_producer\_cumulative: optional object {frame\_per\_second, frame\_width, high\_negative\_feedback\_fraction, 5 more }
+video_producer_cumulative: optional object { frame_per_second, frame_width, high_negative_feedback_fraction, 5 more }
 
 Aggregated outbound (producer) video statistics for the session.
 
@@ -14952,7 +14926,7 @@ Aggregated outbound (producer) video statistics for the session.
 
 <summary>
 
-frame\_per\_second: optional object {avg, p50, p75, p90 }
+frame_per_second: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14960,29 +14934,29 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-frame\_width: optional object {avg, p50, p75, p90 }
+frame_width: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -14990,103 +14964,103 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-high\_negative\_feedback\_fraction: optional number
+high_negative_feedback_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-issues: optional object {bandwidth\_quality\_limitation\_fraction, cpu\_quality\_limitation\_fraction, no\_video\_fraction, 2 more }
+issues: optional object { bandwidth_quality_limitation_fraction, cpu_quality_limitation_fraction, no_video_fraction, 2 more }
 
 </summary>
 
-bandwidth\_quality\_limitation\_fraction: optional number
+bandwidth_quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-cpu\_quality\_limitation\_fraction: optional number
+cpu_quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-no\_video\_fraction: optional number
+no_video_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-poor\_resolution\_fraction: optional number
+poor_resolution_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-quality\_limitation\_fraction: optional number
+quality_limitation_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-key\_frames\_encoded\_fraction: optional number
+key_frames_encoded_fraction: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-packet\_loss: optional object {"10\_or\_greater\_event\_fraction", "25\_or\_greater\_event\_fraction", "5\_or\_greater\_event\_fraction", 2 more }
+packet_loss: optional object { "10_or_greater_event_fraction", "25_or_greater_event_fraction", "5_or_greater_event_fraction", 2 more }
 
 Cumulative packet loss distribution.
 
 </summary>
 
-"10\_or\_greater\_event\_fraction": optional number
+"10_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"25\_or\_greater\_event\_fraction": optional number
+"25_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"5\_or\_greater\_event\_fraction": optional number
+"5_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"50\_or\_greater\_event\_fraction": optional number
+"50_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-quality\_mos: optional object {avg, p50, p75, p90 }
+quality_mos: optional object { avg, p50, p75, p90 }
 
 Distribution summary with average and percentiles.
 
@@ -15094,139 +15068,137 @@ Distribution summary with average and percentiles.
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p50: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p75: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 p90: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-rtt: optional object {"100ms\_or\_greater\_event\_fraction", "250ms\_or\_greater\_event\_fraction", "500ms\_or\_greater\_event\_fraction", avg }
+rtt: optional object { "100ms_or_greater_event_fraction", "250ms_or_greater_event_fraction", "500ms_or_greater_event_fraction", avg }
 
 Cumulative latency distribution (milliseconds-based thresholds).
 
 </summary>
 
-"100ms\_or\_greater\_event\_fraction": optional number
+"100ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"250ms\_or\_greater\_event\_fraction": optional number
+"250ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"500ms\_or\_greater\_event\_fraction": optional number
+"500ms_or_greater_event_fraction": optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 avg: optional number
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 role: optional string
 
 Name of the preset associated with the participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_id: optional string
+session_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: optional string
+updated_at: optional string
 
 timestamp when this participant’s data was last updated.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-user\_id: optional string
+user_id: optional string
 
 User id for this participant.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 success: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20realtime_kit.sessions%20%3E%20(model)%20session_get_participant_data_from_peer_id_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### Realtime KitRecordings
+##### [Fetch all recordings for an App](/api/resources/realtime_kit/subresources/recordings/methods/get_recordings)
 
-##### [Fetch all recordings for an App](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/get_recordings)
+GET/accounts/{account_id}/realtime/kit/{app_id}/recordings
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/recordings
+##### [Start recording a meeting](/api/resources/realtime_kit/subresources/recordings/methods/start_recordings)
 
-##### [Start recording a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/start_recordings)
+POST/accounts/{account_id}/realtime/kit/{app_id}/recordings
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/recordings
+##### [Fetch active recording](/api/resources/realtime_kit/subresources/recordings/methods/get_active_recordings)
 
-##### [Fetch active recording](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/get_active_recordings)
+GET/accounts/{account_id}/realtime/kit/{app_id}/recordings/active-recording/{meeting_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/recordings/active-recording/{meeting\_id}
+##### [Fetch details of a recording](/api/resources/realtime_kit/subresources/recordings/methods/get_one_recording)
 
-##### [Fetch details of a recording](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/get_one_recording)
+GET/accounts/{account_id}/realtime/kit/{app_id}/recordings/{recording_id}
 
-GET/accounts/{account\_id}/realtime/kit/{app\_id}/recordings/{recording\_id}
+##### [Pause/Resume/Stop recording](/api/resources/realtime_kit/subresources/recordings/methods/pause_resume_stop_recording)
 
-##### [Pause/Resume/Stop recording](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/pause_resume_stop_recording)
+PUT/accounts/{account_id}/realtime/kit/{app_id}/recordings/{recording_id}
 
-PUT/accounts/{account\_id}/realtime/kit/{app\_id}/recordings/{recording\_id}
+##### [Start recording participant audio tracks](/api/resources/realtime_kit/subresources/recordings/methods/start_track_recording)
 
-##### [Start recording participant audio tracks](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/recordings/methods/start_track_recording)
+POST/accounts/{account_id}/realtime/kit/{app_id}/recordings/track
 
-POST/accounts/{account\_id}/realtime/kit/{app\_id}/recordings/track
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-RecordingGetRecordingsResponse object {data, paging, success }
+RecordingGetRecordingsResponse object { data, paging, success }
 
 </summary>
 
@@ -15234,7 +15206,7 @@ RecordingGetRecordingsResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, audio\_download\_url, download\_url, 11 more }
+data: array of object { id, audio_download_url, download_url, 11 more }
 
 </summary>
 
@@ -15244,73 +15216,73 @@ ID of the recording
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-audio\_download\_url: string
+audio_download_url: string
 
-If the audio\_config is passed, the URL for downloading the audio recording is returned.
+If the audio_config is passed, the URL for downloading the audio recording is returned.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-download\_url: string
+download_url: string
 
 URL where the recording can be downloaded.
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-download\_url\_expiry: string
+download_url_expiry: string
 
 Timestamp when the download URL expires.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_size: number
+file_size: number
 
 File size of the recording, in bytes.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-invoked\_time: string
+invoked_time: string
 
 Timestamp when this recording was invoked.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-output\_file\_name: string
+output_file_name: string
 
 File name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-session\_id: string
+session_id: string
 
 ID of the meeting session this recording is for.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-started\_time: string
+started_time: string
 
-Timestamp when this recording actually started after being invoked. Usually a few seconds after <code>invoked_time</code>.
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "INVOKED"or "RECORDING"or "UPLOADING"or 3 more
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
 
 Current status of the recording.
 
@@ -15320,45 +15292,45 @@ One of the following:
 
 "INVOKED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "RECORDING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "UPLOADING"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "UPLOADED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "ERRORED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PAUSED"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-stopped\_time: string
+stopped_time: string
 
 Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-meeting: optional object {id, created\_at, updated\_at, 9 more }
+meeting: optional object { id, created_at, updated_at, 9 more }
 
 </summary>
 
@@ -15368,47 +15340,47 @@ ID of the meeting.
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 Timestamp the object was created at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Timestamp the object was updated at. The time is returned in ISO format.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-live\_stream\_on\_start: optional boolean
+live_stream_on_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-persist\_chat: optional boolean
+persist_chat: optional boolean
 
 Specifies if Chat within a meeting should persist for a week.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-record\_on\_start: optional boolean
+record_on_start: optional boolean
 
 Specifies if the meeting should start getting recorded as soon as someone joins the meeting.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-recording\_config: optional object {audio\_config, file\_name\_prefix, live\_streaming\_config, 4 more }
+recording_config: optional object { audio_config, file_name_prefix, live_streaming_config, 4 more }
 
 Recording Configurations to be used for this meeting. This level of configs takes higher preference over App level configs on the RealtimeKit developer portal.
 
@@ -15418,7 +15390,7 @@ Recording Configurations to be used for this meeting. This level of configs take
 
 <summary>
 
-audio\_config: optional object {channel, codec, export\_file }
+audio_config: optional object { channel, codec, export_file }
 
 Object containing configuration regarding the audio that is being recorded.
 
@@ -15428,7 +15400,7 @@ Object containing configuration regarding the audio that is being recorded.
 
 <summary>
 
-channel: optional "mono"or "stereo"
+channel: optional "mono" or "stereo"
 
 Audio signal pathway within an audio file that carries a specific sound source.
 
@@ -15438,21 +15410,21 @@ One of the following:
 
 "mono"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "stereo"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-codec: optional "MP3"or "AAC"
+codec: optional "MP3" or "AAC"
 
 Codec using which the recording will be encoded. If VP8/VP9 is selected for videoConfig, changing audioConfig is not allowed. In this case, the codec in the audioConfig is automatically set to vorbis.
 
@@ -15462,53 +15434,53 @@ One of the following:
 
 "MP3"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "AAC"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-export\_file: optional boolean
+export_file: optional boolean
 
 Controls whether to export audio file seperately
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-file\_name\_prefix: optional string
+file_name_prefix: optional string
 
 Adds a prefix to the beginning of the file name of the recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-live\_streaming\_config: optional object {rtmp\_url }
+live_streaming_config: optional object { rtmp_url }
 
 </summary>
 
-rtmp\_url: optional string
+rtmp_url: optional string
 
 RTMP URL to stream to
 
 formaturi
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_seconds: optional number
+max_seconds: optional number
 
 Specifies the maximum duration for recording in seconds, ranging from a minimum of 60 seconds to a maximum of 24 hours.
 
@@ -15516,31 +15488,31 @@ maximum86400
 
 minimum60
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-realtimekit\_bucket\_config: optional object {enabled }
+realtimekit_bucket_config: optional object { enabled }
 
 </summary>
 
 enabled: boolean
 
-Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, <code>download_url</code>, <code>audio_download_url</code>, <code>download_url_expiry</code> won’t be generated for a recording.
+Controls whether recordings are uploaded to RealtimeKit’s bucket. If set to false, `download_url`, `audio_download_url`, `download_url_expiry` won’t be generated for a recording.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-storage\_config: optional object {access\_key, auth\_method, bucket, 9 more } or object {access\_key, region, auth\_method, 9 more } or object {private\_key, access\_key, auth\_method, 9 more } or object {password, access\_key, auth\_method, 9 more }
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
 
 </summary>
 
@@ -15550,23 +15522,23 @@ One of the following:
 
 <summary>
 
-object {access\_key, auth\_method, bucket, 9 more }
+object { access_key, auth_method, bucket, 9 more }
 
 </summary>
 
-access\_key: optional string
+access_key: optional string
 
-Access key of the storage medium. Access key is not required for the <code>gcs</code> storage media type.
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
 
 Note that this field is not readable by clients, only writeable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -15576,103 +15548,103 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 path: optional string
 
 Path relative to the bucket root at which the recording will be placed.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 port: optional number
 
 SSH destination server port for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-private\_key: optional string
+private_key: optional string
 
-Private key used to login to destination SSH server for SFTP type storage medium, when auth\_method used is “KEY”
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: optional string
 
 Region of the storage medium.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
-Secret key of the storage medium. Similar to <code>access_key</code>, it is only writeable by clients, not readable.
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: optional "gcs"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 username: optional string
 
 SSH destination server username for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {access\_key, region, auth\_method, 9 more }
+object { access_key, region, auth_method, 9 more }
 
 </summary>
 
-access\_key: unknown
+access_key: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 region: unknown
 
 minLength1
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_method: optional "KEY"or "PASSWORD"
+auth_method: optional "KEY" or "PASSWORD"
 
 Authentication method used for “sftp” type storage medium
 
@@ -15682,44 +15654,6228 @@ One of the following:
 
 "KEY"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "PASSWORD"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 bucket: optional string
 
 Name of the storage medium’s bucket.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 host: optional string
 
 SSH destination server host for SFTP type storage medium
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 password: optional string
 
-SSH destination server password for SFTP type storage medium when auth\_method is “PASSWORD”. If auth\_method is “KEY”, this specifies the password for the ssh private key.
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean"
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
 
 </details>
 
-</details>
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
 
 </details>
 
-</details>
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { private_key, access_key, auth_method, 9 more }
+
+</summary>
+
+private_key: string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "KEY"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
 
 </details>
 
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
 </details>
 
-<!-- Cloudflare Markdown for Agents: incomplete conversion; source HTML truncated at the conversion size limit -->
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+password: string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "PASSWORD"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+video_config: optional object { codec, export_file, height, 2 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+codec: optional "H264" or "VP8" or "VP9"
+
+Codec using which the recording will be encoded.
+
+</summary>
+
+One of the following:
+
+"H264"
+
+[Link to this property](#)
+
+"VP8"
+
+[Link to this property](#)
+
+"VP9"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+export_file: optional boolean
+
+Controls whether to export video file seperately
+
+[Link to this property](#)
+
+height: optional number
+
+Height of the recording video in pixels
+
+maximum1920
+
+minimum1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+watermark: optional object { position, size, url }
+
+Watermark to be added to the recording
+
+</summary>
+
+<details>
+
+<summary>
+
+position: optional "left top" or "right top" or "left bottom" or "right bottom"
+
+Position of the watermark
+
+</summary>
+
+One of the following:
+
+"left top"
+
+[Link to this property](#)
+
+"right top"
+
+[Link to this property](#)
+
+"left bottom"
+
+[Link to this property](#)
+
+"right bottom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+size: optional object { height, width }
+
+Size of the watermark
+
+</summary>
+
+height: optional number
+
+Height of the watermark in px
+
+minimum1
+
+[Link to this property](#)
+
+width: optional number
+
+Width of the watermark in px
+
+minimum1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+url: optional string
+
+URL of the watermark image
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+width: optional number
+
+Width of the recording video in pixels
+
+maximum1920
+
+minimum1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+session_keep_alive_time_in_secs: optional number
+
+Time in seconds, for which a session remains active, after the last participant has left the meeting.
+
+maximum600
+
+minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "ACTIVE" or "INACTIVE"
+
+Whether the meeting is `ACTIVE` or `INACTIVE`. Users will not be able to join an `INACTIVE` meeting.
+
+</summary>
+
+One of the following:
+
+"ACTIVE"
+
+[Link to this property](#)
+
+"INACTIVE"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+summarize_on_end: optional boolean
+
+Automatically generate summary of meetings using transcripts. Requires Transcriptions to be enabled, and can be retrieved via Webhooks or summary API.
+
+[Link to this property](#)
+
+title: optional string
+
+Title of the meeting.
+
+[Link to this property](#)
+
+transcribe_on_end: optional boolean
+
+Automatically generate transcripts when the meeting ends.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { access_key, auth_method, bucket, 9 more }
+
+</summary>
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, auth_method, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean"
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { private_key, access_key, auth_method, 9 more }
+
+</summary>
+
+private_key: string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "KEY"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+password: string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "PASSWORD"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+paging: object { end_offset, start_offset, total_count }
+
+</summary>
+
+end_offset: number
+
+[Link to this property](#)
+
+start_offset: number
+
+[Link to this property](#)
+
+total_count: number
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RecordingStartRecordingsResponse object { success, data }
+
+</summary>
+
+success: boolean
+
+Success status of the operation
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+data: optional object { id, audio_download_url, download_url, 12 more }
+
+Data returned by the operation
+
+</summary>
+
+id: string
+
+ID of the recording
+
+formatuuid
+
+[Link to this property](#)
+
+audio_download_url: string
+
+If the audio_config is passed, the URL for downloading the audio recording is returned.
+
+formaturi
+
+[Link to this property](#)
+
+download_url: string
+
+URL where the recording can be downloaded.
+
+formaturi
+
+[Link to this property](#)
+
+download_url_expiry: string
+
+Timestamp when the download URL expires.
+
+formatdate-time
+
+[Link to this property](#)
+
+file_size: number
+
+File size of the recording, in bytes.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp when this recording was invoked.
+
+formatdate-time
+
+[Link to this property](#)
+
+output_file_name: string
+
+File name of the recording.
+
+[Link to this property](#)
+
+session_id: string
+
+ID of the meeting session this recording is for.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
+
+Current status of the recording.
+
+</summary>
+
+One of the following:
+
+"INVOKED"
+
+[Link to this property](#)
+
+"RECORDING"
+
+[Link to this property](#)
+
+"UPLOADING"
+
+[Link to this property](#)
+
+"UPLOADED"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"PAUSED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
+
+formatdate-time
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+start_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who started the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who started the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "RECORD_ON_START"
+
+Specifies if the recording was started using the “Start a Recording”API or using the parameter RECORD_ON_START in the “Create a meeting” API.
+
+If the recording is initiated using the “RECORD_ON_START” parameter, the user details will not be populated.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"RECORD_ON_START"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+stop_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who stopped the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who stopped the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "INTERNAL_ERROR" or "ALL_PEERS_LEFT"
+
+Specifies the reason why the recording stopped.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"INTERNAL_ERROR"
+
+[Link to this property](#)
+
+"ALL_PEERS_LEFT"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { access_key, auth_method, bucket, 9 more }
+
+</summary>
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, auth_method, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean"
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { private_key, access_key, auth_method, 9 more }
+
+</summary>
+
+private_key: string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "KEY"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+password: string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "PASSWORD"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RecordingGetActiveRecordingsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, audio_download_url, download_url, 9 more }
+
+Data returned by the operation
+
+</summary>
+
+id: string
+
+ID of the recording
+
+formatuuid
+
+[Link to this property](#)
+
+audio_download_url: string
+
+If the audio_config is passed, the URL for downloading the audio recording is returned.
+
+formaturi
+
+[Link to this property](#)
+
+download_url: string
+
+URL where the recording can be downloaded.
+
+formaturi
+
+[Link to this property](#)
+
+download_url_expiry: string
+
+Timestamp when the download URL expires.
+
+formatdate-time
+
+[Link to this property](#)
+
+file_size: number
+
+File size of the recording, in bytes.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp when this recording was invoked.
+
+formatdate-time
+
+[Link to this property](#)
+
+output_file_name: string
+
+File name of the recording.
+
+[Link to this property](#)
+
+session_id: string
+
+ID of the meeting session this recording is for.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
+
+Current status of the recording.
+
+</summary>
+
+One of the following:
+
+"INVOKED"
+
+[Link to this property](#)
+
+"RECORDING"
+
+[Link to this property](#)
+
+"UPLOADING"
+
+[Link to this property](#)
+
+"UPLOADED"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"PAUSED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
+
+formatdate-time
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+Success status of the operation
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RecordingGetOneRecordingResponse object { success, data }
+
+</summary>
+
+success: boolean
+
+Success status of the operation
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+data: optional object { id, audio_download_url, download_url, 12 more }
+
+Data returned by the operation
+
+</summary>
+
+id: string
+
+ID of the recording
+
+formatuuid
+
+[Link to this property](#)
+
+audio_download_url: string
+
+If the audio_config is passed, the URL for downloading the audio recording is returned.
+
+formaturi
+
+[Link to this property](#)
+
+download_url: string
+
+URL where the recording can be downloaded.
+
+formaturi
+
+[Link to this property](#)
+
+download_url_expiry: string
+
+Timestamp when the download URL expires.
+
+formatdate-time
+
+[Link to this property](#)
+
+file_size: number
+
+File size of the recording, in bytes.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp when this recording was invoked.
+
+formatdate-time
+
+[Link to this property](#)
+
+output_file_name: string
+
+File name of the recording.
+
+[Link to this property](#)
+
+session_id: string
+
+ID of the meeting session this recording is for.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
+
+Current status of the recording.
+
+</summary>
+
+One of the following:
+
+"INVOKED"
+
+[Link to this property](#)
+
+"RECORDING"
+
+[Link to this property](#)
+
+"UPLOADING"
+
+[Link to this property](#)
+
+"UPLOADED"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"PAUSED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
+
+formatdate-time
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+start_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who started the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who started the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "RECORD_ON_START"
+
+Specifies if the recording was started using the “Start a Recording”API or using the parameter RECORD_ON_START in the “Create a meeting” API.
+
+If the recording is initiated using the “RECORD_ON_START” parameter, the user details will not be populated.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"RECORD_ON_START"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+stop_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who stopped the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who stopped the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "INTERNAL_ERROR" or "ALL_PEERS_LEFT"
+
+Specifies the reason why the recording stopped.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"INTERNAL_ERROR"
+
+[Link to this property](#)
+
+"ALL_PEERS_LEFT"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { access_key, auth_method, bucket, 9 more }
+
+</summary>
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, auth_method, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean"
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { private_key, access_key, auth_method, 9 more }
+
+</summary>
+
+private_key: string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "KEY"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+password: string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "PASSWORD"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RecordingPauseResumeStopRecordingResponse object { success, data }
+
+</summary>
+
+success: boolean
+
+Success status of the operation
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+data: optional object { id, audio_download_url, download_url, 12 more }
+
+Data returned by the operation
+
+</summary>
+
+id: string
+
+ID of the recording
+
+formatuuid
+
+[Link to this property](#)
+
+audio_download_url: string
+
+If the audio_config is passed, the URL for downloading the audio recording is returned.
+
+formaturi
+
+[Link to this property](#)
+
+download_url: string
+
+URL where the recording can be downloaded.
+
+formaturi
+
+[Link to this property](#)
+
+download_url_expiry: string
+
+Timestamp when the download URL expires.
+
+formatdate-time
+
+[Link to this property](#)
+
+file_size: number
+
+File size of the recording, in bytes.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp when this recording was invoked.
+
+formatdate-time
+
+[Link to this property](#)
+
+output_file_name: string
+
+File name of the recording.
+
+[Link to this property](#)
+
+session_id: string
+
+ID of the meeting session this recording is for.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
+
+Current status of the recording.
+
+</summary>
+
+One of the following:
+
+"INVOKED"
+
+[Link to this property](#)
+
+"RECORDING"
+
+[Link to this property](#)
+
+"UPLOADING"
+
+[Link to this property](#)
+
+"UPLOADED"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"PAUSED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
+
+formatdate-time
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+start_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who started the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who started the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "RECORD_ON_START"
+
+Specifies if the recording was started using the “Start a Recording”API or using the parameter RECORD_ON_START in the “Create a meeting” API.
+
+If the recording is initiated using the “RECORD_ON_START” parameter, the user details will not be populated.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"RECORD_ON_START"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+stop_reason: optional object { caller, reason }
+
+</summary>
+
+<details>
+
+<summary>
+
+caller: optional object { name, type, user_Id }
+
+</summary>
+
+name: optional string
+
+Name of the user who stopped the recording.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "ORGANIZATION" or "USER"
+
+The type can be an App or a user. If the type is `user`, then only the `user_Id` and `name` are returned.
+
+</summary>
+
+One of the following:
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+"USER"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+user_Id: optional string
+
+The user ID of the person who stopped the recording.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+reason: optional "API_CALL" or "INTERNAL_ERROR" or "ALL_PEERS_LEFT"
+
+Specifies the reason why the recording stopped.
+
+</summary>
+
+One of the following:
+
+"API_CALL"
+
+[Link to this property](#)
+
+"INTERNAL_ERROR"
+
+[Link to this property](#)
+
+"ALL_PEERS_LEFT"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+storage_config: optional object { access_key, auth_method, bucket, 9 more } or object { access_key, region, auth_method, 9 more } or object { private_key, access_key, auth_method, 9 more } or object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { access_key, auth_method, bucket, 9 more }
+
+</summary>
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+type: optional "gcs"
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { access_key, region, auth_method, 9 more }
+
+</summary>
+
+access_key: unknown
+
+minLength1
+
+[Link to this property](#)
+
+region: unknown
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: optional "KEY" or "PASSWORD"
+
+Authentication method used for “sftp” type storage medium
+
+</summary>
+
+One of the following:
+
+"KEY"
+
+[Link to this property](#)
+
+"PASSWORD"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean"
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { private_key, access_key, auth_method, 9 more }
+
+</summary>
+
+private_key: string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "KEY"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+password: optional string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { password, access_key, auth_method, 9 more }
+
+</summary>
+
+password: string
+
+SSH destination server password for SFTP type storage medium when auth_method is “PASSWORD”. If auth_method is “KEY”, this specifies the password for the ssh private key.
+
+[Link to this property](#)
+
+access_key: optional string
+
+Access key of the storage medium. Access key is not required for the `gcs` storage media type.
+
+Note that this field is not readable by clients, only writeable.
+
+[Link to this property](#)
+
+auth_method: optional "PASSWORD"
+
+[Link to this property](#)
+
+bucket: optional string
+
+Name of the storage medium’s bucket.
+
+[Link to this property](#)
+
+host: optional string
+
+SSH destination server host for SFTP type storage medium
+
+[Link to this property](#)
+
+path: optional string
+
+Path relative to the bucket root at which the recording will be placed.
+
+[Link to this property](#)
+
+port: optional number
+
+SSH destination server port for SFTP type storage medium
+
+[Link to this property](#)
+
+private_key: optional string
+
+Private key used to login to destination SSH server for SFTP type storage medium, when auth_method used is “KEY”
+
+[Link to this property](#)
+
+region: optional string
+
+Region of the storage medium.
+
+[Link to this property](#)
+
+secret: optional string
+
+Secret key of the storage medium. Similar to `access_key`, it is only writeable by clients, not readable.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "aws" or "azure" or "digitalocean" or 2 more
+
+Type of storage media.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"azure"
+
+[Link to this property](#)
+
+"digitalocean"
+
+[Link to this property](#)
+
+"gcs"
+
+[Link to this property](#)
+
+"sftp"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+username: optional string
+
+SSH destination server username for SFTP type storage medium
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RecordingStartTrackRecordingResponse object { success, data }
+
+</summary>
+
+success: boolean
+
+Success status of the operation
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+data: optional object { recording }
+
+Data returned by the operation
+
+</summary>
+
+<details>
+
+<summary>
+
+recording: object { id, audio_download_url, download_url, 9 more }
+
+</summary>
+
+id: string
+
+ID of the recording
+
+formatuuid
+
+[Link to this property](#)
+
+audio_download_url: string
+
+If the audio_config is passed, the URL for downloading the audio recording is returned.
+
+formaturi
+
+[Link to this property](#)
+
+download_url: string
+
+URL where the recording can be downloaded.
+
+formaturi
+
+[Link to this property](#)
+
+download_url_expiry: string
+
+Timestamp when the download URL expires.
+
+formatdate-time
+
+[Link to this property](#)
+
+file_size: number
+
+File size of the recording, in bytes.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp when this recording was invoked.
+
+formatdate-time
+
+[Link to this property](#)
+
+output_file_name: string
+
+File name of the recording.
+
+[Link to this property](#)
+
+session_id: string
+
+ID of the meeting session this recording is for.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp when this recording actually started after being invoked. Usually a few seconds after `invoked_time`.
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "INVOKED" or "RECORDING" or "UPLOADING" or 3 more
+
+Current status of the recording.
+
+</summary>
+
+One of the following:
+
+"INVOKED"
+
+[Link to this property](#)
+
+"RECORDING"
+
+[Link to this property](#)
+
+"UPLOADING"
+
+[Link to this property](#)
+
+"UPLOADED"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"PAUSED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp when this recording was stopped. Optional; is present only when the recording has actually been stopped.
+
+formatdate-time
+
+[Link to this property](#)
+
+recording_duration: optional number
+
+Total recording time in seconds.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Fetch all webhooks details](/api/resources/realtime_kit/subresources/webhooks/methods/get_webhooks)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/webhooks
+
+##### [Add a webhook](/api/resources/realtime_kit/subresources/webhooks/methods/create_webhook)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/webhooks
+
+##### [Fetch details of a webhook](/api/resources/realtime_kit/subresources/webhooks/methods/get_webhook_by_id)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/webhooks/{webhook_id}
+
+##### [Replace a webhook](/api/resources/realtime_kit/subresources/webhooks/methods/replace_webhook)
+
+PUT/accounts/{account_id}/realtime/kit/{app_id}/webhooks/{webhook_id}
+
+##### [Edit a webhook](/api/resources/realtime_kit/subresources/webhooks/methods/edit_webhook)
+
+PATCH/accounts/{account_id}/realtime/kit/{app_id}/webhooks/{webhook_id}
+
+##### [Delete a webhook](/api/resources/realtime_kit/subresources/webhooks/methods/delete_webhook)
+
+DELETE/accounts/{account_id}/realtime/kit/{app_id}/webhooks/{webhook_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+WebhookGetWebhooksResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: array of object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WebhookCreateWebhookResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WebhookGetWebhookByIDResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WebhookReplaceWebhookResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WebhookEditWebhookResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WebhookDeleteWebhookResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { id, created_at, enabled, 4 more }
+
+</summary>
+
+id: string
+
+ID of the webhook
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when this webhook was created
+
+formatdate-time
+
+[Link to this property](#)
+
+enabled: boolean
+
+Set to true if the webhook is active
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: array of "meeting.started" or "meeting.ended" or "meeting.participantJoined" or 6 more
+
+Events this webhook will send updates for
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+[Link to this property](#)
+
+"meeting.ended"
+
+[Link to this property](#)
+
+"meeting.participantJoined"
+
+[Link to this property](#)
+
+"meeting.participantLeft"
+
+[Link to this property](#)
+
+"meeting.chatSynced"
+
+[Link to this property](#)
+
+"recording.statusUpdate"
+
+[Link to this property](#)
+
+"livestreaming.statusUpdate"
+
+[Link to this property](#)
+
+"meeting.transcript"
+
+[Link to this property](#)
+
+"meeting.summary"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Name of the webhook
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when this webhook was updated
+
+formatdate-time
+
+[Link to this property](#)
+
+url: string
+
+URL the webhook will send events to
+
+formaturi
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Fetch details of an active session](/api/resources/realtime_kit/subresources/active-session/methods/get_active_session)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-session
+
+##### [Kick participants from an active session](/api/resources/realtime_kit/subresources/active-session/methods/kick_participants)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-session/kick
+
+##### [Kick all participants](/api/resources/realtime_kit/subresources/active-session/methods/kick_all_participants)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-session/kick-all
+
+##### [Create a poll](/api/resources/realtime_kit/subresources/active-session/methods/create_poll)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-session/poll
+
+##### Models
+
+<details>
+
+<summary>
+
+ActiveSessionGetActiveSessionResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { id, associated_id, created_at, 11 more }
+
+</summary>
+
+id: string
+
+ID of the session
+
+[Link to this property](#)
+
+associated_id: string
+
+ID of the meeting this session is associated with. In the case of V2 meetings, it is always a UUID. In V1 meetings, it is a room name of the form `abcdef-ghijkl`
+
+[Link to this property](#)
+
+created_at: string
+
+timestamp when session created
+
+[Link to this property](#)
+
+live_participants: number
+
+number of participants currently in the session
+
+[Link to this property](#)
+
+max_concurrent_participants: number
+
+number of maximum participants that were in the session
+
+[Link to this property](#)
+
+meeting_display_name: string
+
+Title of the meeting this session belongs to
+
+[Link to this property](#)
+
+minutes_consumed: number
+
+number of minutes consumed since the session started
+
+[Link to this property](#)
+
+organization_id: string
+
+App id that hosted this session
+
+[Link to this property](#)
+
+started_at: string
+
+timestamp when session started
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "LIVE" or "ENDED"
+
+current status of session
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"ENDED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: "meeting" or "livestream" or "participant"
+
+type of session
+
+</summary>
+
+One of the following:
+
+"meeting"
+
+[Link to this property](#)
+
+"livestream"
+
+[Link to this property](#)
+
+"participant"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated_at: string
+
+timestamp when session was last updated
+
+[Link to this property](#)
+
+breakout_rooms: optional array of unknown
+
+[Link to this property](#)
+
+ended_at: optional string
+
+timestamp when session ended
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ActiveSessionKickParticipantsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { action, participants }
+
+</summary>
+
+action: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+participants: optional array of object { id, created_at, updated_at, 3 more }
+
+</summary>
+
+id: string
+
+ID of the session participant
+
+[Link to this property](#)
+
+created_at: string
+
+[Link to this property](#)
+
+updated_at: string
+
+[Link to this property](#)
+
+email: optional string
+
+Email of the session participant.
+
+[Link to this property](#)
+
+name: optional string
+
+Name of the session participant.
+
+[Link to this property](#)
+
+picture: optional string
+
+A URL pointing to a picture of the participant.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ActiveSessionKickAllParticipantsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { action, kicked_participants_count }
+
+</summary>
+
+action: optional string
+
+[Link to this property](#)
+
+kicked_participants_count: optional number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ActiveSessionCreatePollResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { action, poll }
+
+</summary>
+
+action: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+poll: optional object { id, options, question, 4 more }
+
+</summary>
+
+id: string
+
+ID of the poll
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+options: array of object { count, text, votes }
+
+Answer options
+
+</summary>
+
+count: number
+
+[Link to this property](#)
+
+text: string
+
+Text of the answer option
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+votes: array of object { id, name }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+question: string
+
+Question asked by the poll
+
+[Link to this property](#)
+
+anonymous: optional boolean
+
+[Link to this property](#)
+
+created_by: optional string
+
+[Link to this property](#)
+
+hide_votes: optional boolean
+
+[Link to this property](#)
+
+voted: optional array of string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Fetch all livestreams](/api/resources/realtime_kit/subresources/livestreams/methods/get_all_livestreams)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/livestreams
+
+##### [Stop livestreaming a meeting](/api/resources/realtime_kit/subresources/livestreams/methods/stop_livestreaming_a_meeting)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-livestream/stop
+
+##### [Start livestreaming a meeting](/api/resources/realtime_kit/subresources/livestreams/methods/start_livestreaming_a_meeting)
+
+POST/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/livestreams
+
+##### [Fetch complete analytics data for your livestreams](/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_analytics_complete)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/analytics/livestreams/overall
+
+##### [Fetch day-wise analytics data for your livestreams](/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_analytics_daywise)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/analytics/livestreams/daywise
+
+##### [Fetch day-wise session and recording analytics data for an App](/api/resources/realtime_kit/subresources/livestreams/methods/get_org_analytics)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/analytics/daywise
+
+##### [Fetch active livestreams for a meeting](/api/resources/realtime_kit/subresources/livestreams/methods/get_meeting_active_livestreams)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/meetings/{meeting_id}/active-livestream
+
+##### [Fetch livestream session details using livestream session ID](/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_session_id)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/livestreams/sessions/{livestream-session-id}
+
+##### [Fetch active livestream session details](/api/resources/realtime_kit/subresources/livestreams/methods/get_active_livestreams_for_livestream_id)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/livestreams/{livestream_id}/active-livestream-session
+
+##### [Fetch livestream details using livestream ID](/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_for_livestream_id)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/livestreams/{livestream_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+LivestreamGetAllLivestreamsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { id, created_at, disabled, 8 more }
+
+</summary>
+
+id: optional string
+
+The ID of the livestream.
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+disabled: optional string
+
+Specifies if the livestream was disabled.
+
+[Link to this property](#)
+
+ingest_server: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+meeting_id: optional string
+
+ID of the meeting.
+
+[Link to this property](#)
+
+name: optional string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+paging: optional object { end_offset, start_offset, total_count }
+
+</summary>
+
+end_offset: optional number
+
+[Link to this property](#)
+
+start_offset: optional number
+
+[Link to this property](#)
+
+total_count: optional number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+playback_url: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamStopLivestreamingAMeetingResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { message }
+
+</summary>
+
+message: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamStartLivestreamingAMeetingResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { id, ingest_server, playback_url, 2 more }
+
+</summary>
+
+id: optional string
+
+The livestream ID.
+
+[Link to this property](#)
+
+ingest_server: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+playback_url: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamAnalyticsCompleteResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { count, total_ingest_seconds, total_viewer_seconds }
+
+</summary>
+
+count: optional number
+
+Count of total livestreams.
+
+[Link to this property](#)
+
+total_ingest_seconds: optional number
+
+Total time duration for which the input was given or the meeting was streamed.
+
+[Link to this property](#)
+
+total_viewer_seconds: optional number
+
+Total view time for which the viewers watched the stream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamAnalyticsDaywiseResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional array of object { count, date, total_ingest_seconds, total_viewer_seconds }
+
+</summary>
+
+count: optional number
+
+Count of total livestream sessions.
+
+[Link to this property](#)
+
+date: optional string
+
+Analytics date.
+
+[Link to this property](#)
+
+total_ingest_seconds: optional number
+
+Total time duration for which the input was given or the meeting was streamed.
+
+[Link to this property](#)
+
+total_viewer_seconds: optional number
+
+Total view time for which the viewers watched the stream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetOrgAnalyticsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { recording_stats, session_stats }
+
+</summary>
+
+<details>
+
+<summary>
+
+recording_stats: optional object { day_stats, recording_count, recording_minutes_consumed }
+
+Recording statistics of an App during the range specified
+
+</summary>
+
+<details>
+
+<summary>
+
+day_stats: optional array of object { day, total_recording_minutes, total_recordings }
+
+Day wise recording stats
+
+</summary>
+
+day: optional string
+
+[Link to this property](#)
+
+total_recording_minutes: optional number
+
+Total recording minutes for a specific day
+
+[Link to this property](#)
+
+total_recordings: optional number
+
+Total number of recordings for a specific day
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+recording_count: optional number
+
+Total number of recordings during the range specified
+
+[Link to this property](#)
+
+recording_minutes_consumed: optional number
+
+Total recording minutes during the range specified
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+session_stats: optional object { day_stats, sessions_count, sessions_minutes_consumed }
+
+Session statistics of an App during the range specified
+
+</summary>
+
+<details>
+
+<summary>
+
+day_stats: optional array of object { day, total_session_minutes, total_sessions }
+
+Day wise session stats
+
+</summary>
+
+day: optional string
+
+[Link to this property](#)
+
+total_session_minutes: optional number
+
+Total session minutes for a specific day
+
+[Link to this property](#)
+
+total_sessions: optional number
+
+Total number of sessions for a specific day
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+sessions_count: optional number
+
+Total number of sessions during the range specified
+
+[Link to this property](#)
+
+sessions_minutes_consumed: optional number
+
+Total session minutes during the range specified
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetMeetingActiveLivestreamsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { id, created_at, disabled, 7 more }
+
+</summary>
+
+id: optional string
+
+The livestream ID.
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+disabled: optional string
+
+Specifies if the livestream was disabled.
+
+[Link to this property](#)
+
+ingest_server: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+meeting_id: optional string
+
+[Link to this property](#)
+
+name: optional string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+playback_url: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamSessionDetailsForSessionIDResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { id, created_at, err_message, 6 more }
+
+</summary>
+
+id: optional string
+
+The livestream ID.
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+err_message: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+ingest_seconds: optional number
+
+Name of the livestream.
+
+[Link to this property](#)
+
+livestream_id: optional string
+
+[Link to this property](#)
+
+started_time: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+stopped_time: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+[Link to this property](#)
+
+viewer_seconds: optional number
+
+Specifies if the livestream was disabled.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetActiveLivestreamsForLivestreamIDResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { livestream, session }
+
+</summary>
+
+<details>
+
+<summary>
+
+livestream: optional object { id, created_at, disabled, 7 more }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+disabled: optional string
+
+Specifies if the livestream was disabled.
+
+[Link to this property](#)
+
+ingest_server: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+meeting_id: optional string
+
+ID of the meeting.
+
+[Link to this property](#)
+
+name: optional string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+playback_url: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+session: optional object { id, created_at, err_message, 7 more }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+err_message: optional string
+
+[Link to this property](#)
+
+ingest_seconds: optional string
+
+The time duration for which the input was given or the meeting was streamed.
+
+[Link to this property](#)
+
+invoked_time: optional string
+
+Timestamp the object was invoked. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+livestream_id: optional string
+
+[Link to this property](#)
+
+started_time: optional string
+
+Timestamp the object was started. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+stopped_time: optional string
+
+Timestamp the object was stopped. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+viewer_seconds: optional string
+
+The total view time for which the viewers watched the stream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamSessionForLivestreamIDResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { livestream, paging, session }
+
+</summary>
+
+<details>
+
+<summary>
+
+livestream: optional object { id, created_at, disabled, 7 more }
+
+</summary>
+
+id: optional string
+
+ID of the livestream.
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+[Link to this property](#)
+
+disabled: optional string
+
+Specifies if the livestream was disabled.
+
+[Link to this property](#)
+
+ingest_server: optional string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+meeting_id: optional string
+
+The ID of the meeting.
+
+[Link to this property](#)
+
+name: optional string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+playback_url: optional string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: optional string
+
+Unique key for accessing each livestream.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+paging: optional object { end_offset, start_offset, total_count }
+
+</summary>
+
+end_offset: optional number
+
+[Link to this property](#)
+
+start_offset: optional number
+
+[Link to this property](#)
+
+total_count: optional number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+session: optional object { id, created_at, err_message, 7 more }
+
+</summary>
+
+id: optional string
+
+ID of the session.
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp the object was created at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+err_message: optional string
+
+[Link to this property](#)
+
+ingest_seconds: optional number
+
+The time duration for which the input was given or the meeting was streamed.
+
+[Link to this property](#)
+
+invoked_time: optional string
+
+Timestamp the object was invoked. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+livestream_id: optional string
+
+[Link to this property](#)
+
+started_time: optional string
+
+Timestamp the object was started. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+stopped_time: optional string
+
+Timestamp the object was stopped. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp the object was updated at. The time is returned in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+viewer_seconds: optional number
+
+The total view time for which the viewers watched the stream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [Fetch day-wise session and recording analytics data for an App](/api/resources/realtime_kit/subresources/analytics/methods/get_org_analytics)
+
+GET/accounts/{account_id}/realtime/kit/{app_id}/analytics/daywise
+
+##### Models
+
+<details>
+
+<summary>
+
+AnalyticsGetOrgAnalyticsResponse object { data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object { recording_stats, session_stats }
+
+</summary>
+
+<details>
+
+<summary>
+
+recording_stats: optional object { day_stats, recording_count, recording_minutes_consumed }
+
+Recording statistics of an App during the range specified
+
+</summary>
+
+<details>
+
+<summary>
+
+day_stats: optional array of object { day, total_recording_minutes, total_recordings }
+
+Day wise recording stats
+
+</summary>
+
+day: optional string
+
+[Link to this property](#)
+
+total_recording_minutes: optional number
+
+Total recording minutes for a specific day
+
+[Link to this property](#)
+
+total_recordings: optional number
+
+Total number of recordings for a specific day
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+recording_count: optional number
+
+Total number of recordings during the range specified
+
+[Link to this property](#)
+
+recording_minutes_consumed: optional number
+
+Total recording minutes during the range specified
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+session_stats: optional object { day_stats, sessions_count, sessions_minutes_consumed }
+
+Session statistics of an App during the range specified
+
+</summary>
+
+<details>
+
+<summary>
+
+day_stats: optional array of object { day, total_session_minutes, total_sessions }
+
+Day wise session stats
+
+</summary>
+
+day: optional string
+
+[Link to this property](#)
+
+total_session_minutes: optional number
+
+Total session minutes for a specific day
+
+[Link to this property](#)
+
+total_sessions: optional number
+
+Total number of sessions for a specific day
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+sessions_count: optional number
+
+Total number of sessions during the range specified
+
+[Link to this property](#)
+
+sessions_minutes_consumed: optional number
+
+Total session minutes during the range specified
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
