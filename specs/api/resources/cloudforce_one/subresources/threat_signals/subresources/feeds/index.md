@@ -46,13 +46,29 @@ POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/poll
 
 <summary>
 
-FeedListResponse object {count, feeds, page, 2 more }
+FeedListResponse object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
 count: number
 
 Number of feeds on this page.
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_count: number
+
+The current count of custom feeds for the account.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_limit: number
+
+The resolved custom feed limit for the account.
+
+minimum0
 
 <a href="#">Link to this property</a>
 

@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/resource-library/categories/{id}
 
-Get application category by ID.
+Retrieve an application category by its numeric ID.
 
 ##### Security
 
@@ -64,7 +64,7 @@ account\_id: string
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -176,7 +176,7 @@ result: optional object {id, created\_at, description, name }
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 

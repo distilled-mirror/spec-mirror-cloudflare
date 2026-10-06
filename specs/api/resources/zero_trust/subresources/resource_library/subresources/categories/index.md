@@ -40,7 +40,7 @@ CategoryListResponse object {id, created\_at, description, name }
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -82,7 +82,7 @@ CategoryGetResponse object {id, created\_at, description, name }
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 

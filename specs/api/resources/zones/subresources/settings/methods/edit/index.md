@@ -288,9 +288,9 @@ Enable automatic preload of the HSTS configuration.
 
 <a href="#">Link to this property</a>
 
-ZonesWebmcpPacksValue = string
+ZonesWebmcpMcpURLValue = string
 
-Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
+Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 <a href="#">Link to this property</a>
 
@@ -402,7 +402,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 63 more
+result: optional <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 64 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -5305,6 +5305,66 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+editable: optional trueor false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+<a href="#">Link to this property</a>
+
+false
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ZonesWebmcpMcpURL object {id, value, editable, modified\_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp\_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp\_mcp\_url"
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 

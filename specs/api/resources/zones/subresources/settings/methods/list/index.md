@@ -166,7 +166,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 62 more
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 63 more
 
 </summary>
 
@@ -4991,6 +4991,66 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+editable: optional trueor false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+<a href="#">Link to this property</a>
+
+false
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ZonesWebmcpMcpURL object {id, value, editable, modified\_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp\_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp\_mcp\_url"
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
 
 <a href="#">Link to this property</a>
 

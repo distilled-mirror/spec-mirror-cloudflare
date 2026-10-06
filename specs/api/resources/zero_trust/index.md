@@ -28886,6 +28886,32 @@ One of the following:
 
 <summary>
 
+DestinationOverride object { behavior, path_pattern }
+
+</summary>
+
+behavior: "public"
+
+The behavior to apply to matching requests.
+
+[Link to this property](#)
+
+path_pattern: string
+
+The request path pattern to match. Wildcards (`*`) are supported, but each path segment may have at most one wildcard. Unlike the `uri` in public destinations, override path patterns do not implicitly cover subpaths; to do that, use a wildcard.
+
+maxLength512
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 OIDCSaaSApp object { access_token_lifetime, allow_pkce_without_client_secret, app_launcher_url, 11 more }
 
 </summary>
@@ -29816,7 +29842,7 @@ The public hostname and optional path to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -29870,7 +29896,7 @@ The ID of the Cloudflare Worker to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -29920,7 +29946,7 @@ The ID of the Cloudflare Worker whose previews to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -29964,7 +29990,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30008,7 +30034,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30182,7 +30208,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30332,7 +30358,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30384,7 +30410,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30430,7 +30456,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -30476,7 +30502,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -38398,7 +38424,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -38548,7 +38574,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -38600,7 +38626,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -38646,7 +38672,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -38692,7 +38718,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -42602,7 +42628,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -42752,7 +42778,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -42804,7 +42830,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -42850,7 +42876,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -42896,7 +42922,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -65624,7 +65650,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -65774,7 +65800,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -65826,7 +65852,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -65872,7 +65898,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -65918,7 +65944,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -69736,7 +69762,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -69886,7 +69912,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -69938,7 +69964,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -69984,7 +70010,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -70030,7 +70056,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -73746,7 +73772,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -73896,7 +73922,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -73948,7 +73974,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -73994,7 +74020,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -74040,7 +74066,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -77904,7 +77930,7 @@ The public hostname and optional path to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -77958,7 +77984,7 @@ The ID of the Cloudflare Worker to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78008,7 +78034,7 @@ The ID of the Cloudflare Worker whose previews to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78052,7 +78078,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78096,7 +78122,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78270,7 +78296,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78420,7 +78446,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78472,7 +78498,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78518,7 +78544,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -78564,7 +78590,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -86486,7 +86512,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -86636,7 +86662,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -86688,7 +86714,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -86734,7 +86760,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -86780,7 +86806,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -90690,7 +90716,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -90840,7 +90866,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -90892,7 +90918,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -90938,7 +90964,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -90984,7 +91010,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -113712,7 +113738,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -113862,7 +113888,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -113914,7 +113940,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -113960,7 +113986,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -114006,7 +114032,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -117824,7 +117850,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -117974,7 +118000,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -118026,7 +118052,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -118072,7 +118098,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -118118,7 +118144,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -121834,7 +121860,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -121984,7 +122010,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -122036,7 +122062,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -122082,7 +122108,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -122128,7 +122154,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -125992,7 +126018,7 @@ The public hostname and optional path to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126046,7 +126072,7 @@ The ID of the Cloudflare Worker to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126096,7 +126122,7 @@ The ID of the Cloudflare Worker whose previews to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126140,7 +126166,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126184,7 +126210,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126358,7 +126384,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126508,7 +126534,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126560,7 +126586,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126606,7 +126632,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -126652,7 +126678,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -134574,7 +134600,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -134724,7 +134750,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -134776,7 +134802,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -134822,7 +134848,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -134868,7 +134894,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -138778,7 +138804,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -138928,7 +138954,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -138980,7 +139006,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -139026,7 +139052,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -139072,7 +139098,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -161800,7 +161826,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -161950,7 +161976,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -162002,7 +162028,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -162048,7 +162074,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -162094,7 +162120,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -165912,7 +165938,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -166062,7 +166088,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -166114,7 +166140,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -166160,7 +166186,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -166206,7 +166232,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -169922,7 +169948,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -170072,7 +170098,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -170124,7 +170150,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -170170,7 +170196,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -170216,7 +170242,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174080,7 +174106,7 @@ The public hostname and optional path to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174134,7 +174160,7 @@ The ID of the Cloudflare Worker to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174184,7 +174210,7 @@ The ID of the Cloudflare Worker whose previews to secure.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174228,7 +174254,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174272,7 +174298,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174446,7 +174472,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174596,7 +174622,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174648,7 +174674,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174694,7 +174720,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -174740,7 +174766,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -182662,7 +182688,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -182812,7 +182838,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -182864,7 +182890,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -182910,7 +182936,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -182956,7 +182982,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -186866,7 +186892,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -187016,7 +187042,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -187068,7 +187094,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -187114,7 +187140,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -187160,7 +187186,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -209888,7 +209914,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -210038,7 +210064,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -210090,7 +210116,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -210136,7 +210162,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -210182,7 +210208,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -214000,7 +214026,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -214150,7 +214176,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -214202,7 +214228,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -214248,7 +214274,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -214294,7 +214320,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -218010,7 +218036,7 @@ A public hostname that Access will secure. Public destinations support sub-domai
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -218160,7 +218186,7 @@ The ID of the Cloudflare Worker to protect with Access.
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -218212,7 +218238,7 @@ The ID of the Cloudflare Worker whose preview deployments to protect with Access
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -218258,7 +218284,7 @@ type: "all_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -218304,7 +218330,7 @@ type: "all_preview_workers"
 
 <summary>
 
-overrides: optional array of object { behavior, path_pattern }
+overrides: optional array of [DestinationOverride](/api/resources/zero_trust#(resource)%20zero_trust.access.applications%20%3E%20(model)%20destination_override%20%3E%20(schema)) { behavior, path_pattern }
 
 Rules that override how Access handles requests to this destination. Each rule can make a matching path public, bypassing Access authentication. Overrides are supported for public destinations and Worker destinations.
 
@@ -289226,7 +289252,7 @@ Whether the policy is enabled. Derived from disabled_at (enabled when disabled_a
 
 finding_type_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -289394,7 +289420,7 @@ Whether the policy is enabled. Derived from disabled_at (enabled when disabled_a
 
 finding_type_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -289562,7 +289588,7 @@ Whether the policy is enabled. Derived from disabled_at (enabled when disabled_a
 
 finding_type_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -289730,7 +289756,7 @@ Whether the policy is enabled. Derived from disabled_at (enabled when disabled_a
 
 finding_type_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -320068,13 +320094,13 @@ DELETE/accounts/{account_id}/resource-library/applications/{id}
 
 ApplicationListResponse object { id, application_confidence_score, application_score_composition, 16 more }
 
-Describes one application in a list response. This endpoint returns every property below unless the `fields` query parameter narrows the response, so treat all of them except `id` as optional.
+Describes one application in a list response. The response returns every property below unless `fields` narrows it. Treat all properties except `id` as optional.
 
 </summary>
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -320118,7 +320144,7 @@ Returns the application type description.
 
 category_id: optional number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -320150,7 +320176,7 @@ Hostnames matched by the application.
 
 human_id: optional string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 [Link to this property](#)
 
@@ -320162,13 +320188,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: optional string
 
-Returns the application name.
+Application name.
 
 [Link to this property](#)
 
 port_protocols: optional array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in `protocol/port` or inclusive `protocol/start-end` format (for example, `tcp/443` or `udp/10000-20000`). TCP and UDP ports must be between 0 and 65535.
 
 [Link to this property](#)
 
@@ -320264,7 +320290,7 @@ ApplicationGetResponse object { id, application_confidence_score, application_so
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -320302,7 +320328,7 @@ Returns the application type description.
 
 category_id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -320334,7 +320360,7 @@ Hostnames matched by the application.
 
 human_id: string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 [Link to this property](#)
 
@@ -320346,13 +320372,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: string
 
-Returns the application name.
+Application name.
 
 [Link to this property](#)
 
 port_protocols: array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in `protocol/port` or inclusive `protocol/start-end` format (for example, `tcp/443` or `udp/10000-20000`). TCP and UDP ports must be between 0 and 65535.
 
 [Link to this property](#)
 
@@ -320422,7 +320448,7 @@ ApplicationCreateResponse object { id, application_confidence_score, application
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -320460,7 +320486,7 @@ Returns the application type description.
 
 category_id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -320492,7 +320518,7 @@ Hostnames matched by the application.
 
 human_id: string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 [Link to this property](#)
 
@@ -320504,13 +320530,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: string
 
-Returns the application name.
+Application name.
 
 [Link to this property](#)
 
 port_protocols: array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in `protocol/port` or inclusive `protocol/start-end` format (for example, `tcp/443` or `udp/10000-20000`). TCP and UDP ports must be between 0 and 65535.
 
 [Link to this property](#)
 
@@ -320580,7 +320606,7 @@ ApplicationUpdateResponse object { id, application_confidence_score, application
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -320618,7 +320644,7 @@ Returns the application type description.
 
 category_id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -320650,7 +320676,7 @@ Hostnames matched by the application.
 
 human_id: string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 [Link to this property](#)
 
@@ -320662,13 +320688,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: string
 
-Returns the application name.
+Application name.
 
 [Link to this property](#)
 
 port_protocols: array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in `protocol/port` or inclusive `protocol/start-end` format (for example, `tcp/443` or `udp/10000-20000`). TCP and UDP ports must be between 0 and 65535.
 
 [Link to this property](#)
 
@@ -320752,7 +320778,7 @@ CategoryListResponse object { id, created_at, description, name }
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -320794,7 +320820,7 @@ CategoryGetResponse object { id, created_at, description, name }
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 

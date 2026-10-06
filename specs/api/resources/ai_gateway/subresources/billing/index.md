@@ -134,6 +134,8 @@ id: string
 
 aggregated\_value: number
 
+AI Gateway usage cost in the window, in US dollars.
+
 <a href="#">Link to this property</a>
 
 end\_time: number

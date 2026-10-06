@@ -7884,7 +7884,7 @@ Whether the policy is enabled. Derived from disabled\_at (enabled when disabled\
 
 finding\_type\_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -8052,7 +8052,7 @@ Whether the policy is enabled. Derived from disabled\_at (enabled when disabled\
 
 finding\_type\_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -8220,7 +8220,7 @@ Whether the policy is enabled. Derived from disabled\_at (enabled when disabled\
 
 finding\_type\_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 
@@ -8388,7 +8388,7 @@ Whether the policy is enabled. Derived from disabled\_at (enabled when disabled\
 
 finding\_type\_id: string
 
-The finding type this policy is associated with. Immutable after creation; changing it replaces the policy.
+The finding type this policy is associated with. Immutable after creation; attempts to change it via update are rejected.
 
 formatuuid
 

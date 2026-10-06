@@ -64,7 +64,7 @@ account\_id: string
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 

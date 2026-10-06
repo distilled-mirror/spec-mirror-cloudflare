@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/ai-gateway/billing/usage-history
 
-Retrieve aggregated usage meter event summaries for the given time range.
+Retrieve AI Gateway usage cost, in US dollars, aggregated by hour or day for the given time range.
 
 ##### Security
 
@@ -165,6 +165,8 @@ id: string
 <a href="#">Link to this property</a>
 
 aggregated\_value: number
+
+AI Gateway usage cost in the window, in US dollars.
 
 <a href="#">Link to this property</a>
 

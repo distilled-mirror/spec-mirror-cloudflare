@@ -3118,7 +3118,7 @@ formatdate-time
 
 <summary>
 
-SettingListResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 62 more
+SettingListResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -7944,6 +7944,66 @@ formatdate-time
 
 <summary>
 
+ZonesWebmcpMcpURL object { id, value, editable, modified_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp_mcp_url"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 ZonesWebmcpPacks object { id, value, editable, modified_on }
 
 Optional per-zone override of which bundled WebMCP tool packs the injected bridge.js activates. Only takes effect when webmcp_enabled is on. Leave empty to use the bridge’s default pack set. Unknown pack names are ignored by the bridge. This setting is currently in beta and its behavior may change.
@@ -8160,7 +8220,7 @@ formatdate-time
 
 <summary>
 
-SettingGetResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
+SettingGetResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -13062,6 +13122,66 @@ formatdate-time
 
 <summary>
 
+ZonesWebmcpMcpURL object { id, value, editable, modified_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp_mcp_url"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 ZonesWebmcpPacks object { id, value, editable, modified_on }
 
 Optional per-zone override of which bundled WebMCP tool packs the injected bridge.js activates. Only takes effect when webmcp_enabled is on. Leave empty to use the bridge’s default pack set. Unknown pack names are ignored by the bridge. This setting is currently in beta and its behavior may change.
@@ -13278,7 +13398,7 @@ formatdate-time
 
 <summary>
 
-SettingEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
+SettingEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -18180,6 +18300,66 @@ formatdate-time
 
 <summary>
 
+ZonesWebmcpMcpURL object { id, value, editable, modified_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp_mcp_url"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 ZonesWebmcpPacks object { id, value, editable, modified_on }
 
 Optional per-zone override of which bundled WebMCP tool packs the injected bridge.js activates. Only takes effect when webmcp_enabled is on. Leave empty to use the bridge’s default pack set. Unknown pack names are ignored by the bridge. This setting is currently in beta and its behavior may change.
@@ -18396,7 +18576,7 @@ formatdate-time
 
 <summary>
 
-SettingBulkEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 62 more
+SettingBulkEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -23179,6 +23359,66 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ZonesWebmcpMcpURL object { id, value, editable, modified_on }
+
+Optional per-zone path of the site’s own MCP server, used by the WebMCP mcp-server-client tool pack to list and call the site’s MCP tools from the browser. The path is resolved against the page’s origin, so it applies to every hostname in the zone. Only takes effect when webmcp_enabled is on and the mcp-server-client pack is active. Leave empty to use /mcp. This setting is currently in beta and its behavior may change.
+
+</summary>
+
+id: "webmcp_mcp_url"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+value: string
+
+Current value of the zone setting.
+
+maxLength2048
 
 [Link to this property](#)
 

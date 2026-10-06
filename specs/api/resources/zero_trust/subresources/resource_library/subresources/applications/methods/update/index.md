@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/resource-library/applications/{id}
 
-Replace the network matchers for a custom application and create a new version.
+Replace the supplied network matchers for a custom application and create a new version. Omitted matcher lists remain unchanged; send an empty list to clear a matcher type.
 
 ##### Security
 
@@ -64,7 +64,7 @@ account\_id: string
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -90,7 +90,7 @@ IP subnets for this application. Custom application create and update requests a
 
 port\_protocols: optional array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in `protocol/port` or inclusive `protocol/start-end` format (for example, `tcp/443` or `udp/10000-20000`). TCP and UDP ports must be between 0 and 65535.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20port_protocols%20%3E%20(schema)>)
 
@@ -202,7 +202,7 @@ result: optional object {id, application\_confidence\_score, application\_source
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -240,7 +240,7 @@ Returns the application type description.
 
 category\_id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -272,7 +272,7 @@ Hostnames matched by the application.
 
 human\_id: string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 <a href="#">Link to this property</a>
 
@@ -284,13 +284,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: string
 
-Returns the application name.
+Application name.
 
 <a href="#">Link to this property</a>
 
 port\_protocols: array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in <code>protocol/port</code> or inclusive <code>protocol/start-end</code> format (for example, <code>tcp/443</code> or <code>udp/10000-20000</code>). TCP and UDP ports must be between 0 and 65535.
 
 <a href="#">Link to this property</a>
 
@@ -371,8 +371,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
             "2001:db8::/48"
           ],
           "port_protocols": [
-            "tcp/80",
-            "tcp/443"
+            "tcp/443",
+            "udp/10000-20000"
           ],
           "support_domains": [
             "example.com",
@@ -426,8 +426,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     ],
     "name": "HR",
     "port_protocols": [
-      "tcp/80",
-      "tcp/443"
+      "tcp/443",
+      "udp/10000-20000"
     ],
     "support_domains": [
       "example.com",
@@ -499,8 +499,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     ],
     "name": "HR",
     "port_protocols": [
-      "tcp/80",
-      "tcp/443"
+      "tcp/443",
+      "udp/10000-20000"
     ],
     "support_domains": [
       "example.com",

@@ -348,7 +348,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
   "success": true,
   "result": {
     "id": "550e8400-e29b-41d4-a716-446655440000",
-    "authentication_type": "Bearer Auth",
+    "authentication_type": "HMAC-Signing",
     "created_at": "2024-01-15T10:30:00Z",
     "destination_url": "https://example.com/webhook",
     "label": "Send to Gmail",
@@ -357,7 +357,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     "version": 1,
     "headers": [
       {
-        "key": "authorization"
+        "key": "x-custom-header"
       }
     ]
   }
@@ -393,7 +393,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
   "success": true,
   "result": {
     "id": "550e8400-e29b-41d4-a716-446655440000",
-    "authentication_type": "Bearer Auth",
+    "authentication_type": "HMAC-Signing",
     "created_at": "2024-01-15T10:30:00Z",
     "destination_url": "https://example.com/webhook",
     "label": "Send to Gmail",
@@ -402,7 +402,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     "version": 1,
     "headers": [
       {
-        "key": "authorization"
+        "key": "x-custom-header"
       }
     ]
   }

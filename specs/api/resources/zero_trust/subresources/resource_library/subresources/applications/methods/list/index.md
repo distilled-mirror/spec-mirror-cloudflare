@@ -26,7 +26,7 @@ GET/accounts/{account\_id}/resource-library/applications
 
 List the applications available to an account, both the applications Cloudflare curates and the custom applications the account has defined.
 
-Results are paginated. Use `filter` and `search` to narrow the list, `order_by` to sort it, and `fields` to reduce each result to only the properties you need.
+Results are paginated. Use `filter` and `search` to narrow the list, `order_by` to sort it, and `fields` to reduce each result to only the properties you need. Use `lookup` to find complete application names mentioned in a rule sentence, ignoring case. Lookup does not correct misspellings. It ranks matches by relevance and uses the same filters, fields, and pagination as listing. `lookup` cannot be combined with `search`.
 
 The authenticated principal must have access to the account identified by `account_id`.
 
@@ -70,9 +70,9 @@ account\_id: string
 
 fields: optional string
 
-Return only the listed properties on each application, as a comma-separated list. Use this to keep responses small when you only need part of each application — for example populating a picker with `fields=id,name` instead of downloading every hostname and IP subnet.
+Return only the listed properties on each application, as a comma-separated list. Use this to keep responses small when you only need part of each application, for example populating a picker with `fields=id,name` instead of downloading every hostname and IP subnet.
 
-Omit this parameter to receive the full application object.
+Omit this parameter to receive the full application object, including when lookup is used.
 
 `id` is always returned.
 
@@ -84,36 +84,46 @@ Unknown or empty property names return `400`.
 
 filter: optional string
 
-Filter applications using key:value format. Supported filter keys:
+Filter applications using `key:value` format. Supported filter keys:
 
-- name: Filter by application name (e.g., name:HR)
-- id: Filter by application ID (e.g., id:498)
-- human\_id: Filter by human-readable ID (e.g., human\_id:HR)
-- hostname: Filter by hostname or support domain (e.g., hostname:portal.example.com)
-- source: Filter by application source name (e.g., source:cloudflare)
-- ip\_subnet: Filter by IP subnet using CIDR containment — returns applications where any stored subnet contains the search value (e.g., ip\_subnet:10.0.1.5/32 matches apps with 10.0.0.0/16)
-- category\_id: Filter by category ID (e.g., category\_id:12).
-- category\_name: Filter by category name (e.g., category\_name:HR).
-- supported: Filter by supported Cloudflare product (e.g., supported:ACCESS). Values: GATEWAY, ACCESS, CASB.
-- review\_status: Filter by the account’s Gateway review status. Values: approved, unapproved, in\_review, unreviewed. .
+- `name`: application name (for example, `name:HR`).
+- `id`: application ID (for example, `id:498`).
+- `human_id`: human-readable ID (for example, `human_id:HR`).
+- `hostname`: hostname or support domain (for example, `hostname:portal.example.com`).
+- `source`: application source name (for example, `source:cloudflare`).
+- `ip_subnet`: CIDR containment; returns applications where a stored subnet contains the search value (for example, `ip_subnet:10.0.1.5/32` matches `10.0.0.0/16`).
+- `category_id`: category ID (for example, `category_id:12`).
+- `category_name`: category name (for example, `category_name:HR`).
+- `supported`: supported Cloudflare product. Values: `GATEWAY`, `ACCESS`, `CASB`.
+- `review_status`: account-specific Gateway review status. Values: `approved`, `unapproved`, `in_review`, `unreviewed`.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20filter%20%3E%20(schema)>)
 
 limit: optional number
 
-Limit of number of results to return (max 250).
+Number of results to return. Defaults to 25; values are clamped to 1–250.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
 
+lookup: optional string
+
+Find complete, case-insensitive application name mentions in a phrase or rule sentence. Misspelled names do not match. Returns matching applications ranked by relevance. Must be between 2 and 1000 characters. Uses the same filters, fields, and pagination as listing. `search` cannot be combined with lookup. Results are ranked by relevance, so `order_by` is ignored.
+
+maxLength1000
+
+minLength2
+
+[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20lookup%20%3E%20(schema)>)
+
 offset: optional number
 
-Offset of results to return.
+Number of results to skip. Defaults to 0; negative values are clamped to 0.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
 order\_by: optional string
 
-Order results using field:direction format. Supported fields are name, id, human\_id, category\_id, application\_type, application\_confidence\_score, and gen\_ai\_score. Supported directions are asc and desc. Ignored when search is provided; results are ranked by relevance instead.
+Order results using field:direction format. Supported fields are name, id, human\_id, category\_id, application\_type, application\_confidence\_score, and gen\_ai\_score. Supported directions are asc and desc. Ignored when search is provided; results are ranked by relevance instead. Also ignored when lookup is provided.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
 
@@ -231,7 +241,7 @@ Returns the list of applications.
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -275,7 +285,7 @@ Returns the application type description.
 
 category\_id: optional number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -307,7 +317,7 @@ Hostnames matched by the application.
 
 human\_id: optional string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 <a href="#">Link to this property</a>
 
@@ -319,13 +329,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: optional string
 
-Returns the application name.
+Application name.
 
 <a href="#">Link to this property</a>
 
 port\_protocols: optional array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in <code>protocol/port</code> or inclusive <code>protocol/start-end</code> format (for example, <code>tcp/443</code> or <code>udp/10000-20000</code>). TCP and UDP ports must be between 0 and 65535.
 
 <a href="#">Link to this property</a>
 
@@ -415,31 +425,37 @@ Returns the application version.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, total\_count }
+result\_info: optional object {count, page, per\_page, 2 more }
 
 </summary>
 
 count: optional number
 
-Returns the total number of results for the requested service.
+Returns the number of results in this response.
 
 <a href="#">Link to this property</a>
 
 page: optional number
 
-Returns the current page within paginated list of results.
+Returns the zero-based result offset, not a page number.
 
 <a href="#">Link to this property</a>
 
 per\_page: optional number
 
-Returns the number of results per page of results.
+Returns the effective <code>limit</code> for this response.
 
 <a href="#">Link to this property</a>
 
 total\_count: optional number
 
-Returns the total results available without any search parameters.
+Returns the number of results matching the request before pagination.
+
+<a href="#">Link to this property</a>
+
+total\_pages: optional number
+
+Returns the number of pages at the effective <code>limit</code>, including 0 when there are no matches.
 
 <a href="#">Link to this property</a>
 
@@ -513,8 +529,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       ],
       "name": "HR",
       "port_protocols": [
-        "tcp/80",
-        "tcp/443"
+        "tcp/443",
+        "udp/10000-20000"
       ],
       "review_status": "approved",
       "support_domains": [
@@ -530,10 +546,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     }
   ],
   "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
+    "count": 10,
+    "page": 0,
+    "per_page": 25,
+    "total_count": 2000,
+    "total_pages": 80
   }
 }
 ```
@@ -595,8 +612,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       ],
       "name": "HR",
       "port_protocols": [
-        "tcp/80",
-        "tcp/443"
+        "tcp/443",
+        "udp/10000-20000"
       ],
       "review_status": "approved",
       "support_domains": [
@@ -612,10 +629,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     }
   ],
   "result_info": {
-    "count": 1,
-    "page": 1,
-    "per_page": 20,
-    "total_count": 2000
+    "count": 10,
+    "page": 0,
+    "per_page": 25,
+    "total_count": 2000,
+    "total_pages": 80
   }
 }
 ```

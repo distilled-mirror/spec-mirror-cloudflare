@@ -290,13 +290,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "authentication_type": "Bearer Auth",
+          "authentication_type": "HMAC-Signing",
           "destination_url": "https://example.com/webhook",
           "headers": [
-            {
-              "key": "Authorization",
-              "value": "Bearer token123"
-            },
             {
               "key": "X-Custom-Header",
               "value": "value"

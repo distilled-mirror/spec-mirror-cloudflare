@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/resource-library/categories
 
-List application categories.
+List the categories available for classifying applications. Results are paginated.
 
 ##### Security
 
@@ -66,13 +66,13 @@ account\_id: string
 
 limit: optional number
 
-Limit of number of results to return.
+Number of results to return. Defaults to 25; values are clamped to 1–250.
 
 [Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
 
 offset: optional number
 
-Offset of results to return.
+Number of results to skip. Defaults to 0; negative values are clamped to 0.
 
 [Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
@@ -180,7 +180,7 @@ Returns the list of categories.
 
 id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 

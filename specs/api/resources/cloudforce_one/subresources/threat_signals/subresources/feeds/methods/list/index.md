@@ -130,7 +130,7 @@ message: string
 
 <summary>
 
-messages: array of object {message, code, expected, 2 more }
+messages: array of object {message, code, custom\_feed\_count, 4 more }
 
 </summary>
 
@@ -139,6 +139,22 @@ message: string
 <a href="#">Link to this property</a>
 
 code: optional number
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_count: optional number
+
+The current count of custom feeds for the account.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_limit: optional number
+
+The custom feed limit for the account.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -154,13 +170,13 @@ path: optional array of string
 
 <summary>
 
-reason: optional "free\_custom\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
+reason: optional "threat\_signals\_feed\_limit"or "free\_custom\_skills\_disabled"or "free\_skill\_run\_disabled"or 4 more
 
 </summary>
 
 One of the following:
 
-"free\_custom\_feed\_limit"
+"threat\_signals\_feed\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -200,13 +216,29 @@ One of the following:
 
 <summary>
 
-result: object {count, feeds, page, 2 more }
+result: object {count, custom\_feed\_count, custom\_feed\_limit, 4 more }
 
 </summary>
 
 count: number
 
 Number of feeds on this page.
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_count: number
+
+The current count of custom feeds for the account.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+custom\_feed\_limit: number
+
+The resolved custom feed limit for the account.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -338,15 +370,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     {
       "message": "message",
       "code": 0,
+      "custom_feed_count": 0,
+      "custom_feed_limit": 0,
       "expected": "expected",
       "path": [
         "string"
       ],
-      "reason": "free_custom_feed_limit"
+      "reason": "threat_signals_feed_limit"
     }
   ],
   "result": {
     "count": 0,
+    "custom_feed_count": 0,
+    "custom_feed_limit": 0,
     "feeds": [
       {
         "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
@@ -389,15 +425,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     {
       "message": "message",
       "code": 0,
+      "custom_feed_count": 0,
+      "custom_feed_limit": 0,
       "expected": "expected",
       "path": [
         "string"
       ],
-      "reason": "free_custom_feed_limit"
+      "reason": "threat_signals_feed_limit"
     }
   ],
   "result": {
     "count": 0,
+    "custom_feed_count": 0,
+    "custom_feed_limit": 0,
     "feeds": [
       {
         "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",

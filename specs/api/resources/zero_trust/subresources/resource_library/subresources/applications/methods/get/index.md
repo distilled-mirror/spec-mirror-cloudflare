@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/resource-library/applications/{id}
 
-Get application by ID.
+Retrieve an application available to the account by its numeric application ID.
 
 ##### Security
 
@@ -64,7 +64,7 @@ account\_id: string
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -176,7 +176,7 @@ result: optional object {id, application\_confidence\_score, application\_source
 
 id: number
 
-Returns the application ID.
+Numeric identifier for the application.
 
 formatint64
 
@@ -214,7 +214,7 @@ Returns the application type description.
 
 category\_id: number
 
-Returns the category ID.
+Numeric identifier for an application category.
 
 formatint64
 
@@ -246,7 +246,7 @@ Hostnames matched by the application.
 
 human\_id: string
 
-Returns the human readable ID.
+Human-readable identifier for the application.
 
 <a href="#">Link to this property</a>
 
@@ -258,13 +258,13 @@ IP subnets for this application. Custom application create and update requests a
 
 name: string
 
-Returns the application name.
+Application name.
 
 <a href="#">Link to this property</a>
 
 port\_protocols: array of string
 
-Port and protocol pairs matched by the application.
+Ports matched by the application, in <code>protocol/port</code> or inclusive <code>protocol/start-end</code> format (for example, <code>tcp/443</code> or <code>udp/10000-20000</code>). TCP and UDP ports must be between 0 and 65535.
 
 <a href="#">Link to this property</a>
 
@@ -380,8 +380,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     ],
     "name": "HR",
     "port_protocols": [
-      "tcp/80",
-      "tcp/443"
+      "tcp/443",
+      "udp/10000-20000"
     ],
     "support_domains": [
       "example.com",
@@ -453,8 +453,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
     ],
     "name": "HR",
     "port_protocols": [
-      "tcp/80",
-      "tcp/443"
+      "tcp/443",
+      "udp/10000-20000"
     ],
     "support_domains": [
       "example.com",
