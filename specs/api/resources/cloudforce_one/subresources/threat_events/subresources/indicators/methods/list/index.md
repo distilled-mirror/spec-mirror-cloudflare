@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/events/indicators
 
-Retrieves indicators across specified datasets, ordered by createdAt descending then UUID, dataset ID, and shard ID ascending. Use the standalone datasetIds value ‘all’/’\*’ for legacy all-datasets behavior, ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. If no datasetIds are provided, uses the default dataset.
+Retrieves indicators across specified datasets, ordered by createdAt descending then UUID, dataset ID, and shard ID ascending. Use one standalone datasetIds scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). If no datasetIds are provided, uses the default dataset.
 
 ##### Security
 
@@ -78,7 +78,7 @@ Opaque cursor from a previous response’s `pagination.cursor`. When provided, a
 
 datasetIds: optional array of string
 
-Dataset UUIDs to query, or one standalone scope value: ‘all’/’\*’ for legacy all-datasets behavior, ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. If not provided, uses the default dataset.
+Dataset UUIDs to query, or one standalone scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). If not provided, uses the default dataset.
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20datasetIds%20%3E%20(schema)>)
 

@@ -90,7 +90,7 @@ next\_action: "INDEX"
 
 wait\_for\_completion: optional boolean
 
-Wait for indexing to fully complete before responding. On RAGs with vector indexing enabled, this additionally waits for Vectorize ingestion confirmation (up to 40s) so the returned item reflects a queryable state. On timeout the item is returned in `running` state and the background alarm continues polling. Defaults to false.
+Wait for indexing before responding. After processing, vector-indexed instances use any time remaining in a 25s wait budget to confirm Vectorize ingestion. Processing itself is not interrupted and can exceed that budget. If confirmation times out, the current item state is returned and background indexing continues. Defaults to false.
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20sync%20%3E%20(params)%200%20%3E%20(param)%20wait_for_completion%20%3E%20(schema)>)
 

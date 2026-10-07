@@ -102,7 +102,7 @@ JSON string of custom metadata key-value pairs.
 
 wait\_for\_completion: optional boolean
 
-Wait for indexing to fully complete before responding. On RAGs with vector indexing enabled, this additionally waits for Vectorize ingestion confirmation (up to 40s) so the returned item reflects a queryable state. On timeout the item is returned in <code>running</code> state and the background alarm continues polling. Defaults to false.
+Wait for indexing before responding. After processing, vector-indexed instances use any time remaining in a 25s wait budget to confirm Vectorize ingestion. Processing itself is not interrupted and can exceed that budget. If confirmation times out, the current item state is returned and background indexing continues. Defaults to false.
 
 <a href="#">Link to this property</a>
 

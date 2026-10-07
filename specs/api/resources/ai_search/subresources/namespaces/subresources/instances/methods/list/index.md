@@ -78,12 +78,6 @@ minLength1
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20hostname%20%3E%20(schema)>)
 
-namespace: optional string
-
-Filter by namespace.
-
-[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
-
 order\_by: optional "created\_at"
 
 Field to order results by.
@@ -428,11 +422,49 @@ max\_num\_results: number
 
 <summary>
 
-metadata: object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1105,6 +1137,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       "max_num_results": 0,
       "metadata": {
         "created_from_aisearch_wizard": true,
+        "created_from_emdash_plugin": {
+          "type": "native",
+          "version": "version"
+        },
         "worker_domain": "worker_domain"
       },
       "modified_at": "2019-12-27T18:11:19.117Z",
@@ -1253,6 +1289,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       "max_num_results": 0,
       "metadata": {
         "created_from_aisearch_wizard": true,
+        "created_from_emdash_plugin": {
+          "type": "native",
+          "version": "version"
+        },
         "worker_domain": "worker_domain"
       },
       "modified_at": "2019-12-27T18:11:19.117Z",

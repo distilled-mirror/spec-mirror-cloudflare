@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/events
 
-Use `datasetId=all` or `datasetId=*` for the legacy all-datasets scope, `datasetId=analytics` for datasets with `isAnalytics=true`, or `datasetId=operational` for datasets with `isAnalytics=false` (limited to 50). Scope values must be used alone. When `datasetId` is unspecified, events are listed from the default Cloudforce One Threat Events dataset. To list existing datasets, use the [`List Datasets`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list/) endpoint.
+Use one standalone `datasetId` scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). Scope values query at most 50 datasets and must be used alone. When `datasetId` is unspecified, events are listed from the default Cloudforce One Threat Events dataset. To list existing datasets, use the [`List Datasets`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list/) endpoint.
 
 ##### Security
 
@@ -60,7 +60,7 @@ Cursor for pagination. When provided, filters are embedded in the cursor so you 
 
 datasetId: optional array of string
 
-Dataset UUIDs to query, or one standalone scope value: ‘all’/’\*’ for the legacy all-datasets behavior, ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. If not provided, uses the default dataset.
+Dataset UUIDs to query, or one standalone scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). Scope values query at most 50 datasets. If not provided, uses the default dataset.
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20datasetId%20%3E%20(schema)>)
 

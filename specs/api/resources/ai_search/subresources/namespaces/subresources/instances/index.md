@@ -340,11 +340,49 @@ max\_num\_results: number
 
 <summary>
 
-metadata: object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1258,11 +1296,49 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -2178,11 +2254,49 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3098,11 +3212,49 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -4018,11 +4170,49 @@ minimum1
 
 <summary>
 
-metadata: optional object {created\_from\_aisearch\_wizard, worker\_domain }
+metadata: optional object {created\_from\_aisearch\_wizard, created\_from\_emdash\_plugin, worker\_domain }
 
 </summary>
 
 created\_from\_aisearch\_wizard: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+created\_from\_emdash\_plugin: optional object {type, version }
+
+</summary>
+
+<details>
+
+<summary>
+
+type: "native"or "rest"
+
+</summary>
+
+One of the following:
+
+"native"
+
+<a href="#">Link to this property</a>
+
+"rest"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

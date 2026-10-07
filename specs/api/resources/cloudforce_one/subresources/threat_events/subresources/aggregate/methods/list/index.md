@@ -56,7 +56,7 @@ Column(s) to aggregate by - single column or comma-separated list (e.g., ‘atta
 
 datasetId: optional array of string
 
-Dataset UUIDs to filter by, or one standalone scope value: ‘all’/’\*’ for all accessible non-analytics event datasets (analytics datasets are silently excluded), ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. If not provided, uses the default dataset.
+Dataset UUIDs to filter by, or one standalone scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). Scope values query at most 50 datasets. If not provided, uses the default dataset.
 
 [Link to this property](#)%20cloudforce_one.threat_events.aggregate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20datasetId%20%3E%20(schema)>)
 

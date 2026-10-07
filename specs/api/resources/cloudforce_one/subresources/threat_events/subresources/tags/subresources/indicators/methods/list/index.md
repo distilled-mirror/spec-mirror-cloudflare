@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
-Returns indicators associated with the provided tag UUID, with pagination. By default fans out across every indicator dataset the account can read; pass datasetIds to scope to UUIDs, analytics datasets, or operational datasets. Analytics datasets do not expose tag associations, so the analytics scope returns an empty result.
+Returns indicators associated with the provided tag UUID, with pagination. By default fans out across every intelligence (isAnalytics=false) indicator dataset the account can read; pass datasetIds to scope to dataset UUIDs or a scope value. Analytics datasets do not expose tag associations, so the analytics scope returns an empty result.
 
 ##### Security
 
@@ -58,7 +58,7 @@ Tag UUID.
 
 datasetIds: optional array of string
 
-Dataset UUIDs to scope to (repeat the param for multiple), or one standalone scope: ‘all’/’\*’, ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. Analytics datasets do not expose tag associations, so ‘analytics’ returns an empty result. Omit to search all readable datasets.
+Dataset UUIDs to scope to (repeat the param for multiple), or one standalone scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). Analytics datasets do not expose tag associations, so ‘analytics’ returns an empty result. Omit for ‘all’.
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20datasetIds%20%3E%20(schema)>)
 

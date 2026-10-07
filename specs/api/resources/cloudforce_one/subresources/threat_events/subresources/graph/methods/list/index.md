@@ -56,7 +56,7 @@ Opaque pagination token. Only valid when seeds has exactly 1 entry; 400 otherwis
 
 datasetIds: optional array of string
 
-Comma-separated dataset UUIDs to restrict neighbor scope, or one standalone scope value: ‘all’/’\*’, ‘analytics’ for isAnalytics=true datasets, or ‘operational’ for isAnalytics=false datasets. Intersected with access grants.
+Comma-separated dataset UUIDs to restrict neighbor scope, or one standalone scope value: ‘operational’ for readable intelligence datasets (isAnalytics=false), ‘analytics’ for readable analytics datasets (isAnalytics=true), or ‘all’/’\*’ for every readable dataset including analytics datasets (the graph reads analytics relationships from R2). Intersected with access grants.
 
 [Link to this property](#)%20cloudforce_one.threat_events.graph%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20datasetIds%20%3E%20(schema)>)
 

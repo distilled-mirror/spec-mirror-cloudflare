@@ -404,7 +404,7 @@ The size of the subnet for the local access network. Note that this field is omi
 
 match: optional string
 
-The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”.
+The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”, “device.tags”.
 
 maxLength500
 
@@ -984,7 +984,7 @@ The size of the subnet for the local access network. Note that this field is omi
 
 match: optional string
 
-The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”.
+The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service\_token\_uuid”, “identity.saml\_attributes”, “network”, “os.name”, “os.version”, “device.tags”.
 
 maxLength500
 

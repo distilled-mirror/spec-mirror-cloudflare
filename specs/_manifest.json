@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3941,
+  "count": 3950,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -5705,6 +5705,42 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/ips/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/ips/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/keyless_certificates",
