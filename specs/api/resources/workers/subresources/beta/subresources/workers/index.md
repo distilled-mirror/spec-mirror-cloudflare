@@ -1150,6 +1150,10 @@ GET/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}
 
 POST/accounts/{account\_id}/workers/workers/{worker\_id}/versions
 
+##### [Profile Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/profile)
+
+POST/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}/profile
+
 ##### [Delete Worker Version](https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id}

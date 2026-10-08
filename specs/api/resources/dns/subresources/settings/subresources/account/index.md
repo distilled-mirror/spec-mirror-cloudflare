@@ -578,7 +578,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 
@@ -654,7 +654,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 
@@ -800,7 +800,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 
@@ -876,7 +876,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 
@@ -1022,7 +1022,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 
@@ -1098,7 +1098,7 @@ formatdate-time
 
 ip\_set: number
 
-Selects the account-specific IP set that supplies the nameserver addresses. The account’s entitlement determines the maximum value. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
+Selects the account-specific IP set that supplies the nameserver addresses. Nameserver sets with the same <code>ip_set</code> and <code>advanced</code> value may reuse addresses; otherwise, they use disjoint address groups.
 
 formatint64
 

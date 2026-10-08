@@ -22,7 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/organizations/{organization\_id}/members
 
-List memberships for an Organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+List memberships for an Organization.
+
+Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.member.list` is required. User API Tokens are not currently supported.
 
 ##### Security
 

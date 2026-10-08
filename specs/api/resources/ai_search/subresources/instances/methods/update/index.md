@@ -1,5 +1,5 @@
 ---
-title: Update an AI Search instance (Search for Agents metadata requires the default namespace).
+title: Update an AI Search instance.
 ---
 
 [Skip to content](#_top)
@@ -18,13 +18,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Update an AI Search instance (Search for Agents metadata requires the default namespace).
+# Update an AI Search instance.
 
 Deprecated
 
 PUT/accounts/{account\_id}/ai-search/instances/{id}
 
-Update an AI Search instance. Submitting Search for Agents metadata requires the default namespace; omitting or removing it is allowed elsewhere. Submit Search for Agents metadata and restrictive or unknown public endpoint changes or custom domains in separate PUT requests, even when resubmitting unchanged metadata.
+Update the configuration of an AI Search instance.
 
 Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
 
@@ -1918,7 +1918,7 @@ success: boolean
 
 [Link to this property](#)%20ai_search.instances%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Update an AI Search instance (Search for Agents metadata requires the default namespace).
+### Update an AI Search instance.
 
 HTTP
 

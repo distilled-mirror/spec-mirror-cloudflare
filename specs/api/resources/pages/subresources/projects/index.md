@@ -654,7 +654,7 @@ Whether the deployment uses functions.
 
 <summary>
 
-Project object {id, canonical\_deployment, created\_on, 13 more }
+Project object {id, canonical\_deployment, created\_on, 14 more }
 
 </summary>
 
@@ -706,7 +706,7 @@ Whether to always use the latest compatibility date for Pages Functions.
 
 build\_image\_major\_version: number
 
-The major version of the build image to use for Pages Functions.
+The major version of the build image to use for Pages Functions. Version 1 is retired and its projects are moved to version 3. Once a project’s builds have been moved, this is the version the builds run on and <code>build_image_auto_upgrade</code> is set on the project.
 
 <a href="#">Link to this property</a>
 
@@ -1126,7 +1126,7 @@ Whether to always use the latest compatibility date for Pages Functions.
 
 build\_image\_major\_version: number
 
-The major version of the build image to use for Pages Functions.
+The major version of the build image to use for Pages Functions. Version 1 is retired and its projects are moved to version 3. Once a project’s builds have been moved, this is the version the builds run on and <code>build_image_auto_upgrade</code> is set on the project.
 
 <a href="#">Link to this property</a>
 
@@ -1623,6 +1623,32 @@ Assets output directory of the build.
 root\_dir: optional string
 
 Directory to run the command.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+build\_image\_auto\_upgrade: optional object {from\_version, to\_version }
+
+Present when the project is set to a retired build image major version and its builds have been moved to a newer one. <code>build_image_major_version</code> in <code>deployment_configs</code> then reports the version the builds run on.
+
+</summary>
+
+from\_version: number
+
+The retired build image major version the project is set to.
+
+<a href="#">Link to this property</a>
+
+to\_version: number
+
+The build image major version the project’s builds run on.
 
 <a href="#">Link to this property</a>
 

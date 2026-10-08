@@ -20,9 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/organizations/{organization\_id}
 
-Delete an organization. The organization MUST be empty before deleting. It must not contain any sub-organizations, accounts, members or users. Sub-organization deletion availability depends on the organization’s capabilities. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Delete an organization. The organization MUST be empty before deleting. It must not contain any sub-organizations, accounts, members or users. Sub-organization deletion availability depends on the organization’s capabilities.
 
 **Access Control:** Restricted to enterprise organizations.
+
+Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.update` is required. User API Tokens are not currently supported.
 
 ##### Security
 

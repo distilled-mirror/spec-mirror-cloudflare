@@ -269,8 +269,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/analytics/query/$
 
 403 example
 
-403 example
-
 ```
 {
   "errors": [],
@@ -351,20 +349,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/analytics/query/$
       "message": "API in beta: expect breaking changes."
     }
   ],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 11003,
-      "message": "art.api.resource.insufficient_permissions"
-    }
-  ],
-  "messages": [],
   "result": null,
   "success": false
 }
@@ -380,8 +364,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/analytics/query/$
 
 403 example
 
-403 example
-
 ```
 {
   "errors": [],
@@ -462,20 +444,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/analytics/query/$
       "message": "API in beta: expect breaking changes."
     }
   ],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 11003,
-      "message": "art.api.resource.insufficient_permissions"
-    }
-  ],
-  "messages": [],
   "result": null,
   "success": false
 }

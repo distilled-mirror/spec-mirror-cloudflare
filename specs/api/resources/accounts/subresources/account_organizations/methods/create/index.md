@@ -22,7 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/move
 
-Move an account into a destination organization, either assigning a standalone account to an organization or moving it between organizations in the same hierarchy. Availability depends on the organization’s capabilities. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Move an account into a destination organization, either assigning a standalone account to an organization or moving it between organizations in the same hierarchy. Availability depends on the organization’s capabilities.
+
+Authentication: A Global API key is required. User API Tokens do not include the required `com.cloudflare.api.account.move` permission.
 
 ##### Security
 

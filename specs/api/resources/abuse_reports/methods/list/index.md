@@ -110,6 +110,14 @@ How many abuse reports per page to list
 
 [Link to this property](#)%20abuse_reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
+search: optional string
+
+Free-text search. Returns reports whose report ID starts with the term or whose domain contains the term, both case-insensitively. Surrounding whitespace is ignored, and an empty value is treated as absent. Combined with the other filters using AND.
+
+maxLength255
+
+[Link to this property](#)%20abuse_reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
+
 sort: optional string
 
 A property to sort by, followed by the order (id, cdate, domain, type, status)

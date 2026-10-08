@@ -22,7 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/organizations/{organization\_id}/members
 
-Create a membership that grants access to a specific Organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Create a membership that grants access to a specific Organization.
+
+Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.member.create` is required. User API Tokens are not currently supported.
 
 ##### Security
 

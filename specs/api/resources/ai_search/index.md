@@ -1328,7 +1328,7 @@ object: optional string
 
 GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
-##### [Create an AI Search instance (Search for Agents requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/create)
+##### [Create an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/create)
 
 POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
@@ -1336,7 +1336,7 @@ POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
 GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
 
-##### [Update an AI Search instance (Search for Agents metadata requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/update)
+##### [Update an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/update)
 
 PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
 
@@ -7996,7 +7996,7 @@ Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances
 
-##### [Create an AI Search instance (Search for Agents requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/create)
+##### [Create an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/create)
 
 Deprecated
 
@@ -8008,7 +8008,7 @@ Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances/{id}
 
-##### [Update an AI Search instance (Search for Agents metadata requires the default namespace).](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/update)
+##### [Update an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/instances/methods/update)
 
 Deprecated
 

@@ -1324,6 +1324,10 @@ GET/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
 
 POST/accounts/{account_id}/workers/workers/{worker_id}/versions
 
+##### [Profile Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/profile)
+
+POST/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}/profile
+
 ##### [Delete Worker Version](/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/delete)
 
 DELETE/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
@@ -20334,7 +20338,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 32 more }
+"$metadata": object { id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -20409,6 +20413,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+[Link to this property](#)
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 [Link to this property](#)
 
@@ -21200,7 +21212,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 32 more }
+"$metadata": object { id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -21275,6 +21287,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+[Link to this property](#)
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 [Link to this property](#)
 
@@ -25980,7 +26000,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 32 more }
+"$metadata": object { id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -26055,6 +26075,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+[Link to this property](#)
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 [Link to this property](#)
 
@@ -26846,7 +26874,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 32 more }
+"$metadata": object { id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -26921,6 +26949,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+[Link to this property](#)
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 [Link to this property](#)
 

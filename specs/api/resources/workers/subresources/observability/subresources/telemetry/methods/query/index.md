@@ -3174,7 +3174,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 32 more }
+"$metadata": object {id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -3249,6 +3249,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+<a href="#">Link to this property</a>
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -4040,7 +4048,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 32 more }
+"$metadata": object {id, account, cloudService, 33 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -4115,6 +4123,14 @@ Error message, present when the log represents an error.
 errorTemplate: optional string
 
 Templatized version of the error message used for grouping similar errors.
+
+<a href="#">Link to this property</a>
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -5084,6 +5100,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "endTimeNs": "endTimeNs",
             "error": "error",
             "errorTemplate": "errorTemplate",
+            "eventSize": 0,
             "fingerprint": "fingerprint",
             "level": "level",
             "message": "message",
@@ -5187,6 +5204,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "endTimeNs": "endTimeNs",
             "error": "error",
             "errorTemplate": "errorTemplate",
+            "eventSize": 0,
             "fingerprint": "fingerprint",
             "level": "level",
             "message": "message",
@@ -5517,6 +5535,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "endTimeNs": "endTimeNs",
             "error": "error",
             "errorTemplate": "errorTemplate",
+            "eventSize": 0,
             "fingerprint": "fingerprint",
             "level": "level",
             "message": "message",
@@ -5620,6 +5639,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "endTimeNs": "endTimeNs",
             "error": "error",
             "errorTemplate": "errorTemplate",
+            "eventSize": 0,
             "fingerprint": "fingerprint",
             "level": "level",
             "message": "message",

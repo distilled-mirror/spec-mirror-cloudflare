@@ -22,7 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/organizations/{organization\_id}/members/{member\_id}
 
-Delete a membership to a particular Organization. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Delete a membership to a particular Organization.
+
+Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.member.delete` is required. User API Tokens are not currently supported.
 
 ##### Security
 

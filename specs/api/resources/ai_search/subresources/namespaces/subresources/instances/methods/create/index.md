@@ -1,5 +1,5 @@
 ---
-title: Create an AI Search instance (Search for Agents requires the default namespace).
+title: Create an AI Search instance.
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Create an AI Search instance (Search for Agents requires the default namespace).
+# Create an AI Search instance.
 
 POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
 
-Create a new AI Search instance with the given configuration. If type is omitted or null, a non-blank HTTP(S) source infers web-crawler and an existing R2 bucket source infers r2. A missing or blank source without a type creates a managed upload-only instance. Search for Agents instances require the default namespace.
+Create a new AI Search instance with the given configuration. If type is omitted or null, a non-blank HTTP(S) source infers web-crawler and any other source infers r2; r2 sources must name an existing bucket. A missing or blank source without a type creates a managed upload-only instance.
 
 ##### Security
 
@@ -1932,7 +1932,7 @@ success: boolean
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Create an AI Search instance (Search for Agents requires the default namespace).
+### Create an AI Search instance.
 
 HTTP
 

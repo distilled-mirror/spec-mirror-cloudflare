@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3950,
+  "count": 3956,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -1373,6 +1373,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/bulk_edit",
       "markdown": "https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/bulk_edit/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/edit",
+      "markdown": "https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/edit/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/api_gateway/subresources/discovery/subresources/operations/methods/list",
@@ -7123,6 +7127,38 @@
       "markdown": "https://developers.cloudflare.com/api/resources/memberships/methods/update/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/monetization",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/delete_rule",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/delete_rule/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/edit_rule",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/edit_rule/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/get_rule",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/get_rule/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/monetization/subresources/rules/methods/update/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/moq",
       "markdown": "https://developers.cloudflare.com/api/resources/moq/index.md"
     },
@@ -10167,22 +10203,6 @@
       "markdown": "https://developers.cloudflare.com/api/resources/registrar/methods/transfer_check/index.md"
     },
     {
-      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains",
-      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/domains/methods/update/index.md"
-    },
-    {
       "page": "https://developers.cloudflare.com/api/resources/registrar/subresources/extensions",
       "markdown": "https://developers.cloudflare.com/api/resources/registrar/subresources/extensions/index.md"
     },
@@ -12249,6 +12269,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/profile",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/beta/subresources/workers/subresources/versions/methods/profile/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/workers/subresources/domains",
@@ -15841,6 +15865,10 @@
     "api/resources/intel/subresources/attack_surface_report/subresources/issues/methods/dismiss/index.md",
     "api/resources/moq/subresources/relays/subresources/tokens/methods/rotate/index.md",
     "api/resources/realtime_kit/subresources/livestreams/methods/create_independent_livestream/index.md",
+    "api/resources/registrar/subresources/domains/index.md",
+    "api/resources/registrar/subresources/domains/methods/get/index.md",
+    "api/resources/registrar/subresources/domains/methods/list/index.md",
+    "api/resources/registrar/subresources/domains/methods/update/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/methods/list/index.md"
   ]

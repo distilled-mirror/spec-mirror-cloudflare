@@ -20,7 +20,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/organizations/{organization\_id}
 
-Update an organization’s name. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Update an organization’s name.
+
+Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.update` is required. User API Tokens are not currently supported.
 
 ##### Security
 

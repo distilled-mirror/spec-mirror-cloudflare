@@ -20,7 +20,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/organizations
 
-Retrieve a list of organizations a particular user has access to. (Currently in Public Beta - see https://developers.cloudflare.com/fundamentals/organizations/)
+Retrieve a list of organizations a particular user has access to.
+
+Authentication: Use a Global API key, or a User API Token with the `User Details Read` or `User Details Write` permission.
 
 ##### Security
 
