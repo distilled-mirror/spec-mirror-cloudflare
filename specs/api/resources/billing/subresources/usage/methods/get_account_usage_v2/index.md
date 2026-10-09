@@ -26,7 +26,7 @@ Returns cost and usage data for a single Cloudflare account, aligned with the [F
 
 Each record represents one billable metric for one account on one day. This includes all metered usage, including usage that falls within free-tier allowances and may result in zero cost.
 
-**Note:** Cost and pricing fields are not yet populated and will be absent from responses until billing integration is complete.
+**Note:** This endpoint serves `usage` records only; cost and pricing fields are absent from responses. To retrieve rated costs, use `POST` on the same path with `Metric: cost`.
 
 When `from` and `to` are omitted, defaults to the start of the current month through today. The maximum date range is 31 days.
 
@@ -186,12 +186,6 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-ConsumedQuantity: number
-
-Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
-
-<a href="#">Link to this property</a>
-
 ConsumedUnit: string
 
 Unit of measure for the consumed quantity (e.g., “GB”, “Requests”, “vCPU-Hours”).
@@ -265,6 +259,12 @@ formatdate-time
 ChargeClass: optional "Correction"
 
 Indicates whether the row represents a correction to one or more charges invoiced in a previous billing period.
+
+<a href="#">Link to this property</a>
+
+ConsumedQuantity: optional number
+
+Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
 
 <a href="#">Link to this property</a>
 
@@ -434,11 +434,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/billable/usage \
   "result": [
     {
       "ChargeCategory": "Usage",
-      "ChargeDescription": "Workers Standard Requests — daily usage",
+      "ChargeDescription": "Workers Standard Requests",
       "ChargeFrequency": "Usage-Based",
       "ChargePeriodEnd": "2025-05-02T00:00:00Z",
       "ChargePeriodStart": "2025-05-01T00:00:00Z",
-      "ConsumedQuantity": 150000,
       "ConsumedUnit": "Requests",
       "HostProviderName": "Cloudflare",
       "InvoiceIssuerName": "Cloudflare",
@@ -451,6 +450,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/billable/usage \
       "BillingPeriodEnd": "2025-06-01T00:00:00Z",
       "BillingPeriodStart": "2025-05-01T00:00:00Z",
       "ChargeClass": "Correction",
+      "ConsumedQuantity": 150000,
       "ContractedCost": 0.75,
       "ContractedUnitPrice": 0.000005,
       "EffectiveCost": 0,
@@ -498,11 +498,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/billable/usage \
   "result": [
     {
       "ChargeCategory": "Usage",
-      "ChargeDescription": "Workers Standard Requests — daily usage",
+      "ChargeDescription": "Workers Standard Requests",
       "ChargeFrequency": "Usage-Based",
       "ChargePeriodEnd": "2025-05-02T00:00:00Z",
       "ChargePeriodStart": "2025-05-01T00:00:00Z",
-      "ConsumedQuantity": 150000,
       "ConsumedUnit": "Requests",
       "HostProviderName": "Cloudflare",
       "InvoiceIssuerName": "Cloudflare",
@@ -515,6 +514,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/billable/usage \
       "BillingPeriodEnd": "2025-06-01T00:00:00Z",
       "BillingPeriodStart": "2025-05-01T00:00:00Z",
       "ChargeClass": "Correction",
+      "ConsumedQuantity": 150000,
       "ContractedCost": 0.75,
       "ContractedUnitPrice": 0.000005,
       "EffectiveCost": 0,

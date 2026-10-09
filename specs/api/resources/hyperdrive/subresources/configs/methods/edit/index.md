@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/hyperdrive/configs/{hyperdrive\_id}
 
-Updates and returns the specified fields of the Hyperdrive configuration. Custom caching settings are not kept if caching is disabled.
+Updates and returns the specified fields of the Hyperdrive configuration. Custom caching settings are not kept if caching is disabled. For an integration-backed configuration, the integration association is preserved but cannot be changed; omit the integration field.
 
 ##### Security
 
@@ -756,7 +756,7 @@ formatdate-time
 
 integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
-Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
+Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
 </summary>
 

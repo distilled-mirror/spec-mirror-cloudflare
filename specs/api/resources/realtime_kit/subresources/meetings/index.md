@@ -1144,7 +1144,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 language: optional "en-US"or "en-IN"or "de"or 7 more
 
-Specifies the language code for transcription to ensure accurate results.
+Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
 </summary>
 
@@ -2218,7 +2218,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 language: optional "en-US"or "en-IN"or "de"or 7 more
 
-Specifies the language code for transcription to ensure accurate results.
+Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
 </summary>
 
@@ -3292,7 +3292,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 language: optional "en-US"or "en-IN"or "de"or 7 more
 
-Specifies the language code for transcription to ensure accurate results.
+Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
 </summary>
 
@@ -4366,7 +4366,7 @@ Adds specific terms to improve accurate detection during transcription.
 
 language: optional "en-US"or "en-IN"or "de"or 7 more
 
-Specifies the language code for transcription to ensure accurate results.
+Specifies the language code for transcription to ensure accurate results. If omitted, the language is auto-detected for post-meeting (Whisper) transcription.
 
 </summary>
 

@@ -340,12 +340,6 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-ConsumedQuantity: number
-
-Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
-
-<a href="#">Link to this property</a>
-
 ConsumedUnit: string
 
 Unit of measure for the consumed quantity (e.g., “GB”, “Requests”, “vCPU-Hours”).
@@ -419,6 +413,12 @@ formatdate-time
 ChargeClass: optional "Correction"
 
 Indicates whether the row represents a correction to one or more charges invoiced in a previous billing period.
+
+<a href="#">Link to this property</a>
+
+ConsumedQuantity: optional number
+
+Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
 
 <a href="#">Link to this property</a>
 
@@ -842,12 +842,6 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-ConsumedQuantity: number
-
-Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
-
-<a href="#">Link to this property</a>
-
 ConsumedUnit: string
 
 Unit of measure for the consumed quantity (e.g., “GB”, “Requests”, “vCPU-Hours”).
@@ -921,6 +915,12 @@ formatdate-time
 ChargeClass: optional "Correction"
 
 Indicates whether the row represents a correction to one or more charges invoiced in a previous billing period.
+
+<a href="#">Link to this property</a>
+
+ConsumedQuantity: optional number
+
+Measured usage amount within the charge period. Reflects raw metered consumption before pricing transformations.
 
 <a href="#">Link to this property</a>
 

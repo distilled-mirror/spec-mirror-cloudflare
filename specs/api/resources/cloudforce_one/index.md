@@ -10267,33 +10267,125 @@ GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_i
 
 <summary>
 
-SkillOutputGetResponse object {article\_id, custom\_skill\_version, output\_schema, 2 more }
+SkillOutputGetResponse object {article\_id, custom\_output, custom\_output\_parse\_status, 4 more }
 
 </summary>
 
 article\_id: string
 
+Article UUID that received the skill output.
+
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+custom\_output: stringor numberor booleanor 2 more
+
+Untrusted model output: parsed JSON when the stored completion text is valid JSON, otherwise raw text. Consumers must safely render or escape it.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+custom\_output\_parse\_status: "parsed"or "invalid\_json"
+
+Whether custom\_output was parsed from the stored completion text.
+
+</summary>
+
+One of the following:
+
+"parsed"
+
+<a href="#">Link to this property</a>
+
+"invalid\_json"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+custom\_output\_validation\_status: "valid"or "invalid\_json"or "schema\_invalid"or "unknown"
+
+Non-blocking validation classification for untrusted model output. <code>unknown</code> is retained only for historical rows.
+
+</summary>
+
+One of the following:
+
+"valid"
+
+<a href="#">Link to this property</a>
+
+"invalid\_json"
+
+<a href="#">Link to this property</a>
+
+"schema\_invalid"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
 custom\_skill\_version: string
 
+Custom Skill version that produced the output. Null when historical metadata is unavailable.
+
 <a href="#">Link to this property</a>
 
 output\_schema: string
 
-JSON-encoded output schema of the skill. Null when the skill no longer exists.
+JSON-encoded output schema. Null when historical skill metadata is unavailable.
 
 <a href="#">Link to this property</a>
 
 skill\_id: string
 
-<a href="#">Link to this property</a>
-
-custom\_output: optional unknown
-
-Skill output. Parsed JSON when the stored output is valid JSON, otherwise the raw string.
+Custom Skill UUID that produced the output.
 
 <a href="#">Link to this property</a>
 

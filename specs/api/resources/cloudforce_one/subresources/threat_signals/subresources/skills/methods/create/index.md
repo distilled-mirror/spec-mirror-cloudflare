@@ -74,7 +74,9 @@ minLength1
 
 <summary>
 
-type: "summary"or "tags"
+type: optional "summary"or "tags"
+
+Optional label; does not affect execution. Defaults to “summary”.
 
 </summary>
 

@@ -158,7 +158,7 @@ minimum0
 
 extra\_prefixes: array of string
 
-Extra set of static prefixes to advertise to the customer’s end of the session
+Extra set of static prefixes to advertise to the customer’s end of the session Prefixes containing host bits will be normalized to contain network bits only. Duplicates are not allowed.
 
 <a href="#">Link to this property</a>
 

@@ -482,7 +482,7 @@ HyperdriveHyperdriveConfigCreateWithIntegration object {integration, name, cachi
 
 integration: object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
-Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
+Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
 </summary>
 
@@ -1104,7 +1104,7 @@ formatdate-time
 
 integration: optional object {database\_branch\_name, database\_name, organization\_name, 3 more }
 
-Connects to a PlanetScale database using credentials managed by Cloudflare. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard.
+Selects a PlanetScale database and provisions credentials managed by Cloudflare when creating a Hyperdrive configuration. The Cloudflare account must already be linked to PlanetScale in the Hyperdrive dashboard. The selection is returned as read-only metadata and cannot be changed with replace or update operations.
 
 </summary>
 
