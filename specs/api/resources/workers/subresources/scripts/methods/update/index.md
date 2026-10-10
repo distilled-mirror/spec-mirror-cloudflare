@@ -78,7 +78,7 @@ Name of the script.
 
 bindings\_inherit: optional "strict"
 
-When set to “strict”, the upload will fail if any `inherit` type bindings cannot be resolved against the previous version of the Worker. Without this, unresolvable inherit bindings are silently dropped.
+When set to “strict”, the upload will fail with error 10057 if any `inherit` type bindings cannot be resolved against the latest uploaded version of the Worker, which may not be the deployed version. Without this, unresolvable inherit bindings are silently dropped.
 
 [Link to this property](#)%20workers.scripts%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20bindings_inherit%20%3E%20(schema)>)
 
@@ -826,7 +826,7 @@ The old name of the inherited binding. If set, the binding will be renamed from 
 
 version\_id: optional string
 
-Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
+Identifier for the version to inherit the binding from. This can be a version ID, or the literal “latest” to inherit from the most recently uploaded version, which may not be the deployed version. Defaults to “latest”. Only the Workers API version endpoints under <code>/accounts/{account_id}/workers/workers/{worker_id}/versions</code> accept a version ID. Other endpoints, including script upload and script version upload, accept only “latest” and reject a version ID with error 10057.
 
 <a href="#">Link to this property</a>
 

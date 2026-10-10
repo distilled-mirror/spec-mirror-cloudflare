@@ -164,7 +164,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, cert\_id, environment, 4 more }
+result: object {id, cert\_id, enabled, 6 more }
 
 </summary>
 
@@ -182,6 +182,12 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+enabled: boolean
+
+Whether the configured hostname is routable for the domain. If disabled, then requests to the configured hostname will not be routed to the configured Worker. If disabled, then preview routing must be enabled, and only subdomains of the configured hostname will be routable.
+
+<a href="#">Link to this property</a>
+
 Deprecatedenvironment: string
 
 Worker environment associated with the domain.
@@ -191,6 +197,12 @@ Worker environment associated with the domain.
 hostname: string
 
 Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
+
+<a href="#">Link to this property</a>
+
+previews\_enabled: boolean
+
+Whether previews are routable for the domain. If enabled, previews will be routable as subdomains of the configured hostname. For example, if the configured hostname is <code>app.example.com</code>, then requests to <code>my-feature.app.example.com</code> will be routed to the preview with slug <code>my-feature</code>, if such a preview exists. If preview routing is disabled, then hostname routing must be enabled.
 
 <a href="#">Link to this property</a>
 
@@ -260,8 +272,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/domains/$
   "result": {
     "id": "dbe10b4bc17c295377eabd600e1787fd",
     "cert_id": "9fdf92c8-64c2-4a3d-b1af-e15304961145",
+    "enabled": true,
     "environment": "production",
     "hostname": "app.example.com",
+    "previews_enabled": false,
     "service": "my-worker",
     "zone_id": "593c9c94de529bbbfaac7c53ced0447d",
     "zone_name": "example.com"
@@ -299,8 +313,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/domains/$
   "result": {
     "id": "dbe10b4bc17c295377eabd600e1787fd",
     "cert_id": "9fdf92c8-64c2-4a3d-b1af-e15304961145",
+    "enabled": true,
     "environment": "production",
     "hostname": "app.example.com",
+    "previews_enabled": false,
     "service": "my-worker",
     "zone_id": "593c9c94de529bbbfaac7c53ced0447d",
     "zone_name": "example.com"

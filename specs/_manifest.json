@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 3956,
+  "count": 3957,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -3473,6 +3473,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/raw",
       "markdown": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/raw/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/undelete",
+      "markdown": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/undelete/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/update",

@@ -2106,7 +2106,7 @@ The old name of the inherited binding. If set, the binding will be renamed from 
 
 version_id: optional string
 
-Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
+Identifier for the version to inherit the binding from. This can be a version ID, or the literal “latest” to inherit from the most recently uploaded version, which may not be the deployed version. Defaults to “latest”. Only the Workers API version endpoints under `/accounts/{account_id}/workers/workers/{worker_id}/versions` accept a version ID. Other endpoints, including script upload and script version upload, accept only “latest” and reject a version ID with error 10057.
 
 [Link to this property](#)
 
@@ -12636,7 +12636,7 @@ The old name of the inherited binding. If set, the binding will be renamed from 
 
 version_id: optional string
 
-Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
+Identifier for the version to inherit the binding from. This can be a version ID, or the literal “latest” to inherit from the most recently uploaded version, which may not be the deployed version. Defaults to “latest”. Only the Workers API version endpoints under `/accounts/{account_id}/workers/workers/{worker_id}/versions` accept a version ID. Other endpoints, including script upload and script version upload, accept only “latest” and reject a version ID with error 10057.
 
 [Link to this property](#)
 
@@ -15698,7 +15698,7 @@ The old name of the inherited binding. If set, the binding will be renamed from 
 
 version_id: optional string
 
-Identifier for the version to inherit the binding from, which can be the version ID or the literal “latest” to inherit from the latest version. Defaults to inheriting the binding from the latest version.
+Identifier for the version to inherit the binding from. This can be a version ID, or the literal “latest” to inherit from the most recently uploaded version, which may not be the deployed version. Defaults to “latest”. Only the Workers API version endpoints under `/accounts/{account_id}/workers/workers/{worker_id}/versions` accept a version ID. Other endpoints, including script upload and script version upload, accept only “latest” and reject a version ID with error 10057.
 
 [Link to this property](#)
 
@@ -18232,7 +18232,7 @@ DELETE/accounts/{account_id}/workers/domains/{domain_id}
 
 <summary>
 
-DomainListResponse object { id, cert_id, environment, 4 more }
+DomainListResponse object { id, cert_id, enabled, 6 more }
 
 </summary>
 
@@ -18250,6 +18250,12 @@ formatuuid
 
 [Link to this property](#)
 
+enabled: boolean
+
+Whether the configured hostname is routable for the domain. If disabled, then requests to the configured hostname will not be routed to the configured Worker. If disabled, then preview routing must be enabled, and only subdomains of the configured hostname will be routable.
+
+[Link to this property](#)
+
 Deprecatedenvironment: string
 
 Worker environment associated with the domain.
@@ -18259,6 +18265,12 @@ Worker environment associated with the domain.
 hostname: string
 
 Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
+
+[Link to this property](#)
+
+previews_enabled: boolean
+
+Whether previews are routable for the domain. If enabled, previews will be routable as subdomains of the configured hostname. For example, if the configured hostname is `app.example.com`, then requests to `my-feature.app.example.com` will be routed to the preview with slug `my-feature`, if such a preview exists. If preview routing is disabled, then hostname routing must be enabled.
 
 [Link to this property](#)
 
@@ -18288,7 +18300,7 @@ Name of the zone containing the domain hostname.
 
 <summary>
 
-DomainGetResponse object { id, cert_id, environment, 4 more }
+DomainGetResponse object { id, cert_id, enabled, 6 more }
 
 </summary>
 
@@ -18306,6 +18318,12 @@ formatuuid
 
 [Link to this property](#)
 
+enabled: boolean
+
+Whether the configured hostname is routable for the domain. If disabled, then requests to the configured hostname will not be routed to the configured Worker. If disabled, then preview routing must be enabled, and only subdomains of the configured hostname will be routable.
+
+[Link to this property](#)
+
 Deprecatedenvironment: string
 
 Worker environment associated with the domain.
@@ -18315,6 +18333,12 @@ Worker environment associated with the domain.
 hostname: string
 
 Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
+
+[Link to this property](#)
+
+previews_enabled: boolean
+
+Whether previews are routable for the domain. If enabled, previews will be routable as subdomains of the configured hostname. For example, if the configured hostname is `app.example.com`, then requests to `my-feature.app.example.com` will be routed to the preview with slug `my-feature`, if such a preview exists. If preview routing is disabled, then hostname routing must be enabled.
 
 [Link to this property](#)
 
@@ -18344,7 +18368,7 @@ Name of the zone containing the domain hostname.
 
 <summary>
 
-DomainUpdateResponse object { id, cert_id, environment, 4 more }
+DomainUpdateResponse object { id, cert_id, enabled, 6 more }
 
 </summary>
 
@@ -18362,6 +18386,12 @@ formatuuid
 
 [Link to this property](#)
 
+enabled: boolean
+
+Whether the configured hostname is routable for the domain. If disabled, then requests to the configured hostname will not be routed to the configured Worker. If disabled, then preview routing must be enabled, and only subdomains of the configured hostname will be routable.
+
+[Link to this property](#)
+
 Deprecatedenvironment: string
 
 Worker environment associated with the domain.
@@ -18371,6 +18401,12 @@ Worker environment associated with the domain.
 hostname: string
 
 Hostname of the domain. Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
+
+[Link to this property](#)
+
+previews_enabled: boolean
+
+Whether previews are routable for the domain. If enabled, previews will be routable as subdomains of the configured hostname. For example, if the configured hostname is `app.example.com`, then requests to `my-feature.app.example.com` will be routed to the preview with slug `my-feature`, if such a preview exists. If preview routing is disabled, then hostname routing must be enabled.
 
 [Link to this property](#)
 

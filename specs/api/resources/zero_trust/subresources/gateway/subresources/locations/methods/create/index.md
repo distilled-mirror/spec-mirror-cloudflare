@@ -88,6 +88,12 @@ Specify the identifier of the pair of IPv4 addresses assigned to this location. 
 
 [Link to this property](#)%20zero_trust.gateway.locations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20dns_destination_ips_id%20%3E%20(schema)>)
 
+dns64\_enabled: optional boolean
+
+Enable DNS64 synthesis for DNS queries matched to this location. When updating a location, omitting this field resets it to false.
+
+[Link to this property](#)%20zero_trust.gateway.locations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20dns64_enabled%20%3E%20(schema)>)
+
 ecs\_support: optional boolean
 
 Indicate whether the location must resolve EDNS queries.
@@ -414,7 +420,7 @@ Indicate whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.locations%20%3E%20(model)%20location%20%3E%20(schema)">Location</a> { id, client\_default, created\_at, 12 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.locations%20%3E%20(model)%20location%20%3E%20(schema)">Location</a> { id, client\_default, created\_at, 13 more }
 
 </summary>
 
@@ -443,6 +449,12 @@ Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 dns\_destination\_ipv6\_block\_id: optional string
 
 Specify the UUID of the IPv6 block brought to the gateway so that this location’s IPv6 address is allocated from the Bring Your Own IPv6 (BYOIPv6) block rather than the standard Cloudflare IPv6 block.
+
+<a href="#">Link to this property</a>
+
+dns64\_enabled: optional boolean
+
+Enable DNS64 synthesis for DNS queries matched to this location. When updating a location, omitting this field resets it to false.
 
 <a href="#">Link to this property</a>
 
@@ -763,6 +775,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/locations
     "created_at": "2014-01-01T05:20:00.12345Z",
     "dns_destination_ips_id": "0e4a32c6-6fb8-4858-9296-98f51631e8e6",
     "dns_destination_ipv6_block_id": "b08f7231-d458-495c-98ef-190604c9ee83",
+    "dns64_enabled": false,
     "doh_subdomain": "oli3n9zkz5",
     "ecs_support": false,
     "endpoints": {
@@ -846,6 +859,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/locations
     "created_at": "2014-01-01T05:20:00.12345Z",
     "dns_destination_ips_id": "0e4a32c6-6fb8-4858-9296-98f51631e8e6",
     "dns_destination_ipv6_block_id": "b08f7231-d458-495c-98ef-190604c9ee83",
+    "dns64_enabled": false,
     "doh_subdomain": "oli3n9zkz5",
     "ecs_support": false,
     "endpoints": {

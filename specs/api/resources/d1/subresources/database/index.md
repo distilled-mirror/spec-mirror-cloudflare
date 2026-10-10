@@ -42,6 +42,10 @@ PATCH/accounts/{account\_id}/d1/database/{database\_id}
 
 DELETE/accounts/{account\_id}/d1/database/{database\_id}
 
+##### [Undelete D1 Database](https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/undelete)
+
+POST/accounts/{account\_id}/d1/database/{database\_id}/undelete
+
 ##### [Query D1 Database](https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/query)
 
 POST/accounts/{account\_id}/d1/database/{database\_id}/query
