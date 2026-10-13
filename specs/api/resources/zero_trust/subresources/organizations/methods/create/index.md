@@ -104,6 +104,12 @@ Contains zone names to exempt from the `deny_unmatched_requests` feature. Reques
 
 [Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20deny_unmatched_requests_exempted_zone_names%20%3E%20(schema)>)
 
+disable\_end\_user\_app\_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
+
+[Link to this property](#)%20zero_trust.organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20disable_end_user_app_creation%20%3E%20(schema)>)
+
 is\_ui\_read\_only: optional boolean
 
 Lock all settings as Read-Only in the Dashboard, regardless of user permission. Updates may only be made via the API or Terraform for this account when enabled.
@@ -564,7 +570,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 17 more }
 
 </summary>
 
@@ -619,6 +625,12 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 deny\_unmatched\_requests\_exempted\_zone\_names: optional array of string
 
 Contains zone names to exempt from the <code>deny_unmatched_requests</code> feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+
+<a href="#">Link to this property</a>
+
+disable\_end\_user\_app\_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
 
 <a href="#">Link to this property</a>
 
@@ -1052,6 +1064,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "deny_unmatched_requests_exempted_zone_names": [
       "example.com"
     ],
+    "disable_end_user_app_creation": false,
     "is_ui_read_only": true,
     "login_design": {
       "background_color": "#c5ed1b",
@@ -1141,6 +1154,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "deny_unmatched_requests_exempted_zone_names": [
       "example.com"
     ],
+    "disable_end_user_app_creation": false,
     "is_ui_read_only": true,
     "login_design": {
       "background_color": "#c5ed1b",

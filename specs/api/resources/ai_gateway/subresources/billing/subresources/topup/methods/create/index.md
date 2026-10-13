@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/ai-gateway/billing/topup
 
-Create a credit top-up for the given account, charged to the account’s default payment method.
+Create a credit top-up for the given account, charged to the account’s default payment method. Requires a dashboard session; API token, OAuth, and service credentials receive 403.
 
 ##### Security
 
@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`AI Gateway Write`
+`Billing Write`
 
 ##### P ath ParametersExpand Collapse
 

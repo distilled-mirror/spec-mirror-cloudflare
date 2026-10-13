@@ -70,7 +70,7 @@ account\_id: string
 
 body: object {hostnames, category\_id, human\_id, 4 more } or object {ip\_subnets, category\_id, hostnames, 4 more }
 
-Defines a custom application. At least one hostname or IP subnet is required. Support domains and port/protocol pairs do not satisfy this requirement.
+Defines a custom application. At least one hostname or IP subnet is required. Support domains and port/protocol pairs do not satisfy this requirement. A NUL character (U+0000) in any string value returns <code>400</code>.
 
 </summary>
 

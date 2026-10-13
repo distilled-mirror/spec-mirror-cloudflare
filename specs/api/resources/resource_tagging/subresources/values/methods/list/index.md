@@ -64,7 +64,7 @@ Cursor for pagination.
 
 <summary>
 
-type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 40 more
+type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 41 more
 
 Filter by resource type.
 
@@ -193,6 +193,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "managed\_client\_certificate"
+
+<a href="#">Link to this property</a>
+
+"namespace\_worker"
 
 <a href="#">Link to this property</a>
 

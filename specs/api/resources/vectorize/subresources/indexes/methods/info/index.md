@@ -188,6 +188,8 @@ processedUpToMutation: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -246,7 +248,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
   "result": {
     "dimensions": 768,
     "processedUpToDatetime": "2024-07-22T18:25:44.442097Z",
-    "processedUpToMutation": "0000aaaa-11bb-22cc-33dd-444444eeeeee",
+    "processedUpToMutation": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
     "vectorCount": 300000
   },
   "success": true
@@ -282,7 +284,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
   "result": {
     "dimensions": 768,
     "processedUpToDatetime": "2024-07-22T18:25:44.442097Z",
-    "processedUpToMutation": "0000aaaa-11bb-22cc-33dd-444444eeeeee",
+    "processedUpToMutation": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
     "vectorCount": 300000
   },
   "success": true

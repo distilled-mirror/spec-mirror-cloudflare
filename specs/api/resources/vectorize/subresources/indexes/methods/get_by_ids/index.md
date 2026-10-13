@@ -166,9 +166,37 @@ pointer: optional string
 
 [Link to this property](#)%20vectorize.indexes%20%3E%20(method)%20get_by_ids%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-result: unknown
+<details>
+
+<summary>
+
+result: array of object {id, metadata, namespace, values }
 
 Array of vectors with matching ids.
+
+</summary>
+
+id: optional string
+
+Identifier for a Vector
+
+maxLength64
+
+<a href="#">Link to this property</a>
+
+metadata: optional unknown
+
+<a href="#">Link to this property</a>
+
+namespace: optional string
+
+<a href="#">Link to this property</a>
+
+values: optional array of number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20vectorize.indexes%20%3E%20(method)%20get_by_ids%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
@@ -227,6 +255,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
         "another-key": "another-value",
         "customer-id": 442
       },
+      "namespace": "namespace",
       "values": [
         0.812,
         0.621,
@@ -284,6 +313,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
         "another-key": "another-value",
         "customer-id": 442
       },
+      "namespace": "namespace",
       "values": [
         0.812,
         0.621,

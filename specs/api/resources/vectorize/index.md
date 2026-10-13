@@ -398,6 +398,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -476,6 +478,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -496,6 +500,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -504,9 +510,35 @@ maxLength36
 
 [Link to this property](#)%20vectorize.indexes%20%3E%20(model)%20index_delete_by_ids_response%20%3E%20(schema)>)
 
-IndexGetByIDsResponse = unknown
+<details>
 
-Array of vectors with matching ids.
+<summary>
+
+IndexGetByIDsResponse object {id, metadata, namespace, values }
+
+</summary>
+
+id: optional string
+
+Identifier for a Vector
+
+maxLength64
+
+<a href="#">Link to this property</a>
+
+metadata: optional unknown
+
+<a href="#">Link to this property</a>
+
+namespace: optional string
+
+<a href="#">Link to this property</a>
+
+values: optional array of number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20vectorize.indexes%20%3E%20(model)%20index_get_by_ids_response%20%3E%20(schema)>)
 
@@ -539,6 +571,8 @@ formatdate-time
 processedUpToMutation: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
+
+formatuuid
 
 maxLength36
 
@@ -708,6 +742,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -727,6 +763,8 @@ MetadataIndexDeleteResponse object {mutationId }
 mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
+
+formatuuid
 
 maxLength36
 

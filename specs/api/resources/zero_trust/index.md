@@ -7856,7 +7856,7 @@ Your OAuth Client Secret
 
 <summary>
 
-IdentityProvider = [AzureAD](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)) { config, name, type, 5 more } or object { config, name, type, 5 more } or object { config, name, type, 5 more } or 13 more
+IdentityProvider = [AzureAD](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)) { config, name, type, 5 more } or object { config, name, type, 5 more } or object { config, name, type, 5 more } or 14 more
 
 </summary>
 
@@ -9165,6 +9165,178 @@ OAuth scopes
 token_url: optional string
 
 The token_endpoint URL of your IdP
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+The name of the identity provider, shown to users on the login page.
+
+[Link to this property](#)
+
+type: [IdentityProviderType](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_type%20%3E%20(schema))
+
+The type of identity provider. To determine the value for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
+
+[Link to this property](#)
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+read_only: optional boolean
+
+Indicates that the identity provider is immutable and cannot be updated or deleted via the API.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+saml_certificate_set: optional object { created_at, uid, updated_at, 2 more }
+
+The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
+
+</summary>
+
+created_at: string
+
+Timestamp when the certificate set was created
+
+formatdate-time
+
+[Link to this property](#)
+
+uid: string
+
+Unique identifier for the certificate set
+
+formatuuid
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when the certificate set was last updated (e.g., during rotation)
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+current_certificate: optional object { is_current, not_after, public_certificate, uid }
+
+The currently active certificate used for encrypting SAML assertions
+
+</summary>
+
+is_current: boolean
+
+Indicates whether this is the currently active certificate
+
+[Link to this property](#)
+
+not_after: string
+
+Certificate expiration date. Certificates are automatically rotated 30 days before expiration.
+
+formatdate-time
+
+[Link to this property](#)
+
+public_certificate: string
+
+PEM-encoded X.509 certificate containing the public key. Configure this certificate in your external SAML Identity Provider to enable encryption.
+
+[Link to this property](#)
+
+uid: string
+
+Unique identifier for the certificate
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+previous_certificate: optional unknown
+
+The previous certificate, maintained during rotation to ensure continuity. Null if no rotation has occurred. Mirrors the structure of `saml_certificate`.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+saml_certificate_set_id: optional string
+
+The UID of the SAML encryption certificate set assigned to this Identity Provider. Only present for SAML identity providers with encryption configured. Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`.
+
+formatuuid
+
+[Link to this property](#)
+
+scim_config: optional [IdentityProviderSCIMConfig](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_scim_config%20%3E%20(schema)) { enabled, identity_update_behavior, scim_base_url, 3 more }
+
+The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessDuo object { config, name, type, 5 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+config: object { client_id, client_secret, issuer_url }
+
+The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
+
+</summary>
+
+client_id: optional string
+
+The client ID from the Duo Generic OIDC Relying Party metadata.
+
+[Link to this property](#)
+
+client_secret: optional string
+
+The client secret from the Duo Generic OIDC Relying Party metadata.
+
+[Link to this property](#)
+
+issuer_url: optional string
+
+The issuer URL from the Duo Generic OIDC Relying Party metadata.
+
+formaturi
 
 [Link to this property](#)
 
@@ -10804,7 +10976,7 @@ A flag to enable revoking a user’s session in Access and Gateway when they hav
 
 <summary>
 
-IdentityProviderType = "onetimepin" or "azureAD" or "saml" or 13 more
+IdentityProviderType = "onetimepin" or "azureAD" or "saml" or 14 more
 
 The type of identity provider. To determine the value for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
 
@@ -10852,6 +11024,10 @@ One of the following:
 
 [Link to this property](#)
 
+"duo"
+
+[Link to this property](#)
+
 "okta"
 
 [Link to this property](#)
@@ -10884,7 +11060,7 @@ One of the following:
 
 <summary>
 
-IdentityProviderListResponse = [AzureAD](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)) { config, name, type, 5 more } or object { config, name, type, 5 more } or object { config, name, type, 5 more } or 13 more
+IdentityProviderListResponse = [AzureAD](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20azure_ad%20%3E%20(schema)) { config, name, type, 5 more } or object { config, name, type, 5 more } or object { config, name, type, 5 more } or 14 more
 
 </summary>
 
@@ -12193,6 +12369,178 @@ OAuth scopes
 token_url: optional string
 
 The token_endpoint URL of your IdP
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+The name of the identity provider, shown to users on the login page.
+
+[Link to this property](#)
+
+type: [IdentityProviderType](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_type%20%3E%20(schema))
+
+The type of identity provider. To determine the value for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
+
+[Link to this property](#)
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+read_only: optional boolean
+
+Indicates that the identity provider is immutable and cannot be updated or deleted via the API.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+saml_certificate_set: optional object { created_at, uid, updated_at, 2 more }
+
+The SAML encryption certificate set details, including current and previous certificates. Only present for SAML identity providers with a certificate set assigned.
+
+</summary>
+
+created_at: string
+
+Timestamp when the certificate set was created
+
+formatdate-time
+
+[Link to this property](#)
+
+uid: string
+
+Unique identifier for the certificate set
+
+formatuuid
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when the certificate set was last updated (e.g., during rotation)
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+current_certificate: optional object { is_current, not_after, public_certificate, uid }
+
+The currently active certificate used for encrypting SAML assertions
+
+</summary>
+
+is_current: boolean
+
+Indicates whether this is the currently active certificate
+
+[Link to this property](#)
+
+not_after: string
+
+Certificate expiration date. Certificates are automatically rotated 30 days before expiration.
+
+formatdate-time
+
+[Link to this property](#)
+
+public_certificate: string
+
+PEM-encoded X.509 certificate containing the public key. Configure this certificate in your external SAML Identity Provider to enable encryption.
+
+[Link to this property](#)
+
+uid: string
+
+Unique identifier for the certificate
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+previous_certificate: optional unknown
+
+The previous certificate, maintained during rotation to ensure continuity. Null if no rotation has occurred. Mirrors the structure of `saml_certificate`.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+saml_certificate_set_id: optional string
+
+The UID of the SAML encryption certificate set assigned to this Identity Provider. Only present for SAML identity providers with encryption configured. Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`.
+
+formatuuid
+
+[Link to this property](#)
+
+scim_config: optional [IdentityProviderSCIMConfig](/api/resources/zero_trust#(resource)%20zero_trust.identity_providers%20%3E%20(model)%20identity_provider_scim_config%20%3E%20(schema)) { enabled, identity_update_behavior, scim_base_url, 3 more }
+
+The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessDuo object { config, name, type, 5 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+config: object { client_id, client_secret, issuer_url }
+
+The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
+
+</summary>
+
+client_id: optional string
+
+The client ID from the Duo Generic OIDC Relying Party metadata.
+
+[Link to this property](#)
+
+client_secret: optional string
+
+The client secret from the Duo Generic OIDC Relying Party metadata.
+
+[Link to this property](#)
+
+issuer_url: optional string
+
+The issuer URL from the Duo Generic OIDC Relying Party metadata.
+
+formaturi
 
 [Link to this property](#)
 
@@ -13940,7 +14288,7 @@ The text color on your login page.
 
 <summary>
 
-Organization object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 16 more }
+Organization object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 17 more }
 
 </summary>
 
@@ -13995,6 +14343,12 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 deny_unmatched_requests_exempted_zone_names: optional array of string
 
 Contains zone names to exempt from the `deny_unmatched_requests` feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+
+[Link to this property](#)
+
+disable_end_user_app_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
 
 [Link to this property](#)
 
@@ -14332,7 +14686,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-OrganizationListResponse object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 17 more }
+OrganizationListResponse object { allow_authenticate_via_warp, auth_domain, auto_redirect_to_identity, 18 more }
 
 </summary>
 
@@ -14387,6 +14741,12 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 deny_unmatched_requests_exempted_zone_names: optional array of string
 
 Contains zone names to exempt from the `deny_unmatched_requests` feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+
+[Link to this property](#)
+
+disable_end_user_app_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
 
 [Link to this property](#)
 
@@ -14762,7 +15122,7 @@ PUT/accounts/{account_id}/access/organizations/doh
 
 <summary>
 
-DOHGetResponse object { id, client_id, doh_jwt_duration, 4 more }
+DOHGetResponse object { id, client_id, doh_jwt_duration, 7 more }
 
 </summary>
 
@@ -14794,13 +15154,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
 expires_at: optional string
 
 formatdate-time
+
+[Link to this property](#)
+
+leak_report_url: optional string
+
+Where the leaked `client_secret` was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+[Link to this property](#)
+
+leak_reported_at: optional string
+
+When a secret scanning partner reported this service token’s `client_secret` as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+[Link to this property](#)
+
+leak_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 [Link to this property](#)
 
@@ -14818,7 +15200,7 @@ The name of the service token.
 
 <summary>
 
-DOHUpdateResponse object { id, client_id, doh_jwt_duration, 4 more }
+DOHUpdateResponse object { id, client_id, doh_jwt_duration, 7 more }
 
 </summary>
 
@@ -14850,13 +15232,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
 expires_at: optional string
 
 formatdate-time
+
+[Link to this property](#)
+
+leak_report_url: optional string
+
+Where the leaked `client_secret` was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+[Link to this property](#)
+
+leak_reported_at: optional string
+
+When a secret scanning partner reported this service token’s `client_secret` as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+[Link to this property](#)
+
+leak_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 [Link to this property](#)
 
@@ -34196,7 +34600,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -42412,7 +42816,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -46616,7 +47020,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -49886,7 +50290,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -52986,7 +53390,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -56080,7 +56484,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -59174,7 +59578,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -62262,7 +62666,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -65379,6 +65783,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -69638,7 +70048,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -73660,7 +74070,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -77676,7 +78086,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -82284,7 +82694,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -90500,7 +90910,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -94704,7 +95114,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -97974,7 +98384,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -101074,7 +101484,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -104168,7 +104578,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -107262,7 +107672,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -110350,7 +110760,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -113467,6 +113877,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -117726,7 +118142,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -121748,7 +122164,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -125764,7 +126180,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -130372,7 +130788,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -138588,7 +139004,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -142792,7 +143208,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -146062,7 +146478,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -149162,7 +149578,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -152256,7 +152672,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -155350,7 +155766,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -158438,7 +158854,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -161555,6 +161971,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -165814,7 +166236,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -169836,7 +170258,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -173852,7 +174274,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -178460,7 +178882,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -186676,7 +187098,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -190880,7 +191302,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -194150,7 +194572,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -197250,7 +197672,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -200344,7 +200766,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -203438,7 +203860,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -206526,7 +206948,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -209643,6 +210065,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -213902,7 +214330,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -217924,7 +218352,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -221940,7 +222368,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -262812,7 +263240,7 @@ POST/accounts/{account_id}/access/service_tokens/{service_token_id}/rotate
 
 <summary>
 
-ServiceToken object { id, client_id, duration, 3 more }
+ServiceToken object { id, client_id, duration, 6 more }
 
 </summary>
 
@@ -262838,13 +263266,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
 expires_at: optional string
 
 formatdate-time
+
+[Link to this property](#)
+
+leak_report_url: optional string
+
+Where the leaked `client_secret` was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+[Link to this property](#)
+
+leak_reported_at: optional string
+
+When a secret scanning partner reported this service token’s `client_secret` as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+[Link to this property](#)
+
+leak_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 [Link to this property](#)
 
@@ -262892,7 +263342,7 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
@@ -262940,7 +263390,7 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 

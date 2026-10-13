@@ -82,7 +82,7 @@ The text color on your login page.
 
 <summary>
 
-Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 16 more }
+Organization object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 17 more }
 
 </summary>
 
@@ -137,6 +137,12 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 deny\_unmatched\_requests\_exempted\_zone\_names: optional array of string
 
 Contains zone names to exempt from the <code>deny_unmatched_requests</code> feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+
+<a href="#">Link to this property</a>
+
+disable\_end\_user\_app\_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
 
 <a href="#">Link to this property</a>
 
@@ -474,7 +480,7 @@ The amount of time that tokens issued for applications will be valid. Must be in
 
 <summary>
 
-OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 17 more }
+OrganizationListResponse object {allow\_authenticate\_via\_warp, auth\_domain, auto\_redirect\_to\_identity, 18 more }
 
 </summary>
 
@@ -529,6 +535,12 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 deny\_unmatched\_requests\_exempted\_zone\_names: optional array of string
 
 Contains zone names to exempt from the <code>deny_unmatched_requests</code> feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+
+<a href="#">Link to this property</a>
+
+disable\_end\_user\_app\_creation: optional boolean
+
+Whether creation of end user applications is disabled for this organization.
 
 <a href="#">Link to this property</a>
 
@@ -906,7 +918,7 @@ PUT/accounts/{account\_id}/access/organizations/doh
 
 <summary>
 
-DOHGetResponse object {id, client\_id, doh\_jwt\_duration, 4 more }
+DOHGetResponse object {id, client\_id, doh\_jwt\_duration, 7 more }
 
 </summary>
 
@@ -938,13 +950,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous <code>client_secret</code> stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous <code>client_secret</code> stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 <a href="#">Link to this property</a>
 
 expires\_at: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+leak\_report\_url: optional string
+
+Where the leaked <code>client_secret</code> was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+leak\_reported\_at: optional string
+
+When a secret scanning partner reported this service token’s <code>client_secret</code> as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+leak\_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 <a href="#">Link to this property</a>
 
@@ -962,7 +996,7 @@ The name of the service token.
 
 <summary>
 
-DOHUpdateResponse object {id, client\_id, doh\_jwt\_duration, 4 more }
+DOHUpdateResponse object {id, client\_id, doh\_jwt\_duration, 7 more }
 
 </summary>
 
@@ -994,13 +1028,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous <code>client_secret</code> stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous <code>client_secret</code> stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 <a href="#">Link to this property</a>
 
 expires\_at: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+leak\_report\_url: optional string
+
+Where the leaked <code>client_secret</code> was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+leak\_reported\_at: optional string
+
+When a secret scanning partner reported this service token’s <code>client_secret</code> as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+leak\_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 <a href="#">Link to this property</a>
 

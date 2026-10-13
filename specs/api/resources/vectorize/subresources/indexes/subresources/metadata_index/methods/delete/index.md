@@ -180,6 +180,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -234,7 +236,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
     }
   ],
   "result": {
-    "mutationId": "0000aaaa-11bb-22cc-33dd-444444eeeeee"
+    "mutationId": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
   },
   "success": true
 }
@@ -267,7 +269,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/vectorize/v2/inde
     }
   ],
   "result": {
-    "mutationId": "0000aaaa-11bb-22cc-33dd-444444eeeeee"
+    "mutationId": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
   },
   "success": true
 }

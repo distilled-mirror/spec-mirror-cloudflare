@@ -106,6 +106,8 @@ mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
 
+formatuuid
+
 maxLength36
 
 <a href="#">Link to this property</a>
@@ -125,6 +127,8 @@ MetadataIndexDeleteResponse object {mutationId }
 mutationId: optional string
 
 The unique identifier for the async mutation operation containing the changeset.
+
+formatuuid
 
 maxLength36
 

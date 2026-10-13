@@ -19274,7 +19274,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -27490,7 +27490,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -31694,7 +31694,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -34964,7 +34964,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -38064,7 +38064,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -41158,7 +41158,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -44252,7 +44252,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -47340,7 +47340,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -50457,6 +50457,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -54716,7 +54722,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -58738,7 +58744,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -62754,7 +62760,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -67362,7 +67368,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -75578,7 +75584,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -79782,7 +79788,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -83052,7 +83058,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -86152,7 +86158,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -89246,7 +89252,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -92340,7 +92346,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -95428,7 +95434,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -98545,6 +98551,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -102804,7 +102816,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -106826,7 +106838,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -110842,7 +110854,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -115450,7 +115462,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -123666,7 +123678,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -127870,7 +127882,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -131140,7 +131152,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -134240,7 +134252,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -137334,7 +137346,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -140428,7 +140440,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -143516,7 +143528,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -146633,6 +146645,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -150892,7 +150910,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -154914,7 +154932,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -158930,7 +158948,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -163538,7 +163556,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -171754,7 +171772,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -175958,7 +175976,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -179228,7 +179246,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -182328,7 +182346,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -185422,7 +185440,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -188516,7 +188534,7 @@ formatdate-time
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -191604,7 +191622,7 @@ The application type.
 
 <summary>
 
-InfrastructureApplication object { target_criteria, type, id, 4 more }
+InfrastructureApplication object { target_criteria, type, id, 5 more }
 
 </summary>
 
@@ -194721,6 +194739,12 @@ formatdate-time
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+session_duration: optional string
+
+The maximum duration of a connection to this application’s targets. Connections are terminated once it elapses. Must be in the format `30m` or `2h45m`, in whole seconds. Valid time units are: s, m, h.
 
 [Link to this property](#)
 
@@ -198980,7 +199004,7 @@ Returns a 401 status code when the request is blocked by a Service Auth policy.
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -203002,7 +203026,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -207018,7 +207042,7 @@ A [JSONata](https://jsonata.org/) expression that transforms the resource before
 
 session_duration: optional string
 
-The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h. Note: unsupported for infrastructure type applications.
+The amount of time that tokens issued for this application will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
 [Link to this property](#)
 
@@ -247890,7 +247914,7 @@ POST/accounts/{account_id}/access/service_tokens/{service_token_id}/rotate
 
 <summary>
 
-ServiceToken object { id, client_id, duration, 3 more }
+ServiceToken object { id, client_id, duration, 6 more }
 
 </summary>
 
@@ -247916,13 +247940,35 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
 expires_at: optional string
 
 formatdate-time
+
+[Link to this property](#)
+
+leak_report_url: optional string
+
+Where the leaked `client_secret` was found, if provided by the reporter. Omitted if the token has not been reported as leaked.
+
+formaturi
+
+[Link to this property](#)
+
+leak_reported_at: optional string
+
+When a secret scanning partner reported this service token’s `client_secret` as leaked. A leaked service token is disabled and must be rotated before it can be re-enabled. Cleared once the secret is rotated. Omitted if the token has not been reported as leaked.
+
+formatdate-time
+
+[Link to this property](#)
+
+leak_reporter: optional string
+
+The secret scanning partner that reported the leak. Omitted if the token has not been reported as leaked.
 
 [Link to this property](#)
 
@@ -247970,7 +248016,7 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
@@ -248018,7 +248064,7 @@ The duration for how long the service token will be valid. Must be in the format
 
 enabled: optional boolean
 
-Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled at any time. Defaults to enabled when omitted on create.
+Whether the service token is enabled. A disabled service token cannot be used to authenticate; both its current and previous `client_secret` stop being accepted, but the token itself is preserved and can be re-enabled. A service token reported as leaked is disabled automatically and cannot be re-enabled until its secret is rotated; attempting to do so returns a 409. Defaults to enabled when omitted on create.
 
 [Link to this property](#)
 
