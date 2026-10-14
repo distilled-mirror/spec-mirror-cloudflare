@@ -24,8 +24,6 @@ PUT/organizations/{organization\_id}/profile
 
 Modify organization profile.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.update` is required. User API Tokens are not currently supported.
-
 ##### Security
 
 API Email + API Key

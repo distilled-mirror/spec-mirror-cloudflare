@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/ai-search/tokens/{id}
 
-Permanently delete a stored AI Search credential. Credentials in use by an instance cannot be deleted.
+Deletes a stored AI Search credential permanently. Credentials in use by an instance cannot be deleted.
 
 ##### Security
 

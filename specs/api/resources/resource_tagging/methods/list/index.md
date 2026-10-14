@@ -66,6 +66,12 @@ Cursor for pagination.
 
 [Link to this property](#)%20resource_tagging%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
+include\_navigation: optional boolean
+
+Resolve current namespace Worker navigation by immutable child tag. Optional read-only navigation is omitted for deleted or unresolved children. Lookups are limited to this page, at most five concurrently, with a shared two-second budget. Tag identity, ETag, filters and pagination are unchanged; name filtering still uses the stored resource name. Defaults to false.
+
+[Link to this property](#)%20resource_tagging%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20include_navigation%20%3E%20(schema)>)
+
 name: optional string
 
 Filter by resource name. Performs a case-insensitive substring match. Example: ?name=my-zone
@@ -1086,7 +1092,7 @@ formatdate-time
 
 <summary>
 
-CwsDeployment object {id, etag, name, 3 more }
+CWSDeployment object {id, etag, name, 3 more }
 
 Response for cws\_deployment resources
 
@@ -1136,7 +1142,7 @@ formatdate-time
 
 <summary>
 
-CwsPolicy object {id, etag, name, 3 more }
+CWSPolicy object {id, etag, name, 3 more }
 
 Response for cws\_policy resources
 
@@ -1186,7 +1192,7 @@ formatdate-time
 
 <summary>
 
-CwsPolicySet object {id, etag, name, 3 more }
+CWSPolicySet object {id, etag, name, 3 more }
 
 Response for cws\_policy\_set resources
 
@@ -1236,7 +1242,7 @@ formatdate-time
 
 <summary>
 
-CwsWorkload object {id, etag, name, 3 more }
+CWSWorkload object {id, etag, name, 3 more }
 
 Response for cws\_workload resources
 
@@ -2026,7 +2032,7 @@ formatdate-time
 
 <summary>
 
-NamespaceWorker object {id, etag, name, 3 more }
+NamespaceWorker object {id, etag, name, 4 more }
 
 Response for namespace\_worker resources
 
@@ -2057,6 +2063,38 @@ Contains key-value pairs of tags. Keys may contain at most 256 characters. Value
 <a href="#">Link to this property</a>
 
 type: "namespace\_worker"
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+navigation: optional object {namespace\_id, namespace\_name, script\_name }
+
+Read-only routing metadata resolved from EWC using the account and immutable namespace Worker ID. Returned only by tagged-resource lists requested with include\_navigation=true. Omitted when lookup is unavailable or the child has been deleted. Never supplied on tag writes or stored as extra\_data.
+
+</summary>
+
+namespace\_id: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+namespace\_name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+script\_name: string
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

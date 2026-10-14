@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Create new job
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 Creates a new indexing job for an AI Search instance.
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -157,7 +157,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/jobs \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/jobs \
     -X POST \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```

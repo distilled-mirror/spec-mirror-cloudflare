@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/ai-search/instances/{id}/jobs
 
 Lists indexing jobs for an AI Search instance.
 
-Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{namespace}/instances (and descendant paths) instead.
 
 ##### Security
 

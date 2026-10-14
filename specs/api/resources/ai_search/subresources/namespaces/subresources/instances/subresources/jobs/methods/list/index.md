@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List Jobs
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 Lists indexing jobs for an AI Search instance.
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.jobs%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -193,7 +193,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/jobs \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/jobs \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

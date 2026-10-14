@@ -60,15 +60,15 @@ Account ID
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20account_id>)
 
-alert\_enabled: boolean
+Deprecatedalert\_enabled: boolean
 
-Whether alerts are enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20alert_enabled>)
 
-alert\_rollup\_enabled: boolean
+Deprecatedalert\_rollup\_enabled: boolean
 
-Whether alert rollup is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20alert_rollup_enabled>)
 
@@ -90,9 +90,9 @@ JSON string containing the query parameters
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20query_json>)
 
-rule\_enabled: boolean
+Deprecatedrule\_enabled: boolean
 
-Whether rule is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20rule_enabled>)
 
@@ -108,21 +108,21 @@ Email of the user who created the query
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20user_email>)
 
-custom\_threat\_feed\_id: optional number
+Deprecatedcustom\_threat\_feed\_id: optional number
 
-Intel Indicator Feed ID (numeric)
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20custom_threat_feed_id>)
 
-rule\_list\_id: optional string
+Deprecatedrule\_list\_id: optional string
 
-WAF rules list ID for blocking
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20rule_list_id>)
 
-rule\_scope: optional string
+Deprecatedrule\_scope: optional string
 
-Scope for the rule
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20rule_scope>)
 

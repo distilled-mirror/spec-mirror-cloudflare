@@ -110,7 +110,7 @@ List of items.
 
 <summary>
 
-id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 12 more
+id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
 
 Vendor identifier (e.g. microsoft\_internal, google\_workspace).
 
@@ -129,6 +129,7 @@ Vendor identifier (e.g. microsoft\_internal, google\_workspace).
 - <code>SALESFORCE</code> - SALESFORCE
 - <code>SERVICENOW</code> - SERVICENOW
 - <code>SLACK</code> - SLACK
+- <code>ZOOM</code> - ZOOM
 
 </summary>
 
@@ -191,6 +192,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
 
 <a href="#">Link to this property</a>
 

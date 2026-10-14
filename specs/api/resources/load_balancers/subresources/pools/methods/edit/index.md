@@ -1154,7 +1154,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/po
     "monitor_group": "monitor_group",
     "name": "primary-dc-1",
     "networks": [
-      "string"
+      "cloudflare",
+      "jdcloud"
     ],
     "notification_email": "someone@example.com,sometwo@example.com",
     "notification_filter": {
@@ -1246,7 +1247,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/po
     "monitor_group": "monitor_group",
     "name": "primary-dc-1",
     "networks": [
-      "string"
+      "cloudflare",
+      "jdcloud"
     ],
     "notification_email": "someone@example.com,sometwo@example.com",
     "notification_filter": {

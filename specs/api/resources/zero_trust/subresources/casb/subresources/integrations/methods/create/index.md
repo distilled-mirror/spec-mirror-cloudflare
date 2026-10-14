@@ -68,7 +68,7 @@ account\_id: string
 
 <summary>
 
-application: "ANTHROPIC"or "AWS"or "BITBUCKET"or 12 more
+application: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
 
 Vendor/application slug (e.g., GOOGLE\_WORKSPACE).
 
@@ -87,6 +87,7 @@ Vendor/application slug (e.g., GOOGLE\_WORKSPACE).
 - <code>SALESFORCE</code> - SALESFORCE
 - <code>SERVICENOW</code> - SERVICENOW
 - <code>SLACK</code> - SLACK
+- <code>ZOOM</code> - ZOOM
 
 </summary>
 
@@ -152,6 +153,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20application%20%3E%20(schema)>)
@@ -172,33 +177,13 @@ minLength1
 
 [Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
-auth\_method: optional string
-
-Authentication method slug (uses default if omitted).
-
-minLength1
-
-[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20auth_method%20%3E%20(schema)>)
-
-dlp\_profiles: optional array of string
-
-List of DLP profile IDs to associate.
-
-[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20dlp_profiles%20%3E%20(schema)>)
-
-permissions: optional array of string
-
-List of permission scopes (uses policy defaults if empty).
-
-[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20permissions%20%3E%20(schema)>)
-
 <details>
 
 <summary>
 
-use\_cases: optional array of "casb"or "ces"or "auto\_remediation"
+use\_cases: array of "casb"or "ces"or "auto\_remediation"
 
-List of use case or feature slugs to enroll (e.g., \[‘casb’, ‘ces’, ‘auto\_remediation’]).
+List of use case or feature slugs to enroll. At least one use case (casb, ces) is required; auto\_remediation may be added alongside casb (e.g., \[‘casb’, ‘ces’, ‘auto\_remediation’]).
 
 </summary>
 
@@ -219,6 +204,26 @@ One of the following:
 </details>
 
 [Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20use_cases%20%3E%20(schema)>)
+
+auth\_method: optional string
+
+Authentication method slug (uses default if omitted).
+
+minLength1
+
+[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20auth_method%20%3E%20(schema)>)
+
+dlp\_profiles: optional array of string
+
+List of DLP profile IDs to associate.
+
+[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20dlp_profiles%20%3E%20(schema)>)
+
+permissions: optional array of string
+
+List of permission scopes (uses policy defaults if empty).
+
+[Link to this property](#)%20zero_trust.casb.integrations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20permissions%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -377,7 +382,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
           "credentials": {
             "admin_email": "bar"
           },
-          "name": "My Google Workspace"
+          "name": "My Google Workspace",
+          "use_cases": [
+            "casb",
+            "ces"
+          ]
         }'
 ```
 

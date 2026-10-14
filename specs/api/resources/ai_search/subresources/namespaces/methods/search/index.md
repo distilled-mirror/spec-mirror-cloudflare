@@ -130,7 +130,7 @@ enabled: optional boolean
 
 custom\_metadata: optional map\[stringor numberor boolean]
 
-Metadata added to AI Gateway logs for requests triggered by this operation. Accepts up to 2 string, number, or boolean entries. Keys ‘ai-search’, ‘task’, ‘origin’, and keys beginning with ‘cf.’ are reserved.
+Metadata added to AI Gateway logs for requests this operation triggers. Accepts up to 2 string, number, or boolean entries. Reserved keys: ‘ai-search’, ‘task’, ‘origin’, and any key beginning with ‘cf.’.
 
 </summary>
 
@@ -310,7 +310,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted, falls back to the instance-level retrieval\_options.keyword\_match\_mode, then to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted, falls back to the instance-level retrieval\_options.keyword\_match\_mode, then to ‘and’.
 
 </summary>
 
@@ -594,7 +594,7 @@ result: object {chunks, query\_kind, errors, search\_query }
 
 <summary>
 
-chunks: array of object {id, instance\_id, score, 4 more }
+chunks: array of object {id, instance\_id, score, 7 more }
 
 </summary>
 
@@ -643,6 +643,22 @@ timestamp: optional number
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+media\_end\_ms: optional number
+
+Audio/video transcript chunks only: end, in milliseconds from the start of the media (whole seconds), of the last transcript section the matched chunk covers. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+media\_start\_ms: optional number
+
+Audio/video transcript chunks only: start, in milliseconds from the start of the media (whole seconds), of the transcript section the matched chunk begins in. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -703,6 +719,30 @@ vector\_score: optional number
 maximum1
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source\_media\_type: optional "audio"or "video"
+
+Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
+
+</summary>
+
+One of the following:
+
+"audio"
+
+<a href="#">Link to this property</a>
+
+"video"
 
 <a href="#">Link to this property</a>
 
@@ -810,6 +850,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
           },
           "timestamp": 0
         },
+        "media_end_ms": 0,
+        "media_start_ms": 0,
         "scoring_details": {
           "fusion_method": "rrf",
           "keyword_rank": 0,
@@ -817,7 +859,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
           "reranking_score": 0,
           "vector_rank": 0,
           "vector_score": 0
-        }
+        },
+        "source_media_type": "audio"
       }
     ],
     "query_kind": "text",
@@ -854,6 +897,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
           },
           "timestamp": 0
         },
+        "media_end_ms": 0,
+        "media_start_ms": 0,
         "scoring_details": {
           "fusion_method": "rrf",
           "keyword_rank": 0,
@@ -861,7 +906,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
           "reranking_score": 0,
           "vector_rank": 0,
           "vector_score": 0
-        }
+        },
+        "source_media_type": "audio"
       }
     ],
     "query_kind": "text",

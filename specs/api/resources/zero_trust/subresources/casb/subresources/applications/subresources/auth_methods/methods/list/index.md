@@ -68,7 +68,7 @@ account\_id: string
 
 <summary>
 
-application\_id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 12 more
+application\_id: "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
 
 </summary>
 
@@ -131,6 +131,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
 
 <a href="#">Link to this property</a>
 

@@ -54,7 +54,7 @@ POST/accounts/{account\_id}/one/integrations/{id}/resume
 
 <summary>
 
-IntegrationListResponse object {id, application, created, 4 more }
+IntegrationListResponse object {id, application, auth\_method, 6 more }
 
 Serializer for v2 integration list responses.
 
@@ -69,6 +69,28 @@ formatuuid
 <a href="#">Link to this property</a>
 
 application: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: object {id, display\_name }
+
+The integration’s authentication method.
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -103,6 +125,28 @@ updated: string
 When the integration was last updated.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+use\_cases: array of object {id, is\_enabled }
+
+Use cases enabled for the integration.
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+is\_enabled: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

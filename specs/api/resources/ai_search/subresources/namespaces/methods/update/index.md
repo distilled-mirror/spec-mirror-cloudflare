@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/ai-search/namespaces/{name}
 
-Update the description and/or the public endpoint configuration of an existing namespace. The default namespace’s description cannot be modified, but its public endpoint can.
+Updates the description and/or the public endpoint configuration of an existing namespace. The default namespace’s description cannot be modified, but its public endpoint can.
 
 ##### Security
 
@@ -96,7 +96,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -122,7 +122,7 @@ enabled: optional boolean
 
 instances\_allowed: optional array of string
 
-Instance IDs exposed through the namespace public endpoint. Empty means nothing is searchable. Every ID must be an existing instance in this namespace, and the list cannot exceed the account’s multi-instance search limit.
+Instance IDs exposed through the namespace public endpoint. Empty means nothing is searchable. Every ID must reference an existing instance in this namespace, and the list must stay within the account’s multi-instance search limit.
 
 <a href="#">Link to this property</a>
 
@@ -140,7 +140,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -206,7 +206,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -272,7 +272,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -298,7 +298,7 @@ enabled: optional boolean
 
 instances\_allowed: optional array of string
 
-Instance IDs exposed through the namespace public endpoint. Empty means nothing is searchable. Every ID must be an existing instance in this namespace, and the list cannot exceed the account’s multi-instance search limit.
+Instance IDs exposed through the namespace public endpoint. Empty means nothing is searchable. Every ID must reference an existing instance in this namespace, and the list must stay within the account’s multi-instance search limit.
 
 <a href="#">Link to this property</a>
 
@@ -316,7 +316,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -382,7 +382,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 

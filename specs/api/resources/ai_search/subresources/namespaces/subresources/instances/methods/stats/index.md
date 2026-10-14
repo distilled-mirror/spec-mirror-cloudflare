@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get instance statistics.
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/stats
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/stats
 
 Retrieve usage and indexing statistics for an AI Search instance.
 
@@ -62,9 +62,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20stats%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20stats%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20stats%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -92,7 +92,7 @@ completed: optional number
 
 degraded: optional boolean
 
-True when status counts are unavailable (e.g. legacy stats query exceeded D1 statement-size limit). Counts are omitted in this case.
+True when the API cannot compute status counts (e.g. the legacy stats query exceeded the D1 statement-size limit). The response omits counts in this case.
 
 <a href="#">Link to this property</a>
 
@@ -207,7 +207,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/stats \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/stats \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

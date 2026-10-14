@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/ai-search/tokens
 
-List stored AI Search credentials in the account without exposing their secrets.
+Lists stored AI Search credentials in the account without exposing their secrets.
 
 ##### Security
 

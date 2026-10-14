@@ -206,7 +206,7 @@ List of messages.
 
 <summary>
 
-result: array of object {id, application, created, 4 more }
+result: array of object {id, application, auth\_method, 6 more }
 
 List of items.
 
@@ -221,6 +221,28 @@ formatuuid
 <a href="#">Link to this property</a>
 
 application: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+auth\_method: object {id, display\_name }
+
+The integration’s authentication method.
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -255,6 +277,28 @@ updated: string
 When the integration was last updated.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+use\_cases: array of object {id, is\_enabled }
+
+Use cases enabled for the integration.
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+is\_enabled: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -346,12 +390,26 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
         "display_name": "Google Workspace",
         "logo": "https://dash.cloudflare.com/v2/static/google_workspace.png"
       },
+      "auth_method": {
+        "display_name": "Google Domain-Wide Delegation Service Account",
+        "id": "google_domain_wide_delegation_service_account"
+      },
       "created": "2025-01-15T10:00:00Z",
       "id": "019d2e6a-d995-7185-afbd-4feead9e42ec",
       "is_paused": false,
       "name": "My Google Workspace",
       "status": "Healthy",
-      "updated": "2025-04-10T08:30:00Z"
+      "updated": "2025-04-10T08:30:00Z",
+      "use_cases": [
+        {
+          "id": "casb",
+          "is_enabled": true
+        },
+        {
+          "id": "ces",
+          "is_enabled": false
+        }
+      ]
     }
   ],
   "result_info": {
@@ -381,12 +439,26 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
         "display_name": "Google Workspace",
         "logo": "https://dash.cloudflare.com/v2/static/google_workspace.png"
       },
+      "auth_method": {
+        "display_name": "Google Domain-Wide Delegation Service Account",
+        "id": "google_domain_wide_delegation_service_account"
+      },
       "created": "2025-01-15T10:00:00Z",
       "id": "019d2e6a-d995-7185-afbd-4feead9e42ec",
       "is_paused": false,
       "name": "My Google Workspace",
       "status": "Healthy",
-      "updated": "2025-04-10T08:30:00Z"
+      "updated": "2025-04-10T08:30:00Z",
+      "use_cases": [
+        {
+          "id": "casb",
+          "is_enabled": true
+        },
+        {
+          "id": "ces",
+          "is_enabled": false
+        }
+      ]
     }
   ],
   "result_info": {

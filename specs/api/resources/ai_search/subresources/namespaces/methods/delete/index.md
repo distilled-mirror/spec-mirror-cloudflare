@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/ai-search/namespaces/{name}
 
-Permanently delete a namespace. The namespace must be empty (no instances), and the default namespace cannot be deleted.
+Deletes a namespace permanently. The namespace must not contain any instances (instances whose deletion is still in progress do not count), and the default namespace cannot be deleted.
 
 ##### Security
 

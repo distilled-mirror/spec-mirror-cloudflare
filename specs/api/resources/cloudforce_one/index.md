@@ -2560,15 +2560,15 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-alert\_enabled: boolean
+Deprecatedalert\_enabled: boolean
 
-Whether alerts are enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
-alert\_rollup\_enabled: boolean
+Deprecatedalert\_rollup\_enabled: boolean
 
-Whether alert rollup is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2590,9 +2590,9 @@ JSON string containing the query parameters
 
 <a href="#">Link to this property</a>
 
-rule\_enabled: boolean
+Deprecatedrule\_enabled: boolean
 
-Whether rule is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2608,21 +2608,21 @@ Email of the user who created the query
 
 <a href="#">Link to this property</a>
 
-custom\_threat\_feed\_id: optional number
+Deprecatedcustom\_threat\_feed\_id: optional number
 
-Intel Indicator Feed ID (numeric)
-
-<a href="#">Link to this property</a>
-
-rule\_list\_id: optional string
-
-WAF rules list ID for blocking
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
-rule\_scope: optional string
+Deprecatedrule\_list\_id: optional string
 
-Scope for the rule
+Deprecated: saved-query alerting and rules were removed. Always null.
+
+<a href="#">Link to this property</a>
+
+Deprecatedrule\_scope: optional string
+
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
@@ -2650,15 +2650,15 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-alert\_enabled: boolean
+Deprecatedalert\_enabled: boolean
 
-Whether alerts are enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
-alert\_rollup\_enabled: boolean
+Deprecatedalert\_rollup\_enabled: boolean
 
-Whether alert rollup is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2680,9 +2680,9 @@ JSON string containing the query parameters
 
 <a href="#">Link to this property</a>
 
-rule\_enabled: boolean
+Deprecatedrule\_enabled: boolean
 
-Whether rule is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2698,21 +2698,21 @@ Email of the user who created the query
 
 <a href="#">Link to this property</a>
 
-custom\_threat\_feed\_id: optional number
+Deprecatedcustom\_threat\_feed\_id: optional number
 
-Intel Indicator Feed ID (numeric)
-
-<a href="#">Link to this property</a>
-
-rule\_list\_id: optional string
-
-WAF rules list ID for blocking
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
-rule\_scope: optional string
+Deprecatedrule\_list\_id: optional string
 
-Scope for the rule
+Deprecated: saved-query alerting and rules were removed. Always null.
+
+<a href="#">Link to this property</a>
+
+Deprecatedrule\_scope: optional string
+
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
@@ -2740,15 +2740,15 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-alert\_enabled: boolean
+Deprecatedalert\_enabled: boolean
 
-Whether alerts are enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
-alert\_rollup\_enabled: boolean
+Deprecatedalert\_rollup\_enabled: boolean
 
-Whether alert rollup is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2770,9 +2770,9 @@ JSON string containing the query parameters
 
 <a href="#">Link to this property</a>
 
-rule\_enabled: boolean
+Deprecatedrule\_enabled: boolean
 
-Whether rule is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2788,21 +2788,21 @@ Email of the user who created the query
 
 <a href="#">Link to this property</a>
 
-custom\_threat\_feed\_id: optional number
+Deprecatedcustom\_threat\_feed\_id: optional number
 
-Intel Indicator Feed ID (numeric)
-
-<a href="#">Link to this property</a>
-
-rule\_list\_id: optional string
-
-WAF rules list ID for blocking
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
-rule\_scope: optional string
+Deprecatedrule\_list\_id: optional string
 
-Scope for the rule
+Deprecated: saved-query alerting and rules were removed. Always null.
+
+<a href="#">Link to this property</a>
+
+Deprecatedrule\_scope: optional string
+
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
@@ -2830,15 +2830,15 @@ Account ID
 
 <a href="#">Link to this property</a>
 
-alert\_enabled: boolean
+Deprecatedalert\_enabled: boolean
 
-Whether alerts are enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
-alert\_rollup\_enabled: boolean
+Deprecatedalert\_rollup\_enabled: boolean
 
-Whether alert rollup is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2860,9 +2860,9 @@ JSON string containing the query parameters
 
 <a href="#">Link to this property</a>
 
-rule\_enabled: boolean
+Deprecatedrule\_enabled: boolean
 
-Whether rule is enabled
+Deprecated: saved-query alerting and rules were removed. Always false.
 
 <a href="#">Link to this property</a>
 
@@ -2878,21 +2878,21 @@ Email of the user who created the query
 
 <a href="#">Link to this property</a>
 
-custom\_threat\_feed\_id: optional number
+Deprecatedcustom\_threat\_feed\_id: optional number
 
-Intel Indicator Feed ID (numeric)
-
-<a href="#">Link to this property</a>
-
-rule\_list\_id: optional string
-
-WAF rules list ID for blocking
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 
-rule\_scope: optional string
+Deprecatedrule\_list\_id: optional string
 
-Scope for the rule
+Deprecated: saved-query alerting and rules were removed. Always null.
+
+<a href="#">Link to this property</a>
+
+Deprecatedrule\_scope: optional string
+
+Deprecated: saved-query alerting and rules were removed. Always null.
 
 <a href="#">Link to this property</a>
 

@@ -58,6 +58,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Workers Scripts Write``Workers Admin``Individual Workers Admin``Individual Workers Editor`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string

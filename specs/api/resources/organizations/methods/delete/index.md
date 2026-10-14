@@ -24,8 +24,6 @@ Delete an organization. The organization MUST be empty before deleting. It must 
 
 **Access Control:** Restricted to enterprise organizations.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.update` is required. User API Tokens are not currently supported.
-
 ##### Security
 
 API Email + API Key

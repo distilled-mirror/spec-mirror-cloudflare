@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Delete Item.
 
-DELETE/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+DELETE/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 Deletes a file from a managed AI Search instance and removes its indexed data.
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -111,7 +111,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/items/$ITEM_ID \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/items/$ITEM_ID \
     -X DELETE \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```

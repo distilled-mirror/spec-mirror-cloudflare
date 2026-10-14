@@ -188,7 +188,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-dns\_destination\_ips\_id: optional string
+dns\_destination\_ips\_id: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips%20%3E%20(schema)">DNSDestinationIPs</a>
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 

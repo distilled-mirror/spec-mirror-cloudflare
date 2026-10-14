@@ -58,7 +58,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Workers Tail Read``Workers Scripts Write``Workers Scripts Read`
+`Workers Tail Read``Workers Scripts Write``Workers Scripts Read``Workers Admin``Workers Editor``Workers Content Read-Only``Workers Metadata Read-Only``Individual Workers Admin``Individual Workers Editor``Individual Workers Content Read-Only``Individual Workers Metadata Read-Only`
 
 ##### P ath ParametersExpand Collapse
 

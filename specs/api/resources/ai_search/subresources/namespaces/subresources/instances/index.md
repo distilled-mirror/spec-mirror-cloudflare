@@ -22,35 +22,39 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List AI Search instances.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/list)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances
 
 ##### [Create an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/create)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances
 
 ##### [Get an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/read)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}
 
 ##### [Update an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/update)
 
-PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
+PUT/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}
 
 ##### [Delete an AI Search instance.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/delete)
 
-DELETE/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
+DELETE/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}
+
+##### [Move an instance to a different namespace.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/move)
+
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}
 
 ##### [Get instance statistics.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/stats)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/stats
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/stats
 
 ##### [Search](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/search)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/search
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/search
 
 ##### [Chat Completions](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/methods/chat_completions)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/chat/completions
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/chat/completions
 
 ##### ModelsExpand Collapse
 
@@ -740,7 +744,7 @@ include\_subdomains: optional boolean
 
 limit: optional number
 
-Maximum number of pages to crawl. New values are capped at 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
+Maximum number of pages to crawl. New values have a maximum of 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
 
 maximum100000
 
@@ -1216,7 +1220,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1388,7 +1392,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1426,7 +1430,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1492,7 +1496,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1582,7 +1586,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -1636,13 +1640,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -1668,7 +1672,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -1684,7 +1688,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -1760,7 +1764,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -1776,7 +1780,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -1790,7 +1794,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -1818,7 +1822,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -2174,7 +2178,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -2346,7 +2350,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -2384,7 +2388,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -2450,7 +2454,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -2540,7 +2544,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -2594,13 +2598,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -2626,7 +2630,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -2642,7 +2646,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -2718,7 +2722,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -2734,7 +2738,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -2748,7 +2752,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -2776,7 +2780,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -3132,7 +3136,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -3304,7 +3308,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -3342,7 +3346,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -3408,7 +3412,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -3498,7 +3502,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -3552,13 +3556,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -3584,7 +3588,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -3600,7 +3604,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -3676,7 +3680,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -3692,7 +3696,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -3706,7 +3710,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -3734,7 +3738,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -4090,7 +4094,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -4262,7 +4266,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -4300,7 +4304,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -4366,7 +4370,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -4456,7 +4460,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -4510,13 +4514,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -4542,7 +4546,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -4558,7 +4562,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -4634,7 +4638,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -4650,7 +4654,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -4664,7 +4668,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -4692,7 +4696,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -4804,6 +4808,10 @@ One of the following:
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(model)%20instance_delete_response%20%3E%20(schema)>)
 
+InstanceMoveResponse = unknown
+
+[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(model)%20instance_move_response%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -4818,7 +4826,7 @@ completed: optional number
 
 degraded: optional boolean
 
-True when status counts are unavailable (e.g. legacy stats query exceeded D1 statement-size limit). Counts are omitted in this case.
+True when the API cannot compute status counts (e.g. the legacy stats query exceeded the D1 statement-size limit). The response omits counts in this case.
 
 <a href="#">Link to this property</a>
 
@@ -4934,7 +4942,7 @@ InstanceSearchResponse object {chunks, query\_kind, search\_query }
 
 <summary>
 
-chunks: array of object {id, score, text, 3 more }
+chunks: array of object {id, score, text, 6 more }
 
 </summary>
 
@@ -4979,6 +4987,22 @@ timestamp: optional number
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+media\_end\_ms: optional number
+
+Audio/video transcript chunks only: end, in milliseconds from the start of the media (whole seconds), of the last transcript section the matched chunk covers. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+media\_start\_ms: optional number
+
+Audio/video transcript chunks only: start, in milliseconds from the start of the media (whole seconds), of the transcript section the matched chunk begins in. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -5039,6 +5063,30 @@ vector\_score: optional number
 maximum1
 
 minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source\_media\_type: optional "audio"or "video"
+
+Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
+
+</summary>
+
+One of the following:
+
+"audio"
+
+<a href="#">Link to this property</a>
+
+"video"
 
 <a href="#">Link to this property</a>
 
@@ -5300,7 +5348,7 @@ index: optional number
 
 <summary>
 
-chunks: array of object {id, score, text, 3 more }
+chunks: array of object {id, score, text, 6 more }
 
 </summary>
 
@@ -5345,6 +5393,22 @@ timestamp: optional number
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+media\_end\_ms: optional number
+
+Audio/video transcript chunks only: end, in milliseconds from the start of the media (whole seconds), of the last transcript section the matched chunk covers. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+media\_start\_ms: optional number
+
+Audio/video transcript chunks only: start, in milliseconds from the start of the media (whole seconds), of the transcript section the matched chunk begins in. Describes the matched chunk before any context expansion, not the expanded <code>text</code>.
+
+minimum0
 
 <a href="#">Link to this property</a>
 
@@ -5412,6 +5476,30 @@ minimum0
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+source\_media\_type: optional "audio"or "video"
+
+Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
+
+</summary>
+
+One of the following:
+
+"audio"
+
+<a href="#">Link to this property</a>
+
+"video"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -5436,23 +5524,23 @@ object: optional string
 
 ##### [List Jobs](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/list)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 ##### [Create new job](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/create)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 ##### [Get a Job Details](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/get)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}
 
 ##### [Cancel an indexing job.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/update)
 
-PATCH/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}
 
 ##### [List Job Logs](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/logs)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}/logs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}/logs
 
 ##### ModelsExpand Collapse
 
@@ -5720,39 +5808,39 @@ message\_type: number
 
 ##### [Items List.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/list)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Upload Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/upload)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Create or Update Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/create_or_update)
 
-PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+PUT/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Get Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/get)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Sync Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/sync)
 
-PATCH/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Delete Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/delete)
 
-DELETE/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+DELETE/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Download Item Content.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/download)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/download
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/download
 
 ##### [Item Logs.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/logs)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/logs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/logs
 
 ##### [List Item Chunks.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/chunks)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/chunks
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/chunks
 
 ##### ModelsExpand Collapse
 

@@ -24,9 +24,9 @@ Deprecated
 
 GET/accounts/{account\_id}/ai-search/instances
 
-List all AI Search instances in the account.
+Lists all AI Search instances in the account.
 
-Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{namespace}/instances (and descendant paths) instead.
 
 ##### Security
 
@@ -68,7 +68,7 @@ account\_id: string
 
 hostname: optional string
 
-Filter by exact Search for Agents hostname (case-insensitive).
+Return only instances with this exact Search for Agents hostname (case-insensitive).
 
 maxLength253
 
@@ -78,7 +78,7 @@ minLength1
 
 namespace: optional string
 
-Filter by namespace.
+Return only instances in this namespace.
 
 [Link to this property](#)%20ai_search.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
@@ -826,7 +826,7 @@ include\_subdomains: optional boolean
 
 limit: optional number
 
-Maximum number of pages to crawl. New values are capped at 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
+Maximum number of pages to crawl. New values have a maximum of 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
 
 maximum100000
 

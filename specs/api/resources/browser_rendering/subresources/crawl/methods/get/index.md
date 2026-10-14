@@ -244,7 +244,7 @@ Markdown of the content of the crawled URL.
 
 <summary>
 
-metadata: optional object {status, url, title }
+metadata: optional object {status, url, lastModified, 6 more }
 
 Absent for urls that never reached a fetch.
 
@@ -259,6 +259,42 @@ HTTP status code of the crawled page.
 url: string
 
 Final URL of the crawled page.
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+Value of the Last-Modified response header, when provided by the origin.
+
+<a href="#">Link to this property</a>
+
+"og:description": optional string
+
+Open Graph description of the crawled page.
+
+<a href="#">Link to this property</a>
+
+"og:image": optional string
+
+Open Graph image of the crawled page.
+
+<a href="#">Link to this property</a>
+
+"og:site\_name": optional string
+
+Open Graph site name of the crawled page.
+
+<a href="#">Link to this property</a>
+
+"og:title": optional string
+
+Open Graph title of the crawled page.
+
+<a href="#">Link to this property</a>
+
+"og:type": optional string
+
+Open Graph type of the crawled page.
 
 <a href="#">Link to this property</a>
 
@@ -365,6 +401,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
         "metadata": {
           "status": 0,
           "url": "url",
+          "lastModified": "lastModified",
+          "og:description": "og:description",
+          "og:image": "og:image",
+          "og:site_name": "og:site_name",
+          "og:title": "og:title",
+          "og:type": "og:type",
           "title": "title"
         }
       }
@@ -406,6 +448,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
         "metadata": {
           "status": 0,
           "url": "url",
+          "lastModified": "lastModified",
+          "og:description": "og:description",
+          "og:image": "og:image",
+          "og:site_name": "og:site_name",
+          "og:title": "og:title",
+          "og:type": "og:type",
           "title": "title"
         }
       }

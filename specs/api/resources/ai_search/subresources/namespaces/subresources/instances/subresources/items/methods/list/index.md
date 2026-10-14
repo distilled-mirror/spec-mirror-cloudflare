@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Items List.
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 Lists indexed items in an AI Search instance.
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -82,7 +82,7 @@ minLength1
 
 item\_id: optional string
 
-Filter items by their unique ID. Returns at most one item.
+Return only the item with this unique ID. Returns at most one item.
 
 maxLength64
 
@@ -90,7 +90,7 @@ maxLength64
 
 key: optional string
 
-Filter items by their exact key (object key / filename). Keys are unique per source, so combine with `source` to disambiguate across data sources.
+Return only items with this exact key (object key / filename). Each key is unique within a source, so combine with `source` to disambiguate across data sources.
 
 maxLength1024
 
@@ -98,7 +98,7 @@ maxLength1024
 
 metadata\_filter: optional string
 
-JSON-encoded metadata filter using Vectorize filter syntax. Examples: {“folder”:“reports/”}, {“timestamp”:{“$gte”:1700000000000}}, {“folder”:{“$in”:\[“docs/”,“reports/”]}}
+JSON-encoded metadata filter using Vectorize filter syntax. Examples: {“folder”:“reports/”}, {“timestamp”:{“$gte”:1700000000000}}, {“folder”:{“$in”:\[“docs/”,“reports/”]}}.
 
 maxLength2048
 
@@ -130,7 +130,7 @@ maxLength256
 
 sort\_by: optional "status"or "modified\_at"
 
-Sort order for items. “status” (default) sorts by status priority then last\_seen\_at. “modified\_at” sorts by file modification time (most recent first), falling back to created\_at.
+Sort order for items. “status” (default) sorts items according to status priority, then last\_seen\_at. “modified\_at” sorts items according to file modification time (most recent first), falling back to created\_at.
 
 </summary>
 
@@ -150,7 +150,7 @@ One of the following:
 
 source: optional string
 
-Filter items by source\_id. Use “builtin” for uploaded files, or a source identifier like “web-crawler: https://example.com”.
+Return only items with this source\_id. Use “builtin” for uploaded files, or a source identifier like “web-crawler: https://example.com”.
 
 maxLength512
 
@@ -385,7 +385,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/items \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/items \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

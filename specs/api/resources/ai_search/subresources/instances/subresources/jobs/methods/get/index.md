@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/ai-search/instances/{id}/jobs/{job\_id}
 
 Retrieves details for a specific AI Search indexing job.
 
-Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{namespace}/instances (and descendant paths) instead.
 
 ##### Security
 

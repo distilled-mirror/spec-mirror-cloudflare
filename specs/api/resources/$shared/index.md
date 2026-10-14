@@ -586,28 +586,6 @@ The unique identifier for a certificate\_pack.
 
 <summary>
 
-LoadBalancerPreview object {pools, preview\_id }
-
-</summary>
-
-pools: optional map\[string]
-
-Monitored pool IDs mapped to their respective names.
-
-<a href="#">Link to this property</a>
-
-preview\_id: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20%24shared%20%3E%20(model)%20load_balancer_preview%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 Member object {id, email, policies, 3 more }
 
 </summary>

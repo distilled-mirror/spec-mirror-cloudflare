@@ -24,39 +24,39 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Items List.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/list)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Upload Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/upload)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Create or Update Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/create_or_update)
 
-PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items
+PUT/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items
 
 ##### [Get Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/get)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Sync Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/sync)
 
-PATCH/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Delete Item.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/delete)
 
-DELETE/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+DELETE/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
 ##### [Download Item Content.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/download)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/download
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/download
 
 ##### [Item Logs.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/logs)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/logs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/logs
 
 ##### [List Item Chunks.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/items/methods/chunks)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/chunks
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/chunks
 
 ##### ModelsExpand Collapse
 

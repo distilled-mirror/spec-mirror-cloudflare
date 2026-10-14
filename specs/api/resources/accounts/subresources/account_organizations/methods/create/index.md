@@ -24,8 +24,6 @@ POST/accounts/{account\_id}/move
 
 Move an account into a destination organization, either assigning a standalone account to an organization or moving it between organizations in the same hierarchy. Availability depends on the organization’s capabilities.
 
-Authentication: A Global API key is required. User API Tokens do not include the required `com.cloudflare.api.account.move` permission.
-
 ##### Security
 
 API Email + API Key

@@ -132,23 +132,43 @@ priority: optional number
 
 [Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20priority%20%3E%20(schema)>)
 
+provisioned\_download\_kbps: optional number
+
+Provisioned download rate of the WAN circuit in kilobits per second. Set to null to remove it.
+
+maximum1000000000
+
+minimum1
+
+[Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20provisioned_download_kbps%20%3E%20(schema)>)
+
+provisioned\_upload\_kbps: optional number
+
+Provisioned upload rate of the WAN circuit in kilobits per second. Set to null to remove it.
+
+maximum1000000000
+
+minimum1
+
+[Link to this property](#)%20magic_transit.sites.wans%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20provisioned_upload_kbps%20%3E%20(schema)>)
+
 <details>
 
 <summary>
 
-static\_addressing: optional <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan_static_addressing%20%3E%20(schema)">WANStaticAddressing</a> { address, gateway\_address, secondary\_address }
+static\_addressing: optional object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
-(optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
+Static addressing configuration. PATCH updates only the fields provided, and PUT replaces the configuration.
 
 </summary>
 
-address: string
+address: optional string
 
 A valid CIDR notation representing an IP range.
 
 <a href="#">Link to this property</a>
 
-gateway\_address: string
+gateway\_address: optional string
 
 A valid IPv4 address.
 
@@ -157,6 +177,12 @@ A valid IPv4 address.
 secondary\_address: optional string
 
 A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+secondary\_gateway\_address: optional string
+
+Gateway address for the secondary connector of a high availability site. Set to null to remove it.
 
 <a href="#">Link to this property</a>
 
@@ -260,7 +286,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, load\_balance\_inner\_flows, 6 more }
+result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan%20%3E%20(schema)">WAN</a> { id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
 
 </summary>
 
@@ -318,6 +344,26 @@ Priority of WAN for traffic loadbalancing.
 
 <a href="#">Link to this property</a>
 
+provisioned\_download\_kbps: optional number
+
+Provisioned download rate of the WAN circuit in kilobits per second.
+
+maximum1000000000
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+provisioned\_upload\_kbps: optional number
+
+Provisioned upload rate of the WAN circuit in kilobits per second.
+
+maximum1000000000
+
+minimum1
+
+<a href="#">Link to this property</a>
+
 site\_id: optional string
 
 Identifier
@@ -330,7 +376,7 @@ maxLength32
 
 <summary>
 
-static\_addressing: optional <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan_static_addressing%20%3E%20(schema)">WANStaticAddressing</a> { address, gateway\_address, secondary\_address }
+static\_addressing: optional <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan_static_addressing%20%3E%20(schema)">WANStaticAddressing</a> { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 
@@ -351,6 +397,12 @@ A valid IPv4 address.
 secondary\_address: optional string
 
 A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+secondary\_gateway\_address: optional string
+
+Gateway address for the secondary connector of a high availability site.
 
 <a href="#">Link to this property</a>
 
@@ -388,6 +440,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     -d '{
           "health_check_rate": "low",
           "physport": 1,
+          "provisioned_download_kbps": 500,
+          "provisioned_upload_kbps": 100,
           "vlan_tag": 42
         }'
 ```
@@ -423,11 +477,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     "name": "name",
     "physport": 1,
     "priority": 0,
+    "provisioned_download_kbps": 500,
+    "provisioned_upload_kbps": 100,
     "site_id": "023e105f4ecef8ad9ca31a8372d0c353",
     "static_addressing": {
       "address": "192.0.2.0/24",
       "gateway_address": "192.0.2.1",
-      "secondary_address": "192.0.2.0/24"
+      "secondary_address": "192.0.2.0/24",
+      "secondary_gateway_address": "192.0.2.1"
     },
     "vlan_tag": 42
   },
@@ -468,11 +525,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
     "name": "name",
     "physport": 1,
     "priority": 0,
+    "provisioned_download_kbps": 500,
+    "provisioned_upload_kbps": 100,
     "site_id": "023e105f4ecef8ad9ca31a8372d0c353",
     "static_addressing": {
       "address": "192.0.2.0/24",
       "gateway_address": "192.0.2.1",
-      "secondary_address": "192.0.2.0/24"
+      "secondary_address": "192.0.2.0/24",
+      "secondary_gateway_address": "192.0.2.1"
     },
     "vlan_tag": 42
   },

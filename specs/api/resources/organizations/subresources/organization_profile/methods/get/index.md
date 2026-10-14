@@ -24,8 +24,6 @@ GET/organizations/{organization\_id}/profile
 
 Get an organizations profile if it exists.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.read` is required. User API Tokens are not currently supported.
-
 ##### Security
 
 API Email + API Key

@@ -26,7 +26,7 @@ GET/accounts/{account\_id}/ai-search/instances/{id}/stats
 
 Retrieve usage and indexing statistics for an AI Search instance.
 
-Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{name}/instances (and descendant paths) instead.
+Deprecated: use /accounts/{account\_id}/ai-search/namespaces/{namespace}/instances (and descendant paths) instead.
 
 ##### Security
 
@@ -90,7 +90,7 @@ completed: optional number
 
 degraded: optional boolean
 
-True when status counts are unavailable (e.g. legacy stats query exceeded D1 statement-size limit). Counts are omitted in this case.
+True when the API cannot compute status counts (e.g. the legacy stats query exceeded the D1 statement-size limit). The response omits counts in this case.
 
 <a href="#">Link to this property</a>
 

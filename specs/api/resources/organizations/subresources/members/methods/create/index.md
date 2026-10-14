@@ -24,8 +24,6 @@ POST/organizations/{organization\_id}/members
 
 Create a membership that grants access to a specific Organization.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.member.create` is required. User API Tokens are not currently supported.
-
 ##### Security
 
 API Email + API Key

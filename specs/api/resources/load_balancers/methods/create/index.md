@@ -2306,6 +2306,10 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
           },
           "description": "Load Balancer for www.example.com",
           "enabled": true,
+          "networks": [
+            "cloudflare",
+            "jdcloud"
+          ],
           "pop_pools": {
             "LAX": [
               "de90f38ced07c2e2f4df50b1f61d4194",
@@ -2390,7 +2394,8 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "modified_on": "2014-01-01T05:20:00.12345Z",
     "name": "www.example.com",
     "networks": [
-      "string"
+      "cloudflare",
+      "jdcloud"
     ],
     "pool_sets": [
       {
@@ -2626,7 +2631,8 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "modified_on": "2014-01-01T05:20:00.12345Z",
     "name": "www.example.com",
     "networks": [
-      "string"
+      "cloudflare",
+      "jdcloud"
     ],
     "pool_sets": [
       {

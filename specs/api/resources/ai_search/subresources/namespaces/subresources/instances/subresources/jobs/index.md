@@ -24,23 +24,23 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [List Jobs](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/list)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 ##### [Create new job](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/create)
 
-POST/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs
+POST/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs
 
 ##### [Get a Job Details](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/get)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}
 
 ##### [Cancel an indexing job.](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/update)
 
-PATCH/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}
 
 ##### [List Job Logs](https://developers.cloudflare.com/api/resources/ai_search/subresources/namespaces/subresources/instances/subresources/jobs/methods/logs)
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/jobs/{job\_id}/logs
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/jobs/{job\_id}/logs
 
 ##### ModelsExpand Collapse
 

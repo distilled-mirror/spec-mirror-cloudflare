@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Download Item Content.
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}/download
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}/download
 
 Downloads the raw file content for a specific item from the managed AI Search instance storage.
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20download%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20download%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20download%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -89,7 +89,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/items/$ITEM_ID/download \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/items/$ITEM_ID/download \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

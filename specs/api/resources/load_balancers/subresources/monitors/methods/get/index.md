@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/load\_balancers/monitors/{monitor\_id}
 
-List a single configured monitor for an account.
+Fetch a single configured monitor for an account.
 
 ##### Security
 

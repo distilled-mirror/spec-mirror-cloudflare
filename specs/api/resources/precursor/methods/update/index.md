@@ -22,14 +22,14 @@ PUT/zones/{zone\_id}/precursor
 
 Updates the Precursor configuration for a zone.
 
-`default_mode` sets the zone-level enforcement mode. `enforcement_rules` is the ordered list of rules that override enforcement for matching requests.
+`mode` controls whether Precursor detection is off, monitoring, or armed. `show_interstitial` controls the zone-level response when armed. `rules` is the ordered list of overrides for matching requests.
 
 This is a partial update: only the fields present in the request body are changed.
 
-- Sending an empty array ( `[]`) clears all enforcement rules.
-- At least one of `default_mode` or `enforcement_rules` must be present; an empty body ( `{}`) is rejected with `400`.
+- Sending an empty array ( `[]`) clears all rules.
+- At least one of `mode`, `show_interstitial`, or `rules` must be present; an empty body ( `{}`) is rejected with `400`.
 - Rule `id` is read-only (assigned by Cloudflare) and ignored on input.
-- Rule `mode` must be `min-friction` or `max-security` ( `off` is not a valid rule mode; use `default_mode` to disable enforcement).
+- Rule `show_interstitial` is required and controls the response for requests that match that rule.
 - Rule `expression` is limited to 4000 characters. The limit applies to each rule individually, not to the combined size of all rules.
 
 ##### Security
@@ -72,15 +72,21 @@ maxLength32
 
 [Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
+##### H eader ParametersExpand Collapse
+
+"Cloudflare-Version": "1.0"
+
+[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20Cloudflare-Version%20%3E%20(schema)>)
+
 ##### Body ParametersJSONExpand Collapse
 
 <details>
 
 <summary>
 
-Deprecateddefault\_mode: optional "off"or "min-friction"or "max-security"
+mode: optional "off"or "monitor"or "arm"
 
-The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
+Controls Precursor detection for the zone. <code>off</code> disables detection, <code>monitor</code> records detections without affecting bot scores, and <code>arm</code> allows detections to affect bot scores.
 
 </summary>
 
@@ -90,25 +96,25 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"min-friction"
+"monitor"
 
 <a href="#">Link to this property</a>
 
-"max-security"
+"arm"
 
 <a href="#">Link to this property</a>
 
 </details>
 
-[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20default_mode%20%3E%20(schema)>)
+[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20mode%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-Deprecatedenforcement\_rules: optional array of <a href="https://developers.cloudflare.com/api/resources/precursor#(resource)%20precursor%20%3E%20(model)%20enforcement_rule%20%3E%20(schema)">EnforcementRule</a> { expression, mode, id, 2 more }
+rules: optional array of object {expression, show\_interstitial, id, 2 more }
 
-The ordered list of enforcement rules for the zone.
+The ordered list of Precursor rules for the zone.
 
 </summary>
 
@@ -120,27 +126,9 @@ maxLength4000
 
 <a href="#">Link to this property</a>
 
-<details>
+show\_interstitial: boolean
 
-<summary>
-
-mode: "min-friction"or "max-security"
-
-The override mode Precursor applies to requests matching an enforcement rule. Unlike <code>default_mode</code>, this cannot be <code>off</code>.
-
-</summary>
-
-One of the following:
-
-"min-friction"
-
-<a href="#">Link to this property</a>
-
-"max-security"
-
-<a href="#">Link to this property</a>
-
-</details>
+Whether Precursor shows an interstitial when it takes action on a request.
 
 <a href="#">Link to this property</a>
 
@@ -164,7 +152,13 @@ Whether the rule is active.
 
 </details>
 
-[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20enforcement_rules%20%3E%20(schema)>)
+[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20rules%20%3E%20(schema)>)
+
+show\_interstitial: optional boolean
+
+Whether Precursor shows an interstitial when it takes action on a request.
+
+[Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20show_interstitial%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -262,7 +256,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/precursor#(resource)%20precursor%20%3E%20(model)%20precursor_config%20%3E%20(schema)">PrecursorConfig</a> { default\_mode, enforcement\_rules }
+result: optional <a href="https://developers.cloudflare.com/api/resources/precursor#(resource)%20precursor%20%3E%20(model)%20precursor_config%20%3E%20(schema)">PrecursorConfig</a> { mode, rules, show\_interstitial }
 
 </summary>
 
@@ -270,9 +264,9 @@ result: optional <a href="https://developers.cloudflare.com/api/resources/precur
 
 <summary>
 
-Deprecateddefault\_mode: optional "off"or "min-friction"or "max-security"
+mode: optional "off"or "monitor"or "arm"
 
-The zone-level Precursor enforcement mode applied to requests that do not match a more specific enforcement rule.
+Controls Precursor detection for the zone. <code>off</code> disables detection, <code>monitor</code> records detections without affecting bot scores, and <code>arm</code> allows detections to affect bot scores.
 
 </summary>
 
@@ -282,11 +276,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"min-friction"
+"monitor"
 
 <a href="#">Link to this property</a>
 
-"max-security"
+"arm"
 
 <a href="#">Link to this property</a>
 
@@ -298,9 +292,9 @@ One of the following:
 
 <summary>
 
-Deprecatedenforcement\_rules: optional array of <a href="https://developers.cloudflare.com/api/resources/precursor#(resource)%20precursor%20%3E%20(model)%20enforcement_rule%20%3E%20(schema)">EnforcementRule</a> { expression, mode, id, 2 more }
+rules: optional array of object {expression, show\_interstitial, id, 2 more }
 
-The ordered list of enforcement rules for the zone.
+The ordered list of Precursor rules for the zone.
 
 </summary>
 
@@ -312,27 +306,9 @@ maxLength4000
 
 <a href="#">Link to this property</a>
 
-<details>
+show\_interstitial: boolean
 
-<summary>
-
-mode: "min-friction"or "max-security"
-
-The override mode Precursor applies to requests matching an enforcement rule. Unlike <code>default_mode</code>, this cannot be <code>off</code>.
-
-</summary>
-
-One of the following:
-
-"min-friction"
-
-<a href="#">Link to this property</a>
-
-"max-security"
-
-<a href="#">Link to this property</a>
-
-</details>
+Whether Precursor shows an interstitial when it takes action on a request.
 
 <a href="#">Link to this property</a>
 
@@ -358,6 +334,12 @@ Whether the rule is active.
 
 <a href="#">Link to this property</a>
 
+show\_interstitial: optional boolean
+
+Whether Precursor shows an interstitial when it takes action on a request.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20precursor%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -374,7 +356,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/precursor \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "default_mode": "min-friction"
+          "mode": "monitor",
+          "show_interstitial": true
         }'
 ```
 
@@ -404,16 +387,17 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/precursor \
   ],
   "success": true,
   "result": {
-    "default_mode": "min-friction",
-    "enforcement_rules": [
+    "mode": "arm",
+    "rules": [
       {
         "expression": "http.request.uri.path eq \"/shop\"",
-        "mode": "max-security",
+        "show_interstitial": true,
         "id": "3a03d665bac043e3a684e0d385a4b1e2",
-        "description": "Enforce max-security on the shop page",
+        "description": "Show an interstitial on the shop page",
         "enabled": true
       }
-    ]
+    ],
+    "show_interstitial": false
   }
 }
 ```
@@ -446,16 +430,17 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/precursor \
   ],
   "success": true,
   "result": {
-    "default_mode": "min-friction",
-    "enforcement_rules": [
+    "mode": "arm",
+    "rules": [
       {
         "expression": "http.request.uri.path eq \"/shop\"",
-        "mode": "max-security",
+        "show_interstitial": true,
         "id": "3a03d665bac043e3a684e0d385a4b1e2",
-        "description": "Enforce max-security on the shop page",
+        "description": "Show an interstitial on the shop page",
         "enabled": true
       }
-    ]
+    ],
+    "show_interstitial": false
   }
 }
 ```

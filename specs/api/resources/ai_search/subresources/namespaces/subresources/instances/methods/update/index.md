@@ -22,9 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Update an AI Search instance.
 
-PUT/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}
+PUT/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}
 
-Update the configuration of an AI Search instance.
+Updates the configuration of an AI Search instance.
 
 ##### Security
 
@@ -62,9 +62,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -272,7 +272,7 @@ One of the following:
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -426,7 +426,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -464,7 +464,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -530,7 +530,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -620,7 +620,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -674,13 +674,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -706,7 +706,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -722,7 +722,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -798,7 +798,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -814,7 +814,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -828,7 +828,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -856,7 +856,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -1202,7 +1202,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends are used during indexing. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
 
 </summary>
 
@@ -1374,7 +1374,7 @@ chat\_completions\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable chat completions endpoint for this public endpoint
+Disable chat completions endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1412,7 +1412,7 @@ description: optional string
 
 disabled: optional boolean
 
-Disable MCP endpoint for this public endpoint
+Disable MCP endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1478,7 +1478,7 @@ search\_endpoint: optional object {disabled }
 
 disabled: optional boolean
 
-Disable search endpoint for this public endpoint
+Disable search endpoint for this public endpoint.
 
 <a href="#">Link to this property</a>
 
@@ -1568,7 +1568,7 @@ One of the following:
 
 keyword\_match\_mode: optional "and"or "or"
 
-Controls which documents are candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term, ranked by BM25 relevance. When omitted on an update, the existing stored value is preserved; when never set, search falls back to ‘and’.
+Controls which documents become candidates for BM25 scoring. ‘and’ restricts candidates to documents containing all query terms; ‘or’ includes any document containing at least one term and ranks results according to BM25 relevance. When omitted on an update, the existing stored value stays unchanged; when never set, search falls back to ‘and’.
 
 </summary>
 
@@ -1622,13 +1622,13 @@ source\_params: optional object {exclude\_items, include\_items, prefix, 2 more 
 
 exclude\_items: optional array of string
 
-List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to exclude. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /admin/\*\* matches /admin/users and /admin/settings/advanced). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
 include\_items: optional array of string
 
-List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts are limited to 10 rules; contact support to raise it.
+List of path patterns to include. Uses micromatch glob syntax: \* matches within a path segment, \*\* matches across path segments (e.g., /blog/\*\* matches /blog/post and /blog/2024/post). Most accounts have a limit of 10 rules; contact support to raise it.
 
 <a href="#">Link to this property</a>
 
@@ -1654,7 +1654,7 @@ web\_crawler: optional object {discover\_options, parse\_options, parse\_type }
 
 discover\_options: optional object {depth, include\_external\_links, include\_subdomains, 3 more }
 
-Options for parse\_type ‘discover’, where Browser Run discovers URLs by link following and sitemaps. Ignored for ‘sitemap’.
+Options for parse\_type ‘discover’, where Browser Run discovers URLs through link following and sitemaps. Ignored for ‘sitemap’.
 
 </summary>
 
@@ -1670,7 +1670,7 @@ minimum1
 
 include\_external\_links: optional boolean
 
-Follow links that point outside the source domain. Must stay <code>false</code> — discover crawls are restricted to the zone you own.
+Follow links that point outside the source domain. Must stay <code>false</code> because discover crawls only cover the zone you own.
 
 <a href="#">Link to this property</a>
 
@@ -1746,7 +1746,7 @@ parse\_options: optional object {content\_selector, include\_headers, include\_i
 
 content\_selector: optional array of object {path, selector }
 
-List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. Only the matched HTML fragment is stored and indexed. Omit the field to disable content selection — empty arrays are rejected.
+List of path-to-selector mappings for extracting specific content from crawled pages. Each entry pairs a URL glob pattern with a CSS selector. The first matching path wins. The crawler stores and indexes only the matched HTML fragment. Omit the field to disable content selection; the API rejects empty arrays.
 
 </summary>
 
@@ -1762,7 +1762,7 @@ minLength1
 
 selector: string
 
-CSS selector to extract content from pages matching the path pattern. Must not contain disallowed characters (;, \`, $, {, }, ). Must target a single element; if multiple elements match, the selector is ignored and the full page is used.
+CSS selector to extract content from pages matching the path pattern. Disallowed characters: ;, \`, $, {, }, . Must target a single element; if multiple elements match, the crawler ignores the selector and uses the full page.
 
 maxLength200
 
@@ -1776,7 +1776,7 @@ minLength1
 
 include\_headers: optional map\[string]
 
-Up to 5 custom HTTP headers sent with each crawl request. Names must be RFC-7230 token characters (no spaces, colons, or control characters); values must be HTAB + printable ASCII (no CR/LF).
+Up to 5 custom HTTP headers sent with each crawl request. Names must use RFC-7230 token characters, excluding spaces, colons, and control characters. Values must use HTAB and printable ASCII only, excluding CR and LF.
 
 <a href="#">Link to this property</a>
 
@@ -1804,7 +1804,7 @@ use\_browser\_rendering: optional boolean
 
 parse\_type: optional "sitemap"or "discover"
 
-How URLs are discovered. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to be a Verified zone on this account.
+How the crawler finds URLs. ‘sitemap’ reads XML sitemaps; ‘discover’ follows links recursively and requires the source to belong to a Verified zone on this account.
 
 </summary>
 
@@ -1927,7 +1927,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID \
     -X PUT \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```

@@ -1,3 +1,1439 @@
+##### [List basic-auth credentials for an account](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/methods/list)
+
+GET/accounts/{account_id}/cws/basic-auth-credentials
+
+##### [Get a basic-auth credential by ID](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/methods/get)
+
+GET/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}
+
+##### [Create a basic-auth credential](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/methods/create)
+
+POST/accounts/{account_id}/cws/basic-auth-credentials
+
+##### [Delete a basic-auth credential](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/methods/delete)
+
+DELETE/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+BasicAuthCredential object { id, created_at, updated_at, username }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+username: string
+
+Login presented by the client. Printable ASCII only, excluding space and colon (RFC 7617 forbids a colon in the user-id).
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+BasicAuthCredentialDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List secrets for a basic-auth credential](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/subresources/secrets/methods/list)
+
+GET/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}/secrets
+
+##### [Get a basic-auth secret by ID](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/subresources/secrets/methods/get)
+
+GET/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}/secrets/{secret_id}
+
+##### [Add a secret to a basic-auth credential](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/subresources/secrets/methods/create)
+
+POST/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}/secrets
+
+##### [Delete a basic-auth secret](/api/resources/zero_trust/subresources/cws/subresources/basic_auth_credentials/subresources/secrets/methods/delete)
+
+DELETE/accounts/{account_id}/cws/basic-auth-credentials/{credential_id}/secrets/{secret_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+BasicAuthSecret object { id, created_at, expires_at }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+expires_at: optional string
+
+Optional RFC 3339 expiration time. Omit for no expiration.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+SecretDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List deployments](/api/resources/zero_trust/subresources/cws/subresources/deployments/methods/list)
+
+GET/accounts/{account_id}/cws/deployments
+
+##### [Get a deployment by ID](/api/resources/zero_trust/subresources/cws/subresources/deployments/methods/get)
+
+GET/accounts/{account_id}/cws/deployments/{deployment_id}
+
+##### [Create a new deployment](/api/resources/zero_trust/subresources/cws/subresources/deployments/methods/create)
+
+POST/accounts/{account_id}/cws/deployments
+
+##### [Update a deployment](/api/resources/zero_trust/subresources/cws/subresources/deployments/methods/update)
+
+PUT/accounts/{account_id}/cws/deployments/{deployment_id}
+
+##### [Delete a deployment](/api/resources/zero_trust/subresources/cws/subresources/deployments/methods/delete)
+
+DELETE/accounts/{account_id}/cws/deployments/{deployment_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+Deployment object { id, basic_auth_credential_ids, created_at, 9 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+basic_auth_credential_ids: array of string
+
+IDs of basic-auth credentials attached to this deployment
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+default_mode: "ALLOW" or "BLOCK"
+
+Default traffic decision when no policy set matches
+
+</summary>
+
+One of the following:
+
+"ALLOW"
+
+[Link to this property](#)
+
+"BLOCK"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+on_error_action: "BLOCK" or "SKIP"
+
+Action applied when an enforcing policy has a runtime Rego error
+
+</summary>
+
+One of the following:
+
+"BLOCK"
+
+[Link to this property](#)
+
+"SKIP"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+policy_set_ids: array of string
+
+IDs of policy sets attached to this deployment
+
+[Link to this property](#)
+
+rego_raise_error: boolean
+
+Whether OPA builtin failures are raised as runtime evaluation errors
+
+[Link to this property](#)
+
+tags: map[string]
+
+Tags attached to this deployment
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+description: optional string
+
+Optional free-form description.
+
+maxLength1024
+
+[Link to this property](#)
+
+domain_acl_id: optional string
+
+ID of the attached domain ACL. Omitted when none.
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DeploymentDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List domain ACLs](/api/resources/zero_trust/subresources/cws/subresources/domain_acls/methods/list)
+
+GET/accounts/{account_id}/cws/domain-acls
+
+##### [Get a domain ACL by ID](/api/resources/zero_trust/subresources/cws/subresources/domain_acls/methods/get)
+
+GET/accounts/{account_id}/cws/domain-acls/{domain_acl_id}
+
+##### [Create a new domain ACL](/api/resources/zero_trust/subresources/cws/subresources/domain_acls/methods/create)
+
+POST/accounts/{account_id}/cws/domain-acls
+
+##### [Update a domain ACL and replace its entries](/api/resources/zero_trust/subresources/cws/subresources/domain_acls/methods/update)
+
+PUT/accounts/{account_id}/cws/domain-acls/{domain_acl_id}
+
+##### [Delete a domain ACL](/api/resources/zero_trust/subresources/cws/subresources/domain_acls/methods/delete)
+
+DELETE/accounts/{account_id}/cws/domain-acls/{domain_acl_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+DomainACL object { id, created_at, default_action, 3 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+default_action: "ALLOW" or "BLOCK"
+
+Action applied when no entry matches the request domain
+
+</summary>
+
+One of the following:
+
+"ALLOW"
+
+[Link to this property](#)
+
+"BLOCK"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+entries: array of object { action, domain }
+
+Per-domain action overrides. Each domain appears at most once.
+
+</summary>
+
+<details>
+
+<summary>
+
+action: "ALLOW" or "BLOCK"
+
+Per-domain decision overriding the parent ACL’s default_action
+
+</summary>
+
+One of the following:
+
+"ALLOW"
+
+[Link to this property](#)
+
+"BLOCK"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+domain: string
+
+Hostname or domain pattern, capped at 255 UTF-8 bytes
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DomainACLDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List policies](/api/resources/zero_trust/subresources/cws/subresources/policies/methods/list)
+
+GET/accounts/{account_id}/cws/policies
+
+##### [Get a policy by ID](/api/resources/zero_trust/subresources/cws/subresources/policies/methods/get)
+
+GET/accounts/{account_id}/cws/policies/{policy_id}
+
+##### [Create a new policy](/api/resources/zero_trust/subresources/cws/subresources/policies/methods/create)
+
+POST/accounts/{account_id}/cws/policies
+
+##### [Update a policy](/api/resources/zero_trust/subresources/cws/subresources/policies/methods/update)
+
+PUT/accounts/{account_id}/cws/policies/{policy_id}
+
+##### [Delete a policy](/api/resources/zero_trust/subresources/cws/subresources/policies/methods/delete)
+
+DELETE/accounts/{account_id}/cws/policies/{policy_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+Policy object { id, created_at, entrypoint, 7 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+entrypoint: string
+
+Non-function rule declared in rego_source. Evaluation uses data.<package_path>..
+
+maxLength255
+
+[Link to this property](#)
+
+filter: string
+
+Optional filter expression that determines whether this policy applies. Null means the policy applies to every request. Maximum 4096 UTF-8 bytes.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+package_path: string
+
+Dotted path derived from rego_source. Begins with policy. and is unique per account.
+
+maxLength1024
+
+[Link to this property](#)
+
+rego_source: string
+
+Inline Rego source with a package beginning with “policy.” Maximum 16384 UTF-8 bytes.
+
+maxLength16384
+
+minLength1
+
+[Link to this property](#)
+
+tags: map[string]
+
+Tags attached to this policy
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+description: optional string
+
+Optional free-form description.
+
+maxLength1024
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+PolicyDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List policy sets](/api/resources/zero_trust/subresources/cws/subresources/policy_sets/methods/list)
+
+GET/accounts/{account_id}/cws/policy-sets
+
+##### [Get a policy set by ID](/api/resources/zero_trust/subresources/cws/subresources/policy_sets/methods/get)
+
+GET/accounts/{account_id}/cws/policy-sets/{policy_set_id}
+
+##### [Create a new policy set](/api/resources/zero_trust/subresources/cws/subresources/policy_sets/methods/create)
+
+POST/accounts/{account_id}/cws/policy-sets
+
+##### [Update a policy set](/api/resources/zero_trust/subresources/cws/subresources/policy_sets/methods/update)
+
+PUT/accounts/{account_id}/cws/policy-sets/{policy_set_id}
+
+##### [Delete a policy set](/api/resources/zero_trust/subresources/cws/subresources/policy_sets/methods/delete)
+
+DELETE/accounts/{account_id}/cws/policy-sets/{policy_set_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+PolicySet object { id, created_at, exclude_workload_ids, 6 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+exclude_workload_ids: array of string
+
+IDs of workloads that exclude matching requests. Exclusions take precedence.
+
+[Link to this property](#)
+
+include_workload_ids: array of string
+
+IDs of workloads that include matching requests. Empty includes all requests before exclusions.
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+policies: array of object { enforce, policy_id }
+
+Member policies and their per-membership enforcement mode
+
+</summary>
+
+enforce: boolean
+
+Whether this policy should enforce when it matches. False keeps the policy attached for non-enforcing evaluation.
+
+[Link to this property](#)
+
+policy_id: string
+
+ID of the member policy
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+tags: map[string]
+
+Tags attached to this policy set
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+description: optional string
+
+Optional free-form description.
+
+maxLength1024
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+PolicySetDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List Rego metadata documents](/api/resources/zero_trust/subresources/cws/subresources/rego_metadata/methods/list)
+
+GET/accounts/{account_id}/cws/rego-metadata
+
+##### [Get a rego metadata document by ID](/api/resources/zero_trust/subresources/cws/subresources/rego_metadata/methods/get)
+
+GET/accounts/{account_id}/cws/rego-metadata/{rego_metadata_id}
+
+##### [Create a new rego metadata document](/api/resources/zero_trust/subresources/cws/subresources/rego_metadata/methods/create)
+
+POST/accounts/{account_id}/cws/rego-metadata
+
+##### [Update a rego metadata document](/api/resources/zero_trust/subresources/cws/subresources/rego_metadata/methods/update)
+
+PUT/accounts/{account_id}/cws/rego-metadata/{rego_metadata_id}
+
+##### [Delete a rego metadata document](/api/resources/zero_trust/subresources/cws/subresources/rego_metadata/methods/delete)
+
+DELETE/accounts/{account_id}/cws/rego-metadata/{rego_metadata_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+RegoMetadata object { id, created_at, data, 3 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+data: unknown
+
+[Link to this property](#)
+
+import_path: string
+
+Unique Rego import path in the form metadata., with one alphanumeric or underscore segment. Reference it as data.<import_path>.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RegoMetadataDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List Rego modules](/api/resources/zero_trust/subresources/cws/subresources/rego_modules/methods/list)
+
+GET/accounts/{account_id}/cws/rego-modules
+
+##### [Get a Rego module by ID](/api/resources/zero_trust/subresources/cws/subresources/rego_modules/methods/get)
+
+GET/accounts/{account_id}/cws/rego-modules/{rego_module_id}
+
+##### [Create a new Rego module](/api/resources/zero_trust/subresources/cws/subresources/rego_modules/methods/create)
+
+POST/accounts/{account_id}/cws/rego-modules
+
+##### [Update a Rego module](/api/resources/zero_trust/subresources/cws/subresources/rego_modules/methods/update)
+
+PUT/accounts/{account_id}/cws/rego-modules/{rego_module_id}
+
+##### [Delete a Rego module](/api/resources/zero_trust/subresources/cws/subresources/rego_modules/methods/delete)
+
+DELETE/accounts/{account_id}/cws/rego-modules/{rego_module_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+RegoModule object { id, created_at, name, 3 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+package_path: string
+
+Dotted path derived from rego_source. Begins with lib. and is unique per account.
+
+maxLength1024
+
+[Link to this property](#)
+
+rego_source: string
+
+Library Rego source with a package beginning with “lib.” Maximum 16384 UTF-8 bytes.
+
+maxLength16384
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+RegoModuleDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List tenant structures for an account](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/methods/list)
+
+GET/accounts/{account_id}/cws/tenant-structures
+
+##### [Get a tenant structure by ID](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/methods/get)
+
+GET/accounts/{account_id}/cws/tenant-structures/{structure_id}
+
+##### [Create a tenant structure](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/methods/create)
+
+POST/accounts/{account_id}/cws/tenant-structures
+
+##### [Update a tenant structure](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/methods/update)
+
+PUT/accounts/{account_id}/cws/tenant-structures/{structure_id}
+
+##### [Delete a tenant structure](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/methods/delete)
+
+DELETE/accounts/{account_id}/cws/tenant-structures/{structure_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+TenantStructure object { id, application, created_at, 3 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+application: "aws" or "cloudflare"
+
+Platform this structure models. Immutable after creation; determines valid node kinds and identifier formats.
+
+</summary>
+
+One of the following:
+
+"aws"
+
+[Link to this property](#)
+
+"cloudflare"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+Human-readable name; unique per account
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+import_path: optional string
+
+Optional unique Rego mount path in the form tenant... The application segment must match application; omitted when unmounted.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TenantStructureDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List nodes for a tenant structure](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/list)
+
+GET/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes
+
+##### [Get a tenant node by ID](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/get)
+
+GET/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes/{node_id}
+
+##### [Add a node to a tenant structure](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/create)
+
+POST/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes
+
+##### [Update a tenant node](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/update)
+
+PUT/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes/{node_id}
+
+##### [Delete a tenant node](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/delete)
+
+DELETE/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes/{node_id}
+
+##### [Apply a batch of tenant node mutations](/api/resources/zero_trust/subresources/cws/subresources/tenant_structures/subresources/nodes/methods/batch)
+
+POST/accounts/{account_id}/cws/tenant-structures/{structure_id}/nodes/batch
+
+##### Models
+
+<details>
+
+<summary>
+
+TenantStructureNode object { id, created_at, native_id, 4 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+native_id: string
+
+Cloud-native identifier of this node, unique within the structure; the parent-reference target. Shape depends on the structure’s application. Immutable after create.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+node_kind: string
+
+Position in the tree. Legal values depend on the structure’s application (aws: root/ou/account; cloudflare: org/account/zone). At most one root per structure. Immutable after create.
+
+maxLength64
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: optional string
+
+Display name (e.g. an OU or account name), mutable. Optional; empty by default.
+
+maxLength100
+
+[Link to this property](#)
+
+parent: optional string
+
+Native ID of this node’s parent. Required for non-root nodes and omitted for the root. The parent must be in the same structure and able to contain this node kind.
+
+maxLength255
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+NodeDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+NodeBatchResponse object { created, deleted, updated }
+
+</summary>
+
+<details>
+
+<summary>
+
+created: array of [TenantStructureNode](/api/resources/zero_trust#(resource)%20zero_trust.cws.tenant_structures.nodes%20%3E%20(model)%20tenant_structure_node%20%3E%20(schema)) { id, created_at, native_id, 4 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+native_id: string
+
+Cloud-native identifier of this node, unique within the structure; the parent-reference target. Shape depends on the structure’s application. Immutable after create.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+node_kind: string
+
+Position in the tree. Legal values depend on the structure’s application (aws: root/ou/account; cloudflare: org/account/zone). At most one root per structure. Immutable after create.
+
+maxLength64
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: optional string
+
+Display name (e.g. an OU or account name), mutable. Optional; empty by default.
+
+maxLength100
+
+[Link to this property](#)
+
+parent: optional string
+
+Native ID of this node’s parent. Required for non-root nodes and omitted for the root. The parent must be in the same structure and able to contain this node kind.
+
+maxLength255
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+deleted: array of object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+updated: array of [TenantStructureNode](/api/resources/zero_trust#(resource)%20zero_trust.cws.tenant_structures.nodes%20%3E%20(model)%20tenant_structure_node%20%3E%20(schema)) { id, created_at, native_id, 4 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+native_id: string
+
+Cloud-native identifier of this node, unique within the structure; the parent-reference target. Shape depends on the structure’s application. Immutable after create.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+node_kind: string
+
+Position in the tree. Legal values depend on the structure’s application (aws: root/ou/account; cloudflare: org/account/zone). At most one root per structure. Immutable after create.
+
+maxLength64
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: optional string
+
+Display name (e.g. an OU or account name), mutable. Optional; empty by default.
+
+maxLength100
+
+[Link to this property](#)
+
+parent: optional string
+
+Native ID of this node’s parent. Required for non-root nodes and omitted for the root. The parent must be in the same structure and able to contain this node kind.
+
+maxLength255
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List workloads](/api/resources/zero_trust/subresources/cws/subresources/workloads/methods/list)
+
+GET/accounts/{account_id}/cws/workloads
+
+##### [Get a workload by ID](/api/resources/zero_trust/subresources/cws/subresources/workloads/methods/get)
+
+GET/accounts/{account_id}/cws/workloads/{workload_id}
+
+##### [Create a new workload](/api/resources/zero_trust/subresources/cws/subresources/workloads/methods/create)
+
+POST/accounts/{account_id}/cws/workloads
+
+##### [Update a workload](/api/resources/zero_trust/subresources/cws/subresources/workloads/methods/update)
+
+PUT/accounts/{account_id}/cws/workloads/{workload_id}
+
+##### [Delete a workload](/api/resources/zero_trust/subresources/cws/subresources/workloads/methods/delete)
+
+DELETE/accounts/{account_id}/cws/workloads/{workload_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+Workload object { id, created_at, filter, 4 more }
+
+</summary>
+
+id: string
+
+Server-assigned UUID
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+filter: string
+
+Filter expression selecting the requests this workload matches. Maximum 4096 UTF-8 bytes.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)
+
+name: string
+
+Human-readable handle; unique per account.
+
+maxLength100
+
+minLength1
+
+[Link to this property](#)
+
+tags: map[string]
+
+Tags attached to this workload
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+description: optional string
+
+Optional free-form description.
+
+maxLength1024
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkloadDeleteResponse object { id }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [List devices (deprecated)](/api/resources/zero_trust/subresources/devices/methods/list)
 
 GET/accounts/{account_id}/devices
@@ -280430,7 +281866,7 @@ Application item in list response.
 
 <summary>
 
-id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 12 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier (e.g. microsoft_internal, google_workspace).
 
@@ -280463,6 +281899,8 @@ Vendor identifier (e.g. microsoft_internal, google_workspace).
 `SERVICENOW` - SERVICENOW
 
 `SLACK` - SLACK
+
+`ZOOM` - ZOOM
 
 </summary>
 
@@ -280525,6 +281963,10 @@ One of the following:
 [Link to this property](#)
 
 "SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
 
 [Link to this property](#)
 
@@ -280704,7 +282146,7 @@ The requested item.
 
 <summary>
 
-id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 12 more
+id: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
 
 Vendor identifier.
 
@@ -280737,6 +282179,8 @@ Vendor identifier.
 `SERVICENOW` - SERVICENOW
 
 `SLACK` - SLACK
+
+`ZOOM` - ZOOM
 
 </summary>
 
@@ -280799,6 +282243,10 @@ One of the following:
 [Link to this property](#)
 
 "SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
 
 [Link to this property](#)
 
@@ -281190,7 +282638,7 @@ POST/accounts/{account_id}/one/integrations/{id}/resume
 
 <summary>
 
-IntegrationListResponse object { id, application, created, 4 more }
+IntegrationListResponse object { id, application, auth_method, 6 more }
 
 Serializer for v2 integration list responses.
 
@@ -281205,6 +282653,28 @@ formatuuid
 [Link to this property](#)
 
 application: map[string]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+auth_method: object { id, display_name }
+
+The integration’s authentication method.
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+display_name: string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -281239,6 +282709,28 @@ updated: string
 When the integration was last updated.
 
 formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+use_cases: array of object { id, is_enabled }
+
+Use cases enabled for the integration.
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+is_enabled: boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -316260,7 +317752,7 @@ formatdate-time
 
 [Link to this property](#)
 
-dns_destination_ips_id: optional string
+dns_destination_ips_id: optional [DNSDestinationIPs](/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips%20%3E%20(schema))
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
@@ -319075,6 +320567,70 @@ Unique URL to download the PAC file.
 [Link to this property](#)
 
 PacfileDeleteResponse = unknown
+
+[Link to this property](#)
+
+##### [List Zero Trust Gateway DNS destination IPv4 address pairs](/api/resources/zero_trust/subresources/gateway/subresources/dns_destination_ips/methods/list)
+
+GET/accounts/{account_id}/gateway/dns_destination_ips
+
+##### Models
+
+DNSDestinationIPs = string
+
+Indicate the identifier of the pair of IPv4 addresses assigned to this location.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+DNSDestinationIPListResponse object { id, backup_ip, pair_type, primary_ip }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+backup_ip: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+pair_type: "shared" or "dedicated" or "byoip"
+
+Specify whether the pair shared across multiple accounts (shared) or available exclusively to this account. Non-shared pairs can contain Cloudflare-owned IPs (dedicated) or customer-provided IPs (byoip).
+
+</summary>
+
+One of the following:
+
+"shared"
+
+[Link to this property](#)
+
+"dedicated"
+
+[Link to this property](#)
+
+"byoip"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+primary_ip: string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

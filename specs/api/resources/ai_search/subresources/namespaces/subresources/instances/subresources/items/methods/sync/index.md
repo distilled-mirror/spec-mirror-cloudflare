@@ -24,9 +24,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Sync Item.
 
-PATCH/accounts/{account\_id}/ai-search/namespaces/{name}/instances/{id}/items/{item\_id}
+PATCH/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances/{id}/items/{item\_id}
 
-Syncs an item to an AI Search instance index.
+Synchronizes an item to an AI Search instance index.
 
 ##### Security
 
@@ -64,9 +64,9 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20sync%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20sync%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20sync%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 id: string
 
@@ -90,7 +90,7 @@ next\_action: "INDEX"
 
 wait\_for\_completion: optional boolean
 
-Wait for indexing before responding. After processing, vector-indexed instances use any time remaining in a 25s wait budget to confirm Vectorize ingestion. Processing itself is not interrupted and can exceed that budget. If confirmation times out, the current item state is returned and background indexing continues. Defaults to false.
+Wait for indexing before responding. After processing, vector-indexed instances use any time remaining in a 25s wait budget to confirm Vectorize ingestion. Processing itself continues uninterrupted and can exceed that budget. If confirmation times out, the response returns the current item state and background indexing continues. Defaults to false.
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20sync%20%3E%20(params)%200%20%3E%20(param)%20wait_for_completion%20%3E%20(schema)>)
 
@@ -253,7 +253,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances/$ID/items/$ITEM_ID \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances/$ID/items/$ITEM_ID \
     -X PATCH \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \

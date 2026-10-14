@@ -22,9 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # List AI Search instances.
 
-GET/accounts/{account\_id}/ai-search/namespaces/{name}/instances
+GET/accounts/{account\_id}/ai-search/namespaces/{namespace}/instances
 
-List all AI Search instances in the account.
+Lists all AI Search instances in the account.
 
 ##### Security
 
@@ -62,15 +62,15 @@ account\_id: string
 
 [Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
-name: string
+namespace: string
 
-[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+[Link to this property](#)%20ai_search.namespaces.instances%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20namespace%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse
 
 hostname: optional string
 
-Filter by exact Search for Agents hostname (case-insensitive).
+Return only instances with this exact Search for Agents hostname (case-insensitive).
 
 maxLength253
 
@@ -822,7 +822,7 @@ include\_subdomains: optional boolean
 
 limit: optional number
 
-Maximum number of pages to crawl. New values are capped at 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
+Maximum number of pages to crawl. New values have a maximum of 100000; instances configured before that cap may report a higher stored value, which the crawler clamps at run time.
 
 maximum100000
 
@@ -1093,7 +1093,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAME/instances \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespaces/$NAMESPACE/instances \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

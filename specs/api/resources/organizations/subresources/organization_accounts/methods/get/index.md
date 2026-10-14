@@ -24,8 +24,6 @@ GET/organizations/{organization\_id}/accounts
 
 Retrieve the accounts immediately attached to a specific organization. Accounts attached to sub-organizations are not included.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.read` is required. User API Tokens are not currently supported.
-
 ##### Security
 
 API Email + API Key

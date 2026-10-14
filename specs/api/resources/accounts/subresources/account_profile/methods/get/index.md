@@ -24,8 +24,6 @@ GET/accounts/{account\_id}/profile
 
 Retrieves the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record. Profiles can be shared across accounts and organizations. Only available to members of an organization that contains the account.
 
-Authentication: Use a Global API key, or a user-owned API Token scoped to the account with the `Account Settings Read` permission, which grants `com.cloudflare.api.account.read`.
-
 ##### Security
 
 <details>
@@ -58,7 +56,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`Trust and Safety Write``Trust and Safety Read``DNS View Write``DNS View Read``SCIM Provisioning``Load Balancers Account Write``Load Balancers Account Read``Zero Trust: PII Read``DDoS Botnet Feed Write``DDoS Botnet Feed Read``Workers R2 Storage Write``Workers R2 Storage Read``DDoS Protection Write``DDoS Protection Read``Workers Tail Read``Workers KV Storage Write``Workers KV Storage Read``Workers Scripts Write``Workers Scripts Read``Load Balancing: Monitors and Pools Write``Load Balancing: Monitors and Pools Read``Account Firewall Access Rules Write``Account Firewall Access Rules Read``DNS Firewall Write``DNS Firewall Read``Billing Write``Billing Read``Account Settings Write``Account Settings Read`
+`Account Settings Read`
 
 ##### P ath ParametersExpand Collapse
 

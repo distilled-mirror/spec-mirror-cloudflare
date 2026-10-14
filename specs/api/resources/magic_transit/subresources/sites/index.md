@@ -1348,7 +1348,7 @@ DELETE/accounts/{account\_id}/magic/sites/{site\_id}/wans/{wan\_id}
 
 <summary>
 
-WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 6 more }
+WAN object {id, health\_check\_rate, load\_balance\_inner\_flows, 8 more }
 
 </summary>
 
@@ -1406,6 +1406,26 @@ Priority of WAN for traffic loadbalancing.
 
 <a href="#">Link to this property</a>
 
+provisioned\_download\_kbps: optional number
+
+Provisioned download rate of the WAN circuit in kilobits per second.
+
+maximum1000000000
+
+minimum1
+
+<a href="#">Link to this property</a>
+
+provisioned\_upload\_kbps: optional number
+
+Provisioned upload rate of the WAN circuit in kilobits per second.
+
+maximum1000000000
+
+minimum1
+
+<a href="#">Link to this property</a>
+
 site\_id: optional string
 
 Identifier
@@ -1414,7 +1434,7 @@ maxLength32
 
 <a href="#">Link to this property</a>
 
-static\_addressing: optional <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan_static_addressing%20%3E%20(schema)">WANStaticAddressing</a> { address, gateway\_address, secondary\_address }
+static\_addressing: optional <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.wans%20%3E%20(model)%20wan_static_addressing%20%3E%20(schema)">WANStaticAddressing</a> { address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 
@@ -1434,7 +1454,7 @@ VLAN ID. Use zero for untagged.
 
 <summary>
 
-WANStaticAddressing object {address, gateway\_address, secondary\_address }
+WANStaticAddressing object {address, gateway\_address, secondary\_address, secondary\_gateway\_address }
 
 (optional) if omitted, use DHCP. Submit secondary\_address when site is in high availability mode.
 
@@ -1455,6 +1475,12 @@ A valid IPv4 address.
 secondary\_address: optional string
 
 A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+secondary\_gateway\_address: optional string
+
+Gateway address for the secondary connector of a high availability site.
 
 <a href="#">Link to this property</a>
 

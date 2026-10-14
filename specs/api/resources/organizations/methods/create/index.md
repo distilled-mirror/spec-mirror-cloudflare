@@ -22,8 +22,6 @@ POST/organizations
 
 Create a new organization for a user. Sub-organization creation availability depends on the organization’s capabilities.
 
-Authentication: Use a Global API key, or a User API Token with the `User Details Write` permission.
-
 ##### Security
 
 <details>

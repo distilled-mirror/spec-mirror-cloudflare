@@ -22,8 +22,6 @@ GET/organizations/{organization\_id}
 
 Retrieve the details of a certain organization.
 
-Authentication: A Global API key for a user with `com.cloudflare.api.tenant.unit.read` is required. User API Tokens are not currently supported and return HTTP `403` with error code `10000`.
-
 ##### Security
 
 API Email + API Key

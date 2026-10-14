@@ -22,8 +22,6 @@ GET/organizations
 
 Retrieve a list of organizations a particular user has access to.
 
-Authentication: Use a Global API key, or a User API Token with the `User Details Read` or `User Details Write` permission.
-
 ##### Security
 
 <details>
@@ -56,7 +54,7 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### Accepted Permissions (at least one required)
 
-`User Details Write``User Details Read`
+`User Details Read``User Details Write`
 
 ##### Q uery ParametersExpand Collapse
 
