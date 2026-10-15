@@ -112,6 +112,8 @@ Relay with its auto-created default token pair (one full-access \[publish, subsc
 
 config: object {upstreams }
 
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
+
 </summary>
 
 <details>

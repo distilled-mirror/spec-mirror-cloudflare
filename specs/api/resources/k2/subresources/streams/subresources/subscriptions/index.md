@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Subscriptions
 
-##### [List K2 stream subscriptions](https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions/methods/list)
+##### [List subscriptions with consumer lag](https://developers.cloudflare.com/api/resources/k2/subresources/streams/subresources/subscriptions/methods/list)
 
 GET/accounts/{account\_id}/k2/streams/{stream\_id}/subscriptions
 

@@ -330,6 +330,8 @@ One of the following:
 
 match\_threshold: optional number
 
+Minimum score a chunk must reach to be returned. When omitted, each instance’s chunks are filtered by that instance’s score\_threshold, capped at 0.4.
+
 maximum1
 
 minimum0
@@ -337,6 +339,8 @@ minimum0
 <a href="#">Link to this property</a>
 
 max\_num\_results: optional number
+
+Maximum number of merged results to return. When omitted, defaults to the sum of the searched instances’ max\_num\_results (each falling back to 10), up to 50.
 
 maximum50
 

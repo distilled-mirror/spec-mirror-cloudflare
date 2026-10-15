@@ -52,6 +52,8 @@ relay\_id: string
 
 config: optional object {upstreams }
 
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
+
 </summary>
 
 <details>
@@ -163,6 +165,8 @@ Full relay details (no tokens).
 <summary>
 
 config: object {upstreams }
+
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
 
 </summary>
 

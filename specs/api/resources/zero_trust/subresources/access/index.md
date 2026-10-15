@@ -56,7 +56,7 @@ maxLength350
 
 <summary>
 
-servers: array of object { id, auth_type, hostname, 22 more }
+servers: array of object { id, auth_type, hostname, 23 more }
 
 </summary>
 
@@ -371,6 +371,14 @@ modified_by: optional string
 [Link to this property](#)
 
 on_behalf: optional boolean
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -600,7 +608,7 @@ maxLength350
 
 <summary>
 
-servers: array of object { id, auth_type, hostname, 22 more }
+servers: array of object { id, auth_type, hostname, 23 more }
 
 </summary>
 
@@ -915,6 +923,14 @@ modified_by: optional string
 [Link to this property](#)
 
 on_behalf: optional boolean
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -1144,7 +1160,7 @@ maxLength350
 
 <summary>
 
-servers: array of object { id, auth_type, hostname, 22 more }
+servers: array of object { id, auth_type, hostname, 23 more }
 
 </summary>
 
@@ -1459,6 +1475,14 @@ modified_by: optional string
 [Link to this property](#)
 
 on_behalf: optional boolean
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -1688,7 +1712,7 @@ maxLength350
 
 <summary>
 
-servers: array of object { id, auth_type, hostname, 22 more }
+servers: array of object { id, auth_type, hostname, 23 more }
 
 </summary>
 
@@ -2003,6 +2027,14 @@ modified_by: optional string
 [Link to this property](#)
 
 on_behalf: optional boolean
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -2334,7 +2366,7 @@ POST/accounts/{account_id}/access/ai-controls/mcp/servers/{id}/sync
 
 <summary>
 
-ServerListResponse object { id, auth_type, hostname, 19 more }
+ServerListResponse object { id, auth_type, hostname, 20 more }
 
 </summary>
 
@@ -2629,6 +2661,14 @@ formatdate-time
 [Link to this property](#)
 
 modified_by: optional string
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -2758,7 +2798,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerCreateResponse object { id, auth_type, hostname, 19 more }
+ServerCreateResponse object { id, auth_type, hostname, 20 more }
 
 </summary>
 
@@ -3053,6 +3093,14 @@ formatdate-time
 [Link to this property](#)
 
 modified_by: optional string
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -3182,7 +3230,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerReadResponse object { id, auth_type, hostname, 19 more }
+ServerReadResponse object { id, auth_type, hostname, 20 more }
 
 </summary>
 
@@ -3477,6 +3525,14 @@ formatdate-time
 [Link to this property](#)
 
 modified_by: optional string
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -3606,7 +3662,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerUpdateResponse object { id, auth_type, hostname, 19 more }
+ServerUpdateResponse object { id, auth_type, hostname, 20 more }
 
 </summary>
 
@@ -3901,6 +3957,14 @@ formatdate-time
 [Link to this property](#)
 
 modified_by: optional string
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -4030,7 +4094,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerDeleteResponse object { id, auth_type, hostname, 19 more }
+ServerDeleteResponse object { id, auth_type, hostname, 20 more }
 
 </summary>
 
@@ -4325,6 +4389,14 @@ formatdate-time
 [Link to this property](#)
 
 modified_by: optional string
+
+[Link to this property](#)
+
+registered_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -248360,6 +248432,300 @@ formatemail
 
 [Link to this property](#)
 
+##### [List Access JIT request logs](/api/resources/zero_trust/subresources/access/subresources/logs/subresources/jit_requests/methods/list)
+
+GET/accounts/{account_id}/access/logs/jit_requests
+
+##### [Get an Access JIT request log](/api/resources/zero_trust/subresources/access/subresources/logs/subresources/jit_requests/methods/get)
+
+GET/accounts/{account_id}/access/logs/jit_requests/{knock_request_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+JitRequestListResponse object { app_aud, app_hostname, approvals_received, 7 more }
+
+</summary>
+
+app_aud: optional string
+
+Audience of the Access application.
+
+[Link to this property](#)
+
+app_hostname: optional string
+
+[Link to this property](#)
+
+approvals_received: optional number
+
+Number of unique actors who approved the request.
+
+[Link to this property](#)
+
+approver_emails: optional array of string
+
+Unique actors who approved the request.
+
+[Link to this property](#)
+
+created_at: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+expires_at: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+knock_request_id: optional string
+
+Unique identifier for the JIT request.
+
+[Link to this property](#)
+
+purpose_justification: optional string
+
+[Link to this property](#)
+
+requester_email: optional string
+
+formatemail
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "PENDING" or "APPROVED" or "DENIED" or 2 more
+
+JIT request status. `SPENT` is deprecated and interpreted as `APPROVED`.
+
+</summary>
+
+One of the following:
+
+"PENDING"
+
+[Link to this property](#)
+
+"APPROVED"
+
+[Link to this property](#)
+
+"DENIED"
+
+[Link to this property](#)
+
+"CANCELED"
+
+[Link to this property](#)
+
+"SPENT"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+JitRequestGetResponse object { app_aud, app_hostname, approvals_received, 8 more }
+
+</summary>
+
+app_aud: optional string
+
+Audience of the Access application.
+
+[Link to this property](#)
+
+app_hostname: optional string
+
+[Link to this property](#)
+
+approvals_received: optional number
+
+Number of unique actors who approved the request.
+
+[Link to this property](#)
+
+approver_emails: optional array of string
+
+Unique actors who approved the request.
+
+[Link to this property](#)
+
+created_at: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+events: optional array of object { actor_email, actor_idp, actor_uuid, 6 more }
+
+</summary>
+
+actor_email: optional string
+
+formatemail
+
+[Link to this property](#)
+
+actor_idp: optional string
+
+[Link to this property](#)
+
+actor_uuid: optional string
+
+formatuuid
+
+[Link to this property](#)
+
+decision_outcome: optional string
+
+[Link to this property](#)
+
+ray_id: optional string
+
+[Link to this property](#)
+
+session_duration_seconds: optional number
+
+[Link to this property](#)
+
+success: optional boolean
+
+[Link to this property](#)
+
+timestamp: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: optional "CREATED" or "APPROVER_DECISION" or "COMMITTED" or 3 more
+
+</summary>
+
+One of the following:
+
+"CREATED"
+
+[Link to this property](#)
+
+"APPROVER_DECISION"
+
+[Link to this property](#)
+
+"COMMITTED"
+
+[Link to this property](#)
+
+"CANCELED"
+
+[Link to this property](#)
+
+"LOGIN_SUCCESS"
+
+[Link to this property](#)
+
+"REDIRECT_TO_ACTIVE"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+expires_at: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+knock_request_id: optional string
+
+Unique identifier for the JIT request.
+
+[Link to this property](#)
+
+purpose_justification: optional string
+
+[Link to this property](#)
+
+requester_email: optional string
+
+formatemail
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: optional "PENDING" or "APPROVED" or "DENIED" or 2 more
+
+JIT request status. `SPENT` is deprecated and interpreted as `APPROVED`.
+
+</summary>
+
+One of the following:
+
+"PENDING"
+
+[Link to this property](#)
+
+"APPROVED"
+
+[Link to this property](#)
+
+"DENIED"
+
+[Link to this property](#)
+
+"CANCELED"
+
+[Link to this property](#)
+
+"SPENT"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### Models
 
 <details>
@@ -249778,6 +250144,964 @@ metadata: optional unknown
 
 [Link to this property](#)
 
+##### [Delete a user's authenticator](/api/resources/zero_trust/subresources/access/subresources/users/subresources/mfa_authenticators/methods/delete)
+
+DELETE/accounts/{account_id}/access/users/{user_id}/mfa_authenticators/{authenticator_id}
+
+##### Models
+
+MfaAuthenticatorDeleteResponse = unknown
+
+[Link to this property](#)
+
+##### [Delete a user's passkey](/api/resources/zero_trust/subresources/access/subresources/users/subresources/passkeys/methods/delete)
+
+DELETE/accounts/{account_id}/access/users/{user_id}/passkeys/{authenticator_id}
+
+##### Models
+
+PasskeyDeleteResponse = unknown
+
+[Link to this property](#)
+
+##### [List user populations](/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/list)
+
+GET/accounts/{account_id}/access/user_populations
+
+##### [Create a user population](/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/create)
+
+POST/accounts/{account_id}/access/user_populations
+
+##### [Get a user population](/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/get)
+
+GET/accounts/{account_id}/access/user_populations/{user_population_id}
+
+##### [Update a user population](/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/update)
+
+PUT/accounts/{account_id}/access/user_populations/{user_population_id}
+
+##### [Delete a user population](/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/delete)
+
+DELETE/accounts/{account_id}/access/user_populations/{user_population_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+UserPopulationListResponse object { id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserPopulationCreateResponse object { id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserPopulationGetResponse object { id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserPopulationUpdateResponse object { id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserPopulationDeleteResponse object { id }
+
+</summary>
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List users in a user population](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/list)
+
+GET/accounts/{account_id}/access/user_populations/{user_population_id}/users
+
+##### [Create a user population user](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/create)
+
+POST/accounts/{account_id}/access/user_populations/{user_population_id}/users
+
+##### [Get a user population user](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/get)
+
+GET/accounts/{account_id}/access/user_populations/{user_population_id}/users/{user_id}
+
+##### [Update a user population user](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/update)
+
+PATCH/accounts/{account_id}/access/user_populations/{user_population_id}/users/{user_id}
+
+##### [Replace a user population user](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/replace)
+
+PUT/accounts/{account_id}/access/user_populations/{user_population_id}/users/{user_id}
+
+##### [Delete a user population user](/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/delete)
+
+DELETE/accounts/{account_id}/access/user_populations/{user_population_id}/users/{user_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+UserListResponse object { itemsPerPage, Resources, schemas, 2 more }
+
+</summary>
+
+itemsPerPage: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Resources: array of object { id, active, displayName, 6 more }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+active: optional boolean
+
+[Link to this property](#)
+
+displayName: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+emails: optional array of object { primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+value: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+externalId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: optional object { created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+lastModified: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+location: optional string
+
+formaturi
+
+[Link to this property](#)
+
+resourceType: optional string
+
+[Link to this property](#)
+
+version: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+name: optional object { familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+[Link to this property](#)
+
+formatted: optional string
+
+[Link to this property](#)
+
+givenName: optional string
+
+[Link to this property](#)
+
+honorificPrefix: optional string
+
+[Link to this property](#)
+
+honorificSuffix: optional string
+
+[Link to this property](#)
+
+middleName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+[Link to this property](#)
+
+userName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: array of string
+
+[Link to this property](#)
+
+startIndex: number
+
+[Link to this property](#)
+
+totalResults: number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserCreateResponse object { id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+active: optional boolean
+
+[Link to this property](#)
+
+displayName: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+emails: optional array of object { primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+value: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+externalId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: optional object { created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+lastModified: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+location: optional string
+
+formaturi
+
+[Link to this property](#)
+
+resourceType: optional string
+
+[Link to this property](#)
+
+version: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+name: optional object { familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+[Link to this property](#)
+
+formatted: optional string
+
+[Link to this property](#)
+
+givenName: optional string
+
+[Link to this property](#)
+
+honorificPrefix: optional string
+
+[Link to this property](#)
+
+honorificSuffix: optional string
+
+[Link to this property](#)
+
+middleName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+[Link to this property](#)
+
+userName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserGetResponse object { id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+active: optional boolean
+
+[Link to this property](#)
+
+displayName: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+emails: optional array of object { primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+value: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+externalId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: optional object { created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+lastModified: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+location: optional string
+
+formaturi
+
+[Link to this property](#)
+
+resourceType: optional string
+
+[Link to this property](#)
+
+version: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+name: optional object { familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+[Link to this property](#)
+
+formatted: optional string
+
+[Link to this property](#)
+
+givenName: optional string
+
+[Link to this property](#)
+
+honorificPrefix: optional string
+
+[Link to this property](#)
+
+honorificSuffix: optional string
+
+[Link to this property](#)
+
+middleName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+[Link to this property](#)
+
+userName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserUpdateResponse object { id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+active: optional boolean
+
+[Link to this property](#)
+
+displayName: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+emails: optional array of object { primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+value: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+externalId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: optional object { created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+lastModified: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+location: optional string
+
+formaturi
+
+[Link to this property](#)
+
+resourceType: optional string
+
+[Link to this property](#)
+
+version: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+name: optional object { familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+[Link to this property](#)
+
+formatted: optional string
+
+[Link to this property](#)
+
+givenName: optional string
+
+[Link to this property](#)
+
+honorificPrefix: optional string
+
+[Link to this property](#)
+
+honorificSuffix: optional string
+
+[Link to this property](#)
+
+middleName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+[Link to this property](#)
+
+userName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+UserReplaceResponse object { id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+active: optional boolean
+
+[Link to this property](#)
+
+displayName: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+emails: optional array of object { primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+value: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+externalId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+meta: optional object { created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+lastModified: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+location: optional string
+
+formaturi
+
+[Link to this property](#)
+
+resourceType: optional string
+
+[Link to this property](#)
+
+version: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+name: optional object { familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+[Link to this property](#)
+
+formatted: optional string
+
+[Link to this property](#)
+
+givenName: optional string
+
+[Link to this property](#)
+
+honorificPrefix: optional string
+
+[Link to this property](#)
+
+honorificSuffix: optional string
+
+[Link to this property](#)
+
+middleName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+[Link to this property](#)
+
+userName: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List authenticator device AAGUIDs](/api/resources/zero_trust/subresources/access/subresources/mfa/subresources/authenticator_catalog/methods/list)
+
+GET/accounts/{account_id}/access/authenticator_device_aaguids
+
+##### Models
+
+<details>
+
+<summary>
+
+AuthenticatorCatalogListResponse object { aaguid, name }
+
+A FIDO2 authenticator device AAGUID entry
+
+</summary>
+
+aaguid: string
+
+The Authenticator Attestation GUID (AAGUID) uniquely identifying a FIDO2 authenticator model
+
+formatuuid
+
+[Link to this property](#)
+
+name: string
+
+The human-readable name of the FIDO2 authenticator
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [List custom pages](/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/list)
 
 GET/accounts/{account_id}/access/custom_pages
@@ -249785,6 +251109,10 @@ GET/accounts/{account_id}/access/custom_pages
 ##### [Get a custom page](/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/get)
 
 GET/accounts/{account_id}/access/custom_pages/{custom_page_id}
+
+##### [Validate a custom page template](/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/validate)
+
+POST/accounts/{account_id}/access/custom_pages/validate
 
 ##### [Create a custom page](/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/create)
 
@@ -249937,6 +251265,122 @@ maxLength36
 warnings: optional array of object { message, tier, ref }
 
 Advisory validation findings returned when creating or updating a template. Omitted when empty.
+
+</summary>
+
+message: string
+
+Human-readable description of the finding.
+
+[Link to this property](#)
+
+tier: string
+
+The validation tier that produced the finding (e.g. html, liquid).
+
+[Link to this property](#)
+
+ref: optional string
+
+Optional pointer to the part of the template the finding refers to.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+CustomPageValidateResponse object { errors, page_type, version, warnings }
+
+The result of validating a template’s content.
+
+</summary>
+
+<details>
+
+<summary>
+
+errors: array of object { message, tier, ref }
+
+Blocking findings; a non-empty list means the template cannot be published.
+
+</summary>
+
+message: string
+
+Human-readable description of the finding.
+
+[Link to this property](#)
+
+tier: string
+
+The validation tier that produced the finding (e.g. html, liquid).
+
+[Link to this property](#)
+
+ref: optional string
+
+Optional pointer to the part of the template the finding refers to.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+page_type: "identity_denied" or "forbidden" or "login" or "interstitial"
+
+Custom page type.
+
+</summary>
+
+One of the following:
+
+"identity_denied"
+
+[Link to this property](#)
+
+"forbidden"
+
+[Link to this property](#)
+
+"login"
+
+[Link to this property](#)
+
+"interstitial"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+version: number
+
+The contract version the template was validated against.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+warnings: array of object { message, tier, ref }
+
+Advisory findings that do not block publishing.
 
 </summary>
 

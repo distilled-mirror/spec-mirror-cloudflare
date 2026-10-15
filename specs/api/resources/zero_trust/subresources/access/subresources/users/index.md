@@ -1285,3 +1285,27 @@ metadata: optional unknown
 </details>
 
 [Link to this property](#)%20zero_trust.access.users.failed_logins%20%3E%20(model)%20failed_login_list_response%20%3E%20(schema)>)
+
+#### UsersMfa Authenticators
+
+##### [Delete a user's authenticator](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/users/subresources/mfa_authenticators/methods/delete)
+
+DELETE/accounts/{account\_id}/access/users/{user\_id}/mfa\_authenticators/{authenticator\_id}
+
+##### ModelsExpand Collapse
+
+MfaAuthenticatorDeleteResponse = unknown
+
+[Link to this property](#)%20zero_trust.access.users.mfa_authenticators%20%3E%20(model)%20mfa_authenticator_delete_response%20%3E%20(schema)>)
+
+#### UsersPasskeys
+
+##### [Delete a user's passkey](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/users/subresources/passkeys/methods/delete)
+
+DELETE/accounts/{account\_id}/access/users/{user\_id}/passkeys/{authenticator\_id}
+
+##### ModelsExpand Collapse
+
+PasskeyDeleteResponse = unknown
+
+[Link to this property](#)%20zero_trust.access.users.passkeys%20%3E%20(model)%20passkey_delete_response%20%3E%20(schema)>)

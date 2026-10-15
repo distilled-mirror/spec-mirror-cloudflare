@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/gateway/audit\_ssh\_settings
 
-Retrieve all Zero Trust Audit SSH and SSH with Access for Infrastructure settings for an account.
+Retrieve SSH with Access for Infrastructure settings for an account.
 
 ##### Security
 

@@ -1,5 +1,5 @@
 ---
-title: List K2 stream subscriptions
+title: List subscriptions with consumer lag
 ---
 
 [Skip to content](#_top)
@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List K2 stream subscriptions
+# List subscriptions with consumer lag
 
 GET/accounts/{account\_id}/k2/streams/{stream\_id}/subscriptions
 
@@ -238,7 +238,7 @@ Indicates whether the API call was successful.
 
 [Link to this property](#)%20k2.streams.subscriptions%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### List K2 stream subscriptions
+### List subscriptions with consumer lag
 
 HTTP
 

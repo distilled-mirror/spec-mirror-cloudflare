@@ -1,0 +1,927 @@
+---
+title: User Populations
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+[Zero Trust](https://developers.cloudflare.com/api/resources/zero_trust)
+
+[Access](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
+# User Populations
+
+##### [List user populations](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/list)
+
+GET/accounts/{account\_id}/access/user\_populations
+
+##### [Create a user population](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/create)
+
+POST/accounts/{account\_id}/access/user\_populations
+
+##### [Get a user population](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/get)
+
+GET/accounts/{account\_id}/access/user\_populations/{user\_population\_id}
+
+##### [Update a user population](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/update)
+
+PUT/accounts/{account\_id}/access/user\_populations/{user\_population\_id}
+
+##### [Delete a user population](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/methods/delete)
+
+DELETE/accounts/{account\_id}/access/user\_populations/{user\_population\_id}
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+UserPopulationListResponse object {id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations%20%3E%20(model)%20user_population_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserPopulationCreateResponse object {id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations%20%3E%20(model)%20user_population_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserPopulationGetResponse object {id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations%20%3E%20(model)%20user_population_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserPopulationUpdateResponse object {id, name }
+
+</summary>
+
+id: string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+name: string
+
+The name of the user population. Leading and trailing whitespace is trimmed before validation. After trimming, the name must contain at least one non-whitespace character and must not exceed 128 UTF-8 bytes.
+
+maxLength128
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations%20%3E%20(model)%20user_population_update_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserPopulationDeleteResponse object {id }
+
+</summary>
+
+id: optional string
+
+UUID.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations%20%3E%20(model)%20user_population_delete_response%20%3E%20(schema)>)
+
+#### User PopulationsUsers
+
+##### [List users in a user population](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/list)
+
+GET/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users
+
+##### [Create a user population user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/create)
+
+POST/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users
+
+##### [Get a user population user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/get)
+
+GET/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users/{user\_id}
+
+##### [Update a user population user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/update)
+
+PATCH/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users/{user\_id}
+
+##### [Replace a user population user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/replace)
+
+PUT/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users/{user\_id}
+
+##### [Delete a user population user](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/user_populations/subresources/users/methods/delete)
+
+DELETE/accounts/{account\_id}/access/user\_populations/{user\_population\_id}/users/{user\_id}
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+UserListResponse object {itemsPerPage, Resources, schemas, 2 more }
+
+</summary>
+
+itemsPerPage: number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+Resources: array of object {id, active, displayName, 6 more }
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+active: optional boolean
+
+<a href="#">Link to this property</a>
+
+displayName: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+emails: optional array of object {primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+externalId: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+meta: optional object {created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+resourceType: optional string
+
+<a href="#">Link to this property</a>
+
+version: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+name: optional object {familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+<a href="#">Link to this property</a>
+
+formatted: optional string
+
+<a href="#">Link to this property</a>
+
+givenName: optional string
+
+<a href="#">Link to this property</a>
+
+honorificPrefix: optional string
+
+<a href="#">Link to this property</a>
+
+honorificSuffix: optional string
+
+<a href="#">Link to this property</a>
+
+middleName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+<a href="#">Link to this property</a>
+
+userName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: array of string
+
+<a href="#">Link to this property</a>
+
+startIndex: number
+
+<a href="#">Link to this property</a>
+
+totalResults: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations.users%20%3E%20(model)%20user_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserCreateResponse object {id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+active: optional boolean
+
+<a href="#">Link to this property</a>
+
+displayName: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+emails: optional array of object {primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+externalId: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+meta: optional object {created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+resourceType: optional string
+
+<a href="#">Link to this property</a>
+
+version: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+name: optional object {familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+<a href="#">Link to this property</a>
+
+formatted: optional string
+
+<a href="#">Link to this property</a>
+
+givenName: optional string
+
+<a href="#">Link to this property</a>
+
+honorificPrefix: optional string
+
+<a href="#">Link to this property</a>
+
+honorificSuffix: optional string
+
+<a href="#">Link to this property</a>
+
+middleName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+<a href="#">Link to this property</a>
+
+userName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations.users%20%3E%20(model)%20user_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserGetResponse object {id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+active: optional boolean
+
+<a href="#">Link to this property</a>
+
+displayName: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+emails: optional array of object {primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+externalId: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+meta: optional object {created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+resourceType: optional string
+
+<a href="#">Link to this property</a>
+
+version: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+name: optional object {familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+<a href="#">Link to this property</a>
+
+formatted: optional string
+
+<a href="#">Link to this property</a>
+
+givenName: optional string
+
+<a href="#">Link to this property</a>
+
+honorificPrefix: optional string
+
+<a href="#">Link to this property</a>
+
+honorificSuffix: optional string
+
+<a href="#">Link to this property</a>
+
+middleName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+<a href="#">Link to this property</a>
+
+userName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations.users%20%3E%20(model)%20user_get_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserUpdateResponse object {id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+active: optional boolean
+
+<a href="#">Link to this property</a>
+
+displayName: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+emails: optional array of object {primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+externalId: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+meta: optional object {created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+resourceType: optional string
+
+<a href="#">Link to this property</a>
+
+version: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+name: optional object {familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+<a href="#">Link to this property</a>
+
+formatted: optional string
+
+<a href="#">Link to this property</a>
+
+givenName: optional string
+
+<a href="#">Link to this property</a>
+
+honorificPrefix: optional string
+
+<a href="#">Link to this property</a>
+
+honorificSuffix: optional string
+
+<a href="#">Link to this property</a>
+
+middleName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+<a href="#">Link to this property</a>
+
+userName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations.users%20%3E%20(model)%20user_update_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+UserReplaceResponse object {id, active, displayName, 6 more }
+
+A SCIM User resource. Additional SCIM extension attributes are supported.
+
+</summary>
+
+id: optional string
+
+<a href="#">Link to this property</a>
+
+active: optional boolean
+
+<a href="#">Link to this property</a>
+
+displayName: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+emails: optional array of object {primary, type, value }
+
+</summary>
+
+primary: optional boolean
+
+<a href="#">Link to this property</a>
+
+type: optional string
+
+<a href="#">Link to this property</a>
+
+value: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+externalId: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+meta: optional object {created, lastModified, location, 2 more }
+
+</summary>
+
+created: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+lastModified: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+resourceType: optional string
+
+<a href="#">Link to this property</a>
+
+version: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+name: optional object {familyName, formatted, givenName, 3 more }
+
+</summary>
+
+familyName: optional string
+
+<a href="#">Link to this property</a>
+
+formatted: optional string
+
+<a href="#">Link to this property</a>
+
+givenName: optional string
+
+<a href="#">Link to this property</a>
+
+honorificPrefix: optional string
+
+<a href="#">Link to this property</a>
+
+honorificSuffix: optional string
+
+<a href="#">Link to this property</a>
+
+middleName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+schemas: optional array of string
+
+The SCIM schemas that apply to this resource.
+
+<a href="#">Link to this property</a>
+
+userName: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.user_populations.users%20%3E%20(model)%20user_replace_response%20%3E%20(schema)>)

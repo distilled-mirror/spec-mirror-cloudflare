@@ -392,7 +392,7 @@ Indicate that this rule is shared via the Orgs API and read only.
 
 <summary>
 
-rule\_settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.rules%20%3E%20(model)%20rule_setting%20%3E%20(schema)">RuleSetting</a> { add\_headers, allow\_child\_bypass, audit\_ssh, 25 more }
+rule\_settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.rules%20%3E%20(model)%20rule_setting%20%3E%20(schema)">RuleSetting</a> { add\_headers, allow\_child\_bypass, biso\_admin\_controls, 24 more }
 
 Defines settings for this rule. Settings apply only to specific rule types and must use compatible selectors. If Terraform detects drift, confirm the setting supports your rule type and check whether the API modifies the value. Use API-returned values in your configuration to prevent drift.
 
@@ -407,26 +407,6 @@ Add custom headers to allowed requests as key-value pairs. Use header names as k
 allow\_child\_bypass: optional boolean
 
 Set to enable MSP children to bypass this rule. Only parent MSP accounts can set this. this rule. Settable for all types of rules.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-audit\_ssh: optional object {command\_logging }
-
-Define the settings for the Audit SSH action. Settable only for <code>l4</code> rules with <code>audit_ssh</code> action.
-
-</summary>
-
-command\_logging: optional boolean
-
-Enable SSH command logging.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1421,9 +1401,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/rules/ten
           ]
         },
         "allow_child_bypass": false,
-        "audit_ssh": {
-          "command_logging": false
-        },
         "biso_admin_controls": {
           "copy": "remote_only",
           "dcp": true,
@@ -1612,9 +1589,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/rules/ten
           ]
         },
         "allow_child_bypass": false,
-        "audit_ssh": {
-          "command_logging": false
-        },
         "biso_admin_controls": {
           "copy": "remote_only",
           "dcp": true,

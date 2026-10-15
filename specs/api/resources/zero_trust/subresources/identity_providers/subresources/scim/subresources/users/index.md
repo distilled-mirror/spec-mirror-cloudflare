@@ -25,3 +25,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 ##### [List SCIM User resources](https://developers.cloudflare.com/api/resources/zero_trust/subresources/identity_providers/subresources/scim/subresources/users/methods/list)
 
 GET/accounts/{account\_id}/access/identity\_providers/{identity\_provider\_id}/scim/users
+
+##### [Get a SCIM User resource](https://developers.cloudflare.com/api/resources/zero_trust/subresources/identity_providers/subresources/scim/subresources/users/methods/get)
+
+GET/accounts/{account\_id}/access/identity\_providers/{identity\_provider\_id}/scim/users/{user\_id}
+
+##### [Delete a SCIM User resource](https://developers.cloudflare.com/api/resources/zero_trust/subresources/identity_providers/subresources/scim/subresources/users/methods/delete)
+
+DELETE/accounts/{account\_id}/access/identity\_providers/{identity\_provider\_id}/scim/users/{user\_id}

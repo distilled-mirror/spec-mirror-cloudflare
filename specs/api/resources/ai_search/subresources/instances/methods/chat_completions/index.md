@@ -524,6 +524,8 @@ One of the following:
 
 match\_threshold: optional number
 
+Minimum similarity score a chunk must reach to be returned. When omitted, falls back to the instance-level score\_threshold, then to 0.4.
+
 maximum1
 
 minimum0
@@ -531,6 +533,8 @@ minimum0
 <a href="#">Link to this property</a>
 
 max\_num\_results: optional number
+
+Maximum number of results to return. When omitted, falls back to the instance-level max\_num\_results, then to 10.
 
 maximum50
 

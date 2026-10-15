@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/gateway/audit\_ssh\_settings
 
-Update Zero Trust Audit SSH and SSH with Access for Infrastructure settings for an account.
+Update SSH with Access for Infrastructure settings for an account.
 
 ##### Security
 

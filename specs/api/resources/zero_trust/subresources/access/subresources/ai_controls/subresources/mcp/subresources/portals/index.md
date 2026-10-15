@@ -82,7 +82,7 @@ maxLength350
 
 <summary>
 
-servers: array of object {id, auth\_type, hostname, 22 more }
+servers: array of object {id, auth\_type, hostname, 23 more }
 
 </summary>
 
@@ -397,6 +397,14 @@ modified\_by: optional string
 <a href="#">Link to this property</a>
 
 on\_behalf: optional boolean
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -626,7 +634,7 @@ maxLength350
 
 <summary>
 
-servers: array of object {id, auth\_type, hostname, 22 more }
+servers: array of object {id, auth\_type, hostname, 23 more }
 
 </summary>
 
@@ -941,6 +949,14 @@ modified\_by: optional string
 <a href="#">Link to this property</a>
 
 on\_behalf: optional boolean
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -1170,7 +1186,7 @@ maxLength350
 
 <summary>
 
-servers: array of object {id, auth\_type, hostname, 22 more }
+servers: array of object {id, auth\_type, hostname, 23 more }
 
 </summary>
 
@@ -1485,6 +1501,14 @@ modified\_by: optional string
 <a href="#">Link to this property</a>
 
 on\_behalf: optional boolean
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -1714,7 +1738,7 @@ maxLength350
 
 <summary>
 
-servers: array of object {id, auth\_type, hostname, 22 more }
+servers: array of object {id, auth\_type, hostname, 23 more }
 
 </summary>
 
@@ -2029,6 +2053,14 @@ modified\_by: optional string
 <a href="#">Link to this property</a>
 
 on\_behalf: optional boolean
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

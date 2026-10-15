@@ -54,7 +54,7 @@ POST/accounts/{account\_id}/access/ai-controls/mcp/servers/{id}/sync
 
 <summary>
 
-ServerListResponse object {id, auth\_type, hostname, 19 more }
+ServerListResponse object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -349,6 +349,14 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 modified\_by: optional string
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -478,7 +486,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerCreateResponse object {id, auth\_type, hostname, 19 more }
+ServerCreateResponse object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -773,6 +781,14 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 modified\_by: optional string
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -902,7 +918,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerReadResponse object {id, auth\_type, hostname, 19 more }
+ServerReadResponse object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -1197,6 +1213,14 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 modified\_by: optional string
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -1326,7 +1350,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerUpdateResponse object {id, auth\_type, hostname, 19 more }
+ServerUpdateResponse object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -1621,6 +1645,14 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 modified\_by: optional string
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -1750,7 +1782,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-ServerDeleteResponse object {id, auth\_type, hostname, 19 more }
+ServerDeleteResponse object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -2045,6 +2077,14 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 modified\_by: optional string
+
+<a href="#">Link to this property</a>
+
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

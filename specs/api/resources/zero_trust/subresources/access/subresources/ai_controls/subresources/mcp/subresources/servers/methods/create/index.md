@@ -244,7 +244,7 @@ Whether the capability is available through the MCP server.
 
 <summary>
 
-result: object {id, auth\_type, hostname, 19 more }
+result: object {id, auth\_type, hostname, 20 more }
 
 </summary>
 
@@ -542,6 +542,14 @@ modified\_by: optional string
 
 <a href="#">Link to this property</a>
 
+registered\_at: optional string
+
+Timestamp of the most recent successful admin OAuth registration.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 secure\_web\_gateway: optional boolean
 
 Route outbound traffic to this MCP server through Zero Trust Secure Web Gateway.
@@ -744,6 +752,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
     "last_synced": "2019-12-27T18:11:19.117Z",
     "modified_at": "2019-12-27T18:11:19.117Z",
     "modified_by": "modified_by",
+    "registered_at": "2019-12-27T18:11:19.117Z",
     "secure_web_gateway": false,
     "status": "ready",
     "updated_prompts": [
@@ -825,6 +834,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
     "last_synced": "2019-12-27T18:11:19.117Z",
     "modified_at": "2019-12-27T18:11:19.117Z",
     "modified_by": "modified_by",
+    "registered_at": "2019-12-27T18:11:19.117Z",
     "secure_web_gateway": false,
     "status": "ready",
     "updated_prompts": [

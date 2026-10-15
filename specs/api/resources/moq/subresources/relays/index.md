@@ -90,6 +90,8 @@ Full relay details (no tokens).
 
 config: object {upstreams }
 
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
+
 </summary>
 
 <details>
@@ -181,6 +183,8 @@ Relay with its auto-created default token pair (one full-access \[publish, subsc
 <summary>
 
 config: object {upstreams }
+
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
 
 </summary>
 
@@ -361,6 +365,8 @@ Full relay details (no tokens).
 <summary>
 
 config: object {upstreams }
+
+Relay configuration. All sub-objects use whole-object replacement when present; omitted sub-objects preserve the existing value.
 
 </summary>
 

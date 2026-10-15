@@ -28,6 +28,10 @@ GET/accounts/{account\_id}/access/custom\_pages
 
 GET/accounts/{account\_id}/access/custom\_pages/{custom\_page\_id}
 
+##### [Validate a custom page template](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/validate)
+
+POST/accounts/{account\_id}/access/custom\_pages/validate
+
 ##### [Create a custom page](https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/custom_pages/methods/create)
 
 POST/accounts/{account\_id}/access/custom\_pages
@@ -207,6 +211,122 @@ Optional pointer to the part of the template the finding refers to.
 </details>
 
 [Link to this property](#)%20zero_trust.access.custom_pages%20%3E%20(model)%20custom_page_without_html%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+CustomPageValidateResponse object {errors, page\_type, version, warnings }
+
+The result of validating a template’s content.
+
+</summary>
+
+<details>
+
+<summary>
+
+errors: array of object {message, tier, ref }
+
+Blocking findings; a non-empty list means the template cannot be published.
+
+</summary>
+
+message: string
+
+Human-readable description of the finding.
+
+<a href="#">Link to this property</a>
+
+tier: string
+
+The validation tier that produced the finding (e.g. html, liquid).
+
+<a href="#">Link to this property</a>
+
+ref: optional string
+
+Optional pointer to the part of the template the finding refers to.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+page\_type: "identity\_denied"or "forbidden"or "login"or "interstitial"
+
+Custom page type.
+
+</summary>
+
+One of the following:
+
+"identity\_denied"
+
+<a href="#">Link to this property</a>
+
+"forbidden"
+
+<a href="#">Link to this property</a>
+
+"login"
+
+<a href="#">Link to this property</a>
+
+"interstitial"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+version: number
+
+The contract version the template was validated against.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+warnings: array of object {message, tier, ref }
+
+Advisory findings that do not block publishing.
+
+</summary>
+
+message: string
+
+Human-readable description of the finding.
+
+<a href="#">Link to this property</a>
+
+tier: string
+
+The validation tier that produced the finding (e.g. html, liquid).
+
+<a href="#">Link to this property</a>
+
+ref: optional string
+
+Optional pointer to the part of the template the finding refers to.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.access.custom_pages%20%3E%20(model)%20custom_page_validate_response%20%3E%20(schema)>)
 
 <details>
 

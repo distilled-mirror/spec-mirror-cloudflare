@@ -1962,7 +1962,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 5 more }
+DurableObjectNamespace object { name, type, class_name, 4 more }
 
 </summary>
 
@@ -2001,40 +2001,6 @@ namespace_id: optional string
 Namespace identifier tag.
 
 maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-retry: optional object { max_attempts, timeout_ms }
-
-Retry policy for calls made to the Durable Object through this binding. Omitted or null properties use the runtime defaults. These limits are upper bounds and do not enable retries for otherwise ineligible calls.
-
-</summary>
-
-max_attempts: optional number
-
-Maximum number of retries after the initial request, not the total number of attempts. Defaults to 4. Zero disables retries.
-
-maximum10
-
-minimum0
-
-[Link to this property](#)
-
-timeout_ms: optional number
-
-Retry timeout in milliseconds, measured from the start of the call. No retry starts after it expires, and a retry still running when it expires is cancelled. This is not a request timeout; it does not limit the initial request, which is still subject to any timeouts set by your Worker. Defaults to 10000.
-
-maximum60000
-
-minimum500
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
@@ -12492,7 +12458,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 5 more }
+DurableObjectNamespace object { name, type, class_name, 4 more }
 
 </summary>
 
@@ -12531,40 +12497,6 @@ namespace_id: optional string
 Namespace identifier tag.
 
 maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-retry: optional object { max_attempts, timeout_ms }
-
-Retry policy for calls made to the Durable Object through this binding. Omitted or null properties use the runtime defaults. These limits are upper bounds and do not enable retries for otherwise ineligible calls.
-
-</summary>
-
-max_attempts: optional number
-
-Maximum number of retries after the initial request, not the total number of attempts. Defaults to 4. Zero disables retries.
-
-maximum10
-
-minimum0
-
-[Link to this property](#)
-
-timeout_ms: optional number
-
-Retry timeout in milliseconds, measured from the start of the call. No retry starts after it expires, and a retry still running when it expires is cancelled. This is not a request timeout; it does not limit the initial request, which is still subject to any timeouts set by your Worker. Defaults to 10000.
-
-maximum60000
-
-minimum500
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
@@ -15554,7 +15486,7 @@ Name of the outbound worker.
 
 <summary>
 
-DurableObjectNamespace object { name, type, class_name, 5 more }
+DurableObjectNamespace object { name, type, class_name, 4 more }
 
 </summary>
 
@@ -15593,40 +15525,6 @@ namespace_id: optional string
 Namespace identifier tag.
 
 maxLength32
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-retry: optional object { max_attempts, timeout_ms }
-
-Retry policy for calls made to the Durable Object through this binding. Omitted or null properties use the runtime defaults. These limits are upper bounds and do not enable retries for otherwise ineligible calls.
-
-</summary>
-
-max_attempts: optional number
-
-Maximum number of retries after the initial request, not the total number of attempts. Defaults to 4. Zero disables retries.
-
-maximum10
-
-minimum0
-
-[Link to this property](#)
-
-timeout_ms: optional number
-
-Retry timeout in milliseconds, measured from the start of the call. No retry starts after it expires, and a retry still running when it expires is cancelled. This is not a request timeout; it does not limit the initial request, which is still subject to any timeouts set by your Worker. Defaults to 10000.
-
-maximum60000
-
-minimum500
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
