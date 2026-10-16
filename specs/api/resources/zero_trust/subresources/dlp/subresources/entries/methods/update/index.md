@@ -78,7 +78,7 @@ formatuuid
 
 <summary>
 
-body: object {name, pattern, type, 2 more } or object {type, enabled } or object {type, enabled }
+body: object {name, pattern, type, 3 more } or object {type, enabled } or object {type, enabled }
 
 </summary>
 
@@ -88,7 +88,7 @@ One of the following:
 
 <summary>
 
-Custom object {name, pattern, type, 2 more }
+Custom object {name, pattern, type, 3 more }
 
 </summary>
 
@@ -125,6 +125,14 @@ description: optional string
 <a href="#">Link to this property</a>
 
 enabled: optional boolean
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry should reference, by id, at most 10. Replaces the current set.
+
+Optional, unlike the rest of this body: omitting it leaves the current attachments alone, so a client that predates validators cannot detach them by accident. Send <code>[]</code> to detach.
 
 <a href="#">Link to this property</a>
 
@@ -272,7 +280,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+result: optional object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -282,7 +290,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -343,6 +351,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -817,7 +833,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/entries/$ENTR
     "type": "custom",
     "updated_at": "2019-12-27T18:11:19.117Z",
     "description": "description",
-    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "validator_ids": [
+      "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    ]
   }
 }
 ```
@@ -861,7 +880,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/entries/$ENTR
     "type": "custom",
     "updated_at": "2019-12-27T18:11:19.117Z",
     "description": "description",
-    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "validator_ids": [
+      "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    ]
   }
 }
 ```

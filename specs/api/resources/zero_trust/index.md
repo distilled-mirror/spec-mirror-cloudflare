@@ -4392,7 +4392,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 30 more }
+SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 31 more }
 
 </summary>
 
@@ -4513,6 +4513,12 @@ A description of the DNS search suffix.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+enable_device_credential_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 [Link to this property](#)
 
@@ -5070,7 +5076,7 @@ PATCH/accounts/{account_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 22 more }
+DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 23 more }
 
 </summary>
 
@@ -5139,6 +5145,12 @@ A description of the DNS search suffix.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+enable_device_credential_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 [Link to this property](#)
 
@@ -5496,7 +5508,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 22 more }
+DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 23 more }
 
 </summary>
 
@@ -5565,6 +5577,12 @@ A description of the DNS search suffix.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+enable_device_credential_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 [Link to this property](#)
 
@@ -284998,7 +285016,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -285144,9 +285162,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -285199,6 +285367,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -285600,7 +285784,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -285746,9 +285930,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -285801,6 +286135,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -286332,7 +286682,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -286478,9 +286828,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -286533,6 +287033,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -286934,7 +287450,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -287080,9 +287596,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -287135,6 +287801,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -287536,7 +288218,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -287682,9 +288364,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -287737,6 +288569,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -288138,7 +288986,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object { id, category, name, 4 more }
+finding: object { id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -288284,9 +289132,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 [Link to this property](#)
 
@@ -288339,6 +289337,22 @@ Description of the threat.
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -290798,7 +291812,7 @@ GET/accounts/{account_id}/data-security/posture/finding_types/{finding_type_id}
 
 <summary>
 
-FindingTypeListResponse object { id, category, name, 3 more }
+FindingTypeListResponse object { id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -290946,9 +291960,175 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -290960,7 +292140,7 @@ Detailed description of the finding.
 
 <summary>
 
-FindingTypeGetResponse object { id, category, name, 3 more }
+FindingTypeGetResponse object { id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -291108,9 +292288,175 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 [Link to this property](#)
 
+applies_to_all_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: optional "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
 description: optional string
 
 Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: optional "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+[Link to this property](#)
+
+updated_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 [Link to this property](#)
 
@@ -304218,7 +305564,7 @@ The description of the profile.
 
 <summary>
 
-Deprecatedentries: optional array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -304228,7 +305574,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -304273,6 +305619,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -304720,7 +306074,7 @@ formatuuid
 
 <summary>
 
-shared_entries: optional array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+shared_entries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -304730,7 +306084,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -304775,6 +306129,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -305222,7 +306584,7 @@ formatint32
 
 <summary>
 
-Deprecatedentries: array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -305232,7 +306594,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -305277,6 +306639,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -305782,7 +307152,7 @@ formatdate-time
 
 <summary>
 
-Deprecatedentries: array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -305792,7 +307162,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -305837,6 +307207,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -306268,7 +307646,7 @@ name: string
 
 <summary>
 
-shared_entries: array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+shared_entries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -306278,7 +307656,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -306323,6 +307701,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -306918,7 +308304,7 @@ The description of the profile.
 
 <summary>
 
-Deprecatedentries: optional array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -306928,7 +308314,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -306973,6 +308359,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -307420,7 +308814,7 @@ formatuuid
 
 <summary>
 
-shared_entries: optional array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+shared_entries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -307430,7 +308824,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -307475,6 +308869,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -307970,7 +309372,7 @@ Entries to enable for this predefined profile. Any entries not provided will be 
 
 <summary>
 
-Deprecatedentries: array of object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 This field has been deprecated for `enabled_entries`.
 
@@ -307982,7 +309384,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -308027,6 +309429,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -308576,7 +309986,7 @@ DELETE/accounts/{account_id}/dlp/entries/{entry_id}
 
 <summary>
 
-EntryListResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
+EntryListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -308586,7 +309996,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -308669,6 +310079,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -309318,7 +310736,7 @@ One of the following:
 
 <summary>
 
-EntryGetResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
+EntryGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -309328,7 +310746,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -309433,6 +310851,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -310214,7 +311640,7 @@ One of the following:
 
 <summary>
 
-EntryCreateResponse object { id, created_at, enabled, 5 more }
+EntryCreateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -310258,6 +311684,14 @@ formatuuid
 
 [Link to this property](#)
 
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -310266,7 +311700,7 @@ formatuuid
 
 <summary>
 
-EntryUpdateResponse = object { id, created_at, enabled, 6 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
+EntryUpdateResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -310276,7 +311710,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object { id, created_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -310321,6 +311755,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -310768,7 +312210,7 @@ GET/accounts/{account_id}/dlp/entries
 
 <summary>
 
-CustomCreateResponse object { id, created_at, enabled, 5 more }
+CustomCreateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -310809,6 +312251,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -310820,7 +312270,7 @@ formatuuid
 
 <summary>
 
-CustomUpdateResponse object { id, created_at, enabled, 5 more }
+CustomUpdateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -310861,6 +312311,14 @@ description: optional string
 Deprecatedprofile_id: optional string
 
 formatuuid
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -310876,7 +312334,7 @@ CustomDeleteResponse = unknown
 
 <summary>
 
-CustomGetResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
+CustomGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -310886,7 +312344,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -310991,6 +312449,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -311772,7 +313238,7 @@ One of the following:
 
 <summary>
 
-CustomListResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
+CustomListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -311782,7 +313248,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -311865,6 +313331,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -312836,7 +314310,7 @@ PredefinedDeleteResponse = unknown
 
 <summary>
 
-PredefinedGetResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
+PredefinedGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -312846,7 +314320,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -312951,6 +314425,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -313732,7 +315214,7 @@ One of the following:
 
 <summary>
 
-PredefinedListResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
+PredefinedListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -313742,7 +315224,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -313825,6 +315307,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -314588,7 +316078,7 @@ IntegrationDeleteResponse = unknown
 
 <summary>
 
-IntegrationGetResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
+IntegrationGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -314598,7 +316088,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -314703,6 +316193,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 
@@ -315484,7 +316982,7 @@ One of the following:
 
 <summary>
 
-IntegrationListResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
+IntegrationListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -315494,7 +316992,7 @@ One of the following:
 
 <summary>
 
-object { id, created_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -315577,6 +317075,14 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 [Link to this property](#)
 

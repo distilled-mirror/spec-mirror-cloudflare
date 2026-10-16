@@ -48,6 +48,118 @@ account\_id: string
 
 ##### Q uery ParametersExpand Collapse
 
+<details>
+
+<summary>
+
+direction: optional "asc"or "desc"
+
+Sort direction for the primary field. Defaults to ‘desc’. Ties are resolved by case-insensitive name, then ID, both ascending regardless of direction.
+
+</summary>
+
+One of the following:
+
+"asc"
+
+<a href="#">Link to this property</a>
+
+"desc"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
+
+max\_updated\_at: optional string
+
+Return only finding types updated at or before this RFC 3339 timestamp (inclusive).
+
+formatdate-time
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20max_updated_at%20%3E%20(schema)>)
+
+min\_updated\_at: optional string
+
+Return only finding types updated at or after this RFC 3339 timestamp (inclusive).
+
+formatdate-time
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20min_updated_at%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+order: optional "created"or "updated"or "match\_count"or 5 more
+
+Field to sort by (case-insensitive). Defaults to ‘created’. Name and vendor sorting is case-insensitive; vendor uses friendly provider names. Ascending order: type Content then Posture; origin custom then system; severity Low, Medium, High, Critical.
+
+</summary>
+
+One of the following:
+
+"created"
+
+<a href="#">Link to this property</a>
+
+"updated"
+
+<a href="#">Link to this property</a>
+
+"match\_count"
+
+<a href="#">Link to this property</a>
+
+"name"
+
+<a href="#">Link to this property</a>
+
+"vendor"
+
+<a href="#">Link to this property</a>
+
+"type"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+"severity"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+origins: optional array of "custom"or "system"
+
+Filter finding types by origin. Supports multiple comma-separated, case-insensitive values.
+
+</summary>
+
+One of the following:
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+"system"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20origins%20%3E%20(schema)>)
+
 page: optional number
 
 A page number within the paginated result set.
@@ -60,6 +172,12 @@ Number of results to return per page.
 
 [Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
+quarantined: optional boolean
+
+When true, return only quarantined finding types; when false, return only non-quarantined finding types. Omit to return both.
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20quarantined%20%3E%20(schema)>)
+
 search: optional string
 
 Filter finding types by name or ID (case-insensitive substring match).
@@ -70,7 +188,63 @@ Filter finding types by name or ID (case-insensitive substring match).
 
 <summary>
 
-vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 14 more
+severities: optional array of "critical"or "high"or "medium"or "low"
+
+Filter finding types by severity. Supports multiple comma-separated, case-insensitive values.
+
+</summary>
+
+One of the following:
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20severities%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+types: optional array of "Content"or "Posture"
+
+Filter finding types by category type. Supports multiple comma-separated, case-insensitive values.
+
+</summary>
+
+One of the following:
+
+"Content"
+
+<a href="#">Link to this property</a>
+
+"Posture"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.posture.finding_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20types%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+vendors: optional array of "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
 
 Filter finding types by vendor. Supports multiple comma-separated values. Each value may be either the vendor enum (GOOGLE\_WORKSPACE) or the friendly name returned by the read routes (Google Workspace).
 
@@ -119,10 +293,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "MICROSOFT"
-
-<a href="#">Link to this property</a>
-
-"MICROSOFT\_INTERNAL"
 
 <a href="#">Link to this property</a>
 
@@ -326,7 +496,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, category, name, 3 more }
+result: optional array of object {id, category, name, 14 more }
 
 Array of finding type objects.
 
@@ -474,9 +644,175 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -540,7 +876,20 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "name": "Slack File Publicly Accessible",
       "severity": "High",
       "vendor": "Google Workspace",
-      "description": "This finding indicates that a file in your Slack workspace is publicly accessible."
+      "applies_to_all_integrations": true,
+      "asset_class": "GoogleWorkspaceFile",
+      "asset_vendor": "GOOGLE_WORKSPACE",
+      "created_at": "2024-01-15T10:30:00Z",
+      "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
+      "expression": "expression",
+      "integration_ids": [
+        "550e8400-e29b-41d4-a716-446655440000"
+      ],
+      "match_count": 142,
+      "origin": "system",
+      "quarantined": true,
+      "updated_at": "2024-01-15T10:30:00Z",
+      "version": 0
     }
   ]
 }
@@ -593,7 +942,20 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "name": "Slack File Publicly Accessible",
       "severity": "High",
       "vendor": "Google Workspace",
-      "description": "This finding indicates that a file in your Slack workspace is publicly accessible."
+      "applies_to_all_integrations": true,
+      "asset_class": "GoogleWorkspaceFile",
+      "asset_vendor": "GOOGLE_WORKSPACE",
+      "created_at": "2024-01-15T10:30:00Z",
+      "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
+      "expression": "expression",
+      "integration_ids": [
+        "550e8400-e29b-41d4-a716-446655440000"
+      ],
+      "match_count": 142,
+      "origin": "system",
+      "quarantined": true,
+      "updated_at": "2024-01-15T10:30:00Z",
+      "version": 0
     }
   ]
 }

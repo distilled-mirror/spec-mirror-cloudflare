@@ -68,11 +68,37 @@ boolean
 
 <a href="#">Link to this property</a>
 
-array of unknown
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+array of stringor numberor booleanor map\[unknown]
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
 
 <a href="#">Link to this property</a>
 
 map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

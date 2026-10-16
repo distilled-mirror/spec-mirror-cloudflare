@@ -72,8 +72,6 @@ maxLength32
 
 targets: array of string
 
-maxLength10
-
 [Link to this property](#)%20diagnostics.traceroutes%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20targets%20%3E%20(schema)>)
 
 colos: optional array of string

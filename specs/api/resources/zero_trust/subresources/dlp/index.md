@@ -1,52 +1,30 @@
----
-title: DLP
----
+##### [List custom prompt topics](/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/list)
 
-[Skip to content](#_top)
+GET/accounts/{account_id}/dlp/custom_prompt_topics
 
-[API Reference](https://developers.cloudflare.com/api)
+##### [Get custom prompt topic](/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/get)
 
-[Zero Trust](https://developers.cloudflare.com/api/resources/zero_trust)
+GET/accounts/{account_id}/dlp/custom_prompt_topics/{entry_id}
 
-Copy Markdown
+##### [Create custom prompt topic](/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/create)
 
-Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+POST/accounts/{account_id}/dlp/custom_prompt_topics
 
----
+##### [Update custom prompt topic](/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/update)
 
-**Copy Markdown****View as Markdown**
+PUT/accounts/{account_id}/dlp/custom_prompt_topics/{entry_id}
 
-# DLP
+##### [Delete custom prompt topic](/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/delete)
 
-#### DLPCustom Prompt Topics
+DELETE/accounts/{account_id}/dlp/custom_prompt_topics/{entry_id}
 
-##### [List custom prompt topics](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/list)
-
-GET/accounts/{account\_id}/dlp/custom\_prompt\_topics
-
-##### [Get custom prompt topic](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/get)
-
-GET/accounts/{account\_id}/dlp/custom\_prompt\_topics/{entry\_id}
-
-##### [Create custom prompt topic](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/create)
-
-POST/accounts/{account\_id}/dlp/custom\_prompt\_topics
-
-##### [Update custom prompt topic](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/update)
-
-PUT/accounts/{account\_id}/dlp/custom\_prompt\_topics/{entry\_id}
-
-##### [Delete custom prompt topic](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/custom_prompt_topics/methods/delete)
-
-DELETE/accounts/{account\_id}/dlp/custom\_prompt\_topics/{entry\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-CustomPromptTopic object {id, created\_at, enabled, 5 more }
+CustomPromptTopic object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -54,21 +32,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 topic: string
 
@@ -76,61 +54,59 @@ maxLength50
 
 minLength2
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.custom_prompt_topics%20%3E%20(model)%20custom_prompt_topic%20%3E%20(schema)>)
+[Link to this property](#)
 
 CustomPromptTopicDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.custom_prompt_topics%20%3E%20(model)%20custom_prompt_topic_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPDatasets
+##### [Fetch all datasets](/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/list)
 
-##### [Fetch all datasets](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/list)
+GET/accounts/{account_id}/dlp/datasets
 
-GET/accounts/{account\_id}/dlp/datasets
+##### [Fetch a specific dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/get)
 
-##### [Fetch a specific dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/get)
+GET/accounts/{account_id}/dlp/datasets/{dataset_id}
 
-GET/accounts/{account\_id}/dlp/datasets/{dataset\_id}
+##### [Create a new dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/create)
 
-##### [Create a new dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/create)
+POST/accounts/{account_id}/dlp/datasets
 
-POST/accounts/{account\_id}/dlp/datasets
+##### [Update details about a dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/update)
 
-##### [Update details about a dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/update)
+PUT/accounts/{account_id}/dlp/datasets/{dataset_id}
 
-PUT/accounts/{account\_id}/dlp/datasets/{dataset\_id}
+##### [Delete a dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/delete)
 
-##### [Delete a dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/methods/delete)
+DELETE/accounts/{account_id}/dlp/datasets/{dataset_id}
 
-DELETE/accounts/{account\_id}/dlp/datasets/{dataset\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-Dataset object {id, columns, created\_at, 9 more }
+Dataset object { id, columns, created_at, 9 more }
 
 </summary>
 
@@ -138,37 +114,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-columns: array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: array of object { entry_id, header_name, num_cells, upload_status }
 
 </summary>
 
-entry\_id: string
+entry_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-header\_name: string
+header_name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -176,69 +152,69 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-encoding\_version: number
+encoding_version: number
 
 formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -246,33 +222,33 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Stores when the dataset was last updated.
 
@@ -280,27 +256,27 @@ This includes name or description changes as well as uploads.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-uploads: array of object {num\_cells, status, version }
+uploads: array of object { num_cells, status, version }
 
 </summary>
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -308,61 +284,61 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 version: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: optional boolean
+case_sensitive: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The description of the dataset.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DatasetArray = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)">Dataset</a> { id, columns, created\_at, 9 more }
+DatasetArray = array of [Dataset](/api/resources/zero_trust#(resource)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)) { id, columns, created_at, 9 more }
 
 </summary>
 
@@ -370,37 +346,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-columns: array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: array of object { entry_id, header_name, num_cells, upload_status }
 
 </summary>
 
-entry\_id: string
+entry_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-header\_name: string
+header_name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -408,69 +384,69 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-encoding\_version: number
+encoding_version: number
 
 formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -478,33 +454,33 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 Stores when the dataset was last updated.
 
@@ -512,27 +488,27 @@ This includes name or description changes as well as uploads.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-uploads: array of object {num\_cells, status, version }
+uploads: array of object { num_cells, status, version }
 
 </summary>
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-status: "empty"or "uploading"or "pending"or 3 more
+status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -540,69 +516,69 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 version: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: optional boolean
+case_sensitive: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The description of the dataset.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset_array%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DatasetCreation object {dataset, encoding\_version, max\_cells, 2 more }
+DatasetCreation object { dataset, encoding_version, max_cells, 2 more }
 
 </summary>
 
-dataset: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)">Dataset</a> { id, columns, created\_at, 9 more }
+dataset: [Dataset](/api/resources/zero_trust#(resource)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset%20%3E%20(schema)) { id, columns, created_at, 9 more }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-encoding\_version: number
+encoding_version: number
 
 Encoding version to use for dataset.
 
@@ -610,15 +586,15 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_cells: number
+max_cells: number
 
 formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 version: number
 
@@ -626,7 +602,7 @@ The version to use when uploading the dataset.
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
@@ -636,87 +612,85 @@ This is not present in Custom Wordlists.
 
 formatpassword
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets%20%3E%20(model)%20dataset_creation%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPDatasetsUpload
+##### [Prepare to upload a new version of a dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/upload/methods/create)
 
-##### [Prepare to upload a new version of a dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/upload/methods/create)
+POST/accounts/{account_id}/dlp/datasets/{dataset_id}/upload
 
-POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/upload
+##### [Upload a new version of a dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/upload/methods/edit)
 
-##### [Upload a new version of a dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/upload/methods/edit)
+POST/accounts/{account_id}/dlp/datasets/{dataset_id}/upload/{version}
 
-POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/upload/{version}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-NewVersion object {encoding\_version, max\_cells, version, 3 more }
+NewVersion object { encoding_version, max_cells, version, 3 more }
 
 </summary>
 
-encoding\_version: number
+encoding_version: number
 
 formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_cells: number
+max_cells: number
 
 formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 version: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: optional boolean
+case_sensitive: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-columns: optional array of object {entry\_id, header\_name, num\_cells, upload\_status }
+columns: optional array of object { entry_id, header_name, num_cells, upload_status }
 
 </summary>
 
-entry\_id: string
+entry_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-header\_name: string
+header_name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -724,83 +698,81 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: optional string
 
 formatpassword
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets.upload%20%3E%20(model)%20new_version%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPDatasetsVersions
+##### [Sets the column information for a multi-column upload](/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/versions/methods/create)
 
-##### [Sets the column information for a multi-column upload](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/versions/methods/create)
+POST/accounts/{account_id}/dlp/datasets/{dataset_id}/versions/{version}
 
-POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-VersionCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+VersionCreateResponse object { entry_id, header_name, num_cells, upload_status }
 
 </summary>
 
-entry\_id: string
+entry_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-header\_name: string
+header_name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -808,73 +780,71 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets.versions%20%3E%20(model)%20version_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPDatasetsVersionsEntries
+##### [Upload a new version of a multi-column dataset](/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/versions/subresources/entries/methods/create)
 
-##### [Upload a new version of a multi-column dataset](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/datasets/subresources/versions/subresources/entries/methods/create)
+POST/accounts/{account_id}/dlp/datasets/{dataset_id}/versions/{version}/entries/{entry_id}
 
-POST/accounts/{account\_id}/dlp/datasets/{dataset\_id}/versions/{version}/entries/{entry\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-EntryCreateResponse object {entry\_id, header\_name, num\_cells, upload\_status }
+EntryCreateResponse object { entry_id, header_name, num_cells, upload_status }
 
 </summary>
 
-entry\_id: string
+entry_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-header\_name: string
+header_name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-num\_cells: number
+num_cells: number
 
 formatint64
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: "empty"or "uploading"or "pending"or 3 more
+upload_status: "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -882,102 +852,97 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.datasets.versions.entries%20%3E%20(model)%20entry_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPPatterns
+##### [Validate a DLP regex pattern](/api/resources/zero_trust/subresources/dlp/subresources/patterns/methods/validate)
 
-##### [Validate a DLP regex pattern](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/patterns/methods/validate)
+POST/accounts/{account_id}/dlp/patterns/validate
 
-POST/accounts/{account\_id}/dlp/patterns/validate
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-PatternValidateResponse object {valid }
+PatternValidateResponse object { valid }
 
 </summary>
 
 valid: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.patterns%20%3E%20(model)%20pattern_validate_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPPayload Logs
+##### [Get payload log settings](/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/get)
 
-##### [Get payload log settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/get)
+GET/accounts/{account_id}/dlp/payload_log
 
-Deprecated
+##### [Set payload log settings](/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/update)
 
-GET/accounts/{account\_id}/dlp/payload\_log
+PUT/accounts/{account_id}/dlp/payload_log
 
-##### [Set payload log settings](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/payload_logs/methods/update)
-
-Deprecated
-
-PUT/accounts/{account\_id}/dlp/payload\_log
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-PayloadLogGetResponse object {updated\_at, masking\_level, public\_key }
+PayloadLogGetResponse object { updated_at, masking_level, public_key }
 
 </summary>
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 
-- <code>full</code>: The entire payload is masked.
-- <code>partial</code>: Only partial payload content is masked.
-- <code>clear</code>: No masking is applied to the payload content.
-- <code>default</code>: DLP uses its default masking behavior.
+`full`: The entire payload is masked.
+
+`partial`: Only partial payload content is masked.
+
+`clear`: No masking is applied to the payload content.
+
+`default`: DLP uses its default masking behavior.
 
 </summary>
 
@@ -985,60 +950,63 @@ One of the following:
 
 "full"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "partial"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "clear"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "default"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-public\_key: optional string
+public_key: optional string
 
 Base64-encoded public key for encrypting payload logs. Null when payload logging is disabled.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.payload_logs%20%3E%20(model)%20payload_log_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PayloadLogUpdateResponse object {updated\_at, masking\_level, public\_key }
+PayloadLogUpdateResponse object { updated_at, masking_level, public_key }
 
 </summary>
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 
-- <code>full</code>: The entire payload is masked.
-- <code>partial</code>: Only partial payload content is masked.
-- <code>clear</code>: No masking is applied to the payload content.
-- <code>default</code>: DLP uses its default masking behavior.
+`full`: The entire payload is masked.
+
+`partial`: Only partial payload content is masked.
+
+`clear`: No masking is applied to the payload content.
+
+`default`: DLP uses its default masking behavior.
 
 </summary>
 
@@ -1046,102 +1014,103 @@ One of the following:
 
 "full"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "partial"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "clear"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "default"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-public\_key: optional string
+public_key: optional string
 
 Base64-encoded public key for encrypting payload logs. Null when payload logging is disabled.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.payload_logs%20%3E%20(model)%20payload_log_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPSettings
+##### [Get DLP account-level settings.](/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/get)
 
-##### [Get DLP account-level settings.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/get)
+GET/accounts/{account_id}/dlp/settings
 
-GET/accounts/{account\_id}/dlp/settings
+##### [Update DLP account-level settings (full replacement).](/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/update)
 
-##### [Update DLP account-level settings (full replacement).](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/update)
+PUT/accounts/{account_id}/dlp/settings
 
-PUT/accounts/{account\_id}/dlp/settings
+##### [Partially update DLP account-level settings.](/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/edit)
 
-##### [Partially update DLP account-level settings.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/edit)
+PATCH/accounts/{account_id}/dlp/settings
 
-PATCH/accounts/{account\_id}/dlp/settings
+##### [Delete (reset) DLP account-level settings to initial values.](/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/delete)
 
-##### [Delete (reset) DLP account-level settings to initial values.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/delete)
+DELETE/accounts/{account_id}/dlp/settings
 
-DELETE/accounts/{account\_id}/dlp/settings
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-DLPSettings object {ai\_context\_analysis, ocr, payload\_logging }
+DLPSettings object { ai_context_analysis, ocr, payload_logging }
 
 DLP account-level settings response.
 
 </summary>
 
-ai\_context\_analysis: boolean
+ai_context_analysis: boolean
 
 Whether AI context analysis is enabled at the account level.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 ocr: boolean
 
 Whether OCR is enabled at the account level.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-payload\_logging: object {updated\_at, masking\_level, public\_key }
+payload_logging: object { updated_at, masking_level, public_key }
 
 </summary>
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-masking\_level: optional "full"or "partial"or "clear"or "default"
+masking_level: optional "full" or "partial" or "clear" or "default"
 
 Masking level for payload logs.
 
-- <code>full</code>: The entire payload is masked.
-- <code>partial</code>: Only partial payload content is masked.
-- <code>clear</code>: No masking is applied to the payload content.
-- <code>default</code>: DLP uses its default masking behavior.
+`full`: The entire payload is masked.
+
+`partial`: Only partial payload content is masked.
+
+`clear`: No masking is applied to the payload content.
+
+`default`: DLP uses its default masking behavior.
 
 </summary>
 
@@ -1149,71 +1118,67 @@ One of the following:
 
 "full"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "partial"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "clear"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "default"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-public\_key: optional string
+public_key: optional string
 
 Base64-encoded public key for encrypting payload logs. Null when payload logging is disabled.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.settings%20%3E%20(model)%20dlp_settings%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEmail
+##### [Get mapping](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/account_mapping/methods/get)
 
-#### DLPEmailAccount Mapping
+GET/accounts/{account_id}/dlp/email/account_mapping
 
-##### [Get mapping](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/account_mapping/methods/get)
+##### [Create mapping](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/account_mapping/methods/create)
 
-GET/accounts/{account\_id}/dlp/email/account\_mapping
+POST/accounts/{account_id}/dlp/email/account_mapping
 
-##### [Create mapping](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/account_mapping/methods/create)
-
-POST/accounts/{account\_id}/dlp/email/account\_mapping
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-AccountMappingGetResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingGetResponse object { addin_identifier_token, auth_requirements }
 
 </summary>
 
-addin\_identifier\_token: string
+addin_identifier_token: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth_requirements: object { allowed_microsoft_organizations, type } or object { type }
 
 </summary>
 
@@ -1223,65 +1188,65 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed_microsoft_organizations, type }
 
 </summary>
 
-allowed\_microsoft\_organizations: array of string
+allowed_microsoft_organizations: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "Org"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
 type: "NoAuth"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.account_mapping%20%3E%20(model)%20account_mapping_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-AccountMappingCreateResponse object {addin\_identifier\_token, auth\_requirements }
+AccountMappingCreateResponse object { addin_identifier_token, auth_requirements }
 
 </summary>
 
-addin\_identifier\_token: string
+addin_identifier_token: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-auth\_requirements: object {allowed\_microsoft\_organizations, type } or object {type }
+auth_requirements: object { allowed_microsoft_organizations, type } or object { type }
 
 </summary>
 
@@ -1291,79 +1256,77 @@ One of the following:
 
 <summary>
 
-object {allowed\_microsoft\_organizations, type }
+object { allowed_microsoft_organizations, type }
 
 </summary>
 
-allowed\_microsoft\_organizations: array of string
+allowed_microsoft_organizations: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "Org"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Type object {type }
+Type object { type }
 
 </summary>
 
 type: "NoAuth"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.account_mapping%20%3E%20(model)%20account_mapping_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEmailRules
+##### [List all email scanner rules](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/list)
 
-##### [List all email scanner rules](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/list)
+GET/accounts/{account_id}/dlp/email/rules
 
-GET/accounts/{account\_id}/dlp/email/rules
+##### [Get an email scanner rule](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/get)
 
-##### [Get an email scanner rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/get)
+GET/accounts/{account_id}/dlp/email/rules/{rule_id}
 
-GET/accounts/{account\_id}/dlp/email/rules/{rule\_id}
+##### [Create email scanner rule](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/create)
 
-##### [Create email scanner rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/create)
+POST/accounts/{account_id}/dlp/email/rules
 
-POST/accounts/{account\_id}/dlp/email/rules
+##### [Update email scanner rule](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/update)
 
-##### [Update email scanner rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/update)
+PUT/accounts/{account_id}/dlp/email/rules/{rule_id}
 
-PUT/accounts/{account\_id}/dlp/email/rules/{rule\_id}
+##### [Delete email scanner rule](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/delete)
 
-##### [Delete email scanner rule](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/delete)
+DELETE/accounts/{account_id}/dlp/email/rules/{rule_id}
 
-DELETE/accounts/{account\_id}/dlp/email/rules/{rule\_id}
+##### [Update email scanner rule priorities](/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/bulk_edit)
 
-##### [Update email scanner rule priorities](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/email/subresources/rules/methods/bulk_edit)
+PATCH/accounts/{account_id}/dlp/email/rules
 
-PATCH/accounts/{account\_id}/dlp/email/rules
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-RuleListResponse object {action, conditions, created\_at, 6 more }
+RuleListResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -1371,27 +1334,27 @@ RuleListResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -1401,7 +1364,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -1409,29 +1372,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -1439,25 +1402,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -1465,33 +1428,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -1499,33 +1462,33 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RuleGetResponse object {action, conditions, created\_at, 6 more }
+RuleGetResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -1533,27 +1496,27 @@ RuleGetResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -1563,7 +1526,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -1571,29 +1534,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -1601,25 +1564,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -1627,33 +1590,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -1661,33 +1624,33 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RuleCreateResponse object {action, conditions, created\_at, 6 more }
+RuleCreateResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -1695,27 +1658,27 @@ RuleCreateResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -1725,7 +1688,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -1733,29 +1696,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -1763,25 +1726,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -1789,33 +1752,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -1823,33 +1786,33 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RuleUpdateResponse object {action, conditions, created\_at, 6 more }
+RuleUpdateResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -1857,27 +1820,27 @@ RuleUpdateResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -1887,7 +1850,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -1895,29 +1858,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -1925,25 +1888,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -1951,33 +1914,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -1985,33 +1948,33 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RuleDeleteResponse object {action, conditions, created\_at, 6 more }
+RuleDeleteResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -2019,27 +1982,27 @@ RuleDeleteResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -2049,7 +2012,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -2057,29 +2020,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -2087,25 +2050,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -2113,33 +2076,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -2147,33 +2110,33 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-RuleBulkEditResponse object {action, conditions, created\_at, 6 more }
+RuleBulkEditResponse object { action, conditions, created_at, 6 more }
 
 </summary>
 
@@ -2181,27 +2144,27 @@ RuleBulkEditResponse object {action, conditions, created\_at, 6 more }
 
 <summary>
 
-action: object {action, message }
+action: object { action, message }
 
 </summary>
 
 action: "Block"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 message: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-conditions: array of object {operator, selector, value }
+conditions: array of object { operator, selector, value }
 
 Triggered if all conditions match.
 
@@ -2211,7 +2174,7 @@ Triggered if all conditions match.
 
 <summary>
 
-operator: "InList"or "NotInList"or "MatchRegex"or "NotMatchRegex"
+operator: "InList" or "NotInList" or "MatchRegex" or "NotMatchRegex"
 
 </summary>
 
@@ -2219,29 +2182,29 @@ One of the following:
 
 "InList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotInList"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "MatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "NotMatchRegex"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-selector: "Recipients"or "Sender"or "DLPProfiles"
+selector: "Recipients" or "Sender" or "DLPProfiles"
 
 </summary>
 
@@ -2249,25 +2212,25 @@ One of the following:
 
 "Recipients"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Sender"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "DLPProfiles"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-value: array of stringor string
+value: array of string or string
 
 </summary>
 
@@ -2275,33 +2238,33 @@ One of the following:
 
 array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 priority: number
 
@@ -2309,45 +2272,43 @@ formatint32
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-rule\_id: string
+rule_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.email.rules%20%3E%20(model)%20rule_bulk_edit_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPProfiles
+##### [List all profiles](/api/resources/zero_trust/subresources/dlp/subresources/profiles/methods/list)
 
-##### [List all profiles](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/methods/list)
+GET/accounts/{account_id}/dlp/profiles
 
-GET/accounts/{account\_id}/dlp/profiles
+##### [Get DLP Profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/methods/get)
 
-##### [Get DLP Profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/methods/get)
+GET/accounts/{account_id}/dlp/profiles/{profile_id}
 
-GET/accounts/{account\_id}/dlp/profiles/{profile\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-ContextAwareness object {enabled, skip }
+ContextAwareness object { enabled, skip }
 
 Scan the context of predefined entries to only return matches surrounded by keywords.
 
@@ -2357,23 +2318,23 @@ enabled: boolean
 
 If true, scan the context of predefined entries to only return matches surrounded by keywords.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-skip: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20skip_configuration%20%3E%20(schema)">SkipConfiguration</a> { files }
+skip: [SkipConfiguration](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20skip_configuration%20%3E%20(schema)) { files }
 
 Content types to exclude from context analysis and return all matches.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Profile = object {id, allowed\_match\_count, created\_at, 13 more } or object {id, allowed\_match\_count, entries, 7 more } or object {id, created\_at, entries, 6 more }
+Profile = object { id, allowed_match_count, created_at, 13 more } or object { id, allowed_match_count, entries, 7 more } or object { id, created_at, entries, 6 more }
 
 </summary>
 
@@ -2383,7 +2344,7 @@ One of the following:
 
 <summary>
 
-CustomProfile object {id, allowed\_match\_count, created\_at, 13 more }
+CustomProfile object { id, allowed_match_count, created_at, 13 more }
 
 </summary>
 
@@ -2393,9 +2354,9 @@ The id of the profile (uuid).
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-allowed\_match\_count: number
+allowed_match_count: number
 
 Related DLP policies will trigger when the match count exceeds the number set.
 
@@ -2405,47 +2366,47 @@ maximum1000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When the profile was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 The name of the profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ocr\_enabled: boolean
+ocr_enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When the profile was lasted updated.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ai\_context\_enabled: optional boolean
+ai_context_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence\_threshold: optional "low"or "medium"or "high"or "very\_high"
+confidence_threshold: optional "low" or "medium" or "high" or "very_high"
 
 </summary>
 
@@ -2453,53 +2414,53 @@ One of the following:
 
 "low"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "medium"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"very\_high"
+"very_high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedcontext\_awareness: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)">ContextAwareness</a> { enabled, skip }
+Deprecatedcontext_awareness: optional [ContextAwareness](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)) { enabled, skip }
 
 Scan the context of predefined entries to only return matches surrounded by keywords.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_classes: optional array of string
+data_classes: optional array of string
 
 Data classes associated with this profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: optional array of string
+data_tags: optional array of string
 
 Data tags associated with this profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The description of the profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Deprecatedentries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -2509,7 +2470,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -2517,55 +2478,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -2573,47 +2542,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -2621,61 +2590,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -2687,7 +2656,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -2697,7 +2666,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -2705,35 +2674,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -2741,31 +2710,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -2773,47 +2742,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -2821,57 +2790,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -2879,47 +2848,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -2927,81 +2896,81 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: optional array of object {group\_id, level\_id }
+sensitivity_levels: optional array of object { group_id, level_id }
 
 Sensitivity levels associated with this profile.
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-shared\_entries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+shared_entries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -3011,7 +2980,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -3019,55 +2988,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3075,47 +3052,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -3123,61 +3100,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3189,7 +3166,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3199,7 +3176,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -3207,35 +3184,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -3243,31 +3220,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3275,47 +3252,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -3323,57 +3300,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3381,47 +3358,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -3429,59 +3406,59 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedProfile object {id, allowed\_match\_count, entries, 7 more }
+PredefinedProfile object { id, allowed_match_count, entries, 7 more }
 
 </summary>
 
@@ -3491,19 +3468,19 @@ The id of the predefined profile (uuid).
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-allowed\_match\_count: number
+allowed_match_count: number
 
 formatint32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -3513,7 +3490,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -3521,55 +3498,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3577,47 +3562,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -3625,61 +3610,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3691,7 +3676,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -3701,7 +3686,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -3709,35 +3694,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -3745,31 +3730,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3777,47 +3762,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -3825,57 +3810,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -3883,47 +3868,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -3931,69 +3916,69 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 The name of the predefined profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ai\_context\_enabled: optional boolean
+ai_context_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence\_threshold: optional "low"or "medium"or "high"or "very\_high"
+confidence_threshold: optional "low" or "medium" or "high" or "very_high"
 
 </summary>
 
@@ -4001,49 +3986,49 @@ One of the following:
 
 "low"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "medium"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"very\_high"
+"very_high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedcontext\_awareness: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)">ContextAwareness</a> { enabled, skip }
+Deprecatedcontext_awareness: optional [ContextAwareness](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)) { enabled, skip }
 
 Scan the context of predefined entries to only return matches surrounded by keywords.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ocr\_enabled: optional boolean
+ocr_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-open\_access: optional boolean
+open_access: optional boolean
 
 Whether this profile can be accessed by anyone.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationProfile object {id, created\_at, entries, 6 more }
+IntegrationProfile object { id, created_at, entries, 6 more }
 
 </summary>
 
@@ -4051,19 +4036,19 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -4073,7 +4058,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -4081,55 +4066,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4137,47 +4130,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -4185,61 +4178,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4251,7 +4244,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4261,7 +4254,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -4269,35 +4262,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -4305,31 +4298,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4337,47 +4330,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -4385,57 +4378,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4443,47 +4436,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -4491,65 +4484,65 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-integration\_id: string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+integration_id: string
+
+formatuuid
+
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-shared\_entries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+shared_entries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -4559,7 +4552,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -4567,55 +4560,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4623,47 +4624,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -4671,61 +4672,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4737,7 +4738,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -4747,7 +4748,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -4755,35 +4756,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -4791,31 +4792,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4823,47 +4824,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -4871,57 +4872,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -4929,47 +4930,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -4977,79 +4978,79 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The description of the profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles%20%3E%20(model)%20profile%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SkipConfiguration object {files }
+SkipConfiguration object { files }
 
 Content types to exclude from context analysis and return all matches.
 
@@ -5059,37 +5060,35 @@ files: boolean
 
 If the content type is a file, skip context analysis and return all matches.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles%20%3E%20(model)%20skip_configuration%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPProfilesCustom
+##### [Get custom profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/get)
 
-##### [Get custom profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/get)
+GET/accounts/{account_id}/dlp/profiles/custom/{profile_id}
 
-GET/accounts/{account\_id}/dlp/profiles/custom/{profile\_id}
+##### [Create custom profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/create)
 
-##### [Create custom profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/create)
+POST/accounts/{account_id}/dlp/profiles/custom
 
-POST/accounts/{account\_id}/dlp/profiles/custom
+##### [Update custom profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/update)
 
-##### [Update custom profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/update)
+PUT/accounts/{account_id}/dlp/profiles/custom/{profile_id}
 
-PUT/accounts/{account\_id}/dlp/profiles/custom/{profile\_id}
+##### [Delete custom profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/delete)
 
-##### [Delete custom profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/custom/methods/delete)
+DELETE/accounts/{account_id}/dlp/profiles/custom/{profile_id}
 
-DELETE/accounts/{account\_id}/dlp/profiles/custom/{profile\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-CustomProfile object {id, allowed\_match\_count, created\_at, 12 more }
+CustomProfile object { id, allowed_match_count, created_at, 12 more }
 
 </summary>
 
@@ -5099,9 +5098,9 @@ The id of the profile (uuid).
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-allowed\_match\_count: number
+allowed_match_count: number
 
 Related DLP policies will trigger when the match count exceeds the number set.
 
@@ -5111,43 +5110,43 @@ maximum1000
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 When the profile was created.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 The name of the profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ocr\_enabled: boolean
+ocr_enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 When the profile was lasted updated.
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ai\_context\_enabled: optional boolean
+ai_context_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence\_threshold: optional "low"or "medium"or "high"or "very\_high"
+confidence_threshold: optional "low" or "medium" or "high" or "very_high"
 
 </summary>
 
@@ -5155,53 +5154,53 @@ One of the following:
 
 "low"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "medium"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-"very\_high"
+"very_high"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedcontext\_awareness: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)">ContextAwareness</a> { enabled, skip }
+Deprecatedcontext_awareness: optional [ContextAwareness](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles%20%3E%20(model)%20context_awareness%20%3E%20(schema)) { enabled, skip }
 
 Scan the context of predefined entries to only return matches surrounded by keywords.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_classes: optional array of string
+data_classes: optional array of string
 
 Data classes associated with this profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: optional array of string
+data_tags: optional array of string
 
 Data tags associated with this profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The description of the profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Deprecatedentries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -5211,7 +5210,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -5219,55 +5218,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -5275,47 +5282,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -5323,61 +5330,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5389,7 +5396,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5399,7 +5406,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -5407,35 +5414,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -5443,31 +5450,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -5475,47 +5482,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -5523,57 +5530,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -5581,47 +5588,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -5629,81 +5636,81 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: optional array of object {group\_id, level\_id }
+sensitivity_levels: optional array of object { group_id, level_id }
 
 Sensitivity levels associated with this profile.
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-shared\_entries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+shared_entries: optional array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -5713,7 +5720,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -5721,55 +5728,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -5777,47 +5792,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -5825,61 +5840,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5891,7 +5906,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -5901,7 +5916,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -5909,35 +5924,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -5945,31 +5960,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -5977,47 +5992,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -6025,57 +6040,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -6083,47 +6098,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -6131,99 +6146,97 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20custom_profile%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Pattern object {regex, validation }
+Pattern object { regex, validation }
 
 </summary>
 
 regex: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedvalidation: optional "luhn"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)>)
+[Link to this property](#)
 
 CustomDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20custom_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPProfilesPredefined
+##### [Get predefined profile config](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/get)
 
-##### [Get predefined profile config](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/get)
+GET/accounts/{account_id}/dlp/profiles/predefined/{profile_id}/config
 
-GET/accounts/{account\_id}/dlp/profiles/predefined/{profile\_id}/config
+##### [Update predefined profile config](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/update)
 
-##### [Update predefined profile config](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/update)
+PUT/accounts/{account_id}/dlp/profiles/predefined/{profile_id}/config
 
-PUT/accounts/{account\_id}/dlp/profiles/predefined/{profile\_id}/config
+##### [Delete predefined profile](/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/delete)
 
-##### [Delete predefined profile](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/profiles/subresources/predefined/methods/delete)
+DELETE/accounts/{account_id}/dlp/profiles/predefined/{profile_id}
 
-DELETE/accounts/{account\_id}/dlp/profiles/predefined/{profile\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-PredefinedProfile object {id, allowed\_match\_count, confidence\_threshold, 6 more }
+PredefinedProfile object { id, allowed_match_count, confidence_threshold, 6 more }
 
 </summary>
 
@@ -6233,31 +6246,31 @@ The id of the predefined profile (uuid).
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-allowed\_match\_count: number
+allowed_match_count: number
 
 formatint32
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-confidence\_threshold: string
+confidence_threshold: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-enabled\_entries: array of string
+enabled_entries: array of string
 
 Entries to enable for this predefined profile. Any entries not provided will be disabled.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
-This field has been deprecated for <code>enabled_entries</code>.
+This field has been deprecated for `enabled_entries`.
 
 </summary>
 
@@ -6267,7 +6280,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -6275,55 +6288,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -6331,47 +6352,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -6379,61 +6400,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -6445,7 +6466,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -6455,7 +6476,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -6463,35 +6484,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -6499,31 +6520,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -6531,47 +6552,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -6579,57 +6600,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -6637,47 +6658,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -6685,95 +6706,93 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
 The name of the predefined profile.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ai\_context\_enabled: optional boolean
+ai_context_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-ocr\_enabled: optional boolean
+ocr_enabled: optional boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-open\_access: optional boolean
+open_access: optional boolean
 
 Whether this profile can be accessed by anyone.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.profiles.predefined%20%3E%20(model)%20predefined_profile%20%3E%20(schema)>)
+[Link to this property](#)
 
 PredefinedDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.profiles.predefined%20%3E%20(model)%20predefined_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPLimits
+##### [Fetch limits associated with DLP for account](/api/resources/zero_trust/subresources/dlp/subresources/limits/methods/list)
 
-##### [Fetch limits associated with DLP for account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/limits/methods/list)
+GET/accounts/{account_id}/dlp/limits
 
-GET/accounts/{account\_id}/dlp/limits
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-LimitListResponse object {max\_custom\_regex\_entries, max\_dataset\_cells, max\_document\_fingerprints, 3 more }
+LimitListResponse object { max_custom_regex_entries, max_dataset_cells, max_document_fingerprints, 3 more }
 
 </summary>
 
-max\_custom\_regex\_entries: number
+max_custom_regex_entries: number
 
 Maximum number of custom regex entries allowed for the account.
 
@@ -6781,9 +6800,9 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_dataset\_cells: number
+max_dataset_cells: number
 
 Maximum number of dataset cells allowed for the account, across all EDM and CWL datasets.
 
@@ -6791,9 +6810,9 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-max\_document\_fingerprints: number
+max_document_fingerprints: number
 
 Maximum number of document fingerprints allowed for the account.
 
@@ -6801,9 +6820,9 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-used\_custom\_regex\_entries: number
+used_custom_regex_entries: number
 
 Number of custom regex entries currently configured for the account.
 
@@ -6811,9 +6830,9 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-used\_dataset\_cells: number
+used_dataset_cells: number
 
 Number of dataset cells currently configured for the account, across all EDM and CWL datasets. Document fingerprints do not count towards this limit.
 
@@ -6821,9 +6840,9 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-used\_document\_fingerprints: number
+used_document_fingerprints: number
 
 Number of document fingerprints currently configured for the account.
 
@@ -6831,41 +6850,39 @@ formatint64
 
 minimum0
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.limits%20%3E%20(model)%20limit_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEntries
+##### [List all entries](/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/list)
 
-##### [List all entries](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/list)
+GET/accounts/{account_id}/dlp/entries
 
-GET/accounts/{account\_id}/dlp/entries
+##### [Get DLP Entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/get)
 
-##### [Get DLP Entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/get)
+GET/accounts/{account_id}/dlp/entries/{entry_id}
 
-GET/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [Create custom entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/create)
 
-##### [Create custom entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/create)
+POST/accounts/{account_id}/dlp/entries
 
-POST/accounts/{account\_id}/dlp/entries
+##### [Update entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/update)
 
-##### [Update entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/update)
+PUT/accounts/{account_id}/dlp/entries/{entry_id}
 
-PUT/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [Delete custom entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/delete)
 
-##### [Delete custom entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/methods/delete)
+DELETE/accounts/{account_id}/dlp/entries/{entry_id}
 
-DELETE/accounts/{account\_id}/dlp/entries/{entry\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-EntryListResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+EntryListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -6875,7 +6892,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -6883,51 +6900,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -6935,41 +6952,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -6977,43 +7002,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7021,41 +7046,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -7063,61 +7088,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7125,37 +7150,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7167,7 +7192,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7177,7 +7202,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -7185,35 +7210,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -7221,31 +7246,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -7253,43 +7278,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7297,41 +7322,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case_sensitive, created_at, 7 more }
 
 </summary>
 
@@ -7339,53 +7364,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7393,41 +7418,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -7435,43 +7460,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7479,41 +7504,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -7521,47 +7546,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7569,45 +7594,45 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries%20%3E%20(model)%20entry_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-EntryGetResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+EntryGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -7617,7 +7642,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -7625,51 +7650,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -7677,21 +7702,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7699,41 +7724,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -7741,43 +7774,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -7785,21 +7818,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7807,41 +7840,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -7849,61 +7882,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -7911,21 +7944,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -7933,37 +7966,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7975,7 +8008,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -7985,7 +8018,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -7993,35 +8026,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -8029,31 +8062,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -8061,43 +8094,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -8105,21 +8138,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -8127,41 +8160,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case_sensitive, created_at, 8 more }
 
 </summary>
 
@@ -8169,53 +8202,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -8223,21 +8256,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -8245,41 +8278,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -8287,43 +8320,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -8331,21 +8364,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -8353,41 +8386,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -8395,47 +8428,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -8443,21 +8476,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -8465,45 +8498,45 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries%20%3E%20(model)%20entry_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-EntryCreateResponse object {id, created\_at, enabled, 5 more }
+EntryCreateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -8511,51 +8544,59 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries%20%3E%20(model)%20entry_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-EntryUpdateResponse = object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+EntryUpdateResponse = object { id, created_at, enabled, 7 more } or object { id, created_at, enabled, 4 more } or object { id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -8565,7 +8606,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -8573,55 +8614,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomPromptTopicEntry object {id, created\_at, enabled, 4 more }
+CustomPromptTopicEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -8629,47 +8678,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedEntry object {id, confidence, enabled, 5 more }
+PredefinedEntry object { id, confidence, enabled, 5 more }
 
 </summary>
 
@@ -8677,61 +8726,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -8743,7 +8792,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -8753,7 +8802,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -8761,35 +8810,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -8797,31 +8846,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationEntry object {id, created\_at, enabled, 4 more }
+IntegrationEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -8829,47 +8878,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-ExactDataEntry object {id, case\_sensitive, created\_at, 6 more }
+ExactDataEntry object { id, case_sensitive, created_at, 6 more }
 
 </summary>
 
@@ -8877,57 +8926,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DocumentFingerprintEntry object {id, created\_at, enabled, 4 more }
+DocumentFingerprintEntry object { id, created_at, enabled, 4 more }
 
 </summary>
 
@@ -8935,47 +8984,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-WordListEntry object {id, created\_at, enabled, 5 more }
+WordListEntry object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -8983,83 +9032,81 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries%20%3E%20(model)%20entry_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 EntryDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.entries%20%3E%20(model)%20entry_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEntriesCustom
+##### [Create custom entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/create)
 
-##### [Create custom entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/create)
+POST/accounts/{account_id}/dlp/entries
 
-POST/accounts/{account\_id}/dlp/entries
+##### [Update custom entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/update)
 
-##### [Update custom entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/update)
+PUT/accounts/{account_id}/dlp/entries/custom/{entry_id}
 
-PUT/accounts/{account\_id}/dlp/entries/custom/{entry\_id}
+##### [Delete custom entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/delete)
 
-##### [Delete custom entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/delete)
+DELETE/accounts/{account_id}/dlp/entries/{entry_id}
 
-DELETE/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [Get DLP Entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/get)
 
-##### [Get DLP Entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/get)
+GET/accounts/{account_id}/dlp/entries/{entry_id}
 
-GET/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [List all entries](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/list)
 
-##### [List all entries](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/custom/methods/list)
+GET/accounts/{account_id}/dlp/entries
 
-GET/accounts/{account\_id}/dlp/entries
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-CustomCreateResponse object {id, created\_at, enabled, 5 more }
+CustomCreateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -9067,51 +9114,59 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(model)%20custom_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomUpdateResponse object {id, created\_at, enabled, 5 more }
+CustomUpdateResponse object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -9119,55 +9174,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(model)%20custom_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 CustomDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(model)%20custom_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomGetResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+CustomGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -9177,7 +9240,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -9185,51 +9248,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9237,21 +9300,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9259,41 +9322,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -9301,43 +9372,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9345,21 +9416,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9367,41 +9438,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -9409,61 +9480,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9471,21 +9542,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9493,37 +9564,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -9535,7 +9606,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -9545,7 +9616,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -9553,35 +9624,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -9589,31 +9660,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -9621,43 +9692,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9665,21 +9736,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9687,41 +9758,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case_sensitive, created_at, 8 more }
 
 </summary>
 
@@ -9729,53 +9800,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9783,21 +9854,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9805,41 +9876,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -9847,43 +9918,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -9891,21 +9962,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -9913,41 +9984,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -9955,47 +10026,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -10003,21 +10074,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10025,45 +10096,45 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(model)%20custom_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-CustomListResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+CustomListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -10073,7 +10144,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -10081,51 +10152,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10133,41 +10204,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -10175,43 +10254,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10219,41 +10298,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -10261,61 +10340,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10323,37 +10402,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -10365,7 +10444,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -10375,7 +10454,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -10383,35 +10462,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -10419,31 +10498,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -10451,43 +10530,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10495,41 +10574,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case_sensitive, created_at, 7 more }
 
 </summary>
 
@@ -10537,53 +10616,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10591,41 +10670,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -10633,43 +10712,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10677,41 +10756,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -10719,47 +10798,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -10767,69 +10846,67 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(model)%20custom_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEntriesPredefined
+##### [Create predefined entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/create)
 
-##### [Create predefined entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/create)
+POST/accounts/{account_id}/dlp/entries/predefined
 
-POST/accounts/{account\_id}/dlp/entries/predefined
+##### [Update predefined entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/update)
 
-##### [Update predefined entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/update)
+PUT/accounts/{account_id}/dlp/entries/predefined/{entry_id}
 
-PUT/accounts/{account\_id}/dlp/entries/predefined/{entry\_id}
+##### [Delete predefined entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/delete)
 
-##### [Delete predefined entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/delete)
+DELETE/accounts/{account_id}/dlp/entries/predefined/{entry_id}
 
-DELETE/accounts/{account\_id}/dlp/entries/predefined/{entry\_id}
+##### [Get DLP Entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/get)
 
-##### [Get DLP Entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/get)
+GET/accounts/{account_id}/dlp/entries/{entry_id}
 
-GET/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [List all entries](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/list)
 
-##### [List all entries](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/predefined/methods/list)
+GET/accounts/{account_id}/dlp/entries
 
-GET/accounts/{account\_id}/dlp/entries
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-PredefinedCreateResponse object {id, confidence, enabled, 4 more }
+PredefinedCreateResponse object { id, confidence, enabled, 4 more }
 
 </summary>
 
@@ -10837,57 +10914,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -10899,7 +10976,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -10909,7 +10986,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -10917,35 +10994,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -10953,31 +11030,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.predefined%20%3E%20(model)%20predefined_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedUpdateResponse object {id, confidence, enabled, 4 more }
+PredefinedUpdateResponse object { id, confidence, enabled, 4 more }
 
 </summary>
 
@@ -10985,57 +11062,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -11047,7 +11124,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -11057,7 +11134,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -11065,35 +11142,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -11101,35 +11178,35 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.predefined%20%3E%20(model)%20predefined_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 PredefinedDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.entries.predefined%20%3E%20(model)%20predefined_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedGetResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+PredefinedGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -11139,7 +11216,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -11147,51 +11224,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11199,21 +11276,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11221,41 +11298,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -11263,43 +11348,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11307,21 +11392,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11329,41 +11414,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -11371,61 +11456,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11433,21 +11518,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11455,37 +11540,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -11497,7 +11582,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -11507,7 +11592,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -11515,35 +11600,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -11551,31 +11636,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -11583,43 +11668,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11627,21 +11712,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11649,41 +11734,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case_sensitive, created_at, 8 more }
 
 </summary>
 
@@ -11691,53 +11776,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11745,21 +11830,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11767,41 +11852,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -11809,43 +11894,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11853,21 +11938,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11875,41 +11960,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -11917,47 +12002,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -11965,21 +12050,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -11987,45 +12072,45 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.predefined%20%3E%20(model)%20predefined_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-PredefinedListResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+PredefinedListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -12035,7 +12120,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -12043,51 +12128,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12095,41 +12180,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -12137,43 +12230,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12181,41 +12274,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -12223,61 +12316,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12285,37 +12378,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -12327,7 +12420,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -12337,7 +12430,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -12345,35 +12438,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -12381,31 +12474,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -12413,43 +12506,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12457,41 +12550,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case_sensitive, created_at, 7 more }
 
 </summary>
 
@@ -12499,53 +12592,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12553,41 +12646,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -12595,43 +12688,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12639,41 +12732,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -12681,47 +12774,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12729,69 +12822,67 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.predefined%20%3E%20(model)%20predefined_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPEntriesIntegration
+##### [Create integration entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/create)
 
-##### [Create integration entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/create)
+POST/accounts/{account_id}/dlp/entries/integration
 
-POST/accounts/{account\_id}/dlp/entries/integration
+##### [Update integration entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/update)
 
-##### [Update integration entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/update)
+PUT/accounts/{account_id}/dlp/entries/integration/{entry_id}
 
-PUT/accounts/{account\_id}/dlp/entries/integration/{entry\_id}
+##### [Delete integration entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/delete)
 
-##### [Delete integration entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/delete)
+DELETE/accounts/{account_id}/dlp/entries/integration/{entry_id}
 
-DELETE/accounts/{account\_id}/dlp/entries/integration/{entry\_id}
+##### [Get DLP Entry](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/get)
 
-##### [Get DLP Entry](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/get)
+GET/accounts/{account_id}/dlp/entries/{entry_id}
 
-GET/accounts/{account\_id}/dlp/entries/{entry\_id}
+##### [List all entries](/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/list)
 
-##### [List all entries](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/entries/subresources/integration/methods/list)
+GET/accounts/{account_id}/dlp/entries
 
-GET/accounts/{account\_id}/dlp/entries
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-IntegrationCreateResponse object {id, created\_at, enabled, 3 more }
+IntegrationCreateResponse object { id, created_at, enabled, 3 more }
 
 </summary>
 
@@ -12799,43 +12890,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.integration%20%3E%20(model)%20integration_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationUpdateResponse object {id, created\_at, enabled, 3 more }
+IntegrationUpdateResponse object { id, created_at, enabled, 3 more }
 
 </summary>
 
@@ -12843,47 +12934,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.integration%20%3E%20(model)%20integration_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 IntegrationDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.entries.integration%20%3E%20(model)%20integration_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationGetResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+IntegrationGetResponse = object { id, created_at, enabled, 9 more } or object { id, created_at, enabled, 6 more } or object { id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -12893,7 +12984,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object { id, created_at, enabled, 9 more }
 
 </summary>
 
@@ -12901,51 +12992,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -12953,21 +13044,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -12975,41 +13066,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -13017,43 +13116,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13061,21 +13160,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13083,41 +13182,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 7 more }
+object { id, confidence, enabled, 7 more }
 
 </summary>
 
@@ -13125,61 +13224,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13187,21 +13286,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13209,37 +13308,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -13251,7 +13350,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -13261,7 +13360,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -13269,35 +13368,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -13305,31 +13404,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -13337,43 +13436,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13381,21 +13480,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13403,41 +13502,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 8 more }
+object { id, case_sensitive, created_at, 8 more }
 
 </summary>
 
@@ -13445,53 +13544,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13499,21 +13598,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13521,41 +13620,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -13563,43 +13662,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13607,21 +13706,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13629,41 +13728,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 7 more }
 
 </summary>
 
@@ -13671,47 +13770,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-profiles: optional array of object {id, name }
+profiles: optional array of object { id, name }
 
 </summary>
 
@@ -13719,21 +13818,21 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13741,45 +13840,45 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.integration%20%3E%20(model)%20integration_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-IntegrationListResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+IntegrationListResponse = object { id, created_at, enabled, 8 more } or object { id, created_at, enabled, 5 more } or object { id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -13789,7 +13888,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object { id, created_at, enabled, 8 more }
 
 </summary>
 
@@ -13797,51 +13896,51 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-pattern: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)">Pattern</a> { regex, validation }
+pattern: [Pattern](/api/resources/zero_trust#(resource)%20zero_trust.dlp.profiles.custom%20%3E%20(model)%20pattern%20%3E%20(schema)) { regex, validation }
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "custom"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13849,41 +13948,49 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
+
+validator_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
+
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -13891,43 +13998,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 Deprecatedenabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "custom\_prompt\_topic"
+type: "custom_prompt_topic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the custom prompt topic entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -13935,41 +14042,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, confidence, enabled, 6 more }
+object { id, confidence, enabled, 6 more }
 
 </summary>
 
@@ -13977,61 +14084,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-confidence: object {ai\_context\_available, available }
+confidence: object { ai_context_available, available }
 
 </summary>
 
-ai\_context\_available: boolean
+ai_context_available: boolean
 
 Indicates whether this entry has AI remote service validation.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 available: boolean
 
 Indicates whether this entry has any form of validation that is not an AI remote service.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "predefined"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 deprecated: optional boolean
 
 Whether this entry is deprecated for new use. This is computed from the static catalog and emitted only when true.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-Deprecatedprofile\_id: optional string
+Deprecatedprofile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -14039,37 +14146,37 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-variant: optional object {topic\_type, type, description } or object {type, description }
+variant: optional object { topic_type, type, description } or object { type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -14081,7 +14188,7 @@ One of the following:
 
 <summary>
 
-object {topic\_type, type, description }
+object { topic_type, type, description }
 
 A Predefined AI prompt classification topic entry.
 
@@ -14091,7 +14198,7 @@ A Predefined AI prompt classification topic entry.
 
 <summary>
 
-topic\_type: "Intent"or "Content"
+topic_type: "Intent" or "Content"
 
 </summary>
 
@@ -14099,35 +14206,35 @@ One of the following:
 
 "Intent"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "Content"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "PromptTopic"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined AI prompt topic represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {type, description }
+object { type, description }
 
 A general predefined entry.
 
@@ -14135,31 +14242,31 @@ A general predefined entry.
 
 type: "General"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 A customer-facing explanation of what this predefined entry represents.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -14167,43 +14274,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 type: "integration"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -14211,41 +14318,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, case\_sensitive, created\_at, 7 more }
+object { id, case_sensitive, created_at, 7 more }
 
 </summary>
 
@@ -14253,53 +14360,53 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-case\_sensitive: boolean
+case_sensitive: boolean
 
 Only applies to custom word lists. Determines if the words should be matched in a case-sensitive manner Cannot be set to false if secret is true
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 secret: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "exact\_data"
+type: "exact_data"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the exact data entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -14307,41 +14414,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 5 more }
+object { id, created_at, enabled, 5 more }
 
 </summary>
 
@@ -14349,43 +14456,43 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "document\_fingerprint"
+type: "document_fingerprint"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
 The optional description of the document fingerprint entry.
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -14393,41 +14500,41 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-object {id, created\_at, enabled, 6 more }
+object { id, created_at, enabled, 6 more }
 
 </summary>
 
@@ -14435,47 +14542,47 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 enabled: boolean
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-type: "word\_list"
+type: "word_list"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-word\_list: array of string
+word_list: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-profile\_id: optional string
+profile_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-upload\_status: optional "empty"or "uploading"or "pending"or 3 more
+upload_status: optional "empty" or "uploading" or "pending" or 3 more
 
 </summary>
 
@@ -14483,69 +14590,67 @@ One of the following:
 
 "empty"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "uploading"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "pending"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "processing"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "failed"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 "complete"
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.entries.integration%20%3E%20(model)%20integration_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPSensitivity Groups
+##### [Retrieve all sensitivity groups in an account](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/list)
 
-##### [Retrieve all sensitivity groups in an account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/list)
+GET/accounts/{account_id}/dlp/sensitivity_groups
 
-GET/accounts/{account\_id}/dlp/sensitivity\_groups
+##### [Retrieve a specific sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/get)
 
-##### [Retrieve a specific sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/get)
+GET/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}
 
-GET/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}
+##### [Creates a new sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/create)
 
-##### [Creates a new sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/create)
+POST/accounts/{account_id}/dlp/sensitivity_groups
 
-POST/accounts/{account\_id}/dlp/sensitivity\_groups
+##### [Update the attributes of a single sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/update)
 
-##### [Update the attributes of a single sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/update)
+PUT/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}
 
-PUT/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}
+##### [Delete a single sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/delete)
 
-##### [Delete a single sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/methods/delete)
+DELETE/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}
 
-DELETE/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-SensitivityGroupListResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupListResponse object { id, created_at, levels, 4 more }
 
 </summary>
 
@@ -14553,19 +14658,19 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14573,61 +14678,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups%20%3E%20(model)%20sensitivity_group_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SensitivityGroupGetResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupGetResponse object { id, created_at, levels, 4 more }
 
 </summary>
 
@@ -14635,19 +14740,19 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14655,61 +14760,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups%20%3E%20(model)%20sensitivity_group_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SensitivityGroupCreateResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupCreateResponse object { id, created_at, levels, 4 more }
 
 </summary>
 
@@ -14717,19 +14822,19 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14737,61 +14842,61 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups%20%3E%20(model)%20sensitivity_group_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-SensitivityGroupUpdateResponse object {id, created\_at, levels, 4 more }
+SensitivityGroupUpdateResponse object { id, created_at, levels, 4 more }
 
 </summary>
 
@@ -14799,19 +14904,19 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-levels: array of object {id, created\_at, name, 2 more }
+levels: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14819,89 +14924,87 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups%20%3E%20(model)%20sensitivity_group_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 SensitivityGroupDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups%20%3E%20(model)%20sensitivity_group_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPSensitivity GroupsLevels
+##### [Retrieve all sensitivity levels in a sensitivity group](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/list)
 
-##### [Retrieve all sensitivity levels in a sensitivity group](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/list)
+GET/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/levels
 
-GET/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/levels
+##### [Retrieve a specific sensitivity level.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/get)
 
-##### [Retrieve a specific sensitivity level.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/get)
+GET/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/levels/{sensitivity_level_id}
 
-GET/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/levels/{sensitivity\_level\_id}
+##### [Creates a new sensitivity level.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/create)
 
-##### [Creates a new sensitivity level.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/create)
+POST/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/levels
 
-POST/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/levels
+##### [Update the attributes of a single sensitivity level.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/update)
 
-##### [Update the attributes of a single sensitivity level.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/update)
+PUT/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/levels/{sensitivity_level_id}
 
-PUT/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/levels/{sensitivity\_level\_id}
+##### [Delete a single sensitivity level.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/delete)
 
-##### [Delete a single sensitivity level.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/methods/delete)
+DELETE/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/levels/{sensitivity_level_id}
 
-DELETE/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/levels/{sensitivity\_level\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-LevelListResponse object {id, created\_at, name, 2 more }
+LevelListResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14909,37 +15012,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels%20%3E%20(model)%20level_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LevelGetResponse object {id, created\_at, name, 2 more }
+LevelGetResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14947,37 +15050,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels%20%3E%20(model)%20level_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LevelCreateResponse object {id, created\_at, name, 2 more }
+LevelCreateResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -14985,37 +15088,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels%20%3E%20(model)%20level_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-LevelUpdateResponse object {id, created\_at, name, 2 more }
+LevelUpdateResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15023,113 +15126,109 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels%20%3E%20(model)%20level_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 LevelDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels%20%3E%20(model)%20level_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPSensitivity GroupsLevelsOrder
+##### [Retrieve the ordered list of level IDs for a sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/subresources/order/methods/get)
 
-##### [Retrieve the ordered list of level IDs for a sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/subresources/order/methods/get)
+GET/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/level_order
 
-GET/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/level\_order
+##### [Set the ordering of levels within a sensitivity group.](/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/subresources/order/methods/update)
 
-##### [Set the ordering of levels within a sensitivity group.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/sensitivity_groups/subresources/levels/subresources/order/methods/update)
+PUT/accounts/{account_id}/dlp/sensitivity_groups/{sensitivity_group_id}/level_order
 
-PUT/accounts/{account\_id}/dlp/sensitivity\_groups/{sensitivity\_group\_id}/level\_order
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-OrderGetResponse object {level\_ids }
+OrderGetResponse object { level_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 
 </summary>
 
-level\_ids: array of string
+level_ids: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels.order%20%3E%20(model)%20order_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-OrderUpdateResponse object {level\_ids }
+OrderUpdateResponse object { level_ids }
 
 The ordered list of level IDs for a sensitivity group. Used to get and set the ordering of levels independently of level attributes.
 
 </summary>
 
-level\_ids: array of string
+level_ids: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.sensitivity_groups.levels.order%20%3E%20(model)%20order_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPData Tag Categories
+##### [Retrieve all data tag categories in an account](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/list)
 
-##### [Retrieve all data tag categories in an account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/list)
+GET/accounts/{account_id}/dlp/data_tag_categories
 
-GET/accounts/{account\_id}/dlp/data\_tag\_categories
+##### [Retrieve a specific data tag category.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/get)
 
-##### [Retrieve a specific data tag category.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/get)
+GET/accounts/{account_id}/dlp/data_tag_categories/{category_id}
 
-GET/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}
+##### [Creates a new data tag category.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/create)
 
-##### [Creates a new data tag category.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/create)
+POST/accounts/{account_id}/dlp/data_tag_categories
 
-POST/accounts/{account\_id}/dlp/data\_tag\_categories
+##### [Update the attributes of a single data tag category.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/update)
 
-##### [Update the attributes of a single data tag category.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/update)
+PUT/accounts/{account_id}/dlp/data_tag_categories/{category_id}
 
-PUT/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}
+##### [Delete a single data tag category.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/delete)
 
-##### [Delete a single data tag category.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/methods/delete)
+DELETE/accounts/{account_id}/dlp/data_tag_categories/{category_id}
 
-DELETE/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-DataTagCategoryListResponse object {id, created\_at, name, 4 more }
+DataTagCategoryListResponse object { id, created_at, name, 4 more }
 
 </summary>
 
@@ -15137,23 +15236,23 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-tags: array of object {id, created\_at, name, 2 more }
+tags: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15161,57 +15260,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories%20%3E%20(model)%20data_tag_category_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagCategoryGetResponse object {id, created\_at, name, 4 more }
+DataTagCategoryGetResponse object { id, created_at, name, 4 more }
 
 </summary>
 
@@ -15219,23 +15318,23 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-tags: array of object {id, created\_at, name, 2 more }
+tags: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15243,57 +15342,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories%20%3E%20(model)%20data_tag_category_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagCategoryCreateResponse object {id, created\_at, name, 4 more }
+DataTagCategoryCreateResponse object { id, created_at, name, 4 more }
 
 </summary>
 
@@ -15301,23 +15400,23 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-tags: array of object {id, created\_at, name, 2 more }
+tags: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15325,57 +15424,57 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories%20%3E%20(model)%20data_tag_category_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagCategoryUpdateResponse object {id, created\_at, name, 4 more }
+DataTagCategoryUpdateResponse object { id, created_at, name, 4 more }
 
 </summary>
 
@@ -15383,23 +15482,23 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-tags: array of object {id, created\_at, name, 2 more }
+tags: array of object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15407,85 +15506,83 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-template\_id: optional string
+template_id: optional string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories%20%3E%20(model)%20data_tag_category_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 DataTagCategoryDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories%20%3E%20(model)%20data_tag_category_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPData Tag CategoriesData Tags
+##### [Retrieve all data tags in a data tag category](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/list)
 
-##### [Retrieve all data tags in a data tag category](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/list)
+GET/accounts/{account_id}/dlp/data_tag_categories/{category_id}/data_tags
 
-GET/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tags
+##### [Retrieve a specific data tag.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/get)
 
-##### [Retrieve a specific data tag.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/get)
+GET/accounts/{account_id}/dlp/data_tag_categories/{category_id}/data_tags/{tag_id}
 
-GET/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tags/{tag\_id}
+##### [Creates a new data tag.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/create)
 
-##### [Creates a new data tag.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/create)
+POST/accounts/{account_id}/dlp/data_tag_categories/{category_id}/data_tags
 
-POST/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tags
+##### [Update the attributes of a single data tag.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/update)
 
-##### [Update the attributes of a single data tag.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/update)
+PUT/accounts/{account_id}/dlp/data_tag_categories/{category_id}/data_tags/{tag_id}
 
-PUT/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tags/{tag\_id}
+##### [Delete a single data tag.](/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/delete)
 
-##### [Delete a single data tag.](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_tag_categories/subresources/data_tags/methods/delete)
+DELETE/accounts/{account_id}/dlp/data_tag_categories/{category_id}/data_tags/{tag_id}
 
-DELETE/accounts/{account\_id}/dlp/data\_tag\_categories/{category\_id}/data\_tags/{tag\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-DataTagListResponse object {id, created\_at, name, 2 more }
+DataTagListResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15493,37 +15590,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories.data_tags%20%3E%20(model)%20data_tag_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagGetResponse object {id, created\_at, name, 2 more }
+DataTagGetResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15531,37 +15628,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories.data_tags%20%3E%20(model)%20data_tag_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagCreateResponse object {id, created\_at, name, 2 more }
+DataTagCreateResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15569,37 +15666,37 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories.data_tags%20%3E%20(model)%20data_tag_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataTagUpdateResponse object {id, created\_at, name, 2 more }
+DataTagUpdateResponse object { id, created_at, name, 2 more }
 
 </summary>
 
@@ -15607,65 +15704,63 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories.data_tags%20%3E%20(model)%20data_tag_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 DataTagDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.data_tag_categories.data_tags%20%3E%20(model)%20data_tag_delete_response%20%3E%20(schema)>)
+[Link to this property](#)
 
-#### DLPData Classes
+##### [Retrieve all data classes in an account](/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/list)
 
-##### [Retrieve all data classes in an account](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/list)
+GET/accounts/{account_id}/dlp/data_classes
 
-GET/accounts/{account\_id}/dlp/data\_classes
+##### [Retrieve a specific data class](/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/get)
 
-##### [Retrieve a specific data class](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/get)
+GET/accounts/{account_id}/dlp/data_classes/{data_class_id}
 
-GET/accounts/{account\_id}/dlp/data\_classes/{data\_class\_id}
+##### [Creates a new data class](/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/create)
 
-##### [Creates a new data class](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/create)
+POST/accounts/{account_id}/dlp/data_classes
 
-POST/accounts/{account\_id}/dlp/data\_classes
+##### [Update the attributes of a single data class](/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/update)
 
-##### [Update the attributes of a single data class](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/update)
+PUT/accounts/{account_id}/dlp/data_classes/{data_class_id}
 
-PUT/accounts/{account\_id}/dlp/data\_classes/{data\_class\_id}
+##### [Delete a single data class](/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/delete)
 
-##### [Delete a single data class](https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/data_classes/methods/delete)
+DELETE/accounts/{account_id}/dlp/data_classes/{data_class_id}
 
-DELETE/accounts/{account\_id}/dlp/data\_classes/{data\_class\_id}
-
-##### ModelsExpand Collapse
+##### Models
 
 <details>
 
 <summary>
 
-DataClassListResponse object {id, created\_at, data\_tags, 5 more }
+DataClassListResponse object { id, created_at, data_tags, 5 more }
 
 </summary>
 
@@ -15673,69 +15768,69 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: array of string
+data_tags: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 expression: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity_levels: array of object { group_id, level_id }
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_classes%20%3E%20(model)%20data_class_list_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataClassGetResponse object {id, created\_at, data\_tags, 5 more }
+DataClassGetResponse object { id, created_at, data_tags, 5 more }
 
 </summary>
 
@@ -15743,69 +15838,69 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: array of string
+data_tags: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 expression: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity_levels: array of object { group_id, level_id }
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_classes%20%3E%20(model)%20data_class_get_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataClassCreateResponse object {id, created\_at, data\_tags, 5 more }
+DataClassCreateResponse object { id, created_at, data_tags, 5 more }
 
 </summary>
 
@@ -15813,69 +15908,69 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: array of string
+data_tags: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 expression: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity_levels: array of object { group_id, level_id }
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_classes%20%3E%20(model)%20data_class_create_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-DataClassUpdateResponse object {id, created\_at, data\_tags, 5 more }
+DataClassUpdateResponse object { id, created_at, data_tags, 5 more }
 
 </summary>
 
@@ -15883,64 +15978,64 @@ id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-created\_at: string
+created_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-data\_tags: array of string
+data_tags: array of string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 expression: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 name: string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 <details>
 
 <summary>
 
-sensitivity\_levels: array of object {group\_id, level\_id }
+sensitivity_levels: array of object { group_id, level_id }
 
 </summary>
 
-group\_id: string
+group_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-level\_id: string
+level_id: string
 
 formatuuid
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
-updated\_at: string
+updated_at: string
 
 formatdate-time
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 description: optional string
 
-<a href="#">Link to this property</a>
+[Link to this property](#)
 
 </details>
 
-[Link to this property](#)%20zero_trust.dlp.data_classes%20%3E%20(model)%20data_class_update_response%20%3E%20(schema)>)
+[Link to this property](#)
 
 DataClassDeleteResponse = unknown
 
-[Link to this property](#)%20zero_trust.dlp.data_classes%20%3E%20(model)%20data_class_delete_response%20%3E%20(schema)>)
+[Link to this property](#)

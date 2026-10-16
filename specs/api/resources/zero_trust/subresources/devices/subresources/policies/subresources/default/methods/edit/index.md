@@ -132,6 +132,12 @@ A description of the DNS search suffix.
 
 [Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20dns_search_suffixes%20%3E%20(schema)>)
 
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+[Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enable_device_credential_authentication%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -508,7 +514,7 @@ pointer: optional string
 
 <summary>
 
-result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
+result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 23 more }
 
 </summary>
 
@@ -577,6 +583,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 
@@ -1001,6 +1013,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {
@@ -1101,6 +1114,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {

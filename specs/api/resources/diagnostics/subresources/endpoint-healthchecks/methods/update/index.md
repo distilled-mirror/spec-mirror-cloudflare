@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/diagnostics/endpoint-healthchecks/{id}
 
-Update a Endpoint Health Check.
+Update an Endpoint Health Check.
 
 ##### Security
 

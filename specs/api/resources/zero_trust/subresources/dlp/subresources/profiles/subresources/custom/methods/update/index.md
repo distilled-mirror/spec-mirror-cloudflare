@@ -572,7 +572,7 @@ The description of the profile.
 
 <summary>
 
-Deprecatedentries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: optional array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -582,7 +582,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -643,6 +643,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -1090,7 +1098,7 @@ formatuuid
 
 <summary>
 
-shared\_entries: optional array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+shared\_entries: optional array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -1100,7 +1108,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -1161,6 +1169,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -1608,7 +1624,7 @@ formatint32
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -1618,7 +1634,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -1679,6 +1695,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -2218,7 +2242,7 @@ formatdate-time
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -2228,7 +2252,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -2289,6 +2313,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -2720,7 +2752,7 @@ name: string
 
 <summary>
 
-shared\_entries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+shared\_entries: array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 </summary>
 
@@ -2730,7 +2762,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -2791,6 +2823,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -3309,7 +3349,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/profiles/cust
         "type": "custom",
         "updated_at": "2019-12-27T18:11:19.117Z",
         "description": "description",
-        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+        "validator_ids": [
+          "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        ]
       }
     ],
     "sensitivity_levels": [
@@ -3331,7 +3374,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/profiles/cust
         "type": "custom",
         "updated_at": "2019-12-27T18:11:19.117Z",
         "description": "description",
-        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+        "validator_ids": [
+          "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        ]
       }
     ]
   }
@@ -3401,7 +3447,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/profiles/cust
         "type": "custom",
         "updated_at": "2019-12-27T18:11:19.117Z",
         "description": "description",
-        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+        "validator_ids": [
+          "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        ]
       }
     ],
     "sensitivity_levels": [
@@ -3423,7 +3472,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/profiles/cust
         "type": "custom",
         "updated_at": "2019-12-27T18:11:19.117Z",
         "description": "description",
-        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+        "validator_ids": [
+          "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        ]
       }
     ]
   }

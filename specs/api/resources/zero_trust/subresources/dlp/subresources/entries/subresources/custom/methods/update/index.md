@@ -108,6 +108,14 @@ description: optional string
 
 [Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20description%20%3E%20(schema)>)
 
+validator\_ids: optional array of string
+
+Validators this entry should reference, by id, at most 10. Replaces the current set.
+
+Optional, unlike the rest of this body: omitting it leaves the current attachments alone, so a client that predates validators cannot detach them by accident. Send `[]` to detach.
+
+[Link to this property](#)%20zero_trust.dlp.entries.custom%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20validator_ids%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -204,7 +212,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, enabled, 5 more }
+result: optional object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -261,6 +269,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -324,7 +340,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/entries/custo
     },
     "updated_at": "2019-12-27T18:11:19.117Z",
     "description": "description",
-    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "validator_ids": [
+      "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    ]
   }
 }
 ```
@@ -367,7 +386,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dlp/entries/custo
     },
     "updated_at": "2019-12-27T18:11:19.117Z",
     "description": "description",
-    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "profile_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "validator_ids": [
+      "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    ]
   }
 }
 ```

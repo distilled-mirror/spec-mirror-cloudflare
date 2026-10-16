@@ -196,6 +196,12 @@ A description of the DNS search suffix.
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20dns_search_suffixes%20%3E%20(schema)>)
 
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enable_device_credential_authentication%20%3E%20(schema)>)
+
 enabled: optional boolean
 
 Whether the policy will be applied to matching devices.
@@ -600,7 +606,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 30 more }
+result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 31 more }
 
 </summary>
 
@@ -721,6 +727,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 
@@ -1213,6 +1225,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy/$P
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {
@@ -1329,6 +1342,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy/$P
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {

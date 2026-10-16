@@ -154,7 +154,7 @@ pointer: optional string
 
 <summary>
 
-result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
+result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 23 more }
 
 </summary>
 
@@ -223,6 +223,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 
@@ -631,6 +637,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {
@@ -731,6 +738,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Example internal domains"
       }
     ],
+    "enable_device_credential_authentication": false,
     "enabled": true,
     "exclude": [
       {

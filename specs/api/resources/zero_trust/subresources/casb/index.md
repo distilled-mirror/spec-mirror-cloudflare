@@ -1559,7 +1559,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -1705,9 +1705,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -1760,6 +1910,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -2161,7 +2327,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -2307,9 +2473,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -2362,6 +2678,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -2893,7 +3225,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -3039,9 +3371,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -3094,6 +3576,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -3495,7 +3993,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -3641,9 +4139,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -3696,6 +4344,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -4097,7 +4761,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -4243,9 +4907,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -4298,6 +5112,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -4699,7 +5529,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -4845,9 +5675,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -4900,6 +5880,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -7365,7 +8361,7 @@ GET/accounts/{account\_id}/data-security/posture/finding\_types/{finding\_type\_
 
 <summary>
 
-FindingTypeListResponse object {id, category, name, 3 more }
+FindingTypeListResponse object {id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -7513,9 +8509,175 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -7527,7 +8689,7 @@ Detailed description of the finding.
 
 <summary>
 
-FindingTypeGetResponse object {id, category, name, 3 more }
+FindingTypeGetResponse object {id, category, name, 14 more }
 
 Basic finding type information.
 
@@ -7675,9 +8837,175 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 

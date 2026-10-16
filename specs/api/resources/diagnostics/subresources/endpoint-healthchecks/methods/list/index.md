@@ -164,7 +164,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {check\_type, endpoint, id, name }
+result: optional array of object {check\_type, endpoint, id, name }
 
 </summary>
 
@@ -234,12 +234,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/diagnostics/endpo
     }
   ],
   "success": true,
-  "result": {
-    "check_type": "icmp",
-    "endpoint": "203.0.113.1",
-    "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
-    "name": "My Endpoint"
-  }
+  "result": [
+    {
+      "check_type": "icmp",
+      "endpoint": "203.0.113.1",
+      "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
+      "name": "My Endpoint"
+    }
+  ]
 }
 ```
 
@@ -270,11 +272,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/diagnostics/endpo
     }
   ],
   "success": true,
-  "result": {
-    "check_type": "icmp",
-    "endpoint": "203.0.113.1",
-    "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
-    "name": "My Endpoint"
-  }
+  "result": [
+    {
+      "check_type": "icmp",
+      "endpoint": "203.0.113.1",
+      "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
+      "name": "My Endpoint"
+    }
+  ]
 }
 ```

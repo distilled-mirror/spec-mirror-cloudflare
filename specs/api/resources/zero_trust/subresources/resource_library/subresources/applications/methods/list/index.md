@@ -26,7 +26,7 @@ GET/accounts/{account\_id}/resource-library/applications
 
 List the applications available to an account, both the applications Cloudflare curates and the custom applications the account has defined.
 
-Results are paginated. Use `filter` and `search` to narrow the list, `order_by` to sort it, and `fields` to reduce each result to only the properties you need. Use `lookup` to find complete application names mentioned in a rule sentence, ignoring case. Lookup does not correct misspellings. It ranks matches by relevance and uses the same filters, fields, and pagination as listing. `lookup` cannot be combined with `search`.
+Results are paginated. Page with `cursor` so that applications added or removed between requests do not make other results repeat or go missing; `offset` paging can repeat or miss results when the list changes between requests. Use `filter` and `search` to narrow the list, `order_by` to sort it, and `fields` to reduce each result to only the properties you need. Use `lookup` to find complete application names mentioned in a rule sentence, ignoring case. Lookup does not correct misspellings. It ranks matches by relevance and uses the same filters, fields, and pagination as listing. `lookup` cannot be combined with `search`.
 
 Invalid UTF-8 or a NUL character (U+0000) in any query parameter name or value returns `400`.
 
@@ -69,6 +69,12 @@ account\_id: string
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse
+
+cursor: optional string
+
+Opaque value from `result_info.cursor` of the previous response. Returns the results that follow it. Send the same `filter`, `search`, `lookup`, and `order_by` values as the request that returned it; `limit` and `fields` may change. An empty value is the same as no cursor. A modified cursor, or one used with different values, returns `400`.
+
+[Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
 
 fields: optional string
 
@@ -119,7 +125,7 @@ minLength2
 
 offset: optional number
 
-Number of results to skip. Defaults to 0; negative values are clamped to 0.
+Number of results to skip. Defaults to 0; negative values are clamped to 0. Ignored when `cursor` is provided.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
@@ -427,7 +433,7 @@ Returns the application version.
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object {count, cursor, page, 3 more }
 
 </summary>
 
@@ -437,9 +443,15 @@ Returns the number of results in this response.
 
 <a href="#">Link to this property</a>
 
+cursor: optional string
+
+Returns an opaque cursor for the next page when more results follow. Send it as the <code>cursor</code> query parameter. Omitted on the last page.
+
+<a href="#">Link to this property</a>
+
 page: optional number
 
-Returns the zero-based result offset, not a page number.
+Returns the zero-based result offset, not a page number. Returns 0 when the request used a cursor.
 
 <a href="#">Link to this property</a>
 
@@ -549,6 +561,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
   ],
   "result_info": {
     "count": 10,
+    "cursor": "cursor",
     "page": 0,
     "per_page": 25,
     "total_count": 2000,
@@ -632,6 +645,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
   ],
   "result_info": {
     "count": 10,
+    "cursor": "cursor",
     "page": 0,
     "per_page": 25,
     "total_count": 2000,

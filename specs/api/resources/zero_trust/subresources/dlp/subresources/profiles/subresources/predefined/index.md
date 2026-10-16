@@ -72,7 +72,7 @@ Entries to enable for this predefined profile. Any entries not provided will be 
 
 <summary>
 
-Deprecatedentries: array of object {id, created\_at, enabled, 6 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
+Deprecatedentries: array of object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 4 more } or object {id, confidence, enabled, 5 more } or 4 more
 
 This field has been deprecated for <code>enabled_entries</code>.
 
@@ -84,7 +84,7 @@ One of the following:
 
 <summary>
 
-CustomEntry object {id, created\_at, enabled, 6 more }
+CustomEntry object {id, created\_at, enabled, 7 more }
 
 </summary>
 
@@ -129,6 +129,14 @@ description: optional string
 Deprecatedprofile\_id: optional string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 

@@ -76,7 +76,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 30 more }
+SettingsPolicy object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 31 more }
 
 </summary>
 
@@ -197,6 +197,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 
@@ -756,7 +762,7 @@ PATCH/accounts/{account\_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
+DefaultGetResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 23 more }
 
 </summary>
 
@@ -825,6 +831,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 
@@ -1182,7 +1194,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 22 more }
+DefaultEditResponse object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 23 more }
 
 </summary>
 
@@ -1251,6 +1263,12 @@ A description of the DNS search suffix.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+enable\_device\_credential\_authentication: optional boolean
+
+Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
 
 <a href="#">Link to this property</a>
 

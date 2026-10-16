@@ -316,7 +316,7 @@ Deprecated — use index\_method instead. Defaults to true for new instances; se
 
 index\_method: optional object {keyword, vector }
 
-Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances.
+Controls which storage backends indexing uses. Defaults to vector and keyword indexing for new instances. When set, both vector and keyword are required.
 
 </summary>
 
@@ -716,6 +716,8 @@ rewrite\_query: optional boolean
 
 score\_threshold: optional number
 
+Minimum similarity score a chunk must reach to be returned. Defaults to 0.4.
+
 maximum1
 
 minimum0
@@ -954,7 +956,7 @@ status: optional string
 
 sync\_interval: optional 900or 1800or 3600or 5 more
 
-Interval between automatic syncs, in seconds. Allowed values: 900 (15min), 1800 (30min), 3600 (1h), 7200 (2h), 14400 (4h), 21600 (6h), 43200 (12h), 86400 (24h).
+Interval between automatic syncs, in seconds. Allowed values: 900 (15min), 1800 (30min), 3600 (1h), 7200 (2h), 14400 (4h), 21600 (6h), 43200 (12h), 86400 (24h). Defaults to 21600 (6h); instances crawling a domain outside the account may be set to 86400.
 
 </summary>
 

@@ -182,7 +182,7 @@ BucketListResponse object {buckets }
 
 <summary>
 
-buckets: optional array of <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%20r2.buckets%20%3E%20(model)%20bucket%20%3E%20(schema)">Bucket</a> { creation\_date, jurisdiction, location, 2 more }
+buckets: array of <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%20r2.buckets%20%3E%20(model)%20bucket%20%3E%20(schema)">Bucket</a> { creation\_date, jurisdiction, location, 2 more }
 
 </summary>
 

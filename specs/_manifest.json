@@ -16238,6 +16238,7 @@
     "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/list",
     "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/methods/update",
     "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/subresources/applications/subresources/policies",
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp",
     "https://developers.cloudflare.com/api/resources/zones",
     "https://developers.cloudflare.com/api/resources/zones/subresources/settings"
   ],

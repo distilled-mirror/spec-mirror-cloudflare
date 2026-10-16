@@ -202,7 +202,7 @@ result: object {buckets }
 
 <summary>
 
-buckets: optional array of <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%20r2.buckets%20%3E%20(model)%20bucket%20%3E%20(schema)">Bucket</a> { creation\_date, jurisdiction, location, 2 more }
+buckets: array of <a href="https://developers.cloudflare.com/api/resources/r2#(resource)%20r2.buckets%20%3E%20(model)%20bucket%20%3E%20(schema)">Bucket</a> { creation\_date, jurisdiction, location, 2 more }
 
 </summary>
 
@@ -330,19 +330,21 @@ One of the following:
 
 [Link to this property](#)%20r2.buckets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-success: true
-
-Whether the API call was successful.
-
-[Link to this property](#)%20r2.buckets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
-
 <details>
 
 <summary>
 
-result\_info: optional object {cursor, per\_page }
+result\_info: object {total\_count, cursor, per\_page }
 
 </summary>
+
+total\_count: number
+
+Total number of active buckets in the requested jurisdiction. This count is not affected by filtering or pagination and is eventually consistent for accounts with elevated bucket limits.
+
+minimum0
+
+<a href="#">Link to this property</a>
 
 cursor: optional string
 
@@ -359,6 +361,12 @@ Maximum number of results on this page.
 </details>
 
 [Link to this property](#)%20r2.buckets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
+
+success: true
+
+Whether the API call was successful.
+
+[Link to this property](#)%20r2.buckets%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
 ### List Buckets
 
@@ -399,11 +407,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2/buckets \
       }
     ]
   },
-  "success": true,
   "result_info": {
+    "total_count": 42,
     "cursor": "1-JTdCJTIydiUyMiUzQTElMkMlMjJzdGFydEFmdGVyJTIyJTNBJTIyZGF2aWRwdWJsaWMlMjIlN0Q=",
     "per_page": 20
-  }
+  },
+  "success": true
 }
 ```
 
@@ -437,10 +446,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2/buckets \
       }
     ]
   },
-  "success": true,
   "result_info": {
+    "total_count": 42,
     "cursor": "1-JTdCJTIydiUyMiUzQTElMkMlMjJzdGFydEFmdGVyJTIyJTNBJTIyZGF2aWRwdWJsaWMlMjIlN0Q=",
     "per_page": 20
-  }
+  },
+  "success": true
 }
 ```

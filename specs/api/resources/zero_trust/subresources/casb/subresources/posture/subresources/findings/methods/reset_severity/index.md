@@ -198,7 +198,7 @@ Number of archived instances identified in the security finding.
 
 <summary>
 
-finding: object {id, category, name, 4 more }
+finding: object {id, category, name, 15 more }
 
 Basic finding type information.
 
@@ -344,9 +344,159 @@ The SaaS/Cloud vendor of the platform with which the finding is associated.
 
 <a href="#">Link to this property</a>
 
+applies\_to\_all\_integrations: optional boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+<a href="#">Link to this property</a>
+
+asset\_class: optional string
+
+Asset class the finding type’s policy evaluates.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asset\_vendor: optional "ANTHROPIC"or "AWS"or "BITBUCKET"or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+<a href="#">Link to this property</a>
+
+"AWS"
+
+<a href="#">Link to this property</a>
+
+"BITBUCKET"
+
+<a href="#">Link to this property</a>
+
+"BOX"
+
+<a href="#">Link to this property</a>
+
+"CONFLUENCE"
+
+<a href="#">Link to this property</a>
+
+"DROPBOX"
+
+<a href="#">Link to this property</a>
+
+"GITHUB"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_CLOUD\_PLATFORM"
+
+<a href="#">Link to this property</a>
+
+"GOOGLE\_WORKSPACE"
+
+<a href="#">Link to this property</a>
+
+"JIRA"
+
+<a href="#">Link to this property</a>
+
+"MICROSOFT"
+
+<a href="#">Link to this property</a>
+
+"OPENAI"
+
+<a href="#">Link to this property</a>
+
+"SALESFORCE"
+
+<a href="#">Link to this property</a>
+
+"SERVICENOW"
+
+<a href="#">Link to this property</a>
+
+"SLACK"
+
+<a href="#">Link to this property</a>
+
+"ZOOM"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_at: optional string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 description: optional string
 
 Detailed description of the finding.
+
+<a href="#">Link to this property</a>
+
+expression: optional string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+<a href="#">Link to this property</a>
+
+integration\_ids: optional array of string
+
+Integrations this finding type applies to when applies\_to\_all\_integrations is false.
+
+<a href="#">Link to this property</a>
+
+match\_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: optional "system"or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
 
 <a href="#">Link to this property</a>
 
@@ -399,6 +549,22 @@ Description of the threat.
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+updated\_at: optional string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
 
 <a href="#">Link to this property</a>
 
@@ -817,7 +983,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "name": "Slack File Publicly Accessible",
       "severity": "Critical",
       "vendor": "Google Workspace",
+      "applies_to_all_integrations": true,
+      "asset_class": "GoogleWorkspaceFile",
+      "asset_vendor": "ANTHROPIC",
+      "created_at": "2024-01-15T10:30:00Z",
       "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
+      "expression": "expression",
+      "integration_ids": [
+        "550e8400-e29b-41d4-a716-446655440000"
+      ],
+      "match_count": 142,
+      "origin": "system",
+      "quarantined": true,
       "remediation": {
         "id": "a20895dd-9c3b-43bd-a608-71c98c6c2d94",
         "frameworks": [
@@ -828,7 +1005,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
         "impact": "Publicly accessible files may expose sensitive information.",
         "locale": "en-US",
         "threat": "Data exposure and potential compliance violations."
-      }
+      },
+      "updated_at": "2024-01-15T10:30:00Z",
+      "version": 0
     },
     "ignored": false,
     "instance_count": 7,
@@ -935,7 +1114,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
       "name": "Slack File Publicly Accessible",
       "severity": "Critical",
       "vendor": "Google Workspace",
+      "applies_to_all_integrations": true,
+      "asset_class": "GoogleWorkspaceFile",
+      "asset_vendor": "ANTHROPIC",
+      "created_at": "2024-01-15T10:30:00Z",
       "description": "This finding indicates that a file in your Slack workspace is publicly accessible.",
+      "expression": "expression",
+      "integration_ids": [
+        "550e8400-e29b-41d4-a716-446655440000"
+      ],
+      "match_count": 142,
+      "origin": "system",
+      "quarantined": true,
       "remediation": {
         "id": "a20895dd-9c3b-43bd-a608-71c98c6c2d94",
         "frameworks": [
@@ -946,7 +1136,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
         "impact": "Publicly accessible files may expose sensitive information.",
         "locale": "en-US",
         "threat": "Data exposure and potential compliance violations."
-      }
+      },
+      "updated_at": "2024-01-15T10:30:00Z",
+      "version": 0
     },
     "ignored": false,
     "instance_count": 7,

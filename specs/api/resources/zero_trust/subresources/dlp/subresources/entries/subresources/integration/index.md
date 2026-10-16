@@ -140,7 +140,7 @@ IntegrationDeleteResponse = unknown
 
 <summary>
 
-IntegrationGetResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
+IntegrationGetResponse = object {id, created\_at, enabled, 9 more } or object {id, created\_at, enabled, 6 more } or object {id, confidence, enabled, 7 more } or 4 more
 
 </summary>
 
@@ -150,7 +150,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 8 more }
+object {id, created\_at, enabled, 9 more }
 
 </summary>
 
@@ -255,6 +255,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 
@@ -1036,7 +1044,7 @@ One of the following:
 
 <summary>
 
-IntegrationListResponse = object {id, created\_at, enabled, 7 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
+IntegrationListResponse = object {id, created\_at, enabled, 8 more } or object {id, created\_at, enabled, 5 more } or object {id, confidence, enabled, 6 more } or 4 more
 
 </summary>
 
@@ -1046,7 +1054,7 @@ One of the following:
 
 <summary>
 
-object {id, created\_at, enabled, 7 more }
+object {id, created\_at, enabled, 8 more }
 
 </summary>
 
@@ -1129,6 +1137,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+validator\_ids: optional array of string
+
+Validators this entry references, by id, at most 10. An empty list means the entry references none.
+
+Returned by the entry endpoints. Not returned on entries embedded in other responses, such as profiles.
 
 <a href="#">Link to this property</a>
 

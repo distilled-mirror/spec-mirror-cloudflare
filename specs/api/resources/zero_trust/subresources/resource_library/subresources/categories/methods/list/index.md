@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/resource-library/categories
 
-List the categories available for classifying applications. Results are paginated.
+List the categories available for classifying applications, ordered by name. Results are paginated by `offset` or `cursor`.
 
 ##### Security
 
@@ -64,6 +64,12 @@ account\_id: string
 
 ##### Q uery ParametersExpand Collapse
 
+cursor: optional string
+
+Opaque value from `result_info.cursor` of the previous response. Returns the categories that follow it. `limit` may change between requests. An empty value is the same as no cursor. A modified cursor, or one returned by a different list, returns `400`.
+
+[Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
+
 limit: optional number
 
 Number of results to return. Defaults to 25; values are clamped to 1–250.
@@ -72,7 +78,7 @@ Number of results to return. Defaults to 25; values are clamped to 1–250.
 
 offset: optional number
 
-Number of results to skip. Defaults to 0; negative values are clamped to 0.
+Number of results to skip. Defaults to 0; negative values are clamped to 0. Ignored when `cursor` is provided.
 
 [Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
@@ -212,6 +218,54 @@ Returns the category name.
 
 [Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
+<details>
+
+<summary>
+
+result\_info: optional object {count, cursor, page, 3 more }
+
+</summary>
+
+count: optional number
+
+Returns the number of results in this response.
+
+<a href="#">Link to this property</a>
+
+cursor: optional string
+
+Returns an opaque cursor for the next page when more results follow. Send it as the <code>cursor</code> query parameter. Omitted on the last page.
+
+<a href="#">Link to this property</a>
+
+page: optional number
+
+Returns the zero-based result offset, not a page number. Returns 0 when the request used a cursor.
+
+<a href="#">Link to this property</a>
+
+per\_page: optional number
+
+Returns the effective <code>limit</code> for this response.
+
+<a href="#">Link to this property</a>
+
+total\_count: optional number
+
+Returns the number of results matching the request before pagination.
+
+<a href="#">Link to this property</a>
+
+total\_pages: optional number
+
+Returns the number of pages at the effective <code>limit</code>, including 0 when there are no matches.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.resource_library.categories%20%3E%20(method)%20list%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
+
 ### List application categories
 
 HTTP
@@ -255,7 +309,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       "description": "Category description",
       "name": "Category name"
     }
-  ]
+  ],
+  "result_info": {
+    "count": 10,
+    "cursor": "cursor",
+    "page": 0,
+    "per_page": 25,
+    "total_count": 2000,
+    "total_pages": 80
+  }
 }
 ```
 
@@ -293,6 +355,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/resource-library/
       "description": "Category description",
       "name": "Category name"
     }
-  ]
+  ],
+  "result_info": {
+    "count": 10,
+    "cursor": "cursor",
+    "page": 0,
+    "per_page": 25,
+    "total_count": 2000,
+    "total_pages": 80
+  }
 }
 ```
