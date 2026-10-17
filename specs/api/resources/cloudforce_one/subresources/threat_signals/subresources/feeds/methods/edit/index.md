@@ -46,6 +46,8 @@ account\_id: string
 
 feed\_id: string
 
+UUID of the Threat Signals feed
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
@@ -102,15 +104,21 @@ One of the following:
 
 display\_name: optional string
 
+Override the feed’s display name. Null clears it; omit to keep existing or derived value.
+
 maxLength255
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20display_name%20%3E%20(schema)>)
 
 enabled: optional boolean
 
+Whether to actively poll the feed. Omit to keep current value.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 poll\_interval\_s: optional number
+
+New polling interval in seconds (60-86400). Omit to keep current value.
 
 maximum86400
 
@@ -119,6 +127,8 @@ minimum60
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20poll_interval_s%20%3E%20(schema)>)
 
 title: optional string
+
+Override the feed’s title. Null clears it; omit to keep existing or derived value.
 
 maxLength255
 

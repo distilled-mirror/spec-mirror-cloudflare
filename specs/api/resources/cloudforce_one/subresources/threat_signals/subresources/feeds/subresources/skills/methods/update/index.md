@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/skills
 
-Replaces the ordered custom skills assigned to a Threat Signals feed.
+Replaces the ordered custom skills assigned to a Threat Signals feed. Requires a paid Threat Signals subscription.
 
 ##### Security
 
@@ -48,6 +48,8 @@ account\_id: string
 
 feed\_id: string
 
+UUID of the Threat Signals feed
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds.skills%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
@@ -55,6 +57,8 @@ formatuuid
 ##### Body ParametersJSONExpand Collapse
 
 skill\_ids: array of string
+
+Ordered array of Custom Skill UUIDs (max 20). Replaces the feed’s custom skill assignments. Free accounts cannot assign custom skills. Managed default skills are unaffected.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds.skills%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20skill_ids%20%3E%20(schema)>)
 

@@ -210,6 +210,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"http\_response\_firewall\_custom"
+
+<a href="#">Link to this property</a>
+
 "http\_response\_firewall\_managed"
 
 <a href="#">Link to this property</a>
@@ -7922,6 +7926,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"http\_response\_firewall\_custom"
+
+<a href="#">Link to this property</a>
+
 "http\_response\_firewall\_managed"
 
 <a href="#">Link to this property</a>
@@ -8645,6 +8653,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "http\_response\_compression"
+
+<a href="#">Link to this property</a>
+
+"http\_response\_firewall\_custom"
 
 <a href="#">Link to this property</a>
 

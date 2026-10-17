@@ -374,7 +374,7 @@ Indicates the total number of results.
 
 <summary>
 
-issues: optional array of object {id, dismissed, has\_extended\_context, 11 more }
+issues: optional array of object {id, dismissed, has\_extended\_context, 12 more }
 
 </summary>
 
@@ -493,6 +493,30 @@ One of the following:
 since: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional "cloudflare"or "riskrecon"
+
+Who generated the insight. <code>cloudflare</code> for Cloudflare-generated insights, otherwise the partner.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"riskrecon"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -635,6 +659,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
         "resolve_text": "resolve_text",
         "severity": "Low",
         "since": "2019-12-27T18:11:19.117Z",
+        "source": "cloudflare",
         "status": "active",
         "subject": "example.com",
         "timestamp": "2019-12-27T18:11:19.117Z",
@@ -691,6 +716,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
         "resolve_text": "resolve_text",
         "severity": "Low",
         "since": "2019-12-27T18:11:19.117Z",
+        "source": "cloudflare",
         "status": "active",
         "subject": "example.com",
         "timestamp": "2019-12-27T18:11:19.117Z",

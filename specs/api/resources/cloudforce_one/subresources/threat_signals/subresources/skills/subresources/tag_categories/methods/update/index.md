@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/tag-categories
 
-Replaces the tag categories the default tagging skill may choose tags from.
+Replaces the Tag Categories the managed default tagging skill may select tags from. This configures the managed default tagging skill, not Custom Skills.
 
 ##### Security
 
@@ -48,11 +48,15 @@ account\_id: string
 
 skill\_id: "default-tagging-skill"
 
+Must be default-tagging-skill; configures the managed default tagging skill
+
 [Link to this property](#)%20cloudforce_one.threat_signals.skills.tag_categories%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
 
 category\_uuids: array of string
+
+Up to 100 unique tag category UUIDs that the managed default tagging skill may select tags from.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.skills.tag_categories%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20category_uuids%20%3E%20(schema)>)
 

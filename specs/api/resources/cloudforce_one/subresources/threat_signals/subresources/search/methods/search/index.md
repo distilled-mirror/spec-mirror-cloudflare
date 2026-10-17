@@ -48,6 +48,8 @@ account\_id: string
 
 query: string
 
+Keyword and semantic article-search text, from 1 to 1000 characters.
+
 maxLength1000
 
 minLength1
@@ -55,6 +57,8 @@ minLength1
 [Link to this property](#)%20cloudforce_one.threat_signals.search%20%3E%20(method)%20search%20%3E%20(params)%20default%20%3E%20(param)%20query%20%3E%20(schema)>)
 
 feed\_id: optional string
+
+Optional feed UUID that restricts results to articles from that feed.
 
 formatuuid
 
@@ -66,11 +70,15 @@ formatuuid
 
 max\_results: optional ""or string
 
+Maximum search matches to request, an integer from 1 to 50. Defaults to 20 when omitted or empty; multiple matches from one article can produce fewer returned articles.
+
 </summary>
 
 One of the following:
 
 ""
+
+Maximum search matches to request, an integer from 1 to 50. Defaults to 20 when omitted or empty; multiple matches from one article can produce fewer returned articles.
 
 <a href="#">Link to this property</a>
 

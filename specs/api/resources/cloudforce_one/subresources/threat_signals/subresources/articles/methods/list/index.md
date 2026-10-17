@@ -62,9 +62,13 @@ minLength1
 
 feed\_category: optional string
 
+Exact feed-category filter after trimming. Omit to include every category.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20feed_category%20%3E%20(schema)>)
 
 feed\_id: optional string
+
+Feed UUID filter. Omit to include articles from every account feed.
 
 formatuuid
 
@@ -72,11 +76,15 @@ formatuuid
 
 fetched\_after: optional string
 
+Include articles fetched at or after this ISO 8601 date-time with Z or a numeric UTC offset; normalized to UTC.
+
 formatdate-time
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20fetched_after%20%3E%20(schema)>)
 
 fetched\_before: optional string
+
+Include articles fetched at or before this ISO 8601 date-time with Z or a numeric UTC offset; normalized to UTC.
 
 formatdate-time
 
@@ -84,9 +92,13 @@ formatdate-time
 
 include\_total: optional boolean
 
+When true on the first page, count matching articles and return an exact total. Defaults to false; cursor pages do not recalculate totals.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20include_total%20%3E%20(schema)>)
 
 per\_page: optional number
+
+Number of articles per cursor page, from 1 to 100. Defaults to 20.
 
 maximum100
 
@@ -96,11 +108,15 @@ minimum1
 
 published\_after: optional string
 
+Include articles published at or after this ISO 8601 date-time with Z or a numeric UTC offset; normalized to UTC.
+
 formatdate-time
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20published_after%20%3E%20(schema)>)
 
 published\_before: optional string
+
+Include articles published at or before this ISO 8601 date-time with Z or a numeric UTC offset; normalized to UTC.
 
 formatdate-time
 
@@ -108,9 +124,13 @@ formatdate-time
 
 read: optional boolean
 
+Filter by read state. Accepts true, false, 1, or 0; omit to include read and unread articles.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20read%20%3E%20(schema)>)
 
 search: optional string
+
+NFC-normalized, trimmed literal substring filter on article titles; ASCII case-insensitive, from 1 to 500 characters.
 
 maxLength500
 
@@ -120,6 +140,8 @@ minLength1
 
 sort: optional string
 
+Sort by fetched\_at, published\_at, or title. Prefix the field with - for descending order; defaults to -fetched\_at.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sort%20%3E%20(schema)>)
 
 <details>
@@ -127,6 +149,8 @@ sort: optional string
 <summary>
 
 source\_type: optional "curated"or "custom"
+
+Filter by curated or custom feed source. Omit to include both source types.
 
 </summary>
 

@@ -72,7 +72,17 @@ lastFailedAt: optional number
 
 <summary>
 
-ConfigCreateResponse object {amount, threshold }
+ConfigCreateResponse = object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {amount, threshold }
 
 </summary>
 
@@ -81,6 +91,66 @@ amount: number
 <a href="#">Link to this property</a>
 
 threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {amount, status, threshold }
+
+</summary>
+
+amount: number
+
+<a href="#">Link to this property</a>
+
+status: "configured"
+
+<a href="#">Link to this property</a>
+
+threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {amount, client\_secret, setup\_intent\_id, 2 more }
+
+</summary>
+
+amount: number
+
+<a href="#">Link to this property</a>
+
+client\_secret: string
+
+<a href="#">Link to this property</a>
+
+setup\_intent\_id: string
+
+<a href="#">Link to this property</a>
+
+status: "requires\_action"
+
+<a href="#">Link to this property</a>
+
+threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

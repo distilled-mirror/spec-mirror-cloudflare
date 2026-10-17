@@ -48,9 +48,13 @@ account\_id: string
 
 article\_ids: array of string
 
+Array of article UUIDs to mark (1-50).
+
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20bulk_edit%20%3E%20(params)%200%20%3E%20(param)%20article_ids%20%3E%20(schema)>)
 
 read: boolean
+
+True to mark read, false to mark unread.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20bulk_edit%20%3E%20(params)%200%20%3E%20(param)%20read%20%3E%20(schema)>)
 

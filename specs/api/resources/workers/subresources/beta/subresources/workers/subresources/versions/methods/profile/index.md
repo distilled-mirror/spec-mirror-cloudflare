@@ -76,7 +76,7 @@ Identifies the Worker by ID or name.
 
 version\_id: string
 
-Identifies the version by UUID or UUID prefix with a minimum length of eight characters. Use “latest” to select the most recently created version.
+Identifies the version by UUID or UUID prefix with a minimum length of eight characters. Use “latest” to select the most recently created version, which may not be deployed. Use “latest-deployed” to profile a version in the active deployment. Versions are tried in order of traffic share until one has a loaded isolate.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(method)%20profile%20%3E%20(params)%20default%20%3E%20(param)%20version_id%20%3E%20(schema)>)
 

@@ -524,7 +524,7 @@ maxLength255
 
 filter: string
 
-Optional filter expression that determines whether this policy applies. Null means the policy applies to every request. Maximum 4096 UTF-8 bytes.
+Filter expression that determines whether this policy applies. Maximum 4096 UTF-8 bytes.
 
 maxLength4096
 
@@ -317725,6 +317725,756 @@ One of the following:
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+##### [List validators](/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/list)
+
+GET/accounts/{account_id}/dlp/validators
+
+##### [Get a validator](/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/get)
+
+GET/accounts/{account_id}/dlp/validators/{validator_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+References object { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+</summary>
+
+<details>
+
+<summary>
+
+entries: array of object { id, name, type }
+
+The detection entries using this validator, ordered by name.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: "custom" or "custom_prompt_topic" or "predefined" or 4 more
+
+The type of a detection entry.
+
+</summary>
+
+One of the following:
+
+"custom"
+
+[Link to this property](#)
+
+"custom_prompt_topic"
+
+[Link to this property](#)
+
+"predefined"
+
+[Link to this property](#)
+
+"integration"
+
+[Link to this property](#)
+
+"exact_data"
+
+[Link to this property](#)
+
+"document_fingerprint"
+
+[Link to this property](#)
+
+"word_list"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+entry_count: number
+
+Number of detection entries this validator is attached to.
+
+formatint32
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Validator = object { id, created_at, kind, 4 more } or object { id, created_at, kind, 5 more }
+
+Reusable logic that a detection entry can attach to in order to refine its matches. The `kind` field determines the rest of the body.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+ProximityWordValidator object { id, created_at, kind, 4 more }
+
+A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+kind: "proximity_words"
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+words: array of [Word](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20word%20%3E%20(schema)) { weight, word }
+
+The words that raise confidence when found near a match.
+
+</summary>
+
+weight: [Weight](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20weight%20%3E%20(schema))
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+[Link to this property](#)
+
+word: string
+
+The word or phrase to look for. Must contain 1–128 characters and is matched case-insensitively.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkerValidator object { id, created_at, kind, 5 more }
+
+A customer Worker registered as a validator.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+kind: "worker"
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+script_tag: string
+
+The public script tag of the customer’s Worker that scores matches.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+default: optional number or "veto"
+
+</summary>
+
+One of the following:
+
+number
+
+[Link to this property](#)
+
+"veto"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ValidatorArray = array of [Validator](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20validator%20%3E%20(schema))
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+ProximityWordValidator object { id, created_at, kind, 4 more }
+
+A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+kind: "proximity_words"
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+words: array of [Word](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20word%20%3E%20(schema)) { weight, word }
+
+The words that raise confidence when found near a match.
+
+</summary>
+
+weight: [Weight](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20weight%20%3E%20(schema))
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+[Link to this property](#)
+
+word: string
+
+The word or phrase to look for. Must contain 1–128 characters and is matched case-insensitively.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkerValidator object { id, created_at, kind, 5 more }
+
+A customer Worker registered as a validator.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+kind: "worker"
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+script_tag: string
+
+The public script tag of the customer’s Worker that scores matches.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+default: optional number or "veto"
+
+</summary>
+
+One of the following:
+
+number
+
+[Link to this property](#)
+
+"veto"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkerValidator object { id, created_at, name, 4 more }
+
+A customer Worker registered as a validator.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+script_tag: string
+
+The public script tag of the customer’s Worker that scores matches.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+default: optional number or "veto"
+
+</summary>
+
+One of the following:
+
+number
+
+[Link to this property](#)
+
+"veto"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List proximity word validators](/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/list)
+
+GET/accounts/{account_id}/dlp/validators/proximity_words
+
+##### [Get a proximity word validator](/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/get)
+
+GET/accounts/{account_id}/dlp/validators/proximity_words/{validator_id}
+
+##### [Create a proximity word validator](/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/create)
+
+POST/accounts/{account_id}/dlp/validators/proximity_words
+
+##### [Update a proximity word validator](/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/update)
+
+PUT/accounts/{account_id}/dlp/validators/proximity_words/{validator_id}
+
+##### [Delete a proximity word validator](/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/delete)
+
+DELETE/accounts/{account_id}/dlp/validators/proximity_words/{validator_id}
+
+##### Models
+
+<details>
+
+<summary>
+
+ProximityWordValidator object { id, created_at, name, 3 more }
+
+A reusable list of weighted words. Attaching it to a detection entry raises the confidence of that entry’s matches when one of the words appears nearby, and lowers it when none do.
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+words: array of [Word](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20word%20%3E%20(schema)) { weight, word }
+
+The words that raise confidence when found near a match.
+
+</summary>
+
+weight: [Weight](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20weight%20%3E%20(schema))
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+[Link to this property](#)
+
+word: string
+
+The word or phrase to look for. Must contain 1–128 characters and is matched case-insensitively.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ProximityWordValidatorArray = array of [ProximityWordValidator](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20proximity_word_validator%20%3E%20(schema)) { id, created_at, name, 3 more }
+
+</summary>
+
+id: string
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+name: string
+
+A name for this validator, at most 50 characters.
+
+[Link to this property](#)
+
+referenced_by: [References](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators%20%3E%20(model)%20references%20%3E%20(schema)) { entries, entry_count }
+
+What currently uses a validator. Deleting a validator that is still in use returns `409`, so check this first.
+
+Read-only. A validator is attached or detached by updating the detection entry that uses it, not by writing this back.
+
+[Link to this property](#)
+
+updated_at: string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+words: array of [Word](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20word%20%3E%20(schema)) { weight, word }
+
+The words that raise confidence when found near a match.
+
+</summary>
+
+weight: [Weight](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20weight%20%3E%20(schema))
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+[Link to this property](#)
+
+word: string
+
+The word or phrase to look for. Must contain 1–128 characters and is matched case-insensitively.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Weight = "strong" or "moderate" or "weak"
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+</summary>
+
+One of the following:
+
+"strong"
+
+[Link to this property](#)
+
+"moderate"
+
+[Link to this property](#)
+
+"weak"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Word object { weight, word }
+
+A word that raises a match’s confidence when it appears near the match.
+
+</summary>
+
+weight: [Weight](/api/resources/zero_trust#(resource)%20zero_trust.dlp.validators.proximity_words%20%3E%20(model)%20weight%20%3E%20(schema))
+
+How much a word contributes to a match’s confidence when it is found nearby.
+
+Separate from a profile’s high/medium/low confidence threshold: this describes how telling the word is, not how confident the resulting match is.
+
+[Link to this property](#)
+
+word: string
+
+The word or phrase to look for. Must contain 1–128 characters and is matched case-insensitively.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+ProximityWordDeleteResponse = unknown
 
 [Link to this property](#)
 

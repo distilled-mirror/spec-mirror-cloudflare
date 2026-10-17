@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
 <summary>
 
-AllowPolicyListResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyListResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -83,6 +83,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -199,7 +207,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyGetResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyGetResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -232,6 +240,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -348,7 +364,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyCreateResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyCreateResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -381,6 +397,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -497,7 +521,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyEditResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyEditResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -530,6 +554,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -694,7 +726,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 12 more }
+patches: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -725,6 +757,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -841,7 +881,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 12 more }
+posts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -872,6 +912,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -988,7 +1036,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 12 more }
+puts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -1019,6 +1067,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

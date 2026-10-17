@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds
 
-Subscribes the account to a custom or curated Threat Signals feed.
+Subscribes the account to a custom or curated Threat Signals feed. Adding a custom feed when the account is at its custom-feed limit returns 403 with `errors[0].reason` `threat_signals_feed_limit`, and `errors[0].custom_feed_limit` and `errors[0].custom_feed_count` give the limit and current count. Curated feeds are not subject to this limit.
 
 ##### Security
 
@@ -96,11 +96,15 @@ One of the following:
 
 curated\_feed\_id: optional string
 
+UUID of a curated feed to subscribe to. Provide exactly one of url or curated\_feed\_id. The account must have feed creation entitlement and not exceed feed allowance.
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20curated_feed_id%20%3E%20(schema)>)
 
 display\_name: optional string
+
+Override the feed’s display name. Null clears it; omit to keep existing or derived value.
 
 maxLength255
 
@@ -108,9 +112,13 @@ maxLength255
 
 enabled: optional boolean
 
+Whether to actively poll the feed. Default true.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 poll\_interval\_s: optional number
+
+Polling interval in seconds (60-86400). Default 300s (5 minutes).
 
 maximum86400
 
@@ -120,11 +128,15 @@ minimum60
 
 title: optional string
 
+Override the feed’s title. Null clears it; omit to keep existing or derived value.
+
 maxLength255
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20title%20%3E%20(schema)>)
 
 url: optional string
+
+HTTPS RSS feed URL. Provide exactly one of url or curated\_feed\_id. The account must have feed creation entitlement and not exceed feed allowance.
 
 formaturi
 

@@ -48,11 +48,15 @@ account\_id: string
 
 article\_id: optional string
 
+Article UUID filter. Omit to include indicators from every article.
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20article_id%20%3E%20(schema)>)
 
 cursor: optional string
+
+Opaque cursor from the previous response’s `pagination.cursor`. When provided, page size, ordering, and filters come from the cursor. Sending `per_page`, `sort`, `include_total`, `feed_id`, `article_id`, or `search` alongside it returns a 400 `CursorFilterConflictError`.
 
 minLength1
 
@@ -60,15 +64,21 @@ minLength1
 
 feed\_id: optional string
 
+Feed UUID filter. Omit to include indicators from every account feed.
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
 
 include\_total: optional boolean
 
+When true on the first page, count matching indicators and return an exact total. Defaults to false; cursor pages do not recalculate totals.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20include_total%20%3E%20(schema)>)
 
 per\_page: optional number
+
+Number of indicators per cursor page, from 1 to 100. Defaults to 20.
 
 maximum100
 
@@ -83,6 +93,8 @@ NFC-normalized and trimmed, case-insensitive literal substring search of indicat
 [Link to this property](#)%20cloudforce_one.threat_signals.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
 
 sort: optional string
+
+Sort by id. Use id for ascending or -id for descending order; defaults to id.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sort%20%3E%20(schema)>)
 

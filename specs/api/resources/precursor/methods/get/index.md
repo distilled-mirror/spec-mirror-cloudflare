@@ -260,6 +260,7 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/precursor \
+    -H 'Cloudflare-Version: 1.0' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 

@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}
 
-Updates a custom skill. Default skills are read-only.
+Updates a Custom Skill. Managed Default Skills cannot be updated. Free Threat Signals accounts cannot update Custom Skills.
 
 ##### Security
 
@@ -46,19 +46,27 @@ account\_id: string
 
 skill\_id: string
 
+Custom Skill UUID or a Managed Default Skill ID
+
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20edit%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
 
 config: optional string
 
+Optional skill configuration (stored but not currently interpreted).
+
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20config%20%3E%20(schema)>)
 
 is\_active: optional boolean
 
+Whether the skill is active and eligible for feed assignment.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20is_active%20%3E%20(schema)>)
 
 name: optional string
+
+Custom Skill name (1–100 characters).
 
 maxLength100
 
@@ -68,6 +76,8 @@ minLength1
 
 output\_schema: optional string
 
+JSON Schema serialized as a string (max 4096 characters).
+
 maxLength4096
 
 minLength1
@@ -75,6 +85,8 @@ minLength1
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20output_schema%20%3E%20(schema)>)
 
 prompt: optional string
+
+AI prompt (1–4000 characters) defining the skill’s instructions.
 
 maxLength4000
 

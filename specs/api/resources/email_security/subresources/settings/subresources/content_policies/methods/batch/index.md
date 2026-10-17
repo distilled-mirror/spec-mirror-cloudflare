@@ -98,7 +98,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, created\_at, enabled, 5 more }
+patches: array of object {id, created\_at, enabled, 6 more }
 
 Partial updates to apply — each entry carries the policy’s ID and only the fields to change.
 
@@ -121,6 +121,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -190,7 +198,7 @@ One of the following:
 
 <summary>
 
-posts: array of object {enabled, name, pattern, 5 more }
+posts: array of object {enabled, name, pattern, 6 more }
 
 Content policies to create.
 
@@ -260,6 +268,14 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 modified\_at: optional string
 
 formatdate-time
@@ -282,7 +298,7 @@ maxLength4096
 
 <summary>
 
-puts: array of object {id, enabled, name, 5 more }
+puts: array of object {id, enabled, name, 6 more }
 
 Full replacements to apply — each entry carries the policy’s ID and every field of its new value.
 
@@ -347,6 +363,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -494,7 +518,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, enabled, 5 more }
+patches: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -515,6 +539,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -584,7 +616,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, created\_at, enabled, 5 more }
+posts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -605,6 +637,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -674,7 +714,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, created\_at, enabled, 5 more }
+puts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -695,6 +735,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -842,6 +890,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",
@@ -856,6 +905,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",
@@ -870,6 +920,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",
@@ -921,6 +972,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",
@@ -935,6 +987,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",
@@ -949,6 +1002,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
         "created_at": "2014-01-01T05:20:00.12345Z",
         "enabled": true,
+        "expires_at": "2027-01-01T00:00:00Z",
         "modified_at": "2014-01-01T05:20:00.12345Z",
         "name": "Block phishing keywords",
         "notes": "Blocks common phishing subject lines",

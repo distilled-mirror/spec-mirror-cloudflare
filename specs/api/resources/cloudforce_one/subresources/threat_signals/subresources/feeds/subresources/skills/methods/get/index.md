@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/skills
 
-Retrieves the effective skill pipeline for a Threat Signals feed.
+Retrieves active non-IOC-context Managed Default Skills followed by active Custom Skills assigned to the feed, with each entry’s source. Free Threat Signals accounts receive only those Managed Default Skills.
 
 ##### Security
 
@@ -47,6 +47,8 @@ account\_id: string
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds.skills%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 feed\_id: string
+
+UUID of the Threat Signals feed
 
 formatuuid
 

@@ -74,7 +74,7 @@ maxLength255
 
 filter: string
 
-Optional filter expression that determines whether this policy applies. Null means the policy applies to every request. Maximum 4096 UTF-8 bytes.
+Filter expression that determines whether this policy applies. Maximum 4096 UTF-8 bytes.
 
 maxLength4096
 

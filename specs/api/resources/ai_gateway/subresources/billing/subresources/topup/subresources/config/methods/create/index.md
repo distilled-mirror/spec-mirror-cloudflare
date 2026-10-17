@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/ai-gateway/billing/topup/config
 
-Configure auto top-up with a balance threshold and top-up amount. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
+Configure auto top-up with a balance threshold and top-up amount. Requests with a payment method first return a SetupIntent and save the configuration only after the confirmed SetupIntent is submitted. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
 
 ##### Security
 
@@ -66,9 +66,27 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 account\_id: string
 
-[Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
+[Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
+
+<details>
+
+<summary>
+
+body: object {amount, threshold } or object {amount, consent\_version, payment\_method\_id, 3 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {amount, threshold }
+
+</summary>
 
 amount: number
 
@@ -76,7 +94,7 @@ Auto top-up amount in cents (min 1000).
 
 minimum1000
 
-[Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20amount%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
 
 threshold: number
 
@@ -84,7 +102,73 @@ Balance threshold in cents that triggers auto top-up (min 500).
 
 minimum500
 
-[Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20threshold%20%3E%20(schema)>)
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {amount, consent\_version, payment\_method\_id, 3 more }
+
+</summary>
+
+amount: number
+
+Auto top-up amount in cents (min 1000).
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+consent\_version: string
+
+Version of the off-session auto-top-up consent accepted by the user.
+
+maxLength100
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+payment\_method\_id: string
+
+Card to authenticate for future automatic top-ups.
+
+<a href="#">Link to this property</a>
+
+setup\_idempotency\_key: string
+
+Client-generated UUID that makes SetupIntent creation safe to retry.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+threshold: number
+
+Balance threshold in cents that triggers auto top-up (min 500).
+
+minimum500
+
+<a href="#">Link to this property</a>
+
+setup\_intent\_id: optional string
+
+Successfully confirmed SetupIntent returned by the initial request.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20body%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -132,7 +216,17 @@ message: string
 
 <summary>
 
-result: object {amount, threshold }
+result: object {amount, threshold } or object {amount, status, threshold } or object {amount, client\_secret, setup\_intent\_id, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {amount, threshold }
 
 </summary>
 
@@ -141,6 +235,66 @@ amount: number
 <a href="#">Link to this property</a>
 
 threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {amount, status, threshold }
+
+</summary>
+
+amount: number
+
+<a href="#">Link to this property</a>
+
+status: "configured"
+
+<a href="#">Link to this property</a>
+
+threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {amount, client\_secret, setup\_intent\_id, 2 more }
+
+</summary>
+
+amount: number
+
+<a href="#">Link to this property</a>
+
+client\_secret: string
+
+<a href="#">Link to this property</a>
+
+setup\_intent\_id: string
+
+<a href="#">Link to this property</a>
+
+status: "requires\_action"
+
+<a href="#">Link to this property</a>
+
+threshold: number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

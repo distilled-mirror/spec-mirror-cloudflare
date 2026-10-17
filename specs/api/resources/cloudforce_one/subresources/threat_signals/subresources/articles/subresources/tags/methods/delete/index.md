@@ -48,11 +48,15 @@ account\_id: string
 
 article\_id: string
 
+Threat Signals article UUID
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles.tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20article_id%20%3E%20(schema)>)
 
 tag\_id: string
+
+UUID of a tag from the account’s catalog
 
 formatuuid
 

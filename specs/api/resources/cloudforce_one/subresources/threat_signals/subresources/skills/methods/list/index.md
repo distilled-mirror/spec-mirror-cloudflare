@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills
 
-Lists the default and custom skills available to the account.
+Lists active Managed Default Skills and Custom Skills. Free Threat Signals accounts see active managed defaults only, with custom\_skills\_available: false.
 
 ##### Security
 
@@ -48,11 +48,15 @@ account\_id: string
 
 page: optional number
 
+Page number (≥ 1, default 1).
+
 minimum1
 
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 per\_page: optional number
+
+Results per page (1–100, default 20).
 
 maximum100
 
@@ -180,7 +184,7 @@ Number of skills on this page.
 
 custom\_skills\_available: boolean
 
-Whether the authenticated account may access custom-skill capabilities under Stakeout’s Threat Signals access-mode policy. This is a policy availability indicator, not a row-existence indicator. False for threat\_signals\_only mode; true for entitled, allowlisted, cfone\_internal, and service modes.
+Whether Custom Skills are available to the account. False for Free Threat Signals accounts, which receive managed default skills only.
 
 <a href="#">Link to this property</a>
 

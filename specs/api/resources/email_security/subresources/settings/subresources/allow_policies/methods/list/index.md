@@ -96,6 +96,12 @@ One of the following:
 
 [Link to this property](#)%20email_security.settings.allow_policies%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
 
+expired: optional boolean
+
+Filter to return only expired policies (`true`) or only policies that still apply (`false`). Omit to return both.
+
+[Link to this property](#)%20email_security.settings.allow_policies%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20expired%20%3E%20(schema)>)
+
 is\_acceptable\_sender: optional boolean
 
 Filter to show only policies where messages from the sender are exempted from Spam, Spoof, and Bulk dispositions (not Malicious or Suspicious).
@@ -302,7 +308,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, created\_at, last\_modified, 12 more }
+result: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -333,6 +339,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -523,6 +537,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
       "created_at": "2014-01-01T05:20:00.12345Z",
       "last_modified": "2014-01-01T05:20:00.12345Z",
       "comments": "Trust all messages send from test@example.com",
+      "expires_at": "2027-01-01T00:00:00Z",
       "is_acceptable_sender": false,
       "is_exempt_recipient": false,
       "is_recipient": false,
@@ -578,6 +593,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
       "created_at": "2014-01-01T05:20:00.12345Z",
       "last_modified": "2014-01-01T05:20:00.12345Z",
       "comments": "Trust all messages send from test@example.com",
+      "expires_at": "2027-01-01T00:00:00Z",
       "is_acceptable_sender": false,
       "is_exempt_recipient": false,
       "is_recipient": false,

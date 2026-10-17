@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}
 
-Deletes a custom skill. Default skills cannot be deleted.
+Deletes a Custom Skill. The skill’s stored outputs on articles are deleted with it. Managed Default Skills cannot be deleted. Free Threat Signals accounts cannot delete Custom Skills.
 
 ##### Security
 
@@ -45,6 +45,8 @@ account\_id: string
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 skill\_id: string
+
+Custom Skill UUID or a Managed Default Skill ID
 
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 

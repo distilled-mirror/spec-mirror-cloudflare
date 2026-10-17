@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_id}/skills/{skill\_id}/output
 
-Retrieves the stored output of a skill for a Threat Signals article.
+Retrieves the stored output of a skill for a Threat Signals article. The custom\_output field is parsed JSON when the stored output is valid JSON, otherwise the raw string.
 
 ##### Security
 
@@ -48,11 +48,15 @@ account\_id: string
 
 article\_id: string
 
+Threat Signals article UUID
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles.skill_outputs%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20article_id%20%3E%20(schema)>)
 
 skill\_id: string
+
+Custom Skill UUID or a Managed Default Skill ID (IOC-context: default-ioc-context-skill)
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles.skill_outputs%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 

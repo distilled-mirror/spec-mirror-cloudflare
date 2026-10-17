@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/content\_policies/batch
 
 <summary>
 
-ContentPolicyListResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyListResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -73,6 +73,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -142,7 +150,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyGetResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyGetResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -165,6 +173,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -234,7 +250,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyCreateResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyCreateResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -257,6 +273,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -326,7 +350,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyEditResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyEditResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -349,6 +373,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -466,7 +498,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, enabled, 5 more }
+patches: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -487,6 +519,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -556,7 +596,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, created\_at, enabled, 5 more }
+posts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -577,6 +617,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -646,7 +694,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, created\_at, enabled, 5 more }
+puts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -667,6 +715,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

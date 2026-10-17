@@ -52,6 +52,8 @@ account\_id: string
 
 feed\_id: optional stringor "all"
 
+UUID of a specific feed to poll, or “all” to poll all feeds. Omit or pass “all” for all feeds.
+
 </summary>
 
 One of the following:
@@ -61,6 +63,8 @@ string
 <a href="#">Link to this property</a>
 
 "all"
+
+UUID of a specific feed to poll, or “all” to poll all feeds. Omit or pass “all” for all feeds.
 
 <a href="#">Link to this property</a>
 

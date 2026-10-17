@@ -98,7 +98,7 @@ formatuuid
 
 <summary>
 
-patches: array of object {id, created\_at, last\_modified, 12 more }
+patches: array of object {id, created\_at, last\_modified, 13 more }
 
 Partial updates to apply — each entry carries the policy’s ID and only the fields to change.
 
@@ -131,6 +131,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -247,7 +255,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: array of object {is\_acceptable\_sender, is\_exempt\_recipient, is\_regex, 12 more }
+posts: array of object {is\_acceptable\_sender, is\_exempt\_recipient, is\_regex, 13 more }
 
 Allow policies to create.
 
@@ -348,6 +356,14 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 Deprecatedis\_recipient: optional boolean
 
 Use <code>is_exempt_recipient</code> instead.
@@ -396,7 +412,7 @@ formatdate-time
 
 <summary>
 
-puts: array of object {id, created\_at, last\_modified, 12 more }
+puts: array of object {id, created\_at, last\_modified, 13 more }
 
 Full replacements to apply — each entry carries the policy’s ID and every field of its new value.
 
@@ -429,6 +445,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -665,7 +689,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 12 more }
+patches: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -696,6 +720,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -812,7 +844,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 12 more }
+posts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -843,6 +875,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -959,7 +999,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 12 more }
+puts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -990,6 +1030,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -1179,6 +1227,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,
@@ -1198,6 +1247,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,
@@ -1217,6 +1267,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,
@@ -1273,6 +1324,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,
@@ -1292,6 +1344,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,
@@ -1311,6 +1364,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
         "created_at": "2014-01-01T05:20:00.12345Z",
         "last_modified": "2014-01-01T05:20:00.12345Z",
         "comments": "Trust all messages send from test@example.com",
+        "expires_at": "2027-01-01T00:00:00Z",
         "is_acceptable_sender": false,
         "is_exempt_recipient": false,
         "is_recipient": false,

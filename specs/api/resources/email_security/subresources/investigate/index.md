@@ -690,7 +690,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -797,6 +807,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -1474,7 +1492,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -1581,6 +1609,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -5550,7 +5586,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -5657,6 +5703,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 

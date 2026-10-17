@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}/tag-categories
 
-Retrieves the tag categories the default tagging skill may choose tags from.
+Retrieves the Tag Categories the managed default tagging skill may select tags from. This configures the managed default tagging skill, not Custom Skills.
 
 ##### Security
 
@@ -47,6 +47,8 @@ account\_id: string
 [Link to this property](#)%20cloudforce_one.threat_signals.skills.tag_categories%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 skill\_id: "default-tagging-skill"
+
+Must be default-tagging-skill; configures the managed default tagging skill
 
 [Link to this property](#)%20cloudforce_one.threat_signals.skills.tag_categories%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 

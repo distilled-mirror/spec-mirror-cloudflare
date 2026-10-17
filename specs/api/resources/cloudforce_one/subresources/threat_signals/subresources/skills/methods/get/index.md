@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills/{skill\_id}
 
-Retrieves a default or custom skill by ID.
+Retrieves a Managed Default Skill or Custom Skill. Managed catalog definitions are readable. Free Threat Signals accounts cannot read Custom Skills.
 
 ##### Security
 
@@ -45,6 +45,8 @@ account\_id: string
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 skill\_id: string
+
+Custom Skill UUID or a Managed Default Skill ID
 
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20skill_id%20%3E%20(schema)>)
 

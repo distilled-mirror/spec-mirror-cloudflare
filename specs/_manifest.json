@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4054,
+  "count": 4075,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -5721,6 +5721,54 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/k2",
       "markdown": "https://developers.cloudflare.com/api/resources/k2/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/methods/produce",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/methods/produce/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/consume",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/consume/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/ack",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/ack/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/extend",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/extend/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/nack",
+      "markdown": "https://developers.cloudflare.com/api/resources/k2/subresources/data/subresources/subscriptions/subresources/batches/methods/nack/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/k2/subresources/streams",
@@ -15205,6 +15253,42 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/settings/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/dlp/subresources/validators/subresources/proximity_words/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/gateway",

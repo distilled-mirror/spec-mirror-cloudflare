@@ -86,7 +86,7 @@ per\_page: optional number
 
 Number of results per page.
 
-maximum5000000
+maximum1000
 
 minimum1
 

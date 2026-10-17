@@ -56,7 +56,7 @@ One of the following:
 
 <summary>
 
-Phase = "ddos_l4" or "ddos_l7" or "http_config_settings" or 21 more
+Phase = "ddos_l4" or "ddos_l7" or "http_config_settings" or 22 more
 
 The phase of the ruleset.
 
@@ -133,6 +133,10 @@ One of the following:
 [Link to this property](#)
 
 "http_response_compression"
+
+[Link to this property](#)
+
+"http_response_firewall_custom"
 
 [Link to this property](#)
 
@@ -24943,6 +24947,10 @@ One of the following:
 [Link to this property](#)
 
 "http_response_compression"
+
+[Link to this property](#)
+
+"http_response_firewall_custom"
 
 [Link to this property](#)
 

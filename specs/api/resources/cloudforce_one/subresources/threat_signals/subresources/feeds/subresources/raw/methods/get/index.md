@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/feeds/{feed\_id}/raw
 
-Retrieves the feed document fetched by the most recent poll.
+Retrieves the feed document fetched by the most recent poll as text/plain by default or application/xml when format is xml.
 
 ##### Security
 
@@ -48,6 +48,8 @@ account\_id: string
 
 feed\_id: string
 
+UUID of the Threat Signals feed
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds.raw%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)
@@ -55,6 +57,8 @@ formatuuid
 ##### Q uery ParametersExpand Collapse
 
 format: optional "xml"
+
+Response format. Use xml for application/xml; omit it for the default text/plain response.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds.raw%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20format%20%3E%20(schema)>)
 

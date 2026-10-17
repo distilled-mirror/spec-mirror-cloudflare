@@ -144,7 +144,7 @@ One of the following:
 
 <summary>
 
-result: object {id, browserSecondsUsed, finished, 5 more }
+result: object {id, browserSecondsUsed, finished, 6 more }
 
 </summary>
 
@@ -170,7 +170,7 @@ Total number of URLs that have been crawled so far.
 
 <summary>
 
-records: array of object {status, url, html, 3 more }
+records: array of object {status, url, html, 4 more }
 
 List of crawl job records.
 
@@ -308,6 +308,124 @@ Title of the crawled page.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+outcome: optional "success"or "robots\_disallowed"or "crawl\_purpose\_disallowed"or 9 more
+
+Result of processing the URL. Absent for older records.
+
+</summary>
+
+One of the following:
+
+"success"
+
+<a href="#">Link to this property</a>
+
+"robots\_disallowed"
+
+<a href="#">Link to this property</a>
+
+"crawl\_purpose\_disallowed"
+
+<a href="#">Link to this property</a>
+
+"content\_use\_disallowed"
+
+<a href="#">Link to this property</a>
+
+"connection\_error"
+
+<a href="#">Link to this property</a>
+
+"timeout"
+
+<a href="#">Link to this property</a>
+
+"browser\_unavailable"
+
+<a href="#">Link to this property</a>
+
+"format\_generation\_error"
+
+<a href="#">Link to this property</a>
+
+"unsupported\_content\_type"
+
+<a href="#">Link to this property</a>
+
+"unclassified\_error"
+
+<a href="#">Link to this property</a>
+
+"page\_error"
+
+<a href="#">Link to this property</a>
+
+"too\_large"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+robots: array of object {origin, state, status }
+
+Robots.txt state for the first 50 origins encountered by the crawl.
+
+</summary>
+
+origin: string
+
+Origin whose robots.txt was checked.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+state: "available"or "absent"or "fetch\_failed"
+
+Whether usable robots.txt rules were available.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"absent"
+
+<a href="#">Link to this property</a>
+
+"fetch\_failed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+status: optional number
+
+HTTP status that established the current robots.txt state. Absent when no HTTP response was received.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -408,7 +526,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
           "og:title": "og:title",
           "og:type": "og:type",
           "title": "title"
-        }
+        },
+        "outcome": "success"
+      }
+    ],
+    "robots": [
+      {
+        "origin": "origin",
+        "state": "available",
+        "status": 0
       }
     ],
     "skipped": 0,
@@ -455,7 +581,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
           "og:title": "og:title",
           "og:type": "og:type",
           "title": "title"
-        }
+        },
+        "outcome": "success"
+      }
+    ],
+    "robots": [
+      {
+        "origin": "origin",
+        "state": "available",
+        "status": 0
       }
     ],
     "skipped": 0,

@@ -58,7 +58,7 @@ Number of skills on this page.
 
 custom\_skills\_available: boolean
 
-Whether the authenticated account may access custom-skill capabilities under Stakeout’s Threat Signals access-mode policy. This is a policy availability indicator, not a row-existence indicator. False for threat\_signals\_only mode; true for entitled, allowlisted, cfone\_internal, and service modes.
+Whether Custom Skills are available to the account. False for Free Threat Signals accounts, which receive managed default skills only.
 
 <a href="#">Link to this property</a>
 

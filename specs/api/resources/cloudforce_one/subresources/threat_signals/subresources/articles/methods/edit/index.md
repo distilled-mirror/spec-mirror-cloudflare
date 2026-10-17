@@ -46,6 +46,8 @@ account\_id: string
 
 article\_id: string
 
+Threat Signals article UUID
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20edit%20%3E%20(params)%20default%20%3E%20(param)%20article_id%20%3E%20(schema)>)
@@ -53,6 +55,8 @@ formatuuid
 ##### Body ParametersJSONExpand Collapse
 
 read: boolean
+
+True to mark the article read, false to mark unread.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20read%20%3E%20(schema)>)
 

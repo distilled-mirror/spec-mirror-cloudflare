@@ -46,6 +46,8 @@ account\_id: string
 
 feed\_id: string
 
+UUID of the Threat Signals feed
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20feed_id%20%3E%20(schema)>)

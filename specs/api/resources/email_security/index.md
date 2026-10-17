@@ -690,7 +690,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -797,6 +807,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -1474,7 +1492,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -1581,6 +1609,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -5550,7 +5586,17 @@ to\_name: optional array of string
 
 <summary>
 
-validation: optional object {comment, dkim, dmarc, spf }
+validation: optional object {comment, dkim, dmarc, spf } or unknown
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+EmailSecurityValidation object {comment, dkim, dmarc, spf }
 
 </summary>
 
@@ -5657,6 +5703,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -5904,7 +5958,7 @@ POST/accounts/{account\_id}/email-security/settings/allow\_policies/batch
 
 <summary>
 
-AllowPolicyListResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyListResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -5937,6 +5991,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6053,7 +6115,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyGetResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyGetResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6086,6 +6148,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6202,7 +6272,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyCreateResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyCreateResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6235,6 +6305,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6351,7 +6429,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-AllowPolicyEditResponse object {id, created\_at, last\_modified, 12 more }
+AllowPolicyEditResponse object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -6384,6 +6462,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6548,7 +6634,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, last\_modified, 12 more }
+patches: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -6579,6 +6665,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6695,7 +6789,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-posts: optional array of object {id, created\_at, last\_modified, 12 more }
+posts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -6726,6 +6820,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -6842,7 +6944,7 @@ Enforce DMARC, SPF or DKIM authentication. When on, Email Security only honors p
 
 <summary>
 
-puts: optional array of object {id, created\_at, last\_modified, 12 more }
+puts: optional array of object {id, created\_at, last\_modified, 13 more }
 
 </summary>
 
@@ -6873,6 +6975,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -7021,7 +7131,7 @@ POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
 <summary>
 
-BlockSenderListResponse object {id, comments, created\_at, 5 more }
+BlockSenderListResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7042,6 +7152,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7124,7 +7242,7 @@ One of the following:
 
 <summary>
 
-BlockSenderGetResponse object {id, comments, created\_at, 5 more }
+BlockSenderGetResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7145,6 +7263,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7227,7 +7353,7 @@ One of the following:
 
 <summary>
 
-BlockSenderCreateResponse object {id, comments, created\_at, 5 more }
+BlockSenderCreateResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7248,6 +7374,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7330,7 +7464,7 @@ One of the following:
 
 <summary>
 
-BlockSenderEditResponse object {id, comments, created\_at, 5 more }
+BlockSenderEditResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -7351,6 +7485,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7481,7 +7623,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 5 more }
+patches: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7500,6 +7642,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7582,7 +7732,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 5 more }
+posts: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7601,6 +7751,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7683,7 +7841,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 5 more }
+puts: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -7702,6 +7860,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -7816,7 +7982,7 @@ POST/accounts/{account\_id}/email-security/settings/content\_policies/batch
 
 <summary>
 
-ContentPolicyListResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyListResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -7839,6 +8005,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -7908,7 +8082,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyGetResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyGetResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -7931,6 +8105,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -8000,7 +8182,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyCreateResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyCreateResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8023,6 +8205,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -8092,7 +8282,7 @@ One of the following:
 
 <summary>
 
-ContentPolicyEditResponse object {id, created\_at, enabled, 5 more }
+ContentPolicyEditResponse object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -8115,6 +8305,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -8232,7 +8430,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, created\_at, enabled, 5 more }
+patches: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8253,6 +8451,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -8322,7 +8528,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, created\_at, enabled, 5 more }
+posts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8343,6 +8549,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -8412,7 +8626,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, created\_at, enabled, 5 more }
+puts: optional array of object {id, created\_at, enabled, 6 more }
 
 </summary>
 
@@ -8433,6 +8647,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

@@ -128,7 +128,7 @@ Indicates the total number of results.
 
 <summary>
 
-issues: optional array of object {id, dismissed, has\_extended\_context, 11 more }
+issues: optional array of object {id, dismissed, has\_extended\_context, 12 more }
 
 </summary>
 
@@ -213,6 +213,30 @@ One of the following:
 since: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional "cloudflare"or "riskrecon"
+
+Who generated the insight. <code>cloudflare</code> for Cloudflare-generated insights, otherwise the partner.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"riskrecon"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

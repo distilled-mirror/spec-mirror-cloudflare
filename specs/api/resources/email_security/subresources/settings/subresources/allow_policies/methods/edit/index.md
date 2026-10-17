@@ -86,6 +86,14 @@ maxLength1024
 
 [Link to this property](#)%20email_security.settings.allow_policies%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20comments%20%3E%20(schema)>)
 
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send `null` to clear the expiration.
+
+formatdate-time
+
+[Link to this property](#)%20email_security.settings.allow_policies%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20expires_at%20%3E%20(schema)>)
+
 is\_acceptable\_sender: optional boolean
 
 Exempts messages from this sender from Spam, Spoof and Bulk dispositions only; Malicious and Suspicious dispositions still apply.
@@ -281,7 +289,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, last\_modified, 12 more }
+result: optional object {id, created\_at, last\_modified, 13 more }
 
 An email allow policy.
 
@@ -314,6 +322,14 @@ formatdate-time
 comments: optional string
 
 maxLength1024
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -439,6 +455,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "comments": "Trust all messages send from test@example.com",
+          "expires_at": "2027-01-01T00:00:00Z",
           "is_sender": true,
           "is_trusted_sender": true,
           "pattern": "test@example.com",
@@ -477,6 +494,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
     "created_at": "2014-01-01T05:20:00.12345Z",
     "last_modified": "2014-01-01T05:20:00.12345Z",
     "comments": "Trust all messages send from test@example.com",
+    "expires_at": "2027-01-01T00:00:00Z",
     "is_acceptable_sender": false,
     "is_exempt_recipient": false,
     "is_recipient": false,
@@ -524,6 +542,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
     "created_at": "2014-01-01T05:20:00.12345Z",
     "last_modified": "2014-01-01T05:20:00.12345Z",
     "comments": "Trust all messages send from test@example.com",
+    "expires_at": "2027-01-01T00:00:00Z",
     "is_acceptable_sender": false,
     "is_exempt_recipient": false,
     "is_recipient": false,

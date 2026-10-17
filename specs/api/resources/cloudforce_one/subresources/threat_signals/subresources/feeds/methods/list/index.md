@@ -48,15 +48,21 @@ account\_id: string
 
 category: optional string
 
+Exact feed-category filter, up to 100 characters. Omit to include all categories.
+
 maxLength100
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20category%20%3E%20(schema)>)
 
 enabled: optional boolean
 
+Filter by enabled state. Accepts true, false, 1, or 0; omit to include enabled and disabled feeds.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20enabled%20%3E%20(schema)>)
 
 limit: optional number
+
+Optional 1–100 alias for per\_page. When provided, limit takes precedence.
 
 maximum100
 
@@ -66,11 +72,15 @@ minimum1
 
 page: optional number
 
+1-based page number. Minimum 1; defaults to 1.
+
 minimum1
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 per\_page: optional number
+
+Number of feeds per page, from 1 to 100. Defaults to 20.
 
 maximum100
 
@@ -80,6 +90,8 @@ minimum1
 
 sort: optional string
 
+Sort by created\_at, title, category, or url. Prefix the field with - for descending order; defaults to -created\_at.
+
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sort%20%3E%20(schema)>)
 
 <details>
@@ -87,6 +99,8 @@ sort: optional string
 <summary>
 
 source\_type: optional "curated"or "custom"
+
+Filter by curated or custom feed source. Omit to include both source types.
 
 </summary>
 
@@ -105,6 +119,8 @@ One of the following:
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20source_type%20%3E%20(schema)>)
 
 status: optional string
+
+Exact stored polling-status filter, such as active or error. Omit to include every status.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20status%20%3E%20(schema)>)
 

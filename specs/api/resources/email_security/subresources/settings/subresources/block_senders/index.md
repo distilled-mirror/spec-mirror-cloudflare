@@ -50,7 +50,7 @@ POST/accounts/{account\_id}/email-security/settings/block\_senders/batch
 
 <summary>
 
-BlockSenderListResponse object {id, comments, created\_at, 5 more }
+BlockSenderListResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -71,6 +71,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -153,7 +161,7 @@ One of the following:
 
 <summary>
 
-BlockSenderGetResponse object {id, comments, created\_at, 5 more }
+BlockSenderGetResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -174,6 +182,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -256,7 +272,7 @@ One of the following:
 
 <summary>
 
-BlockSenderCreateResponse object {id, comments, created\_at, 5 more }
+BlockSenderCreateResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -277,6 +293,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -359,7 +383,7 @@ One of the following:
 
 <summary>
 
-BlockSenderEditResponse object {id, comments, created\_at, 5 more }
+BlockSenderEditResponse object {id, comments, created\_at, 6 more }
 
 A blocked sender pattern.
 
@@ -380,6 +404,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -510,7 +542,7 @@ formatuuid
 
 <summary>
 
-patches: optional array of object {id, comments, created\_at, 5 more }
+patches: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -529,6 +561,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -611,7 +651,7 @@ One of the following:
 
 <summary>
 
-posts: optional array of object {id, comments, created\_at, 5 more }
+posts: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -630,6 +670,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 
@@ -712,7 +760,7 @@ One of the following:
 
 <summary>
 
-puts: optional array of object {id, comments, created\_at, 5 more }
+puts: optional array of object {id, comments, created\_at, 6 more }
 
 </summary>
 
@@ -731,6 +779,14 @@ maxLength1024
 <a href="#">Link to this property</a>
 
 created\_at: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the pattern expires. After this time, Email Security ignores the pattern. The value must lie in the future. Send <code>null</code> to clear the expiration.
 
 formatdate-time
 

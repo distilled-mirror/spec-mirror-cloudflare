@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/cws/policies
 
-Creates a policy from inline Rego source and an entrypoint. Omit filter to apply the policy to every request.
+Creates a policy from inline Rego source, an entrypoint, and a filter expression.
 
 ##### Security
 
@@ -78,6 +78,16 @@ maxLength255
 
 [Link to this property](#)%20zero_trust.cws.policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20entrypoint%20%3E%20(schema)>)
 
+filter: string
+
+Filter expression that determines whether this policy applies. Maximum 4096 UTF-8 bytes.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)%20zero_trust.cws.policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20filter%20%3E%20(schema)>)
+
 name: string
 
 Name of the policy
@@ -105,16 +115,6 @@ Optional free-form description.
 maxLength1024
 
 [Link to this property](#)%20zero_trust.cws.policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20description%20%3E%20(schema)>)
-
-filter: optional string
-
-Optional filter expression that determines whether this policy applies. Omit or set null to apply the policy to every request. Maximum 4096 UTF-8 bytes.
-
-maxLength4096
-
-minLength1
-
-[Link to this property](#)%20zero_trust.cws.policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20filter%20%3E%20(schema)>)
 
 tags: optional map\[string]
 
@@ -232,7 +232,7 @@ maxLength255
 
 filter: string
 
-Optional filter expression that determines whether this policy applies. Null means the policy applies to every request. Maximum 4096 UTF-8 bytes.
+Filter expression that determines whether this policy applies. Maximum 4096 UTF-8 bytes.
 
 maxLength4096
 
@@ -308,6 +308,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cws/policies \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "entrypoint": "entrypoint",
+          "filter": "x",
           "name": "x",
           "rego_source": "x"
         }'

@@ -122,6 +122,14 @@ One of the following:
 
 [Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20targets%20%3E%20(schema)>)
 
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send `null` to clear the expiration.
+
+formatdate-time
+
+[Link to this property](#)%20email_security.settings.content_policies%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20expires_at%20%3E%20(schema)>)
+
 notes: optional string
 
 Optional note describing the purpose of the policy.
@@ -226,7 +234,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_at, enabled, 5 more }
+result: optional object {id, created\_at, enabled, 6 more }
 
 A content policy pattern that matches against the subject or body of an email.
 
@@ -249,6 +257,14 @@ formatdate-time
 enabled: optional boolean
 
 Whether the policy is active.
+
+<a href="#">Link to this property</a>
+
+expires\_at: optional string
+
+Timestamp at which the policy expires. After this time, Email Security ignores the policy. The value must lie in the future. Send <code>null</code> to clear the expiration.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -331,6 +347,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
           "targets": [
             "SUBJECT"
           ],
+          "expires_at": "2027-01-01T00:00:00Z",
           "notes": "Blocks common phishing subject lines"
         }'
 ```
@@ -364,6 +381,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
     "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "created_at": "2014-01-01T05:20:00.12345Z",
     "enabled": true,
+    "expires_at": "2027-01-01T00:00:00Z",
     "modified_at": "2014-01-01T05:20:00.12345Z",
     "name": "Block phishing keywords",
     "notes": "Blocks common phishing subject lines",
@@ -406,6 +424,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/email-security/se
     "id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "created_at": "2014-01-01T05:20:00.12345Z",
     "enabled": true,
+    "expires_at": "2027-01-01T00:00:00Z",
     "modified_at": "2014-01-01T05:20:00.12345Z",
     "name": "Block phishing keywords",
     "notes": "Blocks common phishing subject lines",

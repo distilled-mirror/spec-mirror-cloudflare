@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/cloudforce-one/v2/threat-signals/skills
 
-Creates a custom AI skill for the account.
+Creates a Custom Skill for the account. Free Threat Signals accounts cannot create Custom Skills.
 
 ##### Security
 
@@ -48,6 +48,8 @@ account\_id: string
 
 name: string
 
+Custom Skill name (1–100 characters).
+
 maxLength100
 
 minLength1
@@ -56,6 +58,8 @@ minLength1
 
 output\_schema: string
 
+JSON Schema serialized as a string (max 4096 characters).
+
 maxLength4096
 
 minLength1
@@ -63,6 +67,8 @@ minLength1
 [Link to this property](#)%20cloudforce_one.threat_signals.skills%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20output_schema%20%3E%20(schema)>)
 
 prompt: string
+
+AI prompt (1–4000 characters) defining the skill’s instructions.
 
 maxLength4000
 

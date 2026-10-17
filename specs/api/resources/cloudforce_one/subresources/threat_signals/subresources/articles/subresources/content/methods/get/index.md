@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_id}/content
 
-Retrieves the stored body of a Threat Signals article as plain text or HTML.
+Retrieves the stored content of a Threat Signals article, unchanged. Depending on how the article was captured from its source, the content is HTML, Markdown, or plain text. The format parameter sets only the response Content-Type; it does not convert the content.
 
 ##### Security
 
@@ -48,6 +48,8 @@ account\_id: string
 
 article\_id: string
 
+Threat Signals article UUID
+
 formatuuid
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles.content%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20article_id%20%3E%20(schema)>)
@@ -59,6 +61,8 @@ formatuuid
 <summary>
 
 format: optional "text"or "html"
+
+Response Content-Type: text (the default) for text/plain or html for text/html. Neither value converts the content. html is deprecated; use text.
 
 </summary>
 
