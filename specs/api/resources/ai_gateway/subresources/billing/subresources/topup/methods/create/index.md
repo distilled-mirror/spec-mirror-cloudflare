@@ -78,7 +78,7 @@ minimum1000
 
 payment\_method\_id: optional string
 
-Stripe PaymentMethod to charge instead of the customer’s default payment method.
+Payment method to charge instead of the customer’s default payment method.
 
 [Link to this property](#)%20ai_gateway.billing.topup%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20payment_method_id%20%3E%20(schema)>)
 
@@ -134,7 +134,7 @@ result: object {client\_secret, onboarding, payment\_intent\_id, 2 more }
 
 client\_secret: string
 
-Stripe PaymentIntent client secret.
+Client secret used to complete payment authentication.
 
 <a href="#">Link to this property</a>
 
@@ -146,7 +146,7 @@ Whether the user was already onboarded.
 
 payment\_intent\_id: string
 
-Stripe invoice ID.
+Top-up payment identifier.
 
 <a href="#">Link to this property</a>
 

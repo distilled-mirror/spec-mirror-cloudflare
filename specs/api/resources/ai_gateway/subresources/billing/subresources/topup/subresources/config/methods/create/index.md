@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/ai-gateway/billing/topup/config
 
-Configure auto top-up with a balance threshold and top-up amount. Requests with a payment method first return a SetupIntent and save the configuration only after the confirmed SetupIntent is submitted. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
+Configure auto top-up with a balance threshold and top-up amount. Requests that add a payment method first return authentication details. The configuration is saved only after the authenticated setup is submitted. Dashboard sessions only: API token, OAuth, and service credentials are rejected with 403.
 
 ##### Security
 
@@ -142,7 +142,7 @@ Card to authenticate for future automatic top-ups.
 
 setup\_idempotency\_key: string
 
-Client-generated UUID that makes SetupIntent creation safe to retry.
+Client-generated UUID that makes payment-method setup safe to retry.
 
 formatuuid
 
@@ -158,7 +158,7 @@ minimum500
 
 setup\_intent\_id: optional string
 
-Successfully confirmed SetupIntent returned by the initial request.
+Successfully confirmed payment-method setup identifier.
 
 <a href="#">Link to this property</a>
 

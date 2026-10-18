@@ -40,7 +40,7 @@ TopupCreateResponse object {client\_secret, onboarding, payment\_intent\_id, 2 m
 
 client\_secret: string
 
-Stripe PaymentIntent client secret.
+Client secret used to complete payment authentication.
 
 <a href="#">Link to this property</a>
 
@@ -52,7 +52,7 @@ Whether the user was already onboarded.
 
 payment\_intent\_id: string
 
-Stripe invoice ID.
+Top-up payment identifier.
 
 <a href="#">Link to this property</a>
 

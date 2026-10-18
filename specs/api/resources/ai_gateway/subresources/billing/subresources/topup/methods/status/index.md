@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/ai-gateway/billing/topup/status
 
-Get the payment processing status of a top-up by its invoice ID.
+Get the payment processing status of a top-up by its top-up identifier.
 
 ##### Security
 
@@ -70,7 +70,7 @@ account\_id: string
 
 payment\_intent\_id: string
 
-Stripe invoice ID to check status for.
+Top-up identifier to check status for.
 
 [Link to this property](#)%20ai_gateway.billing.topup%20%3E%20(method)%20status%20%3E%20(params)%200%20%3E%20(param)%20payment_intent_id%20%3E%20(schema)>)
 
