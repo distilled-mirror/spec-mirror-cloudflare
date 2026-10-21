@@ -188,11 +188,35 @@ result: object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, logpushDataset, logpushJob, 2 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination\_conf: string
+headers: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jobStatus: object {error\_message, last\_complete, last\_error }
+
+</summary>
+
+error\_message: string
+
+<a href="#">Link to this property</a>
+
+last\_complete: string
+
+<a href="#">Link to this property</a>
+
+last\_error: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -219,10 +243,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-logpushJob: number
 
 <a href="#">Link to this property</a>
 
@@ -303,9 +323,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
   ],
   "result": {
     "configuration": {
-      "destination_conf": "destination_conf",
+      "headers": {
+        "foo": "string"
+      },
+      "jobStatus": {
+        "error_message": "error_message",
+        "last_complete": "last_complete",
+        "last_error": "last_error"
+      },
       "logpushDataset": "opentelemetry-traces",
-      "logpushJob": 0,
       "type": "logpush",
       "url": "url"
     },
@@ -338,9 +364,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
   ],
   "result": {
     "configuration": {
-      "destination_conf": "destination_conf",
+      "headers": {
+        "foo": "string"
+      },
+      "jobStatus": {
+        "error_message": "error_message",
+        "last_complete": "last_complete",
+        "last_error": "last_error"
+      },
       "logpushDataset": "opentelemetry-traces",
-      "logpushJob": 0,
       "type": "logpush",
       "url": "url"
     },

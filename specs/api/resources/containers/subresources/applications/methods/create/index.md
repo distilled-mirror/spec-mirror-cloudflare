@@ -70,7 +70,7 @@ account\_id: string
 
 <summary>
 
-body: object {configuration, instances, max\_instances, 6 more } or object {durable\_objects, name, scheduling\_policy, 2 more }
+body: object {configuration, instances, max\_instances, 6 more } or object {durable\_objects, name, scheduling\_policy, 3 more }
 
 Create a Containers application. Set <code>scheduling_policy</code> to <code>default</code> for a scheduler-backed application with deployment configuration, instance counts, constraints, versions, and rollouts. Set it to <code>durable_object</code> for a Durable Object-managed application where each Durable Object creates and manages the lifecycle of its container instance. For <code>durable_object</code> requests, supply <code>name</code>, <code>scheduling_policy</code>, and <code>durable_objects</code>, with optional <code>configuration</code> and top-level <code>observability</code> settings.
 
@@ -411,9 +411,9 @@ minimum0
 
 <summary>
 
-CcContainersCreateDurableObjectApplicationRequest object {durable\_objects, name, scheduling\_policy, 2 more }
+CcContainersCreateDurableObjectApplicationRequest object {durable\_objects, name, scheduling\_policy, 3 more }
 
-Create a Durable Object-managed Containers application. Each Durable Object creates and manages the lifecycle of its container instance. Supply <code>name</code>, <code>scheduling_policy</code>, and <code>durable_objects</code>, with optional <code>configuration</code> and top-level <code>observability</code> settings. Deployment configuration, instance counts, scaling, constraints, versions, and rollouts do not apply.
+Create a Durable Object-managed Containers application. Each Durable Object creates and manages the lifecycle of its container instance. Supply <code>name</code>, <code>scheduling_policy</code>, and <code>durable_objects</code>, with optional <code>configuration</code> and top-level <code>observability</code> settings. <code>constraints.jurisdiction</code> selects the jurisdiction of the application’s primary control-plane object at creation time. Deployment configuration, instance counts, scaling, other placement constraints, versions, and rollouts do not apply.
 
 </summary>
 
@@ -559,6 +559,46 @@ minimum1
 
 <summary>
 
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 observability: optional object {logs }
 
 Application-wide logging settings for a Durable Object-managed application. The application publishes these settings to its runtime metadata. Updating them does not create a deployment or rollout.
@@ -685,7 +725,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 7 more }
+result: object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -1294,7 +1334,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 7 more }
+CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -1409,6 +1449,46 @@ port: optional number
 maximum65535
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
 
 <a href="#">Link to this property</a>
 

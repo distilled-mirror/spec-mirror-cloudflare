@@ -22054,13 +22054,9 @@ DestinationListResponse object { configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object { destination_conf, headers, jobStatus, 3 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
-
-destination_conf: string
-
-[Link to this property](#)
 
 headers: map[string]
 
@@ -22160,11 +22156,35 @@ DestinationCreateResponse object { configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination_conf: string
+headers: map[string]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+jobStatus: object { error_message, last_complete, last_error }
+
+</summary>
+
+error_message: string
+
+[Link to this property](#)
+
+last_complete: string
+
+[Link to this property](#)
+
+last_error: string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -22191,10 +22211,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-logpushJob: number
 
 [Link to this property](#)
 
@@ -22242,11 +22258,35 @@ DestinationUpdateResponse object { configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination_conf: string
+headers: map[string]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+jobStatus: object { error_message, last_complete, last_error }
+
+</summary>
+
+error_message: string
+
+[Link to this property](#)
+
+last_complete: string
+
+[Link to this property](#)
+
+last_error: string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -22273,10 +22313,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-logpushJob: number
 
 [Link to this property](#)
 
@@ -22324,11 +22360,35 @@ DestinationDeleteResponse object { configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object { destination_conf, logpushDataset, logpushJob, 2 more }
+configuration: object { headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination_conf: string
+headers: map[string]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+jobStatus: object { error_message, last_complete, last_error }
+
+</summary>
+
+error_message: string
+
+[Link to this property](#)
+
+last_complete: string
+
+[Link to this property](#)
+
+last_error: string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -22355,10 +22415,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-logpushJob: number
 
 [Link to this property](#)
 

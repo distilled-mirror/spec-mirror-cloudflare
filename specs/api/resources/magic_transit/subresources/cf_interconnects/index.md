@@ -114,7 +114,7 @@ ID of the BGP filter profile applied to routes advertised to the customer.
 
 extra\_prefixes: optional array of string
 
-Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
+IPv4 prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. Each entry must be a network address in CIDR notation with no host bits set (for example <code>192.0.2.0/24</code>, not <code>192.0.2.1/24</code>) and must not repeat another entry.
 
 <a href="#">Link to this property</a>
 
@@ -425,7 +425,7 @@ ID of the BGP filter profile applied to routes advertised to the customer.
 
 extra\_prefixes: optional array of string
 
-Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
+IPv4 prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. Each entry must be a network address in CIDR notation with no host bits set (for example <code>192.0.2.0/24</code>, not <code>192.0.2.1/24</code>) and must not repeat another entry.
 
 <a href="#">Link to this property</a>
 
@@ -740,7 +740,7 @@ ID of the BGP filter profile applied to routes advertised to the customer.
 
 extra\_prefixes: optional array of string
 
-Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
+IPv4 prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. Each entry must be a network address in CIDR notation with no host bits set (for example <code>192.0.2.0/24</code>, not <code>192.0.2.1/24</code>) and must not repeat another entry.
 
 <a href="#">Link to this property</a>
 
@@ -1055,7 +1055,7 @@ ID of the BGP filter profile applied to routes advertised to the customer.
 
 extra\_prefixes: optional array of string
 
-Prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table.
+IPv4 prefixes in this list will be advertised to the customer device, in addition to the routes in the Magic routing table. Each entry must be a network address in CIDR notation with no host bits set (for example <code>192.0.2.0/24</code>, not <code>192.0.2.1/24</code>) and must not repeat another entry.
 
 <a href="#">Link to this property</a>
 

@@ -3598,13 +3598,9 @@ DestinationListResponse object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, headers, jobStatus, 3 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
-
-destination\_conf: string
-
-<a href="#">Link to this property</a>
 
 headers: map\[string]
 
@@ -3704,11 +3700,35 @@ DestinationCreateResponse object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, logpushDataset, logpushJob, 2 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination\_conf: string
+headers: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jobStatus: object {error\_message, last\_complete, last\_error }
+
+</summary>
+
+error\_message: string
+
+<a href="#">Link to this property</a>
+
+last\_complete: string
+
+<a href="#">Link to this property</a>
+
+last\_error: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3735,10 +3755,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-logpushJob: number
 
 <a href="#">Link to this property</a>
 
@@ -3786,11 +3802,35 @@ DestinationUpdateResponse object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, logpushDataset, logpushJob, 2 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination\_conf: string
+headers: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jobStatus: object {error\_message, last\_complete, last\_error }
+
+</summary>
+
+error\_message: string
+
+<a href="#">Link to this property</a>
+
+last\_complete: string
+
+<a href="#">Link to this property</a>
+
+last\_error: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3817,10 +3857,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-logpushJob: number
 
 <a href="#">Link to this property</a>
 
@@ -3868,11 +3904,35 @@ DestinationDeleteResponse object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, logpushDataset, logpushJob, 2 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
 
-destination\_conf: string
+headers: map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jobStatus: object {error\_message, last\_complete, last\_error }
+
+</summary>
+
+error\_message: string
+
+<a href="#">Link to this property</a>
+
+last\_complete: string
+
+<a href="#">Link to this property</a>
+
+last\_error: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3899,10 +3959,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-logpushJob: number
 
 <a href="#">Link to this property</a>
 

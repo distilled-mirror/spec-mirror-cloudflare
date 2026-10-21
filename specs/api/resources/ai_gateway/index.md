@@ -1240,6 +1240,8 @@ One of the following:
 
 store\_id: optional string
 
+Secrets Store used by this gateway. Omit on update to keep the current store. Cannot be cleared while stored keys or secret references depend on it.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -2507,6 +2509,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 store\_id: optional string
+
+Secrets Store used by this gateway. Omit on update to keep the current store. Cannot be cleared while stored keys or secret references depend on it.
 
 <a href="#">Link to this property</a>
 
@@ -3776,6 +3780,8 @@ One of the following:
 
 store\_id: optional string
 
+Secrets Store used by this gateway. Omit on update to keep the current store. Cannot be cleared while stored keys or secret references depend on it.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -5044,6 +5050,8 @@ One of the following:
 
 store\_id: optional string
 
+Secrets Store used by this gateway. Omit on update to keep the current store. Cannot be cleared while stored keys or secret references depend on it.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -6311,6 +6319,8 @@ One of the following:
 <a href="#">Link to this property</a>
 
 store\_id: optional string
+
+Secrets Store used by this gateway. Omit on update to keep the current store. Cannot be cleared while stored keys or secret references depend on it.
 
 <a href="#">Link to this property</a>
 

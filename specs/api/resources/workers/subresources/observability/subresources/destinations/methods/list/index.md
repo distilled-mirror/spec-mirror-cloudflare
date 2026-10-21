@@ -184,13 +184,9 @@ result: array of object {configuration, enabled, name, 2 more }
 
 <summary>
 
-configuration: object {destination\_conf, headers, jobStatus, 3 more }
+configuration: object {headers, jobStatus, logpushDataset, 2 more }
 
 </summary>
-
-destination\_conf: string
-
-<a href="#">Link to this property</a>
 
 headers: map\[string]
 
@@ -311,7 +307,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
   "result": [
     {
       "configuration": {
-        "destination_conf": "destination_conf",
         "headers": {
           "foo": "string"
         },
@@ -355,7 +350,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
   "result": [
     {
       "configuration": {
-        "destination_conf": "destination_conf",
         "headers": {
           "foo": "string"
         },

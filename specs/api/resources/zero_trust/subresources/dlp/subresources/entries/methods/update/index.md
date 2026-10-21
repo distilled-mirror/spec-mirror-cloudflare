@@ -88,7 +88,7 @@ One of the following:
 
 <summary>
 
-Custom object {name, pattern, type, 3 more }
+object {name, pattern, type, 3 more }
 
 </summary>
 
@@ -144,7 +144,7 @@ Optional, unlike the rest of this body: omitting it leaves the current attachmen
 
 <summary>
 
-Predefined object {type, enabled }
+object {type, enabled }
 
 </summary>
 
@@ -164,7 +164,7 @@ enabled: optional boolean
 
 <summary>
 
-Integration object {type, enabled }
+object {type, enabled }
 
 </summary>
 

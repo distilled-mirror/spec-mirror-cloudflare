@@ -68,6 +68,30 @@ Specifies the public ID of the account.
 
 ##### Q uery ParametersExpand Collapse
 
+<details>
+
+<summary>
+
+direction: optional "asc"or "desc"
+
+Sort direction.
+
+</summary>
+
+One of the following:
+
+"asc"
+
+<a href="#">Link to this property</a>
+
+"desc"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20pipelines.streams%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
+
 name: optional string
 
 Filters streams by name (case-insensitive substring).
@@ -77,6 +101,30 @@ maxLength128
 minLength1
 
 [Link to this property](#)%20pipelines.streams%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+order\_by: optional "name"or "created\_at"
+
+Sorts streams by this field. Defaults to <code>created_at</code>.
+
+</summary>
+
+One of the following:
+
+"name"
+
+<a href="#">Link to this property</a>
+
+"created\_at"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20pipelines.streams%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
 
 page: optional number
 

@@ -68,6 +68,8 @@ minLength1
 
 readiness: "awaiting\_source"or "processing"or "ready"or "failed"
 
+Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
+
 </summary>
 
 One of the following:
@@ -183,6 +185,8 @@ minLength1
 <summary>
 
 readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
 </summary>
 
@@ -326,6 +330,8 @@ minLength1
 
 readiness: "awaiting\_source"or "processing"or "ready"or "failed"
 
+Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
+
 </summary>
 
 One of the following:
@@ -445,6 +451,8 @@ minLength1
 <summary>
 
 readiness: "awaiting\_source"or "processing"or "ready"or "failed"
+
+Source state. <code>awaiting_source</code>: the upload repository’s default branch has no commits yet. <code>processing</code>: an import is in progress. <code>ready</code>: source is available. <code>failed</code>: the Worker import failed or could not be verified.
 
 </summary>
 
@@ -1736,7 +1744,7 @@ repositories: array of object {findings, overall\_severity, repository\_id, 5 mo
 
 <summary>
 
-findings: array of object {id, conditions, cwe, 17 more }
+findings: array of object {id, conditions, cwe, 19 more }
 
 </summary>
 
@@ -2260,6 +2268,12 @@ maxLength2048
 
 <a href="#">Link to this property</a>
 
+impact\_ids: optional array of string
+
+Accepted settled impact-charter premises cited by the finding. Optional on legacy report revisions.
+
+<a href="#">Link to this property</a>
+
 open\_question: optional string
 
 One bounded unresolved proof question. Optional on legacy report revisions.
@@ -2337,6 +2351,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+threat\_ids: optional array of string
+
+Accepted settled threat-model premises cited by the finding. Optional on legacy report revisions.
 
 <a href="#">Link to this property</a>
 
@@ -3064,7 +3084,7 @@ report: object {findings, overall\_severity, repository\_id, 5 more }
 
 <summary>
 
-findings: array of object {id, conditions, cwe, 17 more }
+findings: array of object {id, conditions, cwe, 19 more }
 
 </summary>
 
@@ -3588,6 +3608,12 @@ maxLength2048
 
 <a href="#">Link to this property</a>
 
+impact\_ids: optional array of string
+
+Accepted settled impact-charter premises cited by the finding. Optional on legacy report revisions.
+
+<a href="#">Link to this property</a>
+
 open\_question: optional string
 
 One bounded unresolved proof question. Optional on legacy report revisions.
@@ -3665,6 +3691,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+threat\_ids: optional array of string
+
+Accepted settled threat-model premises cited by the finding. Optional on legacy report revisions.
 
 <a href="#">Link to this property</a>
 

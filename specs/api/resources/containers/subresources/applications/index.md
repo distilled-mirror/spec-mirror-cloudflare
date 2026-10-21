@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/containers/applications/{application\_id}
 
 <summary>
 
-ApplicationListResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 7 more }
+ApplicationListResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -653,7 +653,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 7 more }
+CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -768,6 +768,46 @@ port: optional number
 maximum65535
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
 
 <a href="#">Link to this property</a>
 
@@ -873,7 +913,7 @@ enabled: optional boolean
 
 <summary>
 
-ApplicationCreateResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 7 more }
+ApplicationCreateResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -1482,7 +1522,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 7 more }
+CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -1597,6 +1637,46 @@ port: optional number
 maximum65535
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
 
 <a href="#">Link to this property</a>
 
@@ -1702,7 +1782,7 @@ enabled: optional boolean
 
 <summary>
 
-ApplicationGetResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 7 more }
+ApplicationGetResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -2311,7 +2391,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 7 more }
+CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -2426,6 +2506,46 @@ port: optional number
 maximum65535
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
 
 <a href="#">Link to this property</a>
 
@@ -2531,7 +2651,7 @@ enabled: optional boolean
 
 <summary>
 
-ApplicationEditResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 7 more }
+ApplicationEditResponse = object {id, account\_id, configuration, 13 more } or object {id, account\_id, created\_at, 8 more }
 
 The public Containers API returns an application.
 
@@ -3140,7 +3260,7 @@ minimum0
 
 <summary>
 
-CcDurableObjectApplication object {id, account\_id, created\_at, 7 more }
+CcDurableObjectApplication object {id, account\_id, created\_at, 8 more }
 
 Each Durable Object creates and manages the lifecycle of its container instance.
 
@@ -3255,6 +3375,46 @@ port: optional number
 maximum65535
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+constraints: optional object {jurisdiction }
+
+The jurisdiction of a Durable Object-managed application’s primary control-plane object. Set this when creating the application; it cannot be changed afterwards. Other placement constraints are not supported by this scheduling policy.
+
+</summary>
+
+<details>
+
+<summary>
+
+jurisdiction: "eu"or "fedramp"or "us"
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
 
 <a href="#">Link to this property</a>
 
