@@ -158,19 +158,43 @@ pointer: optional string
 
 <summary>
 
-result: object {id, start\_ts, state, 2 more }
-
-You can use Cache Reserve Clear to clear your Cache Reserve, but you must first disable Cache Reserve. In most cases, this will be accomplished within 24 hours. You cannot re-enable Cache Reserve while this process is ongoing. Keep in mind that you cannot undo or cancel this operation.
+result: object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more } or object {id, end\_ts, modified\_on, 2 more }
 
 </summary>
 
-id: <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20cache_reserve_clear%20%3E%20(schema)">CacheReserveClear</a>
+One of the following:
+
+<details>
+
+<summary>
+
+object {id, end\_ts, modified\_on, 2 more }
+
+</summary>
+
+id: optional <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20cache_reserve_clear%20%3E%20(schema)">CacheReserveClear</a>
 
 ID of the zone setting.
 
 <a href="#">Link to this property</a>
 
-start\_ts: string
+end\_ts: optional string
+
+The time that the latest Cache Reserve Clear operation completed.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start\_ts: optional string
 
 The time that the latest Cache Reserve Clear operation started.
 
@@ -182,7 +206,7 @@ formatdate-time
 
 <summary>
 
-state: "In-progress"or "Completed"
+state: optional "In-progress"or "Completed"
 
 The current state of the Cache Reserve Clear operation.
 
@@ -202,6 +226,24 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {id, end\_ts, modified\_on, 2 more }
+
+</summary>
+
+id: optional <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20cache_reserve_clear%20%3E%20(schema)">CacheReserveClear</a>
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
 end\_ts: optional string
 
 The time that the latest Cache Reserve Clear operation completed.
@@ -215,6 +257,108 @@ modified\_on: optional string
 Last time this setting was modified.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+start\_ts: optional string
+
+The time that the latest Cache Reserve Clear operation started.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+state: optional "In-progress"or "Completed"
+
+The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {id, end\_ts, modified\_on, 2 more }
+
+</summary>
+
+id: optional <a href="https://developers.cloudflare.com/api/resources/cache#(resource)%20cache.cache_reserve%20%3E%20(model)%20cache_reserve_clear%20%3E%20(schema)">CacheReserveClear</a>
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+end\_ts: optional string
+
+The time that the latest Cache Reserve Clear operation completed.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+Last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+start\_ts: optional string
+
+The time that the latest Cache Reserve Clear operation started.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+state: optional "In-progress"or "Completed"
+
+The current state of the Cache Reserve Clear operation.
+
+</summary>
+
+One of the following:
+
+"In-progress"
+
+<a href="#">Link to this property</a>
+
+"Completed"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

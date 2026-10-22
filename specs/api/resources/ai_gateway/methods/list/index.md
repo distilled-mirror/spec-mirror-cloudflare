@@ -90,7 +90,7 @@ Search by id
 
 <summary>
 
-result: array of object {id, cache\_invalidate\_on\_update, cache\_ttl, 25 more }
+result: array of object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
 
 </summary>
 
@@ -285,6 +285,54 @@ profiles: array of string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+fedramp\_level: optional "fedramp-medium"or "fedramp-high"
+
+FedRAMP compliance level: fedramp-medium or fedramp-high.
+
+</summary>
+
+One of the following:
+
+"fedramp-medium"
+
+<a href="#">Link to this property</a>
+
+"fedramp-high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+fedramp\_mode: optional "prefer"or "require"
+
+FedRAMP enforcement mode. “prefer” prioritizes compliant connectors but allows fallback. “require” strictly filters.
+
+</summary>
+
+One of the following:
+
+"prefer"
+
+<a href="#">Link to this property</a>
+
+"require"
 
 <a href="#">Link to this property</a>
 
@@ -1394,6 +1442,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
           "string"
         ]
       },
+      "fedramp_level": "fedramp-medium",
+      "fedramp_mode": "prefer",
       "guardrails": {
         "prompt": {
           "P1": "FLAG",
@@ -1520,6 +1570,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
           "string"
         ]
       },
+      "fedramp_level": "fedramp-medium",
+      "fedramp_mode": "prefer",
       "guardrails": {
         "prompt": {
           "P1": "FLAG",

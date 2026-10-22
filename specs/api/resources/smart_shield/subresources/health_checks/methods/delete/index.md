@@ -166,7 +166,17 @@ pointer: optional string
 
 <summary>
 
-result: object {id }
+result: object {id } or object {id } or object {id }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+ID object {id }
 
 </summary>
 
@@ -175,6 +185,50 @@ id: optional string
 Identifier.
 
 maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ID object {id }
+
+</summary>
+
+id: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ID object {id }
+
+</summary>
+
+id: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -202,28 +256,12 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/smart_shield/healthchec
 
 200 example
 
+4XX example
+
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "result": {
     "id": "023e105f4ecef8ad9ca31a8372d0c353"
   },
@@ -231,35 +269,47 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/smart_shield/healthchec
 }
 ```
 
+```
+{
+  "errors": [
+    {
+      "code": 1000,
+      "message": "An error occurred."
+    }
+  ],
+  "messages": [],
+  "result": null,
+  "success": false
+}
+```
+
 ##### Returns Examples
 
 200 example
+
+4XX example
+
+```
+{
+  "errors": [],
+  "messages": [],
+  "result": {
+    "id": "023e105f4ecef8ad9ca31a8372d0c353"
+  },
+  "success": true
+}
+```
 
 ```
 {
   "errors": [
     {
       "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "message": "An error occurred."
     }
   ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "result": {
-    "id": "023e105f4ecef8ad9ca31a8372d0c353"
-  },
-  "success": true
+  "messages": [],
+  "result": null,
+  "success": false
 }
 ```

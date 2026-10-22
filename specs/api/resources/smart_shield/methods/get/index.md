@@ -156,9 +156,17 @@ pointer: optional string
 
 <summary>
 
-result: object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+result: object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more } or object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
-A consolidated object containing settings from multiple APIs for partial updates.
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
 
 </summary>
 
@@ -166,7 +174,7 @@ A consolidated object containing settings from multiple APIs for partial updates
 
 <summary>
 
-cache\_reserve: object {id, editable, value }
+cache\_reserve: optional object {id, editable, value }
 
 </summary>
 
@@ -210,7 +218,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-healthchecks\_count: number
+healthchecks\_count: optional number
 
 The total number of health checks associated with the zone.
 
@@ -220,7 +228,7 @@ The total number of health checks associated with the zone.
 
 <summary>
 
-regional\_tiered\_cache: object {id, editable, value }
+regional\_tiered\_cache: optional object {id, editable, value }
 
 </summary>
 
@@ -268,7 +276,7 @@ One of the following:
 
 <summary>
 
-smart\_routing: object {id, editable, value }
+smart\_routing: optional object {id, editable, value }
 
 </summary>
 
@@ -316,7 +324,7 @@ One of the following:
 
 <summary>
 
-smart\_tiered\_cache: object {id, editable, modified\_on, value }
+smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
 
 </summary>
 
@@ -368,6 +376,442 @@ One of the following:
 
 </details>
 
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+cache\_reserve: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Cache Reserve setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Cache Reserve.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+healthchecks\_count: optional number
+
+The total number of health checks associated with the zone.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+regional\_tiered\_cache: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Regional Tiered Cache setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Cache Reserve.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+smart\_routing: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Smart Routing setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Argo Smart Routing.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+
+</summary>
+
+id: optional string
+
+The id of the Smart Tiered Cache setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+The last time the setting was modified.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Tiered Cache.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {cache\_reserve, healthchecks\_count, regional\_tiered\_cache, 2 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+cache\_reserve: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Cache Reserve setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Cache Reserve.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+healthchecks\_count: optional number
+
+The total number of health checks associated with the zone.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+regional\_tiered\_cache: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Regional Tiered Cache setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Cache Reserve.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+smart\_routing: optional object {id, editable, value }
+
+</summary>
+
+id: optional string
+
+The id of the Smart Routing setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Argo Smart Routing.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+smart\_tiered\_cache: optional object {id, editable, modified\_on, value }
+
+</summary>
+
+id: optional string
+
+The id of the Smart Tiered Cache setting.
+
+<a href="#">Link to this property</a>
+
+editable: optional boolean
+
+Whether the setting is editable.
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+The last time the setting was modified.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: optional "on"or "off"
+
+Specifies the enablement value of Tiered Cache.
+
+</summary>
+
+One of the following:
+
+"on"
+
+<a href="#">Link to this property</a>
+
+"off"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
 [Link to this property](#)%20smart_shield%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 success: true
@@ -397,46 +841,28 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/smart_shield \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "result": {
     "cache_reserve": {
-      "id": "cache_reserve",
       "editable": true,
+      "id": "cache_reserve",
       "value": "off"
     },
-    "healthchecks_count": 5,
+    "healthchecks_count": 0,
     "regional_tiered_cache": {
-      "id": "regional_tiered_cache",
       "editable": true,
+      "id": "regional_tiered_cache",
       "value": "off"
     },
     "smart_routing": {
-      "id": "smart_routing",
       "editable": true,
+      "id": "smart_routing",
       "value": "off"
     },
     "smart_tiered_cache": {
-      "id": "smart_tiered_cache",
       "editable": true,
+      "id": "smart_tiered_cache",
       "modified_on": "2025-09-10T22:53:22.946098Z",
       "value": "on"
     }
@@ -531,46 +957,28 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/smart_shield \
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
+  "errors": [],
+  "messages": [],
   "result": {
     "cache_reserve": {
-      "id": "cache_reserve",
       "editable": true,
+      "id": "cache_reserve",
       "value": "off"
     },
-    "healthchecks_count": 5,
+    "healthchecks_count": 0,
     "regional_tiered_cache": {
-      "id": "regional_tiered_cache",
       "editable": true,
+      "id": "regional_tiered_cache",
       "value": "off"
     },
     "smart_routing": {
-      "id": "smart_routing",
       "editable": true,
+      "id": "smart_routing",
       "value": "off"
     },
     "smart_tiered_cache": {
-      "id": "smart_tiered_cache",
       "editable": true,
+      "id": "smart_tiered_cache",
       "modified_on": "2025-09-10T22:53:22.946098Z",
       "value": "on"
     }
