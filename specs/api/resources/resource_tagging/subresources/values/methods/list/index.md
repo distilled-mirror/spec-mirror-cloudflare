@@ -64,7 +64,7 @@ Cursor for pagination.
 
 <summary>
 
-type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 42 more
+type: optional "access\_application"or "access\_application\_policy"or "access\_group"or 43 more
 
 Filter by resource type.
 
@@ -101,6 +101,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ai\_search\_instance"
+
+<a href="#">Link to this property</a>
+
+"ai\_search\_namespace"
 
 <a href="#">Link to this property</a>
 

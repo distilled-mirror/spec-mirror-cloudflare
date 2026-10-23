@@ -212,32 +212,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_firewall/$DNS
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "success": true,
+  "errors": [],
+  "messages": [],
   "result": {
     "ptr": {
-      "foo": "string"
+      "203.0.113.1": "mx.example.com"
     }
-  }
+  },
+  "success": true
 }
 ```
 
@@ -247,31 +229,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_firewall/$DNS
 
 ```
 {
-  "errors": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "messages": [
-    {
-      "code": 1000,
-      "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
-    }
-  ],
-  "success": true,
+  "errors": [],
+  "messages": [],
   "result": {
     "ptr": {
-      "foo": "string"
+      "203.0.113.1": "mx.example.com"
     }
-  }
+  },
+  "success": true
 }
 ```

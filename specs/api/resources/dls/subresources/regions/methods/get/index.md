@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/dls/regions/{region\_id}
 
-Get a DLS region
+Retrieve a single DLS region (managed or custom) by ID or region key.
 
 ##### Security
 
@@ -54,6 +54,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`DLS: Read``DLS: Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string
@@ -80,7 +84,7 @@ maxLength255
 
 <summary>
 
-messages: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+messages: array of object {code, message, error\_chain }
 
 </summary>
 
@@ -94,23 +98,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+error\_chain: optional array of unknown
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional upstream error context for APIv4 errors that wrap downstream service failures.
 
 <a href="#">Link to this property</a>
 
@@ -176,7 +166,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+errors: optional array of object {code, message, error\_chain }
 
 maxLength0
 
@@ -192,23 +182,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+error\_chain: optional array of unknown
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional upstream error context for APIv4 errors that wrap downstream service failures.
 
 <a href="#">Link to this property</a>
 
@@ -235,10 +211,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regions/$REGI
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ],
   "result": {
@@ -255,10 +230,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regions/$REGI
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ]
 }
@@ -274,10 +248,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regions/$REGI
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ],
   "result": {
@@ -294,10 +267,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regions/$REGI
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ]
 }

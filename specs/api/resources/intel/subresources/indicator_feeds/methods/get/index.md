@@ -426,26 +426,26 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/indicator-f
   "result": {
     "id": 1,
     "created_on": "2023-05-12T12:21:56.777653Z",
-    "description": "example feed description",
+    "description": "user specified description 1",
     "is_attributable": false,
     "is_downloadable": false,
     "is_public": false,
     "last_upload_summary": {
       "persisted": {
-        "domains_added": 2,
-        "domains_removed": 1,
+        "domains_added": 0,
+        "domains_removed": 0,
         "ips_added": 0,
         "ips_removed": 0,
         "urls_added": 0,
         "urls_removed": 0
       },
       "skipped": {
-        "allowlisted_domains": 1,
+        "allowlisted_domains": 0,
         "expired_indicators": 0,
         "invalid_indicators": 0
       },
       "uploaded": {
-        "domains": 3,
+        "domains": 0,
         "ips": 0,
         "urls": 0
       }
@@ -453,9 +453,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/indicator-f
     "latest_upload_error": "Feed contains one or more invalid domain entries. Check your feed for wildcards or other values that are not valid DNS names.",
     "latest_upload_status": "Complete",
     "modified_on": "2023-06-18T03:13:34.123321Z",
-    "name": "example_feed_1",
+    "name": "user_specified_name_1",
     "provider_id": 1,
-    "provider_name": "provider_name"
+    "provider_name": "test_account"
   }
 }
 ```
@@ -490,26 +490,26 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/indicator-f
   "result": {
     "id": 1,
     "created_on": "2023-05-12T12:21:56.777653Z",
-    "description": "example feed description",
+    "description": "user specified description 1",
     "is_attributable": false,
     "is_downloadable": false,
     "is_public": false,
     "last_upload_summary": {
       "persisted": {
-        "domains_added": 2,
-        "domains_removed": 1,
+        "domains_added": 0,
+        "domains_removed": 0,
         "ips_added": 0,
         "ips_removed": 0,
         "urls_added": 0,
         "urls_removed": 0
       },
       "skipped": {
-        "allowlisted_domains": 1,
+        "allowlisted_domains": 0,
         "expired_indicators": 0,
         "invalid_indicators": 0
       },
       "uploaded": {
-        "domains": 3,
+        "domains": 0,
         "ips": 0,
         "urls": 0
       }
@@ -517,9 +517,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/intel/indicator-f
     "latest_upload_error": "Feed contains one or more invalid domain entries. Check your feed for wildcards or other values that are not valid DNS names.",
     "latest_upload_status": "Complete",
     "modified_on": "2023-06-18T03:13:34.123321Z",
-    "name": "example_feed_1",
+    "name": "user_specified_name_1",
     "provider_id": 1,
-    "provider_name": "provider_name"
+    "provider_name": "test_account"
   }
 }
 ```

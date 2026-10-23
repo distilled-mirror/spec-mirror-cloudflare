@@ -24,7 +24,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/dls/regional\_services/prefix\_bindings
 
-Create a DLS prefix binding
+Bind a CIDR from a BYOIP prefix to a region.
+
+This requires the **IP Prefixes Write** permission in addition to **DLS Write**, because the binding is created against a BYOIP prefix in Addressing.
 
 ##### Security
 
@@ -55,6 +57,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 **Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
 
 </details>
+
+##### Accepted Permissions (at least one required)
+
+`DLS: Write``IP Prefixes: Write`
 
 ##### P ath ParametersExpand Collapse
 
@@ -100,7 +106,7 @@ minLength1
 
 <summary>
 
-messages: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+messages: array of object {code, message, error\_chain }
 
 </summary>
 
@@ -114,23 +120,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+error\_chain: optional array of unknown
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional upstream error context for APIv4 errors that wrap downstream service failures.
 
 <a href="#">Link to this property</a>
 
@@ -186,7 +178,7 @@ success: boolean
 
 <summary>
 
-errors: optional array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+errors: optional array of object {code, message, error\_chain }
 
 maxLength0
 
@@ -202,23 +194,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+error\_chain: optional array of unknown
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional upstream error context for APIv4 errors that wrap downstream service failures.
 
 <a href="#">Link to this property</a>
 
@@ -251,10 +229,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regional_serv
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ],
   "result": {
@@ -268,10 +245,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regional_serv
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ]
 }
@@ -287,10 +263,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regional_serv
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ],
   "result": {
@@ -304,10 +279,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dls/regional_serv
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
-      }
+      "error_chain": [
+        {}
+      ]
     }
   ]
 }
