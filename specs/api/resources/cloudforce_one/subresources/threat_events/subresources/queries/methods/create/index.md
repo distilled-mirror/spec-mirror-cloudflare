@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/cloudforce-one/events/queries/create
 
-Create a new saved event query for the account
+Saves an event query under a unique `name`. `query_json` holds the query parameters as a JSON string.
 
 ##### Security
 

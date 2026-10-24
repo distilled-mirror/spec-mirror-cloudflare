@@ -1,5 +1,5 @@
 ---
-title: Lists indicator types across multiple datasets
+title: List indicator types
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists indicator types across multiple datasets
+# List indicator types
 
 GET/accounts/{account\_id}/cloudforce-one/events/indicator-types
 
-Lists indicator types across multiple datasets
+Lists the indicator types used in the datasets given by `datasetIds`, which accepts dataset UUIDs or one scope value used alone. Without `datasetIds`, every dataset you can read is included, analytics datasets too.
 
 ##### Security
 
@@ -78,7 +78,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators.types%20%3E%20(model)%20type_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists indicator types across multiple datasets
+### List indicator types
 
 HTTP
 

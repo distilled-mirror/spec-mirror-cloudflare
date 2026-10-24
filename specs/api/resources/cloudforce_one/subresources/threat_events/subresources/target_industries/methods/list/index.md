@@ -1,5 +1,5 @@
 ---
-title: Lists target industries across multiple datasets
+title: List target industries used in datasets
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists target industries across multiple datasets
+# List target industries used in datasets
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries
 
-Retrieves the catalog of industry classifications used in Cloudforce One threat intelligence.
+Lists the target industries referenced by events in the datasets given by `datasetIds`, or in the default dataset when `datasetIds` is omitted. To list every target industry, use `threat-intel events target-industries catalog list`.
 
 ##### Security
 
@@ -76,7 +76,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.target_industries%20%3E%20(model)%20target_industry_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists target industries across multiple datasets
+### List target industries used in datasets
 
 HTTP
 

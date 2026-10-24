@@ -1,5 +1,5 @@
 ---
-title: Deletes a category
+title: Delete an event category (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,13 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Deletes a category
+# Delete an event category (legacy)
 
 Deprecated: Use DELETE /events/event-categories/by-id/{category\_id} before 2026-11-28.
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-Deprecated; use DELETE /events/event-categories/by-id/{category\_id}. Available through 2026-11-28.
+Legacy. Use `threat-intel events categories delete` (`DELETE /events/event-categories/by-id/{category_id}`) instead. Available through 2026-11-28.
 
 ##### Security
 
@@ -62,7 +62,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.categories%20%3E%20(model)%20category_delete_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Deletes a category
+### Delete an event category (legacy)
 
 HTTP
 

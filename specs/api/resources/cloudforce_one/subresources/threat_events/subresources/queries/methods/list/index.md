@@ -1,5 +1,5 @@
 ---
-title: List all saved event queries
+title: List saved event queries
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List all saved event queries
+# List saved event queries
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries
 
-Retrieve all saved event queries for the account
+Lists the account’s saved event queries.
 
 ##### Security
 
@@ -126,7 +126,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20rule_scope>)
 
-### List all saved event queries
+### List saved event queries
 
 HTTP
 

@@ -96,6 +96,34 @@ When true on the first page, count matching articles and return an exact total. 
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20include_total%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+min\_relevance: optional "low"or "medium"or "high"
+
+Beta. Return only articles at or above this relevance band for pir\_id, or for any active PIR when pir\_id is omitted. Excludes articles that have not been scored.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20min_relevance%20%3E%20(schema)>)
+
 per\_page: optional number
 
 Number of articles per cursor page, from 1 to 100. Defaults to 20.
@@ -105,6 +133,14 @@ maximum100
 minimum1
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
+pir\_id: optional string
+
+Beta. Active Priority Intelligence Requirement to report, filter, and sort relevance by. Omit to use each article’s most relevant active PIR. Returns a 400 error unless the PIR is active.
+
+formatuuid
+
+[Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20pir_id%20%3E%20(schema)>)
 
 published\_after: optional string
 
@@ -140,7 +176,7 @@ minLength1
 
 sort: optional string
 
-Sort by fetched\_at, published\_at, or title. Prefix the field with - for descending order; defaults to -fetched\_at.
+Sort by fetched\_at, published\_at, title, or relevance (beta). Prefix the field with - for descending order; defaults to -fetched\_at. -relevance lists the most relevant articles first, by pir\_id or by each article’s most relevant active PIR, with unscored articles last.
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20sort%20%3E%20(schema)>)
 
@@ -250,7 +286,7 @@ result: object {articles, has\_more, next\_cursor, 2 more }
 
 <summary>
 
-articles: array of object {id, dataset\_id, event\_id, 10 more }
+articles: array of object {id, dataset\_id, event\_id, 12 more }
 
 </summary>
 
@@ -299,6 +335,114 @@ read: boolean
 <a href="#">Link to this property</a>
 
 read\_at: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+relevance: object {band, pir\_id, pirs }
+
+Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
+
+</summary>
+
+<details>
+
+<summary>
+
+band: "low"or "medium"or "high"
+
+Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+pir\_id: string
+
+Beta. The pir\_id requested from the article list, or otherwise the account’s most relevant active PIR for this article.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pirs: array of object {band, pir\_id }
+
+Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
+
+</summary>
+
+<details>
+
+<summary>
+
+band: "low"or "medium"or "high"
+
+Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+pir\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+severity: number
+
+Intrinsic article severity from 1 (informational) to 5 (critical). Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
+
+maximum5
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -427,6 +571,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
         "published_at": "published_at",
         "read": true,
         "read_at": "read_at",
+        "relevance": {
+          "band": "low",
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+          "pirs": [
+            {
+              "band": "low",
+              "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+            }
+          ]
+        },
+        "severity": 1,
         "summary": "summary",
         "tags": [
           {
@@ -472,6 +627,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
         "published_at": "published_at",
         "read": true,
         "read_at": "read_at",
+        "relevance": {
+          "band": "low",
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+          "pirs": [
+            {
+              "band": "low",
+              "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+            }
+          ]
+        },
+        "severity": 1,
         "summary": "summary",
         "tags": [
           {

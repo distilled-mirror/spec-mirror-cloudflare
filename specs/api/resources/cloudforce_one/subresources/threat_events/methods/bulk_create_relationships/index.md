@@ -1,5 +1,5 @@
 ---
-title: Creates bulk DOS event with relationships and indicators
+title: Create events with relationships in bulk (legacy)
 ---
 
 [Skip to content](#_top)
@@ -18,13 +18,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates bulk DOS event with relationships and indicators
+# Create events with relationships in bulk (legacy)
 
 Deprecated: This endpoint is deprecated and will be removed in a future version.
 
 POST/accounts/{account\_id}/cloudforce-one/events/create/bulk/relationships
 
-This method is deprecated. Please use `event_create_bulk` instead
+Legacy. Use `threat-intel events bulk-create` (`POST /events/create/bulk`) and `threat-intel events relationships create` (`POST /events/relationships/create`) instead.
 
 ##### Security
 
@@ -224,7 +224,7 @@ Index of the event that caused the error
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_bulk_create_relationships_response%20%3E%20(schema)%20%3E%20(property)%20errors>)
 
-### Creates bulk DOS event with relationships and indicators
+### Create events with relationships in bulk (legacy)
 
 HTTP
 

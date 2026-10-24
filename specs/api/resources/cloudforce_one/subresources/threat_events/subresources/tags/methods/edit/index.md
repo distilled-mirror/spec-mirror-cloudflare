@@ -1,5 +1,5 @@
 ---
-title: Updates a tag (SoT)
+title: Update a tag
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Updates a tag (SoT)
+# Update a tag
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
-Updates an account-owned Source-of-Truth tag by UUID and returns its complete owner projection.
+Updates the given fields of a tag and returns the complete tag.
 
 ##### Security
 
@@ -1840,7 +1840,7 @@ version: optional number
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags%20%3E%20(model)%20tag_edit_response%20%3E%20(schema)%20%3E%20(property)%20version>)
 
-### Updates a tag (SoT)
+### Update a tag
 
 HTTP
 

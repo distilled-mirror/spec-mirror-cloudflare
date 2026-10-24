@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
-Delete a saved event query by its ID
+Deletes a saved event query by its ID.
 
 ##### Security
 

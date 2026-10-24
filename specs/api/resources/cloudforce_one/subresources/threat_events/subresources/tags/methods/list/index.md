@@ -1,5 +1,5 @@
 ---
-title: Lists all tags (SoT)
+title: List tags
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists all tags (SoT)
+# List tags
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags
 
-Returns all Source-of-Truth tags for an account. Supports legacy free-text `search` on tag value and `categoryUuid` exact match, plus a structured `filters` JSON array for filtering by metadata fields (originCountryISO, actorCategory, motive, priority, etc.). The authenticated account owns these account-scoped tags and receives their complete owner projection. Country values may be passed as alpha-2, alpha-3, name, or common alias. Purple TLP remains CFONE-only.
+Lists the account’s tags. Use `search` to match tag values, `categoryUuid` to limit results to one category, and `filters` (a JSON array) to filter by fields such as `originCountryISO`, `actorCategory`, `motive`, or `priority`. Country filters accept alpha-2 or alpha-3 codes, names, or common aliases. Tags marked TLP:PURPLE are visible only to Cloudforce One.
 
 ##### Security
 
@@ -1098,7 +1098,7 @@ version: optional number
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags%20%3E%20(model)%20tag_list_response%20%3E%20(schema)%20%3E%20(property)%20tags>)
 
-### Lists all tags (SoT)
+### List tags
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: Lists all target industries from industry map catalog
+title: List all target industries
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists all target industries from industry map catalog
+# List all target industries
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 
-Lists all target industries from industry map catalog
+Lists every predefined target industry, whether or not an event uses it. To list only the industries used in specific datasets, use `threat-intel events target-industries list`.
 
 ##### Security
 
@@ -70,7 +70,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.target_industries.catalog%20%3E%20(model)%20catalog_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists all target industries from industry map catalog
+### List all target industries
 
 HTTP
 

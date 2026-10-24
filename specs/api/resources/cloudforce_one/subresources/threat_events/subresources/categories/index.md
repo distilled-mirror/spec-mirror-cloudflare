@@ -20,27 +20,27 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Categories
 
-##### [Lists categories across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/list)
+##### [List event categories used in datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories
 
-##### [Reads a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
+##### [Get an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
 
 Deprecated
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-##### [Creates a new category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
+##### [Create an event category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/categories/create
 
-##### [Updates a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
+##### [Update an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
 
 Deprecated
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-##### [Deletes a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
+##### [Delete an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
 
 Deprecated
 
@@ -210,7 +210,7 @@ uuid: string
 
 #### CategoriesCatalog
 
-##### [Lists categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/subresources/catalog/methods/list)
+##### [List all event categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/subresources/catalog/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 

@@ -1,5 +1,5 @@
 ---
-title: Lists all target industries for a specific dataset
+title: List target industries in a dataset (legacy)
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists all target industries for a specific dataset
+# List target industries in a dataset (legacy)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetIndustries
 
-Lists all target industries for a specific dataset
+Legacy. Use `threat-intel events target-industries list` (`GET /events/targetIndustries`) instead.
 
 ##### Security
 
@@ -78,7 +78,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.target_industries.by_dataset%20%3E%20(model)%20by_dataset_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists all target industries for a specific dataset
+### List target industries in a dataset (legacy)
 
 HTTP
 

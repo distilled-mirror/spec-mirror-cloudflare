@@ -142,6 +142,34 @@ Name of the variation that supplied the resolved value.
 
 <summary>
 
+metadata: optional map\[booleanor stringor number]
+
+Key-value metadata associated with the flag. Returned only when the flag has metadata.
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20flagship.apps.evaluate%20%3E%20(model)%20evaluate_get_response%20%3E%20(schema)%20%3E%20(property)%20metadata>)
+
+<details>
+
+<summary>
+
 value: optional stringor numberor booleanor 2 more
 
 </summary>
@@ -190,6 +218,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/flagship/apps/$AP
   "flagKey": "flagKey",
   "reason": "STATIC",
   "variant": "variant",
+  "metadata": {
+    "foo": true
+  },
   "value": "string"
 }
 ```
@@ -203,6 +234,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/flagship/apps/$AP
   "flagKey": "flagKey",
   "reason": "STATIC",
   "variant": "variant",
+  "metadata": {
+    "foo": true
+  },
   "value": "string"
 }
 ```

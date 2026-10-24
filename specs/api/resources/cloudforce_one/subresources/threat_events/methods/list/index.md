@@ -1,5 +1,5 @@
 ---
-title: Filter and list events
+title: List events
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Filter and list events
+# List events
 
 GET/accounts/{account\_id}/cloudforce-one/events
 
-Use one standalone `datasetId` scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). Scope values query at most 50 datasets and must be used alone. When `datasetId` is unspecified, events are listed from the default Cloudforce One Threat Events dataset. To list existing datasets, use the [`List Datasets`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list/) endpoint.
+Lists events, with filters passed as query parameters. `datasetId` accepts dataset UUIDs or one scope value used alone: `all` (or `*`) and `operational` select the intelligence datasets you can read, and `analytics` selects the analytics datasets you can read. A scope value covers at most 50 datasets. Without `datasetId`, the default Cloudforce One Threat Events dataset is used. To send filters in a JSON body instead, use `threat-intel events search`.
 
 ##### Security
 
@@ -1244,7 +1244,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20releasabilityId>)
 
-### Filter and list events
+### List events
 
 HTTP
 

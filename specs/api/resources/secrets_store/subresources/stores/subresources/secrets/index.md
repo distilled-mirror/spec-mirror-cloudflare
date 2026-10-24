@@ -134,7 +134,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -256,7 +256,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -378,7 +378,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -500,7 +500,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -634,7 +634,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 

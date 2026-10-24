@@ -1,5 +1,5 @@
 ---
-title: Removes an event reference
+title: Remove event references (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Removes an event reference
+# Remove event references (legacy)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/relate/{event\_id}
 
-Removes a reference link between related threat events in Cloudforce One.
+Legacy. Removes references created with `threat-intel events legacy references create`. Use `threat-intel events relationships` for new event links.
 
 ##### Security
 
@@ -74,7 +74,7 @@ success: boolean
 
 [Link to this property](#)%20cloudforce_one.threat_events.relate%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Removes an event reference
+### Remove event references (legacy)
 
 HTTP
 

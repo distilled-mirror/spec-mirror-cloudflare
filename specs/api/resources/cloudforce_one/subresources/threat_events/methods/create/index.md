@@ -1,5 +1,5 @@
 ---
-title: Creates a new event
+title: Create an event
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates a new event
+# Create an event
 
 POST/accounts/{account\_id}/cloudforce-one/events/create
 
-To create a dataset, see the [`Create Dataset`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/create/) endpoint. When `datasetId` parameter is unspecified, it will be created in a default dataset named `Cloudforce One Threat Events`.
+Creates an event. Without `datasetId`, the event is created in the default Cloudforce One Threat Events dataset. To create a dataset, use `threat-intel datasets create`.
 
 ##### Security
 
@@ -306,7 +306,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_create_response%20%3E%20(schema)%20%3E%20(property)%20releasabilityId>)
 
-### Creates a new event
+### Create an event
 
 HTTP
 

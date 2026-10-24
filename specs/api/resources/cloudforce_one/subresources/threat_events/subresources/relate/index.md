@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Relate
 
-##### [Removes an event reference](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relate/methods/delete)
+##### [Remove event references (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relate/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/relate/{event\_id}
 

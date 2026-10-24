@@ -1,5 +1,5 @@
 ---
-title: Reads raw data for an event by UUID
+title: Get raw data for an event (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,13 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads raw data for an event by UUID
+# Get raw data for an event (legacy)
 
 Deprecated: Use GET /events/datasets/{dataset\_id}/events/{event\_id}/raw before 2026-11-28.
 
 GET/accounts/{account\_id}/cloudforce-one/events/raw/{dataset\_id}/{event\_id}
 
-Deprecated; use GET /events/datasets/{dataset\_id}/events/{event\_id}/raw. Available through 2026-11-28.
+Legacy. Use `threat-intel events raw get` (`GET /events/datasets/{dataset_id}/events/{event_id}/raw`) instead. Available through 2026-11-28.
 
 ##### Security
 
@@ -86,7 +86,7 @@ tlp: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets%20%3E%20(model)%20dataset_raw_response%20%3E%20(schema)%20%3E%20(property)%20tlp>)
 
-### Reads raw data for an event by UUID
+### Get raw data for an event (legacy)
 
 HTTP
 

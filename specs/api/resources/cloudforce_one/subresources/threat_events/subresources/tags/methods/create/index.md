@@ -1,5 +1,5 @@
 ---
-title: Creates a new tag
+title: Create a tag
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates a new tag
+# Create a tag
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/create
 
-Creates an account-owned tag for threat events and returns its complete owner projection.
+Creates a tag in the account and returns the complete tag.
 
 ##### Security
 
@@ -1834,7 +1834,7 @@ version: optional number
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags%20%3E%20(model)%20tag_create_response%20%3E%20(schema)%20%3E%20(property)%20version>)
 
-### Creates a new tag
+### Create a tag
 
 HTTP
 

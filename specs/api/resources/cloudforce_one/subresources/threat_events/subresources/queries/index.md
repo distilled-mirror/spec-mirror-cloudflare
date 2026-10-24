@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Queries
 
-##### [List all saved event queries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/list)
+##### [List saved event queries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries
 
@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/queries
 
 POST/accounts/{account\_id}/cloudforce-one/events/queries/create
 
-##### [Read a saved event query](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/get)
+##### [Get a saved event query](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 

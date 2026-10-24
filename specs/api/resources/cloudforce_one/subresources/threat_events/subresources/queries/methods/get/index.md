@@ -1,5 +1,5 @@
 ---
-title: Read a saved event query
+title: Get a saved event query
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Read a saved event query
+# Get a saved event query
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
-Retrieve a saved event query by its ID
+Returns a saved event query by its ID.
 
 ##### Security
 
@@ -132,7 +132,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 [Link to this property](#)%20cloudforce_one.threat_events.queries%20%3E%20(model)%20query_get_response%20%3E%20(schema)%20%3E%20(property)%20rule_scope>)
 
-### Read a saved event query
+### Get a saved event query
 
 HTTP
 

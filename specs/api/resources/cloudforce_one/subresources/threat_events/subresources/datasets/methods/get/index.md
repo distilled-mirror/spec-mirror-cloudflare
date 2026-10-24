@@ -1,5 +1,5 @@
 ---
-title: Reads a dataset
+title: Get a dataset
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads a dataset
+# Get a dataset
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-Retrieves details for a specific threat event dataset.
+Returns a dataset by its ID.
 
 ##### Security
 
@@ -72,7 +72,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets%20%3E%20(model)%20dataset_get_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Reads a dataset
+### Get a dataset
 
 HTTP
 

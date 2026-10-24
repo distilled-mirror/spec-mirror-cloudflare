@@ -1,5 +1,5 @@
 ---
-title: Reads a category
+title: Get an event category (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,13 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads a category
+# Get an event category (legacy)
 
 Deprecated: Use GET /events/event-categories/by-id/{category\_id} before 2026-11-28.
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-Deprecated; use GET /events/event-categories/by-id/{category\_id}. Available through 2026-11-28.
+Legacy. Use `threat-intel events categories get` (`GET /events/event-categories/by-id/{category_id}`) instead. Available through 2026-11-28.
 
 ##### Security
 
@@ -82,7 +82,7 @@ shortname: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.categories%20%3E%20(model)%20category_get_response%20%3E%20(schema)%20%3E%20(property)%20shortname>)
 
-### Reads a category
+### Get an event category (legacy)
 
 HTTP
 

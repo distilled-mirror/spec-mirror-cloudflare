@@ -1,5 +1,5 @@
 ---
-title: Removes a tag from an event
+title: Remove tags from an event (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Removes a tag from an event
+# Remove tags from an event (legacy)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}
 
-Removes a tag from a threat event in Cloudforce One.
+Legacy. Use `threat-intel tags relationships delete` (`DELETE /events/tags/{tag_uuid}/relationships/{rel_uuid}`) instead.
 
 ##### Security
 
@@ -74,7 +74,7 @@ success: boolean
 
 [Link to this property](#)%20cloudforce_one.threat_events.event_tags%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Removes a tag from an event
+### Remove tags from an event (legacy)
 
 HTTP
 

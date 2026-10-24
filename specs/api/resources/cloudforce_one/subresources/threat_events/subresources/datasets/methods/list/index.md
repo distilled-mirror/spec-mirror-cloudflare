@@ -1,5 +1,5 @@
 ---
-title: Lists all datasets in an account
+title: List datasets
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists all datasets in an account
+# List datasets
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset
 
-Lists all threat event datasets configured in Cloudforce One.
+Lists the account’s datasets. Set `includeDeleted` to include deleted datasets.
 
 ##### Security
 
@@ -104,7 +104,7 @@ deletedAt: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets%20%3E%20(model)%20dataset_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20deletedAt>)
 
-### Lists all datasets in an account
+### List datasets
 
 HTTP
 

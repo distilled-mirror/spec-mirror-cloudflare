@@ -22,21 +22,21 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Categories
 
-##### [Lists all tag categories (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
+##### [List tag categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/categories
 
-##### [Creates a new tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
+##### [Create a tag category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/categories/create
 
-##### [Updates a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
+##### [Update a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
 
 Deprecated
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-##### [Deletes a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
+##### [Delete a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
 
 Deprecated
 

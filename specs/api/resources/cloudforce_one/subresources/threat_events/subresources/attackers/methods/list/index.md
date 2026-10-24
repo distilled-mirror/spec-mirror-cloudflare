@@ -1,5 +1,5 @@
 ---
-title: Lists attackers across multiple datasets
+title: List attackers
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists attackers across multiple datasets
+# List attackers
 
 GET/accounts/{account\_id}/cloudforce-one/events/attackers
 
-Lists known threat attackers tracked in Cloudforce One threat intelligence.
+Lists the attackers referenced by events in the datasets given by `datasetIds`, or in the default dataset when `datasetIds` is omitted.
 
 ##### Security
 
@@ -76,7 +76,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.attackers%20%3E%20(model)%20attacker_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists attackers across multiple datasets
+### List attackers
 
 HTTP
 

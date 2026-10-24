@@ -1,5 +1,5 @@
 ---
-title: Reads an event
+title: Get an event
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads an event
+# Get an event
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{event\_id}
 
-Retrieves a specific event by its UUID.
+Returns an event from a dataset by its UUID.
 
 ##### Security
 
@@ -178,7 +178,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets.events%20%3E%20(model)%20event_get_response%20%3E%20(schema)%20%3E%20(property)%20releasabilityId>)
 
-### Reads an event
+### Get an event
 
 HTTP
 

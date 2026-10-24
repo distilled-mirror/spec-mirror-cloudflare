@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/flagship/apps/{app\_id}/evaluate
 
 <summary>
 
-EvaluateGetResponse object {flagKey, reason, variant, value }
+EvaluateGetResponse object {flagKey, reason, variant, 2 more }
 
 </summary>
 
@@ -79,6 +79,34 @@ One of the following:
 variant: string
 
 Name of the variation that supplied the resolved value.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+metadata: optional map\[booleanor stringor number]
+
+Key-value metadata associated with the flag. Returned only when the flag has metadata.
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

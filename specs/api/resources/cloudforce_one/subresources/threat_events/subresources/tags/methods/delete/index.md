@@ -1,5 +1,5 @@
 ---
-title: Deletes a tag (SoT)
+title: Delete a tag
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Deletes a tag (SoT)
+# Delete a tag
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
-Deletes a Source-of-Truth tag by UUID.
+Deletes a tag by its UUID.
 
 ##### Security
 
@@ -58,7 +58,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags%20%3E%20(model)%20tag_delete_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Deletes a tag (SoT)
+### Delete a tag
 
 HTTP
 

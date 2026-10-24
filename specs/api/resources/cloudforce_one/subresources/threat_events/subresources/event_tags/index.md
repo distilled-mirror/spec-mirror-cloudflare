@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Event Tags
 
-##### [Adds a tag to an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/create)
+##### [Add tags to an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}/create
 
-##### [Removes a tag from an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/delete)
+##### [Remove tags from an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}
 

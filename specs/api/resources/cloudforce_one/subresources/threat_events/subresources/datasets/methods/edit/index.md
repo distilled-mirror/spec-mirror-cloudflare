@@ -1,5 +1,5 @@
 ---
-title: Updates an existing dataset
+title: Update a dataset
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Updates an existing dataset
+# Update a dataset
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-Partially updates a threat event dataset in Cloudforce One, modifying specific fields without replacing the entire dataset configuration.
+Updates a dataset’s `name` and `isPublic` setting. Both fields are required.
 
 ##### Security
 
@@ -88,7 +88,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets%20%3E%20(model)%20dataset_edit_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Updates an existing dataset
+### Update a dataset
 
 HTTP
 

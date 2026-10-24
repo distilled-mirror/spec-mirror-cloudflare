@@ -1,5 +1,5 @@
 ---
-title: Deletes a tag category (SoT)
+title: Delete a tag category (legacy)
 ---
 
 [Skip to content](#_top)
@@ -22,13 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Deletes a tag category (SoT)
+# Delete a tag category (legacy)
 
 Deprecated: Use DELETE /events/tag-categories/{category\_uuid} before 2026-11-28.
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-Deprecated; use DELETE /events/tag-categories/{category\_uuid}. Available through 2026-11-28.
+Legacy. Use `threat-intel tags categories delete` (`DELETE /events/tag-categories/{category_uuid}`) instead. Available through 2026-11-28.
 
 ##### Security
 
@@ -62,7 +62,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.categories%20%3E%20(model)%20category_delete_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Deletes a tag category (SoT)
+### Delete a tag category (legacy)
 
 HTTP
 

@@ -1,5 +1,5 @@
 ---
-title: List mirrored tags for an indicator dataset
+title: List tags on a dataset's indicators
 ---
 
 [Skip to content](#_top)
@@ -24,11 +24,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List mirrored tags for an indicator dataset
+# List tags on a dataset's indicators
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators/tags
 
-Returns all mirrored tags from the indicator dataset (DO mirror table). No pagination.
+Lists the tags applied to indicators in a dataset. Results are not paginated.
 
 ##### Security
 
@@ -56,7 +56,7 @@ Dataset ID.
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators.by_dataset.tags%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20dataset_id%20%3E%20(schema)>)
 
-### List mirrored tags for an indicator dataset
+### List tags on a dataset's indicators
 
 HTTP
 

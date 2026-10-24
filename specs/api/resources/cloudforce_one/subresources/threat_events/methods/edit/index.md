@@ -1,5 +1,5 @@
 ---
-title: Updates an event
+title: Update an event
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Updates an event
+# Update an event
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}
 
-Partially updates a threat event in Cloudforce One, modifying specific fields without replacing the entire event.
+Updates the given fields of an event and leaves the other fields unchanged. `datasetId` is required.
 
 ##### Security
 
@@ -252,7 +252,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_edit_response%20%3E%20(schema)%20%3E%20(property)%20releasabilityId>)
 
-### Updates an event
+### Update an event
 
 HTTP
 

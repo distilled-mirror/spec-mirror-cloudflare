@@ -1,5 +1,5 @@
 ---
-title: Adds a tag to an event
+title: Add tags to an event (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Adds a tag to an event
+# Add tags to an event (legacy)
 
 POST/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}/create
 
-Adds a tag to a threat event in Cloudforce One for classification and filtering.
+Legacy. Use `threat-intel tags relationships create` (`POST /events/tags/{tag_uuid}/relationships`) instead.
 
 ##### Security
 
@@ -80,7 +80,7 @@ success: boolean
 
 [Link to this property](#)%20cloudforce_one.threat_events.event_tags%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
 
-### Adds a tag to an event
+### Add tags to an event (legacy)
 
 HTTP
 

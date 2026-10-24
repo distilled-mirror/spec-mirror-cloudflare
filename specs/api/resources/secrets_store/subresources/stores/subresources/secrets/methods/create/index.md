@@ -62,7 +62,7 @@ maxLength32
 
 <summary>
 
-body: array of object {name, scopes, value, comment }
+body: array of object {name, value, comment, scopes }
 
 </summary>
 
@@ -72,13 +72,27 @@ The name of the secret.
 
 <a href="#">Link to this property</a>
 
+value: string
+
+The value of the secret. Maximum 64 KiB (65,536 bytes). Note that this is ‘write only’ - the API never returns this value; it exists only to create or modify secrets.
+
+maxLength65536
+
+<a href="#">Link to this property</a>
+
+comment: optional string
+
+Freeform text describing the secret.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
 
-scopes: array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret. Omit it on create or duplicate to inherit the store’s scopes. An empty list lets no service use the secret.
 
 </summary>
 
@@ -109,20 +123,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-value: string
-
-The value of the secret. Maximum 64 KiB (65,536 bytes). Note that this is ‘write only’ - the API never returns this value; it exists only to create or modify secrets.
-
-maxLength65536
-
-<a href="#">Link to this property</a>
-
-comment: optional string
-
-Freeform text describing the secret.
 
 <a href="#">Link to this property</a>
 
@@ -306,7 +306,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -400,15 +400,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/secrets_store/sto
     -d '[
           {
             "name": "MY_API_KEY",
+            "value": "api-token-secret-123",
+            "comment": "info about my secret",
             "scopes": [
               "workers",
               "ai_gateway",
               "dex",
               "access",
               "websearch"
-            ],
-            "value": "api-token-secret-123",
-            "comment": "info about my secret"
+            ]
           }
         ]'
 ```

@@ -70,13 +70,19 @@ The name of the secret.
 
 [Link to this property](#)%20secrets_store.stores.secrets%20%3E%20(method)%20duplicate%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
+comment: optional string
+
+Freeform text describing the secret.
+
+[Link to this property](#)%20secrets_store.stores.secrets%20%3E%20(method)%20duplicate%20%3E%20(params)%200%20%3E%20(param)%20comment%20%3E%20(schema)>)
+
 <details>
 
 <summary>
 
-scopes: array of "workers"or "ai\_gateway"or "dex"or 3 more
+scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret. Omit it on create or duplicate to inherit the store’s scopes. An empty list lets no service use the secret.
 
 </summary>
 
@@ -109,12 +115,6 @@ One of the following:
 </details>
 
 [Link to this property](#)%20secrets_store.stores.secrets%20%3E%20(method)%20duplicate%20%3E%20(params)%200%20%3E%20(param)%20scopes%20%3E%20(schema)>)
-
-comment: optional string
-
-Freeform text describing the secret.
-
-[Link to this property](#)%20secrets_store.stores.secrets%20%3E%20(method)%20duplicate%20%3E%20(params)%200%20%3E%20(param)%20comment%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -292,7 +292,7 @@ Freeform text describing the secret.
 
 scopes: optional array of "workers"or "ai\_gateway"or "dex"or 3 more
 
-The list of services that can use this secret.
+The list of services that can use this secret, or null when the secret inherits its store’s scopes. Set it to null in a patch to inherit again. An empty list lets no service use the secret.
 
 </summary>
 
@@ -343,14 +343,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/secrets_store/sto
     -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
     -d '{
           "name": "MY_API_KEY",
+          "comment": "info about my secret",
           "scopes": [
             "workers",
             "ai_gateway",
             "dex",
             "access",
             "websearch"
-          ],
-          "comment": "info about my secret"
+          ]
         }'
 ```
 

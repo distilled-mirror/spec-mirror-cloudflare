@@ -1,5 +1,5 @@
 ---
-title: Lists categories across multiple datasets
+title: List event categories used in datasets
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists categories across multiple datasets
+# List event categories used in datasets
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories
 
-Lists all threat event categories configured for classifying and organizing threat events.
+Lists the event categories used by events in the datasets given by `datasetIds`, or in the default dataset when `datasetIds` is omitted. Dataset scope values are not supported. To list every category, use `threat-intel events categories catalog list`.
 
 ##### Security
 
@@ -80,7 +80,7 @@ shortname: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.categories%20%3E%20(model)%20category_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20shortname>)
 
-### Lists categories across multiple datasets
+### List event categories used in datasets
 
 HTTP
 

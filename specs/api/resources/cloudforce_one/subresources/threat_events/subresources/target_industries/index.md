@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Target Industries
 
-##### [Lists target industries across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/methods/list)
+##### [List target industries used in datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries
 
@@ -60,7 +60,7 @@ type: string
 
 #### Target IndustriesBy Dataset
 
-##### [Lists all target industries for a specific dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/by_dataset/methods/list)
+##### [List target industries in a dataset (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/by_dataset/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetIndustries
 
@@ -100,7 +100,7 @@ type: string
 
 #### Target IndustriesCatalog
 
-##### [Lists all target industries from industry map catalog](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/catalog/methods/list)
+##### [List all target industries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/catalog/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 

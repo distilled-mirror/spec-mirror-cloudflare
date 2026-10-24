@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Graphql
 
-##### [GraphQL endpoint for event aggregation](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/graphql/methods/create)
+##### [Run a GraphQL aggregation over events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/graphql/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/graphql
 

@@ -1,5 +1,5 @@
 ---
-title: Updates a raw event
+title: Update raw event data by raw ID (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Updates a raw event
+# Update raw event data by raw ID (legacy)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
-Partially updates raw threat event data in Cloudforce One, modifying specific fields of the event.
+Legacy. Updates raw data stored under a `raw_id`, which new events don’t use. There is no direct replacement.
 
 ##### Security
 
@@ -82,7 +82,7 @@ data: unknown
 
 [Link to this property](#)%20cloudforce_one.threat_events.raw%20%3E%20(model)%20raw_edit_response%20%3E%20(schema)%20%3E%20(property)%20data>)
 
-### Updates a raw event
+### Update raw event data by raw ID (legacy)
 
 HTTP
 

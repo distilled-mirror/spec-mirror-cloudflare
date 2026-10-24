@@ -96,7 +96,7 @@ minimum1000
 
 actor\_id: optional string
 
-Identifies the exact Durable Object actor to profile. Must be specified together with namespace\_id. The actor must currently be active and running the requested Worker version.
+Identifies the exact Durable Object actor to profile. Must be specified together with namespace\_id. The actor must currently be active and running the requested version.
 
 [Link to this property](#)%20workers.beta.workers.versions%20%3E%20(method)%20profile%20%3E%20(params)%200%20%3E%20(param)%20actor_id%20%3E%20(schema)>)
 

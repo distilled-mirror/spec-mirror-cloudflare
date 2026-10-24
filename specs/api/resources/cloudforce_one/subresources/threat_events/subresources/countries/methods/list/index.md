@@ -1,5 +1,5 @@
 ---
-title: Retrieves countries information for all countries
+title: List countries
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Retrieves countries information for all countries
+# List countries
 
 GET/accounts/{account\_id}/cloudforce-one/events/countries
 
-Lists countries referenced in Cloudforce One threat intelligence data.
+Lists the countries used in threat intelligence data, such as attacker and target countries.
 
 ##### Security
 
@@ -76,7 +76,7 @@ success: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.countries%20%3E%20(model)%20country_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20success>)
 
-### Retrieves countries information for all countries
+### List countries
 
 HTTP
 

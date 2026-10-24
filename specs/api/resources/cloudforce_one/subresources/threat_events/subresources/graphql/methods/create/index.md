@@ -1,5 +1,5 @@
 ---
-title: GraphQL endpoint for event aggregation
+title: Run a GraphQL aggregation over events
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# GraphQL endpoint for event aggregation
+# Run a GraphQL aggregation over events
 
 POST/accounts/{account\_id}/cloudforce-one/events/graphql
 
-Execute GraphQL aggregations over threat events. Supports multi-dimensional group-bys, optional date range filtering, and multi-dataset aggregation.
+Runs a GraphQL aggregation query over events. Supports grouping by multiple fields, date range filters, and aggregation across datasets.
 
 ##### Security
 
@@ -56,7 +56,7 @@ errors: optional array of unknown
 
 [Link to this property](#)%20cloudforce_one.threat_events.graphql%20%3E%20(model)%20graphql_create_response%20%3E%20(schema)%20%3E%20(property)%20errors>)
 
-### GraphQL endpoint for event aggregation
+### Run a GraphQL aggregation over events
 
 HTTP
 

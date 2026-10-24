@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/threat-signals/articles/{article\_id}
 
-Retrieves a Threat Signals article with its summary, tags and indicator status.
+Retrieves a Threat Signals article with its summary, tags, indicator status and relevance to the account’s Priority Intelligence Requirements.
 
 ##### Security
 
@@ -74,7 +74,7 @@ message: string
 
 <summary>
 
-result: object {id, bullet\_points, content\_r2\_key, 16 more }
+result: object {id, bullet\_points, content\_r2\_key, 18 more }
 
 </summary>
 
@@ -175,6 +175,114 @@ read: boolean
 <a href="#">Link to this property</a>
 
 read\_at: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+relevance: object {band, pir\_id, pirs }
+
+Beta. The article’s relevance to the account’s active Priority Intelligence Requirements. Null when the article has not been scored against them, including when the account has no active PIRs, or has not been scored against the requested pir\_id.
+
+</summary>
+
+<details>
+
+<summary>
+
+band: "low"or "medium"or "high"
+
+Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+pir\_id: string
+
+Beta. The pir\_id requested from the article list, or otherwise the account’s most relevant active PIR for this article.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pirs: array of object {band, pir\_id }
+
+Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
+
+</summary>
+
+<details>
+
+<summary>
+
+band: "low"or "medium"or "high"
+
+Beta. How relevant the article is to a Priority Intelligence Requirement: high, medium, or low. Cloudflare may change the scores behind each band as relevance scoring is calibrated.
+
+</summary>
+
+One of the following:
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+pir\_id: string
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+severity: number
+
+Intrinsic article severity from 1 (informational) to 5 (critical). Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
+
+maximum5
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -305,6 +413,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
+    "relevance": {
+      "band": "low",
+      "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "pirs": [
+        {
+          "band": "low",
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        }
+      ]
+    },
+    "severity": 1,
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",
@@ -354,6 +473,17 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
+    "relevance": {
+      "band": "low",
+      "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+      "pirs": [
+        {
+          "band": "low",
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+        }
+      ]
+    },
+    "severity": 1,
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",

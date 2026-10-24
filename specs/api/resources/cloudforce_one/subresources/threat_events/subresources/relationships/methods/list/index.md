@@ -1,5 +1,5 @@
 ---
-title: Filter and list events related to specific event
+title: List related events (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,13 +20,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Filter and list events related to specific event
+# List related events (legacy)
 
 Deprecated: Use GET /events/by-id/{event\_id}/relationships before 2026-11-28.
 
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/relationships
 
-Deprecated; use GET /events/by-id/{event\_id}/relationships. Available through 2026-11-28.
+Legacy. Use `threat-intel events relationships list` (`GET /events/by-id/{event_id}/relationships`) instead. Available through 2026-11-28.
 
 ##### Security
 
@@ -258,7 +258,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.relationships%20%3E%20(model)%20relationship_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20releasabilityId>)
 
-### Filter and list events related to specific event
+### List related events (legacy)
 
 HTTP
 

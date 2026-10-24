@@ -18,29 +18,29 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Threat Events
 
-##### [Filter and list events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/list)
+##### [List events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events
 
-##### [Reads an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/get)
+##### [Get an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/get)
 
 Deprecated
 
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}
 
-##### [Creates a new event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/create)
+##### [Create an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/create
 
-##### [Updates an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/edit)
+##### [Update an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}
 
-##### [Creates bulk events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create)
+##### [Create events in bulk](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/create/bulk
 
-##### [Creates bulk DOS event with relationships and indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships)
+##### [Create events with relationships in bulk (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/methods/bulk_create_relationships)
 
 Deprecated
 
@@ -732,7 +732,7 @@ Index of the event that caused the error
 
 #### Threat EventsAggregate
 
-##### [Aggregate events by single or multiple columns with optional date filtering](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/aggregate/methods/list)
+##### [Aggregate events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/aggregate/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/aggregate
 
@@ -812,7 +812,7 @@ startDate: optional string
 
 #### Threat EventsGraphql
 
-##### [GraphQL endpoint for event aggregation](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/graphql/methods/create)
+##### [Run a GraphQL aggregation over events](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/graphql/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/graphql
 
@@ -920,7 +920,7 @@ nodes: array of map\[unknown]
 
 #### Threat EventsQueries
 
-##### [List all saved event queries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/list)
+##### [List saved event queries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries
 
@@ -928,7 +928,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/queries
 
 POST/accounts/{account\_id}/cloudforce-one/events/queries/create
 
-##### [Read a saved event query](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/get)
+##### [Get a saved event query](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/queries/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
@@ -1304,7 +1304,7 @@ Deprecated: saved-query alerting and rules were removed. Always null.
 
 #### Threat EventsRelationships
 
-##### [Filter and list events related to specific event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relationships/methods/list)
+##### [List related events (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relationships/methods/list)
 
 Deprecated
 
@@ -1442,7 +1442,7 @@ releasabilityId: optional string
 
 #### Threat EventsIndicators
 
-##### [Lists indicators across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/methods/list)
+##### [List indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/indicators
 
@@ -2046,7 +2046,7 @@ Total count in the aggregation: indicator rows when measure=indicators, or linke
 
 #### Threat EventsIndicatorsTypes
 
-##### [Lists indicator types across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/types/methods/list)
+##### [List indicator types](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/types/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/indicator-types
 
@@ -2086,13 +2086,13 @@ type: string
 
 #### Threat EventsIndicatorsBy Dataset
 
-##### [Lists indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/methods/list)
+##### [List indicators in a dataset (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/methods/list)
 
 Deprecated
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators
 
-##### [Reads an indicator](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/methods/get)
+##### [Get an indicator](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators/{indicator\_id}
 
@@ -2398,7 +2398,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 #### Threat EventsIndicatorsBy DatasetTags
 
-##### [List mirrored tags for an indicator dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/subresources/tags/methods/list)
+##### [List tags on a dataset's indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/indicators/subresources/by_dataset/subresources/tags/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators/tags
 
@@ -2412,7 +2412,7 @@ Array of mirror tag rows
 
 #### Threat EventsAttackers
 
-##### [Lists attackers across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/attackers/methods/list)
+##### [List attackers](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/attackers/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/attackers
 
@@ -2452,27 +2452,27 @@ type: string
 
 #### Threat EventsCategories
 
-##### [Lists categories across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/list)
+##### [List event categories used in datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories
 
-##### [Reads a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
+##### [Get an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/get)
 
 Deprecated
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-##### [Creates a new category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
+##### [Create an event category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/categories/create
 
-##### [Updates a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
+##### [Update an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/edit)
 
 Deprecated
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/categories/{category\_id}
 
-##### [Deletes a category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
+##### [Delete an event category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/methods/delete)
 
 Deprecated
 
@@ -2642,7 +2642,7 @@ uuid: string
 
 #### Threat EventsCategoriesCatalog
 
-##### [Lists categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/subresources/catalog/methods/list)
+##### [List all event categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/categories/subresources/catalog/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 
@@ -2686,7 +2686,7 @@ shortname: optional string
 
 #### Threat EventsCountries
 
-##### [Retrieves countries information for all countries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/countries/methods/list)
+##### [List countries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/countries/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/countries
 
@@ -2736,19 +2736,19 @@ success: string
 
 #### Threat EventsDatasets
 
-##### [Lists all datasets in an account](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list)
+##### [List datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset
 
-##### [Reads a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/get)
+##### [Get a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-##### [Creates a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/create)
+##### [Create a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/dataset/create
 
-##### [Updates an existing dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/edit)
+##### [Update a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
@@ -2756,7 +2756,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-##### [Reads raw data for an event by UUID](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
+##### [Get raw data for an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
 
 Deprecated
 
@@ -2968,7 +2968,7 @@ tlp: string
 
 #### Threat EventsDatasetsEvents
 
-##### [Reads an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/subresources/events/methods/get)
+##### [Get an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/subresources/events/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{event\_id}
 
@@ -3104,11 +3104,11 @@ releasabilityId: optional string
 
 #### Threat EventsRaw
 
-##### [Reads data for a raw event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/raw/methods/get)
+##### [Get raw event data by raw ID (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/raw/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
-##### [Updates a raw event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/raw/methods/edit)
+##### [Update raw event data by raw ID (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/raw/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
@@ -3172,7 +3172,7 @@ data: unknown
 
 #### Threat EventsRelate
 
-##### [Removes an event reference](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relate/methods/delete)
+##### [Remove event references (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/relate/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/relate/{event\_id}
 
@@ -3196,19 +3196,19 @@ success: boolean
 
 #### Threat EventsTags
 
-##### [Lists all tags (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/list)
+##### [List tags](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags
 
-##### [Creates a new tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/create)
+##### [Create a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/create
 
-##### [Updates a tag (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/edit)
+##### [Update a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
-##### [Deletes a tag (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/delete)
+##### [Delete a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
@@ -5870,21 +5870,21 @@ uuid: string
 
 #### Threat EventsTagsCategories
 
-##### [Lists all tag categories (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
+##### [List tag categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/categories
 
-##### [Creates a new tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
+##### [Create a tag category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/categories/create
 
-##### [Updates a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
+##### [Update a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
 
 Deprecated
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-##### [Deletes a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
+##### [Delete a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
 
 Deprecated
 
@@ -6624,7 +6624,7 @@ uuid: string
 
 #### Threat EventsTagsIndicators
 
-##### [List indicators related to a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/indicators/methods/list)
+##### [List a tag's indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/indicators/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
@@ -6946,11 +6946,11 @@ totalPages: number
 
 #### Threat EventsEvent Tags
 
-##### [Adds a tag to an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/create)
+##### [Add tags to an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}/create
 
-##### [Removes a tag from an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/delete)
+##### [Remove tags from an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/event_tags/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/event\_tag/{event\_id}
 
@@ -6990,7 +6990,7 @@ success: boolean
 
 #### Threat EventsTarget Industries
 
-##### [Lists target industries across multiple datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/methods/list)
+##### [List target industries used in datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries
 
@@ -7030,7 +7030,7 @@ type: string
 
 #### Threat EventsTarget IndustriesBy Dataset
 
-##### [Lists all target industries for a specific dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/by_dataset/methods/list)
+##### [List target industries in a dataset (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/by_dataset/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/targetIndustries
 
@@ -7070,7 +7070,7 @@ type: string
 
 #### Threat EventsTarget IndustriesCatalog
 
-##### [Lists all target industries from industry map catalog](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/catalog/methods/list)
+##### [List all target industries](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/target_industries/subresources/catalog/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/targetIndustries/catalog
 

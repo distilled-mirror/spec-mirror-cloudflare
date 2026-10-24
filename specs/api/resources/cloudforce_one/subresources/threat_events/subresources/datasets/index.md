@@ -20,19 +20,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Datasets
 
-##### [Lists all datasets in an account](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list)
+##### [List datasets](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset
 
-##### [Reads a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/get)
+##### [Get a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-##### [Creates a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/create)
+##### [Create a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/dataset/create
 
-##### [Updates an existing dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/edit)
+##### [Update a dataset](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
@@ -40,7 +40,7 @@ PATCH/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-##### [Reads raw data for an event by UUID](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
+##### [Get raw data for an event (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/raw)
 
 Deprecated
 
@@ -252,7 +252,7 @@ tlp: string
 
 #### DatasetsEvents
 
-##### [Reads an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/subresources/events/methods/get)
+##### [Get an event](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/subresources/events/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{event\_id}
 

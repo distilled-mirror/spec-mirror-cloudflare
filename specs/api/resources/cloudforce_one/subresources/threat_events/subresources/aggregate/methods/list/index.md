@@ -1,5 +1,5 @@
 ---
-title: Aggregate events by single or multiple columns with optional date filtering
+title: Aggregate events
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Aggregate events by single or multiple columns with optional date filtering
+# Aggregate events
 
 GET/accounts/{account\_id}/cloudforce-one/events/aggregate
 
-Aggregate threat events by one or more columns (e.g., attacker, targetIndustry) with optional date filtering and daily grouping. Supports multi-dimensional aggregation for cross-analysis.
+Counts events grouped by one or more columns, such as `attacker` or `targetIndustry`. Optionally filter by date range and group the counts by day.
 
 ##### Security
 
@@ -50,7 +50,7 @@ Account ID.
 
 aggregateBy: string
 
-Column(s) to aggregate by - single column or comma-separated list (e.g., ‘attacker’, ‘targetIndustry’, ‘attacker,targetIndustry’)
+Column(s) to aggregate by - single column or comma-separated list (e.g., ‘attacker’, ‘targetIndustry’, ‘attacker,targetIndustry’). With `tags`, an event counts once for each of its tags, in the bucket counts and in `total`, and events without tags count as `Unknown`; `tags` is not supported for analytics datasets.
 
 [Link to this property](#)%20cloudforce_one.threat_events.aggregate%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20aggregateBy%20%3E%20(schema)>)
 
@@ -146,7 +146,7 @@ startDate: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.aggregate%20%3E%20(model)%20aggregate_list_response%20%3E%20(schema)%20%3E%20(property)%20dateRange>)
 
-### Aggregate events by single or multiple columns with optional date filtering
+### Aggregate events
 
 HTTP
 

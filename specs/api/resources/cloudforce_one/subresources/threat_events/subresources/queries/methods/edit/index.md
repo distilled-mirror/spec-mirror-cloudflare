@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/queries/{query\_id}
 
-Update an existing saved event query by its ID
+Updates the given fields of a saved event query.
 
 ##### Security
 

@@ -1,5 +1,5 @@
 ---
-title: Reads an indicator
+title: Get an indicator
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads an indicator
+# Get an indicator
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators/{indicator\_id}
 
-Retrieves a specific indicator by its UUID.
+Returns an indicator by its UUID.
 
 ##### Security
 
@@ -162,7 +162,7 @@ Traffic Light Protocol designation. UPPERCASE. Possible values: CLEAR, GREEN, AM
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators.by_dataset%20%3E%20(model)%20by_dataset_get_response%20%3E%20(schema)%20%3E%20(property)%20tlp>)
 
-### Reads an indicator
+### Get an indicator
 
 HTTP
 

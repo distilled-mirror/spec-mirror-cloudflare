@@ -1,5 +1,5 @@
 ---
-title: Creates a new category
+title: Create an event category
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates a new category
+# Create an event category
 
 POST/accounts/{account\_id}/cloudforce-one/events/categories/create
 
-Creates a new threat event category in Cloudforce One for organizing and classifying threat events.
+Creates an event category for classifying events. `name` and `killChain` are required.
 
 ##### Security
 
@@ -94,7 +94,7 @@ shortname: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.categories%20%3E%20(model)%20category_create_response%20%3E%20(schema)%20%3E%20(property)%20shortname>)
 
-### Creates a new category
+### Create an event category
 
 HTTP
 

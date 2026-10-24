@@ -50,7 +50,7 @@ object {after, event, flag\_key }
 
 <summary>
 
-after: object {default\_variation, enabled, key, 6 more }
+after: object {default\_variation, enabled, key, 7 more }
 
 </summary>
 
@@ -104,7 +104,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -224,7 +224,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition object {clauses, logical\_operator }
 
 </summary>
 
@@ -242,7 +242,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -362,7 +362,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition1 object {clauses, logical\_operator }
 
 </summary>
 
@@ -380,7 +380,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -500,7 +500,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition2 object {clauses, logical\_operator }
 
 </summary>
 
@@ -518,7 +518,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -638,7 +638,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition3 object {clauses, logical\_operator }
 
 </summary>
 
@@ -656,7 +656,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -776,7 +776,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition4 object {clauses, logical\_operator }
 
 </summary>
 
@@ -784,17 +784,7 @@ object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object {attribute, operator, value }
+clauses: array of object {attribute, operator, value }
 
 </summary>
 
@@ -899,78 +889,6 @@ map\[unknown]
 <a href="#">Link to this property</a>
 
 array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object {clauses, logical\_operator }
-
-</summary>
-
-<details>
-
-<summary>
-
-clauses: array of stringor numberor booleanor 2 more
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-map\[unknown]
-
-<a href="#">Link to this property</a>
-
-array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-logical\_operator: "AND"or "OR"
-
-</summary>
-
-One of the following:
-
-"AND"
-
-<a href="#">Link to this property</a>
-
-"OR"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -1259,6 +1177,34 @@ description: optional string
 Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+metadata: optional map\[booleanor stringor number]
+
+Key-value metadata associated with the flag. Returned only when the flag has metadata.
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1298,7 +1244,7 @@ object {after, event, flag\_key }
 
 <summary>
 
-after: object {default\_variation, enabled, key, 6 more }
+after: object {default\_variation, enabled, key, 7 more }
 
 </summary>
 
@@ -1352,7 +1298,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -1472,7 +1418,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition object {clauses, logical\_operator }
 
 </summary>
 
@@ -1490,7 +1436,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -1610,7 +1556,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition1 object {clauses, logical\_operator }
 
 </summary>
 
@@ -1628,7 +1574,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -1748,7 +1694,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition2 object {clauses, logical\_operator }
 
 </summary>
 
@@ -1766,7 +1712,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -1886,7 +1832,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition3 object {clauses, logical\_operator }
 
 </summary>
 
@@ -1904,7 +1850,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -2024,7 +1970,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition4 object {clauses, logical\_operator }
 
 </summary>
 
@@ -2032,17 +1978,7 @@ object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object {attribute, operator, value }
+clauses: array of object {attribute, operator, value }
 
 </summary>
 
@@ -2147,78 +2083,6 @@ map\[unknown]
 <a href="#">Link to this property</a>
 
 array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object {clauses, logical\_operator }
-
-</summary>
-
-<details>
-
-<summary>
-
-clauses: array of stringor numberor booleanor 2 more
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-map\[unknown]
-
-<a href="#">Link to this property</a>
-
-array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-logical\_operator: "AND"or "OR"
-
-</summary>
-
-One of the following:
-
-"AND"
-
-<a href="#">Link to this property</a>
-
-"OR"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -2507,6 +2371,34 @@ description: optional string
 Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+metadata: optional map\[booleanor stringor number]
+
+Key-value metadata associated with the flag. Returned only when the flag has metadata.
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -2546,7 +2438,7 @@ object {after, diff, event, flag\_key }
 
 <summary>
 
-after: object {default\_variation, enabled, key, 6 more }
+after: object {default\_variation, enabled, key, 7 more }
 
 </summary>
 
@@ -2600,7 +2492,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -2720,7 +2612,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition object {clauses, logical\_operator }
 
 </summary>
 
@@ -2738,7 +2630,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -2858,7 +2750,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition1 object {clauses, logical\_operator }
 
 </summary>
 
@@ -2876,7 +2768,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -2996,7 +2888,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition2 object {clauses, logical\_operator }
 
 </summary>
 
@@ -3014,7 +2906,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -3134,7 +3026,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition3 object {clauses, logical\_operator }
 
 </summary>
 
@@ -3152,7 +3044,7 @@ One of the following:
 
 <summary>
 
-object {attribute, operator, value }
+FlagshipBaseCondition object {attribute, operator, value }
 
 </summary>
 
@@ -3272,7 +3164,7 @@ array of unknown
 
 <summary>
 
-object {clauses, logical\_operator }
+FlagshipLogicalCondition4 object {clauses, logical\_operator }
 
 </summary>
 
@@ -3280,17 +3172,7 @@ object {clauses, logical\_operator }
 
 <summary>
 
-clauses: array of object {attribute, operator, value } or object {clauses, logical\_operator }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-object {attribute, operator, value }
+clauses: array of object {attribute, operator, value }
 
 </summary>
 
@@ -3395,78 +3277,6 @@ map\[unknown]
 <a href="#">Link to this property</a>
 
 array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-object {clauses, logical\_operator }
-
-</summary>
-
-<details>
-
-<summary>
-
-clauses: array of stringor numberor booleanor 2 more
-
-</summary>
-
-One of the following:
-
-string
-
-<a href="#">Link to this property</a>
-
-number
-
-<a href="#">Link to this property</a>
-
-boolean
-
-<a href="#">Link to this property</a>
-
-map\[unknown]
-
-<a href="#">Link to this property</a>
-
-array of unknown
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-logical\_operator: "AND"or "OR"
-
-</summary>
-
-One of the following:
-
-"AND"
-
-<a href="#">Link to this property</a>
-
-"OR"
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -3755,6 +3565,34 @@ description: optional string
 Optional operator-facing description. It does not affect flag evaluation.
 
 maxLength512
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+metadata: optional map\[booleanor stringor number]
+
+Key-value metadata associated with the flag. Returned only when the flag has metadata.
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

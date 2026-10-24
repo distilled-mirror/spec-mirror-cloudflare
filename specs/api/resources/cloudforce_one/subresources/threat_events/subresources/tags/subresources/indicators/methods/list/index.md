@@ -1,5 +1,5 @@
 ---
-title: List indicators related to a tag
+title: List a tag's indicators
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List indicators related to a tag
+# List a tag's indicators
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
-Returns indicators associated with the provided tag UUID, with pagination. By default fans out across every intelligence (isAnalytics=false) indicator dataset the account can read; pass datasetIds to scope to dataset UUIDs or a scope value. Analytics datasets do not expose tag associations, so the analytics scope returns an empty result.
+Lists the indicators that carry a tag, with pagination. By default, every intelligence dataset you can read is searched; use `datasetIds` to limit the search to specific datasets or a scope value. Analytics datasets don’t store tag associations, so the `analytics` scope returns no results.
 
 ##### Security
 
@@ -352,7 +352,7 @@ totalPages: number
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(model)%20indicator_list_response%20%3E%20(schema)%20%3E%20(property)%20pagination>)
 
-### List indicators related to a tag
+### List a tag's indicators
 
 HTTP
 

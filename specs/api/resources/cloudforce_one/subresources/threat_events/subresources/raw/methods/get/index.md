@@ -1,5 +1,5 @@
 ---
-title: Reads data for a raw event
+title: Get raw event data by raw ID (legacy)
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads data for a raw event
+# Get raw event data by raw ID (legacy)
 
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}/raw/{raw\_id}
 
-Retrieves raw threat event data for a specific event in Cloudforce One.
+Legacy. Returns raw data stored under a `raw_id`, which new events don’t use. Use `threat-intel events raw get` (`GET /events/datasets/{dataset_id}/events/{event_id}/raw`) instead.
 
 ##### Security
 
@@ -84,7 +84,7 @@ tlp: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.raw%20%3E%20(model)%20raw_get_response%20%3E%20(schema)%20%3E%20(property)%20tlp>)
 
-### Reads data for a raw event
+### Get raw event data by raw ID (legacy)
 
 HTTP
 

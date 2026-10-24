@@ -1,5 +1,5 @@
 ---
-title: Creates bulk events
+title: Create events in bulk
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates bulk events
+# Create events in bulk
 
 POST/accounts/{account\_id}/cloudforce-one/events/create/bulk
 
-The `datasetId` parameter must be defined. To list existing datasets (and their IDs) in your account, use the [`List Datasets`](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/datasets/methods/list/) endpoint.
+Creates multiple events in one dataset. `datasetId` is required; to find dataset IDs, use `threat-intel datasets list`. Set `includeCreatedEvents` to return the UUIDs of the created events.
 
 ##### Security
 
@@ -270,7 +270,7 @@ Index of the event that caused the error
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_bulk_create_response%20%3E%20(schema)%20%3E%20(property)%20errors>)
 
-### Creates bulk events
+### Create events in bulk
 
 HTTP
 

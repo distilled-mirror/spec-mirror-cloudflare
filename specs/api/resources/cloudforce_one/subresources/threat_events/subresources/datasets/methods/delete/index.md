@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}
 
-Soft-deletes a dataset given a datasetId.
+Deletes a dataset. To see deleted datasets, use `threat-intel datasets list` with `includeDeleted`.
 
 ##### Security
 

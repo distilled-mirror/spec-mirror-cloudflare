@@ -20,19 +20,19 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Tags
 
-##### [Lists all tags (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/list)
+##### [List tags](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags
 
-##### [Creates a new tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/create)
+##### [Create a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/create
 
-##### [Updates a tag (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/edit)
+##### [Update a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/edit)
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
-##### [Deletes a tag (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/delete)
+##### [Delete a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/methods/delete)
 
 DELETE/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}
 
@@ -2694,21 +2694,21 @@ uuid: string
 
 #### TagsCategories
 
-##### [Lists all tag categories (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
+##### [List tag categories](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/categories
 
-##### [Creates a new tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
+##### [Create a tag category](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/events/tags/categories/create
 
-##### [Updates a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
+##### [Update a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/edit)
 
 Deprecated
 
 PATCH/accounts/{account\_id}/cloudforce-one/events/tags/categories/{category\_uuid}
 
-##### [Deletes a tag category (SoT)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
+##### [Delete a tag category (legacy)](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/categories/methods/delete)
 
 Deprecated
 
@@ -3448,7 +3448,7 @@ uuid: string
 
 #### TagsIndicators
 
-##### [List indicators related to a tag](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/indicators/methods/list)
+##### [List a tag's indicators](https://developers.cloudflare.com/api/resources/cloudforce_one/subresources/threat_events/subresources/tags/subresources/indicators/methods/list)
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 

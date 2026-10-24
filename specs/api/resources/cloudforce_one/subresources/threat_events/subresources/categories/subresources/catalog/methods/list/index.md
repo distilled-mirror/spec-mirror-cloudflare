@@ -1,5 +1,5 @@
 ---
-title: Lists categories
+title: List all event categories
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists categories
+# List all event categories
 
 GET/accounts/{account\_id}/cloudforce-one/events/categories/catalog
 
-Lists categories
+Lists every event category in the catalog, whether or not an event uses it. To list only the categories used in specific datasets, use `threat-intel events categories list`.
 
 ##### Security
 
@@ -74,7 +74,7 @@ shortname: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.categories.catalog%20%3E%20(model)%20catalog_list_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20shortname>)
 
-### Lists categories
+### List all event categories
 
 HTTP
 

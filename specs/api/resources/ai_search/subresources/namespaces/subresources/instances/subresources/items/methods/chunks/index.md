@@ -104,7 +104,7 @@ minimum0
 
 <summary>
 
-result: array of object {id, item, text, 2 more }
+result: array of object {id, item, text, 5 more }
 
 </summary>
 
@@ -141,6 +141,46 @@ text: string
 <a href="#">Link to this property</a>
 
 end\_byte: optional number
+
+<a href="#">Link to this property</a>
+
+media\_end\_ms: optional number
+
+Audio/video transcript chunks only: end, in milliseconds from the start of the media (whole seconds), of the last transcript section the chunk covers.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+media\_start\_ms: optional number
+
+Audio/video transcript chunks only: start, in milliseconds from the start of the media (whole seconds), of the transcript section the chunk begins in.
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source\_media\_type: optional "audio"or "video"
+
+Audio/video transcript chunks only: type of the source media file. Omitted for all other chunks.
+
+</summary>
+
+One of the following:
+
+"audio"
+
+<a href="#">Link to this property</a>
+
+"video"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -211,6 +251,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       },
       "text": "text",
       "end_byte": 0,
+      "media_end_ms": 0,
+      "media_start_ms": 0,
+      "source_media_type": "audio",
       "start_byte": 0
     }
   ],
@@ -242,6 +285,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       },
       "text": "text",
       "end_byte": 0,
+      "media_end_ms": 0,
+      "media_start_ms": 0,
+      "source_media_type": "audio",
       "start_byte": 0
     }
   ],

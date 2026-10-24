@@ -1,5 +1,5 @@
 ---
-title: Lists all tag categories (SoT)
+title: List tag categories
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists all tag categories (SoT)
+# List tag categories
 
 GET/accounts/{account\_id}/cloudforce-one/events/tags/categories
 
-Returns all Source-of-Truth tag categories for an account.
+Lists the account’s tag categories. Use `search` to filter them.
 
 ##### Security
 
@@ -290,7 +290,7 @@ updatedAt: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.categories%20%3E%20(model)%20category_list_response%20%3E%20(schema)%20%3E%20(property)%20categories>)
 
-### Lists all tag categories (SoT)
+### List tag categories
 
 HTTP
 

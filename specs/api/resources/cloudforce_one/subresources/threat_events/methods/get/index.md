@@ -1,5 +1,5 @@
 ---
-title: Reads an event
+title: Get an event (legacy)
 ---
 
 [Skip to content](#_top)
@@ -18,13 +18,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Reads an event
+# Get an event (legacy)
 
 Deprecated: Use datasets.events.get instead (GET /accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/events/{event\_id}).
 
 GET/accounts/{account\_id}/cloudforce-one/events/{event\_id}
 
-This Method is deprecated. Please use /events/dataset/:dataset\_id/events/:event\_id instead.
+Legacy. Use `threat-intel events get` (`GET /events/dataset/{dataset_id}/events/{event_id}`) instead.
 
 ##### Security
 
@@ -170,7 +170,7 @@ releasabilityId: optional string
 
 [Link to this property](#)%20cloudforce_one.threat_events%20%3E%20(model)%20threat_event_get_response%20%3E%20(schema)%20%3E%20(property)%20releasabilityId>)
 
-### Reads an event
+### Get an event (legacy)
 
 HTTP
 

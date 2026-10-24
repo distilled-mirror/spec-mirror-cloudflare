@@ -82,7 +82,7 @@ message: string
 
 <summary>
 
-result: object {id, bullet\_points, content\_r2\_key, 16 more }
+result: object {id, bullet\_points, content\_r2\_key, 17 more }
 
 </summary>
 
@@ -183,6 +183,16 @@ read: boolean
 <a href="#">Link to this property</a>
 
 read\_at: string
+
+<a href="#">Link to this property</a>
+
+severity: number
+
+Intrinsic article severity from 1 (informational) to 5 (critical). Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
+
+maximum5
+
+minimum1
 
 <a href="#">Link to this property</a>
 
@@ -318,6 +328,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
+    "severity": 1,
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",
@@ -367,6 +378,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
+    "severity": 1,
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",

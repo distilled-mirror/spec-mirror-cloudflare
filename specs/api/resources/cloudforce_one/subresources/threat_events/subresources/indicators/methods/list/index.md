@@ -1,5 +1,5 @@
 ---
-title: Lists indicators across multiple datasets
+title: List indicators
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists indicators across multiple datasets
+# List indicators
 
 GET/accounts/{account\_id}/cloudforce-one/events/indicators
 
-Retrieves indicators across specified datasets, ordered by createdAt descending then UUID, dataset ID, and shard ID ascending. Use one standalone datasetIds scope value: ‘all’/’\*’ or ‘operational’ for readable intelligence datasets (isAnalytics=false), or ‘analytics’ for readable analytics datasets (isAnalytics=true). If no datasetIds are provided, uses the default dataset.
+Lists indicators across datasets, newest first. `datasetIds` accepts dataset UUIDs or one scope value used alone: `all` (or `*`) and `operational` select the intelligence datasets you can read, and `analytics` selects the analytics datasets you can read. Without `datasetIds`, the default dataset is used.
 
 ##### Security
 
@@ -1004,7 +1004,7 @@ type: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators%20%3E%20(model)%20indicator_list_response%20%3E%20(schema)%20%3E%20(property)%20type>)
 
-### Lists indicators across multiple datasets
+### List indicators
 
 HTTP
 

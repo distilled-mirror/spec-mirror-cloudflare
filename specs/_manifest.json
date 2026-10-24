@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4075,
+  "count": 4073,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -165,14 +165,6 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/members/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/members/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/pay_bad_debt",
-      "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/pay_bad_debt/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/pay_bad_debt/methods/create",
-      "markdown": "https://developers.cloudflare.com/api/resources/accounts/subresources/pay_bad_debt/methods/create/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/accounts/subresources/pay_invoice",
@@ -16328,6 +16320,8 @@
   ],
   "missing": [],
   "unlisted": [
+    "api/resources/accounts/subresources/pay_bad_debt/index.md",
+    "api/resources/accounts/subresources/pay_bad_debt/methods/create/index.md",
     "api/resources/addressing/subresources/address_maps/subresources/zones/index.md",
     "api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md",
     "api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md",

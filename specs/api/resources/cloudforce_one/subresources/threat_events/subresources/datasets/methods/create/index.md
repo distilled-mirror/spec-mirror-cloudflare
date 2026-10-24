@@ -1,5 +1,5 @@
 ---
-title: Creates a dataset
+title: Create a dataset
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Creates a dataset
+# Create a dataset
 
 POST/accounts/{account\_id}/cloudforce-one/events/dataset/create
 
-Creates a new threat event dataset in Cloudforce One for organizing related threat events.
+Creates a dataset for grouping events. Set `isPublic` to true to let anyone search it; otherwise only the account can.
 
 ##### Security
 
@@ -80,7 +80,7 @@ uuid: string
 
 [Link to this property](#)%20cloudforce_one.threat_events.datasets%20%3E%20(model)%20dataset_create_response%20%3E%20(schema)%20%3E%20(property)%20uuid>)
 
-### Creates a dataset
+### Create a dataset
 
 HTTP
 

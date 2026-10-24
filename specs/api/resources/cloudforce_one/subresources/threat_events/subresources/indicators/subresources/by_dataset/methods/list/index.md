@@ -1,5 +1,5 @@
 ---
-title: Lists indicators
+title: List indicators in a dataset (legacy)
 ---
 
 [Skip to content](#_top)
@@ -22,13 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Lists indicators
+# List indicators in a dataset (legacy)
 
 Deprecated: Use indicators.list instead (GET /accounts/{account\_id}/cloudforce-one/events/indicators).
 
 GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/indicators
 
-This method is deprecated. Please use /events/indicators to retrieve a paginated list of indicators.
+Legacy. Use `threat-intel indicators list` (`GET /events/indicators`) instead. It supports multiple datasets and cursor pagination.
 
 ##### Security
 
@@ -260,7 +260,7 @@ totalPages: number
 
 [Link to this property](#)%20cloudforce_one.threat_events.indicators.by_dataset%20%3E%20(model)%20by_dataset_list_response%20%3E%20(schema)%20%3E%20(property)%20pagination>)
 
-### Lists indicators
+### List indicators in a dataset (legacy)
 
 HTTP
 
