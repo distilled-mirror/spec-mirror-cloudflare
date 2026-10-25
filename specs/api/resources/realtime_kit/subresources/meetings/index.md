@@ -5382,7 +5382,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object {id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -5430,9 +5430,25 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 name: optional string
 
 Name of the participant.
+
+<a href="#">Link to this property</a>
+
+not\_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -5552,7 +5568,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object {id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -5600,9 +5616,25 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 name: optional string
 
 Name of the participant.
+
+<a href="#">Link to this property</a>
+
+not\_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -5696,7 +5728,7 @@ MeetingRefreshParticipantTokenResponse object {data, success }
 
 <summary>
 
-data: object {token }
+data: object {token, expires\_on, not\_before }
 
 Data returned by the operation
 
@@ -5705,6 +5737,22 @@ Data returned by the operation
 token: string
 
 Regenerated participant’s authentication token.
+
+<a href="#">Link to this property</a>
+
+expires\_on: string
+
+Time at which the token stops being valid, in UTC.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+not\_before: string
+
+Time from which the token is valid, in UTC.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

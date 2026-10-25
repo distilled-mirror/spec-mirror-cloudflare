@@ -72,6 +72,36 @@ Name of the preset to apply to this participant.
 
 [Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20add_participant%20%3E%20(params)%200%20%3E%20(param)%20preset_name%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+token: optional object {expires\_on, not\_before }
+
+Validity window of the participant authentication token. The window is \[not\_before, expires\_on) and cannot be longer than 100 days. Defaults to a token valid from now for 100 days.
+
+</summary>
+
+expires\_on: optional string
+
+RFC 3339 timestamp with a timezone at or after which the token cannot be used. Must be in the future. Defaults to not\_before plus 100 days.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+not\_before: optional string
+
+RFC 3339 timestamp with a timezone before which the token cannot be used. Defaults to the current time. May be in the past.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20add_participant%20%3E%20(params)%200%20%3E%20(param)%20token%20%3E%20(schema)>)
+
 name: optional string
 
 (Optional) Name of the participant.
@@ -98,7 +128,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object {id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -146,9 +176,25 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 name: optional string
 
 Name of the participant.
+
+<a href="#">Link to this property</a>
+
+not\_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -194,7 +240,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
     "custom_participant_id": "custom_participant_id",
     "preset_name": "preset_name",
     "updated_at": "2019-12-27T18:11:19.117Z",
+    "expires_on": "2026-10-01T11:00:00Z",
     "name": "name",
+    "not_before": "2026-10-01T09:00:00Z",
     "picture": "https://example.com"
   }
 }
@@ -214,7 +262,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
     "custom_participant_id": "custom_participant_id",
     "preset_name": "preset_name",
     "updated_at": "2019-12-27T18:11:19.117Z",
+    "expires_on": "2026-10-01T11:00:00Z",
     "name": "name",
+    "not_before": "2026-10-01T09:00:00Z",
     "picture": "https://example.com"
   }
 }

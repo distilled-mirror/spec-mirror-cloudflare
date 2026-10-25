@@ -62,13 +62,31 @@ participant\_id: string
 
 [Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20refresh_participant_token%20%3E%20(params)%20default%20%3E%20(param)%20participant_id%20%3E%20(schema)>)
 
+##### Body ParametersJSONExpand Collapse
+
+expires\_on: optional string
+
+RFC 3339 timestamp with a timezone at or after which the token cannot be used. Must be in the future. Defaults to not\_before plus 100 days.
+
+formatdate-time
+
+[Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20refresh_participant_token%20%3E%20(params)%200%20%3E%20(param)%20expires_on%20%3E%20(schema)>)
+
+not\_before: optional string
+
+RFC 3339 timestamp with a timezone before which the token cannot be used. Defaults to the current time. May be in the past.
+
+formatdate-time
+
+[Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20refresh_participant_token%20%3E%20(params)%200%20%3E%20(param)%20not_before%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
 
 <summary>
 
-data: object {token }
+data: object {token, expires\_on, not\_before }
 
 Data returned by the operation
 
@@ -77,6 +95,22 @@ Data returned by the operation
 token: string
 
 Regenerated participant’s authentication token.
+
+<a href="#">Link to this property</a>
+
+expires\_on: string
+
+Time at which the token stops being valid, in UTC.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+not\_before: string
+
+Time from which the token is valid, in UTC.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -107,7 +141,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "token": "token"
+    "token": "token",
+    "expires_on": "2026-10-01T11:00:00Z",
+    "not_before": "2026-10-01T09:00:00Z"
   },
   "success": true
 }
@@ -120,7 +156,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "token": "token"
+    "token": "token",
+    "expires_on": "2026-10-01T11:00:00Z",
+    "not_before": "2026-10-01T09:00:00Z"
   },
   "success": true
 }

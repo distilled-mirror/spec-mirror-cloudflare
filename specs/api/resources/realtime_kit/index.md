@@ -5496,7 +5496,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, token, created_at, 5 more }
+data: optional object { id, token, created_at, 7 more }
 
 Represents a participant.
 
@@ -5544,9 +5544,25 @@ formatdate-time
 
 [Link to this property](#)
 
+expires_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+[Link to this property](#)
+
 name: optional string
 
 Name of the participant.
+
+[Link to this property](#)
+
+not_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -5666,7 +5682,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, token, created_at, 5 more }
+data: optional object { id, token, created_at, 7 more }
 
 Represents a participant.
 
@@ -5714,9 +5730,25 @@ formatdate-time
 
 [Link to this property](#)
 
+expires_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+[Link to this property](#)
+
 name: optional string
 
 Name of the participant.
+
+[Link to this property](#)
+
+not_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 [Link to this property](#)
 
@@ -5810,7 +5842,7 @@ MeetingRefreshParticipantTokenResponse object { data, success }
 
 <summary>
 
-data: object { token }
+data: object { token, expires_on, not_before }
 
 Data returned by the operation
 
@@ -5819,6 +5851,22 @@ Data returned by the operation
 token: string
 
 Regenerated participant’s authentication token.
+
+[Link to this property](#)
+
+expires_on: string
+
+Time at which the token stops being valid, in UTC.
+
+formatdate-time
+
+[Link to this property](#)
+
+not_before: string
+
+Time from which the token is valid, in UTC.
+
+formatdate-time
 
 [Link to this property](#)
 

@@ -96,7 +96,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, token, created\_at, 5 more }
+data: optional object {id, token, created\_at, 7 more }
 
 Represents a participant.
 
@@ -144,9 +144,25 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+expires\_on: optional string
+
+Time at which the token stops being valid, in UTC. Returned when adding a participant.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
 name: optional string
 
 Name of the participant.
+
+<a href="#">Link to this property</a>
+
+not\_before: optional string
+
+Time from which the token is valid, in UTC. Returned when adding a participant.
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -190,7 +206,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
     "custom_participant_id": "custom_participant_id",
     "preset_name": "preset_name",
     "updated_at": "2019-12-27T18:11:19.117Z",
+    "expires_on": "2026-10-01T11:00:00Z",
     "name": "name",
+    "not_before": "2026-10-01T09:00:00Z",
     "picture": "https://example.com"
   }
 }
@@ -210,7 +228,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
     "custom_participant_id": "custom_participant_id",
     "preset_name": "preset_name",
     "updated_at": "2019-12-27T18:11:19.117Z",
+    "expires_on": "2026-10-01T11:00:00Z",
     "name": "name",
+    "not_before": "2026-10-01T09:00:00Z",
     "picture": "https://example.com"
   }
 }
