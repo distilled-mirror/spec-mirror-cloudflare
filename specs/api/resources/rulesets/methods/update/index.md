@@ -8506,13 +8506,33 @@ minLength1
 
 <summary>
 
-result: object {id, kind, last\_updated, 5 more } or unknown
+result: unknownor array of unknownor stringor 4 more
 
 A result.
 
 </summary>
 
 One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -12001,56 +12021,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": {
-    "id": "2f2feab2026849078ba485f918791bdc",
-    "kind": "root",
-    "last_updated": "2000-01-01T00:00:00Z",
-    "name": "My ruleset",
-    "phase": "http_request_firewall_custom",
-    "rules": [
-      {
-        "last_updated": "2000-01-01T00:00:00Z",
-        "version": "1",
-        "id": "id",
-        "action": "action",
-        "action_parameters": {
-          "response": {
-            "content": "{\n  \"success\": false,\n  \"error\": \"you have been blocked\"\n}",
-            "content_type": "application/json",
-            "status_code": 400
-          }
-        },
-        "categories": [
-          "directory-traversal"
-        ],
-        "description": "Block the request.",
-        "enabled": true,
-        "exposed_credential_check": {
-          "password_expression": "url_decode(http.request.body.form[\\\"password\\\"][0])",
-          "username_expression": "url_decode(http.request.body.form[\\\"username\\\"][0])"
-        },
-        "expression": "expression",
-        "logging": {
-          "enabled": true
-        },
-        "ratelimit": {
-          "characteristics": [
-            "cf.colo.id"
-          ],
-          "period": 60,
-          "counting_expression": "http.request.body.raw eq \"abcd\"",
-          "mitigation_timeout": 600,
-          "requests_per_period": 1000,
-          "requests_to_origin": true,
-          "score_per_period": 400,
-          "score_response_header_name": "my-score"
-        },
-        "ref": "ref"
-      }
-    ],
-    "version": "1",
-    "description": "A description for my ruleset."
-  },
+  "result": {},
   "success": true
 }
 ```
@@ -12079,56 +12050,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": {
-    "id": "2f2feab2026849078ba485f918791bdc",
-    "kind": "root",
-    "last_updated": "2000-01-01T00:00:00Z",
-    "name": "My ruleset",
-    "phase": "http_request_firewall_custom",
-    "rules": [
-      {
-        "last_updated": "2000-01-01T00:00:00Z",
-        "version": "1",
-        "id": "id",
-        "action": "action",
-        "action_parameters": {
-          "response": {
-            "content": "{\n  \"success\": false,\n  \"error\": \"you have been blocked\"\n}",
-            "content_type": "application/json",
-            "status_code": 400
-          }
-        },
-        "categories": [
-          "directory-traversal"
-        ],
-        "description": "Block the request.",
-        "enabled": true,
-        "exposed_credential_check": {
-          "password_expression": "url_decode(http.request.body.form[\\\"password\\\"][0])",
-          "username_expression": "url_decode(http.request.body.form[\\\"username\\\"][0])"
-        },
-        "expression": "expression",
-        "logging": {
-          "enabled": true
-        },
-        "ratelimit": {
-          "characteristics": [
-            "cf.colo.id"
-          ],
-          "period": 60,
-          "counting_expression": "http.request.body.raw eq \"abcd\"",
-          "mitigation_timeout": 600,
-          "requests_per_period": 1000,
-          "requests_to_origin": true,
-          "score_per_period": 400,
-          "score_response_header_name": "my-score"
-        },
-        "ref": "ref"
-      }
-    ],
-    "version": "1",
-    "description": "A description for my ruleset."
-  },
+  "result": {},
   "success": true
 }
 ```

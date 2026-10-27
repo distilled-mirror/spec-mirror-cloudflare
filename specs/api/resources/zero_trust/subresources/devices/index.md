@@ -438,7 +438,7 @@ POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 <summary>
 
-DeviceListResponse object {id, active\_registrations, created\_at, 17 more }
+DeviceListResponse object {id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -619,6 +619,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+<a href="#">Link to this property</a>
+
+multiuser: optional boolean
+
+True if this device is in <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/">multi-user mode</a>.
 
 <a href="#">Link to this property</a>
 
@@ -654,7 +660,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object {id, active\_registrations, created\_at, 17 more }
+DeviceGetResponse object {id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -835,6 +841,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+<a href="#">Link to this property</a>
+
+multiuser: optional boolean
+
+True if this device is in <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/">multi-user mode</a>.
 
 <a href="#">Link to this property</a>
 
@@ -3256,7 +3268,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -3283,6 +3295,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+allow\_manual\_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -3890,7 +3908,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -3917,6 +3935,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+allow\_manual\_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -4322,7 +4346,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -4349,6 +4373,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+allow\_manual\_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 <a href="#">Link to this property</a>
 

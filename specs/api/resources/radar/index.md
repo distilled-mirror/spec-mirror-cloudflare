@@ -8868,9 +8868,15 @@ endDate: string
 
 <summary>
 
-entities: array of object { entityName, entityType, entityValue }
+entities: array of object { entityLocation, entityName, entityType, entityValue }
 
 </summary>
+
+entityLocation: string
+
+Alpha-2 code of the country the entity belongs to (GEOLOCATION and AS entities only).
+
+[Link to this property](#)
 
 entityName: string
 
@@ -9080,9 +9086,15 @@ formatdate-time
 
 <summary>
 
-entities: array of object { entityName, entityType, entityValue }
+entities: array of object { entityLocation, entityName, entityType, entityValue }
 
 </summary>
+
+entityLocation: string
+
+Alpha-2 code of the country the entity belongs to (GEOLOCATION and AS entities only).
+
+[Link to this property](#)
 
 entityName: string
 
@@ -89296,7 +89308,7 @@ TrafficAnomalyGetResponse object { trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object { asnDetails, endDate, locationDetails, 6 more }
+trafficAnomalies: array of object { asnDetails, endDate, locationDetails, 7 more }
 
 </summary>
 
@@ -89386,6 +89398,12 @@ origin: string
 
 [Link to this property](#)
 
+outageId: string
+
+ID of the published outage this anomaly was confirmed as, if any.
+
+[Link to this property](#)
+
 startDate: string
 
 formatdate-time
@@ -89393,6 +89411,8 @@ formatdate-time
 [Link to this property](#)
 
 status: string
+
+Verification status: UNVERIFIED (automatically detected, not yet validated by Radar), TP (verified by Radar) or VERIFIED (verified by Radar and a third-party source).
 
 [Link to this property](#)
 

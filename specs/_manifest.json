@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4073,
+  "count": 4084,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -8139,6 +8139,22 @@
       "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/event_notifications/methods/update/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs",
+      "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/jobs/methods/list/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle",
       "markdown": "https://developers.cloudflare.com/api/resources/r2/subresources/buckets/subresources/lifecycle/index.md"
     },
@@ -13767,6 +13783,18 @@
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/list/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/content",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/content/index.md"
     },
@@ -13795,12 +13823,28 @@
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/delete/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/get",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/validate",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/validate/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/subresources/remediation_types",
@@ -16305,6 +16349,11 @@
     "https://developers.cloudflare.com/api/resources/radar/subresources/http",
     "https://developers.cloudflare.com/api/resources/realtime_kit",
     "https://developers.cloudflare.com/api/resources/rulesets",
+    "https://developers.cloudflare.com/api/resources/rulesets/methods/get",
+    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases",
+    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases/methods/get",
+    "https://developers.cloudflare.com/api/resources/rulesets/subresources/phases/subresources/versions/methods/get",
+    "https://developers.cloudflare.com/api/resources/rulesets/subresources/versions/methods/get",
     "https://developers.cloudflare.com/api/resources/workers",
     "https://developers.cloudflare.com/api/resources/zero_trust",
     "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access",

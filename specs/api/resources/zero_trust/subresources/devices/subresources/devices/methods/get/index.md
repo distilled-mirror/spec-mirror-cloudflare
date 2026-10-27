@@ -98,7 +98,7 @@ message: string
 
 <summary>
 
-result: object {id, active\_registrations, created\_at, 17 more }
+result: object {id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -282,6 +282,12 @@ The model name of the device.
 
 <a href="#">Link to this property</a>
 
+multiuser: optional boolean
+
+True if this device is in <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/">multi-user mode</a>.
+
+<a href="#">Link to this property</a>
+
 os\_version: optional string
 
 The device operating system version number.
@@ -375,6 +381,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
     "mac_address": "f5:01:73:cf:12:23",
     "manufacturer": "ACME",
     "model": "Mark VII",
+    "multiuser": true,
     "os_version": "os_version",
     "os_version_extra": "os_version_extra",
     "public_ip": "1.1.1.1",
@@ -434,6 +441,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/physical-
     "mac_address": "f5:01:73:cf:12:23",
     "manufacturer": "ACME",
     "model": "Mark VII",
+    "multiuser": true,
     "os_version": "os_version",
     "os_version_extra": "os_version_extra",
     "public_ip": "1.1.1.1",

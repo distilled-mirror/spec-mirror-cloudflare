@@ -916,9 +916,15 @@ formatdate-time
 
 <summary>
 
-entities: array of object {entityName, entityType, entityValue }
+entities: array of object {entityLocation, entityName, entityType, entityValue }
 
 </summary>
+
+entityLocation: string
+
+Alpha-2 code of the country the entity belongs to (GEOLOCATION and AS entities only).
+
+<a href="#">Link to this property</a>
 
 entityName: string
 
@@ -1079,6 +1085,7 @@ curl https://api.cloudflare.com/client/v4/radar/annotations/outages \
         "endDate": "2019-12-27T18:11:19.117Z",
         "entities": [
           {
+            "entityLocation": "PT",
             "entityName": "GPTBot",
             "entityType": "BOT",
             "entityValue": "gptbot"
@@ -1151,6 +1158,7 @@ curl https://api.cloudflare.com/client/v4/radar/annotations/outages \
         "endDate": "2019-12-27T18:11:19.117Z",
         "entities": [
           {
+            "entityLocation": "PT",
             "entityName": "GPTBot",
             "entityType": "BOT",
             "entityValue": "gptbot"

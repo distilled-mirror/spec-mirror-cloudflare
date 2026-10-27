@@ -952,9 +952,15 @@ endDate: string
 
 <summary>
 
-entities: array of object {entityName, entityType, entityValue }
+entities: array of object {entityLocation, entityName, entityType, entityValue }
 
 </summary>
+
+entityLocation: string
+
+Alpha-2 code of the country the entity belongs to (GEOLOCATION and AS entities only).
+
+<a href="#">Link to this property</a>
 
 entityName: string
 
@@ -1113,6 +1119,7 @@ curl https://api.cloudflare.com/client/v4/radar/annotations \
         "endDate": "2022-09-08T10:00:28Z",
         "entities": [
           {
+            "entityLocation": "PT",
             "entityName": "GPTBot",
             "entityType": "BOT",
             "entityValue": "gptbot"
@@ -1185,6 +1192,7 @@ curl https://api.cloudflare.com/client/v4/radar/annotations \
         "endDate": "2022-09-08T10:00:28Z",
         "entities": [
           {
+            "entityLocation": "PT",
             "entityName": "GPTBot",
             "entityType": "BOT",
             "entityValue": "gptbot"

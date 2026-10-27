@@ -328,7 +328,7 @@ result: object {trafficAnomalies }
 
 <summary>
 
-trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 6 more }
+trafficAnomalies: array of object {asnDetails, endDate, locationDetails, 7 more }
 
 </summary>
 
@@ -418,6 +418,12 @@ origin: string
 
 <a href="#">Link to this property</a>
 
+outageId: string
+
+ID of the published outage this anomaly was confirmed as, if any.
+
+<a href="#">Link to this property</a>
+
 startDate: string
 
 formatdate-time
@@ -425,6 +431,8 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 status: string
+
+Verification status: UNVERIFIED (automatically detected, not yet validated by Radar), TP (verified by Radar) or VERIFIED (verified by Radar and a third-party source).
 
 <a href="#">Link to this property</a>
 
@@ -487,6 +495,7 @@ curl https://api.cloudflare.com/client/v4/radar/traffic_anomalies \
           "name": "us-east-1 Amazon Web Services",
           "origin": "amazon-us-east-1"
         },
+        "outageId": "1234",
         "startDate": "2023-08-02T23:15:00Z",
         "status": "UNVERIFIED",
         "type": "LOCATION",
@@ -527,6 +536,7 @@ curl https://api.cloudflare.com/client/v4/radar/traffic_anomalies \
           "name": "us-east-1 Amazon Web Services",
           "origin": "amazon-us-east-1"
         },
+        "outageId": "1234",
         "startDate": "2023-08-02T23:15:00Z",
         "status": "UNVERIFIED",
         "type": "LOCATION",

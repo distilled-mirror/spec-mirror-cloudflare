@@ -34,9 +34,19 @@ DELETE/zones/{zone\_id}/url\_normalization
 
 <summary>
 
-URLNormalizationGetResponse object {scope, type }
+URLNormalizationGetResponse = object {scope, type } or object {scope, type } or object {scope, type } or 2 more
 
 A result.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {scope, type }
 
 </summary>
 
@@ -44,7 +54,7 @@ A result.
 
 <summary>
 
-scope: "incoming"or "both"or "none"
+scope: optional "incoming"or "both"or "none"
 
 The scope of the URL normalization.
 
@@ -72,7 +82,7 @@ One of the following:
 
 <summary>
 
-type: "cloudflare"or "rfc3986"
+type: optional "cloudflare"or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -85,6 +95,266 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -100,9 +370,19 @@ One of the following:
 
 <summary>
 
-URLNormalizationUpdateResponse object {scope, type }
+URLNormalizationUpdateResponse = object {scope, type } or object {scope, type } or object {scope, type } or 2 more
 
 A result.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {scope, type }
 
 </summary>
 
@@ -110,7 +390,7 @@ A result.
 
 <summary>
 
-scope: "incoming"or "both"or "none"
+scope: optional "incoming"or "both"or "none"
 
 The scope of the URL normalization.
 
@@ -138,7 +418,7 @@ One of the following:
 
 <summary>
 
-type: "cloudflare"or "rfc3986"
+type: optional "cloudflare"or "rfc3986"
 
 The type of URL normalization performed by Cloudflare.
 
@@ -151,6 +431,266 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {scope, type }
+
+</summary>
+
+<details>
+
+<summary>
+
+scope: optional "incoming"or "both"or "none"
+
+The scope of the URL normalization.
+
+</summary>
+
+One of the following:
+
+"incoming"
+
+<a href="#">Link to this property</a>
+
+"both"
+
+<a href="#">Link to this property</a>
+
+"none"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+type: optional "cloudflare"or "rfc3986"
+
+The type of URL normalization performed by Cloudflare.
+
+</summary>
+
+One of the following:
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"rfc3986"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

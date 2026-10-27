@@ -196,191 +196,31 @@ minLength1
 
 <summary>
 
-result: array of object {id, kind, last\_updated, 4 more }
+result: unknownor array of unknownor stringor 2 more
 
-A list of rulesets. The returned information will not include the rules in each ruleset.
-
-</summary>
-
-id: string
-
-The unique ID of the ruleset.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-kind: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20kind%20%3E%20(schema)">Kind</a>
-
-The kind of the ruleset.
+A result.
 
 </summary>
 
 One of the following:
 
-"managed"
+unknown
 
 <a href="#">Link to this property</a>
 
-"custom"
+array of unknown
 
 <a href="#">Link to this property</a>
 
-"root"
+string
 
 <a href="#">Link to this property</a>
 
-"zone"
+number
 
 <a href="#">Link to this property</a>
 
-</details>
-
-<a href="#">Link to this property</a>
-
-last\_updated: string
-
-The timestamp of when the ruleset was last modified.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-name: string
-
-The human-readable name of the ruleset.
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-phase: <a href="https://developers.cloudflare.com/api/resources/rulesets#(resource)%20rulesets%20%3E%20(model)%20phase%20%3E%20(schema)">Phase</a>
-
-The phase of the ruleset.
-
-</summary>
-
-One of the following:
-
-"ddos\_l4"
-
-<a href="#">Link to this property</a>
-
-"ddos\_l7"
-
-<a href="#">Link to this property</a>
-
-"http\_config\_settings"
-
-<a href="#">Link to this property</a>
-
-"http\_custom\_errors"
-
-<a href="#">Link to this property</a>
-
-"http\_log\_custom\_fields"
-
-<a href="#">Link to this property</a>
-
-"http\_ratelimit"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_cache\_settings"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_dynamic\_redirect"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_firewall\_custom"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_firewall\_managed"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_late\_transform"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_origin"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_redirect"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_sanitize"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_sbfm"
-
-<a href="#">Link to this property</a>
-
-"http\_request\_transform"
-
-<a href="#">Link to this property</a>
-
-"http\_response\_cache\_settings"
-
-<a href="#">Link to this property</a>
-
-"http\_response\_compression"
-
-<a href="#">Link to this property</a>
-
-"http\_response\_firewall\_custom"
-
-<a href="#">Link to this property</a>
-
-"http\_response\_firewall\_managed"
-
-<a href="#">Link to this property</a>
-
-"http\_response\_headers\_transform"
-
-<a href="#">Link to this property</a>
-
-"magic\_transit"
-
-<a href="#">Link to this property</a>
-
-"magic\_transit\_ids\_managed"
-
-<a href="#">Link to this property</a>
-
-"magic\_transit\_managed"
-
-<a href="#">Link to this property</a>
-
-"magic\_transit\_ratelimit"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-version: string
-
-The version of the ruleset.
-
-<a href="#">Link to this property</a>
-
-description: optional string
-
-An informative description of the ruleset.
+boolean
 
 <a href="#">Link to this property</a>
 
@@ -463,17 +303,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": [
-    {
-      "id": "2f2feab2026849078ba485f918791bdc",
-      "kind": "root",
-      "last_updated": "2000-01-01T00:00:00Z",
-      "name": "My ruleset",
-      "phase": "http_request_firewall_custom",
-      "version": "1",
-      "description": "A description for my ruleset."
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "cursors": {
@@ -507,17 +337,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       }
     }
   ],
-  "result": [
-    {
-      "id": "2f2feab2026849078ba485f918791bdc",
-      "kind": "root",
-      "last_updated": "2000-01-01T00:00:00Z",
-      "name": "My ruleset",
-      "phase": "http_request_firewall_custom",
-      "version": "1",
-      "description": "A description for my ruleset."
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "cursors": {

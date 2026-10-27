@@ -112,9 +112,15 @@ formatdate-time
 
 <summary>
 
-entities: array of object {entityName, entityType, entityValue }
+entities: array of object {entityLocation, entityName, entityType, entityValue }
 
 </summary>
+
+entityLocation: string
+
+Alpha-2 code of the country the entity belongs to (GEOLOCATION and AS entities only).
+
+<a href="#">Link to this property</a>
 
 entityName: string
 

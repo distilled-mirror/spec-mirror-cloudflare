@@ -280,25 +280,9 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-use\_cases: array of object {id, is\_enabled }
+use\_cases: array of string
 
 Use cases enabled for the integration.
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-is\_enabled: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -401,14 +385,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
       "status": "Healthy",
       "updated": "2025-04-10T08:30:00Z",
       "use_cases": [
-        {
-          "id": "casb",
-          "is_enabled": true
-        },
-        {
-          "id": "ces",
-          "is_enabled": false
-        }
+        "casb"
       ]
     }
   ],
@@ -450,14 +427,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
       "status": "Healthy",
       "updated": "2025-04-10T08:30:00Z",
       "use_cases": [
-        {
-          "id": "casb",
-          "is_enabled": true
-        },
-        {
-          "id": "ces",
-          "is_enabled": false
-        }
+        "casb"
       ]
     }
   ],

@@ -44,7 +44,7 @@ POST/accounts/{account\_id}/devices/physical-devices/{device\_id}/revoke
 
 <summary>
 
-DeviceListResponse object {id, active\_registrations, created\_at, 17 more }
+DeviceListResponse object {id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -225,6 +225,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+<a href="#">Link to this property</a>
+
+multiuser: optional boolean
+
+True if this device is in <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/">multi-user mode</a>.
 
 <a href="#">Link to this property</a>
 
@@ -260,7 +266,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object {id, active\_registrations, created\_at, 17 more }
+DeviceGetResponse object {id, active\_registrations, created\_at, 18 more }
 
 A WARP Device.
 
@@ -441,6 +447,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+<a href="#">Link to this property</a>
+
+multiuser: optional boolean
+
+True if this device is in <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/">multi-user mode</a>.
 
 <a href="#">Link to this property</a>
 

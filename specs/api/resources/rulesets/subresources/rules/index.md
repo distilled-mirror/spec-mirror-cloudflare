@@ -5446,13 +5446,33 @@ minLength1
 
 <summary>
 
-RuleCreateResponse = object {id, kind, last\_updated, 5 more } or unknown
+RuleCreateResponse = unknownor array of unknownor stringor 4 more
 
 A result.
 
 </summary>
 
 One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -8692,13 +8712,33 @@ Returned when dry\_run is true.
 
 <summary>
 
-RuleEditResponse = object {id, kind, last\_updated, 5 more } or unknown
+RuleEditResponse = unknownor array of unknownor stringor 4 more
 
 A result.
 
 </summary>
 
 One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -11938,13 +11978,33 @@ Returned when dry\_run is true.
 
 <summary>
 
-RuleDeleteResponse = object {id, kind, last\_updated, 5 more } or unknown
+RuleDeleteResponse = unknownor array of unknownor stringor 4 more
 
 A result.
 
 </summary>
 
 One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
 
 <details>
 

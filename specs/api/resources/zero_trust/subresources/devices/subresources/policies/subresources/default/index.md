@@ -234,7 +234,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -261,6 +261,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+allow\_manual\_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 <a href="#">Link to this property</a>
 
@@ -666,7 +672,7 @@ gateway\_unique\_id: optional string
 
 <summary>
 
-global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 2 more }
+global\_acceleration: optional object {api\_endpoints, enabled, masque\_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See <a href="https://developers.cloudflare.com/china-network/concepts/global-acceleration/">https://developers.cloudflare.com/china-network/concepts/global-acceleration/</a>.
 
@@ -693,6 +699,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard\_endpoints or 
 wireguard\_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard\_endpoints or masque\_endpoints must be provided.
+
+<a href="#">Link to this property</a>
+
+allow\_manual\_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 <a href="#">Link to this property</a>
 

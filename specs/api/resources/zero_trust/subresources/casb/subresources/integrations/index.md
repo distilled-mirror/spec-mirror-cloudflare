@@ -128,25 +128,9 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-<details>
-
-<summary>
-
-use\_cases: array of object {id, is\_enabled }
+use\_cases: array of string
 
 Use cases enabled for the integration.
-
-</summary>
-
-id: string
-
-<a href="#">Link to this property</a>
-
-is\_enabled: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

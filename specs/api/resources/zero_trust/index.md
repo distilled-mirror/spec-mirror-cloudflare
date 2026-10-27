@@ -1846,7 +1846,7 @@ POST/accounts/{account_id}/devices/physical-devices/{device_id}/revoke
 
 <summary>
 
-DeviceListResponse object { id, active_registrations, created_at, 17 more }
+DeviceListResponse object { id, active_registrations, created_at, 18 more }
 
 A WARP Device.
 
@@ -2027,6 +2027,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+[Link to this property](#)
+
+multiuser: optional boolean
+
+True if this device is in [multi-user mode](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/).
 
 [Link to this property](#)
 
@@ -2062,7 +2068,7 @@ The device serial number.
 
 <summary>
 
-DeviceGetResponse object { id, active_registrations, created_at, 17 more }
+DeviceGetResponse object { id, active_registrations, created_at, 18 more }
 
 A WARP Device.
 
@@ -2243,6 +2249,12 @@ The device manufacturer.
 model: optional string
 
 The model name of the device.
+
+[Link to this property](#)
+
+multiuser: optional boolean
+
+True if this device is in [multi-user mode](https://developers.cloudflare.com/cloudflare-one/connections/connect-devices/warp/deployment/mdm-deployment/windows-multiuser/).
 
 [Link to this property](#)
 
@@ -4642,7 +4654,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -4669,6 +4681,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+allow_manual_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 [Link to this property](#)
 
@@ -5274,7 +5292,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -5301,6 +5319,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+allow_manual_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 [Link to this property](#)
 
@@ -5706,7 +5730,7 @@ gateway_unique_id: optional string
 
 <summary>
 
-global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 2 more }
+global_acceleration: optional object { api_endpoints, enabled, masque_endpoints, 3 more }
 
 Global Acceleration settings for China. When configured, WARP clients connect to the Global Accelerator addresses instead of the default ones. Please contact your account representative to enable this feature on your account. See https://developers.cloudflare.com/china-network/concepts/global-acceleration/.
 
@@ -5733,6 +5757,12 @@ IP:port entries for the MASQUE tunnel endpoints. Either wireguard_endpoints or m
 wireguard_endpoints: array of string
 
 IP:port entries for the WireGuard tunnel endpoints. Either wireguard_endpoints or masque_endpoints must be provided.
+
+[Link to this property](#)
+
+allow_manual_override: optional boolean
+
+Whether WARP users may manually override the automatic Global Acceleration decision. Defaults to true when not provided.
 
 [Link to this property](#)
 
@@ -284316,25 +284346,9 @@ formatdate-time
 
 [Link to this property](#)
 
-<details>
-
-<summary>
-
-use_cases: array of object { id, is_enabled }
+use_cases: array of string
 
 Use cases enabled for the integration.
-
-</summary>
-
-id: string
-
-[Link to this property](#)
-
-is_enabled: boolean
-
-[Link to this property](#)
-
-</details>
 
 [Link to this property](#)
 
@@ -291802,9 +291816,25 @@ maxLength512
 
 GET/accounts/{account_id}/data-security/posture/finding_types
 
+##### [Create a custom finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/create)
+
+POST/accounts/{account_id}/data-security/posture/finding_types
+
 ##### [Get finding by ID](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/get)
 
 GET/accounts/{account_id}/data-security/posture/finding_types/{finding_type_id}
+
+##### [Update a custom finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/update)
+
+PUT/accounts/{account_id}/data-security/posture/finding_types/{finding_type_id}
+
+##### [Delete a custom finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/delete)
+
+DELETE/accounts/{account_id}/data-security/posture/finding_types/{finding_type_id}
+
+##### [Validate a custom finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/methods/validate)
+
+POST/accounts/{account_id}/data-security/posture/finding_types/validate
 
 ##### Models
 
@@ -292140,6 +292170,334 @@ formatuint32
 
 <summary>
 
+FindingTypeCreateResponse object { id, applies_to_all_integrations, asset_class, 14 more }
+
+Basic finding type information.
+
+</summary>
+
+id: string
+
+The unique identifier of the finding.
+
+formatuuid
+
+[Link to this property](#)
+
+applies_to_all_integrations: boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: object { observation, product, type }
+
+Category information for a finding.
+
+</summary>
+
+<details>
+
+<summary>
+
+observation: "Issue" or "Insight" or "Activity"
+
+The type of the observation.
+
+</summary>
+
+One of the following:
+
+"Issue"
+
+[Link to this property](#)
+
+"Insight"
+
+[Link to this property](#)
+
+"Activity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+product: "SaaS" or "Cloud"
+
+The product category.
+
+</summary>
+
+One of the following:
+
+"SaaS"
+
+[Link to this property](#)
+
+"Cloud"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: "Content" or "Posture"
+
+The type of the finding category.
+
+</summary>
+
+One of the following:
+
+"Content"
+
+[Link to this property](#)
+
+"Posture"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+description: string
+
+Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+name: string
+
+The name of the finding.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+severity: "Critical" or "High" or "Medium" or "Low"
+
+Default severity used when no integration-specific severity override exists.
+
+</summary>
+
+One of the following:
+
+"Critical"
+
+[Link to this property](#)
+
+"High"
+
+[Link to this property](#)
+
+"Medium"
+
+[Link to this property](#)
+
+"Low"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+vendor: string
+
+The SaaS/Cloud vendor of the platform with which the finding is associated.
+
+[Link to this property](#)
+
+version: number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 FindingTypeGetResponse object { id, category, name, 14 more }
 
 Basic finding type information.
@@ -292464,6 +292822,402 @@ formatuint32
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+FindingTypeUpdateResponse object { id, applies_to_all_integrations, asset_class, 14 more }
+
+Basic finding type information.
+
+</summary>
+
+id: string
+
+The unique identifier of the finding.
+
+formatuuid
+
+[Link to this property](#)
+
+applies_to_all_integrations: boolean
+
+Whether this finding type applies to every current and future integration of the vendor.
+
+[Link to this property](#)
+
+asset_class: string
+
+Asset class the finding type’s policy evaluates.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+asset_vendor: "ANTHROPIC" or "AWS" or "BITBUCKET" or 13 more
+
+Canonical vendor enum value.
+
+</summary>
+
+One of the following:
+
+"ANTHROPIC"
+
+[Link to this property](#)
+
+"AWS"
+
+[Link to this property](#)
+
+"BITBUCKET"
+
+[Link to this property](#)
+
+"BOX"
+
+[Link to this property](#)
+
+"CONFLUENCE"
+
+[Link to this property](#)
+
+"DROPBOX"
+
+[Link to this property](#)
+
+"GITHUB"
+
+[Link to this property](#)
+
+"GOOGLE_CLOUD_PLATFORM"
+
+[Link to this property](#)
+
+"GOOGLE_WORKSPACE"
+
+[Link to this property](#)
+
+"JIRA"
+
+[Link to this property](#)
+
+"MICROSOFT"
+
+[Link to this property](#)
+
+"OPENAI"
+
+[Link to this property](#)
+
+"SALESFORCE"
+
+[Link to this property](#)
+
+"SERVICENOW"
+
+[Link to this property](#)
+
+"SLACK"
+
+[Link to this property](#)
+
+"ZOOM"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: object { observation, product, type }
+
+Category information for a finding.
+
+</summary>
+
+<details>
+
+<summary>
+
+observation: "Issue" or "Insight" or "Activity"
+
+The type of the observation.
+
+</summary>
+
+One of the following:
+
+"Issue"
+
+[Link to this property](#)
+
+"Insight"
+
+[Link to this property](#)
+
+"Activity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+product: "SaaS" or "Cloud"
+
+The product category.
+
+</summary>
+
+One of the following:
+
+"SaaS"
+
+[Link to this property](#)
+
+"Cloud"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+type: "Content" or "Posture"
+
+The type of the finding category.
+
+</summary>
+
+One of the following:
+
+"Content"
+
+[Link to this property](#)
+
+"Posture"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp when the finding type was created.
+
+formatdate-time
+
+[Link to this property](#)
+
+description: string
+
+Detailed description of the finding.
+
+[Link to this property](#)
+
+expression: string
+
+Rego expression backing this finding type. For custom finding types, generated package and import declarations are omitted. System expressions are returned unchanged.
+
+[Link to this property](#)
+
+name: string
+
+The name of the finding.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: "system" or "custom"
+
+Whether the finding type is system-managed or customer-created.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+severity: "Critical" or "High" or "Medium" or "Low"
+
+Default severity used when no integration-specific severity override exists.
+
+</summary>
+
+One of the following:
+
+"Critical"
+
+[Link to this property](#)
+
+"High"
+
+[Link to this property](#)
+
+"Medium"
+
+[Link to this property](#)
+
+"Low"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp when the finding type was last updated.
+
+formatdate-time
+
+[Link to this property](#)
+
+vendor: string
+
+The SaaS/Cloud vendor of the platform with which the finding is associated.
+
+[Link to this property](#)
+
+version: number
+
+Current version of the finding type. Incremented on each update.
+
+formatuint32
+
+[Link to this property](#)
+
+integration_ids: optional array of string
+
+Integrations this finding type applies to when applies_to_all_integrations is false.
+
+[Link to this property](#)
+
+match_count: optional number
+
+Number of currently active finding instances across the account’s integrations. Zero when none have been detected.
+
+formatint64
+
+[Link to this property](#)
+
+quarantined: optional boolean
+
+Whether evaluation of this finding type is suspended by an operator. Present only when true.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+FindingTypeValidateResponse object { errors, valid }
+
+</summary>
+
+<details>
+
+<summary>
+
+errors: array of object { detail, message, code, 3 more }
+
+Every problem found with the candidate, so all of them can be surfaced at once. Empty when `valid` is true. Problems without a location come first, followed by located problems ordered by `line`, then `column`.
+
+</summary>
+
+detail: string
+
+Description of the problem.
+
+[Link to this property](#)
+
+Deprecatedmessage: string
+
+Deprecated: use `detail`.
+
+[Link to this property](#)
+
+code: optional string
+
+Machine-readable identifier for the class of problem, when one is available. Omitted otherwise.
+
+[Link to this property](#)
+
+column: optional number
+
+1-based column on `line`. Omitted when the problem could not be located in the submitted source.
+
+[Link to this property](#)
+
+field: optional string
+
+Request field the problem belongs to, matching the property names of `ValidateFindingTypeRequest`. Array properties are reported per entry with a zero-based index, for example `integration_ids[0]`. Empty when the problem cannot be attributed to a single submitted field.
+
+[Link to this property](#)
+
+line: optional number
+
+1-based line in `expression` where the problem was found. Omitted when the problem could not be located in the submitted source.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+valid: boolean
+
+Whether the candidate finding type would be accepted as-is.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [List remediation types for a finding type](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/finding_types/subresources/remediation_types/methods/list)
 
 GET/accounts/{account_id}/data-security/posture/finding_types/{finding_type_id}/remediation_types
@@ -292511,6 +293265,78 @@ formatuuid
 remediation_type: string
 
 The name of the remediation type.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List asset schemas](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/list)
+
+GET/accounts/{account_id}/data-security/posture/asset_schemas
+
+##### [Get asset schema by asset class](/api/resources/zero_trust/subresources/casb/subresources/posture/subresources/asset_schemas/methods/get)
+
+GET/accounts/{account_id}/data-security/posture/asset_schemas/{asset_class}
+
+##### Models
+
+<details>
+
+<summary>
+
+AssetSchemaListResponse object { asset_classes, vendor }
+
+</summary>
+
+<details>
+
+<summary>
+
+asset_classes: array of object { asset_class }
+
+Asset classes belonging to this vendor, sorted by asset_class.
+
+</summary>
+
+asset_class: string
+
+Asset class identifier (PascalCase), e.g. AnthropicUser.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+vendor: string
+
+Canonical vendor enum value, e.g. GOOGLE_WORKSPACE.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AssetSchemaGetResponse object { asset_class, schema }
+
+</summary>
+
+asset_class: string
+
+Asset class identifier (PascalCase), e.g. AnthropicApiKey.
+
+[Link to this property](#)
+
+schema: map[unknown]
+
+Fields and related attributes a custom finding type may reference for this asset class, as a JSON Schema. Top-level properties are `asset` and, when related resources exist, `associated`.
 
 [Link to this property](#)
 

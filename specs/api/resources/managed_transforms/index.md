@@ -34,9 +34,19 @@ DELETE/zones/{zone\_id}/managed\_headers
 
 <summary>
 
-ManagedTransformListResponse object {managed\_request\_headers, managed\_response\_headers }
+ManagedTransformListResponse = object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or 2 more
 
 A result.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -44,7 +54,7 @@ A result.
 
 <summary>
 
-managed\_request\_headers: array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -84,7 +94,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -113,6 +123,378 @@ Whether the Managed Transform conflicts with the currently-enabled Managed Trans
 conflicts\_with: optional array of string
 
 The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -128,9 +510,19 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-ManagedTransformEditResponse object {managed\_request\_headers, managed\_response\_headers }
+ManagedTransformEditResponse = object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or object {managed\_request\_headers, managed\_response\_headers } or 2 more
 
 A result.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
 
 </summary>
 
@@ -138,7 +530,7 @@ A result.
 
 <summary>
 
-managed\_request\_headers: array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Request Transforms.
 
@@ -178,7 +570,7 @@ The Managed Transforms that this Managed Transform conflicts with.
 
 <summary>
 
-managed\_response\_headers: array of object {id, enabled, has\_conflict, conflicts\_with }
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
 
 The list of Managed Response Transforms.
 
@@ -207,6 +599,378 @@ Whether the Managed Transform conflicts with the currently-enabled Managed Trans
 conflicts\_with: optional array of string
 
 The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {managed\_request\_headers, managed\_response\_headers }
+
+</summary>
+
+<details>
+
+<summary>
+
+managed\_request\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Request Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+managed\_response\_headers: optional array of object {id, enabled, has\_conflict, conflicts\_with }
+
+The list of Managed Response Transforms.
+
+</summary>
+
+id: string
+
+The human-readable identifier of the Managed Transform.
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+enabled: boolean
+
+Whether the Managed Transform is enabled.
+
+<a href="#">Link to this property</a>
+
+has\_conflict: boolean
+
+Whether the Managed Transform conflicts with the currently-enabled Managed Transforms.
+
+<a href="#">Link to this property</a>
+
+conflicts\_with: optional array of string
+
+The Managed Transforms that this Managed Transform conflicts with.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
