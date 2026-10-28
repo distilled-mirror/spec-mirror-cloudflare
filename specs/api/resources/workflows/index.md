@@ -38,7 +38,7 @@ DELETE/accounts/{account\_id}/workflows/{workflow\_name}
 
 <summary>
 
-WorkflowListResponse object {id, class\_name, created\_on, 7 more }
+WorkflowListResponse object {id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -83,6 +83,34 @@ script\_name: string
 triggered\_on: string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jurisdiction: optional "eu"or "fedramp"or "us"
+
+Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -120,7 +148,7 @@ Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <summary>
 
-WorkflowGetResponse object {id, class\_name, created\_on, 7 more }
+WorkflowGetResponse object {id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -172,6 +200,34 @@ formatdate-time
 
 <summary>
 
+jurisdiction: optional "eu"or "fedramp"or "us"
+
+Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 schedules: optional array of object {cron, next\_instance }
 
 </summary>
@@ -202,7 +258,7 @@ Whether the bound Worker was deleted, leaving this Workflow inactive.
 
 <summary>
 
-WorkflowUpdateResponse object {id, class\_name, created\_on, 7 more }
+WorkflowUpdateResponse object {id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -257,6 +313,34 @@ formatdate-time
 version\_id: string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jurisdiction: optional "eu"or "fedramp"or "us"
+
+Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

@@ -82,7 +82,7 @@ Enable agent readiness checks.
 
 <summary>
 
-country: optional "AF"or "AL"or "DZ"or 192 more
+country: optional "AE"or "AL"or "AM"or 137 more
 
 Country to geo egress from
 
@@ -90,7 +90,7 @@ Country to geo egress from
 
 One of the following:
 
-"AF"
+"AE"
 
 <a href="#">Link to this property</a>
 
@@ -98,11 +98,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"DZ"
-
-<a href="#">Link to this property</a>
-
-"AD"
+"AM"
 
 <a href="#">Link to this property</a>
 
@@ -110,19 +106,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"AG"
-
-<a href="#">Link to this property</a>
-
 "AR"
-
-<a href="#">Link to this property</a>
-
-"AM"
-
-<a href="#">Link to this property</a>
-
-"AU"
 
 <a href="#">Link to this property</a>
 
@@ -130,15 +114,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"AU"
+
+<a href="#">Link to this property</a>
+
 "AZ"
-
-<a href="#">Link to this property</a>
-
-"BH"
-
-<a href="#">Link to this property</a>
-
-"BD"
 
 <a href="#">Link to this property</a>
 
@@ -146,7 +126,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"BY"
+"BD"
 
 <a href="#">Link to this property</a>
 
@@ -154,39 +134,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"BZ"
-
-<a href="#">Link to this property</a>
-
-"BJ"
-
-<a href="#">Link to this property</a>
-
-"BM"
-
-<a href="#">Link to this property</a>
-
-"BT"
-
-<a href="#">Link to this property</a>
-
-"BO"
-
-<a href="#">Link to this property</a>
-
-"BA"
-
-<a href="#">Link to this property</a>
-
-"BW"
-
-<a href="#">Link to this property</a>
-
-"BR"
-
-<a href="#">Link to this property</a>
-
-"BN"
+"BF"
 
 <a href="#">Link to this property</a>
 
@@ -194,19 +142,31 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"BF"
+"BH"
 
 <a href="#">Link to this property</a>
 
-"BI"
+"BN"
 
 <a href="#">Link to this property</a>
 
-"KH"
+"BO"
 
 <a href="#">Link to this property</a>
 
-"CM"
+"BR"
+
+<a href="#">Link to this property</a>
+
+"BT"
+
+<a href="#">Link to this property</a>
+
+"BW"
+
+<a href="#">Link to this property</a>
+
+"BY"
 
 <a href="#">Link to this property</a>
 
@@ -214,43 +174,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"CV"
+"CD"
 
 <a href="#">Link to this property</a>
 
-"KY"
-
-<a href="#">Link to this property</a>
-
-"CF"
-
-<a href="#">Link to this property</a>
-
-"TD"
-
-<a href="#">Link to this property</a>
-
-"CL"
-
-<a href="#">Link to this property</a>
-
-"CN"
-
-<a href="#">Link to this property</a>
-
-"CO"
-
-<a href="#">Link to this property</a>
-
-"KM"
-
-<a href="#">Link to this property</a>
-
-"CG"
-
-<a href="#">Link to this property</a>
-
-"CR"
+"CH"
 
 <a href="#">Link to this property</a>
 
@@ -258,11 +186,23 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"HR"
+"CL"
 
 <a href="#">Link to this property</a>
 
-"CU"
+"CM"
+
+<a href="#">Link to this property</a>
+
+"CO"
+
+<a href="#">Link to this property</a>
+
+"CR"
+
+<a href="#">Link to this property</a>
+
+"CW"
 
 <a href="#">Link to this property</a>
 
@@ -274,11 +214,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"CD"
-
-<a href="#">Link to this property</a>
-
-"DK"
+"DE"
 
 <a href="#">Link to this property</a>
 
@@ -286,7 +222,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"DM"
+"DK"
 
 <a href="#">Link to this property</a>
 
@@ -294,23 +230,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"DZ"
+
+<a href="#">Link to this property</a>
+
 "EC"
-
-<a href="#">Link to this property</a>
-
-"EG"
-
-<a href="#">Link to this property</a>
-
-"SV"
-
-<a href="#">Link to this property</a>
-
-"GQ"
-
-<a href="#">Link to this property</a>
-
-"ER"
 
 <a href="#">Link to this property</a>
 
@@ -318,7 +242,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"SZ"
+"EG"
+
+<a href="#">Link to this property</a>
+
+"ES"
 
 <a href="#">Link to this property</a>
 
@@ -326,11 +254,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"FJ"
+"FI"
 
 <a href="#">Link to this property</a>
 
-"FI"
+"FJ"
 
 <a href="#">Link to this property</a>
 
@@ -338,15 +266,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"GA"
+"GB"
+
+<a href="#">Link to this property</a>
+
+"GD"
 
 <a href="#">Link to this property</a>
 
 "GE"
-
-<a href="#">Link to this property</a>
-
-"DE"
 
 <a href="#">Link to this property</a>
 
@@ -358,23 +286,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"GL"
-
-<a href="#">Link to this property</a>
-
-"GD"
-
-<a href="#">Link to this property</a>
-
 "GT"
 
 <a href="#">Link to this property</a>
 
-"GN"
-
-<a href="#">Link to this property</a>
-
-"GW"
+"GU"
 
 <a href="#">Link to this property</a>
 
@@ -382,7 +298,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"HT"
+"HK"
 
 <a href="#">Link to this property</a>
 
@@ -390,27 +306,19 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"HR"
+
+<a href="#">Link to this property</a>
+
+"HT"
+
+<a href="#">Link to this property</a>
+
 "HU"
 
 <a href="#">Link to this property</a>
 
-"IS"
-
-<a href="#">Link to this property</a>
-
-"IN"
-
-<a href="#">Link to this property</a>
-
 "ID"
-
-<a href="#">Link to this property</a>
-
-"IR"
-
-<a href="#">Link to this property</a>
-
-"IQ"
 
 <a href="#">Link to this property</a>
 
@@ -422,6 +330,18 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"IN"
+
+<a href="#">Link to this property</a>
+
+"IQ"
+
+<a href="#">Link to this property</a>
+
+"IS"
+
+<a href="#">Link to this property</a>
+
 "IT"
 
 <a href="#">Link to this property</a>
@@ -430,15 +350,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"JP"
-
-<a href="#">Link to this property</a>
-
 "JO"
 
 <a href="#">Link to this property</a>
 
-"KZ"
+"JP"
 
 <a href="#">Link to this property</a>
 
@@ -446,7 +362,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"KI"
+"KG"
+
+<a href="#">Link to this property</a>
+
+"KH"
+
+<a href="#">Link to this property</a>
+
+"KR"
 
 <a href="#">Link to this property</a>
 
@@ -454,7 +378,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"KG"
+"KZ"
 
 <a href="#">Link to this property</a>
 
@@ -462,27 +386,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"LV"
-
-<a href="#">Link to this property</a>
-
 "LB"
 
 <a href="#">Link to this property</a>
 
-"LS"
+"LK"
 
 <a href="#">Link to this property</a>
 
 "LR"
-
-<a href="#">Link to this property</a>
-
-"LY"
-
-<a href="#">Link to this property</a>
-
-"LI"
 
 <a href="#">Link to this property</a>
 
@@ -494,59 +406,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"MO"
-
-<a href="#">Link to this property</a>
-
-"MG"
-
-<a href="#">Link to this property</a>
-
-"MW"
-
-<a href="#">Link to this property</a>
-
-"MY"
-
-<a href="#">Link to this property</a>
-
-"MV"
-
-<a href="#">Link to this property</a>
-
-"ML"
-
-<a href="#">Link to this property</a>
-
-"MR"
-
-<a href="#">Link to this property</a>
-
-"MU"
-
-<a href="#">Link to this property</a>
-
-"MX"
-
-<a href="#">Link to this property</a>
-
-"FM"
-
-<a href="#">Link to this property</a>
-
-"MD"
-
-<a href="#">Link to this property</a>
-
-"MC"
-
-<a href="#">Link to this property</a>
-
-"MN"
-
-<a href="#">Link to this property</a>
-
-"MS"
+"LV"
 
 <a href="#">Link to this property</a>
 
@@ -554,47 +414,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"MZ"
+"MD"
 
 <a href="#">Link to this property</a>
 
-"MM"
-
-<a href="#">Link to this property</a>
-
-"NA"
-
-<a href="#">Link to this property</a>
-
-"NR"
-
-<a href="#">Link to this property</a>
-
-"NP"
-
-<a href="#">Link to this property</a>
-
-"NL"
-
-<a href="#">Link to this property</a>
-
-"NZ"
-
-<a href="#">Link to this property</a>
-
-"NI"
-
-<a href="#">Link to this property</a>
-
-"NE"
-
-<a href="#">Link to this property</a>
-
-"NG"
-
-<a href="#">Link to this property</a>
-
-"KP"
+"MG"
 
 <a href="#">Link to this property</a>
 
@@ -602,7 +426,71 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"MM"
+
+<a href="#">Link to this property</a>
+
+"MN"
+
+<a href="#">Link to this property</a>
+
+"MO"
+
+<a href="#">Link to this property</a>
+
+"MT"
+
+<a href="#">Link to this property</a>
+
+"MU"
+
+<a href="#">Link to this property</a>
+
+"MV"
+
+<a href="#">Link to this property</a>
+
+"MW"
+
+<a href="#">Link to this property</a>
+
+"MX"
+
+<a href="#">Link to this property</a>
+
+"MY"
+
+<a href="#">Link to this property</a>
+
+"MZ"
+
+<a href="#">Link to this property</a>
+
+"NA"
+
+<a href="#">Link to this property</a>
+
+"NC"
+
+<a href="#">Link to this property</a>
+
+"NG"
+
+<a href="#">Link to this property</a>
+
+"NL"
+
+<a href="#">Link to this property</a>
+
 "NO"
+
+<a href="#">Link to this property</a>
+
+"NP"
+
+<a href="#">Link to this property</a>
+
+"NZ"
 
 <a href="#">Link to this property</a>
 
@@ -610,23 +498,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"PK"
-
-<a href="#">Link to this property</a>
-
-"PS"
-
-<a href="#">Link to this property</a>
-
 "PA"
-
-<a href="#">Link to this property</a>
-
-"PG"
-
-<a href="#">Link to this property</a>
-
-"PY"
 
 <a href="#">Link to this property</a>
 
@@ -634,7 +506,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"PF"
+
+<a href="#">Link to this property</a>
+
 "PH"
+
+<a href="#">Link to this property</a>
+
+"PK"
 
 <a href="#">Link to this property</a>
 
@@ -642,7 +522,19 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"PR"
+
+<a href="#">Link to this property</a>
+
+"PS"
+
+<a href="#">Link to this property</a>
+
 "PT"
+
+<a href="#">Link to this property</a>
+
+"PY"
 
 <a href="#">Link to this property</a>
 
@@ -650,7 +542,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"RE"
+
+<a href="#">Link to this property</a>
+
 "RO"
+
+<a href="#">Link to this property</a>
+
+"RS"
 
 <a href="#">Link to this property</a>
 
@@ -662,95 +562,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"SH"
-
-<a href="#">Link to this property</a>
-
-"KN"
-
-<a href="#">Link to this property</a>
-
-"LC"
-
-<a href="#">Link to this property</a>
-
-"VC"
-
-<a href="#">Link to this property</a>
-
-"WS"
-
-<a href="#">Link to this property</a>
-
-"SM"
-
-<a href="#">Link to this property</a>
-
-"ST"
-
-<a href="#">Link to this property</a>
-
 "SA"
-
-<a href="#">Link to this property</a>
-
-"SN"
-
-<a href="#">Link to this property</a>
-
-"RS"
-
-<a href="#">Link to this property</a>
-
-"SC"
-
-<a href="#">Link to this property</a>
-
-"SL"
-
-<a href="#">Link to this property</a>
-
-"SK"
-
-<a href="#">Link to this property</a>
-
-"SI"
-
-<a href="#">Link to this property</a>
-
-"SB"
-
-<a href="#">Link to this property</a>
-
-"SO"
-
-<a href="#">Link to this property</a>
-
-"ZA"
-
-<a href="#">Link to this property</a>
-
-"KR"
-
-<a href="#">Link to this property</a>
-
-"SS"
-
-<a href="#">Link to this property</a>
-
-"ES"
-
-<a href="#">Link to this property</a>
-
-"LK"
-
-<a href="#">Link to this property</a>
-
-"SD"
-
-<a href="#">Link to this property</a>
-
-"SR"
 
 <a href="#">Link to this property</a>
 
@@ -758,23 +570,23 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"CH"
+"SG"
 
 <a href="#">Link to this property</a>
 
-"SY"
+"SI"
 
 <a href="#">Link to this property</a>
 
-"TW"
+"SK"
 
 <a href="#">Link to this property</a>
 
-"TJ"
+"SN"
 
 <a href="#">Link to this property</a>
 
-"TZ"
+"SR"
 
 <a href="#">Link to this property</a>
 
@@ -782,27 +594,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"BS"
-
-<a href="#">Link to this property</a>
-
-"GM"
-
-<a href="#">Link to this property</a>
-
-"TL"
-
-<a href="#">Link to this property</a>
-
-"TG"
-
-<a href="#">Link to this property</a>
-
-"TO"
-
-<a href="#">Link to this property</a>
-
-"TT"
+"TJ"
 
 <a href="#">Link to this property</a>
 
@@ -814,11 +606,15 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"TM"
+"TT"
 
 <a href="#">Link to this property</a>
 
-"UG"
+"TW"
+
+<a href="#">Link to this property</a>
+
+"TZ"
 
 <a href="#">Link to this property</a>
 
@@ -826,11 +622,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"AE"
-
-<a href="#">Link to this property</a>
-
-"GB"
+"UG"
 
 <a href="#">Link to this property</a>
 
@@ -838,19 +630,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"UY"
-
-<a href="#">Link to this property</a>
-
 "UZ"
-
-<a href="#">Link to this property</a>
-
-"VU"
-
-<a href="#">Link to this property</a>
-
-"VE"
 
 <a href="#">Link to this property</a>
 
@@ -858,7 +638,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"YE"
+"ZA"
 
 <a href="#">Link to this property</a>
 

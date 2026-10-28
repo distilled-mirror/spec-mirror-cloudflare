@@ -62,7 +62,7 @@ Contains the list of catalogs.
 
 <summary>
 
-warehouses: array of object {id, bucket, name, 3 more }
+warehouses: array of object {id, bucket, name, 4 more }
 
 Lists catalogs in the account.
 
@@ -133,6 +133,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+jurisdiction: optional string
+
+Specifies the data-locality jurisdiction of the catalog. The first enable sets it, and it cannot change. Currently always <code>default</code>.
 
 <a href="#">Link to this property</a>
 
@@ -292,7 +298,7 @@ One of the following:
 
 <summary>
 
-R2DataCatalogGetResponse object {id, bucket, name, 3 more }
+R2DataCatalogGetResponse object {id, bucket, name, 4 more }
 
 Contains catalog information.
 
@@ -363,6 +369,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+jurisdiction: optional string
+
+Specifies the data-locality jurisdiction of the catalog. The first enable sets it, and it cannot change. Currently always <code>default</code>.
 
 <a href="#">Link to this property</a>
 

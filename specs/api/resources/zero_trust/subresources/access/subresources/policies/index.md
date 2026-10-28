@@ -2974,7 +2974,7 @@ formatdate-time
 
 <summary>
 
-PolicyListResponse object {id, account\_id, app\_count, 16 more }
+PolicyListResponse object {id, account\_id, app\_count, 17 more }
 
 </summary>
 
@@ -5031,6 +5031,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+<a href="#">Link to this property</a>
+
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 <a href="#">Link to this property</a>
 
@@ -5990,7 +5996,7 @@ formatdate-time
 
 <summary>
 
-PolicyGetResponse object {id, account\_id, app\_count, 16 more }
+PolicyGetResponse object {id, account\_id, app\_count, 17 more }
 
 </summary>
 
@@ -8047,6 +8053,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+<a href="#">Link to this property</a>
+
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 <a href="#">Link to this property</a>
 
@@ -9006,7 +9018,7 @@ formatdate-time
 
 <summary>
 
-PolicyCreateResponse object {id, account\_id, app\_count, 16 more }
+PolicyCreateResponse object {id, account\_id, app\_count, 17 more }
 
 </summary>
 
@@ -11063,6 +11075,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+<a href="#">Link to this property</a>
+
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 <a href="#">Link to this property</a>
 
@@ -12022,7 +12040,7 @@ formatdate-time
 
 <summary>
 
-PolicyUpdateResponse object {id, account\_id, app\_count, 16 more }
+PolicyUpdateResponse object {id, account\_id, app\_count, 17 more }
 
 </summary>
 
@@ -14079,6 +14097,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+<a href="#">Link to this property</a>
+
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 <a href="#">Link to this property</a>
 

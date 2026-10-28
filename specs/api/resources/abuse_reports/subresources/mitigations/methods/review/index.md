@@ -169,6 +169,14 @@ counter\_notice\_response: optional string
 
 [Link to this property](#)%20abuse_reports.mitigations%20%3E%20(method)%20review%20%3E%20(params)%200%20%3E%20(param)%20data%20%3E%20(schema)>)
 
+explanation: optional string
+
+Optional explanation for a “content\_removed” appeal, such as how the content was removed. Not accepted for other appeal types.
+
+maxLength5000
+
+[Link to this property](#)%20abuse_reports.mitigations%20%3E%20(method)%20review%20%3E%20(params)%200%20%3E%20(param)%20explanation%20%3E%20(schema)>)
+
 <details>
 
 <summary>

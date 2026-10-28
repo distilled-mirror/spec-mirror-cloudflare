@@ -76,6 +76,28 @@ minLength3
 
 [Link to this property](#)%20r2_data_catalog%20%3E%20(method)%20enable%20%3E%20(params)%20default%20%3E%20(param)%20bucket_name%20%3E%20(schema)>)
 
+##### Body ParametersJSONExpand Collapse
+
+<details>
+
+<summary>
+
+credential: optional object {token }
+
+Contains request to store catalog credentials.
+
+</summary>
+
+token: string
+
+Provides the Cloudflare API token for accessing R2.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20r2_data_catalog%20%3E%20(method)%20enable%20%3E%20(params)%200%20%3E%20(param)%20credential%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

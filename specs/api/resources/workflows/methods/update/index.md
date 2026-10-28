@@ -180,6 +180,34 @@ string
 
 <summary>
 
+jurisdiction: optional "eu"or "fedramp"or "us"
+
+Jurisdiction where instances of this workflow run and store data. Can only be set when the workflow is created and cannot be changed afterwards; omit it to keep the existing jurisdiction.
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workflows%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20jurisdiction%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
 limits: optional object {steps }
 
 </summary>
@@ -262,7 +290,7 @@ message: string
 
 <summary>
 
-result: object {id, class\_name, created\_on, 7 more }
+result: object {id, class\_name, created\_on, 8 more }
 
 </summary>
 
@@ -317,6 +345,34 @@ formatdate-time
 version\_id: string
 
 formatuuid
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+jurisdiction: optional "eu"or "fedramp"or "us"
+
+Jurisdiction where instances of this workflow run and store data. Set when the workflow is created and cannot be changed.
+
+</summary>
+
+One of the following:
+
+"eu"
+
+<a href="#">Link to this property</a>
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"us"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -402,7 +458,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workflows/$WORKFL
     "script_name": "script_name",
     "terminator_running": 0,
     "triggered_on": "2019-12-27T18:11:19.117Z",
-    "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "jurisdiction": "eu"
   },
   "success": true,
   "result_info": {
@@ -439,7 +496,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workflows/$WORKFL
     "script_name": "script_name",
     "terminator_running": 0,
     "triggered_on": "2019-12-27T18:11:19.117Z",
-    "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+    "version_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+    "jurisdiction": "eu"
   },
   "success": true,
   "result_info": {

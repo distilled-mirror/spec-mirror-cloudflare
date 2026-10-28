@@ -140,7 +140,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, bucket, name, 3 more }
+result: optional object {id, bucket, name, 4 more }
 
 Contains catalog information.
 
@@ -211,6 +211,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+jurisdiction: optional string
+
+Specifies the data-locality jurisdiction of the catalog. The first enable sets it, and it cannot change. Currently always <code>default</code>.
 
 <a href="#">Link to this property</a>
 
@@ -383,6 +389,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
     "bucket": "analytics-bucket",
     "credential_status": "present",
     "id": "550e8400-e29b-41d4-a716-446655440000",
+    "jurisdiction": "default",
     "maintenance_config": {
       "compaction": {
         "state": "enabled",
@@ -413,6 +420,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
     "bucket": "analytics-bucket",
     "credential_status": "present",
     "id": "550e8400-e29b-41d4-a716-446655440000",
+    "jurisdiction": "default",
     "maintenance_config": {
       "compaction": {
         "state": "enabled",

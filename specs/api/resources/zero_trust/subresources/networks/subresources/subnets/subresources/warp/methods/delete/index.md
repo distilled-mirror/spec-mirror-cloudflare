@@ -86,7 +86,7 @@ formatuuid
 
 <summary>
 
-errors: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+errors: array of object {code, message, context }
 
 </summary>
 
@@ -100,23 +100,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+context: optional map\[unknown]
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional error-specific context.
 
 <a href="#">Link to this property</a>
 
@@ -128,7 +114,7 @@ pointer: optional string
 
 <summary>
 
-messages: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+messages: array of object {code, message, context }
 
 </summary>
 
@@ -142,23 +128,9 @@ message: string
 
 <a href="#">Link to this property</a>
 
-documentation\_url: optional string
+context: optional map\[unknown]
 
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-source: optional object {pointer }
-
-</summary>
-
-pointer: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
+Optional error-specific context.
 
 <a href="#">Link to this property</a>
 
@@ -306,9 +278,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zerotrust/subnets
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
+      "context": {
+        "foo": "bar"
       }
     }
   ],
@@ -316,9 +287,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zerotrust/subnets
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
+      "context": {
+        "foo": "bar"
       }
     }
   ],
@@ -350,9 +320,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zerotrust/subnets
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
+      "context": {
+        "foo": "bar"
       }
     }
   ],
@@ -360,9 +329,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zerotrust/subnets
     {
       "code": 1000,
       "message": "message",
-      "documentation_url": "documentation_url",
-      "source": {
-        "pointer": "pointer"
+      "context": {
+        "foo": "bar"
       }
     }
   ],

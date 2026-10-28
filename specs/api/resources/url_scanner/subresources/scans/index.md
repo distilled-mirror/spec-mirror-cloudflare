@@ -3362,7 +3362,7 @@ params: optional unknown
 
 <summary>
 
-discovery: object {a2aAgentCard, agentSkills, apiCatalog, 6 more }
+discovery: object {a2aAgentCard, agentSkills, apiCatalog, 7 more }
 
 </summary>
 
@@ -4421,6 +4421,156 @@ params: optional unknown
 <summary>
 
 oauthProtectedResource: object {status, details, durationMs, 3 more }
+
+</summary>
+
+status: string
+
+<a href="#">Link to this property</a>
+
+details: optional unknown
+
+<a href="#">Link to this property</a>
+
+durationMs: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+evidence: optional array of object {action, label, finding, 2 more }
+
+</summary>
+
+action: string
+
+<a href="#">Link to this property</a>
+
+label: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+finding: optional object {outcome, summary }
+
+</summary>
+
+outcome: string
+
+<a href="#">Link to this property</a>
+
+summary: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+request: optional object {method, url, headers }
+
+</summary>
+
+method: string
+
+<a href="#">Link to this property</a>
+
+url: string
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+response: optional object {status, statusText, bodyPreview, 3 more }
+
+</summary>
+
+status: number
+
+<a href="#">Link to this property</a>
+
+statusText: string
+
+<a href="#">Link to this property</a>
+
+bodyPreview: optional string
+
+<a href="#">Link to this property</a>
+
+bodySize: optional number
+
+<a href="#">Link to this property</a>
+
+headers: optional unknown
+
+<a href="#">Link to this property</a>
+
+redirectedTo: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+message: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+messageRef: optional object {code, params }
+
+</summary>
+
+code: string
+
+Stable, translatable message code.
+
+<a href="#">Link to this property</a>
+
+params: optional unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+personalAgentProtocol: object {status, details, durationMs, 3 more }
 
 </summary>
 

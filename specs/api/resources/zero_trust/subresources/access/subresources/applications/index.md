@@ -5140,7 +5140,7 @@ formatdate-time
 
 <summary>
 
-ApplicationPolicy object { id, approval_groups, approval_required, 13 more }
+ApplicationPolicy object { id, approval_groups, approval_required, 14 more }
 
 </summary>
 
@@ -7183,6 +7183,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -10188,7 +10194,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -12239,6 +12245,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -13756,7 +13768,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -15807,6 +15819,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -18404,7 +18422,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -20455,6 +20473,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -22608,7 +22632,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -24659,6 +24683,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -26346,7 +26376,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -28397,6 +28427,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -29446,7 +29482,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -31497,6 +31533,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -32540,7 +32582,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -34591,6 +34633,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -35634,7 +35682,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -37685,6 +37733,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -38704,7 +38758,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -40755,6 +40809,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -41962,7 +42022,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, connection_rules, created_at, 7 more }
+policies: optional array of object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -43922,6 +43982,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -45636,7 +45702,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -47687,6 +47753,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -49676,7 +49748,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -51727,6 +51799,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -53692,7 +53770,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -55743,6 +55821,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -58282,7 +58366,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -60333,6 +60417,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -61850,7 +61940,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -63901,6 +63991,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -66498,7 +66594,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -68549,6 +68645,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -70702,7 +70804,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -72753,6 +72855,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -74440,7 +74548,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -76491,6 +76599,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -77540,7 +77654,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -79591,6 +79705,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -80634,7 +80754,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -82685,6 +82805,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -83728,7 +83854,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -85779,6 +85905,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -86798,7 +86930,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -88849,6 +88981,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -90056,7 +90194,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, connection_rules, created_at, 7 more }
+policies: optional array of object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -92016,6 +92154,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -93730,7 +93874,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -95781,6 +95925,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -97770,7 +97920,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -99821,6 +99971,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -101786,7 +101942,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -103837,6 +103993,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -106376,7 +106538,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -108427,6 +108589,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -109944,7 +110112,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -111995,6 +112163,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -114592,7 +114766,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -116643,6 +116817,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -118796,7 +118976,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -120847,6 +121027,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -122534,7 +122720,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -124585,6 +124771,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -125634,7 +125826,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -127685,6 +127877,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -128728,7 +128926,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -130779,6 +130977,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -131822,7 +132026,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -133873,6 +134077,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -134892,7 +135102,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -136943,6 +137153,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -138150,7 +138366,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, connection_rules, created_at, 7 more }
+policies: optional array of object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -140110,6 +140326,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -141824,7 +142046,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -143875,6 +144097,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -145864,7 +146092,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -147915,6 +148143,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -149880,7 +150114,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -151931,6 +152165,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -154470,7 +154710,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -156521,6 +156761,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -158038,7 +158284,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -160089,6 +160335,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -162686,7 +162938,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -164737,6 +164989,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -166890,7 +167148,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -168941,6 +169199,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -170628,7 +170892,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -172679,6 +172943,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -173728,7 +173998,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -175779,6 +176049,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -176822,7 +177098,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -178873,6 +179149,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -179916,7 +180198,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -181967,6 +182249,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -182986,7 +183274,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -185037,6 +185325,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -186244,7 +186538,7 @@ The name of the application.
 
 <summary>
 
-policies: optional array of object { id, connection_rules, created_at, 7 more }
+policies: optional array of object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -188204,6 +188498,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -189918,7 +190218,7 @@ Enables cookie paths to scope an application’s JWT to the application path. If
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -191969,6 +192269,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -193958,7 +194264,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -196009,6 +196315,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -197974,7 +198286,7 @@ Allows options preflight requests to bypass Access authentication and go directl
 
 <summary>
 
-policies: optional array of object { id, account_id, approval_groups, 15 more }
+policies: optional array of object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -200025,6 +200337,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 
@@ -203252,7 +203570,7 @@ The ID of a Service Token.
 
 <summary>
 
-PolicyListResponse = object { id, account_id, approval_groups, 15 more } or object { id, connection_rules, created_at, 7 more }
+PolicyListResponse = object { id, account_id, approval_groups, 16 more } or object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -203262,7 +203580,7 @@ One of the following:
 
 <summary>
 
-object { id, account_id, approval_groups, 15 more }
+object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -205316,6 +205634,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
@@ -206274,7 +206598,7 @@ formatdate-time
 
 <summary>
 
-object { id, connection_rules, created_at, 7 more }
+object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -208234,6 +208558,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -209172,7 +209502,7 @@ formatdate-time
 
 <summary>
 
-PolicyGetResponse = object { id, account_id, approval_groups, 15 more } or object { id, connection_rules, created_at, 7 more }
+PolicyGetResponse = object { id, account_id, approval_groups, 16 more } or object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -209182,7 +209512,7 @@ One of the following:
 
 <summary>
 
-object { id, account_id, approval_groups, 15 more }
+object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -211236,6 +211566,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
@@ -212194,7 +212530,7 @@ formatdate-time
 
 <summary>
 
-object { id, connection_rules, created_at, 7 more }
+object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -214154,6 +214490,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -215092,7 +215434,7 @@ formatdate-time
 
 <summary>
 
-PolicyCreateResponse = object { id, account_id, approval_groups, 15 more } or object { id, connection_rules, created_at, 7 more }
+PolicyCreateResponse = object { id, account_id, approval_groups, 16 more } or object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -215102,7 +215444,7 @@ One of the following:
 
 <summary>
 
-object { id, account_id, approval_groups, 15 more }
+object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -217156,6 +217498,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
@@ -218114,7 +218462,7 @@ formatdate-time
 
 <summary>
 
-object { id, connection_rules, created_at, 7 more }
+object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -220074,6 +220422,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 <details>
 
 <summary>
@@ -221012,7 +221366,7 @@ formatdate-time
 
 <summary>
 
-PolicyUpdateResponse = object { id, account_id, approval_groups, 15 more } or object { id, connection_rules, created_at, 7 more }
+PolicyUpdateResponse = object { id, account_id, approval_groups, 16 more } or object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -221022,7 +221376,7 @@ One of the following:
 
 <summary>
 
-object { id, account_id, approval_groups, 15 more }
+object { id, account_id, approval_groups, 16 more }
 
 </summary>
 
@@ -223076,6 +223430,12 @@ The name of the Access policy.
 
 [Link to this property](#)
 
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+[Link to this property](#)
+
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
@@ -224034,7 +224394,7 @@ formatdate-time
 
 <summary>
 
-object { id, connection_rules, created_at, 7 more }
+object { id, connection_rules, created_at, 8 more }
 
 </summary>
 
@@ -225991,6 +226351,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 name: optional string
 
 The name of the Access policy.
+
+[Link to this property](#)
+
+policy_resolution_account_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 [Link to this property](#)
 

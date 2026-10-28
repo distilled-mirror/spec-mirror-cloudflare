@@ -44,7 +44,7 @@ DELETE/accounts/{account\_id}/dns\_settings/nameserver\_sets/{nameserver\_set\_i
 
 <summary>
 
-NameserverSetListResponse = object {id, advanced, created\_on, 2 more } or object {id, advanced, created\_on, 2 more }
+NameserverSetListResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -89,6 +89,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -130,7 +140,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -165,6 +175,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -266,7 +286,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-NameserverSetGetResponse = object {id, advanced, created\_on, 2 more } or object {id, advanced, created\_on, 2 more }
+NameserverSetGetResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -276,7 +296,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -311,6 +331,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -352,7 +382,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -387,6 +417,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -488,7 +528,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-NameserverSetCreateResponse = object {id, advanced, created\_on, 2 more } or object {id, advanced, created\_on, 2 more }
+NameserverSetCreateResponse = object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -498,7 +538,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -533,6 +573,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -574,7 +624,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -609,6 +659,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 

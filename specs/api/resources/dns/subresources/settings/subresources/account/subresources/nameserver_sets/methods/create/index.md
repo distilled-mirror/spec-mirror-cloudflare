@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/dns\_settings/nameserver\_sets
 
-Creates an immutable Custom Nameserver Set. To change a set, create a new one, move any zone assignments, and delete the old set.
+Creates a named Custom Nameserver Set. Only the customer-defined name can be changed later. To change nameservers or addresses, create a new set, move any zone assignments, and delete the old set.
 
 ##### Security
 
@@ -69,6 +69,16 @@ maxLength32
 [Link to this property](#)%20dns.settings.account.nameserver_sets%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)%20dns.settings.account.nameserver_sets%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
 <details>
 
@@ -208,7 +218,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, advanced, created\_on, 2 more } or object {id, advanced, created\_on, 2 more }
+result: object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -218,7 +228,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -253,6 +263,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -294,7 +314,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -329,6 +349,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -443,6 +473,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
+          "name": "Production nameservers",
           "nameservers": [
             {
               "name": "ns1.example.com"
@@ -484,6 +515,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
     "advanced": false,
     "created_on": "2026-09-01T12:00:00Z",
     "ip_set": 1,
+    "name": "Production nameservers",
     "nameservers": [
       {
         "ipv4": [
@@ -540,6 +572,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
     "advanced": false,
     "created_on": "2026-09-01T12:00:00Z",
     "ip_set": 1,
+    "name": "Production nameservers",
     "nameservers": [
       {
         "ipv4": [

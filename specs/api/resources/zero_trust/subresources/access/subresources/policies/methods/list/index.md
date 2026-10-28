@@ -182,7 +182,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of object {id, account\_id, app\_count, 16 more }
+result: optional array of object {id, account\_id, app\_count, 17 more }
 
 </summary>
 
@@ -2268,6 +2268,12 @@ The name of the Access policy.
 
 <a href="#">Link to this property</a>
 
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+<a href="#">Link to this property</a>
+
 purpose\_justification\_prompt: optional string
 
 A custom message that will appear on the purpose justification screen.
@@ -3357,6 +3363,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/policies \
         "session_duration": "24h"
       },
       "name": "Allow devs",
+      "policy_resolution_account_id": "policy_resolution_account_id",
       "purpose_justification_prompt": "Please enter a justification for entering this protected domain.",
       "purpose_justification_required": true,
       "require": [
@@ -3465,6 +3472,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/policies \
         "session_duration": "24h"
       },
       "name": "Allow devs",
+      "policy_resolution_account_id": "policy_resolution_account_id",
       "purpose_justification_prompt": "Please enter a justification for entering this protected domain.",
       "purpose_justification_required": true,
       "require": [

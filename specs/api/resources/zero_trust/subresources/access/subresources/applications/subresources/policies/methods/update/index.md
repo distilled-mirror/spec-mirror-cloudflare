@@ -98,7 +98,7 @@ The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
 <summary>
 
-body: object {approval\_groups, approval\_required, connection\_rules, 6 more } or object {decision, include, name, 4 more }
+body: object {approval\_groups, approval\_required, connection\_rules, 6 more } or object {decision, include, name, 5 more }
 
 </summary>
 
@@ -320,7 +320,7 @@ The amount of time that tokens issued for the application will be valid. Must be
 
 <summary>
 
-object {decision, include, name, 4 more }
+object {decision, include, name, 5 more }
 
 </summary>
 
@@ -2292,6 +2292,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 
 <a href="#">Link to this property</a>
 
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -3316,7 +3322,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, approval\_groups, 15 more } or object {id, connection\_rules, created\_at, 7 more }
+result: optional object {id, account\_id, approval\_groups, 16 more } or object {id, connection\_rules, created\_at, 8 more }
 
 </summary>
 
@@ -3326,7 +3332,7 @@ One of the following:
 
 <summary>
 
-object {id, account\_id, approval\_groups, 15 more }
+object {id, account\_id, approval\_groups, 16 more }
 
 </summary>
 
@@ -5406,6 +5412,12 @@ The name of the Access policy.
 
 <a href="#">Link to this property</a>
 
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+<a href="#">Link to this property</a>
+
 precedence: optional number
 
 The order of execution for this policy. Must be unique for each policy within an app.
@@ -6364,7 +6376,7 @@ formatdate-time
 
 <summary>
 
-object {id, connection\_rules, created\_at, 7 more }
+object {id, connection\_rules, created\_at, 8 more }
 
 </summary>
 
@@ -8350,6 +8362,12 @@ The name of the Access policy.
 
 <a href="#">Link to this property</a>
 
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -9398,6 +9416,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "session_duration": "24h"
     },
     "name": "Allow devs",
+    "policy_resolution_account_id": "policy_resolution_account_id",
     "precedence": 0,
     "purpose_justification_prompt": "Please enter a justification for entering this protected domain.",
     "purpose_justification_required": true,
@@ -9496,6 +9515,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "session_duration": "24h"
     },
     "name": "Allow devs",
+    "policy_resolution_account_id": "policy_resolution_account_id",
     "precedence": 0,
     "purpose_justification_prompt": "Please enter a justification for entering this protected domain.",
     "purpose_justification_required": true,

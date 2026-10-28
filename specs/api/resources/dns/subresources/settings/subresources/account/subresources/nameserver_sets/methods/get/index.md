@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: object {id, advanced, created\_on, 2 more } or object {id, advanced, created\_on, 2 more }
+result: object {id, advanced, created\_on, 3 more } or object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetStandardResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -217,6 +217,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -258,7 +268,7 @@ A unique lowercase Punycode nameserver name within the set.
 
 <summary>
 
-DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 2 more }
+DNSSettingsNameserverSetAdvancedResponse object {id, advanced, created\_on, 3 more }
 
 </summary>
 
@@ -293,6 +303,16 @@ Selects the account-specific IP set that supplies the nameserver addresses. Name
 formatint64
 
 minimum1
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Customer-defined name, unique within the account by exact string equality (case-sensitive, with no Unicode normalization). Must be valid UTF-8 and at most 255 UTF-8 bytes, not 255 characters. Only graphical Unicode characters are allowed; leading or trailing whitespace is rejected. The name can be changed without changing the set’s nameservers or addresses.
+
+maxLength255
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -436,6 +456,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
     "advanced": false,
     "created_on": "2026-09-01T12:00:00Z",
     "ip_set": 1,
+    "name": "Production nameservers",
     "nameservers": [
       {
         "ipv4": [
@@ -492,6 +513,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
     "advanced": false,
     "created_on": "2026-09-01T12:00:00Z",
     "ip_set": 1,
+    "name": "Production nameservers",
     "nameservers": [
       {
         "ipv4": [

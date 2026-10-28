@@ -138,7 +138,7 @@ minimum1
 
 <summary>
 
-dataset: optional "access\_requests"or "account\_abuse\_protection\_events"or "audit\_logs"or 34 more
+dataset: optional "access\_requests"or "account\_abuse\_protection\_events"or "ai\_gateway\_events"or 35 more
 
 Name of the dataset. A list of supported datasets can be found on the <a href="https://developers.cloudflare.com/logs/reference/log-fields/">Developer Docs</a>.
 
@@ -151,6 +151,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "account\_abuse\_protection\_events"
+
+<a href="#">Link to this property</a>
+
+"ai\_gateway\_events"
 
 <a href="#">Link to this property</a>
 

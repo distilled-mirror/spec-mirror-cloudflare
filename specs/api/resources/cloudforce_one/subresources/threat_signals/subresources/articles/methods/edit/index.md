@@ -186,13 +186,39 @@ read\_at: string
 
 <a href="#">Link to this property</a>
 
-severity: number
+<details>
 
-Intrinsic article severity from 1 (informational) to 5 (critical). Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
+<summary>
 
-maximum5
+severity: "informational"or "low"or "medium"or 2 more
 
-minimum1
+Beta. Intrinsic article severity band, from informational to critical, independent of any organisation or Priority Intelligence Requirement. Null when the account has no active Priority Intelligence Requirements, scoring has not completed, or a historic article has not entered an automatic rescore window.
+
+</summary>
+
+One of the following:
+
+"informational"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -328,7 +354,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
-    "severity": 1,
+    "severity": "informational",
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",
@@ -378,7 +404,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "published_at": "published_at",
     "read": true,
     "read_at": "read_at",
-    "severity": 1,
+    "severity": "informational",
     "source_count": 0,
     "summary": "summary",
     "summary_r2_key": "summary_r2_key",

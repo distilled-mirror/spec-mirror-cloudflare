@@ -78,7 +78,7 @@ maxLength32
 
 <summary>
 
-policies: optional array of object {decision, include, name, 10 more } or string
+policies: optional array of object {decision, include, name, 11 more } or string
 
 </summary>
 
@@ -88,7 +88,7 @@ One of the following:
 
 <summary>
 
-object {decision, include, name, 10 more }
+object {decision, include, name, 11 more }
 
 </summary>
 
@@ -2143,6 +2143,12 @@ Defines the duration of an MFA session. Must be in minutes (m) or hours (h). Min
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+policy\_resolution\_account\_id: optional string
+
+The account ID used to resolve policy resources and identity for cross-account WARP authentication. The account must be trusted by the account that owns this policy.
 
 <a href="#">Link to this property</a>
 
