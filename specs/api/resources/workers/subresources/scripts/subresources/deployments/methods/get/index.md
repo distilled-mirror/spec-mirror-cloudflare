@@ -172,7 +172,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)">Deployment</a> { id, created\_on, source, 4 more }
+result: <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)">Deployment</a> { id, created\_on, source, 5 more }
 
 </summary>
 
@@ -257,6 +257,74 @@ Operation that triggered the creation of the deployment.
 author\_email: optional string
 
 formatemail
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, max\_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+<a href="#">Link to this property</a>
+
+max\_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

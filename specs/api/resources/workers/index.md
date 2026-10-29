@@ -2980,13 +2980,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id or an explicit “cf1:vnet:” network_id.
 
 [Link to this property](#)
 
 network_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel_id.
 
 [Link to this property](#)
 
@@ -9234,7 +9234,7 @@ DELETE/accounts/{account_id}/workers/scripts/{script_name}/deployments/{deployme
 
 <summary>
 
-Deployment object { id, created_on, source, 4 more }
+Deployment object { id, created_on, source, 5 more }
 
 </summary>
 
@@ -9319,6 +9319,74 @@ Operation that triggered the creation of the deployment.
 author_email: optional string
 
 formatemail
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+code_update_strategy: optional object { mode } or object { mode, max_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object { mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { mode, max_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+[Link to this property](#)
+
+max_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -9338,7 +9406,7 @@ DeploymentListResponse object { deployments }
 
 <summary>
 
-deployments: array of [Deployment](/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)) { id, created_on, source, 4 more }
+deployments: array of [Deployment](/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)) { id, created_on, source, 5 more }
 
 </summary>
 
@@ -9423,6 +9491,74 @@ Operation that triggered the creation of the deployment.
 author_email: optional string
 
 formatemail
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+code_update_strategy: optional object { mode } or object { mode, max_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object { mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { mode, max_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+[Link to this property](#)
+
+max_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -13476,13 +13612,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id or an explicit “cf1:vnet:” network_id.
 
 [Link to this property](#)
 
 network_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel_id.
 
 [Link to this property](#)
 
@@ -16504,13 +16640,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id.
+Enables Gateway identity for the binding. Requires network_id to be “cf1:network” and cannot be combined with tunnel_id or an explicit “cf1:vnet:” network_id.
 
 [Link to this property](#)
 
 network_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel_id.
 
 [Link to this property](#)
 
@@ -20272,7 +20408,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 33 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -20439,6 +20575,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset" or "ok" or "error"
+
+OpenTelemetry span status. Present only on spans. `unset` when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"ok"
+
+[Link to this property](#)
+
+"error"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is `error` and a message was set.
 
 [Link to this property](#)
 
@@ -21146,7 +21316,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 33 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -21313,6 +21483,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset" or "ok" or "error"
+
+OpenTelemetry span status. Present only on spans. `unset` when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"ok"
+
+[Link to this property](#)
+
+"error"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is `error` and a message was set.
 
 [Link to this property](#)
 
@@ -25990,7 +26194,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 33 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -26157,6 +26361,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset" or "ok" or "error"
+
+OpenTelemetry span status. Present only on spans. `unset` when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"ok"
+
+[Link to this property](#)
+
+"error"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is `error` and a message was set.
 
 [Link to this property](#)
 
@@ -26864,7 +27102,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object { id, account, cloudService, 33 more }
+"$metadata": object { id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -27031,6 +27269,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset" or "ok" or "error"
+
+OpenTelemetry span status. Present only on spans. `unset` when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"ok"
+
+[Link to this property](#)
+
+"error"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is `error` and a message was set.
 
 [Link to this property](#)
 

@@ -4528,7 +4528,7 @@ DELETE/accounts/{account\_id}/workers/scripts/{script\_name}/deployments/{deploy
 
 <summary>
 
-Deployment object {id, created\_on, source, 4 more }
+Deployment object {id, created\_on, source, 5 more }
 
 </summary>
 
@@ -4613,6 +4613,74 @@ Operation that triggered the creation of the deployment.
 author\_email: optional string
 
 formatemail
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, max\_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+<a href="#">Link to this property</a>
+
+max\_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -4632,7 +4700,7 @@ DeploymentListResponse object {deployments }
 
 <summary>
 
-deployments: array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)">Deployment</a> { id, created\_on, source, 4 more }
+deployments: array of <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.scripts.deployments%20%3E%20(model)%20deployment%20%3E%20(schema)">Deployment</a> { id, created\_on, source, 5 more }
 
 </summary>
 
@@ -4717,6 +4785,74 @@ Operation that triggered the creation of the deployment.
 author\_email: optional string
 
 formatemail
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, max\_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+<a href="#">Link to this property</a>
+
+max\_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -8776,13 +8912,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 
@@ -11804,13 +11940,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 

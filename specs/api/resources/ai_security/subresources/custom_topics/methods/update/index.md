@@ -28,7 +28,7 @@ Each entry has a `label`, used to reference the topic in rule expressions and an
 
 - A zone can hold at most 20 topics.
 - `label` must be 2–20 characters, using only lowercase letters (a–z), digits (0–9), and hyphens.
-- `topic` must be 2–50 printable ASCII characters.
+- `topic` must be 2–50 UTF-8 bytes. Text in any language is supported, including spaces, numbers, punctuation, and symbols. Tabs, line breaks, invalid text, and invisible formatting characters are not allowed.
 - Labels must be unique within the zone, and so must topic descriptions.
 
 ##### Security
@@ -95,11 +95,7 @@ minLength2
 
 topic: string
 
-Description of the topic category. Must contain only printable ASCII characters.
-
-maxLength50
-
-minLength2
+Description of the topic category. Must contain 2–50 UTF-8 bytes. Text in any language is supported, including spaces, numbers, punctuation, and symbols. Tabs, line breaks, invalid text, and invisible formatting characters are not allowed.
 
 <a href="#">Link to this property</a>
 
@@ -223,11 +219,7 @@ minLength2
 
 topic: string
 
-Description of the topic category. Must contain only printable ASCII characters.
-
-maxLength50
-
-minLength2
+Description of the topic category. Must contain 2–50 UTF-8 bytes. Text in any language is supported, including spaces, numbers, punctuation, and symbols. Tabs, line breaks, invalid text, and invisible formatting characters are not allowed.
 
 <a href="#">Link to this property</a>
 

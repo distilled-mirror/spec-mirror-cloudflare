@@ -70,6 +70,10 @@ Used when interacting with the Origin CA certificates API. <a href="https://deve
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zone Observability Write``Zone Observability Read`
+
 ##### P ath ParametersExpand Collapse
 
 zone\_id: string

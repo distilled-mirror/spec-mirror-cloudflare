@@ -180,11 +180,7 @@ minLength2
 
 topic: string
 
-Description of the topic category. Must contain only printable ASCII characters.
-
-maxLength50
-
-minLength2
+Description of the topic category. Must contain 2–50 UTF-8 bytes. Text in any language is supported, including spaces, numbers, punctuation, and symbols. Tabs, line breaks, invalid text, and invisible formatting characters are not allowed.
 
 <a href="#">Link to this property</a>
 

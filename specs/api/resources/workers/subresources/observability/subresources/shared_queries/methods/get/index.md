@@ -1874,7 +1874,7 @@ List of individual telemetry events matching the query.
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 33 more }
+"$metadata": object {id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -2041,6 +2041,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset"or "ok"or "error"
+
+OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+<a href="#">Link to this property</a>
+
+"ok"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is <code>error</code> and a message was set.
 
 <a href="#">Link to this property</a>
 
@@ -2748,7 +2782,7 @@ Events grouped by invocation (request ID). Present when the query view is ‘inv
 
 <summary>
 
-"$metadata": object {id, account, cloudService, 33 more }
+"$metadata": object {id, account, cloudService, 35 more }
 
 Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
 
@@ -2915,6 +2949,40 @@ Span ID for this individual unit of work within a trace.
 spanName: optional string
 
 Human-readable name for this span.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset"or "ok"or "error"
+
+OpenTelemetry span status. Present only on spans. <code>unset</code> when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+<a href="#">Link to this property</a>
+
+"ok"
+
+<a href="#">Link to this property</a>
+
+"error"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is <code>error</code> and a message was set.
 
 <a href="#">Link to this property</a>
 
@@ -3807,6 +3875,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "service": "service",
             "spanId": "spanId",
             "spanName": "spanName",
+            "spanStatus": "unset",
+            "spanStatusMessage": "spanStatusMessage",
             "stackId": "stackId",
             "startTime": 0,
             "startTimeNs": "startTimeNs",
@@ -3911,6 +3981,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "service": "service",
             "spanId": "spanId",
             "spanName": "spanName",
+            "spanStatus": "unset",
+            "spanStatusMessage": "spanStatusMessage",
             "stackId": "stackId",
             "startTime": 0,
             "startTimeNs": "startTimeNs",
@@ -4242,6 +4314,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "service": "service",
             "spanId": "spanId",
             "spanName": "spanName",
+            "spanStatus": "unset",
+            "spanStatusMessage": "spanStatusMessage",
             "stackId": "stackId",
             "startTime": 0,
             "startTimeNs": "startTimeNs",
@@ -4346,6 +4420,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/observabi
             "service": "service",
             "spanId": "spanId",
             "spanName": "spanName",
+            "spanStatus": "unset",
+            "spanStatusMessage": "spanStatusMessage",
             "stackId": "stackId",
             "startTime": 0,
             "startTimeNs": "startTimeNs",

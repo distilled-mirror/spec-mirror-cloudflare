@@ -2818,13 +2818,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 
@@ -5812,13 +5812,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 
@@ -8804,13 +8804,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 

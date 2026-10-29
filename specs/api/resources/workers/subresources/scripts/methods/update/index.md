@@ -88,7 +88,7 @@ When set to “strict”, the upload will fail with error 10057 if any `inherit`
 
 <summary>
 
-metadata: object {annotations, assets, bindings, 18 more }
+metadata: object {annotations, assets, bindings, 19 more }
 
 JSON-encoded metadata about the uploaded parts and Worker configuration.
 
@@ -1700,13 +1700,13 @@ The kind of resource that the binding provides.
 
 identity: optional "runtime-email-alpha"
 
-Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id.
+Enables Gateway identity for the binding. Requires network\_id to be “cf1:network” and cannot be combined with tunnel\_id or an explicit “cf1:vnet:” network\_id.
 
 <a href="#">Link to this property</a>
 
 network\_id: optional string
 
-Identifier of the network to bind to. Only “cf1:network” is currently supported. Mutually exclusive with tunnel\_id.
+Identifier of the network to bind to. Use “cf1:network” to select the account’s default virtual network at runtime, or “cf1:vnet:” to select an explicit virtual network in the Worker’s account. Mutually exclusive with tunnel\_id.
 
 <a href="#">Link to this property</a>
 
@@ -1749,6 +1749,74 @@ Whether caching is enabled for this Worker.
 cross\_version\_cache: optional boolean
 
 Whether cached responses are shared across Worker version uploads. This is independent of <code>enabled</code>. It can stay true while caching is off, so the preference survives turning caching off and back on.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+code\_update\_strategy: optional object {mode } or object {mode, max\_delay } or unknown
+
+Choose whether to apply Durable Object code updates immediately or defer them. When omitted, the default strategy applies.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+Mode object {mode }
+
+</summary>
+
+mode: "immediate"
+
+Apply Durable Object code updates immediately.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {mode, max\_delay }
+
+</summary>
+
+mode: "deferred"
+
+Allow active Durable Objects to hibernate before updating their code.
+
+<a href="#">Link to this property</a>
+
+max\_delay: optional number
+
+Set the maximum number of seconds to wait before forcing the update. When omitted, the default maximum delay applies.
+
+maximum86400
+
+minimum0
+
+multipleOf0.001
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unknown
 
 <a href="#">Link to this property</a>
 
