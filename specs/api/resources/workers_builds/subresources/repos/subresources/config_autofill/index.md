@@ -30,7 +30,17 @@ GET/accounts/{account\_id}/builds/repos/{provider\_type}/{provider\_account\_id}
 
 <summary>
 
-ConfigAutofillGetResponse object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+ConfigAutofillGetResponse = object {config\_file, default\_worker\_name, env\_worker\_names, 2 more } or object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
 
 </summary>
 
@@ -83,6 +93,74 @@ One of the following:
 <a href="#">Link to this property</a>
 
 scripts: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+
+</summary>
+
+config\_file: optional string
+
+<a href="#">Link to this property</a>
+
+default\_worker\_name: optional string
+
+<a href="#">Link to this property</a>
+
+env\_worker\_names: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+
+Package manager inferred from repository lockfiles; defaults to npm when none is detected.
+
+</summary>
+
+One of the following:
+
+"npm"
+
+<a href="#">Link to this property</a>
+
+"yarn"
+
+<a href="#">Link to this property</a>
+
+"pnpm"
+
+<a href="#">Link to this property</a>
+
+"bun"
+
+<a href="#">Link to this property</a>
+
+"uv"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+scripts: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

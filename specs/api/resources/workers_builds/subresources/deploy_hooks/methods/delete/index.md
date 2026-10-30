@@ -110,7 +110,17 @@ messages: array of string
 
 <summary>
 
-result: object {branch, created\_on, deploy\_hook\_name, 3 more }
+result: object {branch, created\_on, deploy\_hook\_name, 3 more } or object {branch, created\_on, deploy\_hook\_name, 3 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {branch, created\_on, deploy\_hook\_name, 3 more }
 
 </summary>
 
@@ -153,6 +163,64 @@ System-generated tag of the Worker. This is not the Worker name.
 modified\_on: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {branch, created\_on, deploy\_hook\_name, 3 more }
+
+</summary>
+
+branch: optional string
+
+Git branch name.
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_name: optional string
+
+Deploy hook name (1-58 characters).
+
+maxLength58
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+deploy\_hook\_uuid: optional string
+
+Deploy hook UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+external\_script\_id: optional string
+
+System-generated tag of the Worker. This is not the Worker name.
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -210,10 +278,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -241,34 +305,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -276,10 +312,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -307,33 +339,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

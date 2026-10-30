@@ -102,67 +102,17 @@ messages: array of string
 
 <summary>
 
-result: array of object {branch, created\_on, deploy\_hook\_name, 4 more }
+result: unknownor array of unknown
 
 </summary>
 
-branch: optional string
+One of the following:
 
-Git branch name.
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
+unknown
 
 <a href="#">Link to this property</a>
 
-deploy\_hook\_name: optional string
-
-Deploy hook name (1-58 characters).
-
-maxLength58
-
-minLength1
-
-<a href="#">Link to this property</a>
-
-deploy\_hook\_uuid: optional string
-
-Deploy hook UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-latest\_build: optional object {created\_on }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
+array of unknown
 
 <a href="#">Link to this property</a>
 
@@ -219,8 +169,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -232,19 +180,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "branch": "main",
-      "created_on": "2019-12-27T18:11:19.117Z",
-      "deploy_hook_name": "Production Deploy Hook",
-      "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
-      "latest_build": {
-        "created_on": "2019-12-27T18:11:19.117Z"
-      },
-      "modified_on": "2019-12-27T18:11:19.117Z"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -253,20 +189,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -274,8 +196,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -287,19 +207,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "branch": "main",
-      "created_on": "2019-12-27T18:11:19.117Z",
-      "deploy_hook_name": "Production Deploy Hook",
-      "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
-      "latest_build": {
-        "created_on": "2019-12-27T18:11:19.117Z"
-      },
-      "modified_on": "2019-12-27T18:11:19.117Z"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -308,19 +216,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

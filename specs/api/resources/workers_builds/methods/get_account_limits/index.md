@@ -94,7 +94,17 @@ messages: array of string
 
 <summary>
 
-result: object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+result: object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit } or object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
 
 </summary>
 
@@ -109,6 +119,36 @@ formatdate-time
 has\_reached\_build\_minutes\_limit: optional boolean
 
 Whether build minutes limit has been reached (only for non-paid plans)
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {build\_minutes\_refresh\_on, has\_reached\_build\_minutes\_limit }
+
+</summary>
+
+build\_minutes\_refresh\_on: optional string
+
+When build minutes will refresh (only for non-paid plans)
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+has\_reached\_build\_minutes\_limit: optional boolean
+
+Whether build minutes limit has been reached (only for non-paid plans)
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -165,8 +205,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/account/li
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -190,20 +228,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/account/li
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -211,8 +235,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/account/li
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -236,19 +258,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/account/li
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

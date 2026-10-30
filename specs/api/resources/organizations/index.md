@@ -208,7 +208,7 @@ name: string
 
 Account name
 
-maxLength100
+maxLength120
 
 <a href="#">Link to this property</a>
 
@@ -246,7 +246,7 @@ formatdate-time
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name }
+managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -263,6 +263,20 @@ maxLength32
 parent\_org\_name: optional string
 
 Name of the parent Organization, if one exists
+
+<a href="#">Link to this property</a>
+
+root\_org\_id: optional string
+
+ID of the root Organization, if one exists
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+should\_display\_parent\_orgs: optional boolean
+
+Indicates whether the parent Organization hierarchy should be displayed
 
 <a href="#">Link to this property</a>
 

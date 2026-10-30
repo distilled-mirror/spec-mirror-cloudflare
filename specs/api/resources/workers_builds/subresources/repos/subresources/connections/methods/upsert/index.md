@@ -156,7 +156,17 @@ messages: array of string
 
 <summary>
 
-result: object {created\_on, deleted\_on, modified\_on, 6 more }
+result: object {created\_on, deleted\_on, modified\_on, 6 more } or object {created\_on, deleted\_on, modified\_on, 6 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {created\_on, deleted\_on, modified\_on, 6 more }
 
 </summary>
 
@@ -244,6 +254,104 @@ Human-readable repository name.
 
 </details>
 
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {created\_on, deleted\_on, modified\_on, 6 more }
+
+</summary>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+deleted\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+provider\_account\_id: optional string
+
+Provider-specific identifier of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+provider\_account\_name: optional string
+
+Human-readable name of the account or namespace that owns the repository.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
+
+Source control provider.
+
+</summary>
+
+One of the following:
+
+"github"
+
+<a href="#">Link to this property</a>
+
+"gitlab"
+
+<a href="#">Link to this property</a>
+
+"gitlab\_internal"
+
+<a href="#">Link to this property</a>
+
+"origin"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+repo\_connection\_uuid: optional string
+
+Repository connection UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+repo\_id: optional string
+
+Provider-specific repository identifier.
+
+<a href="#">Link to this property</a>
+
+repo\_name: optional string
+
+Human-readable repository name.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
 [Link to this property](#)%20workers_builds.repos.connections%20%3E%20(method)%20upsert%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 success: boolean
@@ -304,8 +412,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/conn
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -336,20 +442,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/conn
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -357,8 +449,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/conn
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -389,19 +479,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/conn
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

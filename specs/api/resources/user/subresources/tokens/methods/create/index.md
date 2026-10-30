@@ -358,7 +358,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, condition, creator\_email\_at\_creation, 11 more }
+result: optional object {id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -666,6 +666,22 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+token\_prefix: optional string
+
+The prefix of the token value, before the first underscore. Use it with <code>token_suffix</code> to identify a token. Only present for tokens created or rolled after this field was added.
+
+<a href="#">Link to this property</a>
+
+token\_suffix: optional string
+
+The last 4 characters of the token value. Use it with <code>token_prefix</code> to identify a token. It is not unique. Only present for tokens created or rolled after this field was added.
+
+maxLength4
+
+minLength4
+
+<a href="#">Link to this property</a>
+
 value: optional <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20token_value%20%3E%20(schema)">TokenValue</a>
 
 The token value.
@@ -809,6 +825,8 @@ curl https://api.cloudflare.com/client/v4/user/tokens \
     "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
     "provisioner_type": "com.cloudflare.api.oauthtoken",
     "status": "active",
+    "token_prefix": "cfat",
+    "token_suffix": "a1b2",
     "value": "8M7wS6hCpXVc-DoRnPPY_UCWPgy8aea4Wy6kCe5T"
   }
 }
@@ -904,6 +922,8 @@ curl https://api.cloudflare.com/client/v4/user/tokens \
     "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
     "provisioner_type": "com.cloudflare.api.oauthtoken",
     "status": "active",
+    "token_prefix": "cfat",
+    "token_suffix": "a1b2",
     "value": "8M7wS6hCpXVc-DoRnPPY_UCWPgy8aea4Wy6kCe5T"
   }
 }

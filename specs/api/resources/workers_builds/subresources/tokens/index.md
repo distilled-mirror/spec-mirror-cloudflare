@@ -36,7 +36,17 @@ DELETE/accounts/{account\_id}/builds/tokens/{build\_token\_uuid}
 
 <summary>
 
-TokenCreateResponse object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+TokenCreateResponse = object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -57,6 +67,42 @@ cloudflare\_token\_id: optional string
 <a href="#">Link to this property</a>
 
 owner\_type: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+
+</summary>
+
+build\_token\_name: optional string
+
+<a href="#">Link to this property</a>
+
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+cloudflare\_token\_id: optional string
+
+<a href="#">Link to this property</a>
+
+owner\_type: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -68,27 +114,17 @@ owner\_type: optional string
 
 <summary>
 
-TokenListResponse object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+TokenListResponse = unknownor array of unknown
 
 </summary>
 
-build\_token\_name: optional string
+One of the following:
+
+unknown
 
 <a href="#">Link to this property</a>
 
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-cloudflare\_token\_id: optional string
-
-<a href="#">Link to this property</a>
-
-owner\_type: optional string
+array of unknown
 
 <a href="#">Link to this property</a>
 
@@ -96,6 +132,24 @@ owner\_type: optional string
 
 [Link to this property](#)%20workers_builds.tokens%20%3E%20(model)%20token_list_response%20%3E%20(schema)>)
 
-TokenDeleteResponse = unknown
+<details>
+
+<summary>
+
+TokenDeleteResponse = unknownor array of unknown
+
+</summary>
+
+One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20workers_builds.tokens%20%3E%20(model)%20token_delete_response%20%3E%20(schema)>)

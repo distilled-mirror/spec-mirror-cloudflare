@@ -56,6 +56,10 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 </details>
 
+##### Accepted Permissions (at least one required)
+
+`Zero Trust Read``Zero Trust Write``Resource Library Read``Resource Library Write`
+
 ##### P ath ParametersExpand Collapse
 
 account\_id: string

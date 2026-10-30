@@ -110,7 +110,17 @@ messages: array of string
 
 <summary>
 
-result: object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+result: object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type } or object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
 
 </summary>
 
@@ -131,6 +141,42 @@ cloudflare\_token\_id: optional string
 <a href="#">Link to this property</a>
 
 owner\_type: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+
+</summary>
+
+build\_token\_name: optional string
+
+<a href="#">Link to this property</a>
+
+build\_token\_uuid: optional string
+
+UUID of the build token used when deploying the Worker.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+cloudflare\_token\_id: optional string
+
+<a href="#">Link to this property</a>
+
+owner\_type: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -193,8 +239,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -220,20 +264,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -241,8 +271,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -268,19 +296,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

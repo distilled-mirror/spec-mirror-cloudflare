@@ -38,25 +38,17 @@ DELETE/accounts/{account\_id}/builds/triggers/{trigger\_uuid}/environment\_varia
 
 <summary>
 
-EnvironmentVariableListResponse = map\[object {created\_on, is\_secret, value } ]
+EnvironmentVariableListResponse = unknownor unknown
 
 </summary>
 
-created\_on: string
+One of the following:
 
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-is\_secret: boolean
-
-Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+unknown
 
 <a href="#">Link to this property</a>
 
-value: optional string
-
-Value is null for secret environment variables
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -68,25 +60,17 @@ Value is null for secret environment variables
 
 <summary>
 
-EnvironmentVariableUpsertResponse = map\[object {created\_on, is\_secret, value } ]
+EnvironmentVariableUpsertResponse = unknownor unknown
 
 </summary>
 
-created\_on: string
+One of the following:
 
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-is\_secret: boolean
-
-Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+unknown
 
 <a href="#">Link to this property</a>
 
-value: optional string
-
-Value is null for secret environment variables
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -94,6 +78,24 @@ Value is null for secret environment variables
 
 [Link to this property](#)%20workers_builds.triggers.environment_variables%20%3E%20(model)%20environment_variable_upsert_response%20%3E%20(schema)>)
 
-EnvironmentVariableDeleteResponse = unknown
+<details>
+
+<summary>
+
+EnvironmentVariableDeleteResponse = unknownor array of unknown
+
+</summary>
+
+One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20workers_builds.triggers.environment_variables%20%3E%20(model)%20environment_variable_delete_response%20%3E%20(schema)>)

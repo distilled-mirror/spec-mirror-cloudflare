@@ -62,61 +62,81 @@ The app identifier tag.
 
 <summary>
 
-data: optional object {id, created\_at, err\_message, 6 more }
+data: object {id, created\_at, err\_message, 7 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The livestream ID.
+ID of the livestream session.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
-created\_at: optional string
+created\_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream session was created at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-err\_message: optional string
+err\_message: string
 
-The server URL to which the RTMP encoder sends the video and audio data.
-
-<a href="#">Link to this property</a>
-
-ingest\_seconds: optional number
-
-Name of the livestream.
+Error message, if the livestream session failed.
 
 <a href="#">Link to this property</a>
 
-livestream\_id: optional string
+ingest\_seconds: number
+
+The time duration for which the input was given or the meeting was streamed.
 
 <a href="#">Link to this property</a>
 
-started\_time: optional string
+invoked\_time: string
 
-Unique key for accessing each livestream.
+Timestamp the livestream session was invoked at, in ISO format.
 
-<a href="#">Link to this property</a>
-
-stopped\_time: optional string
-
-The web address that viewers can use to watch the livestream.
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-updated\_at: optional string
+livestream\_id: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+ID of the livestream.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
-viewer\_seconds: optional number
+started\_time: string
 
-Specifies if the livestream was disabled.
+Timestamp the livestream session started at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+stopped\_time: string
+
+Timestamp the livestream session stopped at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+viewer\_seconds: number
+
+The total view time for which the viewers watched the stream.
 
 <a href="#">Link to this property</a>
 
@@ -124,7 +144,7 @@ Specifies if the livestream was disabled.
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_livestream_session_details_for_session_id_response%20%3E%20(schema)%20%3E%20(property)%20data>)
 
-success: optional boolean
+success: boolean
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_livestream_session_details_for_session_id_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
@@ -144,15 +164,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "id",
-    "created_at": "2019-12-27T18:11:19.117Z",
-    "err_message": "err_message",
-    "ingest_seconds": 0,
-    "livestream_id": "livestream_id",
-    "started_time": "started_time",
-    "stopped_time": "stopped_time",
-    "updated_at": "updated_at",
-    "viewer_seconds": 0
+    "created_at": "2023-07-15T07:08:40.742Z",
+    "err_message": null,
+    "id": "cf55a850-c3fd-46b5-b5d2-25b3b9aa1686",
+    "ingest_seconds": 600,
+    "invoked_time": "2023-07-15T07:08:26.634Z",
+    "livestream_id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+    "started_time": "2023-07-15T07:08:39Z",
+    "stopped_time": "2023-07-15T07:18:39Z",
+    "updated_at": "2023-07-15T07:18:40.742Z",
+    "viewer_seconds": 1200
   },
   "success": true
 }
@@ -165,15 +186,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "id",
-    "created_at": "2019-12-27T18:11:19.117Z",
-    "err_message": "err_message",
-    "ingest_seconds": 0,
-    "livestream_id": "livestream_id",
-    "started_time": "started_time",
-    "stopped_time": "stopped_time",
-    "updated_at": "updated_at",
-    "viewer_seconds": 0
+    "created_at": "2023-07-15T07:08:40.742Z",
+    "err_message": null,
+    "id": "cf55a850-c3fd-46b5-b5d2-25b3b9aa1686",
+    "ingest_seconds": 600,
+    "invoked_time": "2023-07-15T07:08:26.634Z",
+    "livestream_id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+    "started_time": "2023-07-15T07:08:39Z",
+    "stopped_time": "2023-07-15T07:18:39Z",
+    "updated_at": "2023-07-15T07:18:40.742Z",
+    "viewer_seconds": 1200
   },
   "success": true
 }

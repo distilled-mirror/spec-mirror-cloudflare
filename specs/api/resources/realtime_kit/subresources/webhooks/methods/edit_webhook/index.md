@@ -262,30 +262,34 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
 401 example
 
 ```
 {
   "data": {
-    "id": "0d1f069d-43bb-489a-ad8c-7eb95592ba8e",
-    "created_at": "2022-05-28T07:01:53.075Z",
+    "created_at": "2023-07-15T07:08:26.634Z",
     "enabled": true,
     "events": [
-      "meeting.started",
-      "meeting.ended",
-      "meeting.participantJoined",
-      "meeting.participantLeft",
-      "meeting.chatSynced",
-      "recording.statusUpdate",
-      "livestreaming.statusUpdate",
-      "meeting.transcript",
-      "meeting.summary"
+      "meeting.started"
     ],
-    "name": "All events webhook",
-    "updated_at": "2022-05-28T07:01:53.075Z",
-    "url": "https://webhook.site/b23a5bbd-c7b0-4ced-a9e2-78ae7889897e"
+    "id": "b6e0fd13-d7f4-4122-9ad5-7994b35d24b8",
+    "name": "My Webhook",
+    "updated_at": "2023-07-15T07:08:26.634Z",
+    "url": "https://example.com/webhook"
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "message": "BAD_REQUEST: \"id\" must be a valid GUID"
+  },
+  "success": false
 }
 ```
 
@@ -297,30 +301,34 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
 401 example
 
 ```
 {
   "data": {
-    "id": "0d1f069d-43bb-489a-ad8c-7eb95592ba8e",
-    "created_at": "2022-05-28T07:01:53.075Z",
+    "created_at": "2023-07-15T07:08:26.634Z",
     "enabled": true,
     "events": [
-      "meeting.started",
-      "meeting.ended",
-      "meeting.participantJoined",
-      "meeting.participantLeft",
-      "meeting.chatSynced",
-      "recording.statusUpdate",
-      "livestreaming.statusUpdate",
-      "meeting.transcript",
-      "meeting.summary"
+      "meeting.started"
     ],
-    "name": "All events webhook",
-    "updated_at": "2022-05-28T07:01:53.075Z",
-    "url": "https://webhook.site/b23a5bbd-c7b0-4ced-a9e2-78ae7889897e"
+    "id": "b6e0fd13-d7f4-4122-9ad5-7994b35d24b8",
+    "name": "My Webhook",
+    "updated_at": "2023-07-15T07:08:26.634Z",
+    "url": "https://example.com/webhook"
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "message": "BAD_REQUEST: \"id\" must be a valid GUID"
+  },
+  "success": false
 }
 ```
 

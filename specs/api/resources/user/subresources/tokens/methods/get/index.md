@@ -142,7 +142,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20token%20%3E%20(schema)">Token</a> { id, condition, creator\_email\_at\_creation, 10 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20token%20%3E%20(schema)">Token</a> { id, condition, creator\_email\_at\_creation, 12 more }
 
 </summary>
 
@@ -450,6 +450,22 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+token\_prefix: optional string
+
+The prefix of the token value, before the first underscore. Use it with <code>token_suffix</code> to identify a token. Only present for tokens created or rolled after this field was added.
+
+<a href="#">Link to this property</a>
+
+token\_suffix: optional string
+
+The last 4 characters of the token value. Use it with <code>token_prefix</code> to identify a token. It is not unique. Only present for tokens created or rolled after this field was added.
+
+maxLength4
+
+minLength4
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20user.tokens%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -552,7 +568,9 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
     ],
     "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
     "provisioner_type": "com.cloudflare.api.oauthtoken",
-    "status": "active"
+    "status": "active",
+    "token_prefix": "cfat",
+    "token_suffix": "a1b2"
   }
 }
 ```
@@ -646,7 +664,9 @@ curl https://api.cloudflare.com/client/v4/user/tokens/$TOKEN_ID \
     ],
     "provisioner_id": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4",
     "provisioner_type": "com.cloudflare.api.oauthtoken",
-    "status": "active"
+    "status": "active",
+    "token_prefix": "cfat",
+    "token_suffix": "a1b2"
   }
 }
 ```

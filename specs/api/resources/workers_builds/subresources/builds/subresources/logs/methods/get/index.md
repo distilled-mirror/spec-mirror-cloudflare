@@ -114,7 +114,17 @@ messages: array of string
 
 <summary>
 
-result: object {cursor, lines, truncated }
+result: object {cursor, lines, truncated } or object {cursor, lines, truncated }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {cursor, lines, truncated }
 
 </summary>
 
@@ -151,6 +161,58 @@ Log message
 <a href="#">Link to this property</a>
 
 truncated: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {cursor, lines, truncated }
+
+</summary>
+
+cursor: optional string
+
+Pagination cursor for log retrieval.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+lines: optional array of array of numberor string
+
+</summary>
+
+One of the following:
+
+number
+
+Unix epoch timestamp
+
+<a href="#">Link to this property</a>
+
+string
+
+Log message
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+truncated: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -207,10 +269,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -240,34 +298,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -275,10 +305,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -308,33 +334,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

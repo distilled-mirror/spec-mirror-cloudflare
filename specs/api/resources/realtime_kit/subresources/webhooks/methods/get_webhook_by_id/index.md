@@ -185,6 +185,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 
 200 example
 
+400 example
+
 401 example
 
 ```
@@ -213,12 +215,24 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 
 ```
+{
+  "error": {
+    "code": 400,
+    "message": "BAD_REQUEST: \"id\" must be a valid GUID"
+  },
+  "success": false
+}
+```
+
+```
 "{\n  message: \"Unauthorized\"\n}\n"
 ```
 
 ##### Returns Examples
 
 200 example
+
+400 example
 
 401 example
 
@@ -244,6 +258,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
     "url": "https://webhook.site/b23a5bbd-c7b0-4ced-a9e2-78ae7889897e"
   },
   "success": true
+}
+```
+
+```
+{
+  "error": {
+    "code": 400,
+    "message": "BAD_REQUEST: \"id\" must be a valid GUID"
+  },
+  "success": false
 }
 ```
 

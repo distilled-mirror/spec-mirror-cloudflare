@@ -116,27 +116,17 @@ messages: array of string
 
 <summary>
 
-result: array of object {build\_token\_name, build\_token\_uuid, cloudflare\_token\_id, owner\_type }
+result: unknownor array of unknown
 
 </summary>
 
-build\_token\_name: optional string
+One of the following:
+
+unknown
 
 <a href="#">Link to this property</a>
 
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-cloudflare\_token\_id: optional string
-
-<a href="#">Link to this property</a>
-
-owner\_type: optional string
+array of unknown
 
 <a href="#">Link to this property</a>
 
@@ -193,8 +183,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -206,14 +194,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "build_token_name": "My Build Token",
-      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "cloudflare_token_id": "cf-token-123",
-      "owner_type": "user"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -222,20 +203,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -243,8 +210,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -256,14 +221,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "build_token_name": "My Build Token",
-      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "cloudflare_token_id": "cf-token-123",
-      "owner_type": "user"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -272,19 +230,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/tokens \
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

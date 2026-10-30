@@ -96,6 +96,8 @@ minimum0
 
 authentication: optional boolean
 
+Require authentication for gateway access. New gateways must have authentication enabled. Once enabled, authentication cannot be disabled.
+
 <a href="#">Link to this property</a>
 
 byok\_only: optional boolean
@@ -304,7 +306,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 11 more }
+prompt: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -423,6 +425,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -624,7 +648,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 11 more }
+response: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -743,6 +767,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -1414,6 +1460,8 @@ minimum0
 
 authentication: optional boolean
 
+Require authentication for gateway access. New gateways must have authentication enabled. Once enabled, authentication cannot be disabled.
+
 <a href="#">Link to this property</a>
 
 byok\_only: optional boolean
@@ -1622,7 +1670,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 11 more }
+prompt: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -1741,6 +1789,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -1942,7 +2012,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 11 more }
+response: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -2061,6 +2131,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -2732,6 +2824,8 @@ minimum0
 
 authentication: optional boolean
 
+Require authentication for gateway access. New gateways must have authentication enabled. Once enabled, authentication cannot be disabled.
+
 <a href="#">Link to this property</a>
 
 byok\_only: optional boolean
@@ -2940,7 +3034,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 11 more }
+prompt: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -3059,6 +3153,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -3260,7 +3376,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 11 more }
+response: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -3379,6 +3495,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -4050,6 +4188,8 @@ minimum0
 
 authentication: optional boolean
 
+Require authentication for gateway access. New gateways must have authentication enabled. Once enabled, authentication cannot be disabled.
+
 <a href="#">Link to this property</a>
 
 byok\_only: optional boolean
@@ -4258,7 +4398,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 11 more }
+prompt: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -4377,6 +4517,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -4578,7 +4740,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 11 more }
+response: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -4697,6 +4859,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -5368,6 +5552,8 @@ minimum0
 
 authentication: optional boolean
 
+Require authentication for gateway access. New gateways must have authentication enabled. Once enabled, authentication cannot be disabled.
+
 <a href="#">Link to this property</a>
 
 byok\_only: optional boolean
@@ -5576,7 +5762,7 @@ guardrails: optional object {prompt, response }
 
 <summary>
 
-prompt: object {P1, S1, S10, 11 more }
+prompt: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -5695,6 +5881,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 
@@ -5896,7 +6104,7 @@ One of the following:
 
 <summary>
 
-response: object {P1, S1, S10, 11 more }
+response: object {P1, S1, S10, 12 more }
 
 </summary>
 
@@ -6015,6 +6223,28 @@ One of the following:
 <summary>
 
 S13: optional "FLAG"or "BLOCK"
+
+</summary>
+
+One of the following:
+
+"FLAG"
+
+<a href="#">Link to this property</a>
+
+"BLOCK"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+S14: optional "FLAG"or "BLOCK"
 
 </summary>
 

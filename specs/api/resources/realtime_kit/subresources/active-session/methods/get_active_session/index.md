@@ -214,22 +214,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "id",
-    "associated_id": "associated_id",
-    "created_at": "created_at",
-    "live_participants": 0,
-    "max_concurrent_participants": 0,
-    "meeting_display_name": "meeting_display_name",
-    "minutes_consumed": 0,
-    "organization_id": "organization_id",
-    "started_at": "started_at",
+    "associated_id": "6bf2b8be-04dd-4191-b602-1128921a306b",
+    "created_at": "2022-01-12T14:21:34.398Z",
+    "ended_at": "null",
+    "id": "813432c7-3c5a-45e2-9acf-eef7061c7584",
+    "live_participants": 1,
+    "max_concurrent_participants": 2,
+    "meeting_display_name": "Test Meeting",
+    "minutes_consumed": 2.3434,
+    "organization_id": "",
+    "started_at": "2022-01-12T14:21:34.388Z",
     "status": "LIVE",
     "type": "meeting",
-    "updated_at": "updated_at",
-    "breakout_rooms": [
-      {}
-    ],
-    "ended_at": "ended_at"
+    "updated_at": "2022-01-12T14:26:00.784Z"
   },
   "success": true
 }
@@ -254,22 +251,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "id",
-    "associated_id": "associated_id",
-    "created_at": "created_at",
-    "live_participants": 0,
-    "max_concurrent_participants": 0,
-    "meeting_display_name": "meeting_display_name",
-    "minutes_consumed": 0,
-    "organization_id": "organization_id",
-    "started_at": "started_at",
+    "associated_id": "6bf2b8be-04dd-4191-b602-1128921a306b",
+    "created_at": "2022-01-12T14:21:34.398Z",
+    "ended_at": "null",
+    "id": "813432c7-3c5a-45e2-9acf-eef7061c7584",
+    "live_participants": 1,
+    "max_concurrent_participants": 2,
+    "meeting_display_name": "Test Meeting",
+    "minutes_consumed": 2.3434,
+    "organization_id": "",
+    "started_at": "2022-01-12T14:21:34.388Z",
     "status": "LIVE",
     "type": "meeting",
-    "updated_at": "updated_at",
-    "breakout_rooms": [
-      {}
-    ],
-    "ended_at": "ended_at"
+    "updated_at": "2022-01-12T14:26:00.784Z"
   },
   "success": true
 }

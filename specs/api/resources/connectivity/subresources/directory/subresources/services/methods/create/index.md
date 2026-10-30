@@ -302,11 +302,9 @@ formatuuid
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode }
+tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
-
-If omitted, the default mode (<code>verify_full</code>) is used.
 
 </summary>
 
@@ -317,6 +315,20 @@ TLS certificate verification mode for the connection to the origin.
 - <code>"verify_full"</code> — verify certificate chain and hostname (default)
 - <code>"verify_ca"</code> — verify certificate chain only, skip hostname check
 - <code>"disabled"</code> — do not verify the server certificate at all
+
+<code>disabled</code> cannot be combined with <code>certificate_authority</code>: a custom CA is only used to verify the server certificate.
+
+<a href="#">Link to this property</a>
+
+certificate\_authority: optional string
+
+UUID of the custom CA certificate or chain.
+
+<a href="#">Link to this property</a>
+
+client\_certificate: optional string
+
+UUID of the mTLS client certificate and private key.
 
 <a href="#">Link to this property</a>
 
@@ -572,11 +584,9 @@ minimum1
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode }
+tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
-
-If omitted, the default mode (<code>verify_full</code>) is used.
 
 </summary>
 
@@ -587,6 +597,20 @@ TLS certificate verification mode for the connection to the origin.
 - <code>"verify_full"</code> — verify certificate chain and hostname (default)
 - <code>"verify_ca"</code> — verify certificate chain only, skip hostname check
 - <code>"disabled"</code> — do not verify the server certificate at all
+
+<code>disabled</code> cannot be combined with <code>certificate_authority</code>: a custom CA is only used to verify the server certificate.
+
+<a href="#">Link to this property</a>
+
+certificate\_authority: optional string
+
+UUID of the custom CA certificate or chain.
+
+<a href="#">Link to this property</a>
+
+client\_certificate: optional string
+
+UUID of the mTLS client certificate and private key.
 
 <a href="#">Link to this property</a>
 
@@ -934,11 +958,9 @@ formatuuid
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode }
+tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
-
-If omitted, the default mode (<code>verify_full</code>) is used.
 
 </summary>
 
@@ -949,6 +971,20 @@ TLS certificate verification mode for the connection to the origin.
 - <code>"verify_full"</code> — verify certificate chain and hostname (default)
 - <code>"verify_ca"</code> — verify certificate chain only, skip hostname check
 - <code>"disabled"</code> — do not verify the server certificate at all
+
+<code>disabled</code> cannot be combined with <code>certificate_authority</code>: a custom CA is only used to verify the server certificate.
+
+<a href="#">Link to this property</a>
+
+certificate\_authority: optional string
+
+UUID of the custom CA certificate or chain.
+
+<a href="#">Link to this property</a>
+
+client\_certificate: optional string
+
+UUID of the mTLS client certificate and private key.
 
 <a href="#">Link to this property</a>
 
@@ -1204,11 +1240,9 @@ minimum1
 
 <summary>
 
-tls\_settings: optional object {cert\_verification\_mode }
+tls\_settings: optional object {cert\_verification\_mode, certificate\_authority, client\_certificate }
 
 TLS settings for a connectivity service.
-
-If omitted, the default mode (<code>verify_full</code>) is used.
 
 </summary>
 
@@ -1219,6 +1253,20 @@ TLS certificate verification mode for the connection to the origin.
 - <code>"verify_full"</code> — verify certificate chain and hostname (default)
 - <code>"verify_ca"</code> — verify certificate chain only, skip hostname check
 - <code>"disabled"</code> — do not verify the server certificate at all
+
+<code>disabled</code> cannot be combined with <code>certificate_authority</code>: a custom CA is only used to verify the server certificate.
+
+<a href="#">Link to this property</a>
+
+certificate\_authority: optional string
+
+UUID of the custom CA certificate or chain.
+
+<a href="#">Link to this property</a>
+
+client\_certificate: optional string
+
+UUID of the mTLS client certificate and private key.
 
 <a href="#">Link to this property</a>
 

@@ -36,7 +36,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -44,11 +44,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -112,7 +124,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -120,11 +132,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -296,7 +320,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -304,11 +328,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -504,7 +540,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 300 or 900 or 1800 or 11 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -512,59 +548,23 @@ Current value of the zone setting.
 
 One of the following:
 
-300
+string
 
 [Link to this property](#)
 
-900
+number
 
 [Link to this property](#)
 
-1800
+boolean
 
 [Link to this property](#)
 
-2700
+unknown
 
 [Link to this property](#)
 
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-604800
-
-[Link to this property](#)
-
-2592000
-
-[Link to this property](#)
-
-31536000
+array of string
 
 [Link to this property](#)
 
@@ -624,9 +624,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: array of string
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -686,7 +716,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -694,11 +724,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -768,7 +810,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -776,11 +818,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -962,7 +1016,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "custom"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -970,15 +1024,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"custom"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1042,7 +1104,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1050,11 +1112,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1118,7 +1192,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1126,11 +1200,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1194,7 +1280,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1202,11 +1288,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1270,7 +1368,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1278,15 +1376,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1392,7 +1498,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1400,11 +1506,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1468,7 +1586,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "1.0" or "1.1" or "1.2" or "1.3"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1476,19 +1594,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"1.0"
+string
 
 [Link to this property](#)
 
-"1.1"
+number
 
 [Link to this property](#)
 
-"1.2"
+boolean
 
 [Link to this property](#)
 
-"1.3"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1594,13 +1716,91 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled }
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
 </summary>
 
+One of the following:
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
 enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -1706,7 +1906,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1714,11 +1914,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -1782,9 +1994,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -1792,11 +2002,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2004,7 +2226,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2012,11 +2234,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2076,9 +2310,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting. Notes: Value must be between 1 and 6000
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -2138,7 +2402,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: "off" or "add_header" or "overwrite_header"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2146,15 +2410,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"add_header"
+number
 
 [Link to this property](#)
 
-"overwrite_header"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2302,9 +2574,19 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict_transport_security }
+value: object { strict_transport_security } or object { strict_transport_security } or object { strict_transport_security } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
 
 </summary>
 
@@ -2345,6 +2627,234 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -2468,7 +2978,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2476,11 +2986,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2666,7 +3188,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "zrt"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2674,15 +3196,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"zrt"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2746,7 +3276,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2754,11 +3284,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2906,7 +3448,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2914,11 +3456,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -2982,7 +3536,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -2990,11 +3544,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3058,7 +3624,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3066,11 +3632,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3146,7 +3724,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3154,11 +3732,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3222,7 +3812,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3230,11 +3820,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3352,7 +3954,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3360,11 +3962,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3428,7 +4042,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3436,11 +4050,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3504,7 +4130,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3512,11 +4138,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3580,7 +4218,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3588,11 +4226,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3652,13 +4302,51 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting in seconds. Minimum values by plan:
+
+Free: 1 second
+
+Pro: 1 second
+
+Business: 1 second
+
+Enterprise: 1 second Setting a TTL of 0 is equivalent to selecting `Respect Existing Headers` and is allowed for all plans.
 
 maximum31536000
 
 minimum0
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -3718,7 +4406,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3726,11 +4414,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3794,7 +4494,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "aggressive" or "basic" or "simplified"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3802,15 +4502,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"aggressive"
+string
 
 [Link to this property](#)
 
-"basic"
+number
 
 [Link to this property](#)
 
-"simplified"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -3874,7 +4582,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 300 or 900 or 1800 or 11 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -3882,59 +4590,23 @@ Current value of the zone setting.
 
 One of the following:
 
-300
+string
 
 [Link to this property](#)
 
-900
+number
 
 [Link to this property](#)
 
-1800
+boolean
 
 [Link to this property](#)
 
-2700
+unknown
 
 [Link to this property](#)
 
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-604800
-
-[Link to this property](#)
-
-2592000
-
-[Link to this property](#)
-
-31536000
+array of string
 
 [Link to this property](#)
 
@@ -3994,9 +4666,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: array of string
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -4056,7 +4758,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4064,11 +4766,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4132,9 +4846,7 @@ How to flatten the cname destination.
 
 <summary>
 
-Deprecatedvalue: "flatten_at_root" or "flatten_all"
-
-This zone setting is deprecated; please use the DNS Settings route instead. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4142,11 +4854,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"flatten_at_root"
+string
 
 [Link to this property](#)
 
-"flatten_all"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4210,7 +4934,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4218,11 +4942,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4292,7 +5028,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4300,11 +5036,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4368,7 +5116,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 30 or 60 or 300 or 18 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4376,87 +5124,23 @@ Current value of the zone setting.
 
 One of the following:
 
-30
+string
 
 [Link to this property](#)
 
-60
+number
 
 [Link to this property](#)
 
-300
+boolean
 
 [Link to this property](#)
 
-1200
+unknown
 
 [Link to this property](#)
 
-1800
-
-[Link to this property](#)
-
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-18000
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-43200
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-72000
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-172800
-
-[Link to this property](#)
-
-259200
-
-[Link to this property](#)
-
-345600
-
-[Link to this property](#)
-
-432000
-
-[Link to this property](#)
-
-518400
-
-[Link to this property](#)
-
-604800
+array of string
 
 [Link to this property](#)
 
@@ -4520,7 +5204,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4528,11 +5212,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4596,7 +5292,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "custom"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4604,15 +5300,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"custom"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4676,7 +5380,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4684,11 +5388,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4752,7 +5468,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4760,11 +5476,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4828,7 +5556,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4836,11 +5564,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4904,7 +5644,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4912,15 +5652,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -4984,7 +5732,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -4992,11 +5740,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5060,7 +5820,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5068,11 +5828,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5136,7 +5908,7 @@ identifier of the zone setting.
 
 <summary>
 
-value: 100 or 125 or 150 or 23 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5144,107 +5916,23 @@ Current value of the zone setting.
 
 One of the following:
 
-100
+string
 
 [Link to this property](#)
 
-125
+number
 
 [Link to this property](#)
 
-150
+boolean
 
 [Link to this property](#)
 
-175
+unknown
 
 [Link to this property](#)
 
-200
-
-[Link to this property](#)
-
-225
-
-[Link to this property](#)
-
-250
-
-[Link to this property](#)
-
-275
-
-[Link to this property](#)
-
-300
-
-[Link to this property](#)
-
-325
-
-[Link to this property](#)
-
-350
-
-[Link to this property](#)
-
-375
-
-[Link to this property](#)
-
-400
-
-[Link to this property](#)
-
-425
-
-[Link to this property](#)
-
-450
-
-[Link to this property](#)
-
-475
-
-[Link to this property](#)
-
-500
-
-[Link to this property](#)
-
-1000
-
-[Link to this property](#)
-
-1500
-
-[Link to this property](#)
-
-2000
-
-[Link to this property](#)
-
-2500
-
-[Link to this property](#)
-
-3000
-
-[Link to this property](#)
-
-3500
-
-[Link to this property](#)
-
-4000
-
-[Link to this property](#)
-
-4500
-
-[Link to this property](#)
-
-5000
+array of string
 
 [Link to this property](#)
 
@@ -5308,7 +5996,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "1.0" or "1.1" or "1.2" or "1.3"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5316,19 +6004,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"1.0"
+string
 
 [Link to this property](#)
 
-"1.1"
+number
 
 [Link to this property](#)
 
-"1.2"
+boolean
 
 [Link to this property](#)
 
-"1.3"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5392,9 +6084,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Mirage is being deprecated. More information at https://developers.cloudflare.com/speed/optimization/images/mirage/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5402,11 +6092,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5470,13 +6172,91 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled }
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
 </summary>
 
+One of the following:
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
 enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -5540,7 +6320,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5548,11 +6328,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5616,7 +6408,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5624,11 +6416,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5692,9 +6496,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5702,11 +6504,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5770,7 +6584,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5778,11 +6592,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -5936,7 +6762,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "lossless" or "lossy"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -5944,15 +6770,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"lossless"
+number
 
 [Link to this property](#)
 
-"lossy"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6016,7 +6850,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6024,11 +6858,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6092,7 +6938,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6100,11 +6946,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6168,9 +7026,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Privacy Pass v1 was deprecated in 2023. (Announcement - https://blog.cloudflare.com/privacy-pass-standard/) and (API deprecation details - https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31)
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6178,11 +7034,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6242,9 +7110,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting. Notes: Value must be between 1 and 6000
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6304,7 +7202,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: "off" or "add_header" or "overwrite_header"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6312,15 +7210,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"add_header"
+number
 
 [Link to this property](#)
 
-"overwrite_header"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6384,7 +7290,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6392,11 +7298,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6460,7 +7378,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6468,11 +7386,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6536,7 +7466,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6544,11 +7474,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6612,7 +7554,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6620,11 +7562,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6684,9 +7638,259 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: [AutomaticPlatformOptimization](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20automatic_platform_optimization%20%3E%20(schema)) { cache_by_device_type, cf, enabled, 3 more }
+<details>
+
+<summary>
+
+value: object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6746,7 +7950,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6754,11 +7958,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -6822,9 +8038,19 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict_transport_security }
+value: object { strict_transport_security } or object { strict_transport_security } or object { strict_transport_security } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
 
 </summary>
 
@@ -6865,6 +8091,234 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6932,7 +8386,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "essentially_off" or "low" or 3 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -6940,27 +8394,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"essentially_off"
+number
 
 [Link to this property](#)
 
-"low"
+boolean
 
 [Link to this property](#)
 
-"medium"
+unknown
 
 [Link to this property](#)
 
-"high"
-
-[Link to this property](#)
-
-"under_attack"
+array of string
 
 [Link to this property](#)
 
@@ -7024,7 +8474,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7032,11 +8482,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7100,7 +8562,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7108,11 +8570,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7176,7 +8650,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7184,11 +8658,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7252,7 +8738,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "flexible" or "full" or "strict"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7260,19 +8746,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"flexible"
+number
 
 [Link to this property](#)
 
-"full"
+boolean
 
 [Link to this property](#)
 
-"strict"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7362,7 +8852,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7370,11 +8860,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7438,7 +8940,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "zrt"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7446,15 +8948,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"zrt"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7518,7 +9028,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7526,11 +9036,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7594,7 +9116,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7602,15 +9124,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7670,9 +9200,39 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of allowed origins. Refer to the [Image Transformations](https://developers.cloudflare.com/images/transform-images/sources/) and [Video Transformations](https://developers.cloudflare.com/stream/transform-videos/#getting-started) documentation for more information.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -7732,7 +9292,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7740,11 +9300,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7808,7 +9380,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7816,11 +9388,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7884,7 +9468,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -7892,11 +9476,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -7956,11 +9552,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 maxLength2048
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -8016,11 +9642,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
 maxLength256
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -8080,7 +9736,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8088,11 +9744,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8156,7 +9824,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8164,11 +9832,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8248,7 +9928,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8256,11 +9936,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8324,7 +10016,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8332,11 +10024,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8454,7 +10158,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8462,11 +10166,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8530,7 +10246,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8538,11 +10254,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8606,7 +10334,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8614,11 +10342,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8682,7 +10422,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8690,11 +10430,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8754,13 +10506,51 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting in seconds. Minimum values by plan:
+
+Free: 1 second
+
+Pro: 1 second
+
+Business: 1 second
+
+Enterprise: 1 second Setting a TTL of 0 is equivalent to selecting `Respect Existing Headers` and is allowed for all plans.
 
 maximum31536000
 
 minimum0
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -8820,7 +10610,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8828,11 +10618,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8896,7 +10698,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "aggressive" or "basic" or "simplified"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8904,15 +10706,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"aggressive"
+string
 
 [Link to this property](#)
 
-"basic"
+number
 
 [Link to this property](#)
 
-"simplified"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -8976,7 +10786,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 300 or 900 or 1800 or 11 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -8984,59 +10794,23 @@ Current value of the zone setting.
 
 One of the following:
 
-300
+string
 
 [Link to this property](#)
 
-900
+number
 
 [Link to this property](#)
 
-1800
+boolean
 
 [Link to this property](#)
 
-2700
+unknown
 
 [Link to this property](#)
 
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-604800
-
-[Link to this property](#)
-
-2592000
-
-[Link to this property](#)
-
-31536000
+array of string
 
 [Link to this property](#)
 
@@ -9100,7 +10874,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9108,11 +10882,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9176,7 +10962,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9184,11 +10970,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9248,9 +11046,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: array of string
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -9310,9 +11138,7 @@ How to flatten the cname destination.
 
 <summary>
 
-Deprecatedvalue: "flatten_at_root" or "flatten_all"
-
-This zone setting is deprecated; please use the DNS Settings route instead. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9320,11 +11146,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"flatten_at_root"
+string
 
 [Link to this property](#)
 
-"flatten_all"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9388,7 +11226,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9396,11 +11234,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9470,7 +11320,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9478,11 +11328,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9546,7 +11408,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 30 or 60 or 300 or 18 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9554,87 +11416,23 @@ Current value of the zone setting.
 
 One of the following:
 
-30
+string
 
 [Link to this property](#)
 
-60
+number
 
 [Link to this property](#)
 
-300
+boolean
 
 [Link to this property](#)
 
-1200
+unknown
 
 [Link to this property](#)
 
-1800
-
-[Link to this property](#)
-
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-18000
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-43200
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-72000
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-172800
-
-[Link to this property](#)
-
-259200
-
-[Link to this property](#)
-
-345600
-
-[Link to this property](#)
-
-432000
-
-[Link to this property](#)
-
-518400
-
-[Link to this property](#)
-
-604800
+array of string
 
 [Link to this property](#)
 
@@ -9698,7 +11496,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9706,11 +11504,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9774,7 +11584,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "custom"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9782,15 +11592,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"custom"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9854,7 +11672,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9862,11 +11680,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -9930,7 +11760,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -9938,11 +11768,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10006,7 +11848,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10014,11 +11856,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10082,7 +11936,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10090,15 +11944,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10162,7 +12024,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10170,11 +12032,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10238,7 +12112,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10246,11 +12120,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10314,7 +12200,7 @@ identifier of the zone setting.
 
 <summary>
 
-value: 100 or 125 or 150 or 23 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10322,107 +12208,23 @@ Current value of the zone setting.
 
 One of the following:
 
-100
+string
 
 [Link to this property](#)
 
-125
+number
 
 [Link to this property](#)
 
-150
+boolean
 
 [Link to this property](#)
 
-175
+unknown
 
 [Link to this property](#)
 
-200
-
-[Link to this property](#)
-
-225
-
-[Link to this property](#)
-
-250
-
-[Link to this property](#)
-
-275
-
-[Link to this property](#)
-
-300
-
-[Link to this property](#)
-
-325
-
-[Link to this property](#)
-
-350
-
-[Link to this property](#)
-
-375
-
-[Link to this property](#)
-
-400
-
-[Link to this property](#)
-
-425
-
-[Link to this property](#)
-
-450
-
-[Link to this property](#)
-
-475
-
-[Link to this property](#)
-
-500
-
-[Link to this property](#)
-
-1000
-
-[Link to this property](#)
-
-1500
-
-[Link to this property](#)
-
-2000
-
-[Link to this property](#)
-
-2500
-
-[Link to this property](#)
-
-3000
-
-[Link to this property](#)
-
-3500
-
-[Link to this property](#)
-
-4000
-
-[Link to this property](#)
-
-4500
-
-[Link to this property](#)
-
-5000
+array of string
 
 [Link to this property](#)
 
@@ -10486,7 +12288,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "1.0" or "1.1" or "1.2" or "1.3"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10494,19 +12296,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"1.0"
+string
 
 [Link to this property](#)
 
-"1.1"
+number
 
 [Link to this property](#)
 
-"1.2"
+boolean
 
 [Link to this property](#)
 
-"1.3"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10570,9 +12376,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Mirage is being deprecated. More information at https://developers.cloudflare.com/speed/optimization/images/mirage/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10580,11 +12384,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10648,13 +12464,91 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled }
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
 </summary>
 
+One of the following:
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
 enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -10718,7 +12612,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10726,11 +12620,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10794,7 +12700,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10802,11 +12708,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10870,9 +12788,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10880,11 +12796,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -10948,7 +12876,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -10956,11 +12884,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11114,7 +13054,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "lossless" or "lossy"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11122,15 +13062,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"lossless"
+number
 
 [Link to this property](#)
 
-"lossy"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11194,7 +13142,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11202,11 +13150,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11270,7 +13230,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11278,11 +13238,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11346,9 +13318,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Privacy Pass v1 was deprecated in 2023. (Announcement - https://blog.cloudflare.com/privacy-pass-standard/) and (API deprecation details - https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31)
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11356,11 +13326,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11420,9 +13402,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting. Notes: Value must be between 1 and 6000
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -11482,7 +13494,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: "off" or "add_header" or "overwrite_header"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11490,15 +13502,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"add_header"
+number
 
 [Link to this property](#)
 
-"overwrite_header"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11562,7 +13582,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11570,11 +13590,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11638,7 +13670,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11646,11 +13678,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11714,7 +13758,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11722,11 +13766,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11790,7 +13846,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11798,11 +13854,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -11862,9 +13930,259 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: [AutomaticPlatformOptimization](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20automatic_platform_optimization%20%3E%20(schema)) { cache_by_device_type, cf, enabled, 3 more }
+<details>
+
+<summary>
+
+value: object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -11924,7 +14242,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -11932,11 +14250,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12000,9 +14330,19 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict_transport_security }
+value: object { strict_transport_security } or object { strict_transport_security } or object { strict_transport_security } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
 
 </summary>
 
@@ -12043,6 +14383,234 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -12110,7 +14678,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "essentially_off" or "low" or 3 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12118,27 +14686,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"essentially_off"
+number
 
 [Link to this property](#)
 
-"low"
+boolean
 
 [Link to this property](#)
 
-"medium"
+unknown
 
 [Link to this property](#)
 
-"high"
-
-[Link to this property](#)
-
-"under_attack"
+array of string
 
 [Link to this property](#)
 
@@ -12202,7 +14766,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12210,11 +14774,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12278,7 +14854,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12286,11 +14862,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12354,7 +14942,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12362,11 +14950,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12430,7 +15030,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "flexible" or "full" or "strict"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12438,19 +15038,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"flexible"
+number
 
 [Link to this property](#)
 
-"full"
+boolean
 
 [Link to this property](#)
 
-"strict"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12540,7 +15144,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12548,11 +15152,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12616,7 +15232,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "zrt"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12624,15 +15240,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"zrt"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12696,7 +15320,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12704,11 +15328,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12772,7 +15408,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12780,15 +15416,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12848,9 +15492,39 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of allowed origins. Refer to the [Image Transformations](https://developers.cloudflare.com/images/transform-images/sources/) and [Video Transformations](https://developers.cloudflare.com/stream/transform-videos/#getting-started) documentation for more information.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -12910,7 +15584,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12918,11 +15592,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -12986,7 +15672,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -12994,11 +15680,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13062,7 +15760,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13070,11 +15768,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13134,11 +15844,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 maxLength2048
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -13194,11 +15934,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
 maxLength256
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -13258,7 +16028,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13266,11 +16036,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13334,7 +16116,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13342,11 +16124,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13426,7 +16220,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13434,11 +16228,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13502,7 +16308,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13510,11 +16316,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13632,7 +16450,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13640,11 +16458,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13708,7 +16538,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13716,11 +16546,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13784,7 +16626,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13792,11 +16634,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13860,7 +16714,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -13868,11 +16722,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -13932,13 +16798,51 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting in seconds. Minimum values by plan:
+
+Free: 1 second
+
+Pro: 1 second
+
+Business: 1 second
+
+Enterprise: 1 second Setting a TTL of 0 is equivalent to selecting `Respect Existing Headers` and is allowed for all plans.
 
 maximum31536000
 
 minimum0
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -13998,7 +16902,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14006,11 +16910,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14074,7 +16990,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "aggressive" or "basic" or "simplified"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14082,15 +16998,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"aggressive"
+string
 
 [Link to this property](#)
 
-"basic"
+number
 
 [Link to this property](#)
 
-"simplified"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14154,7 +17078,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 300 or 900 or 1800 or 11 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14162,59 +17086,23 @@ Current value of the zone setting.
 
 One of the following:
 
-300
+string
 
 [Link to this property](#)
 
-900
+number
 
 [Link to this property](#)
 
-1800
+boolean
 
 [Link to this property](#)
 
-2700
+unknown
 
 [Link to this property](#)
 
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-604800
-
-[Link to this property](#)
-
-2592000
-
-[Link to this property](#)
-
-31536000
+array of string
 
 [Link to this property](#)
 
@@ -14278,7 +17166,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14286,11 +17174,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14354,7 +17254,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14362,11 +17262,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14426,9 +17338,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: array of string
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -14488,9 +17430,7 @@ How to flatten the cname destination.
 
 <summary>
 
-Deprecatedvalue: "flatten_at_root" or "flatten_all"
-
-This zone setting is deprecated; please use the DNS Settings route instead. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14498,11 +17438,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"flatten_at_root"
+string
 
 [Link to this property](#)
 
-"flatten_all"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14566,7 +17518,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14574,11 +17526,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14648,7 +17612,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14656,11 +17620,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14724,7 +17700,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 30 or 60 or 300 or 18 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14732,87 +17708,23 @@ Current value of the zone setting.
 
 One of the following:
 
-30
+string
 
 [Link to this property](#)
 
-60
+number
 
 [Link to this property](#)
 
-300
+boolean
 
 [Link to this property](#)
 
-1200
+unknown
 
 [Link to this property](#)
 
-1800
-
-[Link to this property](#)
-
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-18000
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-43200
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-72000
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-172800
-
-[Link to this property](#)
-
-259200
-
-[Link to this property](#)
-
-345600
-
-[Link to this property](#)
-
-432000
-
-[Link to this property](#)
-
-518400
-
-[Link to this property](#)
-
-604800
+array of string
 
 [Link to this property](#)
 
@@ -14876,7 +17788,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14884,11 +17796,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -14952,7 +17876,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "custom"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -14960,15 +17884,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"custom"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15032,7 +17964,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15040,11 +17972,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15108,7 +18052,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15116,11 +18060,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15184,7 +18140,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15192,11 +18148,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15260,7 +18228,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15268,15 +18236,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15340,7 +18316,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15348,11 +18324,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15416,7 +18404,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15424,11 +18412,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15492,7 +18492,7 @@ identifier of the zone setting.
 
 <summary>
 
-value: 100 or 125 or 150 or 23 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15500,107 +18500,23 @@ Current value of the zone setting.
 
 One of the following:
 
-100
+string
 
 [Link to this property](#)
 
-125
+number
 
 [Link to this property](#)
 
-150
+boolean
 
 [Link to this property](#)
 
-175
+unknown
 
 [Link to this property](#)
 
-200
-
-[Link to this property](#)
-
-225
-
-[Link to this property](#)
-
-250
-
-[Link to this property](#)
-
-275
-
-[Link to this property](#)
-
-300
-
-[Link to this property](#)
-
-325
-
-[Link to this property](#)
-
-350
-
-[Link to this property](#)
-
-375
-
-[Link to this property](#)
-
-400
-
-[Link to this property](#)
-
-425
-
-[Link to this property](#)
-
-450
-
-[Link to this property](#)
-
-475
-
-[Link to this property](#)
-
-500
-
-[Link to this property](#)
-
-1000
-
-[Link to this property](#)
-
-1500
-
-[Link to this property](#)
-
-2000
-
-[Link to this property](#)
-
-2500
-
-[Link to this property](#)
-
-3000
-
-[Link to this property](#)
-
-3500
-
-[Link to this property](#)
-
-4000
-
-[Link to this property](#)
-
-4500
-
-[Link to this property](#)
-
-5000
+array of string
 
 [Link to this property](#)
 
@@ -15664,7 +18580,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "1.0" or "1.1" or "1.2" or "1.3"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15672,19 +18588,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"1.0"
+string
 
 [Link to this property](#)
 
-"1.1"
+number
 
 [Link to this property](#)
 
-"1.2"
+boolean
 
 [Link to this property](#)
 
-"1.3"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15748,9 +18668,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Mirage is being deprecated. More information at https://developers.cloudflare.com/speed/optimization/images/mirage/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15758,11 +18676,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15826,13 +18756,91 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled }
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
 </summary>
 
+One of the following:
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
 enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -15896,7 +18904,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15904,11 +18912,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -15972,7 +18992,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -15980,11 +19000,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16048,9 +19080,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16058,11 +19088,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16126,7 +19168,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16134,11 +19176,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16292,7 +19346,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "lossless" or "lossy"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16300,15 +19354,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"lossless"
+number
 
 [Link to this property](#)
 
-"lossy"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16372,7 +19434,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16380,11 +19442,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16448,7 +19522,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16456,11 +19530,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16524,9 +19610,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Privacy Pass v1 was deprecated in 2023. (Announcement - https://blog.cloudflare.com/privacy-pass-standard/) and (API deprecation details - https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31)
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16534,11 +19618,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16598,9 +19694,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting. Notes: Value must be between 1 and 6000
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -16660,7 +19786,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: "off" or "add_header" or "overwrite_header"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16668,15 +19794,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"add_header"
+number
 
 [Link to this property](#)
 
-"overwrite_header"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16740,7 +19874,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16748,11 +19882,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16816,7 +19962,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16824,11 +19970,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16892,7 +20050,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16900,11 +20058,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -16968,7 +20138,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -16976,11 +20146,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17040,9 +20222,259 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: [AutomaticPlatformOptimization](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20automatic_platform_optimization%20%3E%20(schema)) { cache_by_device_type, cf, enabled, 3 more }
+<details>
+
+<summary>
+
+value: object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -17102,7 +20534,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17110,11 +20542,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17178,9 +20622,19 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict_transport_security }
+value: object { strict_transport_security } or object { strict_transport_security } or object { strict_transport_security } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
 
 </summary>
 
@@ -17221,6 +20675,234 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -17288,7 +20970,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "essentially_off" or "low" or 3 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17296,27 +20978,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"essentially_off"
+number
 
 [Link to this property](#)
 
-"low"
+boolean
 
 [Link to this property](#)
 
-"medium"
+unknown
 
 [Link to this property](#)
 
-"high"
-
-[Link to this property](#)
-
-"under_attack"
+array of string
 
 [Link to this property](#)
 
@@ -17380,7 +21058,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17388,11 +21066,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17456,7 +21146,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17464,11 +21154,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17532,7 +21234,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17540,11 +21242,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17608,7 +21322,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "flexible" or "full" or "strict"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17616,19 +21330,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"flexible"
+number
 
 [Link to this property](#)
 
-"full"
+boolean
 
 [Link to this property](#)
 
-"strict"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17718,7 +21436,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17726,11 +21444,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17794,7 +21524,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "zrt"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17802,15 +21532,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"zrt"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17874,7 +21612,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17882,11 +21620,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -17950,7 +21700,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -17958,15 +21708,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18026,9 +21784,39 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of allowed origins. Refer to the [Image Transformations](https://developers.cloudflare.com/images/transform-images/sources/) and [Video Transformations](https://developers.cloudflare.com/stream/transform-videos/#getting-started) documentation for more information.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -18088,7 +21876,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18096,11 +21884,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18164,7 +21964,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18172,11 +21972,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18240,7 +22052,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18248,11 +22060,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18312,11 +22136,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 maxLength2048
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -18372,11 +22226,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
 maxLength256
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -18436,7 +22320,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18444,11 +22328,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18512,7 +22408,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18520,11 +22416,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18604,7 +22512,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18612,11 +22520,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18680,7 +22600,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18688,11 +22608,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18810,7 +22742,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18818,11 +22750,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18886,7 +22830,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18894,11 +22838,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -18962,7 +22918,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -18970,11 +22926,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19038,7 +23006,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19046,11 +23014,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19110,13 +23090,51 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting in seconds. Minimum values by plan:
+
+Free: 1 second
+
+Pro: 1 second
+
+Business: 1 second
+
+Enterprise: 1 second Setting a TTL of 0 is equivalent to selecting `Respect Existing Headers` and is allowed for all plans.
 
 maximum31536000
 
 minimum0
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -19176,7 +23194,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19184,11 +23202,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19252,7 +23282,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "aggressive" or "basic" or "simplified"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19260,15 +23290,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"aggressive"
+string
 
 [Link to this property](#)
 
-"basic"
+number
 
 [Link to this property](#)
 
-"simplified"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19332,7 +23370,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 300 or 900 or 1800 or 11 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19340,59 +23378,23 @@ Current value of the zone setting.
 
 One of the following:
 
-300
+string
 
 [Link to this property](#)
 
-900
+number
 
 [Link to this property](#)
 
-1800
+boolean
 
 [Link to this property](#)
 
-2700
+unknown
 
 [Link to this property](#)
 
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-604800
-
-[Link to this property](#)
-
-2592000
-
-[Link to this property](#)
-
-31536000
+array of string
 
 [Link to this property](#)
 
@@ -19452,9 +23454,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: array of string
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -19514,7 +23546,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19522,11 +23554,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19590,9 +23634,7 @@ How to flatten the cname destination.
 
 <summary>
 
-Deprecatedvalue: "flatten_at_root" or "flatten_all"
-
-This zone setting is deprecated; please use the DNS Settings route instead. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2025-03-21
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19600,11 +23642,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"flatten_at_root"
+string
 
 [Link to this property](#)
 
-"flatten_all"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19668,7 +23722,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19676,11 +23730,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19750,7 +23816,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19758,11 +23824,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -19826,7 +23904,7 @@ ID of the zone setting.
 
 <summary>
 
-value: 30 or 60 or 300 or 18 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19834,87 +23912,23 @@ Current value of the zone setting.
 
 One of the following:
 
-30
+string
 
 [Link to this property](#)
 
-60
+number
 
 [Link to this property](#)
 
-300
+boolean
 
 [Link to this property](#)
 
-1200
+unknown
 
 [Link to this property](#)
 
-1800
-
-[Link to this property](#)
-
-3600
-
-[Link to this property](#)
-
-7200
-
-[Link to this property](#)
-
-10800
-
-[Link to this property](#)
-
-14400
-
-[Link to this property](#)
-
-18000
-
-[Link to this property](#)
-
-28800
-
-[Link to this property](#)
-
-43200
-
-[Link to this property](#)
-
-57600
-
-[Link to this property](#)
-
-72000
-
-[Link to this property](#)
-
-86400
-
-[Link to this property](#)
-
-172800
-
-[Link to this property](#)
-
-259200
-
-[Link to this property](#)
-
-345600
-
-[Link to this property](#)
-
-432000
-
-[Link to this property](#)
-
-518400
-
-[Link to this property](#)
-
-604800
+array of string
 
 [Link to this property](#)
 
@@ -19978,7 +23992,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -19986,11 +24000,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20054,7 +24080,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "custom"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20062,15 +24088,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"custom"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20134,7 +24168,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20142,11 +24176,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20210,7 +24256,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20218,11 +24264,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20286,7 +24344,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20294,11 +24352,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20362,7 +24432,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20370,15 +24440,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20442,7 +24520,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20450,11 +24528,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20518,7 +24608,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20526,11 +24616,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20594,7 +24696,7 @@ identifier of the zone setting.
 
 <summary>
 
-value: 100 or 125 or 150 or 23 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20602,107 +24704,23 @@ Current value of the zone setting.
 
 One of the following:
 
-100
+string
 
 [Link to this property](#)
 
-125
+number
 
 [Link to this property](#)
 
-150
+boolean
 
 [Link to this property](#)
 
-175
+unknown
 
 [Link to this property](#)
 
-200
-
-[Link to this property](#)
-
-225
-
-[Link to this property](#)
-
-250
-
-[Link to this property](#)
-
-275
-
-[Link to this property](#)
-
-300
-
-[Link to this property](#)
-
-325
-
-[Link to this property](#)
-
-350
-
-[Link to this property](#)
-
-375
-
-[Link to this property](#)
-
-400
-
-[Link to this property](#)
-
-425
-
-[Link to this property](#)
-
-450
-
-[Link to this property](#)
-
-475
-
-[Link to this property](#)
-
-500
-
-[Link to this property](#)
-
-1000
-
-[Link to this property](#)
-
-1500
-
-[Link to this property](#)
-
-2000
-
-[Link to this property](#)
-
-2500
-
-[Link to this property](#)
-
-3000
-
-[Link to this property](#)
-
-3500
-
-[Link to this property](#)
-
-4000
-
-[Link to this property](#)
-
-4500
-
-[Link to this property](#)
-
-5000
+array of string
 
 [Link to this property](#)
 
@@ -20766,7 +24784,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "1.0" or "1.1" or "1.2" or "1.3"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20774,19 +24792,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"1.0"
+string
 
 [Link to this property](#)
 
-"1.1"
+number
 
 [Link to this property](#)
 
-"1.2"
+boolean
 
 [Link to this property](#)
 
-"1.3"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20850,9 +24872,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Mirage is being deprecated. More information at https://developers.cloudflare.com/speed/optimization/images/mirage/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -20860,11 +24880,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -20928,13 +24960,91 @@ Zone setting identifier.
 
 <summary>
 
-value: object { enabled }
+value: object { enabled } or object { enabled } or object { enabled } or 2 more
 
 Current value of the zone setting.
 
 </summary>
 
+One of the following:
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
 enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+Enabled object { enabled }
+
+</summary>
+
+enabled: optional boolean
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -20998,7 +25108,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21006,11 +25116,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21074,7 +25196,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21082,11 +25204,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21150,9 +25284,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-This setting is deprecated. Orange to Orange (O2O) is applied automatically for eligible zones and no longer requires configuration; this setting only controlled the legacy O2O v1 (Managed CNAME) path. More information at https://developers.cloudflare.com/fundamentals/api/reference/deprecations/
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21160,11 +25292,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21228,7 +25372,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21236,11 +25380,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21394,7 +25550,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "lossless" or "lossy"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21402,15 +25558,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"lossless"
+number
 
 [Link to this property](#)
 
-"lossy"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21474,7 +25638,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21482,11 +25646,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21550,7 +25726,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21558,11 +25734,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21626,9 +25814,7 @@ ID of the zone setting.
 
 <summary>
 
-Deprecatedvalue: "on" or "off"
-
-Privacy Pass v1 was deprecated in 2023. (Announcement - https://blog.cloudflare.com/privacy-pass-standard/) and (API deprecation details - https://developers.cloudflare.com/fundamentals/api/reference/deprecations/#2024-03-31)
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21636,11 +25822,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21700,9 +25898,39 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: number
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Value of the zone setting. Notes: Value must be between 1 and 6000
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -21762,7 +25990,7 @@ Value of the Pseudo IPv4 setting.
 
 <summary>
 
-value: "off" or "add_header" or "overwrite_header"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21770,15 +25998,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"add_header"
+number
 
 [Link to this property](#)
 
-"overwrite_header"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21842,7 +26078,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21850,11 +26086,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21918,7 +26166,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -21926,11 +26174,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -21994,7 +26254,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22002,11 +26262,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22070,7 +26342,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22078,11 +26350,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22142,9 +26426,259 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: [AutomaticPlatformOptimization](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20automatic_platform_optimization%20%3E%20(schema)) { cache_by_device_type, cf, enabled, 3 more }
+<details>
+
+<summary>
+
+value: object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or object { cache_by_device_type, cf, enabled, 3 more } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cache_by_device_type, cf, enabled, 3 more }
+
+</summary>
+
+cache_by_device_type: optional boolean
+
+Indicates whether or not [cache by device type](https://developers.cloudflare.com/automatic-platform-optimization/reference/cache-device-type/) is enabled.
+
+[Link to this property](#)
+
+cf: optional boolean
+
+Indicates whether or not Cloudflare proxy is enabled.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Indicates whether or not Automatic Platform Optimization is enabled.
+
+[Link to this property](#)
+
+hostnames: optional array of string
+
+An array of hostnames where Automatic Platform Optimization for WordPress is activated.
+
+[Link to this property](#)
+
+wordpress: optional boolean
+
+Indicates whether or not site is powered by WordPress.
+
+[Link to this property](#)
+
+wp_plugin: optional boolean
+
+Indicates whether or not [Cloudflare for WordPress plugin](https://wordpress.org/plugins/cloudflare/) is installed.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -22204,7 +26738,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22212,11 +26746,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22280,9 +26826,19 @@ ID of the zone’s security header.
 
 <summary>
 
-value: object { strict_transport_security }
+value: object { strict_transport_security } or object { strict_transport_security } or object { strict_transport_security } or 2 more
 
 Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
 
 </summary>
 
@@ -22323,6 +26879,234 @@ Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
 preload: optional boolean
 
 Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+StrictTransportSecurity object { strict_transport_security }
+
+</summary>
+
+<details>
+
+<summary>
+
+strict_transport_security: optional object { enabled, include_subdomains, max_age, 2 more }
+
+Strict Transport Security.
+
+</summary>
+
+enabled: optional boolean
+
+Whether or not strict transport security is enabled.
+
+[Link to this property](#)
+
+include_subdomains: optional boolean
+
+Include all subdomains for strict transport security.
+
+[Link to this property](#)
+
+max_age: optional number
+
+Max age in seconds of the strict transport security.
+
+[Link to this property](#)
+
+nosniff: optional boolean
+
+Whether or not to include ‘X-Content-Type-Options: nosniff’ header.
+
+[Link to this property](#)
+
+preload: optional boolean
+
+Enable automatic preload of the HSTS configuration.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -22390,7 +27174,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "essentially_off" or "low" or 3 more
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22398,27 +27182,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"essentially_off"
+number
 
 [Link to this property](#)
 
-"low"
+boolean
 
 [Link to this property](#)
 
-"medium"
+unknown
 
 [Link to this property](#)
 
-"high"
-
-[Link to this property](#)
-
-"under_attack"
+array of string
 
 [Link to this property](#)
 
@@ -22482,7 +27262,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22490,11 +27270,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22558,7 +27350,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22566,11 +27358,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22634,7 +27438,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22642,11 +27446,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22710,7 +27526,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "flexible" or "full" or "strict"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22718,19 +27534,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"flexible"
+number
 
 [Link to this property](#)
 
-"full"
+boolean
 
 [Link to this property](#)
 
-"strict"
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22820,7 +27640,7 @@ Zone setting identifier.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22828,11 +27648,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22896,7 +27728,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off" or "zrt"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22904,15 +27736,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"zrt"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -22976,7 +27816,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -22984,11 +27824,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23052,7 +27904,7 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 <summary>
 
-value: "on" or "off" or "open"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23060,15 +27912,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
 
 [Link to this property](#)
 
-"open"
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23128,9 +27988,39 @@ ID of the zone setting. Shared between Image Transformations and Video Transform
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of allowed origins. Refer to the [Image Transformations](https://developers.cloudflare.com/images/transform-images/sources/) and [Video Transformations](https://developers.cloudflare.com/stream/transform-videos/#getting-started) documentation for more information.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -23190,7 +28080,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23198,11 +28088,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23266,7 +28168,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "on" or "off"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23274,11 +28176,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"on"
+string
 
 [Link to this property](#)
 
-"off"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23342,7 +28256,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23350,11 +28264,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23414,11 +28340,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Root-relative path (with optional query string) of this zone’s MCP endpoint, for example “/api/mcp”. Surfaced to the injected bridge as the data-mcp-url attribute. Absolute and protocol-relative URLs, fragments, and characters outside RFC 3986 paths and queries are rejected. An empty value clears the override so the bridge uses /mcp.
 
 maxLength2048
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -23474,11 +28430,41 @@ ID of the zone setting.
 
 [Link to this property](#)
 
-value: string
+<details>
 
-Current value of the zone setting.
+<summary>
+
+value: string or number or boolean or 2 more
+
+Comma-separated list of WebMCP tool-pack names to activate for this zone (for example, “c2pa,mcp-server-client”), surfaced to the injected bridge as the data-packs attribute. An empty value clears the override so the bridge uses its built-in default pack set.
 
 maxLength256
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -23538,7 +28524,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23546,11 +28532,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 
@@ -23614,7 +28612,7 @@ ID of the zone setting.
 
 <summary>
 
-value: "off" or "on"
+value: string or number or boolean or 2 more
 
 Current value of the zone setting.
 
@@ -23622,11 +28620,23 @@ Current value of the zone setting.
 
 One of the following:
 
-"off"
+string
 
 [Link to this property](#)
 
-"on"
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
 
 [Link to this property](#)
 

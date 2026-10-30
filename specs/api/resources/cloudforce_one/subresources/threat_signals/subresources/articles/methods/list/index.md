@@ -174,6 +174,42 @@ minLength1
 
 [Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20search%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+severity: optional array of "informational"or "low"or "medium"or 2 more
+
+Beta. Repeatable intrinsic severity band filter. An article matches any selected band, the band reported as its severity. Excludes articles without a severity. Like the severity field, severity is reported only while the account has an active Priority Intelligence Requirement; otherwise no articles match.
+
+</summary>
+
+One of the following:
+
+"informational"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+"medium"
+
+<a href="#">Link to this property</a>
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"critical"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20cloudforce_one.threat_signals.articles%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20severity%20%3E%20(schema)>)
+
 sort: optional string
 
 Sort by fetched\_at, published\_at, title, or relevance (beta). Prefix the field with - for descending order; defaults to -fetched\_at. -relevance lists the most relevant articles first, by pir\_id or by each article’s most relevant active PIR, with unscored articles last.

@@ -17296,7 +17296,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -17848,7 +17848,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -18400,7 +18400,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -18952,7 +18952,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -19590,7 +19590,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -20022,7 +20022,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -20454,7 +20454,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -20886,7 +20886,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 
@@ -21318,7 +21318,7 @@ HTTP status code from the server
 
 is_shared_oauth_callback_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect_uri’ instead of the portal callback URL. The default is false. Set ‘is_shared_oauth_callback_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)
 

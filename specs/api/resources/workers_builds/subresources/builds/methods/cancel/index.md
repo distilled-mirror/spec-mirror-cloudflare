@@ -104,7 +104,17 @@ messages: array of string
 
 <summary>
 
-result: object {build\_outcome, build\_uuid, stopped\_on }
+result: object {build\_outcome, build\_uuid, stopped\_on } or object {build\_outcome, build\_uuid, stopped\_on }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {build\_outcome, build\_uuid, stopped\_on }
 
 </summary>
 
@@ -153,6 +163,70 @@ formatuuid
 stopped\_on: optional string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {build\_outcome, build\_uuid, stopped\_on }
+
+</summary>
+
+<details>
+
+<summary>
+
+build\_outcome: optional "success"or "fail"or "skipped"or 2 more
+
+</summary>
+
+One of the following:
+
+"success"
+
+<a href="#">Link to this property</a>
+
+"fail"
+
+<a href="#">Link to this property</a>
+
+"skipped"
+
+<a href="#">Link to this property</a>
+
+"cancelled"
+
+<a href="#">Link to this property</a>
+
+"terminated"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+build\_uuid: optional string
+
+Build UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+stopped\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -210,10 +284,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -238,34 +308,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -273,10 +315,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [
@@ -301,33 +339,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/$BU
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

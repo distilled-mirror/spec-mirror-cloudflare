@@ -1020,7 +1020,7 @@ GET/user/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 11 more }
+TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -1325,6 +1325,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+token\_prefix: optional string
+
+The prefix of the token value, before the first underscore. Use it with <code>token_suffix</code> to identify a token. Only present for tokens created or rolled after this field was added.
+
+<a href="#">Link to this property</a>
+
+token\_suffix: optional string
+
+The last 4 characters of the token value. Use it with <code>token_prefix</code> to identify a token. It is not unique. Only present for tokens created or rolled after this field was added.
+
+maxLength4
+
+minLength4
 
 <a href="#">Link to this property</a>
 

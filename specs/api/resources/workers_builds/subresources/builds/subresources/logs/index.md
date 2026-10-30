@@ -30,7 +30,17 @@ GET/accounts/{account\_id}/builds/builds/{build\_uuid}/logs
 
 <summary>
 
-LogGetResponse object {cursor, lines, truncated }
+LogGetResponse = object {cursor, lines, truncated } or object {cursor, lines, truncated }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {cursor, lines, truncated }
 
 </summary>
 
@@ -67,6 +77,58 @@ Log message
 <a href="#">Link to this property</a>
 
 truncated: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {cursor, lines, truncated }
+
+</summary>
+
+cursor: optional string
+
+Pagination cursor for log retrieval.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+lines: optional array of array of numberor string
+
+</summary>
+
+One of the following:
+
+number
+
+Unix epoch timestamp
+
+<a href="#">Link to this property</a>
+
+string
+
+Log message
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+truncated: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

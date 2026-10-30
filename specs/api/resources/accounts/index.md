@@ -60,7 +60,7 @@ name: string
 
 Account name
 
-maxLength100
+maxLength120
 
 <a href="#">Link to this property</a>
 
@@ -98,7 +98,7 @@ formatdate-time
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name }
+managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -115,6 +115,20 @@ maxLength32
 parent\_org\_name: optional string
 
 Name of the parent Organization, if one exists
+
+<a href="#">Link to this property</a>
+
+root\_org\_id: optional string
+
+ID of the root Organization, if one exists
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+should\_display\_parent\_orgs: optional boolean
+
+Indicates whether the parent Organization hierarchy should be displayed
 
 <a href="#">Link to this property</a>
 
@@ -696,7 +710,7 @@ GET/accounts/{account\_id}/tokens/verify
 
 <summary>
 
-TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 11 more }
+TokenCreateResponse object {id, condition, creator\_email\_at\_creation, 13 more }
 
 </summary>
 
@@ -1001,6 +1015,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+token\_prefix: optional string
+
+The prefix of the token value, before the first underscore. Use it with <code>token_suffix</code> to identify a token. Only present for tokens created or rolled after this field was added.
+
+<a href="#">Link to this property</a>
+
+token\_suffix: optional string
+
+The last 4 characters of the token value. Use it with <code>token_prefix</code> to identify a token. It is not unique. Only present for tokens created or rolled after this field was added.
+
+maxLength4
+
+minLength4
 
 <a href="#">Link to this property</a>
 

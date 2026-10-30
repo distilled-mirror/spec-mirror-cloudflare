@@ -156,7 +156,17 @@ messages: array of string
 
 <summary>
 
-result: object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+result: object {config\_file, default\_worker\_name, env\_worker\_names, 2 more } or object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
 
 </summary>
 
@@ -214,6 +224,74 @@ scripts: optional map\[string]
 
 </details>
 
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+
+</summary>
+
+config\_file: optional string
+
+<a href="#">Link to this property</a>
+
+default\_worker\_name: optional string
+
+<a href="#">Link to this property</a>
+
+env\_worker\_names: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+package\_manager: optional "npm"or "yarn"or "pnpm"or 2 more
+
+Package manager inferred from repository lockfiles; defaults to npm when none is detected.
+
+</summary>
+
+One of the following:
+
+"npm"
+
+<a href="#">Link to this property</a>
+
+"yarn"
+
+<a href="#">Link to this property</a>
+
+"pnpm"
+
+<a href="#">Link to this property</a>
+
+"bun"
+
+<a href="#">Link to this property</a>
+
+"uv"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+scripts: optional map\[string]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
 [Link to this property](#)%20workers_builds.repos.config_autofill%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 success: boolean
@@ -265,8 +343,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -299,20 +375,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -320,8 +382,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -354,19 +414,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

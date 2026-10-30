@@ -100,7 +100,25 @@ messages: array of string
 
 [Link to this property](#)%20workers_builds.triggers%20%3E%20(method)%20purge_cache%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
-result: unknown
+<details>
+
+<summary>
+
+result: unknownor array of unknown
+
+</summary>
+
+One of the following:
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 [Link to this property](#)%20workers_builds.triggers%20%3E%20(method)%20purge_cache%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
@@ -154,44 +172,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [],
   "messages": [],
   "result": null,
   "success": true
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -199,43 +185,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
 
 200 example
 
-401 example
-
-404 example
-
 ```
 {
   "errors": [],
   "messages": [],
   "result": null,
   "success": true
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

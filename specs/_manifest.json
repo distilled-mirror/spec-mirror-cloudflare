@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4084,
+  "count": 4040,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -6367,166 +6367,6 @@
       "markdown": "https://developers.cloudflare.com/api/resources/logs/subresources/received/subresources/fields/methods/get/index.md"
     },
     {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/create",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/delete",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/edit",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/edit/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/refresh",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/refresh/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/create",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/delete",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover_all",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover_all/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/edit",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/edit/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/initial_setup",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/initial_setup/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/apply",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/apply/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/create",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/delete",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/edit",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/edit/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/export",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/export/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/plan",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/plan/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/edit",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/edit/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/update",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/update/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/export",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/export/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/policy_preview",
-      "markdown": "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/resources/methods/policy_preview/index.md"
-    },
-    {
       "page": "https://developers.cloudflare.com/api/resources/magic_network_monitoring",
       "markdown": "https://developers.cloudflare.com/api/resources/magic_network_monitoring/index.md"
     },
@@ -11519,22 +11359,6 @@
       "markdown": "https://developers.cloudflare.com/api/resources/stream/subresources/webhooks/methods/update/index.md"
     },
     {
-      "page": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/create",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/create/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/delete",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/delete/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenant_custom_nameservers/methods/get/index.md"
-    },
-    {
       "page": "https://developers.cloudflare.com/api/resources/tenants",
       "markdown": "https://developers.cloudflare.com/api/resources/tenants/index.md"
     },
@@ -16342,8 +16166,6 @@
   "htmlFallback": [
     "https://developers.cloudflare.com/api/resources/dns",
     "https://developers.cloudflare.com/api/resources/dns/subresources/records",
-    "https://developers.cloudflare.com/api/resources/magic_cloud_networking",
-    "https://developers.cloudflare.com/api/resources/magic_cloud_networking/subresources/on_ramps",
     "https://developers.cloudflare.com/api/resources/radar",
     "https://developers.cloudflare.com/api/resources/radar/subresources/attacks",
     "https://developers.cloudflare.com/api/resources/radar/subresources/http",
@@ -16383,12 +16205,56 @@
     "api/resources/cloudforce_one/subresources/threat_signals/methods/health/index.md",
     "api/resources/cloudforce_one/subresources/threat_signals/methods/search/index.md",
     "api/resources/intel/subresources/attack_surface_report/subresources/issues/methods/dismiss/index.md",
+    "api/resources/magic_cloud_networking/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/create/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/delete/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/edit/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/get/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/refresh/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/methods/update/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies/index.md",
+    "api/resources/magic_cloud_networking/subresources/catalog_syncs/subresources/prebuilt_policies/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/create/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/delete/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/discover_all/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/edit/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/get/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/initial_setup/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/cloud_integrations/methods/update/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/apply/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/create/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/delete/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/edit/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/export/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/get/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/plan/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/methods/update/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/edit/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/on_ramps/subresources/address_spaces/methods/update/index.md",
+    "api/resources/magic_cloud_networking/subresources/resources/index.md",
+    "api/resources/magic_cloud_networking/subresources/resources/methods/export/index.md",
+    "api/resources/magic_cloud_networking/subresources/resources/methods/get/index.md",
+    "api/resources/magic_cloud_networking/subresources/resources/methods/list/index.md",
+    "api/resources/magic_cloud_networking/subresources/resources/methods/policy_preview/index.md",
     "api/resources/moq/subresources/relays/subresources/tokens/methods/rotate/index.md",
     "api/resources/realtime_kit/subresources/livestreams/methods/create_independent_livestream/index.md",
     "api/resources/registrar/subresources/domains/index.md",
     "api/resources/registrar/subresources/domains/methods/get/index.md",
     "api/resources/registrar/subresources/domains/methods/list/index.md",
     "api/resources/registrar/subresources/domains/methods/update/index.md",
+    "api/resources/tenant_custom_nameservers/index.md",
+    "api/resources/tenant_custom_nameservers/methods/create/index.md",
+    "api/resources/tenant_custom_nameservers/methods/delete/index.md",
+    "api/resources/tenant_custom_nameservers/methods/get/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/methods/list/index.md"
   ]

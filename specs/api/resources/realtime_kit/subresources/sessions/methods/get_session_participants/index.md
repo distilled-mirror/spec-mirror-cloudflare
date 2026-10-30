@@ -392,11 +392,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "paging": {
-      "end_offset": 2,
-      "start_offset": 1,
-      "total_count": 123
-    },
     "participants": [
       {
         "created_at": "2023-02-01T10:51:08.039Z",
@@ -431,11 +426,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "paging": {
-      "end_offset": 2,
-      "start_offset": 1,
-      "total_count": 123
-    },
     "participants": [
       {
         "created_at": "2023-02-01T10:51:08.039Z",
@@ -508,11 +498,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "paging": {
-      "end_offset": 2,
-      "start_offset": 1,
-      "total_count": 123
-    },
     "participants": [
       {
         "created_at": "2023-02-01T10:51:08.039Z",
@@ -547,11 +532,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "paging": {
-      "end_offset": 2,
-      "start_offset": 1,
-      "total_count": 123
-    },
     "participants": [
       {
         "created_at": "2023-02-01T10:51:08.039Z",

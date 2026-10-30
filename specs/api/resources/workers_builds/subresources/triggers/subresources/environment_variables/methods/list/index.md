@@ -106,25 +106,17 @@ messages: array of string
 
 <summary>
 
-result: map\[object {created\_on, is\_secret, value } ]
+result: unknownor unknown
 
 </summary>
 
-created\_on: string
+One of the following:
 
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-is\_secret: boolean
-
-Whether to hide the value after it is saved. Secret values remain available to builds but appear as <code>null</code> when you list variables; non-secret values remain visible.
+unknown
 
 <a href="#">Link to this property</a>
 
-value: optional string
-
-Value is null for secret environment variables
+unknown
 
 <a href="#">Link to this property</a>
 
@@ -181,8 +173,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -214,20 +204,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -235,8 +211,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -268,19 +242,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/triggers/$
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

@@ -134,7 +134,7 @@ Credential configuration for the upstream MCP server. For auth\_type “bearer�
 
 client\_secret: optional string
 
-Pre-registered OAuth client\_secret. Write-only - accepted on create/update when auth\_credentials.auth\_mode is ‘manual’. Required when creating a manual OAuth server or converting an existing server to manual mode. Omit it on update to preserve the existing secret; provide it to rotate the secret. Stored AES-GCM-encrypted in server\_oauth\_secrets; never returned by read endpoints.
+Provides ‘client\_secret’ for a pre-registered OAuth client. This field is accepted on create or update only when ‘auth\_credentials.auth\_mode’ is ‘manual’. It is required when creating an MCP server with manual OAuth credentials or changing an existing server to use manual OAuth credentials. Omit ‘client\_secret’ on update to preserve the existing secret. Provide a new ‘client\_secret’ to rotate the secret. The secret is never returned by read, create, or update requests.
 
 [Link to this property](#)%20zero_trust.access.ai_controls.mcp.servers%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20client_secret%20%3E%20(schema)>)
 
@@ -148,7 +148,7 @@ maxLength512
 
 is\_shared\_oauth\_callback\_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect\_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect\_uri’ instead of the portal callback URL. The default is false. Set ‘is\_shared\_oauth\_callback\_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 [Link to this property](#)%20zero_trust.access.ai_controls.mcp.servers%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20is_shared_oauth_callback_enabled%20%3E%20(schema)>)
 
@@ -516,7 +516,7 @@ HTTP status code from the server
 
 is\_shared\_oauth\_callback\_enabled: optional boolean
 
-When true, the gateway worker uses the shared Cloudflare-owned OAuth callback endpoint as the redirect\_uri for upstream on-behalf OAuth, instead of the customer portal hostname. Defaults to false (off); opt in per server by setting true.
+When true, per-user authorization uses the shared Cloudflare callback URL as the ‘redirect\_uri’ instead of the portal callback URL. The default is false. Set ‘is\_shared\_oauth\_callback\_enabled’ to true to enable the shared Cloudflare callback URL for this MCP server.
 
 <a href="#">Link to this property</a>
 

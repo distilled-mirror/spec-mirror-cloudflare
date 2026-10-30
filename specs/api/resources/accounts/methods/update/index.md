@@ -66,7 +66,7 @@ name: string
 
 Account name
 
-maxLength100
+maxLength65
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -96,7 +96,7 @@ One of the following:
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name }
+managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -113,6 +113,20 @@ maxLength32
 parent\_org\_name: optional string
 
 Name of the parent Organization, if one exists
+
+<a href="#">Link to this property</a>
+
+root\_org\_id: optional string
+
+ID of the root Organization, if one exists
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+should\_display\_parent\_orgs: optional boolean
+
+Indicates whether the parent Organization hierarchy should be displayed
 
 <a href="#">Link to this property</a>
 
@@ -260,7 +274,7 @@ name: string
 
 Account name
 
-maxLength100
+maxLength120
 
 <a href="#">Link to this property</a>
 
@@ -298,7 +312,7 @@ formatdate-time
 
 <summary>
 
-managed\_by: optional object {parent\_org\_id, parent\_org\_name }
+managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
 
@@ -315,6 +329,20 @@ maxLength32
 parent\_org\_name: optional string
 
 Name of the parent Organization, if one exists
+
+<a href="#">Link to this property</a>
+
+root\_org\_id: optional string
+
+ID of the root Organization, if one exists
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+should\_display\_parent\_orgs: optional boolean
+
+Indicates whether the parent Organization hierarchy should be displayed
 
 <a href="#">Link to this property</a>
 
@@ -403,7 +431,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     "created_on": "2014-03-01T12:21:02Z",
     "managed_by": {
       "parent_org_id": "4536bcfad5faccb111b47003c79917fa",
-      "parent_org_name": "Demo Parent Organization"
+      "parent_org_name": "Demo Parent Organization",
+      "root_org_id": "46f0a1ce86ec3d91fae00db3b8b48cee",
+      "should_display_parent_orgs": true
     },
     "settings": {
       "abuse_contact_email": "abuse_contact_email",
@@ -447,7 +477,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     "created_on": "2014-03-01T12:21:02Z",
     "managed_by": {
       "parent_org_id": "4536bcfad5faccb111b47003c79917fa",
-      "parent_org_name": "Demo Parent Organization"
+      "parent_org_name": "Demo Parent Organization",
+      "root_org_id": "46f0a1ce86ec3d91fae00db3b8b48cee",
+      "should_display_parent_orgs": true
     },
     "settings": {
       "abuse_contact_email": "abuse_contact_email",

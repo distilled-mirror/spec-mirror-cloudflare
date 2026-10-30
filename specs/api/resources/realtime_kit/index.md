@@ -20668,7 +20668,7 @@ GET/accounts/{account_id}/realtime/kit/{app_id}/livestreams/{livestream_id}
 
 <summary>
 
-LivestreamGetAllLivestreamsResponse object { data, success }
+LivestreamGetAllLivestreamsResponse object { data, paging, success }
 
 </summary>
 
@@ -20676,75 +20676,63 @@ LivestreamGetAllLivestreamsResponse object { data, success }
 
 <summary>
 
-data: optional object { id, created_at, disabled, 8 more }
+data: array of object { id, created_at, disabled, 9 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The ID of the livestream.
+ID of the livestream.
 
 formatuuid
 
 [Link to this property](#)
 
-created_at: optional string
+created_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream was created at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-disabled: optional string
+disabled: boolean
 
-Specifies if the livestream was disabled.
+Specifies if the livestream is disabled.
 
 [Link to this property](#)
 
-ingest_server: optional string
+external_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+[Link to this property](#)
+
+ingest_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 [Link to this property](#)
 
-meeting_id: optional string
+manual_ingest: boolean
 
-ID of the meeting.
+Specifies if the livestream is ingested manually by an RTMP encoder.
 
 [Link to this property](#)
 
-name: optional string
+meeting_id: string
+
+ID of the meeting being livestreamed, if any.
+
+[Link to this property](#)
+
+name: string
 
 Name of the livestream.
 
 [Link to this property](#)
 
-<details>
-
-<summary>
-
-paging: optional object { end_offset, start_offset, total_count }
-
-</summary>
-
-end_offset: optional number
-
-[Link to this property](#)
-
-start_offset: optional number
-
-[Link to this property](#)
-
-total_count: optional number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-playback_url: optional string
+playback_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -20754,7 +20742,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -20776,19 +20766,23 @@ One of the following:
 
 [Link to this property](#)
 
+"METRICS_READY"
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
 
-stream_key: optional string
+stream_key: string
 
-Unique key for accessing each livestream.
+Unique key for accessing each livestream. Empty if the livestream is disabled.
 
 [Link to this property](#)
 
-updated_at: optional string
+updated_at: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+Timestamp the livestream was last updated at, in ISO format.
 
 formatdate-time
 
@@ -20798,7 +20792,33 @@ formatdate-time
 
 [Link to this property](#)
 
-success: optional boolean
+<details>
+
+<summary>
+
+paging: object { end_offset, start_offset, total_count }
+
+</summary>
+
+end_offset: number
+
+[Link to this property](#)
+
+start_offset: number
+
+[Link to this property](#)
+
+total_count: number
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
 
 [Link to this property](#)
 
@@ -20850,23 +20870,37 @@ LivestreamStartLivestreamingAMeetingResponse object { data, success }
 
 <summary>
 
-data: optional object { id, ingest_server, playback_url, 2 more }
+data: object { id, ingest_server, meeting_id, 4 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The livestream ID.
+ID of the livestream.
+
+formatuuid
 
 [Link to this property](#)
 
-ingest_server: optional string
+ingest_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 [Link to this property](#)
 
-playback_url: optional string
+meeting_id: string
+
+ID of the meeting being livestreamed, if any.
+
+[Link to this property](#)
+
+name: string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+playback_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -20876,7 +20910,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -20898,13 +20934,7 @@ One of the following:
 
 [Link to this property](#)
 
-</details>
-
-[Link to this property](#)
-
-stream_key: optional string
-
-Unique key for accessing each livestream.
+"METRICS_READY"
 
 [Link to this property](#)
 
@@ -20912,7 +20942,17 @@ Unique key for accessing each livestream.
 
 [Link to this property](#)
 
-success: optional boolean
+stream_key: string
+
+Unique key for accessing each livestream. Empty if the livestream is disabled.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
 
 [Link to this property](#)
 
@@ -21170,47 +21210,63 @@ LivestreamGetMeetingActiveLivestreamsResponse object { data, success }
 
 <summary>
 
-data: optional object { id, created_at, disabled, 7 more }
+data: object { id, created_at, disabled, 9 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The livestream ID.
+ID of the livestream.
+
+formatuuid
 
 [Link to this property](#)
 
-created_at: optional string
+created_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream was created at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-disabled: optional string
+disabled: boolean
 
-Specifies if the livestream was disabled.
+Specifies if the livestream is disabled.
 
 [Link to this property](#)
 
-ingest_server: optional string
+external_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+[Link to this property](#)
+
+ingest_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 [Link to this property](#)
 
-meeting_id: optional string
+manual_ingest: boolean
+
+Specifies if the livestream is ingested manually by an RTMP encoder.
 
 [Link to this property](#)
 
-name: optional string
+meeting_id: string
+
+ID of the meeting being livestreamed, if any.
+
+[Link to this property](#)
+
+name: string
 
 Name of the livestream.
 
 [Link to this property](#)
 
-playback_url: optional string
+playback_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -21220,7 +21276,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -21242,19 +21300,23 @@ One of the following:
 
 [Link to this property](#)
 
+"METRICS_READY"
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
 
-stream_key: optional string
+stream_key: string
 
-Unique key for accessing each livestream.
+Unique key for accessing each livestream. Empty if the livestream is disabled.
 
 [Link to this property](#)
 
-updated_at: optional string
+updated_at: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+Timestamp the livestream was last updated at, in ISO format.
 
 formatdate-time
 
@@ -21264,7 +21326,7 @@ formatdate-time
 
 [Link to this property](#)
 
-success: optional boolean
+success: boolean
 
 [Link to this property](#)
 
@@ -21284,61 +21346,81 @@ LivestreamGetLivestreamSessionDetailsForSessionIDResponse object { data, success
 
 <summary>
 
-data: optional object { id, created_at, err_message, 6 more }
+data: object { id, created_at, err_message, 7 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The livestream ID.
+ID of the livestream session.
+
+formatuuid
 
 [Link to this property](#)
 
-created_at: optional string
+created_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream session was created at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-err_message: optional string
+err_message: string
 
-The server URL to which the RTMP encoder sends the video and audio data.
-
-[Link to this property](#)
-
-ingest_seconds: optional number
-
-Name of the livestream.
+Error message, if the livestream session failed.
 
 [Link to this property](#)
 
-livestream_id: optional string
+ingest_seconds: number
+
+The time duration for which the input was given or the meeting was streamed.
 
 [Link to this property](#)
 
-started_time: optional string
+invoked_time: string
 
-Unique key for accessing each livestream.
+Timestamp the livestream session was invoked at, in ISO format.
 
-[Link to this property](#)
-
-stopped_time: optional string
-
-The web address that viewers can use to watch the livestream.
+formatdate-time
 
 [Link to this property](#)
 
-updated_at: optional string
+livestream_id: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+ID of the livestream.
+
+formatuuid
 
 [Link to this property](#)
 
-viewer_seconds: optional number
+started_time: string
 
-Specifies if the livestream was disabled.
+Timestamp the livestream session started at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp the livestream session stopped at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+viewer_seconds: number
+
+The total view time for which the viewers watched the stream.
 
 [Link to this property](#)
 
@@ -21346,7 +21428,7 @@ Specifies if the livestream was disabled.
 
 [Link to this property](#)
 
-success: optional boolean
+success: boolean
 
 [Link to this property](#)
 
@@ -21366,7 +21448,7 @@ LivestreamGetActiveLivestreamsForLivestreamIDResponse object { data, success }
 
 <summary>
 
-data: optional object { livestream, session }
+data: object { livestream, session }
 
 </summary>
 
@@ -21374,249 +21456,63 @@ data: optional object { livestream, session }
 
 <summary>
 
-livestream: optional object { id, created_at, disabled, 7 more }
+livestream: object { id, created_at, disabled, 9 more }
 
 </summary>
 
-id: optional string
-
-[Link to this property](#)
-
-created_at: optional string
-
-Timestamp the object was created at. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-disabled: optional string
-
-Specifies if the livestream was disabled.
-
-[Link to this property](#)
-
-ingest_server: optional string
-
-The server URL to which the RTMP encoder sends the video and audio data.
-
-[Link to this property](#)
-
-meeting_id: optional string
-
-ID of the meeting.
-
-[Link to this property](#)
-
-name: optional string
-
-Name of the livestream.
-
-[Link to this property](#)
-
-playback_url: optional string
-
-The web address that viewers can use to watch the livestream.
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
-
-</summary>
-
-One of the following:
-
-"LIVE"
-
-[Link to this property](#)
-
-"IDLE"
-
-[Link to this property](#)
-
-"ERRORED"
-
-[Link to this property](#)
-
-"INVOKED"
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-stream_key: optional string
-
-Unique key for accessing each livestream.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-Timestamp the object was updated at. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-session: optional object { id, created_at, err_message, 7 more }
-
-</summary>
-
-id: optional string
-
-[Link to this property](#)
-
-created_at: optional string
-
-Timestamp the object was created at. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-err_message: optional string
-
-[Link to this property](#)
-
-ingest_seconds: optional string
-
-The time duration for which the input was given or the meeting was streamed.
-
-[Link to this property](#)
-
-invoked_time: optional string
-
-Timestamp the object was invoked. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-livestream_id: optional string
-
-[Link to this property](#)
-
-started_time: optional string
-
-Timestamp the object was started. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-stopped_time: optional string
-
-Timestamp the object was stopped. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-updated_at: optional string
-
-Timestamp the object was updated at. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-viewer_seconds: optional string
-
-The total view time for which the viewers watched the stream.
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-success: optional boolean
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-LivestreamGetLivestreamSessionForLivestreamIDResponse object { data, success }
-
-</summary>
-
-<details>
-
-<summary>
-
-data: optional object { livestream, paging, session }
-
-</summary>
-
-<details>
-
-<summary>
-
-livestream: optional object { id, created_at, disabled, 7 more }
-
-</summary>
-
-id: optional string
+id: string
 
 ID of the livestream.
 
-[Link to this property](#)
-
-created_at: optional string
-
-Timestamp the object was created at. The time is returned in ISO format.
+formatuuid
 
 [Link to this property](#)
 
-disabled: optional string
+created_at: string
 
-Specifies if the livestream was disabled.
+Timestamp the livestream was created at, in ISO format.
+
+formatdate-time
 
 [Link to this property](#)
 
-ingest_server: optional string
+disabled: boolean
+
+Specifies if the livestream is disabled.
+
+[Link to this property](#)
+
+external_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+[Link to this property](#)
+
+ingest_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 [Link to this property](#)
 
-meeting_id: optional string
+manual_ingest: boolean
 
-The ID of the meeting.
+Specifies if the livestream is ingested manually by an RTMP encoder.
 
 [Link to this property](#)
 
-name: optional string
+meeting_id: string
+
+ID of the meeting being livestreamed, if any.
+
+[Link to this property](#)
+
+name: string
 
 Name of the livestream.
 
 [Link to this property](#)
 
-playback_url: optional string
+playback_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -21626,7 +21522,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE" or "IDLE" or "ERRORED" or "INVOKED"
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -21648,19 +21546,7 @@ One of the following:
 
 [Link to this property](#)
 
-</details>
-
-[Link to this property](#)
-
-stream_key: optional string
-
-Unique key for accessing each livestream.
-
-[Link to this property](#)
-
-updated_at: optional string
-
-Timestamp the object was updated at. The time is returned in ISO format.
+"METRICS_READY"
 
 [Link to this property](#)
 
@@ -21668,99 +21554,101 @@ Timestamp the object was updated at. The time is returned in ISO format.
 
 [Link to this property](#)
 
-<details>
+stream_key: string
 
-<summary>
-
-paging: optional object { end_offset, start_offset, total_count }
-
-</summary>
-
-end_offset: optional number
+Unique key for accessing each livestream. Empty if the livestream is disabled.
 
 [Link to this property](#)
 
-start_offset: optional number
+updated_at: string
 
-[Link to this property](#)
-
-total_count: optional number
-
-[Link to this property](#)
-
-</details>
-
-[Link to this property](#)
-
-<details>
-
-<summary>
-
-session: optional object { id, created_at, err_message, 7 more }
-
-</summary>
-
-id: optional string
-
-ID of the session.
-
-[Link to this property](#)
-
-created_at: optional string
-
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream was last updated at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-err_message: optional string
+</details>
 
 [Link to this property](#)
 
-ingest_seconds: optional number
+<details>
+
+<summary>
+
+session: object { id, created_at, err_message, 7 more }
+
+</summary>
+
+id: string
+
+ID of the livestream session.
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp the livestream session was created at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+err_message: string
+
+Error message, if the livestream session failed.
+
+[Link to this property](#)
+
+ingest_seconds: number
 
 The time duration for which the input was given or the meeting was streamed.
 
 [Link to this property](#)
 
-invoked_time: optional string
+invoked_time: string
 
-Timestamp the object was invoked. The time is returned in ISO format.
-
-formatdate-time
-
-[Link to this property](#)
-
-livestream_id: optional string
-
-[Link to this property](#)
-
-started_time: optional string
-
-Timestamp the object was started. The time is returned in ISO format.
+Timestamp the livestream session was invoked at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-stopped_time: optional string
+livestream_id: string
 
-Timestamp the object was stopped. The time is returned in ISO format.
+ID of the livestream.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp the livestream session started at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-updated_at: optional string
+stopped_time: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+Timestamp the livestream session stopped at, in ISO format.
 
 formatdate-time
 
 [Link to this property](#)
 
-viewer_seconds: optional number
+updated_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+viewer_seconds: number
 
 The total view time for which the viewers watched the stream.
 
@@ -21774,7 +21662,267 @@ The total view time for which the viewers watched the stream.
 
 [Link to this property](#)
 
-success: optional boolean
+success: boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamSessionForLivestreamIDResponse object { data, paging, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object { livestream, sessions }
+
+</summary>
+
+<details>
+
+<summary>
+
+livestream: object { id, created_at, disabled, 9 more }
+
+</summary>
+
+id: string
+
+ID of the livestream.
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp the livestream was created at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+disabled: boolean
+
+Specifies if the livestream is disabled.
+
+[Link to this property](#)
+
+external_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+[Link to this property](#)
+
+ingest_server: string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+[Link to this property](#)
+
+manual_ingest: boolean
+
+Specifies if the livestream is ingested manually by an RTMP encoder.
+
+[Link to this property](#)
+
+meeting_id: string
+
+ID of the meeting being livestreamed, if any.
+
+[Link to this property](#)
+
+name: string
+
+Name of the livestream.
+
+[Link to this property](#)
+
+playback_url: string
+
+The web address that viewers can use to watch the livestream.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "LIVE" or "IDLE" or "ERRORED" or 2 more
+
+Status of the livestream.
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+[Link to this property](#)
+
+"IDLE"
+
+[Link to this property](#)
+
+"ERRORED"
+
+[Link to this property](#)
+
+"INVOKED"
+
+[Link to this property](#)
+
+"METRICS_READY"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+stream_key: string
+
+Unique key for accessing each livestream. Empty if the livestream is disabled.
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp the livestream was last updated at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sessions: array of object { id, created_at, err_message, 7 more }
+
+</summary>
+
+id: string
+
+ID of the livestream session.
+
+formatuuid
+
+[Link to this property](#)
+
+created_at: string
+
+Timestamp the livestream session was created at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+err_message: string
+
+Error message, if the livestream session failed.
+
+[Link to this property](#)
+
+ingest_seconds: number
+
+The time duration for which the input was given or the meeting was streamed.
+
+[Link to this property](#)
+
+invoked_time: string
+
+Timestamp the livestream session was invoked at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+livestream_id: string
+
+ID of the livestream.
+
+formatuuid
+
+[Link to this property](#)
+
+started_time: string
+
+Timestamp the livestream session started at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+stopped_time: string
+
+Timestamp the livestream session stopped at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+updated_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+[Link to this property](#)
+
+viewer_seconds: number
+
+The total view time for which the viewers watched the stream.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+paging: object { end_offset, start_offset, total_count }
+
+</summary>
+
+end_offset: number
+
+[Link to this property](#)
+
+start_offset: number
+
+[Link to this property](#)
+
+total_count: number
+
+minimum0
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+success: boolean
 
 [Link to this property](#)
 

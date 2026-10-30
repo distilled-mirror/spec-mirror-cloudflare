@@ -102,199 +102,17 @@ messages: array of string
 
 <summary>
 
-result: array of object {branch\_excludes, branch\_includes, build\_caching\_enabled, 14 more }
-
-</summary>
-
-branch\_excludes: optional array of string
-
-Branch patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-branch\_includes: optional array of string
-
-Branch patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-build\_caching\_enabled: optional boolean
-
-Whether builds reuse cached dependencies and build artifacts.
-
-<a href="#">Link to this property</a>
-
-build\_command: optional string
-
-Command to build the Worker.
-
-<a href="#">Link to this property</a>
-
-build\_token\_name: optional string
-
-<a href="#">Link to this property</a>
-
-build\_token\_uuid: optional string
-
-UUID of the build token used when deploying the Worker.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deploy\_command: optional string
-
-Command to deploy the Worker.
-
-<a href="#">Link to this property</a>
-
-external\_script\_id: optional string
-
-System-generated tag of the Worker. This is not the Worker name.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-path\_excludes: optional array of string
-
-Path patterns that must not start builds.
-
-<a href="#">Link to this property</a>
-
-path\_includes: optional array of string
-
-Path patterns that can start builds.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-repo\_connection: optional object {created\_on, deleted\_on, modified\_on, 6 more }
-
-</summary>
-
-created\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-deleted\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-provider\_account\_id: optional string
-
-Provider-specific identifier of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-provider\_account\_name: optional string
-
-Human-readable name of the account or namespace that owns the repository.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-provider\_type: optional "github"or "gitlab"or "gitlab\_internal"or "origin"
-
-Source control provider.
+result: unknownor array of unknown
 
 </summary>
 
 One of the following:
 
-"github"
+unknown
 
 <a href="#">Link to this property</a>
 
-"gitlab"
-
-<a href="#">Link to this property</a>
-
-"gitlab\_internal"
-
-<a href="#">Link to this property</a>
-
-"origin"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-repo\_connection\_uuid: optional string
-
-Repository connection UUID.
-
-formatuuid
-
-<a href="#">Link to this property</a>
-
-repo\_id: optional string
-
-Provider-specific repository identifier.
-
-<a href="#">Link to this property</a>
-
-repo\_name: optional string
-
-Human-readable repository name.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-root\_directory: optional string
-
-Repository directory in which build and deploy commands run.
-
-<a href="#">Link to this property</a>
-
-trigger\_name: optional string
-
-Human-readable name of the build trigger.
-
-<a href="#">Link to this property</a>
-
-trigger\_uuid: optional string
-
-Trigger UUID.
-
-formatuuid
+array of unknown
 
 <a href="#">Link to this property</a>
 
@@ -351,8 +169,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -364,45 +180,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "branch_excludes": [
-        "string"
-      ],
-      "branch_includes": [
-        "main"
-      ],
-      "build_caching_enabled": false,
-      "build_command": "npm run build",
-      "build_token_name": "My Build Token",
-      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "created_on": "2019-12-27T18:11:19.117Z",
-      "deleted_on": "2019-12-27T18:11:19.117Z",
-      "deploy_command": "npx wrangler deploy",
-      "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
-      "modified_on": "2019-12-27T18:11:19.117Z",
-      "path_excludes": [
-        "*.md"
-      ],
-      "path_includes": [
-        "*"
-      ],
-      "repo_connection": {
-        "created_on": "2019-12-27T18:11:19.117Z",
-        "deleted_on": "2019-12-27T18:11:19.117Z",
-        "modified_on": "2019-12-27T18:11:19.117Z",
-        "provider_account_id": "cloudflare",
-        "provider_account_name": "Cloudflare",
-        "provider_type": "github",
-        "repo_connection_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-        "repo_id": "workers-sdk",
-        "repo_name": "workers-sdk"
-      },
-      "root_directory": "/",
-      "trigger_name": "Production Deploy",
-      "trigger_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -411,20 +189,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -432,8 +196,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
 
 200 example
 
-401 example
-
 ```
 {
   "errors": [
@@ -445,45 +207,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
   "messages": [
     "string"
   ],
-  "result": [
-    {
-      "branch_excludes": [
-        "string"
-      ],
-      "branch_includes": [
-        "main"
-      ],
-      "build_caching_enabled": false,
-      "build_command": "npm run build",
-      "build_token_name": "My Build Token",
-      "build_token_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "created_on": "2019-12-27T18:11:19.117Z",
-      "deleted_on": "2019-12-27T18:11:19.117Z",
-      "deploy_command": "npx wrangler deploy",
-      "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
-      "modified_on": "2019-12-27T18:11:19.117Z",
-      "path_excludes": [
-        "*.md"
-      ],
-      "path_includes": [
-        "*"
-      ],
-      "repo_connection": {
-        "created_on": "2019-12-27T18:11:19.117Z",
-        "deleted_on": "2019-12-27T18:11:19.117Z",
-        "modified_on": "2019-12-27T18:11:19.117Z",
-        "provider_account_id": "cloudflare",
-        "provider_account_name": "Cloudflare",
-        "provider_type": "github",
-        "repo_connection_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-        "repo_id": "workers-sdk",
-        "repo_name": "workers-sdk"
-      },
-      "root_directory": "/",
-      "trigger_name": "Production Deploy",
-      "trigger_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
-    }
-  ],
+  "result": {},
   "success": true,
   "result_info": {
     "count": 25,
@@ -492,19 +216,5 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$E
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12005,
-      "message": "Missing token from authorization header"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

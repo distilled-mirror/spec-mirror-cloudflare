@@ -62,7 +62,7 @@ livestream\_id: string
 
 <summary>
 
-data: optional object {livestream, session }
+data: object {livestream, session }
 
 </summary>
 
@@ -70,47 +70,63 @@ data: optional object {livestream, session }
 
 <summary>
 
-livestream: optional object {id, created\_at, disabled, 7 more }
+livestream: object {id, created\_at, disabled, 9 more }
 
 </summary>
 
-id: optional string
+id: string
+
+ID of the livestream.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
-created\_at: optional string
+created\_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream was created at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-disabled: optional string
+disabled: boolean
 
-Specifies if the livestream was disabled.
+Specifies if the livestream is disabled.
 
 <a href="#">Link to this property</a>
 
-ingest\_server: optional string
+external\_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+<a href="#">Link to this property</a>
+
+ingest\_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 <a href="#">Link to this property</a>
 
-meeting\_id: optional string
+manual\_ingest: boolean
 
-ID of the meeting.
+Specifies if the livestream is ingested manually by an RTMP encoder.
 
 <a href="#">Link to this property</a>
 
-name: optional string
+meeting\_id: string
+
+ID of the meeting being livestreamed, if any.
+
+<a href="#">Link to this property</a>
+
+name: string
 
 Name of the livestream.
 
 <a href="#">Link to this property</a>
 
-playback\_url: optional string
+playback\_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -120,7 +136,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE"or "IDLE"or "ERRORED"or "INVOKED"
+status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -142,19 +160,23 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"METRICS\_READY"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
 
-stream\_key: optional string
+stream\_key: string
 
-Unique key for accessing each livestream.
+Unique key for accessing each livestream. Empty if the livestream is disabled.
 
 <a href="#">Link to this property</a>
 
-updated\_at: optional string
+updated\_at: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+Timestamp the livestream was last updated at, in ISO format.
 
 formatdate-time
 
@@ -168,69 +190,79 @@ formatdate-time
 
 <summary>
 
-session: optional object {id, created\_at, err\_message, 7 more }
+session: object {id, created\_at, err\_message, 7 more }
 
 </summary>
 
-id: optional string
+id: string
+
+ID of the livestream session.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
-created\_at: optional string
+created\_at: string
 
-Timestamp the object was created at. The time is returned in ISO format.
+Timestamp the livestream session was created at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-err\_message: optional string
+err\_message: string
+
+Error message, if the livestream session failed.
 
 <a href="#">Link to this property</a>
 
-ingest\_seconds: optional string
+ingest\_seconds: number
 
 The time duration for which the input was given or the meeting was streamed.
 
 <a href="#">Link to this property</a>
 
-invoked\_time: optional string
+invoked\_time: string
 
-Timestamp the object was invoked. The time is returned in ISO format.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-livestream\_id: optional string
-
-<a href="#">Link to this property</a>
-
-started\_time: optional string
-
-Timestamp the object was started. The time is returned in ISO format.
+Timestamp the livestream session was invoked at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-stopped\_time: optional string
+livestream\_id: string
 
-Timestamp the object was stopped. The time is returned in ISO format.
+ID of the livestream.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+started\_time: string
+
+Timestamp the livestream session started at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-updated\_at: optional string
+stopped\_time: string
 
-Timestamp the object was updated at. The time is returned in ISO format.
+Timestamp the livestream session stopped at, in ISO format.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-viewer\_seconds: optional string
+updated\_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+viewer\_seconds: number
 
 The total view time for which the viewers watched the stream.
 
@@ -244,7 +276,7 @@ The total view time for which the viewers watched the stream.
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_active_livestreams_for_livestream_id_response%20%3E%20(schema)%20%3E%20(property)%20data>)
 
-success: optional boolean
+success: boolean
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_active_livestreams_for_livestream_id_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
@@ -265,28 +297,30 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 {
   "data": {
     "livestream": {
-      "id": "id",
-      "created_at": "2019-12-27T18:11:19.117Z",
-      "disabled": "disabled",
-      "ingest_server": "ingest_server",
-      "meeting_id": "meeting_id",
-      "name": "name",
-      "playback_url": "playback_url",
+      "created_at": "2023-07-15T07:08:26.634Z",
+      "disabled": false,
+      "external_id": "7de6a3fec0f9c05bf1df140950d3a237",
+      "id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+      "ingest_server": "rtmps://live.cloudflare.com:443/live/",
+      "manual_ingest": false,
+      "meeting_id": "bbb87945-df1c-49d9-8159-262a7ae6cfde",
+      "name": "test",
+      "playback_url": "https://customer-s8oj0c1n5ek8ah1e.cloudflarestream.com/7de6a3fec0f9c05bf1df140950d3a237/manifest/video.m3u8",
       "status": "LIVE",
-      "stream_key": "stream_key",
-      "updated_at": "2019-12-27T18:11:19.117Z"
+      "stream_key": "f26566285faca6fbe2e79a73a66rsrrsrrsr3cde23a2bb7dbc6c2c1761b98f4e4",
+      "updated_at": "2023-07-15T07:08:40.726Z"
     },
     "session": {
-      "id": "id",
-      "created_at": "2019-12-27T18:11:19.117Z",
-      "err_message": "err_message",
-      "ingest_seconds": "ingest_seconds",
-      "invoked_time": "2019-12-27T18:11:19.117Z",
-      "livestream_id": "livestream_id",
-      "started_time": "2019-12-27T18:11:19.117Z",
-      "stopped_time": "2019-12-27T18:11:19.117Z",
-      "updated_at": "2019-12-27T18:11:19.117Z",
-      "viewer_seconds": "viewer_seconds"
+      "created_at": "2023-07-15T07:08:40.742Z",
+      "err_message": null,
+      "id": "cf55a850-c3fd-46b5-b5d2-25b3b9aa1686",
+      "ingest_seconds": 600,
+      "invoked_time": "2023-07-15T07:08:26.634Z",
+      "livestream_id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+      "started_time": "2023-07-15T07:08:39Z",
+      "stopped_time": null,
+      "updated_at": "2023-07-15T07:18:40.742Z",
+      "viewer_seconds": 1200
     }
   },
   "success": true
@@ -301,28 +335,30 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 {
   "data": {
     "livestream": {
-      "id": "id",
-      "created_at": "2019-12-27T18:11:19.117Z",
-      "disabled": "disabled",
-      "ingest_server": "ingest_server",
-      "meeting_id": "meeting_id",
-      "name": "name",
-      "playback_url": "playback_url",
+      "created_at": "2023-07-15T07:08:26.634Z",
+      "disabled": false,
+      "external_id": "7de6a3fec0f9c05bf1df140950d3a237",
+      "id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+      "ingest_server": "rtmps://live.cloudflare.com:443/live/",
+      "manual_ingest": false,
+      "meeting_id": "bbb87945-df1c-49d9-8159-262a7ae6cfde",
+      "name": "test",
+      "playback_url": "https://customer-s8oj0c1n5ek8ah1e.cloudflarestream.com/7de6a3fec0f9c05bf1df140950d3a237/manifest/video.m3u8",
       "status": "LIVE",
-      "stream_key": "stream_key",
-      "updated_at": "2019-12-27T18:11:19.117Z"
+      "stream_key": "f26566285faca6fbe2e79a73a66rsrrsrrsr3cde23a2bb7dbc6c2c1761b98f4e4",
+      "updated_at": "2023-07-15T07:08:40.726Z"
     },
     "session": {
-      "id": "id",
-      "created_at": "2019-12-27T18:11:19.117Z",
-      "err_message": "err_message",
-      "ingest_seconds": "ingest_seconds",
-      "invoked_time": "2019-12-27T18:11:19.117Z",
-      "livestream_id": "livestream_id",
-      "started_time": "2019-12-27T18:11:19.117Z",
-      "stopped_time": "2019-12-27T18:11:19.117Z",
-      "updated_at": "2019-12-27T18:11:19.117Z",
-      "viewer_seconds": "viewer_seconds"
+      "created_at": "2023-07-15T07:08:40.742Z",
+      "err_message": null,
+      "id": "cf55a850-c3fd-46b5-b5d2-25b3b9aa1686",
+      "ingest_seconds": 600,
+      "invoked_time": "2023-07-15T07:08:26.634Z",
+      "livestream_id": "b60ef3da-fbbb-441b-9168-8235b0035248",
+      "started_time": "2023-07-15T07:08:39Z",
+      "stopped_time": null,
+      "updated_at": "2023-07-15T07:18:40.742Z",
+      "viewer_seconds": 1200
     }
   },
   "success": true

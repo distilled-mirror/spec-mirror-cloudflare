@@ -86,7 +86,17 @@ messages: array of string
 
 <summary>
 
-result: object {already\_exists, build\_uuid, created\_on, status }
+result: object {already\_exists, build\_uuid, created\_on, status } or object {already\_exists, build\_uuid, created\_on, status }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object {already\_exists, build\_uuid, created\_on, status }
 
 </summary>
 
@@ -133,6 +143,72 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "stopped"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {already\_exists, build\_uuid, created\_on, status }
+
+</summary>
+
+already\_exists: optional boolean
+
+True if a pending build already exists for this branch
+
+<a href="#">Link to this property</a>
+
+build\_uuid: optional string
+
+Build UUID.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: optional "queued"or "initializing"or "running"or "stopped"
+
+</summary>
+
+One of the following:
+
+"queued"
+
+<a href="#">Link to this property</a>
+
+"initializing"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"stopped"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -194,10 +270,6 @@ curl https://api.cloudflare.com/client/v4/workers/builds/deploy_hooks/$DEPLOY_HO
 
 200 example
 
-404 example
-
-429 example
-
 ```
 {
   "errors": [
@@ -223,34 +295,6 @@ curl https://api.cloudflare.com/client/v4/workers/builds/deploy_hooks/$DEPLOY_HO
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12051,
-      "message": "Rate limit exceeded"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -258,10 +302,6 @@ curl https://api.cloudflare.com/client/v4/workers/builds/deploy_hooks/$DEPLOY_HO
 
 200 example
 
-404 example
-
-429 example
-
 ```
 {
   "errors": [
@@ -287,33 +327,5 @@ curl https://api.cloudflare.com/client/v4/workers/builds/deploy_hooks/$DEPLOY_HO
     "total_count": 150,
     "total_pages": 3
   }
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12000,
-      "message": "Not found"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 12051,
-      "message": "Rate limit exceeded"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

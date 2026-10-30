@@ -94,23 +94,37 @@ Width of the livestreaming video in pixels
 
 <summary>
 
-data: optional object {id, ingest\_server, playback\_url, 2 more }
+data: object {id, ingest\_server, meeting\_id, 4 more }
 
 </summary>
 
-id: optional string
+id: string
 
-The livestream ID.
+ID of the livestream.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
-ingest\_server: optional string
+ingest\_server: string
 
 The server URL to which the RTMP encoder sends the video and audio data.
 
 <a href="#">Link to this property</a>
 
-playback\_url: optional string
+meeting\_id: string
+
+ID of the meeting being livestreamed, if any.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Name of the livestream.
+
+<a href="#">Link to this property</a>
+
+playback\_url: string
 
 The web address that viewers can use to watch the livestream.
 
@@ -120,7 +134,9 @@ The web address that viewers can use to watch the livestream.
 
 <summary>
 
-status: optional "LIVE"or "IDLE"or "ERRORED"or "INVOKED"
+status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+
+Status of the livestream.
 
 </summary>
 
@@ -142,13 +158,17 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"METRICS\_READY"
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
 
-stream\_key: optional string
+stream\_key: string
 
-Unique key for accessing each livestream.
+Unique key for accessing each livestream. Empty if the livestream is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -156,7 +176,7 @@ Unique key for accessing each livestream.
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_start_livestreaming_a_meeting_response%20%3E%20(schema)%20%3E%20(property)%20data>)
 
-success: optional boolean
+success: boolean
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_start_livestreaming_a_meeting_response%20%3E%20(schema)%20%3E%20(property)%20success>)
 
@@ -178,10 +198,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "7088bba8-f522-49a8-b59b-3cd0e946bbb0",
+    "id": "b60ef3da-fbbb-441b-9168-8235b0035248",
     "ingest_server": "rtmps://live.cloudflare.com:443/live/",
+    "meeting_id": "bbb87945-df1c-49d9-8159-262a7ae6cfde",
+    "name": "test",
     "playback_url": "https://customer-s8oj0c1n5ek8ah1e.cloudflarestream.com/7de6a3fec0f9c05bf1df140950d3a237/manifest/video.m3u8",
-    "status": "INVOKED",
+    "status": "LIVE",
     "stream_key": "f26566285faca6fbe2e79a73a66rsrrsrrsr3cde23a2bb7dbc6c2c1761b98f4e4"
   },
   "success": true
@@ -195,10 +217,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
 ```
 {
   "data": {
-    "id": "7088bba8-f522-49a8-b59b-3cd0e946bbb0",
+    "id": "b60ef3da-fbbb-441b-9168-8235b0035248",
     "ingest_server": "rtmps://live.cloudflare.com:443/live/",
+    "meeting_id": "bbb87945-df1c-49d9-8159-262a7ae6cfde",
+    "name": "test",
     "playback_url": "https://customer-s8oj0c1n5ek8ah1e.cloudflarestream.com/7de6a3fec0f9c05bf1df140950d3a237/manifest/video.m3u8",
-    "status": "INVOKED",
+    "status": "LIVE",
     "stream_key": "f26566285faca6fbe2e79a73a66rsrrsrrsr3cde23a2bb7dbc6c2c1761b98f4e4"
   },
   "success": true
