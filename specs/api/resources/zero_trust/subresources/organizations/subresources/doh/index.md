@@ -34,7 +34,7 @@ PUT/accounts/{account\_id}/access/organizations/doh
 
 <summary>
 
-DOHGetResponse object {id, client\_id, doh\_jwt\_duration, 7 more }
+DOHGetResponse object {id, client\_id, doh\_jwt\_duration, 8 more }
 
 </summary>
 
@@ -104,6 +104,12 @@ The name of the service token.
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20zero_trust.organizations.doh%20%3E%20(model)%20doh_get_response%20%3E%20(schema)>)
@@ -112,7 +118,7 @@ The name of the service token.
 
 <summary>
 
-DOHUpdateResponse object {id, client\_id, doh\_jwt\_duration, 7 more }
+DOHUpdateResponse object {id, client\_id, doh\_jwt\_duration, 8 more }
 
 </summary>
 
@@ -179,6 +185,12 @@ The secret scanning partner that reported the leak. Omitted if the token has not
 name: optional string
 
 The name of the service token.
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
 
 <a href="#">Link to this property</a>
 

@@ -48,6 +48,74 @@ Organization Member ID
 
 [Link to this property](#)%20organizations.members%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20member_id%20%3E%20(schema)>)
 
+##### ReturnsExpand Collapse
+
+errors: array of unknown
+
+[Link to this property](#)%20organizations.members%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20errors>)
+
+<details>
+
+<summary>
+
+messages: array of <a href="https://developers.cloudflare.com/api/resources/$shared#(resource)%20%24shared%20%3E%20(model)%20response_info%20%3E%20(schema)">ResponseInfo</a> { code, message, documentation\_url, source }
+
+</summary>
+
+code: number
+
+minimum1000
+
+<a href="#">Link to this property</a>
+
+message: string
+
+<a href="#">Link to this property</a>
+
+documentation\_url: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+source: optional object {pointer }
+
+</summary>
+
+pointer: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20organizations.members%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
+
+<details>
+
+<summary>
+
+result: object {id }
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20organizations.members%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
+
+success: true
+
+[Link to this property](#)%20organizations.members%20%3E%20(method)%20delete%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
+
 ### Delete organization member
 
 HTTP
@@ -61,4 +129,48 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/members
     -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
 ```
 
+200 example
+
+```
+{
+  "errors": [],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "result": {
+    "id": "id"
+  },
+  "success": true
+}
+```
+
 ##### Returns Examples
+
+200 example
+
+```
+{
+  "errors": [],
+  "messages": [
+    {
+      "code": 1000,
+      "message": "message",
+      "documentation_url": "documentation_url",
+      "source": {
+        "pointer": "pointer"
+      }
+    }
+  ],
+  "result": {
+    "id": "id"
+  },
+  "success": true
+}
+```

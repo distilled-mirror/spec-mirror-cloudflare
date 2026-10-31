@@ -119,3 +119,81 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 </details>
 
 [Link to this property](#)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+AccountListResponse object {account\_pubname, account\_tag, account\_type, 2 more }
+
+</summary>
+
+account\_pubname: string
+
+<a href="#">Link to this property</a>
+
+account\_tag: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+account\_type: "standard"or "enterprise"
+
+</summary>
+
+One of the following:
+
+"standard"
+
+<a href="#">Link to this property</a>
+
+"enterprise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_on: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+
+</summary>
+
+access\_approval\_expiry: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+api\_access\_enabled: boolean
+
+<a href="#">Link to this property</a>
+
+enforce\_two\_factor: boolean
+
+<a href="#">Link to this property</a>
+
+use\_account\_custom\_ns\_by\_default: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20tenants.accounts%20%3E%20(model)%20account_list_response%20%3E%20(schema)>)

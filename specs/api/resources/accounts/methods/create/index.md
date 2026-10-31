@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts
 
-Create an Account. To create the Account within an Organization, provide `unit.id` and omit `standalone`. To create a standalone Free Account, provide `standalone: true` and omit `unit`. Providing both fields is invalid. If you omit both fields, Cloudflare can determine the destination only when the User is an administrator of exactly one Organization. Cloudflare creates the Account in that Organization; otherwise, the request returns an error.
+Create an Account. To create the Account within an Organization, provide `unit.id` and omit `standalone`. To create a standalone Free Account, provide `standalone: true` and omit `unit`. Providing both fields is invalid. If you omit both fields, Cloudflare can determine the destination only when the User is an administrator of exactly one Organization. Cloudflare creates the Account in that Organization; otherwise, the request returns an error. Account names are limited to 65 UTF-8 bytes.
 
 ##### Security
 
@@ -48,9 +48,7 @@ minLength1
 
 name: string
 
-Account name
-
-maxLength65
+Account name, limited to 65 UTF-8 bytes.
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -215,8 +213,6 @@ minLength32
 name: string
 
 Account name
-
-maxLength120
 
 <a href="#">Link to this property</a>
 

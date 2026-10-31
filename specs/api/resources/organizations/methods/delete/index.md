@@ -20,9 +20,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/organizations/{organization\_id}
 
-Delete an organization. The organization MUST be empty before deleting. It must not contain any sub-organizations, accounts, members or users. Sub-organization deletion availability depends on the organization’s capabilities.
+Delete an organization. It must not contain active sub-organizations or accounts. A root organization must also have no active managed users. Sub-organization deletion availability depends on the organization’s capabilities.
 
-**Access Control:** Restricted to enterprise organizations.
+**Access Control:** Root deletion is restricted to enterprise organizations.
 
 ##### Security
 

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/user/tenants
 
-Retrieves list of tenants the authenticated user / method has access to.
+Retrieves the legacy Tenants associated with the authenticated user. Use `GET /organizations` to list modern Organizations the user has access to.
 
 ##### Security
 
@@ -92,15 +92,21 @@ pointer: optional string
 
 <summary>
 
-result: array of <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations%20%3E%20(model)%20organization%20%3E%20(schema)">Organization</a> { id, create\_time, meta, 3 more }
+result: array of object {cdate, customer\_id, edate, 10 more }
 
 </summary>
 
-id: string
+cdate: string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-create\_time: string
+customer\_id: string
+
+<a href="#">Link to this property</a>
+
+edate: string
 
 formatdate-time
 
@@ -110,17 +116,23 @@ formatdate-time
 
 <summary>
 
-meta: object {hierarchy\_tags, managed\_by, tenant\_flags }
+tenant\_contacts: object {email, website }
 
 </summary>
 
-hierarchy\_tags: optional array of string
-
-Ordered chain of organization tags from the root organization down to (and including) this organization itself. Root organizations return a single-element array containing their own tag; sub-organizations return <code>[rootTag, ...intermediateTags, parentTag, selfTag]</code>. Useful for constructing authorization scopes that need to cover every ancestor in the hierarchy.
+email: optional string
 
 <a href="#">Link to this property</a>
 
-managed\_by: optional string
+website: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+tenant\_labels: array of string
 
 <a href="#">Link to this property</a>
 
@@ -128,41 +140,43 @@ managed\_by: optional string
 
 <summary>
 
-tenant\_flags: optional object {account\_creation, account\_creation\_applies\_tenant\_defaults, account\_deletion, 5 more }
-
-Enable features for Organizations.
+tenant\_metadata: object {billing\_account\_type, configuration\_account, created\_by, 4 more }
 
 </summary>
 
-account\_creation: string
+billing\_account\_type: optional string
 
 <a href="#">Link to this property</a>
 
-account\_creation\_applies\_tenant\_defaults: string
+configuration\_account: optional string
 
 <a href="#">Link to this property</a>
 
-account\_deletion: string
+created\_by: optional string
 
 <a href="#">Link to this property</a>
 
-account\_migration: string
+<details>
+
+<summary>
+
+dns: optional object {ns\_pool }
+
+</summary>
+
+<details>
+
+<summary>
+
+ns\_pool: object {primary, secondary }
+
+</summary>
+
+primary: string
 
 <a href="#">Link to this property</a>
 
-account\_mobility: string
-
-<a href="#">Link to this property</a>
-
-enterprise\_capability: string
-
-<a href="#">Link to this property</a>
-
-member\_management: string
-
-<a href="#">Link to this property</a>
-
-sub\_org\_creation: string
+secondary: string
 
 <a href="#">Link to this property</a>
 
@@ -174,7 +188,7 @@ sub\_org\_creation: string
 
 <a href="#">Link to this property</a>
 
-name: string
+flags: optional map\[string]
 
 <a href="#">Link to this property</a>
 
@@ -182,15 +196,53 @@ name: string
 
 <summary>
 
-parent: optional object {id, name }
+innate\_account\_entitlements: optional array of object {allocation, feature }
 
 </summary>
 
-id: string
+<details>
+
+<summary>
+
+allocation: object {type, value }
+
+</summary>
+
+type: string
 
 <a href="#">Link to this property</a>
 
-name: string
+<details>
+
+<summary>
+
+value: booleanor numberor stringor 2 more
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -202,27 +254,207 @@ name: string
 
 <summary>
 
-profile: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)">AccountProfile</a> { business\_address, business\_email, business\_name, 2 more }
+feature: object {key }
 
 </summary>
 
-business\_address: string
+key: string
 
 <a href="#">Link to this property</a>
 
-business\_email: string
+</details>
 
 <a href="#">Link to this property</a>
 
-business\_name: string
+</details>
 
 <a href="#">Link to this property</a>
 
-business\_phone: string
+<details>
+
+<summary>
+
+tenant\_entitlements: optional array of object {allocation, feature }
+
+</summary>
+
+<details>
+
+<summary>
+
+allocation: object {type, value }
+
+</summary>
+
+type: string
 
 <a href="#">Link to this property</a>
 
-external\_metadata: string
+<details>
+
+<summary>
+
+value: booleanor numberor stringor 2 more
+
+</summary>
+
+One of the following:
+
+boolean
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+feature: object {key }
+
+</summary>
+
+key: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+tenant\_name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+tenant\_network: object {choices }
+
+</summary>
+
+choices: optional map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+tenant\_status: string
+
+<a href="#">Link to this property</a>
+
+tenant\_tag: string
+
+<a href="#">Link to this property</a>
+
+tenant\_type: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+unit\_memberships: array of object {member\_metadata, member\_status, member\_tag }
+
+</summary>
+
+member\_metadata: unknown
+
+<a href="#">Link to this property</a>
+
+member\_status: string
+
+<a href="#">Link to this property</a>
+
+member\_tag: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+unit\_metadata: unknown
+
+<a href="#">Link to this property</a>
+
+unit\_name: string
+
+<a href="#">Link to this property</a>
+
+unit\_status: string
+
+<a href="#">Link to this property</a>
+
+unit\_tag: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ui\_flags: object {show\_orgs\_ui, show\_tenants\_ui }
+
+Which top-level dashboard experiences to render for this tenant; both may be true.
+
+</summary>
+
+show\_orgs\_ui: boolean
+
+Render the Organizations experience for this tenant.
+
+<a href="#">Link to this property</a>
+
+show\_tenants\_ui: boolean
+
+Render the legacy Tenants experience for this tenant.
 
 <a href="#">Link to this property</a>
 
@@ -267,35 +499,79 @@ curl https://api.cloudflare.com/client/v4/user/tenants \
   ],
   "result": [
     {
-      "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
-      "create_time": "2019-12-27T18:11:19.117Z",
-      "meta": {
-        "hierarchy_tags": [
-          "string"
+      "cdate": "2019-12-27T18:11:19.117Z",
+      "customer_id": "customer_id",
+      "edate": "2019-12-27T18:11:19.117Z",
+      "tenant_contacts": {
+        "email": "email",
+        "website": "website"
+      },
+      "tenant_labels": [
+        "string"
+      ],
+      "tenant_metadata": {
+        "billing_account_type": "billing_account_type",
+        "configuration_account": "configuration_account",
+        "created_by": "created_by",
+        "dns": {
+          "ns_pool": {
+            "primary": "primary",
+            "secondary": "secondary"
+          }
+        },
+        "flags": {
+          "foo": "string"
+        },
+        "innate_account_entitlements": [
+          {
+            "allocation": {
+              "type": "type",
+              "value": true
+            },
+            "feature": {
+              "key": "key"
+            }
+          }
         ],
-        "managed_by": "managed_by",
-        "tenant_flags": {
-          "account_creation": "account_creation",
-          "account_creation_applies_tenant_defaults": "account_creation_applies_tenant_defaults",
-          "account_deletion": "account_deletion",
-          "account_migration": "account_migration",
-          "account_mobility": "account_mobility",
-          "enterprise_capability": "enterprise_capability",
-          "member_management": "member_management",
-          "sub_org_creation": "sub_org_creation"
+        "tenant_entitlements": [
+          {
+            "allocation": {
+              "type": "type",
+              "value": true
+            },
+            "feature": {
+              "key": "key"
+            }
+          }
+        ]
+      },
+      "tenant_name": "tenant_name",
+      "tenant_network": {
+        "choices": {
+          "foo": {}
         }
       },
-      "name": "name",
-      "parent": {
-        "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
-        "name": "name"
-      },
-      "profile": {
-        "business_address": "business_address",
-        "business_email": "business_email",
-        "business_name": "business_name",
-        "business_phone": "business_phone",
-        "external_metadata": "external_metadata"
+      "tenant_status": "tenant_status",
+      "tenant_tag": "tenant_tag",
+      "tenant_type": "tenant_type",
+      "tenant_units": [
+        {
+          "unit_memberships": [
+            {
+              "member_metadata": {},
+              "member_status": "member_status",
+              "member_tag": "member_tag"
+            }
+          ],
+          "unit_metadata": {},
+          "unit_name": "unit_name",
+          "unit_status": "unit_status",
+          "unit_tag": "unit_tag"
+        }
+      ],
+      "ui_flags": {
+        "show_orgs_ui": true,
+        "show_tenants_ui": true
       }
     }
   ],
@@ -322,35 +598,79 @@ curl https://api.cloudflare.com/client/v4/user/tenants \
   ],
   "result": [
     {
-      "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
-      "create_time": "2019-12-27T18:11:19.117Z",
-      "meta": {
-        "hierarchy_tags": [
-          "string"
+      "cdate": "2019-12-27T18:11:19.117Z",
+      "customer_id": "customer_id",
+      "edate": "2019-12-27T18:11:19.117Z",
+      "tenant_contacts": {
+        "email": "email",
+        "website": "website"
+      },
+      "tenant_labels": [
+        "string"
+      ],
+      "tenant_metadata": {
+        "billing_account_type": "billing_account_type",
+        "configuration_account": "configuration_account",
+        "created_by": "created_by",
+        "dns": {
+          "ns_pool": {
+            "primary": "primary",
+            "secondary": "secondary"
+          }
+        },
+        "flags": {
+          "foo": "string"
+        },
+        "innate_account_entitlements": [
+          {
+            "allocation": {
+              "type": "type",
+              "value": true
+            },
+            "feature": {
+              "key": "key"
+            }
+          }
         ],
-        "managed_by": "managed_by",
-        "tenant_flags": {
-          "account_creation": "account_creation",
-          "account_creation_applies_tenant_defaults": "account_creation_applies_tenant_defaults",
-          "account_deletion": "account_deletion",
-          "account_migration": "account_migration",
-          "account_mobility": "account_mobility",
-          "enterprise_capability": "enterprise_capability",
-          "member_management": "member_management",
-          "sub_org_creation": "sub_org_creation"
+        "tenant_entitlements": [
+          {
+            "allocation": {
+              "type": "type",
+              "value": true
+            },
+            "feature": {
+              "key": "key"
+            }
+          }
+        ]
+      },
+      "tenant_name": "tenant_name",
+      "tenant_network": {
+        "choices": {
+          "foo": {}
         }
       },
-      "name": "name",
-      "parent": {
-        "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
-        "name": "name"
-      },
-      "profile": {
-        "business_address": "business_address",
-        "business_email": "business_email",
-        "business_name": "business_name",
-        "business_phone": "business_phone",
-        "external_metadata": "external_metadata"
+      "tenant_status": "tenant_status",
+      "tenant_tag": "tenant_tag",
+      "tenant_type": "tenant_type",
+      "tenant_units": [
+        {
+          "unit_memberships": [
+            {
+              "member_metadata": {},
+              "member_status": "member_status",
+              "member_tag": "member_tag"
+            }
+          ],
+          "unit_metadata": {},
+          "unit_name": "unit_name",
+          "unit_status": "unit_status",
+          "unit_tag": "unit_tag"
+        }
+      ],
+      "ui_flags": {
+        "show_orgs_ui": true,
+        "show_tenants_ui": true
       }
     }
   ],

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/organizations/{organization\_id}/accounts
 
-Retrieve the accounts immediately attached to a specific organization. Accounts attached to sub-organizations are not included.
+Retrieve the accounts immediately attached to a specific organization. Accounts attached to sub-organizations are not included. Use `page_token` and `page_size` for cursor pagination, or provide `page` and `per_page` together for legacy offset pagination. Cursor pagination takes precedence when requested. The default response uses Account fields; `Accept: application/json; legacy=true` requests the LegacyAccount representation.
 
 ##### Security
 
@@ -142,9 +142,17 @@ startsWith: optional string
 
 order\_by: optional "account\_name"
 
-Field to order results by. Currently supported values: `account_name`. When not specified, results are ordered by internal account ID.
+Field to order results by. Currently supported values: `account_name`.
 
 [Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
+
+page: optional number
+
+Legacy offset page number. Must be provided with `per_page`. Values below 1 are treated as
+
+1. Cursor pagination takes precedence when requested.
+
+[Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 page\_size: optional number
 
@@ -163,6 +171,42 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent requests with a page token.
 
 [Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20page_token%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Legacy offset page size. Must be provided with `page`. Values are clamped to the range 1-100. Cursor pagination takes precedence when requested.
+
+[Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+status: optional "active"or "deleted"
+
+Filter accounts by lifecycle status. Defaults to <code>active</code>.
+
+</summary>
+
+One of the following:
+
+"active"
+
+<a href="#">Link to this property</a>
+
+"deleted"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20status%20%3E%20(schema)>)
+
+##### H eader ParametersExpand Collapse
+
+Accept: optional string
+
+[Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20Accept%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -216,7 +260,17 @@ pointer: optional string
 
 <summary>
 
-result: array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more }
+result: array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object {account\_pubname, account\_tag, account\_type, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+TenantAccount object {id, created\_on, name, 3 more }
 
 </summary>
 
@@ -306,13 +360,105 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 </details>
 
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+OrganizationsAPILegacyAccount object {account\_pubname, account\_tag, account\_type, 2 more }
+
+</summary>
+
+account\_pubname: string
+
+<a href="#">Link to this property</a>
+
+account\_tag: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+account\_type: "standard"or "enterprise"
+
+</summary>
+
+One of the following:
+
+"standard"
+
+<a href="#">Link to this property</a>
+
+"enterprise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_on: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+
+</summary>
+
+access\_approval\_expiry: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+api\_access\_enabled: boolean
+
+<a href="#">Link to this property</a>
+
+enforce\_two\_factor: boolean
+
+<a href="#">Link to this property</a>
+
+use\_account\_custom\_ns\_by\_default: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
 [Link to this property](#)%20organizations.organization_accounts%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
 <details>
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size }
+result\_info: object {next\_page\_token, total\_size } or object {count, page, per\_page, total\_count }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+OrganizationsAPIPageTokenResultInfo object {next\_page\_token, total\_size }
 
 </summary>
 
@@ -327,6 +473,38 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 total\_size: optional number
 
 Counts the total amount of items in a list with the applied filters. The API omits next\_page\_token to indicate no more items in a particular list.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+OrganizationsAPILegacyPaginationResultInfo object {count, page, per\_page, total\_count }
+
+</summary>
+
+count: number
+
+<a href="#">Link to this property</a>
+
+page: number
+
+<a href="#">Link to this property</a>
+
+per\_page: number
+
+<a href="#">Link to this property</a>
+
+total\_count: number
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

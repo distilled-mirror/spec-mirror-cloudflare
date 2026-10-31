@@ -180,7 +180,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, client\_id, client\_secret, 3 more }
+result: optional object {id, client\_id, client\_secret, 4 more }
 
 </summary>
 
@@ -217,6 +217,12 @@ Whether the service token is enabled. A disabled service token cannot be used to
 name: optional string
 
 The name of the service token.
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
 
 <a href="#">Link to this property</a>
 
@@ -269,6 +275,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/service_to
     "duration": "60m",
     "enabled": true,
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }
@@ -309,6 +318,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/service_to
     "duration": "60m",
     "enabled": true,
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }

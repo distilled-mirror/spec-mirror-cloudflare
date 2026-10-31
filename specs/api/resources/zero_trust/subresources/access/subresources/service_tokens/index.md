@@ -54,7 +54,7 @@ POST/accounts/{account\_id}/access/service\_tokens/{service\_token\_id}/rotate
 
 <summary>
 
-ServiceToken object {id, client\_id, duration, 6 more }
+ServiceToken object {id, client\_id, duration, 7 more }
 
 </summary>
 
@@ -118,6 +118,12 @@ The name of the service token.
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(model)%20service_token%20%3E%20(schema)>)
@@ -126,7 +132,7 @@ The name of the service token.
 
 <summary>
 
-ServiceTokenCreateResponse object {id, client\_id, client\_secret, 3 more }
+ServiceTokenCreateResponse object {id, client\_id, client\_secret, 4 more }
 
 </summary>
 
@@ -163,6 +169,12 @@ Whether the service token is enabled. A disabled service token cannot be used to
 name: optional string
 
 The name of the service token.
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
 
 <a href="#">Link to this property</a>
 
@@ -174,7 +186,7 @@ The name of the service token.
 
 <summary>
 
-ServiceTokenRotateResponse object {id, client\_id, client\_secret, 3 more }
+ServiceTokenRotateResponse object {id, client\_id, client\_secret, 4 more }
 
 </summary>
 
@@ -211,6 +223,12 @@ Whether the service token is enabled. A disabled service token cannot be used to
 name: optional string
 
 The name of the service token.
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
 
 <a href="#">Link to this property</a>
 

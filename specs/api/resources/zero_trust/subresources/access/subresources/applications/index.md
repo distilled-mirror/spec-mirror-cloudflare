@@ -6076,6 +6076,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -6981,6 +7027,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -7985,6 +8077,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -11138,6 +11276,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -12043,6 +12227,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -13053,6 +13283,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -14712,6 +14988,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -15617,6 +15939,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -16627,6 +16995,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -19366,6 +19780,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -20271,6 +20731,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -21281,6 +21787,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -23576,6 +24128,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -24481,6 +25079,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -25491,6 +26135,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -27320,6 +28010,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -28225,6 +28961,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -29235,6 +30017,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -30426,6 +31254,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -31331,6 +32205,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -32341,6 +33261,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -33526,6 +34492,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -34431,6 +35443,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -35441,6 +36499,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -36626,6 +37730,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -37531,6 +38681,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -38541,6 +39737,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -39702,6 +40944,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -40607,6 +41895,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -41617,6 +42951,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -42882,6 +44262,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -43787,6 +45213,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -44769,6 +46241,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -46646,6 +48164,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -47551,6 +49115,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -48561,6 +50171,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -50692,6 +52348,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -51597,6 +53299,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -52607,6 +54355,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -54714,6 +56508,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -55619,6 +57459,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -56629,6 +58515,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -59310,6 +61242,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -60215,6 +62193,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -61225,6 +63249,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -62884,6 +64954,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -63789,6 +65905,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -64799,6 +66961,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -67538,6 +69746,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -68443,6 +70697,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -69453,6 +71753,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -71748,6 +74094,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -72653,6 +75045,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -73663,6 +76101,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -75492,6 +77976,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -76397,6 +78927,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -77407,6 +79983,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -78598,6 +81220,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -79503,6 +82171,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -80513,6 +83227,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -81698,6 +84458,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -82603,6 +85409,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -83613,6 +86465,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -84798,6 +87696,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -85703,6 +88647,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -86713,6 +89703,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -87874,6 +90910,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -88779,6 +91861,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -89789,6 +92917,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -91054,6 +94228,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -91959,6 +95179,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -92941,6 +96207,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -94818,6 +98130,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -95723,6 +99081,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -96733,6 +100137,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -98864,6 +102314,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -99769,6 +103265,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -100779,6 +104321,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -102886,6 +106474,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -103791,6 +107425,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -104801,6 +108481,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -107482,6 +111208,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -108387,6 +112159,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -109397,6 +113215,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -111056,6 +114920,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -111961,6 +115871,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -112971,6 +116927,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -115710,6 +119712,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -116615,6 +120663,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -117625,6 +121719,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -119920,6 +124060,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -120825,6 +125011,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -121835,6 +126067,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -123664,6 +127942,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -124569,6 +128893,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -125579,6 +129949,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -126770,6 +131186,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -127675,6 +132137,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -128685,6 +133193,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -129870,6 +134424,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -130775,6 +135375,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -131785,6 +136431,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -132970,6 +137662,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -133875,6 +138613,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -134885,6 +139669,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -136046,6 +140876,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -136951,6 +141827,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -137961,6 +142883,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -139226,6 +144194,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -140131,6 +145145,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -141113,6 +146173,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -142990,6 +148096,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -143895,6 +149047,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -144905,6 +150103,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -147036,6 +152280,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -147941,6 +153231,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -148951,6 +154287,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -151058,6 +156440,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -151963,6 +157391,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -152973,6 +158447,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -155654,6 +161174,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -156559,6 +162125,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -157569,6 +163181,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -159228,6 +164886,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -160133,6 +165837,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -161143,6 +166893,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -163882,6 +169678,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -164787,6 +170629,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -165797,6 +171685,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -168092,6 +174026,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -168997,6 +174977,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -170007,6 +176033,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -171836,6 +177908,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -172741,6 +178859,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -173751,6 +179915,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -174942,6 +181152,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -175847,6 +182103,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -176857,6 +183159,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -178042,6 +184390,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -178947,6 +185341,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -179957,6 +186397,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -181142,6 +187628,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -182047,6 +188579,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -183057,6 +189635,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -184218,6 +190842,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -185123,6 +191793,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -186133,6 +192849,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -187398,6 +194160,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -188303,6 +195111,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -189285,6 +196139,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -191162,6 +198062,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -192067,6 +199013,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -193077,6 +200069,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -195208,6 +202246,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -196113,6 +203197,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -197123,6 +204253,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -199230,6 +206406,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -200135,6 +207357,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -201160,6 +208428,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -202062,7 +209376,7 @@ maxLength32
 
 <summary>
 
-AccessRule = [GroupRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20group_rule%20%3E%20(schema)) { group } or [AnyValidServiceTokenRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20any_valid_service_token_rule%20%3E%20(schema)) { any_valid_service_token } or object { auth_context } or 23 more
+AccessRule = [GroupRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20group_rule%20%3E%20(schema)) { group } or [AnyValidServiceTokenRule](/api/resources/zero_trust#(resource)%20zero_trust.access.applications.policies%20%3E%20(model)%20any_valid_service_token_rule%20%3E%20(schema)) { any_valid_service_token } or object { auth_context } or 24 more
 
 Matches an Access group.
 
@@ -202839,6 +210153,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -204524,6 +211884,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -205429,6 +212835,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -206454,6 +213906,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -207458,6 +214956,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -208363,6 +215907,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -209345,6 +216935,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -210456,6 +218092,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -211361,6 +219043,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -212386,6 +220114,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -213390,6 +221164,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -214295,6 +222115,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -215277,6 +223143,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -216388,6 +224300,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -217293,6 +225251,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -218318,6 +226322,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -219322,6 +227372,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -220227,6 +228323,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -221209,6 +229351,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -222320,6 +230508,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -223225,6 +231459,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -224250,6 +232530,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -225254,6 +233580,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object { linked_app_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non_identity and bypass decisions.
@@ -226159,6 +234531,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 
@@ -227141,6 +235559,52 @@ service_token: object { token_id }
 token_id: string
 
 The ID of a Service Token.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object { service_token_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service_token_tag: object { key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+[Link to this property](#)
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 [Link to this property](#)
 

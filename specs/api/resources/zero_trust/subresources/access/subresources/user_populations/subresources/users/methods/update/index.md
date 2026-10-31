@@ -122,7 +122,37 @@ path: optional string
 
 <a href="#">Link to this property</a>
 
-value: optional unknown
+<details>
+
+<summary>
+
+value: optional stringor numberor booleanor 2 more
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

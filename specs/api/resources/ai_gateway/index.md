@@ -13884,7 +13884,7 @@ POST/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/provider\_configs
 
 <summary>
 
-ProviderConfigListResponse object {id, alias, default\_config, 7 more }
+ProviderConfigListResponse object {id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -13925,6 +13925,14 @@ secret\_id: string
 <a href="#">Link to this property</a>
 
 secret\_preview: string
+
+<a href="#">Link to this property</a>
+
+last\_used\_at: optional string
+
+UTC date (YYYY-MM-DD) the gateway last selected this key to authenticate a request to the provider, whether or not the request succeeded. Updated at most once a day. Null if the gateway has not used the key since this field was introduced.
+
+formatdate
 
 <a href="#">Link to this property</a>
 
@@ -13944,7 +13952,7 @@ rate\_limit\_period: optional number
 
 <summary>
 
-ProviderConfigCreateResponse object {id, alias, default\_config, 7 more }
+ProviderConfigCreateResponse object {id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -13985,6 +13993,14 @@ secret\_id: string
 <a href="#">Link to this property</a>
 
 secret\_preview: string
+
+<a href="#">Link to this property</a>
+
+last\_used\_at: optional string
+
+UTC date (YYYY-MM-DD) the gateway last selected this key to authenticate a request to the provider, whether or not the request succeeded. Updated at most once a day. Null if the gateway has not used the key since this field was introduced.
+
+formatdate
 
 <a href="#">Link to this property</a>
 

@@ -8336,7 +8336,7 @@ Mapping of MAC addresses to IP addresses
 
 <summary>
 
-LAN object {id, bond\_id, ha\_link, 9 more }
+LAN object {id, bond\_id, ha\_link, 10 more }
 
 </summary>
 
@@ -8379,6 +8379,30 @@ nat: optional <a href="https://developers.cloudflare.com/api/resources/magic_tra
 <a href="#">Link to this property</a>
 
 physport: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+
+</summary>
+
+local\_alias\_prefix: string
+
+A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+remote\_prefix: string
+
+A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

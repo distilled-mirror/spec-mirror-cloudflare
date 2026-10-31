@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}
 
-Update an existing account.
+Update an existing account. Account names are limited to 65 UTF-8 bytes.
 
 ##### Security
 
@@ -64,9 +64,7 @@ minLength32
 
 name: string
 
-Account name
-
-maxLength65
+Account name, limited to 65 UTF-8 bytes.
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -273,8 +271,6 @@ minLength32
 name: string
 
 Account name
-
-maxLength120
 
 <a href="#">Link to this property</a>
 

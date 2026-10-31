@@ -198,7 +198,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.service_tokens%20%3E%20(model)%20service_token%20%3E%20(schema)">ServiceToken</a> { id, client\_id, duration, 6 more }
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.service_tokens%20%3E%20(model)%20service_token%20%3E%20(schema)">ServiceToken</a> { id, client\_id, duration, 7 more }
 
 </summary>
 
@@ -259,6 +259,12 @@ The secret scanning partner that reported the leak. Omitted if the token has not
 name: optional string
 
 The name of the service token.
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
 
 <a href="#">Link to this property</a>
 
@@ -357,6 +363,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "leak_reported_at": "2014-01-01T05:20:00.12345Z",
       "leak_reporter": "github",
       "name": "CI/CD token",
+      "tags": {
+        "environment": "production"
+      },
       "updated_at": "2014-01-01T05:20:00.12345Z"
     }
   ],
@@ -410,6 +419,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
       "leak_reported_at": "2014-01-01T05:20:00.12345Z",
       "leak_reporter": "github",
       "name": "CI/CD token",
+      "tags": {
+        "environment": "production"
+      },
       "updated_at": "2014-01-01T05:20:00.12345Z"
     }
   ],

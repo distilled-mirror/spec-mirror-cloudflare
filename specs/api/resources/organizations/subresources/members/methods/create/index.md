@@ -48,7 +48,7 @@ organization\_id: string
 
 <summary>
 
-member: object {user, status }
+member: object {user }
 
 </summary>
 
@@ -61,28 +61,6 @@ user: object {email }
 </summary>
 
 email: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-status: optional "active"or "canceled"
-
-</summary>
-
-One of the following:
-
-"active"
-
-<a href="#">Link to this property</a>
-
-"canceled"
 
 <a href="#">Link to this property</a>
 
@@ -146,7 +124,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations.members%20%3E%20(model)%20organization_member%20%3E%20(schema)">OrganizationMember</a> { id, create\_time, meta, 3 more }
+result: <a href="https://developers.cloudflare.com/api/resources/organizations#(resource)%20organizations.members%20%3E%20(model)%20organization_member%20%3E%20(schema)">OrganizationMember</a> { id, create\_time, meta, 4 more }
 
 </summary>
 
@@ -230,6 +208,66 @@ two\_factor\_authentication\_enabled: boolean
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+policies: optional array of object {roles, scopes, id }
+
+Direct policies of the membership. Present only for DSR members enrolled in Organization Roles.
+
+</summary>
+
+<details>
+
+<summary>
+
+roles: array of object {id }
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scopes: array of object {key, subset\_of }
+
+</summary>
+
+key: string
+
+An Organization (<code>com.cloudflare.api.tenant.unit.&lt;tag&gt;</code>) or Account (<code>com.cloudflare.api.account.&lt;tag&gt;</code>) key.
+
+<a href="#">Link to this property</a>
+
+subset\_of: optional array of unknown
+
+The route Organization for Account scopes. Optional in requests and always returned for Account scopes.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+Omit to create a policy. An unchanged policy keeps its ID; a changed policy is replaced under a new ID.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20organizations.members%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -286,7 +324,25 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/members
       "email": "email",
       "name": "name",
       "two_factor_authentication_enabled": true
-    }
+    },
+    "policies": [
+      {
+        "roles": [
+          {
+            "id": "id"
+          }
+        ],
+        "scopes": [
+          {
+            "key": "key",
+            "subset_of": [
+              {}
+            ]
+          }
+        ],
+        "id": "id"
+      }
+    ]
   },
   "success": true
 }
@@ -322,7 +378,25 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID/members
       "email": "email",
       "name": "name",
       "two_factor_authentication_enabled": true
-    }
+    },
+    "policies": [
+      {
+        "roles": [
+          {
+            "id": "id"
+          }
+        ],
+        "scopes": [
+          {
+            "key": "key",
+            "subset_of": [
+              {}
+            ]
+          }
+        ],
+        "id": "id"
+      }
+    ]
   },
   "success": true
 }

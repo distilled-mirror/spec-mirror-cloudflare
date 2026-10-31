@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/profile
 
-Updates the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record. Changes apply to every account and organization sharing that profile. Omitted or empty fields are left unchanged. Only available to members of an organization that contains the account.
+Partially updates the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record, creating the profile if it does not exist. Changes apply to every account and organization sharing that profile. Omitted, empty, or null fields are left unchanged. Each profile field is limited to 1,000 UTF-8 bytes. Only available to members of an organization that contains the account.
 
 ##### Security
 
@@ -66,23 +66,23 @@ account\_id: string
 
 ##### Body ParametersJSONExpand Collapse
 
-business\_address: string
+business\_address: optional string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20business_address%20%3E%20(schema)>)
 
-business\_email: string
+business\_email: optional string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20business_email%20%3E%20(schema)>)
 
-business\_name: string
+business\_name: optional string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20business_name%20%3E%20(schema)>)
 
-business\_phone: string
+business\_phone: optional string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20business_phone%20%3E%20(schema)>)
 
-external\_metadata: string
+external\_metadata: optional string
 
 [Link to this property](#)%20accounts.account_profile%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20external_metadata%20%3E%20(schema)>)
 
@@ -97,13 +97,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/profile \
     -X PUT \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-    -d '{
-          "business_address": "business_address",
-          "business_email": "business_email",
-          "business_name": "business_name",
-          "business_phone": "business_phone",
-          "external_metadata": "external_metadata"
-        }'
+    -d '{}'
 ```
 
 ##### Returns Examples

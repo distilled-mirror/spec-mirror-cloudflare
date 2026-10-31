@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/profile
 
-Retrieves the business profile (name, email, phone, address, and external metadata) associated with this account’s parent organization customer record. Profiles can be shared across accounts and organizations. Only available to members of an organization that contains the account.
+Retrieves the business profile (name, email, phone, address, and external metadata) associated with this account’s customer record. Profiles can be shared across accounts and organizations. Only available to members of an organization that contains the account.
 
 ##### Security
 

@@ -176,7 +176,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.lans%20%3E%20(model)%20lan%20%3E%20(schema)">LAN</a> { id, bond\_id, ha\_link, 9 more }
+result: <a href="https://developers.cloudflare.com/api/resources/magic_transit#(resource)%20magic_transit.sites.lans%20%3E%20(model)%20lan%20%3E%20(schema)">LAN</a> { id, bond\_id, ha\_link, 10 more }
 
 </summary>
 
@@ -233,6 +233,30 @@ A valid CIDR notation representing an IP range.
 <a href="#">Link to this property</a>
 
 physport: optional number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+remote\_subnets: optional array of object {local\_alias\_prefix, remote\_prefix }
+
+</summary>
+
+local\_alias\_prefix: string
+
+A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+remote\_prefix: string
+
+A valid CIDR notation representing an IP range.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -509,6 +533,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
       "static_prefix": "192.0.2.0/24"
     },
     "physport": 1,
+    "remote_subnets": [
+      {
+        "local_alias_prefix": "192.0.2.0/24",
+        "remote_prefix": "192.0.2.0/24"
+      }
+    ],
     "routed_subnets": [
       {
         "next_hop": "192.0.2.1",
@@ -591,6 +621,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/sites/$SITE
       "static_prefix": "192.0.2.0/24"
     },
     "physport": 1,
+    "remote_subnets": [
+      {
+        "local_alias_prefix": "192.0.2.0/24",
+        "remote_prefix": "192.0.2.0/24"
+      }
+    ],
     "routed_subnets": [
       {
         "next_hop": "192.0.2.1",

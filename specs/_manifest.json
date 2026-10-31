@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4040,
+  "count": 4043,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -1813,6 +1813,46 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans/methods/get",
       "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/activity",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/activity/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/activity/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/activity/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/audit",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/audit/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/audit/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/billing/subresources/spend_policies/subresources/audit/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/billing/subresources/unpaid_invoice",
@@ -11363,40 +11403,12 @@
       "markdown": "https://developers.cloudflare.com/api/resources/tenants/index.md"
     },
     {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/account_types",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list/index.md"
-    },
-    {
       "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/accounts",
       "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/accounts/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/accounts/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/accounts/methods/list/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/entitlements",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/entitlements/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/entitlements/methods/get",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/entitlements/methods/get/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/memberships",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/memberships/index.md"
-    },
-    {
-      "page": "https://developers.cloudflare.com/api/resources/tenants/subresources/memberships/methods/list",
-      "markdown": "https://developers.cloudflare.com/api/resources/tenants/subresources/memberships/methods/list/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/token_validation",
@@ -16255,6 +16267,13 @@
     "api/resources/tenant_custom_nameservers/methods/create/index.md",
     "api/resources/tenant_custom_nameservers/methods/delete/index.md",
     "api/resources/tenant_custom_nameservers/methods/get/index.md",
+    "api/resources/tenants/methods/get/index.md",
+    "api/resources/tenants/subresources/account_types/index.md",
+    "api/resources/tenants/subresources/account_types/methods/list/index.md",
+    "api/resources/tenants/subresources/entitlements/index.md",
+    "api/resources/tenants/subresources/entitlements/methods/get/index.md",
+    "api/resources/tenants/subresources/memberships/index.md",
+    "api/resources/tenants/subresources/memberships/methods/list/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/index.md",
     "api/resources/zero_trust/subresources/casb/subresources/applications/subresources/setup_flows/methods/list/index.md"
   ]

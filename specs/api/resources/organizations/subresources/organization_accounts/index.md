@@ -46,8 +46,6 @@ name: string
 
 Account name
 
-maxLength120
-
 <a href="#">Link to this property</a>
 
 <details>
@@ -156,7 +154,17 @@ Indicates whether membership in this account requires that Two-Factor Authentica
 
 <summary>
 
-OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more }
+OrganizationAccountGetResponse = array of <a href="https://developers.cloudflare.com/api/resources/tenants#(resource)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)">TenantAccount</a> { id, created\_on, name, 3 more } or object {account\_pubname, account\_tag, account\_type, 2 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+TenantAccount object {id, created\_on, name, 3 more }
 
 </summary>
 
@@ -241,6 +249,88 @@ One of the following:
 tags: optional map\[string]
 
 Account tags, present only when <code>include_tags=true</code> is requested.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+OrganizationsAPILegacyAccount object {account\_pubname, account\_tag, account\_type, 2 more }
+
+</summary>
+
+account\_pubname: string
+
+<a href="#">Link to this property</a>
+
+account\_tag: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+account\_type: "standard"or "enterprise"
+
+</summary>
+
+One of the following:
+
+"standard"
+
+<a href="#">Link to this property</a>
+
+"enterprise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+created\_on: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
+
+</summary>
+
+access\_approval\_expiry: string
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+api\_access\_enabled: boolean
+
+<a href="#">Link to this property</a>
+
+enforce\_two\_factor: boolean
+
+<a href="#">Link to this property</a>
+
+use\_account\_custom\_ns\_by\_default: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

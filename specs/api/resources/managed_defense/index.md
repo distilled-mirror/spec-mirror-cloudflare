@@ -1964,7 +1964,7 @@ minLength1
 
 <summary>
 
-trace: array of object {line, path, scope, why }
+trace: array of object {line, path, scope, 2 more }
 
 </summary>
 
@@ -1985,6 +1985,14 @@ scope: string
 <a href="#">Link to this property</a>
 
 why: string
+
+<a href="#">Link to this property</a>
+
+repo: optional string
+
+Repository the step is in, present only when it is not the finding’s repository (a library or consumer of the same report). <code>path</code> is then relative to that repository.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
@@ -3304,7 +3312,7 @@ minLength1
 
 <summary>
 
-trace: array of object {line, path, scope, why }
+trace: array of object {line, path, scope, 2 more }
 
 </summary>
 
@@ -3325,6 +3333,14 @@ scope: string
 <a href="#">Link to this property</a>
 
 why: string
+
+<a href="#">Link to this property</a>
+
+repo: optional string
+
+Repository the step is in, present only when it is not the finding’s repository (a library or consumer of the same report). <code>path</code> is then relative to that repository.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 

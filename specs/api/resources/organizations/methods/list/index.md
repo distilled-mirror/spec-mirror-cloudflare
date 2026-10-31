@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/organizations
 
-Retrieve a list of organizations a particular user has access to.
+Retrieve a list of organizations a particular user has access to. At most one of `containing.account`, `containing.user`, or `containing.organization` may be provided.
 
 ##### Security
 
@@ -100,6 +100,48 @@ IMPORTANT: Just because an organization “contains” a user is not a represent
 
 <summary>
 
+direction: optional "asc"or "desc"
+
+Sort direction for the <code>order_by</code> field. Defaults to <code>asc</code> when <code>order_by</code> is specified.
+
+</summary>
+
+One of the following:
+
+"asc"
+
+<a href="#">Link to this property</a>
+
+"desc"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20organizations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20direction%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+member: optional object {email }
+
+</summary>
+
+email: optional string
+
+Filter organizations to those where the given user, by email, is an active member of that exact organization. This does not include hierarchy-derived access.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20organizations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20member%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
 name: optional object {contains, endsWith, startsWith }
 
 </summary>
@@ -125,6 +167,12 @@ startsWith: optional string
 </details>
 
 [Link to this property](#)%20organizations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
+
+order\_by: optional "name"
+
+Field to order results by. Currently supported values: `name`. When not specified, results are ordered by hierarchy.
+
+[Link to this property](#)%20organizations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
 
 page\_size: optional number
 
@@ -256,9 +304,13 @@ formatdate-time
 
 <summary>
 
-meta: object {hierarchy\_tags, managed\_by, tenant\_flags }
+meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
+
+are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
+
+<a href="#">Link to this property</a>
 
 hierarchy\_tags: optional array of string
 
@@ -313,6 +365,10 @@ sub\_org\_creation: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tenant\_type: optional string
 
 <a href="#">Link to this property</a>
 
@@ -441,6 +497,7 @@ curl https://api.cloudflare.com/client/v4/organizations \
       "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
       "create_time": "2019-12-27T18:11:19.117Z",
       "meta": {
+        "are_child_accounts_accessible_by_org_members": true,
         "hierarchy_tags": [
           "string"
         ],
@@ -454,7 +511,8 @@ curl https://api.cloudflare.com/client/v4/organizations \
           "enterprise_capability": "enterprise_capability",
           "member_management": "member_management",
           "sub_org_creation": "sub_org_creation"
-        }
+        },
+        "tenant_type": "tenant_type"
       },
       "name": "name",
       "parent": {
@@ -500,6 +558,7 @@ curl https://api.cloudflare.com/client/v4/organizations \
       "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
       "create_time": "2019-12-27T18:11:19.117Z",
       "meta": {
+        "are_child_accounts_accessible_by_org_members": true,
         "hierarchy_tags": [
           "string"
         ],
@@ -513,7 +572,8 @@ curl https://api.cloudflare.com/client/v4/organizations \
           "enterprise_capability": "enterprise_capability",
           "member_management": "member_management",
           "sub_org_creation": "sub_org_creation"
-        }
+        },
+        "tenant_type": "tenant_type"
       },
       "name": "name",
       "parent": {

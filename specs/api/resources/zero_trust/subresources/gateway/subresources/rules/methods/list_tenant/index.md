@@ -168,7 +168,7 @@ result: optional array of <a href="https://developers.cloudflare.com/api/resourc
 
 <summary>
 
-action: "on"or "off"or "allow"or 13 more
+action: "on"or "off"or "allow"or 14 more
 
 Specify the action to perform when the associated traffic, identity, and device posture expressions either absent or evaluate to <code>true</code>.
 
@@ -237,6 +237,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "redirect"
+
+<a href="#">Link to this property</a>
+
+"forward"
 
 <a href="#">Link to this property</a>
 
@@ -392,7 +396,7 @@ Indicate that this rule is shared via the Orgs API and read only.
 
 <summary>
 
-rule\_settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.rules%20%3E%20(model)%20rule_setting%20%3E%20(schema)">RuleSetting</a> { add\_headers, allow\_child\_bypass, biso\_admin\_controls, 24 more }
+rule\_settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.rules%20%3E%20(model)%20rule_setting%20%3E%20(schema)">RuleSetting</a> { add\_headers, allow\_child\_bypass, biso\_admin\_controls, 25 more }
 
 Defines settings for this rule. Settings apply only to specific rule types and must use compatible selectors. If Terraform detects drift, confirm the setting supports your rule type and check whether the API modifies the value. Use API-returned values in your configuration to prevent drift.
 
@@ -510,9 +514,9 @@ Set to false to enable uploading. Only applies when <code>version == "v1"</code>
 
 <summary>
 
-keyboard: optional "enabled"or "disabled"
+keyboard: optional "enabled"or "disabled"or "enable\_read\_only\_actions"
 
-Configure keyboard usage behavior. If this field is absent, keyboard usage remains enabled. Applies only when version == “v2”.
+Configure keyboard usage behavior. When set to enable\_read\_only\_actions, only approved browser commands (find, copy, print, zoom, and select-all) may execute; other keyboard input is blocked from reaching the page. Copy and print remain subject to their independent controls. If this field is absent, keyboard usage remains enabled. Applies only when version == “v2”. The enable\_read\_only\_actions value requires an explicit version of “v2”.
 
 </summary>
 
@@ -523,6 +527,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "disabled"
+
+<a href="#">Link to this property</a>
+
+"enable\_read\_only\_actions"
 
 <a href="#">Link to this property</a>
 
@@ -855,6 +863,26 @@ Configure whether a copy of the HTTP request will be sent to storage when the ru
 enabled: optional boolean
 
 Enable sending the copy to storage.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+forward: optional object {worker\_id }
+
+Forward matching HTTP requests to a Worker. Required for <code>http</code> rules with the action set to <code>forward</code>.
+
+</summary>
+
+worker\_id: string
+
+Specify the public Worker ID of the target Worker.
 
 <a href="#">Link to this property</a>
 
@@ -1457,6 +1485,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/rules/ten
         "forensic_copy": {
           "enabled": true
         },
+        "forward": {
+          "worker_id": "0123456789abcdef0123456789abcdef"
+        },
         "ignore_cname_category_matches": true,
         "insecure_disable_dnssec_validation": false,
         "ip_categories": true,
@@ -1644,6 +1675,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/gateway/rules/ten
         },
         "forensic_copy": {
           "enabled": true
+        },
+        "forward": {
+          "worker_id": "0123456789abcdef0123456789abcdef"
         },
         "ignore_cname_category_matches": true,
         "insecure_disable_dnssec_validation": false,

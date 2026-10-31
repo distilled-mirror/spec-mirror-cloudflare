@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/dns\_settings/nameserver\_sets/{nameserver\_set\_id}
 
-Deletes an unassigned Custom Nameserver Set.
+Deletes an unassigned Custom Nameserver Set. For details, refer to [Nameserver sets](https://developers.cloudflare.com/dns/nameservers/custom-nameservers/nameserver-sets/).
 
 ##### Security
 

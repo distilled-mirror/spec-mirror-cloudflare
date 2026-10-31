@@ -162,7 +162,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20bot_fight_mode_configuration%20%3E%20(schema)">BotFightModeConfiguration</a> { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_definitely_configuration%20%3E%20(schema)">SuperBotFightModeDefinitelyConfiguration</a> { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20super_bot_fight_mode_likely_configuration%20%3E%20(schema)">SuperBotFightModeLikelyConfiguration</a> { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more } or <a href="https://developers.cloudflare.com/api/resources/bot_management#(resource)%20bot_management%20%3E%20(model)%20subscription_configuration%20%3E%20(schema)">SubscriptionConfiguration</a> { ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
 
 </summary>
 
@@ -172,9 +172,163 @@ One of the following:
 
 <summary>
 
-BotFightModeConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 12 more }
+BotFightModeConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 13 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+
+Configure blocking behavior for supported personal AI agents.
+
+</summary>
+
+<details>
+
+<summary>
+
+anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 ai\_bots\_migration\_opt\_out: optional boolean
 
@@ -464,9 +618,163 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeDefinitelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 15 more }
+SuperBotFightModeDefinitelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 16 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+
+Configure blocking behavior for supported personal AI agents.
+
+</summary>
+
+<details>
+
+<summary>
+
+anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 ai\_bots\_migration\_opt\_out: optional boolean
 
@@ -790,9 +1098,163 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SuperBotFightModeLikelyConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 16 more }
+SuperBotFightModeLikelyConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 17 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+
+Configure blocking behavior for supported personal AI agents.
+
+</summary>
+
+<details>
+
+<summary>
+
+anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 ai\_bots\_migration\_opt\_out: optional boolean
 
@@ -1138,9 +1600,163 @@ A read-only field that indicates whether the zone currently is running the lates
 
 <summary>
 
-SubscriptionConfiguration object {ai\_bots\_migration\_opt\_out, ai\_bots\_protection, ai\_search, 14 more }
+SubscriptionConfiguration object {ai\_agents, ai\_bots\_migration\_opt\_out, ai\_bots\_protection, 15 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_agents: optional object {anthropic\_agent, google\_agent, instinct, 2 more }
+
+Configure blocking behavior for supported personal AI agents.
+
+</summary>
+
+<details>
+
+<summary>
+
+anthropic\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+google\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+instinct: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+muse: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+openai\_agent: optional "disabled"or "block"or "only\_on\_ad\_pages"
+
+Action to apply to one supported personal AI agent.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"block"
+
+<a href="#">Link to this property</a>
+
+"only\_on\_ad\_pages"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 ai\_bots\_migration\_opt\_out: optional boolean
 
@@ -1479,6 +2095,13 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/bot_management \
   ],
   "success": true,
   "result": {
+    "ai_agents": {
+      "anthropic_agent": "block",
+      "google_agent": "block",
+      "instinct": "block",
+      "muse": "block",
+      "openai_agent": "block"
+    },
     "ai_bots_migration_opt_out": false,
     "ai_bots_protection": "block",
     "ai_search": "block",
@@ -1533,6 +2156,13 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/bot_management \
   ],
   "success": true,
   "result": {
+    "ai_agents": {
+      "anthropic_agent": "block",
+      "google_agent": "block",
+      "instinct": "block",
+      "muse": "block",
+      "openai_agent": "block"
+    },
     "ai_bots_migration_opt_out": false,
     "ai_bots_protection": "block",
     "ai_search": "block",

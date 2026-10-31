@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/dns\_settings/nameserver\_sets/{nameserver\_set\_id}
 
-Gets a Custom Nameserver Set owned by an account.
+Gets a Custom Nameserver Set owned by an account. For details, refer to [Nameserver sets](https://developers.cloudflare.com/dns/nameservers/custom-nameservers/nameserver-sets/).
 
 ##### Security
 

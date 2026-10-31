@@ -116,6 +116,12 @@ formatdate-time
 
 [Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20previous_client_secret_expires_at%20%3E%20(schema)>)
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+[Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20tags%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -212,7 +218,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.service_tokens%20%3E%20(model)%20service_token%20%3E%20(schema)">ServiceToken</a> { id, client\_id, duration, 6 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.access.service_tokens%20%3E%20(model)%20service_token%20%3E%20(schema)">ServiceToken</a> { id, client\_id, duration, 7 more }
 
 </summary>
 
@@ -276,6 +282,12 @@ The name of the service token.
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20update%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -294,7 +306,10 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     -d '{
           "duration": "60m",
           "name": "CI/CD token",
-          "previous_client_secret_expires_at": "2014-01-01T05:20:00.12345Z"
+          "previous_client_secret_expires_at": "2014-01-01T05:20:00.12345Z",
+          "tags": {
+            "environment": "production"
+          }
         }'
 ```
 
@@ -335,6 +350,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "leak_reported_at": "2014-01-01T05:20:00.12345Z",
     "leak_reporter": "github",
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }
@@ -379,6 +397,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "leak_reported_at": "2014-01-01T05:20:00.12345Z",
     "leak_reporter": "github",
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }

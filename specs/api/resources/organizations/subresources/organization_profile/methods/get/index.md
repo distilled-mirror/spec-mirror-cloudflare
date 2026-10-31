@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/organizations/{organization\_id}/profile
 
-Get an organizations profile if it exists.
+Retrieves the business profile (name, email, phone, address, and external metadata) associated with this organization’s customer record. Profiles can be shared across accounts and organizations. Only available to members of the organization.
 
 ##### Security
 

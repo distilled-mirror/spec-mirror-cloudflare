@@ -304,8 +304,6 @@ name: string
 
 Account name
 
-maxLength120
-
 <a href="#">Link to this property</a>
 
 <details>
@@ -883,8 +881,6 @@ minLength32
 name: string
 
 Account name
-
-maxLength120
 
 <a href="#">Link to this property</a>
 

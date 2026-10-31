@@ -16,171 +16,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Tenants
 
-##### [Get tenant details](https://developers.cloudflare.com/api/resources/tenants/methods/get)
-
-GET/tenants/{tenant\_id}
-
-##### ModelsExpand Collapse
-
-<details>
-
-<summary>
-
-Tenant object {cdate, edate, tenant\_contacts, 9 more }
-
-</summary>
-
-cdate: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-edate: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_contacts: object {email, website }
-
-</summary>
-
-email: optional string
-
-<a href="#">Link to this property</a>
-
-website: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-tenant\_labels: array of string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_metadata: object {dns }
-
-</summary>
-
-<details>
-
-<summary>
-
-dns: optional object {ns\_pool }
-
-</summary>
-
-<details>
-
-<summary>
-
-ns\_pool: object {primary, secondary }
-
-</summary>
-
-primary: optional string
-
-<a href="#">Link to this property</a>
-
-secondary: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-tenant\_name: string
-
-<a href="#">Link to this property</a>
-
-tenant\_network: unknown
-
-<a href="#">Link to this property</a>
-
-tenant\_status: string
-
-<a href="#">Link to this property</a>
-
-tenant\_tag: string
-
-<a href="#">Link to this property</a>
-
-tenant\_type: string
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-tenant\_units: array of object {unit\_memberships, unit\_metadata, unit\_name, 2 more }
-
-</summary>
-
-unit\_memberships: array of unknown
-
-<a href="#">Link to this property</a>
-
-unit\_metadata: unknown
-
-<a href="#">Link to this property</a>
-
-unit\_name: string
-
-<a href="#">Link to this property</a>
-
-unit\_status: string
-
-<a href="#">Link to this property</a>
-
-unit\_tag: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-customer\_id: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20tenants%20%3E%20(model)%20tenant%20%3E%20(schema)>)
-
 #### TenantsAccount Types
-
-##### [List tenant account types](https://developers.cloudflare.com/api/resources/tenants/subresources/account_types/methods/list)
-
-GET/tenants/{tenant\_id}/account\_types
-
-##### ModelsExpand Collapse
-
-AccountTypeListResponse = string
-
-[Link to this property](#)%20tenants.account_types%20%3E%20(model)%20account_type_list_response%20%3E%20(schema)>)
 
 #### TenantsAccounts
 
@@ -286,39 +122,19 @@ Account tags, present only when <code>include_tags=true</code> is requested.
 
 [Link to this property](#)%20tenants.accounts%20%3E%20(model)%20tenant_account%20%3E%20(schema)>)
 
-#### TenantsEntitlements
-
-##### [List tenant entitlements](https://developers.cloudflare.com/api/resources/tenants/subresources/entitlements/methods/get)
-
-GET/tenants/{tenant\_id}/entitlements
-
-##### ModelsExpand Collapse
-
 <details>
 
 <summary>
 
-TenantEntitlements object {allow\_add\_subdomain, allow\_auto\_accept\_invites, cname\_setup\_allowed, 3 more }
+AccountListResponse object {account\_pubname, account\_tag, account\_type, 2 more }
 
 </summary>
 
-<details>
-
-<summary>
-
-allow\_add\_subdomain: object {type, value }
-
-</summary>
-
-type: "bool"
+account\_pubname: string
 
 <a href="#">Link to this property</a>
 
-value: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
+account\_tag: string
 
 <a href="#">Link to this property</a>
 
@@ -326,73 +142,17 @@ value: boolean
 
 <summary>
 
-allow\_auto\_accept\_invites: object {type, value }
-
-</summary>
-
-type: "bool"
-
-<a href="#">Link to this property</a>
-
-value: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-cname\_setup\_allowed: object {type, value }
-
-</summary>
-
-type: "bool"
-
-<a href="#">Link to this property</a>
-
-value: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-custom\_entitlements: array of object {allocation, feature }
-
-</summary>
-
-<details>
-
-<summary>
-
-allocation: object {type, value } or object {type, value } or object {type, value }
+account\_type: "standard"or "enterprise"
 
 </summary>
 
 One of the following:
 
-<details>
-
-<summary>
-
-OrganizationsAPIMaxCountAllocation object {type, value }
-
-</summary>
-
-type: "max\_count"
+"standard"
 
 <a href="#">Link to this property</a>
 
-value: number
+"enterprise"
 
 <a href="#">Link to this property</a>
 
@@ -400,23 +160,9 @@ value: number
 
 <a href="#">Link to this property</a>
 
-<details>
+created\_on: string
 
-<summary>
-
-OrganizationsAPIBoolAllocation object {type, value }
-
-</summary>
-
-type: "bool"
-
-<a href="#">Link to this property</a>
-
-value: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
+formatdate-time
 
 <a href="#">Link to this property</a>
 
@@ -424,35 +170,25 @@ value: boolean
 
 <summary>
 
-OrganizationsAPINullAllocation object {type, value }
+settings: object {access\_approval\_expiry, api\_access\_enabled, enforce\_two\_factor, use\_account\_custom\_ns\_by\_default }
 
 </summary>
 
-type: ""
+access\_approval\_expiry: string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 
-value: optional unknown
+api\_access\_enabled: boolean
 
 <a href="#">Link to this property</a>
 
-</details>
+enforce\_two\_factor: boolean
 
 <a href="#">Link to this property</a>
 
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-feature: object {key }
-
-</summary>
-
-key: string
+use\_account\_custom\_ns\_by\_default: boolean
 
 <a href="#">Link to this property</a>
 
@@ -462,80 +198,8 @@ key: string
 
 </details>
 
-<a href="#">Link to this property</a>
+[Link to this property](#)%20tenants.accounts%20%3E%20(model)%20account_list_response%20%3E%20(schema)>)
 
-<details>
-
-<summary>
-
-mhs\_certificate\_count: object {type, value }
-
-</summary>
-
-type: "max\_count"
-
-<a href="#">Link to this property</a>
-
-value: number
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-partial\_setup\_allowed: object {type, value }
-
-</summary>
-
-type: "bool"
-
-<a href="#">Link to this property</a>
-
-value: boolean
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20tenants.entitlements%20%3E%20(model)%20tenant_entitlements%20%3E%20(schema)>)
+#### TenantsEntitlements
 
 #### TenantsMemberships
-
-##### [List tenant memberships](https://developers.cloudflare.com/api/resources/tenants/subresources/memberships/methods/list)
-
-GET/tenants/{tenant\_id}/memberships
-
-##### ModelsExpand Collapse
-
-<details>
-
-<summary>
-
-TenantMembership object {user\_email, user\_name, user\_tag }
-
-</summary>
-
-user\_email: string
-
-<a href="#">Link to this property</a>
-
-user\_name: string
-
-<a href="#">Link to this property</a>
-
-user\_tag: string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20tenants.memberships%20%3E%20(model)%20tenant_membership%20%3E%20(schema)>)

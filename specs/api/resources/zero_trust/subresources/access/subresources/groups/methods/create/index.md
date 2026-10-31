@@ -872,6 +872,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object {linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
@@ -1798,6 +1844,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object {linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
@@ -2709,6 +2801,52 @@ service\_token: object {token\_id }
 token\_id: string
 
 The ID of a Service Token.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -3752,6 +3890,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object {linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
@@ -4657,6 +4841,52 @@ service\_token: object {token\_id }
 token\_id: string
 
 The ID of a Service Token.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 <a href="#">Link to this property</a>
 
@@ -5592,6 +5822,52 @@ The ID of a Service Token.
 
 <summary>
 
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 AccessLinkedAppTokenRule object {linked\_app\_token }
 
 Matches OAuth 2.0 access tokens issued by the specified Access OIDC SaaS application. Only compatible with non\_identity and bypass decisions.
@@ -6503,6 +6779,52 @@ service\_token: object {token\_id }
 token\_id: string
 
 The ID of a Service Token.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+AccessServiceTokenTagRule object {service\_token\_tag }
+
+Matches an Access service token with the specified tag key and value. Only compatible with non\_identity decisions.
+
+</summary>
+
+<details>
+
+<summary>
+
+service\_token\_tag: object {key, value }
+
+</summary>
+
+key: string
+
+The tag key to match. Keys are case-sensitive and may contain Unicode letters and digits, underscores, periods, and hyphens.
+
+maxLength256
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+value: string
+
+The tag value to match. Values are case-sensitive, preserve whitespace, and must not contain NUL characters.
+
+maxLength256
+
+minLength1
 
 <a href="#">Link to this property</a>
 

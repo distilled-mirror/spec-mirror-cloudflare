@@ -112,7 +112,7 @@ secret\_id: optional string
 
 <summary>
 
-result: object {id, alias, default\_config, 7 more }
+result: object {id, alias, default\_config, 8 more }
 
 </summary>
 
@@ -153,6 +153,14 @@ secret\_id: string
 <a href="#">Link to this property</a>
 
 secret\_preview: string
+
+<a href="#">Link to this property</a>
+
+last\_used\_at: optional string
+
+UTC date (YYYY-MM-DD) the gateway last selected this key to authenticate a request to the provider, whether or not the request succeeded. Updated at most once a day. Null if the gateway has not used the key since this field was introduced.
+
+formatdate
 
 <a href="#">Link to this property</a>
 
@@ -202,6 +210,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "provider_slug": "provider_slug",
     "secret_id": "secret_id",
     "secret_preview": "secret_preview",
+    "last_used_at": "2019-12-27",
     "rate_limit": 0,
     "rate_limit_period": 0
   },
@@ -224,6 +233,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "provider_slug": "provider_slug",
     "secret_id": "secret_id",
     "secret_preview": "secret_preview",
+    "last_used_at": "2019-12-27",
     "rate_limit": 0,
     "rate_limit_period": 0
   },

@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/organizations
 
-Create a new organization for a user. Sub-organization creation availability depends on the organization’s capabilities.
+Create a new organization for a user. Sub-organization creation availability depends on the organization’s capabilities. The optional `profile` object accepts partial profile details; its individual fields are not required. Organization names are limited to 65 UTF-8 bytes. Each profile field is limited to 1,000 UTF-8 bytes, and a non-empty business email must be valid. At least one of business name, address, phone, or email must be non-empty to persist a profile.
 
 ##### Security
 
@@ -60,21 +60,21 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 name: string
 
+The Organization name, limited to 65 UTF-8 bytes.
+
+minLength1
+
 [Link to this property](#)%20organizations%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
 <details>
 
 <summary>
 
-parent: optional object {id, name }
+parent: optional object {id }
 
 </summary>
 
 id: string
-
-<a href="#">Link to this property</a>
-
-name: string
 
 <a href="#">Link to this property</a>
 
@@ -86,27 +86,29 @@ name: string
 
 <summary>
 
-profile: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts.account_profile%20%3E%20(model)%20account_profile%20%3E%20(schema)">AccountProfile</a> { business\_address, business\_email, business\_name, 2 more }
+profile: optional object {business\_address, business\_email, business\_name, 2 more }
+
+Optional profile fields, each limited to 1,000 UTF-8 bytes. An empty profile is ignored.
 
 </summary>
 
-business\_address: string
+business\_address: optional string
 
 <a href="#">Link to this property</a>
 
-business\_email: string
+business\_email: optional string
 
 <a href="#">Link to this property</a>
 
-business\_name: string
+business\_name: optional string
 
 <a href="#">Link to this property</a>
 
-business\_phone: string
+business\_phone: optional string
 
 <a href="#">Link to this property</a>
 
-external\_metadata: string
+external\_metadata: optional string
 
 <a href="#">Link to this property</a>
 
@@ -186,9 +188,13 @@ formatdate-time
 
 <summary>
 
-meta: object {hierarchy\_tags, managed\_by, tenant\_flags }
+meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
+
+are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
+
+<a href="#">Link to this property</a>
 
 hierarchy\_tags: optional array of string
 
@@ -243,6 +249,10 @@ sub\_org\_creation: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tenant\_type: optional string
 
 <a href="#">Link to this property</a>
 
@@ -325,7 +335,7 @@ curl https://api.cloudflare.com/client/v4/organizations \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "name": "name"
+          "name": "x"
         }'
 ```
 
@@ -348,6 +358,7 @@ curl https://api.cloudflare.com/client/v4/organizations \
     "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
     "create_time": "2019-12-27T18:11:19.117Z",
     "meta": {
+      "are_child_accounts_accessible_by_org_members": true,
       "hierarchy_tags": [
         "string"
       ],
@@ -361,7 +372,8 @@ curl https://api.cloudflare.com/client/v4/organizations \
         "enterprise_capability": "enterprise_capability",
         "member_management": "member_management",
         "sub_org_creation": "sub_org_creation"
-      }
+      },
+      "tenant_type": "tenant_type"
     },
     "name": "name",
     "parent": {
@@ -401,6 +413,7 @@ curl https://api.cloudflare.com/client/v4/organizations \
     "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
     "create_time": "2019-12-27T18:11:19.117Z",
     "meta": {
+      "are_child_accounts_accessible_by_org_members": true,
       "hierarchy_tags": [
         "string"
       ],
@@ -414,7 +427,8 @@ curl https://api.cloudflare.com/client/v4/organizations \
         "enterprise_capability": "enterprise_capability",
         "member_management": "member_management",
         "sub_org_creation": "sub_org_creation"
-      }
+      },
+      "tenant_type": "tenant_type"
     },
     "name": "name",
     "parent": {

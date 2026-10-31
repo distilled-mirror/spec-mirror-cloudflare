@@ -108,6 +108,12 @@ formatdate-time
 
 [Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20previous_client_secret_expires_at%20%3E%20(schema)>)
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+[Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20tags%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -204,7 +210,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, client\_id, client\_secret, 3 more }
+result: optional object {id, client\_id, client\_secret, 4 more }
 
 </summary>
 
@@ -244,6 +250,12 @@ The name of the service token.
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the service token, as key-value pairs. On update, replaces all existing tags.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20zero_trust.access.service_tokens%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -261,7 +273,10 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     -d '{
           "name": "CI/CD token",
           "duration": "60m",
-          "previous_client_secret_expires_at": "2014-01-01T05:20:00.12345Z"
+          "previous_client_secret_expires_at": "2014-01-01T05:20:00.12345Z",
+          "tags": {
+            "environment": "production"
+          }
         }'
 ```
 
@@ -298,6 +313,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "duration": "60m",
     "enabled": true,
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }
@@ -338,6 +356,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "duration": "60m",
     "enabled": true,
     "name": "CI/CD token",
+    "tags": {
+      "environment": "production"
+    },
     "updated_at": "2014-01-01T05:20:00.12345Z"
   }
 }

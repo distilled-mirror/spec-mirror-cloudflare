@@ -112,9 +112,13 @@ formatdate-time
 
 <summary>
 
-meta: object {hierarchy\_tags, managed\_by, tenant\_flags }
+meta: object {are\_child\_accounts\_accessible\_by\_org\_members, hierarchy\_tags, managed\_by, 2 more }
 
 </summary>
+
+are\_child\_accounts\_accessible\_by\_org\_members: optional boolean
+
+<a href="#">Link to this property</a>
 
 hierarchy\_tags: optional array of string
 
@@ -169,6 +173,10 @@ sub\_org\_creation: string
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tenant\_type: optional string
 
 <a href="#">Link to this property</a>
 
@@ -271,6 +279,7 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID \
     "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
     "create_time": "2019-12-27T18:11:19.117Z",
     "meta": {
+      "are_child_accounts_accessible_by_org_members": true,
       "hierarchy_tags": [
         "string"
       ],
@@ -284,7 +293,8 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID \
         "enterprise_capability": "enterprise_capability",
         "member_management": "member_management",
         "sub_org_creation": "sub_org_creation"
-      }
+      },
+      "tenant_type": "tenant_type"
     },
     "name": "name",
     "parent": {
@@ -324,6 +334,7 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID \
     "id": "a7b9c3d2e8f4a1b5c6d0e9f2a3b7c4d8",
     "create_time": "2019-12-27T18:11:19.117Z",
     "meta": {
+      "are_child_accounts_accessible_by_org_members": true,
       "hierarchy_tags": [
         "string"
       ],
@@ -337,7 +348,8 @@ curl https://api.cloudflare.com/client/v4/organizations/$ORGANIZATION_ID \
         "enterprise_capability": "enterprise_capability",
         "member_management": "member_management",
         "sub_org_creation": "sub_org_creation"
-      }
+      },
+      "tenant_type": "tenant_type"
     },
     "name": "name",
     "parent": {
