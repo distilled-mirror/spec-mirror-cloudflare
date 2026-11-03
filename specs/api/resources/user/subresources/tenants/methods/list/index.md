@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/user/tenants
 
-Retrieves the legacy Tenants associated with the authenticated user. Use `GET /organizations` to list modern Organizations the user has access to.
+Lists the Cloudflare tenants in which the authenticated user has direct membership using the legacy Tenant response shape. Use `GET /organizations` to list Organizations the user can access, including through hierarchy, using the modern Organization response shape.
 
 ##### Security
 

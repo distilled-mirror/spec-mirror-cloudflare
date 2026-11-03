@@ -28,7 +28,7 @@ GET/accounts/{account\_id}/shares/{share\_id}
 
 POST/accounts/{account\_id}/shares
 
-##### [Trigger a share rename](https://developers.cloudflare.com/api/resources/resource_sharing/methods/update)
+##### [Trigger a share update](https://developers.cloudflare.com/api/resources/resource_sharing/methods/update)
 
 PUT/accounts/{account\_id}/shares/{share\_id}
 
@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/shares/{share\_id}
 
 <summary>
 
-ResourceSharingListResponse object {id, account\_id, account\_name, 12 more }
+ResourceSharingListResponse object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -52,6 +52,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -59,6 +61,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -70,7 +74,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -78,7 +82,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -95,6 +99,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -208,11 +214,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -226,7 +234,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -238,13 +246,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -327,6 +335,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
 
 <a href="#">Link to this property</a>
 
@@ -338,7 +352,7 @@ One of the following:
 
 <summary>
 
-ResourceSharingGetResponse object {id, account\_id, account\_name, 12 more }
+ResourceSharingGetResponse object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -348,6 +362,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -355,6 +371,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -366,7 +384,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -374,7 +392,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -391,6 +409,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -504,11 +524,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -522,7 +544,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -534,13 +556,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -623,6 +645,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
 
 <a href="#">Link to this property</a>
 
@@ -634,7 +662,7 @@ One of the following:
 
 <summary>
 
-ResourceSharingCreateResponse object {id, account\_id, account\_name, 12 more }
+ResourceSharingCreateResponse object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -644,6 +672,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -651,6 +681,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -662,7 +694,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -670,7 +702,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -687,6 +719,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -800,11 +834,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -818,7 +854,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -830,13 +866,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -919,6 +955,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
 
 <a href="#">Link to this property</a>
 
@@ -930,7 +972,7 @@ One of the following:
 
 <summary>
 
-ResourceSharingUpdateResponse object {id, account\_id, account\_name, 12 more }
+ResourceSharingUpdateResponse object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -940,6 +982,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -947,6 +991,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -958,7 +1004,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -966,7 +1012,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -983,6 +1029,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1096,11 +1144,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1114,7 +1164,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1126,13 +1176,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -1215,6 +1265,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
 
 <a href="#">Link to this property</a>
 
@@ -1226,7 +1282,7 @@ One of the following:
 
 <summary>
 
-ResourceSharingDeleteResponse object {id, account\_id, account\_name, 12 more }
+ResourceSharingDeleteResponse object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -1236,6 +1292,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -1243,6 +1301,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1254,7 +1314,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1262,7 +1322,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1279,6 +1339,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1392,11 +1454,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1410,7 +1474,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1422,13 +1486,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -1511,6 +1575,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
 
 <a href="#">Link to this property</a>
 
@@ -1554,6 +1624,8 @@ Share Recipient identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -1561,6 +1633,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1603,7 +1677,7 @@ One of the following:
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1611,7 +1685,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1627,21 +1701,19 @@ resources: optional array of object {error, resource\_id, resource\_version, ter
 
 error: string
 
-Share Recipient error message.
+Error from the most recent attempt to apply the resource to the recipient. Empty string when no error has been recorded.
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
 resource\_version: number
 
-Resource Version.
+Resource version applied to the recipient, if reconciliation has occurred.
 
 <a href="#">Link to this property</a>
 
@@ -1675,6 +1747,8 @@ Share Recipient identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -1682,6 +1756,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1724,7 +1800,7 @@ One of the following:
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1732,7 +1808,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1748,21 +1824,19 @@ resources: optional array of object {error, resource\_id, resource\_version, ter
 
 error: string
 
-Share Recipient error message.
+Error from the most recent attempt to apply the resource to the recipient. Empty string when no error has been recorded.
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
 resource\_version: number
 
-Resource Version.
+Resource version applied to the recipient, if reconciliation has occurred.
 
 <a href="#">Link to this property</a>
 
@@ -1796,6 +1870,8 @@ Share Recipient identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -1803,6 +1879,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1845,7 +1923,7 @@ One of the following:
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1853,7 +1931,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1869,21 +1947,19 @@ resources: optional array of object {error, resource\_id, resource\_version, ter
 
 error: string
 
-Share Recipient error message.
+Error from the most recent attempt to apply the resource to the recipient. Empty string when no error has been recorded.
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
 resource\_version: number
 
-Resource Version.
+Resource version applied to the recipient, if reconciliation has occurred.
 
 <a href="#">Link to this property</a>
 
@@ -1917,6 +1993,8 @@ Share Recipient identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -1924,6 +2002,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -1966,7 +2046,7 @@ One of the following:
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -1974,7 +2054,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -1990,21 +2070,19 @@ resources: optional array of object {error, resource\_id, resource\_version, ter
 
 error: string
 
-Share Recipient error message.
+Error from the most recent attempt to apply the resource to the recipient. Empty string when no error has been recorded.
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
 resource\_version: number
 
-Resource Version.
+Resource version applied to the recipient, if reconciliation has occurred.
 
 <a href="#">Link to this property</a>
 
@@ -2060,11 +2138,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -2078,7 +2158,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -2090,13 +2170,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -2196,11 +2276,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -2214,7 +2296,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -2226,13 +2308,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -2332,11 +2414,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -2350,7 +2434,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -2362,13 +2446,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -2468,11 +2552,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -2486,7 +2572,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -2498,13 +2584,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -2604,11 +2690,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -2622,7 +2710,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -2634,13 +2722,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 

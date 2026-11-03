@@ -68,7 +68,7 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 
 status: optional array of "active"or "pending"or "rejected"or "canceled"
 
-Filter the list of memberships by membership status.
+Filter the list of memberships by membership status. Defaults to <code>active</code>, <code>pending</code>, and <code>rejected</code>; pass <code>canceled</code> explicitly to include canceled memberships.
 
 </summary>
 

@@ -44,6 +44,8 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 share\_id: string
@@ -51,6 +53,8 @@ share\_id: string
 Share identifier tag.
 
 maxLength32
+
+minLength32
 
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20share_id%20%3E%20(schema)>)
 
@@ -64,17 +68,17 @@ Resource Metadata.
 
 resource\_account\_id: string
 
-Account identifier.
+The account that owns the resource. Must match the `account_id` in the path.
 
 maxLength32
+
+minLength32
 
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20resource_account_id%20%3E%20(schema)>)
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20resource_id%20%3E%20(schema)>)
 
@@ -186,11 +190,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -204,7 +210,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -216,13 +222,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -322,7 +328,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
     -d '{
           "meta": {},
           "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-          "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+          "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
           "resource_type": "custom-ruleset"
         }'
 ```
@@ -348,7 +354,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
     "meta": {},
     "modified": "2023-09-21T18:56:32.624632Z",
     "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-    "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
     "resource_type": "custom-ruleset",
     "resource_version": 0,
     "status": "active"
@@ -379,7 +385,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
     "meta": {},
     "modified": "2023-09-21T18:56:32.624632Z",
     "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-    "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+    "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
     "resource_type": "custom-ruleset",
     "resource_version": 0,
     "status": "active"

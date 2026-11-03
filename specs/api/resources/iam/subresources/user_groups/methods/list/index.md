@@ -28,17 +28,13 @@ List all the user groups for an account.
 
 <details>
 
-<summary>API Email + API Key</summary>
+<summary>API Token</summary>
 
 
 
-The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
 
-**Example:**<code>X-Auth-Email: user@example.com</code>
-
-The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
-
-**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
 
 </details>
 
@@ -244,7 +240,7 @@ A list of user groups for the account.
 
 id: string
 
-User Group identifier tag.
+Identifier of the user group.
 
 maxLength32
 
@@ -426,7 +422,7 @@ Identifier of the resource group.
 
 scope: object {key, objects }
 
-A scope is a combination of scope objects which provides additional context.
+The scope associated to the resource group
 
 </summary>
 
@@ -544,8 +540,7 @@ HTTPTypeScriptPythonGoTerraform
 
 ```
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/iam/user_groups \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY"
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```
 
 200 example

@@ -44,7 +44,7 @@ DELETE/zones/{zone\_id}/spectrum/apps/{app\_id}
 
 <summary>
 
-AppListResponse = object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
+AppListResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -54,7 +54,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -169,6 +169,40 @@ minimum1
 origin\_worker\_id: optional string
 
 Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -310,7 +344,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppGetResponse = object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
+AppGetResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -320,7 +354,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -435,6 +469,40 @@ minimum1
 origin\_worker\_id: optional string
 
 Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -576,7 +644,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppCreateResponse = object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
+AppCreateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -586,7 +654,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -701,6 +769,40 @@ minimum1
 origin\_worker\_id: optional string
 
 Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -842,7 +944,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppUpdateResponse = object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
+AppUpdateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -852,7 +954,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -967,6 +1069,40 @@ minimum1
 origin\_worker\_id: optional string
 
 Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

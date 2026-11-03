@@ -172,7 +172,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, created\_on, dns, 13 more } or object {id, created\_on, dns, 3 more }
+result: optional object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
 
 </summary>
 
@@ -182,7 +182,7 @@ One of the following:
 
 <summary>
 
-SpectrumConfigAppConfig object {id, created\_on, dns, 13 more }
+SpectrumConfigAppConfig object {id, created\_on, dns, 15 more }
 
 </summary>
 
@@ -494,6 +494,40 @@ Optional Worker script tag (worker ID) to use as the application’s origin. Onl
 
 <a href="#">Link to this property</a>
 
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -730,6 +764,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps/$APP_ID \
     },
     "origin_port": 22,
     "origin_worker_id": "277b7815c871434b960b60729659000a",
+    "origin_worker_name": "origin_worker_name",
+    "origin_worker_status": "available",
     "proxy_protocol": "off",
     "tls": "off",
     "virtual_network_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
@@ -790,6 +826,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/spectrum/apps/$APP_ID \
     },
     "origin_port": 22,
     "origin_worker_id": "277b7815c871434b960b60729659000a",
+    "origin_worker_name": "origin_worker_name",
+    "origin_worker_status": "available",
     "proxy_protocol": "off",
     "tls": "off",
     "virtual_network_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"

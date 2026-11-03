@@ -44,6 +44,8 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 share\_id: string
@@ -52,13 +54,15 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing.resources%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20share_id%20%3E%20(schema)>)
 
 ##### Q uery ParametersExpand Collapse
 
 page: optional number
 
-Page number. Defaults to `1` when `per_page` is supplied without `page`. May be omitted entirely along with `per_page` to receive a non-paginated response.
+Page number. Defaults to `1` when omitted.
 
 minimum1
 
@@ -68,7 +72,7 @@ multipleOf1
 
 per\_page: optional number
 
-Number of objects to return per page. Defaults to `20` when `page` is supplied without `per_page`. May be omitted entirely along with `page` to receive a non-paginated response.
+Number of objects to return per page. Defaults to `20` when omitted.
 
 maximum100
 
@@ -214,11 +218,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -232,7 +238,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -244,13 +250,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -346,7 +352,7 @@ result\_info: optional object {count, page, per\_page, 2 more }
 
 count: optional number
 
-Total number of results for the requested service.
+Number of results on the current page.
 
 <a href="#">Link to this property</a>
 
@@ -364,7 +370,7 @@ Number of results per page of results.
 
 total\_count: optional number
 
-Total results available without any search parameters.
+Total number of results matching the current filters before pagination.
 
 <a href="#">Link to this property</a>
 
@@ -412,7 +418,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
       "meta": {},
       "modified": "2023-09-21T18:56:32.624632Z",
       "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-      "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+      "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
       "resource_type": "custom-ruleset",
       "resource_version": 0,
       "status": "active"
@@ -452,7 +458,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
       "meta": {},
       "modified": "2023-09-21T18:56:32.624632Z",
       "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-      "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+      "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
       "resource_type": "custom-ruleset",
       "resource_version": 0,
       "status": "active"

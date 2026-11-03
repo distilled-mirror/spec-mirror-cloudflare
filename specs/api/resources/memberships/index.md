@@ -50,7 +50,7 @@ maxLength32
 
 <a href="#">Link to this property</a>
 
-account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 3 more }
+account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 4 more }
 
 <a href="#">Link to this property</a>
 
@@ -176,7 +176,7 @@ maxLength32
 
 <a href="#">Link to this property</a>
 
-account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 3 more }
+account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 4 more }
 
 <a href="#">Link to this property</a>
 
@@ -400,7 +400,7 @@ Identifier of the resource group.
 
 scope: object {key, objects }
 
-A scope is a combination of scope objects which provides additional context.
+The scope associated to the resource group
 
 </summary>
 
@@ -524,7 +524,7 @@ maxLength32
 
 <a href="#">Link to this property</a>
 
-account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 3 more }
+account: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 4 more }
 
 <a href="#">Link to this property</a>
 
@@ -748,7 +748,7 @@ Identifier of the resource group.
 
 scope: object {key, objects }
 
-A scope is a combination of scope objects which provides additional context.
+The scope associated to the resource group
 
 </summary>
 

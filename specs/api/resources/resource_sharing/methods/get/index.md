@@ -64,6 +64,8 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 share\_id: string
@@ -71,6 +73,8 @@ share\_id: string
 Share identifier tag.
 
 maxLength32
+
+minLength32
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20share_id%20%3E%20(schema)>)
 
@@ -87,6 +91,30 @@ include\_resources: optional boolean
 Include resources in the response.
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20include_resources%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+include\_tags\_from: optional "api"or "mirror"
+
+Include share tags in the response. <code>api</code> reads tags from the tag service; <code>mirror</code> reads a local, eventually consistent replica. If the tag lookup fails, the response omits <code>tags</code>.
+
+</summary>
+
+One of the following:
+
+"api"
+
+<a href="#">Link to this property</a>
+
+"mirror"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20resource_sharing%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20include_tags_from%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -142,7 +170,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, account\_name, 12 more }
+result: optional object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -152,6 +180,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -159,6 +189,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -170,7 +202,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -178,7 +210,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -195,6 +227,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -308,11 +342,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -326,7 +362,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -338,13 +374,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -430,6 +466,12 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -482,12 +524,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID 
         "meta": {},
         "modified": "2023-09-21T18:56:32.624632Z",
         "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_type": "custom-ruleset",
         "resource_version": 0,
         "status": "active"
       }
-    ]
+    ],
+    "tags": {
+      "foo": "string"
+    }
   }
 }
 ```
@@ -531,12 +576,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID 
         "meta": {},
         "modified": "2023-09-21T18:56:32.624632Z",
         "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_type": "custom-ruleset",
         "resource_version": 0,
         "status": "active"
       }
-    ]
+    ],
+    "tags": {
+      "foo": "string"
+    }
   }
 }
 ```

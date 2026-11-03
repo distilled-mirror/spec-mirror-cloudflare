@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}
 
 <summary>
 
-Account object {id, name, type, 3 more }
+Account object {id, name, type, 4 more }
 
 </summary>
 
@@ -89,6 +89,52 @@ created\_on: optional string
 Timestamp for the creation of the account
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+legacy\_flags: optional object {enterprise\_zone\_quota }
+
+Legacy account flags.
+
+</summary>
+
+<details>
+
+<summary>
+
+enterprise\_zone\_quota: optional object {available, current, maximum }
+
+Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
+
+</summary>
+
+available: optional number
+
+Number of additional Enterprise zones available. Returns 0 if the quota is not allocated or is exhausted.
+
+<a href="#">Link to this property</a>
+
+current: optional number
+
+Current number of Enterprise zones.
+
+<a href="#">Link to this property</a>
+
+maximum: optional number
+
+Maximum number of Enterprise zones allowed.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -211,6 +257,8 @@ destination\_organization\_id: string
 <a href="#">Link to this property</a>
 
 source\_organization\_id: string
+
+Empty string when the account did not belong to an organization before the move.
 
 <a href="#">Link to this property</a>
 

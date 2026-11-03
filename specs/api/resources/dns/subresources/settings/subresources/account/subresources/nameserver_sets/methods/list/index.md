@@ -519,15 +519,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
             "2001:db8::1"
           ],
           "name": "ns1.example.com"
-        },
-        {
-          "ipv4": [
-            "192.0.2.1"
-          ],
-          "ipv6": [
-            "2001:db8::1"
-          ],
-          "name": "ns1.example.com"
         }
       ]
     }
@@ -577,15 +568,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/dns_settings/name
       "ip_set": 1,
       "name": "Production nameservers",
       "nameservers": [
-        {
-          "ipv4": [
-            "192.0.2.1"
-          ],
-          "ipv6": [
-            "2001:db8::1"
-          ],
-          "name": "ns1.example.com"
-        },
         {
           "ipv4": [
             "192.0.2.1"

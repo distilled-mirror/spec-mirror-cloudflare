@@ -142,11 +142,11 @@ formatdate-time
 
 #### ArgoTiered Caching
 
-##### [Get Tiered Caching setting](https://developers.cloudflare.com/api/resources/argo/subresources/tiered_caching/methods/get)
+##### [Get Tiered Cache](https://developers.cloudflare.com/api/resources/argo/subresources/tiered_caching/methods/get)
 
 GET/zones/{zone\_id}/argo/tiered\_caching
 
-##### [Patch Tiered Caching setting](https://developers.cloudflare.com/api/resources/argo/subresources/tiered_caching/methods/edit)
+##### [Update Tiered Cache](https://developers.cloudflare.com/api/resources/argo/subresources/tiered_caching/methods/edit)
 
 PATCH/zones/{zone\_id}/argo/tiered\_caching
 

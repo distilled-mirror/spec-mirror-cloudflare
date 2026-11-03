@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/shares
 
-Creates a new resource share for sharing Cloudflare resources with other accounts or organizations.
+Creates a share that makes a resource available to specific accounts in the caller’s organization, or to the whole organization.
 
 ##### Security
 
@@ -42,6 +42,8 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 ##### Body ParametersJSONExpand Collapse
@@ -56,7 +58,31 @@ The name of the share.
 
 <summary>
 
-recipients: array of object {account\_id, organization\_id, recipient\_account\_id }
+excluded\_recipients: optional array of object {account\_id }
+
+Accounts to exclude from an organization-targeted share. Only allowed when <code>recipients</code> contains no account entries. The share owner cannot be excluded. Duplicate entries are ignored.
+
+</summary>
+
+account\_id: string
+
+The account to exclude from the organization-targeted share.
+
+maxLength32
+
+minLength32
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20excluded_recipients%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+recipients: optional array of object {account\_id, organization\_id, recipient\_account\_id }
 
 </summary>
 
@@ -68,6 +94,8 @@ Deprecated alias for <code>recipient_account_id</code>. Use <code>recipient_acco
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 organization\_id: optional string
@@ -76,6 +104,8 @@ Organization identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 recipient\_account\_id: optional string
@@ -83,6 +113,8 @@ recipient\_account\_id: optional string
 The account that will receive the share.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -94,7 +126,7 @@ maxLength32
 
 <summary>
 
-resources: array of object {meta, resource\_account\_id, resource\_id, resource\_type }
+resources: optional array of object {meta, resource\_account\_id, resource\_id, resource\_type }
 
 </summary>
 
@@ -106,17 +138,17 @@ Resource Metadata.
 
 resource\_account\_id: string
 
-Account identifier.
+The account that owns the resource. Must match the <code>account_id</code> in the path.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -167,6 +199,12 @@ One of the following:
 </details>
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20resources%20%3E%20(schema)>)
+
+tags: optional map\[string]
+
+Tags associated with the share.
+
+[Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20tags%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -222,7 +260,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, account\_id, account\_name, 12 more }
+result: optional object {id, account\_id, account\_name, 13 more }
 
 </summary>
 
@@ -232,6 +270,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -239,6 +279,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -250,7 +292,7 @@ The display name of an account.
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -258,7 +300,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -275,6 +317,8 @@ organization\_id: string
 Organization identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -388,11 +432,13 @@ Share Resource identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -406,7 +452,7 @@ Resource Metadata.
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -418,13 +464,13 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
@@ -510,6 +556,12 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+tags: optional map\[string]
+
+Tags associated with the share. Included in create and update responses when tags are supplied, and in read responses when the <code>include_tags_from</code> parameter is set.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20resource_sharing%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -526,18 +578,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares \
     -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
     -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
     -d '{
-          "name": "My Shared WAF Managed Rule",
-          "recipients": [
-            {}
-          ],
-          "resources": [
-            {
-              "meta": {},
-              "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-              "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
-              "resource_type": "custom-ruleset"
-            }
-          ]
+          "name": "My Shared WAF Managed Rule"
         }'
 ```
 
@@ -578,12 +619,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares \
         "meta": {},
         "modified": "2023-09-21T18:56:32.624632Z",
         "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_type": "custom-ruleset",
         "resource_version": 0,
         "status": "active"
       }
-    ]
+    ],
+    "tags": {
+      "foo": "string"
+    }
   }
 }
 ```
@@ -627,12 +671,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares \
         "meta": {},
         "modified": "2023-09-21T18:56:32.624632Z",
         "resource_account_id": "023e105f4ecef8ad9ca31a8372d0c353",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_type": "custom-ruleset",
         "resource_version": 0,
         "status": "active"
       }
-    ]
+    ],
+    "tags": {
+      "foo": "string"
+    }
   }
 }
 ```

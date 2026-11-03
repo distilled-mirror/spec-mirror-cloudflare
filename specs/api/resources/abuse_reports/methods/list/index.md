@@ -104,6 +104,12 @@ Where in pagination to start listing abuse reports
 
 [Link to this property](#)%20abuse_reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
+pending\_notice: optional boolean
+
+Also include reports in an open Notice and Takedown notice period. Combined with mitigation\_status using OR, e.g. ?mitigation\_status=active&pending\_notice=true.
+
+[Link to this property](#)%20abuse_reports%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20pending_notice%20%3E%20(schema)>)
+
 per\_page: optional number
 
 How many abuse reports per page to list
@@ -250,7 +256,7 @@ result: optional object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, domain, 7 more }
+reports: array of object {id, cdate, domain, 8 more }
 
 </summary>
 
@@ -392,6 +398,12 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+has\_pending\_notice: optional boolean
+
+Whether the report is in an open Notice and Takedown notice period: no mitigation is placed yet, but one will take effect when the period ends.
+
+<a href="#">Link to this property</a>
+
 justification: optional string
 
 Justification for the report.
@@ -519,6 +531,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports \
         },
         "status": "accepted",
         "type": "PHISH",
+        "has_pending_notice": true,
         "justification": "justification",
         "original_work": "original_work",
         "submitter": {
@@ -575,6 +588,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports \
         },
         "status": "accepted",
         "type": "PHISH",
+        "has_pending_notice": true,
         "justification": "justification",
         "original_work": "original_work",
         "submitter": {

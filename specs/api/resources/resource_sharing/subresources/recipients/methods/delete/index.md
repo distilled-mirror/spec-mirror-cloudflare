@@ -46,6 +46,8 @@ Account identifier.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing.recipients%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 share\_id: string
@@ -54,6 +56,8 @@ Share identifier tag.
 
 maxLength32
 
+minLength32
+
 [Link to this property](#)%20resource_sharing.recipients%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20share_id%20%3E%20(schema)>)
 
 recipient\_id: string
@@ -61,6 +65,8 @@ recipient\_id: string
 Share Recipient identifier tag.
 
 maxLength32
+
+minLength32
 
 [Link to this property](#)%20resource_sharing.recipients%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20recipient_id%20%3E%20(schema)>)
 
@@ -130,6 +136,8 @@ Share Recipient identifier tag.
 
 maxLength32
 
+minLength32
+
 <a href="#">Link to this property</a>
 
 account\_id: string
@@ -137,6 +145,8 @@ account\_id: string
 Account identifier.
 
 maxLength32
+
+minLength32
 
 <a href="#">Link to this property</a>
 
@@ -179,7 +189,7 @@ One of the following:
 
 created: string
 
-When the share was created.
+When the object was created.
 
 formatdate-time
 
@@ -187,7 +197,7 @@ formatdate-time
 
 modified: string
 
-When the share was modified.
+When the object was last modified.
 
 formatdate-time
 
@@ -203,21 +213,19 @@ resources: optional array of object {error, resource\_id, resource\_version, ter
 
 error: string
 
-Share Recipient error message.
+Error from the most recent attempt to apply the resource to the recipient. Empty string when no error has been recorded.
 
 <a href="#">Link to this property</a>
 
 resource\_id: string
 
-Share Resource identifier.
-
-maxLength32
+Identifier assigned by the service that owns the shared resource.
 
 <a href="#">Link to this property</a>
 
 resource\_version: number
 
-Resource Version.
+Resource version applied to the recipient, if reconciliation has occurred.
 
 <a href="#">Link to this property</a>
 
@@ -272,7 +280,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
     "resources": [
       {
         "error": "Recipient is missing necessary entitlement",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_version": 0,
         "terminal": true
       }
@@ -307,7 +315,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/shares/$SHARE_ID/
     "resources": [
       {
         "error": "Recipient is missing necessary entitlement",
-        "resource_id": "023e105f4ecef8ad9ca31a8372d0c353",
+        "resource_id": "0a679032-bbb2-4b7e-9acc-dd5c5cb27a17",
         "resource_version": 0,
         "terminal": true
       }

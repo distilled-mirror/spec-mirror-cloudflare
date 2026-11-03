@@ -42,6 +42,8 @@ destination\_organization\_id: string
 
 source\_organization\_id: string
 
+Empty string when the account did not belong to an organization before the move.
+
 <a href="#">Link to this property</a>
 
 </details>

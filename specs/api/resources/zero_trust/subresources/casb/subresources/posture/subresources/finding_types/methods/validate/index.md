@@ -399,7 +399,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
           "asset_class": "GoogleWorkspaceFile",
           "asset_vendor": "GOOGLE_WORKSPACE",
           "description": "Detects files shared with too many users",
-          "expression": "result := \\"pass\\"",
+          "expression": "default result := \\"pass\\"\\n\\nresult := \\"fail\\" if input.asset.publicLinkDisabled == false\\n",
           "name": "Excessive File Sharing",
           "severity": "High",
           "integration_ids": [

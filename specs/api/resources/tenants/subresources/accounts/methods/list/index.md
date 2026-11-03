@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/tenants/{tenant\_id}/accounts
 
-Lists the Cloudflare accounts associated with this tenant using the legacy Account response shape. Use `GET /organizations/{organization_id}/accounts` for the modern Account response. Use `page_token` and `page_size` for cursor pagination, or provide `page` and `per_page` together for legacy offset pagination. Cursor pagination takes precedence when requested.
+Lists all Cloudflare accounts across this tenant’s hierarchy using the legacy Account response shape. Use `GET /organizations/{organization_id}/accounts` to list only accounts immediately attached to a specific Organization using the modern Account response shape. Use `page_token` and `page_size` for cursor pagination, or provide `page` and `per_page` together for legacy offset pagination. Cursor pagination takes precedence when requested.
 
 ##### Security
 

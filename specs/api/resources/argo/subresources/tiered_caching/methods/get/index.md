@@ -1,5 +1,5 @@
 ---
-title: Get Tiered Caching setting
+title: Get Tiered Cache
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get Tiered Caching setting
+# Get Tiered Cache
 
 GET/zones/{zone\_id}/argo/tiered\_caching
 
-Tiered Cache works by dividing Cloudflare’s data centers into a hierarchy of lower-tiers and upper-tiers. If content is not cached in lower-tier data centers (generally the ones closest to a visitor), the lower-tier must ask an upper-tier to see if it has the content. If the upper-tier does not have the content, only the upper-tier can ask the origin for content. This practice improves bandwidth efficiency by limiting the number of data centers that can ask the origin for content, which reduces origin load and makes websites more cost-effective to operate. Additionally, Tiered Cache concentrates connections to origin servers so they come from a small number of data centers rather than the full set of network locations. This results in fewer open connections using server resources.
+Retrieves whether Tiered Cache is enabled for a zone. Tiered Cache reduces origin traffic by serving lower-tier cache misses from upper-tier data centers before requesting content from your origin.
 
 ##### Security
 
@@ -212,7 +212,7 @@ formatdate-time
 
 [Link to this property](#)%20argo.tiered_caching%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get Tiered Caching setting
+### Get Tiered Cache
 
 HTTP
 

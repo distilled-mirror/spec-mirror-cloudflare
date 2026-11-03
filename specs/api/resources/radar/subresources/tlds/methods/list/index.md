@@ -120,9 +120,9 @@ maxLength100
 
 <summary>
 
-tldType: optional "GENERIC"or "COUNTRY\_CODE"or "GENERIC\_RESTRICTED"or 2 more
+tldType: optional "GENERIC"or "COUNTRY\_CODE"or "SPECIAL\_USE"or 3 more
 
-Filters results by TLD type.
+Filters results by TLD type. GENERIC\_RESTRICTED and SPONSORED are deprecated and return no results, as IANA consolidated them into GENERIC. INFRASTRUCTURE is deprecated, as IANA reclassified .arpa as SPECIAL\_USE.
 
 </summary>
 
@@ -133,6 +133,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "COUNTRY\_CODE"
+
+<a href="#">Link to this property</a>
+
+"SPECIAL\_USE"
 
 <a href="#">Link to this property</a>
 

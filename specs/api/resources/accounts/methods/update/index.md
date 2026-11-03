@@ -24,15 +24,33 @@ Update an existing account. Account names are limited to 65 UTF-8 bytes.
 
 ##### Security
 
-API Email + API Key
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
 
 The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
 
-**Example:**`X-Auth-Email: user@example.com`
+**Example:**<code>X-Auth-Email: user@example.com</code>
 
 The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
 
-**Example:**`X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194`
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
 
 ##### Accepted Permissions (at least one required)
 
@@ -254,7 +272,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 3 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/accounts#(resource)%20accounts%20%3E%20(model)%20account%20%3E%20(schema)">Account</a> { id, name, type, 4 more }
 
 </summary>
 
@@ -301,6 +319,52 @@ created\_on: optional string
 Timestamp for the creation of the account
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+legacy\_flags: optional object {enterprise\_zone\_quota }
+
+Legacy account flags.
+
+</summary>
+
+<details>
+
+<summary>
+
+enterprise\_zone\_quota: optional object {available, current, maximum }
+
+Enterprise zone quota for standard and enterprise accounts. Accounts without a quota have a maximum of 0.
+
+</summary>
+
+available: optional number
+
+Number of additional Enterprise zones available. Returns 0 if the quota is not allocated or is exhausted.
+
+<a href="#">Link to this property</a>
+
+current: optional number
+
+Current number of Enterprise zones.
+
+<a href="#">Link to this property</a>
+
+maximum: optional number
+
+Maximum number of Enterprise zones allowed.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -386,8 +450,7 @@ HTTPTypeScriptPythonGoTerraform
 curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     -X PUT \
     -H 'Content-Type: application/json' \
-    -H "X-Auth-Email: $CLOUDFLARE_EMAIL" \
-    -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "id": "023e105f4ecef8ad9ca31a8372d0c353",
           "name": "Demo Account",
@@ -425,6 +488,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     "name": "Demo Account",
     "type": "standard",
     "created_on": "2014-03-01T12:21:02Z",
+    "legacy_flags": {
+      "enterprise_zone_quota": {
+        "available": 168,
+        "current": 82,
+        "maximum": 250
+      }
+    },
     "managed_by": {
       "parent_org_id": "4536bcfad5faccb111b47003c79917fa",
       "parent_org_name": "Demo Parent Organization",
@@ -471,6 +541,13 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     "name": "Demo Account",
     "type": "standard",
     "created_on": "2014-03-01T12:21:02Z",
+    "legacy_flags": {
+      "enterprise_zone_quota": {
+        "available": 168,
+        "current": 82,
+        "maximum": 250
+      }
+    },
     "managed_by": {
       "parent_org_id": "4536bcfad5faccb111b47003c79917fa",
       "parent_org_name": "Demo Parent Organization",

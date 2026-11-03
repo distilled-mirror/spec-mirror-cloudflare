@@ -52,7 +52,7 @@ report\_param: string
 
 <summary>
 
-result: object {id, cdate, domain, 7 more }
+result: object {id, cdate, domain, 8 more }
 
 </summary>
 
@@ -194,6 +194,12 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+has\_pending\_notice: optional boolean
+
+Whether the report is in an open Notice and Takedown notice period: no mitigation is placed yet, but one will take effect when the period ends.
+
+<a href="#">Link to this property</a>
+
 justification: optional string
 
 Justification for the report.
@@ -330,6 +336,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports/$RE
     },
     "status": "accepted",
     "type": "PHISH",
+    "has_pending_notice": true,
     "justification": "justification",
     "original_work": "original_work",
     "submitter": {
@@ -376,6 +383,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/abuse-reports/$RE
     },
     "status": "accepted",
     "type": "PHISH",
+    "has_pending_notice": true,
     "justification": "justification",
     "original_work": "original_work",
     "submitter": {

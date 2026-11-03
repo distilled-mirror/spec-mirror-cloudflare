@@ -758,7 +758,7 @@ Identifier of the resource group.
 
 scope: object {key, objects }
 
-A scope is a combination of scope objects which provides additional context.
+The scope associated to the resource group
 
 </summary>
 

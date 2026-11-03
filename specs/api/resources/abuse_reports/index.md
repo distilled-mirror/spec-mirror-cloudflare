@@ -40,7 +40,7 @@ The result should be ‘success’ for successful response
 
 <summary>
 
-AbuseReportGetResponse object {id, cdate, domain, 7 more }
+AbuseReportGetResponse object {id, cdate, domain, 8 more }
 
 </summary>
 
@@ -179,6 +179,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+has\_pending\_notice: optional boolean
+
+Whether the report is in an open Notice and Takedown notice period: no mitigation is placed yet, but one will take effect when the period ends.
 
 <a href="#">Link to this property</a>
 
@@ -244,7 +250,7 @@ AbuseReportListResponse object {reports }
 
 <summary>
 
-reports: array of object {id, cdate, domain, 7 more }
+reports: array of object {id, cdate, domain, 8 more }
 
 </summary>
 
@@ -383,6 +389,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+has\_pending\_notice: optional boolean
+
+Whether the report is in an open Notice and Takedown notice period: no mitigation is placed yet, but one will take effect when the period ends.
 
 <a href="#">Link to this property</a>
 
