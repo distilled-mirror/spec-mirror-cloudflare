@@ -138,27 +138,9 @@ formatint64
 
 <a href="#">Link to this property</a>
 
-<details>
+trigger: string
 
-<summary>
-
-trigger: "approaching\_limit"or "limit\_reached"
-
-The state the balance moved into. <code>approaching_limit</code> means the balance is at least 80% of the threshold (rounded up to a whole cent), but below the threshold. <code>limit_reached</code> means the balance reached or exceeded the threshold.
-
-</summary>
-
-One of the following:
-
-"approaching\_limit"
-
-<a href="#">Link to this property</a>
-
-"limit\_reached"
-
-<a href="#">Link to this property</a>
-
-</details>
+The trigger recorded at evaluation time. New evaluations record <code>limit_reached</code> when the balance reaches or exceeds the configured threshold. Earlier entries retain their recorded trigger.
 
 <a href="#">Link to this property</a>
 

@@ -332730,7 +332730,7 @@ formatdate-time
 
 [Link to this property](#)
 
-dns_destination_ips_id: optional [DNSDestinationIPs](/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips%20%3E%20(schema))
+dns_destination_ips_id: optional [DNSDestinationIPsID](/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips_id%20%3E%20(schema))
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
@@ -335562,7 +335562,7 @@ GET/accounts/{account_id}/gateway/dns_destination_ips
 
 ##### Models
 
-DNSDestinationIPs = string
+DNSDestinationIPsID = string
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
@@ -336434,11 +336434,15 @@ name: string
 
 <summary>
 
-risk_level: "low" or "medium" or "high"
+risk_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+[Link to this property](#)
 
 "low"
 
@@ -336484,11 +336488,15 @@ formatdate-time
 
 <summary>
 
-risk_level: optional "low" or "medium" or "high"
+risk_level: optional "info" or "low" or "medium" or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+[Link to this property](#)
 
 "low"
 
@@ -336556,11 +336564,15 @@ name: string
 
 <summary>
 
-risk_level: "low" or "medium" or "high"
+risk_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+[Link to this property](#)
 
 "low"
 
@@ -336610,11 +336622,15 @@ enabled: boolean
 
 <summary>
 
-risk_level: "low" or "medium" or "high"
+risk_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+[Link to this property](#)
 
 "low"
 
@@ -336682,11 +336698,15 @@ formatdate-time
 
 <summary>
 
-max_risk_level: "low" or "medium" or "high"
+max_risk_level: "info" or "low" or "medium" or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+[Link to this property](#)
 
 "low"
 

@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/billing/spend-policies/{policy\_id}/audit
 
-Returns the policy’s evaluation history, newest first. At most one entry is recorded per trigger (`approaching_limit` or `limit_reached`), policy version and billing period, so a policy update can record a new entry without any change in balance. Disabled policies still return their history; deleted policies return `404`. There is no pagination: use `limit` to set how many entries come back.
+Returns the policy’s evaluation history, newest first. At most one threshold-crossing entry (`limit_reached`) is recorded per policy version and billing period, so a policy update can record a new entry without any change in balance. Disabled policies still return their history; deleted policies return `404`. There is no pagination: use `limit` to set how many entries come back. Defaults to `period=current_billing_cycle`, resolved from the product’s canonical aggregates, not calendar months. Crossings match their recorded billing-period bounds, even if recorded late. Set `period=all` for history across cycles. Filtering happens before LIMIT. No current cycle returns an empty array; unavailable or disabled cycle resolution returns `503` with code `1013`, never an empty success.
 
 ##### Security
 
@@ -83,6 +83,30 @@ Maximum number of audit entries to return. Defaults to 50. Values above 100 are 
 minimum1
 
 [Link to this property](#)%20billing.spend_policies.audit%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+period: optional "current\_billing\_cycle"or "all"
+
+Select current subscription billing-cycle history or history across all cycles.
+
+</summary>
+
+One of the following:
+
+"current\_billing\_cycle"
+
+<a href="#">Link to this property</a>
+
+"all"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20billing.spend_policies.audit%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20period%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -250,27 +274,9 @@ formatint64
 
 <a href="#">Link to this property</a>
 
-<details>
+trigger: string
 
-<summary>
-
-trigger: "approaching\_limit"or "limit\_reached"
-
-The state the balance moved into. <code>approaching_limit</code> means the balance is at least 80% of the threshold (rounded up to a whole cent), but below the threshold. <code>limit_reached</code> means the balance reached or exceeded the threshold.
-
-</summary>
-
-One of the following:
-
-"approaching\_limit"
-
-<a href="#">Link to this property</a>
-
-"limit\_reached"
-
-<a href="#">Link to this property</a>
-
-</details>
+The trigger recorded at evaluation time. New evaluations record <code>limit_reached</code> when the balance reaches or exceeds the configured threshold. Earlier entries retain their recorded trigger.
 
 <a href="#">Link to this property</a>
 

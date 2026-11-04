@@ -1736,7 +1736,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-dns\_destination\_ips\_id: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips%20%3E%20(schema)">DNSDestinationIPs</a>
+dns\_destination\_ips\_id: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips_id%20%3E%20(schema)">DNSDestinationIPsID</a>
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
@@ -4580,11 +4580,11 @@ GET/accounts/{account\_id}/gateway/dns\_destination\_ips
 
 ##### ModelsExpand Collapse
 
-DNSDestinationIPs = string
+DNSDestinationIPsID = string
 
 Indicate the identifier of the pair of IPv4 addresses assigned to this location.
 
-[Link to this property](#)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips%20%3E%20(schema)>)
+[Link to this property](#)%20zero_trust.gateway.dns_destination_ips%20%3E%20(model)%20dns_destination_ips_id%20%3E%20(schema)>)
 
 <details>
 

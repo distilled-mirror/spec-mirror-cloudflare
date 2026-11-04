@@ -232,6 +232,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. <code>percentage</code> splits traffic according to each version’s <code>percentage</code>.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -271,6 +273,8 @@ formatuuid
 <summary>
 
 annotations: optional object {"workers/message", "workers/triggered\_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 

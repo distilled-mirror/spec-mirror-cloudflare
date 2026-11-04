@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/billing/spend-policies/activity
 
-Returns configuration history from immutable policy revisions for the account, including deleted policies. Entries contain before/after values and verified actor attribution. Pages use descending revision IDs, not event or commit order; refresh the first page for new entries. This cursor is not an incremental consumer checkpoint.
+Returns configuration history from immutable policy revisions for the account, including deleted policies. Entries contain before/after values and verified actor attribution. Pages use descending revision IDs, not event or commit order; refresh the first page for new entries. This cursor is not an incremental consumer checkpoint. Defaults to `period=current_billing_cycle`: each revision’s timestamp must be within its product’s current subscription cycle (inclusive start, exclusive end). Each product’s cycle is resolved independently from canonical aggregates, including for disabled or deleted policies. Set `period=all` for history across cycles. Filtering happens before pagination. No current cycles returns an empty page; unavailable or disabled cycle resolution returns `503` with code `1013`. Cursors pin resolved cycle bounds across pages and must be used with the same period selection. Cursors obtained before this filter was introduced must be refreshed.
 
 ##### Security
 
@@ -83,6 +83,30 @@ Maximum number of audit entries to return. Defaults to 50. Values above 100 are 
 minimum1
 
 [Link to this property](#)%20billing.spend_policies.activity%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+period: optional "current\_billing\_cycle"or "all"
+
+Select current subscription billing-cycle history or history across all cycles.
+
+</summary>
+
+One of the following:
+
+"current\_billing\_cycle"
+
+<a href="#">Link to this property</a>
+
+"all"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20billing.spend_policies.activity%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20period%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -432,7 +456,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -453,10 +477,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -710,7 +730,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -731,10 +751,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 

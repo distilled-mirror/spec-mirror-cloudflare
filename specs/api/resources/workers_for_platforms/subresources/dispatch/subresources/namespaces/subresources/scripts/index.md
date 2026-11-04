@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}
 
-##### [Upload Workers for Platforms Script Module](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/subresources/scripts/methods/update)
+##### [Upload Workers for Platforms Script](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/subresources/scripts/methods/update)
 
 PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}
 

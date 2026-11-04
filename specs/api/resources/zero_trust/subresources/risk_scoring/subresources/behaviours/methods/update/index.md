@@ -84,11 +84,15 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -226,11 +230,15 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -271,7 +279,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
           "behaviors": {
             "foo": {
               "enabled": true,
-              "risk_level": "low"
+              "risk_level": "info"
             }
           }
         }'
@@ -306,7 +314,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
     "behaviors": {
       "foo": {
         "enabled": true,
-        "risk_level": "low"
+        "risk_level": "info"
       }
     }
   }
@@ -344,7 +352,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
     "behaviors": {
       "foo": {
         "enabled": true,
-        "risk_level": "low"
+        "risk_level": "info"
       }
     }
   }

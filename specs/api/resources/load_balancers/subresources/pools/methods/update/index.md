@@ -383,6 +383,12 @@ The ID of the Monitor Group to use for checking the health of origins within thi
 
 [Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20monitor_group%20%3E%20(schema)>)
 
+networks: optional array of string
+
+List of networks where Load Balancer or Pool is enabled.
+
+[Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20networks%20%3E%20(schema)>)
+
 notification\_email: optional string
 
 This field is now deprecated. It has been moved to Cloudflare’s Centralized Notification service https://developers.cloudflare.com/fundamentals/notifications/. The email address to send health status notifications to. This can be an individual mailbox or a mailing list. Multiple emails can be supplied as a comma delimited list.
@@ -1092,6 +1098,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/po
           "health_sources": [
             "regional",
             "global"
+          ],
+          "networks": [
+            "cloudflare",
+            "jdcloud"
           ],
           "notification_email": "someone@example.com,sometwo@example.com",
           "notification_filter": {

@@ -833,9 +833,9 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional <a href="https://developers.cloudflare.com/api/resources/load_balancers#(resource)%20load_balancers%20%3E%20(model)%20random_steering%20%3E%20(schema)">RandomSteering</a> { default\_weight, pool\_weights }
+random\_steering: optional object {default\_weight, pool\_weights }
 
-Configures pool weights.
+Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
 - <code>steering_policy="random"</code>: A random pool is selected with probability proportional to pool weights.
 - <code>steering_policy="least_outstanding_requests"</code>: Use pool weights to scale each pool’s outstanding requests.
@@ -845,7 +845,7 @@ Configures pool weights.
 
 default\_weight: optional number
 
-The default weight for pools in the load balancer that are not specified in the pool\_weights map.
+The default weight for pools in the load balancer that are not specified in the pool\_weights map. An omitted value inherits the load balancer’s default weight.
 
 maximum1
 
@@ -1098,7 +1098,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 priority: optional number
 
-The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
+The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If all priorities are omitted or zero, the API assigns priorities based on the array order of the rules field.
 
 minimum0
 

@@ -88,6 +88,8 @@ If set to true, the deployment will be created even if normally blocked by somet
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version’s `percentage`.
+
 [Link to this property](#)%20workers.scripts.deployments%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20strategy%20%3E%20(schema)>)
 
 <details>
@@ -127,6 +129,8 @@ formatuuid
 <summary>
 
 annotations: optional object {"workers/message", "workers/triggered\_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 
@@ -328,6 +332,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. <code>percentage</code> splits traffic according to each version’s <code>percentage</code>.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -367,6 +373,8 @@ formatuuid
 <summary>
 
 annotations: optional object {"workers/message", "workers/triggered\_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 

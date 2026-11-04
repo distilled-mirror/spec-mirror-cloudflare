@@ -194,11 +194,15 @@ name: string
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -244,11 +248,15 @@ formatdate-time
 
 <summary>
 
-risk\_level: optional "low"or "medium"or "high"
+risk\_level: optional "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -354,14 +362,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/$
       {
         "id": "id",
         "name": "name",
-        "risk_level": "low",
+        "risk_level": "info",
         "timestamp": "2019-12-27T18:11:19.117Z",
         "event_details": {}
       }
     ],
     "name": "name",
     "last_reset_time": "2019-12-27T18:11:19.117Z",
-    "risk_level": "low"
+    "risk_level": "info"
   },
   "result_info": {
     "count": 1,
@@ -406,14 +414,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/$
       {
         "id": "id",
         "name": "name",
-        "risk_level": "low",
+        "risk_level": "info",
         "timestamp": "2019-12-27T18:11:19.117Z",
         "event_details": {}
       }
     ],
     "name": "name",
     "last_reset_time": "2019-12-27T18:11:19.117Z",
-    "risk_level": "low"
+    "risk_level": "info"
   },
   "result_info": {
     "count": 1,

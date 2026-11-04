@@ -434,7 +434,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -455,10 +455,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 

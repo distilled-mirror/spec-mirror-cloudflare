@@ -190,11 +190,15 @@ name: string
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -262,7 +266,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
         "description": "description",
         "enabled": true,
         "name": "name",
-        "risk_level": "low"
+        "risk_level": "info"
       }
     }
   }
@@ -302,7 +306,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/b
         "description": "description",
         "enabled": true,
         "name": "name",
-        "risk_level": "low"
+        "risk_level": "info"
       }
     }
   }

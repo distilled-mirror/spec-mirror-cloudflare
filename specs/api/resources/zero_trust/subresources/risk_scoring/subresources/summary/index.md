@@ -62,11 +62,15 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "low"or "medium"or "high"
+max\_risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 

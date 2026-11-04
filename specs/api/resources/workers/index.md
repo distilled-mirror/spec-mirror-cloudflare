@@ -4752,7 +4752,7 @@ GET/accounts/{account_id}/workers/scripts-search
 
 GET/accounts/{account_id}/workers/scripts/{script_name}
 
-##### [Upload Worker Module](/api/resources/workers/subresources/scripts/methods/update)
+##### [Upload Worker](/api/resources/workers/subresources/scripts/methods/update)
 
 PUT/accounts/{account_id}/workers/scripts/{script_name}
 
@@ -9256,6 +9256,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version’s `percentage`.
+
 [Link to this property](#)
 
 <details>
@@ -9295,6 +9297,8 @@ formatuuid
 <summary>
 
 annotations: optional object { "workers/message", "workers/triggered_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 
@@ -9428,6 +9432,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. `percentage` splits traffic according to each version’s `percentage`.
+
 [Link to this property](#)
 
 <details>
@@ -9467,6 +9473,8 @@ formatuuid
 <summary>
 
 annotations: optional object { "workers/message", "workers/triggered_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 

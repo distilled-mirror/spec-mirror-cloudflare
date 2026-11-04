@@ -88,9 +88,33 @@ To poll an in-progress export, provide the current bookmark (returned by your fi
 
 <summary>
 
-dump\_options: optional object {no\_data, no\_schema, tables }
+dump\_options: optional object {compatibility, no\_data, no\_schema, tables }
 
 </summary>
+
+<details>
+
+<summary>
+
+compatibility: optional "d1"or "sqlite3\_cli\_only"
+
+Dump format. <code>d1</code> (the default) gives a dump that D1 can import. <code>sqlite3_cli_only</code> matches the output of the <code>sqlite3 .dump</code> command, including virtual tables such as FTS5 or R\*Tree tables, but cannot be imported back into D1.
+
+</summary>
+
+One of the following:
+
+"d1"
+
+<a href="#">Link to this property</a>
+
+"sqlite3\_cli\_only"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 no\_data: optional boolean
 

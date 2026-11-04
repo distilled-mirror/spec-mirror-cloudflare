@@ -323,16 +323,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/entitlements \
 
 200 example
 
-400 example
-
-404 example
-
-405 example
-
-500 example
-
-503 example
-
 ```
 {
   "errors": [],
@@ -393,76 +383,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/entitlements \
     }
   ],
   "success": true
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2005,
-      "message": "failed to fetch entitlements: invalid object type"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2004,
-      "message": "failed to fetch entitlements: unknown route"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2001,
-      "message": "failed to fetch entitlements: method not allowed"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2000,
-      "message": "failed to fetch entitlements: internal server error"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2003,
-      "message": "failed to fetch entitlements: timeout occurred"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```
 
@@ -470,16 +390,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/entitlements \
 
 200 example
 
-400 example
-
-404 example
-
-405 example
-
-500 example
-
-503 example
-
 ```
 {
   "errors": [],
@@ -540,75 +450,5 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/entitlements \
     }
   ],
   "success": true
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2005,
-      "message": "failed to fetch entitlements: invalid object type"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2004,
-      "message": "failed to fetch entitlements: unknown route"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2001,
-      "message": "failed to fetch entitlements: method not allowed"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2000,
-      "message": "failed to fetch entitlements: internal server error"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
-}
-```
-
-```
-{
-  "errors": [
-    {
-      "code": 2003,
-      "message": "failed to fetch entitlements: timeout occurred"
-    }
-  ],
-  "messages": [],
-  "result": null,
-  "success": false
 }
 ```

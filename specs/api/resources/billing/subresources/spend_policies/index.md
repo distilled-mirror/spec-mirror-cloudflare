@@ -274,7 +274,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -295,10 +295,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -552,7 +548,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -573,10 +569,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -830,7 +822,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -851,10 +843,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -1108,7 +1096,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -1129,10 +1117,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -1292,27 +1276,9 @@ formatint64
 
 <a href="#">Link to this property</a>
 
-<details>
+trigger: string
 
-<summary>
-
-trigger: "approaching\_limit"or "limit\_reached"
-
-The state the balance moved into. <code>approaching_limit</code> means the balance is at least 80% of the threshold (rounded up to a whole cent), but below the threshold. <code>limit_reached</code> means the balance reached or exceeded the threshold.
-
-</summary>
-
-One of the following:
-
-"approaching\_limit"
-
-<a href="#">Link to this property</a>
-
-"limit\_reached"
-
-<a href="#">Link to this property</a>
-
-</details>
+The trigger recorded at evaluation time. New evaluations record <code>limit_reached</code> when the balance reaches or exceeds the configured threshold. Earlier entries retain their recorded trigger.
 
 <a href="#">Link to this property</a>
 
@@ -1622,7 +1588,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -1643,10 +1609,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 
@@ -1900,7 +1862,7 @@ formatdate-time
 
 <summary>
 
-status: "disabled"or "no\_current\_period"or "unavailable"or 3 more
+status: "disabled"or "no\_current\_period"or "unavailable"or 2 more
 
 Threshold evaluation, not proof of an edge cap. No current active period yields no\_current\_period for enabled policies; failed aggregate reads yield unavailable for enabled policies. Disabled policies report disabled. Neither no\_current\_period nor unavailable implies a zero balance or below-limit state. Operators may disable current-state reads, in which case current\_state is omitted.
 
@@ -1921,10 +1883,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "below\_limit"
-
-<a href="#">Link to this property</a>
-
-"approaching\_limit"
 
 <a href="#">Link to this property</a>
 

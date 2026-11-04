@@ -169,6 +169,82 @@ multipleOf0.01
 
 [Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20origins%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+check\_regions: optional array of <a href="https://developers.cloudflare.com/api/resources/load_balancers#(resource)%20load_balancers%20%3E%20(model)%20check_region%20%3E%20(schema)">CheckRegion</a>
+
+A list of regions from which to run health checks. Null means every Cloudflare data center.
+
+</summary>
+
+One of the following:
+
+"WNAM"
+
+<a href="#">Link to this property</a>
+
+"ENAM"
+
+<a href="#">Link to this property</a>
+
+"WEU"
+
+<a href="#">Link to this property</a>
+
+"EEU"
+
+<a href="#">Link to this property</a>
+
+"NSAM"
+
+<a href="#">Link to this property</a>
+
+"SSAM"
+
+<a href="#">Link to this property</a>
+
+"OC"
+
+<a href="#">Link to this property</a>
+
+"ME"
+
+<a href="#">Link to this property</a>
+
+"NAF"
+
+<a href="#">Link to this property</a>
+
+"SAF"
+
+<a href="#">Link to this property</a>
+
+"SAS"
+
+<a href="#">Link to this property</a>
+
+"SEAS"
+
+<a href="#">Link to this property</a>
+
+"NEAS"
+
+<a href="#">Link to this property</a>
+
+"CHINA"
+
+<a href="#">Link to this property</a>
+
+"ALL\_REGIONS"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20check_regions%20%3E%20(schema)>)
+
 description: optional string
 
 A human-readable description of the pool.
@@ -180,6 +256,34 @@ enabled: optional boolean
 Whether to enable (the default) or disable this pool. Disabled pools will not receive traffic and are excluded from health checks. Disabling a pool will cause any load balancers using it to failover to the next pool (if any).
 
 [Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+health\_sources: optional array of "local"or "regional"or "global"
+
+A list of health sources, ordered from highest to lowest priority, used to evaluate individual origin health and overall pool health. The load balancer uses the first source that has data and falls back to the next. Currently accepted values are null or the exact array \[“regional”, “global”]; any other combination is rejected. Null (the default) behaves like \[“local”, “global”]. \[“regional”, “global”] makes each region steer on its own health, falling back to the global decision when a region has no fresh data. Setting regional requires at least one region in check\_regions.
+
+</summary>
+
+One of the following:
+
+"local"
+
+<a href="#">Link to this property</a>
+
+"regional"
+
+<a href="#">Link to this property</a>
+
+"global"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20health_sources%20%3E%20(schema)>)
 
 latitude: optional number
 
@@ -274,6 +378,12 @@ monitor\_group: optional string
 The ID of the Monitor Group to use for checking the health of origins within this pool.
 
 [Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20monitor_group%20%3E%20(schema)>)
+
+networks: optional array of string
+
+List of networks where Load Balancer or Pool is enabled.
+
+[Link to this property](#)%20load_balancers.pools%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20networks%20%3E%20(schema)>)
 
 notification\_email: optional string
 
@@ -975,7 +1085,19 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/load_balancers/po
           "origins": [
             {}
           ],
+          "check_regions": [
+            "WEU",
+            "ENAM"
+          ],
           "description": "Primary data center - Provider XYZ",
+          "health_sources": [
+            "regional",
+            "global"
+          ],
+          "networks": [
+            "cloudflare",
+            "jdcloud"
+          ],
           "notification_email": "someone@example.com,sometwo@example.com",
           "notification_filter": {
             "origin": {

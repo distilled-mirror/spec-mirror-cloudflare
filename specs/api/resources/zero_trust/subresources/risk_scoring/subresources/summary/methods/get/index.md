@@ -194,11 +194,15 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "low"or "medium"or "high"
+max\_risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -318,7 +322,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/s
         "email": "email",
         "event_count": 0,
         "last_event": "2019-12-27T18:11:19.117Z",
-        "max_risk_level": "low",
+        "max_risk_level": "info",
         "name": "name",
         "user_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
       }
@@ -367,7 +371,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zt_risk_scoring/s
         "email": "email",
         "event_count": 0,
         "last_event": "2019-12-27T18:11:19.117Z",
-        "max_risk_level": "low",
+        "max_risk_level": "info",
         "name": "name",
         "user_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
       }

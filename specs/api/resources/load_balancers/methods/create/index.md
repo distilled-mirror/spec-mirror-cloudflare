@@ -212,6 +212,231 @@ List of networks where Load Balancer or Pool is enabled.
 
 [Link to this property](#)%20load_balancers%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20networks%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+pool\_sets: optional array of object {disabled, fixed\_response, match, 2 more }
+
+An optional list of pool sets, evaluated in array order with first match wins. Pool sets are independent from the standard steering fields (<code>region_pools</code> / <code>country_pools</code> / <code>pop_pools</code> / <code>default_pools</code> / <code>steering_policy</code> / <code>random_steering</code> / <code>fallback_pool</code> / <code>rules</code>). On a PATCH, an empty array (<code>pool_sets: []</code>) clears all pool sets, while omitting the field leaves existing pool sets unchanged.
+
+</summary>
+
+disabled: optional boolean
+
+Disable this specific pool set. It will no longer be evaluated.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+fixed\_response: optional object {content\_type, location, message\_body, status\_code }
+
+A collection of fields used to directly respond to the client instead of routing to a pool. When supplied on a rule, that rule stops further rule evaluation.
+
+</summary>
+
+content\_type: optional string
+
+The http ‘Content-Type’ header to include in the response.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+location: optional string
+
+The http ‘Location’ header to include in the response.
+
+maxLength2048
+
+<a href="#">Link to this property</a>
+
+message\_body: optional string
+
+Text to include as the http body.
+
+maxLength1024
+
+<a href="#">Link to this property</a>
+
+status\_code: optional number
+
+The http status code to respond with.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+match: optional object {default, topology }
+
+Determines which requests a pool set applies to. Set <code>topology</code> to match by location or <code>default: true</code> to match all requests; the two are mutually exclusive. A pool set with no <code>match</code> matches all requests.
+
+</summary>
+
+default: optional boolean
+
+When true, matches every request. Cannot be combined with <code>topology</code>.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+topology: optional object {countries, pops, regions }
+
+Matches requests by location. Set any combination of <code>pops</code>, <code>countries</code>, and <code>regions</code> (at least one is required); a request matches when its value appears in any populated list (e.g. <code>regions: ["WNAM"]</code> with <code>countries: ["US"]</code> matches a request in either WNAM or the US).
+
+</summary>
+
+countries: optional array of string
+
+A list of ISO 3166-1 alpha-2 country codes. Matches when the request’s country is in this list.
+
+<a href="#">Link to this property</a>
+
+pops: optional array of string
+
+A list of Cloudflare PoP codes. Matches when the request’s PoP is in this list.
+
+<a href="#">Link to this property</a>
+
+regions: optional array of string
+
+A list of Cloudflare region codes (e.g. <code>WNAM</code>, <code>ENAM</code>, <code>WEU</code>). Matches when the request’s region is in this list.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+A human-readable name for this pool set.
+
+maxLength200
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+overrides: optional object {fallback\_pool, pool\_default\_weight, pool\_weights, 2 more }
+
+The behavior a pool set applies when its <code>match</code> succeeds. A strict subset of a rule’s <code>overrides</code>: a pool set replaces the topology wholesale with a flat pool list (<code>pools</code>), so only the declarative pool-routing fields plus <code>fallback_pool</code> and <code>steering_policy</code> are settable. All fields are optional.
+
+</summary>
+
+fallback\_pool: optional string
+
+The pool ID to use when all other pools are detected as unhealthy.
+
+<a href="#">Link to this property</a>
+
+pool\_default\_weight: optional number
+
+The default weight for pools not listed in <code>pool_weights</code>. The declarative alternative to <code>random_steering.default_weight</code>; mutually exclusive with <code>random_steering</code>.
+
+maximum1
+
+minimum0
+
+multipleOf0.1
+
+<a href="#">Link to this property</a>
+
+pool\_weights: optional map\[number]
+
+A mapping of pool IDs to custom weights, relative to the other pools. The declarative alternative to <code>random_steering.pool_weights</code>; mutually exclusive with <code>random_steering</code>.
+
+<a href="#">Link to this property</a>
+
+pools: optional array of string
+
+A flat, ordered list of pool IDs to route the matched audience to. Replaces the resolved topology with exactly these pools. Mutually exclusive with <code>fixed_response</code>.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+steering\_policy: optional <a href="https://developers.cloudflare.com/api/resources/load_balancers#(resource)%20load_balancers%20%3E%20(model)%20steering_policy%20%3E%20(schema)">SteeringPolicy</a>
+
+Steering Policy for this load balancer.
+
+- <code>"off"</code>: Use <code>default_pools</code>.
+- <code>"geo"</code>: Use <code>region_pools</code>/<code>country_pools</code>/<code>pop_pools</code>. For non-proxied requests, the country for <code>country_pools</code> is determined by <code>location_strategy</code>.
+- <code>"random"</code>: Select a pool randomly.
+- <code>"dynamic_latency"</code>: Use round trip time to select the closest pool in default\_pools (requires pool health checks).
+- <code>"proximity"</code>: Use the pools’ latitude and longitude to select the closest pool using the Cloudflare PoP location for proxied requests or the location determined by <code>location_strategy</code> for non-proxied requests.
+- <code>"least_outstanding_requests"</code>: Select a pool by taking into consideration <code>random_steering</code> weights, as well as each pool’s number of outstanding requests. Pools with more pending requests are weighted proportionately less relative to others.
+- <code>"least_connections"</code>: Select a pool by taking into consideration <code>random_steering</code> weights, as well as each pool’s number of open connections. Pools with more open connections are weighted proportionately less relative to others. Supported for HTTP/1 and HTTP/2 connections.
+- <code>""</code>: Will map to <code>"geo"</code> if you use <code>region_pools</code>/<code>country_pools</code>/<code>pop_pools</code> otherwise <code>"off"</code>.
+
+</summary>
+
+One of the following:
+
+"off"
+
+<a href="#">Link to this property</a>
+
+"geo"
+
+<a href="#">Link to this property</a>
+
+"random"
+
+<a href="#">Link to this property</a>
+
+"dynamic\_latency"
+
+<a href="#">Link to this property</a>
+
+"proximity"
+
+<a href="#">Link to this property</a>
+
+"least\_outstanding\_requests"
+
+<a href="#">Link to this property</a>
+
+"least\_connections"
+
+<a href="#">Link to this property</a>
+
+""
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20load_balancers%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20pool_sets%20%3E%20(schema)>)
+
 pop\_pools: optional map\[array of string]
 
 Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country\_pool, then region\_pool mapping if it exists else to default\_pools.
@@ -500,9 +725,9 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional <a href="https://developers.cloudflare.com/api/resources/load_balancers#(resource)%20load_balancers%20%3E%20(model)%20random_steering%20%3E%20(schema)">RandomSteering</a> { default\_weight, pool\_weights }
+random\_steering: optional object {default\_weight, pool\_weights }
 
-Configures pool weights.
+Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
 - <code>steering_policy="random"</code>: A random pool is selected with probability proportional to pool weights.
 - <code>steering_policy="least_outstanding_requests"</code>: Use pool weights to scale each pool’s outstanding requests.
@@ -512,7 +737,7 @@ Configures pool weights.
 
 default\_weight: optional number
 
-The default weight for pools in the load balancer that are not specified in the pool\_weights map.
+The default weight for pools in the load balancer that are not specified in the pool\_weights map. An omitted value inherits the load balancer’s default weight.
 
 maximum1
 
@@ -765,7 +990,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 priority: optional number
 
-The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
+The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If all priorities are omitted or zero, the API assigns priorities based on the array order of the rules field.
 
 minimum0
 
@@ -1761,9 +1986,9 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 <summary>
 
-random\_steering: optional <a href="https://developers.cloudflare.com/api/resources/load_balancers#(resource)%20load_balancers%20%3E%20(model)%20random_steering%20%3E%20(schema)">RandomSteering</a> { default\_weight, pool\_weights }
+random\_steering: optional object {default\_weight, pool\_weights }
 
-Configures pool weights.
+Configures pool weights for a rule override. An omitted default\_weight inherits the load balancer’s default weight.
 
 - <code>steering_policy="random"</code>: A random pool is selected with probability proportional to pool weights.
 - <code>steering_policy="least_outstanding_requests"</code>: Use pool weights to scale each pool’s outstanding requests.
@@ -1773,7 +1998,7 @@ Configures pool weights.
 
 default\_weight: optional number
 
-The default weight for pools in the load balancer that are not specified in the pool\_weights map.
+The default weight for pools in the load balancer that are not specified in the pool\_weights map. An omitted value inherits the load balancer’s default weight.
 
 maximum1
 
@@ -2026,7 +2251,7 @@ Time to live (TTL) of the DNS entry for the IP address returned by this load bal
 
 priority: optional number
 
-The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
+The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If all priorities are omitted or zero, the API assigns priorities based on the array order of the rules field.
 
 minimum0
 

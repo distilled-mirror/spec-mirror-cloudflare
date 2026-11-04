@@ -66,7 +66,7 @@ maxLength32
 
 [Link to this property](#)%20zaraz%20%3E%20(method)%20update%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
-##### Body ParametersJSONExpand Collapse
+##### Body ParametersExpand Collapse
 
 <details>
 
@@ -217,7 +217,7 @@ HTTPTypeScriptPythonGoTerraform
 ```
 curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/zaraz/workflow \
     -X PUT \
-    -H 'Content-Type: application/json' \
+    -H 'Content-Type: text/plain' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '"realtime"'
 ```

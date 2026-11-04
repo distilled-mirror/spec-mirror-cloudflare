@@ -60,11 +60,15 @@ name: string
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -110,11 +114,15 @@ formatdate-time
 
 <summary>
 
-risk\_level: optional "low"or "medium"or "high"
+risk\_level: optional "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -184,11 +192,15 @@ name: string
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -238,11 +250,15 @@ enabled: boolean
 
 <summary>
 
-risk\_level: "low"or "medium"or "high"
+risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 
@@ -312,11 +328,15 @@ formatdate-time
 
 <summary>
 
-max\_risk\_level: "low"or "medium"or "high"
+max\_risk\_level: "info"or "low"or "medium"or "high"
 
 </summary>
 
 One of the following:
+
+"info"
+
+<a href="#">Link to this property</a>
 
 "low"
 

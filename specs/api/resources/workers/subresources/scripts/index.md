@@ -30,7 +30,7 @@ GET/accounts/{account\_id}/workers/scripts-search
 
 GET/accounts/{account\_id}/workers/scripts/{script\_name}
 
-##### [Upload Worker Module](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/update)
+##### [Upload Worker](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/methods/update)
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}
 
@@ -4550,6 +4550,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. <code>percentage</code> splits traffic according to each version’s <code>percentage</code>.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -4589,6 +4591,8 @@ formatuuid
 <summary>
 
 annotations: optional object {"workers/message", "workers/triggered\_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 
@@ -4722,6 +4726,8 @@ source: string
 
 strategy: "percentage"
 
+Strategy for routing traffic across the listed versions. <code>percentage</code> splits traffic according to each version’s <code>percentage</code>.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -4761,6 +4767,8 @@ formatuuid
 <summary>
 
 annotations: optional object {"workers/message", "workers/triggered\_by" }
+
+Metadata attached to the deployment.
 
 </summary>
 
