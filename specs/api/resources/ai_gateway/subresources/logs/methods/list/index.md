@@ -476,7 +476,7 @@ Deprecatedsuccess: optional boolean
 
 <summary>
 
-result: array of object {id, cached, created\_at, 16 more }
+result: array of object {id, cached, created\_at, 17 more }
 
 </summary>
 
@@ -519,6 +519,12 @@ tokens\_in: number
 <a href="#">Link to this property</a>
 
 tokens\_out: number
+
+<a href="#">Link to this property</a>
+
+collect\_log\_payload: optional boolean
+
+Whether the request and response bodies were eligible to be stored. False when the request sent <code>cf-aig-collect-log-payload: false</code>, logging was off, or the gateway does not store bodies for the request. Null for logs written before this field existed.
 
 <a href="#">Link to this property</a>
 
@@ -661,6 +667,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
       "success": true,
       "tokens_in": 0,
       "tokens_out": 0,
+      "collect_log_payload": true,
       "cost": 0,
       "custom_cost": true,
       "metadata": "metadata",
@@ -710,6 +717,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
       "success": true,
       "tokens_in": 0,
       "tokens_out": 0,
+      "collect_log_payload": true,
       "cost": 0,
       "custom_cost": true,
       "metadata": "metadata",

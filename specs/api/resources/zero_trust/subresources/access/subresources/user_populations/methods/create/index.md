@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/access/user\_populations
 
-Creates a user population in an account.
+Creates a user population in an account. Requires permission to update the account’s Access organization.
 
 ##### Security
 

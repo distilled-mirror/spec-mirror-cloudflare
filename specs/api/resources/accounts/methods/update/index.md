@@ -90,28 +90,6 @@ Account name, limited to 65 UTF-8 bytes.
 
 <summary>
 
-type: "standard"or "enterprise"
-
-</summary>
-
-One of the following:
-
-"standard"
-
-<a href="#">Link to this property</a>
-
-"enterprise"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20accounts%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20type%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 managed\_by: optional object {parent\_org\_id, parent\_org\_name, root\_org\_id, should\_display\_parent\_orgs }
 
 Parent container details
@@ -453,8 +431,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "id": "023e105f4ecef8ad9ca31a8372d0c353",
-          "name": "Demo Account",
-          "type": "standard"
+          "name": "Demo Account"
         }'
 ```
 

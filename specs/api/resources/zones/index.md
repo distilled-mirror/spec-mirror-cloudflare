@@ -4660,7 +4660,7 @@ formatdate-time
 
 <summary>
 
-SettingListResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
+SettingListResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -10772,6 +10772,94 @@ formatdate-time
 
 <summary>
 
+ZonesAVIF object { id, value, editable, modified_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 Websocket object { id, value, editable, modified_on }
 
 WebSockets are open connections sustained between the client and the origin server. Inside a WebSockets connection, the client and the origin can pass data back and forth without having to reestablish sessions. This makes exchanging data within a WebSockets connection fast. WebSockets are often used for real-time applications such as live chat and gaming. For more information refer to [Can I use Cloudflare with Websockets](https://support.cloudflare.com/hc/en-us/articles/200169466-Can-I-use-Cloudflare-with-WebSockets-).
@@ -10864,7 +10952,7 @@ formatdate-time
 
 <summary>
 
-SettingGetResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
+SettingGetResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 65 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -17064,6 +17152,94 @@ formatdate-time
 
 <summary>
 
+ZonesAVIF object { id, value, editable, modified_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 Websocket object { id, value, editable, modified_on }
 
 WebSockets are open connections sustained between the client and the origin server. Inside a WebSockets connection, the client and the origin can pass data back and forth without having to reestablish sessions. This makes exchanging data within a WebSockets connection fast. WebSockets are often used for real-time applications such as live chat and gaming. For more information refer to [Can I use Cloudflare with Websockets](https://support.cloudflare.com/hc/en-us/articles/200169466-Can-I-use-Cloudflare-with-WebSockets-).
@@ -17156,7 +17332,7 @@ formatdate-time
 
 <summary>
 
-SettingEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
+SettingEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 65 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -23356,6 +23532,94 @@ formatdate-time
 
 <summary>
 
+ZonesAVIF object { id, value, editable, modified_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 Websocket object { id, value, editable, modified_on }
 
 WebSockets are open connections sustained between the client and the origin server. Inside a WebSockets connection, the client and the origin can pass data back and forth without having to reestablish sessions. This makes exchanging data within a WebSockets connection fast. WebSockets are often used for real-time applications such as live chat and gaming. For more information refer to [Can I use Cloudflare with Websockets](https://support.cloudflare.com/hc/en-us/articles/200169466-Can-I-use-Cloudflare-with-WebSockets-).
@@ -23448,7 +23712,7 @@ formatdate-time
 
 <summary>
 
-SettingBulkEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 63 more
+SettingBulkEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -29479,6 +29743,94 @@ When the client requesting the image supports the WebP image codec, and WebP off
 </summary>
 
 id: "webp"
+
+ID of the zone setting.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+value: string or number or boolean or 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+number
+
+[Link to this property](#)
+
+boolean
+
+[Link to this property](#)
+
+unknown
+
+[Link to this property](#)
+
+array of string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+editable: optional true or false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+[Link to this property](#)
+
+false
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+modified_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ZonesAVIF object { id, value, editable, modified_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
 
 ID of the zone setting.
 
@@ -29938,7 +30290,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -29992,7 +30360,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -30046,7 +30430,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -30100,7 +30500,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -30154,7 +30570,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -30208,7 +30640,23 @@ name: string
 
 [Link to this property](#)
 
-position: [ListCursor](/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)) { after, before }
+<details>
+
+<summary>
+
+position: object { after, before }
+
+</summary>
+
+after: optional string
+
+[Link to this property](#)
+
+before: optional string
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

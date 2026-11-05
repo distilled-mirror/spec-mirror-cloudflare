@@ -7302,7 +7302,7 @@ GET/accounts/{account\_id}/ai-gateway/gateways/{gateway\_id}/logs/{id}/response
 
 <summary>
 
-LogListResponse object {id, cached, created\_at, 16 more }
+LogListResponse object {id, cached, created\_at, 17 more }
 
 </summary>
 
@@ -7345,6 +7345,12 @@ tokens\_in: number
 <a href="#">Link to this property</a>
 
 tokens\_out: number
+
+<a href="#">Link to this property</a>
+
+collect\_log\_payload: optional boolean
+
+Whether the request and response bodies were eligible to be stored. False when the request sent <code>cf-aig-collect-log-payload: false</code>, logging was off, or the gateway does not store bodies for the request. Null for logs written before this field existed.
 
 <a href="#">Link to this property</a>
 
@@ -7392,7 +7398,7 @@ step: optional number
 
 <summary>
 
-LogGetResponse object {id, cached, created\_at, 22 more }
+LogGetResponse object {id, cached, created\_at, 23 more }
 
 </summary>
 
@@ -7435,6 +7441,12 @@ tokens\_in: number
 <a href="#">Link to this property</a>
 
 tokens\_out: number
+
+<a href="#">Link to this property</a>
+
+collect\_log\_payload: optional boolean
+
+Whether the request and response bodies were eligible to be stored. False when the request sent <code>cf-aig-collect-log-payload: false</code>, logging was off, or the gateway does not store bodies for the request. Null for logs written before this field existed.
 
 <a href="#">Link to this property</a>
 

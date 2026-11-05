@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Logos
 
-##### [Insert logo query](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/create)
+##### [Create logo query](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
 DELETE/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries/{query\_id}
 
-##### [Get logo queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/get)
+##### [List logo queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
@@ -51,6 +51,8 @@ success: boolean
 <a href="#">Link to this property</a>
 
 query\_id: optional number
+
+ID of the created logo query.
 
 <a href="#">Link to this property</a>
 
@@ -88,6 +90,8 @@ LogoGetResponse = array of object {id, r2\_path, similarity\_threshold, 4 more }
 
 id: number
 
+ID of the logo query.
+
 <a href="#">Link to this property</a>
 
 r2\_path: string
@@ -96,13 +100,19 @@ r2\_path: string
 
 similarity\_threshold: number
 
+Minimum similarity score (0-1) required for a visual match.
+
 <a href="#">Link to this property</a>
 
 tag: string
 
+Name of the logo query.
+
 <a href="#">Link to this property</a>
 
 uploaded\_at: string
+
+When the logo was uploaded.
 
 <a href="#">Link to this property</a>
 

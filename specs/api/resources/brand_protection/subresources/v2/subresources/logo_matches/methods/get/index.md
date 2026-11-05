@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/matches
 
-Get paginated list of logo matches for a specific brand protection logo query
+Lists images that matched a saved logo query, most recently matched first by default. Set `download=true` to include each matched image as base64 data.
 
 ##### Security
 
@@ -50,19 +50,27 @@ minLength1
 
 query\_id: string
 
+ID of the logo query whose matches to list.
+
 minLength1
 
 [Link to this property](#)%20brand_protection.v2.logo_matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20query_id%20%3E%20(schema)>)
 
 download: optional string
 
+Set to `true` to include each matched image as base64 data in `image_data`, with its MIME type in `content_type`.
+
 [Link to this property](#)%20brand_protection.v2.logo_matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20download%20%3E%20(schema)>)
 
 limit: optional string
 
+Maximum number of matches to return. Defaults to 50.
+
 [Link to this property](#)%20brand_protection.v2.logo_matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
 
 offset: optional string
+
+Number of matches to skip, for pagination. Defaults to 0.
 
 [Link to this property](#)%20brand_protection.v2.logo_matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
@@ -72,7 +80,7 @@ offset: optional string
 
 order: optional "asc"or "desc"
 
-Sort order. Options: ‘asc’ (ascending) or ‘desc’ (descending)
+Sort direction: <code>asc</code> or <code>desc</code>. Defaults to <code>desc</code>.
 
 </summary>
 
@@ -96,7 +104,7 @@ One of the following:
 
 orderBy: optional "matchedAt"or "domain"or "similarityScore"or "registrar"
 
-Column to sort by. Options: ‘matchedAt’, ‘domain’, ‘similarityScore’, or ‘registrar’
+Field to sort by: <code>matchedAt</code>, <code>domain</code>, <code>similarityScore</code>, or <code>registrar</code>. Defaults to <code>matchedAt</code>.
 
 </summary>
 
@@ -134,25 +142,37 @@ matches: array of object {id, domain, matched\_at, 6 more }
 
 id: number
 
+ID of the logo match.
+
 <a href="#">Link to this property</a>
 
 domain: string
+
+Domain where the matching image was found, if known.
 
 <a href="#">Link to this property</a>
 
 matched\_at: string
 
+When the match was recorded.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the logo query that produced this match.
 
 <a href="#">Link to this property</a>
 
 registrar: string
 
+Registrar of <code>domain</code>, if known.
+
 <a href="#">Link to this property</a>
 
 similarity\_score: number
+
+Visual similarity between the matched image and the query logo. Higher is closer.
 
 <a href="#">Link to this property</a>
 
@@ -162,9 +182,13 @@ url\_scan\_id: string
 
 content\_type: optional string
 
+MIME type of the matched image (only present when download=true)
+
 <a href="#">Link to this property</a>
 
 image\_data: optional string
+
+Base64-encoded matched image (only present when download=true)
 
 <a href="#">Link to this property</a>
 

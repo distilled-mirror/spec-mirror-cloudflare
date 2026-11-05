@@ -72,7 +72,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -126,7 +142,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -180,7 +212,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -234,7 +282,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -288,7 +352,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -342,7 +422,23 @@ name: string
 
 <a href="#">Link to this property</a>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+<details>
+
+<summary>
+
+position: object {after, before }
+
+</summary>
+
+after: optional string
+
+<a href="#">Link to this property</a>
+
+before: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

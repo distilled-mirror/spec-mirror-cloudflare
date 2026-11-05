@@ -22,6 +22,10 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/realtime/kit/{app\_id}/webhooks
 
+##### [Fetch all supported webhook events](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/get_all_webhooks)
+
+GET/accounts/{account\_id}/realtime/kit/{app\_id}/webhooks/all
+
 ##### [Add a webhook](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/create_webhook)
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/webhooks
@@ -167,6 +171,72 @@ success: boolean
 </details>
 
 [Link to this property](#)%20realtime_kit.webhooks%20%3E%20(model)%20webhook_get_webhooks_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+WebhookGetAllWebhooksResponse object {data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: array of "meeting.started"or "meeting.ended"or "meeting.participantJoined"or 6 more
+
+</summary>
+
+One of the following:
+
+"meeting.started"
+
+<a href="#">Link to this property</a>
+
+"meeting.ended"
+
+<a href="#">Link to this property</a>
+
+"meeting.participantJoined"
+
+<a href="#">Link to this property</a>
+
+"meeting.participantLeft"
+
+<a href="#">Link to this property</a>
+
+"meeting.chatSynced"
+
+<a href="#">Link to this property</a>
+
+"recording.statusUpdate"
+
+<a href="#">Link to this property</a>
+
+"livestreaming.statusUpdate"
+
+<a href="#">Link to this property</a>
+
+"meeting.transcript"
+
+<a href="#">Link to this property</a>
+
+"meeting.summary"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.webhooks%20%3E%20(model)%20webhook_get_all_webhooks_response%20%3E%20(schema)>)
 
 <details>
 

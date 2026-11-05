@@ -170,7 +170,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 64 more
+result: optional <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 65 more
 
 0-RTT session resumption enabled for this zone.
 
@@ -6286,6 +6286,94 @@ When the client requesting the image supports the WebP image codec, and WebP off
 </summary>
 
 id: "webp"
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: stringor numberor booleanor 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+editable: optional trueor false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+<a href="#">Link to this property</a>
+
+false
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ZonesAVIF object {id, value, editable, modified\_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
 
 ID of the zone setting.
 

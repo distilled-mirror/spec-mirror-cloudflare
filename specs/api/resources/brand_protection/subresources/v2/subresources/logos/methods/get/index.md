@@ -1,5 +1,5 @@
 ---
-title: Get logo queries
+title: List logo queries
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get logo queries
+# List logo queries
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
-Get all saved brand protection logo queries for an account. Optionally specify id to get a single query. Set download=true to include base64-encoded image data.
+Lists the account’s saved logo queries. Set `id` to return a single query object instead of an array. Set `download=true` to include each logo image as base64 data.
 
 ##### Security
 
@@ -50,19 +50,21 @@ minLength1
 
 id: optional string
 
-Optional query ID to retrieve a specific logo query
+ID of a logo query. When set, `result` is that single query object instead of an array.
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20id%20%3E%20(schema)>)
 
 download: optional string
 
-If true, include base64-encoded image data in the response
+Set to `true` to include each logo image as base64 data in `image_data`, with its MIME type in `content_type`.
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20download%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
 id: number
+
+ID of the logo query.
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_get_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20id>)
 
@@ -72,13 +74,19 @@ r2\_path: string
 
 similarity\_threshold: number
 
+Minimum similarity score (0-1) required for a visual match.
+
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_get_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20similarity_threshold>)
 
 tag: string
 
+Name of the logo query.
+
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_get_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20tag>)
 
 uploaded\_at: string
+
+When the logo was uploaded.
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_get_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20uploaded_at>)
 
@@ -94,7 +102,7 @@ Base64-encoded image data (only present when download=true)
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_get_response%20%3E%20(schema)%20%3E%20(items)%20%3E%20(property)%20image_data>)
 
-### Get logo queries
+### List logo queries
 
 HTTP
 

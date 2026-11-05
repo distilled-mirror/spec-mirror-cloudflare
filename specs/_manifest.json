@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4043,
+  "count": 4052,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -9895,6 +9895,14 @@
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/kick_participants/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_all_participants",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_all_participants/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_participants",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_participants/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/analytics",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/analytics/index.md"
     },
@@ -9911,8 +9919,16 @@
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/get/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/get_app_by_id",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/get_app_by_id/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/post",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/post/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/update_app_by_id",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/apps/methods/update_app_by_id/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams",
@@ -9935,12 +9951,20 @@
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_analytics_daywise/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_meeting",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_meeting/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_session_id",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_session_id/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_for_livestream_id",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_for_livestream_id/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_sessions_for_session",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_sessions_for_session/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_meeting_active_livestreams",
@@ -10001,6 +10025,14 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/replace_meeting_by_id",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/replace_meeting_by_id/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/replace_participant",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/replace_participant/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/revoke_participant_token",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/revoke_participant_token/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/meetings/methods/update_meeting_by_id",
@@ -10117,6 +10149,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/edit_webhook",
       "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/edit_webhook/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/get_all_webhooks",
+      "markdown": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/get_all_webhooks/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/realtime_kit/subresources/webhooks/methods/get_webhook_by_id",

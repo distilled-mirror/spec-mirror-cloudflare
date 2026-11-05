@@ -6634,7 +6634,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/tags/{tag\_uuid}/indicators
 
 <summary>
 
-IndicatorListResponse object {indicators, pagination }
+IndicatorListResponse object {indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -6775,6 +6775,18 @@ totalPages: number
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+failedShardCount: optional number
+
+Number of shards that failed or timed out. Present only with partialResults.
+
+<a href="#">Link to this property</a>
+
+partialResults: optional boolean
+
+Present and true when one or more shards failed or timed out. Indicators from those shards may be missing from this page and from totalCount.
 
 <a href="#">Link to this property</a>
 
@@ -6796,7 +6808,7 @@ GET/accounts/{account\_id}/cloudforce-one/events/dataset/{dataset\_id}/tags/{tag
 
 <summary>
 
-ByDatasetListResponse object {indicators, pagination }
+ByDatasetListResponse object {indicators, pagination, failedShardCount, partialResults }
 
 </summary>
 
@@ -6937,6 +6949,18 @@ totalPages: number
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+failedShardCount: optional number
+
+Number of shards that failed or timed out. Present only with partialResults.
+
+<a href="#">Link to this property</a>
+
+partialResults: optional boolean
+
+Present and true when one or more shards failed or timed out. Indicators from those shards may be missing from this page and from totalCount.
 
 <a href="#">Link to this property</a>
 

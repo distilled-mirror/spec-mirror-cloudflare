@@ -44,25 +44,37 @@ matches: array of object {id, domain, matched\_at, 6 more }
 
 id: number
 
+ID of the logo match.
+
 <a href="#">Link to this property</a>
 
 domain: string
+
+Domain where the matching image was found, if known.
 
 <a href="#">Link to this property</a>
 
 matched\_at: string
 
+When the match was recorded.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the logo query that produced this match.
 
 <a href="#">Link to this property</a>
 
 registrar: string
 
+Registrar of <code>domain</code>, if known.
+
 <a href="#">Link to this property</a>
 
 similarity\_score: number
+
+Visual similarity between the matched image and the query logo. Higher is closer.
 
 <a href="#">Link to this property</a>
 
@@ -72,9 +84,13 @@ url\_scan\_id: string
 
 content\_type: optional string
 
+MIME type of the matched image (only present when download=true)
+
 <a href="#">Link to this property</a>
 
 image\_data: optional string
+
+Base64-encoded matched image (only present when download=true)
 
 <a href="#">Link to this property</a>
 

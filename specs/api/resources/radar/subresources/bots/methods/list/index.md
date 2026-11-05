@@ -64,23 +64,15 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 <summary>
 
-botCategory: optional "SEARCH\_ENGINE\_CRAWLER"or "SEARCH\_ENGINE\_OPTIMIZATION"or "MONITORING\_AND\_ANALYTICS"or 13 more
+botCategory: optional "ACADEMIC\_RESEARCH"or "ADVERTISING\_AND\_MARKETING"or "AI\_ASSISTANT"or 15 more
 
-Filters results by bot category.
+Filters results by bot category. <code>ACCESSIBILITY</code>, <code>AGGREGATOR</code>, <code>AI_SEARCH</code>, <code>ARCHIVER</code>, <code>SOCIAL_MEDIA_MARKETING</code> and <code>WEBHOOKS</code> are deprecated legacy categories that match only that exact category.
 
 </summary>
 
 One of the following:
 
-"SEARCH\_ENGINE\_CRAWLER"
-
-<a href="#">Link to this property</a>
-
-"SEARCH\_ENGINE\_OPTIMIZATION"
-
-<a href="#">Link to this property</a>
-
-"MONITORING\_AND\_ANALYTICS"
+"ACADEMIC\_RESEARCH"
 
 <a href="#">Link to this property</a>
 
@@ -88,7 +80,27 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"SOCIAL\_MEDIA\_MARKETING"
+"AI\_ASSISTANT"
+
+<a href="#">Link to this property</a>
+
+"AI\_CRAWLER"
+
+<a href="#">Link to this property</a>
+
+"COMMERCE"
+
+<a href="#">Link to this property</a>
+
+"FEED\_FETCHER"
+
+<a href="#">Link to this property</a>
+
+"MONITORING\_AND\_ANALYTICS"
+
+<a href="#">Link to this property</a>
+
+"OTHER"
 
 <a href="#">Link to this property</a>
 
@@ -96,7 +108,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"ACADEMIC\_RESEARCH"
+"SEARCH\_ENGINE\_CRAWLER"
+
+<a href="#">Link to this property</a>
+
+"SEARCH\_ENGINE\_OPTIMIZATION"
 
 <a href="#">Link to this property</a>
 
@@ -108,23 +124,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"WEBHOOKS"
-
-<a href="#">Link to this property</a>
-
-"FEED\_FETCHER"
-
-<a href="#">Link to this property</a>
-
-"AI\_CRAWLER"
-
-<a href="#">Link to this property</a>
-
 "AGGREGATOR"
-
-<a href="#">Link to this property</a>
-
-"AI\_ASSISTANT"
 
 <a href="#">Link to this property</a>
 
@@ -133,6 +133,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ARCHIVER"
+
+<a href="#">Link to this property</a>
+
+"SOCIAL\_MEDIA\_MARKETING"
+
+<a href="#">Link to this property</a>
+
+"WEBHOOKS"
 
 <a href="#">Link to this property</a>
 
@@ -234,13 +242,31 @@ result: object {bots }
 
 <summary>
 
-bots: array of object {category, description, kind, 4 more }
+bots: array of object {accessLevel, categories, category, 7 more }
 
 </summary>
 
-category: string
+accessLevel: string
 
-The category of the bot.
+Who can operate the bot: DIRECT bots reach origins under their own identity, while INTERMEDIARY bots forward requests on behalf of another agent or a person.
+
+<a href="#">Link to this property</a>
+
+categories: array of string
+
+The categories of the bot.
+
+<a href="#">Link to this property</a>
+
+Deprecatedcategory: string
+
+The category of the bot. Deprecated: use <code>categories</code>.
+
+<a href="#">Link to this property</a>
+
+contentUse: string
+
+How the bot uses the content it fetches (e.g., immediate, reference or full).
 
 <a href="#">Link to this property</a>
 
@@ -308,7 +334,12 @@ curl https://api.cloudflare.com/client/v4/radar/bots \
   "result": {
     "bots": [
       {
+        "accessLevel": "DIRECT",
+        "categories": [
+          "AI_CRAWLER"
+        ],
         "category": "AI_CRAWLER",
+        "contentUse": "full",
         "description": "OpenAI/ChatGPT's web crawler",
         "kind": "AGENT",
         "name": "GPTBot",
@@ -333,7 +364,12 @@ curl https://api.cloudflare.com/client/v4/radar/bots \
   "result": {
     "bots": [
       {
+        "accessLevel": "DIRECT",
+        "categories": [
+          "AI_CRAWLER"
+        ],
         "category": "AI_CRAWLER",
+        "contentUse": "full",
         "description": "OpenAI/ChatGPT's web crawler",
         "kind": "AGENT",
         "name": "GPTBot",

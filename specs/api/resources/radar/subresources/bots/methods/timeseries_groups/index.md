@@ -142,23 +142,15 @@ Filters results by bot name.
 
 <summary>
 
-botCategory: optional array of "SEARCH\_ENGINE\_CRAWLER"or "SEARCH\_ENGINE\_OPTIMIZATION"or "MONITORING\_AND\_ANALYTICS"or 13 more
+botCategory: optional array of "ACADEMIC\_RESEARCH"or "ADVERTISING\_AND\_MARKETING"or "AI\_ASSISTANT"or 15 more
 
-Filters results by bot category.
+Filters results by bot category. <code>ACCESSIBILITY</code>, <code>AGGREGATOR</code>, <code>AI_SEARCH</code>, <code>ARCHIVER</code>, <code>SOCIAL_MEDIA_MARKETING</code> and <code>WEBHOOKS</code> are deprecated legacy categories that match only that exact category.
 
 </summary>
 
 One of the following:
 
-"SEARCH\_ENGINE\_CRAWLER"
-
-<a href="#">Link to this property</a>
-
-"SEARCH\_ENGINE\_OPTIMIZATION"
-
-<a href="#">Link to this property</a>
-
-"MONITORING\_AND\_ANALYTICS"
+"ACADEMIC\_RESEARCH"
 
 <a href="#">Link to this property</a>
 
@@ -166,7 +158,27 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"SOCIAL\_MEDIA\_MARKETING"
+"AI\_ASSISTANT"
+
+<a href="#">Link to this property</a>
+
+"AI\_CRAWLER"
+
+<a href="#">Link to this property</a>
+
+"COMMERCE"
+
+<a href="#">Link to this property</a>
+
+"FEED\_FETCHER"
+
+<a href="#">Link to this property</a>
+
+"MONITORING\_AND\_ANALYTICS"
+
+<a href="#">Link to this property</a>
+
+"OTHER"
 
 <a href="#">Link to this property</a>
 
@@ -174,7 +186,11 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"ACADEMIC\_RESEARCH"
+"SEARCH\_ENGINE\_CRAWLER"
+
+<a href="#">Link to this property</a>
+
+"SEARCH\_ENGINE\_OPTIMIZATION"
 
 <a href="#">Link to this property</a>
 
@@ -186,23 +202,7 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-"WEBHOOKS"
-
-<a href="#">Link to this property</a>
-
-"FEED\_FETCHER"
-
-<a href="#">Link to this property</a>
-
-"AI\_CRAWLER"
-
-<a href="#">Link to this property</a>
-
 "AGGREGATOR"
-
-<a href="#">Link to this property</a>
-
-"AI\_ASSISTANT"
 
 <a href="#">Link to this property</a>
 
@@ -211,6 +211,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "ARCHIVER"
+
+<a href="#">Link to this property</a>
+
+"SOCIAL\_MEDIA\_MARKETING"
+
+<a href="#">Link to this property</a>
+
+"WEBHOOKS"
 
 <a href="#">Link to this property</a>
 

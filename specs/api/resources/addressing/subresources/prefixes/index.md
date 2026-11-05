@@ -48,7 +48,7 @@ POST/accounts/{account\_id}/addressing/prefixes/{prefix\_id}/validate
 
 <summary>
 
-Prefix object {id, account\_id, advertised, 15 more }
+Prefix object {id, account\_id, advertised, 17 more }
 
 </summary>
 
@@ -88,13 +88,73 @@ formatdate-time
 
 approved: optional string
 
-Approval state of the prefix (P = pending, V = active).
+Approval state of the prefix (P = pending, V = approved). Approval does not advertise the prefix or activate traffic.
 
 <a href="#">Link to this property</a>
 
 asn: optional number
 
-Autonomous System Number (ASN) the prefix will be advertised under.
+Autonomous System Number (ASN) the prefix will be advertised under. Use 13335 for Cloudflare’s ASN, or your own ASN as an integer without the AS prefix. The IRR route and RPKI ROA must authorize this ASN.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+asn\_ownership\_validation\_state: optional "pending"or "valid"or "missing"or "invalid"
+
+State of ASN ownership validation for a customer-owned Autonomous System Number (ASN). Returned when an ASN ownership validation result exists. Omitted when validation does not apply, such as for Cloudflare-owned ASNs. Verification is reused for prefixes with the same account and ASN. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#asn-ownership-validation">ASN ownership validation states</a> for state meanings and resolutions.
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"valid"
+
+<a href="#">Link to this property</a>
+
+"missing"
+
+<a href="#">Link to this property</a>
+
+"invalid"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+aspa\_validation\_state: optional "pending"or "valid"or "invalid"
+
+State of Autonomous System Provider Authorization (ASPA) validation for a customer-owned ASN. Returned when an ASPA validation result exists. Publishing an ASPA is optional. A published ASPA must authorize AS13335 as a provider. An invalid result blocks approval. If omitted, no ASPA validation result is available. Omission does not indicate successful validation or confirm that no ASPA exists. Refer to <a href="https://developers.cloudflare.com/byoip/troubleshooting/prefix-validation/#aspa-validation">ASPA validation states</a> for state meanings and resolutions, and <a href="https://developers.cloudflare.com/byoip/concepts/route-filtering-rpki/#aspa-authorization">ASPA authorization</a> for publication guidance.
+
+</summary>
+
+One of the following:
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"valid"
+
+<a href="#">Link to this property</a>
+
+"invalid"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -168,7 +228,7 @@ State of one kind of validation for an IP prefix.
 
 ownership\_validation\_token: optional string
 
-Token provided to demonstrate ownership of the prefix.
+Token used to verify ownership of the prefix and, when applicable, its ASN. Use the same token for both checks. Refer to the <a href="https://developers.cloudflare.com/byoip/get-started/">BYOIP onboarding guide</a> for verification instructions.
 
 <a href="#">Link to this property</a>
 

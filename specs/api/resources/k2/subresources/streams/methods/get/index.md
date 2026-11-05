@@ -224,45 +224,13 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled } or object {enabled }
+worker\_binding: object {enabled }
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: false
+enabled: boolean
 
 Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: true
-
-Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -324,7 +292,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/k2/streams/$STREA
     "name": "my_k2_stream",
     "retention_seconds": 604800,
     "worker_binding": {
-      "enabled": false
+      "enabled": true
     }
   },
   "success": true
@@ -366,7 +334,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/k2/streams/$STREA
     "name": "my_k2_stream",
     "retention_seconds": 604800,
     "worker_binding": {
-      "enabled": false
+      "enabled": true
     }
   },
   "success": true

@@ -1,0 +1,152 @@
+---
+title: Mute all participants
+---
+
+[Skip to content](#_top)
+
+[API Reference](https://developers.cloudflare.com/api)
+
+[Realtime Kit](https://developers.cloudflare.com/api/resources/realtime_kit)
+
+[Active Session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session)
+
+Copy Markdown
+
+Open in **Claude**Open in **ChatGPT**Open in **Cursor**
+
+---
+
+**Copy Markdown****View as Markdown**
+
+# Mute all participants
+
+POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/mute-all
+
+Mutes all participants of an active session for the given meeting ID.
+
+##### Security
+
+<details>
+
+<summary>API Token</summary>
+
+
+
+The preferred authorization scheme for interacting with the Cloudflare API. <a href="https://developers.cloudflare.com/fundamentals/api/get-started/create-token/">Create a token</a>.
+
+**Example:**<code>Authorization: Bearer Sn3lZJTBX6kkg7OdcBUAxOO963GEIyGQqnFTOFYY</code>
+
+</details>
+
+<details>
+
+<summary>API Email + API Key</summary>
+
+
+
+The previous authorization scheme for interacting with the Cloudflare API, used in conjunction with a Global API key.
+
+**Example:**<code>X-Auth-Email: user@example.com</code>
+
+The previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API keys.
+
+**Example:**<code>X-Auth-Key: 144c9defac04969c7bfad8efaa8ea194</code>
+
+</details>
+
+##### Accepted Permissions (at least one required)
+
+`Realtime Admin``Realtime`
+
+##### P ath ParametersExpand Collapse
+
+account\_id: string
+
+The account identifier tag.
+
+maxLength32
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_all_participants%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
+
+app\_id: string
+
+The app identifier tag.
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_all_participants%20%3E%20(params)%20default%20%3E%20(param)%20app_id%20%3E%20(schema)>)
+
+meeting\_id: string
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_all_participants%20%3E%20(params)%20default%20%3E%20(param)%20meeting_id%20%3E%20(schema)>)
+
+##### Body ParametersJSONExpand Collapse
+
+allow\_unmute: optional boolean
+
+if false, participants won’t be able to unmute themselves after they are muted
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(method)%20mute_all_participants%20%3E%20(params)%200%20%3E%20(param)%20allow_unmute%20%3E%20(schema)>)
+
+##### ReturnsExpand Collapse
+
+<details>
+
+<summary>
+
+data: optional object {action, muted\_participants\_count }
+
+</summary>
+
+action: optional string
+
+<a href="#">Link to this property</a>
+
+muted\_participants\_count: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(model)%20active_session_mute_all_participants_response%20%3E%20(schema)%20%3E%20(property)%20data>)
+
+success: optional boolean
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(model)%20active_session_mute_all_participants_response%20%3E%20(schema)%20%3E%20(property)%20success>)
+
+### Mute all participants
+
+HTTP
+
+HTTPTypeScriptPythonGoTerraform
+
+```
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP_ID/meetings/$MEETING_ID/active-session/mute-all \
+    -H 'Content-Type: application/json' \
+    -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+    -d '{}'
+```
+
+200 example
+
+```
+{
+  "data": {
+    "action": "action",
+    "muted_participants_count": 0
+  },
+  "success": true
+}
+```
+
+##### Returns Examples
+
+200 example
+
+```
+{
+  "data": {
+    "action": "action",
+    "muted_participants_count": 0
+  },
+  "success": true
+}
+```

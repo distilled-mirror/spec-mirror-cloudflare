@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/radar/search/global
 
-Searches for locations, autonomous systems, reports, bots, certificate logs, certificate authorities, industries and verticals. Location names can be localized by sending an `Accept-Language` HTTP header with a BCP 47 language tag (e.g., `Accept-Language: pt-PT`). The full quality-value chain is supported (e.g., `pt-PT,pt;q=0.9,en;q=0.8`).
+Searches for locations, autonomous systems, reports, bots, bot operators, certificate logs, certificate authorities, industries and verticals. Location names can be localized by sending an `Accept-Language` HTTP header with a BCP 47 language tag (e.g., `Accept-Language: pt-PT`). The full quality-value chain is supported (e.g., `pt-PT,pt;q=0.9,en;q=0.8`).
 
 ##### Security
 
@@ -70,7 +70,7 @@ String used to perform the search operation.
 
 <summary>
 
-exclude: optional array of "ADM1S"or "ASNS"or "BOTS"or 9 more
+exclude: optional array of "ADM1S"or "ASNS"or "BOTS"or 10 more
 
 Search types excluded from results.
 
@@ -87,6 +87,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "BOTS"
+
+<a href="#">Link to this property</a>
+
+"BOT\_OPERATORS"
 
 <a href="#">Link to this property</a>
 
@@ -158,7 +162,7 @@ One of the following:
 
 <summary>
 
-include: optional array of "ADM1S"or "ASNS"or "BOTS"or 9 more
+include: optional array of "ADM1S"or "ASNS"or "BOTS"or 10 more
 
 Search types included in results.
 
@@ -175,6 +179,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "BOTS"
+
+<a href="#">Link to this property</a>
+
+"BOT\_OPERATORS"
 
 <a href="#">Link to this property</a>
 

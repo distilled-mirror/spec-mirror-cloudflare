@@ -76,7 +76,7 @@ maxLength32
 
 <summary>
 
-body: array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 61 more
+body: array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 62 more
 
 </summary>
 
@@ -6007,6 +6007,94 @@ formatdate-time
 
 <summary>
 
+ZonesAVIF object {id, value, editable, modified\_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: stringor numberor booleanor 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+editable: optional trueor false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+<a href="#">Link to this property</a>
+
+false
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 Websocket object {id, value, editable, modified\_on }
 
 WebSockets are open connections sustained between the client and the origin server. Inside a WebSockets connection, the client and the origin can pass data back and forth without having to reestablish sessions. This makes exchanging data within a WebSockets connection fast. WebSockets are often used for real-time applications such as live chat and gaming. For more information refer to <a href="https://support.cloudflare.com/hc/en-us/articles/200169466-Can-I-use-Cloudflare-with-WebSockets-">Can I use Cloudflare with Websockets</a>.
@@ -6191,7 +6279,7 @@ Whether the API call was successful
 
 <summary>
 
-result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 63 more
+result: optional array of <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 64 more
 
 </summary>
 
@@ -12217,6 +12305,94 @@ When the client requesting the image supports the WebP image codec, and WebP off
 </summary>
 
 id: "webp"
+
+ID of the zone setting.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+value: stringor numberor booleanor 2 more
+
+Current value of the zone setting.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+editable: optional trueor false
+
+Whether or not this setting can be modified for this zone (based on your Cloudflare plan level).
+
+</summary>
+
+One of the following:
+
+true
+
+<a href="#">Link to this property</a>
+
+false
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+last time this setting was modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+ZonesAVIF object {id, value, editable, modified\_on }
+
+When the client requesting the image supports the AVIF image codec, and AVIF offers a performance advantage over the original image format, Cloudflare will serve an AVIF version of the original image.
+
+</summary>
+
+id: "avif"
 
 ID of the zone setting.
 

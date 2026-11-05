@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries/{query\_id}
 
-Delete a saved brand protection logo query. Returns 404 if the query ID doesn’t exist.
+Permanently deletes a saved logo query and all of its matches. If the query does not exist in this account, the request fails with error code 404.
 
 ##### Security
 
@@ -47,6 +47,8 @@ minLength1
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 query\_id: string
+
+ID of the logo query.
 
 minLength1
 

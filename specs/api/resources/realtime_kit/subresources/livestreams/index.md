@@ -22,6 +22,14 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/realtime/kit/{app\_id}/livestreams
 
+##### [Fetch livestream session details for a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_session_details_for_meeting)
+
+GET/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/livestream
+
+##### [Fetch livestream session details using a session ID](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/get_livestream_sessions_for_session)
+
+GET/accounts/{account\_id}/realtime/kit/{app\_id}/sessions/{session\_id}/livestream-sessions
+
 ##### [Stop livestreaming a meeting](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/livestreams/methods/stop_livestreaming_a_meeting)
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-livestream/stop
@@ -221,6 +229,418 @@ success: boolean
 </details>
 
 [Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_all_livestreams_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamSessionDetailsForMeetingResponse object {data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object {data, paging }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object {livestream, sessions }
+
+</summary>
+
+<details>
+
+<summary>
+
+livestream: object {id, created\_at, disabled, 9 more }
+
+</summary>
+
+id: string
+
+ID of the livestream.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+Timestamp the livestream was created at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+disabled: boolean
+
+Specifies if the livestream is disabled.
+
+<a href="#">Link to this property</a>
+
+external\_id: string
+
+ID of the underlying Cloudflare Stream live input.
+
+<a href="#">Link to this property</a>
+
+ingest\_server: string
+
+The server URL to which the RTMP encoder sends the video and audio data.
+
+<a href="#">Link to this property</a>
+
+manual\_ingest: boolean
+
+Specifies if the livestream is ingested manually by an RTMP encoder.
+
+<a href="#">Link to this property</a>
+
+meeting\_id: string
+
+ID of the meeting being livestreamed, if any.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+Name of the livestream.
+
+<a href="#">Link to this property</a>
+
+playback\_url: string
+
+The web address that viewers can use to watch the livestream.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+status: "LIVE"or "IDLE"or "ERRORED"or 2 more
+
+Status of the livestream.
+
+</summary>
+
+One of the following:
+
+"LIVE"
+
+<a href="#">Link to this property</a>
+
+"IDLE"
+
+<a href="#">Link to this property</a>
+
+"ERRORED"
+
+<a href="#">Link to this property</a>
+
+"INVOKED"
+
+<a href="#">Link to this property</a>
+
+"METRICS\_READY"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+stream\_key: string
+
+Unique key for accessing each livestream. Empty if the livestream is disabled.
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+Timestamp the livestream was last updated at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sessions: array of object {id, created\_at, err\_message, 7 more }
+
+</summary>
+
+id: string
+
+ID of the livestream session.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+Timestamp the livestream session was created at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+err\_message: string
+
+Error message, if the livestream session failed.
+
+<a href="#">Link to this property</a>
+
+ingest\_seconds: number
+
+The time duration for which the input was given or the meeting was streamed.
+
+<a href="#">Link to this property</a>
+
+invoked\_time: string
+
+Timestamp the livestream session was invoked at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+livestream\_id: string
+
+ID of the livestream.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+started\_time: string
+
+Timestamp the livestream session started at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+stopped\_time: string
+
+Timestamp the livestream session stopped at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+viewer\_seconds: number
+
+The total view time for which the viewers watched the stream.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paging: object {end\_offset, start\_offset, total\_count }
+
+</summary>
+
+end\_offset: number
+
+<a href="#">Link to this property</a>
+
+start\_offset: number
+
+<a href="#">Link to this property</a>
+
+total\_count: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_livestream_session_details_for_meeting_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+LivestreamGetLivestreamSessionsForSessionResponse object {data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: object {data, paging }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: array of object {id, created\_at, err\_message, 7 more }
+
+</summary>
+
+id: string
+
+ID of the livestream session.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+Timestamp the livestream session was created at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+err\_message: string
+
+Error message, if the livestream session failed.
+
+<a href="#">Link to this property</a>
+
+ingest\_seconds: number
+
+The time duration for which the input was given or the meeting was streamed.
+
+<a href="#">Link to this property</a>
+
+invoked\_time: string
+
+Timestamp the livestream session was invoked at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+livestream\_id: string
+
+ID of the livestream.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+started\_time: string
+
+Timestamp the livestream session started at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+stopped\_time: string
+
+Timestamp the livestream session stopped at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+Timestamp the livestream session was last updated at, in ISO format.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+viewer\_seconds: number
+
+The total view time for which the viewers watched the stream.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+paging: object {end\_offset, start\_offset, total\_count }
+
+</summary>
+
+end\_offset: number
+
+<a href="#">Link to this property</a>
+
+start\_offset: number
+
+<a href="#">Link to this property</a>
+
+total\_count: number
+
+minimum0
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.livestreams%20%3E%20(model)%20livestream_get_livestream_sessions_for_session_response%20%3E%20(schema)>)
 
 <details>
 

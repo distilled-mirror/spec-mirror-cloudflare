@@ -144,7 +144,33 @@ boolean
 
 <a href="#">Link to this property</a>
 
-array of unknown
+<details>
+
+<summary>
+
+array of stringor booleanor numberor unknown
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+unknown
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

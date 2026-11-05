@@ -1,5 +1,5 @@
 ---
-title: Insert logo query
+title: Create logo query
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Insert logo query
+# Create logo query
 
 POST/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
-Create a new saved brand protection logo query for visual similarity matching
+Uploads a logo and creates a saved logo query that finds visually similar images on scanned websites. The tag must be unique among the account’s logo queries. By default, the new query also searches previously scanned images (see `search_lookback`). Creation fails when the account has reached its Brand Protection query limit, which counts domain and logo queries together.
 
 ##### Security
 
@@ -50,7 +50,7 @@ minLength1
 
 image\_data: string
 
-Base64 encoded image data. Can include data URI prefix (e.g., ‘data:image/png;base64,…’) or just the base64 string.
+Base64 encoded image data. Can include data URI prefix (e.g., ‘data:image/png;base64,…’) or just the base64 string. Supported formats: PNG, JPEG, GIF, WebP, BMP, and SVG. ICO is also accepted when the data includes a `data:image/x-icon;base64,` prefix.
 
 minLength1
 
@@ -68,7 +68,7 @@ minimum0
 
 tag: string
 
-Unique identifier for the logo query
+Name of the logo query. Must be unique among the account’s logo queries.
 
 minLength1
 
@@ -76,7 +76,7 @@ minLength1
 
 search\_lookback: optional boolean
 
-If true, search historic scanned images for matches above the similarity threshold
+If true, also search previously scanned images for matches above the similarity threshold. Defaults to `true`.
 
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20search_lookback%20%3E%20(schema)>)
 
@@ -92,9 +92,11 @@ success: boolean
 
 query\_id: optional number
 
+ID of the created logo query.
+
 [Link to this property](#)%20brand_protection.v2.logos%20%3E%20(model)%20logo_create_response%20%3E%20(schema)%20%3E%20(property)%20query_id>)
 
-### Insert logo query
+### Create logo query
 
 HTTP
 

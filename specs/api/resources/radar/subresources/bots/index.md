@@ -52,13 +52,31 @@ BotListResponse object {bots }
 
 <summary>
 
-bots: array of object {category, description, kind, 4 more }
+bots: array of object {accessLevel, categories, category, 7 more }
 
 </summary>
 
-category: string
+accessLevel: string
 
-The category of the bot.
+Who can operate the bot: DIRECT bots reach origins under their own identity, while INTERMEDIARY bots forward requests on behalf of another agent or a person.
+
+<a href="#">Link to this property</a>
+
+categories: array of string
+
+The categories of the bot.
+
+<a href="#">Link to this property</a>
+
+Deprecatedcategory: string
+
+The category of the bot. Deprecated: use <code>categories</code>.
+
+<a href="#">Link to this property</a>
+
+contentUse: string
+
+How the bot uses the content it fetches (e.g., immediate, reference or full).
 
 <a href="#">Link to this property</a>
 
@@ -116,19 +134,43 @@ BotGetResponse object {bot }
 
 <summary>
 
-bot: object {category, description, kind, 7 more }
+bot: object {accessLevel, categories, category, 12 more }
 
 </summary>
 
-category: string
+accessLevel: string
 
-The category of the bot.
+Who can operate the bot: DIRECT bots reach origins under their own identity, while INTERMEDIARY bots forward requests on behalf of another agent or a person.
+
+<a href="#">Link to this property</a>
+
+categories: array of string
+
+The categories of the bot.
+
+<a href="#">Link to this property</a>
+
+Deprecatedcategory: string
+
+The category of the bot. Deprecated: use <code>categories</code>.
+
+<a href="#">Link to this property</a>
+
+contentUse: string
+
+How the bot uses the content it fetches (e.g., immediate, reference or full).
 
 <a href="#">Link to this property</a>
 
 description: string
 
 A summary for the bot (e.g., purpose).
+
+<a href="#">Link to this property</a>
+
+documentationUrl: string
+
+The link to the bot documentation.
 
 <a href="#">Link to this property</a>
 
@@ -150,9 +192,15 @@ The organization that owns and operates the bot.
 
 <a href="#">Link to this property</a>
 
-operatorUrl: string
+DeprecatedoperatorUrl: string
 
-The link to the bot documentation.
+The link to the bot documentation. Deprecated: use <code>documentationUrl</code>.
+
+<a href="#">Link to this property</a>
+
+operatorWebsiteUrl: string
+
+The link to the operator’s website.
 
 <a href="#">Link to this property</a>
 

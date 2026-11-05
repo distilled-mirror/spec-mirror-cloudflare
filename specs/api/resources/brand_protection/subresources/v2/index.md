@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 #### V2Queries
 
-##### [Get queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/queries/methods/get)
+##### [List domain queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/queries/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/queries
 
@@ -186,7 +186,7 @@ updated: string
 
 #### V2Matches
 
-##### [List saved query matches](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/matches/methods/get)
+##### [List domain matches](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/matches/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/matches
 
@@ -204,15 +204,19 @@ MatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {domain, first\_seen, public\_scans, 6 more }
+matches: array of object {domain, first\_seen, public\_scans, 7 more }
 
 </summary>
 
 domain: string
 
+The matched domain name.
+
 <a href="#">Link to this property</a>
 
 first\_seen: string
+
+When the domain was matched. For multi-query requests, the most recent match time across the requested queries.
 
 <a href="#">Link to this property</a>
 
@@ -234,6 +238,8 @@ submission\_id: string
 
 registrar: string
 
+Registrar of the matched domain, if known.
+
 <a href="#">Link to this property</a>
 
 scan\_status: string
@@ -251,6 +257,12 @@ source: string
 dismissed: optional boolean
 
 Whether the match is dismissed. Only present for single-query requests. For multi-query requests, use the dismissed field in each match\_details entry.
+
+<a href="#">Link to this property</a>
+
+domain\_id: optional number
+
+ID of the matched domain. Present only when <code>include_domain_id=true</code>. Use it with <code>query_id</code> to dismiss or undismiss the match.
 
 <a href="#">Link to this property</a>
 
@@ -272,9 +284,13 @@ Individual dismissed state for this specific match.
 
 match\_id: number
 
+ID of the match. Accepted by the legacy <code>match_ids</code> format.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the domain query that produced this match.
 
 <a href="#">Link to this property</a>
 
@@ -294,6 +310,8 @@ Tag associated with the query, if one exists.
 
 total: number
 
+Number of matching domains available for pagination. For requests with several <code>query_id</code> values, matches are deduplicated from at most 5,000 query-domain rows, so <code>total</code> can be lower than the actual number of matches.
+
 minimum0
 
 <a href="#">Link to this property</a>
@@ -304,7 +322,7 @@ minimum0
 
 #### V2Logos
 
-##### [Insert logo query](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/create)
+##### [Create logo query](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/create)
 
 POST/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
@@ -312,7 +330,7 @@ POST/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
 DELETE/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries/{query\_id}
 
-##### [Get logo queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/get)
+##### [List logo queries](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/logos/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/logo/queries
 
@@ -335,6 +353,8 @@ success: boolean
 <a href="#">Link to this property</a>
 
 query\_id: optional number
+
+ID of the created logo query.
 
 <a href="#">Link to this property</a>
 
@@ -372,6 +392,8 @@ LogoGetResponse = array of object {id, r2\_path, similarity\_threshold, 4 more }
 
 id: number
 
+ID of the logo query.
+
 <a href="#">Link to this property</a>
 
 r2\_path: string
@@ -380,13 +402,19 @@ r2\_path: string
 
 similarity\_threshold: number
 
+Minimum similarity score (0-1) required for a visual match.
+
 <a href="#">Link to this property</a>
 
 tag: string
 
+Name of the logo query.
+
 <a href="#">Link to this property</a>
 
 uploaded\_at: string
+
+When the logo was uploaded.
 
 <a href="#">Link to this property</a>
 
@@ -432,25 +460,37 @@ matches: array of object {id, domain, matched\_at, 6 more }
 
 id: number
 
+ID of the logo match.
+
 <a href="#">Link to this property</a>
 
 domain: string
+
+Domain where the matching image was found, if known.
 
 <a href="#">Link to this property</a>
 
 matched\_at: string
 
+When the match was recorded.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the logo query that produced this match.
 
 <a href="#">Link to this property</a>
 
 registrar: string
 
+Registrar of <code>domain</code>, if known.
+
 <a href="#">Link to this property</a>
 
 similarity\_score: number
+
+Visual similarity between the matched image and the query logo. Higher is closer.
 
 <a href="#">Link to this property</a>
 
@@ -460,9 +500,13 @@ url\_scan\_id: string
 
 content\_type: optional string
 
+MIME type of the matched image (only present when download=true)
+
 <a href="#">Link to this property</a>
 
 image\_data: optional string
+
+Base64-encoded matched image (only present when download=true)
 
 <a href="#">Link to this property</a>
 

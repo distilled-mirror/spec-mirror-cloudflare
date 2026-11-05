@@ -2454,7 +2454,7 @@ OAuth scopes
 
 token\_url: optional string
 
-The token\_endpoint URL of your IdP
+The token\_endpoint URL of your IdP. Updates that change its origin (scheme, host, or port) require client\_secret in the request. Path-only changes do not require client\_secret.
 
 <a href="#">Link to this property</a>
 
@@ -8120,7 +8120,7 @@ OAuth scopes
 
 token\_url: optional string
 
-The token\_endpoint URL of your IdP
+The token\_endpoint URL of your IdP. Updates that change its origin (scheme, host, or port) require client\_secret in the request. Path-only changes do not require client\_secret.
 
 <a href="#">Link to this property</a>
 

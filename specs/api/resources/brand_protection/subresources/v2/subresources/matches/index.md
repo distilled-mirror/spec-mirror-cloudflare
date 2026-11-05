@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Matches
 
-##### [List saved query matches](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/matches/methods/get)
+##### [List domain matches](https://developers.cloudflare.com/api/resources/brand_protection/subresources/v2/subresources/matches/methods/get)
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/matches
 
@@ -38,15 +38,19 @@ MatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {domain, first\_seen, public\_scans, 6 more }
+matches: array of object {domain, first\_seen, public\_scans, 7 more }
 
 </summary>
 
 domain: string
 
+The matched domain name.
+
 <a href="#">Link to this property</a>
 
 first\_seen: string
+
+When the domain was matched. For multi-query requests, the most recent match time across the requested queries.
 
 <a href="#">Link to this property</a>
 
@@ -68,6 +72,8 @@ submission\_id: string
 
 registrar: string
 
+Registrar of the matched domain, if known.
+
 <a href="#">Link to this property</a>
 
 scan\_status: string
@@ -85,6 +91,12 @@ source: string
 dismissed: optional boolean
 
 Whether the match is dismissed. Only present for single-query requests. For multi-query requests, use the dismissed field in each match\_details entry.
+
+<a href="#">Link to this property</a>
+
+domain\_id: optional number
+
+ID of the matched domain. Present only when <code>include_domain_id=true</code>. Use it with <code>query_id</code> to dismiss or undismiss the match.
 
 <a href="#">Link to this property</a>
 
@@ -106,9 +118,13 @@ Individual dismissed state for this specific match.
 
 match\_id: number
 
+ID of the match. Accepted by the legacy <code>match_ids</code> format.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the domain query that produced this match.
 
 <a href="#">Link to this property</a>
 
@@ -127,6 +143,8 @@ Tag associated with the query, if one exists.
 <a href="#">Link to this property</a>
 
 total: number
+
+Number of matching domains available for pagination. For requests with several <code>query_id</code> values, matches are deduplicated from at most 5,000 query-domain rows, so <code>total</code> can be lower than the actual number of matches.
 
 minimum0
 

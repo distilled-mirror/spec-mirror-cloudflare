@@ -1,5 +1,5 @@
 ---
-title: List saved query matches
+title: List domain matches
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# List saved query matches
+# List domain matches
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/matches
 
-Get paginated list of domain matches for one or more brand protection queries. When multiple query\_ids are provided (comma-separated), matches are deduplicated across queries and each match includes a match\_details array with per-match query metadata and individual dismissed state.
+Lists domains that matched one or more saved domain queries, most recently matched first by default. When you pass several comma-separated `query_id` values, matches are deduplicated by domain and each match includes a `match_details` array with per-query dismissed state. Set `include_domain_id=true` to get the `domain_id` needed to dismiss or undismiss a match.
 
 ##### Security
 
@@ -50,29 +50,37 @@ minLength1
 
 query\_id: array of string
 
-Query ID or comma-separated list of Query IDs. When multiple IDs are provided, matches are deduplicated across queries and each match includes a match\_details array with per-match query metadata and dismissed state.
+ID of a domain query, or a comma-separated list of domain query IDs. When you pass several IDs, matches are deduplicated by domain and each match includes a `match_details` array with per-query metadata and dismissed state.
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20query_id%20%3E%20(schema)>)
 
 domain\_search: optional string
 
-Filter matches by domain name (substring match)
+Return only matches whose domain contains this text (case-insensitive).
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20domain_search%20%3E%20(schema)>)
 
 include\_dismissed: optional string
 
+Set to `false` to exclude dismissed matches. Dismissed matches are included when this is omitted or `true`.
+
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20include_dismissed%20%3E%20(schema)>)
 
 include\_domain\_id: optional string
+
+Set to `true` to include `domain_id` on each match. Required to dismiss or undismiss a match. Defaults to `false`.
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20include_domain_id%20%3E%20(schema)>)
 
 limit: optional string
 
+Maximum number of matches to return. Defaults to 50.
+
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
 
 offset: optional string
+
+Number of matches to skip, for pagination. Defaults to 0.
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
 
@@ -82,7 +90,7 @@ offset: optional string
 
 order: optional "asc"or "desc"
 
-Sort order. Options: ‘asc’ (ascending) or ‘desc’ (descending)
+Sort direction: <code>asc</code> or <code>desc</code>. Defaults to <code>desc</code>. For single-query requests, <code>asc</code> applies only when <code>orderBy</code> is set.
 
 </summary>
 
@@ -106,7 +114,7 @@ One of the following:
 
 orderBy: optional "domain"or "first\_seen"or "registrar"
 
-Column to sort by. Options: ‘domain’, ‘first\_seen’, or ‘registrar’
+Field to sort by: <code>domain</code>, <code>first_seen</code>, or <code>registrar</code>. Defaults to <code>first_seen</code>.
 
 </summary>
 
@@ -134,15 +142,19 @@ One of the following:
 
 <summary>
 
-matches: array of object {domain, first\_seen, public\_scans, 6 more }
+matches: array of object {domain, first\_seen, public\_scans, 7 more }
 
 </summary>
 
 domain: string
 
+The matched domain name.
+
 <a href="#">Link to this property</a>
 
 first\_seen: string
+
+When the domain was matched. For multi-query requests, the most recent match time across the requested queries.
 
 <a href="#">Link to this property</a>
 
@@ -164,6 +176,8 @@ submission\_id: string
 
 registrar: string
 
+Registrar of the matched domain, if known.
+
 <a href="#">Link to this property</a>
 
 scan\_status: string
@@ -181,6 +195,12 @@ source: string
 dismissed: optional boolean
 
 Whether the match is dismissed. Only present for single-query requests. For multi-query requests, use the dismissed field in each match\_details entry.
+
+<a href="#">Link to this property</a>
+
+domain\_id: optional number
+
+ID of the matched domain. Present only when <code>include_domain_id=true</code>. Use it with <code>query_id</code> to dismiss or undismiss the match.
 
 <a href="#">Link to this property</a>
 
@@ -202,9 +222,13 @@ Individual dismissed state for this specific match.
 
 match\_id: number
 
+ID of the match. Accepted by the legacy <code>match_ids</code> format.
+
 <a href="#">Link to this property</a>
 
 query\_id: number
+
+ID of the domain query that produced this match.
 
 <a href="#">Link to this property</a>
 
@@ -224,11 +248,13 @@ Tag associated with the query, if one exists.
 
 total: number
 
+Number of matching domains available for pagination. For requests with several `query_id` values, matches are deduplicated from at most 5,000 query-domain rows, so `total` can be lower than the actual number of matches.
+
 minimum0
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(model)%20match_get_response%20%3E%20(schema)%20%3E%20(property)%20total>)
 
-### List saved query matches
+### List domain matches
 
 HTTP
 
@@ -255,6 +281,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "scan_submission_id": 0,
       "source": "source",
       "dismissed": true,
+      "domain_id": 0,
       "match_details": [
         {
           "dismissed": true,
@@ -287,6 +314,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "scan_submission_id": 0,
       "source": "source",
       "dismissed": true,
+      "domain_id": 0,
       "match_details": [
         {
           "dismissed": true,

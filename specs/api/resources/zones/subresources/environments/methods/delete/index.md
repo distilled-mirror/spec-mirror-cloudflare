@@ -186,7 +186,7 @@ name: string
 
 <summary>
 
-position: <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+position: object {after, before }
 
 </summary>
 
@@ -271,8 +271,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/environments/$ENVIRONME
         "locked_on_deployment": true,
         "name": "name",
         "position": {
-          "after": "yyy",
-          "before": "xxx"
+          "after": "after",
+          "before": "before"
         },
         "ref": "ref",
         "version": 0,
@@ -317,8 +317,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/environments/$ENVIRONME
         "locked_on_deployment": true,
         "name": "name",
         "position": {
-          "after": "yyy",
-          "before": "xxx"
+          "after": "after",
+          "before": "before"
         },
         "ref": "ref",
         "version": 0,

@@ -688,44 +688,6 @@ DELETE/accounts/{account\_id}/rules/lists/{list\_id}/items
 
 <summary>
 
-ListCursor object {after, before }
-
-</summary>
-
-after: optional string
-
-<a href="#">Link to this property</a>
-
-before: optional string
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
-ListItem object {operation\_id }
-
-</summary>
-
-operation\_id: string
-
-The unique operation ID of the asynchronous action.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-[Link to this property](#)%20rules.lists.items%20%3E%20(model)%20list_item%20%3E%20(schema)>)
-
-<details>
-
-<summary>
-
 ItemListResponse = object {id, created\_on, ip, 2 more } or object {id, created\_on, hostname, 2 more } or object {id, created\_on, modified\_on, 2 more } or object {id, asn, created\_on, 2 more }
 
 </summary>

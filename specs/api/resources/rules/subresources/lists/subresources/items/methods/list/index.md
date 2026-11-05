@@ -488,7 +488,7 @@ result\_info: optional object {cursors }
 
 <summary>
 
-cursors: optional <a href="https://developers.cloudflare.com/api/resources/rules#(resource)%20rules.lists.items%20%3E%20(model)%20list_cursor%20%3E%20(schema)">ListCursor</a> { after, before }
+cursors: optional object {after, before }
 
 </summary>
 

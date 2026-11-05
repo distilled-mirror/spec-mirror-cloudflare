@@ -34,6 +34,14 @@ POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active
 
 POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/poll
 
+##### [Mute participants of an active session](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_participants)
+
+POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/mute
+
+##### [Mute all participants](https://developers.cloudflare.com/api/resources/realtime_kit/subresources/active-session/methods/mute_all_participants)
+
+POST/accounts/{account\_id}/realtime/kit/{app\_id}/meetings/{meeting\_id}/active-session/mute-all
+
 ##### ModelsExpand Collapse
 
 <details>
@@ -413,3 +421,115 @@ success: optional boolean
 </details>
 
 [Link to this property](#)%20realtime_kit.active-session%20%3E%20(model)%20active_session_create_poll_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+ActiveSessionMuteParticipantsResponse object {data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object {action, participants }
+
+</summary>
+
+action: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+participants: optional array of object {id, created\_at, updated\_at, 3 more }
+
+</summary>
+
+id: string
+
+ID of the session participant
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+<a href="#">Link to this property</a>
+
+email: optional string
+
+Email of the session participant.
+
+<a href="#">Link to this property</a>
+
+name: optional string
+
+Name of the session participant.
+
+<a href="#">Link to this property</a>
+
+picture: optional string
+
+A URL pointing to a picture of the participant.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(model)%20active_session_mute_participants_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+ActiveSessionMuteAllParticipantsResponse object {data, success }
+
+</summary>
+
+<details>
+
+<summary>
+
+data: optional object {action, muted\_participants\_count }
+
+</summary>
+
+action: optional string
+
+<a href="#">Link to this property</a>
+
+muted\_participants\_count: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+success: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20realtime_kit.active-session%20%3E%20(model)%20active_session_mute_all_participants_response%20%3E%20(schema)>)

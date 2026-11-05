@@ -11914,13 +11914,31 @@ BotListResponse object { bots }
 
 <summary>
 
-bots: array of object { category, description, kind, 4 more }
+bots: array of object { accessLevel, categories, category, 7 more }
 
 </summary>
 
-category: string
+accessLevel: string
 
-The category of the bot.
+Who can operate the bot: DIRECT bots reach origins under their own identity, while INTERMEDIARY bots forward requests on behalf of another agent or a person.
+
+[Link to this property](#)
+
+categories: array of string
+
+The categories of the bot.
+
+[Link to this property](#)
+
+Deprecatedcategory: string
+
+The category of the bot. Deprecated: use `categories`.
+
+[Link to this property](#)
+
+contentUse: string
+
+How the bot uses the content it fetches (e.g., immediate, reference or full).
 
 [Link to this property](#)
 
@@ -11978,19 +11996,43 @@ BotGetResponse object { bot }
 
 <summary>
 
-bot: object { category, description, kind, 7 more }
+bot: object { accessLevel, categories, category, 12 more }
 
 </summary>
 
-category: string
+accessLevel: string
 
-The category of the bot.
+Who can operate the bot: DIRECT bots reach origins under their own identity, while INTERMEDIARY bots forward requests on behalf of another agent or a person.
+
+[Link to this property](#)
+
+categories: array of string
+
+The categories of the bot.
+
+[Link to this property](#)
+
+Deprecatedcategory: string
+
+The category of the bot. Deprecated: use `categories`.
+
+[Link to this property](#)
+
+contentUse: string
+
+How the bot uses the content it fetches (e.g., immediate, reference or full).
 
 [Link to this property](#)
 
 description: string
 
 A summary for the bot (e.g., purpose).
+
+[Link to this property](#)
+
+documentationUrl: string
+
+The link to the bot documentation.
 
 [Link to this property](#)
 
@@ -12012,9 +12054,15 @@ The organization that owns and operates the bot.
 
 [Link to this property](#)
 
-operatorUrl: string
+DeprecatedoperatorUrl: string
 
-The link to the bot documentation.
+The link to the bot documentation. Deprecated: use `documentationUrl`.
+
+[Link to this property](#)
+
+operatorWebsiteUrl: string
+
+The link to the operator’s website.
 
 [Link to this property](#)
 

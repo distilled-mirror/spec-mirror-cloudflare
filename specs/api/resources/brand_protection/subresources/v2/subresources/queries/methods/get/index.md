@@ -1,5 +1,5 @@
 ---
-title: Get queries
+title: List domain queries
 ---
 
 [Skip to content](#_top)
@@ -20,11 +20,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get queries
+# List domain queries
 
 GET/accounts/{account\_id}/cloudforce-one/v2/brand-protection/domain/queries
 
-Get all saved brand protection queries for an account
+Lists the account’s saved domain queries, most recently updated first. Set `id` to return a single query object instead of an array. Set `page` or `per_page` to paginate the list; the response then includes `result_info`. Without them, every query is returned.
 
 ##### Security
 
@@ -50,11 +50,13 @@ minLength1
 
 id: optional string
 
+ID of a domain query. When set, `result` is that single query object instead of an array, and `page` and `per_page` are ignored.
+
 [Link to this property](#)%20brand_protection.v2.queries%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20id%20%3E%20(schema)>)
 
 page: optional number
 
-Optional page number for paginated list requests. Defaults to 1 when only per\_page is supplied. Omit page and per\_page to preserve the legacy full-list response.
+Page number for paginated list requests. Defaults to 1 when only per\_page is supplied. Omit page and per\_page to return every query.
 
 exclusiveMinimum
 
@@ -66,7 +68,7 @@ minimum0
 
 per\_page: optional number
 
-Optional number of queries per page for paginated list requests. Defaults to 100 when only page is supplied. Maximum 100. Omit page and per\_page to preserve the legacy full-list response.
+Number of queries per page for paginated list requests. Defaults to 100 when only page is supplied. Maximum 100. Omit page and per\_page to return every query.
 
 exclusiveMinimum
 
@@ -358,7 +360,7 @@ minimum0
 
 [Link to this property](#)%20brand_protection.v2.queries%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get queries
+### List domain queries
 
 HTTP
 

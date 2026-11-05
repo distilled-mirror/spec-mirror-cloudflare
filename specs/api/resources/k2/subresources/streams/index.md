@@ -146,45 +146,13 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled } or object {enabled }
+worker\_binding: object {enabled }
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: false
+enabled: boolean
 
 Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: true
-
-Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -302,45 +270,13 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled } or object {enabled }
+worker\_binding: object {enabled }
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: false
+enabled: boolean
 
 Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: true
-
-Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -458,45 +394,13 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled } or object {enabled }
+worker\_binding: object {enabled }
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: false
+enabled: boolean
 
 Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: true
-
-Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -614,45 +518,13 @@ minimum3600
 
 <summary>
 
-worker\_binding: object {enabled } or object {enabled }
+worker\_binding: object {enabled }
 
 </summary>
 
-One of the following:
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: false
+enabled: boolean
 
 Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-Enabled object {enabled }
-
-</summary>
-
-enabled: true
-
-Indicates whether Workers bindings can produce records to the stream.
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 

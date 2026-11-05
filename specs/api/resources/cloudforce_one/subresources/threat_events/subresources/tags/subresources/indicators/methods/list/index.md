@@ -68,9 +68,13 @@ indicatorType: optional string
 
 page: optional number
 
+Page number (default 1). page × pageSize may not exceed 10000.
+
 [Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 pageSize: optional number
+
+Results per page (default 100, maximum 1000; larger values are clamped).
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20pageSize%20%3E%20(schema)>)
 
@@ -352,6 +356,18 @@ totalPages: number
 
 [Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(model)%20indicator_list_response%20%3E%20(schema)%20%3E%20(property)%20pagination>)
 
+failedShardCount: optional number
+
+Number of shards that failed or timed out. Present only with partialResults.
+
+[Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(model)%20indicator_list_response%20%3E%20(schema)%20%3E%20(property)%20failedShardCount>)
+
+partialResults: optional boolean
+
+Present and true when one or more shards failed or timed out. Indicators from those shards may be missing from this page and from totalCount.
+
+[Link to this property](#)%20cloudforce_one.threat_events.tags.indicators%20%3E%20(model)%20indicator_list_response%20%3E%20(schema)%20%3E%20(property)%20partialResults>)
+
 ### List a tag's indicators
 
 HTTP
@@ -399,7 +415,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
     "pageSize": 0,
     "totalCount": 0,
     "totalPages": 0
-  }
+  },
+  "failedShardCount": 0,
+  "partialResults": true
 }
 ```
 
@@ -441,6 +459,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/ev
     "pageSize": 0,
     "totalCount": 0,
     "totalPages": 0
-  }
+  },
+  "failedShardCount": 0,
+  "partialResults": true
 }
 ```

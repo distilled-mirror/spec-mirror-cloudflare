@@ -138,6 +138,8 @@ Number of results per page. Maximum 25,000.
 
 search: optional array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 3 more
 
+JSON-encoded. Structured search as a JSON array of {field, op, value} objects, AND’d together. Max 10 conditions per request. <code>in</code> and <code>notIn</code> take an array of up to 100 values. Exclusions: <code>not</code> drops events without a value for the field; <code>notIn</code> and <code>notContains</code> keep them. On intelligence datasets, a <code>notIn</code> list containing <code>"unknown"</code> also drops them; analytics datasets treat <code>"unknown"</code> as a literal value.
+
 </summary>
 
 One of the following:
@@ -228,7 +230,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 8 more
+op: "equals"or "not"or "gt"or 9 more
 
 </summary>
 
@@ -275,6 +277,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "find"
+
+<a href="#">Link to this property</a>
+
+"notContains"
 
 <a href="#">Link to this property</a>
 
@@ -376,7 +382,25 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -476,7 +500,25 @@ field: "killChain"
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -594,7 +636,25 @@ field: "hasChildren"
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -726,7 +786,7 @@ One of the following:
 
 <summary>
 
-op: "equals"or "not"or "gt"or 8 more
+op: "equals"or "not"or "gt"or 9 more
 
 </summary>
 
@@ -773,6 +833,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "find"
+
+<a href="#">Link to this property</a>
+
+"notContains"
 
 <a href="#">Link to this property</a>
 
@@ -874,7 +938,25 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -974,7 +1056,25 @@ field: "killChain"
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1092,7 +1192,25 @@ field: "hasChildren"
 
 <a href="#">Link to this property</a>
 
-op: "in"
+<details>
+
+<summary>
+
+op: "in"or "notIn"
+
+</summary>
+
+One of the following:
+
+"in"
+
+<a href="#">Link to this property</a>
+
+"notIn"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

@@ -86,6 +86,12 @@ Whether to include domain ranking data in the response. Defaults to `false` — 
 
 [Link to this property](#)%20intel.domains.bulks%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20include_ranking%20%3E%20(schema)>)
 
+skip\_dns: optional boolean
+
+Skip the DNS resolution-history lookup for faster responses. Defaults to `false`. Set to `true` if you only need categorization data; no DNS resolution history is returned for any domain. Matches the `skip_dns` parameter on `/intel/domain`.
+
+[Link to this property](#)%20intel.domains.bulks%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20skip_dns%20%3E%20(schema)>)
+
 skip\_ranking: optional boolean
 
 **Deprecated.** Previously controlled whether the ranking lookup was skipped (defaulted to `false`, meaning ranking ran). The endpoint’s default behavior is being flipped — ranking is now opt-in via `include_ranking=true` — and this parameter will be silently ignored. Remove it from your callers and use `include_ranking` instead.
