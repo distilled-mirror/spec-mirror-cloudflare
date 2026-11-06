@@ -2106,7 +2106,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -2118,7 +2118,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 10 more }
+object {eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -2222,6 +2222,22 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+gateway: optional object {requestId }
+
+</summary>
+
+requestId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 outcome: optional string
 
 <a href="#">Link to this property</a>
@@ -2298,7 +2314,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 14 more }
+object {cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -2435,6 +2451,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "stateless"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+gateway: optional object {requestId }
+
+</summary>
+
+requestId: string
 
 <a href="#">Link to this property</a>
 
@@ -3014,7 +3046,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object {eventType, scriptName, durableObjectId, 10 more } or object {cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object {eventType, scriptName, durableObjectId, 11 more } or object {cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -3026,7 +3058,7 @@ One of the following:
 
 <summary>
 
-object {eventType, scriptName, durableObjectId, 10 more }
+object {eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -3130,6 +3162,22 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+gateway: optional object {requestId }
+
+</summary>
+
+requestId: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 outcome: optional string
 
 <a href="#">Link to this property</a>
@@ -3206,7 +3254,7 @@ truncated: optional boolean
 
 <summary>
 
-object {cpuTimeMs, eventType, outcome, 14 more }
+object {cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -3343,6 +3391,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "stateless"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+gateway: optional object {requestId }
+
+</summary>
+
+requestId: string
 
 <a href="#">Link to this property</a>
 

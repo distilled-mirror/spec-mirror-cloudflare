@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4052,
+  "count": 4078,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -12235,6 +12235,26 @@
       "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/events",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/events/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/list/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/destinations",
       "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/destinations/index.md"
     },
@@ -12253,6 +12273,74 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/destinations/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/destinations/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/add",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/add/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/group",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/group/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/notify",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/notify/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/occurrences",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/occurrences/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/remove",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/remove/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/summary",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/summary/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/ungroup",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/ungroup/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/list",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/workers/subresources/observability/subresources/queries",
@@ -16129,6 +16217,22 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/zones/subresources/observability/subresources/tracing/subresources/settings/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/observability/subresources/tracing/subresources/settings/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zones/subresources/ohttp_gateway/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zones/subresources/plans",

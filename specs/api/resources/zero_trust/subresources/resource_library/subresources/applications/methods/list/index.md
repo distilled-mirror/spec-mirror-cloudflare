@@ -135,7 +135,7 @@ Number of results to skip. Defaults to 0; negative values are clamped to 0. Igno
 
 order\_by: optional string
 
-Order results using field:direction format. Supported fields are name, id, human\_id, category\_id, application\_type, application\_confidence\_score, and gen\_ai\_score. Supported directions are asc and desc. Ignored when search is provided; results are ranked by relevance instead. Also ignored when lookup is provided.
+Order results using field:direction format. Supported fields are name, id, human\_id, category\_id, application\_type, application\_confidence\_score, and gen\_ai\_score. Supported directions are asc and desc. name and application\_type ignore the case of the letters A to Z, and ties sort by id. Ignored when search is provided; results are ranked by relevance instead. Also ignored when lookup is provided.
 
 [Link to this property](#)%20zero_trust.resource_library.applications%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
 

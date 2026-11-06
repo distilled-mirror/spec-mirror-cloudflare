@@ -31556,6 +31556,86 @@ maxLength80
 
 [Link to this property](#)
 
+##### [Get OHTTP Gateway enablement](/api/resources/zones/subresources/ohttp_gateway/methods/get)
+
+GET/zones/{zone_id}/settings/ohttp-gateway
+
+##### [Enable OHTTP Gateway](/api/resources/zones/subresources/ohttp_gateway/methods/create)
+
+PUT/zones/{zone_id}/settings/ohttp-gateway
+
+##### [Disable OHTTP Gateway](/api/resources/zones/subresources/ohttp_gateway/methods/delete)
+
+DELETE/zones/{zone_id}/settings/ohttp-gateway
+
+##### Models
+
+<details>
+
+<summary>
+
+OhttpGatewayGetResponse = "on" or "off"
+
+</summary>
+
+One of the following:
+
+"on"
+
+[Link to this property](#)
+
+"off"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+OhttpGatewayCreateResponse = "on" or "off"
+
+</summary>
+
+One of the following:
+
+"on"
+
+[Link to this property](#)
+
+"off"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+OhttpGatewayDeleteResponse = "on" or "off"
+
+</summary>
+
+One of the following:
+
+"on"
+
+[Link to this property](#)
+
+"off"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [Get Zone Entitlements](/api/resources/zones/subresources/entitlements/methods/list)
 
 GET/zones/{zone_id}/entitlements
@@ -31770,7 +31850,7 @@ Whether CT alerting is enabled for the zone.
 
 emails: optional array of string
 
-Email addresses that receive CT alert notifications for the zone. A maximum of 100 addresses may be configured. Each address must be a valid RFC 5322 email address and must not contain a comma.
+Email addresses that receive CT alert notifications for the zone. A maximum of 100 addresses may be configured. Each address must be a valid RFC 5322 email address and must not contain a comma. Omitted from responses when no addresses are configured.
 
 [Link to this property](#)
 

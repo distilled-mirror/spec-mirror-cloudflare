@@ -1554,7 +1554,7 @@ Identifier of the user who created the version.
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -3000,6 +3000,30 @@ UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+WorkerLoader object { name, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+type: "worker_loader"
+
+The kind of resource that the binding provides.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 </details>
 
 [Link to this property](#)
@@ -3038,7 +3062,9 @@ Date indicating targeted support in the Workers runtime. Backwards incompatible 
 
 compatibility_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
+Enables or disables specific Workers runtime features, such as upcoming features or changes outside the `compatibility_date`.
+
+Responses list only the flags this version sets explicitly and exclude behavior that `compatibility_date` enables. Responses omit the field when the list is empty, so a missing field means the version sets zero flags.
 
 [Link to this property](#)
 
@@ -4091,6 +4117,8 @@ to: optional string
 modules: optional array of object { content_base64, content_type, name }
 
 Code, sourcemaps, and other content used at runtime.
+
+Source maps use content type `application/source-map`. Responses include them only when requested with `include=modules,sourcemaps`. Workers stores the source map fields used to remap stack traces, so a returned source map is equivalent to the uploaded file but not byte-identical.
 
 This includes [`_headers`](https://developers.cloudflare.com/workers/static-assets/headers/#custom-headers) and [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files used to configure [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be included as modules named `_headers` and `_redirects` with content type `text/plain`.
 
@@ -9916,7 +9944,7 @@ Date indicating targeted support in the Workers runtime. Backwards incompatible 
 
 compatibility_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime.
+Lists the flags this version sets explicitly to enable or disable Workers runtime features. Excludes behavior that `compatibility_date` enables. Responses omit the field when the list is empty, so a missing field means the version sets zero flags.
 
 [Link to this property](#)
 
@@ -10476,7 +10504,7 @@ Date indicating targeted support in the Workers runtime. Backwards incompatible 
 
 compatibility_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime.
+Lists the flags this version sets explicitly to enable or disable Workers runtime features. Excludes behavior that `compatibility_date` enables. Responses omit the field when the list is empty, so a missing field means the version sets zero flags.
 
 [Link to this property](#)
 
@@ -12194,7 +12222,7 @@ Operation that triggered the creation of the version. This is read-only and set 
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -13633,6 +13661,30 @@ Identifier of the network to bind to. Use “cf1:network” to select the accoun
 tunnel_id: optional string
 
 UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkerLoader object { name, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+type: "worker_loader"
+
+The kind of resource that the binding provides.
 
 [Link to this property](#)
 
@@ -15222,7 +15274,7 @@ Operation that triggered the creation of the version. This is read-only and set 
 
 <summary>
 
-bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 35 more
+bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
@@ -16661,6 +16713,30 @@ Identifier of the network to bind to. Use “cf1:network” to select the accoun
 tunnel_id: optional string
 
 UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+WorkerLoader object { name, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+[Link to this property](#)
+
+type: "worker_loader"
+
+The kind of resource that the binding provides.
 
 [Link to this property](#)
 
@@ -20748,7 +20824,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -20760,7 +20836,7 @@ One of the following:
 
 <summary>
 
-object { eventType, scriptName, durableObjectId, 10 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -20864,6 +20940,22 @@ One of the following:
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 outcome: optional string
 
 [Link to this property](#)
@@ -20940,7 +21032,7 @@ truncated: optional boolean
 
 <summary>
 
-object { cpuTimeMs, eventType, outcome, 14 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -21077,6 +21169,22 @@ One of the following:
 [Link to this property](#)
 
 "stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
 
 [Link to this property](#)
 
@@ -21656,7 +21764,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -21668,7 +21776,7 @@ One of the following:
 
 <summary>
 
-object { eventType, scriptName, durableObjectId, 10 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -21772,6 +21880,22 @@ One of the following:
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 outcome: optional string
 
 [Link to this property](#)
@@ -21848,7 +21972,7 @@ truncated: optional boolean
 
 <summary>
 
-object { cpuTimeMs, eventType, outcome, 14 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -21985,6 +22109,22 @@ One of the following:
 [Link to this property](#)
 
 "stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
 
 [Link to this property](#)
 
@@ -22233,6 +22373,3322 @@ formaturi
 [Link to this property](#)
 
 TelemetryLiveTailHeartbeatResponse = unknown
+
+[Link to this property](#)
+
+##### [List Agent Traces](/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/list)
+
+GET/accounts/{account_id}/workers/observability/agents/traces
+
+##### [Get an Agent Trace](/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/get)
+
+GET/accounts/{account_id}/workers/observability/agents/traces/{traceId}
+
+##### [List Agent Trace events](/api/resources/workers/subresources/observability/subresources/agents/subresources/traces/methods/events)
+
+GET/accounts/{account_id}/workers/observability/agents/traces/{traceId}/events
+
+##### Models
+
+<details>
+
+<summary>
+
+TraceListResponse object { agents, conversationIds, errorCount, 19 more }
+
+</summary>
+
+agents: array of string
+
+Sorted distinct gen_ai.agent.name values of authorized Agent invocations in the Trace within the effective window. Includes every Agent in the Trace, not only those matching the agent filter.
+
+[Link to this property](#)
+
+conversationIds: array of string
+
+Sorted distinct gen_ai.conversation.id values of authorized Agent invocations in the Trace within the effective window. Empty when none are recorded.
+
+[Link to this property](#)
+
+errorCount: number
+
+Recorded spans with a nonempty error or ERROR status. Counts spans, not distinct messages or incidents.
+
+minimum0
+
+[Link to this property](#)
+
+inputTokens: number
+
+Input tokens reported by chat spans in the authorized Trace window; null when none report input usage. Informational, not billing data.
+
+minimum0
+
+[Link to this property](#)
+
+lastActivityMs: number
+
+Latest start of an authorized Agent invocation in the Trace within the effective window, as Unix epoch milliseconds. The Trace list is ordered by this value, newest first.
+
+minimum0
+
+[Link to this property](#)
+
+llmCallCount: number
+
+Recorded chat spans in the authorized Trace window.
+
+minimum0
+
+[Link to this property](#)
+
+llmErrorCount: number
+
+Recorded chat spans with a nonempty error or ERROR status.
+
+minimum0
+
+[Link to this property](#)
+
+models: array of string
+
+Sorted distinct response models, falling back to request models, from chat spans in the authorized Trace window.
+
+[Link to this property](#)
+
+outputTokens: number
+
+Output tokens reported by chat spans in the authorized Trace window; null when none report output usage. Informational, not billing data.
+
+minimum0
+
+[Link to this property](#)
+
+providers: array of string
+
+Sorted distinct GenAI providers from chat spans in the authorized Trace window.
+
+[Link to this property](#)
+
+rootSpanName: string
+
+Name of the root span that initiated the trace.
+
+[Link to this property](#)
+
+rootTransactionName: string
+
+Logical transaction name for the root span.
+
+[Link to this property](#)
+
+services: array of string
+
+Authorized Worker services represented in the trace.
+
+[Link to this property](#)
+
+spans: number
+
+Total number of spans in the trace.
+
+[Link to this property](#)
+
+toolCallCount: number
+
+Recorded execute_tool spans in the authorized Trace window. Custom-named approval spans are not counted.
+
+minimum0
+
+[Link to this property](#)
+
+toolErrorCount: number
+
+Recorded execute_tool spans with a nonempty error or ERROR status.
+
+minimum0
+
+[Link to this property](#)
+
+totalTokens: number
+
+Input plus output tokens; null if either direction is unreported. Does not add cache or reasoning breakdowns.
+
+minimum0
+
+[Link to this property](#)
+
+traceDurationMs: number
+
+Total duration of the trace in milliseconds.
+
+[Link to this property](#)
+
+traceEndMs: number
+
+Trace end time as a Unix epoch in milliseconds.
+
+[Link to this property](#)
+
+traceId: string
+
+Unique identifier for the distributed trace.
+
+[Link to this property](#)
+
+traceStartMs: number
+
+Trace start time as a Unix epoch in milliseconds.
+
+[Link to this property](#)
+
+errors: optional array of string
+
+Error messages encountered during the trace, if any.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TraceGetResponse object { agents, conversationIds, errorCount, 19 more }
+
+</summary>
+
+agents: array of string
+
+Sorted distinct gen_ai.agent.name values of authorized Agent invocations in the Trace within the effective window. Includes every Agent in the Trace, not only those matching the agent filter.
+
+[Link to this property](#)
+
+conversationIds: array of string
+
+Sorted distinct gen_ai.conversation.id values of authorized Agent invocations in the Trace within the effective window. Empty when none are recorded.
+
+[Link to this property](#)
+
+errorCount: number
+
+Recorded spans with a nonempty error or ERROR status. Counts spans, not distinct messages or incidents.
+
+minimum0
+
+[Link to this property](#)
+
+inputTokens: number
+
+Input tokens reported by chat spans in the authorized Trace window; null when none report input usage. Informational, not billing data.
+
+minimum0
+
+[Link to this property](#)
+
+lastActivityMs: number
+
+Latest start of an authorized Agent invocation in the Trace within the effective window, as Unix epoch milliseconds. The Trace list is ordered by this value, newest first.
+
+minimum0
+
+[Link to this property](#)
+
+llmCallCount: number
+
+Recorded chat spans in the authorized Trace window.
+
+minimum0
+
+[Link to this property](#)
+
+llmErrorCount: number
+
+Recorded chat spans with a nonempty error or ERROR status.
+
+minimum0
+
+[Link to this property](#)
+
+models: array of string
+
+Sorted distinct response models, falling back to request models, from chat spans in the authorized Trace window.
+
+[Link to this property](#)
+
+outputTokens: number
+
+Output tokens reported by chat spans in the authorized Trace window; null when none report output usage. Informational, not billing data.
+
+minimum0
+
+[Link to this property](#)
+
+providers: array of string
+
+Sorted distinct GenAI providers from chat spans in the authorized Trace window.
+
+[Link to this property](#)
+
+rootSpanName: string
+
+Name of the root span that initiated the trace.
+
+[Link to this property](#)
+
+rootTransactionName: string
+
+Logical transaction name for the root span.
+
+[Link to this property](#)
+
+services: array of string
+
+Authorized Worker services represented in the trace.
+
+[Link to this property](#)
+
+spans: number
+
+Total number of spans in the trace.
+
+[Link to this property](#)
+
+toolCallCount: number
+
+Recorded execute_tool spans in the authorized Trace window. Custom-named approval spans are not counted.
+
+minimum0
+
+[Link to this property](#)
+
+toolErrorCount: number
+
+Recorded execute_tool spans with a nonempty error or ERROR status.
+
+minimum0
+
+[Link to this property](#)
+
+totalTokens: number
+
+Input plus output tokens; null if either direction is unreported. Does not add cache or reasoning breakdowns.
+
+minimum0
+
+[Link to this property](#)
+
+traceDurationMs: number
+
+Total duration of the trace in milliseconds.
+
+[Link to this property](#)
+
+traceEndMs: number
+
+Trace end time as a Unix epoch in milliseconds.
+
+[Link to this property](#)
+
+traceId: string
+
+Unique identifier for the distributed trace.
+
+[Link to this property](#)
+
+traceStartMs: number
+
+Trace start time as a Unix epoch in milliseconds.
+
+[Link to this property](#)
+
+errors: optional array of string
+
+Error messages encountered during the trace, if any.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TraceEventsResponse = array of object { "$metadata", dataset, source, 3 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+"$metadata": object { id, account, cloudService, 35 more }
+
+Structured metadata extracted from the event. These fields are indexed and available for filtering and aggregation.
+
+</summary>
+
+id: string
+
+Unique event ID. Use as the cursor value for offset-based pagination.
+
+[Link to this property](#)
+
+account: optional string
+
+Cloudflare account identifier.
+
+[Link to this property](#)
+
+cloudService: optional string
+
+Cloudflare product that generated this event (e.g. workers, pages).
+
+[Link to this property](#)
+
+coldStart: optional number
+
+exclusiveMinimum
+
+minimum0
+
+[Link to this property](#)
+
+cost: optional number
+
+Estimated cost units for this invocation.
+
+exclusiveMinimum
+
+minimum0
+
+[Link to this property](#)
+
+duration: optional number
+
+Span duration in milliseconds.
+
+exclusiveMinimum
+
+minimum0
+
+[Link to this property](#)
+
+endTime: optional number
+
+Span end time as a Unix epoch in milliseconds.
+
+minimum0
+
+[Link to this property](#)
+
+endTimeNs: optional string
+
+Span end time as a Unix epoch in nanoseconds.
+
+[Link to this property](#)
+
+error: optional string
+
+Error message, present when the log represents an error.
+
+[Link to this property](#)
+
+errorTemplate: optional string
+
+Templatized version of the error message used for grouping similar errors.
+
+[Link to this property](#)
+
+eventSize: optional number
+
+Size of the stored telemetry event in bytes.
+
+minimum0
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+Content-based fingerprint used to group similar events.
+
+[Link to this property](#)
+
+level: optional string
+
+Log level (e.g. log, debug, info, warn, error).
+
+[Link to this property](#)
+
+message: optional string
+
+Log message text.
+
+[Link to this property](#)
+
+messageTemplate: optional string
+
+Templatized version of the log message used for grouping similar messages.
+
+[Link to this property](#)
+
+metricName: optional string
+
+Metric name when the event represents a metric data point.
+
+[Link to this property](#)
+
+origin: optional string
+
+Origin of the event (e.g. fetch, scheduled, queue).
+
+[Link to this property](#)
+
+parentSpanId: optional string
+
+Span ID of the parent span in the trace hierarchy.
+
+[Link to this property](#)
+
+provider: optional string
+
+Infrastructure provider identifier.
+
+[Link to this property](#)
+
+rayId: optional string
+
+Cloudflare Ray ID from the `cf-ray` header of the request that triggered the invocation.
+
+[Link to this property](#)
+
+region: optional string
+
+Cloudflare data center / region that handled the request.
+
+[Link to this property](#)
+
+requestId: optional string
+
+Cloudflare request ID that ties all logs from a single invocation together.
+
+[Link to this property](#)
+
+service: optional string
+
+Worker script name that produced this event.
+
+[Link to this property](#)
+
+spanId: optional string
+
+Span ID for this individual unit of work within a trace.
+
+[Link to this property](#)
+
+spanName: optional string
+
+Human-readable name for this span.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+spanStatus: optional "unset" or "ok" or "error"
+
+OpenTelemetry span status. Present only on spans. `unset` when the span did not set a status, including spans recorded before status was captured.
+
+</summary>
+
+One of the following:
+
+"unset"
+
+[Link to this property](#)
+
+"ok"
+
+[Link to this property](#)
+
+"error"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanStatusMessage: optional string
+
+OpenTelemetry span status message. Present only on spans when the status is `error` and a message was set.
+
+[Link to this property](#)
+
+stackId: optional string
+
+Stack / deployment identifier.
+
+[Link to this property](#)
+
+startTime: optional number
+
+Span start time as a Unix epoch in milliseconds.
+
+minimum0
+
+[Link to this property](#)
+
+startTimeNs: optional string
+
+Span start time as a Unix epoch in nanoseconds.
+
+[Link to this property](#)
+
+statusCode: optional number
+
+HTTP response status code returned by the Worker.
+
+exclusiveMinimum
+
+minimum0
+
+[Link to this property](#)
+
+timestampNs: optional string
+
+Event time as a Unix epoch in nanoseconds.
+
+[Link to this property](#)
+
+traceDuration: optional number
+
+Total duration of the entire trace in milliseconds.
+
+exclusiveMinimum
+
+minimum0
+
+[Link to this property](#)
+
+traceId: optional string
+
+Distributed trace ID linking spans across services.
+
+[Link to this property](#)
+
+transactionName: optional string
+
+Logical transaction name for this request.
+
+[Link to this property](#)
+
+trigger: optional string
+
+What triggered the invocation (e.g. GET /users, POST /orders, queue message).
+
+[Link to this property](#)
+
+type: optional string
+
+Event type classifier (e.g. cf-worker-event, cf-worker-log).
+
+[Link to this property](#)
+
+url: optional string
+
+Request URL that triggered the Worker invocation.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+dataset: string
+
+The dataset this event belongs to (e.g. cloudflare-workers).
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+source: string or map[unknown]
+
+Raw log payload. May be a string or a structured object depending on how the log was emitted.
+
+</summary>
+
+One of the following:
+
+string
+
+[Link to this property](#)
+
+map[unknown]
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+timestamp: number
+
+Event timestamp as a Unix epoch in milliseconds.
+
+minimum0
+
+[Link to this property](#)
+
+"$containers": optional map[unknown]
+
+Cloudflare Containers event information that enriches your logs for identifying and debugging issues.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
+
+Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { eventType, scriptName, durableObjectId, 11 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
+
+</summary>
+
+One of the following:
+
+"fetch"
+
+[Link to this property](#)
+
+"scheduled"
+
+[Link to this property](#)
+
+"alarm"
+
+[Link to this property](#)
+
+"cron"
+
+[Link to this property](#)
+
+"queue"
+
+[Link to this property](#)
+
+"email"
+
+[Link to this property](#)
+
+"tail"
+
+[Link to this property](#)
+
+"rpc"
+
+[Link to this property](#)
+
+"jsrpc"
+
+[Link to this property](#)
+
+"websocket"
+
+[Link to this property](#)
+
+"workflow"
+
+[Link to this property](#)
+
+"unknown"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+scriptName: string
+
+[Link to this property](#)
+
+durableObjectId: optional string
+
+[Link to this property](#)
+
+entrypoint: optional string
+
+[Link to this property](#)
+
+event: optional map[unknown]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+executionModel: optional "durableObject" or "stateless"
+
+</summary>
+
+One of the following:
+
+"durableObject"
+
+[Link to this property](#)
+
+"stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+outcome: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+preview: optional object { id, name, slug }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+name: optional string
+
+[Link to this property](#)
+
+slug: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+requestId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scriptVersion: optional object { id, message, tag }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+message: optional string
+
+[Link to this property](#)
+
+tag: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanId: optional string
+
+[Link to this property](#)
+
+traceId: optional string
+
+[Link to this property](#)
+
+truncated: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { cpuTimeMs, eventType, outcome, 15 more }
+
+</summary>
+
+cpuTimeMs: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+eventType: "fetch" or "scheduled" or "alarm" or 9 more
+
+</summary>
+
+One of the following:
+
+"fetch"
+
+[Link to this property](#)
+
+"scheduled"
+
+[Link to this property](#)
+
+"alarm"
+
+[Link to this property](#)
+
+"cron"
+
+[Link to this property](#)
+
+"queue"
+
+[Link to this property](#)
+
+"email"
+
+[Link to this property](#)
+
+"tail"
+
+[Link to this property](#)
+
+"rpc"
+
+[Link to this property](#)
+
+"jsrpc"
+
+[Link to this property](#)
+
+"websocket"
+
+[Link to this property](#)
+
+"workflow"
+
+[Link to this property](#)
+
+"unknown"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+outcome: string
+
+[Link to this property](#)
+
+scriptName: string
+
+[Link to this property](#)
+
+wallTimeMs: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+diagnosticsChannelEvents: optional array of object { channel, message, timestamp }
+
+</summary>
+
+channel: string
+
+[Link to this property](#)
+
+message: string
+
+[Link to this property](#)
+
+timestamp: number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+dispatchNamespace: optional string
+
+[Link to this property](#)
+
+durableObjectId: optional string
+
+[Link to this property](#)
+
+entrypoint: optional string
+
+[Link to this property](#)
+
+event: optional map[unknown]
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+executionModel: optional "durableObject" or "stateless"
+
+</summary>
+
+One of the following:
+
+"durableObject"
+
+[Link to this property](#)
+
+"stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+preview: optional object { id, name, slug }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+name: optional string
+
+[Link to this property](#)
+
+slug: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+requestId: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scriptVersion: optional object { id, message, tag }
+
+</summary>
+
+id: optional string
+
+[Link to this property](#)
+
+message: optional string
+
+[Link to this property](#)
+
+tag: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+spanId: optional string
+
+[Link to this property](#)
+
+traceId: optional string
+
+[Link to this property](#)
+
+truncated: optional boolean
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List detected issues](/api/resources/workers/subresources/observability/subresources/issues/methods/list)
+
+GET/accounts/{account_id}/workers/observability/issues
+
+##### [Get an issue](/api/resources/workers/subresources/observability/subresources/issues/methods/get)
+
+GET/accounts/{account_id}/workers/observability/issues/{issueId}
+
+##### [Modify an issue](/api/resources/workers/subresources/observability/subresources/issues/methods/update)
+
+PATCH/accounts/{account_id}/workers/observability/issues/{issueId}
+
+##### [Summarize detected issues](/api/resources/workers/subresources/observability/subresources/issues/methods/summary)
+
+GET/accounts/{account_id}/workers/observability/issues/summary
+
+##### [Create an issue group](/api/resources/workers/subresources/observability/subresources/issues/methods/group)
+
+POST/accounts/{account_id}/workers/observability/issues/groups
+
+##### [Dissolve an issue group](/api/resources/workers/subresources/observability/subresources/issues/methods/ungroup)
+
+DELETE/accounts/{account_id}/workers/observability/issues/groups/{groupId}
+
+##### [Add issue group members](/api/resources/workers/subresources/observability/subresources/issues/methods/add)
+
+POST/accounts/{account_id}/workers/observability/issues/groups/{groupId}/members
+
+##### [Remove an issue group member](/api/resources/workers/subresources/observability/subresources/issues/methods/remove)
+
+DELETE/accounts/{account_id}/workers/observability/issues/groups/{groupId}/members/{issueId}
+
+##### [Notify about an issue](/api/resources/workers/subresources/observability/subresources/issues/methods/notify)
+
+POST/accounts/{account_id}/workers/observability/issues/{issueId}/notification-runs
+
+##### [List issue occurrences](/api/resources/workers/subresources/observability/subresources/issues/methods/occurrences)
+
+GET/accounts/{account_id}/workers/observability/issues/{issueId}/occurrences
+
+##### Models
+
+<details>
+
+<summary>
+
+IssueListResponse object { id, activity, count, 11 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+activity: array of object { id, created, inactivitySeconds, 14 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+initiatedBy: "automatic" or "manual"
+
+</summary>
+
+One of the following:
+
+"automatic"
+
+[Link to this property](#)
+
+"manual"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+issueCount: number
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+lastError: string
+
+[Link to this property](#)
+
+policyId: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "pending" or "succeeded" or "failed"
+
+</summary>
+
+One of the following:
+
+"pending"
+
+[Link to this property](#)
+
+"succeeded"
+
+[Link to this property](#)
+
+"failed"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+terminalAt: number
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+type: "notification"
+
+[Link to this property](#)
+
+automationId: optional string
+
+[Link to this property](#)
+
+automationName: optional string
+
+[Link to this property](#)
+
+automationRevision: optional number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: optional "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: optional "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueGetResponse object { issue }
+
+</summary>
+
+<details>
+
+<summary>
+
+issue: object { id, activity, count, 11 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+activity: array of object { id, created, inactivitySeconds, 14 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+initiatedBy: "automatic" or "manual"
+
+</summary>
+
+One of the following:
+
+"automatic"
+
+[Link to this property](#)
+
+"manual"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+issueCount: number
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+lastError: string
+
+[Link to this property](#)
+
+policyId: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "pending" or "succeeded" or "failed"
+
+</summary>
+
+One of the following:
+
+"pending"
+
+[Link to this property](#)
+
+"succeeded"
+
+[Link to this property](#)
+
+"failed"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+terminalAt: number
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+type: "notification"
+
+[Link to this property](#)
+
+automationId: optional string
+
+[Link to this property](#)
+
+automationName: optional string
+
+[Link to this property](#)
+
+automationRevision: optional number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: optional "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: optional "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueUpdateResponse object { id, count, created, 10 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueSummaryResponse object { activeIssues, activeOccurrences, lastIssue, resolvedIssues }
+
+</summary>
+
+activeIssues: number
+
+[Link to this property](#)
+
+activeOccurrences: number
+
+[Link to this property](#)
+
+lastIssue: number
+
+[Link to this property](#)
+
+resolvedIssues: number
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueGroupResponse object { id, count, created, 10 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueUngroupResponse object { deleted }
+
+</summary>
+
+deleted: true
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueAddResponse object { id, count, created, 10 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueRemoveResponse object { id, count, created, 10 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+count: number
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+firstObserved: number
+
+[Link to this property](#)
+
+lastObserved: number
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "active" or "resolved" or "ignored"
+
+</summary>
+
+One of the following:
+
+"active"
+
+[Link to this property](#)
+
+"resolved"
+
+[Link to this property](#)
+
+"ignored"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+statusUpdated: number
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+fingerprint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+members: optional array of object { fingerprint, issueId, title }
+
+</summary>
+
+fingerprint: string
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+title: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+type: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueNotifyResponse object { run }
+
+</summary>
+
+<details>
+
+<summary>
+
+run: object { id, created, inactivitySeconds, 13 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+initiatedBy: "automatic" or "manual"
+
+</summary>
+
+One of the following:
+
+"automatic"
+
+[Link to this property](#)
+
+"manual"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+issueCount: number
+
+[Link to this property](#)
+
+issueId: string
+
+[Link to this property](#)
+
+lastError: string
+
+[Link to this property](#)
+
+policyId: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+status: "pending" or "succeeded" or "failed"
+
+</summary>
+
+One of the following:
+
+"pending"
+
+[Link to this property](#)
+
+"succeeded"
+
+[Link to this property](#)
+
+"failed"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+terminalAt: number
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+automationId: optional string
+
+[Link to this property](#)
+
+automationName: optional string
+
+[Link to this property](#)
+
+automationRevision: optional number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: optional "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: optional "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+IssueOccurrencesResponse = array of object { id, error, invocation, 5 more }
+
+</summary>
+
+id: string
+
+Unique occurrence ID.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+error: object { handled, mechanism, message, 3 more }
+
+</summary>
+
+handled: boolean
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+mechanism: "structured-log" or "error-log" or "stack-log" or 3 more
+
+</summary>
+
+One of the following:
+
+"structured-log"
+
+[Link to this property](#)
+
+"error-log"
+
+[Link to this property](#)
+
+"stack-log"
+
+[Link to this property](#)
+
+"http-status"
+
+[Link to this property](#)
+
+"exception"
+
+[Link to this property](#)
+
+"outcome"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+message: string
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+signature: string
+
+[Link to this property](#)
+
+stack: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+invocation: object { id, traceId, type, 16 more }
+
+</summary>
+
+id: string
+
+Worker invocation request ID.
+
+[Link to this property](#)
+
+traceId: string
+
+[Link to this property](#)
+
+type: string
+
+[Link to this property](#)
+
+batchSize: optional number
+
+[Link to this property](#)
+
+cron: optional string
+
+[Link to this property](#)
+
+jsrpcMethod: optional string
+
+[Link to this property](#)
+
+mailFrom: optional string
+
+[Link to this property](#)
+
+method: optional string
+
+[Link to this property](#)
+
+path: optional string
+
+[Link to this property](#)
+
+queue: optional string
+
+[Link to this property](#)
+
+rawSize: optional number
+
+[Link to this property](#)
+
+rayId: optional string
+
+[Link to this property](#)
+
+rcptTo: optional string
+
+[Link to this property](#)
+
+scheduledTime: optional number
+
+[Link to this property](#)
+
+spanId: optional string
+
+[Link to this property](#)
+
+statusCode: optional number
+
+minimum0
+
+[Link to this property](#)
+
+url: optional string
+
+Redacted request URL without query parameters.
+
+[Link to this property](#)
+
+websocketCloseCode: optional number
+
+[Link to this property](#)
+
+websocketEvent: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+timestamp: number
+
+Occurrence timestamp as Unix epoch milliseconds.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+trail: array of object { level, message, timestamp, type } or object { name, ongoing, spanId, 3 more }
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { level, message, timestamp, type }
+
+</summary>
+
+level: string
+
+[Link to this property](#)
+
+message: string
+
+[Link to this property](#)
+
+timestamp: number
+
+[Link to this property](#)
+
+type: "log"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { name, ongoing, spanId, 3 more }
+
+</summary>
+
+name: string
+
+[Link to this property](#)
+
+ongoing: boolean
+
+[Link to this property](#)
+
+spanId: string
+
+[Link to this property](#)
+
+timestamp: number
+
+[Link to this property](#)
+
+type: "span"
+
+[Link to this property](#)
+
+parentSpanId: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+worker: object { executionModel, scriptName, scriptTags, 3 more }
+
+</summary>
+
+executionModel: string
+
+[Link to this property](#)
+
+scriptName: string
+
+[Link to this property](#)
+
+scriptTags: array of string
+
+[Link to this property](#)
+
+dispatchNamespace: optional string
+
+[Link to this property](#)
+
+entrypoint: optional string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scriptVersion: optional object { id, tag }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+tag: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+context: optional object { account, session, user }
+
+</summary>
+
+account: optional string
+
+[Link to this property](#)
+
+session: optional string
+
+[Link to this property](#)
+
+user: optional string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+request: optional object { headers }
+
+</summary>
+
+headers: map[string]
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List issue automations](/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/list)
+
+GET/accounts/{account_id}/workers/observability/issues/automations
+
+##### [Get an issue automation](/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/get)
+
+GET/accounts/{account_id}/workers/observability/issues/automations/{automationId}
+
+##### [Create an issue automation](/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/create)
+
+POST/accounts/{account_id}/workers/observability/issues/automations
+
+##### [Update an issue automation](/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/update)
+
+PUT/accounts/{account_id}/workers/observability/issues/automations/{automationId}
+
+##### [Delete an issue automation](/api/resources/workers/subresources/observability/subresources/issues/subresources/automations/methods/delete)
+
+DELETE/accounts/{account_id}/workers/observability/issues/automations/{automationId}
+
+##### Models
+
+<details>
+
+<summary>
+
+AutomationListResponse object { automations }
+
+</summary>
+
+<details>
+
+<summary>
+
+automations: array of object { id, ansPolicyId, created, 12 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+ansPolicyId: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+createdByUserId: string
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+revision: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+serviceType: string
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+updatedByUserId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AutomationGetResponse object { automation }
+
+</summary>
+
+<details>
+
+<summary>
+
+automation: object { id, ansPolicyId, created, 12 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+ansPolicyId: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+createdByUserId: string
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+revision: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+serviceType: string
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+updatedByUserId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AutomationCreateResponse object { automation }
+
+</summary>
+
+<details>
+
+<summary>
+
+automation: object { id, ansPolicyId, created, 12 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+ansPolicyId: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+createdByUserId: string
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+revision: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+serviceType: string
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+updatedByUserId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AutomationUpdateResponse object { automation }
+
+</summary>
+
+<details>
+
+<summary>
+
+automation: object { id, ansPolicyId, created, 12 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+ansPolicyId: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+createdByUserId: string
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+revision: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+serviceType: string
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+updatedByUserId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+AutomationDeleteResponse object { automation }
+
+</summary>
+
+<details>
+
+<summary>
+
+automation: object { id, ansPolicyId, created, 12 more }
+
+</summary>
+
+id: string
+
+[Link to this property](#)
+
+ansPolicyId: string
+
+[Link to this property](#)
+
+created: number
+
+[Link to this property](#)
+
+createdByUserId: string
+
+[Link to this property](#)
+
+enabled: boolean
+
+[Link to this property](#)
+
+inactivitySeconds: number
+
+[Link to this property](#)
+
+name: string
+
+[Link to this property](#)
+
+revision: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+scope: "account" or "service"
+
+</summary>
+
+One of the following:
+
+"account"
+
+[Link to this property](#)
+
+"service"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+service: string
+
+[Link to this property](#)
+
+serviceType: string
+
+[Link to this property](#)
+
+threshold: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+triggerType: "occurrence_threshold" or "recurrence_after_inactivity"
+
+</summary>
+
+One of the following:
+
+"occurrence_threshold"
+
+[Link to this property](#)
+
+"recurrence_after_inactivity"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+updated: number
+
+[Link to this property](#)
+
+updatedByUserId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -26534,7 +29990,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -26546,7 +30002,7 @@ One of the following:
 
 <summary>
 
-object { eventType, scriptName, durableObjectId, 10 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -26650,6 +30106,22 @@ One of the following:
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 outcome: optional string
 
 [Link to this property](#)
@@ -26726,7 +30198,7 @@ truncated: optional boolean
 
 <summary>
 
-object { cpuTimeMs, eventType, outcome, 14 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -26863,6 +30335,22 @@ One of the following:
 [Link to this property](#)
 
 "stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
 
 [Link to this property](#)
 
@@ -27442,7 +30930,7 @@ Cloudflare Containers event information that enriches your logs for identifying 
 
 <summary>
 
-"$workers": optional object { eventType, scriptName, durableObjectId, 10 more } or object { cpuTimeMs, eventType, outcome, 14 more }
+"$workers": optional object { eventType, scriptName, durableObjectId, 11 more } or object { cpuTimeMs, eventType, outcome, 15 more }
 
 Cloudflare Workers event information that enriches your logs for identifying and debugging issues.
 
@@ -27454,7 +30942,7 @@ One of the following:
 
 <summary>
 
-object { eventType, scriptName, durableObjectId, 10 more }
+object { eventType, scriptName, durableObjectId, 11 more }
 
 </summary>
 
@@ -27558,6 +31046,22 @@ One of the following:
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 outcome: optional string
 
 [Link to this property](#)
@@ -27634,7 +31138,7 @@ truncated: optional boolean
 
 <summary>
 
-object { cpuTimeMs, eventType, outcome, 14 more }
+object { cpuTimeMs, eventType, outcome, 15 more }
 
 </summary>
 
@@ -27771,6 +31275,22 @@ One of the following:
 [Link to this property](#)
 
 "stateless"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+gateway: optional object { requestId }
+
+</summary>
+
+requestId: string
 
 [Link to this property](#)
 

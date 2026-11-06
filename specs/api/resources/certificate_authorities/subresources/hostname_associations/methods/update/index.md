@@ -72,6 +72,8 @@ maxLength32
 
 hostnames: optional array of string
 
+Unordered set of hostnames. Hostnames are stored as lowercase punycode.
+
 [Link to this property](#)%20certificate_authorities.hostname_associations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20hostnames%20%3E%20(schema)>)
 
 mtls\_certificate\_id: optional string
@@ -185,6 +187,8 @@ result: optional object {hostnames }
 </summary>
 
 hostnames: optional array of string
+
+Hostnames are returned in lowercase punycode, in no particular order. Null when there are no associations.
 
 <a href="#">Link to this property</a>
 

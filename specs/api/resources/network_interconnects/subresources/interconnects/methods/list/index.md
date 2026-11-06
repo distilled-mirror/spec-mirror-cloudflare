@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/cni/interconnects
 
-Lists all network interconnects configured for the account, including physical and virtual connections.
+Lists network interconnects of a single type configured for the account. The `type` query parameter selects the type to list; when omitted, only `direct` interconnects are returned.
 
 ##### Security
 
@@ -88,7 +88,7 @@ If specified, only show interconnects located at the given site
 
 type: optional string
 
-If specified, only show interconnects of the given type
+Type of interconnect to list, such as `direct` or `gcp_partner`. Defaults to `direct`.
 
 [Link to this property](#)%20network_interconnects.interconnects%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20type%20%3E%20(schema)>)
 
@@ -98,7 +98,7 @@ If specified, only show interconnects of the given type
 
 <summary>
 
-items: array of object {account, facility, name, 7 more } or object {account, name, region, 4 more }
+items: array of object {facility, name, site, 5 more } or object {name, region, type, 2 more }
 
 </summary>
 
@@ -108,13 +108,9 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {account, facility, name, 7 more }
+NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 <details>
 
@@ -170,10 +166,6 @@ ccr\_device\_name: optional string
 
 <a href="#">Link to this property</a>
 
-owner: optional string
-
-<a href="#">Link to this property</a>
-
 </details>
 
 <a href="#">Link to this property</a>
@@ -182,13 +174,9 @@ owner: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {account, name, region, 4 more }
+NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 name: string
 
@@ -205,10 +193,6 @@ type: string
 virtual\_port\_reservation\_id: string
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-owner: optional string
 
 <a href="#">Link to this property</a>
 
@@ -307,7 +291,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cni/interconnects
 {
   "items": [
     {
-      "account": "account",
       "facility": {
         "address": [
           "string"
@@ -320,8 +303,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cni/interconnects
       "speed": "speed",
       "type": "type",
       "virtual_port_reservation_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "ccr_device_name": "ccr_device_name",
-      "owner": "owner"
+      "ccr_device_name": "ccr_device_name"
     }
   ],
   "next": 0
@@ -336,7 +318,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cni/interconnects
 {
   "items": [
     {
-      "account": "account",
       "facility": {
         "address": [
           "string"
@@ -349,8 +330,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cni/interconnects
       "speed": "speed",
       "type": "type",
       "virtual_port_reservation_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-      "ccr_device_name": "ccr_device_name",
-      "owner": "owner"
+      "ccr_device_name": "ccr_device_name"
     }
   ],
   "next": 0

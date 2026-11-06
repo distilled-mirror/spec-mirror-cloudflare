@@ -182,6 +182,8 @@ result: optional object {hostnames }
 
 hostnames: optional array of string
 
+Hostnames are returned in lowercase punycode, in no particular order. Null when there are no associations.
+
 <a href="#">Link to this property</a>
 
 </details>

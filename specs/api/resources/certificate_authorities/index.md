@@ -38,6 +38,8 @@ TLSHostnameAssociation object {hostnames, mtls\_certificate\_id }
 
 hostnames: optional array of string
 
+Unordered set of hostnames. Hostnames are stored as lowercase punycode.
+
 <a href="#">Link to this property</a>
 
 mtls\_certificate\_id: optional string
@@ -64,6 +66,8 @@ HostnameAssociationGetResponse object {hostnames }
 
 hostnames: optional array of string
 
+Hostnames are returned in lowercase punycode, in no particular order. Null when there are no associations.
+
 <a href="#">Link to this property</a>
 
 </details>
@@ -79,6 +83,8 @@ HostnameAssociationUpdateResponse object {hostnames }
 </summary>
 
 hostnames: optional array of string
+
+Hostnames are returned in lowercase punycode, in no particular order. Null when there are no associations.
 
 <a href="#">Link to this property</a>
 

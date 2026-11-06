@@ -250,17 +250,17 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-updated\_at: string
+uploaded\_on: string
 
-When the certificate was last modified.
+When the certificate was uploaded to Cloudflare.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-uploaded\_on: string
+updated\_at: optional string
 
-When the certificate was uploaded to Cloudflare.
+When the certificate was last modified. Only returned when uploading a certificate.
 
 formatdate-time
 
@@ -317,8 +317,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/acm/custom_trust_store 
     "issuer": "GlobalSign",
     "signature": "SHA256WithRSA",
     "status": "active",
-    "updated_at": "2014-01-01T05:20:00Z",
-    "uploaded_on": "2014-01-01T05:20:00Z"
+    "uploaded_on": "2014-01-01T05:20:00Z",
+    "updated_at": "2014-01-01T05:20:00Z"
   }
 }
 ```
@@ -357,8 +357,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/acm/custom_trust_store 
     "issuer": "GlobalSign",
     "signature": "SHA256WithRSA",
     "status": "active",
-    "updated_at": "2014-01-01T05:20:00Z",
-    "uploaded_on": "2014-01-01T05:20:00Z"
+    "uploaded_on": "2014-01-01T05:20:00Z",
+    "updated_at": "2014-01-01T05:20:00Z"
   }
 }
 ```

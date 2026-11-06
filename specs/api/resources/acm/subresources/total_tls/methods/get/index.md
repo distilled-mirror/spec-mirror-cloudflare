@@ -174,7 +174,7 @@ result: optional object {certificate\_authority, enabled, validity\_period }
 
 certificate\_authority: optional <a href="https://developers.cloudflare.com/api/resources/acm#(resource)%20acm.total_tls%20%3E%20(model)%20certificate_authority%20%3E%20(schema)">CertificateAuthority</a>
 
-The Certificate Authority that Total TLS certificates will be issued through.
+The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
 </summary>
 
@@ -204,7 +204,7 @@ If enabled, Total TLS will order a hostname specific TLS certificate for any pro
 
 validity\_period: optional 90
 
-The validity period in days for the certificates ordered via Total TLS.
+The validity period in days for the certificates ordered via Total TLS. Not returned when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 

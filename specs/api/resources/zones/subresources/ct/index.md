@@ -48,7 +48,7 @@ Whether CT alerting is enabled for the zone.
 
 emails: optional array of string
 
-Email addresses that receive CT alert notifications for the zone. A maximum of 100 addresses may be configured. Each address must be a valid RFC 5322 email address and must not contain a comma.
+Email addresses that receive CT alert notifications for the zone. A maximum of 100 addresses may be configured. Each address must be a valid RFC 5322 email address and must not contain a comma. Omitted from responses when no addresses are configured.
 
 <a href="#">Link to this property</a>
 

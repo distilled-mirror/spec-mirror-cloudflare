@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/resource-library/categories
 
-List the categories available for classifying applications, ordered by name. Results are paginated by `offset` or `cursor`.
+List the categories available for classifying applications, ordered by name, ignoring the case of the letters A to Z. Results are paginated by `offset` or `cursor`.
 
 ##### Security
 

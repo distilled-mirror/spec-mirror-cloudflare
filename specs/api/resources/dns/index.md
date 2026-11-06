@@ -19796,21 +19796,13 @@ PATCH/zones/{zone_id}/dns_settings
 
 <summary>
 
-ZoneGetResponse object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
+ZoneGetResponse object { flatten_all_cnames, internal_dns, multi_provider, 5 more }
 
 </summary>
 
 flatten_all_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-[Link to this property](#)
-
-Deprecatedfoundation_dns: boolean
-
-foundation_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 [Link to this property](#)
 
@@ -20098,21 +20090,13 @@ One of the following:
 
 <summary>
 
-ZoneEditResponse object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
+ZoneEditResponse object { flatten_all_cnames, internal_dns, multi_provider, 5 more }
 
 </summary>
 
 flatten_all_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-[Link to this property](#)
-
-Deprecatedfoundation_dns: boolean
-
-foundation_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 [Link to this property](#)
 
@@ -20418,7 +20402,7 @@ AccountGetResponse object { zone_defaults, enforce_dns_only }
 
 <summary>
 
-zone_defaults: object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
+zone_defaults: object { flatten_all_cnames, internal_dns, multi_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -20427,14 +20411,6 @@ Default settings for new zones created in this account.
 flatten_all_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-[Link to this property](#)
-
-Deprecatedfoundation_dns: boolean
-
-foundation_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 [Link to this property](#)
 
@@ -20660,7 +20636,7 @@ AccountEditResponse object { zone_defaults, enforce_dns_only }
 
 <summary>
 
-zone_defaults: object { flatten_all_cnames, foundation_dns, internal_dns, 6 more }
+zone_defaults: object { flatten_all_cnames, internal_dns, multi_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -20669,14 +20645,6 @@ Default settings for new zones created in this account.
 flatten_all_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-[Link to this property](#)
-
-Deprecatedfoundation_dns: boolean
-
-foundation_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 [Link to this property](#)
 

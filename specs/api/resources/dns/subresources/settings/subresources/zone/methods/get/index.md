@@ -166,21 +166,13 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {flatten\_all\_cnames, foundation\_dns, internal\_dns, 6 more }
+result: optional object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 </summary>
 
 flatten\_all\_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-<a href="#">Link to this property</a>
-
-Deprecatedfoundation\_dns: boolean
-
-foundation\_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 <a href="#">Link to this property</a>
 
@@ -502,7 +494,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_settings \
   "success": true,
   "result": {
     "flatten_all_cnames": false,
-    "foundation_dns": false,
     "internal_dns": {
       "reference_zone_id": "reference_zone_id"
     },
@@ -555,7 +546,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_settings \
   "success": true,
   "result": {
     "flatten_all_cnames": false,
-    "foundation_dns": false,
     "internal_dns": {
       "reference_zone_id": "reference_zone_id"
     },

@@ -56,7 +56,7 @@ InterconnectListResponse object {items, next }
 
 <summary>
 
-items: array of object {account, facility, name, 7 more } or object {account, name, region, 4 more }
+items: array of object {facility, name, site, 5 more } or object {name, region, type, 2 more }
 
 </summary>
 
@@ -66,13 +66,9 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {account, facility, name, 7 more }
+NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 <details>
 
@@ -128,10 +124,6 @@ ccr\_device\_name: optional string
 
 <a href="#">Link to this property</a>
 
-owner: optional string
-
-<a href="#">Link to this property</a>
-
 </details>
 
 <a href="#">Link to this property</a>
@@ -140,13 +132,9 @@ owner: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {account, name, region, 4 more }
+NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 name: string
 
@@ -163,10 +151,6 @@ type: string
 virtual\_port\_reservation\_id: string
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-owner: optional string
 
 <a href="#">Link to this property</a>
 
@@ -256,7 +240,7 @@ formatint32
 
 <summary>
 
-InterconnectGetResponse = object {account, facility, name, 7 more } or object {account, name, region, 4 more }
+InterconnectGetResponse = object {facility, name, site, 5 more } or object {name, region, type, 2 more }
 
 </summary>
 
@@ -266,13 +250,9 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {account, facility, name, 7 more }
+NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 <details>
 
@@ -328,10 +308,6 @@ ccr\_device\_name: optional string
 
 <a href="#">Link to this property</a>
 
-owner: optional string
-
-<a href="#">Link to this property</a>
-
 </details>
 
 <a href="#">Link to this property</a>
@@ -340,13 +316,9 @@ owner: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {account, name, region, 4 more }
+NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 name: string
 
@@ -363,10 +335,6 @@ type: string
 virtual\_port\_reservation\_id: string
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-owner: optional string
 
 <a href="#">Link to this property</a>
 
@@ -446,7 +414,7 @@ One of the following:
 
 <summary>
 
-InterconnectCreateResponse = object {account, facility, name, 7 more } or object {account, name, region, 4 more }
+InterconnectCreateResponse = object {facility, name, site, 5 more } or object {name, region, type, 2 more }
 
 </summary>
 
@@ -456,13 +424,9 @@ One of the following:
 
 <summary>
 
-NscInterconnectPhysicalBody object {account, facility, name, 7 more }
+NscInterconnectPhysicalBody object {facility, name, site, 5 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 <details>
 
@@ -518,10 +482,6 @@ ccr\_device\_name: optional string
 
 <a href="#">Link to this property</a>
 
-owner: optional string
-
-<a href="#">Link to this property</a>
-
 </details>
 
 <a href="#">Link to this property</a>
@@ -530,13 +490,9 @@ owner: optional string
 
 <summary>
 
-NscInterconnectGcpPartnerBody object {account, name, region, 4 more }
+NscInterconnectGcpPartnerBody object {name, region, type, 2 more }
 
 </summary>
-
-account: string
-
-<a href="#">Link to this property</a>
 
 name: string
 
@@ -553,10 +509,6 @@ type: string
 virtual\_port\_reservation\_id: string
 
 formatuuid
-
-<a href="#">Link to this property</a>
-
-owner: optional string
 
 <a href="#">Link to this property</a>
 

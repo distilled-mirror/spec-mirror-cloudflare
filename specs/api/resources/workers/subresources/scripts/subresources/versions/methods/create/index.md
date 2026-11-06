@@ -182,7 +182,7 @@ maxLength100
 
 <summary>
 
-bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 35 more
+bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
 
@@ -1628,6 +1628,30 @@ UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network\_id.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+WorkerLoader object {name, type }
+
+</summary>
+
+name: string
+
+A JavaScript variable name for the binding.
+
+<a href="#">Link to this property</a>
+
+type: "worker\_loader"
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -2209,7 +2233,7 @@ Date indicating targeted support in the Workers runtime. Backwards incompatible 
 
 compatibility\_flags: optional array of string
 
-Flags that enable or disable certain features in the Workers runtime.
+Lists the flags this version sets explicitly to enable or disable Workers runtime features. Excludes behavior that <code>compatibility_date</code> enables. Responses omit the field when the list is empty, so a missing field means the version sets zero flags.
 
 <a href="#">Link to this property</a>
 

@@ -272,143 +272,15 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {id, certificates, hosts, 10 more }
+result: optional object {id, hosts, status, 4 more }
 
-A certificate pack with all its properties.
+A newly ordered certificate pack. Certificates are not included until they are issued; get the certificate pack to retrieve them.
 
 </summary>
 
 id: string
 
 The unique identifier for a certificate\_pack.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-certificates: array of object {id, hosts, status, 9 more }
-
-Array of certificates in this pack.
-
-</summary>
-
-id: string
-
-Certificate identifier.
-
-<a href="#">Link to this property</a>
-
-hosts: array of string
-
-Hostnames covered by this certificate.
-
-<a href="#">Link to this property</a>
-
-status: string
-
-Certificate status.
-
-<a href="#">Link to this property</a>
-
-bundle\_method: optional string
-
-Certificate bundle method.
-
-<a href="#">Link to this property</a>
-
-expires\_on: optional string
-
-When the certificate from the authority expires.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-geo\_restrictions: optional object {label }
-
-Specify the region where your private key can be held locally.
-
-</summary>
-
-<details>
-
-<summary>
-
-label: optional "us"or "eu"or "highest\_security"
-
-</summary>
-
-One of the following:
-
-"us"
-
-<a href="#">Link to this property</a>
-
-"eu"
-
-<a href="#">Link to this property</a>
-
-"highest\_security"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-issuer: optional string
-
-The certificate authority that issued the certificate.
-
-<a href="#">Link to this property</a>
-
-modified\_on: optional string
-
-When the certificate was last modified.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-priority: optional number
-
-The order/priority in which the certificate will be used.
-
-<a href="#">Link to this property</a>
-
-signature: optional string
-
-The type of hash used for the certificate.
-
-<a href="#">Link to this property</a>
-
-uploaded\_on: optional string
-
-When the certificate was uploaded to Cloudflare.
-
-formatdate-time
-
-<a href="#">Link to this property</a>
-
-zone\_id: optional string
-
-Identifier.
-
-maxLength32
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
@@ -594,100 +466,6 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-cloudflare\_branding: optional boolean
-
-Whether or not to add Cloudflare Branding for the order. This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-dcv\_delegation\_records: optional array of object {cname, cname\_target, emails, 5 more }
-
-DCV Delegation records for domain validation.
-
-</summary>
-
-cname: optional string
-
-The CNAME record hostname for DCV delegation.
-
-<a href="#">Link to this property</a>
-
-cname\_target: optional string
-
-The CNAME record target value for DCV delegation.
-
-<a href="#">Link to this property</a>
-
-emails: optional array of string
-
-The set of email addresses that the certificate authority (CA) will use to complete domain validation.
-
-<a href="#">Link to this property</a>
-
-http\_body: optional string
-
-The content that the certificate authority (CA) will expect to find at the http\_url during the domain validation.
-
-<a href="#">Link to this property</a>
-
-http\_url: optional string
-
-The url that will be checked during domain validation.
-
-<a href="#">Link to this property</a>
-
-status: optional string
-
-Status of the validation record.
-
-<a href="#">Link to this property</a>
-
-txt\_name: optional string
-
-The hostname that the certificate authority (CA) will check for a TXT record during domain validation .
-
-<a href="#">Link to this property</a>
-
-txt\_value: optional string
-
-The TXT record that the certificate authority (CA) will check during domain validation.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-primary\_certificate: optional string
-
-Identifier of the primary certificate in a pack.
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-validation\_errors: optional array of object {message }
-
-Domain validation errors that have been received by the certificate authority (CA).
-
-</summary>
-
-message: optional string
-
-A domain validation error.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
 <details>
 
 <summary>
@@ -709,68 +487,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "email"
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-validation\_records: optional array of object {cname, cname\_target, emails, 5 more }
-
-Certificates’ validation records.
-
-</summary>
-
-cname: optional string
-
-The CNAME record hostname for DCV delegation.
-
-<a href="#">Link to this property</a>
-
-cname\_target: optional string
-
-The CNAME record target value for DCV delegation.
-
-<a href="#">Link to this property</a>
-
-emails: optional array of string
-
-The set of email addresses that the certificate authority (CA) will use to complete domain validation.
-
-<a href="#">Link to this property</a>
-
-http\_body: optional string
-
-The content that the certificate authority (CA) will expect to find at the http\_url during the domain validation.
-
-<a href="#">Link to this property</a>
-
-http\_url: optional string
-
-The url that will be checked during domain validation.
-
-<a href="#">Link to this property</a>
-
-status: optional string
-
-Status of the validation record.
-
-<a href="#">Link to this property</a>
-
-txt\_name: optional string
-
-The hostname that the certificate authority (CA) will check for a TXT record during domain validation .
-
-<a href="#">Link to this property</a>
-
-txt\_value: optional string
-
-The TXT record that the certificate authority (CA) will check during domain validation.
 
 <a href="#">Link to this property</a>
 
@@ -864,27 +580,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/o
   "success": true,
   "result": {
     "id": "3822ff90-ea29-44df-9e55-21300bb9419b",
-    "certificates": [
-      {
-        "id": "7e7b8deba8538af625850b7b2530034c",
-        "hosts": [
-          "example.com",
-          "*.example.com"
-        ],
-        "status": "active",
-        "bundle_method": "ubiquitous",
-        "expires_on": "2024-01-01T00:00:00Z",
-        "geo_restrictions": {
-          "label": "us"
-        },
-        "issuer": "Let's Encrypt",
-        "modified_on": "2014-01-01T05:20:00Z",
-        "priority": 0,
-        "signature": "ECDSAWithSHA256",
-        "uploaded_on": "2014-01-01T05:20:00Z",
-        "zone_id": "023e105f4ecef8ad9ca31a8372d0c353"
-      }
-    ],
     "hosts": [
       "example.com",
       "*.example.com",
@@ -893,44 +588,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/o
     "status": "initializing",
     "type": "universal",
     "certificate_authority": "lets_encrypt",
-    "cloudflare_branding": false,
-    "dcv_delegation_records": [
-      {
-        "cname": "_acme-challenge.example.com",
-        "cname_target": "dcv.cloudflare.com",
-        "emails": [
-          "administrator@example.com",
-          "webmaster@example.com"
-        ],
-        "http_body": "ca3-574923932a82475cb8592200f1a2a23d",
-        "http_url": "http://app.example.com/.well-known/pki-validation/ca3-da12a1c25e7b48cf80408c6c1763b8a2.txt",
-        "status": "pending",
-        "txt_name": "_acme-challenge.app.example.com",
-        "txt_value": "810b7d5f01154524b961ba0cd578acc2"
-      }
-    ],
-    "primary_certificate": "7e7b8deba8538af625850b7b2530034c",
-    "validation_errors": [
-      {
-        "message": "SERVFAIL looking up CAA for app.example.com"
-      }
-    ],
     "validation_method": "txt",
-    "validation_records": [
-      {
-        "cname": "_acme-challenge.example.com",
-        "cname_target": "dcv.cloudflare.com",
-        "emails": [
-          "administrator@example.com",
-          "webmaster@example.com"
-        ],
-        "http_body": "ca3-574923932a82475cb8592200f1a2a23d",
-        "http_url": "http://app.example.com/.well-known/pki-validation/ca3-da12a1c25e7b48cf80408c6c1763b8a2.txt",
-        "status": "pending",
-        "txt_name": "_acme-challenge.app.example.com",
-        "txt_value": "810b7d5f01154524b961ba0cd578acc2"
-      }
-    ],
     "validity_days": 14
   }
 }
@@ -965,27 +623,6 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/o
   "success": true,
   "result": {
     "id": "3822ff90-ea29-44df-9e55-21300bb9419b",
-    "certificates": [
-      {
-        "id": "7e7b8deba8538af625850b7b2530034c",
-        "hosts": [
-          "example.com",
-          "*.example.com"
-        ],
-        "status": "active",
-        "bundle_method": "ubiquitous",
-        "expires_on": "2024-01-01T00:00:00Z",
-        "geo_restrictions": {
-          "label": "us"
-        },
-        "issuer": "Let's Encrypt",
-        "modified_on": "2014-01-01T05:20:00Z",
-        "priority": 0,
-        "signature": "ECDSAWithSHA256",
-        "uploaded_on": "2014-01-01T05:20:00Z",
-        "zone_id": "023e105f4ecef8ad9ca31a8372d0c353"
-      }
-    ],
     "hosts": [
       "example.com",
       "*.example.com",
@@ -994,44 +631,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/ssl/certificate_packs/o
     "status": "initializing",
     "type": "universal",
     "certificate_authority": "lets_encrypt",
-    "cloudflare_branding": false,
-    "dcv_delegation_records": [
-      {
-        "cname": "_acme-challenge.example.com",
-        "cname_target": "dcv.cloudflare.com",
-        "emails": [
-          "administrator@example.com",
-          "webmaster@example.com"
-        ],
-        "http_body": "ca3-574923932a82475cb8592200f1a2a23d",
-        "http_url": "http://app.example.com/.well-known/pki-validation/ca3-da12a1c25e7b48cf80408c6c1763b8a2.txt",
-        "status": "pending",
-        "txt_name": "_acme-challenge.app.example.com",
-        "txt_value": "810b7d5f01154524b961ba0cd578acc2"
-      }
-    ],
-    "primary_certificate": "7e7b8deba8538af625850b7b2530034c",
-    "validation_errors": [
-      {
-        "message": "SERVFAIL looking up CAA for app.example.com"
-      }
-    ],
     "validation_method": "txt",
-    "validation_records": [
-      {
-        "cname": "_acme-challenge.example.com",
-        "cname_target": "dcv.cloudflare.com",
-        "emails": [
-          "administrator@example.com",
-          "webmaster@example.com"
-        ],
-        "http_body": "ca3-574923932a82475cb8592200f1a2a23d",
-        "http_url": "http://app.example.com/.well-known/pki-validation/ca3-da12a1c25e7b48cf80408c6c1763b8a2.txt",
-        "status": "pending",
-        "txt_name": "_acme-challenge.app.example.com",
-        "txt_value": "810b7d5f01154524b961ba0cd578acc2"
-      }
-    ],
     "validity_days": 14
   }
 }

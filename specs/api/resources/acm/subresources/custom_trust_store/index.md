@@ -118,17 +118,17 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-updated\_at: string
+uploaded\_on: string
 
-When the certificate was last modified.
+When the certificate was uploaded to Cloudflare.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-uploaded\_on: string
+updated\_at: optional string
 
-When the certificate was uploaded to Cloudflare.
+When the certificate was last modified. Only returned when uploading a certificate.
 
 formatdate-time
 

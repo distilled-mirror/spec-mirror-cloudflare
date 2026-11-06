@@ -38,7 +38,7 @@ POST/zones/{zone\_id}/acm/total\_tls
 
 CertificateAuthority = "google"or "lets\_encrypt"or "ssl\_com"
 
-The Certificate Authority that Total TLS certificates will be issued through.
+The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
 </summary>
 
@@ -70,7 +70,7 @@ TotalTLSGetResponse object {certificate\_authority, enabled, validity\_period }
 
 certificate\_authority: optional <a href="https://developers.cloudflare.com/api/resources/acm#(resource)%20acm.total_tls%20%3E%20(model)%20certificate_authority%20%3E%20(schema)">CertificateAuthority</a>
 
-The Certificate Authority that Total TLS certificates will be issued through.
+The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -82,7 +82,7 @@ If enabled, Total TLS will order a hostname specific TLS certificate for any pro
 
 validity\_period: optional 90
 
-The validity period in days for the certificates ordered via Total TLS.
+The validity period in days for the certificates ordered via Total TLS. Not returned when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -100,7 +100,7 @@ TotalTLSUpdateResponse object {certificate\_authority, enabled, validity\_period
 
 certificate\_authority: optional <a href="https://developers.cloudflare.com/api/resources/acm#(resource)%20acm.total_tls%20%3E%20(model)%20certificate_authority%20%3E%20(schema)">CertificateAuthority</a>
 
-The Certificate Authority that Total TLS certificates will be issued through.
+The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -112,7 +112,7 @@ If enabled, Total TLS will order a hostname specific TLS certificate for any pro
 
 validity\_period: optional 90
 
-The validity period in days for the certificates ordered via Total TLS.
+The validity period in days for the certificates ordered via Total TLS. Not returned when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -130,7 +130,7 @@ TotalTLSEditResponse object {certificate\_authority, enabled, validity\_period }
 
 certificate\_authority: optional <a href="https://developers.cloudflare.com/api/resources/acm#(resource)%20acm.total_tls%20%3E%20(model)%20certificate_authority%20%3E%20(schema)">CertificateAuthority</a>
 
-The Certificate Authority that Total TLS certificates will be issued through.
+The Certificate Authority that Total TLS certificates will be issued through. Not returned in responses when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -142,7 +142,7 @@ If enabled, Total TLS will order a hostname specific TLS certificate for any pro
 
 validity\_period: optional 90
 
-The validity period in days for the certificates ordered via Total TLS.
+The validity period in days for the certificates ordered via Total TLS. Not returned when Total TLS is disabled.
 
 <a href="#">Link to this property</a>
 
@@ -252,17 +252,17 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
-updated\_at: string
+uploaded\_on: string
 
-When the certificate was last modified.
+When the certificate was uploaded to Cloudflare.
 
 formatdate-time
 
 <a href="#">Link to this property</a>
 
-uploaded\_on: string
+updated\_at: optional string
 
-When the certificate was uploaded to Cloudflare.
+When the certificate was last modified. Only returned when uploading a certificate.
 
 formatdate-time
 

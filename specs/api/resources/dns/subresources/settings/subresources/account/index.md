@@ -42,7 +42,7 @@ AccountGetResponse object {zone\_defaults, enforce\_dns\_only }
 
 <summary>
 
-zone\_defaults: object {flatten\_all\_cnames, foundation\_dns, internal\_dns, 6 more }
+zone\_defaults: object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -51,14 +51,6 @@ Default settings for new zones created in this account.
 flatten\_all\_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-<a href="#">Link to this property</a>
-
-Deprecatedfoundation\_dns: boolean
-
-foundation\_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 <a href="#">Link to this property</a>
 
@@ -284,7 +276,7 @@ AccountEditResponse object {zone\_defaults, enforce\_dns\_only }
 
 <summary>
 
-zone\_defaults: object {flatten\_all\_cnames, foundation\_dns, internal\_dns, 6 more }
+zone\_defaults: object {flatten\_all\_cnames, internal\_dns, multi\_provider, 5 more }
 
 Default settings for new zones created in this account.
 
@@ -293,14 +285,6 @@ Default settings for new zones created in this account.
 flatten\_all\_cnames: boolean
 
 Whether to flatten all CNAME records in the zone. Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
-
-<a href="#">Link to this property</a>
-
-Deprecatedfoundation\_dns: boolean
-
-foundation\_dns is deprecated. Use nameservers.type: cloudflare.advanced to turn on Advanced Nameservers and cloudflare.standard to turn it off. This field will be removed in a future API version.
-
-Deprecated. Use nameservers.type to configure Advanced Nameservers.
 
 <a href="#">Link to this property</a>
 
