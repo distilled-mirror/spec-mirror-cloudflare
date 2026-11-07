@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4078,
+  "count": 4083,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -15789,6 +15789,26 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/doh/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/doh/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/replace",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/replace/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/zero_trust/subresources/resource_library",

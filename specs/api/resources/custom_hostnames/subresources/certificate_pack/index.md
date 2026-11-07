@@ -144,7 +144,7 @@ The HTTP URL that will be checked during custom hostname verification and where 
 
 <summary>
 
-ssl: optional object {id, bundle\_method, certificate\_authority, 17 more }
+ssl: optional object {id, bundle\_method, certificate\_authority, 15 more }
 
 </summary>
 
@@ -170,21 +170,9 @@ The Certificate Authority that will issue the certificate.
 
 <a href="#">Link to this property</a>
 
-custom\_certificate: optional string
-
-If a custom uploaded certificate is used.
-
-<a href="#">Link to this property</a>
-
 custom\_csr\_id: optional string
 
 The identifier for the Custom CSR that was used.
-
-<a href="#">Link to this property</a>
-
-custom\_key: optional string
-
-The key for a custom uploaded certificate.
 
 <a href="#">Link to this property</a>
 

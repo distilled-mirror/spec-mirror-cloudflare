@@ -16912,6 +16912,120 @@ Tags associated with the service token, as key-value pairs. On update, replaces 
 
 [Link to this property](#)
 
+##### [Get Zero Trust organization trust settings](/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/get)
+
+GET/accounts/{account_id}/access/organizations/trust_settings
+
+##### [Replace Zero Trust organization trust settings](/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/replace)
+
+PUT/accounts/{account_id}/access/organizations/trust_settings
+
+##### [Update Zero Trust organization trust settings](/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/update)
+
+PATCH/accounts/{account_id}/access/organizations/trust_settings
+
+##### [Delete Zero Trust organization trust settings](/api/resources/zero_trust/subresources/organizations/subresources/trust_settings/methods/delete)
+
+DELETE/accounts/{account_id}/access/organizations/trust_settings
+
+##### Models
+
+<details>
+
+<summary>
+
+TrustSettingGetResponse object { grant_trust_to_all_accounts_in_org, trusting_accounts }
+
+</summary>
+
+grant_trust_to_all_accounts_in_org: boolean
+
+Whether all accounts in the organization are trusted to use this account’s cross-account Access resources.
+
+[Link to this property](#)
+
+trusting_accounts: optional array of string
+
+Explicit account IDs trusted to use this account’s cross-account Access resources. At most 100 unique valid account IDs are accepted. Omitted from responses when empty.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TrustSettingReplaceResponse object { grant_trust_to_all_accounts_in_org, trusting_accounts }
+
+</summary>
+
+grant_trust_to_all_accounts_in_org: boolean
+
+Whether all accounts in the organization are trusted to use this account’s cross-account Access resources.
+
+[Link to this property](#)
+
+trusting_accounts: optional array of string
+
+Explicit account IDs trusted to use this account’s cross-account Access resources. At most 100 unique valid account IDs are accepted. Omitted from responses when empty.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TrustSettingUpdateResponse object { grant_trust_to_all_accounts_in_org, trusting_accounts }
+
+</summary>
+
+grant_trust_to_all_accounts_in_org: boolean
+
+Whether all accounts in the organization are trusted to use this account’s cross-account Access resources.
+
+[Link to this property](#)
+
+trusting_accounts: optional array of string
+
+Explicit account IDs trusted to use this account’s cross-account Access resources. At most 100 unique valid account IDs are accepted. Omitted from responses when empty.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+TrustSettingDeleteResponse object { grant_trust_to_all_accounts_in_org, trusting_accounts }
+
+</summary>
+
+grant_trust_to_all_accounts_in_org: boolean
+
+Whether all accounts in the organization are trusted to use this account’s cross-account Access resources.
+
+[Link to this property](#)
+
+trusting_accounts: optional array of string
+
+Explicit account IDs trusted to use this account’s cross-account Access resources. At most 100 unique valid account IDs are accepted. Omitted from responses when empty.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 ##### [Update a user seat](/api/resources/zero_trust/subresources/seats/methods/edit)
 
 PATCH/accounts/{account_id}/access/seats

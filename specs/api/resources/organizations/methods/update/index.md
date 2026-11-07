@@ -44,7 +44,7 @@ organization\_id: string
 
 name: optional string
 
-The Organization’s display name, limited to 65 UTF-8 bytes. An omitted, empty, or unchanged value is a no-op.
+The Organization name, limited to 65 UTF-8 bytes. An omitted, empty, or unchanged value is a no-op.
 
 [Link to this property](#)%20organizations%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/tenants/{tenant\_id}/accounts
 
-Lists all Cloudflare accounts across this tenant’s hierarchy using the legacy Account response shape. Use `GET /organizations/{organization_id}/accounts` to list only accounts immediately attached to a specific Organization using the modern Account response shape. Use `page_token` and `page_size` for cursor pagination, or provide `page` and `per_page` together for legacy offset pagination. Cursor pagination takes precedence when requested.
+Lists all Cloudflare accounts across this tenant’s hierarchy using the legacy Account response shape. Use `GET /organizations/{organization_id}/accounts` to list only accounts immediately attached to a specific Organization using the modern Account response shape. Use `page_token` and `page_size` for cursor pagination.
 
 ##### Security
 
@@ -100,7 +100,7 @@ One of the following:
 
 include\_total: optional boolean
 
-Whether to calculate and return the exact `result_info.total_size` for cursor pagination. Defaults to true. When false, `total_size` is omitted. Legacy `page`/`per_page` requests always calculate `total_count`.
+Whether to calculate and return the exact `result_info.total_size` for cursor pagination. Defaults to true. When false, `total_size` is omitted.
 
 [Link to this property](#)%20tenants.accounts%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20include_total%20%3E%20(schema)>)
 
@@ -140,14 +140,6 @@ Field to order results by. Currently supported values: `account_name`.
 
 [Link to this property](#)%20tenants.accounts%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20order_by%20%3E%20(schema)>)
 
-page: optional number
-
-Legacy offset page number. Must be provided with `per_page`. Values below 1 are treated as
-
-1. Cursor pagination takes precedence when requested.
-
-[Link to this property](#)%20tenants.accounts%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
-
 page\_size: optional number
 
 The amount of items to return. Defaults to 10.
@@ -165,12 +157,6 @@ An opaque token returned from the last list response that when provided will ret
 Parameters used to filter the retrieved list must remain in subsequent requests with a page token.
 
 [Link to this property](#)%20tenants.accounts%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page_token%20%3E%20(schema)>)
-
-per\_page: optional number
-
-Legacy offset page size. Must be provided with `page`. Values are clamped to the range 1-100. Cursor pagination takes precedence when requested.
-
-[Link to this property](#)%20tenants.accounts%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 <details>
 
@@ -326,17 +312,7 @@ use\_account\_custom\_ns\_by\_default: boolean
 
 <summary>
 
-result\_info: object {next\_page\_token, total\_size } or object {count, page, per\_page, total\_count }
-
-</summary>
-
-One of the following:
-
-<details>
-
-<summary>
-
-OrganizationsAPIPageTokenResultInfo object {next\_page\_token, total\_size }
+result\_info: object {next\_page\_token, total\_size }
 
 </summary>
 
@@ -351,38 +327,6 @@ Parameters used to filter the retrieved list must remain in subsequent requests 
 total\_size: optional number
 
 Counts the total amount of items in a list with the applied filters. The API omits next\_page\_token to indicate no more items in a particular list.
-
-<a href="#">Link to this property</a>
-
-</details>
-
-<a href="#">Link to this property</a>
-
-<details>
-
-<summary>
-
-OrganizationsAPILegacyPaginationResultInfo object {count, page, per\_page, total\_count }
-
-</summary>
-
-count: number
-
-<a href="#">Link to this property</a>
-
-page: number
-
-<a href="#">Link to this property</a>
-
-per\_page: number
-
-<a href="#">Link to this property</a>
-
-total\_count: number
-
-<a href="#">Link to this property</a>
-
-</details>
 
 <a href="#">Link to this property</a>
 
