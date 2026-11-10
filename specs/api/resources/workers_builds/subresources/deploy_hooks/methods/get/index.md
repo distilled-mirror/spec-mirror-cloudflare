@@ -68,8 +68,6 @@ Account identifier.
 
 script\_name: string
 
-Human-readable name of the Worker.
-
 [Link to this property](#)%20workers_builds.deploy_hooks%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
 deploy\_hook\_uuid: string
@@ -293,7 +291,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "created_on": "2019-12-27T18:11:19.117Z",
     "deploy_hook_name": "Production Deploy Hook",
     "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-    "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
+    "external_script_id": "0123456789abcdef0123456789abcdef",
     "modified_on": "2019-12-27T18:11:19.117Z"
   },
   "success": true,
@@ -327,7 +325,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/workers/$S
     "created_on": "2019-12-27T18:11:19.117Z",
     "deploy_hook_name": "Production Deploy Hook",
     "deploy_hook_uuid": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-    "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
+    "external_script_id": "0123456789abcdef0123456789abcdef",
     "modified_on": "2019-12-27T18:11:19.117Z"
   },
   "success": true,

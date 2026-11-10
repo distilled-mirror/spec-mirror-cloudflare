@@ -388,6 +388,8 @@ enabled: optional boolean
 
 match\_threshold: optional number
 
+Minimum reranker relevance score a chunk must reach to be returned. When omitted, falls back to the instance-level score\_threshold, then to 0.4.
+
 maximum1
 
 minimum0

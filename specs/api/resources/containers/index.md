@@ -16,6 +16,130 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Containers
 
+##### [Get live account usage](https://developers.cloudflare.com/api/resources/containers/methods/usage)
+
+GET/accounts/{account\_id}/containers/usage
+
+##### ModelsExpand Collapse
+
+<details>
+
+<summary>
+
+ContainerUsageResponse object {maximum, usage, utilization }
+
+Current live usage, maximum limits, and utilization percentages for your account. Usage includes active and assigned instances and is a current snapshot, not a historical or billable metric.
+
+</summary>
+
+<details>
+
+<summary>
+
+maximum: object {disk\_mb, memory\_mib, vcpus }
+
+Lists account limits for the resources reported in usage.
+
+</summary>
+
+disk\_mb: number
+
+Maximum disk in MB for the account.
+
+<a href="#">Link to this property</a>
+
+memory\_mib: number
+
+Maximum memory in MiB for the account.
+
+<a href="#">Link to this property</a>
+
+vcpus: number
+
+Maximum vCPU for the account.
+
+formatfloat
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+usage: object {disk\_mb, instances, memory\_mib, vcpus }
+
+Lists current resource consumption for active and assigned instances.
+
+</summary>
+
+disk\_mb: number
+
+<a href="#">Link to this property</a>
+
+instances: number
+
+<a href="#">Link to this property</a>
+
+memory\_mib: number
+
+<a href="#">Link to this property</a>
+
+vcpus: number
+
+formatfloat
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+utilization: object {disk\_mb, memory\_mib, vcpus }
+
+Live resource utilization percentages. A value of 100 represents full utilization. Values can exceed 100 when usage exceeds quota. The API omits fields whose corresponding maximum is zero.
+
+</summary>
+
+disk\_mb: optional number
+
+Live disk usage as a percentage of maximum disk.
+
+formatfloat
+
+<a href="#">Link to this property</a>
+
+memory\_mib: optional number
+
+Live memory usage as a percentage of maximum memory.
+
+formatfloat
+
+<a href="#">Link to this property</a>
+
+vcpus: optional number
+
+Live vCPU usage as a percentage of maximum vCPU.
+
+formatfloat
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20containers%20%3E%20(model)%20container_usage_response%20%3E%20(schema)>)
+
 #### ContainersApplications
 
 ##### [List Applications associated with your account](https://developers.cloudflare.com/api/resources/containers/subresources/applications/methods/list)

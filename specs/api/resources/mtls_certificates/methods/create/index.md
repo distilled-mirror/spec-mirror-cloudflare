@@ -76,7 +76,7 @@ Indicates whether the certificate is a CA or leaf certificate.
 
 certificates: string
 
-The uploaded root CA certificate.
+The uploaded root CA certificate. Responses return the certificates as Cloudflare stores them, re-encoded as PEM, not byte for byte as uploaded. Each certificate block ends with a newline, base64 lines are wrapped at 64 characters, text between blocks is dropped, and a chain may be reordered. Compare certificates by their decoded content rather than as strings.
 
 [Link to this property](#)%20mtls_certificates%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20certificates%20%3E%20(schema)>)
 
@@ -208,7 +208,7 @@ Indicates whether the certificate is a CA or leaf certificate.
 
 certificates: optional string
 
-The uploaded root CA certificate.
+The uploaded root CA certificate. Responses return the certificates as Cloudflare stores them, re-encoded as PEM, not byte for byte as uploaded. Each certificate block ends with a newline, base64 lines are wrapped at 64 characters, text between blocks is dropped, and a chain may be reordered. Compare certificates by their decoded content rather than as strings.
 
 <a href="#">Link to this property</a>
 

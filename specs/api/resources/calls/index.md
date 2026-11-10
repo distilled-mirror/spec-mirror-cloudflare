@@ -386,7 +386,7 @@ minLength32
 
 <summary>
 
-TURNCreateResponse object {created, key, modified, 2 more }
+TURNCreateResponse object {created, modified, name, 2 more }
 
 </summary>
 
@@ -395,16 +395,6 @@ created: string
 The date and time the item was created.
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-key: string
-
-Bearer token
-
-maxLength64
-
-minLength64
 
 <a href="#">Link to this property</a>
 
@@ -419,6 +409,16 @@ formatdate-time
 name: string
 
 A short description of a TURN key, not shown to end users.
+
+<a href="#">Link to this property</a>
+
+secret: string
+
+Bearer token
+
+maxLength64
+
+minLength64
 
 <a href="#">Link to this property</a>
 

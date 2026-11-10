@@ -150,7 +150,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {created, key, modified, 2 more }
+result: optional object {created, modified, name, 2 more }
 
 </summary>
 
@@ -159,16 +159,6 @@ created: string
 The date and time the item was created.
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-key: string
-
-Bearer token
-
-maxLength64
-
-minLength64
 
 <a href="#">Link to this property</a>
 
@@ -183,6 +173,16 @@ formatdate-time
 name: string
 
 A short description of a TURN key, not shown to end users.
+
+<a href="#">Link to this property</a>
+
+secret: string
+
+Bearer token
+
+maxLength64
+
+minLength64
 
 <a href="#">Link to this property</a>
 
@@ -242,9 +242,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/calls/turn_keys \
   "success": true,
   "result": {
     "created": "2014-01-02T02:20:00Z",
-    "key": "66bcf64aa8907b9f9d90ac17746a77ce394c393b92b3916633dc02846e608ad4",
     "modified": "2014-01-02T02:20:00Z",
     "name": "my-turn-key",
+    "secret": "66bcf64aa8907b9f9d90ac17746a77ce394c393b92b3916633dc02846e608ad4",
     "uid": "2a95132c15732412d22c1476fa83f27a"
   }
 }
@@ -279,9 +279,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/calls/turn_keys \
   "success": true,
   "result": {
     "created": "2014-01-02T02:20:00Z",
-    "key": "66bcf64aa8907b9f9d90ac17746a77ce394c393b92b3916633dc02846e608ad4",
     "modified": "2014-01-02T02:20:00Z",
     "name": "my-turn-key",
+    "secret": "66bcf64aa8907b9f9d90ac17746a77ce394c393b92b3916633dc02846e608ad4",
     "uid": "2a95132c15732412d22c1476fa83f27a"
   }
 }

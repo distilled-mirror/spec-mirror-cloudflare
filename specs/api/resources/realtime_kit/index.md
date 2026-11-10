@@ -140,7 +140,7 @@ AppUpdateAppByIDResponse object { data, success }
 
 <summary>
 
-data: object { id, cf_account_tag, created_at, 2 more }
+data: object { id, created_at, name }
 
 </summary>
 
@@ -150,17 +150,9 @@ formatuuid
 
 [Link to this property](#)
 
-cf_account_tag: optional string
-
-[Link to this property](#)
-
 created_at: optional string
 
 formatdate-time
-
-[Link to this property](#)
-
-is_org_on_kv: optional boolean
 
 [Link to this property](#)
 
@@ -302,7 +294,7 @@ MeetingGetResponse object { data, paging, success }
 
 <summary>
 
-data: array of object { id, created_at, updated_at, 9 more }
+data: array of object { id, created_at, updated_at, 10 more }
 
 </summary>
 
@@ -1107,6 +1099,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -1208,7 +1232,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, created_at, updated_at, 10 more }
+data: optional object { id, created_at, updated_at, 11 more }
 
 Data returned by the operation
 
@@ -2211,6 +2235,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -2282,7 +2338,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, created_at, updated_at, 10 more }
+data: optional object { id, created_at, updated_at, 11 more }
 
 Data returned by the operation
 
@@ -3285,6 +3341,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -3356,7 +3444,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, created_at, updated_at, 10 more }
+data: optional object { id, created_at, updated_at, 11 more }
 
 Data returned by the operation
 
@@ -4359,6 +4447,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -4430,7 +4550,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object { id, created_at, updated_at, 10 more }
+data: optional object { id, created_at, updated_at, 11 more }
 
 Data returned by the operation
 
@@ -5433,6 +5553,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6534,7 +6686,7 @@ Name of the preset
 
 <summary>
 
-permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 24 more }
 
 </summary>
 
@@ -6993,6 +7145,12 @@ One of the following:
 [Link to this property](#)
 
 accept_stage_requests: optional boolean
+
+[Link to this property](#)
+
+can_edit_meeting_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 [Link to this property](#)
 
@@ -7572,7 +7730,7 @@ Name of the preset
 
 <summary>
 
-permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 24 more }
 
 </summary>
 
@@ -8031,6 +8189,12 @@ One of the following:
 [Link to this property](#)
 
 accept_stage_requests: optional boolean
+
+[Link to this property](#)
+
+can_edit_meeting_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 [Link to this property](#)
 
@@ -8610,7 +8774,7 @@ Name of the preset
 
 <summary>
 
-permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 24 more }
 
 </summary>
 
@@ -9069,6 +9233,12 @@ One of the following:
 [Link to this property](#)
 
 accept_stage_requests: optional boolean
+
+[Link to this property](#)
+
+can_edit_meeting_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 [Link to this property](#)
 
@@ -9648,7 +9818,7 @@ Name of the preset
 
 <summary>
 
-permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 24 more }
 
 </summary>
 
@@ -10107,6 +10277,12 @@ One of the following:
 [Link to this property](#)
 
 accept_stage_requests: optional boolean
+
+[Link to this property](#)
+
+can_edit_meeting_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 [Link to this property](#)
 
@@ -10686,7 +10862,7 @@ Name of the preset
 
 <summary>
 
-permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 23 more }
+permissions: object { accept_waiting_requests, can_accept_production_requests, can_change_participant_permissions, 24 more }
 
 </summary>
 
@@ -11145,6 +11321,12 @@ One of the following:
 [Link to this property](#)
 
 accept_stage_requests: optional boolean
+
+[Link to this property](#)
+
+can_edit_meeting_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 [Link to this property](#)
 
@@ -15632,7 +15814,7 @@ formatdate-time
 
 <summary>
 
-meeting: optional object { id, created_at, updated_at, 9 more }
+meeting: optional object { id, created_at, updated_at, 10 more }
 
 </summary>
 
@@ -16437,6 +16619,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+sip: optional object { password, sip_uri, username }
+
+SIP dial-in details. `null` if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+[Link to this property](#)
+
+sip_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+[Link to this property](#)
+
+username: string
+
+Username for SIP digest authentication.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

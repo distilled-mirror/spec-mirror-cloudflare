@@ -178,7 +178,7 @@ hold\_after: optional string
 
 <a href="#">Link to this property</a>
 
-include\_subdomains: optional string
+include\_subdomains: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -231,7 +231,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/hold \
   "result": {
     "hold": true,
     "hold_after": "2023-01-31T15:56:36Z",
-    "include_subdomains": "include_subdomains"
+    "include_subdomains": true
   },
   "success": true
 }
@@ -266,7 +266,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/hold \
   "result": {
     "hold": true,
     "hold_after": "2023-01-31T15:56:36Z",
-    "include_subdomains": "include_subdomains"
+    "include_subdomains": true
   },
   "success": true
 }

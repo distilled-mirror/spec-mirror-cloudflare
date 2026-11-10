@@ -52,7 +52,7 @@ hold\_after: optional string
 
 <a href="#">Link to this property</a>
 
-include\_subdomains: optional string
+include\_subdomains: optional boolean
 
 <a href="#">Link to this property</a>
 

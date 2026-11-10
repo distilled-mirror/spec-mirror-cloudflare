@@ -160,7 +160,7 @@ AppUpdateAppByIDResponse object {data, success }
 
 <summary>
 
-data: object {id, cf\_account\_tag, created\_at, 2 more }
+data: object {id, created\_at, name }
 
 </summary>
 
@@ -170,17 +170,9 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
-cf\_account\_tag: optional string
-
-<a href="#">Link to this property</a>
-
 created\_at: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-is\_org\_on\_kv: optional boolean
 
 <a href="#">Link to this property</a>
 

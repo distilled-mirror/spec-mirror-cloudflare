@@ -414,7 +414,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -873,6 +873,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -1452,7 +1458,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -1911,6 +1917,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -2490,7 +2502,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -2949,6 +2961,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -3528,7 +3546,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -3987,6 +4005,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -4566,7 +4590,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -5025,6 +5049,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 

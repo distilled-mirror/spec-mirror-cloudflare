@@ -328,7 +328,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -787,6 +787,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -1338,7 +1344,7 @@ Name of the preset
 
 <summary>
 
-permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 23 more }
+permissions: object {accept\_waiting\_requests, can\_accept\_production\_requests, can\_change\_participant\_permissions, 24 more }
 
 </summary>
 
@@ -1797,6 +1803,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 accept\_stage\_requests: optional boolean
+
+<a href="#">Link to this property</a>
+
+can\_edit\_meeting\_title: optional boolean
+
+Allows renaming the meeting for the current session
 
 <a href="#">Link to this property</a>
 
@@ -2306,6 +2318,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
       "show_participant_list": true,
       "waiting_room_type": "SKIP",
       "accept_stage_requests": true,
+      "can_edit_meeting_title": true,
       "is_recorder": true,
       "stage_access": "ALLOWED",
       "stage_enabled": true,
@@ -2449,6 +2462,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
       "show_participant_list": true,
       "waiting_room_type": "SKIP",
       "accept_stage_requests": true,
+      "can_edit_meeting_title": true,
       "is_recorder": true,
       "stage_access": "ALLOWED",
       "stage_enabled": true,

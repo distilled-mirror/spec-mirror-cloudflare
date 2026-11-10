@@ -299,7 +299,7 @@ entity\_id: string
 
 <summary>
 
-entity\_type: "url\_pattern"or "account"or "zone"or "custom\_expression"
+entity\_type: "url\_pattern"or "account"or "zone"or 2 more
 
 The type of entity targeted by a mitigation.
 
@@ -316,6 +316,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "zone"
+
+<a href="#">Link to this property</a>
+
+"domain"
 
 <a href="#">Link to this property</a>
 

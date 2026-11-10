@@ -204,6 +204,12 @@ Determines whether the WARP client can silently reauthenticate the user with dev
 
 [Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enable_device_credential_authentication%20%3E%20(schema)>)
 
+enable\_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
+
+[Link to this property](#)%20zero_trust.devices.policies.custom%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20enable_netbt%20%3E%20(schema)>)
+
 enabled: optional boolean
 
 Whether the policy will be applied to matching devices.
@@ -630,7 +636,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 31 more }
+result: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20settings_policy%20%3E%20(schema)">SettingsPolicy</a> { allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 32 more }
 
 </summary>
 
@@ -757,6 +763,12 @@ A description of the DNS search suffix.
 enable\_device\_credential\_authentication: optional boolean
 
 Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+<a href="#">Link to this property</a>
+
+enable\_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
 
 <a href="#">Link to this property</a>
 
@@ -1256,6 +1268,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       }
     ],
     "enable_device_credential_authentication": false,
+    "enable_netbt": false,
     "enabled": true,
     "exclude": [
       {
@@ -1374,6 +1387,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       }
     ],
     "enable_device_credential_authentication": false,
+    "enable_netbt": false,
     "enabled": true,
     "exclude": [
       {

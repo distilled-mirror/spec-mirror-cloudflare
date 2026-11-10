@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/builds/workers/{external\_script\_id}/builds
 
-List paginated build records associated with a Worker tag.
+List paginated build records associated with a Worker.
 
 ##### Security
 
@@ -67,8 +67,6 @@ Account identifier.
 [Link to this property](#)%20workers_builds.builds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
 external\_script\_id: string
-
-System-generated tag of the Worker. This is not the Worker name.
 
 [Link to this property](#)%20workers_builds.builds%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20external_script_id%20%3E%20(schema)>)
 

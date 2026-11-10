@@ -156,7 +156,7 @@ messages: array of string
 
 <summary>
 
-result: object {config\_file, default\_worker\_name, env\_worker\_names, 2 more } or object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+result: object {config\_file, default\_worker\_name, deploy\_tool, 3 more } or object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -166,7 +166,7 @@ One of the following:
 
 <summary>
 
-object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -175,6 +175,30 @@ config\_file: optional string
 <a href="#">Link to this property</a>
 
 default\_worker\_name: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+deploy\_tool: optional "cf"or "wrangler"
+
+Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
+
+</summary>
+
+One of the following:
+
+"cf"
+
+<a href="#">Link to this property</a>
+
+"wrangler"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -230,7 +254,7 @@ scripts: optional map\[string]
 
 <summary>
 
-object {config\_file, default\_worker\_name, env\_worker\_names, 2 more }
+object {config\_file, default\_worker\_name, deploy\_tool, 3 more }
 
 </summary>
 
@@ -239,6 +263,30 @@ config\_file: optional string
 <a href="#">Link to this property</a>
 
 default\_worker\_name: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+deploy\_tool: optional "cf"or "wrangler"
+
+Deployment CLI detected in the selected root directory. A Wrangler config takes precedence. <code>cf</code> requires <code>cloudflare.config.ts</code> and a <code>cf</code> dependency or dev dependency in <code>package.json</code>.
+
+</summary>
+
+One of the following:
+
+"cf"
+
+<a href="#">Link to this property</a>
+
+"wrangler"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -357,6 +405,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
   "result": {
     "config_file": "wrangler.toml",
     "default_worker_name": "my-worker",
+    "deploy_tool": "cf",
     "env_worker_names": {
       "production": "my-worker-prod",
       "staging": "my-worker-staging"
@@ -396,6 +445,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/repos/$PRO
   "result": {
     "config_file": "wrangler.toml",
     "default_worker_name": "my-worker",
+    "deploy_tool": "cf",
     "env_worker_names": {
       "production": "my-worker-prod",
       "staging": "my-worker-staging"

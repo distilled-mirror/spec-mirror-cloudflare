@@ -138,7 +138,7 @@ Contains the list of catalogs.
 
 <summary>
 
-warehouses: array of object {id, bucket, name, 4 more }
+warehouses: array of object {id, bucket, name, 5 more }
 
 Lists catalogs in the account.
 
@@ -185,6 +185,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 
@@ -391,6 +399,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/basin-catalog \
     "warehouses": [
       {
         "bucket": "analytics-bucket",
+        "catalog_uri": "https://catalog.cloudflarestorage.com/account123/analytics-bucket",
         "id": "550e8400-e29b-41d4-a716-446655440000",
         "jurisdiction": "default",
         "maintenance_config": {
@@ -442,6 +451,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/basin-catalog \
     "warehouses": [
       {
         "bucket": "analytics-bucket",
+        "catalog_uri": "https://catalog.cloudflarestorage.com/account123/analytics-bucket",
         "id": "550e8400-e29b-41d4-a716-446655440000",
         "jurisdiction": "default",
         "maintenance_config": {

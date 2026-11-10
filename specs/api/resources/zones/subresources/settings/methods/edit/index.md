@@ -180,7 +180,7 @@ enabled: optional boolean
 
 ZonesProxyReadTimeoutValue = number
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 <a href="#">Link to this property</a>
 
@@ -404,7 +404,7 @@ Whether the API call was successful
 
 result: optional <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)">ZeroRTT</a> { id, value, editable, modified\_on } or <a href="https://developers.cloudflare.com/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)">AdvancedDDoS</a> { id, value, editable, modified\_on } or object {id, modified\_on, value } or 65 more
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the <code>tls_1_3</code> setting also changes 0-RTT: <code>zrt</code> enables it, and <code>on</code> or <code>off</code> disables it.
 
 </summary>
 
@@ -416,7 +416,7 @@ One of the following:
 
 ZeroRTT object {id, value, editable, modified\_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the <code>tls_1_3</code> setting also changes 0-RTT: <code>zrt</code> enables it, and <code>on</code> or <code>off</code> disables it.
 
 </summary>
 
@@ -3891,7 +3891,7 @@ formatdate-time
 
 ProxyReadTimeout object {id, value, editable, modified\_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -3907,7 +3907,7 @@ ID of the zone setting.
 
 value: stringor numberor booleanor 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -5717,7 +5717,7 @@ formatdate-time
 
 TLS1\_3 object {id, value, editable, modified\_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. <code>zrt</code> enables TLS 1.3 and 0-RTT, <code>on</code> enables TLS 1.3 and disables 0-RTT, and <code>off</code> disables both. Reads return <code>zrt</code> when TLS 1.3 and 0-RTT are both enabled, so setting <code>on</code> while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 

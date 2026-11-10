@@ -144,6 +144,30 @@ One of the following:
 
 ##### Q uery ParametersExpand Collapse
 
+<details>
+
+<summary>
+
+environment: optional "fedramp"or "standard"
+
+Environment to request (standard, fedramp). The result follows the account’s FedRAMP entitlement: FedRAMP-enabled accounts always receive FedRAMP applications and other accounts receive standard applications. Any other non-empty value returns 400.
+
+</summary>
+
+One of the following:
+
+"fedramp"
+
+<a href="#">Link to this property</a>
+
+"standard"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.casb.applications.auth_methods%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20environment%20%3E%20(schema)>)
+
 page: optional number
 
 A page number within the paginated result set.

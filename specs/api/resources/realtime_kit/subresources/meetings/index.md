@@ -84,7 +84,7 @@ MeetingGetResponse object {data, paging, success }
 
 <summary>
 
-data: array of object {id, created\_at, updated\_at, 9 more }
+data: array of object {id, created\_at, updated\_at, 10 more }
 
 </summary>
 
@@ -889,6 +889,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -990,7 +1022,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object {id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -1993,6 +2025,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -2064,7 +2128,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object {id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -3067,6 +3131,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -3138,7 +3234,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object {id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -4141,6 +4237,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -4212,7 +4340,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object {id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -5215,6 +5343,38 @@ Time in seconds, for which a session remains active, after the last participant 
 maximum600
 
 minimum60
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

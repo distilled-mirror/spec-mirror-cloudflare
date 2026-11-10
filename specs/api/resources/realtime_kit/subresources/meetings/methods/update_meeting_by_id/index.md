@@ -278,6 +278,12 @@ Control the inclusion of offensive language in transcriptions.
 
 [Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20update_meeting_by_id%20%3E%20(params)%200%20%3E%20(param)%20ai_config%20%3E%20(schema)>)
 
+enable\_sip: optional boolean
+
+Turns SIP dial-in on or off. Turning it off deletes the SIP URI and credentials; calls already in progress continue. Turning it on again creates a new SIP URI and credentials.
+
+[Link to this property](#)%20realtime_kit.meetings%20%3E%20(method)%20update_meeting_by_id%20%3E%20(params)%200%20%3E%20(param)%20enable_sip%20%3E%20(schema)>)
+
 live\_stream\_on\_start: optional boolean
 
 Specifies if the meeting should start getting livestreamed on start.
@@ -1112,7 +1118,7 @@ Success status of the operation
 
 <summary>
 
-data: optional object {id, created\_at, updated\_at, 10 more }
+data: optional object {id, created\_at, updated\_at, 11 more }
 
 Data returned by the operation
 
@@ -2122,6 +2128,38 @@ minimum60
 
 <summary>
 
+sip: optional object {password, sip\_uri, username }
+
+SIP dial-in details. <code>null</code> if SIP is not enabled for the meeting.
+
+</summary>
+
+password: string
+
+Password for SIP digest authentication. Keep it secret.
+
+<a href="#">Link to this property</a>
+
+sip\_uri: string
+
+SIP URI to dial. Configure it in your SIP provider or PBX.
+
+<a href="#">Link to this property</a>
+
+username: string
+
+Username for SIP digest authentication.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 status: optional "ACTIVE"or "INACTIVE"
 
 Whether the meeting is <code>ACTIVE</code> or <code>INACTIVE</code>. Users will not be able to join an <code>INACTIVE</code> meeting.
@@ -2246,6 +2284,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
       }
     },
     "session_keep_alive_time_in_secs": 60,
+    "sip": {
+      "password": "password",
+      "sip_uri": "sip_uri",
+      "username": "username"
+    },
     "status": "ACTIVE",
     "summarize_on_end": true,
     "title": "title",
@@ -2322,6 +2365,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/$APP
       }
     },
     "session_keep_alive_time_in_secs": 60,
+    "sip": {
+      "password": "password",
+      "sip_uri": "sip_uri",
+      "username": "username"
+    },
     "status": "ACTIVE",
     "summarize_on_end": true,
     "title": "title",

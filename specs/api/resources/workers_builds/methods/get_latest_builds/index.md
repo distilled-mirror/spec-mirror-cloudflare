@@ -1262,7 +1262,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
           "created_on": "2019-12-27T18:11:19.117Z",
           "deleted_on": "2019-12-27T18:11:19.117Z",
           "deploy_command": "npx wrangler deploy",
-          "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
+          "external_script_id": "0123456789abcdef0123456789abcdef",
           "modified_on": "2019-12-27T18:11:19.117Z",
           "path_excludes": [
             "*.md"
@@ -1364,7 +1364,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/builds/builds/lat
           "created_on": "2019-12-27T18:11:19.117Z",
           "deleted_on": "2019-12-27T18:11:19.117Z",
           "deploy_command": "npx wrangler deploy",
-          "external_script_id": "dd7160bb9cef458093557736f4b9e75b",
+          "external_script_id": "0123456789abcdef0123456789abcdef",
           "modified_on": "2019-12-27T18:11:19.117Z",
           "path_excludes": [
             "*.md"

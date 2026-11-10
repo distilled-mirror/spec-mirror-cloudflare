@@ -70,14 +70,6 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
-notification\_url: optional string
-
-The URL where webhooks will be sent.
-
-formaturi
-
-[Link to this property](#)%20stream.webhooks%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20notification_url%20%3E%20(schema)>)
-
 notificationUrl: optional string
 
 The URL where webhooks will be sent.
@@ -224,7 +216,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/webhook \
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "notification_url": "https://example.com",
           "notificationUrl": "https://example.com"
         }'
 ```

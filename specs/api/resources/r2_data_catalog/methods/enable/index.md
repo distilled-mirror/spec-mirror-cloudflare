@@ -162,7 +162,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, name }
+result: optional object {id, name, catalog\_uri }
 
 Contains response from activating an R2 bucket as a catalog.
 
@@ -179,6 +179,14 @@ formatuuid
 name: string
 
 Specifies the name of the activated catalog.
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 
@@ -205,6 +213,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
   "errors": [],
   "messages": [],
   "result": {
+    "catalog_uri": "https://catalog.cloudflarestorage.com/account123/my-bucket",
     "id": "550e8400-e29b-41d4-a716-446655440000",
     "name": "account123_my-bucket"
   },
@@ -221,6 +230,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
   "errors": [],
   "messages": [],
   "result": {
+    "catalog_uri": "https://catalog.cloudflarestorage.com/account123/my-bucket",
     "id": "550e8400-e29b-41d4-a716-446655440000",
     "name": "account123_my-bucket"
   },

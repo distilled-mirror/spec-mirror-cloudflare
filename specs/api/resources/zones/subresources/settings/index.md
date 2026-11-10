@@ -2300,7 +2300,7 @@ formatdate-time
 
 ProxyReadTimeout object { id, value, editable, modified_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -2316,7 +2316,7 @@ ID of the zone setting.
 
 value: string or number or boolean or 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -3174,7 +3174,7 @@ ssl-recommender enrollment setting.
 
 TLS1_3 object { id, value, editable, modified_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. `zrt` enables TLS 1.3 and 0-RTT, `on` enables TLS 1.3 and disables 0-RTT, and `off` disables both. Reads return `zrt` when TLS 1.3 and 0-RTT are both enabled, so setting `on` while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 
@@ -3610,7 +3610,7 @@ formatdate-time
 
 ZeroRTT object { id, value, editable, modified_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -3698,7 +3698,7 @@ formatdate-time
 
 SettingListResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -3710,7 +3710,7 @@ One of the following:
 
 ZeroRTT object { id, value, editable, modified_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -7100,7 +7100,7 @@ formatdate-time
 
 ProxyReadTimeout object { id, value, editable, modified_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -7116,7 +7116,7 @@ ID of the zone setting.
 
 value: string or number or boolean or 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -8926,7 +8926,7 @@ formatdate-time
 
 TLS1_3 object { id, value, editable, modified_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. `zrt` enables TLS 1.3 and 0-RTT, `on` enables TLS 1.3 and disables 0-RTT, and `off` disables both. Reads return `zrt` when TLS 1.3 and 0-RTT are both enabled, so setting `on` while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 
@@ -9990,7 +9990,7 @@ formatdate-time
 
 SettingGetResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 65 more
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -10002,7 +10002,7 @@ One of the following:
 
 ZeroRTT object { id, value, editable, modified_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -13480,7 +13480,7 @@ formatdate-time
 
 ProxyReadTimeout object { id, value, editable, modified_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -13496,7 +13496,7 @@ ID of the zone setting.
 
 value: string or number or boolean or 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -15306,7 +15306,7 @@ formatdate-time
 
 TLS1_3 object { id, value, editable, modified_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. `zrt` enables TLS 1.3 and 0-RTT, `on` enables TLS 1.3 and disables 0-RTT, and `off` disables both. Reads return `zrt` when TLS 1.3 and 0-RTT are both enabled, so setting `on` while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 
@@ -16370,7 +16370,7 @@ formatdate-time
 
 SettingEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 65 more
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -16382,7 +16382,7 @@ One of the following:
 
 ZeroRTT object { id, value, editable, modified_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -19860,7 +19860,7 @@ formatdate-time
 
 ProxyReadTimeout object { id, value, editable, modified_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -19876,7 +19876,7 @@ ID of the zone setting.
 
 value: string or number or boolean or 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -21686,7 +21686,7 @@ formatdate-time
 
 TLS1_3 object { id, value, editable, modified_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. `zrt` enables TLS 1.3 and 0-RTT, `on` enables TLS 1.3 and disables 0-RTT, and `off` disables both. Reads return `zrt` when TLS 1.3 and 0-RTT are both enabled, so setting `on` while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 
@@ -22750,7 +22750,7 @@ formatdate-time
 
 SettingBulkEditResponse = [ZeroRTT](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20zero_rtt%20%3E%20(schema)) { id, value, editable, modified_on } or [AdvancedDDoS](/api/resources/zones#(resource)%20zones.settings%20%3E%20(model)%20advanced_ddos%20%3E%20(schema)) { id, value, editable, modified_on } or object { id, modified_on, value } or 64 more
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -22762,7 +22762,7 @@ One of the following:
 
 ZeroRTT object { id, value, editable, modified_on }
 
-0-RTT session resumption enabled for this zone.
+0-RTT session resumption enabled for this zone. Changing this setting does not enable or disable TLS 1.3. Writing the `tls_1_3` setting also changes 0-RTT: `zrt` enables it, and `on` or `off` disables it.
 
 </summary>
 
@@ -26152,7 +26152,7 @@ formatdate-time
 
 ProxyReadTimeout object { id, value, editable, modified_on }
 
-Maximum time between two read operations from origin.
+Maximum time in seconds between two read operations from origin.
 
 </summary>
 
@@ -26168,7 +26168,7 @@ ID of the zone setting.
 
 value: string or number or boolean or 2 more
 
-Value of the zone setting. Notes: Value must be between 1 and 6000
+Value of the zone setting, in seconds. Notes: Value must be between 1 and 6000
 
 </summary>
 
@@ -27978,7 +27978,7 @@ formatdate-time
 
 TLS1_3 object { id, value, editable, modified_on }
 
-Enables Crypto TLS 1.3 feature for a zone.
+Enables Crypto TLS 1.3 feature for a zone. This setting also controls 0-RTT. `zrt` enables TLS 1.3 and 0-RTT, `on` enables TLS 1.3 and disables 0-RTT, and `off` disables both. Reads return `zrt` when TLS 1.3 and 0-RTT are both enabled, so setting `on` while 0-RTT is enabled turns 0-RTT off.
 
 </summary>
 

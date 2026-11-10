@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4083,
+  "count": 4088,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -3143,6 +3143,10 @@
       "markdown": "https://developers.cloudflare.com/api/resources/containers/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/containers/methods/usage",
+      "markdown": "https://developers.cloudflare.com/api/resources/containers/methods/usage/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/containers/subresources/applications",
       "markdown": "https://developers.cloudflare.com/api/resources/containers/subresources/applications/index.md"
     },
@@ -4933,6 +4937,22 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/lockdowns/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/firewall/subresources/lockdowns/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging",
+      "markdown": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/get",
+      "markdown": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/get/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/firewall/subresources/payload_logging/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/firewall/subresources/rules",

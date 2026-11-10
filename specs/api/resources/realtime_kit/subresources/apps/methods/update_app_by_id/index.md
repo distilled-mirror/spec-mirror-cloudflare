@@ -90,7 +90,7 @@ maxLength150
 
 <summary>
 
-data: object {id, cf\_account\_tag, created\_at, 2 more }
+data: object {id, created\_at, name }
 
 </summary>
 
@@ -100,17 +100,9 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
-cf\_account\_tag: optional string
-
-<a href="#">Link to this property</a>
-
 created\_at: optional string
 
 formatdate-time
-
-<a href="#">Link to this property</a>
-
-is\_org\_on\_kv: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -148,9 +140,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/apps
 {
   "data": {
     "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-    "cf_account_tag": "cf_account_tag",
     "created_at": "2019-12-27T18:11:19.117Z",
-    "is_org_on_kv": true,
     "name": "name"
   },
   "success": true
@@ -165,9 +155,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/realtime/kit/apps
 {
   "data": {
     "id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-    "cf_account_tag": "cf_account_tag",
     "created_at": "2019-12-27T18:11:19.117Z",
-    "is_org_on_kv": true,
     "name": "name"
   },
   "success": true

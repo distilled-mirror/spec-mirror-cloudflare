@@ -4404,7 +4404,7 @@ A list of IP addresses to handle domain resolution.
 
 <summary>
 
-SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 31 more }
+SettingsPolicy object { allow_mode_switch, allow_updates, allowed_to_leave, 32 more }
 
 </summary>
 
@@ -4531,6 +4531,12 @@ A description of the DNS search suffix.
 enable_device_credential_authentication: optional boolean
 
 Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+[Link to this property](#)
+
+enable_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
 
 [Link to this property](#)
 
@@ -5094,7 +5100,7 @@ PATCH/accounts/{account_id}/devices/policy
 
 <summary>
 
-DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 23 more }
+DefaultGetResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 26 more }
 
 </summary>
 
@@ -5169,6 +5175,12 @@ A description of the DNS search suffix.
 enable_device_credential_authentication: optional boolean
 
 Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+[Link to this property](#)
+
+enable_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
 
 [Link to this property](#)
 
@@ -5403,6 +5415,18 @@ maxLength100
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+lan_allow_minutes: optional number
+
+The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
+
+[Link to this property](#)
+
+lan_allow_subnet_size: optional number
+
+The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
 
 [Link to this property](#)
 
@@ -5532,7 +5556,7 @@ formatuuid
 
 <summary>
 
-DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 23 more }
+DefaultEditResponse object { allow_mode_switch, allow_updates, allowed_to_leave, 26 more }
 
 </summary>
 
@@ -5607,6 +5631,12 @@ A description of the DNS search suffix.
 enable_device_credential_authentication: optional boolean
 
 Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+[Link to this property](#)
+
+enable_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
 
 [Link to this property](#)
 
@@ -5841,6 +5871,18 @@ maxLength100
 [Link to this property](#)
 
 </details>
+
+[Link to this property](#)
+
+lan_allow_minutes: optional number
+
+The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
+
+[Link to this property](#)
+
+lan_allow_subnet_size: optional number
+
+The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
 
 [Link to this property](#)
 

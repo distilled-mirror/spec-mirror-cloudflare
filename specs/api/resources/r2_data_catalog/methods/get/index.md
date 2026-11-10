@@ -140,7 +140,7 @@ Indicates whether the API call was successful.
 
 <summary>
 
-result: optional object {id, bucket, name, 4 more }
+result: optional object {id, bucket, name, 5 more }
 
 Contains catalog information.
 
@@ -187,6 +187,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 
@@ -387,6 +395,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
   "messages": [],
   "result": {
     "bucket": "analytics-bucket",
+    "catalog_uri": "https://catalog.cloudflarestorage.com/account123/analytics-bucket",
     "credential_status": "present",
     "id": "550e8400-e29b-41d4-a716-446655440000",
     "jurisdiction": "default",
@@ -418,6 +427,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2-catalog/$BUCKE
   "messages": [],
   "result": {
     "bucket": "analytics-bucket",
+    "catalog_uri": "https://catalog.cloudflarestorage.com/account123/analytics-bucket",
     "credential_status": "present",
     "id": "550e8400-e29b-41d4-a716-446655440000",
     "jurisdiction": "default",

@@ -138,6 +138,12 @@ Determines whether the WARP client can silently reauthenticate the user with dev
 
 [Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enable_device_credential_authentication%20%3E%20(schema)>)
 
+enable\_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
+
+[Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20enable_netbt%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -520,7 +526,7 @@ pointer: optional string
 
 <summary>
 
-result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 23 more }
+result: object {allow\_mode\_switch, allow\_updates, allowed\_to\_leave, 26 more }
 
 </summary>
 
@@ -595,6 +601,12 @@ A description of the DNS search suffix.
 enable\_device\_credential\_authentication: optional boolean
 
 Determines whether the WARP client can silently reauthenticate the user with device credentials (Microsoft Entra) instead of prompting for browser-based reauthentication.
+
+<a href="#">Link to this property</a>
+
+enable\_netbt: optional boolean
+
+Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel interface. (Windows only). NetBT is disabled by default for security reasons.
 
 <a href="#">Link to this property</a>
 
@@ -832,6 +844,18 @@ maxLength100
 
 <a href="#">Link to this property</a>
 
+lan\_allow\_minutes: optional number
+
+The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
+
+<a href="#">Link to this property</a>
+
+lan\_allow\_subnet\_size: optional number
+
+The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
+
+<a href="#">Link to this property</a>
+
 policy\_id: optional string
 
 maxLength36
@@ -1026,6 +1050,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       }
     ],
     "enable_device_credential_authentication": false,
+    "enable_netbt": false,
     "enabled": true,
     "exclude": [
       {
@@ -1064,6 +1089,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Include testing domains in the tunnel"
       }
     ],
+    "lan_allow_minutes": 30,
+    "lan_allow_subnet_size": 24,
     "policy_id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "profile_type": "warp",
     "register_interface_ip_with_dns": true,
@@ -1128,6 +1155,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
       }
     ],
     "enable_device_credential_authentication": false,
+    "enable_netbt": false,
     "enabled": true,
     "exclude": [
       {
@@ -1166,6 +1194,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/devices/policy \
         "description": "Include testing domains in the tunnel"
       }
     ],
+    "lan_allow_minutes": 30,
+    "lan_allow_subnet_size": 24,
     "policy_id": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
     "profile_type": "warp",
     "register_interface_ip_with_dns": true,

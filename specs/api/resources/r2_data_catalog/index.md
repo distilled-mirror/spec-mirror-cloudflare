@@ -62,7 +62,7 @@ Contains the list of catalogs.
 
 <summary>
 
-warehouses: array of object {id, bucket, name, 4 more }
+warehouses: array of object {id, bucket, name, 5 more }
 
 Lists catalogs in the account.
 
@@ -109,6 +109,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 
@@ -298,7 +306,7 @@ One of the following:
 
 <summary>
 
-R2DataCatalogGetResponse object {id, bucket, name, 4 more }
+R2DataCatalogGetResponse object {id, bucket, name, 5 more }
 
 Contains catalog information.
 
@@ -345,6 +353,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 
@@ -530,7 +546,7 @@ One of the following:
 
 <summary>
 
-R2DataCatalogEnableResponse object {id, name }
+R2DataCatalogEnableResponse object {id, name, catalog\_uri }
 
 Contains response from activating an R2 bucket as a catalog.
 
@@ -547,6 +563,14 @@ formatuuid
 name: string
 
 Specifies the name of the activated catalog.
+
+<a href="#">Link to this property</a>
+
+catalog\_uri: optional string
+
+Specifies the Iceberg REST catalog URI that clients use to connect to the catalog.
+
+formaturi
 
 <a href="#">Link to this property</a>
 

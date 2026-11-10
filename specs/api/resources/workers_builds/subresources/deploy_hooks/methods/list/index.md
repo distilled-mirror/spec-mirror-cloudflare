@@ -68,8 +68,6 @@ Account identifier.
 
 script\_name: string
 
-Human-readable name of the Worker.
-
 [Link to this property](#)%20workers_builds.deploy_hooks%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20script_name%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
