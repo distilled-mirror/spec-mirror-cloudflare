@@ -622,7 +622,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
+observability: optional object {enabled, agents, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -631,6 +631,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head\_sampling\_rate.
+
+<a href="#">Link to this property</a>
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1547,6 +1585,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/dispatch/
       ],
       "observability": {
         "enabled": true,
+        "agents": {
+          "destinations": [
+            "cloudflare"
+          ],
+          "enabled": true,
+          "head_sampling_rate": 0.1,
+          "persist": true
+        },
         "head_sampling_rate": 0.1,
         "issues": {
           "enabled": true
@@ -1685,6 +1731,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/dispatch/
       ],
       "observability": {
         "enabled": true,
+        "agents": {
+          "destinations": [
+            "cloudflare"
+          ],
+          "enabled": true,
+          "head_sampling_rate": 0.1,
+          "persist": true
+        },
         "head_sampling_rate": 0.1,
         "issues": {
           "enabled": true

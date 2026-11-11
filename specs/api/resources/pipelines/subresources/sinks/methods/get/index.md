@@ -82,7 +82,7 @@ minLength32
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 5 more }
+result: object {id, created\_at, latest, 8 more }
 
 </summary>
 
@@ -95,6 +95,12 @@ Indicates a unique identifier for this sink.
 created\_at: string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+latest: number
+
+Indicates the latest version of this sink.
 
 <a href="#">Link to this property</a>
 
@@ -139,6 +145,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+version: number
+
+Indicates the version of this sink.
 
 <a href="#">Link to this property</a>
 
@@ -982,6 +994,40 @@ inferred: optional boolean
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+used\_by: optional array of object {id, href, type }
+
+Lists the pipelines that use this sink. Omitted when no pipeline uses it.
+
+</summary>
+
+id: string
+
+Indicates the unique identifier of the pipeline.
+
+<a href="#">Link to this property</a>
+
+href: string
+
+Indicates the API URL of the pipeline.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+type: "pipeline"
+
+Indicates the type of resource using this sink.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 [Link to this property](#)%20pipelines.sinks%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
@@ -1010,9 +1056,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/sink
   "result": {
     "id": "01234567890123457689012345678901",
     "created_at": "2019-12-27T18:11:19.117Z",
+    "latest": 2,
     "modified_at": "2019-12-27T18:11:19.117Z",
     "name": "my_sink",
     "type": "r2",
+    "version": 2,
     "config": {
       "account_id": "account_id",
       "bucket": "bucket",
@@ -1050,7 +1098,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/sink
         }
       ],
       "inferred": true
-    }
+    },
+    "used_by": [
+      {
+        "id": "01234567890123457689012345678901",
+        "href": "https://example.com",
+        "type": "pipeline"
+      }
+    ]
   },
   "success": true
 }
@@ -1065,9 +1120,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/sink
   "result": {
     "id": "01234567890123457689012345678901",
     "created_at": "2019-12-27T18:11:19.117Z",
+    "latest": 2,
     "modified_at": "2019-12-27T18:11:19.117Z",
     "name": "my_sink",
     "type": "r2",
+    "version": 2,
     "config": {
       "account_id": "account_id",
       "bucket": "bucket",
@@ -1105,7 +1162,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/sink
         }
       ],
       "inferred": true
-    }
+    },
+    "used_by": [
+      {
+        "id": "01234567890123457689012345678901",
+        "href": "https://example.com",
+        "type": "pipeline"
+      }
+    ]
   },
   "success": true
 }

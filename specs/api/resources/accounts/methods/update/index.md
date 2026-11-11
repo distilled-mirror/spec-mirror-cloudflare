@@ -82,7 +82,7 @@ minLength32
 
 name: string
 
-Account name, limited to 65 UTF-8 bytes.
+Account name. When creating or updating an account, the name is limited to 65 UTF-8 bytes.
 
 [Link to this property](#)%20accounts%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
@@ -266,7 +266,7 @@ minLength32
 
 name: string
 
-Account name
+Account name. When creating or updating an account, the name is limited to 65 UTF-8 bytes.
 
 <a href="#">Link to this property</a>
 

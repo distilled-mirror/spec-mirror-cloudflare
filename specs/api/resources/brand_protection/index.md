@@ -392,9 +392,39 @@ MatchGetResponse object {matches, total }
 
 <summary>
 
-matches: array of object {domain, first\_seen, public\_scans, 7 more }
+matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+
+</summary>
+
+One of the following:
+
+"confirmed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
+
+<a href="#">Link to this property</a>
+
+"not\_sent"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 domain: string
 
@@ -402,9 +432,17 @@ The matched domain name.
 
 <a href="#">Link to this property</a>
 
+edit\_distance: number
+
+<a href="#">Link to this property</a>
+
 first\_seen: string
 
 When the domain was matched. For multi-query requests, the most recent match time across the requested queries.
+
+<a href="#">Link to this property</a>
+
+match\_category: string
 
 <a href="#">Link to this property</a>
 
@@ -417,6 +455,28 @@ public\_scans: object {submission\_id }
 </summary>
 
 submission\_id: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+quality: "high"or "low"
+
+</summary>
+
+One of the following:
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"low"
 
 <a href="#">Link to this property</a>
 
@@ -458,11 +518,41 @@ ID of the matched domain. Present only when <code>include_domain_id=true</code>.
 
 <summary>
 
-match\_details: optional array of object {dismissed, match\_id, query\_id, query\_tag }
+match\_details: optional array of object {ai\_verdict, dismissed, edit\_distance, 5 more }
 
 Per-match detail objects with query metadata and individual dismissed state. Only present when multiple query\_ids are requested.
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+
+</summary>
+
+One of the following:
+
+"confirmed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
+
+<a href="#">Link to this property</a>
+
+"not\_sent"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 dismissed: boolean
 
@@ -470,9 +560,39 @@ Individual dismissed state for this specific match.
 
 <a href="#">Link to this property</a>
 
+edit\_distance: number
+
+<a href="#">Link to this property</a>
+
+match\_category: string
+
+<a href="#">Link to this property</a>
+
 match\_id: number
 
 ID of the match. Accepted by the legacy <code>match_ids</code> format.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+quality: "high"or "low"
+
+</summary>
+
+One of the following:
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

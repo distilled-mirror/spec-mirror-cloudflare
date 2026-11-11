@@ -270,11 +270,49 @@ Name of the Worker.
 
 <summary>
 
-observability: object {enabled, head\_sampling\_rate, issues, 3 more }
+observability: object {agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings for the Worker.
 
 </summary>
+
+<details>
+
+<summary>
+
+agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -790,11 +828,49 @@ Whether logpush is enabled when creating new Previews.
 
 <summary>
 
-observability: optional object {enabled, head\_sampling\_rate, issues, 3 more }
+observability: optional object {agents, enabled, head\_sampling\_rate, 4 more }
 
 Observability settings used when creating new Previews.
 
 </summary>
+
+<details>
+
+<summary>
+
+agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+<a href="#">Link to this property</a>
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+<a href="#">Link to this property</a>
+
+head\_sampling\_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+<a href="#">Link to this property</a>
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -1310,6 +1386,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers \
       "logpush": true,
       "name": "my-worker",
       "observability": {
+        "agents": {
+          "destinations": [
+            "string"
+          ],
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true
+        },
         "enabled": true,
         "head_sampling_rate": 1,
         "issues": {
@@ -1408,6 +1492,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers \
         },
         "logpush": true,
         "observability": {
+          "agents": {
+            "destinations": [
+              "string"
+            ],
+            "enabled": true,
+            "head_sampling_rate": 1,
+            "persist": true
+          },
           "enabled": true,
           "head_sampling_rate": 1,
           "issues": {
@@ -1488,6 +1580,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers \
       "logpush": true,
       "name": "my-worker",
       "observability": {
+        "agents": {
+          "destinations": [
+            "string"
+          ],
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true
+        },
         "enabled": true,
         "head_sampling_rate": 1,
         "issues": {
@@ -1586,6 +1686,14 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers \
         },
         "logpush": true,
         "observability": {
+          "agents": {
+            "destinations": [
+              "string"
+            ],
+            "enabled": true,
+            "head_sampling_rate": 1,
+            "persist": true
+          },
           "enabled": true,
           "head_sampling_rate": 1,
           "issues": {

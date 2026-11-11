@@ -2308,7 +2308,7 @@ Indicates the current status of the Pipeline.
 
 <summary>
 
-PipelineGetV1Response object {id, created\_at, modified\_at, 5 more }
+PipelineGetV1Response object {id, created\_at, modified\_at, 6 more }
 
 </summary>
 
@@ -2333,6 +2333,12 @@ Indicates the name of the Pipeline.
 maxLength128
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+outdated: boolean
+
+Indicates that a stream or sink has a newer version than the one this pipeline uses. Update Pipeline Tables moves the pipeline to the latest versions.
 
 <a href="#">Link to this property</a>
 
@@ -3540,7 +3546,7 @@ inferred: optional boolean
 
 <summary>
 
-SinkGetResponse object {id, created\_at, modified\_at, 5 more }
+SinkGetResponse object {id, created\_at, latest, 8 more }
 
 </summary>
 
@@ -3553,6 +3559,12 @@ Indicates a unique identifier for this sink.
 created\_at: string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+latest: number
+
+Indicates the latest version of this sink.
 
 <a href="#">Link to this property</a>
 
@@ -3597,6 +3609,12 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+version: number
+
+Indicates the version of this sink.
 
 <a href="#">Link to this property</a>
 
@@ -4433,6 +4451,40 @@ sql\_name: optional string
 <a href="#">Link to this property</a>
 
 inferred: optional boolean
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+used\_by: optional array of object {id, href, type }
+
+Lists the pipelines that use this sink. Omitted when no pipeline uses it.
+
+</summary>
+
+id: string
+
+Indicates the unique identifier of the pipeline.
+
+<a href="#">Link to this property</a>
+
+href: string
+
+Indicates the API URL of the pipeline.
+
+formaturi
+
+<a href="#">Link to this property</a>
+
+type: "pipeline"
+
+Indicates the type of resource using this sink.
 
 <a href="#">Link to this property</a>
 

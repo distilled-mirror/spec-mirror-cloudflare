@@ -122,7 +122,7 @@ DELETE/{accounts\_or\_zones}/{account\_or\_zone\_id}/logpush/jobs/{job\_id}
 
 <summary>
 
-LogpushJob object {id, dataset, destination\_conf, 13 more }
+LogpushJob object {id, dataset, destination\_conf, 14 more }
 
 </summary>
 
@@ -305,6 +305,16 @@ One of the following:
 destination\_conf: optional string
 
 Uniquely identifies a resource (such as an s3 bucket) where data. will be pushed. Additional configuration parameters supported by the destination may be included.
+
+formaturi
+
+maxLength4096
+
+<a href="#">Link to this property</a>
+
+destination\_name: optional string
+
+Sanitized destination descriptor with credentials removed.
 
 formaturi
 

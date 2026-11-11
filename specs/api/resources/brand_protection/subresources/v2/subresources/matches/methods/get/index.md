@@ -136,15 +136,69 @@ One of the following:
 
 [Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20orderBy%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+quality: optional "high"or "low"
+
+Filter matches by quality. Options: ‘high’ or ‘low’
+
+</summary>
+
+One of the following:
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20brand_protection.v2.matches%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20quality%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
 
 <summary>
 
-matches: array of object {domain, first\_seen, public\_scans, 7 more }
+matches: array of object {ai\_verdict, domain, edit\_distance, 11 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+
+</summary>
+
+One of the following:
+
+"confirmed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
+
+<a href="#">Link to this property</a>
+
+"not\_sent"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 domain: string
 
@@ -152,9 +206,17 @@ The matched domain name.
 
 <a href="#">Link to this property</a>
 
+edit\_distance: number
+
+<a href="#">Link to this property</a>
+
 first\_seen: string
 
 When the domain was matched. For multi-query requests, the most recent match time across the requested queries.
+
+<a href="#">Link to this property</a>
+
+match\_category: string
 
 <a href="#">Link to this property</a>
 
@@ -167,6 +229,28 @@ public\_scans: object {submission\_id }
 </summary>
 
 submission\_id: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+quality: "high"or "low"
+
+</summary>
+
+One of the following:
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"low"
 
 <a href="#">Link to this property</a>
 
@@ -208,11 +292,41 @@ ID of the matched domain. Present only when <code>include_domain_id=true</code>.
 
 <summary>
 
-match\_details: optional array of object {dismissed, match\_id, query\_id, query\_tag }
+match\_details: optional array of object {ai\_verdict, dismissed, edit\_distance, 5 more }
 
 Per-match detail objects with query metadata and individual dismissed state. Only present when multiple query\_ids are requested.
 
 </summary>
+
+<details>
+
+<summary>
+
+ai\_verdict: "confirmed"or "rejected"or "unavailable"or "not\_sent"
+
+</summary>
+
+One of the following:
+
+"confirmed"
+
+<a href="#">Link to this property</a>
+
+"rejected"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
+
+<a href="#">Link to this property</a>
+
+"not\_sent"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 dismissed: boolean
 
@@ -220,9 +334,39 @@ Individual dismissed state for this specific match.
 
 <a href="#">Link to this property</a>
 
+edit\_distance: number
+
+<a href="#">Link to this property</a>
+
+match\_category: string
+
+<a href="#">Link to this property</a>
+
 match\_id: number
 
 ID of the match. Accepted by the legacy <code>match_ids</code> format.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+quality: "high"or "low"
+
+</summary>
+
+One of the following:
+
+"high"
+
+<a href="#">Link to this property</a>
+
+"low"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -271,11 +415,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
 {
   "matches": [
     {
+      "ai_verdict": "confirmed",
       "domain": "domain",
+      "edit_distance": 0,
       "first_seen": "first_seen",
+      "match_category": "match_category",
       "public_scans": {
         "submission_id": "submission_id"
       },
+      "quality": "high",
       "registrar": "registrar",
       "scan_status": "scan_status",
       "scan_submission_id": 0,
@@ -284,8 +432,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "domain_id": 0,
       "match_details": [
         {
+          "ai_verdict": "confirmed",
           "dismissed": true,
+          "edit_distance": 0,
+          "match_category": "match_category",
           "match_id": 0,
+          "quality": "high",
           "query_id": 0,
           "query_tag": "query_tag"
         }
@@ -304,11 +456,15 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
 {
   "matches": [
     {
+      "ai_verdict": "confirmed",
       "domain": "domain",
+      "edit_distance": 0,
       "first_seen": "first_seen",
+      "match_category": "match_category",
       "public_scans": {
         "submission_id": "submission_id"
       },
+      "quality": "high",
       "registrar": "registrar",
       "scan_status": "scan_status",
       "scan_submission_id": 0,
@@ -317,8 +473,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "domain_id": 0,
       "match_details": [
         {
+          "ai_verdict": "confirmed",
           "dismissed": true,
+          "edit_distance": 0,
+          "match_category": "match_category",
           "match_id": 0,
+          "quality": "high",
           "query_id": 0,
           "query_tag": "query_tag"
         }

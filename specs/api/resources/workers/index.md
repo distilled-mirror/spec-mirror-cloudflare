@@ -260,11 +260,49 @@ Name of the Worker.
 
 <summary>
 
-observability: object { enabled, head_sampling_rate, issues, 3 more }
+observability: object { agents, enabled, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
 </summary>
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 enabled: optional boolean
 
@@ -780,11 +818,49 @@ Whether logpush is enabled when creating new Previews.
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { agents, enabled, head_sampling_rate, 4 more }
 
 Observability settings used when creating new Previews.
 
 </summary>
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
 
 enabled: optional boolean
 
@@ -5210,7 +5286,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -5219,6 +5295,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6046,7 +6160,7 @@ Whether Logpush is turned on for the Worker.
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -6055,6 +6169,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -6662,7 +6814,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -6671,6 +6823,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -8004,7 +8194,7 @@ The name of the export.
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -8013,6 +8203,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -14754,7 +14982,7 @@ to: optional string
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -14763,6 +14991,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -17806,7 +18072,7 @@ to: optional string
 
 <summary>
 
-observability: optional object { enabled, head_sampling_rate, issues, 3 more }
+observability: optional object { enabled, agents, head_sampling_rate, 4 more }
 
 Observability settings for the Worker.
 
@@ -17815,6 +18081,44 @@ Observability settings for the Worker.
 enabled: boolean
 
 Whether observability is enabled for the Worker.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+agents: optional object { destinations, enabled, head_sampling_rate, persist }
+
+Agents observability settings for the Worker.
+
+</summary>
+
+destinations: optional array of string
+
+A list of destinations where Agents observability data will be exported to.
+
+[Link to this property](#)
+
+enabled: optional boolean
+
+Whether Agents observability is enabled for the Worker.
+
+[Link to this property](#)
+
+head_sampling_rate: optional number
+
+The sampling rate for Agents observability. From 0 to 1 (1 = 100%, 0.1 = 10%). Defaults to the root head_sampling_rate.
+
+[Link to this property](#)
+
+persist: optional boolean
+
+Whether Agents observability data is persisted for the Worker.
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

@@ -105,12 +105,6 @@ A user-friendly name for the subnet.
 
 [Link to this property](#)%20zero_trust.networks.subnets.warp%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
-network: optional string
-
-The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
-
-[Link to this property](#)%20zero_trust.networks.subnets.warp%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20network%20%3E%20(schema)>)
-
 ##### ReturnsExpand Collapse
 
 <details>
@@ -302,8 +296,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/zerotrust/subnets
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
           "comment": "example comment",
-          "name": "IPv4 Cloudflare Source IPs",
-          "network": "100.64.0.0/12"
+          "name": "IPv4 Cloudflare Source IPs"
         }'
 ```
 

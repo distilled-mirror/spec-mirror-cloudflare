@@ -20,7 +20,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/ai-gateway/gateways/{id}
 
-Updates the configuration of an AI Gateway, such as its caching, rate limiting, logging, and authentication settings.
+Updates the configuration of an AI Gateway, such as its caching, rate limiting, spend limits, logging, and authentication settings.
 
 ##### Security
 

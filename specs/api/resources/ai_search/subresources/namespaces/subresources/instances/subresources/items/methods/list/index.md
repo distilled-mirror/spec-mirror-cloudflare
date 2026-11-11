@@ -106,6 +106,8 @@ maxLength2048
 
 page: optional number
 
+maximum10000
+
 minimum1
 
 [Link to this property](#)%20ai_search.namespaces.instances.items%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)

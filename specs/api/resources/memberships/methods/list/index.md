@@ -320,7 +320,7 @@ minLength32
 
 name: string
 
-Account name
+Account name. When creating or updating an account, the name is limited to 65 UTF-8 bytes.
 
 <a href="#">Link to this property</a>
 
@@ -944,7 +944,7 @@ minLength32
 
 name: string
 
-Account name
+Account name. When creating or updating an account, the name is limited to 65 UTF-8 bytes.
 
 <a href="#">Link to this property</a>
 

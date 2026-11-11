@@ -78,6 +78,12 @@ The name of the dispatch namespace.
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
 
+trusted\_workers: optional boolean
+
+Whether the Workers in the namespace are executed in a “trusted” manner. When a Worker is trusted, it has access to the shared caches for the zone in the Cache API, and has access to the `request.cf` object on incoming Requests. When a Worker is untrusted, caches are not shared across the zone, and `request.cf` is undefined. By default, Workers in a namespace are “untrusted”.
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20trusted_workers%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

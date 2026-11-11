@@ -242,6 +242,8 @@ minimum3600
 
 worker\_binding: object {enabled }
 
+Configures whether Workers bindings can produce records to the stream.
+
 </summary>
 
 enabled: boolean

@@ -154,9 +154,9 @@ Optional specification of how often to re-alert from the same incident, not supp
 
 <summary>
 
-alert\_type: optional "abuse\_report\_alert"or "access\_custom\_certificate\_expiration\_type"or "advanced\_ddos\_attack\_l4\_alert"or 66 more
+alert\_type: optional "abuse\_report\_alert"or "access\_custom\_certificate\_expiration\_type"or "advanced\_ddos\_attack\_l4\_alert"or 88 more
 
-Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values.
+Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values. This enum lists every alert type, not the ones a given account can create, since some types depend on entitlements or account type. To get the alert types an account can create, call <code>GET /accounts/{account_id}/alerting/v3/available_alerts</code>.
 
 </summary>
 
@@ -182,7 +182,19 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"attack\_lifecycle"
+
+<a href="#">Link to this property</a>
+
+"bgp\_advertisement\_change"
+
+<a href="#">Link to this property</a>
+
 "bgp\_hijack\_notification"
+
+<a href="#">Link to this property</a>
+
+"billing\_budget\_alert"
 
 <a href="#">Link to this property</a>
 
@@ -214,6 +226,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"casb\_weekly\_digest"
+
+<a href="#">Link to this property</a>
+
 "clickhouse\_alert\_fw\_anomaly"
 
 <a href="#">Link to this property</a>
@@ -222,11 +238,23 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"closed\_port\_scan\_alert"
+
+<a href="#">Link to this property</a>
+
 "cloudforce\_one\_request\_notification"
 
 <a href="#">Link to this property</a>
 
+"cmd\_managed\_defense\_notification"
+
+<a href="#">Link to this property</a>
+
 "cni\_maintenance\_notification"
+
+<a href="#">Link to this property</a>
+
+"containers\_security\_alert"
 
 <a href="#">Link to this property</a>
 
@@ -250,11 +278,27 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"dex\_device\_connectivity\_alert"
+
+<a href="#">Link to this property</a>
+
+"dex\_synthetic\_test\_availability\_alert"
+
+<a href="#">Link to this property</a>
+
+"dex\_synthetic\_test\_latency\_alert"
+
+<a href="#">Link to this property</a>
+
 "dos\_attack\_l4"
 
 <a href="#">Link to this property</a>
 
 "dos\_attack\_l7"
+
+<a href="#">Link to this property</a>
+
+"executive\_communications"
 
 <a href="#">Link to this property</a>
 
@@ -306,6 +350,10 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"leaked\_service\_token\_alert"
+
+<a href="#">Link to this property</a>
+
 "load\_balancing\_health\_alert"
 
 <a href="#">Link to this property</a>
@@ -314,7 +362,19 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"log\_explorer\_ingest\_rate\_limit"
+
+<a href="#">Link to this property</a>
+
+"log\_explorer\_scheduled\_query\_results\_alert"
+
+<a href="#">Link to this property</a>
+
 "logo\_match\_alert"
+
+<a href="#">Link to this property</a>
+
+"magic\_endpoint\_healthcheck\_alert"
 
 <a href="#">Link to this property</a>
 
@@ -331,6 +391,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "mtls\_certificate\_store\_certificate\_expiration\_type"
+
+<a href="#">Link to this property</a>
+
+"open\_port\_scan\_alert"
 
 <a href="#">Link to this property</a>
 
@@ -402,6 +466,18 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+"stakeout\_credential\_leak\_alert"
+
+<a href="#">Link to this property</a>
+
+"stakeout\_saved\_query\_daily\_digest\_alert"
+
+<a href="#">Link to this property</a>
+
+"stakeout\_saved\_query\_immediate\_alert"
+
+<a href="#">Link to this property</a>
+
 "stream\_live\_notifications"
 
 <a href="#">Link to this property</a>
@@ -431,6 +507,18 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "web\_analytics\_metrics\_update"
+
+<a href="#">Link to this property</a>
+
+"workers\_for\_platforms\_security\_alert"
+
+<a href="#">Link to this property</a>
+
+"workers\_observability\_alert"
+
+<a href="#">Link to this property</a>
+
+"workers\_observability\_real\_time\_issue"
 
 <a href="#">Link to this property</a>
 
@@ -464,7 +552,7 @@ Whether or not the Notification policy is enabled.
 
 <summary>
 
-filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 41 more }
+filters: optional <a href="https://developers.cloudflare.com/api/resources/alerting#(resource)%20alerting.policies%20%3E%20(model)%20policy_filter%20%3E%20(schema)">PolicyFilter</a> { actions, affected\_asns, affected\_components, 44 more }
 
 Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
 
@@ -509,6 +597,12 @@ Usage depends on specific alert type
 alert\_trigger\_preferences\_value: optional array of string
 
 Usage depends on specific alert type
+
+<a href="#">Link to this property</a>
+
+check\_id: optional array of string
+
+Used for configuring magic\_endpoint\_healthcheck\_alert. Takes one or more health check IDs, each a UUID. That alert type requires check\_id together with alert\_trigger\_preferences set to slo, a numeric alert\_trigger\_preferences\_value, and selectors set to failures.
 
 <a href="#">Link to this property</a>
 
@@ -664,6 +758,12 @@ Used for configuring advanced\_ddos\_attack\_l4\_alert
 
 <a href="#">Link to this property</a>
 
+query\_id: optional array of string
+
+Used for configuring stakeout\_saved\_query\_daily\_digest\_alert and stakeout\_saved\_query\_immediate\_alert, which require it. Takes exactly one value, the saved query ID.
+
+<a href="#">Link to this property</a>
+
 query\_tag: optional array of string
 
 Usage depends on specific alert type
@@ -721,6 +821,12 @@ Used for configuring advanced\_ddos\_attack\_l7\_alert
 token\_id: optional array of string
 
 Access service token IDs to include for expiring\_service\_token\_alert. Omit this property to include all current and future service tokens.
+
+<a href="#">Link to this property</a>
+
+total\_spend\_dollars: optional array of string
+
+Used for configuring billing\_budget\_alert. Takes exactly one value, the budget threshold in US dollars, as a string greater than zero.
 
 <a href="#">Link to this property</a>
 
@@ -909,6 +1015,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       "alert_trigger_preferences_value": [
         "string"
       ],
+      "check_id": [
+        "699d9864-2c56-4d2e-855e-9661899b7252"
+      ],
       "enabled": [
         "string"
       ],
@@ -972,6 +1081,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       "protocol": [
         "string"
       ],
+      "query_id": [
+        "string"
+      ],
       "query_tag": [
         "string"
       ],
@@ -1001,6 +1113,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       ],
       "token_id": [
         "x"
+      ],
+      "total_spend_dollars": [
+        "100"
       ],
       "traffic_exclusions": [
         "security_events"
@@ -1092,6 +1207,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       "alert_trigger_preferences_value": [
         "string"
       ],
+      "check_id": [
+        "699d9864-2c56-4d2e-855e-9661899b7252"
+      ],
       "enabled": [
         "string"
       ],
@@ -1155,6 +1273,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       "protocol": [
         "string"
       ],
+      "query_id": [
+        "string"
+      ],
       "query_tag": [
         "string"
       ],
@@ -1184,6 +1305,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/polic
       ],
       "token_id": [
         "x"
+      ],
+      "total_spend_dollars": [
+        "100"
       ],
       "traffic_exclusions": [
         "security_events"

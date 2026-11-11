@@ -176,7 +176,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/logpush#(resource)%20logpush.jobs%20%3E%20(model)%20logpush_job%20%3E%20(schema)">LogpushJob</a> { id, dataset, destination\_conf, 13 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/logpush#(resource)%20logpush.jobs%20%3E%20(model)%20logpush_job%20%3E%20(schema)">LogpushJob</a> { id, dataset, destination\_conf, 14 more }
 
 </summary>
 
@@ -359,6 +359,16 @@ One of the following:
 destination\_conf: optional string
 
 Uniquely identifies a resource (such as an s3 bucket) where data. will be pushed. Additional configuration parameters supported by the destination may be included.
+
+formaturi
+
+maxLength4096
+
+<a href="#">Link to this property</a>
+
+destination\_name: optional string
+
+Sanitized destination descriptor with credentials removed.
 
 formaturi
 
@@ -736,6 +746,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "id": 1,
     "dataset": "http_requests",
     "destination_conf": "s3://mybucket/logs?region=us-west-2",
+    "destination_name": "s3://mybucket?region=us-west-2",
     "enabled": false,
     "error_message": "error_message",
     "filter_attack_traffic": true,
@@ -802,6 +813,7 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
     "id": 1,
     "dataset": "http_requests",
     "destination_conf": "s3://mybucket/logs?region=us-west-2",
+    "destination_name": "s3://mybucket?region=us-west-2",
     "enabled": false,
     "error_message": "error_message",
     "filter_attack_traffic": true,

@@ -80,7 +80,7 @@ minLength32
 
 <summary>
 
-result: object {id, created\_at, modified\_at, 5 more }
+result: object {id, created\_at, modified\_at, 6 more }
 
 </summary>
 
@@ -105,6 +105,12 @@ Indicates the name of the Pipeline.
 maxLength128
 
 minLength1
+
+<a href="#">Link to this property</a>
+
+outdated: boolean
+
+Indicates that a stream or sink has a newer version than the one this pipeline uses. Update Pipeline Tables moves the pipeline to the latest versions.
 
 <a href="#">Link to this property</a>
 
@@ -222,6 +228,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/pipe
     "created_at": "created_at",
     "modified_at": "modified_at",
     "name": "my_pipeline",
+    "outdated": false,
     "sql": "insert into sink select * from source;",
     "status": "status",
     "tables": [
@@ -250,6 +257,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/pipelines/v1/pipe
     "created_at": "created_at",
     "modified_at": "modified_at",
     "name": "my_pipeline",
+    "outdated": false,
     "sql": "insert into sink select * from source;",
     "status": "status",
     "tables": [
