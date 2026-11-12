@@ -552,7 +552,7 @@ maxLength128
 
 <summary>
 
-limits: optional object {cpu\_ms }
+limits: optional object {cpu\_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -561,6 +561,12 @@ Resource limits for the Worker.
 cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
+
+<a href="#">Link to this property</a>
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
 
 <a href="#">Link to this property</a>
 
@@ -819,7 +825,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
           }
         },
         "limits": {
-          "cpu_ms": 50
+          "cpu_ms": 50,
+          "subrequests": 1000
         },
         "migration_tag": "v1",
         "usage_model": "standard"
@@ -916,7 +923,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/scripts/$
           }
         },
         "limits": {
-          "cpu_ms": 50
+          "cpu_ms": 50,
+          "subrequests": 1000
         },
         "migration_tag": "v1",
         "usage_model": "standard"

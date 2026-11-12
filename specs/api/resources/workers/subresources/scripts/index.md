@@ -2936,6 +2936,8 @@ Name of the service.
 
 ScriptGetResponse = string
 
+The script of a Worker in service worker syntax.
+
 [Link to this property](#)%20workers.scripts%20%3E%20(model)%20script_get_response%20%3E%20(schema)>)
 
 <details>
@@ -4646,6 +4648,14 @@ GET/accounts/{account\_id}/workers/scripts/{script\_name}/content/v2
 
 PUT/accounts/{account\_id}/workers/scripts/{script\_name}/content
 
+##### ModelsExpand Collapse
+
+ContentGetResponse = string
+
+The script of a Worker in service worker syntax.
+
+[Link to this property](#)%20workers.scripts.content%20%3E%20(model)%20content_get_response%20%3E%20(schema)>)
+
 #### ScriptsSettings
 
 ##### [Get Worker Script Settings](https://developers.cloudflare.com/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
@@ -5652,7 +5662,7 @@ maxLength128
 
 <summary>
 
-limits: optional object {cpu\_ms }
+limits: optional object {cpu\_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -5661,6 +5671,12 @@ Resource limits for the Worker.
 cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
+
+<a href="#">Link to this property</a>
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
 
 <a href="#">Link to this property</a>
 
@@ -6212,7 +6228,7 @@ maxLength128
 
 <summary>
 
-limits: optional object {cpu\_ms }
+limits: optional object {cpu\_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -6221,6 +6237,12 @@ Resource limits for the Worker.
 cpu\_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
+
+<a href="#">Link to this property</a>
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
 
 <a href="#">Link to this property</a>
 

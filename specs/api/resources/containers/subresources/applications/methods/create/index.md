@@ -305,7 +305,7 @@ regions: optional array of string
 
 durable\_objects: optional object {namespace\_id } or object {class\_name, script\_name }
 
-Optionally associates this scheduler-backed application with a Durable Object namespace.
+Associates this scheduler-backed application with a Durable Object namespace. Required for default scheduling on private-network-only accounts unless the account has a temporary standalone-application exception.
 
 </summary>
 

@@ -26,7 +26,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/workers/observability/agents/traces
 
-Lists Traces with a named Agent invocation in the window, ordered by lastActivityMs, newest first, including work without a Conversation ID. The window defaults to the last 24 hours. Summaries include the Agent names and Conversation IDs seen, authorized Trace duration, chat input/output/total tokens, models, providers, LLM/tool call counts and span-error counts within the effective window.
+Lists Traces with Agent activity in the window, newest activity first, including work without a Conversation ID. The window defaults to the last 24 hours. Each summary covers the Trace’s Agent spans (invoke\_agent, chat, execute\_tool): the Agents and Conversation IDs seen, duration, token usage, models, providers, and LLM call, tool call and error counts.
 
 ##### Security
 
@@ -194,7 +194,7 @@ Sorted distinct gen\_ai.conversation.id values of authorized Agent invocations i
 
 errorCount: number
 
-Recorded spans with a nonempty error or ERROR status. Counts spans, not distinct messages or incidents.
+Agent spans that recorded an error.
 
 minimum0
 
@@ -254,13 +254,13 @@ Sorted distinct GenAI providers from chat spans in the authorized Trace window.
 
 rootSpanName: string
 
-Name of the root span that initiated the trace.
+Name of the first Agent span in the Trace.
 
 <a href="#">Link to this property</a>
 
 rootTransactionName: string
 
-Logical transaction name for the root span.
+Transaction name of the first Agent span in the Trace.
 
 <a href="#">Link to this property</a>
 
@@ -272,7 +272,7 @@ Authorized Worker services represented in the trace.
 
 spans: number
 
-Total number of spans in the trace.
+Agent spans in the Trace.
 
 <a href="#">Link to this property</a>
 
@@ -302,13 +302,13 @@ minimum0
 
 traceDurationMs: number
 
-Total duration of the trace in milliseconds.
+Duration of the Trace’s Agent activity, in milliseconds.
 
 <a href="#">Link to this property</a>
 
 traceEndMs: number
 
-Trace end time as a Unix epoch in milliseconds.
+End of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 <a href="#">Link to this property</a>
 
@@ -320,7 +320,7 @@ Unique identifier for the distributed trace.
 
 traceStartMs: number
 
-Trace start time as a Unix epoch in milliseconds.
+Start of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 <a href="#">Link to this property</a>
 

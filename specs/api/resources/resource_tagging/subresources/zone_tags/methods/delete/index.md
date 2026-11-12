@@ -48,6 +48,82 @@ minLength32
 
 [Link to this property](#)%20resource_tagging.zone_tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+resource\_id: string
+
+The ID of the resource to remove tags from.
+
+[Link to this property](#)%20resource_tagging.zone_tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20resource_id%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+resource\_type: "access\_application\_policy"or "api\_gateway\_operation"or "custom\_certificate"or 8 more
+
+The type of the resource.
+
+</summary>
+
+One of the following:
+
+"access\_application\_policy"
+
+<a href="#">Link to this property</a>
+
+"api\_gateway\_operation"
+
+<a href="#">Link to this property</a>
+
+"custom\_certificate"
+
+<a href="#">Link to this property</a>
+
+"custom\_hostname"
+
+<a href="#">Link to this property</a>
+
+"dns\_record"
+
+<a href="#">Link to this property</a>
+
+"healthcheck"
+
+<a href="#">Link to this property</a>
+
+"load\_balancer"
+
+<a href="#">Link to this property</a>
+
+"managed\_client\_certificate"
+
+<a href="#">Link to this property</a>
+
+"worker\_route"
+
+<a href="#">Link to this property</a>
+
+"zone"
+
+<a href="#">Link to this property</a>
+
+"zone\_ruleset"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20resource_tagging.zone_tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20resource_type%20%3E%20(schema)>)
+
+access\_application\_id: optional string
+
+Access application ID identifier. Required for access\_application\_policy resources.
+
+formatuuid
+
+[Link to this property](#)%20resource_tagging.zone_tags%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20access_application_id%20%3E%20(schema)>)
+
 ##### H eader ParametersExpand Collapse
 
 "If-Match": optional string

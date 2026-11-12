@@ -82,7 +82,7 @@ maxLength36
 
 <summary>
 
-body: array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20split_tunnel_exclude%20%3E%20(schema)">SplitTunnelExclude</a>
+body: array of object {address, description } or object {host, description }
 
 </summary>
 
@@ -92,7 +92,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddressRequest object {address, description }
 
 </summary>
 
@@ -104,7 +104,7 @@ The address in CIDR format to exclude from the tunnel. If <code>address</code> i
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -118,7 +118,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHostRequest object {host, description }
 
 </summary>
 
@@ -130,7 +130,7 @@ The domain name to exclude from the tunnel. If <code>host</code> is present, <co
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 

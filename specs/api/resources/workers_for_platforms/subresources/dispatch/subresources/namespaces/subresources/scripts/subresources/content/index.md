@@ -31,3 +31,11 @@ GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scr
 ##### [Replace Workers for Platforms Script Content](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/subresources/scripts/subresources/content/methods/update)
 
 PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}/scripts/{script\_name}/content
+
+##### ModelsExpand Collapse
+
+ContentGetResponse = string
+
+The script of a Worker in service worker syntax.
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces.scripts.content%20%3E%20(model)%20content_get_response%20%3E%20(schema)>)

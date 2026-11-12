@@ -76,7 +76,7 @@ account\_id: string
 
 <summary>
 
-body: array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20split_tunnel_include%20%3E%20(schema)">SplitTunnelInclude</a>
+body: array of object {address, description } or object {host, description }
 
 </summary>
 
@@ -86,7 +86,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddressRequest object {address, description }
 
 </summary>
 
@@ -98,7 +98,7 @@ The address in CIDR format to include in the tunnel. If <code>address</code> is 
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -112,7 +112,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHostRequest object {host, description }
 
 </summary>
 
@@ -124,7 +124,7 @@ The domain name to include in the tunnel. If <code>host</code> is present, <code
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 

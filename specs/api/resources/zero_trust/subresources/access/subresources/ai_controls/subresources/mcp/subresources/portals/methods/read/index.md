@@ -486,7 +486,7 @@ One of the following:
 
 <summary>
 
-updated\_prompts: optional array of object {name, enabled, portal\_alias, 3 more }
+updated\_prompts: optional array of object {name, enabled, portal\_alias, 5 more }
 
 </summary>
 
@@ -495,6 +495,8 @@ name: string
 <a href="#">Link to this property</a>
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 <a href="#">Link to this property</a>
 
@@ -506,11 +508,23 @@ portal\_description: optional string
 
 <a href="#">Link to this property</a>
 
+portal\_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+<a href="#">Link to this property</a>
+
 server\_alias: optional string
 
 <a href="#">Link to this property</a>
 
 server\_description: optional string
+
+<a href="#">Link to this property</a>
+
+server\_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 <a href="#">Link to this property</a>
 
@@ -522,7 +536,7 @@ server\_description: optional string
 
 <summary>
 
-updated\_tools: optional array of object {name, enabled, portal\_alias, 3 more }
+updated\_tools: optional array of object {name, enabled, portal\_alias, 5 more }
 
 </summary>
 
@@ -531,6 +545,8 @@ name: string
 <a href="#">Link to this property</a>
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 <a href="#">Link to this property</a>
 
@@ -542,11 +558,23 @@ portal\_description: optional string
 
 <a href="#">Link to this property</a>
 
+portal\_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+<a href="#">Link to this property</a>
+
 server\_alias: optional string
 
 <a href="#">Link to this property</a>
 
 server\_description: optional string
+
+<a href="#">Link to this property</a>
+
+server\_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 <a href="#">Link to this property</a>
 
@@ -722,8 +750,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
             "enabled": true,
             "portal_alias": "portal-tool-alias",
             "portal_description": "portal-level description",
+            "portal_enabled": true,
             "server_alias": "server-tool-alias",
-            "server_description": "server-level description"
+            "server_description": "server-level description",
+            "server_enabled": true
           }
         ],
         "updated_tools": [
@@ -732,8 +762,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
             "enabled": true,
             "portal_alias": "portal-tool-alias",
             "portal_description": "portal-level description",
+            "portal_enabled": true,
             "server_alias": "server-tool-alias",
-            "server_description": "server-level description"
+            "server_description": "server-level description",
+            "server_enabled": true
           }
         ]
       }
@@ -826,8 +858,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
             "enabled": true,
             "portal_alias": "portal-tool-alias",
             "portal_description": "portal-level description",
+            "portal_enabled": true,
             "server_alias": "server-tool-alias",
-            "server_description": "server-level description"
+            "server_description": "server-level description",
+            "server_enabled": true
           }
         ],
         "updated_tools": [
@@ -836,8 +870,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/access/ai-control
             "enabled": true,
             "portal_alias": "portal-tool-alias",
             "portal_description": "portal-level description",
+            "portal_enabled": true,
             "server_alias": "server-tool-alias",
-            "server_description": "server-level description"
+            "server_description": "server-level description",
+            "server_enabled": true
           }
         ]
       }

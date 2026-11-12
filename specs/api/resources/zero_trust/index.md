@@ -4790,7 +4790,7 @@ match: optional string
 
 The wirefilter expression to match devices. Available values: “identity.email”, “identity.groups.id”, “identity.groups.name”, “identity.groups.email”, “identity.service_token_uuid”, “identity.saml_attributes”, “network”, “os.name”, “os.version”, “device.tags”.
 
-maxLength500
+maxLength10000
 
 [Link to this property](#)
 
@@ -7150,7 +7150,7 @@ IntuneInput object { compliance_status, connection_id }
 
 <summary>
 
-compliance_status: "compliant" or "noncompliant" or "unknown" or 3 more
+compliance_status: "compliant" or "noncompliant" or "unknown" or 5 more
 
 Compliance Status.
 
@@ -7179,6 +7179,14 @@ One of the following:
 [Link to this property](#)
 
 "error"
+
+[Link to this property](#)
+
+"conflict"
+
+[Link to this property](#)
+
+"configmanager"
 
 [Link to this property](#)
 
@@ -8066,7 +8074,7 @@ IntuneInput object { compliance_status, connection_id }
 
 <summary>
 
-compliance_status: "compliant" or "noncompliant" or "unknown" or 3 more
+compliance_status: "compliant" or "noncompliant" or "unknown" or 5 more
 
 Compliance Status.
 
@@ -8095,6 +8103,14 @@ One of the following:
 [Link to this property](#)
 
 "error"
+
+[Link to this property](#)
+
+"conflict"
+
+[Link to this property](#)
+
+"configmanager"
 
 [Link to this property](#)
 
@@ -17544,7 +17560,7 @@ One of the following:
 
 <summary>
 
-updated_prompts: optional array of object { name, enabled, portal_alias, 3 more }
+updated_prompts: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -17553,6 +17569,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -17564,11 +17582,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -17580,7 +17610,7 @@ server_description: optional string
 
 <summary>
 
-updated_tools: optional array of object { name, enabled, portal_alias, 3 more }
+updated_tools: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -17589,6 +17619,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -17600,11 +17632,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -18096,7 +18140,7 @@ One of the following:
 
 <summary>
 
-updated_prompts: optional array of object { name, enabled, portal_alias, 3 more }
+updated_prompts: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -18105,6 +18149,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -18116,11 +18162,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -18132,7 +18190,7 @@ server_description: optional string
 
 <summary>
 
-updated_tools: optional array of object { name, enabled, portal_alias, 3 more }
+updated_tools: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -18141,6 +18199,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -18152,11 +18212,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -18648,7 +18720,7 @@ One of the following:
 
 <summary>
 
-updated_prompts: optional array of object { name, enabled, portal_alias, 3 more }
+updated_prompts: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -18657,6 +18729,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -18668,11 +18742,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -18684,7 +18770,7 @@ server_description: optional string
 
 <summary>
 
-updated_tools: optional array of object { name, enabled, portal_alias, 3 more }
+updated_tools: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -18693,6 +18779,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -18704,11 +18792,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -19200,7 +19300,7 @@ One of the following:
 
 <summary>
 
-updated_prompts: optional array of object { name, enabled, portal_alias, 3 more }
+updated_prompts: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -19209,6 +19309,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -19220,11 +19322,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 
@@ -19236,7 +19350,7 @@ server_description: optional string
 
 <summary>
 
-updated_tools: optional array of object { name, enabled, portal_alias, 3 more }
+updated_tools: optional array of object { name, enabled, portal_alias, 5 more }
 
 </summary>
 
@@ -19245,6 +19359,8 @@ name: string
 [Link to this property](#)
 
 enabled: optional boolean
+
+Effective availability of the capability: the portal-level value when set, otherwise the server-level value.
 
 [Link to this property](#)
 
@@ -19256,11 +19372,23 @@ portal_description: optional string
 
 [Link to this property](#)
 
+portal_enabled: optional boolean
+
+Availability set on this portal. Absent when the portal does not set it.
+
+[Link to this property](#)
+
 server_alias: optional string
 
 [Link to this property](#)
 
 server_description: optional string
+
+[Link to this property](#)
+
+server_enabled: optional boolean
+
+Availability set on the MCP server. Absent when the server does not set it.
 
 [Link to this property](#)
 

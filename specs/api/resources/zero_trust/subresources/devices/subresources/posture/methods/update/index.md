@@ -1068,7 +1068,7 @@ IntuneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"or 3 more
+compliance\_status: "compliant"or "noncompliant"or "unknown"or 5 more
 
 Compliance Status.
 
@@ -1097,6 +1097,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "error"
+
+<a href="#">Link to this property</a>
+
+"conflict"
+
+<a href="#">Link to this property</a>
+
+"configmanager"
 
 <a href="#">Link to this property</a>
 
@@ -2596,7 +2604,7 @@ IntuneInput object {compliance\_status, connection\_id }
 
 <summary>
 
-compliance\_status: "compliant"or "noncompliant"or "unknown"or 3 more
+compliance\_status: "compliant"or "noncompliant"or "unknown"or 5 more
 
 Compliance Status.
 
@@ -2625,6 +2633,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "error"
+
+<a href="#">Link to this property</a>
+
+"conflict"
+
+<a href="#">Link to this property</a>
+
+"configmanager"
 
 <a href="#">Link to this property</a>
 

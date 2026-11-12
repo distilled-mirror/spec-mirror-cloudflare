@@ -202,7 +202,7 @@ type: "function\_def"
 
 <summary>
 
-nodes: array of object {duration, name, type, 2 more } or object {config, name, nodes, 3 more } or object {name, options, type, 3 more } or 11 more
+nodes: array of object {duration, name, type, 2 more } or object {config, name, nodes, 3 more } or object {name, options, type, 3 more } or 13 more
 
 </summary>
 
@@ -543,6 +543,222 @@ timestamp: string
 <a href="#">Link to this property</a>
 
 type: "step\_sleep\_until"
+
+<a href="#">Link to this property</a>
+
+resolves: optional number
+
+<a href="#">Link to this property</a>
+
+starts: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {config, name, options, 3 more }
+
+A step.runner() call (managed CI): a shell command run in a container as one durable step.
+
+</summary>
+
+<details>
+
+<summary>
+
+config: object {retries, timeout }
+
+Configuration for a step (retries and timeout).
+
+</summary>
+
+<details>
+
+<summary>
+
+retries: object {backoff, delay, limit }
+
+Retry policy for a step.
+
+</summary>
+
+<details>
+
+<summary>
+
+backoff: "constant"or "linear"or "exponential"
+
+Backoff strategy for step retries.
+
+</summary>
+
+One of the following:
+
+"constant"
+
+<a href="#">Link to this property</a>
+
+"linear"
+
+<a href="#">Link to this property</a>
+
+"exponential"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+delay: numberor string
+
+Duration as milliseconds (number) or human-readable string.
+
+</summary>
+
+One of the following:
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+limit: number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+timeout: numberor string
+
+Duration as milliseconds (number) or human-readable string.
+
+</summary>
+
+One of the following:
+
+number
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+options: object {allow\_failure, command, image, 2 more }
+
+Statically known step.runner() options. A null field is not statically known (a non-literal value, an options object passed as a variable, or a field a spread may set).
+
+</summary>
+
+allow\_failure: boolean
+
+<a href="#">Link to this property</a>
+
+command: string
+
+<a href="#">Link to this property</a>
+
+image: string
+
+<a href="#">Link to this property</a>
+
+instance\_size: string
+
+<a href="#">Link to this property</a>
+
+outputs: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+type: "step\_runner"
+
+<a href="#">Link to this property</a>
+
+resolves: optional number
+
+<a href="#">Link to this property</a>
+
+starts: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {entrypoint, isolation\_key, name, 4 more }
+
+A step.dynamic() call (managed CI): runs a workflow bundle in a dynamic Worker. The steps of the child workflow are not known statically, so nodes is empty.
+
+</summary>
+
+entrypoint: string
+
+<a href="#">Link to this property</a>
+
+isolation\_key: string
+
+<a href="#">Link to this property</a>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+nodes: array of unknown
+
+Child nodes (recursive).
+
+<a href="#">Link to this property</a>
+
+type: "step\_dynamic"
 
 <a href="#">Link to this property</a>
 

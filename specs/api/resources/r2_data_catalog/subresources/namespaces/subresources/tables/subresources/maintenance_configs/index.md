@@ -60,7 +60,7 @@ Configures maintenance for the table.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb, next\_eligible\_at }
+compaction: optional object {state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
 
 Configures compaction settings for table optimization.
 
@@ -130,6 +130,42 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+
+Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"held\_after\_user\_error"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"no\_credential"
+
+<a href="#">Link to this property</a>
+
+"scheduled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -144,7 +180,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, next\_eligible\_at }
+snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
 
 </summary>
 
@@ -193,6 +229,42 @@ next\_eligible\_at: optional string
 Earliest time when the scheduler can claim this operation. Null when disabled.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+
+Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"held\_after\_user\_error"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"no\_credential"
+
+<a href="#">Link to this property</a>
+
+"scheduled"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -222,7 +294,7 @@ Configures maintenance for the table.
 
 <summary>
 
-compaction: optional object {state, target\_size\_mb, next\_eligible\_at }
+compaction: optional object {state, target\_size\_mb, next\_eligible\_at, next\_eligible\_reason }
 
 Configures compaction settings for table optimization.
 
@@ -292,6 +364,42 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+
+Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"held\_after\_user\_error"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"no\_credential"
+
+<a href="#">Link to this property</a>
+
+"scheduled"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -306,7 +414,7 @@ Scheduling interval between normal table maintenance runs.
 
 <summary>
 
-snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, next\_eligible\_at }
+snapshot\_expiration: optional object {max\_snapshot\_age, min\_snapshots\_to\_keep, state, 2 more }
 
 </summary>
 
@@ -355,6 +463,42 @@ next\_eligible\_at: optional string
 Earliest time when the scheduler can claim this operation. Null when disabled.
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+next\_eligible\_reason: optional "disabled"or "held\_after\_user\_error"or "running"or 2 more
+
+Why the operation is not eligible to run before next\_eligible\_at. Returned by the per-table GET only, and absent from the update response. <code>held_after_user_error</code> means a customer-caused failure holds the lease until it expires.
+
+</summary>
+
+One of the following:
+
+"disabled"
+
+<a href="#">Link to this property</a>
+
+"held\_after\_user\_error"
+
+<a href="#">Link to this property</a>
+
+"running"
+
+<a href="#">Link to this property</a>
+
+"no\_credential"
+
+<a href="#">Link to this property</a>
+
+"scheduled"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

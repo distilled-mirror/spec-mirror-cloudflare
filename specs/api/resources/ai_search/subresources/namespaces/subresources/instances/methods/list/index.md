@@ -770,9 +770,35 @@ source: string
 
 <summary>
 
-source\_params: object {exclude\_items, include\_items, prefix, 2 more }
+source\_params: object {d1, exclude\_items, include\_items, 3 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+d1: optional object {query, template }
+
+D1 source configuration of a d1 instance.
+
+</summary>
+
+query: optional string
+
+Read-only SELECT query run against the D1 database. It must return an <code>id</code> column that uniquely identifies each row. Columns named <code>title</code> and <code>content</code> set the document title and body, and up to 5 <code>meta_*</code> columns become filterable custom metadata; any other column is indexed as a labelled field. Every sync reads the full result, up to 100,000 rows, with the instance’s token, and those reads count against your D1 usage. Leading and trailing whitespace is trimmed before the query is stored.
+
+<a href="#">Link to this property</a>
+
+template: optional string
+
+How each row is rendered into the indexed document: labelled renders the title, the labelled fields, then the content; content\_only renders the title and content (labelled fields only when there is no content); key\_value renders every column as name: value; json renders every column as a JSON object.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 exclude\_items: optional array of string
 
@@ -1034,7 +1060,7 @@ token\_id: string
 
 <summary>
 
-type: "r2"or "web-crawler"
+type: "r2"or "web-crawler"or "d1"
 
 </summary>
 
@@ -1045,6 +1071,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "web-crawler"
+
+<a href="#">Link to this property</a>
+
+"d1"
 
 <a href="#">Link to this property</a>
 
@@ -1192,6 +1222,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       "score_threshold": 0,
       "source": "source",
       "source_params": {
+        "d1": {
+          "query": "query",
+          "template": "template"
+        },
         "exclude_items": [
           "string"
         ],
@@ -1344,6 +1378,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
       "score_threshold": 0,
       "source": "source",
       "source_params": {
+        "d1": {
+          "query": "query",
+          "template": "template"
+        },
         "exclude_items": [
           "string"
         ],

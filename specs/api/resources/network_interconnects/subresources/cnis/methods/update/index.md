@@ -144,6 +144,8 @@ formatA.B.C.D/N
 
 bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
 
+BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
+
 </summary>
 
 customer\_asn: number
@@ -187,10 +189,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI. One of the following:
-
-- <code>dynamic_route_exchange</code>
-- <code>advertise_only</code>
+Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 
 </summary>
 
@@ -280,6 +279,8 @@ formatA.B.C.D/N
 
 bgp: optional object {customer\_asn, extra\_prefixes, md5\_key }
 
+BGP Control settings. For non-GCP CNIs, null disables BGP Control. GCP CNIs require BGP configuration, so explicit null is rejected; omission preserves stored settings or repairs missing settings with the Google defaults.
+
 </summary>
 
 customer\_asn: number
@@ -323,10 +324,7 @@ In other words, MD5 keys may contain any printable ASCII character aside from ne
 
 bgp\_mode: optional "dynamic\_route\_exchange"or "advertise\_only"
 
-The BGP mode for a CNI. One of the following:
-
-- <code>dynamic_route_exchange</code>
-- <code>advertise_only</code>
+Controls the customer-facing route exchange behavior. Omitting this field during an update preserves the current mode. When enabling BGP on a BGP-disabled CNI, an omitted or null mode defaults to AdvertiseOnly. Otherwise, null clears the explicitly selected mode.
 
 </summary>
 

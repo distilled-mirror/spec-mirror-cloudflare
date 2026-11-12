@@ -148,7 +148,7 @@ Determines whether NetBIOS over TCP/IP (NetBT) is enabled on the WARP tunnel int
 
 <summary>
 
-exclude: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20split_tunnel_exclude%20%3E%20(schema)">SplitTunnelExclude</a>
+exclude: optional array of object {address, description } or object {host, description }
 
 List of routes excluded in the WARP client’s tunnel. Both ‘exclude’ and ‘include’ cannot be set in the same request.
 
@@ -160,7 +160,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesExcludeSplitTunnelWithAddressRequest object {address, description }
 
 </summary>
 
@@ -172,7 +172,7 @@ The address in CIDR format to exclude from the tunnel. If <code>address</code> i
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -186,7 +186,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesExcludeSplitTunnelWithHost object {host, description }
+TeamsDevicesExcludeSplitTunnelWithHostRequest object {host, description }
 
 </summary>
 
@@ -198,7 +198,7 @@ The domain name to exclude from the tunnel. If <code>host</code> is present, <co
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -272,7 +272,7 @@ Automatically switch Global Acceleration regions based on device location. Defau
 
 <summary>
 
-include: optional array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.policies%20%3E%20(model)%20split_tunnel_include%20%3E%20(schema)">SplitTunnelInclude</a>
+include: optional array of object {address, description } or object {host, description }
 
 List of routes included in the WARP client’s tunnel. Both ‘exclude’ and ‘include’ cannot be set in the same request.
 
@@ -284,7 +284,7 @@ One of the following:
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithAddress object {address, description }
+TeamsDevicesIncludeSplitTunnelWithAddressRequest object {address, description }
 
 </summary>
 
@@ -296,7 +296,7 @@ The address in CIDR format to include in the tunnel. If <code>address</code> is 
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -310,7 +310,7 @@ maxLength100
 
 <summary>
 
-TeamsDevicesIncludeSplitTunnelWithHost object {host, description }
+TeamsDevicesIncludeSplitTunnelWithHostRequest object {host, description }
 
 </summary>
 
@@ -322,7 +322,7 @@ The domain name to include in the tunnel. If <code>host</code> is present, <code
 
 description: optional string
 
-A description of the Split Tunnel item, displayed in the client UI.
+A description of the Split Tunnel item, displayed in the client UI. Null is treated as an empty description.
 
 maxLength100
 
@@ -338,13 +338,13 @@ maxLength100
 
 lan\_allow\_minutes: optional number
 
-The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
+The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Set to null to unset.
 
 [Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20lan_allow_minutes%20%3E%20(schema)>)
 
 lan\_allow\_subnet\_size: optional number
 
-The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
+The size of the subnet for the local access network. Set to null to unset.
 
 [Link to this property](#)%20zero_trust.devices.policies.default%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20lan_allow_subnet_size%20%3E%20(schema)>)
 

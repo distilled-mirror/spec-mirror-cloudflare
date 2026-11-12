@@ -7762,6 +7762,8 @@ Name of the service.
 
 ScriptGetResponse = string
 
+The script of a Worker in service worker syntax.
+
 [Link to this property](#)
 
 <details>
@@ -9460,6 +9462,14 @@ GET/accounts/{account_id}/workers/scripts/{script_name}/content/v2
 
 PUT/accounts/{account_id}/workers/scripts/{script_name}/content
 
+##### Models
+
+ContentGetResponse = string
+
+The script of a Worker in service worker syntax.
+
+[Link to this property](#)
+
 ##### [Get Worker Script Settings](/api/resources/workers/subresources/scripts/subresources/settings/methods/get)
 
 GET/accounts/{account_id}/workers/scripts/{script_name}/script-settings
@@ -10460,7 +10470,7 @@ maxLength128
 
 <summary>
 
-limits: optional object { cpu_ms }
+limits: optional object { cpu_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -10469,6 +10479,12 @@ Resource limits for the Worker.
 cpu_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
+
+[Link to this property](#)
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
 
 [Link to this property](#)
 
@@ -11020,7 +11036,7 @@ maxLength128
 
 <summary>
 
-limits: optional object { cpu_ms }
+limits: optional object { cpu_ms, subrequests }
 
 Resource limits for the Worker.
 
@@ -11029,6 +11045,12 @@ Resource limits for the Worker.
 cpu_ms: optional number
 
 The amount of CPU time this Worker can use in milliseconds.
+
+[Link to this property](#)
+
+subrequests: optional number
+
+The number of subrequests this Worker can make per request.
 
 [Link to this property](#)
 
@@ -22716,7 +22738,7 @@ Sorted distinct gen_ai.conversation.id values of authorized Agent invocations in
 
 errorCount: number
 
-Recorded spans with a nonempty error or ERROR status. Counts spans, not distinct messages or incidents.
+Agent spans that recorded an error.
 
 minimum0
 
@@ -22776,13 +22798,13 @@ Sorted distinct GenAI providers from chat spans in the authorized Trace window.
 
 rootSpanName: string
 
-Name of the root span that initiated the trace.
+Name of the first Agent span in the Trace.
 
 [Link to this property](#)
 
 rootTransactionName: string
 
-Logical transaction name for the root span.
+Transaction name of the first Agent span in the Trace.
 
 [Link to this property](#)
 
@@ -22794,7 +22816,7 @@ Authorized Worker services represented in the trace.
 
 spans: number
 
-Total number of spans in the trace.
+Agent spans in the Trace.
 
 [Link to this property](#)
 
@@ -22824,13 +22846,13 @@ minimum0
 
 traceDurationMs: number
 
-Total duration of the trace in milliseconds.
+Duration of the Trace’s Agent activity, in milliseconds.
 
 [Link to this property](#)
 
 traceEndMs: number
 
-Trace end time as a Unix epoch in milliseconds.
+End of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 [Link to this property](#)
 
@@ -22842,7 +22864,7 @@ Unique identifier for the distributed trace.
 
 traceStartMs: number
 
-Trace start time as a Unix epoch in milliseconds.
+Start of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 [Link to this property](#)
 
@@ -22878,7 +22900,7 @@ Sorted distinct gen_ai.conversation.id values of authorized Agent invocations in
 
 errorCount: number
 
-Recorded spans with a nonempty error or ERROR status. Counts spans, not distinct messages or incidents.
+Agent spans that recorded an error.
 
 minimum0
 
@@ -22938,13 +22960,13 @@ Sorted distinct GenAI providers from chat spans in the authorized Trace window.
 
 rootSpanName: string
 
-Name of the root span that initiated the trace.
+Name of the first Agent span in the Trace.
 
 [Link to this property](#)
 
 rootTransactionName: string
 
-Logical transaction name for the root span.
+Transaction name of the first Agent span in the Trace.
 
 [Link to this property](#)
 
@@ -22956,7 +22978,7 @@ Authorized Worker services represented in the trace.
 
 spans: number
 
-Total number of spans in the trace.
+Agent spans in the Trace.
 
 [Link to this property](#)
 
@@ -22986,13 +23008,13 @@ minimum0
 
 traceDurationMs: number
 
-Total duration of the trace in milliseconds.
+Duration of the Trace’s Agent activity, in milliseconds.
 
 [Link to this property](#)
 
 traceEndMs: number
 
-Trace end time as a Unix epoch in milliseconds.
+End of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 [Link to this property](#)
 
@@ -23004,7 +23026,7 @@ Unique identifier for the distributed trace.
 
 traceStartMs: number
 
-Trace start time as a Unix epoch in milliseconds.
+Start of the Trace’s Agent activity, as Unix epoch milliseconds.
 
 [Link to this property](#)
 

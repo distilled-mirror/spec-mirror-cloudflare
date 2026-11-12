@@ -726,15 +726,73 @@ minimum0
 
 source: optional string
 
+The R2 bucket name for r2, the website URL for web-crawler, or the D1 database ID (UUID) for d1. A d1 instance also requires token\_id, and the token needs D1 Read permission. The d1 database cannot be changed after creation.
+
 <a href="#">Link to this property</a>
 
 <details>
 
 <summary>
 
-source\_params: optional object {exclude\_items, include\_items, prefix, 2 more }
+source\_params: optional object {d1, exclude\_items, include\_items, 3 more }
 
 </summary>
+
+<details>
+
+<summary>
+
+d1: optional object {query, template }
+
+D1 source configuration. Required when creating a d1 instance and ignored for other types. For d1, include\_items and exclude\_items match each row’s item key, <code>&lt;id&gt;.md</code>; a submitted source\_params replaces both lists (an omitted list is cleared), so omit source\_params to keep them.
+
+</summary>
+
+query: string
+
+Read-only SELECT query run against the D1 database. It must return an <code>id</code> column that uniquely identifies each row. Columns named <code>title</code> and <code>content</code> set the document title and body, and up to 5 <code>meta_*</code> columns become filterable custom metadata; any other column is indexed as a labelled field. Every sync reads the full result, up to 100,000 rows, with the instance’s token, and those reads count against your D1 usage. Leading and trailing whitespace is trimmed before the query is stored.
+
+maxLength10000
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+template: optional "labelled"or "content\_only"or "key\_value"or "json"
+
+How each row is rendered into the indexed document: labelled renders the title, the labelled fields, then the content; content\_only renders the title and content (labelled fields only when there is no content); key\_value renders every column as name: value; json renders every column as a JSON object.
+
+</summary>
+
+One of the following:
+
+"labelled"
+
+<a href="#">Link to this property</a>
+
+"content\_only"
+
+<a href="#">Link to this property</a>
+
+"key\_value"
+
+<a href="#">Link to this property</a>
+
+"json"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
 
 exclude\_items: optional array of string
 
@@ -1008,9 +1066,9 @@ formatuuid
 
 <summary>
 
-type: optional "r2"or "web-crawler"
+type: optional "r2"or "web-crawler"or "d1"
 
-Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage.
+Source type. When omitted or null with a non-blank source, HTTP(S) URLs infer web-crawler and existing R2 bucket names infer r2. A missing or blank source without a type uses managed upload-only storage. d1 is never inferred; it indexes the rows returned by source\_params.d1.query.
 
 </summary>
 
@@ -1021,6 +1079,10 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "web-crawler"
+
+<a href="#">Link to this property</a>
+
+"d1"
 
 <a href="#">Link to this property</a>
 
@@ -1138,6 +1200,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
     "score_threshold": 0,
     "source": "source",
     "source_params": {
+      "d1": {
+        "query": "x",
+        "template": "labelled"
+      },
       "exclude_items": [
         "/admin/**",
         "/private/**",
@@ -1284,6 +1350,10 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/namespa
     "score_threshold": 0,
     "source": "source",
     "source_params": {
+      "d1": {
+        "query": "x",
+        "template": "labelled"
+      },
       "exclude_items": [
         "/admin/**",
         "/private/**",
