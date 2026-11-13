@@ -68,6 +68,44 @@ maxLength32
 
 [Link to this property](#)%20origin_tls_client_auth.hostname_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+limit: optional number
+
+Alias for per\_page. Defaults to 50 when neither per\_page nor limit is provided. Takes precedence over per\_page. Values above 1000 are capped at 1000.
+
+maximum1000
+
+minimum0
+
+[Link to this property](#)%20origin_tls_client_auth.hostname_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20limit%20%3E%20(schema)>)
+
+offset: optional number
+
+Number of results to skip. Defaults to 0. Takes precedence over page, including when offset is 0.
+
+minimum0
+
+[Link to this property](#)%20origin_tls_client_auth.hostname_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20offset%20%3E%20(schema)>)
+
+page: optional number
+
+Page number, starting at 1. Defaults to 1. Ignored when offset is provided.
+
+minimum1
+
+[Link to this property](#)%20origin_tls_client_auth.hostname_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of results per page. Defaults to 50 when neither per\_page nor limit is provided. Ignored when limit is provided. Values above 1000 are capped at 1000.
+
+maximum1000
+
+minimum0
+
+[Link to this property](#)%20origin_tls_client_auth.hostname_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

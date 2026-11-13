@@ -74,7 +74,7 @@ message: string
 
 <summary>
 
-result: object {id, bullet\_points, content\_r2\_key, 18 more }
+result: object {id, bullet\_points, content\_r2\_key, 19 more }
 
 </summary>
 
@@ -228,7 +228,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id }
+pirs: array of object {band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -268,7 +268,63 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+requirement\_basis: "current"or "saved"
+
+Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"saved"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+
+Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"stale"
+
+<a href="#">Link to this property</a>
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
 
 <a href="#">Link to this property</a>
 
@@ -445,10 +501,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "pirs": [
         {
           "band": "low",
-          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+          "requirement_basis": "current"
         }
       ]
     },
+    "relevance_coverage": "current",
     "severity": "informational",
     "source_count": 0,
     "summary": "summary",
@@ -505,10 +563,12 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
       "pirs": [
         {
           "band": "low",
-          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"
+          "pir_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+          "requirement_basis": "current"
         }
       ]
     },
+    "relevance_coverage": "current",
     "severity": "informational",
     "source_count": 0,
     "summary": "summary",

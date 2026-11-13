@@ -68,41 +68,59 @@ maxLength32
 
 ##### Body ParametersJSONExpand Collapse
 
-acknowledgments: optional array of string
+contact: array of string
 
-[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20acknowledgments%20%3E%20(schema)>)
-
-canonical: optional array of string
-
-[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20canonical%20%3E%20(schema)>)
-
-contact: optional array of string
+Methods that researchers should use for reporting vulnerabilities. Can be a URI for an email address, phone number, or URL.
 
 [Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20contact%20%3E%20(schema)>)
 
-enabled: optional boolean
+expires: string
 
-[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
-
-encryption: optional array of string
-
-[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20encryption%20%3E%20(schema)>)
-
-expires: optional string
+RFC3339-formatted date and time string indicating the time that, after which, the contents of the security.txt file should be considered stale. It is recommended that this value is less than a year into the future.
 
 formatdate-time
 
 [Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20expires%20%3E%20(schema)>)
 
+acknowledgments: optional array of string
+
+Link(s) to a page where security researchers are recognised for their reports.
+
+[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20acknowledgments%20%3E%20(schema)>)
+
+canonical: optional array of string
+
+Canonical URI where the security.txt file is located.
+
+[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20canonical%20%3E%20(schema)>)
+
+enabled: optional boolean
+
+Whether or not to serve the security.txt file in this zone. If false, security.txt requests will pass through to the origin server.
+
+[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20enabled%20%3E%20(schema)>)
+
+encryption: optional array of string
+
+URI(s) pointing to a location where an encryption key that researchers should use for encrypted communications can be retrieved. The key itself must not appear in this field.
+
+[Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20encryption%20%3E%20(schema)>)
+
 hiring: optional array of string
+
+Link(s) to any security-related job positions.
 
 [Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20hiring%20%3E%20(schema)>)
 
 policy: optional array of string
 
+Link(s) to where a vulnerability disclosure policy is located.
+
 [Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20policy%20%3E%20(schema)>)
 
 preferred\_languages: optional string
+
+Comma-separated list of natural languages that are preferred when submitting security reports. Language codes should be as defined in RFC5646.
 
 [Link to this property](#)%20security_txt%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20preferred_languages%20%3E%20(schema)>)
 
@@ -210,16 +228,17 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/security-center/securit
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
+          "contact": [
+            "mailto:security@example.com",
+            "tel:+1-201-555-0123",
+            "https://example.com/security-contact.html"
+          ],
+          "expires": "2027-12-31T23:59:59Z",
           "acknowledgments": [
             "https://example.com/hall-of-fame.html"
           ],
           "canonical": [
             "https://www.example.com/.well-known/security.txt"
-          ],
-          "contact": [
-            "mailto:security@example.com",
-            "tel:+1-201-555-0123",
-            "https://example.com/security-contact.html"
           ],
           "enabled": true,
           "encryption": [

@@ -832,7 +832,7 @@ Number of items successfully created or promoted.
 
 skipped: number
 
-Number of items skipped because the existing suppression is not customer-managed (for example, a read-only policy suppression).
+Number of items skipped because the existing suppression is not customer-managed.
 
 <a href="#">Link to this property</a>
 

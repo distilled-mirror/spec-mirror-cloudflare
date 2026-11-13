@@ -72,6 +72,20 @@ id: string
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20list_deployments%20%3E%20(params)%20default%20%3E%20(param)%20id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Page number
+
+[Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20list_deployments%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of deployments per page
+
+[Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20list_deployments%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

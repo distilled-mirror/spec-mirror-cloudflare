@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email/sending/suppressions
 
-Lists every active Email Sending suppression owned by the account: sending-domain suppressions first, then account-wide suppressions (including legacy rows with internal zone memberships). Each group is newest first.
+Lists every active Email Sending suppression owned by the account: sending-domain suppressions and account-wide suppressions (including legacy rows with internal zone memberships). Each scope is listed newest first. The order between sending-domain and account-wide suppressions is not fixed; use `scope_type` to list one scope.
 
 ##### Security
 
@@ -132,7 +132,7 @@ One of the following:
 
 scope\_type: optional "account"or "sending\_domain"
 
-Filter by scope: <code>account</code> returns only account-wide suppressions, <code>sending_domain</code> only sending-domain suppressions. Omit to list both, sending-domain suppressions first.
+Filter by scope: <code>account</code> returns only account-wide suppressions, <code>sending_domain</code> only sending-domain suppressions. Omit to list both; the order between the two scopes is not fixed.
 
 </summary>
 
@@ -318,7 +318,7 @@ Number of suppressions in this page.
 
 next\_cursor: string
 
-Opaque cursor for the next page. Pass it back as the <code>cursor</code> query parameter and continue until it is <code>null</code>. A bounded large-account scan may return a short intermediate page. Sending-domain suppressions are listed before account suppressions; each group is newest first.
+Opaque cursor for the next page. Pass it back as the <code>cursor</code> query parameter and continue until it is <code>null</code>. A bounded large-account scan may return a short intermediate page. Each scope is listed newest first; the order between the two scopes is not fixed.
 
 <a href="#">Link to this property</a>
 

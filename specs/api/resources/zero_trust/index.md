@@ -311716,6 +311716,10 @@ DELETE/accounts/{account_id}/cfd_tunnel/{tunnel_id}
 
 GET/accounts/{account_id}/cfd_tunnel/{tunnel_id}/configurations
 
+##### [Reset Tunnel configuration](/api/resources/zero_trust/subresources/tunnels/subresources/cloudflared/subresources/configurations/methods/delete)
+
+DELETE/accounts/{account_id}/cfd_tunnel/{tunnel_id}/configurations
+
 ##### [Update Tunnel configuration](/api/resources/zero_trust/subresources/tunnels/subresources/cloudflared/subresources/configurations/methods/update)
 
 PUT/accounts/{account_id}/cfd_tunnel/{tunnel_id}/configurations
@@ -312085,6 +312089,396 @@ maxLength36
 version: optional number
 
 The version of the Tunnel Configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ConfigurationDeleteResponse = object { account_id, config, created_at, 3 more } or unknown
+
+Cloudflare Tunnel configuration
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+TunnelConfiguration object { account_id, config, created_at, 3 more }
+
+Cloudflare Tunnel configuration
+
+</summary>
+
+account_id: optional string
+
+Identifier.
+
+maxLength32
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: optional object { ingress, originRequest }
+
+The tunnel configuration and ingress rules.
+
+</summary>
+
+<details>
+
+<summary>
+
+ingress: optional array of object { hostname, service, originRequest, path }
+
+List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
+
+</summary>
+
+hostname: string
+
+Public hostname for this service.
+
+[Link to this property](#)
+
+service: string
+
+Protocol and address of destination server. Supported protocols: http://, https://, unix://, tcp://, ssh://, rdp://, unix+tls://, smb://. Alternatively can return a HTTP status code http_status:[code] e.g. ‘http_status:404’.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
+
+Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
+
+</summary>
+
+<details>
+
+<summary>
+
+access: optional object { audTag, teamName, required }
+
+For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
+
+</summary>
+
+audTag: array of string
+
+Access applications that are allowed to reach this hostname for this Tunnel. Audience tags can be identified in the dashboard or via the List Access policies API.
+
+[Link to this property](#)
+
+teamName: string
+
+[Link to this property](#)
+
+required: optional boolean
+
+Deny traffic that has not fulfilled Access authorization.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+caPool: optional string
+
+Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
+
+[Link to this property](#)
+
+connectTimeout: optional number
+
+Timeout for establishing a new TCP connection to your origin server. This excludes the time taken to establish TLS, which is controlled by tlsTimeout.
+
+[Link to this property](#)
+
+disableChunkedEncoding: optional boolean
+
+Disables chunked transfer encoding. Useful if you are running a WSGI server.
+
+[Link to this property](#)
+
+http2Origin: optional boolean
+
+Attempt to connect to origin using HTTP2. Origin must be configured as https.
+
+[Link to this property](#)
+
+httpHostHeader: optional string
+
+Sets the HTTP Host header on requests sent to the local service.
+
+[Link to this property](#)
+
+keepAliveConnections: optional number
+
+Maximum number of idle keepalive connections between Tunnel and your origin. This does not restrict the total number of concurrent connections.
+
+[Link to this property](#)
+
+keepAliveTimeout: optional number
+
+Timeout after which an idle keepalive connection can be discarded.
+
+[Link to this property](#)
+
+matchSNItoHost: optional boolean
+
+Auto configure the Hostname on the origin server certificate.
+
+[Link to this property](#)
+
+noHappyEyeballs: optional boolean
+
+Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols.
+
+[Link to this property](#)
+
+noTLSVerify: optional boolean
+
+Disables TLS verification of the certificate presented by your origin. Will allow any certificate from the origin to be accepted.
+
+[Link to this property](#)
+
+originServerName: optional string
+
+Hostname that cloudflared should expect from your origin server certificate.
+
+[Link to this property](#)
+
+proxyType: optional string
+
+cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Valid options are: "" for the regular proxy and “socks” for a SOCKS5 proxy.
+
+[Link to this property](#)
+
+tcpKeepAlive: optional number
+
+The timeout after which a TCP keepalive packet is sent on a connection between Tunnel and the origin server.
+
+[Link to this property](#)
+
+tlsTimeout: optional number
+
+Timeout for completing a TLS handshake to your origin server, if you have chosen to connect Tunnel to an HTTPS server.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+path: optional string
+
+Requests with this path route to this public hostname.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+originRequest: optional object { access, caPool, connectTimeout, 12 more }
+
+Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
+
+</summary>
+
+<details>
+
+<summary>
+
+access: optional object { audTag, teamName, required }
+
+For all L7 requests to this hostname, cloudflared will validate each request’s Cf-Access-Jwt-Assertion request header.
+
+</summary>
+
+audTag: array of string
+
+Access applications that are allowed to reach this hostname for this Tunnel. Audience tags can be identified in the dashboard or via the List Access policies API.
+
+[Link to this property](#)
+
+teamName: string
+
+[Link to this property](#)
+
+required: optional boolean
+
+Deny traffic that has not fulfilled Access authorization.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+caPool: optional string
+
+Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
+
+[Link to this property](#)
+
+connectTimeout: optional number
+
+Timeout for establishing a new TCP connection to your origin server. This excludes the time taken to establish TLS, which is controlled by tlsTimeout.
+
+[Link to this property](#)
+
+disableChunkedEncoding: optional boolean
+
+Disables chunked transfer encoding. Useful if you are running a WSGI server.
+
+[Link to this property](#)
+
+http2Origin: optional boolean
+
+Attempt to connect to origin using HTTP2. Origin must be configured as https.
+
+[Link to this property](#)
+
+httpHostHeader: optional string
+
+Sets the HTTP Host header on requests sent to the local service.
+
+[Link to this property](#)
+
+keepAliveConnections: optional number
+
+Maximum number of idle keepalive connections between Tunnel and your origin. This does not restrict the total number of concurrent connections.
+
+[Link to this property](#)
+
+keepAliveTimeout: optional number
+
+Timeout after which an idle keepalive connection can be discarded.
+
+[Link to this property](#)
+
+matchSNItoHost: optional boolean
+
+Auto configure the Hostname on the origin server certificate.
+
+[Link to this property](#)
+
+noHappyEyeballs: optional boolean
+
+Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols.
+
+[Link to this property](#)
+
+noTLSVerify: optional boolean
+
+Disables TLS verification of the certificate presented by your origin. Will allow any certificate from the origin to be accepted.
+
+[Link to this property](#)
+
+originServerName: optional string
+
+Hostname that cloudflared should expect from your origin server certificate.
+
+[Link to this property](#)
+
+proxyType: optional string
+
+cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Valid options are: "" for the regular proxy and “socks” for a SOCKS5 proxy.
+
+[Link to this property](#)
+
+tcpKeepAlive: optional number
+
+The timeout after which a TCP keepalive packet is sent on a connection between Tunnel and the origin server.
+
+[Link to this property](#)
+
+tlsTimeout: optional number
+
+Timeout for completing a TLS handshake to your origin server, if you have chosen to connect Tunnel to an HTTPS server.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+created_at: optional string
+
+formatdate-time
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+source: optional "local" or "cloudflare"
+
+Indicates if this is a locally or remotely configured tunnel. If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel’s configuration on the Zero Trust dashboard.
+
+</summary>
+
+One of the following:
+
+"local"
+
+[Link to this property](#)
+
+"cloudflare"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+tunnel_id: optional string
+
+UUID of the tunnel.
+
+formatuuid
+
+maxLength36
+
+[Link to this property](#)
+
+version: optional number
+
+The version of the Tunnel Configuration.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+unknown
 
 [Link to this property](#)
 
@@ -314457,6 +314851,64 @@ updated_at: optional string
 Timestamp of the last update. Null if never updated.
 
 formatdate-time
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+##### [List available regions](/api/resources/zero_trust/subresources/regions/methods/list)
+
+GET/accounts/{account_id}/zerotrust/regions
+
+##### [Get active region](/api/resources/zero_trust/subresources/regions/methods/get)
+
+GET/accounts/{account_id}/zerotrust/region
+
+##### [Select region](/api/resources/zero_trust/subresources/regions/methods/update)
+
+PUT/accounts/{account_id}/zerotrust/region
+
+##### [Clear active region](/api/resources/zero_trust/subresources/regions/methods/delete)
+
+DELETE/accounts/{account_id}/zerotrust/region
+
+##### Models
+
+<details>
+
+<summary>
+
+AccountRegion object { region_key }
+
+</summary>
+
+region_key: string
+
+The key of a Data Localization Suite region.
+
+minLength1
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+ActiveAccountRegion object { region_key }
+
+</summary>
+
+region_key: string
+
+The key of the account’s active Data Localization Suite region, or `null` if the account has not selected a region.
+
+minLength1
 
 [Link to this property](#)
 

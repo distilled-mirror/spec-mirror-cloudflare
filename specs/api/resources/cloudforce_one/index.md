@@ -9531,7 +9531,7 @@ ArticleListResponse object {articles, has\_more, next\_cursor, 2 more }
 
 <summary>
 
-articles: array of object {id, dataset\_id, event\_id, 12 more }
+articles: array of object {id, dataset\_id, event\_id, 13 more }
 
 </summary>
 
@@ -9633,7 +9633,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id }
+pirs: array of object {band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -9673,7 +9673,63 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+requirement\_basis: "current"or "saved"
+
+Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"saved"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+
+Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"stale"
+
+<a href="#">Link to this property</a>
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
 
 <a href="#">Link to this property</a>
 
@@ -9825,7 +9881,7 @@ updated\_count: number
 
 <summary>
 
-ArticleGetResponse object {id, bullet\_points, content\_r2\_key, 18 more }
+ArticleGetResponse object {id, bullet\_points, content\_r2\_key, 19 more }
 
 </summary>
 
@@ -9979,7 +10035,7 @@ formatuuid
 
 <summary>
 
-pirs: array of object {band, pir\_id }
+pirs: array of object {band, pir\_id, requirement\_basis }
 
 Beta. Every active PIR the article was scored against, most relevant first. Draft and deleted PIRs are excluded.
 
@@ -10019,7 +10075,63 @@ formatuuid
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+requirement\_basis: "current"or "saved"
+
+Beta. current: scored against the PIR’s current requirement. saved: the PIR’s structured definition no longer generates a valid requirement, for example because its topic was retired, so the requirement from its last save was scored instead.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"saved"
+
+<a href="#">Link to this property</a>
+
 </details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+relevance\_coverage: "current"or "stale"or "pending"or "unavailable"
+
+Beta. Whether relevance and severity reflect the account’s current Priority Intelligence Requirements, organization profile, and the article’s current content. current: they do. stale: they were scored before a change; articles fetched in the last 7 days are being rescored, older articles keep these scores. pending: not scored yet, fetched in the last 7 days. unavailable: not scored, and will not be scored automatically, because it was fetched more than 7 days ago or processing failed. Updates to managed topics can take up to a day to mark scores stale. Null when the account has no active PIRs or none of its articles has been scored yet.
+
+</summary>
+
+One of the following:
+
+"current"
+
+<a href="#">Link to this property</a>
+
+"stale"
+
+<a href="#">Link to this property</a>
+
+"pending"
+
+<a href="#">Link to this property</a>
+
+"unavailable"
 
 <a href="#">Link to this property</a>
 

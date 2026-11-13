@@ -66,6 +66,26 @@ maxLength32
 
 [Link to this property](#)%20keyless_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Page number of Keyless SSL configurations, starting at 1.
+
+minimum1
+
+[Link to this property](#)%20keyless_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of Keyless SSL configurations per page.
+
+maximum1000
+
+minimum1
+
+[Link to this property](#)%20keyless_certificates%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

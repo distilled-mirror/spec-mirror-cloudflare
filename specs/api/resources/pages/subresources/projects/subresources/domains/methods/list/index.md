@@ -76,6 +76,26 @@ Name of the Pages project. Must begin with a lowercase letter or digit and conta
 
 [Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20project_name%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Page number of custom domains, starting at 1.
+
+minimum1
+
+[Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of custom domains per page.
+
+maximum25
+
+minimum1
+
+[Link to this property](#)%20pages.projects.domains%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

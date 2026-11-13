@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PUT/accounts/{account\_id}/alerting/v3/destinations/webhooks/{webhook\_id}
 
-Update a webhook destination.
+Update a webhook destination. Only `name` can be updated. `url` and `secret` are immutable; to change them, delete the webhook and create a new one.
 
 ##### Security
 
@@ -85,18 +85,6 @@ name: string
 The name of the webhook destination. This will be included in the request body when you receive a webhook notification.
 
 [Link to this property](#)%20alerting.destinations.webhooks%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20name%20%3E%20(schema)>)
-
-url: string
-
-The POST endpoint to call when dispatching a notification.
-
-[Link to this property](#)%20alerting.destinations.webhooks%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20url%20%3E%20(schema)>)
-
-secret: optional string
-
-Optional secret that will be passed in the `cf-webhook-auth` header when dispatching generic webhook notifications or formatted for supported destinations. Secrets are not returned in any API response body.
-
-[Link to this property](#)%20alerting.destinations.webhooks%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20secret%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -182,8 +170,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/alerting/v3/desti
     -H 'Content-Type: application/json' \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
     -d '{
-          "name": "Slack Webhook",
-          "url": "https://hooks.slack.com/services/Ds3fdBFbV/456464Gdd"
+          "name": "Slack Webhook"
         }'
 ```
 
