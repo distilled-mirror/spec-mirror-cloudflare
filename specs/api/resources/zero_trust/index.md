@@ -3324,6 +3324,78 @@ Contains a list of policy IDs assigned to this deployment group.
 
 <summary>
 
+DeploymentGroupListResponse = array of [DeploymentGroup](/api/resources/zero_trust#(resource)%20zero_trust.devices.deployment_groups%20%3E%20(model)%20deployment_group%20%3E%20(schema)) { id, created_at, name, 3 more }
+
+</summary>
+
+id: string
+
+The ID of the deployment group.
+
+[Link to this property](#)
+
+created_at: string
+
+The RFC3339Nano timestamp when the deployment group was created.
+
+[Link to this property](#)
+
+name: string
+
+A user-friendly name for the deployment group.
+
+maxLength255
+
+minLength1
+
+[Link to this property](#)
+
+updated_at: string
+
+The RFC3339Nano timestamp when the deployment group was last updated.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+version_config: array of object { target_environment, version }
+
+Contains version configurations for different target environments.
+
+</summary>
+
+target_environment: string
+
+The target environment for the client version (e.g., windows, macos).
+
+[Link to this property](#)
+
+version: string
+
+The specific client version to deploy.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+policy_ids: optional array of string
+
+Contains a list of policy IDs assigned to this deployment group.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
 DeploymentGroupDeleteResponse object { id }
 
 </summary>
@@ -11580,7 +11652,7 @@ AccessSAML object { config, name, type, 5 more }
 
 <summary>
 
-config: object { attributes, email_attribute_name, enable_encryption, 7 more }
+config: object { attributes, email_attribute_name, enable_encryption, 8 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
 
@@ -11648,7 +11720,7 @@ header that will be added on the request to the origin
 
 idp_public_certs: optional array of string
 
-X509 certificate to verify the signature in the SAML authentication response
+X509 certificate to verify the signature in the SAML authentication response. Mutually exclusive with `metadata_url`.
 
 [Link to this property](#)
 
@@ -11665,6 +11737,14 @@ The maximum URL length the IdP accepts for the SSO redirect URL. When the constr
 maximum100000
 
 minimum512
+
+[Link to this property](#)
+
+metadata_url: optional string
+
+HTTPS URL of the IdP’s SAML metadata document from which Access reads the signing certificates used to verify SAML authentication responses. Mutually exclusive with `idp_public_certs`.
+
+formaturi
 
 [Link to this property](#)
 
@@ -14784,7 +14864,7 @@ AccessSAML object { config, name, type, 5 more }
 
 <summary>
 
-config: object { attributes, email_attribute_name, enable_encryption, 7 more }
+config: object { attributes, email_attribute_name, enable_encryption, 8 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
 
@@ -14852,7 +14932,7 @@ header that will be added on the request to the origin
 
 idp_public_certs: optional array of string
 
-X509 certificate to verify the signature in the SAML authentication response
+X509 certificate to verify the signature in the SAML authentication response. Mutually exclusive with `metadata_url`.
 
 [Link to this property](#)
 
@@ -14869,6 +14949,14 @@ The maximum URL length the IdP accepts for the SSO redirect URL. When the constr
 maximum100000
 
 minimum512
+
+[Link to this property](#)
+
+metadata_url: optional string
+
+HTTPS URL of the IdP’s SAML metadata document from which Access reads the signing certificates used to verify SAML authentication responses. Mutually exclusive with `idp_public_certs`.
+
+formaturi
 
 [Link to this property](#)
 
@@ -294866,7 +294954,7 @@ POST/accounts/{account_id}/one/integrations/{id}/resume
 
 <summary>
 
-IntegrationListResponse object { id, application, auth_method, 6 more }
+IntegrationListResponse object { id, application, auth_method, 7 more }
 
 Serializer for v2 integration list responses.
 
@@ -294899,6 +294987,98 @@ id: string
 [Link to this property](#)
 
 display_name: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -294954,7 +295134,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationGetResponse object { id, application, auth_method, 11 more }
+IntegrationGetResponse object { id, application, auth_method, 12 more }
 
 The requested item.
 
@@ -294993,6 +295173,98 @@ components: map[unknown]
 [Link to this property](#)
 
 link: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -295076,7 +295348,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationCreateResponse object { id, application, auth_method, 11 more }
+IntegrationCreateResponse object { id, application, auth_method, 12 more }
 
 The requested item.
 
@@ -295115,6 +295387,98 @@ components: map[unknown]
 [Link to this property](#)
 
 link: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -295198,7 +295562,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationUpdateResponse object { id, application, auth_method, 11 more }
+IntegrationUpdateResponse object { id, application, auth_method, 12 more }
 
 The requested item.
 
@@ -295237,6 +295601,98 @@ components: map[unknown]
 [Link to this property](#)
 
 link: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -295320,7 +295776,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationPauseResponse object { id, application, auth_method, 11 more }
+IntegrationPauseResponse object { id, application, auth_method, 12 more }
 
 The requested item.
 
@@ -295359,6 +295815,98 @@ components: map[unknown]
 [Link to this property](#)
 
 link: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -295442,7 +295990,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationResumeResponse object { id, application, auth_method, 11 more }
+IntegrationResumeResponse object { id, application, auth_method, 12 more }
 
 The requested item.
 
@@ -295481,6 +296029,98 @@ components: map[unknown]
 [Link to this property](#)
 
 link: string
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+config: object { gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object { groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object { id, display_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+projects: array of object { id, display_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+[Link to this property](#)
+
+display_name: string
+
+Human-readable GitLab resource name.
+
+[Link to this property](#)
+
+path: string
+
+Full GitLab resource path.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

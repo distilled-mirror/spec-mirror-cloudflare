@@ -114,6 +114,26 @@ messages: array of string
 
 [Link to this property](#)%20logs.log_explorer.query%20%3E%20(method)%20sql%20%3E%20(network%20schema)%20%3E%20(property)%20messages>)
 
+<details>
+
+<summary>
+
+result\_info: object {dataset }
+
+Metadata about the query execution.
+
+</summary>
+
+dataset: string
+
+Dataset type name queried (e.g. <code>http_requests</code>).
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20logs.log_explorer.query%20%3E%20(method)%20sql%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
+
 success: boolean
 
 [Link to this property](#)%20logs.log_explorer.query%20%3E%20(method)%20sql%20%3E%20(network%20schema)%20%3E%20(property)%20success>)
@@ -152,6 +172,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
   "messages": [
     "string"
   ],
+  "result_info": {
+    "dataset": "dataset"
+  },
   "success": true,
   "result": [
     {
@@ -180,6 +203,9 @@ curl https://api.cloudflare.com/client/v4/$ACCOUNTS_OR_ZONES/$ACCOUNT_OR_ZONE_ID
   "messages": [
     "string"
   ],
+  "result_info": {
+    "dataset": "dataset"
+  },
   "success": true,
   "result": [
     {

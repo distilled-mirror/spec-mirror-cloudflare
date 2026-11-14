@@ -1932,6 +1932,78 @@ Contains a list of policy IDs assigned to this deployment group.
 
 <summary>
 
+DeploymentGroupListResponse = array of <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.devices.deployment_groups%20%3E%20(model)%20deployment_group%20%3E%20(schema)">DeploymentGroup</a> { id, created\_at, name, 3 more }
+
+</summary>
+
+id: string
+
+The ID of the deployment group.
+
+<a href="#">Link to this property</a>
+
+created\_at: string
+
+The RFC3339Nano timestamp when the deployment group was created.
+
+<a href="#">Link to this property</a>
+
+name: string
+
+A user-friendly name for the deployment group.
+
+maxLength255
+
+minLength1
+
+<a href="#">Link to this property</a>
+
+updated\_at: string
+
+The RFC3339Nano timestamp when the deployment group was last updated.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+version\_config: array of object {target\_environment, version }
+
+Contains version configurations for different target environments.
+
+</summary>
+
+target\_environment: string
+
+The target environment for the client version (e.g., windows, macos).
+
+<a href="#">Link to this property</a>
+
+version: string
+
+The specific client version to deploy.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+policy\_ids: optional array of string
+
+Contains a list of policy IDs assigned to this deployment group.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20zero_trust.devices.deployment_groups%20%3E%20(model)%20deployment_group_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
 DeploymentGroupDeleteResponse object {id }
 
 </summary>

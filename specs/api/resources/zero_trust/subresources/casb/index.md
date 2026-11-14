@@ -781,7 +781,7 @@ POST/accounts/{account\_id}/one/integrations/{id}/resume
 
 <summary>
 
-IntegrationListResponse object {id, application, auth\_method, 6 more }
+IntegrationListResponse object {id, application, auth\_method, 7 more }
 
 Serializer for v2 integration list responses.
 
@@ -814,6 +814,98 @@ id: string
 <a href="#">Link to this property</a>
 
 display\_name: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -869,7 +961,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationGetResponse object {id, application, auth\_method, 11 more }
+IntegrationGetResponse object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -908,6 +1000,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -991,7 +1175,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationCreateResponse object {id, application, auth\_method, 11 more }
+IntegrationCreateResponse object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -1030,6 +1214,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1113,7 +1389,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationUpdateResponse object {id, application, auth\_method, 11 more }
+IntegrationUpdateResponse object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -1152,6 +1428,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1235,7 +1603,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationPauseResponse object {id, application, auth\_method, 11 more }
+IntegrationPauseResponse object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -1274,6 +1642,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1357,7 +1817,7 @@ Use cases enabled for the integration.
 
 <summary>
 
-IntegrationResumeResponse object {id, application, auth\_method, 11 more }
+IntegrationResumeResponse object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -1396,6 +1856,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

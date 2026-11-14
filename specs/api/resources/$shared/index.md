@@ -1080,7 +1080,19 @@ The rate plan applied to the subscription.
 
 <summary>
 
-id: optional "free"or "lite"or "pro"or 7 more
+id: optional "free"or "lite"or "pro"or 7 moreor string
+
+The ID of the rate plan.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"free"or "lite"or "pro"or 7 more
 
 The ID of the rate plan.
 
@@ -1125,6 +1137,14 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "partners\_enterprise"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
 
 <a href="#">Link to this property</a>
 

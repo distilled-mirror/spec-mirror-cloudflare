@@ -1358,7 +1358,7 @@ zdr: optional boolean
 
 <summary>
 
-result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -2356,6 +2356,12 @@ minLength16
 
 <a href="#">Link to this property</a>
 
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
@@ -2808,6 +2814,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "log_management_strategy": "STOP_INSERTING",
     "logpush": true,
     "logpush_public_key": "xxxxxxxxxxxxxxxx",
+    "multiprovider_enabled": true,
     "otel": [
       {
         "headers": {
@@ -2936,6 +2943,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "log_management_strategy": "STOP_INSERTING",
     "logpush": true,
     "logpush_public_key": "xxxxxxxxxxxxxxxx",
+    "multiprovider_enabled": true,
     "otel": [
       {
         "headers": {

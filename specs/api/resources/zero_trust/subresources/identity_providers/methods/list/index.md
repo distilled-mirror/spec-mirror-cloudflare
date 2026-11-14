@@ -4160,7 +4160,7 @@ AccessSAML object {config, name, type, 5 more }
 
 <summary>
 
-config: object {attributes, email\_attribute\_name, enable\_encryption, 7 more }
+config: object {attributes, email\_attribute\_name, enable\_encryption, 8 more }
 
 The configuration parameters for the identity provider. To view the required parameters for a specific provider, refer to our <a href="https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/">developer documentation</a>.
 
@@ -4226,7 +4226,7 @@ header that will be added on the request to the origin
 
 idp\_public\_certs: optional array of string
 
-X509 certificate to verify the signature in the SAML authentication response
+X509 certificate to verify the signature in the SAML authentication response. Mutually exclusive with <code>metadata_url</code>.
 
 <a href="#">Link to this property</a>
 
@@ -4243,6 +4243,14 @@ The maximum URL length the IdP accepts for the SSO redirect URL. When the constr
 maximum100000
 
 minimum512
+
+<a href="#">Link to this property</a>
+
+metadata\_url: optional string
+
+HTTPS URL of the IdP’s SAML metadata document from which Access reads the signing certificates used to verify SAML authentication responses. Mutually exclusive with <code>idp_public_certs</code>.
+
+formaturi
 
 <a href="#">Link to this property</a>
 

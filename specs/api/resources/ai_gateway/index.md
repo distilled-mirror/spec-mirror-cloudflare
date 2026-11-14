@@ -42,7 +42,7 @@ DELETE/accounts/{account\_id}/ai-gateway/gateways/{id}
 
 <summary>
 
-AIGatewayListResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+AIGatewayListResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -1037,6 +1037,12 @@ logpush\_public\_key: optional string
 maxLength1024
 
 minLength16
+
+<a href="#">Link to this property</a>
+
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
 
 <a href="#">Link to this property</a>
 
@@ -1406,7 +1412,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayGetResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+AIGatewayGetResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -2401,6 +2407,12 @@ logpush\_public\_key: optional string
 maxLength1024
 
 minLength16
+
+<a href="#">Link to this property</a>
+
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
 
 <a href="#">Link to this property</a>
 
@@ -2770,7 +2782,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayCreateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+AIGatewayCreateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -3765,6 +3777,12 @@ logpush\_public\_key: optional string
 maxLength1024
 
 minLength16
+
+<a href="#">Link to this property</a>
+
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
 
 <a href="#">Link to this property</a>
 
@@ -4134,7 +4152,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayUpdateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+AIGatewayUpdateResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -5129,6 +5147,12 @@ logpush\_public\_key: optional string
 maxLength1024
 
 minLength16
+
+<a href="#">Link to this property</a>
+
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
 
 <a href="#">Link to this property</a>
 
@@ -5498,7 +5522,7 @@ zdr: optional boolean
 
 <summary>
 
-AIGatewayDeleteResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 27 more }
+AIGatewayDeleteResponse object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
 
 </summary>
 
@@ -6493,6 +6517,12 @@ logpush\_public\_key: optional string
 maxLength1024
 
 minLength16
+
+<a href="#">Link to this property</a>
+
+multiprovider\_enabled: optional boolean
+
+Lets requests to a model use every provider that serves it. When off, a model uses only the providers it launched with, so a provider added later receives none of its traffic. A request that names providers (the cf-aig-allowed-providers header or routing.allowedProviders) can still use any of them. Model aliases (custom/) are not restricted.
 
 <a href="#">Link to this property</a>
 

@@ -206,7 +206,7 @@ List of messages.
 
 <summary>
 
-result: array of object {id, application, auth\_method, 6 more }
+result: array of object {id, application, auth\_method, 7 more }
 
 List of items.
 
@@ -239,6 +239,98 @@ id: string
 <a href="#">Link to this property</a>
 
 display\_name: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -378,6 +470,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
         "display_name": "Google Domain-Wide Delegation Service Account",
         "id": "google_domain_wide_delegation_service_account"
       },
+      "config": {},
       "created": "2025-01-15T10:00:00Z",
       "id": "019d2e6a-d995-7185-afbd-4feead9e42ec",
       "is_paused": false,
@@ -420,6 +513,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
         "display_name": "Google Domain-Wide Delegation Service Account",
         "id": "google_domain_wide_delegation_service_account"
       },
+      "config": {},
       "created": "2025-01-15T10:00:00Z",
       "id": "019d2e6a-d995-7185-afbd-4feead9e42ec",
       "is_paused": false,

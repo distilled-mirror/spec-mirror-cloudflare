@@ -78,11 +78,17 @@ page: optional number
 
 Page number
 
+minimum1
+
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20list_versions%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
 per\_page: optional number
 
 Number of versions per page
+
+maximum100
+
+minimum1
 
 [Link to this property](#)%20ai_gateway.dynamic_routing%20%3E%20(method)%20list_versions%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 

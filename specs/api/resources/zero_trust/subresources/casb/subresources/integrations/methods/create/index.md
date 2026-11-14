@@ -24,7 +24,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/one/integrations
 
-Creates a new integration for the specified application. Integration creation with OAuth is not supported by API at the moment. For other auth methods, use `GET /v2/applications/{application_id}/credential-guide` to see the required credential structure and example payloads for each vendor.
+Creates a new integration for the specified application. For other auth methods, use `GET /v2/applications/{application_id}/credential-guide` to see the required credential structure and example payloads for each vendor.
 
 ##### Security
 
@@ -231,7 +231,7 @@ List of permission scopes (uses policy defaults if empty).
 
 <summary>
 
-result: object {id, application, auth\_method, 11 more }
+result: object {id, application, auth\_method, 12 more }
 
 The requested item.
 
@@ -270,6 +270,98 @@ components: map\[unknown]
 <a href="#">Link to this property</a>
 
 link: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+config: object {gitlab }
+
+Vendor-specific integration configuration.
+
+</summary>
+
+<details>
+
+<summary>
+
+gitlab: optional object {groups, projects }
+
+GitLab-specific configuration. Present only for GitLab integrations.
+
+</summary>
+
+<details>
+
+<summary>
+
+groups: array of object {id, display\_name, path }
+
+Selected top-level GitLab groups.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+projects: array of object {id, display\_name, path }
+
+Selected GitLab projects.
+
+</summary>
+
+id: string
+
+GitLab resource ID as a string-encoded positive integer.
+
+<a href="#">Link to this property</a>
+
+display\_name: string
+
+Human-readable GitLab resource name.
+
+<a href="#">Link to this property</a>
+
+path: string
+
+Full GitLab resource path.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -413,6 +505,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
       },
       "link": "https://example.cloudflare.com/authorize"
     },
+    "config": {},
     "created": "2025-01-01T00:00:00Z",
     "credentials_expiry": "2026-01-01T00:00:00Z",
     "dlp_profiles": [
@@ -498,6 +591,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/one/integrations 
       },
       "link": "https://example.cloudflare.com/authorize"
     },
+    "config": {},
     "created": "2025-01-01T00:00:00Z",
     "credentials_expiry": "2026-01-01T00:00:00Z",
     "dlp_profiles": [

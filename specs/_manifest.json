@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4100,
+  "count": 4102,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -12823,12 +12823,20 @@
       "markdown": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/delete/index.md"
     },
     {
+      "page": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/edit",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/edit/index.md"
+    },
+    {
       "page": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/get",
       "markdown": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/get/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/list",
       "markdown": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/list/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/subresources/scripts",

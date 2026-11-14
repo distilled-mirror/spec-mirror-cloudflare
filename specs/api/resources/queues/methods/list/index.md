@@ -66,6 +66,26 @@ maxLength32
 
 [Link to this property](#)%20queues%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20account_id%20%3E%20(schema)>)
 
+##### Q uery ParametersExpand Collapse
+
+page: optional number
+
+Page number of queues, starting at 1.
+
+minimum1
+
+[Link to this property](#)%20queues%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of queues per page. Takes precedence over the legacy perPage query parameter.
+
+maximum500
+
+minimum1
+
+[Link to this property](#)%20queues%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>

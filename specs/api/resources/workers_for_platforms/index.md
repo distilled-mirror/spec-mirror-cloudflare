@@ -32,6 +32,14 @@ GET/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
 
 POST/accounts/{account\_id}/workers/dispatch/namespaces
 
+##### [Update Workers for Platforms Dispatch Namespace](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/update)
+
+PUT/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
+
+##### [Patch Workers for Platforms Dispatch Namespace](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/edit)
+
+PATCH/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
+
 ##### [Delete Workers for Platforms Dispatch Namespace](https://developers.cloudflare.com/api/resources/workers_for_platforms/subresources/dispatch/subresources/namespaces/methods/delete)
 
 DELETE/accounts/{account\_id}/workers/dispatch/namespaces/{dispatch\_namespace}
@@ -247,6 +255,146 @@ Whether the Workers in the namespace are executed in a “trusted” manner. Whe
 </details>
 
 [Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(model)%20namespace_create_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+NamespaceUpdateResponse object {created\_by, created\_on, modified\_by, 5 more }
+
+</summary>
+
+created\_by: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+When the script was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_by: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+When the script was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+namespace\_id: optional string
+
+API Resource UUID tag.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+namespace\_name: optional string
+
+Name of the Workers for Platforms dispatch namespace.
+
+<a href="#">Link to this property</a>
+
+script\_count: optional number
+
+The current number of scripts in this Dispatch Namespace.
+
+<a href="#">Link to this property</a>
+
+trusted\_workers: optional boolean
+
+Whether the Workers in the namespace are executed in a “trusted” manner. When a Worker is trusted, it has access to the shared caches for the zone in the Cache API, and has access to the <code>request.cf</code> object on incoming Requests. When a Worker is untrusted, caches are not shared across the zone, and <code>request.cf</code> is undefined. By default, Workers in a namespace are “untrusted”.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(model)%20namespace_update_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+NamespaceEditResponse object {created\_by, created\_on, modified\_by, 5 more }
+
+</summary>
+
+created\_by: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+created\_on: optional string
+
+When the script was created.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+modified\_by: optional string
+
+Identifier.
+
+maxLength32
+
+<a href="#">Link to this property</a>
+
+modified\_on: optional string
+
+When the script was last modified.
+
+formatdate-time
+
+<a href="#">Link to this property</a>
+
+namespace\_id: optional string
+
+API Resource UUID tag.
+
+maxLength36
+
+<a href="#">Link to this property</a>
+
+namespace\_name: optional string
+
+Name of the Workers for Platforms dispatch namespace.
+
+<a href="#">Link to this property</a>
+
+script\_count: optional number
+
+The current number of scripts in this Dispatch Namespace.
+
+<a href="#">Link to this property</a>
+
+trusted\_workers: optional boolean
+
+Whether the Workers in the namespace are executed in a “trusted” manner. When a Worker is trusted, it has access to the shared caches for the zone in the Cache API, and has access to the <code>request.cf</code> object on incoming Requests. When a Worker is untrusted, caches are not shared across the zone, and <code>request.cf</code> is undefined. By default, Workers in a namespace are “untrusted”.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20workers_for_platforms.dispatch.namespaces%20%3E%20(model)%20namespace_edit_response%20%3E%20(schema)>)
 
 NamespaceDeleteResponse = unknown
 
