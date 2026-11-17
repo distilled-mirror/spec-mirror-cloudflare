@@ -82,6 +82,8 @@ Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
 
 maximum604800
 
+minimum0
+
 <a href="#">Link to this property</a>
 
 objects: optional array of string

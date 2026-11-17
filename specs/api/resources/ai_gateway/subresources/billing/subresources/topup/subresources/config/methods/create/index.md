@@ -74,7 +74,7 @@ account\_id: string
 
 <summary>
 
-body: object {amount, threshold } or object {amount, consent\_version, payment\_method\_id, 3 more }
+body: object {amount, threshold } or object {amount, consent\_version, payment\_method\_id, 4 more }
 
 </summary>
 
@@ -112,7 +112,7 @@ minimum500
 
 <summary>
 
-object {amount, consent\_version, payment\_method\_id, 3 more }
+object {amount, consent\_version, payment\_method\_id, 4 more }
 
 </summary>
 
@@ -153,6 +153,12 @@ threshold: number
 Balance threshold in cents that triggers auto top-up (min 500).
 
 minimum500
+
+<a href="#">Link to this property</a>
+
+contract\_version: optional 2
+
+Set to 2 to pin auto top-up to this card instead of the default. Read when card setup starts; completion follows the setup.
 
 <a href="#">Link to this property</a>
 

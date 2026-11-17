@@ -94,6 +94,8 @@ Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
 
 maximum604800
 
+minimum0
+
 [Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20ttlSeconds%20%3E%20(schema)>)
 
 objects: optional array of string

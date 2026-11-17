@@ -206,7 +206,7 @@ The key for Zaraz debug mode.
 
 <summary>
 
-settings: object {autoInjectScript, contextEnricher, cookieDomain, 11 more }
+settings: object {autoInjectScript, botScoreThreshold, contextEnricher, 12 more }
 
 General Zaraz settings.
 
@@ -215,6 +215,14 @@ General Zaraz settings.
 autoInjectScript: boolean
 
 Automatic injection of Zaraz scripts enabled.
+
+<a href="#">Link to this property</a>
+
+botScoreThreshold: optional number
+
+Minimum bot score required to load Zaraz.
+
+formatint64
 
 <a href="#">Link to this property</a>
 
@@ -344,7 +352,7 @@ List of blocking trigger IDs.
 
 component: string
 
-Tool’s internal name.
+Name of the Managed Component the tool runs, for example <code>google-analytics_v4</code>.
 
 <a href="#">Link to this property</a>
 
@@ -466,7 +474,7 @@ Default consent purpose ID.
 
 <summary>
 
-neoEvents: optional array of <a href="https://developers.cloudflare.com/api/resources/zaraz#(resource)%20zaraz%20%3E%20(model)%20neo_event%20%3E%20(schema)">NeoEvent</a> { actionType, blockingTriggers, data, firingTriggers }
+DeprecatedneoEvents: optional array of <a href="https://developers.cloudflare.com/api/resources/zaraz#(resource)%20zaraz%20%3E%20(model)%20neo_event%20%3E%20(schema)">NeoEvent</a> { actionType, blockingTriggers, data, firingTriggers }
 
 DEPRECATED - List of actions configured on a tool. Either this or actions field is required. If both are present, actions field will take precedence.
 
@@ -532,7 +540,7 @@ List of blocking trigger IDs.
 
 component: string
 
-Tool’s internal name.
+Name of the Managed Component the tool runs, for example <code>google-analytics_v4</code>.
 
 <a href="#">Link to this property</a>
 
@@ -610,17 +618,27 @@ type: "custom-mc"
 
 <summary>
 
-worker: object {escapedWorkerName, workerTag }
+worker: object {escapedWorkerName, workerTag, mutableId }
 
-Cloudflare worker that acts as a managed component.
+Cloudflare Worker that acts as a Managed Component.
 
 </summary>
 
 escapedWorkerName: string
 
+Name of the Worker script.
+
 <a href="#">Link to this property</a>
 
 workerTag: string
+
+Tag of the Worker script.
+
+<a href="#">Link to this property</a>
+
+mutableId: optional string
+
+Set by Cloudflare when the config is saved. Do not set or change it.
 
 <a href="#">Link to this property</a>
 
@@ -676,7 +694,7 @@ Default consent purpose ID.
 
 <summary>
 
-neoEvents: optional array of <a href="https://developers.cloudflare.com/api/resources/zaraz#(resource)%20zaraz%20%3E%20(model)%20neo_event%20%3E%20(schema)">NeoEvent</a> { actionType, blockingTriggers, data, firingTriggers }
+DeprecatedneoEvents: optional array of <a href="https://developers.cloudflare.com/api/resources/zaraz#(resource)%20zaraz%20%3E%20(model)%20neo_event%20%3E%20(schema)">NeoEvent</a> { actionType, blockingTriggers, data, firingTriggers }
 
 DEPRECATED - List of actions configured on a tool. Either this or actions field is required. If both are present, actions field will take precedence.
 
@@ -1845,6 +1863,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/zaraz/history/
         "debugKey": "debugKey",
         "settings": {
           "autoInjectScript": true,
+          "botScoreThreshold": 0,
           "contextEnricher": {
             "escapedWorkerName": "escapedWorkerName",
             "workerTag": "workerTag"
@@ -2034,6 +2053,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/zaraz/history/
         "debugKey": "debugKey",
         "settings": {
           "autoInjectScript": true,
+          "botScoreThreshold": 0,
           "contextEnricher": {
             "escapedWorkerName": "escapedWorkerName",
             "workerTag": "workerTag"

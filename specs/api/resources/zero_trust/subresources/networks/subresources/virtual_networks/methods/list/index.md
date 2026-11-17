@@ -106,6 +106,24 @@ maxLength256
 
 [Link to this property](#)%20zero_trust.networks.virtual_networks%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20name%20%3E%20(schema)>)
 
+page: optional number
+
+Page number of paginated results, starting at 1. Defaults to 1.
+
+minimum1
+
+[Link to this property](#)%20zero_trust.networks.virtual_networks%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
+
+per\_page: optional number
+
+Number of virtual networks per page, up to 1000. Defaults to 1000.
+
+maximum1000
+
+minimum1
+
+[Link to this property](#)%20zero_trust.networks.virtual_networks%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
