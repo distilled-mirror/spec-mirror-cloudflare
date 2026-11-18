@@ -62,6 +62,8 @@ per\_page: optional number
 
 Number of emails per page (default 20, max 100).
 
+minimum1
+
 [Link to this property](#)%20abuse_reports.submitted.emails%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse

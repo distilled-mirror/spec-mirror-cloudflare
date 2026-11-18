@@ -481,7 +481,7 @@ errors: array of object {event, instance\_id }
 
 event: object {id, details, message, 4 more }
 
-An event within a Placement or a Job.
+An event within a Placement.
 
 </summary>
 
@@ -1350,7 +1350,7 @@ errors: array of object {event, instance\_id }
 
 event: object {id, details, message, 4 more }
 
-An event within a Placement or a Job.
+An event within a Placement.
 
 </summary>
 
@@ -2219,7 +2219,7 @@ errors: array of object {event, instance\_id }
 
 event: object {id, details, message, 4 more }
 
-An event within a Placement or a Job.
+An event within a Placement.
 
 </summary>
 
@@ -3088,7 +3088,7 @@ errors: array of object {event, instance\_id }
 
 event: object {id, details, message, 4 more }
 
-An event within a Placement or a Job.
+An event within a Placement.
 
 </summary>
 
@@ -4463,7 +4463,7 @@ errors: array of object {event, instance\_id }
 
 event: object {id, details, message, 4 more }
 
-An event within a Placement or a Job.
+An event within a Placement.
 
 </summary>
 

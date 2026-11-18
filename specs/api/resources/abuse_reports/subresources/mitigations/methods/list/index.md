@@ -108,6 +108,8 @@ per\_page: optional number
 
 How many abuse reports per page to list
 
+minimum1
+
 [Link to this property](#)%20abuse_reports.mitigations%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 <details>

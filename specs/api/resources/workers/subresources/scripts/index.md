@@ -476,17 +476,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -1350,17 +1344,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -2004,17 +1992,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -3386,17 +3368,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -10216,17 +10192,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 
@@ -13306,17 +13276,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object {destinations, enabled, head\_sampling\_rate, persist }
+agents: optional object {enabled, head\_sampling\_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-<a href="#">Link to this property</a>
 
 enabled: optional boolean
 

@@ -32,7 +32,7 @@ PUT/zones/{zone\_id}/settings/google-tag-gateway/config
 
 <summary>
 
-Config object {enabled, endpoint, hideOriginalIp, 2 more }
+Config object {enabled, endpoint, measurementId, 2 more }
 
 Google Tag Gateway configuration for a zone.
 
@@ -50,15 +50,15 @@ Specifies the endpoint path for proxying Google Tag Manager requests. Use an abs
 
 <a href="#">Link to this property</a>
 
-hideOriginalIp: boolean
-
-Hides the original client IP address from Google when enabled.
-
-<a href="#">Link to this property</a>
-
 measurementId: string
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
+
+<a href="#">Link to this property</a>
+
+DeprecatedhideOriginalIp: optional boolean
+
+Deprecated. This value is stored but has no effect on traffic. Optional in requests: if omitted, the previously stored value is kept. Responses always include it.
 
 <a href="#">Link to this property</a>
 

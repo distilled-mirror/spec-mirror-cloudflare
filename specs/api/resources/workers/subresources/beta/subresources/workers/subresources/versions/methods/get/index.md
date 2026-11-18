@@ -200,7 +200,7 @@ pointer: optional string
 
 <summary>
 
-result: <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.beta.workers.versions%20%3E%20(model)%20version%20%3E%20(schema)">Version</a> { id, created\_on, number, 22 more }
+result: <a href="https://developers.cloudflare.com/api/resources/workers#(resource)%20workers.beta.workers.versions%20%3E%20(model)%20version%20%3E%20(schema)">Version</a> { id, created\_on, number, 23 more }
 
 </summary>
 
@@ -418,7 +418,7 @@ Identifier of the user who created the version.
 
 bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
+Bindings attached to the version, as an array of objects that each name themselves. A create or patch request can send <code>bindings</code> or <code>env</code>, and a read returns both. A request that sends both fails with error 10021.
 
 </summary>
 
@@ -1954,6 +1954,28 @@ Select which Durable Object class should get this container attached.
 
 <summary>
 
+env: optional map\[object {type } ]
+
+Bindings attached to the version, as a map from binding name to binding. Each value holds the same payload as the matching <code>bindings</code> entry, without <code>name</code>. Reads derive <code>env</code> from <code>bindings</code>, so the two fields always list the same bindings and <code>env</code> carries nothing extra. Reads omit secret values in both fields.
+
+A create or patch request can send <code>env</code> or <code>bindings</code>, and a request that sends both fails with error 10021. To copy a version, drop <code>env</code> from the read before sending it back, and use <code>inherit</code> bindings for secrets. In a patch, <code>env</code> entries merge one binding at a time: set an entry to <code>null</code> to remove that binding, while a <code>bindings</code> array replaces the whole set.
+
+</summary>
+
+type: string
+
+The kind of resource that the binding provides.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 exports: optional map\[object {type, cache, state } or object {storage, type, container, state } or object {state, type } or 3 more]
 
 Declarative exports for the version, including Durable Object classes (with their <code>storage</code> backend) and named Worker entrypoints. On reads, tombstoned lifecycle entries are omitted, so only live exports (<code>created</code> and <code>expecting-transfer</code>) are returned. <code>exports</code> and <code>migrations</code> are mutually exclusive on upload.
@@ -3418,6 +3440,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers/$
         "class_name": "MyDurableObject"
       }
     ],
+    "env": {
+      "MY_ENV_VAR": {
+        "type": "plain_text"
+      }
+    },
     "exports": {
       "Admin": {
         "type": "worker",
@@ -3597,6 +3624,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/workers/$
         "class_name": "MyDurableObject"
       }
     ],
+    "env": {
+      "MY_ENV_VAR": {
+        "type": "plain_text"
+      }
+    },
     "exports": {
       "Admin": {
         "type": "worker",

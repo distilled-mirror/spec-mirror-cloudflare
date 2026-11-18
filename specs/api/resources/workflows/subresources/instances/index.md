@@ -368,7 +368,7 @@ minimum-9007199254740991
 
 <summary>
 
-steps: array of object {attempts, config, end, 5 more } or object {end, error, finished, 3 more } or object {trigger, type } or object {end, error, finished, 5 more }
+steps: array of object {attempts, config, end, 5 more } or object {end, error, finished, 3 more } or object {trigger, type } or object {error, finished, name, 5 more }
 
 </summary>
 
@@ -680,15 +680,9 @@ type: "termination"
 
 <summary>
 
-object {end, error, finished, 5 more }
+object {error, finished, name, 5 more }
 
 </summary>
-
-end: string
-
-formatdate-time
-
-<a href="#">Link to this property</a>
 
 <details>
 
@@ -725,6 +719,12 @@ formatdate-time
 <a href="#">Link to this property</a>
 
 type: "waitForEvent"
+
+<a href="#">Link to this property</a>
+
+end: optional string
+
+formatdate-time
 
 <a href="#">Link to this property</a>
 

@@ -48,7 +48,7 @@ DELETE/accounts/{account\_id}/workers/workers/{worker\_id}/versions/{version\_id
 
 <summary>
 
-Version object {id, created\_on, number, 22 more }
+Version object {id, created\_on, number, 23 more }
 
 </summary>
 
@@ -266,7 +266,7 @@ Identifier of the user who created the version.
 
 bindings: optional array of object {name, type } or object {instance\_name, name, type, namespace } or object {name, namespace, type } or 36 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: <a href="https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings">https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings</a>.
+Bindings attached to the version, as an array of objects that each name themselves. A create or patch request can send <code>bindings</code> or <code>env</code>, and a read returns both. A request that sends both fails with error 10021.
 
 </summary>
 
@@ -1791,6 +1791,28 @@ List of containers attached to a Worker. Containers can only be attached to Dura
 class\_name: string
 
 Select which Durable Object class should get this container attached.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+env: optional map\[object {type } ]
+
+Bindings attached to the version, as a map from binding name to binding. Each value holds the same payload as the matching <code>bindings</code> entry, without <code>name</code>. Reads derive <code>env</code> from <code>bindings</code>, so the two fields always list the same bindings and <code>env</code> carries nothing extra. Reads omit secret values in both fields.
+
+A create or patch request can send <code>env</code> or <code>bindings</code>, and a request that sends both fails with error 10021. To copy a version, drop <code>env</code> from the read before sending it back, and use <code>inherit</code> bindings for secrets. In a patch, <code>env</code> entries merge one binding at a time: set an entry to <code>null</code> to remove that binding, while a <code>bindings</code> array replaces the whole set.
+
+</summary>
+
+type: string
+
+The kind of resource that the binding provides.
 
 <a href="#">Link to this property</a>
 

@@ -28,7 +28,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/access/ai-controls/mcp/portals
 
-Creates a new MCP portal for managing AI tool access through Cloudflare Access.
+Creates a new MCP portal. Each account supports up to 50 portals, including disabled portals.
 
 ##### Security
 

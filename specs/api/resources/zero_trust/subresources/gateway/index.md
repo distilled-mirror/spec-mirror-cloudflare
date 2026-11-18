@@ -764,7 +764,7 @@ Enforce cipher suites and TLS versions compliant with FIPS 140-2.
 
 <summary>
 
-GatewayConfigurationSettings object {activity\_log, antivirus, block\_page, 12 more }
+GatewayConfigurationSettings object {activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -916,6 +916,46 @@ Specify whether to detect protocols from the initial bytes of client traffic.
 
 <summary>
 
+regions: optional map\[object {tls\_decrypt, certificate } ]
+
+Specify per-region TLS interception and certificate settings for Gateway, keyed by Data Localization Suite region key. Relies on the Zero Trust account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>) - the account must select a region before Gateway applies these settings for it.
+
+</summary>
+
+tls\_decrypt: <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20tls_settings%20%3E%20(schema)">TLSSettings</a> { enabled }
+
+Specify whether to inspect encrypted HTTP traffic.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+certificate: optional object {id }
+
+Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
+
+</summary>
+
+id: string
+
+Specify the UUID of the certificate used for interception. Ensure the certificate is available at the edge(previously called ‘active’). A nil UUID directs Cloudflare to use the Root CA.
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 sandbox: optional object {enabled, fallback\_action }
 
 Specify whether to enable the sandbox.
@@ -1060,7 +1100,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 12 more }
+settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -1092,7 +1132,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 12 more }
+settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -1124,7 +1164,7 @@ formatdate-time
 
 <a href="#">Link to this property</a>
 
-settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 12 more }
+settings: optional <a href="https://developers.cloudflare.com/api/resources/zero_trust#(resource)%20zero_trust.gateway.configurations%20%3E%20(model)%20gateway_configuration_settings%20%3E%20(schema)">GatewayConfigurationSettings</a> { activity\_log, antivirus, block\_page, 13 more }
 
 Specify account settings.
 
@@ -3594,7 +3634,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -3730,7 +3770,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -3866,7 +3906,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -4002,7 +4042,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -4138,7 +4178,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -4274,7 +4314,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 

@@ -82,17 +82,17 @@ Specifies the endpoint path for proxying Google Tag Manager requests. Use an abs
 
 [Link to this property](#)%20google_tag_gateway.config%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20endpoint%20%3E%20(schema)>)
 
-hideOriginalIp: boolean
-
-Hides the original client IP address from Google when enabled.
-
-[Link to this property](#)%20google_tag_gateway.config%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20hideOriginalIp%20%3E%20(schema)>)
-
 measurementId: string
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
 
 [Link to this property](#)%20google_tag_gateway.config%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20measurementId%20%3E%20(schema)>)
+
+DeprecatedhideOriginalIp: optional boolean
+
+Deprecated. This value is stored but has no effect on traffic. Optional in requests: if omitted, the previously stored value is kept. Responses always include it.
+
+[Link to this property](#)%20google_tag_gateway.config%20%3E%20(method)%20update%20%3E%20(params)%200%20%3E%20(param)%20hideOriginalIp%20%3E%20(schema)>)
 
 setUpTag: optional boolean
 
@@ -196,7 +196,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional <a href="https://developers.cloudflare.com/api/resources/google_tag_gateway#(resource)%20google_tag_gateway.config%20%3E%20(model)%20config%20%3E%20(schema)">Config</a> { enabled, endpoint, hideOriginalIp, 2 more }
+result: optional <a href="https://developers.cloudflare.com/api/resources/google_tag_gateway#(resource)%20google_tag_gateway.config%20%3E%20(model)%20config%20%3E%20(schema)">Config</a> { enabled, endpoint, measurementId, 2 more }
 
 Google Tag Gateway configuration for a zone.
 
@@ -214,15 +214,15 @@ Specifies the endpoint path for proxying Google Tag Manager requests. Use an abs
 
 <a href="#">Link to this property</a>
 
-hideOriginalIp: boolean
-
-Hides the original client IP address from Google when enabled.
-
-<a href="#">Link to this property</a>
-
 measurementId: string
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
+
+<a href="#">Link to this property</a>
+
+DeprecatedhideOriginalIp: optional boolean
+
+Deprecated. This value is stored but has no effect on traffic. Optional in requests: if omitted, the previously stored value is kept. Responses always include it.
 
 <a href="#">Link to this property</a>
 
@@ -250,8 +250,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/google-tag-gat
     -d '{
           "enabled": true,
           "endpoint": "/metrics",
-          "hideOriginalIp": true,
           "measurementId": "GTM-P2F3N47Q",
+          "hideOriginalIp": true,
           "setUpTag": true
         }'
 ```
@@ -284,8 +284,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/google-tag-gat
   "result": {
     "enabled": true,
     "endpoint": "/metrics",
-    "hideOriginalIp": true,
     "measurementId": "GTM-P2F3N47Q",
+    "hideOriginalIp": true,
     "setUpTag": true
   }
 }
@@ -321,8 +321,8 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/settings/google-tag-gat
   "result": {
     "enabled": true,
     "endpoint": "/metrics",
-    "hideOriginalIp": true,
     "measurementId": "GTM-P2F3N47Q",
+    "hideOriginalIp": true,
     "setUpTag": true
   }
 }

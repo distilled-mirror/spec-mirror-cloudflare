@@ -380,9 +380,15 @@ vector: boolean
 
 <summary>
 
-indexing\_options: object {keyword\_tokenizer, use\_ocr }
+indexing\_options: object {file\_summary, keyword\_tokenizer, use\_ocr }
 
 </summary>
+
+file\_summary: optional boolean
+
+Generates a per-file summary, topics, and keywords during indexing for text files and media transcripts of at least three chunks. The summary and keywords are stored as the item’s context metadata (a context you set is kept), and the topics are added to chunk context headers where they fit. Best effort: a file whose summary fails is indexed without one. The model calls are billed to your account through the instance’s AI Gateway. Changing this triggers a full re-index. Defaults to false.
+
+<a href="#">Link to this property</a>
 
 <details>
 
@@ -990,11 +996,15 @@ status: string
 
 <a href="#">Link to this property</a>
 
-summarization: boolean
+Deprecatedsummarization: boolean
+
+Deprecated and ignored during indexing and search; changing it still re-indexes existing files on the next sync. Use indexing\_options.file\_summary instead.
 
 <a href="#">Link to this property</a>
 
-summarization\_model: string
+Deprecatedsummarization\_model: string
+
+Deprecated and ignored during indexing and search; changing it still re-indexes existing files on the next sync. Use indexing\_options.file\_summary instead.
 
 <a href="#">Link to this property</a>
 
@@ -1048,7 +1058,9 @@ system\_prompt\_ai\_search: string
 
 <a href="#">Link to this property</a>
 
-system\_prompt\_index\_summarization: string
+Deprecatedsystem\_prompt\_index\_summarization: string
+
+Deprecated and has no effect. Use indexing\_options.file\_summary instead.
 
 <a href="#">Link to this property</a>
 
@@ -1166,6 +1178,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/instanc
         "vector": true
       },
       "indexing_options": {
+        "file_summary": true,
         "keyword_tokenizer": "porter",
         "use_ocr": true
       },
@@ -1322,6 +1335,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-search/instanc
         "vector": true
       },
       "indexing_options": {
+        "file_summary": true,
         "keyword_tokenizer": "porter",
         "use_ocr": true
       },

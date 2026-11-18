@@ -270,17 +270,11 @@ Observability settings for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -828,17 +822,11 @@ Observability settings used when creating new Previews.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -1414,7 +1402,7 @@ DELETE/accounts/{account_id}/workers/workers/{worker_id}/versions/{version_id}
 
 <summary>
 
-Version object { id, created_on, number, 22 more }
+Version object { id, created_on, number, 23 more }
 
 </summary>
 
@@ -1632,7 +1620,7 @@ Identifier of the user who created the version.
 
 bindings: optional array of object { name, type } or object { instance_name, name, type, namespace } or object { name, namespace, type } or 36 more
 
-List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
+Bindings attached to the version, as an array of objects that each name themselves. A create or patch request can send `bindings` or `env`, and a read returns both. A request that sends both fails with error 10021.
 
 </summary>
 
@@ -3157,6 +3145,28 @@ List of containers attached to a Worker. Containers can only be attached to Dura
 class_name: string
 
 Select which Durable Object class should get this container attached.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+env: optional map[object { type } ]
+
+Bindings attached to the version, as a map from binding name to binding. Each value holds the same payload as the matching `bindings` entry, without `name`. Reads derive `env` from `bindings`, so the two fields always list the same bindings and `env` carries nothing extra. Reads omit secret values in both fields.
+
+A create or patch request can send `env` or `bindings`, and a request that sends both fails with error 10021. To copy a version, drop `env` from the read before sending it back, and use `inherit` bindings for secrets. In a patch, `env` entries merge one binding at a time: set an entry to `null` to remove that binding, while a `bindings` array replaces the whole set.
+
+</summary>
+
+type: string
+
+The kind of resource that the binding provides.
 
 [Link to this property](#)
 
@@ -5302,17 +5312,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -6176,17 +6180,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -6830,17 +6828,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -8212,17 +8204,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -15020,17 +15006,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 
@@ -18110,17 +18090,11 @@ Whether observability is enabled for the Worker.
 
 <summary>
 
-agents: optional object { destinations, enabled, head_sampling_rate, persist }
+agents: optional object { enabled, head_sampling_rate, persist }
 
 Agents observability settings for the Worker.
 
 </summary>
-
-destinations: optional array of string
-
-A list of destinations where Agents observability data will be exported to.
-
-[Link to this property](#)
 
 enabled: optional boolean
 

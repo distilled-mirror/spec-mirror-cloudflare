@@ -66,6 +66,12 @@ Specify the Cloudflare account identifier.
 
 ##### Body ParametersJSONExpand Collapse
 
+region: optional string
+
+Pin the generated certificate authority’s key material to one of the account’s selected Data Localization Suite regions. **Important**: This field is only settable during certificate creation. Certificates become immutable after creation - use the `/activate` and `/deactivate` endpoints to manage certificate lifecycle.
+
+[Link to this property](#)%20zero_trust.gateway.certificates%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20region%20%3E%20(schema)>)
+
 validity\_period\_days: optional number
 
 Sets the certificate validity period in days (range: 1-10,950 days / \~30 years). Defaults to 1,825 days (5 years). **Important**: This field is only settable during the certificate creation. Certificates becomes immutable after creation - use the `/activate` and `/deactivate` endpoints to manage certificate lifecycle.
@@ -256,7 +262,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 

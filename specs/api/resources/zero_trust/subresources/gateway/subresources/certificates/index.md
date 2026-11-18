@@ -138,7 +138,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -274,7 +274,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -410,7 +410,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -546,7 +546,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -682,7 +682,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
@@ -818,7 +818,7 @@ Provide the entire issuer field of the certificate (read-only).
 
 region: optional string
 
-Indicate the read-only region the certificate authority’s key material is pinned to. Omitted for certificates that were created without a region.
+Indicate the read-only Data Localization Suite region the certificate authority’s key material is pinned to. This corresponds to one of the regions selected for the account via the account region setting (<code>GET</code>/<code>PUT /accounts/{account_id}/zerotrust/region</code>). Omitted for certificates that were created without a region.
 
 <a href="#">Link to this property</a>
 
