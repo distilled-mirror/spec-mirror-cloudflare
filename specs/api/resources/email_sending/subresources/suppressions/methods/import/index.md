@@ -246,7 +246,7 @@ One of the following:
 
 id: optional string
 
-The created or promoted suppression’s identifier. Present when <code>status</code> is <code>processed</code>.
+The created or updated suppression’s identifier. Present when <code>status</code> is <code>processed</code>.
 
 formatuuid
 
@@ -332,7 +332,7 @@ maxLength1024
 
 processed: number
 
-Number of items successfully created or promoted.
+Number of items successfully created or updated.
 
 <a href="#">Link to this property</a>
 

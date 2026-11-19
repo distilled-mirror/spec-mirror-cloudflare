@@ -108,11 +108,39 @@ result: object {asn }
 
 <summary>
 
-asn: object {asn, country, countryName, 7 more }
+asn: object {asn, category, country, 8 more }
 
 </summary>
 
 asn: number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+
+Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS\_ISP"
+
+<a href="#">Link to this property</a>
+
+"HOSTING\_CLOUD\_CONTENT"
+
+<a href="#">Link to this property</a>
+
+"ORGANIZATION"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -180,11 +208,39 @@ orgName: string
 
 <summary>
 
-related: array of object {asn, name, aka, estimatedUsers }
+related: array of object {asn, category, name, 2 more }
 
 </summary>
 
 asn: number
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+category: "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"
+
+Inferred network type of the AS: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs) or <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers). <code>null</code> when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS\_ISP"
+
+<a href="#">Link to this property</a>
+
+"HOSTING\_CLOUD\_CONTENT"
+
+<a href="#">Link to this property</a>
+
+"ORGANIZATION"
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -250,6 +306,7 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/ip \
   "result": {
     "asn": {
       "asn": 714,
+      "category": "ACCESS_ISP",
       "country": "GB",
       "countryName": "United Kingdom",
       "estimatedUsers": {
@@ -267,6 +324,7 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/ip \
       "related": [
         {
           "asn": 0,
+          "category": "ACCESS_ISP",
           "name": "name",
           "aka": "aka",
           "estimatedUsers": 65345
@@ -290,6 +348,7 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/ip \
   "result": {
     "asn": {
       "asn": 714,
+      "category": "ACCESS_ISP",
       "country": "GB",
       "countryName": "United Kingdom",
       "estimatedUsers": {
@@ -307,6 +366,7 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/ip \
       "related": [
         {
           "asn": 0,
+          "category": "ACCESS_ISP",
           "name": "name",
           "aka": "aka",
           "estimatedUsers": 65345

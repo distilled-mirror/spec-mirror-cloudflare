@@ -430,6 +430,8 @@ One of the following:
 
 page: optional number
 
+Page number, from 1. A high page reads every page before it again. To read further back in a listing sorted by created\_at, ask for page 1 again with a created\_at lt filter set to the created\_at of the last log returned. Logs in the same millisecond as that log can be left out: to include them, set the filter 1 ms later and drop the logs already returned.
+
 maximum9007199254740991
 
 minimum1
@@ -574,7 +576,7 @@ step: optional number
 
 <summary>
 
-result\_info: object {count, max\_cost, max\_duration, 11 more }
+result\_info: object {count, max\_cost, max\_duration, 12 more }
 
 </summary>
 
@@ -631,6 +633,12 @@ per\_page: optional number
 <a href="#">Link to this property</a>
 
 total\_count: optional number
+
+<a href="#">Link to this property</a>
+
+truncated: optional boolean
+
+Present when the listing has a metadata filter or a search, sorted by created\_at newest first. Such a listing searches at most the newest 10,000,000 logs in its date range, newest first, so add a created\_at lt filter to search older logs. True when part of that window was not searched yet, because the page filled, time ran out, or the log store failed partway: total\_count then counts only the matches in the logs searched, plus one when the page is full, so the next page is requested. False when the whole window was searched.
 
 <a href="#">Link to this property</a>
 
@@ -695,7 +703,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "min_total_tokens": 0,
     "page": 0,
     "per_page": 0,
-    "total_count": 0
+    "total_count": 0,
+    "truncated": true
   },
   "success": true
 }
@@ -745,7 +754,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "min_total_tokens": 0,
     "page": 0,
     "per_page": 0,
-    "total_count": 0
+    "total_count": 0,
+    "truncated": true
   },
   "success": true
 }

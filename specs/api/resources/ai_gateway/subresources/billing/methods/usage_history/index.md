@@ -158,9 +158,13 @@ result: object {history }
 
 history: array of object {id, aggregated\_value, end\_time, start\_time }
 
+Usage cost per window of <code>value_grouping_window</code>.
+
 </summary>
 
 id: string
+
+Usage summary identifier.
 
 <a href="#">Link to this property</a>
 
@@ -172,9 +176,13 @@ AI Gateway usage cost in the window, in US dollars.
 
 end\_time: number
 
+End of the window (exclusive), as a Unix timestamp in seconds.
+
 <a href="#">Link to this property</a>
 
 start\_time: number
+
+Start of the window, as a Unix timestamp in seconds.
 
 <a href="#">Link to this property</a>
 
@@ -250,8 +258,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
       {
         "id": "id",
         "aggregated_value": 0,
-        "end_time": 0,
-        "start_time": 0
+        "end_time": 1700086400,
+        "start_time": 1700000000
       }
     ]
   },
@@ -288,8 +296,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
       {
         "id": "id",
         "aggregated_value": 0,
-        "end_time": 0,
-        "start_time": 0
+        "end_time": 1700086400,
+        "start_time": 1700000000
       }
     ]
   },

@@ -1364,7 +1364,7 @@ zdr: optional boolean
 
 <summary>
 
-result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 28 more }
+result: object {id, cache\_invalidate\_on\_update, cache\_ttl, 29 more }
 
 </summary>
 
@@ -1395,6 +1395,14 @@ collect\_logs: boolean
 created\_at: string
 
 formatdate-time
+
+<a href="#">Link to this property</a>
+
+internal\_id: string
+
+Identifier of the AI Gateway that never changes and is never reused, even after the gateway is deleted. Accepted in place of the gateway ID in any gateway path.
+
+formatuuid
 
 <a href="#">Link to this property</a>
 
@@ -2764,6 +2772,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "cache_ttl": 0,
     "collect_logs": true,
     "created_at": "2019-12-27T18:11:19.117Z",
+    "internal_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
     "modified_at": "2019-12-27T18:11:19.117Z",
     "rate_limiting_interval": 0,
     "rate_limiting_limit": 0,
@@ -2893,6 +2902,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/gatewa
     "cache_ttl": 0,
     "collect_logs": true,
     "created_at": "2019-12-27T18:11:19.117Z",
+    "internal_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
     "modified_at": "2019-12-27T18:11:19.117Z",
     "rate_limiting_interval": 0,
     "rate_limiting_limit": 0,

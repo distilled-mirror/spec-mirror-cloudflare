@@ -258,7 +258,7 @@ Asset classes grouped by vendor, sorted by vendor enum.
 
 <summary>
 
-asset\_classes: array of object {asset\_class }
+asset\_classes: array of object {asset\_class, origin, id, 2 more }
 
 Asset classes belonging to this vendor, sorted by asset\_class.
 
@@ -267,6 +267,56 @@ Asset classes belonging to this vendor, sorted by asset\_class.
 asset\_class: string
 
 Asset class identifier (PascalCase), e.g. AnthropicUser.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: "system"or "cloudflare"or "custom"
+
+Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+Unique identifier. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+display\_name: optional string
+
+Human-readable name. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatint64
 
 <a href="#">Link to this property</a>
 
@@ -324,13 +374,25 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     {
       "asset_classes": [
         {
-          "asset_class": "AnthropicApiKey"
+          "asset_class": "AnthropicApiKey",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "AnthropicUser"
+          "asset_class": "AnthropicUser",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "AnthropicWorkspace"
+          "asset_class": "AnthropicWorkspace",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         }
       ],
       "vendor": "ANTHROPIC"
@@ -338,13 +400,25 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     {
       "asset_classes": [
         {
-          "asset_class": "GitHubOrganization"
+          "asset_class": "GitHubOrganization",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "GitHubRepository"
+          "asset_class": "GitHubRepository",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "GitHubUser"
+          "asset_class": "GitHubUser",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         }
       ],
       "vendor": "GITHUB"
@@ -384,13 +458,25 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     {
       "asset_classes": [
         {
-          "asset_class": "AnthropicApiKey"
+          "asset_class": "AnthropicApiKey",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "AnthropicUser"
+          "asset_class": "AnthropicUser",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "AnthropicWorkspace"
+          "asset_class": "AnthropicWorkspace",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         }
       ],
       "vendor": "ANTHROPIC"
@@ -398,13 +484,25 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
     {
       "asset_classes": [
         {
-          "asset_class": "GitHubOrganization"
+          "asset_class": "GitHubOrganization",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "GitHubRepository"
+          "asset_class": "GitHubRepository",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         },
         {
-          "asset_class": "GitHubUser"
+          "asset_class": "GitHubUser",
+          "origin": "system",
+          "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+          "display_name": "Custom file",
+          "version": 3
         }
       ],
       "vendor": "GITHUB"

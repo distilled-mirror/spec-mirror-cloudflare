@@ -8360,7 +8360,7 @@ AssetSchemaListResponse object {asset\_classes, vendor }
 
 <summary>
 
-asset\_classes: array of object {asset\_class }
+asset\_classes: array of object {asset\_class, origin, id, 2 more }
 
 Asset classes belonging to this vendor, sorted by asset\_class.
 
@@ -8369,6 +8369,56 @@ Asset classes belonging to this vendor, sorted by asset\_class.
 asset\_class: string
 
 Asset class identifier (PascalCase), e.g. AnthropicUser.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin: "system"or "cloudflare"or "custom"
+
+Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+Unique identifier. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+display\_name: optional string
+
+Human-readable name. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatint64
 
 <a href="#">Link to this property</a>
 
@@ -8390,7 +8440,7 @@ Canonical vendor enum value, e.g. GOOGLE\_WORKSPACE.
 
 <summary>
 
-AssetSchemaGetResponse object {asset\_class, schema }
+AssetSchemaGetResponse object {asset\_class, origin, schema, 4 more }
 
 </summary>
 
@@ -8400,9 +8450,65 @@ Asset class identifier (PascalCase), e.g. AnthropicApiKey.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+origin: "system"or "cloudflare"or "custom"
+
+Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 schema: map\[unknown]
 
 Fields and related attributes a custom finding type may reference for this asset class, as a JSON Schema. Top-level properties are <code>asset</code> and, when related resources exist, <code>associated</code>.
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+Unique identifier. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+content\_schema: optional map\[unknown]
+
+JSON Schema subset describing the content of each asset of this type. The top level is an <code>object</code> with <code>properties</code> and an optional <code>required</code> list. Property names must be 1 to 32 letters, digits or underscores. A property may be nullable by listing <code>null</code> alongside its type.
+
+<a href="#">Link to this property</a>
+
+display\_name: optional string
+
+Human-readable name. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatint64
 
 <a href="#">Link to this property</a>
 

@@ -376,7 +376,7 @@ A tag and value, of the form <code>&lt;tag-name&gt;:&lt;tag-value&gt;</code>. Th
 
 tag\_match: optional "any"or "all"
 
-Whether to match all tag search requirements or at least one (any). If set to <code>all</code>, acts like a logical AND between tag filters. If set to <code>any</code>, acts like a logical OR instead. Note that the regular <code>match</code> parameter is still used to combine the resulting condition with other filters that aren’t related to tags.
+Whether to match all tag search requirements or at least one (any). If set to <code>all</code>, acts like a logical AND between tag filters. If set to <code>any</code>, acts like a logical OR instead. Note that the regular <code>match</code> parameter is still used to combine the resulting condition with other filters that aren’t related to tags. The legacy <code>tag-match</code> parameter is an alias for this parameter.
 
 </summary>
 

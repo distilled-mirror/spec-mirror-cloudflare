@@ -238,9 +238,13 @@ object {amount, threshold }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 
@@ -258,13 +262,19 @@ object {amount, status, threshold }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 status: "configured"
 
+Auto top-up is saved.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 
@@ -282,21 +292,31 @@ object {amount, client\_secret, setup\_intent\_id, 2 more }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 client\_secret: string
+
+Client secret used to complete card authentication.
 
 <a href="#">Link to this property</a>
 
 setup\_intent\_id: string
 
+Card setup identifier to send back as <code>setup_intent_id</code> once authenticated.
+
 <a href="#">Link to this property</a>
 
 status: "requires\_action"
 
+The card must be authenticated with <code>client_secret</code> before auto top-up is saved. Then send the request again with <code>setup_intent_id</code>.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 
@@ -373,8 +393,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "amount": 0,
-    "threshold": 0
+    "amount": 5000,
+    "threshold": 500
   },
   "success": true,
   "result_info": {
@@ -405,8 +425,8 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "amount": 0,
-    "threshold": 0
+    "amount": 5000,
+    "threshold": 500
   },
   "success": true,
   "result_info": {

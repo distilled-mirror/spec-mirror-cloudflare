@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Get spending limit (deprecated)
 
+Deprecated
+
 GET/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
 Retrieve the current spending limit configuration for the account.
@@ -122,17 +124,25 @@ result: object {config, enabled }
 
 config: object {amount, duration, strategy }
 
+Spending limit configuration.
+
 </summary>
 
 amount: number
+
+Spending limit amount in cents.
 
 <a href="#">Link to this property</a>
 
 duration: string
 
+Window the limit applies to: <code>daily</code>, <code>weekly</code>, or <code>monthly</code>.
+
 <a href="#">Link to this property</a>
 
 strategy: string
+
+Window type: <code>fixed</code> or <code>sliding</code>.
 
 <a href="#">Link to this property</a>
 
@@ -141,6 +151,8 @@ strategy: string
 <a href="#">Link to this property</a>
 
 enabled: boolean
+
+Whether a spending limit is enforced for the account.
 
 <a href="#">Link to this property</a>
 
@@ -209,9 +221,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   ],
   "result": {
     "config": {
-      "amount": 0,
-      "duration": "duration",
-      "strategy": "strategy"
+      "amount": 10000,
+      "duration": "monthly",
+      "strategy": "fixed"
     },
     "enabled": true
   },
@@ -245,9 +257,9 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   ],
   "result": {
     "config": {
-      "amount": 0,
-      "duration": "duration",
-      "strategy": "strategy"
+      "amount": 10000,
+      "duration": "monthly",
+      "strategy": "fixed"
     },
     "enabled": true
   },

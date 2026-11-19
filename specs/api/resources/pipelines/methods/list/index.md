@@ -74,9 +74,11 @@ Specifies which page to retrieve.
 
 [Link to this property](#)%20pipelines%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20page%20%3E%20(schema)>)
 
-per\_page: optional string
+per\_page: optional number
 
 Specifies the number of pipelines per page.
+
+minimum1
 
 [Link to this property](#)%20pipelines%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 

@@ -150,61 +150,91 @@ result: object {invoices, pagination }
 
 invoices: array of object {amount\_due, amount\_paid, amount\_remaining, 11 more }
 
+Top-up invoices matching <code>type</code>, up to 100.
+
 </summary>
 
 amount\_due: number
+
+Amount due, in US cents.
 
 <a href="#">Link to this property</a>
 
 amount\_paid: number
 
+Amount paid, in US cents.
+
 <a href="#">Link to this property</a>
 
 amount\_remaining: number
+
+Amount still owed, in US cents.
 
 <a href="#">Link to this property</a>
 
 currency: string
 
+Lowercase ISO 4217 currency code.
+
 <a href="#">Link to this property</a>
 
 id: optional string
+
+Invoice number, as printed on the invoice, rather than an identifier. Null until the invoice is finalized.
 
 <a href="#">Link to this property</a>
 
 attempt\_count: optional number
 
+Number of payment attempts.
+
 <a href="#">Link to this property</a>
 
 attempted: optional boolean
+
+Whether payment was attempted.
 
 <a href="#">Link to this property</a>
 
 auto\_advance: optional boolean
 
+Whether the invoice is finalized and collected without an explicit action. False for top-up invoices, which are charged when the top-up is made.
+
 <a href="#">Link to this property</a>
 
 created: optional number
+
+When the invoice was created, as a Unix timestamp in seconds.
 
 <a href="#">Link to this property</a>
 
 created\_by: optional string
 
+What created the invoice. Always <code>AI_GATEWAY</code>.
+
 <a href="#">Link to this property</a>
 
 description: optional string
+
+Invoice description.
 
 <a href="#">Link to this property</a>
 
 invoice\_origin: optional string
 
+How the top-up was made: <code>auto</code> or <code>manual</code>.
+
 <a href="#">Link to this property</a>
 
 invoice\_pdf: optional string
 
+URL of the invoice PDF. Null until the invoice is finalized.
+
 <a href="#">Link to this property</a>
 
 status: optional string
+
+Invoice status: <code>draft</code>, <code>open</code>, <code>paid</code>, <code>uncollectible</code>, or <code>void</code>.
 
 <a href="#">Link to this property</a>
 
@@ -218,21 +248,31 @@ status: optional string
 
 pagination: object {has\_more, page, per\_page, total\_count }
 
+Pagination details. Results come in a single page.
+
 </summary>
 
 has\_more: boolean
+
+Whether more invoices match than returned.
 
 <a href="#">Link to this property</a>
 
 page: number
 
+Page number. Always 1.
+
 <a href="#">Link to this property</a>
 
 per\_page: number
 
+Page size.
+
 <a href="#">Link to this property</a>
 
 total\_count: number
+
+Number of matching invoices.
 
 <a href="#">Link to this property</a>
 
@@ -306,20 +346,20 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   "result": {
     "invoices": [
       {
-        "amount_due": 0,
-        "amount_paid": 0,
+        "amount_due": 5000,
+        "amount_paid": 5000,
         "amount_remaining": 0,
-        "currency": "currency",
+        "currency": "usd",
         "id": "id",
         "attempt_count": 0,
         "attempted": true,
         "auto_advance": true,
-        "created": 0,
+        "created": 1700000000,
         "created_by": "created_by",
         "description": "description",
-        "invoice_origin": "invoice_origin",
+        "invoice_origin": "manual",
         "invoice_pdf": "invoice_pdf",
-        "status": "status"
+        "status": "paid"
       }
     ],
     "pagination": {
@@ -360,20 +400,20 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   "result": {
     "invoices": [
       {
-        "amount_due": 0,
-        "amount_paid": 0,
+        "amount_due": 5000,
+        "amount_paid": 5000,
         "amount_remaining": 0,
-        "currency": "currency",
+        "currency": "usd",
         "id": "id",
         "attempt_count": 0,
         "attempted": true,
         "auto_advance": true,
-        "created": 0,
+        "created": 1700000000,
         "created_by": "created_by",
         "description": "description",
-        "invoice_origin": "invoice_origin",
+        "invoice_origin": "manual",
         "invoice_pdf": "invoice_pdf",
-        "status": "status"
+        "status": "paid"
       }
     ],
     "pagination": {

@@ -166,7 +166,7 @@ Whether the API call was successful.
 
 <summary>
 
-result: optional object {asset\_class, schema }
+result: optional object {asset\_class, origin, schema, 4 more }
 
 </summary>
 
@@ -176,9 +176,65 @@ Asset class identifier (PascalCase), e.g. AnthropicApiKey.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+origin: "system"or "cloudflare"or "custom"
+
+Who defines the asset class: <code>system</code> for built-in asset classes, <code>cloudflare</code> for asset types provided by Cloudflare, and <code>custom</code> for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+<a href="#">Link to this property</a>
+
+"cloudflare"
+
+<a href="#">Link to this property</a>
+
+"custom"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
 schema: map\[unknown]
 
 Fields and related attributes a custom finding type may reference for this asset class, as a JSON Schema. Top-level properties are <code>asset</code> and, when related resources exist, <code>associated</code>.
+
+<a href="#">Link to this property</a>
+
+id: optional string
+
+Unique identifier. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatuuid
+
+<a href="#">Link to this property</a>
+
+content\_schema: optional map\[unknown]
+
+JSON Schema subset describing the content of each asset of this type. The top level is an <code>object</code> with <code>properties</code> and an optional <code>required</code> list. Property names must be 1 to 32 letters, digits or underscores. A property may be nullable by listing <code>null</code> alongside its type.
+
+<a href="#">Link to this property</a>
+
+display\_name: optional string
+
+Human-readable name. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+<a href="#">Link to this property</a>
+
+version: optional number
+
+Current version. Present for <code>cloudflare</code> and <code>custom</code> asset types.
+
+formatint64
 
 <a href="#">Link to this property</a>
 
@@ -224,13 +280,22 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
   "success": true,
   "result": {
     "asset_class": "AnthropicApiKey",
+    "origin": "system",
     "schema": {
       "type": "bar",
       "properties": "bar",
       "$schema": "bar",
       "required": "bar",
       "title": "bar"
-    }
+    },
+    "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+    "content_schema": {
+      "properties": "bar",
+      "required": "bar",
+      "type": "bar"
+    },
+    "display_name": "Custom file",
+    "version": 3
   }
 }
 ```
@@ -264,13 +329,22 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/data-security/pos
   "success": true,
   "result": {
     "asset_class": "AnthropicApiKey",
+    "origin": "system",
     "schema": {
       "type": "bar",
       "properties": "bar",
       "$schema": "bar",
       "required": "bar",
       "title": "bar"
-    }
+    },
+    "id": "3f1c2d6e-8b4a-4f7e-9c1d-2a5b6c7d8e9f",
+    "content_schema": {
+      "properties": "bar",
+      "required": "bar",
+      "type": "bar"
+    },
+    "display_name": "Custom file",
+    "version": 3
   }
 }
 ```

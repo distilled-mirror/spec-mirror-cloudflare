@@ -82,6 +82,8 @@ page: optional number
 
 per\_page: optional number
 
+minimum1
+
 [Link to this property](#)%20pipelines%20%3E%20(method)%20list_v1%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse

@@ -854,7 +854,7 @@ DELETE/zones/{zone\_id}/spectrum/apps/{app\_id}
 
 <summary>
 
-AppListResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
+AppListResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -978,7 +978,7 @@ minimum1
 
 origin\_worker\_id: optional string
 
-Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
 
 <a href="#">Link to this property</a>
 
@@ -1096,7 +1096,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 3 more }
+SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1139,6 +1139,90 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 origin\_direct: optional array of string
 
 List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_id: optional string
+
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_type: optional "direct"or "worker"or string
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"direct"or "worker"
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+"direct"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1154,7 +1238,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppGetResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
+AppGetResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1278,7 +1362,7 @@ minimum1
 
 origin\_worker\_id: optional string
 
-Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
 
 <a href="#">Link to this property</a>
 
@@ -1396,7 +1480,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 3 more }
+SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1439,6 +1523,90 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 origin\_direct: optional array of string
 
 List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_id: optional string
+
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_type: optional "direct"or "worker"or string
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"direct"or "worker"
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+"direct"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1454,7 +1622,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppCreateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
+AppCreateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1578,7 +1746,7 @@ minimum1
 
 origin\_worker\_id: optional string
 
-Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
 
 <a href="#">Link to this property</a>
 
@@ -1696,7 +1864,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 3 more }
+SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1739,6 +1907,90 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 origin\_direct: optional array of string
 
 List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_id: optional string
+
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_type: optional "direct"or "worker"or string
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"direct"or "worker"
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+"direct"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1754,7 +2006,7 @@ List of origin IP addresses. Array may contain multiple IP addresses for load ba
 
 <summary>
 
-AppUpdateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 3 more }
+AppUpdateResponse = object {id, created\_on, dns, 15 more } or object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -1878,7 +2130,7 @@ minimum1
 
 origin\_worker\_id: optional string
 
-Optional Worker script tag (worker ID) to use as the application’s origin. Only supported for TCP applications with traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. tls may only be “off” or “flexible”.
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
 
 <a href="#">Link to this property</a>
 
@@ -1996,7 +2248,7 @@ formatuuid
 
 <summary>
 
-SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 3 more }
+SpectrumConfigPaygoAppConfig object {id, created\_on, dns, 7 more }
 
 </summary>
 
@@ -2039,6 +2291,90 @@ The port configuration at Cloudflare’s edge. May specify a single port, for ex
 origin\_direct: optional array of string
 
 List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_id: optional string
+
+Optional Worker script tag (worker ID) to use as the application’s origin. Requires traffic\_type “worker”; mutually exclusive with origin\_direct, origin\_dns, origin\_port, proxy\_protocol, and argo\_smart\_routing. For TCP applications, tls may be “off” or “flexible”; UDP applications require tls “off”.
+
+<a href="#">Link to this property</a>
+
+origin\_worker\_name: optional string
+
+Name of the Worker origin. Omitted when the Worker is not found or its name cannot be resolved.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+origin\_worker\_status: optional "available"or "not\_found"or "unknown"
+
+Lookup status of the Worker origin. Unknown indicates that its name could not be resolved. Only returned for Worker origins.
+
+</summary>
+
+One of the following:
+
+"available"
+
+<a href="#">Link to this property</a>
+
+"not\_found"
+
+<a href="#">Link to this property</a>
+
+"unknown"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+traffic\_type: optional "direct"or "worker"or string
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+"direct"or "worker"
+
+Determines how traffic is sent to the origin. If absent or empty, defaults to “direct”. Direct mode uses origin\_direct. Worker mode requires origin\_worker\_id, TCP or UDP with a single port, and CNAME DNS; origin\_worker\_id and origin\_direct are mutually exclusive. A PAYG zone may have at most one Worker application per transport (one TCP and one UDP); creating another for the same transport, or converting another application to Worker while that quota is full, is rejected with error code 11034 and HTTP status 400.
+
+</summary>
+
+One of the following:
+
+"direct"
+
+<a href="#">Link to this property</a>
+
+"worker"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

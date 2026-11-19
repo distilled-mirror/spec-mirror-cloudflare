@@ -8923,7 +8923,7 @@ minimum0
 
 <summary>
 
-feeds: array of object {id, category\_id, category\_name, 12 more }
+feeds: array of object {id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -8984,6 +8984,12 @@ Polling health: <code>active</code>, or <code>error</code> after a failed poll.
 <a href="#">Link to this property</a>
 
 subscribed\_at: string
+
+<a href="#">Link to this property</a>
+
+tagging\_enabled: boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards.
 
 <a href="#">Link to this property</a>
 
@@ -9023,7 +9029,7 @@ total\_count: number
 
 <summary>
 
-FeedCreateResponse object {id, category\_id, category\_name, 12 more }
+FeedCreateResponse object {id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9084,6 +9090,12 @@ Polling health: <code>active</code>, or <code>error</code> after a failed poll.
 <a href="#">Link to this property</a>
 
 subscribed\_at: string
+
+<a href="#">Link to this property</a>
+
+tagging\_enabled: boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards.
 
 <a href="#">Link to this property</a>
 
@@ -9107,7 +9119,7 @@ url: string
 
 <summary>
 
-FeedEditResponse object {id, category\_id, category\_name, 12 more }
+FeedEditResponse object {id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9168,6 +9180,12 @@ Polling health: <code>active</code>, or <code>error</code> after a failed poll.
 <a href="#">Link to this property</a>
 
 subscribed\_at: string
+
+<a href="#">Link to this property</a>
+
+tagging\_enabled: boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards.
 
 <a href="#">Link to this property</a>
 
@@ -9191,7 +9209,7 @@ url: string
 
 <summary>
 
-FeedDeleteResponse object {id, category\_id, category\_name, 12 more }
+FeedDeleteResponse object {id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -9252,6 +9270,12 @@ Polling health: <code>active</code>, or <code>error</code> after a failed poll.
 <a href="#">Link to this property</a>
 
 subscribed\_at: string
+
+<a href="#">Link to this property</a>
+
+tagging\_enabled: boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards.
 
 <a href="#">Link to this property</a>
 

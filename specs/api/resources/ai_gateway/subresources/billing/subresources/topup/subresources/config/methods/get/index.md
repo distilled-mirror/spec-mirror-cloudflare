@@ -1,5 +1,5 @@
 ---
-title: Get auto top-up configuration
+title: Get auto top-up configuration (deprecated)
 ---
 
 [Skip to content](#_top)
@@ -22,11 +22,13 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get auto top-up configuration
+# Get auto top-up configuration (deprecated)
+
+Deprecated
 
 GET/accounts/{account\_id}/ai-gateway/billing/topup/config
 
-Retrieve the current auto top-up threshold, amount, and any error state.
+Deprecated: use `auto_topup` from GET /topup/eligibility. Retrieve the current auto top-up threshold, amount, and any error state.
 
 ##### Security
 
@@ -120,21 +122,31 @@ result: object {amount, threshold, disabledReason, 2 more }
 
 amount: number
 
+Amount in cents that each auto top-up adds. 0 when auto top-up is off.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents that triggers an auto top-up. 0 when auto top-up is off.
 
 <a href="#">Link to this property</a>
 
 disabledReason: optional string
 
+Why auto top-up was stopped. Present only once it stopped.
+
 <a href="#">Link to this property</a>
 
 error: optional string
 
+Message from the failure that stopped auto top-up. Present only once it stopped.
+
 <a href="#">Link to this property</a>
 
 lastFailedAt: optional number
+
+When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only once it stopped.
 
 <a href="#">Link to this property</a>
 
@@ -174,7 +186,7 @@ total\_count: number
 
 [Link to this property](#)%20ai_gateway.billing.topup.config%20%3E%20(method)%20get%20%3E%20(network%20schema)%20%3E%20(property)%20result_info>)
 
-### Get auto top-up configuration
+### Get auto top-up configuration (deprecated)
 
 HTTP
 
@@ -202,11 +214,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "amount": 0,
-    "threshold": 0,
-    "disabledReason": "disabledReason",
+    "amount": 5000,
+    "threshold": 500,
+    "disabledReason": "Payment failed after multiple retries",
     "error": "error",
-    "lastFailedAt": 0
+    "lastFailedAt": 1700000000000
   },
   "success": true,
   "result_info": {
@@ -237,11 +249,11 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "amount": 0,
-    "threshold": 0,
-    "disabledReason": "disabledReason",
+    "amount": 5000,
+    "threshold": 500,
+    "disabledReason": "Payment failed after multiple retries",
     "error": "error",
-    "lastFailedAt": 0
+    "lastFailedAt": 1700000000000
   },
   "success": true,
   "result_info": {

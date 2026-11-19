@@ -136,9 +136,9 @@ Number of results per page. Maximum 25,000.
 
 <summary>
 
-search: optional array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 3 more
+search: optional array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 4 more
 
-JSON-encoded. Structured search as a JSON array of {field, op, value} objects, AND’d together. Max 10 conditions per request. <code>in</code> and <code>notIn</code> take an array of up to 100 values. Exclusions: <code>not</code> drops events without a value for the field; <code>notIn</code> and <code>notContains</code> keep them. On intelligence datasets, a <code>notIn</code> list containing <code>"unknown"</code> also drops them; analytics datasets treat <code>"unknown"</code> as a literal value.
+JSON-encoded. Structured search as a JSON array of {field, op, value} objects, AND’d together. Max 10 conditions per request. <code>in</code> and <code>notIn</code> take an array of up to 100 values. <code>containsAny</code> takes an array of up to 50 strings and matches when the field contains any of them; it is not supported for <code>indicator</code>, <code>date</code>, <code>killChain</code>, or <code>hasChildren</code>. Exclusions: <code>not</code> drops events without a value for the field; <code>notIn</code> and <code>notContains</code> keep them. On intelligence datasets, a <code>notIn</code> list containing <code>"unknown"</code> also drops them; analytics datasets treat <code>"unknown"</code> as a literal value.
 
 </summary>
 
@@ -401,6 +401,92 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+value: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+<details>
+
+<summary>
+
+field: "attacker"or "attackerCountry"or "category"or 10 more
+
+</summary>
+
+One of the following:
+
+"attacker"
+
+<a href="#">Link to this property</a>
+
+"attackerCountry"
+
+<a href="#">Link to this property</a>
+
+"category"
+
+<a href="#">Link to this property</a>
+
+"createdAt"
+
+<a href="#">Link to this property</a>
+
+"event"
+
+<a href="#">Link to this property</a>
+
+"indicatorType"
+
+<a href="#">Link to this property</a>
+
+"mitreAttack"
+
+<a href="#">Link to this property</a>
+
+"mitreCapec"
+
+<a href="#">Link to this property</a>
+
+"tags"
+
+<a href="#">Link to this property</a>
+
+"targetCountry"
+
+<a href="#">Link to this property</a>
+
+"targetIndustry"
+
+<a href="#">Link to this property</a>
+
+"tlp"
+
+<a href="#">Link to this property</a>
+
+"uuid"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+op: "containsAny"
 
 <a href="#">Link to this property</a>
 
@@ -692,7 +778,7 @@ boolean
 
 <summary>
 
-searchBranches: optional array of array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 3 more
+searchBranches: optional array of array of object {field, op, value } or object {field, op, value } or object {field, op, value } or 4 more
 
 JSON-encoded. OR branches of structured search filters. Filters within a branch are AND’d, branches are OR’d, and the result is AND’d with <code>search</code>: <code>AND(search) AND OR(AND(branch 1), ...)</code>. Max 8 branches of 1-10 conditions each. Not supported for analytics datasets, and <code>indicator</code> filters are not yet supported inside branches. Cursor pages carry the original branches, so do not resend them with <code>cursor</code>.
 
@@ -957,6 +1043,92 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+value: array of string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+object {field, op, value }
+
+</summary>
+
+<details>
+
+<summary>
+
+field: "attacker"or "attackerCountry"or "category"or 10 more
+
+</summary>
+
+One of the following:
+
+"attacker"
+
+<a href="#">Link to this property</a>
+
+"attackerCountry"
+
+<a href="#">Link to this property</a>
+
+"category"
+
+<a href="#">Link to this property</a>
+
+"createdAt"
+
+<a href="#">Link to this property</a>
+
+"event"
+
+<a href="#">Link to this property</a>
+
+"indicatorType"
+
+<a href="#">Link to this property</a>
+
+"mitreAttack"
+
+<a href="#">Link to this property</a>
+
+"mitreCapec"
+
+<a href="#">Link to this property</a>
+
+"tags"
+
+<a href="#">Link to this property</a>
+
+"targetCountry"
+
+<a href="#">Link to this property</a>
+
+"targetIndustry"
+
+<a href="#">Link to this property</a>
+
+"tlp"
+
+<a href="#">Link to this property</a>
+
+"uuid"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+op: "containsAny"
 
 <a href="#">Link to this property</a>
 

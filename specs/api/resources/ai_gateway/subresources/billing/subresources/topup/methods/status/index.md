@@ -126,6 +126,8 @@ result: object {payment\_intent\_id, status }
 
 payment\_intent\_id: string
 
+Top-up identifier from the request.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -133,6 +135,8 @@ payment\_intent\_id: string
 <summary>
 
 status: "completed"or "pending"
+
+<code>completed</code> once the top-up payment is processed and its credits are added to the balance, <code>pending</code> until then.
 
 </summary>
 
@@ -218,7 +222,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "payment_intent_id": "payment_intent_id",
+    "payment_intent_id": "in_1abc",
     "status": "completed"
   },
   "success": true,
@@ -250,7 +254,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "payment_intent_id": "payment_intent_id",
+    "payment_intent_id": "in_1abc",
     "status": "completed"
   },
   "success": true,

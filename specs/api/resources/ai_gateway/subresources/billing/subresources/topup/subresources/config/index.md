@@ -22,7 +22,9 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Config
 
-##### [Get auto top-up configuration](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/subresources/config/methods/get)
+##### [Get auto top-up configuration (deprecated)](https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/subresources/config/methods/get)
+
+Deprecated
 
 GET/accounts/{account\_id}/ai-gateway/billing/topup/config
 
@@ -46,21 +48,31 @@ ConfigGetResponse object {amount, threshold, disabledReason, 2 more }
 
 amount: number
 
+Amount in cents that each auto top-up adds. 0 when auto top-up is off.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents that triggers an auto top-up. 0 when auto top-up is off.
 
 <a href="#">Link to this property</a>
 
 disabledReason: optional string
 
+Why auto top-up was stopped. Present only once it stopped.
+
 <a href="#">Link to this property</a>
 
 error: optional string
 
+Message from the failure that stopped auto top-up. Present only once it stopped.
+
 <a href="#">Link to this property</a>
 
 lastFailedAt: optional number
+
+When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only once it stopped.
 
 <a href="#">Link to this property</a>
 
@@ -88,9 +100,13 @@ object {amount, threshold }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 
@@ -108,13 +124,19 @@ object {amount, status, threshold }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 status: "configured"
 
+Auto top-up is saved.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 
@@ -132,21 +154,31 @@ object {amount, client\_secret, setup\_intent\_id, 2 more }
 
 amount: number
 
+Auto top-up amount in cents from the request.
+
 <a href="#">Link to this property</a>
 
 client\_secret: string
+
+Client secret used to complete card authentication.
 
 <a href="#">Link to this property</a>
 
 setup\_intent\_id: string
 
+Card setup identifier to send back as <code>setup_intent_id</code> once authenticated.
+
 <a href="#">Link to this property</a>
 
 status: "requires\_action"
 
+The card must be authenticated with <code>client_secret</code> before auto top-up is saved. Then send the request again with <code>setup_intent_id</code>.
+
 <a href="#">Link to this property</a>
 
 threshold: number
+
+Balance threshold in cents from the request.
 
 <a href="#">Link to this property</a>
 

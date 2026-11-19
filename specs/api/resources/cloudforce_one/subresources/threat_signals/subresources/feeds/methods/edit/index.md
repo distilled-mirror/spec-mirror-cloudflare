@@ -126,6 +126,12 @@ minimum60
 
 [Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20poll_interval_s%20%3E%20(schema)>)
 
+tagging\_enabled: optional boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards. Omit to keep current value.
+
+[Link to this property](#)%20cloudforce_one.threat_signals.feeds%20%3E%20(method)%20edit%20%3E%20(params)%200%20%3E%20(param)%20tagging_enabled%20%3E%20(schema)>)
+
 title: optional string
 
 Override the feed’s title. Null clears it; omit to keep existing or derived value.
@@ -242,7 +248,7 @@ One of the following:
 
 <summary>
 
-result: object {id, category\_id, category\_name, 12 more }
+result: object {id, category\_id, category\_name, 13 more }
 
 </summary>
 
@@ -303,6 +309,12 @@ Polling health: <code>active</code>, or <code>error</code> after a failed poll.
 <a href="#">Link to this property</a>
 
 subscribed\_at: string
+
+<a href="#">Link to this property</a>
+
+tagging\_enabled: boolean
+
+When enabled, new articles from this feed are tagged automatically by AI. Changes apply to articles processed afterwards.
 
 <a href="#">Link to this property</a>
 
@@ -373,6 +385,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "source_type": "custom",
     "status": "active",
     "subscribed_at": "subscribed_at",
+    "tagging_enabled": true,
     "title": "title",
     "updated_at": "updated_at",
     "url": "url"
@@ -418,6 +431,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/cloudforce-one/v2
     "source_type": "custom",
     "status": "active",
     "subscribed_at": "subscribed_at",
+    "tagging_enabled": true,
     "title": "title",
     "updated_at": "updated_at",
     "url": "url"

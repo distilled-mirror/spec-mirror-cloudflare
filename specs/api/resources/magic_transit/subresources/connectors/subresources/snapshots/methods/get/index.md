@@ -84,7 +84,7 @@ snapshot\_t: number
 
 <summary>
 
-result: object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 172 more }
+result: object {count\_reclaim\_failures, count\_reclaimed\_paths, count\_record\_failed, 173 more }
 
 Snapshot
 
@@ -1138,6 +1138,394 @@ Platform identifier
 
 <summary>
 
+qdiscs: optional array of object {backlog, bytes, dev, 10 more }
+
+</summary>
+
+backlog: number
+
+Bytes currently queued
+
+<a href="#">Link to this property</a>
+
+bytes: number
+
+Total bytes sent
+
+<a href="#">Link to this property</a>
+
+dev: string
+
+Interface the qdisc is attached to
+
+<a href="#">Link to this property</a>
+
+drops: number
+
+Total packets dropped
+
+<a href="#">Link to this property</a>
+
+handle: string
+
+Qdisc handle
+
+<a href="#">Link to this property</a>
+
+kind: string
+
+Kind of qdisc
+
+<a href="#">Link to this property</a>
+
+overlimits: number
+
+Total times the qdisc was over its limit
+
+<a href="#">Link to this property</a>
+
+packets: number
+
+Total packets sent
+
+<a href="#">Link to this property</a>
+
+qlen: number
+
+Packets currently queued
+
+<a href="#">Link to this property</a>
+
+requeues: number
+
+Total packets requeued
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+cake\_stats: optional object {avg\_hdr\_offset, capacity\_estimate, max\_adj\_size, 7 more }
+
+Snapshot Qdisc CAKE
+
+</summary>
+
+avg\_hdr\_offset: number
+
+Average offset of the network header within packets (bytes)
+
+<a href="#">Link to this property</a>
+
+capacity\_estimate: number
+
+Estimated link capacity (bytes per second)
+
+<a href="#">Link to this property</a>
+
+max\_adj\_size: number
+
+Largest overhead-adjusted packet seen (bytes)
+
+<a href="#">Link to this property</a>
+
+max\_network\_size: number
+
+Largest network-layer packet seen (bytes)
+
+<a href="#">Link to this property</a>
+
+memory\_limit: number
+
+Memory limit for queued packets (bytes)
+
+<a href="#">Link to this property</a>
+
+memory\_used: number
+
+Peak memory used by queued packets (bytes)
+
+<a href="#">Link to this property</a>
+
+min\_adj\_size: number
+
+Smallest overhead-adjusted packet seen (bytes, 65535 until the first packet after creation or an overhead change)
+
+<a href="#">Link to this property</a>
+
+min\_network\_size: number
+
+Smallest network-layer packet seen (bytes, 65535 until the first packet after creation or an overhead change)
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+options: object {ack\_filter, bandwidth, diffserv, 13 more }
+
+Snapshot Qdisc CAKE Options
+
+</summary>
+
+ack\_filter: string
+
+ACK filter mode
+
+<a href="#">Link to this property</a>
+
+bandwidth: number
+
+Shaped rate (bytes per second, 0 when unlimited)
+
+<a href="#">Link to this property</a>
+
+diffserv: string
+
+Diffserv mode
+
+<a href="#">Link to this property</a>
+
+flowmode: string
+
+Flow isolation mode
+
+<a href="#">Link to this property</a>
+
+fwmark: string
+
+Firewall mark mask used to select a tin
+
+<a href="#">Link to this property</a>
+
+ingress: boolean
+
+Set when shaping in ingress mode
+
+<a href="#">Link to this property</a>
+
+nat: boolean
+
+Set when flow isolation uses post-NAT addresses
+
+<a href="#">Link to this property</a>
+
+overhead: number
+
+Per-packet overhead compensation (bytes)
+
+<a href="#">Link to this property</a>
+
+raw: boolean
+
+Set when no overhead compensation is applied
+
+<a href="#">Link to this property</a>
+
+rtt: number
+
+Expected round-trip time (microseconds)
+
+<a href="#">Link to this property</a>
+
+split\_gso: boolean
+
+Set when GSO super-packets are split
+
+<a href="#">Link to this property</a>
+
+wash: boolean
+
+Set when DSCP markings are cleared on egress
+
+<a href="#">Link to this property</a>
+
+atm: optional string
+
+ATM cell compensation mode (absent when raw without ATM or PTM compensation)
+
+<a href="#">Link to this property</a>
+
+autorate: optional string
+
+Automatic rate estimation mode (absent when disabled)
+
+<a href="#">Link to this property</a>
+
+memlimit: optional number
+
+Configured memory limit for queued packets (bytes, absent when unset)
+
+<a href="#">Link to this property</a>
+
+mpu: optional number
+
+Minimum packet size (bytes, absent when unset)
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+tins: array of object {ack\_drops, avg\_delay\_us, backlog\_bytes, 17 more }
+
+</summary>
+
+ack\_drops: number
+
+Total ACKs dropped by the ACK filter
+
+<a href="#">Link to this property</a>
+
+avg\_delay\_us: number
+
+Average queueing delay (microseconds)
+
+<a href="#">Link to this property</a>
+
+backlog\_bytes: number
+
+Bytes currently queued
+
+<a href="#">Link to this property</a>
+
+base\_delay\_us: number
+
+Minimum queueing delay (microseconds)
+
+<a href="#">Link to this property</a>
+
+bulk\_flows: number
+
+Current number of bulk flows
+
+<a href="#">Link to this property</a>
+
+drops: number
+
+Total packets dropped
+
+<a href="#">Link to this property</a>
+
+ecn\_mark: number
+
+Total packets marked with ECN Congestion Experienced
+
+<a href="#">Link to this property</a>
+
+flow\_quantum: number
+
+Bytes each flow may send per scheduling round
+
+<a href="#">Link to this property</a>
+
+interval\_us: number
+
+AQM interval (microseconds)
+
+<a href="#">Link to this property</a>
+
+max\_pkt\_len: number
+
+Largest packet seen (bytes)
+
+<a href="#">Link to this property</a>
+
+peak\_delay\_us: number
+
+Peak queueing delay (microseconds)
+
+<a href="#">Link to this property</a>
+
+sent\_bytes: number
+
+Total bytes sent
+
+<a href="#">Link to this property</a>
+
+sent\_packets: number
+
+Total packets sent
+
+<a href="#">Link to this property</a>
+
+sparse\_flows: number
+
+Current number of sparse flows
+
+<a href="#">Link to this property</a>
+
+target\_us: number
+
+Target queueing delay (microseconds)
+
+<a href="#">Link to this property</a>
+
+threshold\_rate: number
+
+Rate above which the tin yields to lower-priority tins (bytes per second)
+
+<a href="#">Link to this property</a>
+
+unresponsive\_flows: number
+
+Current number of unresponsive flows
+
+<a href="#">Link to this property</a>
+
+way\_collisions: number
+
+Total flow hash collisions
+
+<a href="#">Link to this property</a>
+
+way\_indirect\_hits: number
+
+Total flow hash lookups resolved by set-associative probing
+
+<a href="#">Link to this property</a>
+
+way\_misses: number
+
+Total flow hash lookups that allocated a new queue
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+parent: optional string
+
+Parent class handle (absent when root)
+
+<a href="#">Link to this property</a>
+
+root: optional boolean
+
+Set when attached at the root of the interface
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 routes: optional array of object {destination, interface\_name, kind, 3 more }
 
 </summary>
@@ -1962,6 +2350,74 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
       }
     ],
     "platform": "platform",
+    "qdiscs": [
+      {
+        "backlog": 0,
+        "bytes": 0,
+        "dev": "dev",
+        "drops": 0,
+        "handle": "handle",
+        "kind": "kind",
+        "overlimits": 0,
+        "packets": 0,
+        "qlen": 0,
+        "requeues": 0,
+        "cake_stats": {
+          "avg_hdr_offset": 0,
+          "capacity_estimate": 0,
+          "max_adj_size": 0,
+          "max_network_size": 0,
+          "memory_limit": 0,
+          "memory_used": 0,
+          "min_adj_size": 0,
+          "min_network_size": 0,
+          "options": {
+            "ack_filter": "ack_filter",
+            "bandwidth": 0,
+            "diffserv": "diffserv",
+            "flowmode": "flowmode",
+            "fwmark": "fwmark",
+            "ingress": true,
+            "nat": true,
+            "overhead": 0,
+            "raw": true,
+            "rtt": 0,
+            "split_gso": true,
+            "wash": true,
+            "atm": "atm",
+            "autorate": "autorate",
+            "memlimit": 0,
+            "mpu": 0
+          },
+          "tins": [
+            {
+              "ack_drops": 0,
+              "avg_delay_us": 0,
+              "backlog_bytes": 0,
+              "base_delay_us": 0,
+              "bulk_flows": 0,
+              "drops": 0,
+              "ecn_mark": 0,
+              "flow_quantum": 0,
+              "interval_us": 0,
+              "max_pkt_len": 0,
+              "peak_delay_us": 0,
+              "sent_bytes": 0,
+              "sent_packets": 0,
+              "sparse_flows": 0,
+              "target_us": 0,
+              "threshold_rate": 0,
+              "unresponsive_flows": 0,
+              "way_collisions": 0,
+              "way_indirect_hits": 0,
+              "way_misses": 0
+            }
+          ]
+        },
+        "parent": "parent",
+        "root": true
+      }
+    ],
     "routes": [
       {
         "destination": "destination",
@@ -2276,6 +2732,74 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/magic/connectors/
       }
     ],
     "platform": "platform",
+    "qdiscs": [
+      {
+        "backlog": 0,
+        "bytes": 0,
+        "dev": "dev",
+        "drops": 0,
+        "handle": "handle",
+        "kind": "kind",
+        "overlimits": 0,
+        "packets": 0,
+        "qlen": 0,
+        "requeues": 0,
+        "cake_stats": {
+          "avg_hdr_offset": 0,
+          "capacity_estimate": 0,
+          "max_adj_size": 0,
+          "max_network_size": 0,
+          "memory_limit": 0,
+          "memory_used": 0,
+          "min_adj_size": 0,
+          "min_network_size": 0,
+          "options": {
+            "ack_filter": "ack_filter",
+            "bandwidth": 0,
+            "diffserv": "diffserv",
+            "flowmode": "flowmode",
+            "fwmark": "fwmark",
+            "ingress": true,
+            "nat": true,
+            "overhead": 0,
+            "raw": true,
+            "rtt": 0,
+            "split_gso": true,
+            "wash": true,
+            "atm": "atm",
+            "autorate": "autorate",
+            "memlimit": 0,
+            "mpu": 0
+          },
+          "tins": [
+            {
+              "ack_drops": 0,
+              "avg_delay_us": 0,
+              "backlog_bytes": 0,
+              "base_delay_us": 0,
+              "bulk_flows": 0,
+              "drops": 0,
+              "ecn_mark": 0,
+              "flow_quantum": 0,
+              "interval_us": 0,
+              "max_pkt_len": 0,
+              "peak_delay_us": 0,
+              "sent_bytes": 0,
+              "sent_packets": 0,
+              "sparse_flows": 0,
+              "target_us": 0,
+              "threshold_rate": 0,
+              "unresponsive_flows": 0,
+              "way_collisions": 0,
+              "way_indirect_hits": 0,
+              "way_misses": 0
+            }
+          ]
+        },
+        "parent": "parent",
+        "root": true
+      }
+    ],
     "routes": [
       {
         "destination": "destination",

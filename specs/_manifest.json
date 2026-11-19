@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4102,
+  "count": 4105,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -745,6 +745,18 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/create",
       "markdown": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/create/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/eligibility",
+      "markdown": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/eligibility/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/get_eligibility",
+      "markdown": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/get_eligibility/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/limits",
+      "markdown": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/limits/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/ai_gateway/subresources/billing/subresources/topup/methods/status",

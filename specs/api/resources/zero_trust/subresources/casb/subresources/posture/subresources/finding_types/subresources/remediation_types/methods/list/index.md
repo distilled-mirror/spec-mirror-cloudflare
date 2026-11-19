@@ -80,6 +80,8 @@ per\_page: optional number
 
 Number of results to return per page.
 
+minimum1
+
 [Link to this property](#)%20zero_trust.casb.posture.finding_types.remediation_types%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse

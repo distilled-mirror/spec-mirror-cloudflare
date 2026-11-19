@@ -116,21 +116,31 @@ result: object {id, amount\_due, amount\_paid, 6 more }
 
 id: string
 
+Invoice number, as printed on the invoice, rather than an identifier. Empty until the invoice is finalized.
+
 <a href="#">Link to this property</a>
 
 amount\_due: number
+
+Amount due, in US cents.
 
 <a href="#">Link to this property</a>
 
 amount\_paid: number
 
+Amount paid, in US cents.
+
 <a href="#">Link to this property</a>
 
 amount\_remaining: number
 
+Amount still owed, in US cents.
+
 <a href="#">Link to this property</a>
 
 currency: string
+
+Lowercase ISO 4217 currency code.
 
 <a href="#">Link to this property</a>
 
@@ -140,17 +150,25 @@ currency: string
 
 invoice\_lines: array of object {amount, currency, description, 4 more }
 
+Invoice line items.
+
 </summary>
 
 amount: number
+
+Line item amount, in US cents.
 
 <a href="#">Link to this property</a>
 
 currency: string
 
+Lowercase ISO 4217 currency code.
+
 <a href="#">Link to this property</a>
 
 description: string
+
+Line item description.
 
 <a href="#">Link to this property</a>
 
@@ -160,13 +178,19 @@ description: string
 
 period: object {end, start }
 
+Period the line item covers.
+
 </summary>
 
 end: number
 
+End of the period, as a Unix timestamp in seconds.
+
 <a href="#">Link to this property</a>
 
 start: number
+
+Start of the period, as a Unix timestamp in seconds.
 
 <a href="#">Link to this property</a>
 
@@ -180,9 +204,13 @@ start: number
 
 pricing: object {unit\_amount\_decimal }
 
+Line item pricing.
+
 </summary>
 
 unit\_amount\_decimal: string
+
+Unit price in US cents, as a decimal string.
 
 <a href="#">Link to this property</a>
 
@@ -192,6 +220,8 @@ unit\_amount\_decimal: string
 
 quantity: number
 
+Quantity billed.
+
 <a href="#">Link to this property</a>
 
 <details>
@@ -200,21 +230,31 @@ quantity: number
 
 pretax\_credit\_amounts: optional array of object {amount, type, credit\_balance\_transaction, discount }
 
+Credits applied to the line item before tax.
+
 </summary>
 
 amount: number
+
+Credit applied, in US cents.
 
 <a href="#">Link to this property</a>
 
 type: string
 
+Credit type: <code>credit_balance_transaction</code> or <code>discount</code>.
+
 <a href="#">Link to this property</a>
 
 credit\_balance\_transaction: optional string
 
+Credit balance transaction identifier, when <code>type</code> is <code>credit_balance_transaction</code>.
+
 <a href="#">Link to this property</a>
 
 discount: optional string
+
+Discount identifier, when <code>type</code> is <code>discount</code>.
 
 <a href="#">Link to this property</a>
 
@@ -228,9 +268,13 @@ discount: optional string
 
 period\_end: number
 
+End of the billing period, as a Unix timestamp in seconds.
+
 <a href="#">Link to this property</a>
 
 period\_start: number
+
+Start of the billing period, as a Unix timestamp in seconds.
 
 <a href="#">Link to this property</a>
 
@@ -239,6 +283,8 @@ period\_start: number
 <summary>
 
 status: "draft"or "open"or "paid"or 2 more
+
+Invoice status.
 
 </summary>
 
@@ -333,18 +379,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   ],
   "result": {
     "id": "id",
-    "amount_due": 0,
+    "amount_due": 1250,
     "amount_paid": 0,
-    "amount_remaining": 0,
-    "currency": "currency",
+    "amount_remaining": 1250,
+    "currency": "usd",
     "invoice_lines": [
       {
-        "amount": 0,
-        "currency": "currency",
+        "amount": 1250,
+        "currency": "usd",
         "description": "description",
         "period": {
-          "end": 0,
-          "start": 0
+          "end": 1702592000,
+          "start": 1700000000
         },
         "pricing": {
           "unit_amount_decimal": "unit_amount_decimal"
@@ -352,16 +398,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
         "quantity": 0,
         "pretax_credit_amounts": [
           {
-            "amount": 0,
-            "type": "type",
+            "amount": 500,
+            "type": "credit_balance_transaction",
             "credit_balance_transaction": "credit_balance_transaction",
             "discount": "discount"
           }
         ]
       }
     ],
-    "period_end": 0,
-    "period_start": 0,
+    "period_end": 1702592000,
+    "period_start": 1700000000,
     "status": "draft"
   },
   "success": true,
@@ -394,18 +440,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
   ],
   "result": {
     "id": "id",
-    "amount_due": 0,
+    "amount_due": 1250,
     "amount_paid": 0,
-    "amount_remaining": 0,
-    "currency": "currency",
+    "amount_remaining": 1250,
+    "currency": "usd",
     "invoice_lines": [
       {
-        "amount": 0,
-        "currency": "currency",
+        "amount": 1250,
+        "currency": "usd",
         "description": "description",
         "period": {
-          "end": 0,
-          "start": 0
+          "end": 1702592000,
+          "start": 1700000000
         },
         "pricing": {
           "unit_amount_decimal": "unit_amount_decimal"
@@ -413,16 +459,16 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
         "quantity": 0,
         "pretax_credit_amounts": [
           {
-            "amount": 0,
-            "type": "type",
+            "amount": 500,
+            "type": "credit_balance_transaction",
             "credit_balance_transaction": "credit_balance_transaction",
             "discount": "discount"
           }
         ]
       }
     ],
-    "period_end": 0,
-    "period_start": 0,
+    "period_end": 1702592000,
+    "period_start": 1700000000,
     "status": "draft"
   },
   "success": true,

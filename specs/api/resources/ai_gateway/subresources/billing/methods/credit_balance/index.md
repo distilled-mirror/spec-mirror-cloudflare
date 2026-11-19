@@ -116,9 +116,13 @@ result: object {balance, has\_default\_payment\_method, payment\_method, 2 more 
 
 balance: number
 
+Credit balance in US cents. Can be fractional, because usage is deducted in fractions of a cent, and is negative when usage overdraws it.
+
 <a href="#">Link to this property</a>
 
 has\_default\_payment\_method: boolean
+
+Whether AI Gateway billing has a default payment method for the account.
 
 <a href="#">Link to this property</a>
 
@@ -128,13 +132,19 @@ has\_default\_payment\_method: boolean
 
 payment\_method: object {brand, last4 }
 
+The default payment method’s card. Null when there is no default, it isn’t a card, or it couldn’t be read.
+
 </summary>
 
 brand: optional string
 
+Card brand, such as <code>visa</code>.
+
 <a href="#">Link to this property</a>
 
 last4: optional string
+
+Last 4 digits of the card.
 
 <a href="#">Link to this property</a>
 
@@ -148,25 +158,37 @@ last4: optional string
 
 topup\_config: object {amount, threshold, disabledReason, 2 more }
 
+Auto top-up configuration, as GET /topup/config returns it.
+
 </summary>
 
 amount: number
+
+Amount in cents that each auto top-up adds. 0 when auto top-up is off.
 
 <a href="#">Link to this property</a>
 
 threshold: number
 
+Balance threshold in cents that triggers an auto top-up. 0 when auto top-up is off.
+
 <a href="#">Link to this property</a>
 
 disabledReason: optional string
+
+Why auto top-up was stopped. Present only once it stopped.
 
 <a href="#">Link to this property</a>
 
 error: optional string
 
+Message from the failure that stopped auto top-up. Present only once it stopped.
+
 <a href="#">Link to this property</a>
 
 lastFailedAt: optional number
+
+When auto top-up was stopped, as a Unix timestamp in milliseconds. Present only once it stopped.
 
 <a href="#">Link to this property</a>
 
@@ -175,6 +197,8 @@ lastFailedAt: optional number
 <a href="#">Link to this property</a>
 
 first\_topup\_success: optional boolean
+
+Whether the account completed its first top-up. Auto top-up can be set up only after it.
 
 <a href="#">Link to this property</a>
 
@@ -242,18 +266,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "balance": 0,
+    "balance": 1250.5,
     "has_default_payment_method": true,
     "payment_method": {
-      "brand": "brand",
-      "last4": "last4"
+      "brand": "visa",
+      "last4": "4242"
     },
     "topup_config": {
-      "amount": 0,
-      "threshold": 0,
-      "disabledReason": "disabledReason",
+      "amount": 5000,
+      "threshold": 500,
+      "disabledReason": "Payment failed after multiple retries",
       "error": "error",
-      "lastFailedAt": 0
+      "lastFailedAt": 1700000000000
     },
     "first_topup_success": true
   },
@@ -286,18 +310,18 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/ai-gateway/billin
     }
   ],
   "result": {
-    "balance": 0,
+    "balance": 1250.5,
     "has_default_payment_method": true,
     "payment_method": {
-      "brand": "brand",
-      "last4": "last4"
+      "brand": "visa",
+      "last4": "4242"
     },
     "topup_config": {
-      "amount": 0,
-      "threshold": 0,
-      "disabledReason": "disabledReason",
+      "amount": 5000,
+      "threshold": 500,
+      "disabledReason": "Payment failed after multiple retries",
       "error": "error",
-      "lastFailedAt": 0
+      "lastFailedAt": 1700000000000
     },
     "first_topup_success": true
   },

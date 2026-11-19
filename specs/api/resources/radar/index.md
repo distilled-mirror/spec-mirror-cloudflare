@@ -26960,7 +26960,7 @@ SearchGlobalResponse object { search }
 
 <summary>
 
-search: array of object { code, name, type }
+search: array of object { code, name, type, entity }
 
 </summary>
 
@@ -26973,6 +26973,142 @@ name: string
 [Link to this property](#)
 
 type: string
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+entity: optional object { aka, asn, category, 2 more } or object { geoId, name, parent }
+
+Matched entity: an AS for `asn` results, a geolocation for `adm1` and `adm2`. Null for other types.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+object { aka, asn, category, 2 more }
+
+</summary>
+
+aka: string
+
+Alternative name of the AS.
+
+[Link to this property](#)
+
+asn: number
+
+AS number.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+country: string
+
+Alpha-2 code of the country or territory where the AS is registered.
+
+[Link to this property](#)
+
+name: string
+
+AS name.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+object { geoId, name, parent }
+
+</summary>
+
+geoId: string
+
+GeoNames ID of the geolocation.
+
+[Link to this property](#)
+
+name: string
+
+Localized name of the geolocation.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+parent: object { code, name, type }
+
+Parent geolocation (country for `adm1`, `adm1` for `adm2`).
+
+</summary>
+
+code: string
+
+Code of the parent: alpha-2 code for a country, subdivision code for an `adm1`.
+
+[Link to this property](#)
+
+name: string
+
+Localized name of the parent geolocation.
+
+[Link to this property](#)
+
+type: string
+
+Type of the parent geolocation, such as `COUNTRY` or `ADM1`.
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -66966,11 +67102,39 @@ ASNListResponse object { asns }
 
 <summary>
 
-asns: array of object { asn, country, countryName, 5 more }
+asns: array of object { asn, category, country, 6 more }
 
 </summary>
 
 asn: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -67036,11 +67200,39 @@ ASNGetResponse object { asn }
 
 <summary>
 
-asn: object { asn, confidenceLevel, country, 8 more }
+asn: object { asn, category, confidenceLevel, 9 more }
 
 </summary>
 
 asn: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -67112,11 +67304,39 @@ orgName: string
 
 <summary>
 
-related: array of object { asn, name, aka, estimatedUsers }
+related: array of object { asn, category, name, 2 more }
 
 </summary>
 
 asn: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -67332,11 +67552,39 @@ ASNIPResponse object { asn }
 
 <summary>
 
-asn: object { asn, country, countryName, 7 more }
+asn: object { asn, category, country, 8 more }
 
 </summary>
 
 asn: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 
@@ -67404,11 +67652,39 @@ orgName: string
 
 <summary>
 
-related: array of object { asn, name, aka, estimatedUsers }
+related: array of object { asn, category, name, 2 more }
 
 </summary>
 
 asn: number
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+category: "ACCESS_ISP" or "HOSTING_CLOUD_CONTENT" or "ORGANIZATION"
+
+Inferred network type of the AS: `ACCESS_ISP` (networks connecting end users, plus transit), `HOSTING_CLOUD_CONTENT` (hosting providers, clouds and CDNs) or `ORGANIZATION` (enterprises, universities, governments, banks and IXP route servers). `null` when the AS is not classified.
+
+</summary>
+
+One of the following:
+
+"ACCESS_ISP"
+
+[Link to this property](#)
+
+"HOSTING_CLOUD_CONTENT"
+
+[Link to this property](#)
+
+"ORGANIZATION"
+
+[Link to this property](#)
+
+</details>
 
 [Link to this property](#)
 

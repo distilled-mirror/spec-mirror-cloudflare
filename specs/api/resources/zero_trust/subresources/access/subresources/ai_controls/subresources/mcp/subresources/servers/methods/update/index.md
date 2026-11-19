@@ -128,7 +128,7 @@ Route outbound traffic to this MCP server through Zero Trust Secure Web Gateway.
 
 updated\_prompts: optional array of object {name, alias, description, enabled }
 
-Server-wide prompt capability overrides.
+Prompt overrides. Omit to preserve, send \[] to clear, or null to reset the field to absence.
 
 </summary>
 
@@ -168,7 +168,7 @@ Whether the capability is available through the MCP server.
 
 updated\_tools: optional array of object {name, alias, description, enabled }
 
-Server-wide tool capability overrides.
+Tool overrides. Omit to preserve, send \[] to clear, or null to reset the field to absence.
 
 </summary>
 

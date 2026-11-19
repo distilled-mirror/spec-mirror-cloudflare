@@ -304528,7 +304528,7 @@ AssetSchemaListResponse object { asset_classes, vendor }
 
 <summary>
 
-asset_classes: array of object { asset_class }
+asset_classes: array of object { asset_class, origin, id, 2 more }
 
 Asset classes belonging to this vendor, sorted by asset_class.
 
@@ -304537,6 +304537,56 @@ Asset classes belonging to this vendor, sorted by asset_class.
 asset_class: string
 
 Asset class identifier (PascalCase), e.g. AnthropicUser.
+
+[Link to this property](#)
+
+<details>
+
+<summary>
+
+origin: "system" or "cloudflare" or "custom"
+
+Who defines the asset class: `system` for built-in asset classes, `cloudflare` for asset types provided by Cloudflare, and `custom` for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"cloudflare"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
+id: optional string
+
+Unique identifier. Present for `cloudflare` and `custom` asset types.
+
+formatuuid
+
+[Link to this property](#)
+
+display_name: optional string
+
+Human-readable name. Present for `cloudflare` and `custom` asset types.
+
+[Link to this property](#)
+
+version: optional number
+
+Current version. Present for `cloudflare` and `custom` asset types.
+
+formatint64
 
 [Link to this property](#)
 
@@ -304558,7 +304608,7 @@ Canonical vendor enum value, e.g. GOOGLE_WORKSPACE.
 
 <summary>
 
-AssetSchemaGetResponse object { asset_class, schema }
+AssetSchemaGetResponse object { asset_class, origin, schema, 4 more }
 
 </summary>
 
@@ -304568,9 +304618,65 @@ Asset class identifier (PascalCase), e.g. AnthropicApiKey.
 
 [Link to this property](#)
 
+<details>
+
+<summary>
+
+origin: "system" or "cloudflare" or "custom"
+
+Who defines the asset class: `system` for built-in asset classes, `cloudflare` for asset types provided by Cloudflare, and `custom` for the account’s own asset types.
+
+</summary>
+
+One of the following:
+
+"system"
+
+[Link to this property](#)
+
+"cloudflare"
+
+[Link to this property](#)
+
+"custom"
+
+[Link to this property](#)
+
+</details>
+
+[Link to this property](#)
+
 schema: map[unknown]
 
 Fields and related attributes a custom finding type may reference for this asset class, as a JSON Schema. Top-level properties are `asset` and, when related resources exist, `associated`.
+
+[Link to this property](#)
+
+id: optional string
+
+Unique identifier. Present for `cloudflare` and `custom` asset types.
+
+formatuuid
+
+[Link to this property](#)
+
+content_schema: optional map[unknown]
+
+JSON Schema subset describing the content of each asset of this type. The top level is an `object` with `properties` and an optional `required` list. Property names must be 1 to 32 letters, digits or underscores. A property may be nullable by listing `null` alongside its type.
+
+[Link to this property](#)
+
+display_name: optional string
+
+Human-readable name. Present for `cloudflare` and `custom` asset types.
+
+[Link to this property](#)
+
+version: optional number
+
+Current version. Present for `cloudflare` and `custom` asset types.
+
+formatint64
 
 [Link to this property](#)
 

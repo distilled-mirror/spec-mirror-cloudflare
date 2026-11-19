@@ -94,6 +94,38 @@ One of the following:
 
 [Link to this property](#)%20radar.attacks.layer7%20%3E%20(method)%20timeseries%20%3E%20(params)%20default%20%3E%20(param)%20aggInterval%20%3E%20(schema)>)
 
+<details>
+
+<summary>
+
+asCategory: optional array of "ACCESS\_ISP"or "HOSTING\_CLOUD\_CONTENT"or "ORGANIZATION"or "UNCLASSIFIED"
+
+Filters results by the inferred network type of the Autonomous System: <code>ACCESS_ISP</code> (networks connecting end users, plus transit), <code>HOSTING_CLOUD_CONTENT</code> (hosting providers, clouds and CDNs), <code>ORGANIZATION</code> (enterprises, universities, governments, banks and IXP route servers), or <code>UNCLASSIFIED</code> (the AS isn’t classified, or the traffic couldn’t be mapped to an AS). In HTTP, only supported for date ranges starting on or after 2023-05-01.
+
+</summary>
+
+One of the following:
+
+"ACCESS\_ISP"
+
+<a href="#">Link to this property</a>
+
+"HOSTING\_CLOUD\_CONTENT"
+
+<a href="#">Link to this property</a>
+
+"ORGANIZATION"
+
+<a href="#">Link to this property</a>
+
+"UNCLASSIFIED"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20radar.attacks.layer7%20%3E%20(method)%20timeseries%20%3E%20(params)%20default%20%3E%20(param)%20asCategory%20%3E%20(schema)>)
+
 asn: optional array of string
 
 Filters results by Autonomous System. Specify one or more Autonomous System Numbers (ASNs) as a comma-separated list. Prefix with `-` to exclude ASNs from results. For example, `-174, 3356` excludes results from AS174, but includes results from AS3356.

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 DELETE/accounts/{account\_id}/email/sending/suppressions/{suppression\_id}
 
-Deletes the suppression, its note, and every legacy internal zone membership, allowing future delivery attempts to the address.
+Deletes the suppression and its note, allowing future delivery attempts to the address.
 
 ##### Security
 

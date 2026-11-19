@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email/sending/suppressions
 
-Lists every active Email Sending suppression owned by the account: sending-domain suppressions and account-wide suppressions (including legacy rows with internal zone memberships). Each scope is listed newest first. The order between sending-domain and account-wide suppressions is not fixed; use `scope_type` to list one scope.
+Lists every active Email Sending suppression owned by the account: sending-domain suppressions and account-wide suppressions. Each scope is listed newest first. The order between sending-domain and account-wide suppressions is not fixed; use `scope_type` to list one scope.
 
 ##### Security
 

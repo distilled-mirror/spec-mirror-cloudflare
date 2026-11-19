@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 PATCH/accounts/{account\_id}/email/sending/suppressions/{suppression\_id}
 
-Updates expiry or advisory note fields without changing legacy internal zone memberships. Scope cannot be changed.
+Updates expiry or advisory note fields. Scope cannot be changed.
 
 ##### Security
 

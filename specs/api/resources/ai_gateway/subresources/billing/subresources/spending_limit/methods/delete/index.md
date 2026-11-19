@@ -22,6 +22,8 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Delete spending limit (deprecated)
 
+Deprecated
+
 DELETE/accounts/{account\_id}/ai-gateway/billing/spending-limit
 
 Remove the spending limit for the account.
