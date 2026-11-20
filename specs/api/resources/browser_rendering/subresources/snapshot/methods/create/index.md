@@ -1,5 +1,5 @@
 ---
-title: Get HTML content and screenshot.
+title: Capture multiple page formats.
 ---
 
 [Skip to content](#_top)
@@ -18,11 +18,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 **Copy Markdown****View as Markdown**
 
-# Get HTML content and screenshot.
+# Capture multiple page formats.
 
 POST/accounts/{account\_id}/browser-rendering/snapshot
 
-Returns the page’s HTML content and screenshot. Control page loading with `gotoOptions` and `waitFor*` options. Customize screenshots with `viewport`, `fullPage`, `clip` and others.
+Capture at least two formats from one prepared page: HTML, screenshot, Markdown, accessibility tree, PDF, links, scrape, or JSON. Defaults to HTML and screenshot. Format-specific options use the same fields as standalone actions. Scrape requires elements. An origin 304 returns HTTP 200 with an empty result and meta.status 304, without captures or AI work, and is not cached. JSON snapshots share one actionTimeout budget across navigation, captures, retries, and AI (default 60 seconds, maximum 120 seconds). Other snapshots retain existing timeout behavior. Formats use a fixed capture order, not array order; a live page may change between captures. Any format failure fails the request.
 
 ##### Security
 
@@ -90,7 +90,7 @@ minimum0
 
 <summary>
 
-body: object {url, actionTimeout, addScriptTag, 19 more } or object {html, actionTimeout, addScriptTag, 19 more }
+body: object {url, actionTimeout, addScriptTag, 30 more } or object {html, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -100,7 +100,7 @@ One of the following:
 
 <summary>
 
-object {url, actionTimeout, addScriptTag, 19 more }
+object {url, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -436,7 +436,29 @@ url: optional string
 
 <a href="#">Link to this property</a>
 
-emulateMediaType: optional string
+<details>
+
+<summary>
+
+custom\_ai: optional array of object {model, authorization }
+
+Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
+
+</summary>
+
+model: string
+
+AI model to use for the request. Must be formed as <code>&lt;provider&gt;/&lt;model_name&gt;</code>, e.g. <code>workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast</code>.
+
+<a href="#">Link to this property</a>
+
+authorization: optional string
+
+Authorization token for the AI model: <code>Bearer &lt;token&gt;</code>. Not needed for workers-ai models.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -444,7 +466,31 @@ emulateMediaType: optional string
 
 <summary>
 
-formats: optional array of "content"or "screenshot"or "markdown"or "accessibilityTree"
+elements: optional array of object {selector }
+
+</summary>
+
+selector: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+emulateMediaType: optional string
+
+<a href="#">Link to this property</a>
+
+excludeExternalLinks: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+formats: optional array of "content"or "screenshot"or "markdown"or 5 more
 
 </summary>
 
@@ -463,6 +509,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "accessibilityTree"
+
+<a href="#">Link to this property</a>
+
+"pdf"
+
+<a href="#">Link to this property</a>
+
+"links"
+
+<a href="#">Link to this property</a>
+
+"scrape"
+
+<a href="#">Link to this property</a>
+
+"json"
 
 <a href="#">Link to this property</a>
 
@@ -576,6 +638,314 @@ html: optional string
 
 <a href="#">Link to this property</a>
 
+interestingOnly: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pdfOptions: optional object {displayHeaderFooter, footerTemplate, format, 13 more }
+
+Check <a href="https://pptr.dev/api/puppeteer.pdfoptions">options</a>.
+
+</summary>
+
+displayHeaderFooter: optional boolean
+
+Whether to show the header and footer.
+
+<a href="#">Link to this property</a>
+
+footerTemplate: optional string
+
+HTML template for the print footer.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+format: optional "letter"or "legal"or "tabloid"or 8 more
+
+Paper format. Takes priority over width and height if set.
+
+</summary>
+
+One of the following:
+
+"letter"
+
+<a href="#">Link to this property</a>
+
+"legal"
+
+<a href="#">Link to this property</a>
+
+"tabloid"
+
+<a href="#">Link to this property</a>
+
+"ledger"
+
+<a href="#">Link to this property</a>
+
+"a0"
+
+<a href="#">Link to this property</a>
+
+"a1"
+
+<a href="#">Link to this property</a>
+
+"a2"
+
+<a href="#">Link to this property</a>
+
+"a3"
+
+<a href="#">Link to this property</a>
+
+"a4"
+
+<a href="#">Link to this property</a>
+
+"a5"
+
+<a href="#">Link to this property</a>
+
+"a6"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+headerTemplate: optional string
+
+HTML template for the print header.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+height: optional stringor number
+
+Sets the height of paper. Can be a number or string with unit.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+landscape: optional boolean
+
+Whether to print in landscape orientation.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+margin: optional object {bottom, left, right, top }
+
+Set the PDF margins. Useful when setting header and footer.
+
+</summary>
+
+<details>
+
+<summary>
+
+bottom: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+left: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+right: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+top: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+omitBackground: optional boolean
+
+Hides default white background and allows generating pdfs with transparency.
+
+<a href="#">Link to this property</a>
+
+outline: optional boolean
+
+Generate document outline.
+
+<a href="#">Link to this property</a>
+
+pageRanges: optional string
+
+Paper ranges to print, e.g. ‘1-5, 8, 11-13’.
+
+<a href="#">Link to this property</a>
+
+preferCSSPageSize: optional boolean
+
+Give CSS @page size priority over other size declarations.
+
+<a href="#">Link to this property</a>
+
+printBackground: optional boolean
+
+Set to true to print background graphics.
+
+<a href="#">Link to this property</a>
+
+scale: optional number
+
+Scales the rendering of the web page. Amount must be between 0.1 and 2.
+
+maximum2
+
+minimum0.1
+
+<a href="#">Link to this property</a>
+
+tagged: optional boolean
+
+Generate tagged (accessible) PDF.
+
+<a href="#">Link to this property</a>
+
+timeout: optional number
+
+Timeout in milliseconds.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+width: optional stringor number
+
+Sets the width of paper. Can be a number or string with unit.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+prompt: optional string
+
+<a href="#">Link to this property</a>
+
 rejectRequestPattern: optional array of string
 
 Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(css)’.
@@ -674,6 +1044,32 @@ One of the following:
 
 <summary>
 
+response\_format: optional object {type, json\_schema }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+json\_schema: optional map\[unknown]
+
+Schema for the response format. More information here: <a href="https://developers.cloudflare.com/workers-ai/json-mode/">https://developers.cloudflare.com/workers-ai/json-mode/</a>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 screenshotOptions: optional object {captureBeyondViewport, clip, fromSurface, 5 more }
 
 </summary>
@@ -764,6 +1160,14 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+scrollPage: optional boolean
+
+<a href="#">Link to this property</a>
+
+selector: optional string
+
+<a href="#">Link to this property</a>
+
 setExtraHTTPHeaders: optional map\[string]
 
 <a href="#">Link to this property</a>
@@ -811,6 +1215,10 @@ isMobile: optional boolean
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+visibleLinksOnly: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -862,7 +1270,7 @@ maximum120000
 
 <summary>
 
-object {html, actionTimeout, addScriptTag, 19 more }
+object {html, actionTimeout, addScriptTag, 30 more }
 
 </summary>
 
@@ -1198,7 +1606,29 @@ url: optional string
 
 <a href="#">Link to this property</a>
 
-emulateMediaType: optional string
+<details>
+
+<summary>
+
+custom\_ai: optional array of object {model, authorization }
+
+Optional list of custom AI models to use for the request. The models will be tried in the order provided, and in case a model returns an error, the next one will be used as fallback.
+
+</summary>
+
+model: string
+
+AI model to use for the request. Must be formed as <code>&lt;provider&gt;/&lt;model_name&gt;</code>, e.g. <code>workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast</code>.
+
+<a href="#">Link to this property</a>
+
+authorization: optional string
+
+Authorization token for the AI model: <code>Bearer &lt;token&gt;</code>. Not needed for workers-ai models.
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1206,7 +1636,31 @@ emulateMediaType: optional string
 
 <summary>
 
-formats: optional array of "content"or "screenshot"or "markdown"or "accessibilityTree"
+elements: optional array of object {selector }
+
+</summary>
+
+selector: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+emulateMediaType: optional string
+
+<a href="#">Link to this property</a>
+
+excludeExternalLinks: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+formats: optional array of "content"or "screenshot"or "markdown"or 5 more
 
 </summary>
 
@@ -1225,6 +1679,22 @@ One of the following:
 <a href="#">Link to this property</a>
 
 "accessibilityTree"
+
+<a href="#">Link to this property</a>
+
+"pdf"
+
+<a href="#">Link to this property</a>
+
+"links"
+
+<a href="#">Link to this property</a>
+
+"scrape"
+
+<a href="#">Link to this property</a>
+
+"json"
 
 <a href="#">Link to this property</a>
 
@@ -1334,6 +1804,314 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+interestingOnly: optional boolean
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+pdfOptions: optional object {displayHeaderFooter, footerTemplate, format, 13 more }
+
+Check <a href="https://pptr.dev/api/puppeteer.pdfoptions">options</a>.
+
+</summary>
+
+displayHeaderFooter: optional boolean
+
+Whether to show the header and footer.
+
+<a href="#">Link to this property</a>
+
+footerTemplate: optional string
+
+HTML template for the print footer.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+format: optional "letter"or "legal"or "tabloid"or 8 more
+
+Paper format. Takes priority over width and height if set.
+
+</summary>
+
+One of the following:
+
+"letter"
+
+<a href="#">Link to this property</a>
+
+"legal"
+
+<a href="#">Link to this property</a>
+
+"tabloid"
+
+<a href="#">Link to this property</a>
+
+"ledger"
+
+<a href="#">Link to this property</a>
+
+"a0"
+
+<a href="#">Link to this property</a>
+
+"a1"
+
+<a href="#">Link to this property</a>
+
+"a2"
+
+<a href="#">Link to this property</a>
+
+"a3"
+
+<a href="#">Link to this property</a>
+
+"a4"
+
+<a href="#">Link to this property</a>
+
+"a5"
+
+<a href="#">Link to this property</a>
+
+"a6"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+headerTemplate: optional string
+
+HTML template for the print header.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+height: optional stringor number
+
+Sets the height of paper. Can be a number or string with unit.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+landscape: optional boolean
+
+Whether to print in landscape orientation.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+margin: optional object {bottom, left, right, top }
+
+Set the PDF margins. Useful when setting header and footer.
+
+</summary>
+
+<details>
+
+<summary>
+
+bottom: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+left: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+right: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+top: optional stringor number
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+omitBackground: optional boolean
+
+Hides default white background and allows generating pdfs with transparency.
+
+<a href="#">Link to this property</a>
+
+outline: optional boolean
+
+Generate document outline.
+
+<a href="#">Link to this property</a>
+
+pageRanges: optional string
+
+Paper ranges to print, e.g. ‘1-5, 8, 11-13’.
+
+<a href="#">Link to this property</a>
+
+preferCSSPageSize: optional boolean
+
+Give CSS @page size priority over other size declarations.
+
+<a href="#">Link to this property</a>
+
+printBackground: optional boolean
+
+Set to true to print background graphics.
+
+<a href="#">Link to this property</a>
+
+scale: optional number
+
+Scales the rendering of the web page. Amount must be between 0.1 and 2.
+
+maximum2
+
+minimum0.1
+
+<a href="#">Link to this property</a>
+
+tagged: optional boolean
+
+Generate tagged (accessible) PDF.
+
+<a href="#">Link to this property</a>
+
+timeout: optional number
+
+Timeout in milliseconds.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+width: optional stringor number
+
+Sets the width of paper. Can be a number or string with unit.
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+prompt: optional string
+
+<a href="#">Link to this property</a>
+
 rejectRequestPattern: optional array of string
 
 Block undesired requests that match the provided regex patterns, eg. ’/^.\*.(css)’.
@@ -1432,6 +2210,32 @@ One of the following:
 
 <summary>
 
+response\_format: optional object {type, json\_schema }
+
+</summary>
+
+type: string
+
+<a href="#">Link to this property</a>
+
+json\_schema: optional map\[unknown]
+
+Schema for the response format. More information here: <a href="https://developers.cloudflare.com/workers-ai/json-mode/">https://developers.cloudflare.com/workers-ai/json-mode/</a>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+root: optional string
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
 screenshotOptions: optional object {captureBeyondViewport, clip, fromSurface, 5 more }
 
 </summary>
@@ -1522,6 +2326,14 @@ One of the following:
 
 <a href="#">Link to this property</a>
 
+scrollPage: optional boolean
+
+<a href="#">Link to this property</a>
+
+selector: optional string
+
+<a href="#">Link to this property</a>
+
 setExtraHTTPHeaders: optional map\[string]
 
 <a href="#">Link to this property</a>
@@ -1573,6 +2385,10 @@ isMobile: optional boolean
 <a href="#">Link to this property</a>
 
 </details>
+
+<a href="#">Link to this property</a>
+
+visibleLinksOnly: optional boolean
 
 <a href="#">Link to this property</a>
 
@@ -1728,7 +2544,7 @@ Error message.
 
 <summary>
 
-result: optional object {accessibilityTree, content, markdown, screenshot }
+result: optional object {accessibilityTree, content, json, 5 more }
 
 </summary>
 
@@ -1910,9 +2726,119 @@ HTML content.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+json: optional map\[unknown]or array of unknown
+
+Data extracted from the page HTML by the requested prompt.
+
+</summary>
+
+One of the following:
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+links: optional array of string
+
+Links found on the page.
+
+<a href="#">Link to this property</a>
+
 markdown: optional string
 
 Markdown content. Prefixed with YAML frontmatter (e.g. <code>title</code>) when the page provides that metadata.
+
+<a href="#">Link to this property</a>
+
+pdf: optional string
+
+Base64 encoded PDF.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scrape: optional array of object {results, selector }
+
+Elements matched by the requested selectors.
+
+</summary>
+
+<details>
+
+<summary>
+
+results: array of object {attributes, html, left, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+attributes: array of object {name, value }
+
+</summary>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+value: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+html: string
+
+<a href="#">Link to this property</a>
+
+left: number
+
+<a href="#">Link to this property</a>
+
+top: number
+
+<a href="#">Link to this property</a>
+
+height: optional number
+
+<a href="#">Link to this property</a>
+
+text: optional string
+
+<a href="#">Link to this property</a>
+
+width: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+selector: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
@@ -1926,7 +2852,7 @@ Base64 encoded image.
 
 [Link to this property](#)%20browser_rendering.snapshot%20%3E%20(method)%20create%20%3E%20(network%20schema)%20%3E%20(property)%20result>)
 
-### Get HTML content and screenshot.
+### Capture multiple page formats.
 
 HTTP
 
@@ -2003,7 +2929,35 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
       "valuetext": "valuetext"
     },
     "content": "content",
+    "json": {
+      "foo": "bar"
+    },
+    "links": [
+      "string"
+    ],
     "markdown": "markdown",
+    "pdf": "pdf",
+    "scrape": [
+      {
+        "results": [
+          {
+            "attributes": [
+              {
+                "name": "name",
+                "value": "value"
+              }
+            ],
+            "html": "html",
+            "left": 0,
+            "top": 0,
+            "height": 0,
+            "text": "text",
+            "width": 0
+          }
+        ],
+        "selector": "selector"
+      }
+    ],
     "screenshot": "screenshot"
   }
 }
@@ -2085,7 +3039,35 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
       "valuetext": "valuetext"
     },
     "content": "content",
+    "json": {
+      "foo": "bar"
+    },
+    "links": [
+      "string"
+    ],
     "markdown": "markdown",
+    "pdf": "pdf",
+    "scrape": [
+      {
+        "results": [
+          {
+            "attributes": [
+              {
+                "name": "name",
+                "value": "value"
+              }
+            ],
+            "html": "html",
+            "left": 0,
+            "top": 0,
+            "height": 0,
+            "text": "text",
+            "width": 0
+          }
+        ],
+        "selector": "selector"
+      }
+    ],
     "screenshot": "screenshot"
   }
 }

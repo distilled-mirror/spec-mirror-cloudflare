@@ -3268,7 +3268,7 @@ POST/accounts/{account\_id}/r2/temp-access-credentials
 
 <summary>
 
-TemporaryCredential object {bucket, parentAccessKeyId, permission, 3 more }
+TemporaryCredential object {bucket, parentAccessKeyId, ttlSeconds, 4 more }
 
 </summary>
 
@@ -3284,13 +3284,117 @@ Access key ID of the parent R2 API token. The temporary credentials cannot excee
 
 <a href="#">Link to this property</a>
 
+ttlSeconds: number
+
+Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
+
+maximum604800
+
+minimum0
+
+<a href="#">Link to this property</a>
+
 <details>
 
 <summary>
 
-permission: "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+actions: optional array of "HeadBucket"or "HeadObject"or "GetObject"or 15 more
 
-Permissions allowed on the credentials.
+S3 actions allowed on the credentials; requests for any other action are denied. For example, <code>["GetObject", "HeadObject"]</code> allows reading objects without listing them. Exactly one of <code>permission</code> or <code>actions</code> must be provided. The parent token must have Object Read &amp; Write permission if any action writes, and Object Read otherwise.
+
+</summary>
+
+One of the following:
+
+"HeadBucket"
+
+<a href="#">Link to this property</a>
+
+"HeadObject"
+
+<a href="#">Link to this property</a>
+
+"GetObject"
+
+<a href="#">Link to this property</a>
+
+"GetBucketLocation"
+
+<a href="#">Link to this property</a>
+
+"ListObjectsV1"
+
+<a href="#">Link to this property</a>
+
+"ListObjectsV2"
+
+<a href="#">Link to this property</a>
+
+"ListMultipartUploads"
+
+<a href="#">Link to this property</a>
+
+"ListParts"
+
+<a href="#">Link to this property</a>
+
+"PutObject"
+
+<a href="#">Link to this property</a>
+
+"DeleteObject"
+
+<a href="#">Link to this property</a>
+
+"DeleteObjects"
+
+<a href="#">Link to this property</a>
+
+"DeleteObjectsByPrefix"
+
+<a href="#">Link to this property</a>
+
+"CopyObject"
+
+<a href="#">Link to this property</a>
+
+"CreateMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+"UploadPart"
+
+<a href="#">Link to this property</a>
+
+"UploadPartCopy"
+
+<a href="#">Link to this property</a>
+
+"AbortMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+"CompleteMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+objects: optional array of string
+
+Optional object paths to scope the credentials to.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+permission: optional "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+
+Permissions allowed on the credentials. Exactly one of <code>permission</code> or <code>actions</code> must be provided.
 
 </summary>
 
@@ -3313,22 +3417,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-ttlSeconds: number
-
-Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
-
-maximum604800
-
-minimum0
-
-<a href="#">Link to this property</a>
-
-objects: optional array of string
-
-Optional object paths to scope the credentials to.
 
 <a href="#">Link to this property</a>
 

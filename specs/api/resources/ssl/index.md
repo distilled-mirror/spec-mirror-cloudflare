@@ -2144,7 +2144,7 @@ If you do not have a valid custom or advanced certificate at Cloudflare’s edge
 
 GET/zones/{zone\_id}/ssl/verification
 
-##### [Edit SSL Certificate Pack Validation Method](https://developers.cloudflare.com/api/resources/ssl/subresources/verification/methods/edit)
+##### [Update SSL Certificate Pack Validation Method](https://developers.cloudflare.com/api/resources/ssl/subresources/verification/methods/edit)
 
 PATCH/zones/{zone\_id}/ssl/verification/{certificate\_pack\_id}
 
@@ -2598,7 +2598,7 @@ Result status.
 
 validation\_method: optional "http"or "cname"or "txt"or "email"
 
-Desired validation method.
+SSL validation method.
 
 </summary>
 

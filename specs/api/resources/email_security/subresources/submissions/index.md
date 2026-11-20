@@ -22,6 +22,10 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/accounts/{account\_id}/email-security/submissions
 
+##### [Create new submissions](https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/create)
+
+POST/accounts/{account\_id}/email-security/submissions
+
 ##### ModelsExpand Collapse
 
 <details>
@@ -321,3 +325,39 @@ One of the following:
 </details>
 
 [Link to this property](#)%20email_security.submissions%20%3E%20(model)%20submission_list_response%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+SubmissionCreateResponse object {results }
+
+</summary>
+
+<details>
+
+<summary>
+
+results: array of object {id, accepted, error }
+
+</summary>
+
+id: string
+
+<a href="#">Link to this property</a>
+
+accepted: boolean
+
+<a href="#">Link to this property</a>
+
+error: optional string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20email_security.submissions%20%3E%20(model)%20submission_create_response%20%3E%20(schema)>)

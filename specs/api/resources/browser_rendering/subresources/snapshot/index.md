@@ -18,7 +18,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Snapshot
 
-##### [Get HTML content and screenshot.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/snapshot/methods/create)
+##### [Capture multiple page formats.](https://developers.cloudflare.com/api/resources/browser_rendering/subresources/snapshot/methods/create)
 
 POST/accounts/{account\_id}/browser-rendering/snapshot
 
@@ -28,7 +28,7 @@ POST/accounts/{account\_id}/browser-rendering/snapshot
 
 <summary>
 
-SnapshotCreateResponse object {accessibilityTree, content, markdown, screenshot }
+SnapshotCreateResponse object {accessibilityTree, content, json, 5 more }
 
 </summary>
 
@@ -210,9 +210,119 @@ HTML content.
 
 <a href="#">Link to this property</a>
 
+<details>
+
+<summary>
+
+json: optional map\[unknown]or array of unknown
+
+Data extracted from the page HTML by the requested prompt.
+
+</summary>
+
+One of the following:
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+links: optional array of string
+
+Links found on the page.
+
+<a href="#">Link to this property</a>
+
 markdown: optional string
 
 Markdown content. Prefixed with YAML frontmatter (e.g. <code>title</code>) when the page provides that metadata.
+
+<a href="#">Link to this property</a>
+
+pdf: optional string
+
+Base64 encoded PDF.
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+scrape: optional array of object {results, selector }
+
+Elements matched by the requested selectors.
+
+</summary>
+
+<details>
+
+<summary>
+
+results: array of object {attributes, html, left, 4 more }
+
+</summary>
+
+<details>
+
+<summary>
+
+attributes: array of object {name, value }
+
+</summary>
+
+name: string
+
+<a href="#">Link to this property</a>
+
+value: string
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+html: string
+
+<a href="#">Link to this property</a>
+
+left: number
+
+<a href="#">Link to this property</a>
+
+top: number
+
+<a href="#">Link to this property</a>
+
+height: optional number
+
+<a href="#">Link to this property</a>
+
+text: optional string
+
+<a href="#">Link to this property</a>
+
+width: optional number
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+selector: string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 

@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 GET/zones/{zone\_id}/dns\_records
 
-List, search, sort, and filter a zones’ DNS records.
+List, search, sort, and filter a zone’s DNS records. Requests with `cursor` or `prev_cursor` use cursor pagination. Otherwise, the endpoint uses offset pagination. To start cursor pagination, set `cursor` to an empty value, then pass `result_info.cursor` from the previous response to request the next page. Cursor-paginated responses do not include `page`, `total_count`, or `total_pages`. Cursor tokens are opaque and can vary in length. Pass them back unchanged and do not assume a fixed length.
 
 ##### Security
 
@@ -154,6 +154,14 @@ Prefix of the DNS record content. Content filters are case-insensitive.
 
 [Link to this property](#)%20dns.records%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20content%20%3E%20(schema)>)
 
+cursor: optional string
+
+Opaque token for cursor pagination, obtained from `result_info.cursor` of the previous response. An empty value starts cursor pagination. Mutually exclusive with `page` and `prev_cursor`.
+
+maxLength4096
+
+[Link to this property](#)%20dns.records%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20cursor%20%3E%20(schema)>)
+
 <details>
 
 <summary>
@@ -282,7 +290,7 @@ One of the following:
 
 page: optional number
 
-Page number of paginated results.
+Page number for offset pagination.
 
 minimum1
 
@@ -297,6 +305,16 @@ maximum5000000
 minimum1
 
 [Link to this property](#)%20dns.records%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20per_page%20%3E%20(schema)>)
+
+prev\_cursor: optional string
+
+Opaque token for requesting the previous page in cursor pagination, obtained from `result_info.prev_cursor` of the previous response. Mutually exclusive with `page` and `cursor`.
+
+maxLength4096
+
+minLength1
+
+[Link to this property](#)%20dns.records%20%3E%20(method)%20list%20%3E%20(params)%20default%20%3E%20(param)%20prev_cursor%20%3E%20(schema)>)
 
 proxied: optional boolean
 
@@ -2796,13 +2814,19 @@ formatdate-time
 
 <summary>
 
-result\_info: optional object {count, page, per\_page, 2 more }
+result\_info: optional object {count, cursor, page, 4 more }
 
 </summary>
 
 count: optional number
 
 Total number of results for the requested service.
+
+<a href="#">Link to this property</a>
+
+cursor: optional string
+
+Opaque token for the next page. Omitted on the last page.
 
 <a href="#">Link to this property</a>
 
@@ -2815,6 +2839,12 @@ Current page within paginated list of results.
 per\_page: optional number
 
 Number of results per page of results.
+
+<a href="#">Link to this property</a>
+
+prev\_cursor: optional string
+
+Opaque token for the previous page. Omitted on the first page.
 
 <a href="#">Link to this property</a>
 
@@ -2904,8 +2934,10 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records \
   ],
   "result_info": {
     "count": 1,
+    "cursor": "cursor",
     "page": 1,
     "per_page": 20,
+    "prev_cursor": "prev_cursor",
     "total_count": 2000,
     "total_pages": 100
   }
@@ -2973,8 +3005,10 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records \
   ],
   "result_info": {
     "count": 1,
+    "cursor": "cursor",
     "page": 1,
     "per_page": 20,
+    "prev_cursor": "prev_cursor",
     "total_count": 2000,
     "total_pages": 100
   }

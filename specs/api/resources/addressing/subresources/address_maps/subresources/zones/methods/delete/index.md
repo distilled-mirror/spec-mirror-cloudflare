@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 # Remove a zone membership from an Address Map
 
-DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{zone\_id}
+DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{member\_zone\_id}
 
 Remove a zone as a member of a particular address map.
 
@@ -62,14 +62,6 @@ The previous authorization scheme for interacting with the Cloudflare API. When 
 
 ##### P ath ParametersExpand Collapse
 
-zone\_id: string
-
-Identifier of a zone.
-
-maxLength32
-
-[Link to this property](#)%20addressing.address_maps.zones%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20zone_id%20%3E%20(schema)>)
-
 account\_id: string
 
 Identifier of a Cloudflare account.
@@ -85,6 +77,14 @@ Identifier of an Address Map.
 maxLength32
 
 [Link to this property](#)%20addressing.address_maps.zones%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20address_map_id%20%3E%20(schema)>)
+
+member\_zone\_id: string
+
+Identifier of a zone.
+
+maxLength32
+
+[Link to this property](#)%20addressing.address_maps.zones%20%3E%20(method)%20delete%20%3E%20(params)%20default%20%3E%20(param)%20member_zone_id%20%3E%20(schema)>)
 
 ##### ReturnsExpand Collapse
 
@@ -227,7 +227,7 @@ HTTP
 HTTPTypeScriptPythonGoTerraform
 
 ```
-curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps/$ADDRESS_MAP_ID/zones/$ZONE_ID \
+curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/addressing/address_maps/$ADDRESS_MAP_ID/zones/$MEMBER_ZONE_ID \
     -X DELETE \
     -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
 ```

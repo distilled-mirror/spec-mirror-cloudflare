@@ -1,6 +1,6 @@
 {
   "source": "https://developers.cloudflare.com/api/",
-  "count": 4105,
+  "count": 4109,
   "pages": [
     {
       "page": "https://developers.cloudflare.com/api/resources/$shared",
@@ -429,6 +429,18 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/methods/update",
       "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/ips/methods/update/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones",
+      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete",
+      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/update",
+      "markdown": "https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/addressing/subresources/loa_documents",
@@ -4785,6 +4797,10 @@
     {
       "page": "https://developers.cloudflare.com/api/resources/email_security/subresources/submissions",
       "markdown": "https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/index.md"
+    },
+    {
+      "page": "https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/create",
+      "markdown": "https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/create/index.md"
     },
     {
       "page": "https://developers.cloudflare.com/api/resources/email_security/subresources/submissions/methods/list",
@@ -16453,9 +16469,6 @@
   "unlisted": [
     "api/resources/accounts/subresources/pay_bad_debt/index.md",
     "api/resources/accounts/subresources/pay_bad_debt/methods/create/index.md",
-    "api/resources/addressing/subresources/address_maps/subresources/zones/index.md",
-    "api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete/index.md",
-    "api/resources/addressing/subresources/address_maps/subresources/zones/methods/update/index.md",
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/connect/index.md",
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/methods/launch/index.md",
     "api/resources/browser_rendering/subresources/devtools/subresources/browser/subresources/page/index.md",

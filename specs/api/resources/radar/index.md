@@ -67200,7 +67200,7 @@ ASNGetResponse object { asn }
 
 <summary>
 
-asn: object { asn, category, confidenceLevel, 9 more }
+asn: object { asn, category, country, 9 more }
 
 </summary>
 
@@ -67233,10 +67233,6 @@ One of the following:
 [Link to this property](#)
 
 </details>
-
-[Link to this property](#)
-
-confidenceLevel: number
 
 [Link to this property](#)
 
@@ -67369,6 +67365,12 @@ website: string
 [Link to this property](#)
 
 aka: optional string
+
+[Link to this property](#)
+
+confidenceLevel: optional number
+
+Omitted when `includeConfidenceLevel` is `false`.
 
 [Link to this property](#)
 

@@ -22,11 +22,11 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 ##### [Add a zone membership to an Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/update)
 
-PUT/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{zone\_id}
+PUT/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{member\_zone\_id}
 
 ##### [Remove a zone membership from an Address Map](https://developers.cloudflare.com/api/resources/addressing/subresources/address_maps/subresources/zones/methods/delete)
 
-DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{zone\_id}
+DELETE/accounts/{account\_id}/addressing/address\_maps/{address\_map\_id}/zones/{member\_zone\_id}
 
 ##### ModelsExpand Collapse
 

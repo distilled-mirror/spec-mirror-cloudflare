@@ -156,7 +156,7 @@ ASNGetResponse object {asn }
 
 <summary>
 
-asn: object {asn, category, confidenceLevel, 9 more }
+asn: object {asn, category, country, 9 more }
 
 </summary>
 
@@ -189,10 +189,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-confidenceLevel: number
 
 <a href="#">Link to this property</a>
 
@@ -325,6 +321,12 @@ website: string
 <a href="#">Link to this property</a>
 
 aka: optional string
+
+<a href="#">Link to this property</a>
+
+confidenceLevel: optional number
+
+Omitted when <code>includeConfidenceLevel</code> is <code>false</code>.
 
 <a href="#">Link to this property</a>
 

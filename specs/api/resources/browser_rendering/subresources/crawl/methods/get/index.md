@@ -224,19 +224,101 @@ Crawled URL.
 
 html: optional string
 
-HTML content of the crawled URL.
+HTML content of the crawled URL. Null if unreadable.
 
 <a href="#">Link to this property</a>
 
-json: optional map\[unknown]
+<details>
 
-JSON of the content of the crawled URL.
+<summary>
+
+json: optional map\[stringor numberor booleanor 2 more]or array of stringor numberor booleanor 2 moreor string
+
+JSON of the content of the crawled URL, or the raw text if it is not an object or array. Null if unreadable.
+
+</summary>
+
+One of the following:
+
+<details>
+
+<summary>
+
+map\[stringor numberor booleanor 2 more]
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+<details>
+
+<summary>
+
+array of stringor numberor booleanor 2 more
+
+</summary>
+
+One of the following:
+
+string
+
+<a href="#">Link to this property</a>
+
+number
+
+<a href="#">Link to this property</a>
+
+boolean
+
+<a href="#">Link to this property</a>
+
+array of unknown
+
+<a href="#">Link to this property</a>
+
+map\[unknown]
+
+<a href="#">Link to this property</a>
+
+</details>
+
+<a href="#">Link to this property</a>
+
+string
+
+<a href="#">Link to this property</a>
+
+</details>
 
 <a href="#">Link to this property</a>
 
 markdown: optional string
 
-Markdown of the content of the crawled URL.
+Markdown of the content of the crawled URL. Null if unreadable.
 
 <a href="#">Link to this property</a>
 
@@ -513,7 +595,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
         "url": "url",
         "html": "html",
         "json": {
-          "foo": {}
+          "foo": "string"
         },
         "markdown": "markdown",
         "metadata": {
@@ -568,7 +650,7 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/browser-rendering
         "url": "url",
         "html": "html",
         "json": {
-          "foo": {}
+          "foo": "string"
         },
         "markdown": "markdown",
         "metadata": {

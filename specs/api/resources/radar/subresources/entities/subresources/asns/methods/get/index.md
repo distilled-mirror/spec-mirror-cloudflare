@@ -94,6 +94,12 @@ One of the following:
 
 [Link to this property](#)%20radar.entities.asns%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20format%20%3E%20(schema)>)
 
+includeConfidenceLevel: optional boolean
+
+Include the traffic data confidence level in the response. Set to `false` to skip it and get a faster response.
+
+[Link to this property](#)%20radar.entities.asns%20%3E%20(method)%20get%20%3E%20(params)%20default%20%3E%20(param)%20includeConfidenceLevel%20%3E%20(schema)>)
+
 ##### ReturnsExpand Collapse
 
 <details>
@@ -108,7 +114,7 @@ result: object {asn }
 
 <summary>
 
-asn: object {asn, category, confidenceLevel, 9 more }
+asn: object {asn, category, country, 9 more }
 
 </summary>
 
@@ -141,10 +147,6 @@ One of the following:
 <a href="#">Link to this property</a>
 
 </details>
-
-<a href="#">Link to this property</a>
-
-confidenceLevel: number
 
 <a href="#">Link to this property</a>
 
@@ -280,6 +282,12 @@ aka: optional string
 
 <a href="#">Link to this property</a>
 
+confidenceLevel: optional number
+
+Omitted when <code>includeConfidenceLevel</code> is <code>false</code>.
+
+<a href="#">Link to this property</a>
+
 </details>
 
 <a href="#">Link to this property</a>
@@ -311,7 +319,6 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/$ASN \
     "asn": {
       "asn": 714,
       "category": "ACCESS_ISP",
-      "confidenceLevel": 5,
       "country": "GB",
       "countryName": "United Kingdom",
       "estimatedUsers": {
@@ -337,7 +344,8 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/$ASN \
       ],
       "source": "RIPE",
       "website": "https://www.apple.com/support/systemstatus/",
-      "aka": "aka"
+      "aka": "aka",
+      "confidenceLevel": 5
     }
   },
   "success": true
@@ -354,7 +362,6 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/$ASN \
     "asn": {
       "asn": 714,
       "category": "ACCESS_ISP",
-      "confidenceLevel": 5,
       "country": "GB",
       "countryName": "United Kingdom",
       "estimatedUsers": {
@@ -380,7 +387,8 @@ curl https://api.cloudflare.com/client/v4/radar/entities/asns/$ASN \
       ],
       "source": "RIPE",
       "website": "https://www.apple.com/support/systemstatus/",
-      "aka": "aka"
+      "aka": "aka",
+      "confidenceLevel": 5
     }
   },
   "success": true

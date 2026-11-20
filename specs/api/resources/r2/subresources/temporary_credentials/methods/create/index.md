@@ -22,7 +22,7 @@ Open in **Claude**Open in **ChatGPT**Open in **Cursor**
 
 POST/accounts/{account\_id}/r2/temp-access-credentials
 
-Creates temporary access credentials on a bucket that can be optionally scoped to prefixes or objects.
+Creates temporary access credentials on a bucket that can be optionally scoped to prefixes or objects. The credentials grant either a permission level or an explicit list of S3 actions.
 
 ##### Security
 
@@ -56,13 +56,117 @@ Access key ID of the parent R2 API token. The temporary credentials cannot excee
 
 [Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20parentAccessKeyId%20%3E%20(schema)>)
 
+ttlSeconds: number
+
+Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
+
+maximum604800
+
+minimum0
+
+[Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20ttlSeconds%20%3E%20(schema)>)
+
 <details>
 
 <summary>
 
-permission: "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+actions: optional array of "HeadBucket"or "HeadObject"or "GetObject"or 15 more
 
-Permissions allowed on the credentials.
+S3 actions allowed on the credentials; requests for any other action are denied. For example, <code>["GetObject", "HeadObject"]</code> allows reading objects without listing them. Exactly one of <code>permission</code> or <code>actions</code> must be provided. The parent token must have Object Read &amp; Write permission if any action writes, and Object Read otherwise.
+
+</summary>
+
+One of the following:
+
+"HeadBucket"
+
+<a href="#">Link to this property</a>
+
+"HeadObject"
+
+<a href="#">Link to this property</a>
+
+"GetObject"
+
+<a href="#">Link to this property</a>
+
+"GetBucketLocation"
+
+<a href="#">Link to this property</a>
+
+"ListObjectsV1"
+
+<a href="#">Link to this property</a>
+
+"ListObjectsV2"
+
+<a href="#">Link to this property</a>
+
+"ListMultipartUploads"
+
+<a href="#">Link to this property</a>
+
+"ListParts"
+
+<a href="#">Link to this property</a>
+
+"PutObject"
+
+<a href="#">Link to this property</a>
+
+"DeleteObject"
+
+<a href="#">Link to this property</a>
+
+"DeleteObjects"
+
+<a href="#">Link to this property</a>
+
+"DeleteObjectsByPrefix"
+
+<a href="#">Link to this property</a>
+
+"CopyObject"
+
+<a href="#">Link to this property</a>
+
+"CreateMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+"UploadPart"
+
+<a href="#">Link to this property</a>
+
+"UploadPartCopy"
+
+<a href="#">Link to this property</a>
+
+"AbortMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+"CompleteMultipartUpload"
+
+<a href="#">Link to this property</a>
+
+</details>
+
+[Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20actions%20%3E%20(schema)>)
+
+objects: optional array of string
+
+Optional object paths to scope the credentials to.
+
+[Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20objects%20%3E%20(schema)>)
+
+<details>
+
+<summary>
+
+permission: optional "admin-read-write"or "admin-read-only"or "object-read-write"or "object-read-only"
+
+Permissions allowed on the credentials. Exactly one of <code>permission</code> or <code>actions</code> must be provided.
 
 </summary>
 
@@ -87,22 +191,6 @@ One of the following:
 </details>
 
 [Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20permission%20%3E%20(schema)>)
-
-ttlSeconds: number
-
-Lifetime of the temporary credentials in seconds, up to 604800 seconds (7 days).
-
-maximum604800
-
-minimum0
-
-[Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20ttlSeconds%20%3E%20(schema)>)
-
-objects: optional array of string
-
-Optional object paths to scope the credentials to.
-
-[Link to this property](#)%20r2.temporary_credentials%20%3E%20(method)%20create%20%3E%20(params)%200%20%3E%20(param)%20objects%20%3E%20(schema)>)
 
 prefixes: optional array of string
 
@@ -207,7 +295,6 @@ curl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/r2/temp-access-cr
     -d '{
           "bucket": "example-bucket",
           "parentAccessKeyId": "example-access-key-id",
-          "permission": "object-read-write",
           "ttlSeconds": 3600
         }'
 ```
